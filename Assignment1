@@ -1,0 +1,58 @@
+CS 495/595 Introduction to Web Science
+Fall 2013
+http://www.cs.odu.edu/~mln/teaching/cs595-f13/
+
+Assignment #1
+Due: 11:59pm Sept 12
+
+1.  Demonstrate that you know how to use "curl" well enough to
+correctly POST data to a form.  Show that the HTML response that
+is returned is "correct" (e.g., save it to a file and then view
+that file in a browser and take a screen shot).
+
+2.  Write a Python program that:
+  1. takes one argument, like "Old Dominion" or "Virginia Tech"
+  2. takes another argument specified in seconds (e.g., "60" for 
+     one minute).
+  3. takes a URI as a third argument: 
+     http://sports.yahoo.com/ncaa/football/scoreboard
+     or
+     http://sports.yahoo.com/ncaa/football/scoreboard?w=1&c=all&y=2012
+     or
+     http://sports.yahoo.com/ncaa/football/scoreboard?w=2&c=all&y=2012
+     etc.
+  4. downloads the URI, finds the game corresponding to the team
+     argument, prints out the current score (e.g., "Old Dominion 27, 
+     East Carolina 17), sleeps for the specified seconds, and then
+     repeats (until control-C is hit).
+
+3.  Consider the "bow-tie" graph in the Broder et al. paper (fig 9):
+    http://www9.org/w9cdrom/160/160.html
+
+    Now consider the following graph:
+
+    A --> B
+    B --> C
+    C --> D
+    C --> A
+    C --> G
+    E --> F
+    G --> C
+    G --> H
+    I --> H
+    I --> J
+    I --> K
+    J --> D 
+    L --> D
+    M --> A
+    M --> N
+    N --> D
+    
+    For the above graph, give the values for:
+
+    IN: 
+    SCC: 
+    OUT: 
+    Tendrils: 
+    Tubes: 
+    Disconnected:
