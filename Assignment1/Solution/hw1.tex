@@ -1,0 +1,104 @@
+\documentclass[11pt]{article}
+\usepackage{hyperref}
+\usepackage{amsmath}
+
+\begin{document}
+\begin{center}
+Assignment One\newline
+CS595\newline
+Introduction to Web Science\newline
+Old Dominion University\newline
+Computer Science\newline
+Date Due 11:59 pm Sept 12\newline
+Lulwah Alkwai\newline
+\end{center}
+\pagebreak
+Answer One-\\
+Command Used:\\
+curl -3 -d "query=ODU" https://ixquick.com/do/search $>$ q1.html\\
+  $%$ Total    $%$ Received $%$ Xferd  Average Speed   Time    Time     Time  Current\\
+                                 Dload  Upload   Total   Spent    Left  Speed\\
+$100 89712    0 89703  100     9  37618      3  0:00:03  0:00:02  0:00:01 39691$\\
+\\
+Notes:\\
+*POST requests are never cached\\
+*POST requests do not remain in the browser history\\
+*POST requests cannot be bookmarked\\
+*POST requests have no restrictions on data length\\
+I had problem with the output and it turns out I had to use -3 in the command\\
+-3, --sslv3:(SSL) Forces curl to use SSL version 3 when negotiating with a remote SSL server.
+previous output:\\
+curl -d "query=ODU" https://ixquick.com/do/search $>$ q1.html\\
+  $%$ Total    $%$ Received $%$ Xferd  Average Speed   Time    Time     Time  Current\\
+                                 Dload  Upload   Total   Spent    Left  Speed\\
+$  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0curl: (35) error:14077458:SSL routines:SSL23_GET_SERVER_HELLO:reason(1112)$\newline
+\\
+Web Search:\\
+\url{http://php.net/manual/es/book.curl.php}
+\url{http://www.w3schools.com/tags/ref_httpmethods.asp}\\
+\url{http://curl.haxx.se/docs/manpage.html}\\
+\pagebreak
+\\
+Answer Two-\\
+code called q2.py\\
+sample output(arguments are correct):\\
+python q2.py "Idaho" 0 "http://scores.espn.go.com/ncf/scoreboard?confId=80\& seasonYear=2013\& seasonType=2\& weekNumber=2"\\
+Wyoming 42\\
+Idaho 10\\
+. . .\\
+\\
+sample output(arguments are incorrect):\\
+python q2.py 0\\
+***********************************************************************************************\\
+Please try again by entering: q2.py "TeamName" TimeInSeconds "URI"\\
+\indexspace Default:
+\indexspace Team Name: Old Dominion
+\indexspace Time In Seconds: 60
+\indexspace URI: http://scores.espn.go.com/ncf/scoreboard? confId=80\& seasonYear=2013\& seasonType=2\& weekNumber=2\\
+***********************************************************************************************\\
+Maryland 47\\
+Old Dominion 10\\
+. . .\\
+\\
+\\
+Notes:\\
+I asked for ‘Hannys’ help to get BeautifulSoup working on my device, it turned out I needed admin access to download, or download the file locally and work on that. \\
+
+Web search:\\
+\url{http://www.crummy.com/software/BeautifulSoup/}\\
+\url{http://stackoverflow.com/questions/4362981/beautifulsoup-how-do-i-extract-all-the-lis-from-a-list-of-uls-that-contains}\\
+\url{http://stackoverflow.com/questions/5615647/python-using-beautiful-soup-for-html-processing-on-specific-content}\\
+\\
+\pagebreak
+\\
+Answer Three-\\
+IN: M,I\\
+SCC: A, B, C, G\\
+Out: D, H\\
+Tendrils: K, L\\
+Tubes: J, N\\
+Disconnected: E,F\\
+\\
+Definitions used to Answer the question:\\
+IN, sites that can reach SCC, but that have no links from SCC;\\
+SCC, sites on the strongly connected component;\\
+OUT, sites that are reachable from SCC, but have no links towards SCC;\\
+TENDRILS, sites that only connect to IN or OUT, but following the links in the reverse direction;\\
+TUBES, a component joining OUT and IN without going through SC;\\
+Disconnected, sites that are not connected to SCC;\\
+\\
+Notes:\\
+Web search:\\
+\url{http://blogs.scientificamerican.com/observations/2011/08/08/ownership-ties-among-global-corporations-strangely-resemble-a-bow-tie/}\\
+\url{http://dspace.dial.pipex.com/town/parade/hq69/Protected/Features/Web%20has%20a%20shape.html}\\
+\url{http://www.cybermetrics.info/articles/v9i1p3.html}\\
+\\
+\\
+General Notes on Assignment:\\
+-To learn how to start using Latex I used:\\ 
+\url{http://www.latex-project.org}\\
+-I was very excited to use Latex, and that it is very useful for writing, but after using it I am not sure, it took some time to get hang of it and I believe it takes more time to write and edit instead of simply writing in word! But who knows only time will till.\\
+-To get Github working I figured out how to get my own page set up, and asked 'Sawoods' help to learn to upload my work\\
+
+\end{document}
+
