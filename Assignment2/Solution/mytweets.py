@@ -11,8 +11,8 @@ ACCESS_TOKEN_URL = "https://api.twitter.com/oauth/access_token"
 CONSUMER_KEY = "Er2mm4vGncBo9nX49Esw"
 CONSUMER_SECRET = "p2jmyo7OmfgeeeJiqtoQzowZftMucjnUyeMOMRZw82Y"
 
-OAUTH_TOKEN = "251457467-tF4mgbwex37kkkbYzzjXGRgtQd29FhFMKgXa1mdM"
-OAUTH_TOKEN_SECRET = "mcRcLNMdPtlSeldfbpWdnzupdXXh70VU3cNhmxxemDk"
+OAUTH_TOKEN = ""
+OAUTH_TOKEN_SECRET = ""
 
           
 def setup_oauth():
