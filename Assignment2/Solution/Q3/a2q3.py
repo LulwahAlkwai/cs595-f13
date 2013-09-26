@@ -20,7 +20,7 @@ file1=open("histogram.txt","r")
 file2=open("Alldate.txt","w")
 
 #Create a new file for extracted results
-file3=open("Result.txt","w")
+file3=open("histogram2.txt","w")
 
 #Writing the first line in results
 file3.write("url"+","+"memento"+","+"Estimated Creation Date"+"\n")
@@ -74,7 +74,7 @@ for line in file1:
               Age=abs(today-edate)
                 
               #Write result to file
-              file3=open("Result.txt","w")
+              file3=open("histogram2.txt","w")
               file3.write(link + "," + memento + "," + str(Age.days) + "\n")
               file3.flush()
 
