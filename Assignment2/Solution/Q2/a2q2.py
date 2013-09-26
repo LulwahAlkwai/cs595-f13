@@ -14,7 +14,7 @@ import re
 file1=open("uniq-ultimate-links.txt","r")
 
 #Create a new file for results
-file2=open("resultq2.txt","w")
+file2=open("histogram.txt","w")
 #Writing the first line in results
 file2.write("url"+","+"memento"+"\n")
 
