@@ -1,0 +1,565 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Current Biology: Visual sensory networks and effective information transfer in animal groups</title>
+
+<link rel="stylesheet" href="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/nav.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/print.css" type="text/css" media="print" />
+
+<!--[if IE]>
+<link rel="stylesheet" href="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/ie.css" type="text/css" />
+<![endif]-->
+
+<link rel="stylesheet" href="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/jd.gallery.css" type="text/css" media="screen" charset="utf-8"/>
+<script type="text/javascript" src="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/js/mootools.v1.11.js"></script>
+<script type="text/javascript" src="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/js/jd.gallery.js"></script>
+<script type="text/javascript" src="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/js/dropdowns.js"></script>
+
+
+<link rel="alternate" type="application/rss+xml" title="Couzin Lab &#8211; Collective Animal Behavior RSS Feed" href="http://icouzin.princeton.edu/feed/" />
+<link rel="pingback" href="http://icouzin.princeton.edu/xmlrpc.php" />
+<link rel="shortcut icon" href="http://icouzin.princeton.edu/favicon.ico" />
+
+
+
+            <script type="text/javascript">//<![CDATA[
+            // Google Analytics for WordPress by Yoast v4.3.3 | http://yoast.com/wordpress/google-analytics/
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-2260031-4']);
+				            _gaq.push(['_trackPageview']);
+            (function () {
+                var ga = document.createElement('script');
+                ga.type = 'text/javascript';
+                ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+
+                var s = document.getElementsByTagName('script')[0];
+                s.parentNode.insertBefore(ga, s);
+            })();
+            //]]></script>
+			<link rel="alternate" type="application/rss+xml" title="Couzin Lab - Collective Animal Behavior &raquo; Current Biology: Visual sensory networks and effective information transfer in animal groups Comments Feed" href="http://icouzin.princeton.edu/current-biology-visual-sensory-networks-and-effective-information-transfer-in-animal-groups/feed/" />
+<link rel='stylesheet' id='connections-user-css'  href='http://icouzin.princeton.edu/wp-content/plugins/connections/assets/css/cn-user.min.css?ver=0.7.9.2' type='text/css' media='all' />
+<link rel='stylesheet' id='connections-chosen-css'  href='http://icouzin.princeton.edu/wp-content/plugins/connections/assets/css/chosen.min.css?ver=0.9.11' type='text/css' media='all' />
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/swfobject/2.2/swfobject.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://icouzin.princeton.edu/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://icouzin.princeton.edu/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://icouzin.princeton.edu/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://icouzin.princeton.edu/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Science paper: Emergent sensing of complex environments by mobile animal groups' href='http://icouzin.princeton.edu/newer-science-paper-emergent-sensing-of-complex-environments-by-mobile-animal-groups/' />
+
+<link rel='canonical' href='http://icouzin.princeton.edu/current-biology-visual-sensory-networks-and-effective-information-transfer-in-animal-groups/' />
+<link rel='shortlink' href='http://icouzin.princeton.edu/?p=1501' />
+
+	<!-- BDP RSS Aggregator 0.6.1 -->
+
+	<!-- Added by EventCalendar plugin. Version 3.1.4 -->
+	<script type='text/javascript' src='http://icouzin.princeton.edu/wp-content/plugins/event-calendar/xmlhttprequest.js'></script>
+	<script type='text/javascript' src='http://icouzin.princeton.edu/wp-content/plugins/event-calendar/ec3.js'></script>
+	<script type='text/javascript'><!--
+	ec3.start_of_week=1;
+	ec3.month_of_year=new Array('January','February','March','April','May','June','July','August','September','October','November','December');
+	ec3.month_abbrev=new Array('Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec');
+	ec3.myfiles='http://icouzin.princeton.edu/wp-content/plugins/event-calendar';
+	ec3.home='http://icouzin.princeton.edu';
+	ec3.hide_logo=0;
+	ec3.viewpostsfor="View posts for %1$s %2$s";
+	// --></script>
+
+<style type='text/css' media='screen'>
+@import url(http://icouzin.princeton.edu/wp-content/plugins/event-calendar/ec3.css);
+.ec3_ec {
+ background-image:url(http://icouzin.princeton.edu/wp-content/plugins/event-calendar/ec.png) !IMPORTANT;
+ background-image:none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://icouzin.princeton.edu/wp-content/plugins/event-calendar/ec.png');
+}
+#ec3_shadow0 {
+ background-image:url(http://icouzin.princeton.edu/wp-content/plugins/event-calendar/shadow0.png) !IMPORTANT;
+ background-image:none;
+}
+#ec3_shadow0 div {
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://icouzin.princeton.edu/wp-content/plugins/event-calendar/shadow0.png',sizingMethod='scale');
+}
+#ec3_shadow1 {
+ background-image:url(http://icouzin.princeton.edu/wp-content/plugins/event-calendar/shadow1.png) !IMPORTANT;
+ background-image:none;
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://icouzin.princeton.edu/wp-content/plugins/event-calendar/shadow1.png',sizingMethod='crop');
+}
+#ec3_shadow2 {
+ background-image:url(http://icouzin.princeton.edu/wp-content/plugins/event-calendar/shadow2.png) !IMPORTANT;
+ background-image:none;
+}
+#ec3_shadow2 div {
+ filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='http://icouzin.princeton.edu/wp-content/plugins/event-calendar/shadow2.png',sizingMethod='scale');
+}
+</style>
+
+<!-- HeadSpace SEO 3.6.41 by John Godley - urbangiraffe.com -->
+<!-- HeadSpace -->
+<script type="text/javascript">
+	window._wp_rp_static_base_url = 'http://dtmvdvtzf8rz0.cloudfront.net/static/';
+	window._wp_rp_wp_ajax_url = "http://icouzin.princeton.edu/wp-admin/admin-ajax.php";
+	window._wp_rp_plugin_version = '2.8';
+	window._wp_rp_post_id = '1501';
+	window._wp_rp_num_rel_posts = '5';
+</script>
+<script type="text/javascript">
+	swfobject.registerObject("wpFollowmeFlash", "9.0.0");
+</script>
+<style type="text/css">
+	.getflash { font-size:8px; }
+	.wp_followme_c2 {
+		position:fixed;
+		background:#151515;
+		top:10px;
+		right:0px;
+		width:32px;
+		height:160px;
+		border:1px solid #FFFFFF;
+		color:#FFFFFF;
+	}
+</style>
+
+<!-- Vipers Video Quicktags v6.4.5 | http://www.viper007bond.com/wordpress-plugins/vipers-video-quicktags/ -->
+<style type="text/css">
+.vvqbox { display: block; max-width: 100%; visibility: visible !important; margin: 10px auto; } .vvqbox img { max-width: 100%; height: 100%; } .vvqbox object { max-width: 100%; } 
+</style>
+<script type="text/javascript">
+// <![CDATA[
+	var vvqflashvars = {};
+	var vvqparams = { wmode: "opaque", allowfullscreen: "true", allowscriptaccess: "always" };
+	var vvqattributes = {};
+	var vvqexpressinstall = "http://icouzin.princeton.edu/wp-content/plugins/vipers-video-quicktags/resources/expressinstall.swf";
+// ]]>
+</script>
+</head>
+<body>
+<div id="page" class="clearfloat">
+<div id="header">
+<div class="clearfloat">
+<div id="branding" class="left">
+<a href="http://icouzin.princeton.edu">
+<img src="http://icouzin.princeton.edu/wp-content/themes/openbook22-fr/images/lyxia2.png" alt="" id="logo" /></a>
+</div>
+
+<!--<form method="get" id="searchform" action="http://icouzin.princeton.edu/">
+<div><input type="text" value="" name="s" id="s" />
+<input type="submit" id="searchsubmit" value="Search" class="button" />
+</div>
+</form>
+-->
+
+</div>
+
+<ul id="nav2" class="clearfloat">
+<li><a href="http://icouzin.princeton.edu/" class="on">Home</a></li>
+          <li class="page_item page-item-7"><a href="http://icouzin.princeton.edu/lab-members/">Members</a></li>
+<li class="page_item page-item-43"><a href="http://icouzin.princeton.edu/lab-research/">Research</a></li>
+<li class="page_item page-item-16"><a href="http://icouzin.princeton.edu/lab-publications/">Publications</a></li>
+<li class="page_item page-item-75"><a href="http://icouzin.princeton.edu/media-coverage/">Media coverage</a></li>
+<li class="page_item page-item-87"><a href="http://icouzin.princeton.edu/iain-couzin-cv/">Iain Couzin &#8211; CV</a></li>
+<li class="page_item page-item-255"><a href="http://icouzin.princeton.edu/contactfind-us/">Contact/Find us</a></li>
+
+ <!--	<li class="cat-item cat-item-80"><a href="http://icouzin.princeton.edu/category/available-positions/" title="View all posts filed under Available positions">Available positions</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://icouzin.princeton.edu/category/events/" title="View all posts filed under Events">Events</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://icouzin.princeton.edu/category/headlines/" title="View all posts filed under Headlines">Headlines</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://icouzin.princeton.edu/category/lecturesseminars/" title="View all posts filed under Lectures/Seminars">Lectures/Seminars</a>
+</li>
+	<li class="cat-item cat-item-64"><a href="http://icouzin.princeton.edu/category/media/" title="View all posts filed under Media">Media</a>
+</li>
+	<li class="cat-item cat-item-154"><a href="http://icouzin.princeton.edu/category/scientific-article/" title="View all posts filed under Scientific article">Scientific article</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://icouzin.princeton.edu/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+	<li class="cat-item cat-item-68"><a href="http://icouzin.princeton.edu/category/video/" title="View all posts filed under Video">Video</a>
+</li>
+-->
+  
+</ul>
+<div class="ie6clear"></div>
+  <div id="shadow"></div>
+
+<div class="clear"></div>
+
+</div><!-- /header -->
+
+
+<div id="content">
+
+	
+	<div class="post" id="post-1501">
+		<h1>Current Biology: Visual sensory networks and effective information transfer in animal groups</h1>
+			
+		<small>Posted by <a href="http://icouzin.princeton.edu/author/sleblanc/" title="Posts by sleblanc" rel="author">sleblanc</a> on Sep 9 2013 in <a href="http://icouzin.princeton.edu/category/headlines/" title="View all posts in Headlines" rel="category tag">Headlines</a>, <a href="http://icouzin.princeton.edu/category/scientific-article/" title="View all posts in Scientific article" rel="category tag">Scientific article</a>, <a href="http://icouzin.princeton.edu/category/video/" title="View all posts in Video" rel="category tag">Video</a>		&bull; <a href="#comments">1 comment</a></small>		
+			
+		<p> </p>
+			
+		<div class="entry">
+
+			<p><a href="http://www.princeton.edu/artofscience/gallery2011/one.php%3Fid=158.html"><img alt="Field of view reconstruction of a school of Golden Shiners" title="Click to view the picture on the Art of Science website" src="http://icouzin.princeton.edu/wp-content/uploads/2013/09/ShinersFOV_large.jpg" width="100%" /></a></p>
+<p>In our recent paper, “Visual sensory networks and effective information transfer in animal groups”, published in Current Biology, we combine experiments with model selection methods to reveal the interaction networks over which information spreads through fish schools.</p>
+<p>In the experiment, we first show that a minority of ‘informed’ fish, trained to associate a green laser target with food, can effectively lead an otherwise-untrained group to the target. During these leadership events, fish exhibit a relatively discrete “response” in which they begin directed movement toward the target. We track the spread of these responses through the group, and test different hypotheses for the interaction network over which the responses spread. Our results reveal that explicitly taking into account the visual nature of interactions (i.e. who can see whom within the group, and how much) provides a better predictor of information transfer than do more traditionally-used interaction models, such as those that assume individuals interact with all neighbors within a fixed distance (metric interactions) or with a fixed number of nearest neighbors (topological interactions). Moreover, we show that these visual interaction networks are structurally different from those specified by metric or topological assumptions, with potentially important consequences for information transfer.</p>
+<p>For more information, see the videos below, or <a href="http://www.cell.com/current-biology/abstract/S0960-9822(13)00920-2">read the full paper</a>.</p>
+<div><span class="vvqbox vvqyoutube" style="width:600px;height:450px;"><span id="vvq-1501-youtube-1"><a href="http://www.youtube.com/watch?v=5BHHzN4wPbI"><img src="http://img.youtube.com/vi/5BHHzN4wPbI/0.jpg" alt="YouTube Preview Image" /></a></span></span>
+<p style="text-align: center;"><span style="font-weight: bold;">SUPPLEMENTAL VIDEO 1</span> – visual field with red dots indicating neighbors</p>
+</div>
+<p>Using novel software, we reconstruct the visual field of each individual over time. This information allows us to determine, for each focal individual, the angular area of all other individuals on its retina at each point in time. The video above shows the visual field of one fish over time, represented by rays (red lines) emanating from each of its eyes. Those individuals that exceed a threshold angular area on its retina are considered to be influential neighbors, and are indicated with red dots.</p>
+<div><span class="vvqbox vvqyoutube" style="width:600px;height:450px;"><span id="vvq-1501-youtube-2"><a href="http://www.youtube.com/watch?v=0IDPRuHVtHA"><img src="http://img.youtube.com/vi/0IDPRuHVtHA/0.jpg" alt="YouTube Preview Image" /></a></span></span>
+<p style="text-align: center;"><span style="font-weight: bold;">SUPPLEMENTAL VIDEO 2</span> – leadership events with red circles indicating ‘responses’</p>
+</div>
+<p>Information flow through a group. Each fish is marked with a red (informed) or blue (uninformed) dot, and circles appear when each individual responds. These responses can be seen to propagate through the group in a wave.</p>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">Related Posts</h3><ul class="related_post wp_rp" style="visibility: visible"><li ><a href="http://icouzin.princeton.edu/video-dynamics-of-group-hunting-and-collective-evasion/" class="wp_rp_title">Current Biology: The dynamics of group hunting and collective evasion</a></li><li ><a href="http://icouzin.princeton.edu/newer-science-paper-emergent-sensing-of-complex-environments-by-mobile-animal-groups/" class="wp_rp_title">Science paper: Emergent sensing of complex environments by mobile animal groups</a></li><li ><a href="http://icouzin.princeton.edu/collective-motion-and-decision-making-in-animal-groups/" class="wp_rp_title">Collective Motion and Decision-Making in Animal Groups</a></li><li ><a href="http://icouzin.princeton.edu/cannibalism-and-collective-behavior-in-swarming-insects/" class="wp_rp_title">Current Biology, PNAS: Cannibalism and collective behavior in swarming insects</a></li><li ><a href="http://icouzin.princeton.edu/media-attention-around-our-last-science-article/" class="wp_rp_title">Media attention following our recent Science paper</a></li></ul><div class="wp_rp_footer"><a class="wp_rp_backlink" target="_blank" href="http://www.zemanta.com/?wp-related-posts">Zemanta</a></div></div></div>
+
+			
+		</div>
+		
+		<div></div>
+
+	</div>
+	
+	
+<!-- You can start editing here. -->
+
+   	<!--$trackbacks = 0 ;-->
+	                		
+	<h3 id="comments"><span>1 comment <a href="#respond" title="Commenter"></a></		span></h3>
+	<span><a href='http://icouzin.princeton.edu/current-biology-visual-sensory-networks-and-effective-information-transfer-in-animal-groups/feed/'>&raquo; Comments (RSS)</a></span>
+	<ol class="commentlist">
+
+			<li class="alt" id="comment-24937">
+	  		
+		<small class="commentmetadata"><cite><a href='http://phenomena.nationalgeographic.com/2013/09/14/ive-got-your-missing-links-right-here-14-september-2013/' rel='external nofollow' class='url'>I&#8217;ve got your missing links right here (14 September 2013) &#8211; Phenomena: Not Exactly Rocket Science</a></cite> on <a href="#comment-24937" title="">September 14 2013 at 12:00 pm</a>:</small>
+			
+					
+		<p>[&#8230;] Couzin’s fish-gaze-tracking software is just too damn [&#8230;]</p>
+		
+		<div class="clear"></div>
+
+		</li>
+
+		
+	
+	</ol>
+
+ 
+
+
+
+<h3 id="respond">Add a comment</h3>
+
+
+<form action="http://icouzin.princeton.edu/wp-comments-post.php" method="post" id="commentform">
+
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name (required)</small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Email (will not be published) (required)</small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Website</small></label></p>
+
+
+
+<p><textarea name="comment" id="comment" cols="100%" rows="10" tabindex="4"></textarea></p>
+
+<p><input name="submit" class="button" type="submit" id="submit" tabindex="5" value="Send your comment" />
+<input type="hidden" name="comment_post_ID" value="1501" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cab8f4dc76" /></p></p>
+
+</form>
+
+
+
+	
+</div>
+
+  <div id="sidebar">
+
+    <ul id="sidelist">
+    
+      
+<!--<li><h3>Most popular posts</h3>
+<ul class="bullets">
+</ul>
+</li>-->
+
+<li><h3>Selected recent lab publications</h3>
+    
+<ul class="bullets">
+
+<ul>
+<li style="text-align: justify;">Strandburg-Peshkin, A., Twomey, C.R., Bode, N.W., Kao, A.B., Katz, Y., Ioannou, C.C., Rosenthal, S.B., Torney, C.J., Wu, H., Levin, S.A. &amp; Couzin, I.D. (2013) <a href="http://www.cell.com/current-biology/abstract/S0960-9822(13)00920-2">Visual sensory networks and effective information transfer in animal groups</a>,<strong> <em>Current</em></strong><em><strong> Biology </strong></em>23(17), R709-711<em>.</em></li>
+<li style="text-align: justify;">Miller, N., Garnier, S. &amp; Couzin, I.D. (2013) <a href="Miller,%20N.,%20Garnier,%20S.%20&amp;%20Couzin,%20I.D.%20(2013)%20Both%20information%20and%20social%20cohesion%20determine%20collective%20decisions%20in%20animal%20groups,%20PNAS,%20available%20early%20online.%20%20">Both information and social cohesion determine collective decisions in animal groups</a>,<strong> <em><strong>PNAS</strong></em><strong> </strong></strong>110(13), 5263-5268.</li>
+<li style="text-align: justify;">Berdahl, A., Torney, C.J., Ioannou, C.C., Faria, J. &amp; Couzin, I.D. (2013) <a href="http://www.sciencemag.org/content/339/6119/574.abstract">Emergent sensing of complex environments by mobile animal groups</a> <em><strong>Science </strong></em>339, 574-576. <em><em>FREE ACCESS from our main <a href="http://icouzin.princeton.edu/lab-publications/">publications page</a></em>.</em></li>
+<li style="text-align: justify;">Ioannou, C.C., Guttal, V. &amp; Couzin, I.D. (2012) <a href="http://www.sciencemag.org/content/337/6099/1212">Predatory fish select for coordinated collective motion in virtual prey</a>. <em><strong>Science </strong></em>337(6099), 1212-1215.<em> <em>FREE ACCESS from our main <a href="http://icouzin.princeton.edu/lab-publications/">publications page</a></em>.</em></li>
+<li style="text-align: justify;">Guttal, V., Romanczuk, P., Simpson, S.J., Sword, G.A. &amp; Couzin, I.D. (2012) <a href="http://onlinelibrary.wiley.com/doi/10.1111/j.1461-0248.2012.01840.x/abstract">Cannibalism as a driver of the evolution of behavioral phase polyphenism in locusts</a>. <em><strong>Ecology Letters</strong></em><strong> </strong>15, 1158-1166.</li>
+<li style="text-align: justify;">Handegard, N.O., Boswell, K.M., Ioannou, C.C., Leblanc, S.P., Tjøstheim, D.B. &amp; Couzin, I.D. (2012) <a href="http://www.cell.com/current-biology/abstract/S0960-9822(12)00470-8">The dynamics of coordinated group hunting and collective information-transfer among schooling prey</a>.<em><strong> Current Biology </strong></em>22(13), 1213-1217.</li>
+<li style="text-align: justify;">Gallup, A.C., Hale, J.J., Garnier, S., Sumpter, D.J.T., Kacelnik, A., Krebs, J. &amp; Couzin, I.D. (2012) <a href="http://www.pnas.org/content/early/2012/04/18/1116141109.full.pdf+html" target="_blank">Visual attention and the acquisition of information in human crowds</a>. <em><strong>PNAS </strong></em>109(9), 7245-7250. <a href="http://www.pnas.org/content/early/2012/04/18/1116141109.full.pdf+html" target="_blank">open access</a>.</li>
+<li style="text-align: justify;">Leonard, N.E., Shen, T., Nabet, B., Scardovi, L., Couzin, I.D &amp; Levin, S.A. (2012) <a href="http://www.pnas.org/content/early/2011/12/13/1118318108.abstract">Decision versus compromise for animal groups in motion</a>. <em><strong>PNAS </strong></em>109(1), 227-232.</li>
+<li style="text-align: justify;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">Couzin, I.D., Ioannou, C.C., Demirel, G., Gross, T., Torney, C.J., Hartnett, A., Conradt, L., Levin, S.A. &amp; Leonard, N.E. (2011) Uninformed individuals promote democratic consensus in animal groups, <em><strong>Science </strong></em><span style="font-size: 12px;">334(6062), 1578-1580. FREE ACCESS from our main <a href="http://icouzin.princeton.edu/lab-publications/">publications page</a>.</span></span></span></li>
+<li style="text-align: justify;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">Katz, Y., Ioannou, C.C., Tunstrom, K., Huepe, C. &amp; Couzin, I.D. (2011) Inferring the structure and dynamics of interactions in schooling fish, <em><strong>PNAS</strong></em>, Available early online and download here <a href="http://www.pnas.org/content/early/2011/07/26/1107583108.abstract"><strong>Open Access</strong></a></span></span></li>
+<li style="text-align: justify;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">Torney, C., Levin, S. A. &amp; Couzin, I. D. (2010) <a href="http://icouzin.princeton.edu/wp-content/uploads/file/PDFs/Torney%20et%20al,%202010.pdf">Specialization and evolutionary branching within migratory populations</a>. <em><strong>PNAS</strong></em> 107(47), 20394-20399.</span></span></li>
+<li style="text-align: justify;"><span style="font-size: 12px;"><span style="font-family: arial,helvetica,sans-serif;">Guttal, V. &amp; Couzin, I. D. (2010) <a href="http://icouzin.princeton.edu/wp-content/uploads/file/PDFs/Guttal%20and%20Couzin,%202010.pdf">Social interactions, information use and the evolution of collective migration</a>. <em><strong>PNAS</strong></em> 107(37), 16172-16177.</span></span></li>
+</ul>
+
+<div class="wp_rp_wrap  wp_rp_vertical_m" id="wp_rp_first"><div class="wp_rp_content"><h3 class="related_post_title">Related Posts</h3><ul class="related_post wp_rp" style="visibility: visible"><li ><a href="http://icouzin.princeton.edu/video-dynamics-of-group-hunting-and-collective-evasion/" class="wp_rp_title">Current Biology: The dynamics of group hunting and collective evasion</a></li><li ><a href="http://icouzin.princeton.edu/newer-science-paper-emergent-sensing-of-complex-environments-by-mobile-animal-groups/" class="wp_rp_title">Science paper: Emergent sensing of complex environments by mobile animal groups</a></li><li ><a href="http://icouzin.princeton.edu/collective-motion-and-decision-making-in-animal-groups/" class="wp_rp_title">Collective Motion and Decision-Making in Animal Groups</a></li><li ><a href="http://icouzin.princeton.edu/cannibalism-and-collective-behavior-in-swarming-insects/" class="wp_rp_title">Current Biology, PNAS: Cannibalism and collective behavior in swarming insects</a></li><li ><a href="http://icouzin.princeton.edu/media-attention-around-our-last-science-article/" class="wp_rp_title">Media attention following our recent Science paper</a></li></ul><div class="wp_rp_footer"><a class="wp_rp_backlink" target="_blank" href="http://www.zemanta.com/?wp-related-posts">Zemanta</a></div></div></div>
+    
+</ul>
+</li>
+
+
+<h2>In the same categories</h2>
+
+
+<li>
+<ul class="bullets">
+
+
+<li><a href="http://icouzin.princeton.edu/current-biology-visual-sensory-networks-and-effective-information-transfer-in-animal-groups/">Current Biology: Visual sensory networks and effective information transfer in animal groups</a></li>
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/newer-science-paper-emergent-sensing-of-complex-environments-by-mobile-animal-groups/">Science paper: Emergent sensing of complex environments by mobile animal groups</a></li>
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/video-dynamics-of-group-hunting-and-collective-evasion/">Current Biology: The dynamics of group hunting and collective evasion</a></li>
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/follow-my-eyes-information-transfer-in-human-crowds/">PNAS: Information transfer in human crowds</a></li>
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/leadership-collective-behavior-and-the-evolution-of-migration/">PNAS: Leadership, collective behavior, and the evolution of migration</a></li>
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/cannibalism-and-collective-behavior-in-swarming-insects/">Current Biology, PNAS: Cannibalism and collective behavior in swarming insects</a></li>
+
+
+
+
+</ul>
+</li>
+
+<li>
+<ul class="bullets">
+
+
+
+
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/media-attention-around-our-last-science-article/">Media attention following our recent Science paper</a></li>
+
+
+
+
+<li><a href="http://icouzin.princeton.edu/sepideh-bazazi-makes-the-cover-of-proceedings-of-the-royal-society-b/">Sepideh Bazazi makes the cover of Proceedings of the Royal Society B</a></li>
+
+
+
+
+</ul>
+</li>
+
+<li>
+<ul class="bullets">
+
+
+
+
+
+
+
+
+</ul>
+</li>
+
+
+
+<li><h3>Tags</h3>
+      <div id="tagcloud">
+        <a href='http://icouzin.princeton.edu/tag/algae/' class='tag-link-14' title='1 topic' style='font-size: 8pt;'>Algae</a>
+<a href='http://icouzin.princeton.edu/tag/argentine-ant/' class='tag-link-23' title='1 topic' style='font-size: 8pt;'>Argentine ant</a>
+<a href='http://icouzin.princeton.edu/tag/ars-technica/' class='tag-link-169' title='2 topics' style='font-size: 10pt;'>Ars Technica</a>
+<a href='http://icouzin.princeton.edu/tag/article/' class='tag-link-126' title='5 topics' style='font-size: 13.3333333333pt;'>Article</a>
+<a href='http://icouzin.princeton.edu/tag/bactariae/' class='tag-link-13' title='1 topic' style='font-size: 8pt;'>Bactariae</a>
+<a href='http://icouzin.princeton.edu/tag/behavior/' class='tag-link-63' title='2 topics' style='font-size: 10pt;'>Behavior</a>
+<a href='http://icouzin.princeton.edu/tag/cnn/' class='tag-link-197' title='2 topics' style='font-size: 10pt;'>CNN</a>
+<a href='http://icouzin.princeton.edu/tag/collective-behavior/' class='tag-link-177' title='2 topics' style='font-size: 10pt;'>collective behavior</a>
+<a href='http://icouzin.princeton.edu/tag/collective-behaviors/' class='tag-link-32' title='7 topics' style='font-size: 14.6666666667pt;'>Collective behaviors</a>
+<a href='http://icouzin.princeton.edu/tag/collective-cognition/' class='tag-link-31' title='2 topics' style='font-size: 10pt;'>Collective cognition</a>
+<a href='http://icouzin.princeton.edu/tag/collective-decision-making/' class='tag-link-87' title='2 topics' style='font-size: 10pt;'>Collective decision-making</a>
+<a href='http://icouzin.princeton.edu/tag/collective-migration/' class='tag-link-128' title='2 topics' style='font-size: 10pt;'>Collective migration</a>
+<a href='http://icouzin.princeton.edu/tag/consensus/' class='tag-link-44' title='2 topics' style='font-size: 10pt;'>consensus</a>
+<a href='http://icouzin.princeton.edu/tag/couzin/' class='tag-link-148' title='2 topics' style='font-size: 10pt;'>couzin</a>
+<a href='http://icouzin.princeton.edu/tag/couzinlab/' class='tag-link-84' title='2 topics' style='font-size: 10pt;'>CouzinLab</a>
+<a href='http://icouzin.princeton.edu/tag/crickets/' class='tag-link-39' title='2 topics' style='font-size: 10pt;'>Crickets</a>
+<a href='http://icouzin.princeton.edu/tag/desert-locust/' class='tag-link-160' title='2 topics' style='font-size: 10pt;'>Desert locust</a>
+<a href='http://icouzin.princeton.edu/tag/eeb-seminar/' class='tag-link-6' title='2 topics' style='font-size: 10pt;'>EEB seminar</a>
+<a href='http://icouzin.princeton.edu/tag/environmental-microfluidics-group/' class='tag-link-8' title='1 topic' style='font-size: 8pt;'>Environmental Microfluidics Group</a>
+<a href='http://icouzin.princeton.edu/tag/fish/' class='tag-link-45' title='2 topics' style='font-size: 10pt;'>fish</a>
+<a href='http://icouzin.princeton.edu/tag/fluid-dynamics/' class='tag-link-11' title='1 topic' style='font-size: 8pt;'>Fluid dynamics</a>
+<a href='http://icouzin.princeton.edu/tag/human-beings/' class='tag-link-69' title='2 topics' style='font-size: 10pt;'>Human beings</a>
+<a href='http://icouzin.princeton.edu/tag/iain-couzin/' class='tag-link-65' title='15 topics' style='font-size: 18pt;'>Iain Couzin</a>
+<a href='http://icouzin.princeton.edu/tag/image-analysis/' class='tag-link-18' title='1 topic' style='font-size: 8pt;'>Image analysis</a>
+<a href='http://icouzin.princeton.edu/tag/interview/' class='tag-link-66' title='3 topics' style='font-size: 11.3333333333pt;'>Interview</a>
+<a href='http://icouzin.princeton.edu/tag/john-d-sutter/' class='tag-link-201' title='2 topics' style='font-size: 10pt;'>John D. Sutter</a>
+<a href='http://icouzin.princeton.edu/tag/leadership/' class='tag-link-48' title='3 topics' style='font-size: 11.3333333333pt;'>leadership</a>
+<a href='http://icouzin.princeton.edu/tag/locusts/' class='tag-link-38' title='5 topics' style='font-size: 13.3333333333pt;'>Locusts</a>
+<a href='http://icouzin.princeton.edu/tag/media/' class='tag-link-64' title='2 topics' style='font-size: 10pt;'>Media</a>
+<a href='http://icouzin.princeton.edu/tag/microorganisms/' class='tag-link-12' title='1 topic' style='font-size: 8pt;'>Microorganisms</a>
+<a href='http://icouzin.princeton.edu/tag/microzooplankton/' class='tag-link-16' title='1 topic' style='font-size: 8pt;'>Microzooplankton</a>
+<a href='http://icouzin.princeton.edu/tag/mit/' class='tag-link-7' title='1 topic' style='font-size: 8pt;'>MIT</a>
+<a href='http://icouzin.princeton.edu/tag/models/' class='tag-link-29' title='2 topics' style='font-size: 10pt;'>Models</a>
+<a href='http://icouzin.princeton.edu/tag/network/' class='tag-link-22' title='1 topic' style='font-size: 8pt;'>Network</a>
+<a href='http://icouzin.princeton.edu/tag/pheromone/' class='tag-link-20' title='1 topic' style='font-size: 8pt;'>Pheromone</a>
+<a href='http://icouzin.princeton.edu/tag/poptech/' class='tag-link-185' title='2 topics' style='font-size: 10pt;'>PopTech</a>
+<a href='http://icouzin.princeton.edu/tag/postdoctoral-position/' class='tag-link-81' title='3 topics' style='font-size: 11.3333333333pt;'>Postdoctoral position</a>
+<a href='http://icouzin.princeton.edu/tag/protists/' class='tag-link-15' title='1 topic' style='font-size: 8pt;'>Protists</a>
+<a href='http://icouzin.princeton.edu/tag/roman-stocker/' class='tag-link-5' title='1 topic' style='font-size: 8pt;'>Roman Stocker</a>
+<a href='http://icouzin.princeton.edu/tag/schooling/' class='tag-link-35' title='3 topics' style='font-size: 11.3333333333pt;'>Schooling</a>
+<a href='http://icouzin.princeton.edu/tag/science/' class='tag-link-203' title='2 topics' style='font-size: 10pt;'>Science</a>
+<a href='http://icouzin.princeton.edu/tag/swarm/' class='tag-link-41' title='2 topics' style='font-size: 10pt;'>Swarm</a>
+<a href='http://icouzin.princeton.edu/tag/tracking/' class='tag-link-19' title='3 topics' style='font-size: 11.3333333333pt;'>Tracking</a>
+<a href='http://icouzin.princeton.edu/tag/trails/' class='tag-link-21' title='1 topic' style='font-size: 8pt;'>Trails</a>
+<a href='http://icouzin.princeton.edu/tag/videomicroscopy/' class='tag-link-17' title='1 topic' style='font-size: 8pt;'>Videomicroscopy</a>      </div>
+</li>
+
+
+    
+  <!--<li><h3>Latest comments</h3>
+      
+    
+<ul>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-on-wnyc-radiolab/#comment-24730" title="on Iain Couzin on WNYC Radiolab">Naples optician</a></strong>: The video was very informative, i feel grateful for sharing ...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-and-vishwesha-guttal-in-ny-times/#comment-18814" title="on Iain Couzin and Vishwesha Guttal in The NY Times">Floyd</a></strong>: Good stuff. It should be of interest that breeders of Icelan...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-and-vishwesha-guttal-in-ny-times/#comment-18813" title="on Iain Couzin and Vishwesha Guttal in The NY Times">Stewry</a></strong>: Fascinating post. I wonder when we will become so fragmented...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/pheromone-trail-networks-in-ants/#comment-18464" title="on Pheromone trail networks in ants">Komplexe Welt blog</a></strong>: Exciting research and an instructive example of how complexi...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-among-the-2010-brilliant-10/#comment-18453" title="on Iain Couzin among the 2010 "Brilliant 10"">Dan kang</a></strong>: Congratulations lain. You really deserve this honor. We had ...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-interview-by-jane-lee/#comment-18252" title="on Iain Couzin interview by Jane Lee">Felix Hunter</a></strong>: I have always been amazed at the precision, flexibility and ...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/leadership-collective-behavior-and-the-evolution-of-migration/#comment-17844" title="on PNAS: Leadership, collective behavior, and the evolution of migration">Elaine Dudley</a></strong>: &nbsp;
+So-called environmentally induced migration is multi...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-and-vishwesha-guttal-in-ny-times/#comment-8989" title="on Iain Couzin and Vishwesha Guttal in The NY Times">hola</a></strong>: great!!1...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/iain-couzin-at-the-secret-science-club/#comment-8003" title="on Iain Couzin at the Secret Science Club">The Green DIET</a></strong>: Some of the most mesmerizing examples of collective be...</li>
+	<li><strong><a href="http://icouzin.princeton.edu/high-performance-computing-for-massively-parallel-simulations-of-animal-group-behavior/#comment-2018" title="on High performance computing for massively parallel simulations of animal group behavior ">Simon Garnier</a></strong>: Hi Tom! 
+
+Thanks for your interest in our work. I have trans...</li>
+</ul></li>
+-->
+
+<li><h3>Monthly archives</h3>
+
+  <ul id="monthly-archives" class="bullets">
+  	<li><a href='http://icouzin.princeton.edu/2013/09/' title='September 2013'>September 2013</a></li>
+	<li><a href='http://icouzin.princeton.edu/2013/01/' title='January 2013'>January 2013</a></li>
+	<li><a href='http://icouzin.princeton.edu/2012/08/' title='August 2012'>August 2012</a></li>
+	<li><a href='http://icouzin.princeton.edu/2012/06/' title='June 2012'>June 2012</a></li>
+	<li><a href='http://icouzin.princeton.edu/2012/05/' title='May 2012'>May 2012</a></li>
+	<li><a href='http://icouzin.princeton.edu/2012/04/' title='April 2012'>April 2012</a></li>
+	<li><a href='http://icouzin.princeton.edu/2012/02/' title='February 2012'>February 2012</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/12/' title='December 2011'>December 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/08/' title='August 2011'>August 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/03/' title='March 2011'>March 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/02/' title='February 2011'>February 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2011/01/' title='January 2011'>January 2011</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/11/' title='November 2010'>November 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/10/' title='October 2010'>October 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/09/' title='September 2010'>September 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/07/' title='July 2010'>July 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/05/' title='May 2010'>May 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/04/' title='April 2010'>April 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/03/' title='March 2010'>March 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/02/' title='February 2010'>February 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2010/01/' title='January 2010'>January 2010</a></li>
+	<li><a href='http://icouzin.princeton.edu/2009/12/' title='December 2009'>December 2009</a></li>
+	<li><a href='http://icouzin.princeton.edu/2009/09/' title='September 2009'>September 2009</a></li>
+  </ul>
+</li>
+<li><h3>Links</h3>
+        <ul class="bullets">
+                <li><a href="http://iloapp.collective-behavior.com/blog/blog" rel="colleague" title="This is is a blog about collective behaviour. It is run by David Sumpter, Audrey Dussutour and Iain Couzin. Its a chance for researchers in the field to share news, ideas and information about research on behaviour of groups." target="_blank">Collective Behavior: From Cells to Animals to Us</a></li>
+<li><a href="http://www.ryanchisholm.com/games/locusts/Locusts.html" title="Computer game of our cannibal locusts!" target="_blank">Computer game of our cannibal locusts!</a></li>
+<li><a href="http://www.princeton.edu/eeb/" title="Website of the Department of Ecology and Evolutionary Biology" target="_blank">EEB Department</a></li>
+<li><a href="http://www.princeton.edu" title="Princeton University main website" target="_blank">Princeton University</a></li>
+        </ul>
+</li>
+
+</ul><!--END SIDELIST--> 
+</div><!--END SIDEBAR-->
+<div class="clear"></div>
+<hr id="fuck-ie" />
+</div>
+<div id="footer">
+  
+<div style="position:relative;">
+	<div class="wp_followme_c2">
+		<object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="32" height="160" id="wpFollowmeFlash">
+			<param name="movie" value="http://icouzin.princeton.edu/wp-content/plugins/wp-followme/flash/wp_followme.swf" />
+			<param name="allowfullscreen" value="false" />
+			<param name="allowscriptaccess" value="always" />
+			<param name="flashvars" value="twit_icon=http://icouzin.princeton.edu/wp-content/plugins/wp-followme/icons/7.png&amp;turl=https://twitter.com/icouzin&amp;twitmsg=Follow Iain&amp;twitmsgcolor=FFFFFF&amp;iconbgcolor=FFFFFF" />
+			<param name="bgcolor" value="#151515" />
+			<!--[if !IE]>-->
+			<object type="application/x-shockwave-flash" data="http://icouzin.princeton.edu/wp-content/plugins/wp-followme/flash/wp_followme.swf" width="32" height="160">
+				<param name="allowfullscreen" value="false" />
+				<param name="allowscriptaccess" value="always" />
+				<param name="flashvars" value="twit_icon=http://icouzin.princeton.edu/wp-content/plugins/wp-followme/icons/7.png&amp;turl=https://twitter.com/icouzin&amp;twitmsg=Follow Iain&amp;twitmsgcolor=FFFFFF&amp;iconbgcolor=FFFFFF" />
+				<param name="bgcolor" value="#151515" />
+				<!--<![endif]-->
+				<div class="getflash">
+					<a rel="nofollow" href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a>
+									</div><!--[if !IE]>-->
+			</object> <!--<![endif]-->
+		</object>
+	</div>
+</div>
+
+<script type='text/javascript' src='http://icouzin.princeton.edu/wp-content/plugins/connections/assets/js/jquery.preloader.min.js?ver=1.1'></script>
+<script type='text/javascript' src='http://icouzin.princeton.edu/wp-content/plugins/connections/assets/js/cn-user.min.js?ver=0.7.9.2'></script>
+<script type='text/javascript' src='http://icouzin.princeton.edu/wp-includes/js/swfobject.js?ver=2.2-20120417'></script>
+
+<script type="text/javascript">
+	swfobject.embedSWF("http://www.youtube.com/v/5BHHzN4wPbI&#038;rel=0&#038;fs=1&#038;showsearch=0&#038;showinfo=0", "vvq-1501-youtube-1", "600", "450", "10", vvqexpressinstall, vvqflashvars, vvqparams, vvqattributes);
+	swfobject.embedSWF("http://www.youtube.com/v/0IDPRuHVtHA&#038;rel=0&#038;fs=1&#038;showsearch=0&#038;showinfo=0", "vvq-1501-youtube-2", "600", "450", "10", vvqexpressinstall, vvqflashvars, vvqparams, vvqattributes);
+</script>
+  <!--&copy; 2013 <span class="url fn org">Couzin Lab &#8211; Collective Animal Behavior</span> | -->
+&copy; 2013 <span class="url fn org">Couzin Lab</span> | 
+<!--The following is optional address and contact information using Microformats:
+http://microformats.org/wiki/adr#Examples-->
+
+<!--<ul id="footer-nav" class="clearfloat">
+<li><a href="http://icouzin.princeton.edu/">Home</a></li> 
+<li class="page_item page-item-485"><a href="http://icouzin.princeton.edu/front-page-text/">Front page text</a></li>
+<li class="page_item page-item-628"><a href="http://icouzin.princeton.edu/in-the-news-front-page/">In the news (front page)</a></li>
+<li class="page_item page-item-7"><a href="http://icouzin.princeton.edu/lab-members/">Members</a></li>
+<li class="page_item page-item-494"><a href="http://icouzin.princeton.edu/latest-lab-publications/">Selected recent lab publications</a></li>
+<li class="page_item page-item-43"><a href="http://icouzin.princeton.edu/lab-research/">Research</a></li>
+<li class="page_item page-item-16"><a href="http://icouzin.princeton.edu/lab-publications/">Publications</a></li>
+<li class="page_item page-item-75"><a href="http://icouzin.princeton.edu/media-coverage/">Media coverage</a></li>
+<li class="page_item page-item-87"><a href="http://icouzin.princeton.edu/iain-couzin-cv/">Iain Couzin &#8211; CV</a></li>
+<li class="page_item page-item-255"><a href="http://icouzin.princeton.edu/contactfind-us/">Contact/Find us</a></li>
+</ul>| -->
+<a href="http://icouzin.princeton.edu/feed/">Articles (RSS)</a> | <a href="http://icouzin.princeton.edu/comments/feed/">Comments (RSS)</a> | Powered by <a href="http://wordpress.org/">WordPress</a> | Theme adapted from <a href="http://www.lyxia.org">Openbook by JBJ</a> | Administrator: <a href="http://simongarnier.com">Simon Garnier
+</div>
+</body>
+</html>

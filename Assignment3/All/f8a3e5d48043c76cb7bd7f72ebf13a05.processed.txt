@@ -1,0 +1,336 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Big-O notation and real-world performance
+
+   Classical Newtonian mechanics is always mathematically consistent.
+   However, Newtonian mechanics assumes that bodies move without friction
+   and that we stay far from the speed of light. When your car is stuck in
+   the mud or you are running an intergalactic spaceship, frictionless
+   Newtonian mechanics is the wrong model even though it remains
+   mathematically consistent. Why do we still use Newtonian mechanics?
+   Because it gets the job done in many practical cases.
+
+   Similarly, in computer science, we routinely analyze algorithms using
+   the [5]big-O notation. This notation is always mathematically
+   consistent. In this sense, it is always right.
+
+   However, most computer scientists and engineers use the big-O notation
+   as a model for real-world performance (at a high level). So if a
+   computer scientist tells you that algorithm X runs in time O(n^2)
+   whereas a algorithm Y runs in time O(n log n), you expect that for some
+   large but reasonable value of n and for some data, algorithm Y will be
+   faster than algorithm X. If it does not happen, it does not mean that
+   the big-O notation is mathematically wrong, but it means that it is
+   wrong as model for real-world performance. It must be rejected. That
+   is, the big-O notation does not model real-world performance and is not
+   useful as a scientific model. That's just like saying that if you run
+   an intergalactic spaceship, Newtonian mechanics is wrong. It is not up
+   to debate: Newtonian mechanics will simply fail to model how your
+   engine relate to the speed of your ship.
+
+   What do I mean by large but reasonable value of n? First we must agree
+   that there is a limit. Just consider that our solar system is finite.
+   We could spend all our ressources on a single massive computer, but it
+   would still be finite. Even if we were to expand the computer to
+   encompass all of the universe, it would still be finite. So there is
+   clearly a limit to how big n can be. In practice, this limit is set by
+   the practical problems we encounter. If, for your problems, n is too
+   small, then the big-O notation is the wrong model for you.
+
+   To make matters worse, nobody uses the same program to process 10KB and
+   to process 100TB of data. Suresh [6]summarizes the problem:
+
+     Asymptotics will eventually win out, as long as everything else
+     stays fixed. But that's the precise problem. Everything else doesn't
+     stay fixed. Well before your n log n algorithm beats the n ^2
+     algorithm, we run out of memory, or local cache, or something else,
+     and the computational model changes on us.
+
+   So even if your algorithm would eventually win out for a value of n
+   that is not outrageous, your asymptotic analysis can still be
+   irrelevant because larger values of n are handled with a different
+   architecture.
+
+   Ultimately, the big-O notation is a tremendously useful but crude tool.
+   It is great to convey broad ideas. It can help to explain some simple
+   decisions. For example, if you need to search an element in an array
+   and you expect the array to be large, you might just say that you opt
+   for a binary search instead of a sequential scan because the former has
+   O(log n) complexity wheres the latter has O(n) complexity. It is
+   unlikely that your colleagues will expect you to run benchmarks. In
+   this case, the big-O notation captures and summarizes our knowledge of
+   the problem.
+
+   However, when designing a software system, the fraction of your
+   decisions that rely on big-O analysis is small. Good engineers rely on
+   more sophisticated models and metrics. In this sense, it is unfair to
+   compare the big-O notation with Newtonian mechanics. The latter allows
+   you to model complex problems from start to finish with exact results
+   (under some assumptions that can be almost realized). The big-O
+   notation is far more limited in its applications. Of course, when it is
+   applicable, the big-O notation is tremendously powerful.
+   [7]Tweet
+   [8]Comments (16)
+
+   Related posts (automatically generated):
+     * [9]The big-O notation is a teaching tool
+
+16 Comments
+
+    1. This reminds me of my post, O(n) beats O(lg n) I wrote a while ago:
+       [10]http://willwhim.wpengine.com/2011/07/07/on-beats-olg-n/
+       Comment by [11]Will Fitzgerald -- 11/7/2013 @ [12]9:28
+    2. Further, Jeff Ulmann complained about people using easy test sets
+       that show their algorithm working, while, in the real word this
+       would not happen. Some, even cheat.
+       The same problem is with Big-O notation. Computer scientists derive
+       new estimates using clever mathematical tricks. The problem is that
+       these tricks introduce such enormous constants, so that (I believe)
+       a majority of Big-O published formulas are totally bogus.
+       They are mathematically correct, but you would never get a
+       sufficiently large n.
+       Comment by [13]Itman -- 11/7/2013 @ [14]22:42
+    3. I recently optimised an algorithm that was part of a scientist's
+       MATLAB program. I described how I did it to a computer scientist
+       who poured scorn on my work `Trival! It changes nothing in the
+       big-O sense'
+       The scientist, who's workflow was now many times faster, bought me
+       a case of wine.
+       Comment by [15]Mike Croucher -- 12/7/2013 @ [16]2:44
+    4. I think another way to say this is that for real world problems the
+       constant matters. If you really want to know what is faster you
+       need to work harder and get a sharp bound. Big-O just tells you how
+       the bound will scale with size. However, if the difference is
+       between O(log(n)) and O(n), then the ratio of constants must be
+       pretty big for log(n) not to win for any appreciable n.
+       Comment by [17]Carson Chow -- 12/7/2013 @ [18]11:54
+    5. @Carson Chow. The problem is that it is not always log(n) vs n.
+       Quite often it is log^3(n) or, say, log^5(n). (have a real example,
+       of course).
+       Comment by [19]Itman -- 12/7/2013 @ [20]12:22
+    6. Mike, you need to find a computer scientist to talk to who isn't an
+       idiot.
+       Comment by [21]John Regehr -- 12/7/2013 @ [22]12:47
+    7. In addition to this point, the smaller but important point is that
+       big-O gives only an upper bound, asymptotically, and not
+       necessarily a tight one. Use big-Omega for that. See
+       [23]http://mcw.wordpress.fos.auckland.ac.nz/2011/09/27/big-omicron-
+       and-big-omega-and-big-theta/
+       Comment by [24]Mark C. Wilson -- 12/7/2013 @ [25]13:34
+    8. So, if I may paraphrase, big O-notation is a mathematically very
+       useful notion that allows us to talk about algorithms very
+       reasonably, and often corresponds pretty directly to reality. But
+       you have to consider it with a grain of salt -- hidden constant
+       factors, the fact that it's asymptotic, it doesn't (by itself,
+       necessarily) take into account parallelism/caches/other hardware
+       issues all are things to worry about.
+       Great. My lecture in my algorithms class has all bases covered.
+       Comment by Michael Mitzenmacher -- 12/7/2013 @ [26]18:29
+    9. (Oh, and I forgot -- it's worst case analysis, not
+       average/typical/whatever your case is analysis. That's in my
+       lecture too.)
+       Comment by Michael Mitzenmacher -- 12/7/2013 @ [27]18:30
+   10. @Michael
+       I would hope that everything in this blog post is standard
+       knowledge and uncontroversial.
+       Comment by [28]Daniel Lemire -- 12/7/2013 @ [29]23:23
+   11. While I'd agree that the limitations of the O notation you describe
+       should be uncontroversial (and should be clearly taught with the
+       notation), I think you exaggerate when you say:
+       "However, when designing a software system, the fraction of your
+       decisions that rely on big-O analysis is small. Good engineers rely
+       on more sophisticated models and metrics."
+       and
+       "The big-O notation is far more limited in its applications."
+       In my experience, a great many basic decisions stem from
+       understanding what your code is doing at the level of counting
+       operations -- is it linear, quadratic, n log n, etc. -- and then
+       fine-tuning for constant factors.
+       So while I agree with all of your caveats, I think of O-notation as
+       not being useful as still an exceptional rather than common case.
+       Comment by Michael Mitzenmacher -- 12/7/2013 @ [30]23:45
+   12. Asymptotic analysis tends to be more relevant with polynomial
+       complexities than with (poly-)logarithmic ones. After all, log n ~=
+       30 is usually a reasonable estimate, while cache misses cost from
+       tens to hundreds of CPU cycles.
+       Comment by [31]Jouni -- 15/7/2013 @ [32]9:49
+   13. Jouni, as far as I remember (let anybody correct me if I am wrong),
+       quadratic time algorithm for suffix-tree(array) construction are
+       faster in practice than linear ones.
+       Comment by [33]Itman -- 15/7/2013 @ [34]10:07
+   14. Itman: A few years ago the fastest suffix array construction
+       algorithms (at least under some assumptions) were indeed O(n^2 log
+       n)-time. These days the fastest well-known implementation (under
+       similar assumptions) is Yuta Mori's libdivsufsort, which uses an
+       O(n log n)-time algorithm.
+       The caveat is that the benchmarks are usually done with small
+       inputs of up to ~100 MB in size. With such small inputs, memory
+       locality and various heuristic tricks play more important role than
+       in the multi-gigabyte range.
+       Comment by [35]Jouni -- 15/7/2013 @ [36]10:36
+   15. Jouni,
+       Thank you for the update. Yes, this may be the case. But, still, up
+       to a "small" 100 MB input, the quadratic beats the classic LINEAR.
+       Comment by [37]Itman -- 15/7/2013 @ [38]11:16
+   16. Itman: The quadratic complexities of those fast algorithms are
+       basically rough upper bounds. A reasonably straightforward
+       implementation of naive suffix sorting takes O(nL log n) time,
+       where L is the average LCP value. The fast "quadratic time"
+       algorithms basically improve upon this in two ways:
+       1) They identify a subset of suffixes, whose sorted order can be
+       used to induce the order of the rest of the suffixes. This
+       typically improves the running time by a constant factor.
+       2) They use some heuristics to identify long repetitions, and sort
+       them in some other way. There are known bad cases for some of the
+       heuristics, but even then the asymptotic complexity does not grow
+       over the naive O(nL log n). For other heuristics, neither bad cases
+       nor better time bounds are known.
+       Now consider a snapshot of the English language Wikipedia. In the
+       first tens of megabytes, the average LCP is in low tens. When we
+       increase dataset size to hundreds of megabytes or even a few
+       gigabytes, L increases into the 50-100 range. After that, L starts
+       to rise, reaching the 500-1000 range with dataset size in tens of
+       gigabytes.
+       Then consider the human genome. Due to the long runs of Ns (unknown
+       bases), the average LCP in the entire reference genome is in
+       hundreds of thousands. Yet this is exactly the kind of repetition
+       the heuristics in the quadratic algorithms can easily handle. If we
+       ignore the Ns, the average LCP drops below 100 for the most of the
+       chromosomes (I couldn't find the numbers for the entire genome).
+       In both cases, asymptotic analysis gives us reasons to believe that
+       the speed of the "quadratic" algorithms should be in the same
+       neighborhood as the linear and O(n log n)-time algorithms, at least
+       if we consider the typical ~100 MB test cases. Yet as the Wikipedia
+       example suggests, the situation may change with larger inputs.
+       Comment by [39]Jouni -- 15/7/2013 @ [40]23:28
+
+   Sorry, the comment form is closed at this time.
+   « « [41]Previous: Should computer scientists run experiments?
+   [42]Next: Honey bees are not going extinct » »
+
+   [43]« Blog's main page
+   Daniel Lemire's picture
+     * [44]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [45]Follow on Google Plus
+       22,500 followers
+     * twitter logo [46]Follow @lemire
+       4,000 followers
+     * Facebook logo [47]Follow on Facebook
+     * Google Scholar logo [48]Follow on Google Scholar
+     * Subscribe to this blog
+       - [49]in a reader,
+       - [50]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1415 posts and 5798 comments:
+       ____________________
+       Search
+     *
+          + [51]About me
+          + [52]Book recommendations
+          + [53]My readers
+          + [54]Terms of use
+          + [55]Write good papers
+     * Recent Comments:
+          + Stephen Downes on [56]Funding science: When bureaucrats get
+            out of control
+          + Stephen Downes on [57]Funding science: When bureaucrats get
+            out of control
+          + Djamé on [58]Funding science: When bureaucrats get out of
+            control
+          + Peter Turney on [59]Picking N distinct numbers at random: how
+            to do it fast?
+          + Peter Turney on [60]Picking N distinct numbers at random: how
+            to do it fast?
+     * Some popular posts
+          + [61]Why I still program
+          + [62]Emotions killing your intellectual productivity
+          + [63]Turn your weaknesses into strengths
+          + [64]It is not where you work, but who you work with
+     * [65]Home page
+       [66]Google Scholar profile
+       [67]arXiv
+       [68]DBLP
+
+   Powered by [69]WordPress
+
+   © 2004-2013, [70]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [71]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/atom
+   4. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/
+   5. http://en.wikipedia.org/wiki/Big_O_notation
+   6. http://geomblog.blogspot.ca/2012/05/in-long-run.html
+   7. https://twitter.com/share
+   8. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comments
+   9. http://lemire.me/blog/archives/2013/02/11/the-big-o-notation-is-a-teaching-tool/
+  10. http://willwhim.wpengine.com/2011/07/07/on-beats-olg-n/
+  11. http://willwhim.wpengine.com/
+  12. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89765
+  13. http://boytsov.info/
+  14. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89813
+  15. http://www.walkingrandomly.com/
+  16. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89823
+  17. http://sciencehouse.wordpress.com/
+  18. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89843
+  19. http://boytsov.info/
+  20. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89845
+  21. http://www.cs.utah.edu/~regehr/
+  22. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89848
+  23. http://mcw.wordpress.fos.auckland.ac.nz/2011/09/27/big-omicron-and-big-omega-and-big-theta/
+  24. http://mcw.wordpress.fos.auckland.ac.nz/
+  25. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89851
+  26. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89863
+  27. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89864
+  28. http://lemire.me/en/
+  29. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89884
+  30. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89887
+  31. http://iki.fi/jouni.siren/
+  32. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90038
+  33. http://boytsov.info/
+  34. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90040
+  35. http://iki.fi/jouni.siren/
+  36. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90043
+  37. http://boytsov.info/
+  38. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90047
+  39. http://iki.fi/jouni.siren/
+  40. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90075
+  41. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/
+  42. http://lemire.me/blog/archives/2013/07/26/honey-bees-are-not-going-extinct/
+  43. http://lemire.me/blog/
+  44. http://lemire.me/
+  45. https://plus.google.com/105888615414982242080/about
+  46. http://www.twitter.com/lemire/
+  47. http://www.facebook.com/daniel.lemire
+  48. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  49. http://lemire.me/blog/feed/
+  50. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  51. http://lemire.me/blog/about-me/
+  52. http://lemire.me/blog/book-recommendations/
+  53. http://lemire.me/blog/my-readers/
+  54. http://lemire.me/blog/terms-of-use/
+  55. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  56. http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/#comment-92052
+  57. http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/#comment-92050
+  58. http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/#comment-91999
+  59. http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/#comment-91807
+  60. http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/#comment-91806
+  61. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  62. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  63. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  64. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  65. http://lemire.me/en/
+  66. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  67. http://arxiv.org/a/lemire_d_1
+  68. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  69. http://wordpress.org/
+  70. http://lemire.me/en/
+  71. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  72. http://lemire.me/blog/feed/

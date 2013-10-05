@@ -1,0 +1,314 @@
+<html>
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortlink" href="/node/25" />
+<link rel="shortcut icon" href="http://searchivarius.org/sites/all/themes/searchivarius/favicon.ico" type="image/vnd.microsoft.icon" />
+<link rel="canonical" href="/blog/how-fast-are-our-math-libraries" />
+<script type="text/x-mathjax-config">MathJax.Hub.Config({
+  extensions: ["tex2jax.js"],
+  jax: ["input/TeX","output/HTML-CSS"],
+  tex2jax: {
+    inlineMath: [ ['$','$'], ['\\(','\\)'] ],
+    processEscapes: true
+  }
+});</script><meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="canonical" href="http://searchivarius.org/blog/how-fast-are-our-math-libraries" />
+  <title>How fast are our math libraries? | searchivarius.org</title>
+  <link type="text/css" rel="stylesheet" href="http://searchivarius.org/sites/default/files/css/css_pbm0lsQQJ7A7WCCIMgxLho6mI_kBNgznNUWmTWcnfoE.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://searchivarius.org/sites/default/files/css/css_MCEEDpYp-zvTZohrzrawqgbsU9PvV100Myg22Ptzedk.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://searchivarius.org/sites/default/files/css/css_wl84640YM3R4l6cwQLIoYS_YW27zMfZOfr0hcHKYYzo.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://searchivarius.org/sites/default/files/css/css_5Ves4oev8nIy1sU5w6XYp1s5qqyjQtXYH_J2GjSngHY.css" media="screen" />
+  <script type="text/javascript" src="http://searchivarius.org/sites/default/files/js/js_0gj6QcpfRH2jzTbCQqf7kEkm4MXY0UA_sRhwPc8jC1o.js"></script>
+<script type="text/javascript" src="http://searchivarius.org/sites/default/files/js/js_H7q2xORKmR9AN8Qx5spKEIBp7R_wG2apAswJoCUZY7I.js"></script>
+<script type="text/javascript" src="http://searchivarius.org/sites/default/files/js/js_WJS5ImJ1m0JOCLr6ftfyNNcWnimNwbJBOeqGq_vCtIQ.js"></script>
+<script type="text/javascript" src="https://c328740.ssl.cf1.rackcdn.com/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+<script type="text/javascript" src="http://searchivarius.org/sites/default/files/js/js_JoJD07dEkriGCcdGkhtUitt0DIjQT6QRtGj5TFpat6w.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-1825924-5"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://searchivarius.org/sites/default/files/js/js_NPVBvZfgwcrUZtEyuU-NtxCluoTuP7i_OpiWdWfJPVE.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"searchivarius","theme_token":"yjtSP88PkGca4gp3BywoCXbiJ0qCjtu0Uixdl_bAjak","js":{"sites\/all\/modules\/jquery_update\/replace\/jquery\/1.7\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/wikiext\/wikiext.js":1,"https:\/\/c328740.ssl.cf1.rackcdn.com\/mathjax\/latest\/MathJax.js?config=TeX-AMS-MML_HTMLorMML":1,"sites\/all\/modules\/form_save_state\/jquery.jnotify.min.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"misc\/textarea.js":1,"sites\/all\/modules\/mollom\/mollom.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/geshifilter\/geshifilter.css":1,"sites\/all\/modules\/social_buttons\/social_buttons.css":1,"sites\/all\/modules\/form_save_state\/jquery.jnotify.min.css":1,"sites\/all\/themes\/searchivarius\/css\/common.css":1,"sites\/all\/themes\/searchivarius\/css\/style.css":1}},"form_save_state":{"form_id":"comment-node-blog-form","time":"15","notify":1},"form_save_state_notifications":{"saved":"Data saved to local storage","restored":"Data restored from local storage to form","removed":"Data removed from local storage"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});
+//--><!]]>
+</script>
+</head>
+<body class="html not-front not-logged-in no-sidebars page-node page-node- page-node-25 node-type-blog" >
+<div style=" position:absolute;right:2px; top:2px"><a href="/user/register">register</a> | <a href="/user/login?destination=blog%2Fhow-fast-are-our-math-libraries">log in</a> | <a href="/contact">contact</a> | <a href="/about">about</a>&nbsp;</div>
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    
+  <div id="page-wrapper"><div id="page">
+
+    <div id="header"><div class="section clearfix">
+
+      
+    </div></div> <!-- /.section, /#header -->
+
+
+    <div id="main-wrapper"><div id="main" class="clearfix">
+
+      <div id="content" class="column"><div class="section">
+                <a id="main-content"></a>
+
+        <ul class="action-links"></ul>
+<table class=upt_style width="100%" border="0" cellpadding="0" cellspacing="0" >
+<tr>
+  <td height="24" valign="top"><table width="100%" height="24" border="0" cellpadding="0" cellspacing="0" id="menu1">
+    <tr>
+     <td align="left"><table height="24" border="0" cellpadding="0" cellspacing="0">
+       <tr><td><img src="/sites/all/themes/searchivarius/images/empty.gif" width="240" height="1"></td>
+         <td width="10"><img src="/sites/all/themes/searchivarius/images/menu.gif" width="10" height="24"></td>
+         <td valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_shadow_s.jpg" width="10" height="24"></td>
+
+         <td valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_cur_s.jpg" width="7" height="24"></td>
+         <td width="75" align="center" valign="bottom" background="/sites/all/themes/searchivarius/images/menu_cur_c.jpg"><div class="menu1_cur"><span class="menu1_cur">Blog</span></div><img src="/sites/all/themes/searchivarius/images/empty.gif" width="75" height="1"></td>
+         <td valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_cur_e.jpg" width="7" height="24"></td>
+
+         <td valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_s.jpg" width="7" height="24"></td>
+         <td width="75" align="center" valign="bottom" background="/sites/all/themes/searchivarius/images/menu_c.jpg"><div class="menu1"><span class="menu1"><a href="/dir/000" class="menu1">Directory</a></span></div><img src="/sites/all/themes/searchivarius/images/empty.gif" width="75" height="1"></td>
+         <td valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_e.jpg" width="7" height="24"></td>
+         <td valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_shadow_c.jpg" width="3" height="24"></td>
+
+         <td width="100%" valign="bottom"><img src="/sites/all/themes/searchivarius/images/menu_shadow_e.jpg" width="11" height="24"></td>
+
+     </tr>
+
+   </table></td>
+
+  </tr>
+
+ </table></td>
+
+</tr>
+<tr>
+
+    <td height="18" valign="top">
+
+    <table width="100%" height="18" border="0" cellpadding="0" cellspacing="0">
+
+      <tr>
+
+        <td width="80%" background="/sites/all/themes/searchivarius/images/search_bg.gif" bgcolor="#6385A5"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="20" height="1"></td>
+
+        <td width="20%" align="right" valign="middle" background="/sites/all/themes/searchivarius/images/search_bg.gif" bgcolor="#6385A5"><table height="1" border="0" cellpadding="2" cellspacing="0">
+
+            <tr> 
+<td></td><td></td></tr>
+
+          </table></td>
+
+        <td width="1" background="/sites/all/themes/searchivarius/images/search_bg.gif" bgcolor="#6385A5"><img src="/sites/all/themes/searchivarius/images/search_bg.gif" width="1" height="18">&nbsp;</td>
+
+      </tr>
+
+    </table>
+
+    </td>
+
+</tr>
+ <tr>
+
+    <td valign="top" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0">
+
+	<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0" id="content" ><!-- content and nav. menu table-->
+
+        <tr height="1">
+
+          <td width="0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="0" height="4"></td>
+
+          <td></td>
+
+        </tr>
+
+        <tr>
+          <td width="0" valign="top">
+
+	  <table width="100%" cellpadding="0" cellspacing="0"><!-- table for left, menu, part -->
+
+          <tr><td>
+
+        
+        </td></tr>
+
+	  </table>
+
+          </td>
+
+          <td valign="top"><!-- content part -->
+<table width="100%" height="100%" id="content"  border="0" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+
+        <tr> <td width="10" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="10" height="1"></td>
+
+              <td width="10"><img src="/sites/all/themes/searchivarius/images/page_ugol1.gif" width="10" height="10"></td>
+
+              <td height="10" background="/sites/all/themes/searchivarius/images/page_top.gif"><img src="/sites/all/themes/searchivarius/images/page_top.gif" width="2" height="10"></td>
+
+              <td width="9"><img src="/sites/all/themes/searchivarius/images/page_ugol2.gif" width="9" height="10"></td>
+
+              <td width="4" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="1" height="1"></td>
+
+            </tr>
+
+            <tr>
+
+              <td width="10" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="10" height="1"></td>
+
+              <td width="9" background="/sites/all/themes/searchivarius/images/page_left.gif"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="9" height="2"></td>
+
+              <td><table width="100%" height="100%" cellpadding="20"><tr><td valign="top" align="left">
+ 
+              <div id="breadcrumb"><h2 class="element-invisible">You are here</h2><div class="breadcrumb"><a href="/">Home</a> » <a href="/blog">Blogs</a> » <a href="/blogs/srchvrs">srchvrs&#039;s blog</a></div></div>
+<!-- begin content -->
+  <div class="region region-content">
+    <div id="block-system-main" class="block block-system">
+
+    
+  <div class="content">
+    <div id="node-25" class="node node-blog">
+
+  
+      
+      <span class="submitted">Submitted by <a href="/users/srchvrs" title="View user profile." class="username">srchvrs</a> on Wed, 04/03/2013 - 17:32</span>
+  
+  <div class="content clearfix">
+    <div class="field field-name-field-social-button field-type-social-buttons field-label-hidden"><div class="field-items"><div class="field-item even"><div class="social-bottons"><span class="social-botton"><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></span><span class="social-botton"><div class="g-plusone" data-size="medium"></div><script>(function() {var po = document.createElement("script"); po.type = "text/javascript"; po.async = true;po.src = "https://apis.google.com/js/plusone.js";var s = document.getElementsByTagName("script")[0]; s.parentNode.insertBefore(po, s);})();</script></span><span class="social-botton"><script src="//platform.linkedin.com/in.js" type="text/javascript"></script><script type="IN/Share" data-counter="right"></script></span></div></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even"><p>
+The GNU C++ compiler produces efficient code for multiple platforms. The Intel compiler is specialized for Intel processors and produces even more efficient, but Intel-specific code.  Yet, as some of us know, one does not get more than 10-20% improvement in most cases by switching from the GNU C++ compiler to the Intel compiler.<br />
+(The Intel compiler is free for non-commercial uses.)
+ </p>
+<p>
+There is at least one exception: programs that rely<br />
+heavily   on a math library. It is not surprising that users of the Intel math library   <a href="http://software.intel.com/en-us/intel-mkl">often enjoy almost a <b>two-fold</b> speedup  </a> over the GNU C++ library when they explicitly employ  highly vectorized, linear algebra, and statistical functions.  What is really amazing is that ordinary mathematical functions such as exp, cos, and sin can be computed <b>5-10</b> times faster by the Intel math library, apparently, without sacrificing accuracy.
+</p>
+<p>
+Intel claims a 1-2 order-magnitude speedup for <a href="http://software.intel.com/sites/products/documentation/hpc/mkl/vml/functions/_performanceall.html">all standard math functions</a>. To confirm this, I wrote simple benchmarks. They run on a modern Core i7 (3.4 GHz) processor in a single thread. The code (<a href="https://github.com/searchivarius/TestsCPP">available from GitHub</a>) generates random numbers that are used as arguments for various math functions. The intent of this is to represent plausible argument values. Intel also reports performance results for “working” argument intervals and admits that it can be quite expensive to compute functions (e.g.,  trigonometric) accurately for large argument values.
+</p>
+<p>
+For single-precision numbers (i.e., floats), the GNU library is capable of computing only 30-100 million mathematical functions per second, while the Intel math library completes 400-1500 million of operations per second. For instance, it can do 600 million exponentiations or 400 million computations of the sine function (with single-precision arguments). This is slower than Intel claims, but still an order of magnitude faster than the GNU library.
+</p>
+<p>
+Are there any accuracy tradeoffs? The Intel library can work in the high accuracy mode, in which, as Intel claims, <a href="http://software.intel.com/sites/products/documentation/hpc/mkl/vml/vmldata.htm">the functions should have an error of at most 1 ULP</a> (unit in the last place). Roughly speaking, the computed value may diverge from the exact one only in the last digit of mantissa. <a href="http://www.gnu.org/software/libc/manual/html_node/Errors-in-Math-Functions.html">For the GNU math library, the errors are known to be as high as 2 ULP</a>  (e.g., for the cosine function with a double-precision argument). In the lowest accuracy mode, additional order-of-magnitude speedups are possible. It appears that the Intel math library should be superior to the GNU library in all respects. Note, however, that I did not verify Intel accuracy claims and I appreciate any links in regard to this topic. In my experiments, to ensure that the library works in the high-accuracy mode, I make a special call: </p>
+<p></p><div class="geshifilter"><pre class="cpp geshifilter-cpp" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">vmlSetMode<span style="color: #008000;">(</span>VML_HA<span style="color: #008000;">)</span><span style="color: #008080;">;</span></div></li></ol></pre></div>
+<p>I came across the problem of math-library efficiency, because I needed to perform many exponentiations to integer powers.  There is a well-known approach <a href="http://en.wikipedia.org/wiki/Exponentiation_by_squaring">called exponentiation by squaring</a> and I hoped that the GNU math library implemented it efficiently. For example, to raise <i>x</i> to the power of 5, you first compute the square of <i>x</i> using one multiplication, and another multiplication to compute <i>x<sup>4</sup></i> (by squaring <i>x<sup>2</sup></i>). Finally, you can multiply <i>x<sup>4</sup></i> by <i>x</i> and return the result. The total number of multiplications is three. Note that the naive algorithm would need four multiplications.
+</p>
+<p>
+The function <b>pow</b> is <a href="http://en.wikipedia.org/wiki/Function_overloading">overloaded</a>, which means that there are several versions that serve arguments of different types.  I wanted to ensure that the correct, i.e., the efficient version was called. Therefore, I told the compiler that the second argument is an unsigned (i.e., non-negative) integer as follows:
+</p>
+<p></p><div class="geshifilter"><pre class="cpp geshifilter-cpp" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">y <span style="color: #000080;">=</span> <span style="color: #0000dd;">pow</span><span style="color: #008000;">(</span>x, <span style="color: #008000;">(</span><span style="color: #0000ff;">unsigned</span><span style="color: #008000;">)</span><span style="color: #0000dd;">5</span><span style="color: #008000;">)</span><span style="color: #008080;">;</span></div></li></ol></pre></div>
+<p>
+<b>Big mistake!</b> For the reason, which I cannot fully understand, this makes both compilers (Intel and GNU)  choose an inefficient algorithm. As <a href="https://github.com/searchivarius/TestsCPP">my benchmark shows (module testpow)</a>, it takes a modern Core i7 (3.4 GHz) processor almost <b>200 CPU</b> cycles to compute <i>x<sup>5</sup></i>. This is ridiculously slow, if you take into account that one multiplication can be done in one cycle (or less <a href="http://en.wikipedia.org/wiki/SSE2">if we use SSE</a>).
+</p>
+<p>
+So, the following handcrafted implementation outperforms the standard <b>pow</b>  by an order of magnitude (if the second argument is <b>explicitly</b> cast to unsigned):
+</p>
+<p></p><div class="geshifilter"><pre class="cpp geshifilter-cpp" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"><span style="color: #0000ff;">float</span> PowOptimPosExp0<span style="color: #008000;">(</span><span style="color: #0000ff;">float</span> Base, <span style="color: #0000ff;">unsigned</span> Exp<span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span><span style="color: #000040;">!</span>Exp<span style="color: #008000;">)</span> <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">1</span><span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">float</span> res <span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #000040;">--</span>Exp<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">while</span> <span style="color: #008000;">(</span>Exp<span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000040;">&amp;</span> <span style="color: #0000dd;">1</span><span style="color: #008000;">)</span> res <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Exp <span style="color: #000080;">&gt;&gt;=</span> <span style="color: #0000dd;">1</span><span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #008000;">}</span><span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">return</span> res<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"><span style="color: #008000;">}</span><span style="color: #008080;">;</span></div></li></ol></pre></div>
+<p></p><p>
+If we remove the explicit cast to unsigned, the code is rather fast even with the GNU math library:
+</p>
+<p></p><div class="geshifilter"><pre class="cpp geshifilter-cpp" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"><span style="color: #0000ff;">int</span> IntegerDegree<span style="color: #000080;">=</span><span style="color: #0000dd;">5</span><span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"><span style="color: #0000dd;">pow</span><span style="color: #008000;">(</span>x, IntegerDegree<span style="color: #008000;">)</span><span style="color: #008080;">;</span></div></li></ol></pre></div>
+<p>
+Yet, my handcrafted function is still 20-50% faster than the GNU <b>pow</b>.
+</p>
+<p>
+Turns out that it is also faster than the Intel's version. Can we make it even faster? One obvious reason for inefficiency are <b>branches.</b> Modern CPUs are gigantic conveyor belts that split a single operation into a sequence of dozens (if not hundreds) of micro operations. Branches may require the CPU to restart the conveyor, which is costly. In our case, it is beneficial to use only the forward branches. Each forward branch represents a single value of an integer exponent and contains the complete code to compute the function value. This code "knows" the exponent value and, thus, no additional branches are needed:
+</p>
+<p></p><div class="geshifilter"><pre class="cpp geshifilter-cpp" style="font-family:monospace;"><ol><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"><span style="color: #0000ff;">float</span> PowOptimPosExp1<span style="color: #008000;">(</span><span style="color: #0000ff;">float</span> Base, <span style="color: #0000ff;">unsigned</span> Exp<span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">0</span><span style="color: #008000;">)</span> <span style="color: #0000ff;">return</span> <span style="color: #0000dd;">1</span><span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">1</span><span style="color: #008000;">)</span> <span style="color: #0000ff;">return</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">2</span><span style="color: #008000;">)</span> <span style="color: #0000ff;">return</span> Base <span style="color: #000040;">*</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">3</span><span style="color: #008000;">)</span> <span style="color: #0000ff;">return</span> Base <span style="color: #000040;">*</span> Base <span style="color: #000040;">*</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">4</span><span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        <span style="color: #0000ff;">return</span> Base <span style="color: #000040;">*</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #008000;">}</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">float</span> res <span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">5</span><span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        <span style="color: #0000ff;">return</span> res <span style="color: #000040;">*</span> Base <span style="color: #000040;">*</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #008000;">}</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">6</span><span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        res <span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        <span style="color: #0000ff;">return</span> res <span style="color: #000040;">*</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #008000;">}</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">7</span><span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        res <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        <span style="color: #0000ff;">return</span> res <span style="color: #000040;">*</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #008000;">}</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"> </div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #0000ff;">if</span> <span style="color: #008000;">(</span>Exp <span style="color: #000080;">==</span> <span style="color: #0000dd;">8</span><span style="color: #008000;">)</span> <span style="color: #008000;">{</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: bold; font-style: italic;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        Base <span style="color: #000040;">*</span><span style="color: #000080;">=</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">        <span style="color: #0000ff;">return</span> Base<span style="color: #008080;">;</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">    <span style="color: #008000;">}</span></div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal">   …</div></li><li style="font-family: monospace; font-weight: normal;"><div style="font-family: monospace; font-weight: normal; font-style: normal"><span style="color: #008000;">}</span></div></li></ol></pre></div>
+<p> As a result, for the degrees 2-16, the Intel library performs 150-250 operations per second, while the customized version is capable of making 600-1200 exponentiations per second.
+</p>
+<p> <b>Acknowledgements:</b> I thank Nathan Kurz and Daniel Lemire for the discussion and valuable links; <a href="http://www.linkedin.com/pub/anna-belova/0/400/764/">Anna Belova</a> for editing the entry.
+</p>
+</div></div></div>  </div>
+
+  <div class="clearfix">
+          <div class="links"><ul class="links inline"><li class="blog_usernames_blog first last"><a href="/blogs/srchvrs" title="Read srchvrs&#039;s latest blog entries.">srchvrs&#039;s blog</a></li>
+</ul></div>
+        <div id="comments" class="comment-wrapper">
+  
+  
+      <h2 class="title comment-form">Add new comment</h2>
+    <form class="comment-form user-info-from-cookie" action="/comment/reply/25" method="post" id="comment-form" accept-charset="UTF-8"><div><div class="form-item form-type-textfield form-item-name">
+  <label for="edit-name">Your name </label>
+ <input type="text" id="edit-name" name="name" value="" size="30" maxlength="60" class="form-text" />
+</div>
+<div class="form-item form-type-textfield form-item-mail">
+  <label for="edit-mail">E-mail </label>
+ <input type="text" id="edit-mail" name="mail" value="" size="30" maxlength="64" class="form-text" />
+<div class="description">The content of this field is kept private and will not be shown publicly.</div>
+</div>
+<div class="form-item form-type-textfield form-item-homepage">
+  <label for="edit-homepage">Homepage </label>
+ <input type="text" id="edit-homepage" name="homepage" value="" size="30" maxlength="255" class="form-text" />
+</div>
+<div class="field-type-text-long field-name-comment-body field-widget-text-textarea form-wrapper" id="edit-comment-body"><div id="comment-body-add-more-wrapper"><div class="form-item form-type-textarea form-item-comment-body-und-0-value">
+  <label for="edit-comment-body-und-0-value">Comment <span class="form-required" title="This field is required.">*</span></label>
+ <div class="form-textarea-wrapper resizable"><textarea class="text-full form-textarea required" id="edit-comment-body-und-0-value" name="comment_body[und][0][value]" cols="60" rows="5"></textarea></div>
+</div>
+</div></div><input type="hidden" name="form_build_id" value="form-8Wp7LaPuSmwvJcPdUi6kvYx7tzMcQEsLqB7vxtSfZCU" />
+<input type="hidden" name="form_id" value="comment_node_blog_form" />
+<input class="mollom-content-id" type="hidden" name="mollom[contentId]" value="" />
+<input class="mollom-captcha-id" type="hidden" name="mollom[captchaId]" value="" />
+<div style="display: none;"><div class="form-item form-type-textfield form-item-mollom-homepage">
+ <input autocomplete="off" type="text" id="edit-mollom-homepage" name="mollom[homepage]" value="" size="60" maxlength="128" class="form-text" />
+</div>
+</div><div class="description mollom-privacy">By submitting this form, you accept the <a href="https://mollom.com/web-service-privacy-policy" class="mollom-target" rel="nofollow">Mollom privacy policy</a>.</div><div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Save" class="form-submit" /><input type="submit" id="edit-preview" name="op" value="Preview" class="form-submit" /></div></div></form>  </div>
+  </div>
+
+</div>
+<br><br>
+  </div>
+</div>
+  </div>
+
+<!-- end content -->
+</div>
+</td></tr></table></td>
+
+              <td width="9" background="/sites/all/themes/searchivarius/images/page_right.gif"><img src="/sites/all/themes/searchivarius/images/page_right.gif" width="9" height="2"></td>
+
+              <td width="4" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="4" height="1"></td>
+
+            </tr>
+
+            <tr>
+
+	      <td width="10" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="10" height="1"></td>
+
+              <td width="10"><img src="/sites/all/themes/searchivarius/images/page_ugol4.gif" width="10" height="10"></td>
+
+              <td height="10" background="/sites/all/themes/searchivarius/images/page_bottom.gif"><img src="/sites/all/themes/searchivarius/images/page_bottom.gif" width="2" height="10"></td>
+
+              <td width="9"><img src="/sites/all/themes/searchivarius/images/page_ugol3.gif" width="9" height="10"></td>
+
+              <td width="4" background="/sites/all/themes/searchivarius/images/page_bg.gif" bgcolor="#E5EAF0"><img src="/sites/all/themes/searchivarius/images/empty.gif" width="1" height="1"></td>
+
+            </tr>
+
+ </table>
+         </td>
+
+        </tr>
+
+      </table>
+
+      </td>
+
+  </tr>
+
+  <tr  bgcolor="#E5EAF0" background="/sites/all/themes/searchivarius/images/page_bg.gif"><td>
+
+  <img src="/sites/all/themes/searchivarius/images/empty.gif" width="3" height="3"></td><td></td>
+
+  </tr>
+
+</table>
+</div></div> <!-- /.section, /#content -->
+</div></div> <!-- /#main, /#main-wrapper -->
+<div id="footer"><div class="section">
+</div></div> <!-- /.section, /#footer -->
+</div></div> <!-- /#page, /#page-wrapper -->
+
+  </body>
+</html>

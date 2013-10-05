@@ -1,0 +1,977 @@
+   #[1]Computational Complexity - Atom [2]Computational Complexity - RSS
+   [3]Computational Complexity - Atom
+
+[4]Computational Complexity
+
+   Computational Complexity and other fun stuff in math and computer
+   science from Lance Fortnow and Bill Gasarch
+
+Friday, March 15, 2013
+
+Goodbye Old Friends
+
+   We had two terrible losses this week. Not people but websites,
+   [5]Intrade and [6]Google Reader.
+   [7][Picture1.png]
+   The corporate auditors for the real-money Irish prediction markets site
+   Intrade [8]found improprieties with payments to the late founder John
+   Delaney and have effectively shut down the site, probably for good. I
+   never bet money on Intrade but they made their bet data easily
+   available. I used Intrade data to power my [9]electoral markets map,
+   possibly the most accurate predictor of elections, at least until Nate
+   Silver came along. Even then our map updated in real time based on new
+   information reflected in market prices, while Nate had to wait for poll
+   data. I also used Intrade generated graphs of prediction market prices
+   in dozens of talks I've given over the past decade. There are [10]other
+   sites for prediction aggregation but painful to lose the granddaddy of
+   them all.
+   Google [11]announced it is closing down Google Reader, Google's
+   newsreader on July 1. I find Reader invaluable for keeping up with the
+   theory blogs, especially those that don't post that often (I'm looking
+   at you [12]Scott and [13]Luca) as well as a various collection of other
+   blogs and my daily Dilbert. Not to mention the 2241 people who
+   subscribe to this blog on Google Reader. There are alternatives (I'm
+   trying [14]Feedly) and I will be more vigilant on sharing posts on
+   [15]Twitter and [16]Google+ but the real question is to why do fewer
+   people use Google Reader. Is the flood of stuff on the Internet gotten
+   so large we don't even try to keep up with it?
+   Posted by [17]Lance Fortnow at [18]10:06 AM
+   [19]Email This[20]BlogThis![21]Share to Twitter[22]Share to Facebook
+
+13 comments:
+
+    1. [anon36.png]
+       [23]AfterMath[24]10:13 AM, March 15, 2013
+       The loss of Google Reader will hurt a lot of people. It's probably
+       the most blogged about thing I've seen across my newsfeed as
+       everyone's looking for new ways to stay updated on their set of
+       blogs.
+       [25]Reply[26]Delete
+    2. [anon36.png]
+       Anonymous[27]10:18 AM, March 15, 2013
+       Google Reader seems to have horrible memory usage. I used to keep a
+       tab devoted to it, but my browser memory use was creeping up to 1G,
+       1.5G, even 2G over time. I thought it was Firefox, but the same
+       thing happened with Chrome and Safari. I finally identified Google
+       Reader as the problem after some experimentation.
+       Not that most people would be aware of that, but it was a big
+       factor in me reducing my Reader use substantially. The other thing
+       is---yeah, I have more than 1000 unread posts and no intent to
+       catch up on them. There are really only a handful of things I keep
+       up with even in Reader. It's most useful for the ones that are
+       updated rarely and irregularly.
+       [28]Reply[29]Delete
+    3. [anon36.png]
+       Anonymous[30]11:09 AM, March 15, 2013
+       A friend of mine just suggested this Google Reader alternative:
+       http://theoldreader.com/
+       I've only briefly used it but it seems to be a simple design much
+       closer to Google Reader than flashier (but messier) websites such
+       as Feedly or NetVibes (which can be useful but are just different
+       products).
+       [31]Reply[32]Delete
+    4. [anon36.png]
+       Anonymous[33]11:13 AM, March 15, 2013
+       It is part of Google plan to force people to use G+. They have
+       tried it before. There is no other reason to shut it down when they
+       still have long forgotten useless sites Orkut running. Google
+       reader was popular but it has no place in Google's long term
+       strategy which is focused on G+.
+       [34]Reply[35]Delete
+    5. [gsk200506.jpg]
+       [36]Geoff Knauth[37]1:26 PM, March 15, 2013
+       I mainly use RSS to follow people like you who have interesting
+       blogs that can teach me something. So long as you still have an RSS
+       feed, I'll find an RSS client that can find your writing. If you
+       switch to a Twitter feed or G+, I'll make the transition.
+       Whatever's easiest for you.
+       [38]Reply[39]Delete
+       [40]Replies
+         1. [photo.jpg]
+            [41]Lance Fortnow[42]2:36 PM, March 15, 2013
+            We will have an RSS feed as long as Google's Blogger software
+            continues to publish RSS feeds. Take that for what it's worth.
+            [43]Delete
+            [44]Reply
+    6. [anon36.png]
+       Anonymous[45]3:11 PM, March 15, 2013
+       http://www.buzzfeed.com/jwherrman/google-reader-still-sends-far-mor
+       e-traffic-than-google
+       [46]Reply[47]Delete
+    7. [funny_picture_of_me.jpg]
+       [48]GASARCH[49]6:30 PM, March 15, 2013
+       Intrade had (has?) become part of the culture. I often hear things
+       like
+       `
+       ``well--- what does intrade say about that''
+       I will miss looking at it, though I never placed a bet.
+       [50]Reply[51]Delete
+    8. [anon36.png]
+       Anonymous[52]7:30 PM, March 15, 2013
+       Hey,
+       I don't mean to do any advertisement or something, but there's this
+       app named Pulse on iOs and android, which is free and which really
+       works great. But it's not really intended to grab 1000 blog feeds.
+       Too bad there's no rich client (yet?)
+       Djamé
+       [53]Reply[54]Delete
+    9. [photo.jpg]
+       [55]William Sewell[56]6:26 AM, March 16, 2013
+       Reader shutting down hit me pretty hard too. On the other hand it's
+       been pretty exciting looking at all the alternatives that I had
+       ignored in the past.
+       I've just started giving www.newsblur.com a spin; it seems pretty
+       good so far.
+       [57]Reply[58]Delete
+   10. [anon36.png]
+       Anonymous[59]6:46 PM, March 16, 2013
+       I don't know about exact comparisons of accuracy, but I had the
+       impression Andrew Tanenbaum's [60]predictions have also been as
+       accurate as Nate Silver's, and he has done this for two US
+       presidential elections in a row.
+       [61]Reply[62]Delete
+   11. [anon36.png]
+       Anonymous[63]11:15 PM, March 20, 2013
+       Another Google insider telling how too much focus on Google+ is
+       ruining Google's other products:
+       https://blogs.msdn.com/b/jw_on_tech/archive/2012/03/13/why-i-left-g
+       oogle.aspx
+       [64]Reply[65]Delete
+   12. [anon36.png]
+       [66]David P. Williamson[67]11:06 AM, March 22, 2013
+       I also switched to the Old Reader (http://theoldreader.com). Feedly
+       was just too flashy and organized info in a different way than I
+       was used to. It is possible to import your Google Reader
+       subscriptions, but the queue was quite long, so I just did it by
+       hand.
+       [68]Reply[69]Delete
+
+   [70]Add comment
+   [71]Load more...
+
+   [72]Newer Post [73]Older Post [74]Home
+   Subscribe to: [75]Post Comments (Atom)
+   [76]Tweets by @fortnow
+
+Popular Posts
+
+     * [77]The Annual Fall Jobs Post
+     * [78]On demand Publishing (guest post)
+     * [79]Myhill Nerode versus Pumping Lemma
+     * [80]Did YOU think the NSA could factor fast?
+     * [81]STOC CFP still delayed- but I was asked to pass this along
+     * [82]Cryptography and the NSA
+     * [83]Complexity and FOCS
+     * [84]tl;dr
+     * [85]Crystal Math- What NUMB3RS and BREAKING BAD both get wrong
+     * [86]Dealing with Death
+
+Blog Links
+
+     * [87]Bill's Home Page
+     * [88]Lance's Home Page
+     * [89]Videos
+     * [90]Podcast
+     * [91]Posts Feed
+     * [92]Comments Feed
+     * [93]Mailing List
+     * [94]CACM Viewpoint
+     * [95]Foundations of Complexity
+     * [96]Graduate Student Guide
+     * [97]Favorite Theorems
+
+Links
+
+     * [98]Favorite Complexity Books
+     * [99]TCS Q&A
+     * [100]Complexity on ArXiv
+     * [101]ECCC Paper Archive
+     * [102]Complexity Conference
+     * [103]Complexity Zoo
+     * [104]BEATCS Complexity Column
+     * [105]SIGACT
+     * [106]Theory Matters
+     * [107]AIP FYI
+     * [108]Parberry Speakers Guide
+     * [109]Parberry Referees Guide
+     * [110]DMANET/TheoryNet Announcements
+
+Blog List
+
+     * [111]0xDE
+       [112]WG 2013 CFP
+       4 days ago
+     * [113]A CS Professor's blog
+       [114]"à Pâques ou à la Trinité"
+       4 months ago
+     * [115]Algorithmic Game-Theory/Economics
+       [116]AGT lecture videos and notes
+       4 days ago
+     * [117]Analysis of Boolean Functions
+       [118]Chapter 9 exercises
+       1 week ago
+     * [119]Ars Mathematica
+       [120]A Generalized Fermat Equation
+       4 weeks ago
+     * [121]Bits and Pieces
+       [122]The End of Summers
+       2 weeks ago
+     * [123]COMPUTING RESEARCH POLICY BLOG
+       [124]Golden Goose Award Video
+       2 weeks ago
+     * [125]Ernie's 3D Pancakes
+       [126]Three talks at SOCG
+       3 months ago
+     * [127]Essays and Opinions by Oded Goldreich
+     * [128]Glencora Borradaile
+       [129]The power of a sysadmin
+       3 months ago
+     * [130]Gödel's Lost Letter and P=NP
+       [131]Stealing Strategies
+       2 days ago
+     * [132]Healthy Algorithms
+       [133]IHME Seminar: Captricity
+       23 hours ago
+     * [134]in theory
+       [135]So you are going to FOCS
+       3 days ago
+     * [136]kd-PhD
+       [137]What's the matter with MOOCs?
+       10 months ago
+     * [138]LEARNINGlover.com
+       [139]Polynomial Arithmetic
+       5 weeks ago
+     * [140]Machine Learning (Theory)
+       [141]No NY ML Symposium in 2013, and some good news
+       2 weeks ago
+     * [142]Michael Nielsen
+       [143]The artist and the machine
+       7 months ago
+     * [144]My Biased Coin
+       [145]Some Advice on Entrepreneurship from the AH meeting
+       2 days ago
+     * [146]My Brain is Open
+       [147]PolyTopix
+       1 month ago
+     * [148]my slice of pizza
+       [149]Federal Govt Shutdown, Fallout in Details
+       2 days ago
+     * [150]Oddhead Blog
+       [151]Last call: Postdoc positions at Microsoft Research NYC
+       8 months ago
+     * [152]Opinions of Doron Zeilberger
+     * [153]Paul Goldberg
+       [154]2 research posts in Algorithms and Complexity, Oxford
+       3 days ago
+     * [155]Process Algebra Diary
+       [156]Turing Machine Opera by Helsinki Skaala Opera
+       4 days ago
+     * [157]Random bits
+       [158]Undergraduate Research Opportunities this Summer
+       8 months ago
+     * [159]Shtetl-Optimized
+       [160]Five announcements
+       4 days ago
+     * [161]Speedup in Computational Complexity
+       [162]Levin's and Schnorr's optimality results
+       6 months ago
+     * [163]The Geomblog
+       [164]Call for tutorials at SIAM Data Mining
+       2 days ago
+     * [165]The MPC Lounge
+       [166]Workshop on Applied Multi-Party Computation (February 20-21,
+       2014, MSR Redmond)
+       2 months ago
+     * [167]the polylogblog
+       [168]Is it a blog? Or is it epsilon-far from being a blog?
+       2 weeks ago
+     * [169]What's new
+       [170]Polymath8: Writing the paper, III
+       1 week ago
+     * [171]Windows On Theory
+       [172]FOCS 2013 Registration
+       4 weeks ago
+
+Search This Blog
+
+   Loading...
+
+Blog Archive
+
+     * [173]v  [174]2013 (84)
+          + [175]|>  [176]October (1)
+          + [177]|>  [178]September (11)
+          + [179]|>  [180]August (9)
+          + [181]|>  [182]July (9)
+          + [183]|>  [184]June (8)
+          + [185]|>  [186]May (9)
+          + [187]|>  [188]April (10)
+          + [189]v  [190]March (9)
+               o [191]Counting Descriptions- a ``new'' complexity class
+               o [192]A Century of Erdo"s
+               o [193]The Slot Machine Theory of Paper Submissions
+               o [194]Will they use EasyPope to pick the Pope in 2050?
+               o [195]Goodbye Old Friends
+               o [196]Turing Award to Shafi and Silvio
+               o [197]What if they gave an exam and nobody came?
+               o [198]Opera and MOOCS
+               o [199]Do we ever NEED the adv pumping lemma for Reg
+                 lang...
+          + [200]|>  [201]February (9)
+          + [202]|>  [203]January (9)
+
+     * [204]|>  [205]2012 (132)
+          + [206]|>  [207]December (7)
+          + [208]|>  [209]November (9)
+          + [210]|>  [211]October (12)
+          + [212]|>  [213]September (10)
+          + [214]|>  [215]August (10)
+          + [216]|>  [217]July (9)
+          + [218]|>  [219]June (10)
+          + [220]|>  [221]May (12)
+          + [222]|>  [223]April (12)
+          + [224]|>  [225]March (15)
+          + [226]|>  [227]February (14)
+          + [228]|>  [229]January (12)
+
+     * [230]|>  [231]2011 (134)
+          + [232]|>  [233]December (10)
+          + [234]|>  [235]November (10)
+          + [236]|>  [237]October (12)
+          + [238]|>  [239]September (13)
+          + [240]|>  [241]August (10)
+          + [242]|>  [243]July (10)
+          + [244]|>  [245]June (14)
+          + [246]|>  [247]May (11)
+          + [248]|>  [249]April (12)
+          + [250]|>  [251]March (12)
+          + [252]|>  [253]February (11)
+          + [254]|>  [255]January (9)
+
+     * [256]|>  [257]2010 (193)
+          + [258]|>  [259]December (8)
+          + [260]|>  [261]November (12)
+          + [262]|>  [263]October (15)
+          + [264]|>  [265]September (14)
+          + [266]|>  [267]August (18)
+          + [268]|>  [269]July (16)
+          + [270]|>  [271]June (17)
+          + [272]|>  [273]May (20)
+          + [274]|>  [275]April (22)
+          + [276]|>  [277]March (20)
+          + [278]|>  [279]February (15)
+          + [280]|>  [281]January (16)
+
+     * [282]|>  [283]2009 (249)
+          + [284]|>  [285]December (16)
+          + [286]|>  [287]November (19)
+          + [288]|>  [289]October (23)
+          + [290]|>  [291]September (21)
+          + [292]|>  [293]August (21)
+          + [294]|>  [295]July (23)
+          + [296]|>  [297]June (23)
+          + [298]|>  [299]May (22)
+          + [300]|>  [301]April (21)
+          + [302]|>  [303]March (22)
+          + [304]|>  [305]February (20)
+          + [306]|>  [307]January (18)
+
+     * [308]|>  [309]2008 (253)
+          + [310]|>  [311]December (19)
+          + [312]|>  [313]November (18)
+          + [314]|>  [315]October (27)
+          + [316]|>  [317]September (21)
+          + [318]|>  [319]August (19)
+          + [320]|>  [321]July (22)
+          + [322]|>  [323]June (23)
+          + [324]|>  [325]May (23)
+          + [326]|>  [327]April (22)
+          + [328]|>  [329]March (20)
+          + [330]|>  [331]February (21)
+          + [332]|>  [333]January (18)
+
+     * [334]|>  [335]2007 (159)
+          + [336]|>  [337]December (10)
+          + [338]|>  [339]November (15)
+          + [340]|>  [341]October (18)
+          + [342]|>  [343]September (10)
+          + [344]|>  [345]August (13)
+          + [346]|>  [347]July (11)
+          + [348]|>  [349]June (8)
+          + [350]|>  [351]May (8)
+          + [352]|>  [353]April (7)
+          + [354]|>  [355]March (16)
+          + [356]|>  [357]February (20)
+          + [358]|>  [359]January (23)
+
+     * [360]|>  [361]2006 (238)
+          + [362]|>  [363]December (18)
+          + [364]|>  [365]November (22)
+          + [366]|>  [367]October (22)
+          + [368]|>  [369]September (19)
+          + [370]|>  [371]August (24)
+          + [372]|>  [373]July (18)
+          + [374]|>  [375]June (18)
+          + [376]|>  [377]May (18)
+          + [378]|>  [379]April (18)
+          + [380]|>  [381]March (21)
+          + [382]|>  [383]February (20)
+          + [384]|>  [385]January (20)
+
+     * [386]|>  [387]2005 (237)
+          + [388]|>  [389]December (18)
+          + [390]|>  [391]November (20)
+          + [392]|>  [393]October (24)
+          + [394]|>  [395]September (19)
+          + [396]|>  [397]August (22)
+          + [398]|>  [399]July (17)
+          + [400]|>  [401]June (19)
+          + [402]|>  [403]May (21)
+          + [404]|>  [405]April (19)
+          + [406]|>  [407]March (17)
+          + [408]|>  [409]February (17)
+          + [410]|>  [411]January (24)
+
+     * [412]|>  [413]2004 (200)
+          + [414]|>  [415]December (18)
+          + [416]|>  [417]November (16)
+          + [418]|>  [419]October (19)
+          + [420]|>  [421]September (15)
+          + [422]|>  [423]August (16)
+          + [424]|>  [425]July (15)
+          + [426]|>  [427]June (18)
+          + [428]|>  [429]May (13)
+          + [430]|>  [431]April (13)
+          + [432]|>  [433]March (17)
+          + [434]|>  [435]February (16)
+          + [436]|>  [437]January (24)
+
+     * [438]|>  [439]2003 (149)
+          + [440]|>  [441]December (13)
+          + [442]|>  [443]November (12)
+          + [444]|>  [445]October (15)
+          + [446]|>  [447]September (11)
+          + [448]|>  [449]August (7)
+          + [450]|>  [451]July (11)
+          + [452]|>  [453]June (13)
+          + [454]|>  [455]May (10)
+          + [456]|>  [457]April (15)
+          + [458]|>  [459]March (15)
+          + [460]|>  [461]February (11)
+          + [462]|>  [463]January (16)
+
+     * [464]|>  [465]2002 (76)
+          + [466]|>  [467]December (20)
+          + [468]|>  [469]November (17)
+          + [470]|>  [471]October (15)
+          + [472]|>  [473]September (18)
+          + [474]|>  [475]August (6)
+
+   [476]Creative Commons License
+   Computational Complexity Weblog by [477]Lance Fortnow and William
+   Gasarch is licensed under a [478]Creative Commons
+   Attribution-NonCommercial 3.0 Unported License.
+   Quantcast
+   Awesome Inc. template. Powered by [479]Blogger.
+
+References
+
+   Visible links
+   1. http://blog.computationalcomplexity.org/feeds/posts/default
+   2. http://blog.computationalcomplexity.org/feeds/posts/default?alt=rss
+   3. http://blog.computationalcomplexity.org/feeds/9095084023924864357/comments/default
+   4. http://blog.computationalcomplexity.org/
+   5. http://intrade.com/
+   6. http://www.google.com/reader/
+   7. http://3.bp.blogspot.com/-1g4PuP1ZUKM/UUM0HcmOycI/AAAAAAAACZU/dJoMT_AlP4g/s1600/Picture1.png
+   8. http://dealbook.nytimes.com/2013/03/11/online-betting-site-intrade-halts-operations/
+   9. http://electoralmarkets.com/fixed/
+  10. http://predictwise.com/
+  11. http://googlereader.blogspot.com/2013/03/powering-down-google-reader.html
+  12. http://www.scottaaronson.com/blog/
+  13. http://lucatrevisan.wordpress.com/
+  14. http://feedly.com/
+  15. http://twitter.com/fortnow
+  16. http://profiles.google.com/fortnow
+  17. https://plus.google.com/101693130490639305932
+  18. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html
+  19. http://www.blogger.com/share-post.g?blogID=3722233&postID=9095084023924864357&target=email
+  20. http://www.blogger.com/share-post.g?blogID=3722233&postID=9095084023924864357&target=blog
+  21. http://www.blogger.com/share-post.g?blogID=3722233&postID=9095084023924864357&target=twitter
+  22. http://www.blogger.com/share-post.g?blogID=3722233&postID=9095084023924864357&target=facebook
+  23. http://www.learninglover.com/
+  24. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363360414142#c8085356245287877392
+  25. javascript:;
+  26. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=8085356245287877392
+  27. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363360713881#c2043634077432926102
+  28. javascript:;
+  29. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=2043634077432926102
+  30. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363363758400#c7536990306762157711
+  31. javascript:;
+  32. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=7536990306762157711
+  33. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363363987896#c6764207493850942075
+  34. javascript:;
+  35. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=6764207493850942075
+  36. http://www.blogger.com/profile/12025560607512616605
+  37. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363372014093#c5235860320526248280
+  38. javascript:;
+  39. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=5235860320526248280
+  40. javascript:;
+  41. http://www.blogger.com/profile/06752030912874378610
+  42. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363376164574#c291181095647013035
+  43. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=291181095647013035
+  44. javascript:;
+  45. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363378290759#c3910116120054190245
+  46. javascript:;
+  47. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=3910116120054190245
+  48. http://www.blogger.com/profile/06134382469361359081
+  49. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363390203560#c4402907491186832796
+  50. javascript:;
+  51. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=4402907491186832796
+  52. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363393856018#c2199833027856220976
+  53. javascript:;
+  54. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=2199833027856220976
+  55. http://www.blogger.com/profile/05145080453341944629
+  56. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363433180688#c1883738573756651866
+  57. javascript:;
+  58. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=1883738573756651866
+  59. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363477574752#c2230509531642665432
+  60. http://electoral-vote.com/
+  61. javascript:;
+  62. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=2230509531642665432
+  63. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363839316373#c4113985517746574767
+  64. javascript:;
+  65. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=4113985517746574767
+  66. http://www.davidpwilliamson.net/work
+  67. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html?showComment=1363968412819#c1733059300709026451
+  68. javascript:;
+  69. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=1733059300709026451
+  70. javascript:;
+  71. javascript:;
+  72. http://blog.computationalcomplexity.org/2013/03/will-they-use-easypope-to-pick-pope-in.html
+  73. http://blog.computationalcomplexity.org/2013/03/turing-award-to-shafi-and-silvio.html
+  74. http://blog.computationalcomplexity.org/
+  75. http://blog.computationalcomplexity.org/feeds/9095084023924864357/comments/default
+  76. https://twitter.com/fortnow
+  77. http://blog.computationalcomplexity.org/2011/11/annual-fall-jobs-post.html
+  78. http://blog.computationalcomplexity.org/2011/05/on-demand-publishing-guest-post.html
+  79. http://blog.computationalcomplexity.org/2013/09/myhill-nerode-versus-pumping-lemma.html
+  80. http://blog.computationalcomplexity.org/2013/09/did-you-think-nsa-could-factor-fast.html
+  81. http://blog.computationalcomplexity.org/2013/09/stoc-cfp-still-delayed-but-i-was-asked.html
+  82. http://blog.computationalcomplexity.org/2013/09/cryptography-and-nsa.html
+  83. http://blog.computationalcomplexity.org/2013/09/complexity-and-focs.html
+  84. http://blog.computationalcomplexity.org/2013/09/tldr.html
+  85. http://blog.computationalcomplexity.org/2013/09/crystal-math-what-numb3rs-and-breaking.html
+  86. http://blog.computationalcomplexity.org/2013/09/dealing-with-death.html
+  87. http://www.cs.umd.edu/~gasarch/
+  88. http://lance.fortnow.com/
+  89. http://www.youtube.com/user/fortnow
+  90. http://blog.computationalcomplexity.org/podcast.xml
+  91. http://blog.computationalcomplexity.org/rss.xml
+  92. http://www.blogger.com/feeds/3722233/comments/default
+  93. http://groups.yahoo.com/group/complexityweblog
+  94. http://blog.computationalcomplexity.org/2009/07/time-for-computer-science-to-grow-up.html
+  95. http://blog.computationalcomplexity.org/2009/05/foundations-of-complexity.html
+  96. http://blog.computationalcomplexity.org/2007/02/graduate-student-guide.html
+  97. http://blog.computationalcomplexity.org/2006/12/favorite-theorems-second-decade-recap.html
+  98. http://www.amazon.com/exec/obidos/redirect?tag=computation09-20&path=tg/listmania/list-browse/-/22R1UX0Y9YRT2/ref=cm_aya_lm_title.more
+  99. http://cstheory.stackexchange.com/
+ 100. http://arxiv.org/list/cs.CC/recent
+ 101. http://www.eccc.uni-trier.de/eccc
+ 102. http://www.computationalcomplexity.org/
+ 103. http://qwiki.stanford.edu/index.php/Complexity_Zoo
+ 104. http://theorie.informatik.uni-ulm.de/Personen/toran/beatcs/
+ 105. http://sigact.acm.org/
+ 106. http://theorymatters.org/
+ 107. http://www.aip.org/fyi/
+ 108. http://www.eng.unt.edu/ian/pubs/speaker.pdf
+ 109. http://www.eng.unt.edu/ian/pubs/referee.pdf
+ 110. http://dmatheorynet.blogspot.com/
+ 111. http://11011110.livejournal.com/
+ 112. http://11011110.livejournal.com/276984.html
+ 113. http://teachingintrotocs.blogspot.com/
+ 114. http://teachingintrotocs.blogspot.com/2013/05/paques-ou-la-trinite.html
+ 115. https://agtb.wordpress.com/
+ 116. https://agtb.wordpress.com/2013/09/30/agt-lecture-videos-and-notes/
+ 117. http://www.contrib.andrew.cmu.edu/~ryanod
+ 118. http://www.contrib.andrew.cmu.edu/~ryanod/?p=1501
+ 119. http://www.arsmathematica.net/
+ 120. http://www.arsmathematica.net/?p=1686
+ 121. http://harry-lewis.blogspot.com/
+ 122. http://harry-lewis.blogspot.com/2013/09/the-end-of-summers.html
+ 123. http://cra.org/govaffairs/blog
+ 124. http://feedproxy.google.com/~r/cra/WxKq/~3/XmEQk3JMHMM/
+ 125. http://3dpancakes.typepad.com/ernie/
+ 126. http://3dpancakes.typepad.com/ernie/2013/06/three-talks-at-socg.html
+ 127. http://www.wisdom.weizmann.ac.il/~oded/essays.html
+ 128. http://blogs.oregonstate.edu/glencora
+ 129. http://blogs.oregonstate.edu/glencora/2013/06/10/the-power-of-a-sysadmin/
+ 130. http://rjlipton.wordpress.com/
+ 131. http://rjlipton.wordpress.com/2013/10/02/stealing-strategies/
+ 132. http://healthyalgorithms.com/
+ 133. http://healthyalgorithms.com/2013/10/04/ihme-seminar-captricity/
+ 134. http://lucatrevisan.wordpress.com/
+ 135. http://lucatrevisan.wordpress.com/2013/10/01/so-you-are-going-to-focs-2/
+ 136. http://kdphd.blogspot.com/
+ 137. http://kdphd.blogspot.com/2012/11/whats-matter-with-moocs.html
+ 138. http://learninglover.com/blog
+ 139. http://learninglover.com/blog/?p=656
+ 140. http://hunch.net/
+ 141. http://hunch.net/?p=2674
+ 142. http://michaelnielsen.org/blog
+ 143. http://feedproxy.google.com/~r/michaelnielsen/wmna/~3/5CXu218UGDo/
+ 144. http://mybiasedcoin.blogspot.com/
+ 145. http://mybiasedcoin.blogspot.com/2013/10/some-advice-on-entrepreneurship-from-ah.html
+ 146. http://kintali.wordpress.com/
+ 147. http://kintali.wordpress.com/2013/08/19/polytopix/
+ 148. http://mysliceofpizza.blogspot.com/
+ 149. http://mysliceofpizza.blogspot.com/2013/10/federal-govt-shutdown-fallout-in-details.html
+ 150. http://blog.oddhead.com/
+ 151. http://blog.oddhead.com/2013/01/11/last-call-postdoc-positions-at-microsoft-research-nyc/
+ 152. http://www.math.rutgers.edu/~zeilberg/OPINIONS.html
+ 153. http://paulwgoldberg.blogspot.com/
+ 154. http://paulwgoldberg.blogspot.com/2013/10/2-research-posts-in-algorithms-and.html
+ 155. http://processalgebra.blogspot.com/
+ 156. http://processalgebra.blogspot.com/2013/09/turing-machine-opera-by-helsinki-skaala.html
+ 157. http://jonkatz.wordpress.com/
+ 158. http://jonkatz.wordpress.com/2013/02/01/undergraduate-research-opportunities-this-summer/
+ 159. http://www.scottaaronson.com/blog
+ 160. http://www.scottaaronson.com/blog/?p=1552
+ 161. http://speedupblogger.wordpress.com/
+ 162. http://speedupblogger.wordpress.com/2013/03/22/levins-and-schnorrs-optimality-results/
+ 163. http://geomblog.blogspot.com/
+ 164. http://feedproxy.google.com/~r/TheGeomblog/~3/VJgRLi_IHhg/call-for-tutorials-at-siam-data-mining.html
+ 165. http://mpclounge.wordpress.com/
+ 166. http://mpclounge.wordpress.com/2013/07/29/workshop-on-applied-multi-party-computation-february-20-21-2014-msr-redmond/
+ 167. http://polylogblog.wordpress.com/
+ 168. http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/
+ 169. http://terrytao.wordpress.com/
+ 170. http://terrytao.wordpress.com/2013/09/22/polymath8-writing-the-paper-iii/
+ 171. http://windowsontheory.org/
+ 172. http://windowsontheory.org/2013/09/05/focs-2013-registration/
+ 173. javascript:void(0)
+ 174. http://blog.computationalcomplexity.org/search?updated-min=2013-01-01T00:00:00-06:00&updated-max=2014-01-01T00:00:00-06:00&max-results=50
+ 175. javascript:void(0)
+ 176. http://blog.computationalcomplexity.org/2013_10_01_archive.html
+ 177. javascript:void(0)
+ 178. http://blog.computationalcomplexity.org/2013_09_01_archive.html
+ 179. javascript:void(0)
+ 180. http://blog.computationalcomplexity.org/2013_08_01_archive.html
+ 181. javascript:void(0)
+ 182. http://blog.computationalcomplexity.org/2013_07_01_archive.html
+ 183. javascript:void(0)
+ 184. http://blog.computationalcomplexity.org/2013_06_01_archive.html
+ 185. javascript:void(0)
+ 186. http://blog.computationalcomplexity.org/2013_05_01_archive.html
+ 187. javascript:void(0)
+ 188. http://blog.computationalcomplexity.org/2013_04_01_archive.html
+ 189. javascript:void(0)
+ 190. http://blog.computationalcomplexity.org/2013_03_01_archive.html
+ 191. http://blog.computationalcomplexity.org/2013/03/counting-descriptions-new-complexity.html
+ 192. http://blog.computationalcomplexity.org/2013/03/a-century-of-erdos.html
+ 193. http://blog.computationalcomplexity.org/2013/03/the-slot-machine-theory-of-paper.html
+ 194. http://blog.computationalcomplexity.org/2013/03/will-they-use-easypope-to-pick-pope-in.html
+ 195. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html
+ 196. http://blog.computationalcomplexity.org/2013/03/turing-award-to-shafi-and-silvio.html
+ 197. http://blog.computationalcomplexity.org/2013/03/what-if-they-gave-exam-and-nobody-came.html
+ 198. http://blog.computationalcomplexity.org/2013/03/opera-and-moocs.html
+ 199. http://blog.computationalcomplexity.org/2013/03/do-we-ever-need-adv-pumping-lemma-for_5791.html
+ 200. javascript:void(0)
+ 201. http://blog.computationalcomplexity.org/2013_02_01_archive.html
+ 202. javascript:void(0)
+ 203. http://blog.computationalcomplexity.org/2013_01_01_archive.html
+ 204. javascript:void(0)
+ 205. http://blog.computationalcomplexity.org/search?updated-min=2012-01-01T00:00:00-06:00&updated-max=2013-01-01T00:00:00-06:00&max-results=50
+ 206. javascript:void(0)
+ 207. http://blog.computationalcomplexity.org/2012_12_01_archive.html
+ 208. javascript:void(0)
+ 209. http://blog.computationalcomplexity.org/2012_11_01_archive.html
+ 210. javascript:void(0)
+ 211. http://blog.computationalcomplexity.org/2012_10_01_archive.html
+ 212. javascript:void(0)
+ 213. http://blog.computationalcomplexity.org/2012_09_01_archive.html
+ 214. javascript:void(0)
+ 215. http://blog.computationalcomplexity.org/2012_08_01_archive.html
+ 216. javascript:void(0)
+ 217. http://blog.computationalcomplexity.org/2012_07_01_archive.html
+ 218. javascript:void(0)
+ 219. http://blog.computationalcomplexity.org/2012_06_01_archive.html
+ 220. javascript:void(0)
+ 221. http://blog.computationalcomplexity.org/2012_05_01_archive.html
+ 222. javascript:void(0)
+ 223. http://blog.computationalcomplexity.org/2012_04_01_archive.html
+ 224. javascript:void(0)
+ 225. http://blog.computationalcomplexity.org/2012_03_01_archive.html
+ 226. javascript:void(0)
+ 227. http://blog.computationalcomplexity.org/2012_02_01_archive.html
+ 228. javascript:void(0)
+ 229. http://blog.computationalcomplexity.org/2012_01_01_archive.html
+ 230. javascript:void(0)
+ 231. http://blog.computationalcomplexity.org/search?updated-min=2011-01-01T00:00:00-06:00&updated-max=2012-01-01T00:00:00-06:00&max-results=50
+ 232. javascript:void(0)
+ 233. http://blog.computationalcomplexity.org/2011_12_01_archive.html
+ 234. javascript:void(0)
+ 235. http://blog.computationalcomplexity.org/2011_11_01_archive.html
+ 236. javascript:void(0)
+ 237. http://blog.computationalcomplexity.org/2011_10_01_archive.html
+ 238. javascript:void(0)
+ 239. http://blog.computationalcomplexity.org/2011_09_01_archive.html
+ 240. javascript:void(0)
+ 241. http://blog.computationalcomplexity.org/2011_08_01_archive.html
+ 242. javascript:void(0)
+ 243. http://blog.computationalcomplexity.org/2011_07_01_archive.html
+ 244. javascript:void(0)
+ 245. http://blog.computationalcomplexity.org/2011_06_01_archive.html
+ 246. javascript:void(0)
+ 247. http://blog.computationalcomplexity.org/2011_05_01_archive.html
+ 248. javascript:void(0)
+ 249. http://blog.computationalcomplexity.org/2011_04_01_archive.html
+ 250. javascript:void(0)
+ 251. http://blog.computationalcomplexity.org/2011_03_01_archive.html
+ 252. javascript:void(0)
+ 253. http://blog.computationalcomplexity.org/2011_02_01_archive.html
+ 254. javascript:void(0)
+ 255. http://blog.computationalcomplexity.org/2011_01_01_archive.html
+ 256. javascript:void(0)
+ 257. http://blog.computationalcomplexity.org/search?updated-min=2010-01-01T00:00:00-06:00&updated-max=2011-01-01T00:00:00-06:00&max-results=50
+ 258. javascript:void(0)
+ 259. http://blog.computationalcomplexity.org/2010_12_01_archive.html
+ 260. javascript:void(0)
+ 261. http://blog.computationalcomplexity.org/2010_11_01_archive.html
+ 262. javascript:void(0)
+ 263. http://blog.computationalcomplexity.org/2010_10_01_archive.html
+ 264. javascript:void(0)
+ 265. http://blog.computationalcomplexity.org/2010_09_01_archive.html
+ 266. javascript:void(0)
+ 267. http://blog.computationalcomplexity.org/2010_08_01_archive.html
+ 268. javascript:void(0)
+ 269. http://blog.computationalcomplexity.org/2010_07_01_archive.html
+ 270. javascript:void(0)
+ 271. http://blog.computationalcomplexity.org/2010_06_01_archive.html
+ 272. javascript:void(0)
+ 273. http://blog.computationalcomplexity.org/2010_05_01_archive.html
+ 274. javascript:void(0)
+ 275. http://blog.computationalcomplexity.org/2010_04_01_archive.html
+ 276. javascript:void(0)
+ 277. http://blog.computationalcomplexity.org/2010_03_01_archive.html
+ 278. javascript:void(0)
+ 279. http://blog.computationalcomplexity.org/2010_02_01_archive.html
+ 280. javascript:void(0)
+ 281. http://blog.computationalcomplexity.org/2010_01_01_archive.html
+ 282. javascript:void(0)
+ 283. http://blog.computationalcomplexity.org/search?updated-min=2009-01-01T00:00:00-06:00&updated-max=2010-01-01T00:00:00-06:00&max-results=50
+ 284. javascript:void(0)
+ 285. http://blog.computationalcomplexity.org/2009_12_01_archive.html
+ 286. javascript:void(0)
+ 287. http://blog.computationalcomplexity.org/2009_11_01_archive.html
+ 288. javascript:void(0)
+ 289. http://blog.computationalcomplexity.org/2009_10_01_archive.html
+ 290. javascript:void(0)
+ 291. http://blog.computationalcomplexity.org/2009_09_01_archive.html
+ 292. javascript:void(0)
+ 293. http://blog.computationalcomplexity.org/2009_08_01_archive.html
+ 294. javascript:void(0)
+ 295. http://blog.computationalcomplexity.org/2009_07_01_archive.html
+ 296. javascript:void(0)
+ 297. http://blog.computationalcomplexity.org/2009_06_01_archive.html
+ 298. javascript:void(0)
+ 299. http://blog.computationalcomplexity.org/2009_05_01_archive.html
+ 300. javascript:void(0)
+ 301. http://blog.computationalcomplexity.org/2009_04_01_archive.html
+ 302. javascript:void(0)
+ 303. http://blog.computationalcomplexity.org/2009_03_01_archive.html
+ 304. javascript:void(0)
+ 305. http://blog.computationalcomplexity.org/2009_02_01_archive.html
+ 306. javascript:void(0)
+ 307. http://blog.computationalcomplexity.org/2009_01_01_archive.html
+ 308. javascript:void(0)
+ 309. http://blog.computationalcomplexity.org/search?updated-min=2008-01-01T00:00:00-06:00&updated-max=2009-01-01T00:00:00-06:00&max-results=50
+ 310. javascript:void(0)
+ 311. http://blog.computationalcomplexity.org/2008_12_01_archive.html
+ 312. javascript:void(0)
+ 313. http://blog.computationalcomplexity.org/2008_11_01_archive.html
+ 314. javascript:void(0)
+ 315. http://blog.computationalcomplexity.org/2008_10_01_archive.html
+ 316. javascript:void(0)
+ 317. http://blog.computationalcomplexity.org/2008_09_01_archive.html
+ 318. javascript:void(0)
+ 319. http://blog.computationalcomplexity.org/2008_08_01_archive.html
+ 320. javascript:void(0)
+ 321. http://blog.computationalcomplexity.org/2008_07_01_archive.html
+ 322. javascript:void(0)
+ 323. http://blog.computationalcomplexity.org/2008_06_01_archive.html
+ 324. javascript:void(0)
+ 325. http://blog.computationalcomplexity.org/2008_05_01_archive.html
+ 326. javascript:void(0)
+ 327. http://blog.computationalcomplexity.org/2008_04_01_archive.html
+ 328. javascript:void(0)
+ 329. http://blog.computationalcomplexity.org/2008_03_01_archive.html
+ 330. javascript:void(0)
+ 331. http://blog.computationalcomplexity.org/2008_02_01_archive.html
+ 332. javascript:void(0)
+ 333. http://blog.computationalcomplexity.org/2008_01_01_archive.html
+ 334. javascript:void(0)
+ 335. http://blog.computationalcomplexity.org/search?updated-min=2007-01-01T00:00:00-06:00&updated-max=2008-01-01T00:00:00-06:00&max-results=50
+ 336. javascript:void(0)
+ 337. http://blog.computationalcomplexity.org/2007_12_01_archive.html
+ 338. javascript:void(0)
+ 339. http://blog.computationalcomplexity.org/2007_11_01_archive.html
+ 340. javascript:void(0)
+ 341. http://blog.computationalcomplexity.org/2007_10_01_archive.html
+ 342. javascript:void(0)
+ 343. http://blog.computationalcomplexity.org/2007_09_01_archive.html
+ 344. javascript:void(0)
+ 345. http://blog.computationalcomplexity.org/2007_08_01_archive.html
+ 346. javascript:void(0)
+ 347. http://blog.computationalcomplexity.org/2007_07_01_archive.html
+ 348. javascript:void(0)
+ 349. http://blog.computationalcomplexity.org/2007_06_01_archive.html
+ 350. javascript:void(0)
+ 351. http://blog.computationalcomplexity.org/2007_05_01_archive.html
+ 352. javascript:void(0)
+ 353. http://blog.computationalcomplexity.org/2007_04_01_archive.html
+ 354. javascript:void(0)
+ 355. http://blog.computationalcomplexity.org/2007_03_01_archive.html
+ 356. javascript:void(0)
+ 357. http://blog.computationalcomplexity.org/2007_02_01_archive.html
+ 358. javascript:void(0)
+ 359. http://blog.computationalcomplexity.org/2007_01_01_archive.html
+ 360. javascript:void(0)
+ 361. http://blog.computationalcomplexity.org/search?updated-min=2006-01-01T00:00:00-06:00&updated-max=2007-01-01T00:00:00-06:00&max-results=50
+ 362. javascript:void(0)
+ 363. http://blog.computationalcomplexity.org/2006_12_01_archive.html
+ 364. javascript:void(0)
+ 365. http://blog.computationalcomplexity.org/2006_11_01_archive.html
+ 366. javascript:void(0)
+ 367. http://blog.computationalcomplexity.org/2006_10_01_archive.html
+ 368. javascript:void(0)
+ 369. http://blog.computationalcomplexity.org/2006_09_01_archive.html
+ 370. javascript:void(0)
+ 371. http://blog.computationalcomplexity.org/2006_08_01_archive.html
+ 372. javascript:void(0)
+ 373. http://blog.computationalcomplexity.org/2006_07_01_archive.html
+ 374. javascript:void(0)
+ 375. http://blog.computationalcomplexity.org/2006_06_01_archive.html
+ 376. javascript:void(0)
+ 377. http://blog.computationalcomplexity.org/2006_05_01_archive.html
+ 378. javascript:void(0)
+ 379. http://blog.computationalcomplexity.org/2006_04_01_archive.html
+ 380. javascript:void(0)
+ 381. http://blog.computationalcomplexity.org/2006_03_01_archive.html
+ 382. javascript:void(0)
+ 383. http://blog.computationalcomplexity.org/2006_02_01_archive.html
+ 384. javascript:void(0)
+ 385. http://blog.computationalcomplexity.org/2006_01_01_archive.html
+ 386. javascript:void(0)
+ 387. http://blog.computationalcomplexity.org/search?updated-min=2005-01-01T00:00:00-06:00&updated-max=2006-01-01T00:00:00-06:00&max-results=50
+ 388. javascript:void(0)
+ 389. http://blog.computationalcomplexity.org/2005_12_01_archive.html
+ 390. javascript:void(0)
+ 391. http://blog.computationalcomplexity.org/2005_11_01_archive.html
+ 392. javascript:void(0)
+ 393. http://blog.computationalcomplexity.org/2005_10_01_archive.html
+ 394. javascript:void(0)
+ 395. http://blog.computationalcomplexity.org/2005_09_01_archive.html
+ 396. javascript:void(0)
+ 397. http://blog.computationalcomplexity.org/2005_08_01_archive.html
+ 398. javascript:void(0)
+ 399. http://blog.computationalcomplexity.org/2005_07_01_archive.html
+ 400. javascript:void(0)
+ 401. http://blog.computationalcomplexity.org/2005_06_01_archive.html
+ 402. javascript:void(0)
+ 403. http://blog.computationalcomplexity.org/2005_05_01_archive.html
+ 404. javascript:void(0)
+ 405. http://blog.computationalcomplexity.org/2005_04_01_archive.html
+ 406. javascript:void(0)
+ 407. http://blog.computationalcomplexity.org/2005_03_01_archive.html
+ 408. javascript:void(0)
+ 409. http://blog.computationalcomplexity.org/2005_02_01_archive.html
+ 410. javascript:void(0)
+ 411. http://blog.computationalcomplexity.org/2005_01_01_archive.html
+ 412. javascript:void(0)
+ 413. http://blog.computationalcomplexity.org/search?updated-min=2004-01-01T00:00:00-06:00&updated-max=2005-01-01T00:00:00-06:00&max-results=50
+ 414. javascript:void(0)
+ 415. http://blog.computationalcomplexity.org/2004_12_01_archive.html
+ 416. javascript:void(0)
+ 417. http://blog.computationalcomplexity.org/2004_11_01_archive.html
+ 418. javascript:void(0)
+ 419. http://blog.computationalcomplexity.org/2004_10_01_archive.html
+ 420. javascript:void(0)
+ 421. http://blog.computationalcomplexity.org/2004_09_01_archive.html
+ 422. javascript:void(0)
+ 423. http://blog.computationalcomplexity.org/2004_08_01_archive.html
+ 424. javascript:void(0)
+ 425. http://blog.computationalcomplexity.org/2004_07_01_archive.html
+ 426. javascript:void(0)
+ 427. http://blog.computationalcomplexity.org/2004_06_01_archive.html
+ 428. javascript:void(0)
+ 429. http://blog.computationalcomplexity.org/2004_05_01_archive.html
+ 430. javascript:void(0)
+ 431. http://blog.computationalcomplexity.org/2004_04_01_archive.html
+ 432. javascript:void(0)
+ 433. http://blog.computationalcomplexity.org/2004_03_01_archive.html
+ 434. javascript:void(0)
+ 435. http://blog.computationalcomplexity.org/2004_02_01_archive.html
+ 436. javascript:void(0)
+ 437. http://blog.computationalcomplexity.org/2004_01_01_archive.html
+ 438. javascript:void(0)
+ 439. http://blog.computationalcomplexity.org/search?updated-min=2003-01-01T00:00:00-06:00&updated-max=2004-01-01T00:00:00-06:00&max-results=50
+ 440. javascript:void(0)
+ 441. http://blog.computationalcomplexity.org/2003_12_01_archive.html
+ 442. javascript:void(0)
+ 443. http://blog.computationalcomplexity.org/2003_11_01_archive.html
+ 444. javascript:void(0)
+ 445. http://blog.computationalcomplexity.org/2003_10_01_archive.html
+ 446. javascript:void(0)
+ 447. http://blog.computationalcomplexity.org/2003_09_01_archive.html
+ 448. javascript:void(0)
+ 449. http://blog.computationalcomplexity.org/2003_08_01_archive.html
+ 450. javascript:void(0)
+ 451. http://blog.computationalcomplexity.org/2003_07_01_archive.html
+ 452. javascript:void(0)
+ 453. http://blog.computationalcomplexity.org/2003_06_01_archive.html
+ 454. javascript:void(0)
+ 455. http://blog.computationalcomplexity.org/2003_05_01_archive.html
+ 456. javascript:void(0)
+ 457. http://blog.computationalcomplexity.org/2003_04_01_archive.html
+ 458. javascript:void(0)
+ 459. http://blog.computationalcomplexity.org/2003_03_01_archive.html
+ 460. javascript:void(0)
+ 461. http://blog.computationalcomplexity.org/2003_02_01_archive.html
+ 462. javascript:void(0)
+ 463. http://blog.computationalcomplexity.org/2003_01_01_archive.html
+ 464. javascript:void(0)
+ 465. http://blog.computationalcomplexity.org/search?updated-min=2002-01-01T00:00:00-06:00&updated-max=2003-01-01T00:00:00-06:00&max-results=50
+ 466. javascript:void(0)
+ 467. http://blog.computationalcomplexity.org/2002_12_01_archive.html
+ 468. javascript:void(0)
+ 469. http://blog.computationalcomplexity.org/2002_11_01_archive.html
+ 470. javascript:void(0)
+ 471. http://blog.computationalcomplexity.org/2002_10_01_archive.html
+ 472. javascript:void(0)
+ 473. http://blog.computationalcomplexity.org/2002_09_01_archive.html
+ 474. javascript:void(0)
+ 475. http://blog.computationalcomplexity.org/2002_08_01_archive.html
+ 476. http://creativecommons.org/licenses/by-nc/3.0/
+ 477. http://blog.computationalcomplexity.org/
+ 478. http://creativecommons.org/licenses/by-nc/3.0/
+ 479. http://www.blogger.com/
+
+   Hidden links:
+ 480. http://www.blogger.com/email-post.g?blogID=3722233&postID=9095084023924864357
+ 481. http://www.blogger.com/post-edit.g?blogID=3722233&postID=9095084023924864357&from=pencil
+ 482. http://www.blogger.com/comment-iframe.g?blogID=3722233&postID=9095084023924864357
+ 483. http://blog.computationalcomplexity.org/2013/03/goodbye-old-friends.html
+ 484. http://goldenticket.fortnow.com/
+ 485. http://www.blogger.com/rearrange?blogID=3722233&widgetType=Image&widgetId=Image1&action=editWidget&sectionId=sidebar-left-1
+ 486. http://www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar-left-1
+ 487. http://www.blogger.com/rearrange?blogID=3722233&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar-left-1
+ 488. http://www.blogger.com/rearrange?blogID=3722233&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar-left-1
+ 489. http://www.blogger.com/rearrange?blogID=3722233&widgetType=LinkList&widgetId=LinkList2&action=editWidget&sectionId=sidebar-left-1
+ 490. http://www.blogger.com/rearrange?blogID=3722233&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=sidebar-left-1
+ 491. http://www.blogger.com/rearrange?blogID=3722233&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget&sectionId=sidebar-left-1
+ 492. http://www.blogger.com/rearrange?blogID=3722233&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-left-1
+ 493. http://www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar-left-1
+ 494. http://www.blogger.com/rearrange?blogID=3722233&widgetType=AdSense&widgetId=AdSense2&action=editWidget&sectionId=footer-1
+ 495. http://www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=footer-1
+ 496. http://www.blogger.com/rearrange?blogID=3722233&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3

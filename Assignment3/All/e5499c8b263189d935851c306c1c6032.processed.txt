@@ -1,0 +1,344 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]What do computer scientists know about performance?
+
+   Scientists make predictions and are judged on these predictions. If you
+   study global warming, then your job is to predict the climate for the
+   next few decades. But what do computer scientists predict with respect
+   to performance?
+
+   A lot of classical computer science is focused on performance. That is,
+   it provides us with a repertoire of data structures and algorithms. You
+   can solve 99.9% of all practical software problems using textbook data
+   structures and algorithms. From time to time, you may need to invent
+   something new... but there is very little you cannot do efficiently
+   with heaps, hash tables, trees, graphs, sorting algorithms...
+
+   This leaves us with the impression that computer science tells us a lot
+   about efficiency. And, for an untrained programmer, using the tools of
+   computer science, that is, using the right standard data structures and
+   the right standard algorithms, goes a long way toward improving
+   efficiency for large problems.
+
+   That's because computer science is just great at predicting the
+   asymptotical performance of algorithms. I cannot stress this last point
+   enough, so let me tell you about my own story.
+
+   Like many people of my generation, I started programming when I was
+   around 12 on a [5]TRS-80 my parent bought me. They had no idea what
+   they had unleashed. My TRS-80 came with a beautiful manual from which I
+   taught myself programming (in basic, unfortunately).
+
+   When I finished high school, I thought I was a pretty neat programmer.
+   I could basically program anything. Or so I thought.
+
+   In my first Physics college class, the professor noticed that I was
+   bored to death so he took upon himself to challenge me. He gave me
+   access to an Apple II and asked me to "simulate a galaxy" by modelling
+   gravitational forces.
+
+   I could model one, two or three stars well enough using a naive
+   numerical method. However, as I added stars, my model got slower. Much
+   slower. It did not help when I switched to a more advanced computer.
+   Though I had had no exposure to computational complexity, I recognized
+   that something was up. And this is one of the great lessons that
+   computer science teaches us: think about how the speed of your programs
+   scale. Had I taken a good computer science class, I wouldn't have been
+   caught in a dead-end...
+
+   Let us fast-forward a couple of decades... Today I would never try to
+   simulate a galaxy by considering the effect of each star of all other
+   stars. I would recognize this as a dead-end right away, without
+   thinking.
+
+   However, computational complexity accounts for less than 1% of the work
+   I do when I program for efficiency. In practice, chasing efficiency
+   (for me) is all about reducing the factors. The goal is hardly never to
+   replace an O(N^2) algorithm by an O(N) algorithm. The goal is to reduce
+   the running time of a program by 50%.
+
+   Why can't computer science help us with constant factors? It can but
+   computer scientists spend little time on the the key factors impacting
+   efficiency: pipeline width, number of units, throughput and latency of
+   the various instructions, memory latency and bandwidth, CPU caching
+   strategies, CPU branching predictions, instruction reordering,
+   superscalar execution, compiler heuristics and vectorization... and so
+   on.
+
+   Sometimes, computer scientists will be even dismissive of such constant
+   factors. For example, they may object that as computers get faster
+   anyhow, investing in making your code run twice as fast is wasted
+   effort. Thankfully, not all computer scientists have this attitude.
+   Knuth famously wrote:
+
+     In established engineering disciplines a 12% improvement, easily
+     obtained, is never considered marginal and I believe the same
+     viewpoint should prevail in software engineering.
+
+   Knuth is correct by the way: if you get hired by Google and manage to
+   improve the performance of a key system by 12%, you are probably in a
+   good position to ask for a huge raise. The difference between running
+   100 servers and 112 servers can mean a lot of money. Shaving off 12% to
+   the latency can be worth millions of dollars. You are much less likely
+   to be able to replace a key O(N^2) algorithm by an equivalent O(N)
+   algorithm. Google engineers are probably good enough that opportunities
+   to reduce the complexity are rare.
+
+   How do we proceed to target these 12% gains? There are some guiding
+   principles: keep memory access local, avoid difficult-to-predict
+   branches... But even though computer science can help model either of
+   these (e.g., use a complexity measures based on branching, or use a
+   memory model with caching), I don't know of any practical framework to
+   really take them into account in a useful way.
+
+   Ultimately, it is all about being able to predict. Given two
+   algorithms, if you want to predict which one will fare better by a
+   constant factor... then computer science often leaves you dry. Your
+   options are to ask a more experience programmer, or maybe to implement
+   both to try and see.
+
+   This is often an expensive and crude process. When I review papers, I
+   am often stuck in how to assess the efficiency of their implementation.
+   It all comes down to trusting the authors. Very few papers are able to
+   conclude something like this: "in the worst case, our implementation is
+   within 10% of optimality" or "no software could be twice as fast as
+   ours in solving this problem".
+
+   I think that computer science needs to try harder.
+   [6]Tweet
+   [7]Comments (11)
+
+   Related posts (automatically generated):
+     * [8]Big-O notation and real-world performance
+     * [9]Should computer scientists run experiments?
+     * [10]A criticism of computer science: models or modèles?
+     * [11]Computer scientists need to learn about significant digits
+
+11 Comments
+
+    1. I teach a fourth-year course which spends time on the constant
+       factors, Programming for Performance. [12]http://patricklam.ca/p4p.
+       Comment by [13]plam -- 17/9/2013 @ [14]15:58
+    2. @plam
+       It is obviously a great course. BTW my point is not that there
+       aren't courses in computer science programs about performance.
+       Comment by [15]Daniel Lemire -- 17/9/2013 @ [16]16:16
+    3. You speak of performance `in the small', e.g. "how do I make this
+       map lookup faster" instead of "can I use precise dataflow analysis
+       to eliminate the intermediate storage for the tuple space?" I think
+       this isn't unusual. Computer scientists tend to focus on the
+       problem in front of them, not the larger context.
+       Unfortunately, this narrow focus a great deal of impedance and
+       inefficiency at larger scales. Often, it is necessary to relinquish
+       `local' efficiency to improve `global' efficiency - e.g. switch
+       from high-performance batch-processing algorithms to
+       lower-performance variations that can be pipelined compositionally.
+       I think we still have plenty to learn about performance
+       in-the-large. And there is much to gain, especially with regards to
+       removing [17]walls between [18]applications.
+       Comment by [19]David Barbour -- 17/9/2013 @ [20]19:57
+    4. What I didn't know about performance when I moved from academia to
+       industry was variance. When I was at SpeechWorks, I had to build a
+       parser that ran in under 60ms on average, but never peaked above
+       200ms. The garbage collector in JavaScript killed us. Everything
+       ran in 20ms on average, but JavaScript kept peaking times at over a
+       minute with garbage collection. So the solution was to rebuild and
+       tear down the virtual machine each call. Took about 20ms, so
+       average run time was now 40ms, and no more bumps from garbage
+       collection.
+       Similarly, there's a notion of latency vs. bandwidth in accessing
+       disk or solid-state drive or memory or cache or a register that's
+       very very important in real applications, but you tend not to think
+       about a lot in analysis-of-algorithms classes where there's usually
+       a memory abstraction (in both constant-time access and unlimited
+       size).
+       Comment by [21]Bob Carpenter -- 17/9/2013 @ [22]20:34
+    5. @David Barbour: Even the basic analysis of algorithms books like
+       Cormen, Leisersohn and Rivest touch on these issues when discussing
+       the motivations for algorithms like B-trees. It blew my mind when I
+       first realized this also applied at the memory level. I at first
+       thought my test harness was misbehaving or something was getting
+       compiled away when I added a bunch more floating point arithmetic
+       per loop and the timing didn't change. It finally dawned on me that
+       my algorithm was memory bound. I don't think many people realize
+       just how expensive cache misses or failed branch predictions are.
+       Large natural language processing models are problematic because on
+       average, every other lookup or so is a cache miss (there's a very
+       long tail, and it's important for prediction).
+       Comment by [23]Bob Carpenter -- 17/9/2013 @ [24]21:37
+    6. Bob Carpenter, the solution was simply "do not use java".
+       Comment by Valrandir -- 18/9/2013 @ [25]22:16
+    7. It was JavaScript (aka ECMAScript) wrapped in C, wrapped in C++,
+       and it wasn't me, it was the VoiceXML standard dictating
+       JavaScript.
+       Java has the same issues as C++ in a lot of ways, but the garbage
+       collector can be a killer.
+       I'm doing numerical analysis these days, and it's all C++ template
+       metaprogramming to move as much computation down to the static
+       (compile time) level as possible.
+       Comment by [26]Bob Carpenter -- 19/9/2013 @ [27]13:44
+    8. "...pipeline width, number of units, throughput and latency of the
+       various instructions, memory latency and bandwidth, CPU caching
+       strategies, CPU branching predictions, instruction reordering,
+       superscalar execution, compiler heuristics and vectorization... and
+       so on."
+       Maybe I'm biased because I went to schools where there is a sharp
+       division between CS and ECE (Waterloo and Toronto), but those
+       factors fall squarely in Computer Engineering, not Science. Not
+       saying they should never intersect, but generally they don't.
+       Comment by [28]Eric LaForest -- 26/9/2013 @ [29]13:36
+    9. @LaForest
+       How a CPU works is certainly part of a computer science
+       education... no?
+       Comment by [30]Daniel Lemire -- 26/9/2013 @ [31]14:06
+   10. @Lemire
+       Not in any micro-architectural detail I think. CS (at UW and UofT,
+       at least) is very much a branch of the Math Dept., not Engineering.
+       So there is mostly emphasis on proofs, not the messy details of
+       actual hardware.
+       (Again, not saying this is bad, and I'm glad *they* can go prove
+       things, and then explain them to me so I can build them. I can't
+       prove my way out of a wet paper bag. :) )
+       And yes, the knowledge exists, but it's not widespread yet. (re:
+       cache-oblivious algorithms)
+       Case in point: [32]https://queue.acm.org/detail.cfm?id=1814327
+       Comment by [33]Eric LaForest -- 27/9/2013 @ [34]9:58
+   11. @Eric
+       Computer scientists have been aware of caching issues for decades.
+       It is a core element of computer science... part of any sane
+       algorithm textbook. So yes, you have cache-aware and
+       cache-oblivious algorithms. But this is essentially mathematical
+       modelling... sometimes with little to no validation in the real
+       world.
+       Poul-Henning Kamp is basically saying what I am saying: that
+       computer scientists don't know nearly as much as they think they do
+       about performance.
+       Regarding mathematics... there is an infinite number of results
+       that you can prove. An infinite subset of them will appear
+       interesting to some human beings. It does not mean that coming up
+       with one more mathematical result is a valuable contribution... if
+       you take "valuable" as in "making people's life better".
+       Comment by [35]Daniel Lemire -- 27/9/2013 @ [36]10:14
+
+   Sorry, the comment form is closed at this time.
+   « « [37]Previous: To solve hard problems, you need to use bricolage
+   [38]Next: Why can't you find a job with a Stanford computer science
+   PhD? » »
+
+   [39]« Blog's main page
+   Daniel Lemire's picture
+     * [40]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [41]Follow on Google Plus
+       22,500 followers
+     * twitter logo [42]Follow @lemire
+       4,000 followers
+     * Facebook logo [43]Follow on Facebook
+     * Google Scholar logo [44]Follow on Google Scholar
+     * Subscribe to this blog
+       - [45]in a reader,
+       - [46]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [47]About me
+          + [48]Book recommendations
+          + [49]My readers
+          + [50]Terms of use
+          + [51]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [52]The written word took over the world
+          + Thierry Lhôte on [53]The written word took over the world
+          + Ben on [54]The written word took over the world
+          + Anonymous on [55]The written word took over the world
+          + kilian on [56]The written word took over the world
+     * Some popular posts
+          + [57]Why I still program
+          + [58]Emotions killing your intellectual productivity
+          + [59]Turn your weaknesses into strengths
+          + [60]It is not where you work, but who you work with
+     * [61]Home page
+       [62]Google Scholar profile
+       [63]arXiv
+       [64]DBLP
+
+   Powered by [65]WordPress
+
+   © 2004-2013, [66]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [67]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/atom
+   4. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/
+   5. http://en.wikipedia.org/wiki/TRS-80_Color_Computer
+   6. https://twitter.com/share
+   7. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/#comments
+   8. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/
+   9. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/
+  10. http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/
+  11. http://lemire.me/blog/archives/2012/04/20/computer-scientists-need-to-learn-about-significant-digits/
+  12. http://patricklam.ca/p4p
+  13. http://patricklam.ca/
+  14. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93653
+  15. http://lemire.me/en/
+  16. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93657
+  17. http://alarmingdevelopment.org/?p=805
+  18. http://pchiusano.blogspot.com/2013/05/the-future-of-software-end-of-apps-and.html
+  19. http://awelonblue.wordpress.com/
+  20. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93680
+  21. http://lingpipe-blog.com/
+  22. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93686
+  23. http://lingpipe-blog.com/
+  24. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93691
+  25. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93851
+  26. http://lingpipe-blog.com/
+  27. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-93930
+  28. http://www.eecg.utoronto.ca/~laforest/
+  29. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-94909
+  30. http://lemire.me/en/
+  31. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-94912
+  32. https://queue.acm.org/detail.cfm?id=1814327
+  33. http://www.eecg.utoronto.ca/~laforest/
+  34. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-95017
+  35. http://lemire.me/en/
+  36. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/?utm_source=feedburner#comment-95018
+  37. http://lemire.me/blog/archives/2013/09/16/bricolage/
+  38. http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/
+  39. http://lemire.me/blog/
+  40. http://lemire.me/
+  41. https://plus.google.com/105888615414982242080/about
+  42. http://www.twitter.com/lemire/
+  43. http://www.facebook.com/daniel.lemire
+  44. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  45. http://lemire.me/blog/feed/
+  46. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  47. http://lemire.me/blog/about-me/
+  48. http://lemire.me/blog/book-recommendations/
+  49. http://lemire.me/blog/my-readers/
+  50. http://lemire.me/blog/terms-of-use/
+  51. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  52. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  53. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  54. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  55. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  56. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  57. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  58. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  59. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  60. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  61. http://lemire.me/en/
+  62. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  63. http://arxiv.org/a/lemire_d_1
+  64. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  65. http://wordpress.org/
+  66. http://lemire.me/en/
+  67. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  68. http://lemire.me/blog/feed/

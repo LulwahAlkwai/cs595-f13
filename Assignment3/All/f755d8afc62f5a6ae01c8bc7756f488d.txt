@@ -1,0 +1,1692 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/> 
+  
+   <meta name="Robots" content="index,follow" />  
+  
+  
+  <!-- nycskeptics -->
+
+  <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+  <link id="primaryStylesheet" rel="stylesheet" type="text/css" href="/display/common.css?styleId=782865&amp;RK=1319465657023&amp;CE=74"/>
+  
+  <link id="slideShowStylesheet" rel="stylesheet" type="text/css" href="/universal/styles/squarespace-gallery-slideshow.css?CE=74"/>
+  
+  
+    <link rel="alternate" type="application/atom+xml" title="ATOM" href="http://nycskeptics.org/events/atom.xml" />
+  
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="http://nycskeptics.org/events/rss.xml" />
+  
+    <link rel="alternate" type="application/rdf+xml" title="RDF" href="http://nycskeptics.org/events/rdf.xml" />
+  
+  
+  <!-- Google Web Fonts -->
+  <script type="text/javascript">
+    	WebFontConfig = {};
+  
+   
+    (function() {
+      var wf = document.createElement('script');
+      wf.src = ('https:' == document.location.protocol ? 'https' : 'http') +
+          '://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+      wf.type = 'text/javascript';
+      wf.async = 'true';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(wf, s);
+    })();
+  </script>
+
+  <script type="text/javascript" src="/universal/yui/yahoo-dom-event/yahoo-dom-event.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/connection/connection_core-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/json/json-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/animation/animation-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/selector/selector.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/element/element.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/global.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/lightbox.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/api.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/base64.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/census.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/yahoo/yahoo-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/event/event-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/event-mouseenter/event-mouseenter-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/yui/element/element-min.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/social.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/datefmt.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/yui2-yui3-bridge.js?CE=74"></script>
+<script type="text/javascript" src="/universal/scripts/squarespace-gallery-slideshow.js?CE=74"></script>
+
+
+  <script type="text/javascript">
+  // <![CDATA[
+
+    Squarespace.Constants.SS_AUTHKEY = encodeURIComponent("");
+    Squarespace.Constants.WEBSITE_TITLE =  "New York City Skeptics"; 
+    
+     Squarespace.Constants.CURRENT_MODULE_ID = "5842792"; 
+    
+    
+    
+    Squarespace.Constants.ADMINISTRATION_UI =  false; 
+    
+    
+     Squarespace.Constants.OBJECT_PERMALINK = "http://nycskeptics.org/events/rationally-speaking-podcast-live-with-guest-ben-goldacre.html"; 
+    Squarespace.Constants.CORE_APPLICATION_DOMAIN = "squarespace.com";
+    Squarespace.Constants.CORE_V6_APPLICATION_DOMAIN = "squarespace.com";
+    Squarespace.Constants.V5_FRONTSITE = "http://five.squarespace.com";
+    Squarespace.Constants.WEBSITE_ID = "472041";
+
+    
+
+    
+
+    
+
+  // ]]>
+  </script>
+
+      <title>New York City Skeptics - Events - Rationally Speaking Podcast Live: with Guest Ben&nbsp;Goldacre</title>
+    <meta property="og:title" content="New York City Skeptics - Events - Rationally Speaking Podcast Live: with Guest Ben&nbsp;Goldacre" /> 
+  
+
+      <meta property="og:description" content=" 
+
+ When: Thursday February 21 - 7:00 PM 
+
+ Where: University Settlement, 184 Eldridge Street ( map..." />
+  
+
+  
+      <meta property="og:image" content="http://nycskeptics.org/storage/images/events/RS_Live_web.png?__SQUARESPACE_CACHEVERSION=1348335543437" />
+  
+      <meta property="og:image" content="http://nycskeptics.org/storage/images/events/badpharma.jpg?__SQUARESPACE_CACHEVERSION=1358135767575" />
+  
+
+  <!-- End Heading -->
+
+  <!--
+
+<script type="text/javascript" src="/storage/js/prototype.js"></script>
+   <script>
+     // Use jQuery via jQuery(...)
+     jQuery(document).ready(function(){
+       jQuery("div").hide();
+     });
+    
+     // Use Prototype with $(...), etc.
+     $('someid').hide();
+   </script>
+
+
+-->
+
+<script type="text/javascript" src="/storage/rotate/jquery-1.2.6.min.js"></script>
+
+<script type="text/javascript">
+
+function slideSwitch() {
+var $active = $('#slideshow DIV.active');
+
+if ( $active.length == 0 ) $active = $('#slideshow DIV:last');
+
+// use this to pull the divs in the order they appear in the markup
+var $next = $active.next().length ? $active.next()
+: $('#slideshow DIV:first');
+
+// uncomment below to pull the divs randomly
+// var $sibs = $active.siblings();
+// var rndNum = Math.floor(Math.random() * $sibs.length );
+// var $next = $( $sibs[ rndNum ] );
+
+
+$active.addClass('last-active');
+
+$next.css({opacity: 0.0})
+.addClass('active')
+.animate({opacity: 1.0}, 1000, function() {
+$active.removeClass('active last-active');
+});
+}
+
+$(function() {
+setInterval( "slideSwitch()", 7000 );
+});
+
+</script>
+<script type="text/javascript">
+function blogRedirect() {
+    var patt=/^http:\/\/[^\/]*\/blog/;
+
+    var strHref = window.location.href;
+    var m = strHref.match(patt);
+    if (m != null) {
+        var newUrl = 'http://gothamskeptic.org/' + strHref.substr(strHref.indexOf('/blog')+'/blog'.length+1);
+        window.location = newUrl
+    }   
+}   
+function feedsRedirect() {
+    var patt=/^http:\/\/[^\/]*\/feeds/;
+
+    var strHref = window.location.href;
+    var m = strHref.match(patt);
+    if (m != null) {
+        var newUrl = 'http://skepticmedia.org/feeds/' + strHref.substr(strHref.indexOf('/feeds')+'/feeds'.length+1);
+        window.location = newUrl
+    }   
+}   
+blogRedirect();
+
+</script>
+
+  <script type="text/javascript" src="/universal/scripts/cookie-min.js"></script>
+  <script type="text/javascript" src="/universal/scripts/eu-cookie-policy.js"></script>
+
+</head>
+
+<body  id="modulePage5842792"   class="objectId32542440"  >
+
+  <script type="text/javascript">
+  YAHOO.util.Event.onDOMReady(function() {
+    if (document.location.href.indexOf("SSLogoutOk=true") != -1) {
+      new Squarespace.FixedPositionTip("Logout Successful", "You have been successfully logged out.", { xMargin: 15, yMargin: 15, icon: "/universal/images/helptip-info.png", orientation: "upper-right", viewportFixed: true, autoHide: 1800 }).show();
+    }
+  });
+</script>
+
+    
+
+  <script type="text/javascript">
+    YAHOO.util.Event.onDOMReady(function() { new Squarespace.Census.hit(); } );
+  </script>
+
+  <script type="text/javascript">
+    YAHOO.util.Event.addListener(document, "keyup", function (e) { if (!e) { e = event; } if (e.keyCode == 27) { document.location.href = "/display/Login?returnUrl=%2Fevents%2Frationally-speaking-podcast-live-with-guest-ben-goldacre.html%2F"; } });
+  </script>
+
+
+
+
+  
+
+  <div id="canvasWrapper"><div id="canvas">
+  
+  
+
+  <div id="pageHeaderWrapper"><div id="pageHeader">
+
+      <div id="navigationTop"><div id="navigationTop-sectionContent2418160" class="horizontalNavigationBar"><ul class="content-navigation">
+    
+  <li class="module   " id="navigationTop-moduleContentWrapper5843128">
+
+    <div id="navigationTop-moduleContent5843128">
+
+              <a id="navigationTop-moduleLink5843128" class=" " href="/news-index/" ><span>News</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationTop-moduleContentWrapper5844420">
+
+    <div id="navigationTop-moduleContent5844420">
+
+              <a id="navigationTop-moduleLink5844420" class=" folder-link" href="javascript:toggleFolder(5844420);" ><span>Events</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationTop-folderContent5844420">
+            
+  <li class="module   " id="navigationTop-moduleContentWrapper5844422">
+
+    <div id="navigationTop-moduleContent5844422">
+
+              <a id="navigationTop-moduleLink5844422" class=" " href="/calendar/" ><span>Full Calendar</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6754241">
+
+    <div id="navigationTop-moduleContent6754241">
+
+              <a id="navigationTop-moduleLink6754241" class=" " href="/darwin-day/" ><span>Darwin Day</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6984009">
+
+    <div id="navigationTop-moduleContent6984009">
+
+              <a id="navigationTop-moduleLink6984009" class=" " href="/drinking-skeptically/" ><span>Drinking Skeptically</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper7122013">
+
+    <div id="navigationTop-moduleContent7122013">
+
+              <a id="navigationTop-moduleLink7122013" class=" " href="/meetup" ><span>Meetup</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6754228">
+
+    <div id="navigationTop-moduleContent6754228">
+
+              <a id="navigationTop-moduleLink6754228" class=" " href="/necss/" ><span>NECSS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper5844504">
+
+    <div id="navigationTop-moduleContent5844504">
+
+              <a id="navigationTop-moduleLink5844504" class=" " href="/public-lectures" ><span>Public Lectures</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6754240">
+
+    <div id="navigationTop-moduleContent6754240">
+
+              <a id="navigationTop-moduleLink6754240" class=" " href="/skepticamp/" ><span>Skepticamp</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper8739910">
+
+    <div id="navigationTop-moduleContent8739910">
+
+              <a id="navigationTop-moduleLink8739910" class=" " href="http://www.nycskeptics.com/special-events" ><span>Special Events</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationTop-moduleContentWrapper6998072">
+
+    <div id="navigationTop-moduleContent6998072">
+
+              <a id="navigationTop-moduleLink6998072" class=" folder-link" href="javascript:toggleFolder(6998072);" ><span>Media</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationTop-folderContent6998072">
+            
+  <li class="module   " id="navigationTop-moduleContentWrapper6995901">
+
+    <div id="navigationTop-moduleContent6995901">
+
+              <a id="navigationTop-moduleLink6995901" class=" " href="http://www.rationallyspeakingpodcast.org" ><span>Podcast</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6998083">
+
+    <div id="navigationTop-moduleContent6998083">
+
+              <a id="navigationTop-moduleLink6998083" class=" " href="/media/audio" ><span>Audio Archive</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6998077">
+
+    <div id="navigationTop-moduleContent6998077">
+
+              <a id="navigationTop-moduleLink6998077" class=" " href="/photos/" ><span>Photos</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationTop-moduleContentWrapper5842983">
+
+    <div id="navigationTop-moduleContent5842983">
+
+              <a id="navigationTop-moduleLink5842983" class=" folder-link" href="/about-us/" ><span>About Us</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationTop-folderContent5842983">
+            
+  <li class="module   " id="navigationTop-moduleContentWrapper5842999">
+
+    <div id="navigationTop-moduleContent5842999">
+
+              <a id="navigationTop-moduleLink5842999" class=" " href="/about/" ><span>NYC Skeptics</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper6991049">
+
+    <div id="navigationTop-moduleContent6991049">
+
+              <a id="navigationTop-moduleLink6991049" class=" " href="/board-of-directors/" ><span>Board of Directors</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper5842988">
+
+    <div id="navigationTop-moduleContent5842988">
+
+              <a id="navigationTop-moduleLink5842988" class=" " href="/board-of-advisors/" ><span>Board of Advisors</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper5336609">
+
+    <div id="navigationTop-moduleContent5336609">
+
+              <a id="navigationTop-moduleLink5336609" class=" " href="/contact/" ><span>Contact Us</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationTop-moduleContentWrapper5843005">
+
+    <div id="navigationTop-moduleContent5843005">
+
+              <a id="navigationTop-moduleLink5843005" class=" folder-link" href="javascript:toggleFolder(5843005);" ><span>Support Us</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationTop-folderContent5843005">
+            
+  <li class="module   " id="navigationTop-moduleContentWrapper5843012">
+
+    <div id="navigationTop-moduleContent5843012">
+
+              <a id="navigationTop-moduleLink5843012" class=" " href="/join/" ><span>Join NYCS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationTop-moduleContentWrapper5843010">
+
+    <div id="navigationTop-moduleContent5843010">
+
+              <a id="navigationTop-moduleLink5843010" class=" " href="/volunteer/" ><span>Volunteer</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  </ul><br class="clearer"/></div></div>
+
+    
+        
+      
+  
+      <div id="bannerAreaWrapper"><div id="bannerArea">
+
+        
+        <div id="bannerWrapper">
+          <a href="http://nycskeptics.org/"><img id="banner" src="/storage/images/banner-7.png" alt="New York City Skeptics" title="New York City Skeptics"/></a>
+        </div>  
+
+      
+      
+      </div></div>
+    
+    
+    
+
+      <div id="navigationBottom"><div id="navigationBottom-sectionContent2418160" class="horizontalNavigationBar"><ul class="content-navigation">
+    
+  <li class="module   " id="navigationBottom-moduleContentWrapper5843128">
+
+    <div id="navigationBottom-moduleContent5843128">
+
+              <a id="navigationBottom-moduleLink5843128" class=" " href="/news-index/" ><span>News</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationBottom-moduleContentWrapper5844420">
+
+    <div id="navigationBottom-moduleContent5844420">
+
+              <a id="navigationBottom-moduleLink5844420" class=" folder-link" href="javascript:toggleFolder(5844420);" ><span>Events</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationBottom-folderContent5844420">
+            
+  <li class="module   " id="navigationBottom-moduleContentWrapper5844422">
+
+    <div id="navigationBottom-moduleContent5844422">
+
+              <a id="navigationBottom-moduleLink5844422" class=" " href="/calendar/" ><span>Full Calendar</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6754241">
+
+    <div id="navigationBottom-moduleContent6754241">
+
+              <a id="navigationBottom-moduleLink6754241" class=" " href="/darwin-day/" ><span>Darwin Day</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6984009">
+
+    <div id="navigationBottom-moduleContent6984009">
+
+              <a id="navigationBottom-moduleLink6984009" class=" " href="/drinking-skeptically/" ><span>Drinking Skeptically</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper7122013">
+
+    <div id="navigationBottom-moduleContent7122013">
+
+              <a id="navigationBottom-moduleLink7122013" class=" " href="/meetup" ><span>Meetup</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6754228">
+
+    <div id="navigationBottom-moduleContent6754228">
+
+              <a id="navigationBottom-moduleLink6754228" class=" " href="/necss/" ><span>NECSS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper5844504">
+
+    <div id="navigationBottom-moduleContent5844504">
+
+              <a id="navigationBottom-moduleLink5844504" class=" " href="/public-lectures" ><span>Public Lectures</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6754240">
+
+    <div id="navigationBottom-moduleContent6754240">
+
+              <a id="navigationBottom-moduleLink6754240" class=" " href="/skepticamp/" ><span>Skepticamp</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper8739910">
+
+    <div id="navigationBottom-moduleContent8739910">
+
+              <a id="navigationBottom-moduleLink8739910" class=" " href="http://www.nycskeptics.com/special-events" ><span>Special Events</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationBottom-moduleContentWrapper6998072">
+
+    <div id="navigationBottom-moduleContent6998072">
+
+              <a id="navigationBottom-moduleLink6998072" class=" folder-link" href="javascript:toggleFolder(6998072);" ><span>Media</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationBottom-folderContent6998072">
+            
+  <li class="module   " id="navigationBottom-moduleContentWrapper6995901">
+
+    <div id="navigationBottom-moduleContent6995901">
+
+              <a id="navigationBottom-moduleLink6995901" class=" " href="http://www.rationallyspeakingpodcast.org" ><span>Podcast</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6998083">
+
+    <div id="navigationBottom-moduleContent6998083">
+
+              <a id="navigationBottom-moduleLink6998083" class=" " href="/media/audio" ><span>Audio Archive</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6998077">
+
+    <div id="navigationBottom-moduleContent6998077">
+
+              <a id="navigationBottom-moduleLink6998077" class=" " href="/photos/" ><span>Photos</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationBottom-moduleContentWrapper5842983">
+
+    <div id="navigationBottom-moduleContent5842983">
+
+              <a id="navigationBottom-moduleLink5842983" class=" folder-link" href="/about-us/" ><span>About Us</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationBottom-folderContent5842983">
+            
+  <li class="module   " id="navigationBottom-moduleContentWrapper5842999">
+
+    <div id="navigationBottom-moduleContent5842999">
+
+              <a id="navigationBottom-moduleLink5842999" class=" " href="/about/" ><span>NYC Skeptics</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper6991049">
+
+    <div id="navigationBottom-moduleContent6991049">
+
+              <a id="navigationBottom-moduleLink6991049" class=" " href="/board-of-directors/" ><span>Board of Directors</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper5842988">
+
+    <div id="navigationBottom-moduleContent5842988">
+
+              <a id="navigationBottom-moduleLink5842988" class=" " href="/board-of-advisors/" ><span>Board of Advisors</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper5336609">
+
+    <div id="navigationBottom-moduleContent5336609">
+
+              <a id="navigationBottom-moduleLink5336609" class=" " href="/contact/" ><span>Contact Us</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="navigationBottom-moduleContentWrapper5843005">
+
+    <div id="navigationBottom-moduleContent5843005">
+
+              <a id="navigationBottom-moduleLink5843005" class=" folder-link" href="javascript:toggleFolder(5843005);" ><span>Support Us</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="navigationBottom-folderContent5843005">
+            
+  <li class="module   " id="navigationBottom-moduleContentWrapper5843012">
+
+    <div id="navigationBottom-moduleContent5843012">
+
+              <a id="navigationBottom-moduleLink5843012" class=" " href="/join/" ><span>Join NYCS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="navigationBottom-moduleContentWrapper5843010">
+
+    <div id="navigationBottom-moduleContent5843010">
+
+              <a id="navigationBottom-moduleLink5843010" class=" " href="/volunteer/" ><span>Volunteer</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  </ul><br class="clearer"/></div></div>
+
+
+  </div></div>
+  
+  
+
+  
+
+  
+  <div id="pageBodyWrapper"><div id="pageBody">
+  
+  <div id="sidebar1Wrapper" class="verticalNavigationBarWrapper"><div class="iw-vnb1"><div class="iw-vnb2"><div class="iw-vnb3"><div class="iw-vnb4"><div id="sidebar1" class="verticalNavigationBar">
+
+  
+
+    <div id="sectionContent2418160" class="sectionWrapper promotedContainer "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">Top</div> 
+
+      
+        
+          <ul class="content-navigation">
+  <li class="module   " id="moduleContentWrapper5843128">
+
+    <div id="moduleContent5843128">
+
+              <a id="moduleLink5843128" class=" " href="/news-index/" ><span>News</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="moduleContentWrapper5844420">
+
+    <div id="moduleContent5844420">
+
+              <a id="moduleLink5844420" class=" folder-link" href="javascript:toggleFolder(5844420);" ><span>Events</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="folderContent5844420">
+            
+  <li class="module   " id="moduleContentWrapper5844422">
+
+    <div id="moduleContent5844422">
+
+              <a id="moduleLink5844422" class=" " href="/calendar/" ><span>Full Calendar</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6754241">
+
+    <div id="moduleContent6754241">
+
+              <a id="moduleLink6754241" class=" " href="/darwin-day/" ><span>Darwin Day</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6984009">
+
+    <div id="moduleContent6984009">
+
+              <a id="moduleLink6984009" class=" " href="/drinking-skeptically/" ><span>Drinking Skeptically</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper7122013">
+
+    <div id="moduleContent7122013">
+
+              <a id="moduleLink7122013" class=" " href="/meetup" ><span>Meetup</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6754228">
+
+    <div id="moduleContent6754228">
+
+              <a id="moduleLink6754228" class=" " href="/necss/" ><span>NECSS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper5844504">
+
+    <div id="moduleContent5844504">
+
+              <a id="moduleLink5844504" class=" " href="/public-lectures" ><span>Public Lectures</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6754240">
+
+    <div id="moduleContent6754240">
+
+              <a id="moduleLink6754240" class=" " href="/skepticamp/" ><span>Skepticamp</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper8739910">
+
+    <div id="moduleContent8739910">
+
+              <a id="moduleLink8739910" class=" " href="http://www.nycskeptics.com/special-events" ><span>Special Events</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="moduleContentWrapper6998072">
+
+    <div id="moduleContent6998072">
+
+              <a id="moduleLink6998072" class=" folder-link" href="javascript:toggleFolder(6998072);" ><span>Media</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="folderContent6998072">
+            
+  <li class="module   " id="moduleContentWrapper6995901">
+
+    <div id="moduleContent6995901">
+
+              <a id="moduleLink6995901" class=" " href="http://www.rationallyspeakingpodcast.org" ><span>Podcast</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6998083">
+
+    <div id="moduleContent6998083">
+
+              <a id="moduleLink6998083" class=" " href="/media/audio" ><span>Audio Archive</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6998077">
+
+    <div id="moduleContent6998077">
+
+              <a id="moduleLink6998077" class=" " href="/photos/" ><span>Photos</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="moduleContentWrapper5842983">
+
+    <div id="moduleContent5842983">
+
+              <a id="moduleLink5842983" class=" folder-link" href="/about-us/" ><span>About Us</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="folderContent5842983">
+            
+  <li class="module   " id="moduleContentWrapper5842999">
+
+    <div id="moduleContent5842999">
+
+              <a id="moduleLink5842999" class=" " href="/about/" ><span>NYC Skeptics</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper6991049">
+
+    <div id="moduleContent6991049">
+
+              <a id="moduleLink6991049" class=" " href="/board-of-directors/" ><span>Board of Directors</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper5842988">
+
+    <div id="moduleContent5842988">
+
+              <a id="moduleLink5842988" class=" " href="/board-of-advisors/" ><span>Board of Advisors</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper5336609">
+
+    <div id="moduleContent5336609">
+
+              <a id="moduleLink5336609" class=" " href="/contact/" ><span>Contact Us</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   folder-closed" id="moduleContentWrapper5843005">
+
+    <div id="moduleContent5843005">
+
+              <a id="moduleLink5843005" class=" folder-link" href="javascript:toggleFolder(5843005);" ><span>Support Us</span></a>
+      
+
+            
+        <div class="folder-wrapper">
+          <ul class="folder" id="folderContent5843005">
+            
+  <li class="module   " id="moduleContentWrapper5843012">
+
+    <div id="moduleContent5843012">
+
+              <a id="moduleLink5843012" class=" " href="/join/" ><span>Join NYCS</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+  <li class="module   " id="moduleContentWrapper5843010">
+
+    <div id="moduleContent5843010">
+
+              <a id="moduleLink5843010" class=" " href="/volunteer/" ><span>Volunteer</span></a>
+      
+
+      
+
+    </div>
+
+  </li>
+
+
+          </ul>
+        </div>
+
+      
+
+    </div>
+
+  </li>
+
+</ul>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent2603391" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+      
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper7783113" class="widget-wrapper  widget-type-page"><div id="moduleContent7783113">
+
+
+
+
+
+  <p><a href="/join"><img src="/storage/images/web-ads/joinus-ad.jpg?__SQUARESPACE_CACHEVERSION=1279723197401" alt="" align="center" /></a></p>
+  <form action="https://www.paypal.com/cgi-bin/webscr" method="post"> <input name="cmd" type="hidden" value="_s-xclick" /> <input name="hosted_button_id" type="hidden" value="Z8WXJ6ZA5B3ZY" /> <strong><span style="font-size: 80%;">CHOOSE MEMBERSHIP LEVEL</span></strong>
+  <div align="center">
+  <table>
+  <tbody>
+  <tr>
+  <td><input name="on0" type="hidden" value="Membership Level" /></td>
+  </tr>
+  <tr>
+  <td><select name="os0"> <option value="Student">Student $35.00</option> <option value="Friend">Friend $50.00</option> <option value="Supporter">Supporter $100.00</option> <option value="Associate">Associate $250.00</option> <option value="Gotham Skeptic">Gotham Skeptic $500.00</option> <option value="Randi Club">Randi Club $1,000.00</option> </select></td>
+  </tr>
+  </tbody>
+  </table>
+  <input name="currency_code" type="hidden" value="USD" /> <input alt="PayPal - The safer, easier way to pay online!" name="submit" src="http://nycskeptics.org/storage/images/web-ads/paypal-join-sidebar.png" type="image" /><br /> <img src="/storage/images/web-ads/paypal-cc.png" alt="" /></div>
+  </form>
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent3338837" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">Receive News &amp; Updates</div> 
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper5842873" class="widget-wrapper  widget-type-page"><div id="moduleContent5842873">
+
+
+
+
+
+  <p><script type="text/javascript" src="http://nycskeptics.us1.list-manage.com/js/jquery-1.2.6.min.js"></script> <script type="text/javascript" src="http://nycskeptics.us1.list-manage.com/js/jquery.validate.js"></script> <script type="text/javascript" src="http://nycskeptics.us1.list-manage.com/js/jquery.form.js"></script> <script type="text/javascript" src="http://nycskeptics.us1.list-manage.com/subscribe/xs-js?u=cbd5a322268511d71bd162efd&amp;id=eb80fbe51e"></script></p>
+  <form action="http://nycskeptics.us1.list-manage.com/subscribe/post?u=cbd5a322268511d71bd162efd&amp;id=eb80fbe51e" class="validate" id="mc-embedded-subscribe-form" method="post" name="mc-embedded-subscribe-form" style="font: normal 100% Arial; font-size: 12px;" target="_blank"> <input name="type" type="hidden" value="images" />
+  <div class="mc-field-group" style="clear: both; overflow: hidden;"><input id="mce-EMAIL" class="required email" style="border: 1px solid #b2b2b2; vertical-align: middle; font: 9pt verdana; height: 18px; width: 140px; color: #6c6c6c; background-color: #ffffff; background-image: url(http://www.gskeptic.squarespace.com/storage/images/form-bg.jpg);" name="EMAIL" type="text" value="&nbsp;E-mail address" /> <input id="mc-embedded-subscribe" style="border: 1px solid #b2b2b2; vertical-align: middle; font-family: verdana; font-size: 8.5pt; line-height: normal; font-size-adjust: none; font-stretch: normal; width: 48px; height: 22px; color: #6c6c6c; background-color: #dddddd; background-image: url(http://www.gskeptic.squarespace.com/storage/images/form-bg.jpg);" name="subscribe" type="submit" value="Next" />
+  <div id="mce-responses" style="margin: 0pt 5%; padding: 0em 0.5em; overflow: hidden; float: left; top: -1.4em; width: 90%; clear: both;">
+  <div id="mce-error-response" class="response" style="margin: 1em 0pt; padding: 1em 0.5em 0.5em 0pt; background: none repeat scroll 0% 0% #ffeeee; display: none; font-weight: normal; float: left; top: -1.5em; z-index: 1; width: 90%; color: #ff0000;"></div>
+  <div id="mce-success-response" class="response" style="margin: 1em 0pt; padding: 1em 0.5em 0.5em 0pt; display: none; font-weight: normal; float: left; top: -1.5em; z-index: 1; width: 90%; color: #529214;"></div>
+  </div>
+  <a id="mc_embed_close" class="mc_embed_close" style="display: none;" href="#">Close</a></div>
+  </form>
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent3052772" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">Show your support</div> 
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper6988649" class="widget-wrapper  widget-type-page"><div id="moduleContent6988649">
+
+
+
+
+
+  <table border="0" cellspacing="3" cellpadding="5">
+  <tbody>
+  <tr>
+  </tr>
+  <tr>
+  <td width="27px"><a href="/join"><img src="/storage/images/icon-nycs.png" alt="" /></a></td>
+  <td><a href="/join">Become a member</a></td>
+  </tr>
+  <tr>
+  <td width="27px"><a href="http://www.meetup.com/The-NYCSkeptics-Meetup-Group/"><img src="/storage/images/icon-meetup.png?__SQUARESPACE_CACHEVERSION=1277010148538" alt="" /></a></td>
+  <td><a href="http://www.meetup.com/The-NYCSkeptics-Meetup-Group/">Join the Meetup</a></td>
+  </tr>
+  <tr>
+  <td width="27px"><a href="http://www.rationallyspeakingpodcast.org/"><img src="/storage/images/icon-rs.png" alt="" /></a></td>
+  <td><a href="http://www.rationallyspeakingpodcast.org">Listen to the podcast</a></td>
+  </tr>
+  <tr>
+  <td width="27px"><a href="http://www.facebook.com/nycskeptics"><img src="/storage/images/icon-facebook.png?__SQUARESPACE_CACHEVERSION=1277009476258" alt="" /></a></td>
+  <td><a href="http://www.facebook.com/pages/New-York-City-Skeptics/166505273398">Like us on Facebook</a></td>
+  </tr>
+  <tr>
+  <td width="27px"><a href="http://www.twitter.com/nycskeptics"><img src="/storage/images/icon-twitter.png?__SQUARESPACE_CACHEVERSION=1277009492472" alt="" /></a></td>
+  <td><a href="http://www.twitter.com/nycskeptics">Follow on Twitter</a></td>
+  </tr>
+  </tbody>
+  </table>
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent3031632" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">Latest tweets</div> 
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper7033941" class="widget-wrapper  widget-type-twitter"><div id="moduleContent7033941">
+
+<style type="text/css">
+    <!--
+      #twitter-wrapper-7033941 {
+        display: block;
+        visibility: hidden;
+      }
+            
+    -->
+</style>
+
+<div id="twitter-loading-wrapper-7033941" style="display:none; background:#353535; -moz-border-radius:8px; -webkit-border-radius:8px; height:300px; ">
+  <div id="twitter-loading-img-7033941" style="height:100%; background:url(/universal/images/loading.png) no-repeat center center transparent;" ></div>
+</div>
+
+<div id="twitter-error-wrapper-7033941" style="display:none; background:#353535; -moz-border-radius:8px; -webkit-border-radius:8px; height:300px; ">
+  <a id="twitter-error-img-7033941" style="display:block; height:100%; background:url(/universal/images/loading-refresh.png) no-repeat center center transparent;" 
+    href="javascript:void(0);" onclick="javascript: twitterWidget7033941.show();">&nbsp;</a>
+</div>
+
+
+
+
+
+
+  <div id="twitter-wrapper-7033941" class="twitter-wrapper preset chunk">
+    <div class="twitter-content secondary">
+    
+      <div class="twitter-header">
+                <div class="twitter-avatar"><a id="twitterer-avatar-link-7033941-1" href="" target="_blank"><img id="twitterer-avatar-img-7033941-1" src="" /></a></div>
+        
+                <div class="twitter-name"><a id="twitterer-fullname-link-7033941-1" href="" target="_blank"></a></div>
+        
+                <div class="twitter-username"><a id="twitterer-username-link-7033941-1" href="" target="_blank"></a></div>
+        
+        <div class="clearer"></div>            
+      </div>
+      
+      <div id="twitter-page-7033941">
+      
+        <div id="tweet-item-7033941-1" class="twitter-item highlight primary">
+          <div class="twitter-item-content">
+            <span id="tweet-content-7033941-1"></span>
+                        <div class="twitter-date"><a id="tweet-date-7033941-1" href="" target="_blank"></a></div>
+            
+          </div>
+        </div>
+      
+        
+                <div id="tweet-item-7033941-2" class="twitter-item primary">
+                  <div class="twitter-item-content">
+                    <span id="tweet-content-7033941-2"></span>
+                                <div class="twitter-date"><a id="tweet-date-7033941-2" href="" target="_blank"></a></div>
+                    
+                  </div>
+                </div>
+                
+                <div id="tweet-item-7033941-3" class="twitter-item primary">
+                  <div class="twitter-item-content">
+                    <span id="tweet-content-7033941-3"></span>
+                                <div class="twitter-date"><a id="tweet-date-7033941-3" href="" target="_blank"></a></div>
+                    
+                  </div>
+                </div>
+                
+                <div id="tweet-item-7033941-4" class="twitter-item primary">
+                  <div class="twitter-item-content">
+                    <span id="tweet-content-7033941-4"></span>
+                                <div class="twitter-date"><a id="tweet-date-7033941-4" href="" target="_blank"></a></div>
+                    
+                  </div>
+                </div>
+                
+        
+      </div>
+              
+      
+    
+    </div>
+    
+    
+    
+  </div>
+
+
+
+<script type="text/javascript">
+<!--
+
+  var twitterWidget7033941;
+
+  E.onDOMReady( function() {
+
+    twitterWidget7033941 = new Squarespace.Social.TwitterWidget(7033941, { preset : 'chunk-preset', pageSize : 4, followMeText : 'Follow @username', filter : '', filterType : 'any', filterAtReplies: true, filterRetweets : false, userIds : '14926210,' });
+    twitterWidget7033941.show();      
+    
+  });
+  
+  
+//-->
+</script></div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+    <div id="sectionContent3350930" class="sectionWrapper  "><div class="iw-s1"><div class="iw-s2"><div class="iw-s3"><div class="iw-s4"><div class="section">
+
+       <div class="caption">BECOME A FAN</div> 
+
+      
+        
+          <div class="content-passthrough"><div id="moduleContentWrapper7836497" class="widget-wrapper  widget-type-page"><div id="moduleContent7836497">
+
+
+
+
+
+  <p><iframe src="http://www.facebook.com/plugins/likebox.php?id=166505273398&amp;width=200&amp;connections=9&amp;stream=false&amp;header=false&amp;height=350" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:200px; height:350px; background-color:#f0f0f0;" allowTransparency="false" ></iframe></p>
+</div></div></div>
+
+        
+
+      
+  
+    </div></div></div></div></div></div>
+
+  
+
+  
+
+</div></div></div></div></div></div>
+  <div id="sidebar2Wrapper" class="verticalNavigationBarWrapper"><div class="iw-vnb1"><div class="iw-vnb2"><div class="iw-vnb3"><div class="iw-vnb4"><div id="sidebar2" class="verticalNavigationBar">
+
+  
+
+  
+
+</div></div></div></div></div></div>
+  
+  
+
+  <div id="contentWrapper"><div id="content">
+    
+          
+    
+
+
+  
+
+  
+  
+  
+  
+  <div class="single-journal-entry-wrapper">
+    
+
+
+<div class="journal-entry-wrapper post-text authored-by-nycskeptics category-special-events">
+<div id="item32542440" class="journal-entry">
+
+  <div class="journal-entry-float-day"><span class="name">Sunday</span></div><div class="journal-entry-float-date"><span class="month">Jan</span><span class="date">13</span><span class="year">2013</span></div>
+  
+  
+  
+  <div class="journal-entry-text">
+  
+      
+      <h2 class="title">
+    
+        
+    
+        <a class="journal-entry-navigation-current" href="/events/rationally-speaking-podcast-live-with-guest-ben-goldacre.html">Rationally Speaking Podcast Live: with Guest Ben&nbsp;Goldacre</a>  
+     
+         
+    
+      </h2>
+      
+      
+
+    
+  
+      
+      <div class="body">
+  
+        
+        
+        
+          <p style="text-align: center;"><strong><span class="full-image-block ssNonEditable"><img src="/storage/images/events/RS_Live_web.png?__SQUARESPACE_CACHEVERSION=1348335543437" alt="" /></span></strong></p>
+<p style="text-align: left;"><strong><span style="font-size: 120%;">When: Thursday February 21 - 7:00 PM</span></strong></p>
+<p><strong><span style="font-size: 120%;">Where: University Settlement, 184 Eldridge Street (<a href="https://maps.google.com/maps?q=184+Eldridge+Street,+New+York,+NY&amp;hl=en&amp;sll=40.776066,-74.048314&amp;sspn=0.453937,1.056747&amp;oq=184+Eldridge+Street&amp;gl=us&amp;hnear=184+Eldridge+St,+New+York,+10002&amp;t=m&amp;z=17">map</a>)</span><br /></strong></p>
+<p><strong><span style="font-size: 120%;">Free and open to the public!</span></strong></p>
+<p><span class="full-image-float-left ssNonEditable"><span><img src="/storage/images/events/badpharma.jpg?__SQUARESPACE_CACHEVERSION=1358135767575" alt="" /></span></span>Join us first for a special lecture by Dr. Benjamin Goldacre about his new book, <em>Bad Pharma: How Drug Companies Mislead Doctors and Harm Patients</em>, and then Dr. Goldacre will be our special guest on a live taping of the Rationally Speaking podcast.</p>
+<p>------------------</p>
+<p><em>We like to imagine that medicine is based on evidence and the results of  fair tests. In reality, those tests are often profoundly flawed. We  like to imagine that doctors are familiar with the research literature  about a drug, when in reality much of the research is hidden from them  by drug companies. We like to imagine that doctors are impartially  educated, when in reality much of their education is funded by the  pharmaceutical industry. We like to imagine that regulators let only  effective drugs onto the market, when in reality they approve useless  drugs, with data on side effects casually withheld from doctors and  patients.</em></p>
+<p><em>All these problems have been shielded from public  scrutiny because they&rsquo;re too complex to capture in a sound bite. But Ben  Goldacre shows that the true scale of this murderous disaster fully  reveals itself only when the details are untangled. He believes we  should all be able to understand precisely how data manipulation works  and how research misconduct on a global scale affects us. </em></p>
+<p><em>With Goldacre&rsquo;s characteristic flair and a forensic attention to detail, Bad Pharma reveals  a shockingly broken system and calls for something to be done. This is  the pharmaceutical industry as it has never been seen before.</em></p>
+
+        
+  
+          
+  
+         
+  
+      </div>
+
+    
+
+  </div>
+
+      <div class="journal-entry-tag journal-entry-tag-post-body">
+      <div class="journal-entry-tag-post-body-line1"><span class="share-item"><a href="javascript:noop();" onclick="Squarespace.Interaction.shareLink(this,'%2Fevents%2Frationally-speaking-podcast-live-with-guest-ben-goldacre.html','Rationally%20Speaking%20Podcast%20Live%3A%20with%20Guest%20Ben%20Goldacre');"> <img title="Share Article" alt="Share Article" class="inline-icon share-icon" rel="blk_ko_18" src="/universal/images/transparent.png" />Share Event </a></span> |  <span class="email-item"><a href="/events/recommend/32542440"> <img title="Email Article" alt="Email Article" class="inline-icon email-icon" rel="blk_ko_18" src="/universal/images/transparent.png" />Email Event </a></span> |  <span class="permalink-item"><a class="permalink" href="/events/rationally-speaking-podcast-live-with-guest-ben-goldacre.html"> <img title="Permalink" alt="Permalink" class="inline-icon permalink-icon" rel="blk_ko_18" src="/universal/images/transparent.png" />Permalink </a></span> |  <span class="posted-in">Type: <span class="tag-element"><a rel="tag" href="/events/category/special-events"> <img title="Category" alt="Category" class="inline-icon category-icon" rel="blk_ko_18" src="/universal/images/transparent.png" />Special Events</a></span></span>  </div>
+      <div class="journal-entry-tag-post-body-line2"></div>
+      <div class="journal-entry-tag-post-body-line3"></div>
+    </div>
+  
+  
+  <div class="clearer"></div>
+
+</div>
+</div>
+
+
+
+
+
+  </div>
+
+      <p class="printerFriendlyLinkBlock"><a href="/events/rationally-speaking-podcast-live-with-guest-ben-goldacre.html?printerFriendly=true" onclick="this.target='new';"><img title="Print" alt="Print" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/print.png) top left no-repeat;"/>View Printer Friendly Version</a></p>
+  
+
+      <p class="emailArticleLinkBlock"><a href="/events/recommend/32542440"><img title="Email" alt="Email" class="inline-icon" rel="smalllight" src="/universal/images/transparent.png" style="background:transparent url(/universal/images/core-resources/icons/smalllight/email.png) top left no-repeat;"/>Email Article to Friend</a></p>
+  
+
+  
+
+  
+
+  
+  
+
+  
+
+
+  
+
+  
+
+  
+  
+
+</div></div> <!-- Content -->
+  
+    
+  
+    </div></div> <!-- Page Body -->
+
+    
+    
+    <div id="pageFooterWrapper"><div id="pageFooter">
+  
+              <table width="100%" border="0" cellpadding="0"><tr><td valign="top"><p align="left"><img src="http://nycskeptics.squarespace.com/storage/images/NYCS-logo-grey.jpg" align="left"></a></td></tr></table>
+      
+  
+      
+  
+    </div></div>
+  
+  </div></div> <!-- Canvas -->
+  
+   
+
+
+  <div class="clearer" id="bodyClearer"></div>
+
+  
+
+
+
+</body>
+</html>

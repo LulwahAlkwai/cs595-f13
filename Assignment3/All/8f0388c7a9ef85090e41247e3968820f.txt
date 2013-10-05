@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Should computer scientists run experiments? </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5438" itemprop="name"><a href="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/" rel="bookmark" itemprop="url"  title="Posted on July 10th, 2013">Should computer scientists run experiments?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>Jeffrey Ullman, a famous computer science professor, <a href="http://i.stanford.edu/~ullman/pub/experiments.pdf">published an essay</a> pushing back about the need to run experiments in computer science. Apparently, some conference reviewers gave him a hard time regarding a paper he submitted because it did not include experiments. </p>
+<p>I am in general agreement with him: not every research paper should include experiments. That is obviously an excessive requirement. I also think that building theoretical models is very important. Experiments alone are unsatisfying. Indeed, science is not merely about running experiments. Imagine if we did not have Newton&#8217;s laws? Would we need to run experiments on every new object to see how it behaves when we push it? Experiments are often badly designed and misleading. I don&#8217;t tend to trust a paper that includes experiments more than another paper. In fact, a paper with a useful theoretical results can be much more powerful than any large set of experiments&#8230; since it is often easier to check the mathematics than to be sure that the experiments were carried on fairly. There is also a sense in which experiments can be pointless. For example, I was once asked to show experimentally that an algorithm based on external-memory sorting could scale up.</p>
+<p>But, at some point, Ullman linked to my blog post <a href="http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/">A criticism of computer science: models or modèles?</a> This brought mixed feelings. I think he misrepresented my opinions:</p>
+<blockquote><p>In this article, the author argues that one should never use a model that is not real running time on a real computer. For example, this author would not accept the O(n log n) lower bound on sorting, because it is based on counting comparisons rather than machine instructions executed. </p></blockquote>
+<p>I don&#8217;t think that my blog post says anything of the sort. I disagree with this statement even though Ullman is under the impression that it is what I believe. I think that our knowledge that sorting (in general) requires at least n log n operations is critical and fundamental. If you were to learn one thing from computer science, it would probably not be a bad choice. Of course, you can use <a href="http://en.wikipedia.org/wiki/Pigeonhole_sort">Pigeonhole sort</a> or <a href="http://en.wikipedia.org/wiki/Timsort">Timsort</a> to achieve sorting in even fewer operations but that requires extra assumptions. </p>
+<p>Models are always simplification. However, if your model is <em>right</em> by definition&#8230; that is, if no comparison with real world could lead you to conclude that your model is wrong, then it is not a scientific model. It might be a tremendously useful mathematical construction&#8230; but it is not science.</p>
+<p>The fact that sorting runs in n log n-time is a scientific fact. It could be false: someone could come up with a generic sorting program that scales up linearly. Heck! This could happen on some future exotic computer architecture. Once it does, we will need to revise our textbooks.</p>
+<p>It is also a scientific fact that the sorting algorithm used in Java, <a href="http://en.wikipedia.org/wiki/Timsort">Timsort</a>, is often preferable to the classical algorithms like merge sort or quick sort. We can run extensive experiments to check that fact. There is also a theoretical analysis that explains why Timsort can often be better.</p>
+<p>Not everything needs to be science. For example, Codd&#8217;s work on relational algebra (the foundation for SQL) is fantastic. I am really happy we have SQL and everything that was built on it. But notice that it was built by people who didn&#8217;t merely come up with models&#8230; they implemented their ideas and had them face the real world. </p>
+<p>The problem is that we don&#8217;t require people to test out their ideas in the real world, we are going to get thousands of rambling researchers for every Codd. Sometimes, that is the impression that academic research in computer science gives.</p>
+<p>Some researchers will eagerly point out that pure theory often proves useful in unexpected ways. But that is also true of art and philosophy. What sets our current civilization apart from the preceding ones is that we are founded on the scientific paradigm. The industrial revolution was possible because hackers build machines that worked, and irrespective of what the great minds thought, they were adopted. In effect, we have adopted an approach whereas results are what matters, not how smart you are or how prestigious your position is.</p>
+<p>I do not believe we should do away with mathematics, art and philosophy, but we need to be watchful. Do you use a model because influential people are supporting it or because it fits the facts?</p>
+<p>Continue reading with my post on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/">Big-O notation and real-world performance</a>.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/" data-text="Should computer scientists run experiments?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/#comments" title="Comment on Should computer scientists run experiments?">Comments (5)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/" rel="bookmark">A criticism of computer science: models or modèles?</a><!-- (13.3)--></li>
+	</ul>
+</div>
+
+</div>
+
+
+
+<h2 id="comments">5 Comments 
+	<a href="#postcomment" title="Leave a comment">&raquo;</a>
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-89701">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/?d=wavatar&amp;s=32' class='avatar avatar-32 photo avatar-default' height='32' width='32' /></div>
+	<p>Daniel &#8212; you&#8217;re not the &#8220;villain&#8221; in my story.  But I disagree with (what I interpret as) your criticism of models that do not model absolutely every aspect of a computation.  Would you dismiss computing the communication cost of a MapReduce algorithm, even though there are other costs involved (but communication cost typically dominates)?  Do you dismiss any claim of a big-oh or big-omega bound, because no such claim can ever be falsified by a finite experiment?<br />
+   &#8211;Jeff Ullman</p>
+	<p><cite>Comment by Anonymous &#8212; 10/7/2013 @ <a href="#comment-89701">12:27</a></cite> </p>
+	</li>
+
+	<li id="comment-89705">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p><em>Would you dismiss computing the communication cost of a MapReduce algorithm, even though there are other costs involved (but communication cost typically dominates)?</em></p>
+<p>No.</p>
+<p><em>Do you dismiss any claim of a big-oh or big-omega bound, because no such claim can ever be falsified by a finite experiment?</em></p>
+<p>If you want to be formal about it, no model can ever be proven wrong. </p>
+<p>We both know that, in practice, if you plot the performance curves and you get something that is quadratic in n&#8230; you have effectively disproved the n log n model. </p>
+<p>You may argue that formally, I have disproved nothing&#8230; but the point of a scientific model is to tell you something about the real world. If you constantly get quadratic curves&#8230; you can argue until you are blue in the face that it is really n log n&#8230; engineers are going to reject your performance model and use a better one.</p>
+<p>So falsification is not a black and white thing. Rather, in practice, it becomes increasingly harder to fit a model to the facts. Now, that&#8217;s assuming you have a scientific model. If it is not a scientific model, then you can always fit it to any fact&#8230; because facts don&#8217;t matter.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 10/7/2013 @ <a href="#comment-89705">13:04</a></cite> </p>
+	</li>
+
+	<li id="comment-89711">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/91873c50f543ae3c2102607911f8a219?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Big-O notation may very well be _practically useless_, but it is certainly not _meaningless_, even in the context of a universe with a finite number of elementary particles.</p>
+<p>_We both know that, in practice, if you plot the performance curves and you get something that is quadratic in n… you have effectively disproved the n log n model._</p>
+<p>No, we don&#8217;t.  We both know that in practice, if one sorting algorithm has better performance on real-world data, then it has better performance on real-world data, by definition.  But that&#8217;s not a falsification of the asymptotic complexity model, because that&#8217;s not what the asymptotic complexity model describes.</p>
+<p>It&#8217;s not the _model&#8217;s_ fault if you&#8217;re using it wrong.</p>
+	<p><cite>Comment by JeffE &#8212; 10/7/2013 @ <a href="#comment-89711">13:45</a></cite> </p>
+	</li>
+
+	<li id="comment-89712">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@JeffE</p>
+<p>If you want to be formal about it, then big-O notation is a purely mathematical construct that has no bearing on reality.</p>
+<p>Take sorting&#8230; just artificially pad any array so that it has at least 10^10 elements. You haven&#8217;t changed the big-O notation, but you have drastically altered the real-world performance for all practical cases.</p>
+<p>If you insist on this interpretation, then yes, big-O notation belongs to math. departments. </p>
+<p>But that is not how it is used. Clearly, Jeffrey&#8217;s intent is that his big-O analysis has some bearing on real world performance in this universe.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 10/7/2013 @ <a href="#comment-89712">14:03</a></cite> </p>
+	</li>
+
+	<li id="comment-89725">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/c6f8e0087234b2359ea596326ddfd62d?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Model&#8217;s prediction and experimental results are separate things, but they are not unrelated. What the model says, if it&#8217;s constructed under assumptions similar to what holds for the experiment, is evidence about what the experimental results will be. And the shape of experimental results is evidence for the existence of a reasonable model that would predict it.</p>
+	<p><cite>Comment by Vladimir N &#8212; 10/7/2013 @ <a href="#comment-89725">16:46</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<h2 id="postcomment">Leave a comment</h2>
+
+
+<form action="http://lemire.me/blog/wp-comments-post.php" method="post" id="commentform">
+<!--bot-->
+
+<!--bot-->
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Blog or personal home page</small></label></p>
+
+
+
+
+<p style="background:#ccc;font-size:0.8em;"><strong>Warning</strong>: When entering a long comment, please
+ensure that you make copy of your text prior to submitting it.
+If the server should fail or if you hit a bug, you might lose your work. I am
+not responsible for your lost effort.</p>
+
+<p style="font-size:0.8em;"><strong>To spammers</strong>: I carefully review every single post
+and make sure that spam gets deleted. <strong>You are wasting your time if you
+are manually entering spam using this form.</strong> Read my 
+<a href="http://lemire.me/blog/terms-of-use/">terms of use</a> to see 
+what I consider to be abusive. </p>
+
+
+<!--<p style="font-size:0.8em;"><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </p>-->
+
+<p><textarea name="comment" id="comment" cols="40" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="5438" />
+</p>
+ <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="32fd446997" /></p><p style="clear:both"><input style="width: 20px" type="checkbox" value="1" name="subscribe" id="subscribe" checked="checked"/>&nbsp;<label style="margin:0; padding:0; position:relative; left:0; top:0;" for="subscribe">Notify me when new comments are added</label></p><!--<php show_subscription_checkbox(); ?>
+-->
+</form>
+
+
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/">Previous: Fast integer compression in Java</a></div>
+<div  style="text-align:right">
+<a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/">Next: Big-O notation and real-world performance</a> &raquo; &raquo; </div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>3,800</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1410&nbsp;posts and 5730&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Mark C. Wilson on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89851" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>John Regehr on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89848" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89845" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Carson Chow on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89843" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Mike Croucher on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-89823" title="11/7/2013">Big-O notation and real-world performance</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.127 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-07-12 15:45:19 -->

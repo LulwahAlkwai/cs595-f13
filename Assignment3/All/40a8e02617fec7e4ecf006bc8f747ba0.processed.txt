@@ -1,0 +1,208 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Fast integer compression in Java
+
+   Last year, we published [5]a fast C++ library to quickly compress and
+   decompress arrays of integers. To get good compression, we use
+   differential coding: the arrays of integers are sorted and instead of
+   storing the integers themselves, we store the difference between
+   successive integers. The differences are typically small integers that
+   can be compressed efficiently. Out of habit, I [6]ported our code to
+   Java and published it under the name [7]JavaFastPFOR library.
+
+   Unlike generic compression techniques like gzip or Google Snappy, we
+   only wish to compress and uncompress integers. We provide a less
+   general solution, but we can also get much more impressive speeds in
+   some cases (e.g., an order of magnitude faster).
+
+   Though you cannot reach the same kind of speed in Java as you can in
+   C++, there are many good reasons to use Java instead of C++. How good
+   is Java at this task? Direct comparisons between Java and C++ are
+   difficult. I would estimate that the difference is a factor of 3 and
+   more. But Java can still be more than fast enough.
+
+   I decided to compare our results with the popular Kamikaze PForDelta
+   library. I used a fast core i7 processor with synthetic data. We vary
+   the compressibility of the data. For each test, I report the speed in
+   millions of integers per second as well as the storage cost in bits per
+   integer (in parenthesis).
+    Binary Packing   Kamikaze PForDelta
+   1200 (3.1)       300 (3.3)
+   1100 (7.4)       300 (7.7)
+   1000 (13)        300 (14)
+
+   The numbers show that the Binary Packing technique implemented in the
+   [8]JavaFastPFOR library can easily exceed 1 billion of integers per
+   second in decompression speed. This is likely fast enough for most
+   applications.
+
+   I posted the [9]raw results if you wish the examine them more closely.
+
+   The library is available under the Apache license and is part of the
+   Maven repository. It includes many more schemes.
+
+   Warning: These results may not be representative of what you get in an
+   actual application. They will vary depending on the machine you use and
+   your data. I am only providing these numbers as a ballpark indication.
+
+   Credit: This work is the result of a fruitful collaboration with many
+   super smart people including L. Boytsov, O. Kaser, N. Kurz. All
+   mistakes are my fault.
+   [10]Tweet
+   [11]Comments (6)
+
+   Related posts (automatically generated):
+     * [12]Fast integer compression: decoding billions of integers per
+       second
+     * [13]Bit packing is fast, but integer logarithm is slow
+     * [14]How fast is bit packing?
+     * [15]When is a bitmap faster than an integer list?
+
+6 Comments
+
+    1. "The assumption is that most (but not all) values in your array use
+       less than 32 bits."
+       I think this statement belongs in this post, otherwise nothing
+       makes sense.
+       Comment by Anonymous -- 9/7/2013 @ [16]5:48
+    2. I was recently contemplating on whether I should use Java for
+       algorithmic programming and I came to a conclusion. Java is not
+       good. I mean it is great if you consider the number of libraries
+       available. The performance is generally good. Yet, if you need
+       top-notch performance, it is quite hard to get in Java. You would
+       need to use awful things like manual memory management and parallel
+       arrays.... This is awful and counterproductive. You can do much
+       better in C++. But, if you don't mind 2-3x loss in performance Java
+       (Scala, or, say, OCaml) can be a nice choice.
+       Comment by [17]Itman -- 9/7/2013 @ [18]6:19
+    3. @Anonymous
+       Thanks for pointing out a shortcoming in my post. However, we do
+       not make this assumption. Instead, we just assume that the integers
+       have been sorted. I have edited the post accordingly.
+       Comment by [19]Daniel Lemire -- 9/7/2013 @ [20]8:25
+    4. @Itman
+       What is true is that there is a whole range of optimizations that
+       are simply not possible in Java (by design).
+       Comment by [21]Daniel Lemire -- 9/7/2013 @ [22]8:30
+    5. Does it support streaming compression as integers keep appearing in
+       the stream?
+       Comment by Ishan -- 9/7/2013 @ [23]14:17
+    6. @Ishan
+       You can compress and uncompress data in blocks... See the
+       "advanced" example in the example.java file:
+       [24]https://github.com/lemire/JavaFastPFOR/blob/master/example.java
+       So, yes, I would say that you can building streaming applications
+       using this library.
+       Comment by [25]Daniel Lemire -- 9/7/2013 @ [26]15:41
+
+   Sorry, the comment form is closed at this time.
+   « « [27]Previous: Staying sharp requires "intellectual gardening"
+   [28]Next: Should computer scientists run experiments? » »
+
+   [29]« Blog's main page
+   Daniel Lemire's picture
+     * [30]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [31]Follow on Google Plus
+       22,500 followers
+     * twitter logo [32]Follow @lemire
+       4,000 followers
+     * Facebook logo [33]Follow on Facebook
+     * Google Scholar logo [34]Follow on Google Scholar
+     * Subscribe to this blog
+       - [35]in a reader,
+       - [36]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [37]About me
+          + [38]Book recommendations
+          + [39]My readers
+          + [40]Terms of use
+          + [41]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [42]The written word took over the world
+          + Thierry Lhôte on [43]The written word took over the world
+          + Ben on [44]The written word took over the world
+          + Anonymous on [45]The written word took over the world
+          + kilian on [46]The written word took over the world
+     * Some popular posts
+          + [47]Why I still program
+          + [48]Emotions killing your intellectual productivity
+          + [49]Turn your weaknesses into strengths
+          + [50]It is not where you work, but who you work with
+     * [51]Home page
+       [52]Google Scholar profile
+       [53]arXiv
+       [54]DBLP
+
+   Powered by [55]WordPress
+
+   © 2004-2013, [56]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [57]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/atom
+   4. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/
+   5. https://github.com/lemire/FastPFor
+   6. https://github.com/lemire/JavaFastPFOR
+   7. https://github.com/lemire/JavaFastPFOR
+   8. https://github.com/lemire/JavaFastPFOR
+   9. https://github.com/lemire/JavaFastPFOR/blob/master/benchmarkresults/benchmarkresults_icore7_10may2013.txt
+  10. https://twitter.com/share
+  11. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/#comments
+  12. http://lemire.me/blog/archives/2012/09/12/fast-integer-compression-decoding-billions-of-integers-per-second/
+  13. http://lemire.me/blog/archives/2012/04/05/bit-packing-is-fast-but-integer-logarithm-is-slow/
+  14. http://lemire.me/blog/archives/2012/03/06/how-fast-is-bit-packing/
+  15. http://lemire.me/blog/archives/2012/10/23/when-is-a-bitmap-faster-than-an-integer-list/
+  16. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/?utm_source=feedburner#comment-89635
+  17. http://boytsov.info/
+  18. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/?utm_source=feedburner#comment-89636
+  19. http://lemire.me/en/
+  20. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/?utm_source=feedburner#comment-89642
+  21. http://lemire.me/en/
+  22. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/?utm_source=feedburner#comment-89643
+  23. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/?utm_source=feedburner#comment-89654
+  24. https://github.com/lemire/JavaFastPFOR/blob/master/example.java
+  25. http://lemire.me/en/
+  26. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/?utm_source=feedburner#comment-89658
+  27. http://lemire.me/blog/archives/2013/06/25/staying-sharp-requires-intellectual-gardening/
+  28. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/
+  29. http://lemire.me/blog/
+  30. http://lemire.me/
+  31. https://plus.google.com/105888615414982242080/about
+  32. http://www.twitter.com/lemire/
+  33. http://www.facebook.com/daniel.lemire
+  34. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  35. http://lemire.me/blog/feed/
+  36. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  37. http://lemire.me/blog/about-me/
+  38. http://lemire.me/blog/book-recommendations/
+  39. http://lemire.me/blog/my-readers/
+  40. http://lemire.me/blog/terms-of-use/
+  41. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  42. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  43. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  44. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  45. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  46. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  47. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  48. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  49. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  50. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  51. http://lemire.me/en/
+  52. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  53. http://arxiv.org/a/lemire_d_1
+  54. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  55. http://wordpress.org/
+  56. http://lemire.me/en/
+  57. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  58. http://lemire.me/blog/feed/

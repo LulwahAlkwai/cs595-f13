@@ -1,0 +1,1162 @@
+<!DOCTYPE html>
+<html xmlns:fb="http://www.facebook.com/2008/fbml"
+	  xmlns:og="http://ogp.me/ns#"
+	  lang="en">
+<head>
+	<title>  Pointed talk: Michael Pollan and Amy Harmon dissect a GM controversy | Grist</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta charset="utf-8">
+	<meta name="publisher" content="Grist">
+	<meta name="robots" content="noodp">
+	<meta name="pocket-site-verification" content="600c3e036c3d0b8412be38a78681c7" />
+	<meta name="p:domain_verify" content="c293daabda398bd8ceee45abea0b3201" /><!-- pinterest verification -->
+	<meta property="twitter:account_id" content="7215512" /><!-- enable twitter analytics -->
+	
+	<link rel="alternate" type="application/rss+xml" title="Grist RSS 2.0" href="http://grist.org/feed/" />
+
+	<script>
+	// Chartbeat start point
+	var _sf_startpt=(new Date()).getTime();
+
+	//Global Grist object
+	var GRIST = {};
+
+	// Make some pageview info available
+	GRIST.PAGEVIEW = {};GRIST.PAGEVIEW.theme = "desktop";GRIST.PAGEVIEW.author = "Nathanael Johnson";GRIST.PAGEVIEW.topic = "food";GRIST.PAGEVIEW.type = "story";
+
+	/* Google Custom Search */
+	(function() {
+		var cx = '009531412045486468634:n9zg1xw79ee';
+		var gcse = document.createElement('script'); gcse.type = 'text/javascript'; gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+		   '//www.google.com/cse/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(gcse, s);
+	})();
+
+
+	//Google Analytics
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-191816-1']);
+	_gaq.push(['_setDomainName', 'grist.org']);
+
+	
+		// Author, topic and type tracking for GA
+		if( typeof GRIST.PAGEVIEW !== 'undefined' ){
+
+			if( GRIST.PAGEVIEW.hasOwnProperty('author') )
+				_gaq.push(['_setCustomVar', 1, 'Post Author', GRIST.PAGEVIEW.author, 3]);
+			if( GRIST.PAGEVIEW.hasOwnProperty('topic') )
+				_gaq.push(['_setCustomVar', 2, 'Post Topic', GRIST.PAGEVIEW.topic, 3]);
+			if( GRIST.PAGEVIEW.hasOwnProperty('type') )
+				_gaq.push(['_setCustomVar', 3, 'Post Type', GRIST.PAGEVIEW.type, 3]);
+
+		}
+
+	
+	_gaq.push(['_trackPageview']);
+
+	function recordOutboundLink(link, category, action) {
+		_gat._getTrackerByName()._trackEvent(category, action);
+		setTimeout('document.location = "' + link.href + '"', 100);
+	}
+
+	(function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//End Google Analytics
+
+	//Addthis
+	var addthis_config =
+	{
+		data_ga_property: 'UA-191816-1',
+		data_ga_social : true,
+		data_track_clickback:true,
+		data_track_addressbar: false
+	};
+
+	var addthis_share ={
+		email_template: "template_with_excerpt" ,
+		email_vars: { excerpt: "When one journalist tweets that another\'s piece contains &quot;too many industry talking points,&quot; it takes a lot more than 140 characters to sort out the rights and wrongs. " }
+	};
+
+	// Disqus
+	var disqus_shortname = 'grist';
+	
+	// KissMetrics
+	var _kmq = _kmq || [];
+	var _kmk = _kmk || 'd553143f1390f5fd2c7d8cb03facfeafabb42580';
+
+		
+		function _kms(u){
+		 setTimeout(function(){
+		  var d = document, f = d.getElementsByTagName('script')[0],
+		  s = d.createElement('script');
+		  s.type = 'text/javascript'; s.async = true; s.src = u;
+		  f.parentNode.insertBefore(s, f);
+		 }, 1);
+		}
+		_kms('//i.kissmetrics.com/i.js');
+		_kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+
+	
+		//Google Ads Bootstrap
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') + '//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+	})();
+
+	// Define Google ads placements
+	googletag.cmd.push(function() {
+					googletag.defineSlot('/2154169/728x90_Header', [728, 90], 'div-gpt-ad-1358981735668-0').addService(googletag.pubads());
+			googletag.defineSlot('/2154169/300x250_Pos1', [[300, 600], [300, 250]], 'div-gpt-ad-1358981053960-0').addService(googletag.pubads());
+			googletag.defineSlot('/2154169/300x250_Pos2', [300, 250], 'div-gpt-ad-1358981636822-0').addService(googletag.pubads());
+			googletag.defineSlot('/2154169/300x250_Pos3', [300, 250], 'div-gpt-ad-1358981685734-0').addService(googletag.pubads());
+			googletag.defineSlot('/2154169/728x90_Footer', [728, 90], 'div-gpt-ad-1358981711734-0').addService(googletag.pubads());
+			googletag.defineSlot('/2154169/300x90', [300, 90], 'div-gpt-ad-1369847880674-0').addService(googletag.pubads());
+							// set page targeting via hash
+		var hash = window.location.hash;
+		var hash_prefix = '#sponsor-';
+		if ( hash.length ) {
+			var target_index = hash.indexOf( hash_prefix );
+			if (target_index != -1) {
+				var target = hash.substr( hash_prefix.length );
+				googletag.pubads().setTargeting( 'page', target );
+			}
+		}
+
+		
+		googletag.pubads().enableSingleRequest();
+		googletag.enableServices();
+	});
+	// End Google Ads placements
+	
+</script><!--[if lt IE 9]><script type='text/javascript' src='http://s1.wp.com/wp-content/themes/vip/grist/js/html5shiv.js?m=1361300897g'></script>
+<![endif]--><link rel='canonical' href='http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/' />
+		<script src='http://r-login.wordpress.com/remote-login.php?action=js&amp;host=grist.org&amp;id=5104299&amp;t=1380959904&amp;back=grist.org%2Ffood%2Fpointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy%2F%3Futm_source%3Dsyndication%26utm_medium%3Drss%26utm_campaign%3Dfeed' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='screen,projection-css-0' href='http://s2.wp.com/wp-content/themes/vip/grist/style.css?m=1380821608g' type='text/css' media='screen,projection' />
+<link rel='stylesheet' id='print-css-0' href='http://s2.wp.com/wp-content/themes/vip/grist/print.css?m=1375825263g' type='text/css' media='print' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='grist-ie-css'  href='http://s2.wp.com/wp-content/themes/vip/grist/ie.css?m=1375815048g&#038;ver=25' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='all-css-2' href='http://s0.wp.com/_static/??-eJx1zFEKwjAQhOEL2U6KivognqVJY7KyTUJ2Y/H2VsQHQR9n+PmwlM7lpD4pNPrZC+5UECqJonALlOS9uis/clMw2a+jdyIb/GY+gIzEGmvD2mKhKXjtpVlxlaz/B8QdAmc78iu4zOdhe9ifzHEw5vYE6fVDeQ==' type='text/css' media='all' />
+<link rel='stylesheet' id='screen,projection-css-2' href='http://s0.wp.com/_static/??-eJzTLy/QTc7PK0nNK9EvyUjNTS3WL8ss0E8vyiwu0S/IKU3PzCuG8HTzS0uSihIz83RTcxMzc3RzMtMzSpLyK/DL6iUXF+voE29JcWlRWWolCgdkhH2uraGxuZGFuYmZgXkWAMvmRC0=' type='text/css' media='screen,projection' />
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyFzdsKwjAMgOEXsisesHghPkutcSSuaW3SDX16O1BQEHYVSD7y2ymbkFiB1ZLYmM44gKkCxfdtZ5CvqSNZ2eaQw1AvIDOke4XyeI9FYCL2xSt0EfmDv6o5iUYQack/198U8ogwLTICzT7cTAHB5/z1FI/rrXObvTu4Hb0AKYVb3w=='></script>
+<script type='text/javascript' src='http://s7.addthis.com/js/300/addthis_widget.js?ver=3.7-alpha-25157#pubid=ra-4dc04d5824409f84'></script>
+<script type='text/javascript' src='http://use.typekit.com/jzi2ptk.js?ver=3.7-alpha-25157'></script>
+<script type='text/javascript' src='http://s0.wp.com/_static/??/wp-content/themes/vip/plugins/lightbox-plus/js/jquery.colorbox-min.js,/wp-content/themes/vip/plugins/sailthru/js/widget.subscribe.js?m=1375908100j'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://grist.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://grist.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Vermont Yankee nuclear power plant to shutter' href='http://grist.org/news/vermont-yankee-nuclear-power-plant-to-shutter/' />
+<link rel='next' title='U.S. government paid $17 billion for weather-withered crops last year' href='http://grist.org/news/u-s-government-paid-17-billion-for-weather-withered-crops-last-year/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='shortlink' href='http://wp.me/plpRp-Opx' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fgrist.org%2Ffood%2Fpointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fgrist.org%2Ffood%2Fpointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy%2F&amp;for=wpcom-auto-discovery" /><meta name="description" content="When one journalist tweets that another&#039;s piece contains &quot;too many industry talking points,&quot; it takes a lot more than 140 characters to sort out the rights and wrongs. "  />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Pointed talk: Michael Pollan and Amy Harmon dissect a GM controversy" />
+<meta property="og:url" content="http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/" />
+<meta property="og:description" content="When one journalist tweets that another&#039;s piece contains &quot;too many industry talking points,&quot; it takes a lot more than 140 characters to sort out the rights and wrongs. " />
+<meta property="og:site_name" content="Grist" />
+<meta property="og:image" content="http://i1.wp.com/grist.files.wordpress.com/2013/08/pollan-and-harmon.jpg?fit=1600%2C1600" />
+<meta name="twitter:site" content="@grist" />
+<meta name="twitter:image" content="http://i1.wp.com/grist.files.wordpress.com/2013/08/pollan-and-harmon.jpg?fit=1600%2C1600" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@savortooth" />
+<meta property="article:publisher" content="https://www.facebook.com/grist.org" />
+<link rel="shortcut icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/adb3c9b09bfa2f8bb49bd1b2282757d4?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://0.gravatar.com/blavatar/adb3c9b09bfa2f8bb49bd1b2282757d4?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://1.gravatar.com/blavatar/330e84b0272aae748d059cd70e3f8f8d?s=114" />
+<link rel='openid.server' href='http://grist.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://grist.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://grist.org/osd.xml" title="Grist" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+<!-- BEGIN Sailthru Horizon Meta Information -->
+
+<meta name='sailthru.date' content='2013-08-28 14:46:18' />
+<meta name='sailthru.title' content='Pointed talk: Michael Pollan and Amy Harmon dissect a GM controversy' />
+<meta name='sailthru.description' content='When one journalist tweets that another&#039;s piece contains &quot;too many industry talking points,&quot; it takes a lot more than 140 characters to sort out the rights and wrongs. ' />
+<meta name='sailthru.image.full' content='http://grist.files.wordpress.com/2013/08/pollan-and-harmon.jpg' /> 
+<meta name='sailthru.image.thumb' content='http://grist.files.wordpress.com/2013/08/pollan-and-harmon.jpg?w=150' />
+
+
+<!-- END Sailthru Horizon Meta Information -->		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+		<meta name="sailthru.author" content="Nathanael Johnson" />
+<meta name="sailthru.tags" content="article, food, story" />
+<script type="text/javascript">
+jQuery(function($){
+  $.fn.colorbox.settings.transition = "elastic";
+  $.fn.colorbox.settings.speed = 350;
+  $.fn.colorbox.settings.maxWidth = "930";
+  $.fn.colorbox.settings.maxHeight = "false";
+  $.fn.colorbox.settings.resize = true;
+  $.fn.colorbox.settings.opacity = 0.8;
+  $.fn.colorbox.settings.preloading = true;
+  $.fn.colorbox.settings.current = "Image {current} of {total}";
+  $.fn.colorbox.settings.previous = "← Prev";
+  $.fn.colorbox.settings.next = " Next →";
+  $.fn.colorbox.settings.close = "x";
+  $.fn.colorbox.settings.overlayClose = true;
+  $.fn.colorbox.settings.slideshow = false;
+  $.fn.colorbox.settings.slideshowAuto = true;
+  $.fn.colorbox.settings.slideshowSpeed = 2500;
+  $.fn.colorbox.settings.slideshowStart =  "start";
+  $.fn.colorbox.settings.slideshowStop = "stop";
+  $("a[rel*='lightbox']").colorbox();
+});
+</script>
+<link rel="stylesheet" type="text/css" href="http://s0.wp.com/wp-content/themes/vip/plugins/lightbox-plus//css/lightweight/colorbox.css?m=1246285000g" media="screen" />
+<script type="text/javascript">var ajaxurl = "http://grist.org/wp-admin/admin-ajax.php"</script><meta name="application-name" content="Grist" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Environmental News, Commentary, Advice" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://grist.org/feed/;icon-uri=http://0.gravatar.com/blavatar/adb3c9b09bfa2f8bb49bd1b2282757d4?s=16" /><style id="syntaxhighlighteranchor"></style>
+
+	<!-- Typekit recommends this be the last script before the end of the head -->
+	<script>try{Typekit.load();}catch(e){}</script>
+
+</head>
+
+<body id="article-page" class="mp6 highlander-enabled highlander-light" >
+
+
+	<!-- screen reader navigation -->
+	<menu class="offscreen" >
+		<a accesskey="0" href="#content">Skip to content</a>
+		<a accesskey="1" href="#menu">Skip to site navigation</a>
+	</menu>
+
+		<div class="banner-ad ad clearfix">
+		<!-- 728x90_Header -->
+		<div id='div-gpt-ad-1358981735668-0' style='width:728px; height:90px;'>
+			<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358981735668-0'); });</script>
+		</div>
+		<a class="ad-label"  width="10" height="90" href="http://grist.org/advertising/"><img alt="advertising" src="http://s2.wp.com/wp-content/themes/vip/grist/img/ad/ad-label-10x90.png?m=1341367895g"></a>
+	</div>
+	
+	<header>
+	<div id="masthead" class="container font-size-medium">
+
+		<div class="span-48 border-color-lightest border-top-x3 padding-top-x2 margin-top-x1">
+
+			<div class="span-8">
+				<a href="http://grist.org" title="Grist: Environmental News, Commentary, Advice" rel="nofollow">
+					<img
+						class="sprite-grist-logo"
+						alt="Grist – A Beacon In The Smog"
+						width="145"
+						height="140"
+						src="http://s2.wp.com/wp-content/themes/vip/grist/img/ui/invisible.png?m=1341367895g"
+					/>
+				</a>
+			</div>
+
+			<div class="span-25">
+				
+	<div id="skyboxes">
+
+														<a title="" href="http://grist.org/food/it-takes-a-village-people-gmo-disco-will-make-monsanto-quake-in-its-leisure-suit/" class="block skybox border span-8 link-dark centered" >
+						<img width="140" height="90" src="http://grist.files.wordpress.com/2013/10/gmo-disco.jpg?w=140&amp;h=90&amp;crop=1" class="attachment-feature-image wp-post-image" alt="gmo-disco" />						<div class="skybox-title" data-grist-post-id="201292">GMO disco will make Monsanto quake in its leisure suit</div>
+				</a>
+														<a title="" href="http://grist.org/list/is-this-the-magic-compost-bin-of-your-dreams/" class="block skybox border span-8 link-dark centered" >
+						<img width="140" height="90" src="http://grist.files.wordpress.com/2013/10/van-kristen-hess-compokeeper.jpg?w=140&amp;h=90&amp;crop=1" class="attachment-feature-image wp-post-image" alt="Van and Kristen Hess" />						<div class="skybox-title" data-grist-post-id="201135">Is this the magic compost bin of your dreams?</div>
+				</a>
+														<a title="" href="http://grist.org/list/stephen-colbert-officiates-and-smokey-the-bear-is-best-man-at-the-awesomest-wedding-ever/" class="block skybox border span-8 link-dark centered" >
+						<img width="140" height="90" src="http://grist.files.wordpress.com/2013/10/colbert_smokey.png?w=140&amp;h=90&amp;crop=1" class="attachment-feature-image wp-post-image" alt="colbert_smokey" />						<div class="skybox-title" data-grist-post-id="201217">Colbert officiates and Smokey Bear is best man at amazing wedding</div>
+				</a>
+		
+	</div><!-- #skyboxes -->
+
+			</div>
+
+			<div id="masthead-donate-follow" class="span-15 last">
+
+				<div id="widget-follow">
+
+	<div class="donate-flag">
+		<a href="https://services.grist.org/give/?campaign=70150000000mGgl" title="Donate to Grist">
+			<p>Support<br>Grist's<br>nonprofit<br>mission</p>
+			<img
+				class="sprite-donate-flag"
+				alt="Donate to Grist"
+				width="86"
+				height="60"
+				src="http://s2.wp.com/wp-content/themes/vip/grist/img/ui/invisible.png?m=1341367895g"
+				/>
+		</a>
+	</div>
+
+	<div class="follow-block">
+		<h3 class="follow-header">Follow Grist</h3>
+
+		<!-- AddThis Buttons -->
+		<div class="addthis_toolbox addthis_default_style" style="width:110px;">
+			<a class="addthis_button_facebook_like" fb:like:href="https://www.facebook.com/grist.org"  fb:like:layout="button_count"></a>
+			<a class="addthis_button_google_plusone margin-top-x1" g:plusone:href="https://plus.google.com/103754912211412832319"></a> 
+			<a class="addthis_button_twitter_follow_native margin-top-x1" tf:screen_name="grist" addthis:url="http://grist.org/"></a>
+		</div>
+		<!-- AddThis Buttons END -->
+	</div>
+
+</div><!-- #widget-follow -->
+			</div>
+
+		</div>
+
+		<div class="span-48">
+			
+<nav id="main-nav" class="main-nav">
+
+	<div id="main-nav-upper" class="main-nav-upper">
+		<div class="span-24">
+			<ul class="main-nav-lvl-1">
+				<li><a class="no-hover" href="http://grist.org/news/">News / <span class="nav-link-alt-name">gristmill</span></a></li>
+				<li><a class="no-hover" href="http://grist.org/list/">Cool / <span class="nav-link-alt-name">gristlist</span></a></li>
+				<li class="dropdown">
+
+					<a class="no-hover" href="#">Topics<div class="dropdown-arrow sprite-small-down-arrow"></div></a>
+
+					<ul class="main-nav-lvl-2">
+
+						<li><a href="http://grist.org/climate-energy/">Climate &amp; Energy</a></li>
+						<li><a href="http://grist.org/food/">Food</a></li>
+						<li><a href="http://grist.org/cities/">Cities</a></li>
+						<li><a href="http://grist.org/living/">Living</a></li>
+						<li><a href="http://grist.org/politics/">Politics</a></li>
+						<li><a href="http://grist.org/business-technology/">Business &amp; Tech</a></li>
+
+						<li><span class="text-color-grey">|</span></li>
+
+						<li><a href="http://grist.org/basics/">The Basics</a></li>
+						<li><a href="http://grist.org/people/">People</a></li>
+						<li><a href="http://grist.org/slideshows/">Slideshows</a></li>
+						
+					</ul>
+				</li>
+				<li class="dropdown">
+
+					<a class="no-hover" href="#">Voices<div class="dropdown-arrow sprite-small-down-arrow"></div></a>
+
+					<ul class="main-nav-lvl-2">
+
+						<li><a href="http://grist.org/author/david-roberts/">David Roberts</a></li>
+						<li><a href="http://grist.org/author/nathanael-johnson/">Nathanael Johnson</a></li>
+						<li><a href="http://grist.org/author/ask-umbra/">Ask Umbra</a></li>
+						<li><a href="http://grist.org/author/scott-rosenberg/">Editor's Blog</a></li>
+						<li><a href="http://grist.org/contributors/">Guest Contributors</a></li>
+
+					</ul>
+				</li>
+			</ul>
+		</div> <!-- .span-23 -->
+
+		<div class="nav-search span-14">
+			<form action="http://grist.org/search/" role="search" id="searchform" method="get">
+				<fieldset>
+					<div class="form-input-text-container">
+						<input class="form-input-text" id="q" type="text" name="q" value="" placeholder="Search Grist">
+					</div>
+
+					<div class="form-input-submit-container">
+						<input class="form-input-submit" type="submit" value="GO" id="searchsubmit">
+					</div>
+				</fieldset>
+			</form>
+		</div> <!-- .span-15 -->
+
+		<div class="span-10 last">
+			<ul class="main-nav-lvl-1">
+				<li><a class="no-hover " href="http://grist.org/about/">About</a></li>
+				<li><a class="no-hover " href="http://grist.org/contact/">Contact</a></li>
+			</ul>
+		</div> <!-- .span-10 -->
+	</div> <!-- .main-nav-upper -->
+
+		<div id="main-nav-lower" class="main-nav-lower"></div><!-- .main-nav-lower -->
+
+</nav> <!-- .main-nav -->
+		</div>
+
+	</div> <!-- end .container -->
+</header>			<div id="content-wrap">
+			<div id="content" class="container">
+
+
+								<div id="primary" class="span-32">
+
+					
+<div class="span-30 author-blog-header last">
+
+		<!--author thumb -->
+		<div class="prepend-2 span-8">
+			<a href="http://grist.org/author/nathanael-johnson/" title="Posts by Nathanael Johnson" >
+				<img class="author-blog-header-avatar" width="120" height="120" src="http://grist.files.wordpress.com/2013/06/nathanaeljohnson-120x120.png?w=120" >
+			</a>
+		</div>
+
+		<!-- author name, tag line and follow tools -->
+		<div class="span-20 last">
+
+			<a href="http://grist.org/author/nathanael-johnson/" title="Posts by Nathanael Johnson" >
+				<h1>Nathanael Johnson</h1>
+				<h2>Thought for food</h2>
+			</a>
+
+			<div class="author-tools">
+				
+				<!-- twitter feed -->
+									<a  title="Twitter feed for Nathanael Johnson"
+					href="http://twitter.com/savortooth"
+					class="twitter-follow-button"
+					data-show-count="false"
+					data-show-screen-name="true">Follow</a>
+					<script src="https://platform.twitter.com/widgets.js" type="text/javascript"></script>
+							</div>
+
+		</div>
+</div>
+					<article class="article-plus-share-tools-container">
+
+						<div id="left-gutter" class="span-4 append-2">
+
+								<div class="comment-count-ui">
+									<a title="Jump to comments" class="comment-count no-hover" href="http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/#disqus_thread" data-disqus-identifier="wp193783"></a>
+									<div class="comment-divit">&nbsp;</div>
+									<p class="comment-label"><a href="http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/#comments">Comments</a></p>
+								</div>
+
+								<p class="dateline border-top-dotted border-bottom-dotted margin-bottom-x4">
+									<time datetime="2013-08-28T14:46:18+00:00">
+										28 Aug 2013 2:46 PM									</time>
+								</p>
+
+								
+
+	<div class="addthis_toolbox addthis_default_style"
+		 id="floating-share-tools"
+
+			 addthis:url="http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/"
+	
+			 addthis:title="Pointed talk: Michael Pollan and Amy Harmon dissect a GM controversy"
+	
+			 addthis:description="When one journalist tweets that another&#039;s piece contains &quot;too many industry talking points,&quot; it takes a lot more than 140 characters to sort out the rights and wrongs. "
+			><!--buttons-->
+		<a class="addthis_button_facebook_like" fb:like:layout="box_count"fb:send="true"></a>
+		<a class="addthis_button_tweet" tw:count="vertical" tw:via="grist" tw:related=""></a>
+		<a class="addthis_button_google_plusone" g:plusone:size="tall"></a>
+		<a class="addthis_button_pinterest_pinit" style="margin-left:15px;" pi:pinit:layout="vertical" pi:pinit:media=""></a>
+		<a class="addthis_button_pocket addthis_32x32_style" style="margin-left:18px;" ></a>
+		<a class="addthis_button_reddit addthis_32x32_style"></a>
+		<a class="addthis_button_stumbleupon addthis_32x32_style"></a>
+		<a class="addthis_button_email"></a>
+
+
+			<a class="addthis_button_print"></a>
+	
+
+	</div>
+	
+						</div>
+
+						<div class="article-container span-24 append-2 last post-193783">
+
+							<header class="padding-bottom-x4">
+								<h1 class="headline">
+									Pointed talk: Michael Pollan and Amy Harmon dissect a GM controversy								</h1>
+								<p class="byline">By <a href="http://grist.org/author/nathanael-johnson/" title="Posts by Nathanael Johnson" rel="author">Nathanael Johnson</a></p>
+																							</header>
+
+
+							<section class="article-body">
+								<p>Last month, the <em>New York Times</em> put its front-page spotlight on a <a href="http://www.nytimes.com/2013/07/28/science/a-race-to-save-the-orange-by-altering-its-dna.html?pagewanted=all&amp;_r=0" target="_blank">lengthy feature</a> by Amy Harmon &#8212; a story that followed an orange grower&#8217;s quest to make the fruit disease-resistant through genetic engineering. The piece occasioned plenty of debate. But one tweet from Michael Pollan, in particular, triggered a cascade of puzzlement, debate, and anger.</p>
+<p>Here&#8217;s what Pollan said about Harmon&#8217;s piece:</p>
+<blockquote class='twitter-tweet' lang='en'><p>Important NYT story on GM oranges; 2 many industry talking pts, but poses questions: is prob tech? reg? or Monsanto?  <a href="http://nyti.ms/14pVZTY"> nyti.ms/14pVZTY</a></p>&mdash; <br />Michael Pollan (@michaelpollan) <a href='http://twitter.com/#!/michaelpollan/status/361609333013884930' data-datetime='2013-07-28T22:09:18+00:00'>July 28, 2013</a></blockquote>
+<p>The barrage of angry responses was immediate and sustained, mostly focusing on the part about &#8220;industry talking points.&#8221; What did Pollan mean by that? Was he simply knocking the story because it showed genetic modification in a positive light? Some felt he was calling Harmon, a widely admired feature writer who has won two Pulitzers, a shill. Many science writers leapt to Harmon&#8217;s defense.<span id="more-193783"></span></p>
+<p>As the <a href="http://www.cjr.org/the_observatory/michael_pollan_and_amy_harmon.php?page=all" target="_blank"><em>Columbia Journalism Review</em> reported</a>:</p>
+<blockquote><p>By exiting the conversation before fully explaining himself, dozens of writers argued that Pollan was not only depriving Harmon of a chance to respond, but also stunting the conversation surrounding genetic modification. “It’s a serious charge,” explained Carl Zimmer, a science writer and <i>Times</i> columnist, who took to Twitter to demand that the writer respond. “I don’t think it’s good enough to just say that and leave it.”</p></blockquote>
+<p>I was swept up in the Twitter debate momentarily, and was puzzled by the whole thing. I should disclose that Pollan is a friend and a mentor &#8212; one who, in my experience, has always been kind and thoughtful. As I watched my Twitter stream, I couldn&#8217;t help wondering what was going on: Had Pollan really erred here? And, if not, why the outrage?</p>
+<p>I called Pollan up and asked him some questions. That left me with other questions, so afterward <a href="#harmon">I interviewed Harmon as well</a>. In retrospect it might have worked better to have the two of them talk directly rather than have me play the middleman. But I think there&#8217;s also something to be gained by allowing each to have their say in response to my gentle prodding, rather than go at it in full-throttle debate: There&#8217;s already an oversupply of that on this subject.</p>
+<p><img class="aligncenter size-full wp-image-195843" alt="michael pollan" src="http://grist.files.wordpress.com/2013/08/michael-pollan1.jpg?w=426&#038;h=320" width="426" height="320" /></p>
+<p><span class="QA">NJ</span> <strong>Would you have tweeted the same thing if you knew what the blowback would be? And did you mean it as an insult?</strong></p>
+<p><span class="QA">MP</span> No, I didn’t mean it as an insult, I thought there were flaws in the piece but that &#8212; on balance &#8212; it was a good piece that people needed to read. You know, I tweet all sorts of things. Some I agree with, some I disagree with, but it’s all stuff that I thinks rises to the level of, “Hey, I think you should read this and draw your own conclusions.”</p>
+<p>In this case for me to tweet it without indicating my reservations wouldn’t have been accurate. I thought it was an attempt to look at a best case of a GM crop &#8212; a potential best case. And that’s an interesting exercise. I always ask critics of GM, “Can you imagine a GM crop that you could get behind?” It used to be, before this debate got so ferocious and polarized, that you could get a critic of GM to say, “Yeah, if they really worked on improving photosynthetic efficiency, or if they made crops that could produce their own nitrogen, I would support that.” And that made for a very interesting discussion: OK, so the problem is not inherent in the technology, it’s really in the way it’s been applied, or the way it’s been regulated. So here was one of those cases that was really an opportunity for everyone to hit the reset button and say, “Could I get behind this?”</p>
+<p>In the rest of my tweet &#8212; and this was addressed to critics, this was a challenge to critics of GM &#8212; I asked, is the problem the technology, is the problem Monsanto, is the problem regulation? What exactly is your problem with it? I think we need to ask those questions, and I ask those questions all the time.</p>
+<p>People assume that I’m a dyed-in-the-wool opponent of genetic engineering technology. I’m a skeptic, and I’m critical of the way the technology has been developed and deployed and what it’s done to American agriculture, but I don’t think the technology itself is intrinsically evil. I can imagine applications I would support. This was potentially one of those applications. But is it really true that there’s no other way to deal with this problem? What about getting away from monoculture? Is this really the only answer?</p>
+<p><span class="QA">NJ</span> <strong>And the other part of that tweet said something about too many industry talking points, which is what got people really riled. What did you mean by that?</strong></p>
+<p><span class="QA">MP</span> A talking point is not a lie. A talking point is not necessarily propaganda. Often they are facts, deployed in political argument. And so for example, one of the talking points in the piece was, conventional breeding sometimes produces toxic compounds too. And that’s something I’ve been hearing from the industry for a very long time &#8212; I think they have an example of some potato.</p>
+<p><span class="QA">NJ</span> <strong>The <a href="http://boingboing.net/2013/03/25/the-case-of-the-poison-potato.html" target="_blank">Lenape potato.</a></strong></p>
+<p><span class="QA">MP</span> Right. I’m sure you can find such an exception, but it’s not like conventional breeding is routinely producing toxins. It’s one of those facts that works as a bit of political rhetoric. Which is not to say that it’s false, though it can be true and also misleading. It’s useful in normalizing genetic engineering.</p>
+<p><span class="QA">NJ</span> <strong>So what exactly are the other talking points you found in the piece? Let&#8217;s go through them.</strong></p>
+<p><span class="QA">MP</span> Sure. There&#8217;s this one. <em>Genetic engineering is on a continuum with selective breeding or hybridization: an age-old human reshaping of plant genomes.</em> Whether you believe that or not, this has been what Monsanto has led with since 1996. And if you go back to <a href="http://michaelpollan.com/articles-archive/playing-god-in-the-garden/" target="_blank">that first piece I wrote on the subject</a> they were telling me, this is just like fermentation, or selective breeding, or hybridization.</p>
+<p>And you know, that is a point you can argue. Yet it can also be argued that, unlike GM, those operations don’t involve crossing the species boundary. Even breeding with radiation doesn’t involve crossing the species boundary. Now maybe there’s nothing wrong with crossing the species boundary &#8212; viruses do it all the time &#8212; but the point is, it’s a talking point that needs to be approached with some skepticism.</p>
+<p>Here’s another: <em>Criticism of the industry explains why we haven’t seen lots of terrific GM products in the market.</em></p>
+<p><span class="QA">NJ</span> <strong>That one seems suspect to me.</strong></p>
+<p><span class="QA">MP</span> I think that’s really dubious. The industry has been blaming critics for their failures from the earliest days, I just don’t see a lot of great stuff being held up. And you might look at <a href="http://www.npr.org/blogs/thesalt/2013/03/07/173611461/in-a-grain-of-golden-rice-a-world-of-controversy-over-gmo-foods" target="_blank">Golden Rice</a> to see if environmentalists are to blame for the delays, or was it competing patent claims and technological problems? But it’s very convenient &#8212; it’s a great thing to tell your investors &#8212; if you are having trouble, that it’s critics that are slowing things down.</p>
+<p>What else? Oh, <em>GM products have received extensive health and safety testing, including dozens of long-term feeding trials</em>. I think that’s questionable. <em>Federal regulation of new GM crops has been rigorous.</em> I think that’s a point you could argue. <em>Critics of GM, and proponents of labeling, are scientifically illiterate and engaged in fearmongering.</em> [laughs] <em>Americans won’t eat genetically modified foods even if they offer real benefits.</em> Again, that proposition hasn’t been tested.</p>
+<p>Part of the reason consumers are objecting to GM is that GM hasn’t offered consumers anything of value. What if they did? I think that if they actually saved orange juice for America, people would get behind it. I think if they could produce a substantially healthier cooking oil, Americans would get behind it. I mean, we’re the ones who bought Olestra.</p>
+<p><span class="QA">NJ</span><strong> Just look at cellphones &#8212; there are <a href="http://www.cancer.gov/cancertopics/factsheet/Risk/cellphones" target="_blank">some legitimate questions about brain cancer</a>.</strong></p>
+<p><span class="QA">MP</span> You’re irradiating your head on a daily basis &#8212; but we’re willing to do it, <em>if</em> it offers a benefit. Americans are not all that skeptical of technology. We  sit for all sorts of things that Europeans don’t sit for. And we trust our regulators, on balance, in a way that Europeans don’t (the reason they don’t is because of mad cow disease, and a few other things). So I think that too is an industry talking point &#8212; that if we have labeling nobody is going to buy this stuff. I think it’s arguable at best. It reflects the industry’s failure to offer anything of value to consumers, which has created a vacuum into which critics &#8211;and, yes, some fearmongers &#8212; could step.</p>
+<p><em>Public discussion of GM is a risk to consumer acceptance of GM products.</em> In other words, just by debating labeling we’re hurting this technology. If the technology can’t survive public debate, then it’s got a serious problem. This is the first time we&#8217;ve had any public debate &#8212; you know, it’s been on the market for 17 years. If you remember the premise of <a href="http://michaelpollan.com/articles-archive/the-way-we-live-now-feeding-frenzy/" target="_blank">my piece, in 1999, I think it was</a>, I was looking at the introduction to this radical change in American agriculture &#8212; by Monsanto’s admission by the way, it was a radical change.</p>
+<p><span class="QA">NJ</span><strong> I remember.</strong></p>
+<p><span class="QA">MP</span> And there was no politics around it at all, while at the same time Europe was going crazy. So the premise of that piece was, are they crazy or are we crazy? Are they crazy for debating this change or are we crazy for not debating it? So in America this debate is fairly new. I mean people have been trying to stir it up but not getting much attention, certainly not getting 49 percent of the vote in California.</p>
+<p>And then the last one: <em>People should support the GM products we have today because of the much better GM promised for the future</em>. You know, farmers have a term for this: Buying a pig in a poke.</p>
+<p><span class="QA">NJ</span> <strong>Just to circle back to the issue of health and safety testing: there have been quite a few long-term feeding trials, and &#8212; sure &#8212; you can go through and pick them apart. But it was fairly convincing to me to see how many big groups of scientists, where they get all these disciplines together, have come to the same conclusions. The Swiss just finished this, for instance &#8212; and one after another they’ve come through and said, you know, we really don’t think that this is something that, on balance, we have to worry much about. What do you think about that?</strong></p>
+<p><span class="QA">MP</span> Well, I don’t know what to think about it, because I haven’t looked at it as closely as you have, and I haven’t read the studies or these institutional sign-offs. But I do wonder how much industry lobbying has gone on with these groups and how much independent science has been done. Very little of it gets done: It was hard to do it until you could get access to the seeds, and there was a huge penalty for doing it &#8212; people who tried came under attack.</p>
+<p>So you may well be right, I just don’t know enough to say. And it’s worth noting that American regulators do not demand any feedings studies &#8212; what’s been done has been at the behest of European regulators. Right, the FDA asks for tests on allergenicity &#8212; by and large isn’t that the deal with safety testing in this country?</p>
+<p><span class="QA">NJ</span> <strong>Yeah, they test for a few other things, but feeding trials don’t happen, or at least are very rare. And it’s all done by the companies themselves, with oversight.</strong></p>
+<p><span class="QA">MP</span> Which is of course true with drug tests. But people assume the FDA has done a lot of feeding trials, and what I learned in reporting this is that, no, they don&#8217;t. It’s mostly in vitro allergenicity &#8212; which is important, because that&#8217;s where they&#8217;ve found problems in the past.</p>
+<p>I don’t know the answer. I’m not yet convinced that you can say there’s extensive, independent health and safety testing. It may well be &#8212; but the point is that this is what the industry has been saying since the beginning, when it certainly wasn&#8217;t the case.</p>
+<p>And again: All journalism contains talking points. I have published talking points. I didn&#8217;t quite see it as the venal sin of journalism that some of the tweeters did, and I think there was a thin-skinnedness among some of my science-writing brethren about pointing it out. Political writers jostle and elbow each other all the time and it’s not that big a deal. But we science writers are supposed to be so enlightened, so rational that we are above all that &#8212; somehow post-political.</p>
+<p><span class="QA">NJ</span><strong> Because we’re always right. [laughs] Being wrong as a science writer &#8212; or not even being wrong, but being criticized implies wrongness &#8211;that’s the worst thing that can happen.</strong></p>
+<p><span class="QA">MP</span> That’s right. But, you see, the criticism is about journalism and not science.</p>
+<p><span class="QA">NJ</span> <strong>What is that criticism? I think Amy Harmon said, and is probably right, that this was supposed to be a narrative piece and it was about oranges. There’s no way to contain every point of the GM debate.</strong></p>
+<p><span class="QA">MP</span> And I don’t know that you need to contain every point. But I would just say that when you are building a big, long-form narrative on a big subject around a microcosm, the question of just how representative your microcosm is of the general case becomes important.</p>
+<p>I love that kind of journalism, it’s precisely the kind of journalism I did with my piece about a GM potato, so I’ve played in the same sandbox. But the question is, is it representative of other GM products and crops? And if it’s not, could you just discuss for a little while what’s anomalous about it? So, for example, point out that disease resistance is something that’s not a high priority for this industry &#8212; wouldn&#8217;t it be great if it were?</p>
+<p>Just kind of putting your microcosm in context, that’s all. When you don’t do that &#8212; and your story stands as a metaphor for all of GM, and is perhaps the<em> New York Times</em>&#8216; only cover on the topic this year &#8212; you have to ask, it a fair metaphor for all of GM? Is it a fair metaphor for what we might call &#8212; after the old socialist line&#8211;&#8221;actually existing GM&#8221; [laughs].</p>
+<p>There was actually existing socialism, which was horrible, and then there was the Marxist ideal, which the socialists were always tried to rescue from the taint of the real thing. Well, we have actually existing GM and we have a wonderful scientific ideal. And I think being sensitive to the tensions between those two things would have served the reader, though I would lay this criticism more on the editors than the writer.</p>
+<p>But I have to stress, on balance, I’m happy the <em>Times</em> published that piece. And it really dropped a challenge at the feet of critics of GM to figure out, well, what is your problem? And my problem is not necessarily the same as their problem. My problem has been less about health and safety of the technology than it has been about the political economy of GM and what it has done to American agriculture, to competition in the seed business, and to the size and sustainability of our commodity crop monocultures.</p>
+<p>But you know, this is a tweet &#8212; this isn’t a book review! It’s just, &#8220;Read this but be sensitive to this.&#8221; Maybe what I should have done is listed my nine talking points in nine tweets.</p>
+<p><span class="QA">NJ</span> <strong>Maybe so. And also, I think you may have violated the unspoken conventions of Twitter in that you aren’t on there all the time. I think people kind of expect people who are on Twitter to be constantly responding and debating there.</strong></p>
+<p><span class="QA">MP</span> Carl Zimmer wrote me and said Twitter is a social medium and you have an obligation to respond. I actually don’t accept that. There are different ways to use Twitter. I essentially use it as a broadcast medium rather than a social medium.</p>
+<p><span class="QA">NJ</span> <strong>You don’t respond at all.</strong></p>
+<p><span class="QA">MP</span> Very seldom. I use it as a clipping service for my readers: Here’s something interesting that crossed my desk. And a lot of journalists use it that way. I don’t necessarily feel it’s a good place to conduct debates. I think it’s a very good place to exchange readings. And get each other up to speed. I end up reading things I don&#8217;t agree with because I’m on Twitter, and I’m sure that happens with my feed &#8212; I mean, not everyone following me, obviously, agrees with me. There’s not one way to use Twitter. And then there’s the fact that I was on vacation and I was going 24 hours without opening my laptop and uh, you know, paid a price. [laughs]</p>
+<p><span class="QA">NJ</span> <strong>You certainly were, what&#8217;s the word? Chastised? [laughs] Punished?</strong></p>
+<p><span class="QA">MP</span> Punishment’s a strong word for a handful of nasty tweets. You know how this started, actually? I opened my Twitter feed on that Sunday night, I guess it was, and there was this tweet from someone saying, it’s been 24 hours and Michael Pollan hasn&#8217;t commented on Amy Harmon’s piece. And I fell right into that trap [laughs]. I didn&#8217;t know about the piece. So I read it and I said, this is interesting, I’m going to tell my readers about it.</p>
+<p>And so there was &#8212; the shitstorm, as they say. Though I wasn&#8217;t following it minute by minute. And I did seriously consider responding, because I did feel bad I hadn&#8217;t spelled out the talking points. But then I finally decided, is this the right arena in which to have the discussion? And I did write extensive emails explaining my point of view to anyone who reached out to me, including Carl Zimmer, and he can tell you that. I was happy to engage, and if Amy Harmon had written to me I would have been happy to engage.</p>
+<p>But, Jesus! This was a &#8220;Hey, read this piece&#8221; with a caveat. And I think it’s a measure of just how ugly this debate has gotten that that is considered, you know, a low blow, an insult, tantamount to calling someone a shill. It’s definitely not tantamount to calling someone a shill &#8212; I never would have done that with that piece, because it isn&#8217;t true. That’s not what I was saying, and I think that reflects a misunderstanding of what an industry talking point is.</p>
+<p>It’s really sad how this debate is getting played out. You’re on one side or the other. I actually think my position on GM is somewhat nuanced. Being skeptical about science and technology is very much in the scientific spirit, and if everybody in the scientific community is on one side, it doesn&#8217;t necessarily mean we shouldn&#8217;t remain skeptical, not necessarily of the scientific consensus &#8212; though we can argue about that &#8212; but then certainly of the real-world impacts of the technology, which are political, economic, agronomic, and intellectual property issues.</p>
+<p>It’s a very clever meme to liken doubt about GM to doubt about climate change, but it’s misleading. You can accept that GM is safe &#8212; the narrow scientific issue &#8211;without accepting that it&#8217;s a good idea for the American food system, or has contributed much of value. Surely it would be a shame if climate-change skeptics gave skepticism a bad rap!</p>
+<p>The other thing is recognizing that we never escape politics and we never escape economics, even when we are talking about science and technology. Even for science writers who have satisfied themselves on the health and safety of GM, there are other issues &#8212; much messier issues &#8212; that they need to pay attention to.</p>
+<hr class="text-break" />
+<p><a id="harmon"></a><br />
+After speaking with Michael Pollan, I asked Amy Harmon if I could get her side of the story.</p>
+<figure id="attachment_195818" class="grist-img-container aligncenter" style="width:470px" ><img class="size-large wp-image-195818" alt="Amy Harmon" src="http://grist.files.wordpress.com/2013/08/amyharmon2012_photo-by-scott-matthews.jpg?w=470&#038;h=366" width="470" height="366" /><figcaption class="credit" >Scott Matthews</figcaption></figure>
+<p><span class="QA">NJ</span> <strong>The big Twitter kerfuffle basically came down to, what did Pollan mean by &#8220;talking points&#8221;? He says, you know, a talking point isn&#8217;t something that’s untrue &#8212; it’s more like a meme, a fact that one group decides to seed into the conversation as often as possible. Like Romney saying we have a trillion dollar deficit &#8212; it was true, but repeating it without <a href="http://www.motherjones.com/kevin-drum/2011/05/deficit-chart-republicans-hate">unpacking</a> it serves his interests. And, by the way, I’ve repeated many of the same talking points that came up in your story, and [laughs] a lot of astute Grist readers made damn sure to let me know. So, knowing that’s what Pollan meant by talking points, does that change the way you interpret that tweet at all?</strong></p>
+<p><span class="QA">AH</span> Um, no. If someone said to a political reporter, &#8220;You included too many of the campaign talking points,&#8221; that political reporter would be insulted, because she would know that meant that she was taking the campaign’s propaganda unquestioningly and repeating it. So it was meant as a diss &#8212; I don&#8217;t see how it could be interpreted as anything other than that.</p>
+<p><span class="QA">NJ</span> <strong>He says it wasn&#8217;t a diss, he didn&#8217;t mean to make it personal, just to include a caveat about the story.</strong></p>
+<p><span class="QA">AH</span> Well, OK, if you don’t want to call it a diss you could call it a caveat. Most every other reporter who read it thought it was a diss, though.</p>
+<p><span class="QA">NJ</span> <strong>[laughs] Well, I didn&#8217;t think that was a diss. It doesn&#8217;t mean that the industry pulled the wool over your eyes. I mean, what gave the story its rhetorical drive &#8212; aside from the narrative drive, which was masterful &#8212; was the challenge to people like me who do have some real concerns about GMOs. To say, look, here’s a case that’s pretty hard to oppose. Could you accept this type of GMO, and if not, why not? And by virtue of doing that, you kind of need to repeat all these points.</strong></p>
+<p><span class="QA">AH </span>Hm, well &#8212; I appreciate your saying that about the rhetorical and narrative drives. What made this story challenging to <i>me</i> was precisely that &#8212; I was trying to embed an argument, and a lot of explanatory information, in a classic kind of quest-story, with suspense and a narrative arc and all that. But I don’t think that gives me a pass to parrot points from either side without doing a lot of reporting and making sure I understand which ones are fair, and why &#8212; which is what I did.</p>
+<p><span class="QA">NJ</span> <strong>I don’t think you are parroting talking points, but they are in there, fair or not, as they are in my work. But since you mention narrative, that’s a point that has come up &#8212; that maybe story telling is a fundamentally biased form of communication.</strong></p>
+<p><span class="QA">AH</span> The <a href="http://www.cjr.org/the_observatory/michael_pollan_and_amy_harmon.php?page=all" target="_blank">CJR reporter, Alexis Fitts</a>, raised an interesting question in her piece on this episode. Basically, &#8220;Is it inherently manipulative to tell a narrative story from the point of view of a single character to viscerally draw people into a debate over a broader subject?&#8221; And to some degree it is.</p>
+<p>Like you said, I was trying to tell a story that challenged people’s preconceptions of genetically modified food. And I was trying to make an argument through narrative, in part to make it less boring. I did want to raise the important points in the debate, but I was trying not to make them by saying, &#8220;Here’s what opponents say and what proponents say.&#8221;</p>
+<p><span class="QA">NJ</span> <strong>That’s a different form and it doesn’t lend itself to narrative.</strong></p>
+<p><span class="QA">AH</span> A narrative can achieve the same thing as an overtly explanatory or essayistic piece of writing, I think &#8212; it’s just a different strategy. I personally like that form, I think it’s underused in science writing. But precisely because you are engaging people’s emotions with this kind of storytelling, and using characters and scenes and dialogue to get points across, I think it’s your responsibility as a reporter to be sure you&#8217;re reflecting some greater truth that you&#8217;ve verified with outside experts. That&#8217;s what makes it <em>not</em> manipulative &#8212; and potentially more powerful.</p>
+<p>Michael is obviously a great narrative reporter, but his type of narratives are pretty different than mine. I tend to do what’s called &#8220;immersion narrative&#8221; &#8212; you know, in the world [laughs] of narrative-writing people &#8212; or &#8220;story narrative,&#8221; where there is a main character with a conflict and some form of resolution at the end. And this is a tricky topic for that.</p>
+<p>For example I wrote about this young man with autism who was trying to achieve independence. And there was an argument behind that, choosing him and choosing that subject. Basically, &#8220;Hey, readers, these people with neurological differences are coming of age, and with accommodation and with the type of programs I chose to highlight they could stand a much better chance of being integrated into society.&#8221; But that was a less controversial argument, probably, at least for<em> New York Times</em> readers. Because [genetically modified food] is an issue where many people hold the opposite view, it may have seemed more &#8220;inherently manipulative&#8221; to some readers.</p>
+<p><span class="QA">NJ</span><strong> I asked Michael what he would have wanted to see different in the piece. And he said, I would like to see a sentence or two placing this in context: Is this representative of the sort of problems we are solving with GM? What percentage of GMOs have to do with disease resistance? This story was about GM giving us more foods, and, except with papaya, that hasn’t been the case: Most GM has really been about farming more efficiently. Should you have placed this in context a bit more?</strong></p>
+<figure id="attachment_195847" class="grist-img-container alignright" style="width:250px" ><img class=" wp-image-195847 " alt="Not amused: A friend took a picture of Harmon right after she read Pollan’s tweet." src="http://grist.files.wordpress.com/2013/08/amyonvacation.jpg?w=250" width="250" /><figcaption class="credit" >Philip Cohen</figcaption><figcaption class="caption" >Not amused: A friend took a picture of Harmon right after she read Pollan’s tweet.</figcaption></figure>
+<p><span class="QA">AH</span> Let me read you a line in the story, from a [section] called &#8220;The Monsanto Effect&#8221;:</p>
+<blockquote><p>It had not helped win hearts and minds for G.M.O.’s, Mr. Kress knew, that the first such crop widely adopted by farmers was the soybean engineered by Monsanto with a bacteria gene &#8212; to tolerate a weed killer Monsanto also made.</p></blockquote>
+<p>So that’s where I’m trying to nod to the fact that that not all GMOs are about saving the orange crop, and that the motivation behind one of the first ones was that it could help sell this chemical for Monsanto. The point is that that their association with chemical companies is why many people became opposed to GMOs in the beginning and are opposed to them now. And then it goes on:</p>
+<blockquote><p>Starting in the mid-1990s, soybean farmers in the United States overwhelmingly adopted that variety of the crop, which made it easier for them to control weeds. But the subsequent broader use of the chemical &#8212; along with a distaste for Monsanto’s aggressive business tactics and a growing suspicion of a food system driven by corporate profits …</p></blockquote>
+<p>I mean, I think that is just the context Michael is saying is not there. It’s not there in a strictly explanatory style. It’s folded it into the narrative, and discussed as it relates to Kress [the main character of the story] and what his scientists are objecting to at the time. But I wanted to make sure that was in there, it was a priority. Because, the story was about Kress needing to face the public opposition to GMOs, so it would have been absurd not to explain why that opposition exists.</p>
+<p><span class="QA">NJ</span> <strong>And probably the reason I didn’t immediately think of those lines is because it is woven in, rather than doing a full stop: &#8220;OK, here’s how this story is situated.&#8221;</strong></p>
+<p><span class="QA">AH</span> I wish that section could have been longer &#8212; in some of my many drafts, it was a lot longer. But then it also included what GM proponents say about herbicide-resistant crops &#8212; that even if they’ve helped sales of Monsanto’s flagship chemical, they have had a net environmental benefit by reducing the use of more toxic herbicides, and the carbon emissions associated with tilling.</p>
+<p><span class="QA">NJ</span><strong> I don’t know that we need to hash out every one of these talking points that Pollan brought up. We certainly can. I know you’ve seen them. Are there any that you wanted to address?</strong></p>
+<p><span class="QA">AH </span>There was one in the <a href="http://www.cjr.org/the_observatory/michael_pollan_and_amy_harmon.php?page=all" target="_blank">CJR</a> piece, where he said, &#8220;She should have talked to more levelheaded critics because all the critics she talked to sounded crazy.&#8221; But I feel like the head of the <a href="http://www.ewg.org/" target="_blank">Environmental Working Group</a>, a major environmental organization, who I quote, is a legitimate spokesperson for anti-GM criticism. I also talked to Margaret Mellon at the <a href="http://www.ucsusa.org/" target="_blank">Union of Concerned Scientists</a>, who I’m sure you&#8217;ve talked to. I didn’t quote her directly but she helped me formulate some of the passages that explain why people worry about GMOs, like the one about why they are potentially more dangerous than previous forms of breeding.</p>
+<p><span class="QA">NJ</span> <strong>One of Pollan’s talking points was that critics of GM are scientifically illiterate and just fearmongers, and it sounds like you are saying, that’s not the impression that readers of your story would be left with.</strong></p>
+<p><span class="QA">AH</span> Right, I don’t think so. I linked to the press release &#8212; from the national organization, Just Label It &#8212; that the Environmental Working Group quote Michael said was not level-headed comes from, in which the president of the organization, Ken Cook, is connecting the need for labels on GMOs to other scary things:</p>
+<blockquote><p>Arguing that the Food and Drug Administration should require labels on food containing GMOs, one leader of the Environmental Working Group, an advocacy group, cited “pink slime, deadly melons, tainted turkeys and <a href="http://www.naturalfoodretailers.net/pressroom/news-stories/record-breaking-one-million-americans-tell-fda-we-have-right-know-what%E2%80%99s-our-">BPA in our soup.”</a></p></blockquote>
+<p>I can’t imagine that Michael would say Ken Cook is not a reasonable person. And those are the tactics that they are using to get people to support labeling. It’s not my fault. That’s what they are doing. So I think it’s fair to have that represented in my story.</p>
+<p><span class="QA">NJ</span><strong> There’s one point that I wanted to go over with you because I wonder how true it is. And you got into this a little bit with your <a href="http://www.nytimes.com/2013/08/25/sunday-review/golden-rice-lifesaver.html?pagewanted=all&amp;_r=0" target="_blank">Golden Rice piece</a>. But Michael brought this up as a talking point, the idea that criticism or vandalism by activists explains why we don’t have great GM innovations. Did you find good evidence of that?</strong></p>
+<p><span class="QA">AH</span> First of all, I’d like to know where he saw that in my story. There was a line that attributed that sentiment to some of the scientists that Kress was employing:</p>
+<blockquote><p>Some of Mr. Kress’s scientists were still fuming about what they saw as the lost potential for social good hijacked both by the activists who opposed genetic engineering and the corporations that failed to convince consumers of its benefits. In many developing countries, concerns about safety and ownership of seeds led governments to delay or prohibit cultivation of needed crops: Zambia, for instance, declined shipments of G.M.O. corn even during a 2002 famine.</p></blockquote>
+<p>I mean, that is just a fact. I’m not saying that Greenpeace or other activists trumped up this concern. I just said concerns about the safety and ownership of GMO foods made governments choose what they chose.</p>
+<p><span class="QA">NJ</span> <strong>I&#8217;m sure that&#8217;s what he&#8217;s referring to. Michael wasn&#8217;t saying that you personally accept these points, just that they appear in the piece.</strong></p>
+<p><span class="QA">AH</span> I see how you’re parsing it, and I should say I really appreciate Michael’s drawing people’s attention to the story, which he did call &#8220;interesting.&#8221; But if he really felt that these points just represented different, legitimate points of view of the type that get aired in most any piece of journalism, then why would he say it contained too many and call them talking points?</p>
+<p><span class="QA">NJ</span> <strong>Well let me just ask you, because I’m curious if you’ve figured this out. Have you found environmental activists really at fault for delaying wonderful GM technologies?</strong></p>
+<p><span class="QA">AH</span> Yeah, I have spent some time trying to track this down. Because that is &#8212; whether it’s a talking point or not &#8212; a claim you hear from proponents of genetically modified food. And it’s a claim I have heard a lot from scientists who work on it &#8212; they have this perception that, for instance, they couldn’t get funding because no one would invest in this unless they could be sure the public would accept it, and the public wouldn’t accept it because these activists are scaring them.</p>
+<p>Golden Rice, <a href="http://www.nytimes.com/2013/08/25/sunday-review/golden-rice-lifesaver.html?pagewanted=all&amp;_r=0" target="_blank">which I wrote about last weekend</a>, is one of the classic cases where you hear that. It’s designed to produce beta-carotene, the source of vitamin A, whose deficiency contributes to the death of millions of people in Asia and Africa each year, and it has been a lightning rod for criticism by activists who see it as a cynical attempt to get people to buy into genetic engineering. Some people say that kind of criticism has dissuaded governments from allowing the field trials necessary to test it. But my sense is that Golden Rice has been delayed mostly because they were getting the science right. And they were doing the testing right. They had trials to do, they had to improve the bioavailability of the beta carotene in it to make it a reasonable source of Vitamin A.</p>
+<p><span class="QA">NJ</span><strong> Aside from dissecting every word that you’ve written, why do you think there was such a strong reaction to Michael’s tweet, both from yourself &#8212; you seemed to be pretty upset about it &#8212; and the rest of the Twitterverse? Call it a diss or call it a caveat, I think it is a critique, but it seems to be a pretty mild critique.</strong></p>
+<p><span class="QA">AH</span> For me, I was insulted because I really feel like he was challenging my journalistic integrity. I spent a year on the story, I worked weekends and evenings on the story. So you know &#8230;</p>
+<p><span class="QA">NJ</span><strong> I can understand the disappointment.</strong></p>
+<p><span class="QA">AH</span> He was saying I hadn’t done my homework, and I really had done my homework, so I was, you know, mad. And there was a level on which it was pretty patronizing to assume that I hadn’t. I think he knows my previous work, I think he could have been more charitable in his assumptions about my ability to not parrot talking points.</p>
+<p>But in terms of the broader reaction, I think it’s a testament to Michael’s stature as a journalist and as a critic of industrial agriculture. So when he says something, people believe him. He has, you know, several hundred thousand Twitter followers. So there was a sense among other journalists that communicated with me, that he was trying to undermine work that they believed in. I guess I shouldn’t be the one to say what other people thought, you could ask them.</p>
+<p><span class="QA">NJ</span> <strong>Sure, but one thing that concerns me about this whole debate is that there is this kind of &#8212; well, I think you said the word &#8212; &#8220;belief.&#8221; And journalists, especially science journalists, are really rallying around this issue. While you can certainly see my work at Grist has been trying to find some clarity and dismiss old myths, there certainly are legitimate questions in this area that require open-minded reporting. And there are value judgments in this debate. Maybe it was just because Michael was my professor, but I felt like there was a kind of knee-jerk response to his tweet.</strong></p>
+<p><span class="QA">AH</span> I actually think you would be wrong to attribute that to ideology on the part of science reporters. I think it comes down to a feeling that Michael, as great a reporter as he is on food issues, he has not really dug into the science of genetic engineering, especially the health and safety issues. As a result he seems to let stand a lot of the beliefs that fly in the face of what is really a broad scientific consensus that there is nothing intrinsically dangerous about moving DNA from one organism to another.</p>
+<p>The World Health Organization says each crop has to be evaluated on its own merits and tested, but these tests are reliable. I’ve been sending everyone who asks me the link to your post on the safety issues, which you investigated in a particularly compelling way, I thought, and came to that same conclusion. So I don’t really think it’s fair to say it’s about values.</p>
+<p>I will say, other than personal pique, I had one higher-minded reason why I take some offense at the general position he has taken publicly about the subject. I really think he has an important critique, that these big companies are controlling the food system and that’s a cause for concern and, you know, I agree with that. But I don’t think you can figure out how to fix that problem if you haven’t identified its real source. And I think the idea that GMOs are scary &#8212; because they involve moving around genes and messing with the natural order of things &#8212; is an easy way to get people up in arms about a problem that is both misleading about the technology and also not the true source of the problem. So I think he does a disservice to his larger critique.</p>
+<p><span class="QA">NJ </span><strong>Anything else you want to talk about here?</strong></p>
+<p><span class="QA">AH</span> Well, we can quibble about these points of journalism, but I’m curious to know what Michael’s response to the story’s overarching question really is. Tom Philpott at <em>Mother Jones</em>, another outspoken critic of genetic engineering, had quibbles himself with my story, but he actually came out and said I think saving the Florida orange crop from an otherwise incurable disease is a good use of genetic engineering. I’m curious to know if Michael thinks this is a good use of it or not, and the same in the case of Golden Rice.</p>
+<p><span class="QA">NJ</span> <strong>Well, maybe it’s time for him to write another GMO piece.</strong></p>
+								<a id="grist-end-of-article"><!-- Used as scroll marker --></a>
+							</section>
+
+							
+							
+							<section class="author-bio clear margin-bottom-x4">
+								<p>Nathanael Johnson (<a href="http://twitter.com/savortooth">@savortooth</a> on Twitter) is Grist's food writer and the author of <a href="http://www.powells.com/biblio/9781605290744?&amp;PID=25450">All Natural: A Skeptic's Quest to Discover If the Natural Approach to Diet, Childbirth, Healing, and the Environment Really Keeps Us Healthier and Happier</a>.</p>							</section>
+						
+							
+							<a id="inline-ask" href="https://services.grist.org/give/?campaign=70150000000lzgD" class="block margin-bottom-x4 clear no-hover">
+	<div class="alert alert-info" style="font-size: 15px;">
+		<strong>Find this article interesting?</strong>
+		<span class="underline">Donate now to support our work.</span>
+	</div>
+</a>
+
+							<div id="post-topics" class="topics border-bottom-dotted">
+								Read more:  <a href="http://grist.org/food/" title="View all posts in Food" rel="category tag">Food</a> 							</div>
+
+							
+							<div id="recommendations" >
+	<script>
+		jQuery( "#recommendations" ).addClass( 'clear section border-bottom-dotted' ).html( "<h2>Also in Grist</h2>" );
+		var OB_langJS = 'http://widgets.outbrain.com/lang_en.js'; var OBITm = '1322003100161';var OB_raterMode = 'none';var OB_recMode = 'strip';
+		var OutbrainPermaLink='http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/?utm_source=syndication&amp;utm_medium=rss&amp;utm_campaign=feed';
+		if ( typeof(OB_Script)!='undefined' )OutbrainStart(); else { var OB_Script = true; var str = unescape("%3Cscript src=\'http://widgets.outbrain.com/OutbrainRater.js\' type=\'text/javascript\'%3E%3C/script%3E"); document.write(str); }
+	</script>
+</div>
+								<div id="comments">
+		<div id="disqus_thread"></div>
+		<script type="text/javascript">
+		var disqus_shortname	= "grist";
+		var disqus_identifier	= "wp193783";
+		var disqus_title		= "Pointed talk: Michael Pollan and Amy Harmon dissect a GM controversy";
+		var disqus_url			= "http://grist.org/food/pointed-talk-michael-pollan-and-amy-harmon-dissect-a-gm-controversy/";
+		(function() {
+			var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+			(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+		})();
+		</script>
+
+		<noscript>
+			<div class="notice">Please <a href="http://disqus.com/?ref_noscript">enable JavaScript</a> to view the comments.</div>
+		</noscript>
+
+	</div>
+
+
+						</div>
+
+					</article>
+				</div><!-- end #primary -->
+
+			<div id="sidebar" class="span-16 last">
+				
+<div class="ads section" title="300x250_Pos1">
+	<a href="http://grist.org/advertising/" class="ad_link_label" title="Our advertising policy">Advertisement</a>	<div id='div-gpt-ad-1358981053960-0' >
+		<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358981053960-0'); });</script>
+	</div>
+</div>
+
+<div class="widget widget-light" id="widget-subscribe">
+
+	<h3 class="widget-header">Get Grist <span style="text-transform:lowercase;">in</span> Your Inbox</h3>
+
+	<div class="widget-content">
+		<form id="sidebar-email-subscription-form" class="email-subscription-form" action="http://grist.org/subscribe/" method="post" >
+			<input name="action" type="hidden" value="subscribe" />
+			<input name="sub_nonce" type="hidden" value="99bba417fa" />
+			<input name="sub_lists[]" type="hidden" value="daily">
+			<fieldset name="email-input">
+				<div class="margin-bottom-x1">
+					<input class="form-input-text"
+						   type="email"
+						   name="sub_email"
+						   placeholder="your email here"
+						   required="required"
+						   maxlength="200" />
+				</div>
+				<div class="margin-bottom-x1">
+					<input class="form-input-text"
+						   type="text"
+						   name="sub_zip"
+						   placeholder="zip code (optional)" />
+				</div>
+				<div>
+					<input type="submit" class="form-input-submit" value="Keep me informed!" style="width:100%" />
+					<p class="font-size-smallest margin-bottom-x4 link-dark">
+						<a href="http://grist.org/subscribe/">More email choices</a> |
+						<a href="http://grist.org/about/privacy/">Privacy Policy</a> |
+						<a href="#" data-qtoggle-selector='.why-zipcode'>Why zip code?</a>
+					</p>
+					<div class="why-zipcode hide margin-bottom-x2">
+						<p style="margin-bottom: 7px">Grist sometimes holds events in different cities. If we know where you live, we can invite you.</p>
+						<p style="margin-bottom: 7px">We won't ever sell your personal information to other organizations or businesses. We do send a limited number of emails on behalf of our partners and advertisers; if we know your location, we can try to make these more relevant to you.
+						<p>Still: it's up to you. Telling us your zip code is entirely optional. Thanks!</p>
+					</div>
+				</div>
+			</fieldset>
+		</form><!-- #sidebar-email-subscription-form -->
+	</div><!-- .widget-content -->
+</div><!-- .widget -->
+
+<!-- author info -->
+<div id="author-info" class="widget widget-light" >
+
+	<h3 class="widget-header">Nathanael Johnson</h3>
+	
+	<div class='italic serif'>
+		<p>Nathanael Johnson (<a href="http://twitter.com/savortooth">@savortooth</a> on Twitter) is Grist's food writer and the author of <em><a href="http://www.powells.com/biblio/9781605290744?&amp;PID=25450">All Natural: A Skeptic's Quest to Discover If the Natural Approach to Diet, Childbirth, Healing, and the Environment Really Keeps Us Healthier and Happier</a></em>.</p>
+	</div>
+
+</div>
+
+	<!-- Twitter -->
+	<div class="margin-bottom-x4">
+		<a class="twitter-timeline" href="https://twitter.com/savortooth" data-screen-name="savortooth" data-widget-id="346733879576645632">Tweets by savortooth</a>
+	</div>
+
+
+	<div id="widget-most-viewed" class="widget">
+
+		<h3 class="widget-header border-bottom-x2 border-style-double border-color-white">Most Viewed</h3>
+
+		<div class="widget-body">
+
+							<a class="media-block block" href="http://grist.org/list/this-creepy-lake-turns-animals-into-calcified-statues/" title="This creepy lake turns animals into calcified statues">
+					<div class="media-block-img link-dark">
+						<img width="50" height="50" src="http://grist.files.wordpress.com/2013/10/calcified-flamingo-lake-natron-sn3.jpg?w=50&amp;h=50&amp;crop=1" class="attachment-widget-thumb wp-post-image" alt="" />					</div>
+					<div class="media-block-body">
+						This creepy lake turns animals into calcified statues					</div>
+				</a>
+							<a class="media-block block" href="http://grist.org/slideshow/green-sleeves-tattoo-art-takes-root-in-farm-country/" title="Green sleeves: Tattoo art takes root in farm country">
+					<div class="media-block-img link-dark">
+						<img width="50" height="50" src="http://grist.files.wordpress.com/2013/09/tattoo-slideshow-10.jpg?w=50&amp;h=50&amp;crop=1" class="attachment-widget-thumb wp-post-image" alt="" />					</div>
+					<div class="media-block-body">
+						Green sleeves: Tattoo art takes root in farm country					</div>
+				</a>
+							<a class="media-block block" href="http://grist.org/list/a-plague-of-hornets-in-china-is-killing-people-and-eating-bees/" title="A plague of hornets in China is killing people and eating bees">
+					<div class="media-block-img link-dark">
+						<img width="50" height="50" src="http://grist.files.wordpress.com/2013/09/asian-giant-hornet-image.jpg?w=50&amp;h=50&amp;crop=1" class="attachment-widget-thumb wp-post-image" alt="" />					</div>
+					<div class="media-block-body">
+						A plague of hornets in China is killing people and eating bees					</div>
+				</a>
+							<a class="media-block block" href="http://grist.org/list/glenn-beck-will-fire-any-employee-caught-using-cfls/" title="Glenn Beck will fire any employee caught using CFLs">
+					<div class="media-block-img link-dark">
+						<img width="50" height="50" src="http://grist.files.wordpress.com/2013/08/glenn-beck-spoon.png?w=50&amp;h=50&amp;crop=1" class="attachment-widget-thumb wp-post-image" alt="" />					</div>
+					<div class="media-block-body">
+						Glenn Beck will fire any employee caught using CFLs					</div>
+				</a>
+							<a class="media-block block" href="http://grist.org/climate-energy/solar-panels-could-destroy-u-s-utilities-according-to-u-s-utilities/" title="Solar panels could destroy U.S. utilities, according to U.S. utilities">
+					<div class="media-block-img link-dark">
+						<img width="50" height="50" src="http://grist.files.wordpress.com/2013/04/solar-panels-homepage.jpg?w=50&amp;h=50&amp;crop=1" class="attachment-widget-thumb wp-post-image" alt="" />					</div>
+					<div class="media-block-body">
+						Solar panels could destroy U.S. utilities, according to U.S. utilities					</div>
+				</a>
+			
+		</div><!-- /widget-body -->
+	</div><!-- #most-viewed widget -->
+
+
+<div class="ads section" title="300x250_Pos2">
+	<a href="http://grist.org/advertising/" class="ad_link_label" title="Our advertising policy">Advertisement</a>	<div id='div-gpt-ad-1358981636822-0' style='width:300px; height:250px;'>
+		<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358981636822-0'); });</script>
+	</div>
+</div>
+
+<div class="ads section" title="300x250_Pos3">
+	<a href="http://grist.org/advertising/" class="ad_link_label" title="Our advertising policy">Advertisement</a>	<div id='div-gpt-ad-1358981685734-0' style='width:300px; height:250px;'>
+		<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358981685734-0'); });</script>
+	</div>
+</div>
+			</div><!-- end #sidebar -->
+			</div><!-- content container  -->
+		</div><!-- content wrapper -->
+	<div class="banner-ad ad clearfix">
+	<!-- 728x90_Footer -->
+	<div id='div-gpt-ad-1358981711734-0' style='width:728px; height:90px;'>
+		<script>googletag.cmd.push(function() { googletag.display('div-gpt-ad-1358981711734-0'); });</script>
+	</div>
+	<a class="ad-label" width="10" height="90" href="http://grist.org/advertising/"><img alt="advertising" src="http://s2.wp.com/wp-content/themes/vip/grist/img/ad/ad-label-10x90.png?m=1341367895g"></a>
+</div>
+
+<footer>
+	<div id="foot" class="footer-main container">
+
+		<div class="span-48 border-top-x4 padding-top-x4 padding-bottom-x4">
+
+			<div class="prepend-1 span-8">
+				<a href="http://grist.org/" title="Grist Home">
+					<img
+						class="sprite-grist-logo"
+						alt="Grist.org"
+						width="145"
+						height="140"
+						src="http://s2.wp.com/wp-content/themes/vip/grist/img/ui/invisible.png?m=1341367895g"
+					/>
+				</a>
+			</div>
+
+			<div id="menu" class="span-39 last">
+
+				<menu class="font-size-medium sans uppercase horizontal-menu">
+
+					<!-- screen reader navigation -->
+					<a class="offscreen" accesskey="0" href="#content">Skip to content</a>
+
+					<ul class="margin-bottom-x1">
+						<li class="footer-subhead">Sections </li>
+						<li>
+							<ul class="inline">
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/news/">News</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/list/">Grist List</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/basics/">Basics</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/slideshows/">Slideshows</a></li>
+								<li><a class="link-dark" href="http://grist.org/people/">People</a></li>
+							</ul>
+						</li>
+					</ul>
+					<ul class="margin-bottom-x1">
+						<li class="footer-subhead">Topics </li>
+						<li>
+							<ul class="inline">
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/climate-energy/">Climate &amp; Energy</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/food/">Food</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/cities/">Cities</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/living/">Living</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/politics/">Politics</a></li>
+								<li><a class="link-dark" href="http://grist.org/business-technology/">Business &amp; Technology</a></li>
+							</ul>
+						</li>
+					</ul>
+					
+					<ul class="margin-bottom-x1">
+						<li class="footer-subhead">Voices </li>
+						<li>
+							<ul class="inline">
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/author/david-roberts/">David Roberts</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/author/nathanael-johnson/">Nathanael Johnson</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/author/ask-umbra/">Ask Umbra</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/author/scott-rosenberg/">Editor's Blog</a></li>
+								<li><a class="link-dark" href="http://grist.org/contributors/">Contributors</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul class="margin-bottom-x1">
+						<li class="footer-subhead">Subscribe </li>
+						<li>
+							<ul class="inline">
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/subscribe/">Email</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/about/rss-faq/">RSS</a></li>
+								<li class="bulleted"><a class="link-dark" href="https://twitter.com/grist">Twitter</a></li>
+								<li><a class="link-dark" href="https://www.facebook.com/grist.org">Facebook</a></li>
+							</ul>
+						</li>
+					</ul>
+
+					<ul>
+						<li class="footer-subhead">More </li>
+						<li>
+							<ul class="inline">
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/about/">About</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/contact/">Contact</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/advertising/">Advertise</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://services.grist.org/give/?campaign=site-footer">Donate</a></li>
+								<li class="bulleted"><a class="link-dark" href="http://grist.org/jobs/">Jobs</a></li>
+								<li><a class="link-dark" href="http://grist.org/legal/">Legal</a></li>
+							</ul>
+						</li>
+					</ul>
+
+				</menu>
+
+			</div>
+
+			</div>
+
+			<p id="copyright-notice" class="span-48 border-top-x1 border-color-lighter font-size-smallest padding-top-x1 center">
+					&copy; 1999-2013 Grist Magazine, Inc. All rights reserved. Gloom and doom with a sense of humor.&reg;
+					&nbsp;Grist is powered by <a href="http://vip.wordpress.com/" rel="generator nofollow" class="powered-by-wpcom">WordPress.com VIP</a>			</p>
+	</div>
+</footer>
+
+	
+<script>
+var _sf_async_config={};
+/** CONFIGURATION START **/
+_sf_async_config.uid = 16082;
+_sf_async_config.domain = 'grist.org';
+/** CONFIGURATION END **/
+(function(){
+	function loadChartbeat() {
+		window._sf_endpt=(new Date()).getTime();
+		var e = document.createElement('script');
+		e.setAttribute('language', 'javascript');
+		e.setAttribute('type', 'text/javascript');
+		e.setAttribute('src',
+			(('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') +
+			'js/chartbeat.js');
+		document.body.appendChild(e);
+	}
+	var oldonload = window.onload;
+	window.onload = (typeof window.onload != 'function') ?
+	loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+// Quantcast tracking grist.org ( depends on scripts loaded on WP.com )
+var _qevents = _qevents || [];
+_qevents.push({ qacct:"p-9dkMAEV1tu_LE" });
+</script>
+
+<noscript>
+	<div style="display: none;">
+		<img src="//pixel.quantserve.com/pixel/p-9dkMAEV1tu_LE.gif" height="1" width="1" alt="" />
+	</div>
+</noscript>	
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom,vip.grist"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cvip.grist" height="1" width="1" alt="" /></div></noscript>
+
+			<div id="grist-flyout-box" class="no-print lightbox-content">
+				<div class="grist-flyout-excerpt">
+					<header class="special-font">Don't miss a green thing!<br>Get Grist in your inbox every morning.</header>
+					<form id="flyout-email-subscription-form" action="http://grist.org/subscribe" method="post" class="email-subscription-form" >
+						<input name="action" type="hidden" value="subscribe" />
+						<input name="sub_nonce" type="hidden" value="99bba417fa" />
+						<input name="sub_lists[]" type="hidden" value="daily"  checked="checked" >
+						<fieldset name="email-input">
+							<div>
+								<input class="form-input-text"
+									   type="email"
+									   name="sub_email"
+									   placeholder="your email here"
+									   required="required"
+									   maxlength="200"
+									   value="" />
+							</div>
+							<div>
+								<input class="form-input-text"
+									   type="text"
+									   name="sub_zip"
+									   placeholder="zipcode (optional)"
+									   value="" />
+							</div>
+							<div>
+								<input style="width:100%" class="form-input-submit" type="submit" value="Keep me informed!" />
+								<p class="font-size-smallest block margin-bottom-x2 link-dark">
+									<a href="http://grist.org/subscribe/">More email choices</a> |
+									<a href="http://grist.org/about/privacy/">Privacy Policy</a> |
+									<a href="#" id="grist-flyout-mark-subscribed">Already subscribed?</a>
+								</p>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+				<button id="grist-flyout-close" type="button">Close</button>
+			</div>
+			<div id="outbrain-email-lightbox-content" class="hide no-print lightbox-content">
+				<div class="outbrain-email-lightbox-wrapper">
+
+					<div class="lightbox-email-subscription-ask-container">
+						<h1>We need to act now to prevent climate catastrophe.</h1>
+						<div class="btn-container">
+							<button class="btn btn-block agree"><span class="text-color-orange">Yes, we do.</span></button>
+						</div>
+						<div class="btn-container">
+							<button class="btn btn-block disagree"><span class="text-color-middle-grey">No, we don't.</span></button>
+						</div>
+					</div>
+
+					<div class="lightbox-email-subscription-form-container hide">
+						<h1>We think so too.</h1>
+						<h2>Stay informed by getting Grist in your inbox every morning.</h2>
+						<form id="lightbox-email-subscription-form" action="http://grist.org/subscribe" method="post" class="email-subscription-form" >
+							<input name="action" type="hidden" value="subscribe" />
+							<input name="sub_nonce" type="hidden" value="99bba417fa" />
+							<input name="sub_lists[]" type="hidden" value="daily">
+							<fieldset>
+
+								<div class="form-input-text-container">
+									<input class="form-input-text"
+										type="email"
+										name="sub_email"
+										placeholder="your email here"
+										required="required"
+										maxlength="200" >
+								</div>
+
+								<div class="form-input-submit-container">
+									<input class="form-input-submit" type="submit" value="KEEP ME INFORMED" />
+								</div>
+
+							</fieldset>
+
+							<p class="font-size-smallest block margin-bottom-x2 link-dark">
+								<a href="http://grist.org/subscribe/" >More email choices</a> |
+								<a href="http://grist.org/about/privacy/" >Privacy policy</a>
+							</p>
+
+						</form>
+					</div>
+				</div>
+			</div>
+		
+	<div id="grist-survey-lightbox-container" class="hide no-print lightbox-content">
+		<div class="grist-survey-container">
+			<h1>Got 2.7 seconds for Grist?</h1>
+			<h2>We've devised the world's shortest survey to find out what kind of actions our readers are taking. You know you want to.</h2>
+			<div class="btn-container">
+				<a href="http://www.surveymonkey.com/s/QRRKWHD" id="grist-survey-link" class="btn btn-block agree" target="_blank"><span class="text-color-orange">Sure, I'll share.</span></a>
+			</div>
+			<div class="btn-container">
+				<button class="btn btn-block disagree"><span class="text-color-middle-grey">No thanks.<span></button>
+			</div>
+		</div>
+	</div>
+
+		<div style="display:none">
+	</div>
+<!-- Sailthru Horizon -->
+<script type="text/javascript">
+(function() {
+     function loadHorizon() {
+           var s = document.createElement('script');
+           s.type = 'text/javascript';
+          s.async = true;
+          s.src = location.protocol + '//ak.sail-horizon.com/horizon/v1.js';
+         var x = document.getElementsByTagName('script')[0];
+         x.parentNode.insertBefore(s, x);
+      }
+     loadHorizon();
+      var oldOnLoad = window.onload;
+      window.onload = function() {
+          if (typeof oldOnLoad === 'function') {
+            oldOnLoad();
+         }
+           Sailthru.setup({
+              domain: 'horizon.grist.org'
+         });
+     };
+  })();
+ </script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??-eJyVi0EOgzAMBD8EGASiXKq+BSVWcIAkxCYtvwchDhzpaUfaGfiGXHkn6AQsg8ZECsOvsJzB7ZIBZ2RIFMBE4tO1y4pxu6ZQ3o+E/3eLeGOmR+EJ+eooYeR+epL0WstAfKif+V3VXdm23aup7A5QzFvf'></script>
+<script type='text/javascript' src='http://grist.disqus.com/count.js?ver=3.7-alpha-25157'></script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyVjUsOwjAMRC9EcBFFwAJxlqaY1MH5KHYKvT2VEItuKnU3H70ZeGfTp6gYFXTAgAIjZXCFRMHLT5gHyktT3nvZwRqQuTqKf+rJU6oKTHYRbFyZCVs6igZDR2yY3KA2fdbbjR9Sy4jTwswL93A7HM+Xtmna68l/AaPUcMM='></script>
+<!--[if lt IE 10]><script type='text/javascript' src='http://s1.wp.com/wp-content/themes/vip/grist/js/jquery/jquery.placeholder.min.js?m=1370458775g'></script>
+<script>jQuery(function(){ jQuery('input, textarea').placeholder(); });</script><style>.placeholder { color: #aaa !important; }</style><![endif]--><script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'5104299','v':'wpcom','tz':'-4','user_id':'0','post':'193783','subd':'grist'});
+function st_vt() {var x=document.createElement("img");x.src="http://stats.wordpress.com/g.gif?blog=5104299&v=wpcomvt&tz=-4&user_id=0&post=193783&subd=grist&rand="+Math.random();}
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTcyV11Tb35YW1pBXzBuNHlUVS85UXVvTmZoK04mR1JqZjdPdltNWTArNzRPd1ZpfGx3QzhbdDZQNk8rcWRnZkFURSxKZUtlPXYtci8/Mnc/fHVFPz03aWxNOCxocDddLFRGWVY5TGM/dVJCTkZUdGgycjN+ZS15a2dDSnp8N1lFZW16a3ZHaTRibFQwbWM9RzIzT2N+OGhSPUdtX202UEtnLkFEYnxjbzQzN1U1MjVuZytuSGlUOD8='});
+addLoadEvent(function(){linktracker_init('5104299',193783);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+	<!-- Decide which overlay to show. @todo: find a better place for this. -->
+	<script>jQuery(function(){ GRIST.OVERLAY_QUEUE.process_queue(); });</script>
+
+</body>
+</html>

@@ -1,0 +1,269 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Should computer scientists run experiments?
+
+   Jeffrey Ullman, a famous computer science professor, [5]published an
+   essay pushing back about the need to run experiments in computer
+   science. Apparently, some conference reviewers gave him a hard time
+   regarding a paper he submitted because it did not include experiments.
+
+   I am in general agreement with him: not every research paper should
+   include experiments. That is obviously an excessive requirement. I also
+   think that building theoretical models is very important. Experiments
+   alone are unsatisfying. Indeed, science is not merely about running
+   experiments. Imagine if we did not have Newton's laws? Would we need to
+   run experiments on every new object to see how it behaves when we push
+   it? Experiments are often badly designed and misleading. I don't tend
+   to trust a paper that includes experiments more than another paper. In
+   fact, a paper with a useful theoretical results can be much more
+   powerful than any large set of experiments... since it is often easier
+   to check the mathematics than to be sure that the experiments were
+   carried on fairly. There is also a sense in which experiments can be
+   pointless. For example, I was once asked to show experimentally that an
+   algorithm based on external-memory sorting could scale up.
+
+   But, at some point, Ullman linked to my blog post [6]A criticism of
+   computer science: models or modèles? This brought mixed feelings. I
+   think he misrepresented my opinions:
+
+     In this article, the author argues that one should never use a model
+     that is not real running time on a real computer. For example, this
+     author would not accept the O(n log n) lower bound on sorting,
+     because it is based on counting comparisons rather than machine
+     instructions executed.
+
+   I don't think that my blog post says anything of the sort. I disagree
+   with this statement even though Ullman is under the impression that it
+   is what I believe. I think that our knowledge that sorting (in general)
+   requires at least n log n operations is critical and fundamental. If
+   you were to learn one thing from computer science, it would probably
+   not be a bad choice. Of course, you can use [7]Pigeonhole sort or
+   [8]Timsort to achieve sorting in even fewer operations but that
+   requires extra assumptions.
+
+   Models are always simplification. However, if your model is right by
+   definition... that is, if no comparison with real world could lead you
+   to conclude that your model is wrong, then it is not a scientific
+   model. It might be a tremendously useful mathematical construction...
+   but it is not science.
+
+   The fact that sorting runs in n log n-time is a scientific fact. It
+   could be false: someone could come up with a generic sorting program
+   that scales up linearly. Heck! This could happen on some future exotic
+   computer architecture. Once it does, we will need to revise our
+   textbooks.
+
+   It is also a scientific fact that the sorting algorithm used in Java,
+   [9]Timsort, is often preferable to the classical algorithms like merge
+   sort or quick sort. We can run extensive experiments to check that
+   fact. There is also a theoretical analysis that explains why Timsort
+   can often be better.
+
+   Not everything needs to be science. For example, Codd's work on
+   relational algebra (the foundation for SQL) is fantastic. I am really
+   happy we have SQL and everything that was built on it. But notice that
+   it was built by people who didn't merely come up with models... they
+   implemented their ideas and had them face the real world.
+
+   The problem is that we don't require people to test out their ideas in
+   the real world, we are going to get thousands of rambling researchers
+   for every Codd. Sometimes, that is the impression that academic
+   research in computer science gives.
+
+   Some researchers will eagerly point out that pure theory often proves
+   useful in unexpected ways. But that is also true of art and philosophy.
+   What sets our current civilization apart from the preceding ones is
+   that we are founded on the scientific paradigm. The industrial
+   revolution was possible because hackers build machines that worked, and
+   irrespective of what the great minds thought, they were adopted. In
+   effect, we have adopted an approach whereas results are what matters,
+   not how smart you are or how prestigious your position is.
+
+   I do not believe we should do away with mathematics, art and
+   philosophy, but we need to be watchful. Do you use a model because
+   influential people are supporting it or because it fits the facts?
+
+   Continue reading with my post on [10]Big-O notation and real-world
+   performance.
+   [11]Tweet
+   [12]Comments (5)
+
+   Related posts (automatically generated):
+     * [13]A criticism of computer science: models or modèles?
+     * [14]What do computer scientists know about performance?
+
+5 Comments
+
+    1. Daniel -- you're not the "villain" in my story. But I disagree with
+       (what I interpret as) your criticism of models that do not model
+       absolutely every aspect of a computation. Would you dismiss
+       computing the communication cost of a MapReduce algorithm, even
+       though there are other costs involved (but communication cost
+       typically dominates)? Do you dismiss any claim of a big-oh or
+       big-omega bound, because no such claim can ever be falsified by a
+       finite experiment?
+       -Jeff Ullman
+       Comment by Anonymous -- 10/7/2013 @ [15]12:27
+    2. Would you dismiss computing the communication cost of a MapReduce
+       algorithm, even though there are other costs involved (but
+       communication cost typically dominates)?
+       No.
+       Do you dismiss any claim of a big-oh or big-omega bound, because no
+       such claim can ever be falsified by a finite experiment?
+       If you want to be formal about it, no model can ever be proven
+       wrong.
+       We both know that, in practice, if you plot the performance curves
+       and you get something that is quadratic in n... you have
+       effectively disproved the n log n model.
+       You may argue that formally, I have disproved nothing... but the
+       point of a scientific model is to tell you something about the real
+       world. If you constantly get quadratic curves... you can argue
+       until you are blue in the face that it is really n log n...
+       engineers are going to reject your performance model and use a
+       better one.
+       So falsification is not a black and white thing. Rather, in
+       practice, it becomes increasingly harder to fit a model to the
+       facts. Now, that's assuming you have a scientific model. If it is
+       not a scientific model, then you can always fit it to any fact...
+       because facts don't matter.
+       Comment by [16]Daniel Lemire -- 10/7/2013 @ [17]13:04
+    3. Big-O notation may very well be _practically useless_, but it is
+       certainly not _meaningless_, even in the context of a universe with
+       a finite number of elementary particles.
+       _We both know that, in practice, if you plot the performance curves
+       and you get something that is quadratic in n... you have
+       effectively disproved the n log n model._
+       No, we don't. We both know that in practice, if one sorting
+       algorithm has better performance on real-world data, then it has
+       better performance on real-world data, by definition. But that's
+       not a falsification of the asymptotic complexity model, because
+       that's not what the asymptotic complexity model describes.
+       It's not the _model's_ fault if you're using it wrong.
+       Comment by JeffE -- 10/7/2013 @ [18]13:45
+    4. @JeffE
+       If you want to be formal about it, then big-O notation is a purely
+       mathematical construct that has no bearing on reality.
+       Take sorting... just artificially pad any array so that it has at
+       least 10^10 elements. You haven't changed the big-O notation, but
+       you have drastically altered the real-world performance for all
+       practical cases.
+       If you insist on this interpretation, then yes, big-O notation
+       belongs to math. departments.
+       But that is not how it is used. Clearly, Jeffrey's intent is that
+       his big-O analysis has some bearing on real world performance in
+       this universe.
+       Comment by [19]Daniel Lemire -- 10/7/2013 @ [20]14:03
+    5. Model's prediction and experimental results are separate things,
+       but they are not unrelated. What the model says, if it's
+       constructed under assumptions similar to what holds for the
+       experiment, is evidence about what the experimental results will
+       be. And the shape of experimental results is evidence for the
+       existence of a reasonable model that would predict it.
+       Comment by Vladimir N -- 10/7/2013 @ [21]16:46
+
+   Sorry, the comment form is closed at this time.
+   « « [22]Previous: Fast integer compression in Java
+   [23]Next: Big-O notation and real-world performance » »
+
+   [24]« Blog's main page
+   Daniel Lemire's picture
+     * [25]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [26]Follow on Google Plus
+       22,500 followers
+     * twitter logo [27]Follow @lemire
+       4,000 followers
+     * Facebook logo [28]Follow on Facebook
+     * Google Scholar logo [29]Follow on Google Scholar
+     * Subscribe to this blog
+       - [30]in a reader,
+       - [31]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [32]About me
+          + [33]Book recommendations
+          + [34]My readers
+          + [35]Terms of use
+          + [36]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [37]The written word took over the world
+          + Thierry Lhôte on [38]The written word took over the world
+          + Ben on [39]The written word took over the world
+          + Anonymous on [40]The written word took over the world
+          + kilian on [41]The written word took over the world
+     * Some popular posts
+          + [42]Why I still program
+          + [43]Emotions killing your intellectual productivity
+          + [44]Turn your weaknesses into strengths
+          + [45]It is not where you work, but who you work with
+     * [46]Home page
+       [47]Google Scholar profile
+       [48]arXiv
+       [49]DBLP
+
+   Powered by [50]WordPress
+
+   © 2004-2013, [51]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [52]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/atom
+   4. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/
+   5. http://i.stanford.edu/~ullman/pub/experiments.pdf
+   6. http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/
+   7. http://en.wikipedia.org/wiki/Pigeonhole_sort
+   8. http://en.wikipedia.org/wiki/Timsort
+   9. http://en.wikipedia.org/wiki/Timsort
+  10. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/
+  11. https://twitter.com/share
+  12. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/#comments
+  13. http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/
+  14. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/
+  15. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/?utm_source=feedburner#comment-89701
+  16. http://lemire.me/en/
+  17. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/?utm_source=feedburner#comment-89705
+  18. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/?utm_source=feedburner#comment-89711
+  19. http://lemire.me/en/
+  20. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/?utm_source=feedburner#comment-89712
+  21. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/?utm_source=feedburner#comment-89725
+  22. http://lemire.me/blog/archives/2013/07/08/fast-integer-compression-in-java/
+  23. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/
+  24. http://lemire.me/blog/
+  25. http://lemire.me/
+  26. https://plus.google.com/105888615414982242080/about
+  27. http://www.twitter.com/lemire/
+  28. http://www.facebook.com/daniel.lemire
+  29. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  30. http://lemire.me/blog/feed/
+  31. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  32. http://lemire.me/blog/about-me/
+  33. http://lemire.me/blog/book-recommendations/
+  34. http://lemire.me/blog/my-readers/
+  35. http://lemire.me/blog/terms-of-use/
+  36. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  37. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  38. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  39. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  40. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  41. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  42. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  43. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  44. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  45. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  46. http://lemire.me/en/
+  47. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  48. http://arxiv.org/a/lemire_d_1
+  49. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  50. http://wordpress.org/
+  51. http://lemire.me/en/
+  52. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  53. http://lemire.me/blog/feed/

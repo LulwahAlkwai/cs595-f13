@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  P equal to NP and all that </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5291" itemprop="name"><a href="http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/" rel="bookmark" itemprop="url"  title="Posted on April 26th, 2013">P equal to NP and all that</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<div style="float:right;margin:2px;"><a href="http://www.amazon.com/The-Golden-Ticket-Search-Impossible/dp/0691156492/?tag=daniellemires-20" rel="nofollow"><img src="http://press.princeton.edu/images/j9937.gif" /></a></div>
+<p>One of the better known problems in Computer Science is the <a href="http://en.wikipedia.org/wiki/P_versus_NP_problem">P versus NP problem</a>. It is often related to the following question: do all problems for which we can check the correctness of a solution quickly can also be solved quickly.</p>
+<p>Most computer scientists believe that P is different from NP. In colloquial terms, this means that we believe that there are problems whose solution can be checked quickly but such that it is very difficult to find the solution.</p>
+<p>One relevant problem is the <a href="http://en.wikipedia.org/wiki/Hamiltonian_cycle">Hamiltonian path</a> problem: given a set of roads and cities, is there a path that visits every city exactly once? It is easy to check any given solution, but it is thought to be quite hard (in general) to find such a solution.</p>
+<p>A typical application for our belief that P is different from NP is to show that a given problem is difficult. Proving that something is <em>difficult</em> does not sound very important and practical at first, but it can save your job! </p>
+<p>There is a million dollar prize to whoever can resolve the P is equal to NP question. This fact alone has attracted much attention to the problem. Whoever solves it would get not only instant fame, but quite a bit of wealth as well.</p>
+<p>Lance Fortnow has spent a few years on a book that recounts all the fascinating adventures related to this problem. He explains the problem in depth in an accessible book entitled <a href="http://www.amazon.com/The-Golden-Ticket-Search-Impossible/dp/0691156492/?tag=daniellemires-20" rel="nofollow">The Golden Ticket</a>. The book is thoroughly researched and reviewed. Anyone from a smart high school student to a computer scientist is sure to get a lot of this book. The presentation is beautiful. There are few formulas but lots of facts. The book is of course kept simple, so hard-core  computational complexity expert might be disappointed, but I think many of them will enjoy the stories Fortnow offer.</p>
+<p><strong>Disclosure</strong>: I received a free review copy of the book. I am otherwise unrelated to Fortnow.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/" data-text="P equal to NP and all that" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/#comments" title="Comment on P equal to NP and all that">Comments (3)</a>	</div>
+	
+
+</div>
+
+
+
+<h2 id="comments">3 Comments 
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-83399">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/3aefd8879773a7d1afabfd02d2a47b1d?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>btw, there also  made a movie about P =NP</p>
+<p><a href="http://en.wikipedia.org/wiki/Travelling_Salesman_(2012_film)" rel="nofollow">http://en.wikipedia.org/wiki/Travelling_Salesman_(2012_film)</a></p>
+	<p><cite>Comment by Djamé &#8212; 26/4/2013 @ <a href="#comment-83399">18:48</a></cite> </p>
+	</li>
+
+	<li id="comment-83652">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4ce8ec2b86c99d30f6064a7be9ed7b81?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Lance Fortnow has also written a recent review paper on CACM called<br />
+<a href="http://cacm.acm.org/magazines/2009/9/38904-the-status-of-the-p-versus-np-problem" rel="nofollow"> The Status of the P Versus NP Problem </a>.</p>
+	<p><cite>Comment by Mehmet Suzen &#8212; 29/4/2013 @ <a href="#comment-83652">4:44</a></cite> </p>
+	</li>
+
+	<li id="comment-83838">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/d92b64b0bbc0f2b7297924e76c4a4a84?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>What I think really makes P=NP interesting is that proving them equal is seemingly within range of many programmers. All you need to do is take an exponential algorithm for one of the reference problems and optimize it down to polynomial time. The existance of the algorithm would prove equality, and net the author a cool million.</p>
+<p>Easy to consider, perhaps a little harder in practice <img src='http://lemire.me/blog/wp-includes/images/smilies/icon_smile.gif' alt=':-)' class='wp-smiley' /> </p>
+<p>Paul.</p>
+	<p><cite>Comment by <a href='http://theprogrammersparadox.blogspot.ca/' rel='external nofollow' class='url'>Paul W Homer</a> &#8212; 30/4/2013 @ <a href="#comment-83838">19:49</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<p>Sorry, the comment form is closed at this time.</p>
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/">Previous: You probably shouldn&#8217;t use a spreadsheet for important work</a></div>
+<div  style="text-align:right">
+<a href="http://lemire.me/blog/archives/2013/05/06/how-to-be-effective-at-open-source-by-programmers-for-programmers/">Next: How to be effective at open source: by programmers, for programmers</a> &raquo; &raquo; </div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>3,800</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1410&nbsp;posts and 5739&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90075" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90047" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90043" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90040" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90038" title="11/7/2013">Big-O notation and real-world performance</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.183 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-07-17 03:46:34 -->

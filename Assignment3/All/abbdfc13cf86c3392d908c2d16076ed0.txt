@@ -1,0 +1,990 @@
+<!DOCTYPE html>
+<html lang="eng-US">
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=edge" >
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>  Evolving Cisco&#8217;s Unified Computing System for Big Data and the Internet of Everything</title>
+<meta property="og:image" content="http://blogs.cisco.com/wp-content/themes/cisco_brand/images/Cisco_Logo_RGB-2color_92x52.gif"/>
+<meta property="og:site_name" content="blogs@Cisco - Cisco Blogs"/> <meta property="og:description" content=""/>
+<meta name="fb:app_id" content="156494687694418"/>
+<meta name="google-site-verification" content="9MlQU9MMQ1jHLMUkONKe6QzZ-ZIGRv0BCD1_rY1Zdmc" /> 
+<meta name="twitter:card" content="summary"><meta name="twitter:site" content="@CiscoBlogs"><meta name="twitter:creator" content="@CiscoDC"><meta name="twitter:title" content="Evolving Cisco&#8217;s Unified Computing System for Big Data and the Internet of Everything"><meta name="twitter:description" content="<p>
+
+In an earlier blog, I discussed the incredible success behind the Cisco Unified Computing System (UCS) in Darwinian evolutionary terms.  Since I wrote that blog three months ago, we’ve continued to grow rapidly and have …</p>"><meta name="bitly-verification" content="25789e2a57d8"/>
+<meta name="accessLevel" content="GUEST, CUSTOMER, PARTNER"/>
+<meta name="language" content="en"/>
+<meta name="country" content="US"/>
+<meta name="contentType" content="ciscoBlogs"/>
+	<meta name="docType" content="blogPost" />
+	<link rel="stylesheet" href="http://blogs.cisco.com/wp-content/themes/cisco_brand/style.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Cisco Blog RSS Feed" href="http://blogs.cisco.com/feed/" />
+<link rel="pingback" href="http://blogs.cisco.com/xmlrpc.php" />
+<link rel="shortcut icon" href="http://blogs.cisco.com/wp-content/themes/cisco_brand/favicon.ico" />
+<link rel="alternate" type="application/rss+xml" title="Cisco Blog &raquo; Evolving Cisco&#8217;s Unified Computing System for Big Data and the Internet of Everything Comments Feed" href="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/feed/" />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.min.js?ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.cisco.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogs.cisco.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Cisco Announces Intent to Acquire WHIPTAIL' href='http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/' />
+<link rel='next' title='VDI Roundup: Cisco and VMware &#8211; Better Together' href='http://blogs.cisco.com/datacenter/vdi-roundup-cisco-and-vmware-better-together/' />
+
+<link rel='shortlink' href='http://blogs.cisco.com/?p=125972' />
+<link type="text/css" rel="stylesheet" href="http://blogs.cisco.com/wp-content/plugins/comments-likes/comments-likes.css" />
+<script type="text/javascript" src="http://blogs.cisco.com/wp-content/plugins/comments-likes/js/comments-likes.js"></script>
+<link rel="stylesheet" href="http://blogs.cisco.com/wp-content/themes/cisco5/wp-page-numbers/tiny/wp-page-numbers.css" type="text/css" media="screen" />
+<!-- All in One SEO Pack 2.0.1 by Michael Torbert of Semper Fi Web Design[-1,-1] -->
+<meta name="description" content="Cisco Computing Systems Group GM Paul Perez outlines where the acquisition of WHIPTAIL fits into Cisco's future Unified Computing System strategy." />
+
+<meta name="keywords" content="whiptail, acquisition, cisco, unified computing system, paul perez, big data, internet of everything,acquisition,big data,cisco,internet of everything,paul perez,ucs,unified computing system,data center and cloud" />
+
+<link rel="canonical" href="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/" />
+<!-- /all in one seo pack -->
+<script type="text/javascript" src="http://blogs.cisco.com/wp-content/themes/cisco_brand/js/jquery.tipTip.minified.js"></script>
+<script type="text/javascript" src="http://blogs.cisco.com/wp-content/themes/cisco_brand/js/jquery.colorbox-min.js"></script>
+<script type="text/javascript" src="http://blogs.cisco.com/wp-content/themes/cisco_brand/js/jquery.tools.min.js"></script>
+<script type="text/javascript" src="http://blogs.cisco.com/wp-content/themes/cisco_brand/js/slider.js"></script>
+<script type="text/javascript" src="http://blogs.cisco.com/wp-content/themes/cisco_brand/js/theme.js"></script>
+	<link rel="stylesheet" href="http://blogs.cisco.com/wp-content/plugins/social-rewards/style.css" type="text/css" media="screen" />
+	<script type="text/javascript" src="http://blogs.cisco.com/wp-content/plugins/social-rewards/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="http://blogs.cisco.com/wp-content/plugins/social-rewards/js/rewards.js"></script>
+	<script type="text/javascript" src="http://blogs.cisco.com/wp-content/plugins/social-rewards/js/jquery.json-2.2.min.js"></script>
+	<script type="text/javascript" src="http://blogs.cisco.com/wp-content/plugins/social-rewards/js/api.js"></script>
+	
+	<script type="text/javascript" src="http://blogs.cisco.com/wp-content/plugins/social-rewards/js/rewards-front.js"></script>
+
+<!--[if lt IE 9]>
+<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<!--[if lt IE 7]> 
+<div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'> <a href="http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode"><img src="http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg" border="0" height="42" width="820" alt="You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today." /></a></div> 
+<![endif]-->
+ <!-- Sitewide Livemanager Universal Tag --> 
+                <script src="https://www.cisco.com/assets/swa/j/blogs.js" type="text/javascript"></script> 
+                <script src="http://www.cisco.com/web/fw/m/metrics.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+</head>
+<body>
+<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '140071389434903', // App ID
+      //channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      oauth      : true, // enable OAuth 2.0
+      xfbml      : true  // parse XFBML
+		});
+	FB.Event.subscribe("edge.create", function(href, widget) {
+	rewards.facebookLike();
+    });
+
+    // Additional initialization code here
+  };
+
+(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+
+<div id="top_bar">
+	<div id="top_info">
+		<ul id="cisco_logo_white">
+        	<li id="logo">
+				<ul id="logo_menu">
+					<li><a href ="http://blogs.cisco.com">Blogs Home</a></li>
+					<li><a href ="http://www.cisco.com">All of Cisco</a></li>
+				</ul>
+			</li>           
+   	 	</ul>
+   	 	<div id="bar_title">
+   	 		Cisco Blogs
+   	 	</div>
+	</div>
+</div>
+<div id="wrapper">
+	<div id="floating_share">
+	<ul>
+								<li><a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-count="vertical" data-url="http://cs.co/9002wibk" data-via="Cisco" data-text="Computing Systems Group GM Paul Perez outlines where WHIPTAIL will fit into Cisco's UCS strategy." data-counturl="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/">Tweet</a><li>
+									<li class="fb_side"><div class="fb-like" data-href="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/" data-send="false" data-layout="box_count" data-width="80" data-show-faces="false"></div></li>
+				<li><script type="text/javascript" src="http://platform.linkedin.com/in.js"></script><script type="in/share" data-url="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/" data-counter="top"></script></li>
+				<li><g:plusone size="tall" href="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/"></g:plusone></li>
+						<li><div class="kindleWidget" style="display:inline-block;padding:3px;cursor:pointer;font-size:11px;font-family:Arial;border-radius:3px;border:#ccc thin solid;color:black;background:transparent url('https://d1xnn692s7u6t6.cloudfront.net/button-gradient.png') repeat-x;background-size:contain;"><img style="vertical-align:middle;" src="https://d1xnn692s7u6t6.cloudfront.net/white-15.png" /><span style="vertical-align:middle;margin-left:3px;">Kindle</span></div></li>
+						<li><a class="email" href="mailto:?subject=Cisco Blog E-Mail:Evolving Cisco&#8217;s Unified Computing System for Big Data and the Internet of Everything&body=I saw this post on Cisco Data Center and Cloud blog and thought you should read it.%0A%0AEvolving Cisco&#8217;s Unified Computing System for Big Data and the Internet of Everything%0A%0Ahttp://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/%0A%0A****Disclaimer****%0A%0ACisco is not responsible for the content of this email, and its contents do not necessarily reflect Cisco’s views or opinions. Cisco has not verified the email address or name of the sender."></a>
+		</ul>
+	</div>
+		<header id="header_box5">
+    		<div id="search">
+        		 
+<form method="get" id="searchform" action="http://blogs.cisco.com/"> 
+	<input type="text" value="Search" 
+    	name="s" id="s"  onblur="if (this.value == '')  {this.value = 'Search';}"  
+        onfocus="if (this.value == 'Search') {this.value = '';}"> 
+    </input>
+<input type="submit" value=" " class="searchSubmit"/>
+</form> 
+        	</div>
+        	<br class="clear"/>
+   	 			<a href="#" id="mega_anchor"></a>
+<div id="megamenu1" class="megamenu">
+	<div class="menu_column">
+		<ul class ="menu_list">
+			<li class="nav_header">Technology</li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/borderless" class="nav_menu" title="Cisco innovations in routing, switching, security, mobility and services">Borderless Networks</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/collaboration" class="nav_menu" title ="The Workspace: A New World of Communications and Collaboration">Collaboration</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/datacenter" class="nav_menu" title="Discussion of Networking-Based Technologies Designed to Optimize Data Centers">Data Center and Cloud</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/wireless" class="nav_menu" title="Blog on Business Mobility Revolution">Mobility</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/security" class="nav_menu" title="Insights from the Cisco Security Community">Security</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/smallbusiness" class="nav_menu" title="Technology advice for small businesses">Small Business</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/sp" class="nav_menu" title="Insight into Service Provider Trends and Technology">SP360:Service Provider</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/video" class="nav_menu" title="Dedicated to exploring the impact of video on the way people work, live, play and learn">Video</a></li>
+			<!--<li class="nav_link"><a href="http://blogs.cisco.com/virtualworlds" class="nav_menu" title="Networked Virtual Environments and Virtual Worlds">Virtual Environments</a></li> -->
+		</ul>
+	</div>
+	<div class="menu_column">
+		<ul class ="menu_list">
+			<li class="nav_header">Industries</li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/education" class="nav_menu" title="Share and learn about Cisco solutions for education">Education</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/financialservices" class="nav_menu" title="Insights and discussions on industry trends and how technology can help address your business imperatives">Financial Services</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/government" class="nav_menu" title="Insights and opinions on global government challenges and happenings in technology">Government</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/healthcare" class="nav_menu" title="Innovative partnerships and technology discussions around industry trends empowering care team collaboration and business efficiency driving quality outcomes across the continuum of care">Healthcare</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/manufacturing" class="nav_menu" title="Discussions, Insights and Opinions for the Manufacturing Industry">Manufacturing</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/retail" class="nav_menu" title="Discussion, best practices and what Cisco is doing to help retailers succeed with the consumers shopping today">Retail</a></li>
+		</ul>
+		<ul class ="menu_list2">
+			<li class="nav_header">Support</li>
+			<li class="nav_link"><a href="https://supportforums.cisco.com/blogs/" class="nav_menu" target = "_blank" title="Engage, Collaborate & Co-Create Technical Support Solutions">Cisco Support Community</a></li>	
+		</ul>
+		<ul class ="menu_list2">
+			<li class="nav_header">Partners</li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/channels" class="nav_menu" title="Your Voice Within the Cisco Channel Partner Community">Channels</a></li>
+			<li class="nav_link"><a href="http://developer.cisco.com/web/events-community/blogs" class="nav_menu" title="Learn ways to partner with Cisco to develop, test, sell, and market innovative solutions.">Cisco Developer Network</a></li>
+		</ul>
+	</div>
+	<div class="menu_column">
+		<ul class ="menu_list">
+			<li class="nav_header">More From Cisco</li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/getyourbuildon" class="nav_menu" title="Unfiltered & Out Loud: Inside the Brains Driving the Creation of New Software & Networking Technologies at Cisco and across the Industry">Architect & DE Discussions</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/cle" class="nav_menu" title="Insights and stories about the Socioeconomic impact of telecom innovation and infrastructure investment">Connected Life Exchange</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/socialmedia" class="nav_menu" title="Best practices, case studies and shared learning along our journey of connecting with customers via social media">Digital and Social</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/performance" class="nav_menu" title="Musings, development news, and other tidbits">High Peformance Computing Networking</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/ciscoit" class="nav_menu" title="Cisco on Cisco: Conversations about the IT Journey">Inside Cisco IT</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/openatcisco" class="nav_menu" title="Viewpoints on collaboration and contributions to open source, open standards, open opportunities">Open at Cisco</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/perspectives" class="nav_menu" title="Real customers tell their stories">Perspectives</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/cin" class="nav_menu" title="TechWiseTV, BizWiseTV and more">TechWiseTV</a></li>
+			<!--<li class="nav_link"><a href="http://blogs.cisco.com/webexperience" class="nav_menu" title="Insights on the Importance of the End-User Experience">Web Experience</a></li>-->
+			
+		</ul>
+		<ul class ="menu_list2">
+			<li class="nav_header">Corporate/News</li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/news" class="nav_menu" title="Opinions and Insights from Cisco">The Platform</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/csr" class="nav_menu" title="Engaging the network for good">Corporate Social Responsibility</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/gov" class="nav_menu" title="Thoughts and Opinions on Government Affairs">High Tech Policy</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/diversity" class="nav_menu" title="Creating an environment that fosters innovation, creativity, and collaboration">Inclusion and Diversity</a></li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/ioe" class="nav_menu" title="Internet of Everything - the convergence of people, processes, data, and things">Internet of Everything</a></li>
+		</ul>
+	</div>
+	<div class="menu_column">
+		<ul class ="menu_list">
+			<li class="nav_header">Countries and Regions</li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/br/">Brazil</a></li>
+			<li class="nav_link"><span><a href="#">Canada</a></span>
+				<ul>
+					<li><a href="http://canadablog.cisco.com/">English</a></li>
+					<li><a href="http://ciscocanadafr.wordpress.com/">French</a></li>
+				</ul>
+			</li>
+			<li class="nav_link"><a href="http://blogs.cisco.com/emerging" class="nav_menu" title="Opinions and Insights From Emerging Countries">Emerging Countries</a></li>
+			<li class="nav_link"><span><a href="#">France</a></span>
+				<ul>
+					<li><a href="http://gblogs.cisco.com/fr-reseaux/blog">R&#233;seaux</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-datacenter/blog">Data Center</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-greenit/blog">Green IT</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-ipv6/blog">IPv6</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-collaboration/blog">Collaboration</a></li>
+					<!-- <li><a href="http://ellesblog.cisco.fr/">Elles @Cisco</a></li> --<
+					<!-- <li><a href="http://mobiliteblog.cisco.fr/">Mobilit&eacute;</a></li> -->
+					<!-- <li><a href="http://pmeblog.cisco.fr/">PME</a></li> -->
+					<li><a href="http://gblogs.cisco.com/fr-security/blog">S&eacute;curit&eacute;</a></li>
+					<!-- <li><a href="http://energieblog.cisco.fr/">Energie</a></li> -->
+					<li><a href="http://gblogs.cisco.com/fr-smartcities/blog">Smart Cities</a></li>
+				</ul>
+			</li> 
+			<li class="nav_link"><a href="http://gblogs.cisco.com/de">Germany</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/it">Italy</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/jp/">Japan</a></li>
+			<li class="nav_link"><a href="http://ciscokrblog.com/">Korea</a></li>
+			<li class="nav_link"><a href="http://cisco-latinoamerica.com/">Latin America</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/nl">Netherlands</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/pl">Poland</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/pt">Portugal</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/ru">Russia</a></li>
+			<li class="nav_link"><a href="http://gblogs.cisco.com/es">Spain</a></li>
+		</ul>	
+	</div>
+	<div class="clear"></div>
+</div>        	<br class="clear"/>              
+    	</header>
+    	<section id="left">
+		<div id="post_top">
+		</div>
+		<div id="post">
+		<span class="breadcrumb">
+<a href=' http://blogs.cisco.com'>Cisco Blog</a> > <a href=' http://blogs.cisco.com/category/datacenter/'>Data Center and Cloud</a></span>
+
+ 		
+				<h2 id="post-125972" class="kindle_title">
+			Evolving Cisco&#8217;s Unified Computing System for Big Data and the Internet of Everything		</h2>
+		<div class="post_meta">
+			<div class="author_thumb">
+				<img src="http://blogs.cisco.com/wp-content/uploads/userphoto/1485.thumbnail.51c33a30e23eb.jpg" alt="Paul Perez" width="56" height="56" class="photo" />			</div>
+			<div class="post_info">
+				<div class="author_info">
+					<a href="http://blogs.cisco.com/author/paulperez/" title="Posts by Paul Perez" rel="author">Paul Perez</a> |  September 10, 2013 at 5:05 am PST
+					 <br />
+									</div>
+				<div class="clear">
+				</div>
+				<div class="count_info">
+					<span class="post_comments">
+							(<a href="http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#comments">1 Comment</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>															</div>
+			</div>
+			<div class="clear">
+			</div>
+		</div>
+
+		<div class="entry">
+			<div id="attachment_125976" class="wp-caption aligncenter" style="width: 310px"><img class="size-medium wp-image-125976" alt="Evolving Cisco UCS for Big Data and the Internet of Everything" src="http://blogs.cisco.com/wp-content/uploads/Evolution-Mobile-300x247.jpg" width="300" height="247" /><p class="wp-caption-text">Image credit: imediaconnection.com</p></div>
+<p>In an earlier blog, I discussed the <a href="http://blogs.cisco.com/datacenter/natural-selection-on-full-display-in-the-server-world/#more-118145">incredible success behind the Cisco Unified Computing System (UCS) in Darwinian evolutionary terms</a>.  Since I wrote that blog three months ago, we’ve continued to grow rapidly and have strengthened our position as the #2 blade server player worldwide from 19.3% to 21.5% revenue share (per IDC 2CQ2013 server market tracker, September 2013), with 33.9% revenue share in the US.</p>
+<p><b><i>Prediction</i></b><i> – The #1 spot is well within our reach sooner than you may think.</i></p>
+<p>As we grow our installed base with roughly 1,000 new customers every month, our conversations about the future of UCS have taken an interesting turn. Until now in what I’ll call the “<b>UCS 1.0</b>” phase, Cisco focused on virtualization and private <a href="http://www.cisco.com/web/solutions/trends/cloud/index.html?CAMPAIGN=cloud+story&#038;COUNTRY_SITE=us&#038;POSITION=social+media&#038;REFERRING_SITE=cisco+blog&#038;CREATIVE=cloud+keyword" title="cloud" target="_blank" class="seoal-link">cloud</a> as the dominant use cases that were top-of-mind for industry CIOs and we struck a resonant chord based on our growth – just look at our numbers.</p>
+<p>We were market makers with expanded-memory 2-socket Intel EX blades (remember the B230’s?), which were gobbled up like candy into large-scale VDI deployments much to the surprise of the industry. We also jump-started a very attractive RISC-to-x86 migration practice, including Cisco IT’s own production environment: a 40TB mission-critical database that ran on HP Superdomes – a “circle of life” moment for me since Superdome was my program from 1999-2003.</p>
+<p>We’ll continue leading in customer value for our original design centers, but we are now focusing on market expansion with what we call “<b>UCS 2.0</b>”, expanding into data-intensive, mission critical, analytics and service provider <a href="http://www.cisco.com/web/solutions/trends/cloud/index.html?CAMPAIGN=cloud+story&#038;COUNTRY_SITE=us&#038;POSITION=social+media&#038;REFERRING_SITE=cisco+blog&#038;CREATIVE=cloud+keyword" title="cloud" target="_blank" class="seoal-link">cloud</a> environments with an increased level of R&amp;D funding and strong corporate support from our top executives.</p>
+<p><b><i>Prediction</i></b><i> – You’ll see us more focused on architectural solutions for key industry vertical markets with tuned solution environments that leverage Cisco’s wide portfolio and that of our partners.</i></p>
+<p>One such act of support is the <a href="http://newsroom.cisco.com/press-release-content?type=webcontent&amp;articleId=1261248">announcement today of our intent to acquire <b>WHIPTAIL</b></a>, a leading solid-state systems company that boasts the highest scalability in performance and capacity of any scale-out flash vendor on the market today.  WHIPTAIL systems span from single-node entry products to 30-node behemoths that drive almost 400TB’s of flash, 40GB/sec of bandwidth and 4 million random R/W IOPS – for starters.</p>
+<p><b><i>Prediction</i></b><i>: Cisco will unseat Infiniband with low-latency Ethernet fabrics. Check out our <span style="font-size: 11.0pt; font-family: 'Calibri','sans-serif'; mso-fareast-font-family: Calibri; mso-fareast-theme-font: minor-latin; color: black; mso-ansi-language: EN-US; mso-fareast-language: EN-US; mso-bidi-language: AR-SA;"><b><a href="http://insidehpc.com/2013/07/17/cisco-readies-ultra-low-latency-ethernet-usnic/">USNIC</a></b> technology for starters…<br />
+</span></i></p>
+<p>In our customer interactions it became very clear they view application acceleration using persistent solid-state memory as a use case that belongs in the server tier, not the storage tier.</p>
+<p>In an application-centric world, we started thinking not about server vs. storage infrastructure, but how applications viewed data – hot “<b><i>important right now</i></b>” data, warm “<b><i>may be of interest data</i></b>” and cold “<b><i>let’s keep it around for background mining or compliance</i></b>” data.</p>
+<p>We arrived at the conclusion that UCS needed to be best-in-class at accelerating hot data layers. Hot data is closest to applications and therefore has high affinity for the server tier.  Hence WHIPTAIL.</p>
+<p><b><i>Assertion</i></b><i>: Flash is a “boundary technology” that can be viewed as part of the memory or storage hierarchy. With respect to storage it’s faster and more expensive per GB. With respect to DRAM memory it’s slower but cheaper per GB. It therefore allows cost/performance arbitrage for applications by applying an accelerated persistent data model that can save on DRAM and de-complicate underlying permanent backing stores.</i></p>
+<p>WHIPTAIL is a great fit with the fabric computing UCS architecture and also complementary to our C-Series rack mount servers and our <a href="http://blogs.cisco.com/datacenter/introducing-cisco-singleconnect-technology/">SingleConnect capability</a> in our UCS Manager that allows mixed-density blade/rack deployments to be managed from a common pane of glass.</p>
+<p>Our intent is to fully integrate UCS computing and WHIPTAIL solid-state technologies over a Nexus fabric to create scalable persistent memory systems. That’s our vision.</p>
+<p>Why? Because customers will be able to do things they could not before. Such as loading vast amounts of data in seconds and minutes, not hours or days – or -- shrinking their performance footprint to a rack vs. 30 racks – or -- accelerating Hadoop on all solid-state infrastructure – or -- extending in-memory analytics to a scale previously not thought possible. That’s why.</p>
+<p>As converged infrastructure advances as an ensemble computing architecture, boundary technologies like solid-state memory can be viewed as part of the memory or the storage hierarchy. <b>Cisco’s point of view is to make it part of the memory hierarchy in the compute tier</b>. That allows customers the best of both worlds – performance acceleration for applications while retaining their investment in permanent backing stores and simplifying their overall data center total cost of ownership (TCO).</p>
+<p>To close on a Darwinian note, if UCS existed in the Cretaceous Period it would have been a Velociraptor  (<i>meaning &#8216;swift seizer&#8217;</i>)– sleek, fast and ferocious – eating everything in its path.  Velociraptors are believed to have hunted in packs, which is great considering the strong partner ecosystem that Cisco and UCS have built with industry leaders like EMC, NetApp and VCE as shining examples. We are committed to maintaining and expanding our hunting pack – more on that later!</p>
+<div id="attachment_125995" class="wp-caption alignleft" style="width: 261px"><img class="size-full wp-image-125995" alt="if Cisco UCS existed in the Cretaceous Period it would have been a Velociraptor" src="http://blogs.cisco.com/wp-content/uploads/Velociraptor.jpg" width="251" height="201" /><p class="wp-caption-text">if Cisco UCS existed in the Cretaceous Period it would have been a Velociraptor. Image credit: dark.pozadia.org</p></div>
+			<p>Tags: <a href="http://blogs.cisco.com/tag/acquisition/" rel="tag">acquisition</a>, <a href="http://blogs.cisco.com/tag/big-data/" rel="tag">Big Data</a>, <a href="http://blogs.cisco.com/tag/cisco/" rel="tag">Cisco</a>, <a href="http://blogs.cisco.com/tag/internet-of-everything/" rel="tag">Internet of Everything</a>, <a href="http://blogs.cisco.com/tag/paul-perez/" rel="tag">Paul Perez</a>, <a href="http://blogs.cisco.com/tag/ucs/" rel="tag">UCS</a>, <a href="http://blogs.cisco.com/tag/unified-computing-system/" rel="tag">unified computing system</a>, <a href="http://blogs.cisco.com/tag/whiptail/" rel="tag">WHIPTAIL</a></p>
+			<div class="clear"></div>
+		</div>
+		<!--
+		-->
+						<!-- You can start editing here. -->
+
+					<div id="comments-div">
+							<span id="comments-addcomment"><a href="#respond"  rel="nofollow" title="Leave a comment ?">Leave a comment</a></span>
+								<h2 id="comments">1 Comments.</h2>
+				<br />
+			</div>
+			<ol class="commentlist" id="thecomments">
+							<script type="text/javascript">
+				var memberId = "78076";
+				if (typeof memberIds=="undefined") {
+					memberIds = new Array();			
+				}		
+				if(memberId) {
+					memberIds.push(parseInt(memberId));
+				}
+				var model = {
+					memberIds: memberIds	
+				}
+			</script>
+			<li class="comment byuser comment-author-toddbrannon even thread-even depth-1" id="li-comment-809930">
+			<div class="author_rewards 78076">
+		 		<div class="rewards_comment_date">
+		 		September 11, 2013 at 7:28 am		 		</div>
+				<div class="rewards_author_post_info">
+					<div class="author_image">
+						<img class ="commentavatar" />
+					</div>
+					<div class="author_post">
+						<a class="fn" href = "http://blogs.cisco.com/rewards-profile/78076" ></a>
+					</div>
+										<div data="78076-reputationmember" class="reputation reputationhover">
+					</div>
+					<div class="tooltip"><span class="tool_title">Reputation</span> <p class ="tooltipp">This meter represents your reputation at a 100% scale based on your level of participation on the site.<br /><a href="/rewards-about">Find out more</a></p></div>
+					<ul class="author_badges">
+					</ul>
+				<div class="clear">
+					</div>
+					
+				</div>
+								<div class="comment-text-badges">
+				<p>Every self-respecting Velociraptor has a whiptail!
+<p class="comment-like"><img class="comment-like-btn" title="Vote" onclick="cl_like_this('http://blogs.cisco.com/wp-admin/admin-ajax.php',809930)" src="http://blogs.cisco.com/wp-content/plugins/comments-likes/images/like.png" />&nbsp;&nbsp;&nbsp;<span id="comment-like-cnt-809930">0</span> likes</p>
+					<div class="reply">
+				<a class='comment-reply-link' href='/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/?replytocom=809930#respond' onclick='return addComment.moveForm("comment-809930", "809930", "respond", "125972")'>Reply</a>			</div>
+				</div>
+			</div>
+			</li>
+		</li><!-- #comment-## -->
+			</ol>
+			<div class="navigation">
+							</div>
+	
+				
+<div id="respond">
+
+<h3>Leave a Reply</h3>
+				
+<div class="cancel-comment-reply">
+	<small><a rel="nofollow" id="cancel-comment-reply-link" href="/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#respond" style="display:none;">Click here to cancel reply.</a></small>
+</div>
+
+
+			<p class="cisco_respond">We'd love to hear from you! To earn points and badges for participating in the conversation, join <a href = "/rewards-about">Cisco Social Rewards</a>. Your comment(s) will appear instantly on the live site. Spam, promotional and derogatory comments will be removed.</p>
+			<div id="rewards_comments_off">
+				<div class="rewards_comments_text">
+					Earn badges for your comments. Start today! Creating an account is fast and easy.<br />
+					<a href="/rewards-about">Learn More.</a>
+					<p><span class="instruction"> Already a rewards member?</span>
+					<a href="/wp-content/plugins/social-rewards/init.php" class="login_rewards ajax">Log In</a></p>
+				</div>
+				<div class="rewards_comments_actions">
+					<a href="/wp-content/plugins/social-rewards/init.php" class="button ajax"></a>
+					
+					<br class="clear" />
+				</div>
+				<div class="clear">
+				</div>
+			</div>	
+			<form action="http://blogs.cisco.com/wp-comments-post.php" method="post" id="commentform">
+				<p><input type="hidden" name="rewards_id" id="rewards_id" value="" size="22" tabindex="1" /></p>
+				<p id ="comments_name"><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+				<label for="author"><small>Name </small></label></p>
+				<p id ="comments_email"><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+				<label for="email"><small>Mail (will not be published) </small></label></p>
+				<p id="comments_site"><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+				<label for="url"><small>Website (please include &#8220;http://&#8221;)</small></label></p>
+				<p><textarea name="comment" id="comment" cols="60%" rows="10" tabindex="4"></textarea></p>
+				<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+				<input type='hidden' name='comment_post_ID' value='125972' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+				</p>
+				<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="af39c12c17" /></p><p style="clear:both"><input style="width: 20px" type="checkbox" value="1" name="subscribe" id="subscribe2"/>&nbsp;<label style="margin:0; padding:0; position:relative; left:0; top:0;" for="subscribe">Notify me of follow-up comments via email</label></p>			</form>
+		<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+<!--<p><small><strong>XHTML:</strong> You can use these tags: <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></small></p>-->
+
+
+</div>
+	</div>
+	
+	<div id="post_bottom">
+	</div>
+	</section>
+	<section id="right">
+		<ul><li id="subscribe" class="widget">
+	<div id="subscribe_box">
+		<span class="subscribe_heading">Subscribe Now</span>
+		<form id ="subscribe_form" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=CiscoBlogDataCenterNetworks', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true">
+			<input type="text" class="subscribe" name="email" value="Enter email address" onFocus="if(this.value == 'Enter email address') {this.value = '';}" onBlur="if (this.value == '') {this.value = 'Enter email address';}"></input>
+			<input type="hidden" value="CiscoBlogDataCenterNetworks" name="uri" ></input>
+			<input type="hidden" name="loc" value="en_US"></input>
+			<input type="submit" class="subscribe_button" value="" ></input>
+		</form>
+        <div class="clear"></div>
+	</div>
+    <div id="rss_box">
+    	<div id="rsstitle">RSS Feed</div>
+    	<div id = "rssbut">
+    		<a href="http://feeds.feedburner.com/CiscoBlogDataCenterNetworks" class="subscribe_rss" title="RSS Feeds"></a>
+    	</div>
+    	<div class="clear"></div>
+    </div>
+</li>
+<li id="social_widget" class="widget">
+	<div id="social_top">
+	</div>
+	<div id="social_panel">
+		<div id ="social_left">
+    		<ul>
+    			<li><a class='linkin' target='_blank' href="http://www.linkedin.com/company/cisco">LinkedIn</a></li>
+        		<li><a class='google' target='_blank' href="https://plus.google.com/106092229730683979920">Google+</a></li>
+        		<li><a class='pinterest' target='_blank' href="http://pinterest.com/ciscosystems/">Pinterest</a></li>
+        		<li><a class='slideshare' target='_blank' href="http://www.slideshare.net/ciscosystems">SlideShare</a></li>
+        		<li><a href="http://newsroom.cisco.com/dlls/index.html" class="news">News@Cisco</a></li>				
+    		</ul>
+    	</div>
+    	<div id="social_right">
+    		<ul>
+    			<li><a class='twitter' target='_blank' href="http://twitter.com/CiscoDC">Twitter</a></li>
+        		<li><a class='facebook' target='_blank' href="http://www.facebook.com/ciscodc">Facebook</a></li>
+        		<li><a class='youtube' target='_blank' href="http://youtubecisco.com/datacenter">YouTube</a></li>
+        		<li><a class='flickr' target='_blank' href="http://www.flickr.com/photos/25679159@N03/">Flickr</a></li>
+				<li><a href="http://socialmedia.cisco.com/">More -></a></li>
+    		</ul>
+    	</div>
+    	<div class="clear"></div>    
+	</div>
+	<span class="slide"><a href="#" class="btn-slide"></a></span>
+</li><li id="rewards_console" class="widget">			<div id="rewards_console_off" class="widget">
+				<div class="join"> 
+					<a href="/wp-content/plugins/social-rewards/init.php" class="button ajax"></a>
+					<a href="/rewards-about" class="more">Learn More</a>
+					<br class="clear" />
+				</div>
+				<div class="login">
+					<span class="instruction"> Already a rewards member? </span>
+					<a href="/wp-content/plugins/social-rewards/init.php" class="login_rewards ajax">Log In</a>
+					<br class="clear" />
+				</div>
+			</div>
+	</li><!--googleoff: index-->
+<li class ="widget">
+<div id="blog_tabs">
+	<span class = "widgetheading">Blogs at a Glance</span>
+	<br />
+    <ul class="tabs">
+    	<li><a href="#tab1">Most<br/>Recent</a></li>
+    	<li><a href="#tab2" class="side_commented">Most<br/>Commented</a></li>
+        <li><a href="#tab3" class="side_viewed">Popular</a></li>
+        <div class="clear"></div>
+	</ul>
+	<div id="tab_content_side">
+		<div class="tab_container">
+    		<div id="tab1" class="tab_content">
+    							<a href="http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/" rel="bookmark" class="glance_post_title" title="Permanent Link: How can the Internet of Everything Improve Our World?">
+				How can the Internet of Everything Improve Our World?</a><br />
+				<span class="author_post_time"><a href="http://blogs.cisco.com/author/maryannepetrillo/" title="Posts by Mary Anne Petrillo" rel="author">Mary Anne Petrillo</a> | 04 Oct 2013</span><br />
+				<span class="comments">
+							(<a href="http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/#comments">0 Comments</a>)
+						</span>
+											<br class="clear">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9000bKQM" data-via="Cisco" data-text="How can the Internet of Everything Improve Our World?" data-counturl="http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</p>
+				<div class="clear"></div>
+								<a href="http://blogs.cisco.com/news/sportsandioe/" rel="bookmark" class="glance_post_title" title="Permanent Link: Sports &#038; Entertainment, the Internet of Things, and the Internet of Everything">
+				Sports &#038; Entertainment, the Internet of Things, and the Internet of Everything</a><br />
+				<span class="author_post_time"><a href="http://blogs.cisco.com/author/chriswhite/" title="Posts by Chris White" rel="author">Chris White</a> | 04 Oct 2013</span><br />
+				<span class="comments">
+							(<a href="http://blogs.cisco.com/news/sportsandioe/#comments">0 Comments</a>)
+						</span>
+											<br class="clear">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/news/sportsandioe/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9000bKRC" data-via="Cisco" data-text="Sports &#038; Entertainment, the Internet of Things, and the Internet of Everything" data-counturl="http://blogs.cisco.com/news/sportsandioe/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</p>
+				<div class="clear"></div>
+								<a href="http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/" rel="bookmark" class="glance_post_title" title="Permanent Link: Cisco Partners Recognized for Promoting Achievement in K-12 Education">
+				Cisco Partners Recognized for Promoting Achievement in K-12 Education</a><br />
+				<span class="author_post_time"><a href="http://blogs.cisco.com/author/alexisraymond/" title="Posts by Alexis Raymond" rel="author">Alexis Raymond</a> | 04 Oct 2013</span><br />
+				<span class="comments">
+							(<a href="http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/#comments">0 Comments</a>)
+						</span>
+											<br class="clear">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9003bKuc" data-via="Cisco" data-text="Cisco Partners Recognized for Promoting Achievement in K-12 Education" data-counturl="http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</p>
+				<div class="clear"></div>
+								<a href="http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/" rel="bookmark" class="glance_post_title" title="Permanent Link: Ender&#8217;s Game &#8211; Coming to a Town Near You">
+				Ender&#8217;s Game &#8211; Coming to a Town Near You</a><br />
+				<span class="author_post_time"><a href="http://blogs.cisco.com/author/adriandenhartog/" title="Posts by Adrian den Hartog" rel="author">Adrian den Hartog</a> | 04 Oct 2013</span><br />
+				<span class="comments">
+							(<a href="http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/#comments">5 Comments</a>)
+						</span>
+											<br class="clear">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9000bK3m" data-via="CiscoDC" data-text="Ender&#8217;s Game &#8211; Coming to a Town Near You" data-counturl="http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</p>
+				<div class="clear"></div>
+								<a href="http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/" rel="bookmark" class="glance_post_title" title="Permanent Link: Behind the Scenes of Cisco Live Orlando">
+				Behind the Scenes of Cisco Live Orlando</a><br />
+				<span class="author_post_time"><a href="http://blogs.cisco.com/author/tamaragardner/" title="Posts by Tamara Gardner" rel="author">Tamara Gardner</a> | 04 Oct 2013</span><br />
+				<span class="comments">
+							(<a href="http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/#comments">2 Comments</a>)
+						</span>
+											<br class="clear">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+		            	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/" data-via="ciscoit" data-text="Behind the Scenes of Cisco Live Orlando" data-counturl="http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/">Tweet</a>          		
+                    		
+    </div>
+	<div class="clear"></div>
+					</p>
+				<div class="clear"></div>
+							<p style="padding-top:15px;"><a href="http://blogs.cisco.com/2013/page/2">More Posts > </a></p>
+ 			</div>
+ 		</div> 
+ 		<div class="tab_container">
+    		<div id="tab2" class="tab_content">
+    						<a href="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/" rel="bookmark" class="glance_post_title" title="Permanent Link: How the World’s Most Advanced Network Processor is Making the Internet of Everything Possible">
+			How the World’s Most Advanced Network Processor is Making the Internet of Everything Possible</a><br />
+			<span class="author_post_time"><<a href="http://blogs.cisco.com/author/nikhiljayaram/" title="Posts by Nikhil Jayaram" rel="author">Nikhil Jayaram</a> | 12 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments">26 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+		            	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/" data-via="Cisco" data-text="How the World’s Most Advanced Network Processor is Making the Internet of Everything Possible" data-counturl="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/">Tweet</a>          		
+                    		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						
+            			<a href="http://blogs.cisco.com/security/introducing-kvasir/" rel="bookmark" class="glance_post_title" title="Permanent Link: Introducing Kvasir">
+			Introducing Kvasir</a><br />
+			<span class="author_post_time"><<a href="http://blogs.cisco.com/author/kurtgrutzmacher/" title="Posts by Kurt Grutzmacher" rel="author">Kurt Grutzmacher</a> | 23 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/security/introducing-kvasir/#comments">16 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/security/introducing-kvasir/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9008wFDg" data-via="ciscosecurity" data-text="Introducing Kvasir" data-counturl="http://blogs.cisco.com/security/introducing-kvasir/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						
+            			<a href="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/" rel="bookmark" class="glance_post_title" title="Permanent Link: Get Your Network Ready For iOS7">
+			Get Your Network Ready For iOS7</a><br />
+			<span class="author_post_time"><<a href="http://blogs.cisco.com/author/jeevanpatil/" title="Posts by Jeevan Patil" rel="author">Jeevan Patil</a> | 13 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments">11 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9005wUiN" data-via="Cisco_Mobility" data-text="Get Your Network Ready For iOS7" data-counturl="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						
+            			<a href="http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/" rel="bookmark" class="glance_post_title" title="Permanent Link: #ExecInsights: Defend, Discover and Remediate with Security Services">
+			#ExecInsights: Defend, Discover and Remediate with Security Services</a><br />
+			<span class="author_post_time"><<a href = "http://newsroom.cisco.com/christopher-young?articleId=614047"target ="_blank">Chris Young</a> | 10 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/#comments">8 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+		            	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/" data-via="Cisco" data-text="#ExecInsights: Defend, Discover and Remediate with Security Services" data-counturl="http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/">Tweet</a>          		
+                    		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						
+            			<a href="http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/" rel="bookmark" class="glance_post_title" title="Permanent Link: Tick Tock Goes the Server Clock">
+			Tick Tock Goes the Server Clock</a><br />
+			<span class="author_post_time"><<a href="http://blogs.cisco.com/author/toddbrannon/" title="Posts by Todd Brannon" rel="author">Todd Brannon</a> | 10 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/#comments">8 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9003wccP" data-via="CiscoDC" data-text="Tick Tock Goes the Server Clock" data-counturl="http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						
+             			</div>
+ 		</div>
+  		<div class="tab_container">
+    		<div id="tab3" class="tab_content">
+    					<a href="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/" rel="bookmark" class="glance_post_title" title="Permanent Link: How the World’s Most Advanced Network Processor is Making the Internet of Everything Possible">
+			How the World’s Most Advanced Network Processor is Making the Internet of Everything Possible</a><br />
+			<span class="author_post_time"><a href="http://blogs.cisco.com/author/nikhiljayaram/" title="Posts by Nikhil Jayaram" rel="author">Nikhil Jayaram</a> | 12 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments">26 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+		            	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/" data-via="Cisco" data-text="How the World’s Most Advanced Network Processor is Making the Internet of Everything Possible" data-counturl="http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/">Tweet</a>          		
+                    		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						<a href="http://blogs.cisco.com/security/introducing-kvasir/" rel="bookmark" class="glance_post_title" title="Permanent Link: Introducing Kvasir">
+			Introducing Kvasir</a><br />
+			<span class="author_post_time"><a href="http://blogs.cisco.com/author/kurtgrutzmacher/" title="Posts by Kurt Grutzmacher" rel="author">Kurt Grutzmacher</a> | 23 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/security/introducing-kvasir/#comments">16 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/security/introducing-kvasir/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9008wFDg" data-via="ciscosecurity" data-text="Introducing Kvasir" data-counturl="http://blogs.cisco.com/security/introducing-kvasir/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						<a href="http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/" rel="bookmark" class="glance_post_title" title="Permanent Link: The Fifth Step to Enterprise Mobility: Defending Your Data">
+			The Fifth Step to Enterprise Mobility: Defending Your Data</a><br />
+			<span class="author_post_time"><a href="http://blogs.cisco.com/author/PrashanthShenoy/" title="Posts by Prashanth Shenoy" rel="author">Prashanth Shenoy</a> | 11 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/#comments">0 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+		            	<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/" data-via="Cisco_Mobility" data-text="The Fifth Step to Enterprise Mobility: Defending Your Data" data-counturl="http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/">Tweet</a>          		
+                    		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						<a href="http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/" rel="bookmark" class="glance_post_title" title="Permanent Link: Cisco Announces Intent to Acquire WHIPTAIL">
+			Cisco Announces Intent to Acquire WHIPTAIL</a><br />
+			<span class="author_post_time"><a href="http://blogs.cisco.com/author/hilton-romanski/" title="Posts by Hilton Romanski" rel="author">Hilton Romanski</a> | 10 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/#comments">7 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9009wibz" data-via="Cisco" data-text="Cisco Announces Intent to Acquire WHIPTAIL" data-counturl="http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+						<a href="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/" rel="bookmark" class="glance_post_title" title="Permanent Link: Get Your Network Ready For iOS7">
+			Get Your Network Ready For iOS7</a><br />
+			<span class="author_post_time"><a href="http://blogs.cisco.com/author/jeevanpatil/" title="Posts by Jeevan Patil" rel="author">Jeevan Patil</a> | 13 Sep 2013</span><br />
+			<span class="comments">
+							(<a href="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments">11 Comments</a>)
+						</span>
+						<span class="views_img" title="Popular"></span>				<br class="clear">
+				<span class="margin-left:10px">
+					 
+    <div class="featured_social_side">
+            <div class="fb-like" data-href="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false"></div>
+	</div>
+	<div class="featured_social_side"> 
+							<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-url="http://cs.co/9005wUiN" data-via="Cisco_Mobility" data-text="Get Your Network Ready For iOS7" data-counturl="http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/">Tweet</a>
+				            		
+    </div>
+	<div class="clear"></div>
+					</span>
+			</p>
+			<div class="clear"></div>
+				
+ 			</div>
+ 		</div>
+ 	</div>
+</div>
+</li>
+<!--googleon: index-->	<li id ="video_widget" class="widget">
+		<iframe width="220" height="124" src="http://www.youtube.com/embed/wYTIwm63pSs?list=PLBC4D7F497D395F36&amp;hl=en_US" frameborder="0" allowfullscreen></iframe>	</li><li id= "sidebar_banner" class="widget">
+	<a href='http://iotwf.com/sign-up.html' target="_blank"><img src="http://blogs.cisco.com/images/sidebar/iotwf.png" alt='Ad Banner' border='0'></a>
+</li>
+	<li id="archives" class="widget">
+	<span class="archive_heading">Archives</span>
+	 
+	<select id="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'>
+		<option value="">Select</option>
+			<option value='http://blogs.cisco.com/2013/10/?cat=5'> October 2013 </option>
+	<option value='http://blogs.cisco.com/2013/09/?cat=5'> September 2013 </option>
+	<option value='http://blogs.cisco.com/2013/08/?cat=5'> August 2013 </option>
+	<option value='http://blogs.cisco.com/2013/07/?cat=5'> July 2013 </option>
+	<option value='http://blogs.cisco.com/2013/06/?cat=5'> June 2013 </option>
+	<option value='http://blogs.cisco.com/2013/05/?cat=5'> May 2013 </option>
+	<option value='http://blogs.cisco.com/2013/04/?cat=5'> April 2013 </option>
+	<option value='http://blogs.cisco.com/2013/03/?cat=5'> March 2013 </option>
+	<option value='http://blogs.cisco.com/2013/02/?cat=5'> February 2013 </option>
+	<option value='http://blogs.cisco.com/2013/01/?cat=5'> January 2013 </option>
+	<option value='http://blogs.cisco.com/2012/12/?cat=5'> December 2012 </option>
+	<option value='http://blogs.cisco.com/2012/11/?cat=5'> November 2012 </option>
+	<option value='http://blogs.cisco.com/2012/10/?cat=5'> October 2012 </option>
+	<option value='http://blogs.cisco.com/2012/09/?cat=5'> September 2012 </option>
+	<option value='http://blogs.cisco.com/2012/08/?cat=5'> August 2012 </option>
+	<option value='http://blogs.cisco.com/2012/07/?cat=5'> July 2012 </option>
+	<option value='http://blogs.cisco.com/2012/06/?cat=5'> June 2012 </option>
+	<option value='http://blogs.cisco.com/2012/05/?cat=5'> May 2012 </option>
+	<option value='http://blogs.cisco.com/2012/04/?cat=5'> April 2012 </option>
+	<option value='http://blogs.cisco.com/2012/03/?cat=5'> March 2012 </option>
+	<option value='http://blogs.cisco.com/2012/02/?cat=5'> February 2012 </option>
+	<option value='http://blogs.cisco.com/2012/01/?cat=5'> January 2012 </option>
+	<option value='http://blogs.cisco.com/2011/12/?cat=5'> December 2011 </option>
+	<option value='http://blogs.cisco.com/2011/11/?cat=5'> November 2011 </option>
+	<option value='http://blogs.cisco.com/2011/10/?cat=5'> October 2011 </option>
+	<option value='http://blogs.cisco.com/2011/09/?cat=5'> September 2011 </option>
+	<option value='http://blogs.cisco.com/2011/08/?cat=5'> August 2011 </option>
+	<option value='http://blogs.cisco.com/2011/07/?cat=5'> July 2011 </option>
+	<option value='http://blogs.cisco.com/2011/06/?cat=5'> June 2011 </option>
+	<option value='http://blogs.cisco.com/2011/05/?cat=5'> May 2011 </option>
+	<option value='http://blogs.cisco.com/2011/04/?cat=5'> April 2011 </option>
+	<option value='http://blogs.cisco.com/2011/03/?cat=5'> March 2011 </option>
+	<option value='http://blogs.cisco.com/2011/02/?cat=5'> February 2011 </option>
+	<option value='http://blogs.cisco.com/2011/01/?cat=5'> January 2011 </option>
+	<option value='http://blogs.cisco.com/2010/12/?cat=5'> December 2010 </option>
+	<option value='http://blogs.cisco.com/2010/11/?cat=5'> November 2010 </option>
+	<option value='http://blogs.cisco.com/2010/10/?cat=5'> October 2010 </option>
+	<option value='http://blogs.cisco.com/2010/09/?cat=5'> September 2010 </option>
+	<option value='http://blogs.cisco.com/2010/08/?cat=5'> August 2010 </option>
+	<option value='http://blogs.cisco.com/2010/07/?cat=5'> July 2010 </option>
+	<option value='http://blogs.cisco.com/2010/06/?cat=5'> June 2010 </option>
+	<option value='http://blogs.cisco.com/2010/05/?cat=5'> May 2010 </option>
+	<option value='http://blogs.cisco.com/2010/04/?cat=5'> April 2010 </option>
+	<option value='http://blogs.cisco.com/2010/03/?cat=5'> March 2010 </option>
+	<option value='http://blogs.cisco.com/2010/02/?cat=5'> February 2010 </option>
+	<option value='http://blogs.cisco.com/2010/01/?cat=5'> January 2010 </option>
+	<option value='http://blogs.cisco.com/2009/12/?cat=5'> December 2009 </option>
+	<option value='http://blogs.cisco.com/2009/11/?cat=5'> November 2009 </option>
+	<option value='http://blogs.cisco.com/2009/10/?cat=5'> October 2009 </option>
+	<option value='http://blogs.cisco.com/2009/09/?cat=5'> September 2009 </option>
+	<option value='http://blogs.cisco.com/2009/08/?cat=5'> August 2009 </option>
+	<option value='http://blogs.cisco.com/2009/07/?cat=5'> July 2009 </option>
+	<option value='http://blogs.cisco.com/2009/06/?cat=5'> June 2009 </option>
+	<option value='http://blogs.cisco.com/2009/05/?cat=5'> May 2009 </option>
+	<option value='http://blogs.cisco.com/2009/04/?cat=5'> April 2009 </option>
+	<option value='http://blogs.cisco.com/2009/03/?cat=5'> March 2009 </option>
+	<option value='http://blogs.cisco.com/2009/02/?cat=5'> February 2009 </option>
+	<option value='http://blogs.cisco.com/2009/01/?cat=5'> January 2009 </option>
+	<option value='http://blogs.cisco.com/2008/12/?cat=5'> December 2008 </option>
+	<option value='http://blogs.cisco.com/2008/11/?cat=5'> November 2008 </option>
+	<option value='http://blogs.cisco.com/2008/10/?cat=5'> October 2008 </option>
+	<option value='http://blogs.cisco.com/2008/09/?cat=5'> September 2008 </option>
+	<option value='http://blogs.cisco.com/2008/08/?cat=5'> August 2008 </option>
+	<option value='http://blogs.cisco.com/2008/07/?cat=5'> July 2008 </option>
+	<option value='http://blogs.cisco.com/2008/06/?cat=5'> June 2008 </option>
+	<option value='http://blogs.cisco.com/2008/05/?cat=5'> May 2008 </option>
+	<option value='http://blogs.cisco.com/2008/04/?cat=5'> April 2008 </option>
+	<option value='http://blogs.cisco.com/2008/03/?cat=5'> March 2008 </option>
+	<option value='http://blogs.cisco.com/2008/02/?cat=5'> February 2008 </option>
+	<option value='http://blogs.cisco.com/2008/01/?cat=5'> January 2008 </option>
+	<option value='http://blogs.cisco.com/2007/11/?cat=5'> November 2007 </option>
+	<option value='http://blogs.cisco.com/2007/10/?cat=5'> October 2007 </option>
+	<option value='http://blogs.cisco.com/2007/09/?cat=5'> September 2007 </option>
+	<option value='http://blogs.cisco.com/2007/07/?cat=5'> July 2007 </option>
+	<option value='http://blogs.cisco.com/2007/06/?cat=5'> June 2007 </option>
+	<option value='http://blogs.cisco.com/2007/05/?cat=5'> May 2007 </option>
+	<option value='http://blogs.cisco.com/2007/04/?cat=5'> April 2007 </option>
+	<option value='http://blogs.cisco.com/2007/03/?cat=5'> March 2007 </option>
+	<option value='http://blogs.cisco.com/2007/02/?cat=5'> February 2007 </option>
+	<option value='http://blogs.cisco.com/2007/01/?cat=5'> January 2007 </option>
+	</select>
+	<br class="clear" />
+</li>
+		<li id="blogroll">
+						<ul id="blogroll_links">
+					<li class="roll_heading">What We're Reading</li>
+										<li><a href="http://www.bladewatch.com/" target="_blank">Blade Watch</a></li>
+											<li><a href="http://www.networkcomputing.com/blogs.asp" target="_blank">Byte and Switch</a></li>
+											<li><a href="http://blogs.computerworld.com/servers" target="_blank">ComputerWorld</a></li>
+											<li><a href="http://blogs.csoonline.com/blog_categories/infrastructure/data_center" target="_blank">CSO</a></li>
+											<li><a href="http://gigaom.com/" target="_blank">GigaOm</a></li>
+											<li><a href="http://www.infoworld.com/?source=nav_BLOGS" target="_blank">InfoWorld</a></li>
+											<li><a href="http://www.networkworld.com/blogs/" target="_blank">Network World</a></li>
+											<li><a href="http://blogs.techrepublic.com.com/" target="_blank">TechRepublic</a></li>
+											<li><a href="http://datacenterjournal.com/index.php" target="_blank">The Data Center Journal</a></li>
+									</ul>
+					</li>
+		<div id="blogroll_foot">
+		</div>
+		</section>
+	<br class="clear" />
+	<footer>
+	<section id="footer_menu">
+    		<div class="footer_menu_column">
+		<ul class ="footer_menu_list">
+			<li class="footer_nav_header">Technology</li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/borderless"  title="Cisco innovations in routing, switching, security, mobility and services">Borderless Networks</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/collaboration"  title ="The Workspace: A New World of Communications and Collaboration">Collaboration</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/datacenter"  title="Discussion of Networking-Based Technologies Designed to Optimize Data Centers">Data Center and Cloud</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/wireless"  title="Blog on Business Mobility Revolution">Mobility</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/security"  title="Insights from the Cisco Security Community">Security</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/smallbusiness"  title="Technology advice for small businesses">Small Business</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/sp"  title="Insight into Service Provider Trends and Technology">SP360:Service Provider</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/video" title="Dedicated to exploring the impact of video on the way people work, live, play and learn">Video</a></li>
+			<!--<li class="footer_nav_link"><a href="http://blogs.cisco.com/virtualworlds"  title="Networked Virtual Environments and Virtual Worlds">Virtual Environments</a></li> -->
+		</ul>
+	</div>
+	<div class="footer_menu_column">
+		<ul class ="footer_menu_list">
+			<li class="footer_nav_header">Industries</li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/education"  title="Share and learn about Cisco solutions for education">Education</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/financialservices"  title="Insights and discussions on industry trends and how technology can help address your business imperatives">Financial Services</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/government"  title="Insights and opinions on global government challenges and happenings in technology">Government</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/healthcare"  title="Innovative partnerships and technology discussions around industry trends empowering care team collaboration and business efficiency driving quality outcomes across the continuum of care">Healthcare</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/manufacturing"  title="Discussions, Insights and Opinions for the Manufacturing Industry">Manufacturing</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/retail"  title="Discussion, best practices and what Cisco is doing to help retailers succeed with the consumers shopping today">Retail</a></li>
+		</ul>
+		<ul class ="menu_list2">
+			<li class="footer_nav_header">Support</li>
+			<li class="footer_nav_link"><a href="https://supportforums.cisco.com/blogs/"  target = "_blank" title="Engage, Collaborate & Co-Create Technical Support Solutions">Cisco Support Community</a></li>	
+		</ul>
+		<ul class ="menu_list2">
+			<li class="footer_nav_header">Partners</li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/channels"  title="Your Voice Within the Cisco Channel Partner Community">Channels</a></li>
+			<li class="footer_nav_link"><a href="http://developer.cisco.com/web/events-community/blogs">Cisco Developer Network</a></li>
+		</ul>
+	</div>
+	<div class="footer_menu_column">
+		<ul class ="footer_menu_list">
+			<li class="footer_nav_header">More From Cisco</li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/getyourbuildon"  title="Unfiltered & Out Loud: Inside the Brains Driving the Creation of New Software & Networking Technologies at Cisco and across the Industry">Architect & DE Discussions</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/cle"  title="Insights and stories about the Socioeconomic impact of telecom innovation and infrastructure investment">Connected Life Exchange</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/socialmedia"  title="Best practices, case studies and shared learning along our journey of connecting with customers via social media">Digital and Social</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/performance"  title="Musings, development news, and other tidbits">High Peformance Computing Networking</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/ciscoit"  title="Cisco on Cisco: Conversations about the IT Journey">Inside Cisco IT</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/openatcisco"  title="Viewpoints on collaboration and contributions to open source, open standards, open opportunities">Open at Cisco</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/perspectives"  title="Real customers tell their stories">Perspectives</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/cin"  title="TechWiseTV, BizWiseTV and more">TechWiseTV</a></li>
+			<!--<li class="footer_nav_link"><a href="http://blogs.cisco.com/webexperience"  title="Insights on the Importance of the End-User Experience">Web Experience</a></li>-->
+		</ul>
+		<ul class ="menu_list2">
+			<li class="footer_nav_header">Corporate/News</li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/news"  title="Opinions and Insights from Cisco">The Platform</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/csr"  title="Engaging the network for good">Corporate Social Responsibility</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/gov"  title="Thoughts and Opinions on Government Affairs">High Tech Policy</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/diversity"  title="Creating an environment that fosters innovation, creativity, and collaboration">Inclusion and Diversity</a></li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/ioe"  title="Internet of Everything - the convergence of people, processes, data, and things">Internet of Everything</a></li>
+		</ul>
+	</div>
+	<div class="footer_menu_column">
+		<ul class ="footer_menu_list">
+			<li class="footer_nav_header">Countries and Regions</li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/br/">Brazil</a></li>
+			<li class="footer_nav_link"><span><a href="http://canadablog.cisco.com/">Canada</a></span>
+				<ul>
+					<li><a href="http://canadablog.cisco.com/">English</a></li>
+					<li><a href="http://ciscocanadafr.wordpress.com/">French</a></li>
+				</ul>
+			</li>
+			<li class="footer_nav_link"><a href="http://blogs.cisco.com/emerging"  title="Opinions and Insights From Emerging Countries">Emerging Countries</a></li>
+			<li class="footer_nav_link"><span><a href="#">France</a></span>
+				<ul>
+					<li><a href="http://gblogs.cisco.com/fr-reseaux/blog">R&#233;seaux</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-datacenter/blog">Data Center</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-greenit/blog">Green IT</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-ipv6/blog">IPv6</a></li>
+					<li><a href="http://gblogs.cisco.com/fr-collaboration/blog">Collaboration</a></li>
+					<!-- <li><a href="http://ellesblog.cisco.fr/">Elles @Cisco</a></li> -->
+					<!-- <li><a href="http://mobiliteblog.cisco.fr/">Mobilit&eacute;</a></li> -->
+					<!-- <li><a href="http://pmeblog.cisco.fr/">PME</a></li> -->
+					<li><a href="http://gblogs.cisco.com/fr-security/blog">S&eacute;curit&eacute;</a></li>
+					<!-- <li><a href="http://energieblog.cisco.fr/">Energie</a></li> -->
+					<li><a href="http://gblogs.cisco.com/fr-smartcities/blog">Smart Cities</a></li>
+				</ul>
+			</li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/de">Germany</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/it/">Italy</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/jp/">Japan</a></li>
+			<li class="footer_nav_link"><a href="http://ciscokrblog.com/">Korea</a></li>
+			<li class="footer_nav_link"><a href="http://cisco-latinoamerica.com/">Latin America</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/nl">Netherlands</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/pl">Poland</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/pt">Portugal</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/ru">Russia</a></li>
+			<li class="footer_nav_link"><a href="http://gblogs.cisco.com/es">Spain</a></li>
+		</ul>	
+	</div>	</section>
+    <section id="secondary_footer">
+    	<a href="http://www.cisco.com/web/siteassets/contacts/index.html">Contacts</a> | <a href="http://tools.cisco.com/cdc/feedbk/public/FeedbackAction.cdcfdb">Feedback</a> | <a href="http://www.cisco.com/web/help/index.html">Help</a> | <a href="http://www.cisco.com/web/siteassets/sitemap/index.html">Site Map</a> | <a href="http://www.cisco.com/web/siteassets/legal/terms_condition.html">Terms &amp; Conditions</a> | <a href="http://www.cisco.com/web/siteassets/legal/privacy.html">Privacy Statement</a> | <a href="http://www.cisco.com/web/siteassets/legal/privacy.html#cookies">Cookie Policy</a> | <a href="http://www.cisco.com/web/siteassets/legal/trademark.html">Trademarks</a> <br />
+	</section>
+    <br class="clear" />
+    <section id ="disclaimer">
+    	<b>Legal Disclaimer</b>
+		<p>Some of the individuals posting to this site, including the moderators, work for Cisco Systems. Opinions expressed here and in any corresponding comments are the personal opinions of the original authors, not of Cisco. The content is provided for informational purposes only and is not meant to be an endorsement or representation by Cisco or any other party. This site is available to the public. No information you consider confidential should be posted to this site. By posting you agree to be solely responsible for the content of all information you contribute, link to, or otherwise upload to the Website and release Cisco from any liability related to your use of the Website. You also grant to Cisco a worldwide, perpetual, irrevocable, royalty-free and fully-paid, transferable (including rights to sublicense) right to exercise all copyright, publicity, and moral rights with respect to any original content you provide. The comments are moderated. Comments will appear as soon as they are approved by the moderator.</p>
+    </section>
+	<p><a onclick='document.cookie="wpmp_switcher=mobile;path=/;expires=Tue, 01-01-2030 00:00:00 GMT";' href='http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/?wpmp_switcher=mobile'>Switch to our mobile site</a></p>	<script type="text/javascript">jQuery(window).load(function(){ rewards.getMembersReputation(["78076"]); });</script></footer>
+</body>
+</html></div>
+<script type="text/javascript" src="https://d1xnn692s7u6t6.cloudfront.net/widget.js"></script>
+<script type="text/javascript">(function k(){window.$SendToKindle&&window.$SendToKindle.Widget?$SendToKindle.Widget.init({"content":".entry","title":".kindle_title","author":".kindle_author","published":".kindle_date"}):setTimeout(k,500);})();</script>

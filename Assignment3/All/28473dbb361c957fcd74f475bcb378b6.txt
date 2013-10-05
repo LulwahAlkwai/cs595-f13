@@ -1,0 +1,498 @@
+<!-- Force IE7 into Quirks mode --><!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>Nate Silver Skeptical of Big Data Trends, Keys in on Culture | SiliconANGLE</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link href='http://fonts.googleapis.com/css?family=Droid+Sans:regular,bold' rel='stylesheet' type='text/css'>
+<link  href="http://fonts.googleapis.com/css?family=Droid+Serif:regular,italic,bold,bolditalic" rel="stylesheet" type="text/css" >
+<link rel="stylesheet" type="text/css" media="all" href="http://www.siliconangle.com/wp-content/themes/siliconANGLE/style.css" />
+<link rel='shortcut icon' href='http://www.siliconangle.com/wp-content/themes/siliconANGLE/images/favicon.ico' type='image/x-icon'/ >
+<!--[if IE 7]>
+	<link rel="stylesheet" type="text/css" href="http://www.siliconangle.com/wp-content/themes/siliconANGLE/styles-ie7.css" />
+<![endif]-->
+
+<link rel="pingback" href="http://siliconangle.com/xmlrpc.php" />
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js" ></script>
+<script src="http://www.siliconangle.com/wp-content/themes/siliconANGLE/flowplayer/flowplayer-3.2.6.min.js"></script>
+<script type="text/javascript" src="http://www.siliconangle.com/wp-content/themes/siliconANGLE/js/scripts.js" ></script>
+
+<link rel="alternate" type="application/rss+xml" title="SiliconANGLE &raquo; Feed" href="http://siliconangle.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="SiliconANGLE &raquo; Comments Feed" href="http://siliconangle.com/comments/feed/" />
+<script type='text/javascript' src='http://siliconangle.com/wp-includes/js/comment-reply.js?ver=3.4.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://siliconangle.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://siliconangle.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The True Cost of iPhone 5c Nearly $600 : Apple May Never Sell Low-End' href='http://siliconangle.com/blog/2013/09/12/the-true-cost-of-iphone-5c-nearly-600-apple-may-never-sell-a-low-end-phone/' />
+<link rel='next' title='Botnets and Porn: It&#8217;s What Tor&#8217;s All About' href='http://siliconangle.com/blog/2013/09/12/botnets-and-porn-its-what-tors-all-about/' />
+<meta name="generator" content="WordPress 3.4.2" />
+<link rel='canonical' href='http://siliconangle.com/blog/2013/09/12/nate-silver-skeptical-of-big-data-trends-keys-in-on-culture/' />
+<link rel='shortlink' href='http://siliconangle.com/?p=163388' />
+<link rel="stylesheet" type="text/css" href="http://siliconangle.com/wp-content/mu-plugins/wp-recaptcha/recaptcha.css" /><link type="text/css" rel="stylesheet" href="http://siliconangle.com/wp-content/plugins/feedme-SA/feedme-SA.css" />
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-21673617-1']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<link type="text/css" rel="stylesheet" href="http://siliconangle.com/wp-content/plugins/socialMedia-SA/socialMedia-SA.css" />
+<link type="text/css" rel="stylesheet" href="http://siliconangle.com/wp-content/plugins/sponsoredPosts-SA/sponsoredPosts-SA.css" />
+
+<!-- Start of Woopra Code -->
+<script type="text/javascript">
+function woopraReady(tracker) {
+    tracker.trackPageview({title:document.title,url:window.location.pathname,author:'Ryan Cox',category:'Big Data'});
+    return false;
+}
+</script>
+<script type="text/javascript">
+(function(){
+var wsc=document.createElement('script');
+wsc.type='text/javascript';
+wsc.src=document.location.protocol+'//static.woopra.com/js/woopra.js';
+wsc.async=true;
+var ssc = document.getElementsByTagName('script')[0];
+ssc.parentNode.insertBefore(wsc, ssc);})();
+</script>
+<!-- End of Woopra Code -->
+
+</head>
+
+<body class="single single-post postid-163388 single-format-standard" >
+
+	<div id="header-home">
+		<div id="masthead">
+			<div id="branding" role="banner">
+			
+				<div id="head">
+					<div id="site-title">
+				
+							<a href="http://siliconangle.com/" title="SiliconANGLE" rel="home"><img alt="siliconANGLE" name="siliconANGLE" src="http://www.siliconangle.com/wp-content/themes/siliconANGLE/images/logo-silicon.png" /></a>
+						
+							                    	<div id="site-description">where computer science meets social science</div>
+	                    					</div>
+	
+	                <div id="searchBox"><form role="search" method="get" id="searchform" action="http://siliconangle.com/" >
+	<div><label class="screen-reader-text" for="s">Search for:</label>
+	<input type="text" value="" name="s" id="s" />
+	<input type="submit" id="searchsubmit" value="Search" />
+	</div>
+	</form></div>
+	                <div id="pageList"><ul><li class="page_item page-item-3353"><a href="http://siliconangle.com/about/">About the SiliconANGLE Network</a></li>
+<li class="page_item page-item-131995"><a href="http://siliconangle.com/siliconangle-pro-reports/">SiliconANGLE Pro Reports</a></li>
+<li class="page_item page-item-136294"><a href="http://siliconangle.com/masthead/">Editorial Masthead</a></li>
+</ul></div>
+	               
+	             </div> <!-- #head --> 
+
+			</div><!-- #branding -->
+
+		</div><!-- #masthead -->
+
+	</div><!-- #header -->
+<div id="wrapper" class="hfeed shadow">
+	<div id="main">
+    <div id="leftNav">
+	<ul id="angleNav">
+    	    		
+    		<li class=angleSelected><a href="http://siliconangle.com/?angle=silicon&link=mostrecent">SILICON ANGLE</a></li>
+    		
+            		<li ><a href="http://siliconangle.com/blog/category/cloudangle/?cat=6181&angle=cloud&link=mostrecent">CLOUD</a></li>
+
+            		<li ><a href="http://siliconangle.com/blog/category/mobile/?cat=633&angle=mobile&link=mostrecent">MOBILE</a></li>
+
+            		<li ><a href="http://siliconangle.com/blog/category/social-media/?cat=656&angle=social&link=mostrecent">SOCIAL</a></li>
+    		
+    	<li><a href="http://www.servicesangle.com">SERVICES</a></li>
+    	
+       <br/>
+       
+       <!-- <li><span class="newAngle">NEW</span><a href="http://www.devopsangle.com">DEVOPS</a></li> -->
+       <li><a href="http://www.devopsangle.com">DEVOPS</a></li>    	
+       <!-- NEED NORDIC CONTENT
+       	       	<li ><span class="newAngle">NEW</span><a href="http://siliconangle.com/blog/category/nordicangle/?angle=nordic&link=mostrecent"> NORDIC ANGLE</a></li>
+	    -->   	
+       		<br/>
+       			<li ><a href="http://www.wikibon.org/blog" target="_blank">RESEARCH</a></li>
+       		
+
+         <li>&nbsp;</li>
+    </ul>
+    
+        
+    <h4 class="topicsNav">TOPICS:</h4>
+    	<ul id="topicsNav">
+        	<li><a href="http://siliconangle.com/?s=cloud mobile social big+data">ALL</a></li>
+			<li><a href="http://siliconangle.com/?s=big+data">BIG DATA</a></li>
+			<li><a href="http://siliconangle.com/?s=software+led+infrastructure">SLI</a></li>
+            <li>&nbsp;</li>
+        </ul>
+     <h4 class="topicsNav">EVENT ANGLE:</h4>
+     	<ul id="companiesNav">
+		<li><b>2013</b></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcbzniwrQd4GmFoZiKYxTZcR">OpenStack Summit</a></li>
+		<li><a href="http://wikibon.org/wiki/v/AWS_Summit_2013">AWS Summit</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcYFol5tt6OhiVGEI_X9NoLp">Accel Partners</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcYEA5j1WVX8hG2NbvADiLE1">#FlashAhead</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcY34QEyIlOC6FUBZ_0TO0Fp">IBM Flash</a></li>
+		<li><a href="http://wikibon.org/wiki/v/EMC_World_2013">EMC World</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcao5ilg2W2p3wWyyKNjtfM7">SAPphire</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcZSodJ4IYzfOhFmrrvVpngw">Know13</a></li>
+		<li><b>2012</b></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcalAft8IzXAW2nCAqdimkac">IDF</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcZ_YsCjds0QNb9o13aCxXke">NetApp Day</a></li>
+		<li><a href="http://www.youtube.com/playlist?list=PLenh213llmcaF3a1GiIAQF81azYlBoITd">IBM IOD</a></li>
+		<li><a href="http://wikibon.org/wiki/v/Brocade_Tech_Day_2012">Brocade Day</a></li>
+		<li><a href="http://wikibon.org/wiki/v/Splunk_.conf_2012">Splunk .conf</a></li>
+		<li><a href="http://wikibon.org/wiki/v/Hack/reduce_Launch">Hack/reduce</a></li>
+		<li><a href="http://wikibon.org/wiki/v/Cassandra_Summit_2012">Cassandra Summit</a></li>
+		<li><a href="http://siliconangle.com/?s=%22node+summit%22" target="_blank">Node Summit</a></li>
+		<li><a href="http://wikibon.org/wiki/v/NAB_Show_2012" target="_blank">NAB</a><li>
+		<li><a href="http://wikibon.org/wiki/v/O'Reilly_Strata_Conference:_Making_Data_Work_2012" target="_blank">Strata</a></li>
+		<li><a href="http://wikibon.org/wiki/v/EMC_World_and_Data_Science_Summit_2012" target="_blank">EMC World</a></li>
+		<li><a href="http://wikibon.org/wiki/v/SAP_SAPPHIRE_2012" target="_blank">Sapphire</a>
+		<li><a href="http://wikibon.org/wiki/v/Hadoop_Summit_2012" target="_blank">Hadoop Summit</a></li>
+		<li><a href="http://wikibon.org/wiki/v/IBM_Edge_2012" target="_blank">IBM Edge</a></li>
+		<li><a href="http://wikibon.org/wiki/v/Dell_Storage_Forum_2012" target="_blank">Dell Storage Forum</a></li>
+		<li><a href="http://wikibon.org/wiki/v/HP_Discover_2012" target="_blank">HP Discover</a></li>
+		<li></li>
+		<li><b>2011</b></li>
+     		<li><a href="http://wikibon.org/wiki/v/Hadoop_World_2011" target="_blank">HADOOP WORLD</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/EMC_World_2011" target="_blank">EMCWORLD</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/SAP_SAPPHIRE_2011" target="_blank">SAPPHIRE</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/Citrix_Synergy_'11" target="_blank">CITRIX SYNERGY</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/Dell_Storage_Forum_2011" target="_blank">DELL STORAGE FORUM</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/HP_Discover_2011" target="_blank">HP DISCOVER</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/Oracle_OpenWorld_2011" target="_blank">Oracle OpenWorld</a></li>
+     		<li><a href="http://wikibon.org/wiki/v/VMworld_2011" target="_blank">VMworld</a></li>
+         </ul>
+         
+          
+          
+     
+</div> <!-- end #leftNav -->
+
+		<div id="container">
+		
+				
+				<div id="secondary" class="widget-area" role="complementary">
+					
+											
+					<ul class="xoxo">
+						<li id="text-31" class="widget-container widget_text"><h3 class="widget-title">SiliconANGLE TV.</h3>			<div class="textwidget"><object type="application/x-shockwave-flash" height="164" width="244" id="live_embed_player_flash" data="http://www.justin.tv/widgets/live_embed_player.swf?channel=siliconangle" bgcolor="#000000"><param name="allowFullScreen" value="true" /><param name="allowScriptAccess" value="always" /><param name="allowNetworking" value="all" /><param name="movie" value="http://www.justin.tv/widgets/live_embed_player.swf" /><param name="flashvars" value="hostname=www.justin.tv&channel=siliconangle&auto_play=true&start_volume=00" /></object></div>
+		</li><li class="widget-container followSA"><div class="socMedContent"><div class="followSATitle">The SiliconANGLE Network</div><ul class="socmedia"><a href="http://www.facebook.com/thesiliconangle"><li><img src="http://siliconangle.com/wp-content/plugins/socialMedia-SA/images/socialmedia-facebook.png" /></a></li><a href="http://www.youtube.com/user/siliconangle/featured"><li><img src="http://siliconangle.com/wp-content/plugins/socialMedia-SA/images/socialmedia-youtube.png" /></a></li><a href="http://siliconangle.com/feed/"><li><img src="http://siliconangle.com/wp-content/plugins/socialMedia-SA/images/socialmedia-rss.png" /></a></li><a href="http://www.twitter.com/siliconangle"><li><img src="http://siliconangle.com/wp-content/plugins/socialMedia-SA/images/socialmedia-twitter.png" /></a></li></ul></li></li></li><li id="rss-2" class="widget-container widget_rss"><h3 class="widget-title"><a class='rsswidget' href='http://feeds2.feedburner.com/WikibonBlog' title='Syndicate this content'><img style='border:0' width='14' height='14' src='http://siliconangle.com/wp-includes/images/rss.png' alt='RSS' /></a> <a class='rsswidget' href='http://wikibon.org/blog' title='Breaking Research Boundaries'>ResearchANGLE</a></h3><ul><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/bk-u00fR6mc/' title='Last week, Microsoft announced the follow up to the much-maligned Surface line of tablets.  In doing so, the company announced that they have decided to simply ignore the most serious issues with Surface while addressing items that weren’t really all that bad in the first release. Most egregiously, Microsoft has completely failed to address the […] [&hellip;]'>Microsoft Decides to Ignore Surface’s Glaring Issues</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/eCeMOmO9r_Q/' title='Once again the Wikibon team is gearing up for our annual trek to Oracle OpenWorld. As usual we’ll be there with SiliconANGLE’s theCUBE. We’ve watched Oracle evolve into an integrated solutions company and the firm’s recent storage announcement highlights Oracle’s strategy to take out operational costs by tightly integrating hardware and software. In 2010 Wik [&hellip;]'>Oracle’s New ZS3 Underscores Integration End Game</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/-1cVZNlm-lk/' title='Apple’s September 9, 2013 announcement is proof that Apple has made the full transformation from innovation powerhouse to Just Another American Company.  If you’re not aware yet, today Apple announced the imminent release of two new iPhones.  The first is the successor to the current iPhone 5 and is dubbed the iPhone 5s. The second […] [&hellip;]'>Apple’s Transformation from Market Leader to Marker Follower Continues</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/laA4fLxswB4/' title='It’s no secret that the IT industry is changing at a pace that seems to accelerate with every passing year.  At VMworld 2013, Carl Eschenbach, COO of VMware, gave the keynote address and discussed what the future of how IT should be operated.  He focused on three main points: Ensuring that virtualization extends to all […] [&hellip;]'>Getting From Here To There Is The Next Technology Frontier</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/JjHMMr0_C3A/' title='Security services and security products are critical to helping organizations identify security issues and mitigate risks through the years.  One of the critical challenges in today’s IT environments however is a bit more fundamental and it starts with getting a handle on securing sensitive information. Every environment has their own mix of technologies.  S [&hellip;]'>Securing Information in the Snowden Age – From Discovery to Classification</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/DrQs0RpKnPc/' title='To say that there is a whole lot of significant advancement to be seen on the expo floor at VMworld 2013 is an understatement.  There seems to be movement in just about every area of IT.  One aspect of the IT environment that remains a challenge for many revolves around disaster recovery.  While many organizations […] [&hellip;]'>HotLink Brings Affordable Disaster Recovery to the Masses</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/qnGggj0EqoQ/' title='One of reasons that I love consulting and love attending events where I meet with end users is that I get to “keep it real” by seeing what’s really happening out in the real world as opposed to what analysts think should be happening in the data center and across the IT spectrum.  To listen […] [&hellip;]'>CIOs: If You’re Not Following The Trends, You’re Far From Alone</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/jJwAwoOy6AY/' title='I’ve always been of the mindset that turnover in personnel is generally a good thing, particularly at the top of the organization.  Like all things, organizations need to adapt or they will die while time passes them by and the market chooses alternatives that better fit the times.  This morning, Microsoft announced that Steve Ballmer, […] [&hellip;]'>Ballmer’s Exit Starts a New Day for Microsoft</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/ShdZcHgeQ8Y/' title='VMworld: VMware’s user conference is now in its 10th year. Due to a robust ecosystem and passionate community, this is THE show for virtualization and one of the top events for cloud. VMware has maintained dominance in the server virtualization market, but there are a lot of questions coming into the show. For the fourth […] [&hellip;]'>The New VMware Ecosystem Live at VMworld on theCUBE</a></li><li><a class='rsswidget' href='http://feedproxy.google.com/~r/WikibonBlog/~3/TpqsJliz5pA/' title='When it’s come to software, for years, CIOs have had to make a critical determination: Is there an existing product on the market that can meet the identified business need? Is there an existing product on the market that I can customize to meet my need? Do I have to develop software to meet the […] [&hellip;]'>For CIOs, Build vs. Buy Isn’t Just For Software Anymore</a></li></ul></li><li id="text-33" class="widget-container widget_text"><h3 class="widget-title">About the SiliconANGLE Network</h3>			<div class="textwidget"><ul>
+<li><a href="http://siliconangle.com/about/">About the SiliconANGLE Network</a></li>
+<li><a href="http://siliconangle.com/masthead/">Editorial Masthead</a></li>
+<li><a href="http://siliconangle.com/siliconangle-pro-reports/">SiliconANGLE Pro Reports</a></li>
+<li><a href=""http://wikibon.org>Wikibon Research</a></li>
+</ul></div>
+		</li><li id="text-34" class="widget-container widget_text"><h3 class="widget-title">SiliconANGLE TV</h3>			<div class="textwidget"><iframe width="243" height="137" src="http://www.youtube.com/embed/?list=FLu3Ri8DI1RQLdVtU12uIp1Q" frameborder="0" allowfullscreen></iframe></div>
+		</li>					</ul>
+				</div><!-- #secondary .widget-area -->
+		
+		        
+
+
+			<div id="content" role="main">
+            
+            <div class="subContent">
+            
+            
+
+						
+			<div class="breadcrumbs">
+			    <a href=?angle=silicon&link=mostrecent>siliconANGLE</a> » Nate Silver Skeptical of Big Data Trends, Keys in on Culture			</div>
+
+				<div id="post-163388" class="post-163388 post type-post status-publish format-standard hentry category-big-data-memeconnect category-featured-articles category-news category-video tag-tcc13 tag-thecube tag-538 tag-analytics tag-big-data tag-big-data-trends tag-data-analysis tag-data-modeling tag-fivethirtyeight tag-nate-silver tag-nate-silver-538 tag-nate-silver-fivethirtyeight tag-tableau-customer-conference tag-volume-of-data">
+					<h1 class="entry-title">Nate Silver Skeptical of Big Data Trends, Keys in on Culture</h1>
+					<div class="entry-meta"><span class="author"><a href="#"><a href="http://siliconangle.com/blog/author/ryancox/">
+					Ryan Cox</a></span> | <span class="date">September 12th</span>
+					</div><!-- .entry-meta -->
+					
+
+					
+                 <div class="subsocLine"></div>   
+                        <div class="subsoc">
+                                                        
+                        		<span class="more"><a href="http://siliconangle.com/blog/2013/09/12/nate-silver-skeptical-of-big-data-trends-keys-in-on-culture/?">READ MORE</a></span><br/><br/>
+                        		
+                        				<span class="fbLike"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Nate Silver Skeptical of Big Data Trends, Keys in on Culture" data-url="http://siliconangle.com/blog/2013/09/12/nate-silver-skeptical-of-big-data-trends-keys-in-on-culture/?">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script></span>
+                        				
+                        				<span class="fbLike"><script type="text/javascript" src="http://apis.google.com/js/plusone.js"></script>
+                        				<g:plusone size="medium" href="http://siliconangle.com/blog/2013/09/12/nate-silver-skeptical-of-big-data-trends-keys-in-on-culture/?"></g:plusone></span>
+                        		     
+                        		                             		     
+                        		     <span class="fbLike"><iframe src="http://www.facebook.com/plugins/like.php?app_id=125199060909920&amp;href=http://siliconangle.com/blog/2013/09/12/nate-silver-skeptical-of-big-data-trends-keys-in-on-culture/?&amp;send=false&amp;layout=button_count&amp;width=120&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=tahoma&amp;height=21" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100px; height:21px;" allowTransparency="true"></iframe></span>
+                        		     
+                        		     <span class="fbLike"><script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+                        		     <script type="IN/Share" data-url="http://siliconangle.com/blog/2013/09/12/nate-silver-skeptical-of-big-data-trends-keys-in-on-culture/?" data-counter="right"></script></span>
+                            
+                        </div>
+
+					<div class="entry-content">
+                    
+                    <div id="subcol" class="columns" ><p><a href="http://siliconangle.com/blog/2012/11/09/electing-big-data-its-bigger-than-the-white-house/nate-silver-statistics-big-data/" rel="attachment wp-att-125445"><img class="alignright size-medium wp-image-125445" title="nate silver statistics big data" src="http://siliconangle.com/files/2012/11/nate-silver-statistics-big-data-300x200.jpeg" alt="Nate Silver, Big Data, Tableau Customer Conference" width="300" height="200" /></a>There were two big takeaways I had from Nate Silver&#8217;s time on #theCUBE during this week&#8217;s Tableau Customer Conference: 1) the editor of <a title="ESPN" href="http://en.wikipedia.org/wiki/ESPN">ESPN</a>&#8216;s <em>FiveThirtyEight</em> is more of a skeptic, taking a wait-and-see approach to Big Data, and 2) culture is more important when analyzing data than most realize. I was fascinated to hear Silver talk about culture being key for good data analysis, and was equally intrigued to learn that he isn&#8217;t as bullish on <span style="color: #ff0000;"><a href="http://www.forbes.com/sites/siliconangle/2012/12/05/big-data-needs-eye-candy-to-go-mainstream-heres-the-ipad-app-to-do-it/" target="_blank"><span style="color: #ff0000;">Big Data trends</span></a></span> as most in his field tend to be.</p>
+<p>In Silver&#8217;s keynote, he spoke on how the volume of data does not trump the modeling of data. It is not your typical &#8220;more the merrier&#8221; situation &#8212; good data analysis requires both. The interesting part to that equation is that there is a third factor: volume + modeling + <strong>culture</strong> = good data analysis. &#8220;You need volume of data, you need high quality data, you need a culture that actually has the right incentives aligned, where you really do want to find a way to build a better product to make more money,&#8221; said Silver. And that is where my interest was thoroughly piqued.</p>
+<p>Silver alludes to the concept that large organizations have people within the company that are thinking much more short-term than the C level executives. Furthermore, different departments in the company might be thinking about their P&amp;L only, as that is what measures their level of success.</p>
+<blockquote><p>&#8220;A lot of success in business, and certainly when it comes to the use of analytics, is just stripping away the things that get in the way from understanding and distract you. Its not some wave a magic wand and have some formula where you uncover all the secrets of the world. Its more like, if you can strip away the noise than you&#8217;re going to have a much clearer understanding of what&#8217;s really there.&#8221;</p></blockquote>
+<h2>Maintaining healthy skepticism</h2>
+<h2></h2>
+<p>Being known as a Big Data guy (whatever that means), you might be shocked to learn that Silver takes issue with some of the core notions of Big Data too. Specifically, the importance of causation vs. correlation. Another recent guest of #theCUBE with a strong opinion on causality was Kenneth Neil Cukier from the Economist. In his book <em>Big Data &#8211; A Revolution That Will Transform How We Will Work &amp; Think,</em> he states that causality really doesn&#8217;t matter anymore. In summary, if you know that your customers are going to buy more products by analyzing a data set or correlation, then the &#8220;why&#8221; doesn&#8217;t matter &#8212; you should try to exploit that.</p>
+<p>Watch the interview with Silver in its entirety below.  More on Silver&#8217;s segment after the clip:<br />
+<iframe src="//www.youtube.com/embed/68G5xKWzy0g" frameborder="0" width="550" height="309"></iframe></p>
+<h2> Causality matters</h2>
+<h2></h2>
+<p>Silver disagrees firmly with the notion that causality doesn&#8217;t matter. He recommends hypothesis testing.  Coming in with some questions and looking for that causality are very important to data analysis and predicting. This is where his bearishness on Big Data and the current trends being predicted shows its teeth.</p>
+<blockquote><p>&#8220;If it&#8217;s true that merely finding a lot of correlations and very high-volume data sets will improve productivity, then how come we&#8217;ve had such slow economic growth over the last ten years? Where is the tangible increase in patent growth, or different measures of progress?&#8221;</p></blockquote>
+<p>Silver is suspicious of people saying that one technology is a game-changer relative to our entire economic history. <span style="color: #ff0000;"><a href="http://siliconangle.com/blog/2013/09/11/nate-silver-says-big-data-is-not-a-free-ticket-to-success/" target="_blank"><span style="color: #ff0000;">Big Data is no free ticket to success</span></a></span>. Looking at Big Data and the Internet of Things together, I now have calmer approach to my technology prophecies. The understanding and humanizing of data is going to change our world for the better&#8230;but I&#8217;m not sure we&#8217;re even close to realizing what that means yet.</p>
+</div>
+                    
+ 
+											</div><!-- .entry-content -->
+
+					<div id="entry-author-info">
+						<div id="author-description">
+							<h2>About Ryan Cox</h2>
+							Ryan is an Assistant Editor here at <a href="http://siliconangle.com/blog/author/ryancox/">SiliconANGLE</a>. He is the Marketing Director for <a href="http://digitalxbridge.com/">DXB</a>, a design+marketing firm. He also sits on the advisory board to <a href="http://www.buzzjoy.net/">Buzz Joy</a>, an online B2B platform. He does tweet, too, and quite frequently, so follow him at <a href="http://twitter.com/ryanleecox">@ryanleecox</a>. Last but not least, find his collection of everything he finds worthwhile on the web at <a href="https://plus.google.com/107876873950868500518/posts">Google+</a>.							<div id="author-link">
+								<a href="http://siliconangle.com/blog/author/ryancox/">
+									View all posts by Ryan Cox <span class="meta-nav">&rarr;</span>								</a>
+							</div><!-- #author-link	-->
+						</div><!-- #author-description -->
+					</div><!-- #entry-author-info -->
+
+
+				</div><!-- #post-## -->
+
+					
+
+			
+			<!--<div id="related">
+				<div id="relatedStories" class="bottomWidgets">
+				
+					<h4>RELATED STORIES:</h4>					<p><a href="http://devopsangle.com/2013/09/23/tableau-developer-round-up-visual-analytics-for-everyone-and-everywhere-tcc13/" rel="bookmark" title="Permanent Link to Tableau Developer Round Up: Visual Analytics for Everyone and Everywhere #tcc13">Tableau Developer Round Up: Visual Analytics for Everyone and Everywhere #tcc13</a></p>
+					
+										<p><a href="http://siliconangle.com/blog/2013/09/19/cisco-architect-on-the-many-benefits-of-tableau-tcc13/" rel="bookmark" title="Permanent Link to Cisco Architect On the Many Benefits of Tableau | #tcc13">Cisco Architect On the Many Benefits of Tableau | #tcc13</a></p>
+					
+										<p><a href="http://siliconangle.com/blog/2013/09/19/tableau-cmo-talks-customer-driven-marketing-tcc13/" rel="bookmark" title="Permanent Link to Tableau CMO Talks Customer-Driven Marketing | #tcc13">Tableau CMO Talks Customer-Driven Marketing | #tcc13</a></p>
+					
+										<p><a href="http://siliconangle.com/blog/2013/09/18/audience-audits-susan-baier-on-attitudinal-segmentation-tcc13/" rel="bookmark" title="Permanent Link to Audience Audit’s Susan Baier on Attitudinal Segmentation | #tcc13">Audience Audit’s Susan Baier on Attitudinal Segmentation | #tcc13</a></p>
+					
+										<p><a href="http://siliconangle.com/blog/2013/09/13/analytics-tools-should-be-like-bicycles-for-the-brain-tcc13/" rel="bookmark" title="Permanent Link to Analytics Tools Should be like Bicycles for the Brain | #tcc13">Analytics Tools Should be like Bicycles for the Brain | #tcc13</a></p>
+					
+									
+					
+				</div>
+				
+				
+				<div id="latestNews" class="bottomWidgets">
+					<h4>LATEST NEWS:</h4>
+										            
+					            					            
+					            					            
+					                <div class="editorsStory">
+						                <a href="http://siliconangle.com/blog/2013/10/04/twitter-timeline-from-jack-to-ipo/"><img src="http://siliconangle.com/files/2013/10/jack_dorsey_twitter.jpg" />
+						                
+						                	<div class="edStoryBack">
+						                		<span class="hours">Yesterday</span>
+						                		<span class="shortTitle">Twitter Timeline : From Jack t...&raquo;</span>
+						                	</div>
+						                	
+						                </a>
+					          
+					                </div>
+					                <div class="sp"><img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/spacer.gif" width="3" height="1" /></div>
+					                
+					                					              					            
+					                <div class="editorsStory">
+						                <a href="http://siliconangle.com/blog/2013/10/04/mongodb-raises-150m-now-the-most-funded-big-data-startup/"><img src="http://siliconangle.com/files/2013/02/big-data-changing-the-world--300x300.jpg" />
+						                
+						                	<div class="edStoryBack">
+						                		<span class="hours">Yesterday</span>
+						                		<span class="shortTitle">MongoDB Raises $150M, Now the ...&raquo;</span>
+						                	</div>
+						                	
+						                </a>
+					          
+					                </div>
+					                <div class="sp"><img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/spacer.gif" width="3" height="1" /></div>
+					                
+					                					              					            
+					                <div class="editorsStory">
+						                <a href="http://siliconangle.com/blog/2013/10/04/adobe-gives-hack-victims-free-credit-watch-3-quick-tips-to-secure-your-data/"><img src="http://siliconangle.com/files/2013/10/defense-against-hackers-300x225.jpg" />
+						                
+						                	<div class="edStoryBack">
+						                		<span class="hours">Yesterday</span>
+						                		<span class="shortTitle">Adobe Gives Hack Victims Free ...&raquo;</span>
+						                	</div>
+						                	
+						                </a>
+					          
+					                </div>
+					                <div class="sp"><img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/spacer.gif" width="3" height="1" /></div>
+					                
+					                					              					            
+					                <div class="editorsStory">
+						                <a href="http://siliconangle.com/blog/2013/10/04/5-interviews-worth-watching-from-splunk-conf2013-splunkconf13/"><img src="http://siliconangle.com/files/2013/10/IMG_7580-MIX-300x300.jpg" />
+						                
+						                	<div class="edStoryBack">
+						                		<span class="hours">Yesterday</span>
+						                		<span class="shortTitle">5 Interviews Worth Watching fr...&raquo;</span>
+						                	</div>
+						                	
+						                </a>
+					          
+					                </div>
+					                <div class="sp"><img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/spacer.gif" width="3" height="1" /></div>
+					                
+					                					              				</div>
+				</div>-->
+			
+			</div>
+			
+			</div><!-- #content -->
+	
+
+</div><!-- #wrapper -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+		<p id="designedBy">Site designed by <a href="http://www.wattfougdesign.com/" target="_blank">Watt Foug Design</a> | Developed by <a href="http://www.mediaheat.com" target="_blank">MEDIA HEAT</a></p> 
+		<!-- COMMENTED OUT UNTIL VIDEO FEED IS FIXED
+		
+				
+		<div class="widget-container siliconTVSA">
+			
+			
+			
+			<div class="siliconTVTitle">
+			
+				<div id="left-vid"><img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/left-vid.png" /></div>
+				<div id="right-vid"><img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/right-vid.png" /></div>
+				Videos from SiliconANGLE.tv
+				
+			</div>
+		
+			<div id="siliconTVTopics"></div>
+		
+		</div>
+		
+		<script language="javascript">
+		
+			var outDoc = document.createDocumentFragment();
+			
+			var vidArrJS=[];
+			
+			vidArrJS = [];
+			
+			vidArrLength = vidArrJS.length;
+		
+			for (i=0;i<vidArrLength;i++){
+		
+				var imgSpan = document.createElement('span');
+				$(imgSpan).addClass('siliconVideo');
+				imgSpan.setAttribute('id','sTVImg'+vidArrJS[i]["id"]);
+				
+				var vidDesc = document.createElement('p');
+				$(vidDesc).append('<a target="_blank" href='+vidArrJS[i]["url"]+'>'+vidArrJS[i]["title"]+'...</a>');
+				
+				var vidOverlay = document.createElement('div');
+				$(vidOverlay).addClass('vidOverlay');
+				vidOverlay.setAttribute('id','sTVOverlay'+vidArrJS[i]["id"]);
+				vidOverlay.setAttribute('url',vidArrJS[i]["url"]);
+				
+				var imgHref = document.createElement('a');
+				
+				imgHref.target = "_blank";
+								
+				imgHref.href = vidArrJS[i]["vidUrl"];
+				
+				imgHref.setAttribute('id','video'+vidArrJS[i]["id"]);
+				
+				imgHref.appendChild('<img src="http://siliconangle.com/wp-content/themes/siliconANGLE/images/default-story.jpg" />');
+		
+				imgSpan.appendChild(vidOverlay);
+				
+				imgSpan.appendChild(imgHref);
+				
+				imgSpan.appendChild(vidDesc);
+				
+				outDoc.appendChild(imgSpan);
+			
+			}
+			
+			$('#siliconTVTopics').append(outDoc);
+			
+			changeImages_TV();
+			
+			function changeImages_TV() {
+				
+				$('#left-vid').click( function() {
+				
+						$('#siliconTVTopics span:last').detach().prependTo( $('#siliconTVTopics') );
+				});
+				
+				$('#right-vid').click( function() {
+				
+				  		$('#siliconTVTopics span:first').detach().appendTo( $('#siliconTVTopics') );
+				   
+				});
+			}
+			
+			window.onload = function() {
+						
+							for (i=0;i<vidArrLength;i++) {
+							
+								$f("video"+i, "http://siliconangle.com/wp-content/themes/siliconANGLE/flowplayer/flowplayer-3.2.6.swf", {
+									clip: { autoPlay: false, autoBuffering: false },
+									plugins: { controls: null } 
+								});
+								
+								$f("video"+i).onError(function(code, message) { 
+					
+									var wrapper = this.getParent();
+									//$(wrapper).parent().css('display','none');
+									
+								});
+								
+								$("#sTVOverlay"+i).click( function() { 
+								
+									var thisURL = $(this).attr('url');
+									window.open (thisURL,"mywindow");
+									
+								 })	                         
+						
+							}
+						};	
+			
+		</script>
+		-->		
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+
+
+<!-- START Quantcast By WP-Plugin: Quantcast-Quantifier http://wordpress.org/extend/plugins/quantcast-quantifier/ -->
+<!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-0bRKhF16V5Cqk"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-0bRKhF16V5Cqk.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<!-- End Quantcast tag -->
+<!-- END Quantcast-Quantifier --><script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201340'></script>
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using disk: basic
+Object Caching 719/810 objects using apc
+
+Served from: siliconangle.com @ 2013-10-05 04:21:52 -->

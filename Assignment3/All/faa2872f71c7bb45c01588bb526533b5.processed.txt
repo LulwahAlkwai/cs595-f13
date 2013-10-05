@@ -1,0 +1,260 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Share your software early: the Reinhart-Rogoff case
+
+   I like stories where prestigious professors screw up spectacularly. It
+   reminds us that everybody gets it wrong some of the time. The
+   Reinhart-Rogoff story is one such case.
+
+   Two very reputed professors at Harvard University, Carmen Reinhart and
+   Kenneth Rogoff, published online a working paper in 2010 called
+   [5]Growth in a time of debt. The paper has since been cited in the
+   scientific literature about 500 times, or about once every two days.
+   They later wrote a [6]best-seller book on the same topic. They built a
+   web site to promote their ideas where [7]they shared some of their
+   data.
+
+   Their research paper is remarkably easy to understand: countries with
+   large debt tend to have lesser economic growth. This claim is entirely
+   credible. On the one hand, countries with poor economies may tend to
+   grow large debts because they have weak revenues. On the other hand,
+   large debts may lead to tight fiscal policies (e.g., high taxes) or lax
+   monetary policies (e.g., printing money) that may reduce economic
+   growth.
+
+   The part that is less credible is that Reinhart and Rogoff were able to
+   find a magical threshold (debt-to-GDP ratio of 0.9) that triggered low
+   growth. In effect, they implicitly claimed that any debt-to-GDP ratio
+   in excess of 0.9 would reduce your economic growth. This gave
+   politicians a scientific justification for austerity measures (e.g.,
+   raising taxes and cutting back on government services).
+
+   The story then becomes interesting. Thomas Herndon, a graduate student,
+   grabbed data from the Reinhart-Rogoff web site and tried to reproduce
+   their results. He couldn't. He then asked the authors for help.
+   Reinhart and Rogoff shared the [8]Excel spreadsheet they used with
+   Herndon. He then promptly found basic flaws in their data processing.
+   For example, the two professors ran sums over the wrong cells. It seems
+   that they made several odd choices when processing the data. His paper
+   is [9]freely available online.
+
+   Things took a turn for the worse when, faced with this opposition,
+   [10]Reinhart-Rogoff balked and asserted that these errors did not
+   impact their work. Thankfully, they did not deny their mistakes.
+
+   This whole incident shows the importance of sharing data and software.
+   Reinhart and Rogoff were almost exemplary regarding data in this case:
+   they widely shared their data. Their mistake was in not widely
+   distributing their software (in the form a spreadsheet) earlier. Had
+   the spreadsheet been available from the start, they would be in a much
+   better position.
+
+   Of course, another version of the story could be that, had Reinhart and
+   Rogoff not shared their data and software, they would have plausible
+   deniability and their work could still be credible. But this only means
+   that you, as a reader, should put more trust in work where the data and
+   software are available.
+
+   In any case, by keeping the software private, the best that Reinhart
+   and Rogoff could have hoped for was to delay the inevitable: once your
+   work is the basis for public policy, it is bound to come under intense
+   scrutiny and significant mistakes will be discovered. By sharing your
+   software, you establish your good faith.
+
+   There are other minor points that I find interesting in this story:
+     * All this work is posted online. To my knowledge, no journal has
+       been directly involved.
+     * Usually, negative results are unpublishable: journals are not
+       interested. It is unclear that the paper by Herndon et al. can be
+       published in a conventional journal even though it is obviously
+       important work.
+     * It seems that Reinhart and Rogoff are credited for much of the
+       suffering due to the austerity measures in Europe. This seems
+       entirely ridiculous to me. I think that Reinhart and Rogoff acted
+       in good faith.
+
+   Further reading: [11]Influential Reinhart-Rogoff economics paper
+   suffers spreadsheet error (via Scott Guthery) and [12]My take on
+   Reinhart and Rogoff by David Henderson.
+   [13]Tweet
+   [14]Comments (5)
+
+   Related posts (automatically generated):
+     * [15]You probably shouldn't use a spreadsheet for important work
+
+5 Comments
+
+    1. "I think that Reinhart and Rogoff acted in good faith" is an
+       interesting statement, and quite possibly true.
+       But how did the (certainly correct) analysis that "large debts may
+       lead to tight fiscal policies that may reduce economic growth" lead
+       to the (I think clearly absurd) conclusion that artificially
+       pushing the number below the magic threshold (by enacting exactly
+       those harmful policies) would solve the problem?
+       Comment by Jens -- 24/4/2013 @ [16]8:02
+    2. @Jens
+       There is nothing in their paper to support the thesis that
+       austerity will boost a floundering economy.
+       This is maybe what Reinhart and Rogoff believe and advocate but, as
+       far as I can tell, this is not what they wrote in their research.
+       Comment by [17]Daniel Lemire -- 24/4/2013 @ [18]8:30
+    3. This is a classic case of confirmation bias. The start from a
+       position that they want to prove, and find the data accomodating.
+       You even demonstrate the bias in your description of the work, with
+       statements like "entirely credible". How do we know? Now that the
+       specific methodology has been proven flawed, do we really know that
+       larger debt equals poorer growth? Is there any statistical
+       correlation at all? Is there a correlation between limits? Perhaps
+       debt to GDP is a factor, but it could be dwarfed by other more
+       significant factors or local norms.
+       In Canada's case (for example), we could carry a high debt ratio
+       but do well if commodity (oil, iron, aluminium, potash, wheat,
+       lumber) prices are high. Whereas we could have poor growth if we
+       have no debt but commodity prices are very low.
+       The bottom line here is that while I agree in a general way that
+       servicing debt has a cost, each circumstance has to be weighed in
+       its context. In some cases debt may be important - even crippling.
+       In others - it may be a useful tool to attain other factors which
+       will create positive growth - which may in turn wipe out debt. This
+       is something the Clinton administration was ceanly aware of. Look
+       at economic performance and debt ratios in those terms. Clinton
+       used growth to slay debt, not the other way round.
+       Comment by [19]Dominic Amann -- 24/4/2013 @ [20]10:15
+    4. It's a great case study in scientific journalism. From what I've
+       read, it doesn't sound like the excel error significantly changes
+       the results. What does make a large difference is R&R's decision to
+       exclude data for some countries in the years following WWII, and an
+       unusual weighting scheme that doesn't take time spent in a debt
+       category into account (so 19 years of high UK debt and moderate
+       growth count the same as the 1 year New Zealand experienced high
+       debt and low growth).
+       So the issues that really skewed the results are questions of data
+       appropriateness/cherry picking, and how to account for serial
+       correlations between years. If the formula had been correct, the
+       actual issues with the data would have been the same, but the
+       public would never have cared. This would have been debated in
+       esoteric journals. Instead, because an unrelated but relatable and
+       unambiguous error was also there, the narrative is that the paper
+       is fundamentally incorrect.
+       I guess the lesson is, if you're going to screw up, screw up in a
+       boring academic manner =)
+       Comment by Paul -- 24/4/2013 @ [21]12:51
+    5. I'm really wondering why everyone is so upset against the original
+       authors: so they did a mistake, their reasoning was flawed by all
+       those errors in their spreadsheet, ok. It remains that the ones to
+       blame are those who used those results as a basis for their policy
+       and claimed their decisions were sound because some scientists said
+       so.
+       It's called Argument from authority and it's the first trick taught
+       in Rhetoric 101. Or whatever it was called by the ancient greeks.
+       Djamé
+       Comment by Djamé -- 24/4/2013 @ [22]19:16
+
+   Sorry, the comment form is closed at this time.
+   « « [23]Previous: The irony of "we are the 99 percent"
+   [24]Next: You probably shouldn't use a spreadsheet for important work »
+   »
+
+   [25]« Blog's main page
+   Daniel Lemire's picture
+     * [26]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [27]Follow on Google Plus
+       22,500 followers
+     * twitter logo [28]Follow @lemire
+       4,000 followers
+     * Facebook logo [29]Follow on Facebook
+     * Google Scholar logo [30]Follow on Google Scholar
+     * Subscribe to this blog
+       - [31]in a reader,
+       - [32]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [33]About me
+          + [34]Book recommendations
+          + [35]My readers
+          + [36]Terms of use
+          + [37]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [38]The written word took over the world
+          + Thierry Lhôte on [39]The written word took over the world
+          + Ben on [40]The written word took over the world
+          + Anonymous on [41]The written word took over the world
+          + kilian on [42]The written word took over the world
+     * Some popular posts
+          + [43]Why I still program
+          + [44]Emotions killing your intellectual productivity
+          + [45]Turn your weaknesses into strengths
+          + [46]It is not where you work, but who you work with
+     * [47]Home page
+       [48]Google Scholar profile
+       [49]arXiv
+       [50]DBLP
+
+   Powered by [51]WordPress
+
+   © 2004-2013, [52]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [53]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/atom
+   4. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/
+   5. http://www.nber.org/papers/w15639
+   6. http://www.amazon.com/This-Time-Different-Centuries-Financial/dp/0691152640/?tag=daniellemires-20
+   7. http://www.reinhartandrogoff.com/data/browse-by-topic/topics/9/
+   8. http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/HAP-RR-GITD-code.zip
+   9. http://www.peri.umass.edu/236/hash/31e2ff374b6377b2ddec04deaa6388b1/publication/566/
+  10. http://krugman.blogs.nytimes.com/2013/04/16/reinhart-rogoff-continued/
+  11. https://retractionwatch.wordpress.com/2013/04/18/influential-reinhart-rogoff-economics-paper-suffers-database-error/
+  12. http://econlog.econlib.org/archives/2013/05/my_take_on_rein.html
+  13. https://twitter.com/share
+  14. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/#comments
+  15. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/
+  16. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/?utm_source=feedburner#comment-83077
+  17. http://lemire.me/en/
+  18. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/?utm_source=feedburner#comment-83078
+  19. http://blog.lbs.ca/technology
+  20. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/?utm_source=feedburner#comment-83100
+  21. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/?utm_source=feedburner#comment-83118
+  22. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/?utm_source=feedburner#comment-83141
+  23. http://lemire.me/blog/archives/2013/04/17/the-irony-of-we-are-the-99-percent/
+  24. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/
+  25. http://lemire.me/blog/
+  26. http://lemire.me/
+  27. https://plus.google.com/105888615414982242080/about
+  28. http://www.twitter.com/lemire/
+  29. http://www.facebook.com/daniel.lemire
+  30. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  31. http://lemire.me/blog/feed/
+  32. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  33. http://lemire.me/blog/about-me/
+  34. http://lemire.me/blog/book-recommendations/
+  35. http://lemire.me/blog/my-readers/
+  36. http://lemire.me/blog/terms-of-use/
+  37. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  38. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  39. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  40. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  41. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  42. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  43. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  44. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  45. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  46. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  47. http://lemire.me/en/
+  48. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  49. http://arxiv.org/a/lemire_d_1
+  50. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  51. http://wordpress.org/
+  52. http://lemire.me/en/
+  53. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  54. http://lemire.me/blog/feed/

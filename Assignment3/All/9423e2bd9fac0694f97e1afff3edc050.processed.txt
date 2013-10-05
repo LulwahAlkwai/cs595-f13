@@ -1,0 +1,368 @@
+   #[1]Stephen Gallagher's Open-Source Blog » Feed [2]Stephen Gallagher's
+   Open-Source Blog » Comments Feed [3]Stephen Gallagher's Open-Source
+   Blog » We are not who we are Comments Feed [4]Linus Torvalds shares the
+   Millenium Technology Prize with Dr. Shinya Tamanaka [5]One Week With
+   GNOME 3 Classic: Prologue [6]alternate [7]alternate [8]Stephen
+   Gallagher's Open-Source Blog [9]WordPress.com
+
+   [10]Stephen Gallagher's Open-Source Blog
+   Keeping the undesirables out of your system
+   [11]Skip to content
+     * [12]Home
+     * [13]About
+
+   [14]<- Linus Torvalds shares the Millenium Technology Prize with Dr.
+   Shinya Tamanaka
+   [15]One Week With GNOME 3 Classic: Prologue ->
+
+We are not who we are
+
+   Posted on [16]2013/01/14 | [17]8 Comments
+
+   In authentication, we generally talk about three "factors" for
+   determining identity. A "factor" is a broad category for establishing
+   that you are who you claim to be. The three types of authentication
+   factor are:
+     * Something you know (a password, a PIN, the answer to a "security
+       question", etc.)
+     * Something you have (an ATM card, a smart card, a one-time-password
+       token, etc.)
+     * Something you are (your fingerprint, retinal pattern, DNA)
+
+   Historically, most people have used the first of these three forms most
+   commonly. Whenever you've logged into Facebook, you're entering
+   something you know: your username and password. If you've ever used
+   Google's two-factor authentication to log in, you probably used a code
+   stored on your smartphone to do so.
+
+   One of the less common, but growing, authentication methods are the
+   biometrics. A couple years ago, a major PC manufacturer ran a number of
+   television commercials advertising their laptop models with a
+   fingerprint scanner. The claim was that it was easy and secure to
+   unlock the machine with a swipe of a finger. Similarly, Google
+   introduced a service to unlock an Android smart phone by using facial
+   recognition with the built-in camera.
+
+   Pay attention folks, because I'm about to remove the scales from your
+   eyes. Those three factors I listed above? I listed them in decreasing
+   order of security. "But how can that be?" you may ask. "How can my
+   unchangeable physical attributes be less secure than a password?
+   Everyone knows passwords aren't secure."
+
+   The confusion here is due to subtle but important definitions in the
+   meaning of "security". Most common passwords these days are considered
+   "insecure" because people tend to use short passwords which by
+   definition have a limited entropy pool (meaning it takes a smaller
+   amount of time to run through all the possible combinations in order to
+   brute-force the password or run through a password dictionary).
+   However, the pure computational complexity of the authentication
+   mechanism is not the only contributor to security.
+
+   The second factor above, "something you have" (known as a token), is
+   almost always of significantly higher entropy than anything you would
+   ever use as a password. This is to eliminate the brute-force
+   vulnerability of passwords. But it comes with a significant downside as
+   well: something you have is also something that can be physically
+   removed from you. Where a well-chosen password can only be removed from
+   you by social engineering (tricking you into giving it to an
+   inappropriate recipient), a token might be slipped off your desk while
+   you are at lunch.
+
+   Both passwords and tokens have an important side-effect that most
+   people never think about until an intrusion has been caught:
+   remediation. When someone has successfully learned your password or
+   stolen your token, you can call up your helpdesk and immediately ask
+   them to reset the password or disable the cryptographic seed in the
+   token. Your security is now restored and you can choose a new password
+   and have a new token sent to you.
+
+   However, this is not the case with a biometric system. By its very
+   nature, it is dependent upon something that you cannot change.
+   Moreover, the nature of its supposed security derives from this very
+   fact. The problem here is that it's significantly easier to acquire a
+   copy of someone's fingerprint, retinal scan or even blood for a DNA
+   test than it is to steal a password or token device and in many cases
+   it can even be done without the victim knowing.
+
+   Many consumer retinal scanners can be fooled by a simple
+   reasonably-high-resolution photograph of the person's eye (which is
+   extremely easy to accomplish with today's cameras). Some of the more
+   expensive models will also require a moving picture, but today's
+   high-resolution smartphone cameras and displays can defeat many of
+   these mechanisms as well. It's well-documented that Android's
+   face-unlock feature can be beaten by a simple photograph.
+
+   These are all technological limitations and as such it's plausible that
+   they can be overcome over time with more sensitive equipment. However,
+   the real problem with biometric security lies with its inability to
+   replace a compromised authentication device. Once someone has a copy of
+   your ten fingerprints, or a drop of your blood from a stolen
+   blood-sugar test or a close-up video of your eye from a scoped video
+   camera, there is no way to change this data out. You can't ask helpdesk
+   to send you new fingers, an eyeball or DNA. Therefore, I contend that I
+   lied to you above. There is no full third factor for authentication,
+   because, given a sufficient amount of time, any use of biometrics will
+   eventually degenerate into a non-factor.
+
+   Given this serious limitation, one should never under any circumstances
+   use biometrics as the sole form of authentication for any purpose
+   whatsoever.
+
+   One other thought: have you ever heard the argument that you should
+   never use the same password on multiple websites because if it's stolen
+   on one, they have access to the others? Well, the same is true of your
+   retina. If someone sticks malware on your cellphone to copy an image of
+   your eye that you were using for "face unlock", guess what? They can
+   probably use that to get into your lab too.
+
+   The moral of the story is this: biometrics are minimally useful, since
+   they are only viable until the first exposure across all sites where
+   they are used. As a result, if you are considering initiating a
+   biometric-based security model, I encourage you to save your money
+   (those scanners are expensive!) and look into a two-factor solution
+   involving passwords and a token of some kind.
+   [18]About these ads
+
+Share this:
+
+     * [19]Twitter
+     * [20]Facebook
+     *
+
+Like this:
+
+   Like Loading...
+   This entry was posted in [21]Fedora, [22]security. Bookmark the
+   [23]permalink.
+   [24]<- Linus Torvalds shares the Millenium Technology Prize with Dr.
+   Shinya Tamanaka
+   [25]One Week With GNOME 3 Classic: Prologue ->
+
+8 Responses to We are not who we are
+
+    1. [26]Mr. Icon | [27]2013/01/14 at 10:12 AM | [28]Reply
+       Agreed, with a caveat -- biometric readers can be useful in a
+       supervised-entry environment. You can pay someone minimum wage
+       salary to sit behind a thick glass and make sure that whenever
+       someone uses a retina scan, they actually put their eyes to the
+       scanner instead of whipping out a smartphone.
+          + [29]Adam Williamson | [30]2013/01/14 at 2:58 PM | [31]Reply
+            So that solves things until someone comes up with a way to
+            overlay a retinal photo on your eye using a trick contact
+            lens. This has either already happened but is not yet in the
+            public domain, or will happen soon, I'd bet.
+    2. el_es | [32]2013/01/14 at 5:06 PM | [33]Reply
+       While biometrics won't work well for a preventative authentication
+       measure, they can still provide a benefit for auditing and tracking
+       compromised systems. Now, whether that's enough of a perk to
+       justify biometric equipments' cost is a different issue. There are
+       some targets that would reasonably require as many layers of
+       authentication as possible.
+       Basically, having "What you are" alongside "What you know" and
+       "What you have" basically adds another dimension to any given
+       security system.
+          + [34]sgallagh | [35]2013/01/14 at 6:37 PM | [36]Reply
+            Sure, it adds another dimension and I can see where it might
+            help with auditing and tracking (or at least understanding the
+            depth of the attack). However I think my point was valid: once
+            a biometric factor has been compromised, it is compromised for
+            ALL authentication systems that use it, related or not. You
+            can't go out and buy new fingers, unless you're planning to
+            have plastic surgery on a regular basis (in which point, we're
+            now actually talking about "something you have" rather than
+            "something you are").
+            I also neglected to mention the more terrifying side of
+            biometric-only access: someone with an urgent need to break in
+            can compel you physically much more easily than mentally.
+            Holding a gun to your head and making you put your hand on a
+            palm-print scanner (or removing your hand from you and doing
+            it themselves) may require less effort than attempting to
+            compel you to give up your passwords (and has the side-effect
+            that you can't lie about them).
+            With all that in mind, I stand by my conclusions (though they
+            are my own opinion) that biometrics introduce more risks than
+            they alleviate and therefore are inappropriate in a security
+            context. Furthermore, given the problems with remediation,
+            investing in biometric sensor development will not yield good
+            returns in the long-term. No matter what, biometrics will
+            *always* be a fuzzy-logic game, and any such system can be
+            gamed.
+    3. maxyan | [37]2013/01/14 at 6:20 PM | [38]Reply
+       ...or simply bribe the someone who get "minimum wage salary".
+    4. Pingback: [39]You're so vein | in2payments
+    5. [40]solar cellphone charger | [41]2013/07/17 at 1:15 AM | [42]Reply
+       Can I take part of your article to my blog? Thanks,
+       so much appreciated!
+          + [43]sgallagh | [44]2013/07/17 at 7:47 AM | [45]Reply
+            All of my blog entries are licensed under CC-BY-SA 3.0. You
+            may reproduce this article under the terms of that license.
+            Feel free to link back here as well.
+
+Leave a Reply [46]Cancel reply
+
+   Enter your comment here...
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Fill in your details below or click an icon to log in:
+     *
+     *
+     *
+     *
+     *
+
+       IFRAME: [47]googleplus-sign-in
+
+   [48]Gravatar
+   Email (required) (Address never made public)
+   ____________________
+   Name (required)
+   ____________________
+   Website
+   ____________________
+   WordPress.com Logo
+
+   You are commenting using your WordPress.com account.
+   ( [49]Log Out / [50]Change )
+   Twitter picture
+
+   You are commenting using your Twitter account.
+   ( [51]Log Out / [52]Change )
+   Facebook photo
+
+   You are commenting using your Facebook account.
+   ( [53]Log Out / [54]Change )
+   Google+ photo
+
+   You are commenting using your Google+ account.
+   ( [55]Log Out / [56]Change )
+   [57]Cancel
+
+   Connecting to %s
+
+   [_] Notify me of follow-up comments via email.
+
+   Post Comment
+
+     * Search It!
+       Search for: ____________________ Search
+     * Recent Entries
+          + [58]Why not change the world?
+          + [59]Flock 2013 Con Report
+          + [60]Flock to Fedora!
+          + [61]One Week With GNOME 3 Classic: Twenty-Eight Days Later
+          + [62]One Week With GNOME 3 Classic: Days Six and
+            Seven (Conclusions)
+          + [63]One Week With GNOME 3 Classic: Day Five (Oblivion)
+          + [64]One Week With GNOME Classic: Day Four (Settling In)
+          + [65]One Week With GNOME 3 Classic: Day Three
+            (Coarse Correction)
+          + [66]One Week With GNOME 3 Classic: Day Two (Reorientation)
+          + [67]One Week With GNOME 3 Classic: Day One (Paradigm Shift)
+     * Links
+          + [68]System Security Services Daemon
+
+   [69]The Coraline Theme.
+
+   [70]Follow
+
+Follow "Stephen Gallagher's Open-Source Blog"
+
+   Get every new post delivered to your Inbox.
+
+   Join 203 other followers
+
+   ____________________
+
+   Sign me up
+   [71]Powered by WordPress.com
+
+   IFRAME: [72]likes-master
+
+   %d bloggers like this:
+
+References
+
+   Visible links
+   1. http://sgallagh.wordpress.com/feed/
+   2. http://sgallagh.wordpress.com/comments/feed/
+   3. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/feed/
+   4. http://sgallagh.wordpress.com/2012/06/13/linus-torvalds-shares-the-millenium-technology-prize-with-dr-shinya-tamanaka/
+   5. http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-prologue/
+   6. http://public-api.wordpress.com/oembed/1.0/?format=json&url=http%3A%2F%2Fsgallagh.wordpress.com%2F2013%2F01%2F14%2Fwe-are-not-who-we-are%2F&for=wpcom-auto-discovery
+   7. http://public-api.wordpress.com/oembed/1.0/?format=xml&url=http%3A%2F%2Fsgallagh.wordpress.com%2F2013%2F01%2F14%2Fwe-are-not-who-we-are%2F&for=wpcom-auto-discovery
+   8. http://sgallagh.wordpress.com/osd.xml
+   9. http://wordpress.com/opensearch.xml
+  10. http://sgallagh.wordpress.com/
+  11. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#content
+  12. http://sgallagh.wordpress.com/
+  13. http://sgallagh.wordpress.com/about/
+  14. http://sgallagh.wordpress.com/2012/06/13/linus-torvalds-shares-the-millenium-technology-prize-with-dr-shinya-tamanaka/
+  15. http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-prologue/
+  16. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/
+  17. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comments
+  18. http://en.wordpress.com/about-these-ads/
+  19. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?share=twitter
+  20. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?share=facebook
+  21. http://sgallagh.wordpress.com/category/fedora/
+  22. http://sgallagh.wordpress.com/category/uncategorized/technology/security/
+  23. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/
+  24. http://sgallagh.wordpress.com/2012/06/13/linus-torvalds-shares-the-millenium-technology-prize-with-dr-shinya-tamanaka/
+  25. http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-prologue/
+  26. http://mricon.com/
+  27. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-78
+  28. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=78#respond
+  29. http://www.happyassassin.net/
+  30. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-79
+  31. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=79#respond
+  32. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-80
+  33. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=80#respond
+  34. http://sgallagh.wordpress.com/
+  35. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-82
+  36. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=82#respond
+  37. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-81
+  38. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=81#respond
+  39. http://in2payments.com/2013/01/21/youre-so-vein/
+  40. http://cellphonecharger2.pen.io/
+  41. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-834
+  42. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=834#respond
+  43. http://sgallagh.wordpress.com/
+  44. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-835
+  45. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?replytocom=835#respond
+  46. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#respond
+  47. https://public-api.wordpress.com/connect/?googleplus-sign-in=1
+  48. https://gravatar.com/site/signup/
+  49. javascript:HighlanderComments.doExternalLogout( 'wordpress' );
+  50. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/
+  51. javascript:HighlanderComments.doExternalLogout( 'twitter' );
+  52. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/
+  53. javascript:HighlanderComments.doExternalLogout( 'facebook' );
+  54. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/
+  55. javascript:HighlanderComments.doExternalLogout( 'googleplus' );
+  56. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/
+  57. javascript:HighlanderComments.cancelExternalWindow();
+  58. http://sgallagh.wordpress.com/2013/08/26/why-not-change-the-world/
+  59. http://sgallagh.wordpress.com/2013/08/15/flock-2013-con-report/
+  60. http://sgallagh.wordpress.com/2013/07/05/flock-to-fedora/
+  61. http://sgallagh.wordpress.com/2013/06/27/one-week-with-gnome-3-classic-twenty-eight-days-later/
+  62. http://sgallagh.wordpress.com/2013/06/06/one-week-with-gnome-3-classic-days-six-and-seven-conclusions/
+  63. http://sgallagh.wordpress.com/2013/06/05/one-week-with-gnome-classic-day-five-oblivion/
+  64. http://sgallagh.wordpress.com/2013/06/03/one-week-with-gnome-classic-day-four-settling-in/
+  65. http://sgallagh.wordpress.com/2013/05/31/one-week-with-gnome-classic-day-three-coarse-correction/
+  66. http://sgallagh.wordpress.com/2013/05/31/one-week-with-gnome-classic-day-two-reorientation/
+  67. http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-day-one-paradigm-shift/
+  68. https://fedorahosted.org/sssd
+  69. http://theme.wordpress.com/themes/coraline/
+  70. javascript:void(0)
+  71. http://wordpress.com/signup/?ref=lof
+  72. http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&mp6=1
+
+   Hidden links:
+  73. http://sgallagh.wordpress.com/
+  74. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-form-guest
+  75. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-form-load-service:WordPress.com
+  76. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-form-load-service:Twitter
+  77. http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-form-load-service:Facebook

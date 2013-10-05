@@ -1,0 +1,53 @@
+  Datasets and software used in the papers:
+
+    1. SISAP 2012: Leonid Boytsov, Super-Linear Indices for Approximate
+       Dictionary Searching. SISAP 2012: 162-176
+    2. JEA ACM 2011: Leonid Boytsov. 2011. Indexing methods for
+       approximate dictionary searching: Comparative analysis. J. Exp.
+       Algorithmics 16, 1, Article 1 (May 2011).
+
+   You can download the articles [1]on this page. There are virtually no
+   restrictions on using software and data (see [2]details here) that was
+   designed by me. I appreciate if you cite my work. However, the archives
+   contain several third-party packages (which I used for comparison).
+   These packages may be a subject to different licenses and can be
+   guarded by patents (I do believe that agrep and the underlying
+   shift-and algorithm is patented). These packages include at least the
+   following:
+    1. [3]G. Navarro's implementation of the lazy Levenshtein automaton.
+       (The folder NavarroDFA).
+    2. NR-grep (developed by G. Navarro).
+    3. agrep (developed by Sun Wu and Udi Manber)
+    4. [4]FastSS
+    Download and build instructions. The data and sources used in the JEA
+       ACM 2011 paper are also [5]available here (check the tab "Source
+       Materials").
+         1. Download and unpack the source file;
+         2. Download the datasets to the source file directory;
+         3. Check the README file for building/testing instructions.
+    Source files.
+          + [6]Version 1.1 (used in SISAP 2012 article).
+          + [7]Version 1.0 (used in JEA ACM 2011 article).
+    Data sets.
+          + [8]Version 1.1 (used in SISAP 2012). Size: almost 300 Mb
+          + [9]Version 1.0 (used JEA ACM 2011). Size: almost 200 Mb You
+            can also download individual datasets: [10]Russian and English
+            synthetic data sets (can also be generated from source files),
+            [11]ClueWeb09 words, random sequences [12]from the human
+            genome. Note that to access individual data sets you may need
+            to create a Google account.
+
+References
+
+   1. http://boytsov.info/pubs/
+   2. http://www.apache.org/licenses/LICENSE-2.0
+   3. http://www.dcc.uchile.cl/~gnavarro/
+   4. http://fastss.csg.uzh.ch/
+   5. http://dl.acm.org/citation.cfm?id=1963191
+   6. http://boytsov.info/jea2011/ArticleProject_v1.1.tar.gz
+   7. http://boytsov.info/jea2011/ArticleProject_v1.0.tar.gz
+   8. http://boytsov.info/jea2011/DataSets_v1.1.tar.bz2
+   9. http://boytsov.info/jea2011/DataSets_v1.0.tar.bz2
+  10. https://docs.google.com/leaf?id=0B_eqTL0qdHxMNTViMmRkZGEtNTk3ZC00MWI0LWIxOWItM2NlMjVmZmRkYWU4&sort=name&layout=list&pid=0B_eqTL0qdHxMZmFjZTBiMjQtYjMzMC00Y2FkLTk5MGYtZmZiYTlkYzk4M2M5&cindex=2
+  11. https://docs.google.com/leaf?id=0B_eqTL0qdHxMMjdlNGVhNjYtZGRjYi00MTMxLWE1ZjEtYTFhYmFmODhmMDM1&sort=name&layout=list&pid=0B_eqTL0qdHxMZmFjZTBiMjQtYjMzMC00Y2FkLTk5MGYtZmZiYTlkYzk4M2M5
+  12. https://docs.google.com/leaf?id=0B_eqTL0qdHxMMDVhMTUzZmEtYzliMC00N2JlLTg1Y2MtY2Y0MzA3NmQ4YzE3&sort=name&layout=list&pid=0B_eqTL0qdHxMZmFjZTBiMjQtYjMzMC00Y2FkLTk5MGYtZmZiYTlkYzk4M2M5&cindex=1

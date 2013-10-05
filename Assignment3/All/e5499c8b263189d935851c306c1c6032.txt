@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  What do computer scientists know about performance? </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5568" itemprop="name"><a href="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/" rel="bookmark" itemprop="url"  title="Posted on September 17th, 2013">What do computer scientists know about performance?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>Scientists make predictions and are judged on these predictions. If you study global warming, then your job is to predict the climate for the next few decades. But what do computer scientists predict with respect to performance?</p>
+<p>A lot of classical computer science is focused on performance. That is, it provides us with a repertoire of data structures and algorithms. You can solve 99.9% of all practical software problems using textbook data structures and algorithms. From time to time, you may need to invent something new&#8230; but there is very little you cannot do efficiently with heaps, hash tables, trees, graphs, sorting algorithms&#8230;</p>
+<p>This leaves us with the impression that computer science tells us a lot about efficiency. And, for an untrained programmer, using the tools of computer science, that is, using the right standard data structures and the right standard algorithms, goes a long way toward improving efficiency for large problems.</p>
+<p>That&#8217;s because computer science is just great at predicting the asymptotical performance of algorithms. I cannot stress this last point enough, so let me tell you about my own story.</p>
+<p>Like many people of my generation, I started programming when I was around 12 on a <a href="http://en.wikipedia.org/wiki/TRS-80_Color_Computer">TRS-80</a> my parent bought me. They had no idea what they had unleashed. My TRS-80 came with a beautiful manual from which I taught myself programming (in basic, unfortunately). </p>
+<p>When I finished high school, I thought I was a pretty neat programmer. I could basically program anything. Or so I thought.</p>
+<p>In my first Physics college class, the professor noticed that I was bored to death so he took upon himself to challenge me. He gave me access to an Apple II and asked me to &#8220;simulate a galaxy&#8221; by modelling gravitational forces. </p>
+<p>I could model one, two or three stars well enough using a naive numerical method. However, as I added stars, my model got slower. Much slower. It did not help when I switched to a more advanced computer. Though I had had no exposure to computational complexity, I recognized that something was up. And this is one of the great lessons that computer science teaches us: think about how the speed of your programs scale. Had I taken a good computer science class, I wouldn&#8217;t have been caught in a dead-end&#8230;</p>
+<p>Let us fast-forward a couple of decades&#8230; Today I would never try to simulate a galaxy by considering the effect of each star of all other stars. I would recognize this as a dead-end right away, without thinking.</p>
+<p>However, computational complexity accounts for less than 1% of the work I do when I program for efficiency. In practice, chasing efficiency (for me) is all about reducing the  factors. The goal is hardly never to replace an <em>O</em>(<em>N</em><sup>2</sup>) algorithm by an <em>O</em>(<em>N</em>) algorithm. The goal is to reduce the running time of a program by 50%. </p>
+<p>Why can&#8217;t computer science help us with constant factors? It can but computer scientists spend little time on the the key factors impacting efficiency: pipeline width, number of units, throughput and latency of the various instructions, memory latency and bandwidth, CPU caching strategies, CPU branching predictions, instruction reordering, superscalar execution, compiler heuristics and vectorization&#8230; and so on.</p>
+<p>Sometimes, computer scientists will be even dismissive of such constant factors. For example, they may object that as computers get faster anyhow, investing in making your code run twice as fast is wasted effort. Thankfully, not all computer scientists have this attitude. Knuth famously wrote:</p>
+<blockquote><p>In established engineering disciplines a 12% improvement, easily obtained, is never considered marginal and I believe the same viewpoint should prevail in software engineering.</p></blockquote>
+<p>Knuth is correct by the way: if you get hired by Google and manage to improve the performance of a key system by 12%, you are probably in a good position to ask for a huge raise. The difference between running 100 servers and 112 servers can mean a lot of money. Shaving off 12% to the latency can be worth millions of dollars. You are much less likely to be able to replace a key <em>O</em>(<em>N</em><sup>2</sup>) algorithm by an equivalent <em>O</em>(<em>N</em>) algorithm. Google engineers are probably good enough that opportunities to reduce the complexity are rare.</p>
+<p>How do we proceed to target these 12% gains? There are some guiding principles: keep memory access local, avoid difficult-to-predict branches&#8230; But even though computer science can help model either of these (e.g., use a complexity measures based on branching, or use a memory model with caching), I don&#8217;t know of any practical framework to really take them into account in a useful way. </p>
+<p>Ultimately, it is all about being able to predict. Given two algorithms, if you want to predict which one will fare better by a constant factor&#8230; then computer science often leaves you dry. Your options are to ask a more experience programmer, or maybe to implement both to try and see.</p>
+<p>This is often an expensive and crude process. When I review papers, I am often stuck in how to assess the efficiency of their implementation. It all comes down to trusting the authors. Very few papers are able to conclude something like this: &#8220;in the worst case, our implementation is within 10% of optimality&#8221; or &#8220;no software could be twice as fast as ours in solving this problem&#8221;.</p>
+<p>I think that computer science needs to try harder.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/" data-text="What do computer scientists know about performance?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/#comments" title="Comment on What do computer scientists know about performance?">Comments (11)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/" rel="bookmark">Big-O notation and real-world performance</a><!-- (15.2)--></li>
+		<li><a href="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/" rel="bookmark">Should computer scientists run experiments?</a><!-- (13.2)--></li>
+		<li><a href="http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/" rel="bookmark">A criticism of computer science: models or modèles?</a><!-- (11.3)--></li>
+		<li><a href="http://lemire.me/blog/archives/2012/04/20/computer-scientists-need-to-learn-about-significant-digits/" rel="bookmark">Computer scientists need to learn about significant digits</a><!-- (10.7)--></li>
+	</ul>
+</div>
+
+</div>
+
+
+
+<h2 id="comments">11 Comments 
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-93653">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b751676001ff4a52b48504f2ed1ab043?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I teach a fourth-year course which spends time on the constant factors, Programming for Performance. <a href="http://patricklam.ca/p4p" rel="nofollow">http://patricklam.ca/p4p</a>.</p>
+	<p><cite>Comment by <a href='http://patricklam.ca' rel='external nofollow' class='url'>plam</a> &#8212; 17/9/2013 @ <a href="#comment-93653">15:58</a></cite> </p>
+	</li>
+
+	<li id="comment-93657">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@plam </p>
+<p>It is obviously a great course.  BTW my point is not that there aren&#8217;t courses in computer science programs about performance.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 17/9/2013 @ <a href="#comment-93657">16:16</a></cite> </p>
+	</li>
+
+	<li id="comment-93680">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/5f2716777689db5a800e9cab12812f93?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>You speak of performance &#8216;in the small&#8217;, e.g. &#8220;how do I make this map lookup faster&#8221; instead of &#8220;can I use precise dataflow analysis to eliminate the intermediate storage for the tuple space?&#8221; I think this isn&#8217;t unusual. Computer scientists tend to focus on the problem in front of them, not the larger context. </p>
+<p>Unfortunately, this narrow focus a great deal of impedance and inefficiency at larger scales. Often, it is necessary to relinquish &#8216;local&#8217; efficiency to improve &#8216;global&#8217; efficiency &#8211; e.g. switch from high-performance batch-processing algorithms to lower-performance variations that can be pipelined compositionally.</p>
+<p>I think we still have plenty to learn about performance in-the-large. And there is much to gain, especially with regards to removing <a href="http://alarmingdevelopment.org/?p=805" rel="nofollow">walls</a> between <a href="http://pchiusano.blogspot.com/2013/05/the-future-of-software-end-of-apps-and.html" rel="nofollow">applications</a>.</p>
+	<p><cite>Comment by <a href='http://awelonblue.wordpress.com' rel='external nofollow' class='url'>David Barbour</a> &#8212; 17/9/2013 @ <a href="#comment-93680">19:57</a></cite> </p>
+	</li>
+
+	<li id="comment-93686">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/77f083909d955b715846250a33340a14?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>What I didn&#8217;t know about performance when I moved from academia to industry was variance.  When I was at SpeechWorks, I had to build a parser that ran in under 60ms on average, but never peaked above 200ms.  The garbage collector in JavaScript killed us.  Everything ran in 20ms on average, but JavaScript kept peaking times at over a minute with garbage collection.  So the solution was to rebuild and tear down the virtual machine each call.  Took about 20ms, so average run time was now 40ms, and no more bumps from garbage collection.</p>
+<p>Similarly, there&#8217;s a notion of latency vs. bandwidth in accessing disk or solid-state drive or memory or cache or a register that&#8217;s very very important in real applications, but you tend not to think about a lot in analysis-of-algorithms classes where there&#8217;s usually a memory abstraction (in both constant-time access and unlimited size).</p>
+	<p><cite>Comment by <a href='http://lingpipe-blog.com/' rel='external nofollow' class='url'>Bob Carpenter</a> &#8212; 17/9/2013 @ <a href="#comment-93686">20:34</a></cite> </p>
+	</li>
+
+	<li id="comment-93691">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/77f083909d955b715846250a33340a14?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@David Barbour:  Even the basic analysis of algorithms books like Cormen, Leisersohn and Rivest touch on these issues when discussing the motivations for algorithms like B-trees.   It blew my mind when I first realized this also applied at the memory level.  I at first thought my test harness was misbehaving or something was getting compiled away when I added a bunch more floating point arithmetic per loop and the timing didn&#8217;t change.  It finally dawned on me that my algorithm was memory bound.  I don&#8217;t think many people realize just how expensive cache misses or failed branch predictions are.  Large natural language processing models are problematic because on average, every other lookup or so is a cache miss (there&#8217;s a very long tail, and it&#8217;s important for prediction).</p>
+	<p><cite>Comment by <a href='http://lingpipe-blog.com/' rel='external nofollow' class='url'>Bob Carpenter</a> &#8212; 17/9/2013 @ <a href="#comment-93691">21:37</a></cite> </p>
+	</li>
+
+	<li id="comment-93851">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/8767bd5b599615b306d847e15920f7d1?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Bob Carpenter, the solution was simply &#8220;do not use java&#8221;.</p>
+	<p><cite>Comment by Valrandir &#8212; 18/9/2013 @ <a href="#comment-93851">22:16</a></cite> </p>
+	</li>
+
+	<li id="comment-93930">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/77f083909d955b715846250a33340a14?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>It was JavaScript (aka ECMAScript) wrapped in C, wrapped in C++, and it wasn&#8217;t me, it was the VoiceXML standard dictating JavaScript. </p>
+<p>Java has the same issues as C++ in a lot of ways, but the garbage collector can be a killer.</p>
+<p>I&#8217;m doing numerical analysis these days, and it&#8217;s all C++ template metaprogramming to move as much computation down to the static (compile time) level as possible.</p>
+	<p><cite>Comment by <a href='http://lingpipe-blog.com/' rel='external nofollow' class='url'>Bob Carpenter</a> &#8212; 19/9/2013 @ <a href="#comment-93930">13:44</a></cite> </p>
+	</li>
+
+	<li id="comment-94909">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/43314a37c30454481331eb4e4c604657?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>&#8220;&#8230;pipeline width, number of units, throughput and latency of the various instructions, memory latency and bandwidth, CPU caching strategies, CPU branching predictions, instruction reordering, superscalar execution, compiler heuristics and vectorization… and so on.&#8221;</p>
+<p>Maybe I&#8217;m biased because I went to schools where there is a sharp division between CS and ECE (Waterloo and Toronto), but those factors fall squarely in Computer Engineering, not Science. Not saying they should never intersect, but generally they don&#8217;t.</p>
+	<p><cite>Comment by <a href='http://www.eecg.utoronto.ca/~laforest/' rel='external nofollow' class='url'>Eric LaForest</a> &#8212; 26/9/2013 @ <a href="#comment-94909">13:36</a></cite> </p>
+	</li>
+
+	<li id="comment-94912">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@LaForest</p>
+<p>How a CPU works is certainly part of a computer science education&#8230; no?</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 26/9/2013 @ <a href="#comment-94912">14:06</a></cite> </p>
+	</li>
+
+	<li id="comment-95017">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/43314a37c30454481331eb4e4c604657?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Lemire</p>
+<p>Not in any micro-architectural detail I think. CS (at UW and UofT, at least) is very much a branch of the Math Dept., not Engineering. So there is mostly emphasis on proofs, not the messy details of actual hardware. </p>
+<p>(Again, not saying this is bad, and I&#8217;m glad *they* can go prove things, and then explain them to me so I can build them. I can&#8217;t prove my way out of a wet paper bag. <img src='http://lemire.me/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' />  )</p>
+<p>And yes, the knowledge exists, but it&#8217;s not widespread yet. (re: cache-oblivious algorithms)</p>
+<p>Case in point: <a href="https://queue.acm.org/detail.cfm?id=1814327" rel="nofollow">https://queue.acm.org/detail.cfm?id=1814327</a></p>
+	<p><cite>Comment by <a href='http://www.eecg.utoronto.ca/~laforest/' rel='external nofollow' class='url'>Eric LaForest</a> &#8212; 27/9/2013 @ <a href="#comment-95017">9:58</a></cite> </p>
+	</li>
+
+	<li id="comment-95018">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Eric</p>
+<p>Computer scientists have been aware of caching issues for decades. It is a core element of computer science&#8230; part of any sane algorithm textbook.  So yes, you have cache-aware and cache-oblivious algorithms. But this is essentially mathematical modelling&#8230; sometimes with little to no validation in the real world.</p>
+<p>Poul-Henning Kamp is basically saying what I am saying: that computer scientists don&#8217;t know nearly as much as they think they do about performance.</p>
+<p>Regarding mathematics&#8230; there is an infinite number of results that you can prove. An infinite subset of them will appear interesting to some human beings. It does not mean that coming up with one more mathematical result is a valuable contribution&#8230; if you take &#8220;valuable&#8221; as in &#8220;making people&#8217;s life better&#8221;.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 27/9/2013 @ <a href="#comment-95018">10:14</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<p>Sorry, the comment form is closed at this time.</p>
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/09/16/bricolage/">Previous: To solve hard problems, you need to use bricolage</a></div>
+<div  style="text-align:right">
+<a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/">Next: Why can&#8217;t you find a job with a Stanford computer science PhD?</a> &raquo; &raquo; </div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,500</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>4,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1420&nbsp;posts and 5847&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Thierry Lhôte on <a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660" title="1/10/2013">The written word took over the world</a></li>
+	<li>Thierry Lhôte on <a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652" title="1/10/2013">The written word took over the world</a></li>
+	<li>Ben on <a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627" title="1/10/2013">The written word took over the world</a></li>
+	<li>Anonymous on <a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596" title="1/10/2013">The written word took over the world</a></li>
+	<li>kilian on <a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584" title="1/10/2013">The written word took over the world</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.140 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-10-03 12:36:28 -->

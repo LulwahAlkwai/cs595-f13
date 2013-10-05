@@ -1,0 +1,317 @@
+    #[1]alternate
+
+[2]ArsTechnica
+
+     * [3]Forums
+     * [4]Log In
+
+[5]Gear & Gadgets / Product News & Reviews
+
+With 30 tuners and 30 TB of storage, SnapStream makes TiVos look like toys
+
+Houston company's monster DVRs power Colbert, The Daily Show, and other big
+TV names.
+
+   by [6]Lee Hutchinson - Sep 14, 2013 2:00 pm UTC
+     * [7]Media Innovation
+
+   [8]61
+   [snapstream-listing-640x426.jpg]
+   A peek into SnapStream's lab at their Houston office, showing racks of
+   SnapStream Enterprise Servers and disks.
+   Lee Hutchinson
+
+   When you're picking out a DVR for your home, there's a pretty short
+   list of candidates--TiVo has its new 6-tuner DVRs, or you can get
+   something from your cable provider, or you can roll your own. But
+   consumer-grade DVRs don't really scale all that well for media
+   companies that need to record and process lots of TV. When you've got
+   30 or more channels that you need to be recording simultaneously, your
+   cable company's DVR isn't really up to snuff anymore, and it's time to
+   call in the big guns.
+
+   Houston-based [9]SnapStream makes a line of DVRs that scale to truly
+   silly sizes--its products are the monster trucks of the DVR world. If
+   you watch TV at all, you've almost certainly already seen what
+   SnapStream can do--popular shows like The Colbert Report, The Daily
+   Show, The Soup, and tons of others are customers, using 30+ channel
+   DVRs to record dozens and dozens of TV shows simultaneously in order to
+   integrate clips from those recorded shows into their own.
+   [10][snapstream-madmen-300x199.jpg]
+   [11]Enlarge / The SnapStream offices near downtown Houston are filled
+   with neat TV memorabilia. Marketing director Rachel Eichenbaum's
+   office, for example, features a Mad Men silhouette falling down against
+   the skyline.
+
+   But SnapStream's boxes do a lot more than simply record TV--they're
+   actually a home theater PC geek's dream. Because Snapstream works so
+   closely with media production companies, its DVRs sport functionality
+   that no consumer set could possibly get away with having. For example,
+   a SnapStream cluster is just as good at repackaging, transcoding, and
+   distributing content for re-use as it is for recording it in the first
+   place--functionality you won't find on a consumer-grade DVR. The system
+   also gives users the most amazing TV guide access we've ever laid eyes
+   on, wrapped in a simple and almost ludicrously fast GUI.
+
+   Ars recently spent some time at SnapStream's Houston-based office to
+   learn more about what the company's products do and how they do it.
+   What we found was actually pretty surprising: the privately held
+   company only has about twenty employees, but its products are
+   everywhere--not just in media, but in just about any industry that
+   needs to record and catalog video, including local, state, and federal
+   governments.
+   A brief video demo of the SnapStream system's iPad app, which also
+   shows off some of the monster DVR's unique features.
+
+From HTPC app to enterprise hardware
+
+   SnapStream actually got its start as [12]Beyond TV, an early HTPC
+   application that let Windows users record cable TV to their hard
+   drives. The application was not free, but it was a more cost-effective
+   way for users to get TiVo-like functionality without having to actually
+   pay for a TiVo or other full DVR.
+
+   By 2006, the proliferation of DVRs packaged with cable services began
+   to significantly limit BeyondTV's mass-market appeal, since prospective
+   customers could simply get a DVR bundled with their service rather than
+   needing to build their own out of a spare PC. Looking for new
+   opportunities, the BeyondTV folks began looking at companies using TVs
+   and DVRs in a corporate environment, asking them what kind of a product
+   they needed to make their businesses work.
+   [13][snapstream-guys-640x426.jpg]
+   [14]Enlarge / SnapStream president Aaron Thompson at left, and
+   SnapStream director of engineering Jason Baumeister at right. The giant
+   remote is real and I need one.
+   Lee Hutchinson
+
+   "It really boiled down to just recording more things at a time than
+   your typical DVR can do," explained Aaron Thompson, SnapStream's
+   president. "Being able to record, say, all of the news channels was
+   something companies were interested in... The Daily Show, Colbert
+   Report, and so on all use it to record a bunch of stuff, find what they
+   want to make fun of, and quickly get it into their editing bays to get
+   it on air."
+
+   Prior to SnapStream, the big media companies were using isolated DVRs
+   to record all the different television shows they needed to capture.
+   "You look at these guys and you'd see two racks full of TiVos, and it's
+   like 'okay, on this day, this show is on this TiVo, and on the next day
+   the next day's show is on this other TiVo,' and it was a very manual
+   and intensive process....being able to sit down at a single interface
+   and find everything instantly was a big change for them."
+
+   SnapStream's approach was to consolidate and scale up. Rather than
+   relying on racks of isolated DVRs, SnapStream's enterprise DVR clusters
+   together multiple capture servers that all pool together their storage.
+   The servers run Windows Server 2008R2 and the proprietary SnapStream
+   application, and they each contain a stack of hard disk drives in a
+   RAID 5 4+1 configuration. The SnapStream application uses Microsoft SQL
+   Server for storing metadata, and recorded video files are stored on the
+   NTFS-formatted file system as regular files. Larger customers can also
+   use existing SAN or NAS systems as file stores--the SnapStream
+   application is simply an application, relying on the operating system
+   itself for file access, and so anything Windows can use as storage,
+   SnapStream can use.
+
+   Video is typically ingested into the SnapStream DVRs directly from a
+   cable feed at 480p, 720p, or 1080i through component inputs on
+   heavy-duty QAM capture cards (typically costing up to $1500 each), thus
+   bypassing the need for CableCard or any other type of integration with
+   the cable infrastructure. However, this isn't always the case--many of
+   SnapStream's media customers that share parent companies also share
+   broadcast-resolution digital assets directly with each other over
+   high-bandwidth private WAN links, skipping the cable network all
+   together. The SnapStream DVRs can transcode and scale video from and to
+   a variety of formats and resolutions and can even be used to output
+   data over [15]SDI, so that recorded clips can be seamlessly integrated
+   into a TV show's production workflow.
+   [16][snapstream-workflow-640x494.png]
+   [17]Enlarge / One possible SnapStream production workflow, showing at a
+   high level the process to transform recorded TV into clips for
+   inclusion onto another broadcast.
+   SnapStream
+
+   The ability to record dozens of video streams isn't worth much without
+   the ability to locate the things you're looking for among the pile of
+   recorded shows, and SnapStream has an answer here, too: rather than
+   rely on armies of interns to watch and catalog all the recorded TV,
+   SnapStream peeks into the recorded shows' closed caption data and can
+   search the entire recorded library for video based on keywords in the
+   closed captions.
+
+Caption search
+
+   Seeing this in action was quite cool. To provide a quick demonstration,
+   the SnapStream guys logged into one of their lab DVR clusters via its
+   Web interface, then performed a search for "Obama." The search
+   interface and results are formatted similarly to Google search results,
+   with a quick textual blurb and a link. In this case, because the lab
+   cluster had several days' worth of recorded TV from a number of local
+   TV stations, we got quite a few hits on "Obama" as a search term.
+   Clicking on any of the links took us directly to the TV program that
+   contained the term, with the playhead ready to go right at the point in
+   the program where the word was mentioned. The closed captions
+   themselves were displayed to the right of the video.
+   [18][obamaSearchHighRes-640x515.jpg]
+   [19]Enlarge / Closed caption search in action.
+   SnapStream
+
+   At this point, SnapStream's functionality really began to diverge from
+   a consumer DVR. While I was watching, SnapStream Director of
+   Engineering Jason Baumeister quickly positioned a set of brackets
+   around a 15-second portion of the show and clicked a "Share" Button; he
+   typed in my Ars Technica e-mail address, and within a few seconds my
+   phone buzzed. In my inbox I had a link pointing back at SnapStream's
+   servers that I could tap and, over my phone's 3G connection, watch a
+   properly transcoded version of the clip Baumeister had just selected
+   for me.
+
+   The clip itself is treated as a separate object on the SnapStream DVR
+   cluster, too; Baumeister and Thompson described how many of the media
+   customers make extensive use of clipping in the run-up to production on
+   their own TV shows. Folks involved with planning the evening run of The
+   Soup, for example, can sit in a conference room with their laptops or
+   tablets and quickly make and discuss clippings from the day's recorded
+   reality TV shows, collaboratively dicing out the juiciest (soupiest?)
+   bits of reality TV and assembling a rough playlist very quickly by
+   searching for keywords, creating clips, and sharing them with each
+   other.
+   [ipadClippingAnimation.gif]
+   A short animation showing the quick process behind creating and sharing
+   a clip from a recorded TV show. TiVo can't do this because it would be
+   sued into oblivion.
+   SnapStream
+
+   Closed caption search aside, the system also features far and away the
+   slickest TV guide grid I've ever had the pleasure of witnessing.
+   SnapStream systems pull programming guide data from Tribune Media
+   Services, just like most other programming guides do, but the way it
+   displays the data is utterly utilitarian and supremely functional:
+   within the SnapStream Web interface, the programming guide is a very
+   simple AJAX-driven draggable grid. The grid actually reuses technology
+   from a previous SnapStream project called [20]Couchville, which
+   SnapStream discontinued in 2007. It looks and acts just like a regular
+   DVR or Web programming guide, showing channels along one axis and times
+   along another, but it can be dragged with the mouse and programs in the
+   grid can be clicked to record, or clicked to play if they're already
+   recorded. It's instantly responsive. No fluff, no cruft, no
+   graphics--just a beautifully functional program guide. As with so many
+   things about the system, it's a feature that consumer DVRs and HTPCs
+   desperately need and almost certainly will never get.
+
+   The reason for this and for the other features' absence on the consumer
+   side is easy to articulate: at its core, the goals of the SnapStream
+   system are at odds with the things that cable providers want DVRs to be
+   able to do. "A lot of what our solution does is what they don't want
+   you to do--I want to record this at one central place and view it at
+   thousands of different locations, or take a portion of it and e-mail it
+   out. That's exactly what the limitations [on consumer DVRs] are there
+   to prevent," said Thompson.
+
+   SnapStream, though, operates sort of on the other side of the curtain.
+   The customers who are in the position to perform grand feats of
+   copyright infringement are actually the exact same customers who would
+   be filing the copyright infringement lawsuits. As long as the open
+   recording and sharing of full broadcast-resolution TV stays in the
+   realm of the media production companies making the TV in the first
+   place, no one gets upset. And SnapStream let me know that they
+   currently have no private individuals as customers--no crazy
+   billionaires with SnapStream systems in their crazy billionaire
+   mansions, so the systems all remain in the hands of ostensibly
+   responsible, non-infringing entities.
+
+   [21]Expand full story
+   Page: 1 [22]2 [23]Next ->
+   [24]Reader comments 61
+
+   You must [25]login or create an account to comment.
+   [26][lee-hutchinson-sq.jpg]
+
+   [27]Lee Hutchinson / Lee is the Senior Reviews Editor at Ars and is
+   responsible for the product news and reviews section. He also knows
+   stuff about enterprise storage, security, and manned space flight. Lee
+   is based in Houston, TX.
+   [28]@Lee_Ars
+   [29]<- Older Story
+   [30]Newer Story ->
+
+Site Theme
+
+     * [31]Light on Dark
+     * [32]Dark on Light
+
+[33]View Full Site
+
+   © 2013 Condé Nast. All rights reserved
+   Use of this Site constitutes acceptance of our [34]User Agreement
+   (effective 3/21/12) and [35]Privacy Policy (effective 3/21/12), and
+   [36]Ars Technica Addendum (effective 5/17/2012)
+   [37]Your California Privacy Rights
+   The material on this site may not be reproduced, distributed,
+   transmitted, cached or otherwise used, except with the prior written
+   permission of Condé Nast.
+   [38]Ad Choices [ad_choices_arrow.png]
+
+Log In
+
+   Username or Email: ____________________ Password: ____________________
+   [_] Keep me logged in Login
+   [39]Forgot your password? | [40]Resend activation e-mail
+
+Register an Account
+
+   Don't have an Ars account? It's fast and easy to register for one.
+   [BUTTON Input] (not implemented)_______
+
+Need to register for a new account?
+
+   If you don't have an account yet it's free and easy.
+   [41]Register
+
+References
+
+   Visible links
+   1. http://feeds.arstechnica.com/arstechnica/index/
+   2. http://arstechnica.com/
+   3. http://arstechnica.com/civis/
+   4. http://arstechnica.com/civis/ucp.php?mode=login&return_to=http%3A%2F%2Farstechnica.com%2Fgadgets%2F2013%2F09%2Fwith-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys%2F
+   5. http://arstechnica.com/gadgets/
+   6. http://arstechnica.com/author/lee-hutchinson/
+   7. http://arstechnica.com/discipline/media-innovation
+   8. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/?comments=1
+   9. http://www.snapstream.com/
+  10. http://cdn.arstechnica.net/wp-content/uploads/2013/09/snapstream-madmen.jpg
+  11. http://cdn.arstechnica.net/wp-content/uploads/2013/09/snapstream-madmen.jpg
+  12. http://www.snapstream.com/products/beyondtv/default.asp
+  13. http://cdn.arstechnica.net/wp-content/uploads/2013/09/snapstream-guys.jpg
+  14. http://cdn.arstechnica.net/wp-content/uploads/2013/09/snapstream-guys.jpg
+  15. https://en.wikipedia.org/wiki/Serial_digital_interface
+  16. http://cdn.arstechnica.net/wp-content/uploads/2013/09/snapstream-workflow.png
+  17. http://cdn.arstechnica.net/wp-content/uploads/2013/09/snapstream-workflow.png
+  18. http://cdn.arstechnica.net/wp-content/uploads/2013/09/obamaSearchHighRes.jpg
+  19. http://cdn.arstechnica.net/wp-content/uploads/2013/09/obamaSearchHighRes.jpg
+  20. http://www.snapstream.com/press/couchville-graphics.asp
+  21. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/
+  22. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/2
+  23. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/2
+  24. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/?comments=1
+  25. http://arstechnica.com/civis/ucp.php?mode=login
+  26. http://arstechnica.com/author/lee-hutchinson
+  27. http://arstechnica.com/author/lee-hutchinson
+  28. https://twitter.com/Lee_Ars
+  29. http://arstechnica.com/tech-policy/2013/09/fbi-admits-what-we-all-suspected-it-compromised-freedom-hostings-tor-servers/
+  30. http://arstechnica.com/apple/2013/09/recapping-the-week-an-s-phone-and-a-c-phone/
+  31. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/?mobile_theme=dark
+  32. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/?mobile_theme=light
+  33. http://arstechnica.com/gadgets/2013/09/with-30-tuners-and-30-tb-of-storage-snapstream-make-tivos-look-like-toys/?view=grid
+  34. http://www.condenast.com/privacy-policy
+  35. http://www.condenast.com/privacy-policy#privacypolicy
+  36. http://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/
+  37. http://www.condenast.com/privacy-policy#privacypolicy-california
+  38. http://www.condenast.com/privacy-policy#privacypolicy-optout
+  39. https://arstechnica.com/civis/ucp.php?mode=sendpassword
+  40. https://arstechnica.com/civis/ucp.php?mode=resend_act
+  41. https://arstechnica.com/civis/ucp.php?mode=register
+
+   Hidden links:
+  42. http://www.omniture.com/

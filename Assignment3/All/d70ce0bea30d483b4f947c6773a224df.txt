@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<!--
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+     __  __           _           _     _
+~_,-|  \/  | __ _ ___| |__   __ _| |__ | | ___
+    | |\/| |/ _` / __| '_ \ / _` | '_ \| |/ _ \,-~_,- - - ,
+~_,-| |  | | (_| \__ \ | | | (_| | |_) | |  __/    |   /\_/\
+    |_|  |_|\__,_|___/_| |_|\__,_|_.__/|_|\___|  ~=|__( ^ .^)
+~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,""   ""
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+-->
+<html data-env='production' lang='en' xml:lang='en'>
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script>
+  window.__o = {"channel":"tech","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":305.5,"h_buy":null,"h_pub_buy":null,"v_cur":2.3,"v_max":3.1,"v_cur_i":2,"v_max_i":3,"events":"event51,event61,event62","top_channel":"tech","content_source_type":"Internal","content_source_name":"Internal","author_name":"Pete Pachal","age":"12","pub_day":17,"pub_month":9,"pub_year":2013,"pub_date":"09/17/2013","isPostView":true,"post_lead_type":"Gallery","topics":"3D printing,3D Scanner,Dev & Design,Gadgets,iPad,occipital,Tech,Uncategorized","campaign":null,"display_mode":"gallery"};
+  window._gaq = window._gaq || [];
+  window._gaq.push(['_setAccount', 'UA-92124-1']);
+</script>
+<title>Structure Sensor Turns the iPad Into a Powerful 3D Scanner [HANDS ON]</title>
+<link href="http://rack.0.mshcdn.com/assets/app-562697e951f70576d09dce872b44a659.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://rack.2.mshcdn.com/assets/posts-7fa2cb2611e36863ddde36bdf858f644.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<link href="http://rack.3.mshcdn.com/assets/iehax-957092b11e263c6b850533d06d5aaa2c.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<meta content='no' name='apple-mobile-web-app-capable'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href='https://plus.google.com/113493854651753327245' rel='publisher'>
+<link href='http://feeds.mashable.com/Mashable' rel='alternate' title='Mashable' type='application/rss+xml'>
+<link href='http://rack.1.mshcdn.com/assets/favicon-007eef4a606e98f0934d0af984b76203.png' rel='icon' type='image/png'>
+<meta content='mid:12105681' name='linkedin:owner'>
+<meta content='122071082108' property='fb:app_id'>
+<meta content='18807449704' property='fb:page_id'>
+<meta content='nYmtX7H2sSCkK8gHpQGxr7Es2526DgUaqb6PGYSX' name='readability-verification'>
+<link href='http://rack.2.mshcdn.com/assets/mashable.touchicon-e352d67245bfc87a994db28c16cf732f.png' rel='apple-touch-icon-precomposed'>
+
+<link data-page-subject="true" href="http://mashable.com/2013/09/17/structure-sensor/" rel="canonical" /><link data-page-subject="true" href="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/baf5c974/4f8/Occipital-3D-Scanner-17-of-24.jpg" rel="image_src" /><meta content="http://mashable.com/2013/09/17/structure-sensor/" data-page-subject="true" property="og:url" /><meta content="Structure Sensor Turns the iPad Into a Powerful 3D Scanner [HANDS ON]" data-page-subject="true" property="og:title" /><meta content="article" data-page-subject="true" property="og:type" /><meta content="Mashable" data-page-subject="true" property="og:site_name" /><meta content="Occipital&#x27;s Structure Sensor, launching on Kickstarter, turns the iPad into a powerful 3D-capture device." data-page-subject="true" property="og:description" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/baf5c974/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-page-subject="true" property="og:image" /><meta content="2013-09-17T16:01:19Z" data-page-subject="true" property="og:article:published_time" /><meta content="2013-09-17T20:41:39Z" data-page-subject="true" property="og:article:modified_time" /><meta content="https://www.facebook.com/mashable" data-page-subject="true" property="og:article:publisher" /><meta content="Occipital&#x27;s Structure Sensor, launching on Kickstarter, turns the iPad into a powerful 3D-capture device." data-page-subject="true" name="description" /><meta content="ipad, occipital, uncategorized, 3d-printing, tech, dev-design, gadgets, 3d-scanner" data-page-subject="true" name="keywords" /><meta content="This Gadget Turns Your iPad Into a Powerful 3D Scanner" data-page-subject="true" name="twitter:title" /><meta content="3D printing is an incredible technology, although it requires detailed information about the objects you want to print. For most people, this is a big limitation -- it&#x27;s not like every phone or tablet..." data-page-subject="true" name="twitter:description" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/e3a3d4bc/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-page-subject="true" name="twitter:image" /><meta content="@mashable" data-page-subject="true" name="twitter:site" /><meta content="http://mashable.com/2013/09/17/structure-sensor/" data-page-subject="true" name="twitter:url" /><meta content="@mashable" data-page-subject="true" name="twitter:creator" /><meta content="photo" data-page-subject="true" name="twitter:card" /><meta content="560" data-page-subject="true" name="twitter:image:width" /><meta content="750" data-page-subject="true" name="twitter:image:height" /><meta content="2013-09-17 16:01:19 UTC" data-page-subject="true" name="date" /><meta content="Pete Pachal" data-page-subject="true" name="sailthru.author" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/cde3a13a/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-page-subject="true" name="sailthru.image.thumb" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3b9ddf2a/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-page-subject="true" name="sailthru.image.full" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/6f28b7d4/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-page-subject="true" name="sailthru.lead_image" /><meta content="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/96956b5a/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-page-subject="true" name="sailthru.secondary_image" /><meta content="http://on.mash.to/18uhaMF" data-page-subject="true" name="short_url" /><meta name=parsely-page content='{"title":"Structure Sensor Turns the iPad Into a Powerful 3D Scanner [HANDS ON]","link":"http://mashable.com/2013/09/17/structure-sensor/","image_url":"http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/baf5c974/4f8/Occipital-3D-Scanner-17-of-24.jpg","type":"post","post_id":2177429,"pub_date":"2013-09-17T16:01:19Z","section":"tech","author":"Pete Pachal","tags":["Internal","Internal - Internal","Topics - 3D printing","Topics - 3D Scanner","Topics - Dev & Design","Topics - Gadgets","Topics - iPad","Topics - occipital","Topics - Tech","Topics - Uncategorized"]}' data-page-subject=true >
+
+<script src="http://rack.0.mshcdn.com/assets/app-4f12d074b6e003f50e1b77594149c1c8.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script src="http://rack.2.mshcdn.com/assets/polyfill-6620db93ad92c8f787391361dfe3f23c.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class='body_posts body_show' data-gvcfv='true' data-gvmfv='true' data-gvmv='true' data-jsid='posts/show' data-postid='2177429' data-sec0='tech' data-sec1='dev|gadgets' data-sec2='posts' data-topic='gadgets' viewport='fixed'>
+<h1 class='semantic'>Mashable</h1>
+<header id='flyout-container'></header>
+<div id='peek'>
+<div id='sticky'>
+
+<header id='site-header'><div class='navbar'>
+<div class='navbar-inner'><ul class='main-menu nav inline'>
+<li class='menu'><a class='icon-reorder' href='#'></a></li>
+<li class='logo'><a class='brand' data-turbo-target='body-container' href='/'><span>Mashable</span><img alt="Header_logo.v2" src="http://rack.1.mshcdn.com/assets/header_logo.v2-30574d105ad07318345ec8f1a85a3efa.png" /></a></li>
+<li class='submenu collapsable pull-right' id='sign-in'><a href='/login/'><span>Sign in</span></a></li>
+<li class='follow submenu pull-right'><a class='follow-trigger' href='/2011/11/18/follow-mashable/'><span class='fb'></span>
+<span class='tw'></span>
+<span class='gp'></span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<div class='pull-right follow'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.1m'>Like</a>
+<a class='twitter-follow-button' data-dnt='true' data-show-count='true' data-show-screen-name='false' href='https://twitter.com/mashable'>
+Follow @mashable
+</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+<a alt='RSS Feed' class='rss' href='http://feeds.mashable.com/Mashable' title='RSS Feed'></a>
+<a alt='Email Subscriptions' class='email' href='/subscriptions' title='Email Subscriptions'></a>
+<div class='more'>
+<a href="/2011/11/18/follow-mashable/">see more&nbsp;&nbsp;&gt;</a></div>
+</div>
+</div>
+</div></li>
+<li class='nav-search submenu pull-right'><a class='search-trigger' href='/search/'>Search</a>
+<div class='dropdown-content'>
+<div class='page-container'>
+<div class='header-search-form'>
+<form accept-charset="UTF-8" action="/search/" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ie-search-wrapper'><input autocomplete="off" class="header-search" id="q" name="q" type="text" value="" /></div>
+<input class="btn btn-primary header-search-submit" name="commit" type="submit" value="Search" /></form><div class='header-search-results'></div>
+</div>
+</div>
+</div></li>
+<li class='collapsable channel submenu' data-tags='how-to,facebook,twitter,youtube,google-plus'><a href="/social-media/">Social Media</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='apps-software,dev-design,gadgets,mobile'><a href="/tech/">Tech</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='advertising,marketing,media,small-business,startups,jobs'><a href="/business/">Business</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='film,gaming,music,sports,television'><a href="/entertainment/">Entertainment</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='politics,social-good,us,world'><a href="/us-world/">US &amp; World</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='family-parenting,health-fitness,home,travel-and-leisure,work-and-play'><a href="/lifestyle/">Lifestyle</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='pics,memes,comics,conversations,videos-watercooler'><a href="/watercooler/">Watercooler</a><div class='submenu-content'></div></li>
+<li class='collapsable' data-tags=''><a href="http://findjobs.mashable.com">Jobs</a></li>
+<li class='submenu more'><a href='#'><!-- %span=t "header.nav.more" -->
+<span>More</span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<ul class='columns'><li><ul class='column-list'><li class='header'>Channels</li>
+<li><a href="/social-media/">Social Media</a></li>
+<li><a href="/tech/">Tech</a></li>
+<li><a href="/business/">Business</a></li>
+<li><a href="/entertainment/">Entertainment</a></li>
+<li><a href="/us-world/">US &amp; World</a></li>
+<li><a href="/lifestyle/">Lifestyle</a></li>
+<li><a href="/watercooler/">Watercooler</a></li>
+<li><a href="http://findjobs.mashable.com">Jobs</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Company</li><li><a href="/about/">About Us</a></li><li><a href="http://www.wrightsmedia.com/sites/mashable/">Licensing &amp; Reprints</a></li><li><a href="http://mashable.com/2012/">Archive</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Contact</li><li><a href="/contact-us/">Contact Us</a></li><li><a href="/submit/">Submit News</a></li><li><a href="https://mashable.wufoo.com/forms/tesla-bug-tracker/">Submit a Bug</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Advertise</li><li><a href="/advertise/">Advertise</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Legal</li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Apps</li><li><a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8">iPhone App</a></li><li><a href="http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8">iPad App</a></li><li><a href="/2010/08/02/mashable-android-app/">Android App</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Resources</li><li><a href="/guidebook/">Guidebooks</a></li><li><a href="/2011/11/18/follow-mashable/">Subscriptions</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Sites</li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="http://events.mashable.com/">Events</a></li><li><a href="http://mashable.com/sgs/">Social Good Summit</a></li><li><a href="http://mashable.com/media-summit/">Media Summit</a></li></ul></li></ul>
+</div>
+</div></li>
+</ul></div>
+</div></header>
+</div>
+<div id='scrollable'><div class='loader'></div>
+<div class="ad_container"><span class="ad" data-height="0" data-src="/tripleclick.html#type=survey&amp;adnum=3&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2177429&amp;sec0=tech&amp;sec1=dev%7Cgadgets&amp;sec2=posts&amp;tile=3&amp;topic=gadgets" data-width="0"></span></div><header class='box970'>
+<div class='page-container'><center class='visible-desktop'><div class="ad_container"><span class="ad" data-height="50" data-src="/tripleclick.html#type=banner&amp;adnum=4&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2177429&amp;sec0=tech&amp;sec1=dev%7Cgadgets&amp;sec2=posts&amp;tile=4&amp;topic=gadgets" data-width="300"></span></div></center></div>
+</header>
+<div class='posts show' id='body-container'><div id='main'>
+<div class='page-container'>
+
+<div id='body'><hgroup class='page-header channel' data-channel='tech' data-section='sec0=tech&amp;sec1=index&amp;sec2=' id='post-head'>
+<h2>Tech</h2>
+<div class='follow-channel'>
+<div class='follow-buttons'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.1m'>Like</a>
+<a class='social-stub social-share twitter follow' data-shares='3.2m' href='https://twitter.com/intent/follow?region=follow_link&amp;screen_name=mashable&amp;tw_p=followbutton&amp;variant=2.0' target='_blank'>Follow</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+</div>
+</div>
+</hgroup>
+<div class='flex-box'>
+<div class='box-cell'>
+<div class='above_960 adsense outside_post'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_slot = "3991492827";
+</script>
+<script>
+  if(!hideAd) google_ad_width = 728;
+</script>
+<script>
+  if(!hideAd) google_ad_height = 15;
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+</div>
+
+<div id='post-content'>
+<div id='post-slider'><article class='full post' data-channel='tech' data-id='52387cdcb05f9d7bf0005981' data-subchannels='dev-design|gadgets' data-topic='gadgets' data-velocity='773,772,772,771,771,770,769,769,768,768,767,767,766,765,765,764,764,763,763,762,761,761,760,760,759,759,758,758,757,757,756,756,755,755,754,754,753,753,752,752,751,751,750,750,749,749,748,748,747,747' data-wp-id='2177429' id='story'>
+<header class='article-header'>
+<h1 class='title' href='http://mashable.com/2013/09/17/structure-sensor/'>This Gadget Turns Your iPad Into a Powerful 3D Scanner</h1>
+<aside class='shares social'>
+<div class='total-shares' data-index='0'>
+<em>6.0k</em>
+<div class='caption'>Shares</div>
+</div>
+<div class='share-buttons'>
+<div class='share-button-boxy'><a class="social-stub social-share facebook" data-layout="box_count" data-shares="3016" data-uid="98rP" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share twitter" data-shares="1158" data-uid="98rP" href="https://twitter.com/intent/tweet?original_referer=http://mashable.com/&amp;source=tweetbutton&amp;text=This+Gadget+Turns+Your+iPad+Into+a+Powerful+3D+Scanner&amp;url=http%3A%2F%2Fmashable.com%2F2013%2F09%2F17%2Fstructure-sensor%2F&amp;via=mashable">Tweet</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share google_plus" data-shares="373" data-size="tall" data-uid="98rP" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share linked_in" data-shares="284" data-uid="98rP" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share stumble_upon" data-shares="58" data-uid="98rP" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share pinterest" data-shares="1065" data-uid="98rP" href="#"></a></div>
+</div>
+<div class='velocity-graph tooltip-trigger' title='The Mashable Velocity graph shows how quickly people are sharing this article on the social Web.'>
+<canvas class='velocity'></canvas>
+<div class='caption'>What's This?</div>
+</div>
+</aside>
+
+<div class='above_960 adsense'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_channel = "9077376301";
+</script>
+<script>
+  if(!hideAd) google_ad_output = "js";
+</script>
+<script>
+  if(!hideAd) google_max_num_ads = "3";
+</script>
+<script>
+  if(!hideAd) google_ad_type = "text";
+</script>
+<script>
+  if(!hideAd) google_feedback = "on";
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+</div>
+
+<figure class='article-image'><img alt="Occipital-3d-scanner-17-of-24" class="microcontent" data-fragment="lead-image" data-image="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3b9ddf2a/4f8/Occipital-3D-Scanner-17-of-24.jpg" data-micro="1" data-url="null" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3b9ddf2a/4f8/Occipital-3D-Scanner-17-of-24.jpg" /></figure>
+
+<div class="article-info"><a class="byline" href="/people/pete-pachal/"><img alt="Pete-pachal-headshot-sq" class="author_image" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA2LzI2LzI1L3BldGVwYWNoYWxoLmUzZGJjLmpwZwpwCXRodW1iCTkweDkwIwplCWpwZw/2a24f2a3/4c6/pete-pachal-headshot-sq.jpg" /><div class="author_and_date"><span class="author_name">By Pete Pachal</span><time datetime="Tue, 17 Sep 2013 16:01:19 +0000">2013-09-17 16:01:19 UTC</time></div></a></div>
+
+</header>
+<section class='article-content'>
+
+<div class="shift-to-hero"><section class="gallery" data-display-mode="gallery" data-id="12571" data-slide-title-pos="" data-slug="occipital-structure-sensor"><header><h1>Occipital Structure Sensor</h1>
+</header><ol class="slides">
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004feb" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmY2MWQwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/93f1b3d2/4f8/Occipital%25203D%2520Scanner%2520(17%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(17%2520of%252024)" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmY2MWQwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/43f2a468/4f8/Occipital%25203D%2520Scanner%2520(17%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">3D Scanning Comes to the iPad</h2>
+<div class="caption"><p>Launching on Kickstarter, Occipital's Structure Sensor can capture detailed 3D information about a space or object.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004fec" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjQyNDdmLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/58b3182b/77f/Occipital%25203D%2520Scanner%2520(1%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(1%2520of%252024)" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjQyNDdmLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/03084fa5/77f/Occipital%25203D%2520Scanner%2520(1%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">iPad Bracket</h2>
+<div class="caption"><p>The sensor attaches to an iPad with a special bracket. The bracket can be removed for use with other devices.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004fed" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmY2OWM5LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/dfb082ed/5e3/Occipital%25203D%2520Scanner%2520(21%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(21%2520of%252024)" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmY2OWM5LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/4997ab72/5e3/Occipital%25203D%2520Scanner%2520(21%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Data Capture</h2>
+<div class="caption"><p>The camera on the sensor is aligned with the iPad's, letting it capture texture information from an object.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004fee" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjVmYTJiLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/070da09a/a1d/Occipital%25203D%2520Scanner%2520(18%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(18%2520of%252024)" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjVmYTJiLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/0501acd9/a1d/Occipital%25203D%2520Scanner%2520(18%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">iPad Experience</h2>
+<div class="caption"><p>The sensor adds bulk to the tablet, but it takes 3D image capture to a new level.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004fef" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjdjNzI3LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/7f96b21b/1ba/Occipital%25203D%2520Scanner%2520(19%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(19%2520of%252024)" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjdjNzI3LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/fa9063b4/1ba/Occipital%25203D%2520Scanner%2520(19%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Lightning Connector</h2>
+<div class="caption"><p>The sensor connects via the iPad's Lightning port.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff0" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjUyMzhhLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/17a1654d/471/Occipital%25203D%2520Scanner%2520(15%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(15%2520of%252024)" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjUyMzhhLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/5614a6ed/471/Occipital%25203D%2520Scanner%2520(15%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Size</h2>
+<div class="caption"><p>It won't fit in a pocket, but the Structure Sensor is small enough to slip into a bag.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff1" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjQ4NmQ4LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/d3a5dea9/29e/Occipital%25203D%2520Scanner%2520(11%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(11%2520of%252024)" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjQ4NmQ4LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/1b7e9354/29e/Occipital%25203D%2520Scanner%2520(11%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Lightning Cable</h2>
+<div class="caption"><p>The cable is L-shaped for an easier fit. The other side is a proprietary connector.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff2" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjVjYmUyLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/aa4c0af4/2d6/Occipital%25203D%2520Scanner%2520(9%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(9%2520of%252024)" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjVjYmUyLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/9dc9543b/2d6/Occipital%25203D%2520Scanner%2520(9%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Ports</h2>
+<div class="caption"><p>The data port and power connector (for charging the battery) are on the bottom.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff3" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmVkNzg0LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/3b1e1a15/543/Occipital%25203D%2520Scanner%2520(22%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(22%2520of%252024)" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmVkNzg0LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/fc053948/543/Occipital%25203D%2520Scanner%2520(22%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">With iPhone</h2>
+<div class="caption"><p>The Structure Sensor works with the iPhone, too.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff4" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmJkNjM2LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/cf713227/d95/Occipital%25203D%2520Scanner%2520(24%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(24%2520of%252024)" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmJkNjM2LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/435add84/d95/Occipital%25203D%2520Scanner%2520(24%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Imagery</h2>
+<div class="caption"><p>The 3D data is highly detailed.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff5" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjE3MWU0LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/61faf5dd/cb1/Occipital%25203D%2520Scanner%2520(14%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(14%2520of%252024)" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjE3MWU0LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/13a23388/cb1/Occipital%25203D%2520Scanner%2520(14%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Scanning Hardware</h2>
+<div class="caption"><p>The Structure Sensor has a camera as well as infrared emitters and secondary sensors.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff6" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmMwN2YyLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/1c9ebbc3/11f/Occipital%25203D%2520Scanner%2520(3%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(3%2520of%252024)" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLmMwN2YyLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/39431bb7/11f/Occipital%25203D%2520Scanner%2520(3%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Bracket Options</h2>
+<div class="caption"><p>The sensor comes off the bracket, and users can 3D-print brackets for other devices.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff7" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjk3ZmM3LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/ce572672/3a6/Occipital%25203D%2520Scanner%2520(10%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(10%2520of%252024)" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjk3ZmM3LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/e2f86f71/3a6/Occipital%25203D%2520Scanner%2520(10%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Colors</h2>
+<div class="caption"><p>Occipital hasn't finalized the colors the sensor will come in. But we like these.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="5238be8412d2cd6716004ff8" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjE4YmE4LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/d2db9e72/e01/Occipital%25203D%2520Scanner%2520(16%2520of%252024).jpg">
+<figure><img alt="Occipital%25203d%2520scanner%2520(16%2520of%252024)" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE2LzMzL09jY2lwaXRhbDIwLjE4YmE4LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/155595a2/e01/Occipital%25203D%2520Scanner%2520(16%2520of%252024).jpg"></figure><div class="meta">
+<h2 class="title">Profile View</h2>
+<div class="caption"></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+</ol></section></div>
+<p><a href="http://mashable.com/category/3d-printing/">3D printing</a> is an incredible technology, although it requires detailed information about the objects you want to print. For most people, this is a big limitation — it's not like every phone or tablet has a 3D imaging camera. Enter Occipital.</p>
+<p>The Structure Sensor is an oblong metal object that attaches to an <a href="http://mashable.com/category/ipad/">iPad</a> with a special bracket. It works with apps specifically designed to use the sensor to scan and capture 3D information about an object or environment. You can use the sensor for a wide range of tasks — from object capture to augmented-reality games.</p>
+<div class="see-also"><p>See also: <a href="http://mashable.com/2013/07/26/realistic-3d-images/" data-crackerjax="#post-slider">35 Insanely Realistic 3D Renderings</a></p></div>
+<p>The sensor can quickly scan an object or room and gather distance and geometry information to create an accurate 3D rendering. Occipital, the company behind the sensor, said its device can "understand" the data it collects, letting users instantly call up wall dimensions, for example. It even makes use of the iPad's built-in camera.</p>
+<p>"Our camera is actually axially aligned with the built-in camera," said Jeff Powers, the founder of Occipital. "That's important because we're fusing the data from those two sensors. We're also fusing the gyro and accelerometer that's on board. In the iPad, you kind of have the rest of the story, but it was missing this active 3D sensing."</p>
+<p>The iPad has offered 3D image capture apps in the past, notably <a href="http://mashable.com/2012/05/09/autodesk-123d-catch/" data-crackerjax="#post-slider">Autodesk's 123D Catch</a>, but Occipital said its specialized sensor is in a different league.</p>
+<p>"That stuff's awesome, but there are some limitations," Powers said. "One limitation is that if you're trying to capture geometry of something that doesn't have texture, like a table, you're going to have a hard time. When you have a structured light emitter — when you have something that's actually putting projected texture onto things — you can get perfect geometry."</p>
+<p>I got a little hands-on time with a prototype Structure Sensor in a private demo. It's a beautiful piece of technology, and the anodized aluminum exterior complements the iPad well. It certainly adds some bulk, but it slips on and off the iPad easily enough, and the corners ensure it stays stable.</p>
+<p>During the demo, I saw the sensor capture a 3D rendering of the room, a stuffed doll and my head. It did so quickly; in fact, it was a little eerie to look at a captured animation of my head that I could manipulate with my fingers (see below).</p>
+<p><img src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2L2Q0L09jY2lwaXRhbDNELjdlM2VkLmpwZwpwCXRodW1iCTEyMDB4OTYwMD4/d462a835/7a9/Occipital-3D-Scanner-23-of-24.jpg" alt="Occipital 3D Scan" class="popout" data-width="1920" data-fragment="m!d753" data-image="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE2L2Q0L09jY2lwaXRhbDNELjdlM2VkLmpwZwpwCXRodW1iCTEyMDB4OTYwMD4/d462a835/7a9/Occipital-3D-Scanner-23-of-24.jpg" data-micro="1"></p>
+<p>Occipital is building the Structure Sensor as a platform and launching a campaign on <a href="http://www.kickstarter.com/projects/occipital/structure-sensor-capture-the-world-in-3d" target="_blank">Kickstarter</a> today to produce a first wave of sensors before the end of the year. Another wave of sensors is slated for early next year. </p>
+<p>The company says it plans to provide both high- and low-level APIs to satisfy 3D dabblers and experts.</p>
+<p>"As a developer using this device, this is the new thing you didn't have, a mobile 'depth stream,' essentially," Power said. "On top of that, we're building APIs that make it easy for developers who don't know anything about how to use the depth stream."</p>
+<p>Those who receive the <a href="http://mashable.com/category/kickstarter/">Kickstarter</a> version of the sensor will also get a set of demo apps, including ones for scanning indoor spaces, capturing objects, gaming and even body scanning.</p>
+<p><span class="microcontent" data-fragment="although-the-sensor-is" data-description="Although the sensor is designed for use with the iPad, Occipital makes it easy to plug it into another device." data-micro="1">Although the sensor is designed for use with the iPad, Occipital makes it easy to plug it into another device.</span> Developers will have access to open-source drivers for Android and other platforms, and the device ships with both an Apple Lightning connector cable as well as a standard-USB one (however, other devices lose the texture-capturing advantage of axially aligned cameras). Developers can even 3D-print their own brackets.</p>
+<p>Occipital is paying special attention to developers because the company itself is one. It creates popular iOS apps such as <a href="http://mashable.com/2010/06/23/ebay-acquires-redlaser/" data-crackerjax="#post-slider">RedLaser</a> (now owned by eBay) and <a href="http://mashable.com/category/360-panorama/">360 Panorama</a>. The Structure Sensor is its first foray into hardware.</p>
+<p>"We're really passionate about 3D computer vision, and we wanted to do something harder, better and more intense in terms of an engineering challenge — not just building one app after another," Powers said.</p>
+<p><strong>Update:</strong> Occipital met its Kickstarter goal of $100,000 for the Structure Sensor in 3.5 hours.</p>
+<p><iframe frameborder="0" height="360" src="http://www.kickstarter.com/projects/occipital/structure-sensor-capture-the-world-in-3d/widget/video.html" width="480"></iframe> </p>
+<p><em>Images: Mashable, Emil Lendof</em></p>
+
+
+
+</section>
+<footer class='article-topics'>
+Topics:
+<a href="/category/3d-printing/">3D printing</a>, <a href="/category/3d-scanner/">3D Scanner</a>, <a href="/category/dev-design/">Dev & Design</a>, <a href="/category/gadgets/">Gadgets</a>, <a href="/category/ipad/">iPad</a>, <a href="/category/occipital/">occipital</a>, <a href="/category/tech/">Tech</a>
+</footer>
+
+<div id='newsletter-signup'></div>
+
+<div id='taboola-bottom-article'></div>
+<script>
+  //Taboola ad placing code
+  window._taboola = window._taboola || [];
+  _taboola.push({mode:'autosized-2r-responsive',
+  container:'taboola-bottom-article', placement:'Bottom Article'});
+</script>
+<script>
+  //Taboola article pushing code
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+</script>
+<script src="http://cdn.taboolasyndication.com/libtrc/mashable/loader.js" type="text/javascript"></script>
+
+<script>
+  if(window.pageChanged)
+    window.omni({"channel":"tech","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":305.5,"h_buy":null,"h_pub_buy":null,"v_cur":2.3,"v_max":3.1,"v_cur_i":2,"v_max_i":3,"events":"event51,event61,event62","top_channel":"tech","content_source_type":"Internal","content_source_name":"Internal","author_name":"Pete Pachal","age":"12","pub_day":17,"pub_month":9,"pub_year":2013,"pub_date":"09/17/2013","isPostView":true,"post_lead_type":"Gallery","topics":"3D printing,3D Scanner,Dev & Design,Gadgets,iPad,occipital,Tech,Uncategorized","campaign":null,"display_mode":"gallery"});
+    metaData = {"link":[["canonical","http://mashable.com/2013/09/17/structure-sensor/"],["image_src","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/baf5c974/4f8/Occipital-3D-Scanner-17-of-24.jpg"]],"meta_property":[["og:url","http://mashable.com/2013/09/17/structure-sensor/"],["og:title","Structure Sensor Turns the iPad Into a Powerful 3D Scanner [HANDS ON]"],["og:type","article"],["og:site_name","Mashable"],["og:description","Occipital's Structure Sensor, launching on Kickstarter, turns the iPad into a powerful 3D-capture device."],["og:image","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/baf5c974/4f8/Occipital-3D-Scanner-17-of-24.jpg"],["og:article:published_time","2013-09-17T16:01:19Z"],["og:article:modified_time","2013-09-17T20:41:39Z"],["og:article:publisher","https://www.facebook.com/mashable"]],"meta_name":[["description","Occipital's Structure Sensor, launching on Kickstarter, turns the iPad into a powerful 3D-capture device."],["keywords","ipad, occipital, uncategorized, 3d-printing, tech, dev-design, gadgets, 3d-scanner"],["twitter:title","This Gadget Turns Your iPad Into a Powerful 3D Scanner"],["twitter:description","3D printing is an incredible technology, although it requires detailed information about the objects you want to print. For most people, this is a big limitation -- it's not like every phone or tablet..."],["twitter:image","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/e3a3d4bc/4f8/Occipital-3D-Scanner-17-of-24.jpg"],["twitter:site","@mashable"],["twitter:url","http://mashable.com/2013/09/17/structure-sensor/"],["twitter:creator","@mashable"],["twitter:card","photo"],["twitter:image:width","560"],["twitter:image:height","750"],["date","2013-09-17 16:01:19 UTC"],["sailthru.author","Pete Pachal"],["sailthru.image.thumb","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/cde3a13a/4f8/Occipital-3D-Scanner-17-of-24.jpg"],["sailthru.image.full","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/3b9ddf2a/4f8/Occipital-3D-Scanner-17-of-24.jpg"],["sailthru.lead_image","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/6f28b7d4/4f8/Occipital-3D-Scanner-17-of-24.jpg"],["sailthru.secondary_image","http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2Q0L09jY2lwaXRhbDNELmY2MWQwLmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/96956b5a/4f8/Occipital-3D-Scanner-17-of-24.jpg"]],"short_url":[["short_url","http://on.mash.to/18uhaMF"]]};
+</script>
+<div class='right_rail_replace'>
+<div class="ad_container"><span class="ad" data-height="250" data-src="/tripleclick.html#type=no_right_rail&amp;adnum=1&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2177429&amp;sec0=tech&amp;sec1=dev%7Cgadgets&amp;sec2=posts&amp;tile=1&amp;topic=gadgets" data-width="300"></span></div>
+
+</div>
+</article>
+</div>
+<div class='article-comments'>
+<div data-article-id="52387cdcb05f9d7bf0005981" data-checksum="6ab5952f2654dcef8c51cea65874bdb4" data-collection-meta="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IlRoaXMgR2FkZ2V0IFR1cm5zIFlvdXIgaVBhZCBJbnRvIGEgUG93ZXJmdWwgM0QgU2Nhbm5lciIsInVybCI6Imh0dHA6Ly9tYXNoYWJsZS5jb20vMjAxMy8wOS8xNy9zdHJ1Y3R1cmUtc2Vuc29yLyIsInRhZ3MiOiJpcGFkLG9jY2lwaXRhbCx1bmNhdGVnb3JpemVkLDNkLXByaW50aW5nLHRlY2gsZGV2LWRlc2lnbixnYWRnZXRzLDNkLXNjYW5uZXIiLCJjaGVja3N1bSI6IjZhYjU5NTJmMjY1NGRjZWY4YzUxY2VhNjU4NzRiZGI0IiwiYXJ0aWNsZUlkIjoiNTIzODdjZGNiMDVmOWQ3YmYwMDA1OTgxIn0.RJtEYbDay9JyiyT90VBIzKzZGcudTGEm9BdsrGRjlag" data-network="mashable.fyre.co" data-root="zor.livefyre.com" data-site-id="312274" id="livefyre_comments"></div>
+<a class='btn btn-light load-comments' href='#'>Load Comments</a>
+<div id='powered_by_livefyre_new'>
+<a href='http://livefyre.com' target='_blank'>Powered by Livefyre</a>
+</div>
+</div>
+</div>
+</div>
+<aside class='box-cell sidebar'>
+<div class='ad sidebar-inset sidebar-drop'>
+<div class="ad_container"><span class="ad" data-height="250" data-src="/tripleclick.html#type=right_rail&amp;adnum=2&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2177429&amp;sec0=tech&amp;sec1=dev%7Cgadgets&amp;sec2=posts&amp;tile=2&amp;topic=gadgets" data-width="300"></span></div>
+
+</div>
+<h1 class='ribbon hot'>What's Hot</h1>
+<div class='sidebar-inset' id='big-stories'></div>
+</aside>
+</div>
+<div id='more-in-channel'>
+<div class='page-header channel' data-channel='tech' data-section='sec0=tech&amp;sec1=index&amp;sec2='>
+<h2>More in Tech</h2>
+</div>
+<div class='fixable-wrapper' id='column-headers'>
+<div class='column-headers'>
+<div class='headers'>
+<div class='header column1 waypoint' data-fixselector='header.fixable'><a data-short='New' href='#'>
+<em>The New Stuff</em>
+</a></div>
+<div class='header column2 waypoint' data-fixselector='header.fixable'><a data-short='Rising' href='#'>
+<em>The Next Big Thing</em>
+</a></div>
+<div class='header column3 waypoint' data-fixselector='header.fixable'><a data-short='Hot' href='#'>
+<em>What's Hot</em>
+</a></div>
+</div>
+</div>
+</div>
+<div class='slide-window'>
+<div class='flex-box columns'><section class='column box-cell new-stories' id='column-new'><h1 class='semantic'>The New Stuff</h1>
+<div class='column-content'></div></section><section class='column box-cell hot-stories' id='column-rising'><h1 class='semantic'>The Next Big Thing</h1>
+<div class='column-content'></div></section><section class='column box-cell big-stories' id='column-hot'><h1 class='semantic'>What's Hot</h1>
+<div class='column-content'></div></section></div>
+</div>
+</div>
+
+<div id='parsely-root' style='display: none'>
+<span data-parsely-site='mashable.com' id='parsely-cfg'></span>
+</div>
+<script>
+  loadScriptAsync("//static.parsely.com/p.js", "parsely")
+</script>
+</div>
+</div>
+</div><div id='fb-root'></div><script>
+  if(window.initPage) { window.initPage() }
+  else { $(function() { window.initPage(); })}
+</script>
+</div><footer id='site-footer-wrapper'>
+<div class='page-container' id='site-footer'><ul class='nav'><li><a href="/about/">About Us</a></li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="/advertise/">Advertise</a></li><li><a href="/2011/05/09/connect-with-mashable/">Subscribe</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul><ul class='social'><li><a class='facebook' href='http://www.facebook.com/mashable/' target='_social'></a></li>
+<li><a class='twitter' href='https://twitter.com/mashable' target='_social'></a></li>
+<li><a class='gplus' href='https://plus.google.com/+Mashable' target='_social'></a></li>
+<li><a class='rss' href='http://feeds.mashable.com/Mashable' target='_social'></a></li>
+<li><a class='pinterest' href='http://pinterest.com/mashable/' target='_social'></a></li>
+<li><a class='youtube' href='http://www.youtube.com/user/mashable' target='_social'></a></li>
+<li><a class='stumbleupon' href='http://www.stumbleupon.com/channel/Mashable' target='_social'></a></li>
+<li><a class='linkedin' href='http://www.linkedin.com/today/mashable.com' target='_social'></a></li></ul>
+<div class='about'>
+<a class='brand' href='/'>
+Mashable
+</a>
+<span class='blurb'>is the largest independent online news site dedicated to covering digital culture, social media and technology. With more than 20 million unique monthly visitors, Mashable has one of the most engaged online news communities. Founded in 2005, Mashable is headquartered in New York City with an office in San Francisco.</span>
+</div>
+<ul class='copyright-and-legal'>
+<li>
+&copy;2005-2013
+Mashable, Inc.
+</li>
+<li>
+Reproduction without explicit permission is prohibited. All Rights Reserved.
+</li>
+<li>
+Designed in collaboration with <a rel="nofollow" href="http://www.codeandtheory.com">Code &amp; Theory</a>
+</li>
+</ul>
+</div>
+</footer>
+
+<noscript>
+<img src='http://b.scorecardresearch.com/p?c1=2&amp;c2=8750086&amp;cv=2.0&amp;cj=1'>
+</noscript></div>
+</div>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","faaaef6476","1135420","cAkNR0ENXQpXF0tJDUASEBxACl4R",0,166,new Date().getTime(),"","","","",""]);</script></body>
+</html>

@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Are 8-bit or 16-bit counters faster than 32-bit counters? </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5541" itemprop="name"><a href="http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/" rel="bookmark" itemprop="url"  title="Posted on September 13th, 2013">Are 8-bit or 16-bit counters faster than 32-bit counters?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>Programmers often want to count things. They typically use 32-bit counters (e.g., the int type in Java). </p>
+<p>But what if you are counting small numbers? Maybe a 16-bit counter could be enough (e.g., the short type in Java). Obviously, using fewer bits saves memory. Saving memory often makes programs run faster.</p>
+<p>However, something evil could also happen. Maybe compilers or CPUs are optimized for 32-bit arithmetic?</p>
+<p>I designed a small experiment. I build an array of counters. I repeatedly increment some of the counters. I then run through the array seeking counter values that exceed some threshold. <a href="https://github.com/lemire/Code-used-on-Daniel-Lemire-s-blog/tree/master/2013/09/13/bytecounting">My code is freely available</a>.</p>
+<p>One parameter is the size of the array. I expect that for tiny numbers of counters, the number of bits will be irrelevant: all of the counters can fit in CPU cache. </p>
+<p>Another parameter is the language. Does Java behave differently from C++? You would hope not, but C++ compilers can pull tricks that Java can&#8217;t, and vice versa.</p>
+<p>I ran my tests on a recent Intel Core i7 processor. I was surprised to find that the Java and C++ speeds were almost the same:</p>
+<table style="border-collapse:collapse;text-align:center;margin-left:auto;margin-right:auto">
+<tr style="border-top:3px solid #ccc;border-bottom:2px solid #ccc;">
+<th>&nbsp;Number of counters&nbsp;</th>
+<th>&nbsp;8 bits&nbsp;</th>
+<th>&nbsp;16 bits&nbsp;</th>
+<th>&nbsp;32 bits&nbsp;</th>
+<th>&nbsp;64 bits&nbsp;</th>
+</tr>
+<tr>
+<td>2<sup>16</sup></td>
+<td>94</td>
+<td>94</td>
+<td>94</td>
+<td>94</td>
+</tr>
+<tr>
+<td>2<sup>23</sup></td>
+<td>44</td>
+<td>28</td>
+<td>22</td>
+<td>22</td>
+</tr>
+</table>
+<p>As expected, when there are few counters, it does not matter how many bits you use. However, when the number of counters becomes large, using 8-bit counters instead of 32-bit counters can double the speed.</p>
+<p><strong>Conclusion</strong>: When you have many, it could be worth your time to benchmark an alternative using 8-bit or 16-bit counters.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/" data-text="Are 8-bit or 16-bit counters faster than 32-bit counters?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/#comments" title="Comment on Are 8-bit or 16-bit counters faster than 32-bit counters?">Comments (1)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2011/09/26/two-32-bit-hash-functions-from-a-64-bit-hash-function/" rel="bookmark">Two 32-bit hash functions from a 64-bit hash function?</a><!-- (10)--></li>
+	</ul>
+</div>
+
+</div>
+
+
+
+<h2 id="comments">1 Comment 
+	<a href="#postcomment" title="Leave a comment">&raquo;</a>
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-93205">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/3ccaf45d7ab8ecc0e412fe911c9b9d10?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I&#8217;d revise the conclusion a bit: Keep your working set inside the caches. This has nothing to do with counting, for performance purposes you&#8217;re just touching RAM.</p>
+	<p><cite>Comment by John Regehr &#8212; 13/9/2013 @ <a href="#comment-93205">19:18</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<h2 id="postcomment">Leave a comment</h2>
+
+
+<form action="http://lemire.me/blog/wp-comments-post.php" method="post" id="commentform">
+<!--bot-->
+
+<!--bot-->
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Blog or personal home page</small></label></p>
+
+
+
+
+<p style="background:#ccc;font-size:0.8em;"><strong>Warning</strong>: When entering a long comment, please
+ensure that you make copy of your text prior to submitting it.
+If the server should fail or if you hit a bug, you might lose your work. I am
+not responsible for your lost effort.</p>
+
+<p style="font-size:0.8em;"><strong>To spammers</strong>: I carefully review every single post
+and make sure that spam gets deleted. <strong>You are wasting your time if you
+are manually entering spam using this form.</strong> Read my 
+<a href="http://lemire.me/blog/terms-of-use/">terms of use</a> to see 
+what I consider to be abusive. </p>
+
+
+<!--<p style="font-size:0.8em;"><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </p>-->
+
+<p><textarea name="comment" id="comment" cols="40" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="5541" />
+</p>
+ <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="9a86fa0174" /></p><p style="clear:both"><input style="width: 20px" type="checkbox" value="1" name="subscribe" id="subscribe" checked="checked"/>&nbsp;<label style="margin:0; padding:0; position:relative; left:0; top:0;" for="subscribe">Notify me when new comments are added</label></p><!--<php show_subscription_checkbox(); ?>
+-->
+</form>
+
+
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/09/12/post-industrial-view/">Previous: To succeed, adopt the post-industrial view</a></div>
+<div  style="text-align:right">
+</div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,500</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>4,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1416&nbsp;posts and 5801&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>John Regehr on <a href="http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/#comment-93205" title="13/9/2013">Are 8-bit or 16-bit counters faster than 32-bit counters?</a></li>
+	<li>Stephen Downes on <a href="http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/#comment-92052" title="28/8/2013">Funding science: When bureaucrats get out of control</a></li>
+	<li>Stephen Downes on <a href="http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/#comment-92050" title="28/8/2013">Funding science: When bureaucrats get out of control</a></li>
+	<li>Djamé on <a href="http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/#comment-91999" title="28/8/2013">Funding science: When bureaucrats get out of control</a></li>
+	<li>Peter Turney on <a href="http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/#comment-91807" title="16/8/2013">Picking N distinct numbers at random: how to do it fast?</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.131 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-09-13 19:49:14 -->

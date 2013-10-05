@@ -1,0 +1,1768 @@
+<!DOCTYPE html>
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 9]> <html class="no-js ie lt-ie9" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if IE 9]> <html class="no-js ie ie9" lang="en" prefix="og: http://ogp.me/ns#"> <![endif]-->
+<!--[if !IE]><!--> <html class="no-js" lang="en" prefix="og: http://ogp.me/ns#"> <!--<![endif]-->
+<!--
+	generated in 0.930 seconds
+	160804 bytes batcached for 300 seconds
+-->
+<head>
+	<meta charset="utf-8" />
+
+	<!-- Set the viewport width to device width for mobile -->
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=0.45, maximum-scale=10" />
+
+	<title>
+		Patterns &amp; fallacies: Why they have no place in my Silicon Valley &mdash; 		Tech News and Analysis	</title>
+
+	<link rel="pingback" href="http://gigaom.com/xmlrpc.php" />
+	<link rel="apple-touch-icon" href="http://s2.wp.com/wp-content/themes/vip/gigaom3-child/img/logo-iphone.gigaom.png?m=1363882581g" />
+	<link rel="apple-touch-icon" sizes="72x72" href="http://s2.wp.com/wp-content/themes/vip/gigaom3-child/img/logo-ipad.gigaom.png?m=1363882581g" />
+	<link rel="apple-touch-icon" sizes="114x114" href="http://s2.wp.com/wp-content/themes/vip/gigaom3-child/img/logo-retina.gigaom.png?m=1363882581g" />
+
+			<script>
+					var _gaq = _gaq || [];
+							_gaq.push(['_setCustomVar', 1, 'Author', 'om', 3]);
+								_gaq.push(['_setCustomVar', 2, 'Primary_channel', 'tech', 3]);
+						_gaq.push(['_setAccount', 'UA-1136722-40']);
+		_gaq.push(['_setDomainName', 'gigaom.com']);
+		_gaq.push(['_trackPageview']);
+		_gaq.push(['_trackPageLoadTime']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+		</script>
+				<script src='http://r-login.wordpress.com/remote-login.php?action=js&amp;host=gigaom.com&amp;id=14960843&amp;t=1380959871&amp;back=gigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="alternate" type="application/rss+xml" title="GigaOM &raquo; Feed" href="http://feeds.feedburner.com/ommalik" />
+<link rel="alternate" type="application/rss+xml" title="GigaOM &raquo; Comments Feed" href="http://feeds.feedburner.com/ommalik" />
+<link rel="alternate" type="application/rss+xml" title="GigaOM &raquo; Patterns &amp; fallacies: Why they have no place in my Silicon Valley Comments Feed" href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s0.wp.com/_static/??-eJylkO1OQjEMhm/I2eCIhh/Ga+kZZWeHbl3W8eHd24ORkABR4r+ufd5n6+BQXZDSqXTIO1d5F1NR4LQlhYl6xbB1p9NzUH2C23gV7W7DmBpo/2S6YvtI2YT7VCGmiJK9q9jmyTRfNgAdO7WCDI20StG0J9dxYAtddf5hD8LSBjmeiwdcRsLGqL9Ewph4fUpgrb8Hzh8ZxamEhGxszsaqvTTb+t+lXhA/wGN2XN8yWveeZlxCZBmQZ+Ajvy/828ovX169n74AW1LWMg==' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-0' href='http://s2.wp.com/wp-content/themes/vip/gigaom3-child/css/print.css?m=1355683441g' type='text/css' media='print' />
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJydkN0KwjAMRl/IrujE4oX4LF2X1dT+2XSb29NbYYKiMPAqITl8h4SPkangM/jMDXEXGrTAeoIkdZkx9F2oDG144dAr27dAT9DcekjTUlYB5lAnmaFy6F/wmzUGyg6IivLH9lOFfkAYVzEDOUp1ZQkI56/UfIHi4wNGrlHL4GoWZVqCLDYc7hmSl7Y8pC0Nzun/COmixW5abj+707YWYncQR7E3D4y6ju0='></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://gigaom2.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://gigaom2.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='How the truly smart home could finally become a reality' href='http://pro.gigaom.com/report/forecast-smart-homes-and-the-internet-of-things/' />
+<link rel='next' title='Court finds Hotfile, and the guy running it, guilty of copyright infringement' href='http://gigaom.com/2013/08/28/court-finds-hotfile-and-the-guy-running-it-guilty-of-copyright-infringement/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/' />
+<link rel='shortlink' href='http://wp.me/p10LZV-2S6S' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&amp;for=wpcom-auto-discovery" /><link rel='openid.server' href='http://gigaom2.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://gigaom2.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://gigaom.com/osd.xml" title="Tech News and Analysis" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+		
+			<script>
+				var CFCT_URL = "http://gigaom.com";
+				var CFCT_AJAX_LOAD = true;
+			</script>
+		<meta name="news_keywords" content="andy bechtolsheim, arianna huffington, arista-networks, jayshree ullal, khosla ventures, om says, paul graham, sun microsystems, tech, the new york times">
+<meta name="msvalidate.01" content="6AFF4FA8C591A576B80A612AF591A343" /><meta name="google-site-verification" content="0QAgqohqhkW__EGKv9v-VDR1CDFf5J8WJsPPePSTgdU" /><meta name="y_key" content="a09dd3172406080e" /><meta name="google-site-verification" content="qCPIC6UK_23CR6SxLn2bCjE-Ow0OSYoDExoi699IE98" /><meta name='dcterms.publisher' content='GigaOM' /> 
+<meta name='dcterms.title' content='Patterns &amp; fallacies: Why they have no place in my Silicon Valley' /> 
+<meta name='dcterms.creator' content='' /> 
+<meta name='dcterms.modified' content='2013-08-30' /> 
+<meta name='dcterms.created' content='2013-08-28' /> 
+<meta name='dcterms.date' content='2013-08-28' /> 
+<meta name='dcterms.subject' content='Alex Mehr; Andy Bechtolsheim; Andy Grove; Arianna Huffington; Billy Beane; Jason Giambi; Jason Isringhausen; Jayshree Ullal; Johnny Damon; Naseem Nicholas Taleb; Om Says; Paul Graham; Shayan Zadeh; The New York Times' /> 
+<meta name="keywords" content="Alex Mehr,Andy Bechtolsheim,Andy Grove,Arianna Huffington,Billy Beane,Jason Giambi,Jason Isringhausen,Jayshree Ullal,Johnny Damon,Naseem Nicholas Taleb,Om Says,Paul Graham,Shayan Zadeh,The New York Times" /><meta name="description" content="If history has taught us anything, then the line between patterns and fallacies is nearly invisible. In a place where we talk about inventing the future, the patterns (or fallacies) of the past can prove to be counterproductive and create unnecessary biases. " />		<meta name="application-name" content="GigaOM"/>
+		<meta name="msapplication-TileColor" content="#ffffff"/>
+		<meta name="msapplication-TileImage" content="http://s2.wp.com/wp-content/themes/vip/gigaom3-child/img/msapplication-gigaom.png?m=1363935227g"/>
+				<!-- Chartbeat -->
+		<script type="text/javascript">
+			var _sf_startpt=(new Date()).getTime();
+			var _sf_async_config={uid:4366,domain:"gigaom.com"};
+
+							_sf_async_config.sections = "primary_channel:Tech,channel:Tech,post_tag:Alex Mehr,post_tag:Andy Bechtolsheim,post_tag:Andy Grove,post_tag:Arianna Huffington,post_tag:Billy Beane,post_tag:Jason Giambi,post_tag:Jason Isringhausen,post_tag:Jayshree Ullal,post_tag:Johnny Damon,post_tag:Naseem Nicholas Taleb,post_tag:Om Says,post_tag:Paul Graham,post_tag:Shayan Zadeh,post_tag:The New York Times";
+				_sf_async_config.authors = "Om Malik";
+						</script>
+		<meta property="og:title" content="Patterns &amp; fallacies: Why they have no place in my Silicon Valley" />
+<meta property="og:type" content="article" />
+<meta property="og:image" content="http://gigaom2.files.wordpress.com/2012/05/shutterstock_79978657.jpg?w=500" />
+<meta property="og:url" content="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/" />
+<meta property="og:site_name" content="GigaOM" />
+<meta property="og:description" content="If history has taught us anything, then the line between patterns and fallacies is nearly invisible. In a place where we talk about inventing the future, the patterns (or fallacies) of the past can prove to be counterproductive and create unnecessary biases. 
+" />
+<meta property="article:author" content="http://gigaom.com/author/om/" />
+<meta property="fb:app_id" content="180650338636285" />
+<meta name="application-name" content="GigaOM" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://feeds.feedburner.com/ommalik;icon-uri=http://1.gravatar.com/blavatar/f8748081423ce49bd3ecb267cd4effc7?s=16" /><meta name="twitter:card" value="summary" />
+<meta name="twitter:site" value="@gigaom" />
+<meta name="twitter:creator" value="@om" />
+<style id="syntaxhighlighteranchor"></style>
+</head>
+<body class="single single-post postid-684658 single-format-standard typekit-enabled single gigaom property-gigaom go-channel-tech mp6 highlander-enabled highlander-light" itemscope itemtype="http://schema.org/WebPage">
+<div id="wrap-allthethings">
+	<div id="allthethings">
+		<nav id="nav" class="clearfix">
+	<div class="row">
+		<section class="header">
+			<a href="#" id="nav-toggle" class="goicon icon-menu control-primary" title="Navigation"></a>
+			<div class="primary">
+				<h1 title="GigaOM"><a href="http://gigaom.com/" rel="publisher" class="goicon logo-gigaom" title="GigaOM"></a></h1>
+				<ul>
+					<li id="menu-item-599786" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599786"><a title="Events" href="http://event.gigaom.com/">Events</a></li>
+<li id="menu-item-599787" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599787"><a title="Research" href="http://pro.gigaom.com/">Research</a></li>
+<li id="menu-item-599788" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599788"><a title="Jobs" href="http://jobs.gigaom.com/">Jobs</a></li>
+<li id="menu-item-599789" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599789"><a title="paidContent" href="http://paidcontent.org/">paidContent</a></li>
+				</ul>
+			</div>
+			<div class="secondary">
+				<div class="channels left">
+					<ul id="menu-topics" class="content"><li id="menu-item-599790" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599790"><a href="/">Home</a></li>
+<li id="menu-item-599791" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599791"><a href="/channel/apple/">Apple</a></li>
+<li id="menu-item-599792" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599792"><a title="Cleantech" href="/channel/cleantech/">Cleantech</a></li>
+<li id="menu-item-599793" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599793"><a title="Cloud" href="/channel/cloud/">Cloud</a></li>
+<li id="menu-item-599794" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599794"><a title="Data" href="/channel/data/">Data</a></li>
+<li id="menu-item-599795" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599795"><a title="Europe" href="/channel/europe/">Europe</a></li>
+<li id="menu-item-599796" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599796"><a title="Mobile" href="/channel/mobile/">Mobile</a></li>
+<li id="menu-item-599797" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599797"><a title="Video" href="/channel/video/">Video</a></li>
+</ul>				</div>
+				<ul class="icons right">
+							<li class="sub-nav nav-events">
+			<a href="#" class="goicon icon-calendar control-events" title="Coming up at GigaOM"><span class="notification"></span></a>
+			<div>
+				<h5>Coming up at GigaOM</h5>
+				<span class="shadow-hide"></span>
+				<div class="events row">
+					<section class="four columns editorial">
+						<header>Editorial</header>
+					</section>
+					<section class="four columns conferences">
+						<header>Events</header>
+					</section>
+					<section class="four columns meetups">
+						<header>Meetups</header>
+					</section>
+					<section class="four columns webinars">
+						<header>Webinars</header>
+					</section>
+					<ul class="links">
+						<li class="four columns more more-editorial"></li>
+						<li class="four columns more more-conferences">
+							<a href="http://event.gigaom.com">More events</a>
+						</li>
+						<li class="four columns more more-meetups"></li>
+						<li class="four columns more more-webinars">
+							<a href="http://pro.gigaom.com/webinars/">More webinars</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</li>
+				<li class="sub-nav nav-plus">
+			<a href="#" class="goicon icon-follow control-follow" title="Share"></a>
+						<div class="share">
+				<h5>Share</h5>
+				<span class="shadow-hide"></span>
+				<ul class="content with-icons">
+					<li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;via=gigaom&#038;text=Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley"><i class="goicon icon-twitter"></i>Twitter</a></li>
+					<li><a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300"><i class="goicon icon-facebook"></i>Facebook</a></li>
+					<li><a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+"><i class="goicon icon-linkedin"></i>LinkedIn</a></li>
+					<li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F"><i class="goicon icon-googleplus"></i>Google+</a></li>
+					<li><a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Thought%20you%20might%20enjoy%20this%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20from%20Om%20Malik%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F"><i class="goicon icon-email"></i>Email</a></li>
+				</ul>
+			</div>
+					</li>
+							<li class="sub-nav nav-search">
+						<a href="#" class="goicon icon-search" title="Search"></a>
+						<div class="search">
+							<span class="shadow-hide"></span>
+							<form action="http://gigaom.com" method="get">
+								<input type="search" placeholder="Search GigaOM" autofocus name="s" />
+							</form>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</section>
+	</div>
+</nav>
+		<div id="main" class="row">
+			<div id="go-ads-takeover-3" class="widget clearfix widget-go-ads-takeover">		<div id="ad-takeover" class="ad ad-1x1">
+			<script>
+				jQuery('head').append('<style type="text/css" media="screen">.go-device-full #allthethings { 	background-image: url(http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/tech_takeover_center&sz=1536x800&c=451926);}.go-device-full #wrap-allthethings { 	background-image: url(http://pubads.g.doubleclick.net/gampad/ad?iu=/1008864/tech_takeover_background&sz=10x800&c=918241); /* Optional */ 	background-color: #66c2db;}</style>');
+			</script>
+			<!-- DFP CSS AD SLOT: tech_takeover -->
+			<!-- DFP TOP CENTER IMG AD SLOT: tech_takeover_center -->
+			<!-- DFP BACKGROUND IMG AD SLOT: tech_takeover_background -->
+		</div>
+		</div>
+<section id="body" class="eight columns">
+	<div class="main" role="main">
+		<div id="postloop-19" class="go-full-post widget-post_loop-single-story widget clearfix widget_postloop"><article id="post-684658" class="post-684658 post type-post status-publish format-standard hentry tag-alex-mehr tag-andy-bechtolsheim tag-andy-grove tag-arianna-huffington tag-billy-beane tag-jason-giambi tag-jason-isringhausen tag-jayshree-ullal tag-johnny-damon tag-naseem-nicholas-taleb tag-om-says tag-paul-graham tag-shayan-zadeh tag-the-new-york-times clearfix thumb company-arista-networks company-forbes-com company-intel-corp company-khosla-ventures company-oakland-athletics company-sun-microsystems company-the-new-york-times company-zoosk go-post-standard" itemscope itemtype="http://schema.org/NewsArticle">
+	<ul class='breadcrumbs sorted_tags' itemprop='keywords'>
+	<li><a href="http://gigaom.com/tag/arianna-huffington/" title="Arianna Huffington">Arianna Huffington</a></li>
+	<li><a href="http://gigaom.com/tag/om-says/" title="Om Says">Om Says</a></li>
+	<li><a href="http://gigaom.com/tag/the-new-york-times/" title="The New York Times">The New York Times</a></li>
+</ul>
+	<header class="head entry-header">
+		<h1 class="entry-title" itemprop="headline">
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/" title="Permalink to Patterns &amp; fallacies: Why they have no place in my Silicon Valley" rel="bookmark" itemprop="url">Patterns &amp; fallacies: Why they have no place in my Silicon Valley</a>
+					</h1>
+		<section class="post-meta">
+			<div class="by">
+				By <span class="vcard"><a itemprop="author" class="url fn" href="http://gigaom.com/author/om/" title="Posts by Om Malik" rel="author">Om Malik</a></span>			</div>
+			<div class="time">
+				<time class="time published" datetime="2013-08-28T15:07:56-07:00" title="2013/08/28 3:07:56 PM" itemprop="datePublished">
+					Aug. 28, 2013 - 3:07 PM PDT				</time>
+				<time class="time updated" datetime="2013-08-30T09:26:07-07:00" title="2013/08/30 9:26:07 AM" itemprop="dateModified">
+					Aug. 28, 2013 - 3:07 PM PDT				</time>
+			</div>
+		</section>
+		<section class="post-social">
+							<h3 class="comments-title" id="comment-count" data-comment-count="21">
+					<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comments" title="Comment on Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><i class="goicon icon-comment"></i>21 Comments</a>				</h3>
+							<ul class="social inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;via=gigaom&#038;text=Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Thought%20you%20might%20enjoy%20this%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20from%20Om%20Malik%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</section>
+	</header>
+	<section class="sub-head">
+		
+	<ul class="inline-list text-scale">
+		<li class="smaller">
+			<a href="" title="Decrease font size">A<i class="goicon icon-down"></i></a>
+		</li>
+		<li class="larger">
+			<a href="" title="Increase font size">A<i class="goicon icon-up"></i></a>
+		</li>
+	</ul>
+				<div class="inject-thumb hide-phone"></div>
+								<div class="excerpt" itemprop="description">
+					<span class="excerpt-label">Summary:</span>
+					<p>If history has taught us anything, then the line between patterns and fallacies is nearly invisible. In a place where we talk about inventing the future, the patterns (or fallacies) of the past can prove to be counterproductive and create unnecessary biases. </p>
+				</div>
+										<div class="hide-full hide-tablet">
+							<div class="thumbnail-container"><div class="thumbnail th" title="Permalink to Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><img itemprop="thumbnailUrl" width="300" height="200" src="http://gigaom2.files.wordpress.com/2012/05/shutterstock_79978657.jpg?w=300&amp;h=200&amp;crop=1" class="attachment-excerpt-thumbnail wp-post-image" alt="Sign in different languages" /><div class="attribution">
+					photo: <a href="http://www.shutterstock.com/pic-79978657/stock-photo-board-with-greetings-in-different-languages-close-up.html?src=3374b9fdc7ed1f3e545a59a0958e4df9-1-10" title="Shutterstock / Roman Sigaev ">Shutterstock / Roman Sigaev </a></div></div></div>
+						</div>
+					</section>
+	<section class="body entry-content" itemprop="articleBody">
+		<div id="post-content-684658">
+			<p>At the start of every day I make myself three promises &#8212; I will limit the amount sugar I consume, have little or no salt and whatever I do, I will not let my preconceived notions come in the way of learning. I am successful about half the time, but rest of the time I am faced with my own limitations and weaknesses. A scone here, a little curry there, and of course, looking back into the past and making a snap judgement about something in the future &#8212; such as my <a href="http://gigaom.com/2013/08/26/vine-gets-better-with-age-how-screens-speed-and-networks-are-changing-the-future-of-online-video/">inability to grok Vine</a>.</p>
+<p>The fact is that we use patterns we have seen throughout our lives and we start to draw conclusions based on those patterns. As we grow older, we accumulate more data in our brains and as a result to start to rely on the patterns generated by that data more and more. As a result, we often find ourselves unable to recognize change, embrace change or realize that something might actually be different than what came before it.</p>
+<p><a href="http://gigaom.com/2008/05/03/the-fr-interview-y-combinators-paul-graham/paulgraham_240x3203/" rel="attachment wp-att-247396"><img  alt="paulgraham_240x3203" src="http://gigaom.files.wordpress.com/2008/05/paulgraham_240x3203.jpg?w=708"   class="alignright size-full wp-image-247396" /></a>And the patterns we rely on lead to physiological biases &#8212; a concept that Naseem Nicholas Taleb explored in his <a href="http://en.wikipedia.org/wiki/Black_swan_theory">Black Swan Theory</a>. A simpler way of explaining that is if you walk looking backward, you are more than likely to run into a pole, a tree or a car. And while I don&#8217;t mean to discount the pattern recognition, I would say we should think of it &#8212; at best &#8212; as an ephemeral yardstick of accumulated wisdom.</p>
+<p>So why am I talking about patterns? Because I read this interview of Paul Graham, who started YCombinator, a startup incubator based in Mountain View, California. He told the <a href="http://www.inc.com/magazine/201309/issie-lapowsky/how-paul-graham-became-successful.html">Inc magazine the following</a>:</p>
+<blockquote id="quote-one-quality-thats-a-"><p>One quality that&#8217;s a really bad indication is a CEO with a strong foreign accent. I&#8217;m not sure why. It could be that there are a bunch of subtle things entrepreneurs have to communicate and can&#8217;t if you have a strong accent. Or, it could be that anyone with half a brain would realize you&#8217;re going to be more successful if you speak idiomatic English, so they must just be clueless if they haven&#8217;t gotten rid of their strong accent. I just know it&#8217;s a strong pattern we&#8217;ve seen.</p></blockquote>
+<p><a href="http://www.nytimes.com/2013/05/05/magazine/y-combinator-silicon-valleys-start-up-machine.html?pagewanted=all&amp;_r=0">Graham, who made a similar observation in a story in the New York Times,</a> later <a href="https://twitter.com/paulg/status/372410270213107712">tweeted</a> to clarify that what he meant was that accents &#8220;<i>so strong that people can&#8217;t understand them. It&#8217;s fine if founders merely have accents.&#8221;</i></p>
+<h2 id="accented-nuances">Accented nuances</h2>
+<p>Paul and YCombinator have backed many successful companies that are headed by people with accents. I also understand that what he told Inc magazine (and the New York Times earlier) was a factual observation from the data collected and had the context of nuance. When he made those comments to the media, he was talking about the negative influence of accents from the context of Demo Days.</p>
+<p>But unless you know the context or nuance of Graham&#8217;s observation, this observation quickly becomes a fact in our age of instant amplification and in the process create unwarranted biases, which ultimately eat away at the meritocratic foundations of Silicon Valley. Sure, a heavy accent can make things difficult to understand in a 2-minute pitch on a demo day in a room full of venture capitalists &#8212; most with some form of ADD. In this hot house, if you can&#8217;t communicate your vision properly, then your chances of success are less than stellar.</p>
+<p>The inability to communicate is merely not an issue of difficult-to-understand accents but also includes the inability to articulate your idea, stage fright or simply social awkwardness. They are all going to cause communication problems with investors, employees and even in real-world relationships.</p>
+<p>Think of it this way: If YC is the best-way router of startups and innovation, and if investors flock to demo days because they believe Graham and Co. have identified the best options, then it doesn&#8217;t matter if you have a Skype or a Tidemark &#8212; you might get left out because you have an accent. That to me makes no sense. But if a two-minute pitch on a demo day is defining the candidate selection process, then perhaps there is a need to change the lens through which we view the world.</p>
+<p>Whenever we talk about accents, race or gender, I was reminded of that scene from <em>Moneyball</em>, when Oakland Athletics general manager Billy Beane &#8212; after having lost Jason Giambi, Johnny Damon and Jason Isringhausen &#8212; is sitting in a room with his scouts. The scouts are talking about various players and one of them says, &#8220;He passes the eye candy test. He&#8217;s got the looks, he&#8217;s great at playing the part. He just needs to get some playing time.&#8221;</p>
+<p>Those baseball experts were falling back on fallacies &#8212; arguments that sounded good even though facts stated otherwise. And so will Silicon Valley if we don&#8217;t constantly question the patterns themselves. Just because you hit the ball out of the park three times in a row doesn&#8217;t mean the fourth swing will also result in a home run.</p>
+<p><a href="http://gigaom.com/2010/08/05/silicon-valley-the-scent-of-money/silicon-valley-the-scent-of-money-4/" rel="attachment wp-att-149346"><img  alt="Silicon Valley &amp; The Scent of Money" src="http://gigaom2.files.wordpress.com/2010/08/istock_000004281641small.jpg?w=708&#038;h=412" width="708" height="412" class="aligncenter size-large wp-image-149346" /></a></p>
+<h2 id="innovation-is-a-universal-lang">Innovation is a universal language</h2>
+<p>In my Silicon Valley (which is a symbiosis of an idea and an ideal and not a physical landmass), an accent is not a barrier to entry to innovation and or a measure of one&#8217;s entrepreneurial ability. Andy Grove, the legendary chief executive of Intel and a Hungarian by birth, has an accent. Andy Bechtolsheim, who hails from Germany and started Sun Microsystems and more recently created Arista Networks, has a mild accent. And so do Vinod Khosla (Sun, Khosla Ventures) and Jayshree Ullal (Arista Networks.) How about Arianna Huffington and the founders of Zoosk &#8212; Alex Mehr and Shayan Zadeh? What did their accents sound like when they were starting out &#8212; like they do today? Maybe, maybe not.</p>
+<p><a href="http://gigaom.com/2011/11/10/arista-roadmap-2011/1z5o5925/" rel="attachment wp-att-437234"><img  alt="Arista's Andy Bechtolsheim at GigaOM RoadMap 2011" src="http://gigaom2.files.wordpress.com/2011/11/1z5o5925.jpg?w=708"   class="alignright size-full wp-image-437234" /></a></p>
+<p>They all have accents &#8212; which is just a euphemism for voices that sound different from how we believe people should sound. “There is an enormous amount of information carried in the accent and the prosody of human speech,” my friend Steve Crandall wrote to me last night, pointing out that while we might be comfortable with watching animated characters, we still want human accents instead of computer-generated voices. Accents add texture to our world.</p>
+<p>Then, perhaps, what is being viewed as a pattern is nothing more than a fallacy, in other words a misguided pattern of reasoning and nothing more. What really is an accent? I mean everyone speaks with an accent. Accents are what make us unique. In our post-internet connected world, we are all locals and all foreigners &#8212; somewhere. When I talk to my colleagues, I have an Indian accent. When I am in India, my family thinks I have an American accent.</p>
+<p>I think a lot of people who speak differently from a group don&#8217;t quite realize that they have an accent. I often argue with my mum or my colleagues that I don&#8217;t have an accent &#8212; or at least that voice in my head doesn&#8217;t think I have an accent. Just a simple act of listening to my own podcasts is good enough to show my inner voice &#8212; I sound different than I think.</p>
+<h2 id="an-interconnected-world-withou">An interconnected world without borders</h2>
+<p>The issue of accents is highly personal for me. In the early days as an immigrant in my new homeland, I found my attempts at getting interviews with media organizations ended abruptly mostly because people found me, my name and my accent strange. I guess I was different than others. Then one day, I learned of a job I desperately wanted. <a href="http://Forbes.com">After about a few dozen messages and many faxed resumes later, Forbes.com</a> founding editor David Churbuck thought that my accent wasn&#8217;t that strange after all and hired me. Those early rejections prepared me for one thing &#8212; not taking no for an answer. Adversity is and will always be a self-selecting process.</p>
+<p>That one chance changed my life. We need to take a chance &#8212; on the weird, the crazy, the funny sounding and odd looking &#8212; they just might change the status quo. The fact of the matter is that it is not the entrepreneurs who should be rejected based on their accents, but instead it should be investors.</p>
+<p>After all, if an investor who doesn&#8217;t have a few extra minutes to understand a founder who might be different will also be unable to find compassion and empathy <a href="http://om.co/2013/06/22/vcs-term-sheets-founders-longterm-relationships/">when the shit does hit the fan</a>. How can you take any investor seriously if instead of focusing on technical prowess and power of the mind, they have a bias against how you look, what gender you belong to and how you speak. <a href="http://om.co/2012/05/29/so-you-think-couples-are-a-bad-investment/">Why have a bias against couples as founders</a>?</p>
+<p>There is one pattern which has mattered in Silicon Valley in the past &#8212; a pattern of brilliance. And it is the only pattern that should matter &#8212; everything else is just a fallacy.</p>
+<p><strong>Update</strong>: Paul Graham on Friday, August 29 <a href="http://paulgraham.com/accents.html">elaborated on what he meant</a> when talking to the reporter.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled"></div>		</div>
+			</section>
+	<footer class="foot entry-footer">
+		
+<!-- postloop generated fresh on Sat, 05 Oct 13 07:57:51 +0000 --><div id="postloop-26" class="go-auto-3 widget-post_loop-related-research widget clearfix widget_postloop"><h2 class="widget-title">Related research</h2><div class="widget_subtitle">Subscriber Content</div><i class="goicon icon-question-mark">?</i>
+<div class="tooltip">
+  <span class="nub"></span>
+  Subscriber Content comes from GigaOM Pro, a revolutionary approach to market research without the high price tag. Visit any of our reports to subscribe.
+</div>
+<ul>
+<li>
+	<a href="http://pro.gigaom.com/report/mobile-second-quarter-2013-analysis-and-outlook/?utm_source=tech&#038;utm_medium=editorial&#038;utm_campaign=auto3&#038;utm_term=684658+patterns-fallacies-why-they-have-no-place-in-my-silicon-valley&#038;utm_content=om" rel="bookmark" title="Permanent Link to What mattered in mobile in the second quarter">What mattered in mobile in the second quarter</a>
+	<time datetime="2013-07-15T23:55:47-07:00">July 2013</time>
+</li>
+<li>
+	<a href="http://pro.gigaom.com/report/content-monetization-news-licensing-and-syndication-still-need-marketplaces-and-infrastructure/?utm_source=tech&#038;utm_medium=editorial&#038;utm_campaign=auto3&#038;utm_term=684658+patterns-fallacies-why-they-have-no-place-in-my-silicon-valley&#038;utm_content=om" rel="bookmark" title="Permanent Link to Content monetization: News licensing and syndication still need marketplaces and infrastructure">Content monetization: News licensing and syndication still need marketplaces and infrastructure</a>
+	<time datetime="2013-03-21T23:55:25-07:00">March 2013</time>
+</li>
+<li>
+	<a href="http://pro.gigaom.com/2012/05/whos-liable-in-the-share-economy/?utm_source=tech&#038;utm_medium=editorial&#038;utm_campaign=auto3&#038;utm_term=684658+patterns-fallacies-why-they-have-no-place-in-my-silicon-valley&#038;utm_content=om" rel="bookmark" title="Permanent Link to Who&#8217;s liable in the share economy?">Who&#8217;s liable in the share economy?</a>
+	<time datetime="2012-05-08T06:00:56-07:00">May 2012</time>
+</li>
+</ul>
+</div><div id="go-local-bsocial-cta-2" class="widget clearfix go-bsocial-cta">	<section class="cta-section author clearfix">
+		<div class="avatar">
+			<img alt='' src='http://2.gravatar.com/avatar/89c6ff98059617751fcf312690965fa0?s=64&amp;d=retro&amp;r=PG' class='avatar avatar-64' height='64' width='64' />		</div>
+		<div class="by">
+			By <a href="http://gigaom.com/author/om/" title="Posts by Om Malik" rel="author">Om Malik</a>		</div>
+		<div class="time">
+			<time datetime="2013-08-28T15:07:56-07:00">Aug. 28, 2013 - 3:07 PM PDT</time>
+		</div>
+	</section>
+	<section class="cta-section share clearfix">
+					<p>Like this post? Share it!</p>
+					<ul class="social inline-list">
+			<li class="twitter">
+				<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;via=gigaom&#038;text=Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley" title="Share on Twitter" class="goicon icon-twitter"></a>
+			</li>
+			<li class="facebook">
+				<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+			</li>
+			<li class="linkedin">
+				<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+			</li>
+			<li class="googleplus">
+				<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F" title="Share on Google+" class="goicon icon-googleplus"></a>
+			</li>
+			<li class="email">
+				<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Thought%20you%20might%20enjoy%20this%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20from%20Guest%20Column%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F" title="Share via Email" class="goicon icon-email"></a>
+			</li>
+		</ul>
+	</section>
+	<section class="cta-section follow clearfix">
+	<p>
+		<i class="goicon medium icon-twitter"></i> Follow
+						<a href="https://twitter.com/om">@om</a> or
+						<a href="https://twitter.com/gigaom">@gigaom</a> for more stories like this.
+	</p>
+</section>
+<section class="cta-section newsletter clearfix">
+	<form enctype="application/x-www-form-urlencoded" method="post" action="http://pro.gigaom.com/newsletters/" class="tech apple cleantech cloud data europe mobile video" target="_blank">
+		<input type="hidden" name="newsletterSave" value="save" />
+		<input type="hidden" name="merge_existing_subscriptions" value="merge" />
+					<input type="hidden" name="daily[]" value="tech" />
+						<input type="hidden" name="daily[]" value="apple" />
+						<input type="hidden" name="daily[]" value="cleantech" />
+						<input type="hidden" name="daily[]" value="cloud" />
+						<input type="hidden" name="daily[]" value="data" />
+						<input type="hidden" name="daily[]" value="europe" />
+						<input type="hidden" name="daily[]" value="mobile" />
+						<input type="hidden" name="daily[]" value="video" />
+					<p>
+			Get top stories delivered daily.
+			<input type="email" name="email" id="go-newsletter-email" value="" placeholder="Enter your email address" />
+			<button class="button primary">Subscribe</button>
+		</p>
+	</form>
+	<div class="subscribed">
+		<p>
+			You're subscribed to our newsletter.  If you'd like, you can
+			<a href="http://pro.gigaom.com/newsletters/">update your settings</a>
+		</p>
+	</div>
+</section>
+<script>
+	jQuery( function( $ ) {
+		// when this is added to the page, publish that that has occurred
+		amplify.publish('go-local-bsocial-cta-loaded');
+	});
+</script>
+</div><div id="go-ads-3" class="widget clearfix widget-go-ads">		<div id="ad-b-container" class="ad ad-300x250">
+						<div class="go-ad-call-to-action">
+									<h3 class="comments-title" data-comment-count="21">
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comments" title="Comment on Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><i class="goicon icon-arrow-down"></i><i class="goicon icon-comment"></i>21 Comments</a>					</h3>
+								</div>
+						<div class="advertisement-notice">Advertisement</div>
+			<div id="ad-b">
+			<script>
+				amplify.subscribe('go-init', function() {
+					googletag.cmd.push(function() { googletag.display('ad-b'); });
+				});
+			</script>
+			<!-- DFP AD SLOT: tech_300x250_mid -->
+			</div>
+		</div>
+		</div>
+<!-- postloop generated fresh on Sat, 05 Oct 13 07:57:51 +0000 --><div id="postloop-25" class="go-related widget-post_loop-related-stories widget clearfix widget_postloop"><h2 class="widget-title">Related stories</h2><div class="widget_subtitle"></div><ul>
+<li>
+	<a href="http://gigaom.com/2013/10/05/7-stories-to-read-this-weekend-71/" rel="bookmark" title="Permanent Link to 7 Stories to read this weekend">7 Stories to read this weekend</a>
+	<div class="summary">
+		<time class="time" datetime="2013-10-05T00:00:46-07:00">
+			Oct. 5, 2013		</time>
+		<p>On the menu this week: A profile of The Guardian editor Alan Rusbridger, Lewis Lapham on selling...</p>
+	</div>
+</li>
+<li>
+	<a href="http://gigaom.com/2013/09/28/7-stories-to-read-this-weekend-70/" rel="bookmark" title="Permanent Link to 7 stories to read this weekend">7 stories to read this weekend</a>
+	<div class="summary">
+		<time class="time" datetime="2013-09-28T00:00:07-07:00">
+			Sep. 28, 2013		</time>
+		<p>On the menu this week: Mariano Rivera, Myst, Oyster crisis, Flexians, CrossFit’s dirty secret and the history...</p>
+	</div>
+</li>
+<li>
+	<a href="http://gigaom.com/2013/09/24/day-traders-angels-and-venture-capital-the-internet-changes-everything-including-money/" rel="bookmark" title="Permanent Link to Day traders, angels and venture capital: The internet changes everything, including money">Day traders, angels and venture capital: The internet changes everything, including money</a>
+	<div class="summary">
+		<time class="time" datetime="2013-09-24T20:17:11-07:00">
+			Sep. 24, 2013		</time>
+		<p>The internet, if anything, has been able to do two things admirably: reduce friction and cut out...</p>
+	</div>
+</li>
+</ul>
+</div>	</footer>
+</article>
+</div><div id="go-inject-15" class="go-inject-15 phone_ phone_ tablet_comment-ad tablet_hide-phone tablet_hide-full tablet_height_250-tablet full_ full_ widget clearfix widget-go-inject inject"></div>		<div id="comments-list">
+			<div id="comments" class="comments-area clearfix">
+	<div id="comment-form-top">
+						<ul id="shared-auth">
+					<li id="social-identity-pic">
+						<img src="http://s2.wp.com/wp-content/themes/vip/gigaom-plugins/go-social-comments/components/templates/../images/unknown-user.jpg?m=1357333598g" alt="Avatar">
+					</li>
+					<li id="logged-in-as"></li>
+					<li id="social-identity-logout"></li>
+				</ul>
+				<div id="credentials">
+					<ul id="credential-fields">
+						<li class="input">
+							<label for="author">Name</label>
+							<input placeholder="Name" type="text" name="author" id="author" value="" size="22" tabindex="2"  class="validate valid-required"/>
+						</li>
+						<li class="input">
+							<label for="email">Email address</label>
+							<input placeholder="Email address" type="text" name="email" id="email" value="" size="22" tabindex="3" class="validate valid-email"/>
+						</li>
+						<li class="input">
+							<label title="Site URL" for="url">Site</label>
+							<input placeholder="Site URL" type="text" name="url" id="url" value="" size="22" tabindex="4"/>
+						</li>
+					</ul>
+				</div>
+							<h3 class="comments-title" data-comment-count="21">
+				<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comments" title="Comment on Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><i class="goicon icon-comment"></i>21 Comments</a>			</h3>
+
+				<form id="commentform" action="http://gigaom.com/wp-comments-post.php" method="post">
+			<a id="respond"></a>
+			<div id="comment-textarea">
+				<textarea placeholder="Enter your comment here" name="comment" id="comment" rows="3" cols="40" tabindex="5"></textarea>
+				<a rel="nofollow" href="#" class="cancel-reply">Click here to cancel reply</a>
+				<input name="comment_submit" type="submit" id="comment-submit" class="button primary" value="Comment" tabindex="5" />
+				<input type='hidden' name='comment_post_ID' value='684658' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+			</div>
+			
+<input type="hidden" name="genseq" value="1380959872" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="cf24bd9a6c" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="16"/></p><input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="f0c9b3a8cd" /><input type="hidden" name="_wp_http_referer" value="/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/" />		</form>
+			</div>
+			
+		<div id="comment-list-inner" class="clearfix">
+			<ol class="comments-list clearfix">
+						<li class="comment even thread-even depth-1 comment clearfix li-comment highlander-comment" id="comment-1361050" data-comment-id="1361050">
+			<div class="div-comment" id="div-comment-1361050">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<!-- avatar info cached Sat, 05 Oct 13 03:41:57 +0000 --><a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=http://pro.gigaom.com/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=50&amp;r=G"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://gravatar.com/erangalperin' rel='external nofollow' class='url'>Eran Galperin</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361050" class="comment-permalink">Wednesday, August 28 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Thanks for writing this. I was quite baffled by Paul Graham&#8217;s comments in the Inc. article, and could find no good way to explain it, especially coming from the 500startups program, where international founders are actively courted and welcomed. During pitch prep, the 500startups staff brought in a speech instructor and helped simplify the pitches so that everyone, regardless of accent and English proficiency, could deliver a 3 minute pitch that is clear and easy to understand. Turns out, it is not that hard compared to building a successful company.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361050#react-wp' onclick='return addComment.moveForm("comment-1361050", "1361050", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361050" class="comment-sharing-icons" id="comment-sharing-1361050"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361050" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361050">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361050&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Eran+Galperin" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361050&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Eran+Galperin&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361050&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361050&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Eran+Galperin" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361050" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Eran%20Galperin%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361050" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		<ol class="children">
+		<li class="comment byuser comment-author-om bypostauthor odd alt depth-2 comment clearfix li-comment highlander-comment" id="comment-1361221" data-comment-id="1361221">
+			<div class="div-comment" id="div-comment-1361221">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/89c6ff98059617751fcf312690965fa0?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://om.wordpress.com/' rel='external nofollow' class='url'>Om Malik</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361221" class="comment-permalink">Thursday, August 29 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Where there is a problem there is a solution, as long as people want to find a way to solve that problem. Thanks for your comment, Eran</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361221#react-wp' onclick='return addComment.moveForm("comment-1361221", "1361221", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361221" class="comment-sharing-icons" id="comment-sharing-1361221"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361221" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361221">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361221&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Om+Malik" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361221&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Om+Malik&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361221&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361221&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Om+Malik" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361221" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Om%20Malik%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361221" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 comment clearfix li-comment highlander-comment" id="comment-1361087" data-comment-id="1361087">
+			<div class="div-comment" id="div-comment-1361087">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/a917b44e231e5ed8e913f2f767c16835?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite>Nathan</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361087" class="comment-permalink">Wednesday, August 28 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>I feel sorry for Paul Graham and for his terrible mistake or may be narrow minded view, measuring people by accents.<br />
+ Please don&#8217;t forget that even if you are born somewhere in the USA, you will have an accent in another state (:-)).<br />
+Success is not a function of accent and in fact a lot of the Silicon Valley successes is built by various accents owners. The numbers and the reality speak higher than opinions.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361087#react-wp' onclick='return addComment.moveForm("comment-1361087", "1361087", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361087" class="comment-sharing-icons" id="comment-sharing-1361087"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361087" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361087">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361087&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Nathan" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361087&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Nathan&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361087&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361087&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Nathan" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361087" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Nathan%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361087" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-eideard odd alt thread-even depth-1 comment clearfix li-comment highlander-comment" id="comment-1361122" data-comment-id="1361122">
+			<div class="div-comment" id="div-comment-1361122">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/1dce6517206a2acd9faa1aa9981a9f2a?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://eideard.com' rel='external nofollow' class='url'>eideard</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361122" class="comment-permalink">Wednesday, August 28 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Bravo.  Another nostalgia moment, Om.</p>
+<p>I worked for a spell long ago in another universe called Louisiana.  Moved there from New England.  I couldn&#8217;t have sounded more different if I tried.  Louisiana accents are soft and subtle &#8211; but distinctive.</p>
+<p>So, I put a sign up at the entrance to my work area, &#8220;DANGER!  NORTH AMERICAN WILD YANKEE.  Please do not feed.&#8221;</p>
+<p>Humor worked.  Even with one co-worker who was a KKK member.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361122#react-wp' onclick='return addComment.moveForm("comment-1361122", "1361122", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361122" class="comment-sharing-icons" id="comment-sharing-1361122"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361122" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361122">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361122&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+eideard" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361122&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+eideard&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361122&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361122&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+eideard" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361122" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20eideard%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361122" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 comment clearfix li-comment highlander-comment" id="comment-1361123" data-comment-id="1361123">
+			<div class="div-comment" id="div-comment-1361123">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<!-- avatar info cached Sat, 05 Oct 13 06:47:57 +0000 --><a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=http://pro.gigaom.com/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=50&amp;r=G"></a>					</div>
+					<div class="comment-info">
+						<cite>Rajesh Setty</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361123" class="comment-permalink">Wednesday, August 28 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Thanks Om. Having come from India, I brought my accent along. Before I came to the United States, I lived in a few countries (Singapore, Malaysia, Hong Kong and France) and in each country, I thought I should do something to change my accent but when I looked around, I saw that every other person had an accent too. Finally, I gave up on doing anything about it. </p>
+<p>Although I have not been directly affected by this, in my heart I know that some people find it difficult to understand what I am saying (especially when I am speaking in public) so I go out of my way to prepare a lot more &#8211; have compelling slides to help me get my point across, work on stories that will help clarify a point. In a way, having that limitation has made more more humble and prepare a lot more than someone who won&#8217;t have that problem.</p>
+<p>On a lighter note, I was at Inbound conference last week and heard Arianna Huffington speak. She addresses this topic right at the beginning of her keynote (please watch: 00:30 to 1:05) here:</p>
+<p><span class='embed-youtube' style='text-align:center; display: block;'><iframe class='youtube-player' type='text/html' width='604' height='370' src='http://www.youtube.com/embed/UcNXNtydKSY?version=3&#038;rel=1&#038;fs=1&#038;showsearch=0&#038;showinfo=1&#038;iv_load_policy=1&#038;wmode=transparent' frameborder='0'></iframe></span></p>
+<p>Thanks again.</p>
+<p>Rajesh</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361123#react-wp' onclick='return addComment.moveForm("comment-1361123", "1361123", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361123" class="comment-sharing-icons" id="comment-sharing-1361123"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361123" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361123">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361123&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Rajesh+Setty" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361123&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Rajesh+Setty&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361123&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361123&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Rajesh+Setty" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361123" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Rajesh%20Setty%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361123" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-even depth-1 comment clearfix li-comment highlander-comment" id="comment-1361137" data-comment-id="1361137">
+			<div class="div-comment" id="div-comment-1361137">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/8b977b9f45687e067a2c573d380a58b4?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://naveenvenkat.com' rel='external nofollow' class='url'>Naveen</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361137" class="comment-permalink">Wednesday, August 28 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Om,</p>
+<p>I followed your twitter feed re: this topic and had a few light-hearted exchanges with Lydia Leong of Gartner re: this topic. Personally, I don&#8217;t (and hope others also don&#8217;t) think for a moment that PG is a racist, his essays reveal a deep level of thinking and ability to simplify complexity into a layman&#8217;s language.</p>
+<p>Communication is a fundamental principle of any human action, and it is imperative that people &#8220;communicate&#8221; effectively. However, communication is a 2-way street where the listener must also make a full effort to understand what is being communicated &#8211; verbally and non-verbally. In today&#8217;s hyper-connected world, people, especially VCs who hide behind ADD to justify poor etiquette &#8211; like checking emails, interrupting &#8211; need to stay grounded and pay attention to what is being communicated. </p>
+<p>Entrepreneurship isn&#8217;t a sole specialization of America or Americans, although the bulk of investors and investment money is focused on America. Everyone of us has a different identity and biases, and where PG needs to correct his position (attributed or otherwise) is in opening his mind to where his ilk can add value to the discussion instead of mindlessly discarding ideas, people and businesses based on surface level characteristics and assumptions.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361137#react-wp' onclick='return addComment.moveForm("comment-1361137", "1361137", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361137" class="comment-sharing-icons" id="comment-sharing-1361137"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361137" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361137">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361137&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Naveen" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361137&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Naveen&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361137&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361137&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Naveen" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361137" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Naveen%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361137" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		<ol class="children">
+		<li class="comment even depth-2 comment clearfix li-comment highlander-comment" id="comment-1362540" data-comment-id="1362540">
+			<div class="div-comment" id="div-comment-1362540">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/4aa2a8fe780b46e563d5b2939a908a52?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite>Richard Bottoms</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1362540" class="comment-permalink">Tuesday, September 3 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>No one who ever says something totally clueless about brown people or how they speak is every really a racist, just misunderstood.</p>
+<p>Clueless about women who can&#8217;t take a little harmless flirting.</p>
+<p>Clueless  about utterly inane startups receiving millions to launch yet another paradigm shifting me-too social portal while real businesses started by people who didn&#8217;t happen to go to Stanford can&#8217;t raise a nickle.</p>
+<p>Clueless is a 23 year old millionaire complaining about all the bothersome proles begging for food killing his caffeine buzz or perhaps god forbid putting a scratch on his Porsche.</p>
+<p>It&#8217;s about men and women with nothing more than the shirt on their backs (and the connections that come with an elite education) being freed from having to deal with people not like them mucking things up.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1362540#react-wp' onclick='return addComment.moveForm("comment-1362540", "1362540", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1362540" class="comment-sharing-icons" id="comment-sharing-1362540"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1362540" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1362540">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1362540&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Richard+Bottoms" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1362540&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Richard+Bottoms&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1362540&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1362540&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Richard+Bottoms" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1362540" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Richard%20Bottoms%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1362540" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 comment clearfix li-comment highlander-comment" id="comment-1361144" data-comment-id="1361144">
+			<div class="div-comment" id="div-comment-1361144">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/4f14014d9020d3da21caef2ab52d419f?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://www.jozefak.com' rel='external nofollow' class='url'>Paul</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361144" class="comment-permalink">Wednesday, August 28 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Om,</p>
+<p>I&#8217;m on the fence about this one. I was lucky enough to come to the US at an age where I never developed an accent and spoke English as if it were my native language (albeit with a NY accent). At the same time, here in Germany, where I&#8217;ve lived for over 17 years I still to this day have a very heavy accent in German. Every native speaker immediately knows I am either from the US or the UK. Usually they presume UK as I am fairly fluent in German (more so the case for Brits than Americans in their minds). </p>
+<p>Anyway, my point is that I too was always aware of my accent. It was even heavier in the early days but I made an effort to remedy that. At the same time, I never considered going to a language course where someone would try to &#8220;get rid off&#8221; my accent. It defines me here in my role. Everyone knows I speak with this heavy accent in German (think Schwarzenneger&#8217;s English but in reverse back in Terminator days) and I made sure I am always comprehensible. </p>
+<p>It&#8217;s a fine line in terms of what Paul writes. Yes, one should never discriminate against a heavy accent when picking founders yet at the same time, if a founder doesn&#8217;t do his best to become &#8220;understandable&#8221;, where else is he lacking? I got the gist of what Paul wrote yet I can see where misinterpretation would be possible. At the same time, living the problem in another language I know what it means to &#8220;make it work&#8221; and technically, no one is held back (unless due to physical issues) from improving their accent. As a VC I always told entrepreneurs here in the EU that if they ever wanted to go to the US, they better speak understandable English or they are toast.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361144#react-wp' onclick='return addComment.moveForm("comment-1361144", "1361144", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361144" class="comment-sharing-icons" id="comment-sharing-1361144"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361144" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361144">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361144&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Paul" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361144&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Paul&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361144&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361144&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Paul" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361144" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Paul%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361144" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		<ol class="children">
+		<li class="comment even depth-2 comment clearfix li-comment highlander-comment" id="comment-1361209" data-comment-id="1361209">
+			<div class="div-comment" id="div-comment-1361209">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<!-- avatar info cached Sat, 05 Oct 13 06:47:58 +0000 --><a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=http://pro.gigaom.com/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=50&amp;r=G"></a>					</div>
+					<div class="comment-info">
+						<cite>Naveen Venkataraman</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361209" class="comment-permalink">Thursday, August 29 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Paul,</p>
+<p>Can you elaborate on the demographic for whom the founder should &#8220;become understandable&#8221;? Learning English (since English is the language referred to in PG&#8217;s interview) when one isn&#8217;t taught English starting from school-level takes a significant amount of effort later in life; developing an American-friendly accent comes off as insincere at worst and ineffective at best. People end up feeling like caricatures. </p>
+<p>I speak 4 languages, have tried my hand at learning Japanese, French and Spanish, and I know the struggle of learning a new language as an adult. Not impossible, but nowhere near native skill levels.</p>
+<p>Given this context of struggle with a language, should a founder invest in learning the nuances of English or focus on running his/her business?</p>
+<p>If I were to turn the tables on PG and his team, why don&#8217;t they learn Mandarin, Arabic, Japanese or Hindi in order to be the valuable advisors they claim to be?</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361209#react-wp' onclick='return addComment.moveForm("comment-1361209", "1361209", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361209" class="comment-sharing-icons" id="comment-sharing-1361209"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361209" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361209">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361209&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Naveen+Venkataraman" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361209&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Naveen+Venkataraman&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361209&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361209&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Naveen+Venkataraman" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361209" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Naveen%20Venkataraman%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361209" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		<ol class="children">
+		<li class="comment odd alt depth-3 comment clearfix li-comment highlander-comment" id="comment-1361420" data-comment-id="1361420">
+			<div class="div-comment" id="div-comment-1361420">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/4f14014d9020d3da21caef2ab52d419f?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://www.jozefak.com' rel='external nofollow' class='url'>Paul</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361420" class="comment-permalink">Friday, August 30 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Yes Naveen, I can easily define the demographic: VC&#8217;s. All US VC&#8217;s (as well as most international VC&#8217;s) speak English (and many with accents). Further, that demographic includes customers. In the US you will mostly be speaking English when pitching your product. Hence &#8220;you want my money, you speak my language&#8221;. I didn&#8217;t say anything about &#8220;accent&#8221;. I said understandable English. By &#8220;understandable&#8221; I mean fairly correct grammar-wise and with a decent level of technical vocabulary. </p>
+<p>The argument that VC&#8217;s or customers should learn your language is ridiculous. It&#8217;s the US and the language is English. If you can&#8217;t pitch or get your point across, you are going to have a very difficult time. Hence as a VC and to help the entrepreneurs I was speaking to, I made sure they were prepared.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361420#react-wp' onclick='return addComment.moveForm("comment-1361420", "1361420", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361420" class="comment-sharing-icons" id="comment-sharing-1361420"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361420" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361420">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361420&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Paul" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361420&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Paul&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361420&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361420&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Paul" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361420" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Paul%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361420" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 comment clearfix li-comment highlander-comment" id="comment-1361186" data-comment-id="1361186">
+			<div class="div-comment" id="div-comment-1361186">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<!-- avatar info cached Thu, 03 Oct 13 22:42:49 +0000 --><a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=http://pro.gigaom.com/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=50&amp;r=G"></a>					</div>
+					<div class="comment-info">
+						<cite>John Saddington</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361186" class="comment-permalink">Thursday, August 29 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>a brilliant and great reminder for many of us. &#8220;&#8230; book by it&#8217;s cover&#8221;..? yeah, we all do that.</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361186#react-wp' onclick='return addComment.moveForm("comment-1361186", "1361186", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361186" class="comment-sharing-icons" id="comment-sharing-1361186"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361186" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361186">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361186&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+John+Saddington" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361186&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+John+Saddington&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361186&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361186&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+John+Saddington" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361186" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20John%20Saddington%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361186" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 comment clearfix li-comment highlander-comment" id="comment-1361216" data-comment-id="1361216">
+			<div class="div-comment" id="div-comment-1361216">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<!-- avatar info cached Sat, 05 Oct 13 03:41:59 +0000 --><a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/d41d8cd98f00b204e9800998ecf8427e?d=http://pro.gigaom.com/wp-content/plugins/buddypress/bp-core/images/mystery-man.jpg&amp;s=50&amp;r=G"></a>					</div>
+					<div class="comment-info">
+						<cite>Natascha Thomson</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361216" class="comment-permalink">Thursday, August 29 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Interesting article, Thank you @Om!</p>
+<p>As a US immigrant from Germany, I have an accent. Most people think it&#8217;s light but there are some people who just cannot understand a word I say. </p>
+<p>My point: &#8220;hard to understand accent&#8221; is a relative thing.</p>
+<p>Having said that, the ability to communicate effectively is important.</p>
+<p>Best,</p>
+<p>Natascha</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361216#react-wp' onclick='return addComment.moveForm("comment-1361216", "1361216", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361216" class="comment-sharing-icons" id="comment-sharing-1361216"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361216" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361216">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361216&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Natascha+Thomson" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361216&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Natascha+Thomson&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361216&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361216&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Natascha+Thomson" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361216" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Natascha%20Thomson%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361216" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 comment clearfix li-comment highlander-comment" id="comment-1361278" data-comment-id="1361278">
+			<div class="div-comment" id="div-comment-1361278">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/82af70a673cb7874ec3430d299166bb7?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite><a href='http://www.sergetheconcierge.com' rel='external nofollow' class='url'>Serge Lescouarnec</a></cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361278" class="comment-permalink">Thursday, August 29 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Om,</p>
+<p>Even though I have lived in the US for 25 years, I still have a strong French accent.</p>
+<p>Some like it, some don&#8217;t. I don&#8217;t loose sleep over it.</p>
+<p>As you write, one is made aware of her/his accent when listening to a recording of their voice.</p>
+<p>Regarding language, we might be confusing 2 things here, accent and vocabulary, fluency.</p>
+<p>Coming from Europe (same must be true for people from India), I knew British English and had to learn differences with American English.</p>
+<p>Having lived in same state since I came to the US, for past few years, i introduce myself as &#8216;The French Guy from New Jersey&#8217; which often breaks the ice.</p>
+<p>My 2 cents</p>
+<p>Serge (the Concierge)<br />
+Twitter: @theconcierge</p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361278#react-wp' onclick='return addComment.moveForm("comment-1361278", "1361278", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361278" class="comment-sharing-icons" id="comment-sharing-1361278"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361278" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361278">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361278&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Serge+Lescouarnec" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361278&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Serge+Lescouarnec&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361278&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361278&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Serge+Lescouarnec" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361278" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Serge%20Lescouarnec%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361278" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 comment clearfix li-comment highlander-comment" id="comment-1361294" data-comment-id="1361294">
+			<div class="div-comment" id="div-comment-1361294">
+				<div class="comment-meta clearfix">
+					<div class="comment-author-avatar">
+						<a class="avatar-placeholder" rel="nofollow" href="http://www.gravatar.com/avatar/40f1bd231ce5e6deced4124aa608faf6?d=retro&amp;s=55&amp;r=pg"></a>					</div>
+					<div class="comment-info">
+						<cite>Prabhakar</cite>
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361294" class="comment-permalink">Thursday, August 29 2013</a>
+					</div>
+				</div>
+				<div class="comment-content">
+					<div class="comment-text">
+						<p>Thanks for a great article Om. I am not in what context PG said that but definitely no entrepreneur wants to work with folks who cannot see world beyond accents. I am indian and i have been living in the bay area for the past 13 years. Though my startup failed i dont think it failed because of my heavy accent.<br />
+People who think accent is a problem, please take a look at this presentation &#8211; <a href="http://hbr.org/2013/06/how-to-give-a-killer-presentation/" rel="nofollow">http://hbr.org/2013/06/how-to-give-a-killer-presentation/</a></p>
+					</div>
+					<div class="comment-sharing clearfix">
+						<span class="comment-sharing-inner comment-sharing-reply">
+							<a class='comment-reply-link' href='/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/?replytocom=1361294#react-wp' onclick='return addComment.moveForm("comment-1361294", "1361294", "react-wp", "684658")'><i class="goicon icon-reply"></i>Reply</a>						</span>
+								<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361294" class="comment-sharing-icons" id="comment-sharing-1361294"><i class="goicon icon-share-alt"></i>Share</a>
+		<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comment-1361294" class="sharing-cancel">Cancel</a>
+		<div class="social" id="sharing-1361294">
+			Share this comment
+			<ul class="inline-list">
+				<li class="twitter">
+					<a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361294&#038;via=gigaom&#038;text=Interesting+comment+on+%22Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Prabhakar" title="Share on Twitter" class="goicon icon-twitter"></a>
+				</li>
+				<li class="facebook">
+					<a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361294&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Prabhakar&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361294&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300" title="Share on Facebook" class="goicon icon-facebook"></a>
+				</li>
+				<li class="linkedin">
+					<a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361294&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=Interesting+comment+on+%22Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley%22+by+Prabhakar" title="Share on LinkedIn" class="goicon icon-linkedin"></a>
+				</li>
+				<li class="googleplus">
+					<a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361294" title="Share on Google+" class="goicon icon-googleplus"></a>
+				</li>
+				<li class="email">
+					<a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Interesting%20comment%20on%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20by%20Prabhakar%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F%23comment-1361294" title="Share via Email" class="goicon icon-email"></a>
+				</li>
+			</ul>
+		</div>
+							</div>
+				</div>
+			</div>
+		</li><!-- #comment-## -->
+			</ol>
+
+							<nav id="comment-nav-below" class="navigation" role="navigation" title="Comment navigation">
+										<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/" class="nav-next button primary">Newer Comments &rarr;</a>				</nav>
+							
+		</div>
+		
+					<div id="comment-form-bottom"></div>
+			</div>
+		</div>
+		<div id="go-comments-5" class="widget clearfix widget-go-comments">		<span class="wijax-loading">
+			<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/wijax/d081d23bfc5d365fd719c3c1e7a74c8a" class="wijax-source wijax-manual" rel="nofollow"></a>
+			<span class="wijax-opts" style="display: none;">
+				{"source":"http:\/\/gigaom.com\/2013\/08\/28\/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley\/wijax\/d081d23bfc5d365fd719c3c1e7a74c8a","varname":"wijax_3bb78f663bb264ee72c197bce6238327","title_element":"h2","title_class":"widget-title","title_before":"%3Ch2%20class%3D%22widget-title%22%3E","title_after":"%3C%2Fh2%3E"}			</span>
+		</span>
+		<script type="text/javascript">
+		(function($) {
+			$( '#comments-list nav a div' ).text( 'View All Comments' );
+
+			// Watch for clicks to the load all comments button
+			$('#comments-list nav a').click(function( event ) {
+				event.preventDefault();
+				$( 'a.wijax-manual' ).myWijaxLoader();
+				$( this ).replaceWith( '<img src="http://s2.wp.com/wp-content/themes/vip/gigaom-plugins/go-social-comments/components/images/ajax-loader.gif?m=1355523676g" alt="loading">' );
+			});
+		})(jQuery);
+		</script>
+		</div>	</div>
+</section>
+
+<aside id="sidebar" class="four columns">
+	<div id="go-widget-areas-6" data-remove-on-inject-classes=" " class="  single-above-the-fold go-custom-widget-area_single-above-the-fold widget clearfix widget-go-widget-areas widget-area"><div id="go-ads-5" class="widget">		<div id="ad-a-container" class="ad ad-300x250">
+						<div class="go-ad-call-to-action">
+									<h3 class="comments-title" data-comment-count="21">
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comments" title="Comment on Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><i class="goicon icon-arrow-down"></i><i class="goicon icon-comment"></i>21 Comments</a>					</h3>
+								</div>
+						<div class="advertisement-notice">Advertisement</div>
+			<div id="ad-a">
+			<script>
+				amplify.subscribe('go-init', function() {
+					googletag.cmd.push(function() { googletag.display('ad-a'); });
+				});
+			</script>
+			<!-- DFP AD SLOT: tech_300x250_top -->
+			</div>
+		</div>
+		</div></div><div id="go-inject-11" class="go-inject-11 phone_ phone_ tablet_ tablet_ full_ full_ widget clearfix widget-go-inject inject"></div><div id="go-inject-10" class="go-inject-10 phone_ phone_ tablet_ tablet_ full_ full_ widget clearfix widget-go-inject inject"></div><div id="wijax-48" class="widget clearfix widget_wijax">		<span class="wijax-loading">
+			<img src="http://s2.wp.com/wp-content/themes/vip/gigaom-plugins/go-local-bcms/../bcms/components//img/loading-gray.gif?m=1355523676g" alt="loading external resource" />
+			<a href="http://gigaom.com/wijax/b4c18ee2369613d36a980906d2a42c95" class="wijax-source wijax-onload" rel="nofollow"></a>
+			<span class="wijax-opts" style="display: none;">
+				{"source":"http:\/\/gigaom.com\/wijax\/b4c18ee2369613d36a980906d2a42c95","varname":"wijax_e0c144502682d634ee3667520ac9f80a","title_element":"h2","title_class":"widget-title","title_before":"%3Ch2%20class%3D%22widget-title%22%3E","title_after":"%3C%2Fh2%3E"}			</span>
+		</span>
+</div><div id="go-ads-8" class="widget clearfix widget-go-ads">		<div id="ad-d-container" class="ad ad-300x600">
+						<div class="go-ad-call-to-action">
+									<h3 class="comments-title" data-comment-count="21">
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comments" title="Comment on Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><i class="goicon icon-arrow-down"></i><i class="goicon icon-comment"></i>21 Comments</a>					</h3>
+								</div>
+						<div class="advertisement-notice">Advertisement</div>
+			<div id="ad-d">
+			<script>
+				amplify.subscribe('go-init', function() {
+					googletag.cmd.push(function() { googletag.display('ad-d'); });
+				});
+			</script>
+			<!-- DFP AD SLOT: tech_300x600 -->
+			</div>
+		</div>
+		</div><div id="go-widget-areas-7" data-remove-on-inject-classes=" " class="  single-ad-anchor go-custom-widget-area_single-ad-anchor widget clearfix widget-go-widget-areas widget-area"><div id="go-ads-double-2" class="widget">		<div id="ad-e-container" class="ad ad-slot-1 ad-125x125">
+			<div class="advertisement-notice">Advertisement</div>
+			<div id="ad-e">
+				<script type="text/javascript">
+					amplify.subscribe('go-init', function() {
+						googletag.cmd.push(function() { googletag.display('ad-e'); });
+					});
+				</script>
+				<!-- DFP AD SLOT: tech_125x125_a -->
+			</div>
+		</div>
+		<div id="ad-f-container" class="ad ad-slot-2 ad-125x125">
+			<div class="advertisement-notice">Advertisement</div>
+			<div id="ad-f">
+				<script type="text/javascript">
+					amplify.subscribe('go-init', function() {
+						googletag.cmd.push(function() { googletag.display('ad-f'); });
+					});
+				</script>
+				<!-- DFP AD SLOT: tech_125x125_b -->
+			</div>
+		</div>
+		</div><div id="go-ads-9" class="widget">		<div id="ad-c-container" class="ad ad-300x250">
+						<div class="go-ad-call-to-action">
+									<h3 class="comments-title" data-comment-count="21">
+						<a href="http://gigaom.com/2013/08/28/patterns-fallacies-why-they-have-no-place-in-my-silicon-valley/#comments" title="Comment on Patterns &amp; fallacies: Why they have no place in my Silicon Valley"><i class="goicon icon-arrow-down"></i><i class="goicon icon-comment"></i>21 Comments</a>					</h3>
+								</div>
+						<div class="advertisement-notice">Advertisement</div>
+			<div id="ad-c">
+			<script>
+				amplify.subscribe('go-init', function() {
+					googletag.cmd.push(function() { googletag.display('ad-c'); });
+				});
+			</script>
+			<!-- DFP AD SLOT: tech_300x250_low -->
+			</div>
+		</div>
+		</div></div></aside>
+
+		</div>		<footer id="foot">
+			<div id="foot-container" class="row">
+	<div class="twelve columns">
+		<ul class="properties">
+			<li><a href="http://gigaom.com"><i class="goicon icon-news"></i>News</a></li>
+			<li><a href="http://event.gigaom.com"><i class="goicon icon-events"></i>Events</a></li>
+			<li><a href="http://paidcontent.org"><i class="goicon icon-paidcontent"></i>paidContent</a></li>
+			<li><a href="http://pro.gigaom.com"><i class="goicon icon-pro"></i>Research</a></li>
+			<li><a href="http://jobs.gigaom.com"><i class="goicon icon-jobs"></i>Jobs</a></li>
+		</ul>
+	</div>
+
+	<div class="twelve columns">
+		<ul class="about">
+			<ul id="menu-footer" class="content"><li id="menu-item-601819" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-601819"><a href="/privacy-policy/">Privacy Policy</a></li>
+<li id="menu-item-601820" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-601820"><a href="/terms-of-service/">Terms of Service</a></li>
+<li id="menu-item-601821" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-601821"><a href="/about/">About</a></li>
+<li id="menu-item-601822" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-601822"><a href="/about/editorial-team/">Editorial Team</a></li>
+<li id="menu-item-601824" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-601824"><a href="http://about.gigaom.com/mediakit/">Media Kit</a></li>
+<li id="menu-item-601825" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-601825"><a href="/about/contact/">Contact</a></li>
+</ul>		</ul>
+	</div>
+
+	<div class="twelve columns copyright">
+		<a href="http://about.gigaom.com" title="GigaOM"><i class="goicon logo-gigaom"></i></a>
+		<a href="http://about.gigaom.com">&copy; 2013 GigaOM</a>
+	</div>
+
+	<div class="twelve columns vip">
+		<a href="http://vip.wordpress.com/">Powered by WordPress.com VIP</a>
+		<a href="http://vip.wordpress.com/" class="goicon icon-wordpress"></a>
+	</div>
+</div>		</footer>
+	</div>
+</div>
+<nav class="sidepanel primary left">
+	<ul class="links">
+		<li class="active expandable">
+			<h5>News</h5>
+			<ul id="menu-topics-1" class="content"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599790"><a href="/">Home</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599791"><a href="/channel/apple/">Apple</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599792"><a title="Cleantech" href="/channel/cleantech/">Cleantech</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599793"><a title="Cloud" href="/channel/cloud/">Cloud</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599794"><a title="Data" href="/channel/data/">Data</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599795"><a title="Europe" href="/channel/europe/">Europe</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599796"><a title="Mobile" href="/channel/mobile/">Mobile</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599797"><a title="Video" href="/channel/video/">Video</a></li>
+</ul>		</li>
+		<li class="expandable">
+			<h5>About</h5>
+			<ul id="menu-about-1" class="content"><li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599798"><a href="http://about.gigaom.com/">About GigaOM</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599799"><a href="http://about.gigaom.com/team/editorial/">Meet Editorial</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599800"><a href="http://about.gigaom.com/contact/">Contact</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599801"><a href="http://about.gigaom.com/mediakit/">Media Kit</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599802"><a href="http://gigaom.com/terms-of-service/">Terms of Service</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599803"><a href="http://gigaom.com/privacy-policy/">Privacy Policy</a></li>
+</ul>		</li>
+		<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599786"><a title="Events" href="http://event.gigaom.com/">Events</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599787"><a title="Research" href="http://pro.gigaom.com/">Research</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599788"><a title="Jobs" href="http://jobs.gigaom.com/">Jobs</a></li>
+<li class="menu-item menu-item-type-custom menu-item-object-custom menu-item-599789"><a title="paidContent" href="http://paidcontent.org/">paidContent</a></li>
+	</ul>
+</nav>
+<nav class="sidepanel follow right">
+	<ul class="links follow">
+		<li class="search">
+			<form action="http://gigaom.com"><input type="search" placeholder="Search GigaOM" name="s" /></form>
+		</li>
+		<li>
+						<div class="share">
+				<h5>Share</h5>
+				<span class="shadow-hide"></span>
+				<ul class="content with-icons">
+					<li><a href="https://twitter.com/intent/tweet?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;via=gigaom&#038;text=Patterns+%26+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley"><i class="goicon icon-twitter"></i>Twitter</a></li>
+					<li><a href="https://www.facebook.com/dialog/feed?app_id=180650338636285&#038;link=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;name=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;description=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+&#038;caption=GigaOM&#038;redirect_uri=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;picture=http%3A%2F%2Fgigaom2.files.wordpress.com%2F2012%2F05%2Fshutterstock_79978657.jpg%3Fw%3D300"><i class="goicon icon-facebook"></i>Facebook</a></li>
+					<li><a href="http://www.linkedin.com/shareArticle?mini=true&#038;url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F&#038;title=Patterns+%26amp%3B+fallacies%3A+Why+they+have+no+place+in+my+Silicon+Valley&#038;source=http%3A%2F%2Fgigaom.com&#038;summary=If+history+has+taught+us+anything%2C+then+the+line+between+patterns+and+fallacies+is+nearly+invisible.+In+a+place+where+we+talk+about+inventing+the+future%2C+the+patterns+%28or+fallacies%29+of+the+past+can+prove+to+be+counterproductive+and+create+unnecessary+biases.+"><i class="goicon icon-linkedin"></i>LinkedIn</a></li>
+					<li><a href="https://plus.google.com/share?url=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F"><i class="goicon icon-googleplus"></i>Google+</a></li>
+					<li><a href="mailto:?subject=Check%20out%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22&#038;body=Thought%20you%20might%20enjoy%20this%20%22Patterns%20%26%20fallacies%3A%20Why%20they%20have%20no%20place%20in%20my%20Silicon%20Valley%22%20from%20Om%20Malik%3Ahttp%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F"><i class="goicon icon-email"></i>Email</a></li>
+				</ul>
+			</div>
+					</li>
+	</ul>
+</nav>
+		<nav class="sidepanel events right">
+			<h5>Coming up at GigaOM</h5>
+			<section class="combined">
+				<section class="editorial"></section>
+				<section class="conferences"></section>
+				<section class="meetups"></section>
+				<section class="webinars"></section>
+				<ul class="links">
+					<li class="more more-conferences">
+						<a href="http://event.gigaom.com">More events</a>
+					</li>
+					<li class="more more-meetups">
+												<a href="#">More meetups</a>
+					</li>
+					<li class="more more-webinars">
+						<a href="http://event.gigaom.com">More webinars</a>
+					</li>
+					<li class="more more-editorial">
+												<a href="http://gigaom.com">More stuff</a>
+					</li>
+				</ul>
+			</section>
+		</nav>
+		
+<div id="wp_footer">		<script type='text/javascript'>
+		var googletag = googletag || {};
+		googletag.cmd = googletag.cmd || [];
+		(function() {
+		var gads = document.createElement('script');
+		gads.async = true;
+		gads.type = 'text/javascript';
+		var useSSL = 'https:' == document.location.protocol;
+		gads.src = (useSSL ? 'https:' : 'http:') +
+		'//www.googletagservices.com/tag/js/gpt.js';
+		var node = document.getElementsByTagName('script')[0];
+		node.parentNode.insertBefore(gads, node);
+		})();
+		</script>
+		<script type='text/javascript'>
+		googletag.cmd.push(function() {
+			googletag.defineSlot("/1008864/tech_300x250_mid", [300, 250], "ad-b").addService(googletag.pubads());
+googletag.defineSlot("/1008864/tech_300x250_top", [300, 250], "ad-a").addService(googletag.pubads());
+googletag.defineSlot("/1008864/tech_300x600", [300, 600], "ad-d").addService(googletag.pubads());
+googletag.defineSlot("/1008864/tech_125x125_a", [125, 125], "ad-e").addService(googletag.pubads());
+googletag.defineSlot("/1008864/tech_125x125_b", [125, 125], "ad-f").addService(googletag.pubads());
+googletag.defineSlot("/1008864/tech_300x250_low", [300, 250], "ad-c").addService(googletag.pubads());
+			googletag.pubads().setTargeting("post_tag", "alex mehr");
+googletag.pubads().setTargeting("post_tag", "andy bechtolsheim");
+googletag.pubads().setTargeting("post_tag", "andy grove");
+googletag.pubads().setTargeting("post_tag", "arianna huffington");
+googletag.pubads().setTargeting("post_tag", "billy beane");
+googletag.pubads().setTargeting("post_tag", "jason giambi");
+googletag.pubads().setTargeting("post_tag", "jason isringhausen");
+googletag.pubads().setTargeting("post_tag", "jayshree ullal");
+googletag.pubads().setTargeting("post_tag", "johnny damon");
+googletag.pubads().setTargeting("post_tag", "naseem nicholas taleb");
+googletag.pubads().setTargeting("post_tag", "om says");
+googletag.pubads().setTargeting("post_tag", "paul graham");
+googletag.pubads().setTargeting("post_tag", "shayan zadeh");
+googletag.pubads().setTargeting("post_tag", "the new york times");
+googletag.pubads().setTargeting("post_tag", "tech");
+googletag.pubads().setTargeting("company", "arista-networks");
+googletag.pubads().setTargeting("company", "forbes.com");
+googletag.pubads().setTargeting("company", "intel corp.");
+googletag.pubads().setTargeting("company", "khosla ventures");
+googletag.pubads().setTargeting("company", "oakland athletics");
+googletag.pubads().setTargeting("company", "sun microsystems");
+googletag.pubads().setTargeting("company", "the new york times");
+googletag.pubads().setTargeting("company", "zoosk");
+			googletag.pubads().enableSingleRequest();
+			googletag.enableServices();
+		});
+		</script>
+		
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom,posttag.alex-mehr,posttag.andy-bechtolsheim,posttag.andy-grove,posttag.arianna-huffington,posttag.billy-beane,posttag.jason-giambi,posttag.jason-isringhausen,posttag.jayshree-ullal,posttag.johnny-damon,posttag.naseem-nicholas-taleb,posttag.om-says,posttag.paul-graham,posttag.shayan-zadeh,posttag.the-new-york-times,vip.gigaom2"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cposttag.alex-mehr%2Cposttag.andy-bechtolsheim%2Cposttag.andy-grove%2Cposttag.arianna-huffington%2Cposttag.billy-beane%2Cposttag.jason-giambi%2Cposttag.jason-isringhausen%2Cposttag.jayshree-ullal%2Cposttag.johnny-damon%2Cposttag.naseem-nicholas-taleb%2Cposttag.om-says%2Cposttag.paul-graham%2Cposttag.shayan-zadeh%2Cposttag.the-new-york-times%2Cvip.gigaom2" height="1" width="1" alt="" /></div></noscript>
+
+		<script id="event-post-tpl" type="text/html">
+			<article class="event event-{{{ event_type }}} {{{ event_type }}}-{{{ id }}} {{{ state.type }}}" data-id="{{{ id }}}">
+				<section class="post-meta">{{ where }}</section>
+				<header><a href="{{{ url }}}" class="title">{{{ title }}}</a></header>
+				<section class="post-meta">{{{ when_and_where }}}</section>
+				<section class="body">{{{ content }}}</section>
+			</article>
+		</script>
+				<!-- Quantcast -->
+		<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+		<script type="text/javascript">_qacct="p-7f76HAgni1Oqs";quantserve();</script>
+		<noscript>
+			<a href="http://www.quantcast.com/p-7f76HAgni1Oqs" target="_blank"><img src="http://pixel.quantserve.com/pixel/p-7f76HAgni1Oqs.gif" style="display: none;" height="1" width="1" alt="Quantcast"/></a>
+		</noscript>
+		<!-- Bizo -->
+		<script type="text/javascript">
+			var _bizo_data_partner_id = "459";
+							var _bizo_data_partner_channel_id = "gigaom.tech.com";
+						</script>
+		<script type="text/javascript">
+			(function(){(function(){var b,a;a=document.createElement("script");a.type="text/javascript";a.async='async';a.src=""+(window.location.protocol==="https:"?"https://sjs.":"http://js.")+"bizographics.com/insight.min.js";b=document.getElementsByTagName("script")[0];return b.parentNode.insertBefore(a,b)})();})();
+		</script>
+		<!-- StatCounter -->
+		<script type="text/javascript">
+			var sc_project=2084610;
+			var sc_invisible=1;
+			var sc_security="843e48c0";
+			var sc_remove_link=1;
+		</script>
+		<script async="async" type="text/javascript" src="http://www.statcounter.com/counter/counter_xhtml.js"></script>
+		<noscript>
+			<img src="http://c.statcounter.com/2084610/0/843e48c0/1/" alt="" />
+		</noscript>
+		<!-- Chartbeat -->
+		<script type="text/javascript">
+			(function(){
+				function loadChartbeat() {
+					window._sf_endpt=(new Date()).getTime();
+					var e = document.createElement('script');
+					e.setAttribute('language', 'javascript');
+					e.setAttribute('type', 'text/javascript');
+					e.setAttribute('src',
+					(("https:" == document.location.protocol) ? "https://s3.amazonaws.com/" : "http://") +
+						"static.chartbeat.com/js/chartbeat.js");
+					document.body.appendChild(e);
+				}
+				var oldonload = window.onload;
+				window.onload = (typeof window.onload != 'function') ?
+					loadChartbeat : function() { loadChartbeat(); oldonload(); };
+			})();
+		</script>
+		<!-- comScore -->
+		<script>
+			var _comscore = _comscore || [];
+			_comscore.push({ c1: "2", c2: "13557238" });
+			(function() {
+				var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = 'async';
+				s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+				el.parentNode.insertBefore(s, el);
+			})();
+		</script>
+		<noscript>
+			<img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=13557238&amp;cv=2.0&amp;cj=1" alt="comScore" />
+		</noscript>
+		<!-- Nielsen Online SiteCensus V6.0 -->
+		<script type="text/javascript">
+		(function () {
+			var d = new Image(1, 1);
+			d.onerror = d.onload = function () {
+				d.onerror = d.onload = null;
+			};
+			d.src = ["//secure-us.imrworldwide.com/cgi-bin/m?ci=us-thestreet&cg=0&cc=1&si=", escape(window.location.href), "&rp=", escape(document.referrer), "&ts=compact&rnd=", (new Date()).getTime()].join('');
+		})();
+		</script>
+		<noscript>
+			<div>
+				<img src="//secure-us.imrworldwide.com/cgi-bin/m?ci=us-thestreet&amp;cg=0&amp;cc=1&amp;ts=noscript" width="1" height="1" alt="" />
+			</div>
+		</noscript>
+		<!-- Marketo -->
+		<script type="text/javascript">
+			jQuery.ajax({
+				url: document.location.protocol + '//munchkin.marketo.net/139/munchkin.js',
+				dataType: 'script',
+				cache: true,
+				success: function() {
+				    Munchkin.init('863-MUO-381', {disableClickDelay : true});
+				}
+			});
+		</script>
+		<!-- CrazyEgg -->
+		<script type="text/javascript">
+			setTimeout(function(){var a=document.createElement("script");
+			var b=document.getElementsByTagName("script")[0];
+			a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0008/2540.js?"+Math.floor(new Date().getTime()/3600000);
+			a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+		</script>
+				<script type="text/javascript">
+			var social_identity_server = 'http://pro.gigaom.com';
+		</script>
+		<div id="dialog" class="goauth-overlay" title="Please login to complete your comment">
+			<div id="credential-social">
+				<h2>Comment with your social network:</h2>
+				<ul class="credential-popup-logins inline-list">
+					
+			<li><a href="http://pro.gigaom.com/?goauth_start=1&amp;goauth_service=twitter&amp;goauth_action=login&amp;loc=/?goauth_action=closewindow&amp;type=authenticate" class="goauth-twitter" rel="nofollow" title="Twitter"><i class="goicon icon-twitter"></i></a></li>
+			<li><a href="http://pro.gigaom.com/?goauth_start=1&amp;goauth_service=facebook&amp;goauth_action=login&amp;loc=/?goauth_action=closewindow&amp;type=authenticate" class="goauth-facebook" rel="nofollow" title="Facebook"><i class="goicon icon-facebook"></i></a></li>
+			<li><a href="http://pro.gigaom.com/?goauth_start=1&amp;goauth_service=linkedin&amp;goauth_action=login&amp;loc=/?goauth_action=closewindow&amp;type=authenticate" class="goauth-linkedin" rel="nofollow" title="LinkedIn"><i class="goicon icon-linkedin"></i></a></li>
+		<li><a href="http://gigaom2.wordpress.com/wp-login.php?redirect_to=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F" class="goauth-wpdotcom" rel="nofollow" title="WordPress.com"><i class="goicon icon-wordpress"></i></a></li>
+
+				<li><a href="http://pro.gigaom.com/subscription/sign-in/?redirect_to=/?goauth_action=closewindow" class="goauth-gigaom" rel="nofollow" title="GigaOM Pro"><i class="goicon logo-gigaom-mark"></i></a></li>				</ul>
+				<span class="credentials-social-change-service"><a href="#">Not you?</a></span>
+				<div class="remember">
+					<input type="checkbox" checked="checked" id="social-identity-remember" name="social-identity-remember" value="remember" />
+					<label for="social-identity-remember">Remember me</label>
+				</div>
+			</div>
+			<div class="credential-or"><span>or</span></div>
+			<div id="credential-wp">
+				<h2>Comment as guest:</h2>
+			</div>
+			<div id="privacy-tos">
+				By continuing you are agreeing to our <a target="_blank" href="https://gigaom.com/terms-of-service/">Terms of Service</a> and <a target="_blank" href="https://gigaom.com/privacy-policy/">Privacy Policy</a>.
+			</div>
+			<div class="ajax-loading">
+				Submitting comment...
+				<br>
+				<img src="http://s2.wp.com/wp-content/themes/vip/gigaom-plugins/go-social-comments/components/images/ajax-loader.gif?m=1355523676g" alt="loading">
+			</div>
+		</div>
+		<div id="login-dialog" class="goauth-overlay" title="Please login with one of the following services">
+			<div id="credential-social-login">
+				<span class="credentials-social-title">Comment with your social network:</span>
+				<ul class="credential-popup-logins inline-list">
+					
+			<li><a href="http://pro.gigaom.com/?goauth_start=1&amp;goauth_service=twitter&amp;goauth_action=login&amp;loc=/?goauth_action=closewindow&amp;type=authenticate" class="goauth-twitter" rel="nofollow" title="Twitter"><i class="goicon icon-twitter"></i></a></li>
+			<li><a href="http://pro.gigaom.com/?goauth_start=1&amp;goauth_service=facebook&amp;goauth_action=login&amp;loc=/?goauth_action=closewindow&amp;type=authenticate" class="goauth-facebook" rel="nofollow" title="Facebook"><i class="goicon icon-facebook"></i></a></li>
+			<li><a href="http://pro.gigaom.com/?goauth_start=1&amp;goauth_service=linkedin&amp;goauth_action=login&amp;loc=/?goauth_action=closewindow&amp;type=authenticate" class="goauth-linkedin" rel="nofollow" title="LinkedIn"><i class="goicon icon-linkedin"></i></a></li>
+		<li><a href="http://gigaom2.wordpress.com/wp-login.php?redirect_to=http%3A%2F%2Fgigaom.com%2F2013%2F08%2F28%2Fpatterns-fallacies-why-they-have-no-place-in-my-silicon-valley%2F" class="goauth-wpdotcom" rel="nofollow" title="WordPress.com"><i class="goicon icon-wordpress"></i></a></li>
+
+				<li><a href="http://pro.gigaom.com/subscription/sign-in/?redirect_to=/?goauth_action=closewindow" class="goauth-gigaom" rel="nofollow" title="GigaOM Pro"><i class="goicon logo-gigaom-mark"></i></a></li>				</ul>
+			</div>
+		</div>
+		<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-89c6ff98059617751fcf312690965fa0">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/gigaom2.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/gigaom2.wordpress.com\/wp-login.php?action=logout&_wpnonce=36ee73df56","homeURL":"http:\/\/gigaom.com\/","postID":"684658","gravDefault":"retro","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1379020420j'></script>
+<div class="gcse-searchbox" data-resultsUrl="http://gigaom.com/" data-newWindow="false" data-gname="sitesearch" data-autoCompleteMatchType="any" data-autoCompleteMaxCompletions="5" data-enableHistory="true" data-queryParameterName="s"></div>
+<div class="gcse-searchresults" data-refinementStyle="link" data-gname="sitesearch"></div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var go_theme = {"property":"gigaom","ajaxurl":"http:\/\/gigaom2.wordpress.com\/wp-admin\/admin-ajax.php","template_url":"http:\/\/s0.wp.com\/wp-content\/themes\/vip\/gigaom3-parent","wp_url":"http:\/\/gigaom2.wordpress.com"};
+var go_theme_injection_areas = [];
+var go_responsive = {"full":{"go-inject-7":{"widget":"go-widget-areas-4","class":"","title":"Section A"},"go-inject-8":{"widget":"go-widget-areas-5","class":"","title":"Section B"},"go-inject-11":{"widget":"postloop-25","class":"","title":"Related Stories"},"go-inject-10":{"widget":"go-ads-3","class":"","title":"Ad B"},"go-inject-12":{"widget":"go-ads-7","class":"","title":"Ad C"}},"tablet":{"go-inject-15":{"widget":"go-ads-9","class":"comment-ad","title":"Tablet Portrait Ad"},"go-inject-6":{"widget":"go-widget-areas-4","class":"","title":"After first loop"}}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJy10sFOwzAMBuAXIrVgoKkHxHkHjjyA51qZuyYOsbuuPD2dxAEhpA1tHC1bX/5fCkwlkGbn7NAbdHwQ4nJseruDbyvfcWKDgxSIElFTKMMYJRtsKRmQpqJ5ObQTMuFcVJahSZIvl6KGqBoHDphxmF3oJ/zLRfCKtJccz76zCgXrV80lF/DRuS4M9O8j17nZYujUJbGOflHws+CgtH/bXO0w2i360UwD36RYnbpNwsivWOxqLI3mSDv+M0RaGSSL//cPq2zyccr3kp7vV+v26fFh3bb9J7ATNnQ='></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var go_events_endpoint_url = "\/go-event-navigation-json\/";
+/* ]]> */
+</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var go_local_bsocial = {"title":null,"twitter_id":"gigaom","facebook_page":"https:\/\/www.facebook.com\/GigaOM","excerpt_max_length":"104","quote_max_length":"104","general_max_length":"109"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJy1l91y2yAQhV+oiGmSaaYXnT5DZ/oCK1jjdYBVAUlOn74rOa5d1xMbjXInA+dbfs6yWI+dMhwLxqJDrzrfO4pZl5FKwaRaD+alpWRVR6g7jJaia3b5k67RRRwwXdeWLQbMeqBOO3LA4VF1kKaeXdaBosa98CJ4TZwVJ5IuKMRRmS1Eh9W8DffRzgS9+9Vjem0M8wutAZJVxtIEHtaAnVoaMIaTnb7WxXpMJa/LbPtSOK4MNR4hLfHOu9QNp7DyRANagh9T6092zq9sgwiDiMrqPijMvlC3xl50kva4ZW8xLU90w55Ty/tTfh5+Kxm1nJowd+JMGlAVaL2I/muphktayuUGwzKhxKff9R4519rXCIHMMkaRvVHZwAKfzvosKblU68D76WwXiUeQM90IoVre4laSiG+b829BczwXmog+S/AghpHxeeKd9VTh5iqhTsl8gT0zrOnTdO2pQuGOfFoS4y3DKA6E45oRroz4YLxqxRBcGcaz2F+1mQ3NF89FjH+6PwysTIEq+FHGIczMC3yCAQrUGeZ95JtNpkKRm3tu4fvRuDeYuqJG2sF+zV04Djj2H9kUje8tnq1L93RcYU/NdMOcr/HW+JGsw1KjkGKTa8YH7nPVlObiMFW0GpFN4Fyt6PDcq1F0nOnwVqqYmhwju5WNR1a+qNwuQVWeg75sjZ/+pFRxwV5j2XteJGZL3l6pb9/Dt8+Pz09fHh6evj7v/gAIlEL0'></script>
+<script type="text/javascript">	
+	var wijax_widget_reload = true;	
+	;(function($){
+		$.fn.myWijaxLoader = function()
+		{
+			var widget_source = $(this).attr('href');
+			var $widget_area = $(this).closest('.wijax-loading');
+			var $widget_parent = $widget_area.parent();
+			var opts = $.parseJSON( $widget_parent.find('span.wijax-opts').text() );
+			var varname = opts.varname;
+			var title_before = unescape( opts.title_before );
+			var title_after = unescape( opts.title_after );
+
+			$.ajax({ 
+				url: widget_source, 
+				dataType: 'script',
+				cache: true,
+				success: function() {
+					// insert the fetched markup
+					$( $widget_area ).replaceWith( window[varname] );
+			
+					// find the widget title, add it to the DOM, remove the temp span
+					var $widget_title_el = $widget_parent.find('span.wijax-widgettitle');
+					var widget_title = $widget_title_el.text();
+
+					//don't set a widget title div if there is no title text
+					if (widget_title)
+						$widget_parent.prepend(title_before + widget_title + title_after);
+					
+					$widget_title_el.remove();
+			
+					// find and set the widget ID and classes
+					var $widget_attr_el = $widget_parent.find( 'span.wijax-widgetclasses' );
+					var widget_id = $widget_attr_el.attr( 'id' );
+					var widget_classes = $widget_attr_el.attr( 'class' );
+					$widget_parent.attr( 'id' , widget_id );
+					$widget_parent.addClass( widget_classes );
+					$widget_parent.removeClass( 'widget_wijax' );
+					$widget_attr_el.remove();
+				}
+			});
+		};
+
+		// do the onload widgets
+		$(window).load(function(){
+			// find and load the widgets
+			$('a.wijax-source.wijax-onload').each(function() {
+				$(this).myWijaxLoader();
+			});	
+
+			// if we've already scrolled or there is a hash in the url,
+			// fire the scroll event and get the excerpts and widgets	
+			if ( ( document.location.hash ) || ( window.pageYOffset > 25 ) || ( document.body.scrollTop > 25 ) )
+				$( document ).trigger( 'scroll' );
+		});	
+
+		// do the onscroll actions
+		$(window).one('scroll', function(){
+			// widgets
+			$('a.wijax-source.wijax-onscroll').each(function() {
+				$(this).myWijaxLoader();
+			});
+		});
+	})(jQuery);
+</script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'14960843','v':'wpcom','tz':'-7','user_id':'0','post':'684658','subd':'gigaom2'});
+function st_vt() {var x=document.createElement("img");x.src="http://stats.wordpress.com/g.gif?blog=14960843&v=wpcomvt&tz=-7&user_id=0&post=684658&subd=gigaom2&rand="+Math.random();}
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtib2E/SzdEJm0lUEtbdFU0fFk4cHZvcUFrZT90Tn4yQm1+R3NyNTcyTWF4NTdscyUlZGkwYjQzSnVJTS4rL3VvTDFxLTNCQXpKZGFSVUh5VDN8citiM2J8Sm1QfC9zZGxOV1taRlV1NWtCcE5hWnJQWnl2S0xTP2ssMSVWYnBUKz8xS3IvaEc4dzh6YXMvJktERHklfltob3ZXMnlrelErRWxvZzZGQzlJV2o9LnUvV1RjVVoxb2JlQldISHEwWWhwN3QwWlZOOXRKZExOeGxSQyVpUzF6UlY='});
+addLoadEvent(function(){linktracker_init('14960843',684658);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></div>
+
+</body>
+</html>

@@ -1,0 +1,121 @@
+   #[1]RSS [2]RSS/link-blog [3]Outline
+
+   [4]Scripting News
+     * [5]Links
+          + [6]Linkblog
+          +
+          + [7]Comments
+          + [8]About this site
+     * [9]Fargo
+          + [10]What is Fargo?
+          +
+          + [11]What is an outliner?
+          + [12]Blogging with Fargo
+          +
+          + [13]Use Fargo now
+          +
+          + [14]Development blog
+          + [15]Small Picture, Inc.
+     * [16]Testing
+          + [17]Hello Walter!
+          + [18]Goodbye Walter
+          +
+          + [19]Show Editor Lab
+          + [20]Hide Editor Lab
+          +
+          + [21]Trex version
+     * [22]Rivers
+          + [23]Personal
+          +
+          + [24]Movies
+          + [25]Podcasts
+          + [26]Tech
+          + [27]NYT
+          + [28]Frontier
+          + [29]World
+          +
+          + [30]Fargo
+     * [31]Archive
+     * [32]Dave
+     *
+     *
+
+     * [33]Home/
+     * [34]2013/
+     * [35]September 2013/
+     * [36]September 4
+
+Fargo gets Find
+
+   By [37]Dave Winer.
+
+   Today [38]Fargo got its [39]Find command, finally.
+
+   The hard part of doing Find in a browser-based app is figuring out how
+   to reliably get the keystrokes for Find and Find again, Cmd-F and G
+   respectively.
+
+   [pope.gif] The browser has its own Find, but an outliner like Fargo
+   really needs to do it for itself. The browser doesn't know about text
+   that's tucked away under collapsed headlines, for example. And it
+   shouldn't be searching the menus and the text in the right margin.
+
+   So I did a [40]search, read a couple of Stack Overflow threads, and
+   decided to give [41]keypress.js a try. It seems to work, nicely done!
+
+   It works well in Chrome and Safari, problems in Firefox.
+
+   This is something the browser guys should get together on, imho, if
+   there's going to be a browser-based apps ecosystem.
+     __________________________________________________________________
+
+   Posted: Wednesday, September 4, 2013 at 5:51 PM
+
+References
+
+   Visible links
+   1. http://scripting.com/rss.xml
+   2. http://links.scripting.com/rss.xml
+   3. https://dl.dropbox.com/s/v8e5gighrh8prpc/myPublicProfile.opml
+   4. http://scripting.com/
+   5. http://scripting.com/2013/09/04/fargoGetsFind
+   6. http://links.scripting.com/
+   7. http://scripting.com/2013/08/25/howCommentsWorkOnScriptingNews
+   8. http://scripting.com/2013/08/04/aboutScriptingNews
+   9. http://scripting.com/2013/09/04/fargoGetsFind
+  10. http://docs.fargo.io/whatIsFargo
+  11. http://docs.fargo.io/outlinerHowto
+  12. http://docs.fargo.io/blogging/firstPost
+  13. http://fargo.io/
+  14. http://docs.smallpict.com/
+  15. http://smallpicture.com/
+  16. http://scripting.com/2013/09/04/fargoGetsFind
+  17. javascript: helloWalter ();
+  18. javascript: goodbyeWalter ();
+  19. javascript: inPageShowEditor ();
+  20. javascript: sayTrexVersion ();
+  21. javascript: sayTrexVersion ();
+  22. http://scripting.com/2013/09/04/fargoGetsFind
+  23. http://tabs.mediahackers.org/?panel=dave
+  24. http://tabs.mediahackers.org/?panel=movies
+  25. http://tabs.mediahackers.org/?panel=podcasts
+  26. http://tabs.mediahackers.org/?panel=tech
+  27. http://tabs.mediahackers.org/?panel=nyt
+  28. http://tabs.mediahackers.org/?panel=frontier
+  29. http://tabs.mediahackers.org/?panel=world
+  30. http://fargo.io/river.html
+  31. http://dave.smallpict.com/archive
+  32. http://davewiner.com/
+  33. http://scripting.com/
+  34. http://scripting.com/2013
+  35. http://scripting.com/2013/09
+  36. http://scripting.com/2013/09/04
+  37. http://davewiner.com/
+  38. http://fargo.io/
+  39. http://docs.fargo.io/worknotes/2013/09/04/fargo117Find
+  40. https://www.google.com/search?q=javascript+catching+command+keystrokes
+  41. http://dmauro.github.io/Keypress/
+
+   Hidden links:
+  42. http://twitter.com/davewiner/
+  43. http://dave.smallpict.com/rss.xml

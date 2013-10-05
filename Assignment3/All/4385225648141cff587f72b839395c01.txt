@@ -1,0 +1,1094 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>Cochineal: it&#8217;s a bug AND a feature! | Bug Girl&#039;s Blog</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://membracid.wordpress.com/xmlrpc.php" />
+	<!--[if lt IE 9]>
+	<script src="http://s2.wp.com/wp-content/themes/pub/blaskan/js/html5.js?m=1339795805g" type="text/javascript"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="Bug Girl&#039;s Blog &raquo; Feed" href="http://membracid.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bug Girl&#039;s Blog &raquo; Comments Feed" href="http://membracid.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bug Girl&#039;s Blog &raquo; Cochineal: it&#8217;s a bug AND a&nbsp;feature! Comments Feed" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/_static/??-eJyNkNEKglAMhl+o06gjRRfRs0w9HqdzHtxEfPssCoI0utoG3//xM5iSK3qxIAbd6BKPkUSBqQ0KTbCEReue175Q3cE6nno1VzHSAGozhy/W6tAtwjTmkDNqi7IBfkhJKhKyeSX8b5caB5L4nlut6gwi9znyL+1EZQymsCCv3cWBSodSLv9Re2Rv3fXgzxefHU/eN3cuC4Ed' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var objectL10n = {"blaskan_navigation_title":"- Navigation -"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyFj9sOwiAMhl9IRjxE4oXxWRirWMZJCi769DKdiadkV23aL//X8iEyFXwGn7kh7kKLFlghSFLXGUN/DI2hBa8cemVLBzSC5lwgXacyCzCHOskMjUP/gt+sMVB2QFSVf7afKvQXhGEWM5CjVD1LQHj7Sc0nqD4eS8tbK6mXfkwglTDmb9YVFm3R6IkP2GnIj/eeLWuLi2w66OD2y7UQq63YiY25Axz5gL0='></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://membracid.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://membracid.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='An automated louse&nbsp;feeder' href='http://membracid.wordpress.com/2009/01/12/an-automated-louse-feeder/' />
+<link rel='next' title='Skeptics&#8217; Circle on&nbsp;Thursday' href='http://membracid.wordpress.com/2009/01/13/skeptics-circle-on-thursday/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/' />
+<link rel='shortlink' href='http://wp.me/p35aO-Fj' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fmembracid.wordpress.com%2F2009%2F01%2F12%2Fcochineal-its-a-bug-and-a-feature%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fmembracid.wordpress.com%2F2009%2F01%2F12%2Fcochineal-its-a-bug-and-a-feature%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Cochineal: it&#039;s a bug AND a feature!" />
+<meta property="og:url" content="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/" />
+<meta property="og:description" content="So much misinformation is being published right now about Cochineal, I thought a post that explains what it is, how it&#039;s made, why it&#039;s relatively harmless, and why I support labeling but oppose a ..." />
+<meta property="og:site_name" content="Bug Girl&#039;s Blog" />
+<meta property="og:image" content="http://i0.wp.com/bugguide.net/images/cache/U0S0E0K0M0JR3KDR7QDR3KAR7QDRKQJR0QCRQQL0XQS00QK0N0S0MQ3RW0H090Z0KQDRIQCRU0K0E0H0QQCRMQDR.jpg?fit=1600%2C1600" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="http://i0.wp.com/bugguide.net/images/cache/U0S0E0K0M0JR3KDR7QDR3KAR7QDRKQJR0QCRQQL0XQS00QK0N0S0MQ3RW0H090Z0KQDRIQCRU0K0E0H0QQCRMQDR.jpg?fit=1600%2C1600" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:creator" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://1.gravatar.com/blavatar/f73425ff69a95735977bfe8fe816731d?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://1.gravatar.com/blavatar/f73425ff69a95735977bfe8fe816731d?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://0.gravatar.com/blavatar/2ed89f9171a184d3b9eeb4a4358b6671?s=114" />
+<link rel='openid.server' href='http://membracid.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://membracid.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://membracid.wordpress.com/osd.xml" title="Bug Girl&#039;s Blog" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+				<style type="text/css">
+			#flickr_badge_source_txt {padding:0; font: 11px Arial, Helvetica, Sans serif; color:#666666;}
+			#flickr_badge_icon {display:block !important; margin:0 !important; border: 1px solid rgb(0, 0, 0) !important;}
+			#flickr_icon_td {padding:0 5px 0 0 !important;}
+			.flickr_badge_image {text-align:center !important;}
+			.flickr_badge_image img {border: 1px solid black !important;}
+			#flickr_www {display:block; text-align:center; padding:0 10px 0 10px !important; font: 11px Arial, Helvetica, Sans serif !important; color:#3993ff !important;}
+			#flickr_badge_uber_wrapper a:hover,
+			#flickr_badge_uber_wrapper a:link,
+			#flickr_badge_uber_wrapper a:active,
+			#flickr_badge_uber_wrapper a:visited {text-decoration:none !important; background:inherit !important;color:#3993ff;}
+			#flickr_badge_wrapper {background-color:#ffffff;border: solid 1px #000000}
+			#flickr_badge_source {padding:0 !important; font: 11px Arial, Helvetica, Sans serif !important; color:#666666 !important;}
+		</style>
+		<meta name="application-name" content="Bug Girl&#039;s Blog" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Entomology. Ranting. Nerdery." /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://membracid.wordpress.com/feed/;icon-uri=http://1.gravatar.com/blavatar/f73425ff69a95735977bfe8fe816731d?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Cochineal: it&#8217;s a bug AND a&nbsp;feature! | Bug Girl&#039;s Blog on WordPress.com" />
+<meta name="description" content="So much misinformation is being published right now about Cochineal, I thought a post that explains what it is, how it&#039;s made, why it&#039;s relatively harmless, and why I support labeling but oppose a ban, might be useful. What is Cochineal, anyway? Cochineal is, indeed, a food additive derived from an insect. Or, more properly,&hellip;" />
+<style type="text/css" id="custom-background-css">
+body.custom-background { background-color: #FAFCFE; }
+</style>
+<style id="syntaxhighlighteranchor"></style>
+<style type="text/css" id="custom-colors-css">
+#site #wrapper {
+	background: #fff;
+	padding: 40px;
+}
+@media (max-width: 768px) {
+	#site #wrapper {
+		padding: 10px;
+	}
+}
+#nav a {
+	background-image: -moz-linear-gradient( top, rgba( 255, 255, 255, 0.3 ), transparent );
+	background-image: -o-linear-gradient( top, rgba( 255, 255, 255, 0.3 ), rgba( 255, 255, 255, 0 ) );
+	background-image: -webkit-gradient( linear, left top, left bottom, from( rgba( 255, 255, 255, 0.3 ) ), to( rgba( 255, 255, 255, 0 ) ) );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ccffffff', endColorstr='#ffffffff' );
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ccffffffff, endColorstr=#ffffffff)";
+	text-shadow: none;
+}
+#nav a:focus,
+#nav a:hover,
+#nav li:hover > a {
+	background-image: -moz-linear-gradient( top, rgba( 255, 255, 255, 0.5 ), transparent );
+	background-image: -o-linear-gradient( top, rgba( 255, 255, 255, 0.5 ), rgba( 255, 255, 255, 0 ) );
+	background-image: -webkit-gradient( linear, left top, left bottom, from( rgba( 255, 255, 255, 0.5 ) ), to( rgba( 255, 255, 255, 0 ) ) );
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#66ffffff', endColorstr='#ffffffff' );
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient( startColorstr=#66ffffff, endColorstr=#ffffffff )";
+}
+#nav li li:hover > a,
+#nav ul ul :hover > a,
+#nav li li a:focus {
+	background-image: -moz-linear-gradient( top, transparent, rgba( 255, 255, 255, 0.2 ) );
+	background-image: -webkit-gradient( linear, left top, left bottom, from( rgba( 255, 255, 255, 0 ) ), rgba( 255, 255, 255, 0.2 ) );
+}
+
+#nav .menu > ul > .current_menu_item > a,
+#nav .menu > ul > .current_page_item > a,
+#nav .menu > ul > .current_menu_item > a:hover,
+#nav .menu > ul > .current_page_item > a:hover,
+#nav .menu > ul > .current_menu_item > a:focus,
+#nav .menu > ul > .current_page_item > a:focus,
+body #nav .menu > ul > .current_page_ancestor > a {
+	background-image: -moz-linear-gradient( top, rgba( 255, 255, 255, 0.4 ), transparent );
+	background-image: -o-linear-gradient( top, rgba( 255, 255, 255, 0.4 ), rgba( 255, 255, 255, 0 ) );
+	background-image: -webkit-gradient( linear, left top, left bottom, from( rgba( 255, 255, 255, 0.4 ) ), to( rgba( 255, 255, 255, 0 ) ) );
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#99ffffff', endColorstr='#ffffffff' );
+	-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#ffffffff )";
+}
+
+#nav li li:hover > a { color: #CCCCCC;}
+#nav ul ul :hover > a { color: #CCCCCC;}
+#nav li li a:focus { color: #CCCCCC;}
+#nav li li:hover > a { color: #CCCCCC;}
+#nav a:focus { color: #CCCCCC;}
+#infinite-handle span { color: #CCCCCC;}
+#infinite-handle span::before { color: #CCCCCC;}
+.content h1 a { color: #000000;}
+.content h2 a { color: #000000;}
+.content h3 a { color: #000000;}
+.content h4 a { color: #000000;}
+.content h5 a { color: #000000;}
+.content h6 a { color: #000000;}
+body { background-color: #FAFCFE;}
+#site-name a { color: #09340e;}
+.hentry header h1 { color: #09340e;}
+.hentry header h1 a { color: #09340e;}
+#reply-title { color: #09340e;}
+#comments-title { color: #09340e;}
+#footer { border-top-color: #09340e;}
+.sticky h1 a { border-bottom-color: #09340e;}
+.sticky h1 a { border-bottom-color: rgba( 9, 52, 14, 0.4 );}
+#infinite-handle span { background-color: #09340e;}
+#infinite-handle span { border-color: #105F19;}
+#nav a { background-color: #002800;}
+#nav a { border-color: #002800;}
+#nav a:focus { background-color: #002800;}
+#nav a:hover { background-color: #002800;}
+#nav li:hover > a { background-color: #002800;}
+#nav li li:hover > a { background: #002800;}
+#nav ul ul :hover > a { background-color: #002800;}
+#nav li li a:focus { background-color: #002800;}
+#nav .menu > ul > .current_menu_item > a { background-color: #002800;}
+#nav .menu > ul > .current_page_item > a { background-color: #002800;}
+#nav .menu > ul > .current_menu_item > a:hover { background-color: #002800;}
+#nav .menu > ul > .current_page_item > a:hover { background-color: #002800;}
+#nav .menu > ul > .current_menu_item > a:focus { background-color: #002800;}
+#nav .menu > ul > .current_page_item > a:focus { background-color: #002800;}
+body #nav .menu > ul > .current_page_ancestor > a { background-color: #002800;}
+.content a, .widget a, .colophon a { color: #424254;}
+.content a:hover, .widget a:hover, .colophon a:hover { color: #2A2A36;}
+</style>
+<script type="text/javascript" src="//use.typekit.net/biv1aed.js"></script><script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s1.wp.com/?custom-css=1&#038;csblog=35aO&#038;cscache=6&#038;csrev=15" />
+		</head>
+<body class="single single-post postid-2561 single-format-standard custom-background typekit-enabled background-image advanced-menu sidebar content-wide-sidebar content-wide footer-widgets mp6 highlander-enabled highlander-light custom-colors">
+<div id="site">
+	<div id="wrapper">
+		<header id="header" role="banner">
+			<h1 id="site-name"><a href="http://membracid.wordpress.com/" title="Bug Girl&#039;s Blog" rel="home">Bug Girl&#039;s Blog</a></h1><div id="header-message">Entomology. Ranting. Nerdery.</div><nav id="nav" role="navigation"><div class="menu"><ul id="menu-main-menu-1" ><li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11299"><a href="http://membracid.wordpress.com/category/bees/">Posts about Bees</a></li>
+<li class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-11300"><a href="http://membracid.wordpress.com/category/mosquitoes/">Posts about mosquitoes</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11199"><a href="http://membracid.wordpress.com/bug-girl-will-not-diagnose-you/">Bug Girl Will Not Diagnose You</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11200"><a href="http://membracid.wordpress.com/the-spamcomments-policy/">Spam/Comments Policy</a></li>
+<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11762"><a href="http://membracid.wordpress.com/contact-me/">Contact me!</a>
+<ul class="sub-menu">
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11203"><a href="http://membracid.wordpress.com/about/">Sorry, I Won&#8217;t ID Your Bug</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11202"><a href="http://membracid.wordpress.com/whats-a-membracid/">What’s a membracid?</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11198"><a href="http://membracid.wordpress.com/the-rating-system/">The Rating System</a></li>
+	<li class="menu-item menu-item-type-post_type menu-item-object-page menu-item-11201"><a href="http://membracid.wordpress.com/bug-blogger-survey/">Bug Blogger Survey</a></li>
+</ul>
+</li>
+</ul></div></nav>		</header>
+		<!-- / #header -->
+
+	<section id="content" role="main">
+		
+
+		<article id="post-2561" class="post-2561 post type-post status-publish format-standard hentry category-ask-an-entomologist category-entomology category-food category-insects tag-carmine tag-cochineal tag-dye tag-red">
+		<header>
+			
+							<time datetime="2009-01-12T16:01:28+00:00" pubdate>January 12, 2009</time>
+			
+							<h1>Cochineal: it&#8217;s a bug AND a&nbsp;feature!</h1>
+					</header>
+
+		<div class="content">
+			<p>So much <a title="Sci Am FAIL" href="http://membracid.wordpress.com/2009/01/09/breaking-fail-news-scientific-american/">misinformation</a> is being published right now about Cochineal, I thought a post that explains what it is, how it&#8217;s made, why it&#8217;s relatively harmless, and why I support labeling but oppose a ban, might be useful.</p>
+<p><strong>What is Cochineal, anyway?</strong></p>
+<p>Cochineal is, indeed, a food additive derived from an insect. Or, more properly, the stuff we call cochineal is a chemical extract of <a href="http://www.cas.org/motw/carminicacid.html">carminic acid</a> from the bodies of squished female scale insects.  (No actual bug &#8220;parts&#8221; should be left in the dye.)</p>
+<p><a href="http://www.ext.vt.edu/departments/entomology/factsheets/scalein.html">Scale insects</a> look quite different from typical insects. Tiny, with no visible legs or antennae, they kind of look like plant pimples.<br />
+<img src="http://bugguide.net/images/cache/U0S0E0K0M0JR3KDR7QDR3KAR7QDRKQJR0QCRQQL0XQS00QK0N0S0MQ3RW0H090Z0KQDRIQCRU0K0E0H0QQCRMQDR.jpg" alt="" width="228" height="171" align="right" /><a href="http://bugguide.net/node/view/49451">A cochineal scale</a> is about the the size of a big-headed pin. Cochineal insects are a natural predator of prickly pear, and cover themselves in a white, fluffy wax.  Here&#8217;s a link to their <a href="http://bugguide.net/node/view/54090/tree">proper taxonomic classification</a>. They are NOT beetles.</p>
+<p>Why are these little insects so red under all that fluff? Eisner et al. (1980) determined carminic acid (the red dye) repels ants. This pigment may have evolved as a chemical weapon against predation.</p>
+<p>You can see a nice travel diary of how the insects are reared, collected, and then turned into dye in Mexico at the <a href="http://www.amybutlergreenfield.com/A%20Perfect%20Red_Mexico.html">Perfect Red site</a>. There are a wonderful series of larger photos of the process at <a href="http://www.insectimages.org/browse/subthumb.cfm?sub=8302&amp;start=1">Bugwood</a>.  It takes about 60,000 insects to make one pound of dye (although estimates on that number vary widely!)</p>
+<p><strong>Where is Cochineal used?<br />
+</strong></p>
+<p>On food and cosmetic labels, cochineal may have many different names: cochineal, carmine, carminic acid, Natural Red 4, or E120. You may be surprised where you find it&#8211;Campari, sausage, and artificial crab are some unexpected foods that use cochineal for more intense colors.  Many yogurts and juices also use cochineal, and most lipsticks and blushes.</p>
+<p><strong>Is Cochineal safe?</strong></p>
+<p>A few individuals may be allergic to the compounds produced by these insects, and improved labeling is a good idea.  The FDA reached this conclusion in a <a href="http://www.fda.gov/OHRMS/DOCKETS/98fr/E8-31253.htm">recent document</a>.  Some of the evidence that helped them reach that conclusion:</p>
+<blockquote><p><em>&#8220;we identified three adverse events over an approximately 10-year period that involved products containing carmine or cochineal extract in which those color additives did not or probably did not appear on the ingredient list&#8230;.We applied a reporting rate of 1 percent to this figure to obtain our estimate of 31 adverse events per year.&#8221; </em></p></blockquote>
+<p>Note that the FDA is *estimating* the scope of the problem based on 3 allergic reactions in 10 years. (If you&#8217;re curious, you can find an very extensive world-wide list of adverse reactions to cochineal <a title="WHO" href="http://www.inchem.org/documents/jecfa/jecmono/v46je03.htm#_46031000">here</a>. It&#8217;s not common, but it can be quite serious.)</p>
+<p>The FDA is mainly concerned with allergies in making their labeling decision, probably because cochineal has proved <a title="an example" href="http://mutage.oxfordjournals.org/cgi/content/abstract/20/3/229">non-toxic in lab tests</a>.</p>
+<p>The FDA also recognized that some consumers might want to avoid eating/using products containing cochineal for non-medical reasons. (They did not actually use the words &#8220;squeamish&#8221; or &#8220;grossed out&#8221;, but I sure read that between the lines of the report.)</p>
+<p>Therefore, the FDA decided the the benefits of increased labeling greatly outweighed the costs, and that more labeling was needed.  So, now all products containing cochineal need to say that, rather than just using the vague phrase &#8220;natural colors.&#8221;  That&#8217;s fine by me!</p>
+<p><strong>What would it mean if we banned Cochineal?</strong></p>
+<p><a href="http://membracid.wordpress.com/2009/01/06/center-for-science-in-the-public-interest-taxonomy-fail/">CSPI has called for a ban</a> on cochineal and carmine.  Our other choices for red dyes in our foods or cosmetics aren&#8217;t very appealing. <a href="http://www.time.com/time/magazine/article/0,9171,945520,00.html">FD&amp;C Red Dye #2</a>, derived from coal tar,  is a good example.  (Artificial colors are given the prefix FD&amp;C, or Food, Drug and Cosmetic Act, since that is the law they are regulated under.)</p>
+<p><a href="http://en.wikipedia.org/wiki/Allura_Red_AC">FD&amp;C Red #40</a> is the most commonly used other red dye, and is also derived from tar.  (And, interestingly, <a href="http://www.cspinet.org/new/200806022.html">CSPI wants it banned too!</a>)</p>
+<p>It would be a great thing if food had less processing, packaging, and added ingredients to make it look good.  (Teal Blue food is just <strong><em><span style="color:#800000;">Wrong</span></em></strong>, in my book.)  However, the likelihood of that happening in the US is rather low, alas.  So keeping cochineal in our range of choices gives us a relatively safe option for food and lip coloring.</p>
+<p>More important to me, Cochineal supports subsistence farmers in poor parts of the world. This insect is an important cash crop!  From an <a href="http://www.npr.org/templates/story/story.php?storyId=1302796">NPR story</a> about cochineal:</p>
+<blockquote><p><em>“Even though a full pound of cochineal sells for just $1.30, harvesting the bug earns enough money to feed and clothe a whole family in the impoverished highlands region of Peru. An estimated 40,000 Peruvian families depend on harvesting the bugs — which belong to a class of scale insects — to make a living.”</em></p></blockquote>
+<p>By not rejecting cochineal in your food or makeup, you get to not only support farmers raising their tiny pink cash-cows, you can connect with the rich history of this pigment.</p>
+<p>Aztec and Maya peoples of Central and North America used these insects to create rich red colors for textiles <a href="http://www.go-oaxaca.com/newsletter/cochineal.html">for centuries</a>.  After Europeans arrived, they excitedly adopted this pigment over their previous one&#8211;<a title="Kermes Scale" href="http://www.bioone.org/perlserv/?request=get-abstract&amp;doi=10.1641%2F0006-3568(2005)055[1080%3ATSDOTH]2.0.CO%3B2&amp;ct=1">also made from scale insects</a>! I&#8217;ll have to do another post just on the fascinating history of this pigment some other time.</p>
+<p><strong>OMGBUGZINMAIFOODZ! YUCK!<br />
+</strong></p>
+<p>Actually, there&#8217;s <strong>lots</strong> of actual bug parts in your food all the time, and the <a title="Food Defect Action Levels. You may not want to click this." href="http://www.cfsan.fda.gov/~dms/dalbook.html#CHPTA">FDA knows and approves of it</a>.  <em>Insects happen</em>.</p>
+<p>It&#8217;s part of living on Earth, and we just can&#8217;t get things sterile, no matter how much we try.</p>
+<p>Why not join the rest of the world and start adding insects as a regular part of your diet? They are regularly eaten around the world, and are quite nutritious. Until the Western world decided that bottom feeding shrimp and lobsters were OK, and insects were nasty, nearly everyone ate insects as a regular part of their diet.</p>
+<p>Join me in celebrating a sustainable, low-impact protein source!</p>
+<p>Or, at least join me in not worrying about a tiny amount of bug-derived compounds in your food.</p>
+<p><strong>Read more about Cochineal:</strong> (please feel free to suggest references!)</p>
+<ul>
+<li>Greenfield, Amy Butler. 2005. <a title="Book Review: A Perfect Red" href="http://membracid.wordpress.com/2009/03/30/book-review-a-perfect-red/">A Perfect Red</a>: Empire, Espionage, and the Quest for the Color of Desire. HarperCollins Publishers Inc., New York.</li>
+<li>Donkin, R. A. 1977. Spanish Red: An Ethnogeographical Study of Cochineal and the Opuntia Cactus. <a href="http://www.sciencedirect.com/science?_ob=ArticleURL&amp;_udi=B6WJN-4D5W399-96&amp;_user=10&amp;_rdoc=1&amp;_fmt=&amp;_orig=search&amp;_sort=d&amp;view=c&amp;_acct=C000050221&amp;_version=1&amp;_urlVersion=0&amp;_userid=10&amp;md5=cc8e9de69358c1720971e3bb26ee0415">Transactions Of The American Philosophical Society 67 (Part 5): 1-84.</a></li>
+<li>Eisner, T., et al. 1980. Red Cochineal Dye (Carminic Acid): Its Role in Nature.<br />
+<a href="http://www.sciencemag.org/cgi/content/abstract/208/4447/1039">Science 208 no. 4447, pp. 1039-1042</a></li>
+<li><a href="http://dictionary.reference.com/search?q=cochineal">How do I pronounch cochineal?</a> (audio file on page)</li>
+</ul>
+<p><strong>Read more about Entomophagy</strong> (Insects as food)</p>
+<ul>
+<li><a href="http://membracid.wordpress.com/2012/02/14/ento-box/">Ento Box: a wonderful project to make insect food beautiful</a></li>
+<li><a href="http://membracid.wordpress.com/2011/12/13/how-to-make-sure-you-are-never-invited-to-another-potluck-ever/">How to make sure you are never invited to another potluck again. EVER. </a></li>
+<li><a href="http://membracid.wordpress.com/2009/05/05/are-there-roaches-in-your-coffee-and-chocolate/">Are there roaches in your coffee and chocolate? Um. Yes.</a></li>
+<li><a href="http://membracid.wordpress.com/2011/02/14/shellac-its-a-bug-and-a-feature/">Shellac: It&#8217;s a bug AND a feature</a></li>
+<li><a href="http://membracid.wordpress.com/2011/10/27/don-bugito-and-edible-insects/">Don Bugito! Insects are and were an important part of pre-European peoples&#8217; diets in the Americas.</a></li>
+<li><a href="http://membracid.wordpress.com/2008/02/11/more-entomophagy-in-the-news/">Entomophagy in the news</a></li>
+<li><a href="http://www.food-insects.com/Insects%20as%20Human%20Food.htm">Insect nutritional value</a></li>
+<li><a href="http://www.uky.edu/Ag/Entomology/ythfacts/bugfood/bugfood.htm">Insect food curriculum!</a></li>
+<li><a href="http://www.food-insects.com/a%20place%20to%20browse.htm">The Food Insects Newsletter</a></li>
+<li><a href="http://membracid.wordpress.com/2007/10/24/yet-more-bug-food/">Escamoles</a></li>
+<li><a href="http://membracid.wordpress.com/2007/10/09/moths-not-just-for-breakfast/">Moths for breakfast</a></li>
+<li><a href="http://membracid.wordpress.com/2007/10/18/more-insect-food/">Silkworms in a can</a></li>
+</ul>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Digital Trophallaxis:</h3><div class="sd-content"><ul><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/?share=facebook" target="_blank" title="Share on Facebook" id="sharing-facebook-2561"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/?share=twitter" target="_blank" title="Click to share on Twitter" id="sharing-twitter-2561"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/?share=google-plus-1" target="_blank" title="Click to share on Google+" id="sharing-google-2561"><span>Google</span></a></li><li class="share-tumblr"><a rel="nofollow" class="share-tumblr sd-button share-icon" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/?share=tumblr" target="_blank" title="Click to share on Tumblr"><span>Tumblr</span></a></li><li class="share-pinterest"><a rel="nofollow" class="share-pinterest sd-button share-icon" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/?share=pinterest" target="_blank" title="Click to share on Pinterest"><span>Pinterest</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/?share=reddit" target="_blank" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li></ul></div></div></div></div>			
+					</div>
+		<!-- / .content -->
+
+		<footer>
+							<span class="author"><span class="author-label">Written by</span> <a href="http://membracid.wordpress.com/author/membracid/" title="Posts by Bug Girl" rel="author">Bug Girl</a></span>
+													<span class="categories">
+					<span class="categories-label">Posted in</span> <a href="http://membracid.wordpress.com/category/ask-an-entomologist/" title="View all posts in Ask an Entomologist" rel="category tag">Ask an Entomologist</a>, <a href="http://membracid.wordpress.com/category/entomology/" title="View all posts in Entomology" rel="category tag">Entomology</a>, <a href="http://membracid.wordpress.com/category/food/" title="View all posts in Food" rel="category tag">Food</a>, <a href="http://membracid.wordpress.com/category/insects/" title="View all posts in Insects" rel="category tag">Insects</a>				</span>
+										<span class="tags">
+					<span class="tags-label">Tagged with</span> <a href="http://membracid.wordpress.com/tag/carmine/" rel="tag">carmine</a>, <a href="http://membracid.wordpress.com/tag/cochineal/" rel="tag">cochineal</a>, <a href="http://membracid.wordpress.com/tag/dye/" rel="tag">dye</a>, <a href="http://membracid.wordpress.com/tag/red/" rel="tag">red</a>				</span>
+			
+					</footer>
+	</article>
+	<!-- / #post-2561 -->
+	<section id="comments">
+	
+			<h1 id="comments-title">28 comments</h1>
+
+		
+		<ol id="commentlist">		<li class="comment even thread-even depth-1 highlander-comment" id="comment-20048">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/fb24a1c28fdf757f54e5aa8025082ae1?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20048">January 12, 2009 - 4:31 pm</a></time>
+
+								  	<cite><a href='http://www.hawkowlsnest.com' rel='external nofollow' class='url'>Patrick</a></cite>							</header>
+
+			
+			<p>Very timely. I was just telling my wife and sis-in-law about Cochineal yesterday. There are definitely a lot worse additive in food and cosmetics than a little bug juice. At least Carmine is a pronounceable word.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20058">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/aa55fd39b1b56866ef75dde355c6ddbe?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20058">January 13, 2009 - 3:11 am</a></time>
+
+								  	<cite><a href='http://other95.blogspot.com' rel='external nofollow' class='url'>eric</a></cite>							</header>
+
+			
+			<p>We ought to have a bug recipe collection for those that like to get over themselves and get back to a good diet.</p>
+<p>Maybe you know, but I was also under the impression that the cochineal insects will slowly kill the host plant. </p>
+<p>You mentioned kermes which is/was original red used in Europe from a middle eastern scale insect, but there was also another bug based red dye that there is evidence of use going back even further &#8211; it has been <a href="http://www.springerlink.com/content/p174628l6mq74134/" rel="nofollow">identified</a> as the dye used to make a persian style carpet that is 2500 years old (The Pazyryk Carpet). &#8220;St. John&#8217;s Blood&#8221; comes from the &#8220;Polish cochineal&#8221; and &#8220;Armenian cochineal&#8221; a pair of scale insect species in the <i>Porphyrophora</i> genus common in the Ukraine and Poland.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 highlander-comment" id="comment-20065">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/fdb40a63105039edf6801c988a3b5396?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20065">January 13, 2009 - 12:03 pm</a></time>
+
+								  	<cite>David Harmon</cite>							</header>
+
+			
+			<p>And another primary alternatives would be annatto, which, IIRC, has rather worse (more common) allergy issues.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="pingback">
+			<time>January 13, 2009 - 2:38 pm</time>
+			Pingback: <a href='http://www.locusviridis.co.uk/sections/archives/256' rel='external nofollow' class='url'>Sections &raquo; Blog Archive &raquo; Invertebrate Snacks at Selfridges (part 3)</a>		</li><!-- #comment-## -->
+		<li class="pingback">
+			<time>January 13, 2009 - 5:14 pm</time>
+			Pingback: <a href='http://www.veganstation.com/?p=1013' rel='external nofollow' class='url'>All About Cochineal | Vegan Station - Recipies, How to, Guide, Diet</a>		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20070">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/d08fcbc30cfac5ebdec377f31d2f6faa?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20070">January 13, 2009 - 7:26 pm</a></time>
+
+								  	<cite>Ktesibios</cite>							</header>
+
+			
+			<p>I think that your explanation of the &#8220;FD&amp;C&#8221; prefix might be in error. AFAIK, it means that the dye is approved for use in foods, drugs and cosmetics, as opposed to &#8220;D&amp;C&#8221;, which means that it is approved only for use in drugs and cosmetics.</p>
+<p>People ingest much larger quantities of foods than they do drugs or cosmetics, hence additives approved for the former have to be proven safe in significantly larger doses than those intended only for the latter applications.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-membracid bypostauthor even thread-even depth-1 highlander-comment" id="comment-20072">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/04d48b3bb90a23da3a8368762d26a8f7?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20072">January 13, 2009 - 9:30 pm</a></time>
+
+								  	<cite><a href='http://membracid.wordpress.com/' rel='external nofollow' class='url'>Bug Girl</a></cite>							</header>
+
+			
+			<p>ktesibios&#8211;I agree, and you are correct.  </p>
+<p>In fact, we both are correct&#8211;my FD&amp;C explanation came from the FDA website <img src='http://s0.wp.com/wp-includes/images/smilies/icon_biggrin.gif?m=1129645325g' alt=':D' class='wp-smiley' /> </p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="pingback">
+			<time>January 13, 2009 - 10:05 pm</time>
+			Pingback: <a href='http://thegovernance.com/?p=270' rel='external nofollow' class='url'>links for 2009-01-13 - the prophet king governance</a>		</li><!-- #comment-## -->
+		<li class="pingback">
+			<time>January 13, 2009 - 10:57 pm</time>
+			Pingback: <a href='http://wormspit.com/blog/?p=1236' rel='external nofollow' class='url'>Because the bug IS the feature&#8230; &#171; WormSpit</a>		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20075">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/1c34cddcec289738f0b48b5a304b3b94?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20075">January 13, 2009 - 11:00 pm</a></time>
+
+								  	<cite><a href='http://www.wormspit.com' rel='external nofollow' class='url'>Michael</a></cite>							</header>
+
+			
+			<p>Linked!<br />
+<a href="http://wormspit.com/blog/?p=1236" rel="nofollow">http://wormspit.com/blog/?p=1236</a></p>
+<p>I totally understand the frustration with misinformation &#8211; I deal with a lot of it with regard to &#8220;Peace Silk.&#8221;  Fortunately, the correct information is finally gaining currency.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 highlander-comment" id="comment-20076">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://2.gravatar.com/avatar/843c5ed1f2e9c3610f26459523657932?s=40&amp;d=http%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20076">January 14, 2009 - 1:09 am</a></time>
+
+								  	<cite><a href='http://bugsafari.blogspot.com' rel='external nofollow' class='url'>Cindy</a></cite>							</header>
+
+			
+			<p>Per your request, I have linked my <a href="http://bugsafari.blogspot.com/2009/01/more-bug-mis-information-on-interwebs.html" rel="nofollow">blog post</a> to yours.  Hope it helps.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20080">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://2.gravatar.com/avatar/ef53fa4d61fafc251d6c98efd015d908?s=40&amp;d=http%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20080">January 14, 2009 - 7:47 pm</a></time>
+
+								  	<cite>Dave</cite>							</header>
+
+			
+			<p>I think I&#8217;ve seen these.  Not only in The Tonto National Forest northeast of Phoenix, but IN Phoenix. Not just IN Phoenix, but on the cactus in front of MY apartment!!!   I never looked closely. I just assumed that it was probably some type of fungus or possibly mold.  Could you please do me a favor and comment on whether or not they thrive in Arizona?  I would just plain love to blow some people&#8217;s minds with this!!</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-membracid bypostauthor even thread-even depth-1 highlander-comment" id="comment-20082">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/04d48b3bb90a23da3a8368762d26a8f7?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20082">January 14, 2009 - 9:22 pm</a></time>
+
+								  	<cite><a href='http://membracid.wordpress.com/' rel='external nofollow' class='url'>Bug Girl</a></cite>							</header>
+
+			
+			<p>I think it&#8217;s pretty likely that they&#8217;d live in AZ.  Seems like the right environment!<br />
+Here&#8217;s a photo of what to expect if you squish one:<br />
+<a href="http://www.insectimages.org/browse/detail.cfm?imgnum=5024080" rel="nofollow">http://www.insectimages.org/browse/detail.cfm?imgnum=5024080</a></p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="pingback">
+			<time>January 15, 2009 - 2:34 pm</time>
+			Pingback: <a href='http://cicindela.wordpress.com/2009/01/15/bugs-in-your-food/' rel='external nofollow' class='url'>bugs in your food&#8230; &laquo; cicindela</a>		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20093">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/9c9f5d8d8709baebf7d630d8842ec3bf?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20093">January 15, 2009 - 4:50 pm</a></time>
+
+								  	<cite><a href='http://religionsetspolitics.blogspot.com/' rel='external nofollow' class='url'>Joshua Zelinsky</a></cite>							</header>
+
+			
+			<p>The incoming FDA regulations requiring cochineal to be listed on food ingredients is going to make a lot of vegetarians, Jews and Muslims much happier. (There&#8217;s actually an argument that can be made that cochineal isn&#8217;t a kashrut issue since it is completely tasteless  but I doubt anyone will buy into that argument anytime soon given that the general trend among religious Jews in the last 30 years has been to become more strict rather than less so).</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-membracid bypostauthor even thread-even depth-1 highlander-comment" id="comment-20094">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/04d48b3bb90a23da3a8368762d26a8f7?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20094">January 15, 2009 - 5:00 pm</a></time>
+
+								  	<cite><a href='http://membracid.wordpress.com/' rel='external nofollow' class='url'>Bug Girl</a></cite>							</header>
+
+			
+			<p>I agree that labeling is a good idea, Joshua.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20111">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://2.gravatar.com/avatar/ef53fa4d61fafc251d6c98efd015d908?s=40&amp;d=http%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20111">January 15, 2009 - 11:07 pm</a></time>
+
+								  	<cite>Dave</cite>							</header>
+
+			
+			<p>I posted my comment above because I moved from Arizona to south Florida last April.  In retrospect, I should have just Googled.  On the other hand, I very much appreciate the response.</p>
+<p>Here&#8217;s a good link about Cochineal not just about in Metro Phoenix, but in general.  </p>
+<p><a href="http://www.delange.org/Cochineal/Cochineal.htm" rel="nofollow">http://www.delange.org/Cochineal/Cochineal.htm</a></p>
+<p>Here&#8217;s what The Agriculture &amp; Natural Resources<br />
+Arizona Cooperative Extension, Yavapai County has to say.  Not extensive, but useful.  I think that the positive note that it ends on should be taken into account by everyone.</p>
+<p><a href="http://cals.arizona.edu/yavapai/anr/hort/byg/archive/cochinealscale.html" rel="nofollow">http://cals.arizona.edu/yavapai/anr/hort/byg/archive/cochinealscale.html</a></p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 highlander-comment" id="comment-20114">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/744af871c6e638c4e909d07fbf9152db?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20114">January 16, 2009 - 12:39 am</a></time>
+
+								  	<cite><a href='http://homersworld.blogspot.com' rel='external nofollow' class='url'>homer</a></cite>							</header>
+
+			
+			<p>They do live in Arizona- our Presidio San Agustin del Tucson Park has a nice prickly pear with lots of cochineal wax on its pads.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20130">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/38f6a52147d6ab66fac2081d862f1aad?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20130">January 16, 2009 - 10:28 am</a></time>
+
+								  	<cite><a href='http://gtapestry.blogspot.com' rel='external nofollow' class='url'>DougT</a></cite>							</header>
+
+			
+			<p>Have you been contacted by Campari yet?  They just emailed me wanting me to reassure folks that Campari no longer contains cochineal.  Stinko.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-membracid bypostauthor even thread-even depth-1 highlander-comment" id="comment-20131">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/04d48b3bb90a23da3a8368762d26a8f7?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20131">January 16, 2009 - 11:16 am</a></time>
+
+								  	<cite><a href='http://membracid.wordpress.com/' rel='external nofollow' class='url'>Bug Girl</a></cite>							</header>
+
+			
+			<p>Well, that sucks! I thought it was only in the EU that they had removed the cochineal.<br />
+I know that Ocean Spray pink grapefruit stopped using it a while back when people realized what cochineal was in the last PR blitz.<br />
+ <img src='http://s0.wp.com/wp-includes/images/smilies/icon_sad.gif?m=1129645325g' alt=':(' class='wp-smiley' /> </p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20137">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/183772cce26394bcc495ca2bc3fde012?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20137">January 16, 2009 - 3:18 pm</a></time>
+
+								  	<cite>Chris P</cite>							</header>
+
+			
+			<p>Well &#8211; interesting. I PERSONALLY have had at least 4 bad reactions to Cochineal/Carmine.  On of those involved a trip to the emergency room to get atrial fibrulation fixed by having them stop my heart.  This was after swallowing half a bottle of Fruitopia.</p>
+<p>Even a couple of pieces of pink liquorice allsorts will cause a reaction,  The ingredient was not listed on the box but I later found one with a list of ingredients in German and it WAS on that list.</p>
+<p>Given that anaphylactic shock can be fatal and the carmine relationship is not well known it may be a more prevalent problem than stated.</p>
+<p>There is NO reason to have chemical coloring in food.  It&#8217;s stupid vanity.  I now have to take a calcium blocker everyday just in case I eat something with it in.  A waste of a dollar a day.</p>
+<p>Chris P</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="pingback">
+			<time>January 19, 2009 - 7:33 pm</time>
+			Pingback: <a href='http://tachinid.wordpress.com/2009/01/19/information-on-food-additives/' rel='external nofollow' class='url'>Information on food additives &laquo; Cheshire</a>		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-draust even thread-even depth-1 highlander-comment" id="comment-20197">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/72863e8bef91df1ca7f9a7f2c701d15d?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20197">January 21, 2009 - 7:33 am</a></time>
+
+								  	<cite><a href='http://draust.wordpress.com' rel='external nofollow' class='url'>draust</a></cite>							</header>
+
+			
+			<p>I am finding it rather funny to see all tbe hysteria about this when cochineal has been added to foods and other things since way before there was &#8220;modern industrialised food manufacture&#8221;.</p>
+<p>More than fifteen yrs ago I holiday-ed on the rather bleak island of <a href="http://en.wikipedia.org/wiki/Lanzarote" rel="nofollow">Lanzarote in the Canaries</a>, where it turned out there had been a <a href="http://www.lanzaroteguidebook.com/beetlejuice.php" rel="nofollow">thriving and economically important cochineal industry</a> in the early 19th century. This supplied the dye to Europe, both for colouring Campari and for dyeing the red coats of the British army. The industry pretty much died out in the mid-19th century because cochineal was replaced by artificial dyes.</p>
+<p>Given cochineal&#8217;s history as an &#8220;ancient secret of native people&#8221; (notably the South American Indian tribes) I would have thought all the usual idiots who rant on about wanting food to be &#8220;natural&#8221; would be loudly INSISTING on cochineal rather than nasty evil chemical &#8220;Red Dye #xz&#8221;</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-membracid bypostauthor odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20198">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/04d48b3bb90a23da3a8368762d26a8f7?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20198">January 21, 2009 - 11:43 am</a></time>
+
+								  	<cite><a href='http://membracid.wordpress.com/' rel='external nofollow' class='url'>Bug Girl</a></cite>							</header>
+
+			
+			<p>I agree&#8211;given the fad for things being &#8220;all natural&#8221;, I would think cochineal would be more popular!</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 highlander-comment" id="comment-20199">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://1.gravatar.com/avatar/183772cce26394bcc495ca2bc3fde012?s=40&amp;d=http%3A%2F%2F1.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20199">January 21, 2009 - 12:38 pm</a></time>
+
+								  	<cite>Chris P</cite>							</header>
+
+			
+			<p>So are you guys advocating eating poisonous mushrooms and toadstools because they are &#8220;natural&#8221; too?  There are plenty of natural things that are NOT good for you.</p>
+<p>Natural food afficianados would want minimal coloring.  THe effects of cochineal on certain people have been only recently discovered.  Like the celebrity who had mercury poisoning because he ate too much sushi things will change.  Presumably some foods will become poisonous too.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20202">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/95ff6fee6095f0367aa64e73cd521448?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20202">January 21, 2009 - 6:45 pm</a></time>
+
+								  	<cite><a href='http://coronadetucson.blogspot.com/' rel='external nofollow' class='url'>Kathiesbirds</a></cite>							</header>
+
+			
+			<p>Thanks for this important post.  My sister called me all alarmed about what she had heard and held up the phone for me to listen to the taped news story. It&#8217;s always nice to have the facts.  Thanks to Doug Taron for linking to this site, which is how I found you!</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-membracid bypostauthor even thread-even depth-1 highlander-comment" id="comment-20215">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://0.gravatar.com/avatar/04d48b3bb90a23da3a8368762d26a8f7?s=40&amp;d=http%3A%2F%2F0.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20215">January 23, 2009 - 10:37 am</a></time>
+
+								  	<cite><a href='http://membracid.wordpress.com/' rel='external nofollow' class='url'>Bug Girl</a></cite>							</header>
+
+			
+			<p>Thanks so much Kathy! That means a lot.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-20216">
+			<article>
+				<header class="comment-header">
+				  	<figure><img alt='' src='http://2.gravatar.com/avatar/e2c7fa0b4dca3686a35ebe0274073d26?s=40&amp;d=http%3A%2F%2F2.gravatar.com%2Favatar%2Fad516503a11cd5ca435acc9bb6523536%3Fs%3D40&amp;r=PG' class='avatar avatar-40' height='40' width='40' /></figure>				<time><a href="http://membracid.wordpress.com/2009/01/12/cochineal-its-a-bug-and-a-feature/#comment-20216">January 23, 2009 - 11:19 am</a></time>
+
+								  	<cite><a href='http://ranting-ricki.blogspot.com' rel='external nofollow' class='url'>ricki</a></cite>							</header>
+
+			
+			<p>Labeling is great. I won&#8217;t buy products labeled containing aspartame because I have questions about its long-term safety</p>
+<p>Banning, however, is not. I wouldn&#8217;t presume to say that NO ONE should be allowed to eat aspartame just because I do not want to. </p>
+<p>EVERYONE has sensitivities to things. I cannot tolerate carrots &#8211; a bottle of juice that was colored with &#8220;purple carrot extract&#8221; set me off. </p>
+<p>We can&#8217;t ban everything that anyone might possibly react to; there would be nothing left to eat. </p>
+<p>I really hope the hysteria about &#8220;We must get this banned!&#8221; does not grow in the future.</p>
+
+			<div class="reply">
+				
+							</div><!-- .reply -->
+			  </article>
+		</li><!-- #comment-## -->
+</ol>
+
+			
+									
+</section>
+<!-- / #comments -->
+			<nav class="navigation" role="navigation">
+			<div class="nav-previous"><a href="http://membracid.wordpress.com/2009/01/12/an-automated-louse-feeder/" rel="prev">An automated louse&nbsp;feeder</a></div>
+			<div class="nav-next"><a href="http://membracid.wordpress.com/2009/01/13/skeptics-circle-on-thursday/" rel="next">Skeptics&#8217; Circle on&nbsp;Thursday</a></div>
+		</nav>
+		<!-- / .navigation -->
+	
+
+	</section>
+	<!-- / #content -->
+
+
+
+	<aside id="secondary" role="complementary">
+		<section id="search-3" class="widget widget_search"><h3 class="title">Search</h3><form role="search" method="get" id="searchform" class="searchform" action="http://membracid.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></section><style type="text/css">
+#am_thumbnail a {
+text-decoration: none;
+border: none;
+}
+#am_thumbnail img {
+text-decoration: none;
+border: 1px solid #999;
+max-width: 99%;
+}
+#am_name {
+margin-top: 5px;
+margin-bottom: 3px;
+}
+#am_headline {
+margin-bottom: 5px;
+}
+#am_bio {
+margin-bottom: 15px;
+}
+#am_bio p {
+margin-bottom: 5px;
+}
+#am_bio p:last-child {
+margin-bottom: 0px;
+}
+#am_services {
+margin-right: -5px;
+}
+#am_services a.am_service_icon {
+margin-right: 4px;
+text-decoration: none;
+border: none;
+}
+#am_services a.am_service_icon:hover {
+text-decoration: none;
+border: none;
+}
+#am_services a.am_service_icon img {
+border: none;
+margin-bottom: 4px;
+}
+</style>
+<section id="aboutme_widget-2" class="widget aboutme_widget"><h3 class="title">about.me</h3><h2 id="am_name"><a href="http://about.me/membracid" style="font-size:medium;" target="_blank" rel="me">Bug G. Membracid</a></h2><div id="am_bio"><p>Bug_Girl has been <a href="http://www.wired.com/wiredscience/charismaticminifauna/">blogging about insects</a> since before you were born. She started out as a faculty member, and then jumped the academic ship to become an Instructional Designer. Bug has significant project management, teaching, advising, and data analysis experience.</p><p>She currently specializes in helping nature centers and scientists with online communication. Available for consulting.</p></div><div id="am_services"><a href="http://www.twitter.com/bug_girl" target="_blank" class="am_service_icon" rel="me"><img src="http://dcbdluf1ahqio.cloudfront.net/twitter/32x32.png"></a><a href="http://plus.google.com/115689049515322646080/" target="_blank" class="am_service_icon" rel="me"><img src="http://dcbdluf1ahqio.cloudfront.net/googleplus/32x32.png"></a><a href="https://www.facebook.com/BugGirlsBlog" target="_blank" class="am_service_icon" rel="me"><img src="http://dcbdluf1ahqio.cloudfront.net/facebookpage/32x32.png"></a></div></section><section id="categories-4" class="widget widget_categories"><h3 class="title">Categories</h3><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="1217377">Ask an Entomologist</option>
+	<option class="level-0" value="53268">Bees</option>
+	<option class="level-0" value="178">Books</option>
+	<option class="level-0" value="47458">Diversity</option>
+	<option class="level-0" value="256681">Entomology</option>
+	<option class="level-0" value="586">Food</option>
+	<option class="level-0" value="1833">Gardening</option>
+	<option class="level-0" value="36306">Insects</option>
+	<option class="level-0" value="21597">Malaria</option>
+	<option class="level-0" value="47693">mosquitoes</option>
+	<option class="level-0" value="190">Movies</option>
+	<option class="level-0" value="1114170">Rachel Carson</option>
+	<option class="level-0" value="30">Random</option>
+	<option class="level-0" value="992596">Ranting (feminist)</option>
+	<option class="level-0" value="992607">Ranting (general)</option>
+	<option class="level-0" value="173">Science</option>
+	<option class="level-0" value="64117">Skepticism</option>
+	<option class="level-0" value="1046">WTF</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+	var dropdown = document.getElementById("cat");
+	function onCatChange() {
+		if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+			location.href = "http://membracid.wordpress.com/?cat="+dropdown.options[dropdown.selectedIndex].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+/* ]]> */
+</script>
+
+</section><section id="flickr-2" class="widget widget_flickr"><h3 class="title">Insects on Flickr</h3>		<!-- Start of Flickr Badge -->
+		<table id="flickr_badge_uber_wrapper" cellpadding="0" cellspacing="10" border="0" class="flickr-size-thumbnail">
+			<tr>
+				<td>
+					<table cellpadding="0" cellspacing="10" border="0" id="flickr_badge_wrapper">
+						<tr>
+							<td align="center">
+								<a href="http://www.flickr.com/photos/itchydogimages/10082868855/in/pool-1724579@N22"><img alt="Slug Caterpillar (Cup Moth, Prolimacodes sp., Limacodidae) &quot;Tank&quot;" title="Slug Caterpillar (Cup Moth, Prolimacodes sp., Limacodidae) &quot;Tank&quot;" src="http://farm3.staticflickr.com/2861/10082868855_50903315f0_t.jpg" border="0" /></a><br /><br /><a href="http://www.flickr.com/photos/techuser/10090059784/in/pool-1724579@N22"><img alt="Curculionidae" title="Curculionidae" src="http://farm6.staticflickr.com/5332/10090059784_b2feb093bb_t.jpg" border="0" /></a><br /><br /><a href="http://www.flickr.com/photos/jialiar/10085791206/in/pool-1724579@N22"><img alt="Harvestmen in Love" title="Harvestmen in Love" src="http://farm4.staticflickr.com/3722/10085791206_8c2f6ef95d_t.jpg" border="0" /></a><br /><br /><a href="http://www.flickr.com/photos/itchydogimages/10067530475/in/pool-1724579@N22"><img alt="Lobster Moth Caterpillar (Stauropus sp., Notodontidae)" title="Lobster Moth Caterpillar (Stauropus sp., Notodontidae)" src="http://farm6.staticflickr.com/5525/10067530475_7d56757d6f_t.jpg" border="0" /></a><br /><br />								<a href="http://www.flickr.com/groups/takemyinsects/pool/">More Photos</a>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
+		<!-- End of Flickr Badge -->
+		</section><section id="top-posts-2" class="widget widget_top-posts"><h3 class="title">Top Posts</h3><ul><li><a href="http://membracid.wordpress.com/2008/09/18/how-to-inspect-your-hotel-room-for-bed-bugs/" class="bump-view" data-bump-view="tp">How to inspect your hotel room for bed bugs</a></li>
+<li><a href="http://membracid.wordpress.com/2012/07/25/the-horrible-truth-about-spidermans-anatomy/" class="bump-view" data-bump-view="tp">The horrible truth about Spiderman&#039;s Anatomy</a></li>
+<li><a href="http://membracid.wordpress.com/2007/07/19/bot-flies/" class="bump-view" data-bump-view="tp">Ask an Entomologist: Bot Flies</a></li>
+<li><a href="http://membracid.wordpress.com/2007/08/30/its-not-illegal-to-keep-a-mantis-as-a-pet-mostly/" class="bump-view" data-bump-view="tp">It&#039;s not illegal to keep a mantis as a pet (mostly)</a></li>
+<li><a href="http://membracid.wordpress.com/2013/02/27/scientifically-accurate-spider-man-is-not-accurate/" class="bump-view" data-bump-view="tp">&quot;Scientifically Accurate&quot; Spider-man (is not accurate)</a></li>
+</ul></section><section id="text-315425022" class="widget widget_text"><h3 class="title">Pay My Rent!</h3>			<div class="textwidget">I am a freelance contractor with no health insurance.  If you would like to contribute to my rent, medical bills, or just buy me some coffee, you can donate here! <p></p>
+<a href="https://www.paypal.com/cgi-bin/webscr?cmd=_donations&amp;business=PBA5STF5ZJ6JL&amp;lc=US&amp;item_name=Membracid&amp;currency_code=USD&amp;bn=PP%2dDonationsBF%3abtn_donateCC_LG%2egif%3aNonHosted">
+<img alt="Donate Button" src="https://www.paypal.com/en_US/i/btn/btn_donate_LG.gif" /></a>
+</div>
+		</section><section id="twitter_timeline-2" class="widget widget_twitter_timeline"><h3 class="title">Follow me on Twitter</h3><a class="twitter-timeline" data-widget-id="330306971301449729" data-theme="light" data-link-color="#f96e5b" data-border-color="#e8e8e8" data-chrome="nofooter noborders" height="400" lang="EN">My Tweets</a></section>	</aside>
+
+		<footer id="footer">
+				<div id="footer-widgets" role="complementary">
+		<section id="calendar-3" class="widget widget_calendar"><h3 class="title">Archives</h3><div id="calendar_wrap"><table id="wp-calendar">
+	<caption>January 2009</caption>
+	<thead>
+	<tr>
+		<th scope="col" title="Monday">M</th>
+		<th scope="col" title="Tuesday">T</th>
+		<th scope="col" title="Wednesday">W</th>
+		<th scope="col" title="Thursday">T</th>
+		<th scope="col" title="Friday">F</th>
+		<th scope="col" title="Saturday">S</th>
+		<th scope="col" title="Sunday">S</th>
+	</tr>
+	</thead>
+
+	<tfoot>
+	<tr>
+		<td colspan="3" id="prev"><a href="http://membracid.wordpress.com/2008/12/" title="View posts for December 2008">&laquo; Dec</a></td>
+		<td class="pad">&nbsp;</td>
+		<td colspan="3" id="next"><a href="http://membracid.wordpress.com/2009/02/" title="View posts for February 2009">Feb &raquo;</a></td>
+	</tr>
+	</tfoot>
+
+	<tbody>
+	<tr>
+		<td colspan="3" class="pad">&nbsp;</td><td>1</td><td><a href="http://membracid.wordpress.com/2009/01/02/" title="Visual Migraine&nbsp;Aura&#8211;Illustrated!">2</a></td><td><a href="http://membracid.wordpress.com/2009/01/03/" title="Re-greening&nbsp;Detroit?, 15 Evolutionary&nbsp;Gems">3</a></td><td>4</td>
+	</tr>
+	<tr>
+		<td><a href="http://membracid.wordpress.com/2009/01/05/" title="Extraterrestrial&nbsp;Cows">5</a></td><td><a href="http://membracid.wordpress.com/2009/01/06/" title="Center For Science in the Public Interest: Taxonomy&nbsp;FAIL">6</a></td><td><a href="http://membracid.wordpress.com/2009/01/07/" title="2008 Web Awards&nbsp;voting">7</a></td><td><a href="http://membracid.wordpress.com/2009/01/08/" title="Ethics of copying unpublished&nbsp;data, Colbert, bees, and&nbsp;cows">8</a></td><td><a href="http://membracid.wordpress.com/2009/01/09/" title="Insect&nbsp;warfare, Breaking FAIL news: Scientific&nbsp;American">9</a></td><td><a href="http://membracid.wordpress.com/2009/01/10/" title="News I really didn&#8217;t&nbsp;need.">10</a></td><td>11</td>
+	</tr>
+	<tr>
+		<td><a href="http://membracid.wordpress.com/2009/01/12/" title="An automated louse&nbsp;feeder, Cochineal: it&#8217;s a bug AND a&nbsp;feature!">12</a></td><td><a href="http://membracid.wordpress.com/2009/01/13/" title="Skeptics&#8217; Circle on&nbsp;Thursday">13</a></td><td>14</td><td><a href="http://membracid.wordpress.com/2009/01/15/" title="First Skeptics&#8217; Circle,&nbsp;2009!">15</a></td><td><a href="http://membracid.wordpress.com/2009/01/16/" title="Bark Beetle Music&nbsp;Video">16</a></td><td><a href="http://membracid.wordpress.com/2009/01/17/" title="Weekly WTF:  The Michigan&nbsp;Version">17</a></td><td>18</td>
+	</tr>
+	<tr>
+		<td><a href="http://membracid.wordpress.com/2009/01/19/" title="Monday&nbsp;LOLbeetle">19</a></td><td>20</td><td><a href="http://membracid.wordpress.com/2009/01/21/" title="Pretty Picture&nbsp;Wednesday">21</a></td><td><a href="http://membracid.wordpress.com/2009/01/22/" title="Dear Coffee&nbsp;Barista">22</a></td><td><a href="http://membracid.wordpress.com/2009/01/23/" title="Ant&nbsp;Protesters!">23</a></td><td><a href="http://membracid.wordpress.com/2009/01/24/" title="More amazing&nbsp;Insecta-craft">24</a></td><td><a href="http://membracid.wordpress.com/2009/01/25/" title="Cheese, Maggots, and&nbsp;Misinformation">25</a></td>
+	</tr>
+	<tr>
+		<td>26</td><td><a href="http://membracid.wordpress.com/2009/01/27/" title="The Small Science&nbsp;Collective, Armyworms attack&nbsp;Liberia">27</a></td><td><a href="http://membracid.wordpress.com/2009/01/28/" title="Bee&nbsp;Course!">28</a></td><td><a href="http://membracid.wordpress.com/2009/01/29/" title="Time to buy&nbsp;seeds!, Insect Genitalia: an Entomological&nbsp;Obsession">29</a></td><td>30</td><td><a href="http://membracid.wordpress.com/2009/01/31/" title="More Bugs N&#8217;&nbsp;Drugs">31</a></td>
+		<td class="pad" colspan="1">&nbsp;</td>
+	</tr>
+	</tbody>
+	</table></div></section><section id="text-1" class="widget widget_text"><h3 class="title">Copyright Stuff</h3>			<div class="textwidget">I really hate to do this, but some people have been taking whole chunks of my blog and publishing them as theirs, or implying I endorse their products. 
+Not cool.
+
+This work protected under the Digital Millennium Copyright Act. You are not allowed to just take content from my site. You DO NOT have permission to scrape my feed or content excerpts as part of a Splog or commercial website.
+
+If you want to use my work for commercial purposes, <a href="http://membracid.wordpress.com/contact-me/">contact me</a>. I'm happy to have you use my work, I just want to be asked. </div>
+		</section><section id="linkcat-1170512" class="widget widget_links"><h3 class="title">Entomology Info</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://midge.cfans.umn.edu/guide/">Aquatic Insect ID</a></li>
+<li><a href="http://bugguide.net/node/view/15740">BugGuide</a></li>
+<li><a href="http://www.butterfliesandmoths.org/">Butterflies and Moths</a></li>
+<li><a href="http://www.ent.iastate.edu/list/">Index of Entomology</a></li>
+<li><a href="http://www.nappc.org/">Pollinator Protection Campaign</a></li>
+<li><a href="http://www.xerces.org/">Xerces Society</a></li>
+
+	</ul>
+</section>
+<section id="linkcat-1202588" class="widget widget_links"><h3 class="title">Important things to read</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://www.coffeehabitat.com/">Coffee and Conservation</a></li>
+<li><a href="http://mediamatters.org/">Media Matters</a></li>
+<li><a href="http://www.natcenscied.org/">Natl Ctr for Science Education</a></li>
+<li><a href="http://www.racialicious.com/">Racialicious</a></li>
+<li><a href="http://www.senseaboutscience.org.uk/">Sense about Science</a></li>
+<li><a href="http://www.splcenter.org/">Southern Poverty Law Center</a></li>
+<li><a href="http://evolution.berkeley.edu/">Understanding Evolution</a></li>
+<li><a href="http://undsci.berkeley.edu/">Understanding Science</a></li>
+
+	</ul>
+</section>
+<section id="linkcat-1205222" class="widget widget_links"><h3 class="title">Tools and Nerdery</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://alistapart.com/">A List Apart</a></li>
+<li><a href="http://headrush.typepad.com/">Creating Passionate Users</a></li>
+<li><a href="http://www.csszengarden.com/">CSS Zen Garden</a></li>
+<li><a href="http://www.eff.org/">Electronic Freedom</a></li>
+
+	</ul>
+</section>
+	</div>
+			<nav id="footer-nav" role="navigation">
+							</nav>
+			<div class="colophon">
+				<a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>. |
+				<a href="http://theme.wordpress.com/credits/membracid.wordpress.com/" title="Learn about customizing this theme with the Custom Design upgrade">Customized Blaskan Theme</a>. 			</div>
+		</footer>
+		<!-- / #footer -->
+	</div>
+	<!-- / #wrapper -->
+</div>
+<!-- / #site -->
+
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom,posttag.carmine,posttag.cochineal,posttag.dye,posttag.red"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cposttag.carmine%2Cposttag.cochineal%2Cposttag.dye%2Cposttag.red" height="1" width="1" alt="" /></div></noscript>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-fb24a1c28fdf757f54e5aa8025082ae1">
+	</div>
+	<div class="grofile-hash-map-aa55fd39b1b56866ef75dde355c6ddbe">
+	</div>
+	<div class="grofile-hash-map-fdb40a63105039edf6801c988a3b5396">
+	</div>
+	<div class="grofile-hash-map-d08fcbc30cfac5ebdec377f31d2f6faa">
+	</div>
+	<div class="grofile-hash-map-04d48b3bb90a23da3a8368762d26a8f7">
+	</div>
+	<div class="grofile-hash-map-1c34cddcec289738f0b48b5a304b3b94">
+	</div>
+	<div class="grofile-hash-map-843c5ed1f2e9c3610f26459523657932">
+	</div>
+	<div class="grofile-hash-map-ef53fa4d61fafc251d6c98efd015d908">
+	</div>
+	<div class="grofile-hash-map-9c9f5d8d8709baebf7d630d8842ec3bf">
+	</div>
+	<div class="grofile-hash-map-744af871c6e638c4e909d07fbf9152db">
+	</div>
+	<div class="grofile-hash-map-38f6a52147d6ab66fac2081d862f1aad">
+	</div>
+	<div class="grofile-hash-map-183772cce26394bcc495ca2bc3fde012">
+	</div>
+	<div class="grofile-hash-map-72863e8bef91df1ca7f9a7f2c701d15d">
+	</div>
+	<div class="grofile-hash-map-95ff6fee6095f0367aa64e73cd521448">
+	</div>
+	<div class="grofile-hash-map-e2c7fa0b4dca3686a35ebe0274073d26">
+	</div>
+	</div>
+
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/membracid.wordpress.com\/2009\/01\/12\/cochineal-its-a-bug-and-a-feature\/":2561}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-tumblr' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtumblr', 'menubar=1,resizable=1,width=450,height=450' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+			jQuery(document).on('ready', function(){
+				jQuery('body').on('click', 'a.share-pinterest', function(e){
+					e.preventDefault();
+
+					// Load Pinterest Bookmarklet code
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = window.location.protocol + "//assets.pinterest.com/js/pinmarklet.js?r=" + ( Math.random() * 99999999 );
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+
+					// Trigger Stats
+					var s = document.createElement("script");
+					s.type = "text/javascript";
+					s.src = this + ( this.toString().indexOf( '?' ) ? '&' : '?' ) + 'js_only=1';
+					var x = document.getElementsByTagName("script")[0];
+					x.parentNode.insertBefore(s, x);
+				});
+			});
+			</script>
+		<script type='text/javascript' src='//platform.twitter.com/widgets.js?ver=3.7-alpha-25157'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1373391538j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'734874','v':'wpcom','tz':'-4','user_id':'0','post':'2561','subd':'membracid'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1lYixwbDJzRzZYckplWEU4TnJmM2VdWTQsMi9FOG1PVVlfdEphOGJVbWRMQ0l6NWpwRHM9aHNET0Jqa2pPTGVbSFY0QUZ+V2VFQUlSU1F+LUREQWltQTM5VC1WbXRtSmlLLT8xLGdORVJRTFlRVDFWNmtQcmx2ZWlVKy03amFUPWdPS2RQcVd5c3xvUDAuNDlINy1+dlR3bndYTiZycjhiWUlyK0htb0tEYWpReGEvQWZHaTQwOEJ8T1AvWWE4REdoST09NFkvJjdVdWhYLmZyRFk5USxKTD1OfDBwLG9DWXQ2by1Ld20rZjZsc0htR2xvOE8tRUxjd1BNQ1kxQkFhM08zQV9EOEFnNl9pNlIyVzhJM0s4Zz04VDIvXWpwdzUxX0huQms3a098NkE0N0xQXWdiZ1dpX2VOQkVMNGtlT3w9PXVYK01FajJdTHFmSW9QVy10Q29F'});
+addLoadEvent(function(){linktracker_init('734874',2561);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>

@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Duplicate keys online</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+
+	<script src="https://netdna.bootstrapcdn.com/bootstrap/3.0.0-wip/js/bootstrap.min.js"></script>
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.6.2/html5shiv.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.2.0/respond.js"></script>
+    <![endif]-->
+
+  <script type="text/javascript">
+    /* display the div specified by the hash in the url
+    */
+    function show_page() {
+        // extract the name of the anchor from the URL
+        var hi = window.location.hash.indexOf('#');
+        var anchor = hi==-1 ? "#Home" : window.location.hash.substring(hi);
+        if(anchor == "#") anchor = "#Home";
+
+        // log target
+        _paq.push(['trackPageView', anchor]);
+
+        // do nothing if the target is the carousel
+        if(anchor.indexOf('#Carousel')==0) return;
+        if(anchor.indexOf('#more-tips')==0) return;
+
+       // inspect every link in the nav bar.
+       $('.nav a').each(function() {
+           if(this.hash == anchor) {
+               // show the page corresponding to the anchor and activate
+               // its nav-pill
+               $(anchor + "_div").fadeIn(200);
+               $(this.parentElement).addClass('active');
+           } else {
+               // hide all other pages and deactivate their link
+               $(this.parentElement).removeClass('active');
+               $(this.hash + "_div").hide();
+           }
+       });
+    }
+
+    jQuery(function($) {
+       // call show_page when the hash in the browser link changes
+       $(window).bind('hashchange', show_page );
+       $(document).ready( show_page );
+
+       // enable the quote carousel
+       $('#Carousel_quote').carousel();
+
+       // install tooltips on the instruction images
+       $('.instructionphoto').each(function() {
+            // html code to display the image at full size
+            var html = '<img src=\"' + this.src + '\">';
+            $(this).tooltip({'title': html,
+                             'placement': 'right',
+                             'html': 'Expanded'
+                             });
+       });
+
+
+       // instrument widgets for logging
+       $('a[href="#more-tips"]').click(function(){
+           _paq.push(['trackPageView', '#more-tips']);
+       });
+       $('a[href="#Carousel_quote"]').click(function(){
+           _paq.push(['trackPageView', '#carousel']);
+       });
+    });
+  </script>
+
+
+<link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap-glyphicons.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.0.0-rc2/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/css/keysduplicated.css">
+
+    <!-- Fav and touch icons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/apple-touch-icon-144-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/apple-touch-icon-114-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/apple-touch-icon-72-precomposed.png">
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
+    <link rel="shortcut icon" href="assets/ico/favicon.png">
+
+    <!-- Google Analytics -->
+    <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','http://www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-44197197-1', 'keysduplicated.com');
+    ga('send', 'pageview');
+    </script>
+    <!-- End Google Analytics -->
+
+    <!-- Piwik -->
+    <script type="text/javascript">
+      var _paq = _paq || [];
+      _paq.push(['trackPageView']);
+      _paq.push(['enableLinkTracking']);
+      (function() {
+        var u=(("https:" == document.location.protocol) ? "https" : "http") + "://keysduplicated.com/piwik//";
+        _paq.push(['setTrackerUrl', u+'piwik.php']);
+        _paq.push(['setSiteId', 1]);
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0]; g.type='text/javascript';
+        g.defer=true; g.async=true; g.src=u+'piwik.js'; s.parentNode.insertBefore(g,s);
+      })();
+    </script>
+
+<noscript><p><img src="http://keysduplicated.com/piwik/piwik.php?idsite=1" style="border:0" alt="" /></p></noscript>
+<!-- End Piwik Code -->
+  </head>
+
+  <body>
+    <!-- facebook like button
+    <div id="fb-root"></div>
+    <script>(function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "http://connect.facebook.net/en_US/all.js#xfbml=1";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));</script>
+    end facebook like button -->
+
+    <div class="container-narrow">
+      <div class="header">
+        <ul class="nav nav-pills pull-right">
+          <li ><a href="#Home">Home</a></li>
+          <li ><a href="#Business">For Businesses</a></li>
+          <li ><a href="#Instructions">Instructions</a></li>
+          <li class="active" ><a href="#Security">Security</a></li>
+          <li ><a href="#AboutUs">About Us</a></li>
+        </ul>
+      <h3 class="text-muted hidden-xs">Keys Duplicated</h3>
+      <hr>
+      </div>
+   </div>
+
+    <div class="container-narrow" id="Instructions_div">
+	  <div class="marketing">
+	  	  <h3>How to copy keys with your smartphone</h3>
+	  </div>
+
+	  <div class="row marketing">
+		<div class="col-md-4">
+		  <img src="assets/img/front.jpg" alt="front of a key" class="img-rounded instructionphoto">
+		  <img src="assets/img/back.jpg" alt="back of a key" class="img-rounded instructionphoto fliph">
+		</div>
+		<div class="col-md-8">
+		  <h4>Hold the key in your hand, by its loop</h4>
+
+		  <p>Take photos of both sides. Be a sport, don't conceal the
+		  "Do not duplicate" mark if there is one. And as a security
+		  measure, please let us see your fingers.</p>
+
+		</div>
+	  </div>
+
+
+	  <div class="row marketing">
+		<div class="col-md-4">
+		  <img src="assets/img/too-far.png" alt="the key is too far" class="img-rounded instructionphoto">
+		  <img src="assets/img/too-close.png" alt="the key is too blurry" class="img-rounded instructionphoto">
+		</div>
+		<div class="col-md-8">
+		  <h4>Photograph both sides from 4 inches away</h4>
+
+		  <p>Capture the entire key. Focus the camera on the blade of
+		      the key. On most phones, you can choose where to focus
+		      the camera by tapping on the screen.  </p>
+
+		</div>
+	  </div>
+
+	  <div class="row marketing">
+		<div class="col-md-4">
+		  <img src="assets/img/send-photo.png" alt="email the photos" class="img-rounded instructionphoto">
+		  <img src="assets/img/full-res.png" alt="send photo at the highest resolution possible"  class="img-rounded instructionphoto">
+		</div>
+		<div class="col-md-8">
+		  <h4>Email pictures to <a id="key-email" href="mailto:keys@keysduplicated.com" onclick="javascript:_paq.push(['trackPageView', '#key-email']);"><span style="font-family:monospace">keys@keysduplicated.com</span></a></h4>
+
+		  <p>Send the highest resolution photos possible. </p>
+		  <p> <em>Hint:</em> On your phone, click the link above and attach photos to the email.</p>
+
+		</div>
+	  </div>
+
+      <div class="marketing"
+		style="margin-top:30px;margin-bottom:100px;"> <h4>That's it!
+		Our robot will analyze your picture and send you an email
+		asking for a shipping address in the United States and your
+		payment information.</h4> </div>
+	  <div class="well" style="margin-top: 40px; margin-bottom:60px; padding-top: 0px; padding-bottom: 10px ">
+		<div>
+		  <a href="#more-tips" data-toggle="collapse">
+		  <center><h3>More tips for taking great pictures of your keys?</h3></center>
+		  </a>
+		</div>
+
+	    <div id="more-tips" class="collapse" >
+	      <div class="row marketing">
+
+		    <div class="col-md-5 col-md-offset-1">
+
+		      <img src="assets/img/blanks.png" alt="key blanks we currently support" class="img-rounded detailphoto">
+
+			  <p>For now, we accept two types of keys. Your house key
+		      is probably one of these.</p>
+		    </div>
+
+		    <div class="col-md-5 col-md-offset-1">
+		      <img src="assets/img/focus.png" alt="tap on the screen to focus the camera" class="img-rounded detailphoto">
+		      <p>Focus the camera on the blade of the key. On most
+		      phones, you can choose where to focus by tapping on the
+		      screen.</p>
+		    </div>
+	      </div>
+
+
+	      <div class="row marketing">
+		    <div class="col-md-5 col-md-offset-1">
+		      <img src="assets/img/textured.png" alt="use a plain background" class="img-rounded detailphoto badphoto">
+			  <p> It's easier to analyze a key when the background isn't textured. A sheet of paper would make a much cleaner background.
+			</div>
+
+		    <div class="col-md-5 col-md-offset-1">
+			  <img src="assets/img/shadows.png" alt="hold the key in your hands" class="img-rounded detailphoto badphoto">
+			  <p>As a security measure, hold the key in your hand when you photograph it. </p>
+			</div>
+	      </div>
+		</div> <!-- collapse -->
+	  </div> <!-- well of More Tips -->
+
+	</div> <!-- Instructions -->
+
+    <div class="container-narrow" id="AboutUs_div">
+
+	  <p>We're based in San Francisco, CA. Check out our <a id="facebook" href="http://facebook.com/KeysDuplicated" onclick="javascript:_paq.push(['trackPageView', '#facebook']);">facebook page</a>, or
+	     drop us a note at <a
+	      href="mailto:support@keysduplicated.com">support@keysduplicated.com</a>. For technical details, visit our <a href="blog">blog</a>. Here's the team:</p>
+
+	  <div class="row bio" style="margin-top:40px">
+		<div class="col-md-3 col-md-offset-1"> <img class="profilephoto" src="assets/img/ali.png"> </div>
+		<div class="col-md-7">
+		  <h4>Ali Rahimi <a id="ali-linkedin" href="http://www.linkedin.com/pub/ali-rahimi/0/104/a85" onclick="javascript:_paq.push(['trackPageView', '#ali-linkedin']);"> <img src="assets/img/linkedin-icon-small.jpg"></a> <a id="ali-facebook" href="http://www.facebook.com/ali.rahimi.i" onclick="javascript:_paq.push(['trackPageView', '#ali-facebook']);"><img src="assets/img/facebook.gif"></a></h4>
+
+		  <p>Ali programmed the robots that analyze and cut your keys.
+		  He has a PhD from MIT's Computer Science and Artificial
+		  Intelligence Lab. He builds machine learning and computer
+		  vision systems. </p>
+
+		</div>
+	  </div>
+
+	  <div class="row bio">
+		<div class="col-md-3 col-md-offset-1"> <img class="profilephoto" src="assets/img/pascal.jpg"> </div>
+		<div class="col-md-7">
+		  <h4>Pascal Wassam</h4>
+
+		  <p>Pascal built the robots. He's a mechanical engineer and
+		  an electronics wizard. The robots lived in his kitchen
+		  before we moved to our headquarters. </p>
+
+		</div>
+	  </div>
+
+	  <div class="row bio">
+		<div class="col-md-3 col-md-offset-1"> <img class="profilephoto" src="assets/img/sam.jpg"> </div>
+		<div class="col-md-7">
+		  <h4>Sam Napier</h4>
+
+		  <p>Sam is a veteran licensed locksmith. He's been
+		  locksmithing in San Francisco for 30 years and is well-known
+		  in these parts. He's so good he could probably cut your keys
+		  with his teeth if he had to. </p>
+
+		</div>
+	  </div>
+
+	  <div class="row bio">
+		<div class="col-md-3 col-md-offset-1"> <img class="profilephoto" src="assets/img/kurt.jpg"> </div>
+		<div class="col-md-7">
+		  <h4>Burt</h4>
+
+		  <p>Burt was Pascal's first key robot. Burt is fast, heavy,
+		  loud, expensive and supremely accurate. Burt is mostly
+		  retired, but we still ask him to cut some of the tougher
+		  keys.</p>
+
+		</div>
+	  </div>
+
+	 <div class="row bio">
+		<div class="col-md-3 col-md-offset-1"> <img class="profilephoto" src="assets/img/maximilian.jpg"> </div>
+		<div class="col-md-7">
+		  <h4>Maximilians 1 through 15 </h4>
+
+		  <p>One of the Maximilians will most likely cut your
+		  key. They're Pascal's third generation robots. They're fast,
+		  accurate, and reliable. These little guys zip around pieces
+		  of metal to sculpt a gang of keys in an eye blink.</p>
+
+		</div>
+	  </div>
+
+	</div> <!-- AboutUs -->
+
+    <div class="container-narrow" id="Home_div">
+      <div class="jumbotron well well-sm" style="margin-bottom:0px">
+        <h1 style="margin-bottom:50px">Duplicate your House Keys with your Phone</h1>
+		<div class="row">
+		  <div class="col-xs-12 col-md-4">
+			<div class="row">
+				<img class="col-xs-6 col-md-6 stepanchor" src="assets/img/take-a-picture.jpg" style="heihgt:auto;border-color:rgb(190, 180, 55)">
+				<h4 class="col-xs-6 col-md-6 steptext" align="left">Take a picture of your key</h4>
+			</div>
+		 </div>
+
+		 <div class="col-xs-12 col-md-4">
+			<div class="row" style="padding-right:20px">
+			  <div class="col-xs-6 col-md-6 stepanchor" style="background-color:rgb(224, 205, 224); border:none;">
+				<h2 style="margin-top:25px">$5</h2>
+			  </div>
+				<h4 class="col-xs-6 col-md-6 steptext" align="left">per key.<br>Shipping is free</h4>
+			</div>
+		 </div>
+
+		 <div class="col-xs-12 col-md-4">
+			<div class="row">
+				<img class="col-xs-6 col-md-6 stepanchor" alt="cut keys are mailed to you" src="assets/img/keys-in-mail.png" style="height:auto; border:none">
+				<h4 class="col-xs-6 col-md-6 steptext" align="left">Get keys<br>in the mail</h4>
+			  </div>
+		    </div>
+		 </div>
+
+        <a id="copynow" class="btn btn-lg btn-inverse" style="margin-top:50px" href="#Instructions" onclick="javascript:_paq.push(['trackPageView', '#copynow']);">Copy Keys Now</a>
+	  </div>
+
+	  <!-- Facebook like button
+	   <div class="row">
+	   	<div class="col-md-offset-0 fb-like" data-href="http://facebook.com/KeysDuplicated" data-send="true" data-layout="button_count" data-width="450" data-show-faces="false" data-ref="home"></div>
+	   </div>
+	   -->
+
+      <div class="row" style="margin-top:30px">
+        <div class="col-md-5 marketing">
+          <h4><span class="glyphicon glyphicon-home"></span> More convenient than a hardware store</h4>
+		  <li>No need to go to the store</li>
+		  <li>Copy keys any time from anywhere</li>
+		  <li>Use any smartphone</li>
+        </div>
+
+        <div class="col-md-5 col-md-offset-2 marketing">
+          <h4><span class="glyphicon glyphicon-wrench"></span> Copies that work better than the original</h4>
+          <p> We use a blend of image analysis, computerized
+		  machining, and old fashioned mechanical craftsmanship to
+		  build your key.  See <a href="blog">our blog</a>.</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-5 marketing">
+          <h4><span class="glyphicon glyphicon-lock"></span> Secure Key Duplication</h4>
+
+		  <p>Our process is completely secure. Your key is shipped in
+		  an unmarked envelope. <a href="#Security">See our security
+		  measures</a>. </p>
+
+		  <p>Your information stays safe and private.  See our <a
+		   href="legal.html#privacy">privacy policy & terms of service</a>.</p>
+
+		</div>
+
+        <div class="col-md-5 col-md-offset-2 marketing">
+          <h4><span class="glyphicon glyphicon-plus-sign"></span> Do More</h4>
+		  <li>Have us mail keys to a visiting friend</li>
+		  <li>Request additional copies any time</li>
+		  <li>Great for AirBNB key exchanges</li>
+		  <li><a href="#Instructions">Try it right now!</a> Ship anywhere in the US.</li>
+        </div>
+      </div>
+
+	  <div id="Carousel_quote" class="carousel slide" style="margin-top:60px; height:100px">
+	    <div class="carousel-inner">
+		  <div class="item active ">
+			<div class="col-md-8 col-md-offset-2">
+			<blockquote class="blockquote">
+			  <p>Seriously: it works better than the original key. Great
+			 job :)</p><small>Joe Heitzeberg. Seattle, WA</small>
+			</blockquote>
+		  </div>
+		  </div>
+
+		  <div class="item">
+			<div class="col-md-8 col-md-offset-2">
+			<blockquote class="blockquote">
+			  <p>I've had hardware stores copy my key twice but never got a good cut. Yours worked smoothly and perfectly. It's worth the five bucks just to see your computer vision at work.</p><small>David Gould, Illinois</small>
+			</blockquote>
+		  </div>
+		  </div>
+
+		  <div class="item">
+			<div class="col-md-8 col-md-offset-2">
+			<blockquote class="blockquote">
+			  <p>The key worked! Can your system replicate the human
+			  soul too?</p><small>Zack Lipton. Oakland, CA</small>
+			</blockquote>
+		  </div>
+		  </div>
+
+		  <div class="item">
+			<div class="col-md-8 col-md-offset-2">
+			<blockquote class="blockquote">
+			  <p> The key you mailed me works better than several I've
+			  had duplicated by traditional methods. </p><small>Ben
+			  Greenstein. Seattle, WA</small>
+			</blockquote>
+		  </div>
+		  </div>
+		</div> <!-- carousel inner -->
+
+		<a class="carousel-control left" href="#Carousel_quote" data-slide="prev"><span class="icon-prev"></a>
+		<a class="carousel-control right" href="#Carousel_quote" data-slide="next"><span class="icon-next"></a>
+      </div> <!-- Quote carousel -->
+    </div> <!-- Home -->
+
+    <div class="container-narrow marketing" id="Security_div">
+	  <p style="margin-bottom:30px">
+	  We take lots of precautions to ensure the security of your key.
+	  Meet <a href="#AboutUs">the folks who cut your keys</a>.
+	  </p>
+
+	  <h4>Worried about surreptitious duplication?</h4>
+
+	  <p>It's always dangerous to leave your keys unattended.  Someone
+	  could <a
+	   href="http://www.ehow.com/how_8613555_make-lock-keys-clay-impression.html">imprint
+	  them on clay</a> or measure them with a <a
+	   href="http://www.lockwiki.com/index.php/Key_gauges">key
+	  gauge</a> then copy them at a hardware store.  A person with
+	  nefarious intent is more likely to choose these methods over
+	  Keys Duplicated because:</p>
+
+	  <p>A credit card is required to ship the key, so in case of
+	  fraud, identity can be traced back. We'll cooperate with law
+	  enforcement inquiries in case of fraud (nothing like that has
+	  ever come up).</p>
+
+	  <p>We don't accept flyby pictures of keys. The key must be held
+	  in the person's hand, with their fingers visible.</p>
+
+
+	  <h4>Your information is kept safe and then quickly purged</h4>
+
+	  <p>Your key and its associated information are stored on our
+	  server with bank-grade cryptography. Your shipping information
+	  is redacted from our system a few days after we ship your
+	  key. That way, no one (including us) can associate your key with
+	  your address.  </p>
+
+	  <h4>The US postal service is the safest way to send keys</h4>
+
+	  <p> Your mail slot is a safe place to receive your key when
+	  you're the only one who can access it. If you're worried about
+	  other people accessing your mail box, have us mail you at your
+	  workplace. Or maybe you're duplicating keys for a friend who's
+	  visiting. Then just have us send the key to them directly.</p>
+
+	</div>
+
+
+    <div class="container-narrow" style="display:none" id="Business_div">
+      <div class="row">
+        <div class="col-md-10 col-md-offset-1">
+	     <p>We provide bulk discounts, periodic invoices, and a key
+	     management console for customers who maintain and copy a lot of
+	     keys.
+
+	     <center>
+		     <a id="login" class="btn btn-lg btn-inverse" style="margin-top:10px;margin-bottom:30px; padding: 10px 20px" href="http://keysduplicated.com/s/payment/my_keys" onclick="javascript:_paq.push(['trackPageView', '#login']);">Log in</a>
+		     <a id="open_account" class="btn btn-lg btn-inverse" style="margin-top:10px;margin-bottom:30px; padding: 10px 20px" href="mailto:support@keysduplicated.com" onclick="javascript:_paq.push(['trackPageView', '#login']);">Open an account</a>	     </center>
+        </div>
+	  </div>
+
+      <div class="row marketing">
+        <div class="col-md-7">
+		  <h4>For delivery, pickup, and cleaning services</h4>
+
+		  <p>Give your customers the option to email you their keys
+		  from your website.  Set up "key upload" widget on your
+		  checkout page, or send us the photos they email you and
+		  we’ll send you the physical keys.  You may have seen other
+		  businesses provide this service. Chances are they're powered
+		  bu us.  </p>
+
+	    </div>
+        <div class="col-md-4 col-md-offset-1">
+		  <img width="200px" src="assets/img/delivery.png" alt="key management for delivery services">
+	    </div>
+	  </div>
+
+      <div class="row marketing">
+        <div class="col-md-3 col-md-offset-1">
+		  <img width="100px" src="assets/img/house.png" alt="mastering keys for property managers">
+	    </div>
+        <div class="col-md-7 col-md-offset-1">
+		  <h4>Key management for property managers</h4>
+
+		  <p>Do you keep hundreds or thousands of keys on file and
+		  copy them regularly? Manage your online keys through our
+		  console, and order copies as needed.</p>
+
+	    </div>
+	  </div>
+
+
+      <div class="row marketing">
+        <div class="col-md-7">
+		  <h4>Key Exchange for frequent AirBNB hosts</h4>
+
+		  <p>Send your guests the keys to your AirBNB rental by mail
+		  ahead of time. This gives them a fallback if their flight is
+		  delayed or you can't meet them to hand off the key. </p>
+
+	    </div>
+        <div class="col-md-4 col-md-offset-0">
+		  <img width="200px" src="assets/img/airbnb.png" alt="send keys to AirBNB guests">
+	    </div>
+	  </div>
+
+	</div> <!-- For Businesses -->
+
+	<!-- <div class="container-narrow" style="margin-top:30px"> -->
+    <!--    <div class="footer"> -->
+    <!--     <small>&copy; Shloosl Inc. 2013</small> -->
+    <!--   </div> -->
+	<!-- </div> -->
+
+
+  </body>
+</html>

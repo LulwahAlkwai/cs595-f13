@@ -1,0 +1,1542 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<meta charset="UTF-8" />
+<title>What is Node.js?   - O&#039;Reilly Radar</title>
+
+<link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link  rel="icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/style.css" />
+<link rel="pingback" href="http://radar.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/105451978536505503907" rel="publisher" />
+
+
+
+
+
+	<meta name="description" content="Learning Node might take a little effort, but it&apos;s going to pay off. Why? Because you&apos;re afforded solutions to your web application problems that require only JavaScript to solve." />
+	<meta name="author" content="Brett McLaughlin" />
+	<meta name="search_date" content="2011-07-06" />
+	<meta name="keywords" content="javascript,Node.js,Radar Report,server" />
+	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://radar.oreilly.com/2011/07/what-is-node.html"> 
+	<meta name="twitter:title" content="What is Node.js?"> 
+	<meta name="twitter:description" content="Learning Node might take a little effort, but it&apos;s going to pay off. Why? Because you&apos;re afforded solutions to your web application problems that require only JavaScript to solve."> 
+		
+	<meta name="twitter:image" content="http://s.radar.oreilly.com/2011/05/03/0511-node-slider.png"> 
+			<meta name="twitter:creator" content="bdmclaughlin"> 
+		<meta name="twitter:site" content="radar">
+		
+	<meta property="og:image" content="http://s.radar.oreilly.com/2011/05/03/0511-node-slider.png"> 
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_brett_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-200.png" />
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22979035-1']);
+_gaq.push(['_setDomainName', 'oreilly.com']);
+_gaq.push(['_addIgnoredRef', 'oreilly.com']);
+_gaq.push(['_setSiteSpeedSampleRate', 50]);
+_gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Feed" href="http://radar.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Comments Feed" href="http://radar.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; What is Node.js? Comments Feed" href="http://radar.oreilly.com/2011/07/what-is-node.html/feed" />
+<link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='http://radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=3.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://www.instapaper.com/javascript/embed2.js?ver=1.2'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://radar.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://radar.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Four short links: 6 July 2011' href='http://radar.oreilly.com/2011/07/four-short-links-6-july-2011.html' />
+<link rel='next' title='Don&apos;t put all your trust in mobile emulators' href='http://radar.oreilly.com/2011/07/souders-mobile-emulators.html' />
+<link rel='canonical' href='http://radar.oreilly.com/2011/07/what-is-node.html' />
+<link rel='shortlink' href='http://oreil.ly/18cgWJV' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->		<style type="text/css">
+
+		.read_later {
+		float: right;
+margin: 0px 0px 10px 15px;		}
+
+		</style>
+		<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://radar.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://radar.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+<script>
+	(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+  		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<!--
+	generated in 2.086 seconds
+	115013 bytes batcached for 300 seconds
+-->
+</head>
+
+<body class="single single-post postid-46670 single-format-standard">
+<div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">		
+				<div class="logo">
+					<a href="http://radar.oreilly.com/" title="O&#039;Reilly Radar" rel="home">O&#039;Reilly Radar</a>
+				</div>
+	
+				<div id="search-box">
+					 <script type="text/javascript"> 
+	function checkIfDefault(keyword) {
+		var defaultSearchTerm = "Search";
+		var defaultEmailTerm = "Enter Email";
+			if((keyword == defaultSearchTerm) || (keyword == defaultEmailTerm)) {
+				return '';
+			}
+			else {
+				return keyword;
+			}
+		}
+</script>
+<div id="search-box" class="yui-skin-sam">
+	<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/">
+		<div class="search">
+			<fieldset>
+				<span id="search-input">
+					<div class="searchInput">
+						<span id="search-field"><input type="text" value="Search" name="q" maxlength="64" id="q" onfocus="this.value=checkIfDefault(this.value);"></span>           
+					</div>
+					<span id="search-button">
+						<input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/sitewide-headers/search_btn.gif" border="0" style="float:left" alt="Search" align="top">
+						<input type="hidden" name="tmpl" value="radar">                                                                    
+					</span>
+				</span>
+			</fieldset>
+		</div>
+	</form>
+</div>
+
+                  				</div>
+				<div class="clear"></div>
+			</div><!-- #header -->
+			<div id="access" role="navigation">			  
+				<div class="menu-header"><ul id="menu-main-nav" class="menu"><li id="menu-item-48418" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li id="menu-item-48419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop</a></li>
+<li id="menu-item-48420" class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-48420"><a href="http://radar.oreilly.com/">Radar: News &#038; Commentary</a></li>
+<li id="menu-item-48421" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48421"><a href="http://answers.oreilly.com/">Answers</a></li>
+<li id="menu-item-48422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://my.safaribooksonline.com/?cid=orm-nav-global&#038;portal=oreilly">Safari Books Online</a></li>
+<li id="menu-item-48423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://conferences.oreillynet.com/">Conferences</a></li>
+<li id="menu-item-48425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48425"><a href="http://www.oreillyschool.com/">School of Technology</a></li>
+<li id="menu-item-48426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://people.oreilly.com/index.php?app=members&#038;section=view&#038;module=list">Community</a></li>
+</ul></div>				<div class="clear"></div>
+			</div><!-- #access -->
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+	<div id="sww-content">
+					<div class="textwidget"><!-- site-wide widget --></div>
+			
+		<div class="clear"></div>
+	</div>
+	<div id="main">				<div id="container">
+		<div id="content" class="post_block" role="main">
+						
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/rs_embhl_v2_en_us.js" type="text/javascript"></script>
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.cookie.js" type="text/javascript"></script>
+		<div id="post-46670" class="post-46670 post type-post status-publish format-standard hentry category-uncategorized tag-home tag-top tag-javascript tag-nodejs tag-radar-report tag-server">					
+			 
+			<ul class="entry-tools">
+			<span class="tool-block">
+				<li class="button print">
+										<a target="_new" href="#" onclick="window.open('http://radar.oreilly.com/print/','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print<img src="http://cdn.oreillystatic.com/news/images/printtag.jpg" width="16" height="16"  alt="" /></a>
+				</li>
+				<li class="button listen">
+					<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://radar.oreilly.com/2011/07/what-is-node.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen<img src="http://cdn.oreillystatic.com/radar/images/icon_listen_small.gif" width="10" height="9" alt="Speech Icon"></a> </div>
+				</li>
+				
+				<li class="read-later-single">
+					<span class="read_later"><script type="text/javascript"><!--
+			instapaper_embed( "http://radar.oreilly.com/2011/07/what-is-node.html", "What is Node.js?", "" );
+		//--></script></span>				</li>
+				<div id="content_start" style="display: block; "></div>			
+			</span>
+			</ul>		
+		
+															<a href="http://radar.oreilly.com/brett">
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_brett_s.jpg" class="au-photo" alt="" title="Brett McLaughlin" />
+					</a>
+									
+						<!-- RSPEAK_START -->
+			<div id="body-content">
+			<h1 class="entry-title">What is Node.js?</h1>
+					
+				
+				<h2 class="subhead">Node isn't always the solution, but it does solve some important problems.</h2>
+						
+			<div class="entry-meta">				
+									<span class="meta-sep">by</span> 	
+											<span class="author vcard"><a class="url fn n" rel="author" href="http://radar.oreilly.com/brett" title="View all posts by Brett McLaughlin">
+						Brett McLaughlin</a></span> |								
+									<!-- RSPEAK_STOP -->
+									<a href="http://twitter.com/bdmclaughlin"> @bdmclaughlin</a> |
+																	<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2011/07/what-is-node.html#comments" title="Comment on What is Node.js?"><span class="dsq-postid" rel="46670 http://blogs.oreilly.com/radar/2011/07/what-is-node.html">Comments: 22</span></a></span>
+					<span class="meta-sep utility-items"> | </span>
+					
+				<span class="entry-date">July 6, 2011</span> 				
+			</div><!-- .entry-meta -->
+			
+			<!-- AddThis Button BEGIN -->					
+			<div class="utility-items addthis_toolbox addthis_default_style home " addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?">					
+				<a class="addthis_button_tweet"  addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?"></a>						
+				<a class="addthis_button_google_plusone" g:plusone:size="medium" addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?"></a>	
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?"></a>
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				<script type="IN/Share" data-url="http://radar.oreilly.com/2011/07/what-is-node.html" data-counter="right"></script>					
+				<div class="clear"></div>
+			</div>		
+
+				<script type="text/javascript">
+				   var addthis_config = {
+				      data_ga_property: 'UA-22979035-1',
+				      data_ga_social: true
+				   };
+				</script>			
+		
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+			<!-- AddThis Button END -->			
+
+			<div class="entry-content">
+							
+								
+				<!-- RSPEAK_START --><div style="width: 250px;float: right;margin: 3px 0 10px 10px;padding: 2px 4px 0 15px;border-left: 1px solid #ddd">
+<p style="background: #990000;width: 250px;color: #fff;font-size: .9em;font-weight: bold;padding: 2px 0 2px 4px;margin: 0 0 3px 0">Sections</p>
+<ul style="margin-top: 10px;padding-right: 4px">
+<li> <a href="#warning">A warning to the Node experts out there</a></li>
+<li> <a href="#basic-examples">Node: A few basic examples</a></li>
+<p><!-- ul&gt;--></p>
+<li> <a href="#skip-hello-world">Skipping hello world</a></li>
+</ul>
+<li> <a href="#not-javascript">Node runs JavaScript, but isn&#8217;t JavaScript</a></li>
+<li> <a href="#node-server">Interacting with a &#8220;Node server&#8221;</a></li>
+<li> <a href="#primer">A quick line-by-line primer</a></li>
+<li> <a href="#translation">Lost in translation</a></li>
+<p><!-- ul&gt;--></p>
+<li> <a href="#json">The JSON round trip</a></li>
+<li> <a href="#solid-code">Subtlety and nuance destroy solid code</a></li>
+<li> <a href="#eval">eval() in JavaScript is (Potentially) the Devil</a></li>
+</ul>
+<li> <a href="#big-event-web">Today&#8217;s web is a big-event web</a></li>
+<p><!-- ul&gt;--></p>
+<li> <a href="#data-dump">Sending lots of data at one time</a></li>
+<li> <a href="#little-data">Sending a little data at all times</a></li>
+<li> <a href="#chaos">Yes, chaos can ensue</a></li>
+</ul>
+<li> <a href="#right-place">In the right place at the right time</a></li>
+<p><!-- ul&gt;--></p>
+<li> <a href="#familiarity">The inertia of familiarity</a></li>
+<li> <a href="#simplicity">Node&#8217;s promise of simplicity</a></li>
+</ul>
+</ul>
+</div>
+<p><a href="http://Nodejs.org/">Node.js</a>. It&#8217;s the latest in a long line of &#8220;Are you cool enough to use me?&#8221; programming languages, APIs, and toolkits. In that sense, it lands squarely in the tradition of <a href="http://rubyonrails.org/">Rails</a>, and <a href="http://www.adaptivepath.com/ideas/ajax-new-approach-web-applications">Ajax</a>, and <a href="http://radar.oreilly.com/2011/01/what-is-hadoop.html">Hadoop</a>, and even to some degree <a href="http://oreilly.com/catalog/9780596806446">iPhone programming</a> and <a href="http://radar.oreilly.com/2010/03/why-html5-is-worth-your-time.html">HTML5</a>. Go to a big technical conference, and you&#8217;ll almost certainly find a few talks on Node.js, although most will fly far over the head of the common mortal programmer.</p>
+<p>Dig a little deeper, and you&#8217;ll hear that Node.js (or, as it&#8217;s more briefly called by many, simply &#8220;Node&#8221;) is a server-side solution for JavaScript, and in particular, for receiving and responding to HTTP requests. If that doesn&#8217;t completely boggle your mind, by the time the conversation heats up with discussion of ports, sockets, and threads, you&#8217;ll tend to glaze over. Is this really JavaScript? In fact, why in the world would anyone want to run JavaScript outside of a browser, let alone the server?</p>
+<p>The good news is that you&#8217;re hearing (and thinking) about the right things. Node really is concerned with network programming and server-side request/response processing. The bad news is that like Rails, Ajax, and Hadoop before it, there&#8217;s precious little clear information available. There will be, in time &mdash; as there now is for these other &#8220;cool&#8221; frameworks that have matured &mdash; but why wait for a book or tutorial when you might be able to use Node today, and dramatically improve the maintainability of your code and even the ease with which you bring on programmers?</p>
+</p>
+<h2 id="warning">A warning to the Node experts out there</h2>
+</p>
+<p>Node is like most technologies that are new to the masses, but old hat to the experienced few: it&#8217;s opaque and weird to most but completely usable for a small group. The result is that if you&#8217;ve never worked with Node, you&#8217;re going to need to start with some pretty basic server-side scripts. Take your time making sure you know what&#8217;s going on, because while this is JavaScript, it&#8217;s not operating like the client-side JavaScript you&#8217;re used to. In fact, you&#8217;re going to have to twist your JavaScript brain around event loops and waiting and even a bit of network theory.</p>
+<p>Unfortunately, this means that if you&#8217;ve been working and playing with Node for a year or two, much of this article is going to seem pedestrian and overly simplistic. You&#8217;ll look for things like using Node on the client, or heavy theory discussions on evented I/O and reactor patterns, and <span class="code">npm</span>. The reality is that while that&#8217;s all interesting &mdash; and advances Node to some pretty epic status &mdash; it&#8217;s incomprehensible to someone just getting started out. Given that, maybe you should pass this piece on to your co-workers who <em>don&#8217;t</em> know Node, and then when they&#8217;re buying into Node&#8217;s usefulness, start to bring them along on the more advanced Node use cases.</p>
+<div style="float: left;border-top: thin gray solid;border-bottom: thin gray solid;padding: 20px;margin: 20px 2px"><a href="https://en.oreilly.com/oscon2011/public/regwith/os11rad?cmp=il-radar-os11-what-is-node"><img style="float: left;border: none;padding-right: 10px" src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/oscon-code-os11rad.png" /><noscript><img style="float: left;border: none;padding-right: 10px" src="http://s.radar.oreilly.com/oscon-code-os11rad.png" /></noscript></a><a href="http://www.oscon.com/oscon2011/public/schedule/detail/20334?cmp=il-radar-os11-what-is-node"><strong>Node Day at OSCON</strong></a> &mdash; This year&#8217;s OSCON features a day-long dive into Node on Tuesday, July 26. Join experts and users from the Node community to discuss best practices and future developments, and survey the ever-growing number of Node frameworks and plugins.</p>
+<p><a href="https://en.oreilly.com/oscon2011/public/regwith/os11rad?cmp=il-radar-os11-what-is-node"><strong>Save 20% on registration with the code OS11RAD</strong></a></div>
+</p>
+<h2 id="basic-examples">Node: A few basic examples</h2>
+</p>
+<p>First things first: you need to realize that Node is intended to be used for running standalone JavaScript programs. This isn&#8217;t a file referenced by a piece of HTML and running in a browser. It&#8217;s a file sitting on a file system, executed by the <span class="code">Node</span> program, running as what amounts to a <a href="http://en.wikipedia.org/wiki/Daemon_(computing)">daemon</a>, listening on a particular port.</p>
+<h3 id="skip-hello-world">Skipping hello world</h3>
+<p>The classic example here is &#8220;Hello World,&#8221; detailed on the <a href="http://Nodejs.org/docs/latest/">Node website</a>. Almost everyone starts with Hello World, though, so check that out on your own, and skip straight to something a lot more interesting: a server that can send static files, not just a single line of text:</p>
+<pre>
+	var sys = require("sys"),
+	    http = require("http"),
+	    url = require("url"),
+	    path = require("path"),
+	    fs = require("fs");
+
+	http.createServer(function(request, response) {
+	    var uri = url.parse(request.url).pathname;
+	    var filename = path.join(process.cwd(), uri);
+	    path.exists(filename, function(exists) {
+	        if(!exists) {
+	            response.writeHead(404, {"Content-Type": "text/plain"});
+	            response.end("404 Not Foundn");
+	            return;
+	        }
+
+	        fs.readFile(filename, "binary", function(err, file) {
+	            if(err) {
+	                response.writeHead(500, {"Content-Type": "text/plain"});
+	                response.end(err + "n");
+	                return;
+	            }
+
+	            response.writeHead(200);
+	            response.end(file, "binary");
+	        });
+	    });
+	}).listen(8080);
+
+	console.log("Server running at http://localhost:8080/");
+</pre>
+<p>Thanks much to <a href="http://twitter.com/mamund">Mike Amundsen</a> for the pointer to similar code. This particular example was posted by Devon Govett on the <a href="http://net.tutsplus.com/">Nettuts+</a> training blog, although it&#8217;s been updated for the current version of Node in a number of places. Devon&#8217;s <a href="http://net.tutsplus.com/tutorials/javascript-ajax/learning-serverside-javascript-with-Node-js/">entire tutorial post</a> is actually a great companion piece on getting up to speed on Node once you have a handle on the basics.</p>
+<p>If you&#8217;re new to Node, type this code into a text file and save the file as <em>NodeFileServer.js</em>. Then head out to <a href="http://Nodejs.org/">the Node website</a> and <a href="http://Nodejs.org/docs/latest/#download">download Node</a> or check it out from the <a href="https://github.com/joyent/Node">git repository</a>. You&#8217;ll need to build the code from source; if you&#8217;re new to Unix, <span class="code">make</span>, and <span class="code">configure</span>, then check out <a href="https://github.com/joyent/Node/wiki/Installation">the online build instructions</a> for help.</p>
+</p>
+<h2 id="not-javascript">Node runs JavaScript, but isn&#8217;t JavaScript</h2>
+</p>
+<p>Don&#8217;t worry that you&#8217;ve put aside <em>NodeFileServer.js</em> for a moment; you&#8217;ll come back to it and more JavaScript shortly. For now, soak in the realization that you&#8217;ve just run through the classic Unix configuration and build process:</p>
+<pre>
+./configure
+make
+make install
+</pre>
+<p>That should come with another realization: Node itself isn&#8217;t JavaScript. Node is a program for <em>running</em> JavaScript, but isn&#8217;t JavaScript itself. In fact, Node is a C program. Do a directory listing on the <em>Node/src</em> directory and you&#8217;ll see something like this:</p>
+<p class="image-box-580">
+<a href="http://s.radar.oreilly.com/2011/06/22/node_ls_listing.png"><img src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/2011/06/22/node_ls_listing-580.png" width="580" border="0" alt="Node ls listing" style="margin-bottom: 15px" /><noscript><img src="http://s.radar.oreilly.com/2011/06/22/node_ls_listing-580.png" width="580" border="0" alt="Node ls listing" style="margin-bottom: 15px" /></noscript><br />
+<a href="http://s.radar.oreilly.com/2011/06/22/node_ls_listing.png">Click to enlarge</a></p>
+<p>For all of you thinking that JavaScript is a poor language in which to be writing server-side tools, you&#8217;re half right. Yes, JavaScript is not equipped to deal with operating system-level sockets and network connectivity. But Node isn&#8217;t written in JavaScript; it&#8217;s written in C, a language perfectly capable of doing the grunt work and heavy lifting required for networking. JavaScript is perfectly capable of sending instructions to a C program that can be carried out in the dungeons of your OS. In fact, JavaScript is far more accessible than C to most programmers &mdash; something worth noting now, and that will come up again and again in the reasons for looking seriously at Node.</p>
+<p>The primary usage of Node further reflects that while Node works with JavaScript, it isn&#8217;t itself JavaScript. You run it from the command line:</p>
+<pre>
+ &mdash; (bdm0509@Bretts-MacBook-Pro Sun, 29 May 11) &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash; (/Users/bdm0509/tmp/Node/src) &mdash;
+ &mdash; (09:09 $)-&gt; export PATH=$HOME/local/Node/bin:$PATH
+
+ &mdash; (bdm0509@Bretts-MacBook-Pro Sun, 29 May 11) &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash; (/Users/bdm0509/tmp/Node/src) &mdash;
+ &mdash; (09:09 $)-&gt; cd ~/examples
+
+ &mdash; (bdm0509@Bretts-MacBook-Pro Sun, 29 May 11) &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash;  &mdash; (/Users/bdm0509/examples) &mdash;
+ &mdash; (09:09 $)-&gt; Node NodeFileServer.js
+Server running at http://127.0.0.1:1337/
+</pre>
+<p>And there you have it. While there&#8217;s a lot more to be said about that status line &mdash; and what&#8217;s really going on at port 1337 &mdash; the big news here is that Node is a program that you feed JavaScript. What Node then does with that JavaScript isn&#8217;t worth much ink; to some degree, just accept that what it does, it <em>does</em>. This frees you up to write JavaScript, not worry about learning C. Heck, a big appeal to Node is that you can actually write a server without worrying about C. That&#8217;s the point.</p>
+</p>
+<h2 id="node-server">Interacting with a &#8220;Node server&#8221;</h2>
+</p>
+<p>Make sure you still have your <em>NodeFileServer.js</em> code running via Node. Then you can hit your local machine &mdash; on port 1337 &mdash; and see this unremarkable output.</p>
+<p class="image-box-580">
+<a href="http://s.radar.oreilly.com/2011/06/22/file_server-browser.png"><br />
+<img src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/2011/06/22/file_server-browser-580.png" width="580" border="0" alt="File server browser" style="margin-bottom: 15px" /><noscript><img src="http://s.radar.oreilly.com/2011/06/22/file_server-browser-580.png" width="580" border="0" alt="File server browser" style="margin-bottom: 15px" /></noscript></a><br />
+<a href="http://s.radar.oreilly.com/2011/06/22/file_server-browser.png">Click to enlarge</a></p>
+<p>Yes, this is about as mundane as you can get. Well, that is, until you realize that you&#8217;ve actually written a file server in about 20 lines of code. The output you see &mdash; the actual code of the script you wrote &mdash; isn&#8217;t canned in the script itself. It&#8217;s being served from the file system. Throw an image into the same directory, and simply add the name of the image to the end of your URL, like <em>http://localhost:8080/my_image.png</em>:</p>
+<p class="image-box-580">
+<a href="http://s.radar.oreilly.com/2011/06/22/file_server-image.png"><br />
+<img src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/2011/06/22/file_server-image-580.png" border="0" alt="image example" width="580" /><noscript><img src="http://s.radar.oreilly.com/2011/06/22/file_server-image-580.png" border="0" alt="image example" width="580" /></noscript></a></p>
+<p>Node happily serves this binary image up. That&#8217;s pretty remarkable, when you again refer to the brevity of the code. On top of that, how hard would it be if you wanted to write <em>your own</em> server code in JavaScript? Not only that, but suppose you wanted to write that code to handle multiple requests? (That&#8217;s a hint; open up four, five, or 10 browsers and hit the server.) The beauty of Node is that you <em>can</em> write entirely simple and mundane JavaScript to get these results.</p>
+</p>
+<h2 id="primer">A quick line-by-line primer</h2>
+</p>
+<p>There&#8217;s a lot more to talk about around Node than in the actual code that runs a server. Still, it&#8217;s worth taking a blisteringly fast cruise through <em>NodeFileServer.js</em> before moving on. Take another look at the code:</p>
+<pre>
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello Worldn');
+}).listen(1337, "127.0.0.1");
+console.log('Server running at http://127.0.0.1:1337/');
+</pre>
+<p>First, you have a call to a function called <span class="code">require()</span>. The use of <span class="code">require()</span> has been a long-standing request by programmers. You can actually find this mentioned in some of <a href="http://wiki.commonjs.org/wiki/Modules/1.1">the discussions on JavaScript modularity</a>, as well as germane to <a href="http://www.commonjs.org/">CommonJS</a>, and a <a href="http://www.davidflanagan.com/2009/11/commonjs-module.html">pretty cool implementation</a> by O&#8217;Reilly author <a href="http://www.davidflanagan.com/">David Flanagan</a> from 2009. In other words, <span class="code">require()</span> may be new to you, but it isn&#8217;t an untested, careless piece of Node code. It&#8217;s core to using modular JavaScript, and something of which Node takes heavy advantage.</p>
+<p>Then, the resulting <span class="code">http</span> variable is used to create a server. That server is handed a function block to run when it&#8217;s contacted. This particular function ignores the request completely and just writes out a response, in <span class="code">text/plain</span>, saying simply &#8220;Hello Worldn&#8221;. Pretty straightforward stuff.</p>
+<p>In fact, this lays out the standard pattern for Node usage:</p>
+<ol>
+<li> Define the type of interaction and get a variable for working with that interaction (via <span class="code">require()</span>).</li>
+<li> Create a new server (via <span class="code">createServer()</span>).</li>
+<li> Hand that server a function for handling requests.
+<ul>
+<li> The request handling function should include a request &#8230;</li>
+<li> &#8230; and a response.</li>
+</ul>
+</li>
+<li> Tell the server to start handling requests on a specific port and IP (via <span class="code">listen</span>).</li>
+</ol>
+<h2 id="translation">Lost in translation</h2>
+</p>
+<p>Despite the ease with which you <em>can</em> get a server coded in JavaScript (regardless of whether the actual code-running facility is C or anything else) still begs the question: <em>Should</em> you write a server in JavaScript? To really get a handle on the answer to this question, consider a pretty typical use case.</p>
+<h3 id="json">The JSON round trip</h3>
+<p>You&#8217;ve got a typical web application, HTML front-end with CSS styling, and JavaScript for the validation and communication with a server. And because you&#8217;re up on the interactive web, you&#8217;re using Ajax and not relying purely on a form&#8217;s POST to get data to and from the server. If this is you, then you&#8217;re probably comfortable with <a href="http://www.json.org/">JSON</a>, too, as that&#8217;s the almost de facto means of sending data across the wire these days.</p>
+<p>So you&#8217;ve got an Ajax request that says, for example, &#8220;give me more information about some particular guitar on an online auction site.&#8221; That request gets thrown across the network to a PHP program running on a server somewhere. The PHP server has to send a lot of information back to the JavaScript requestor, and it&#8217;s got to send that information in some format that JavaScript can unpack. So the return information is bundled up into an array, which can then be converted to JSON, sort of like this:</p>
+<pre>
+$itemGuitar = array(
+  'id' =&gt; 'itemGuitar',
+  'description' =&gt; 'Pete Townshend once played this guitar while his own axe ' .
+                    was in the shop having bits of drumkit removed from it.',
+  'price' =&gt; 5695.99,
+  'urls' =&gt; array('http://www.thewho.com', 'http://en.wikipedia.com/wiki/Pete_Townshend')
+);
+
+$output = json_encode($itemGuitar);
+print($output);
+</pre>
+<p>Back on the client, the JavaScript gets this chunk of information, which has changed slightly because of JSON and transmission. The client basically gets something like this:</p>
+<pre>
+{
+  "id": "itemGuitar",
+  "description": "Pete Townshend once played this guitar...",
+  "price": 5695.99,
+  "urls": ["http://www.thewho.com", "http://en.wikipedia.com/wiki/Pete_Townshend"]
+}
+</pre>
+<p>This is pretty standard fare. Then, it&#8217;s easy to convert this text &#8220;thing&#8221; into an object in JavaScript. You just call <span class="code">eval()</span>, like this:</p>
+<pre>
+var itemDetails = eval('(' + jsonDataString + ')');
+</pre>
+<p>The result is a nice JavaScript object with properties that match up to the JSON array-like structure. Of course, since the <span class="code">jsonDataString</span> usually is returned from a server, you&#8217;re more likely to see code like this:</p>
+<pre>
+var itemDetails = eval('(' + request.responseText + ')');
+</pre>
+<p>This is the typical JSON round trip. But there are problems here &#8230; big, big problems.</p>
+<h3 id="solid-code">Subtlety and nuance destroy solid code</h3>
+<p>First, there&#8217;s a major problem in that this sort of code relies heavily on a translator. In this case, the translator is the JSON interpreter and related code, and there are in fact <em>two</em> dependencies: a JSON interpreter for Java in the form of what <span class="code">eval()</span> does with the response text, and the JSON interpreter for PHP. As of PHP 5.2.0, that interpreter is included with PHP, but it&#8217;s still essentially an external dependency, separate from the core of PHP.</p>
+<p>Now, this isn&#8217;t a rant about translation itself. There&#8217;s nothing to suggest that there are problems in taking, say, an &#8220;l&#8221; and turning it into an &#8220;i&#8221;, or something that&#8217;s item 1 in an array and reporting it as being item 2 in an array. There&#8217;s a lot of testing that occurs before JSON tools are ever released to ensure that what gets reported is correct, and accurate round tripping from a client to a server and back again are possible. Lots and lots and lots of testing is involved &#8230;</p>
+<p>And that is in fact a problem.</p>
+<p>The dependency of JavaScript and PHP (and C and Lisp and Clojure and Eiffel and &#8230; well, see the figure below for all the JSON toolkits floating around for a ton of different languages) on a toolkit is a huge issue. In other words, the problem isn&#8217;t the transla<em>tion</em> but the transla<em>tor</em>. While programming languages evolve slowly, the uses to which these languages are applied is growing quickly. The result is that JSON is being put to use in areas of complexity that simply didn&#8217;t exists or went untouched even a few months ago. And with each new iteration &mdash; each new depth of recursion and combination of data types &mdash; it&#8217;s possible that an area is discovered that the translator doesn&#8217;t support.</p>
+<p class="image-box-580">
+<a href="http://s.radar.oreilly.com/2011/06/22/many-json.png"><br />
+<img src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/2011/06/22/many-json-580.png" width="580" border="0" alt="JSON toolkits" style="margin-bottom: 15px" /><noscript><img src="http://s.radar.oreilly.com/2011/06/22/many-json-580.png" width="580" border="0" alt="JSON toolkits" style="margin-bottom: 15px" /></noscript><br />A selection of JSON toolkits. <a href="http://s.radar.oreilly.com/2011/06/22/many-json.png">Click to see the full list</a></p>
+<p>That&#8217;s not in itself bad. In fact, it argues for the popularity of JSON that it&#8217;s constantly put to new use. But with the &#8220;new&#8221; comes the &#8220;does it support the new?&#8221; So JSON has to evolve from time to time, and that means testing, and retesting, and release on tons of platforms. You, the programmer, may have to rearrange your data; or wait on a release to support your needs; or hack at JSON yourself. Again, many of these are just the so-called costs of programming.</p>
+<p>But imagine you could ditch the translation &mdash; and therefore the translator &mdash; altogether. Imagine you could write, not JSON round tripping, but JavaScript end to end.</p>
+<p>That&#8217;s the promise of Node. All the text you&#8217;ve just read &mdash; about PHP including JSON in 5.2.0 but not before, about arrays becoming objects, about data being configured in new ways and requiring new things from JSON &mdash; it all goes away when you have JavaScript sending data <em>and</em> receiving and responding to that data.</p>
+<h3 id="eval">eval() in JavaScript is (Potentially) the Devil</h3>
+<p>As if that&#8217;s not enough reason to look seriously at Node, there&#8217;s the pesky issue of running <span class="code">eval()</span>  on a string. It&#8217;s long been accepted that <span class="code">eval()</span> <a href="http://stackoverflow.com/questions/86513/why-is-using-javascript-eval-function-a-bad-idea">is dangerous stuff</a>. It runs code that you can only see as textual data; it&#8217;s the equivalent of that &#8220;Run Your SQL by typing it in here&#8221; unvalidated text box, open to SQL injection and malicious intent. It&#8217;s quite possible that every time <span class="code">eval()</span> is passed in a string, a puppy somewhere in the Midwest shivers and a mom on the Eastern Seaboard stubs her toe and curses. It&#8217;s that precarious. There&#8217;s plenty to read about online, and it&#8217;s not worth going into in detail here. Just Google <a href="http://www.google.com/#sclient=psy&amp;hl=en&amp;source=hp&amp;q=eval+javascript+evil&amp;aq=f&amp;aqi=g-jl1g-b1&amp;aql=&amp;oq=&amp;pbx=1&amp;bav=on.2,or.r_gc.r_pw.&amp;fp=5304212dfdd8a916&amp;biw=1040&amp;bih=1090">&#8220;eval JavaScript evil&#8221;</a> or <a href="http://www.google.com/#sclient=psy&amp;hl=en&amp;source=hp&amp;q=eval+javascript+injection&amp;aq=f&amp;aqi=&amp;aql=&amp;oq=&amp;pbx=1&amp;bav=on.2,or.r_gc.r_pw.&amp;fp=5304212dfdd8a916&amp;biw=1040&amp;bih=1090">&#8220;eval JavaScript injection&#8221;</a> to get a good taste of the issues.</p>
+<p>Still, Node without any context doesn&#8217;t allow you to avoid <span class="code">eval()</span>, so there are potentially still shivering puppies out there. However, Node used <em>as it&#8217;s intended</em> absolutely gets you around the typical <span class="code">eval()</span> problems. Node is often called <em>evented JavaScript</em> or <em>evented I/O</em>, and that little word &mdash; &#8220;evented&#8221; &mdash; is hugely important. But to get a hold of what evented really means, and why it gets you out of the dangers of <span class="code">eval()</span>, you&#8217;ve got to understand not just how JSON is typically round tripped in applications, but how the very structure of applications on the web are typically architected.</p>
+</p>
+<h2 id="big-event-web">Today&#8217;s web is a big-event web</h2>
+</p>
+<p>Typical web forms are &#8220;big-event&#8221; submitters. In other words, lots of data entry and selection happens &mdash; a user fills out text boxes, selects choices from combo boxes, selects items from a list, and so on &mdash; and then all of that information is submitted to a server. There&#8217;s a single &#8220;big event&#8221; from the programming perspective: the submission of all that form data, usually through a POST. That&#8217;s pretty much how the web operated, pre-Ajax.</p>
+<h3 id="data-dump">Sending lots of data at one time</h3>
+<p>With Ajax, there is a little more of what&#8217;s called <em>evented</em> programming. There are more events that trigger interaction with the server. The classic case is the entry of a zip code, and then a resulting call to the server to get a city and state. With Ajax and the XmlHttpRequest, tons of data didn&#8217;t have to be gobbed up and thrown to the server all at once. However, that doesn&#8217;t change the reality that the web is still <em>mostly</em> a big-event place. Ajax is used far more often to achieve interesting visuals, do quick validations, and submit forms without leaving a page than it is to create truly evented web pages. So even though a form isn&#8217;t submitting a big gob of information with a POST, an Ajax request is doing the same thing.</p>
+<p>Honestly, that&#8217;s only partly the fault of less-than-creative Ajax programmers. Every time you send off a request &mdash; no matter how small &mdash; there&#8217;s a lot of network traffic going on. A server has to respond to that request, usually with a new process in its own thread. So if you really move to an evented model, where you might have 10 or 15 individual micro-requests going from a single page to a server, you&#8217;re going to have 10 or 15 threads (maybe less, depending on how threads are pooled and how quickly they&#8217;re reclaimed on the server) firing up. Now multiply that by 1,000 or 10,000 or 1,000,000 copies of a given page floating around &#8230; and you could have chaos. Network slowdown. System crashes.</p>
+<p>The result is that, in most cases, the Web <em>needs</em> to be, at a minimum, a medium-event place. The result of this concession is that server-side programs aren&#8217;t sending back tiny responses to very small and focused requests. They&#8217;re sending back multiple bits of data, and that requires JSON, and then you&#8217;re back to the <span class="code">eval()</span> problem. The problem is <span class="code">eval()</span>, sure, but the problem is also &mdash; from a certain perspective, at least &mdash; the nature of the web and threading and HTTP traffic between a web page and a server-side program responding to that request.</p>
+<p>(Some of you more advanced JavaScript folks are screaming at this point, because you know better than to use <span class="code">eval()</span>. Instead, you&#8217;re <a href="http://stackoverflow.com/questions/1843343/json-parse-vs-eval">using something like <span class="code">JSON.parse()</span> instead of <span class="code">eval()</span></a>. And there are also some <a href="http://javascriptweblog.wordpress.com/2010/04/19/how-evil-is-eval/">compelling arguments for careful usage of <span class="code">eval()</span></a>. These are things worth screaming about. Still, just see how many questions there are surrounding <span class="code">eval()</span> on sites like <a href="http://stackoverflow.com/">Stack Overflow</a> and you&#8217;ll realize that most folks don&#8217;t use <span class="code">eval()</span> correctly or safely. It&#8217;s a problem, because there are lots of intermediate programmers who just aren&#8217;t aware of the issues around <span class="code">eval()</span>.)</p>
+<h3 id="little-data">Sending a little data at all times</h3>
+<p>Node brings a different approach to the party: it seeks to move you and your web applications to an evented model, or if you like, a &#8220;small event&#8221; model. In other words, instead of sending a few requests with lots of data, you should be sending tons of requests, on lots of events, with tiny bits of data, or requests that need a response with only a tiny bit of data. In some cases, you have to almost recall your GUI programming. (All the <a href="http://en.wikipedia.org/wiki/Swing_(Java)">Java Swing</a> folks can finally use their pent-up GUI knowledge.) So a user enters their first and last name, and while they&#8217;re moving to the next box, a request is already requesting validation of just that name against existing names. The same is true for zip codes, and addresses, and phone numbers. There&#8217;s a constant stream of requesting and responding happening, tied to almost every conceivable event on a page.</p>
+<p>So what&#8217;s the difference? Why is this possible with Node, and aren&#8217;t the same issues around threading existent here? Well, no, they&#8217;re not. <a href="http://Nodejs.org/">Node&#8217;s own site</a> explains their philosophy the best:</p>
+<blockquote><p>Node&#8217;s goal is to provide an easy way to build scalable network programs. In the &#8220;<a href="http://nodejs.org/">hello world</a>&#8221; web server example &#8230; many client connections can be handled concurrently. Node tells the operating system (through epoll, kqueue, /dev/poll, or select) that it should be notified when a new connection is made, and then it goes to sleep. If someone new connects, then it executes the callback. Each connection is only a small heap allocation.</p>
+</blockquote>
+<p>Node has no blocks, no threads competing for the same resource (Node is happy to just let things happen however they happen), nothing that has to start up upon request. Node just sits around waiting (quite literally; unused Node responders are sleeping). When a request comes in, it&#8217;s handled. This results in very fast code, without uber-programmers writing the server-side behavior.</p>
+<h3 id="chaos">Yes, chaos can ensue</h3>
+<p>It&#8217;s worth pointing out that this model does allow all the problems that any non-blocking system allows to come into play: one process (not thread) writing to a data store while another one grabs just-invalidated data; intrusions into what amounts to a transaction; and so on. But realize that the majority of event-based programming on a web form is <em>read-only</em>! How often are you actually modifying data in a micro-request? Very rarely. Instead, there&#8217;s a constant validation, data lookup, and querying going on. In these cases, it&#8217;s better to just fire away with the requests. The database itself may add some locking, but in general, good databases will do this much more efficiently than server-side code, anyway; and they&#8217;ll certainly handle things better than an operating system will spin up and down threads for a generic, &#8220;a web response came in&#8221; process.</p>
+<p>Additionally, Node does have plans to allow for process forking, and the <a href="http://www.whatwg.org/specs/web-workers/current-work/">HTML5 Web Workers API</a> is the engine that will probably make this feature go. Still, if you move to an evented model for your web application, you&#8217;ll probably run into an issue where you might <em>want</em> threading in less than one out of 100 situations. Still, the changes are best in how you think about your web applications, and how often you send and receive data from a server, rather than in how Node works.</p>
+</p>
+<h2 id="right-place">In the right place at the right time</h2>
+</p>
+<p>There&#8217;s another web pattern at work here, and it&#8217;s probably far more important than whether you use Node or not, and how evented your web applications are. It&#8217;s simply this: use different solutions for different problems. Even better, use the right solution for a particular problem, regardless of whether that&#8217;s the solution you&#8217;ve been using for all your other problems.</p>
+<h3 id="familiarity">The inertia of familiarity</h3>
+<p>There&#8217;s a certain inertia in not just web design, but all of programming. That inertia can be stated axiomatically like this: the more you learn, use, and become good at a certain approach or technique or language, the more likely you are to use that approach/technique/language widely. It&#8217;s one of those principles that sounds good until you dig deeply. Yes, it&#8217;s good to learn a language or toolkit well, and to employ it widely. But this inertia often causes you to use a tool <em>because</em> you know it, rather than because it&#8217;s the <em>right</em> tool.</p>
+<p>Look at Ajax, something already discussed. Initially, Ajax provided a solid approach to sending quick requests, without form submissions, to a server. Now it&#8217;s become a drop-in replacement for <em>all</em> form submissions. That&#8217;s taking a technology, learning it, applying it, and then eventually <em>over</em>-applying it. There&#8217;s still a solid place for form submissions &mdash; when a form needs to be submitted! As simple as it sounds, there are tends of thousands of web applications submitting forms with Ajax, just because the lead web developer is up on Ajax.</p>
+<p>In the same vein, it&#8217;s possible to get excited about Node &mdash; probably because you buy into all the splendid and wise observations you&#8217;ve been reading &mdash; and then use it everywhere. Suddenly, you&#8217;re replacing all your PHP and Perl back-ends with Node. The result? A mess. In fact, you&#8217;ll be forced to have several web forms do just what Node <em>isn&#8217;t</em> meant for: submit big chunks of data to JavaScript on the server via Node, and force that JavaScript to either send back a chunk of JSON that&#8217;s got to be parsed or <span class="code">eval()</span>ed, or send back a full-blown HTML page or an HTTP redirect.</p>
+<p>But that&#8217;s simply not what Node is best at. It&#8217;s great at micro-requests; at evented I/O. Use Node for quick communication between a web page and a server. Use form submissions to send big chunks of data to the server. Use PHP and Perl to do heavy database lifting and generate dynamic HTML pages. Use Node to provide a means for server-side JavaScript to run and handle small requests. Throw in Rails and Spring and servlets and whatever else you need. But make your decisions based upon the problem you&#8217;re solving, rather than what you happen to know best at the time.</p>
+<h3 id="simplicity">Node&#8217;s promise of simplicity</h3>
+<p>There&#8217;s one last note worth making. When you take this broad approach to programming, you&#8217;ll often find that you&#8217;re not having to go as deeply into each toolkit, API, and framework you use. By using your tools for what they&#8217;re best at, you don&#8217;t need to be able to staple with hammers or measure with drills. Using tools for their intended purpose typically means you use the core capabilities more. So while you&#8217;re creating generalists &mdash; programmers that know lots of things &mdash; you are also reducing the need for specialists &mdash; programmers that know one or two things <em>really, really</em> well. Of course, every pointy-haired boss also realizes that those specialists are <em>really, really</em> expensive and hard to find.</p>
+<p>Learning Node might take a little effort, but it&#8217;s going to pay off. Why? Because you&#8217;re afforded solutions to your web application problems that require only JavaScript to solve. That means your existing JavaScript expertise comes into play. And when you do need to use PHP or Perl &mdash; because it&#8217;s the right solution for a particular problem &mdash; you don&#8217;t need a PHP or Perl guru. You need to know the basics, and those needs can be expanded when the problem requires expansion. Stretching comes at the behest of new problems, rather than stretching poor solutions thinly.</p>
+<p>Your biggest challenge is the continual move to a web that is made up of smaller pieces, talking more often, and the combination of what can seem like a dizzying array of technologies. However, taking the core features of 100 technologies is always going to serve you better than taking 100% of one technology and trying to solve 100 problems. Node and evented I/O isn&#8217;t a solution to every problem, but it sure is a solution to some important problems.</p>
+<hr />
+<p><em>OSCON 2011, coming up later this month, will feature an entire day dedicated to Node. <a href="http://www.oscon.com/oscon2011/public/schedule/detail/20334?cmp=il-radar-os11-what-is-node">Learn more about Node Day</a> and  <a href="https://en.oreilly.com/oscon2011/public/regwith/os11rad?cmp=il-radar-os11-what-is-node">save 20% on registration with the codeOS11RAD</a>.</em></p>
+<p></p>
+<p><strong>Related:</strong></p>
+<ul>
+<li> <a href="http://radar.oreilly.com/2010/11/new-directions-in-web-architec.html">Node: Up and Running</a> (Book)</li>
+<li> <a href="http://radar.oreilly.com/2011/06/node-javascript-success.html">The secrets of Node&#8217;s success</a></li>
+<li> <a href="http://radar.oreilly.com/2011/06/time-to-learn-javascript.html">Why a JavaScript hater thinks everyone needs to learn JavaScript in the next year</a></li>
+<li> <a href="http://radar.oreilly.com/2011/06/javascript-edges-permanent-james-duncan.html">JavaScript spread to the edges and became permanent in the process</a></li>
+<li><a href="http://www.youtube.com/watch?v=OUCHr2H-7_g">What is Node.js and what does it do?</a> (Video)</li>
+<li> <a href="http://radar.oreilly.com/2011/07/what-is-html5.html">What is HTML5?</a></li>
+</ul>
+<!-- RSPEAK_STOP -->
+							</div><!-- .entry-content -->
+			</div>
+			<div class="entry-utility">				
+				tags: <a href='http://radar.oreilly.com/tag/javascript' title='javascript Tag' rel='tag'>javascript</a>, <a href='http://radar.oreilly.com/tag/nodejs' title='Node.js Tag' rel='tag'>Node.js</a>, <a href='http://radar.oreilly.com/tag/radar-report' title='Radar Report Tag' rel='tag'>Radar Report</a>, <a href='http://radar.oreilly.com/tag/server' title='server Tag' rel='tag'>server</a>							</div><!-- .entry-utility -->
+			
+			<!-- AddThis Button BEGIN -->					
+			<div class="utility-items addthis_toolbox addthis_default_style home " addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?">					
+				<a class="addthis_button_tweet"  addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?"></a>						
+				<a class="addthis_button_google_plusone" g:plusone:size="medium" addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?"></a>	
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://radar.oreilly.com/2011/07/what-is-node.html" addthis:title="What is Node.js?"></a>	
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				<script type="IN/Share" data-url="http://radar.oreilly.com/2011/07/what-is-node.html" data-counter="right"></script>
+				<div id="repost-icon">
+									</div>
+				<div class="clear"></div>
+			</div>					
+			
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+			<!-- AddThis Button END -->			
+				
+				<script type="text/javascript"> 
+					$(".button.print a").click(function () { 					  
+					  jQuery.cookie('thePostID', "46670" , {expires: 1, path: '/' }); 					 
+					});  					
+				</script>	
+			 
+		</div><!-- #post-## -->		
+<a name="comments"></a>
+<a name="respond"></a>
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-38613">
+        <div id="dsq-comment-header-38613" class="dsq-comment-header">
+            <cite id="dsq-cite-38613">
+                <span id="dsq-author-user-38613">Arun</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38613" class="dsq-comment-body">
+            <div id="dsq-comment-message-38613" class="dsq-comment-message"><p>So how does usage of Node differ from usage of Ajax? Node is highly used in transferring small data to and from server, and Ajax is that. Please elaborate.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38614">
+        <div id="dsq-comment-header-38614" class="dsq-comment-header">
+            <cite id="dsq-cite-38614">
+http://www.yellowtagmedia.com                <span id="dsq-author-user-38614">Brett McLaughlin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38614" class="dsq-comment-body">
+            <div id="dsq-comment-message-38614" class="dsq-comment-message"><p>Hi Arun-</p>
+<p>Node is useful as the receiving end of a data-exchange between client and server. While it can be used on the client, it&#8217;s not a use case that closely resembles Ajax (well, not when done correctly).</p>
+<p>The typical use-case in an Ajax situation would be for an Ajax request to invoke a Node-based piece of JavaScript on the server, and that Node-based piece on the server to work natively in JavaScript and return information back to your web page. So the implementation code is JavaScript on the client (using XmlHttpRequest) and JavaScript on the server (executed by Node). </p>
+<p>You avoid a lot of the translation issues when you go Ajax-to-PHP/Perl/etc., and of course you get all the speed benefits of Node, which are most evident when you&#8217;re constantly interacting.</p>
+<p>Hope that helps.</p>
+<p>-Brett</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38615">
+        <div id="dsq-comment-header-38615" class="dsq-comment-header">
+            <cite id="dsq-cite-38615">
+http://www.it-wars.com/categorie8/dev                <span id="dsq-author-user-38615">rabah vincent</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38615" class="dsq-comment-body">
+            <div id="dsq-comment-message-38615" class="dsq-comment-message"><p>Hi,</p>
+<p>I have written several blog post in French about node.js, fill free to read them here : </p>
+<p><a href="http://www.it-wars.com/categorie8/dev" rel="nofollow">http://www.it-wars.com/categorie8/dev</a></p>
+<p>Regards,</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38616">
+        <div id="dsq-comment-header-38616" class="dsq-comment-header">
+            <cite id="dsq-cite-38616">
+http://twitter.com/tamberg                <span id="dsq-author-user-38616">tamberg</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38616" class="dsq-comment-body">
+            <div id="dsq-comment-message-38616" class="dsq-comment-message"><p>Brett, are you sure that &#8220;JSON has to evolve from time to time&#8221;? The JSON spec still looks the same. And while your list of JSON parser libraries might be long, writing one is quite straight forward and can be done once and for all. I don&#8217;t see how &#8220;big, big problems&#8221; can ensue from parsing a well defined, simple data format. All this has little to do with Node.js itself, but the frivolous reshuffling of established concepts shines a dubious light on the credibility of this entire post. Cheers, tamberg</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38617">
+        <div id="dsq-comment-header-38617" class="dsq-comment-header">
+            <cite id="dsq-cite-38617">
+                <span id="dsq-author-user-38617">Ciaran</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38617" class="dsq-comment-body">
+            <div id="dsq-comment-message-38617" class="dsq-comment-message"><p>After reading this I&#8217;m not sure I get any of the benefits other than performance (having a Node server waiting on a port is faster than having apache spin up a php process).</p>
+<p>And you don&#8217;t really explain how using Node avoids eval()</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38618">
+        <div id="dsq-comment-header-38618" class="dsq-comment-header">
+            <cite id="dsq-cite-38618">
+http://www.somnathbanerjee2010.com                <span id="dsq-author-user-38618">Somnath Banerjee</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38618" class="dsq-comment-body">
+            <div id="dsq-comment-message-38618" class="dsq-comment-message"><p>The best thing which I see is ONE language end to end.  No more writing front end, backend and middle tier.  and yes,  the vent architecture is helpful for VERY high scalability.</p>
+<p>Other than these two, what else?</p>
+<p>best Regards, Somnath</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38619">
+        <div id="dsq-comment-header-38619" class="dsq-comment-header">
+            <cite id="dsq-cite-38619">
+http://www.get2know.me                <span id="dsq-author-user-38619">Anthony</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38619" class="dsq-comment-body">
+            <div id="dsq-comment-message-38619" class="dsq-comment-message"><p>We use node.js for our real time chat and event server.  Event based I/O programming is a hard subject to tackle but once you get up the first hill the rest is easy.  If you are looking for a coupling of technology you could try using the express framework with socket.io.  Both pieces of technology are awesome in their own right.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38620">
+        <div id="dsq-comment-header-38620" class="dsq-comment-header">
+            <cite id="dsq-cite-38620">
+http://davidherron.com                <span id="dsq-author-user-38620">David Herron</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38620" class="dsq-comment-body">
+            <div id="dsq-comment-message-38620" class="dsq-comment-message"><p>Hi.. excellent article but I really don&#8217;t understand the bit about JSON being a bad idea.  I think it&#8217;s a bad idea to expect the whole of the Web to become JavaScript, hence there&#8217;s a need for some kind of data interchange standard.  One way of doing data interchange is with text files of a specific well understood format such as CSV, XML and yes JSON. Each of them are implemented by team(s) writing libraries implementing the format.  Maybe I got too hung up with this section in the middle of your article and you&#8217;ve answered this towards the end, I don&#8217;t know, but a quick skim of the rest of the article implies you didn&#8217;t really answer this.  It doesn&#8217;t make sense to (re-)write the whole Web in JavaScript so that we don&#8217;t have the overhead of implementing libraries for data interchange.  And in any case all the programming languages have usefulness. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38621">
+        <div id="dsq-comment-header-38621" class="dsq-comment-header">
+            <cite id="dsq-cite-38621">
+                <span id="dsq-author-user-38621">Gregor McNish</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38621" class="dsq-comment-body">
+            <div id="dsq-comment-message-38621" class="dsq-comment-message"><p>Not sure that I agree with your notion of using node in a limited way. A major  benefit of node is non-blocking IO, so it can handle high loads that would bring down more typical web application stacks. That benefit is lost when you use a hodge podge of technologies. But I agree it&#8217;s not the answer to every problem. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38622">
+        <div id="dsq-comment-header-38622" class="dsq-comment-header">
+            <cite id="dsq-cite-38622">
+                <span id="dsq-author-user-38622">Darren</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38622" class="dsq-comment-body">
+            <div id="dsq-comment-message-38622" class="dsq-comment-message"><p>Hi Brett, Great article on node and just what I was looking. </p>
+<p>I develop apps that are used as simulators in different industries, for example manufacturing. </p>
+<p>Speed is my problem, I am currently using the JSON round-robin method between Javascript and PHP running in local peer-peer networks. </p>
+<p>I note your comment on <strong><em>How often are you using micro-requests to change data &#8211; very rarely</em></strong>. Actually this is my <em>norm</em> &#8211; modifying tiny bits of data constantly, to simulate events on a production line, for example.</p>
+<p>So, I would be immensely grateful for your thoughts on using node in this environment, local peer-peer (think training room simulator with ten connected machines) and constant data mods as in
+<pre>{parcelId: 1234, shippedStatus: 0}</pre>
+<p> I might want to change the shippedStatus to 1 in a JSON file on the server, or in a database field on the virtual host, but many times and by many users.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38623">
+        <div id="dsq-comment-header-38623" class="dsq-comment-header">
+            <cite id="dsq-cite-38623">
+http://www.emeraldcode.com                <span id="dsq-author-user-38623">Jason</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38623" class="dsq-comment-body">
+            <div id="dsq-comment-message-38623" class="dsq-comment-message"><p>Using Joyent, Express, Couch DB and Redis, I don&#8217;t see Node as being a framework that is not good enough to be a real web server for chunky forms or anything else. I think its quite the opposite.</p>
+<p>The base framework in your book &#8220;What is Node.js&#8221; fits with what you are saying but not if you use frameworks on top of it. We have a full stack with MVC, caching and database besides the cool evented programming, streaming and socket stuff you can do. Even Microsoft is trying to support Node.</p>
+<p>You might reevaluate your statement but its good to get web hits so maybe not.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38624">
+        <div id="dsq-comment-header-38624" class="dsq-comment-header">
+            <cite id="dsq-cite-38624">
+                <span id="dsq-author-user-38624">netorgy</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38624" class="dsq-comment-body">
+            <div id="dsq-comment-message-38624" class="dsq-comment-message"><p>So &#8230; it&#8217;s a crappy version of a server side interpreter, how is this any better than an ASP page</p>
+<p>Program.aspx</p>
+<p>or a PHP page</p>
+<p>Program.php</p>
+<p>in a virtualized world where I can spin up 20 micro instances at the drop of a hat why would I ever want to reinvent the wheel?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38625">
+        <div id="dsq-comment-header-38625" class="dsq-comment-header">
+            <cite id="dsq-cite-38625">
+                <span id="dsq-author-user-38625">Rob</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38625" class="dsq-comment-body">
+            <div id="dsq-comment-message-38625" class="dsq-comment-message"><p>For god&#8217;s sake, just use python- it&#8217;s faster and better.  The world doesn&#8217;t need another language.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38626">
+        <div id="dsq-comment-header-38626" class="dsq-comment-header">
+            <cite id="dsq-cite-38626">
+http://none                <span id="dsq-author-user-38626">John</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38626" class="dsq-comment-body">
+            <div id="dsq-comment-message-38626" class="dsq-comment-message"><p>You&#8217;re missing the point Rob, python is a great for server side stuff, big fan of django, but what node provides is something completely different. Having fluid variable available from client to server is something that is not available today. Ideal solution would be to use both as the author points out.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38627">
+        <div id="dsq-comment-header-38627" class="dsq-comment-header">
+            <cite id="dsq-cite-38627">
+                <span id="dsq-author-user-38627">Nick</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38627" class="dsq-comment-body">
+            <div id="dsq-comment-message-38627" class="dsq-comment-message"><p>Rob, the world doesn&#8217;t need another programming language?  Or is it just that *you* don&#8217;t need another programming language?</p>
+<p>My philosophy is: the more the better, and the best will rise to the top.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38628">
+        <div id="dsq-comment-header-38628" class="dsq-comment-header">
+            <cite id="dsq-cite-38628">
+http://neonguru.net                <span id="dsq-author-user-38628">Mark McKinney</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38628" class="dsq-comment-body">
+            <div id="dsq-comment-message-38628" class="dsq-comment-message"><p>You can use BSON to speed up JSON serialization. There are implementations for most languages:</p>
+<p><a href="http://bsonspec.org/" rel="nofollow">http://bsonspec.org/</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38629">
+        <div id="dsq-comment-header-38629" class="dsq-comment-header">
+            <cite id="dsq-cite-38629">
+http://www.scarpehoganonline.net                <span id="dsq-author-user-38629">carpinteyrorxz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38629" class="dsq-comment-body">
+            <div id="dsq-comment-message-38629" class="dsq-comment-message"><p>PARKER MORGAN Finnigan  <a href="http://www.scarpehogan2012.org" rel="nofollow">http://www.scarpehogan2012.org</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38630">
+        <div id="dsq-comment-header-38630" class="dsq-comment-header">
+            <cite id="dsq-cite-38630">
+                <span id="dsq-author-user-38630">XRumerTest</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38630" class="dsq-comment-body">
+            <div id="dsq-comment-message-38630" class="dsq-comment-message"><p>Hello. And Bye.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38631">
+        <div id="dsq-comment-header-38631" class="dsq-comment-header">
+            <cite id="dsq-cite-38631">
+                <span id="dsq-author-user-38631">David Roberts</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38631" class="dsq-comment-body">
+            <div id="dsq-comment-message-38631" class="dsq-comment-message"><p>good article&#8230; I have to explain what node is a lot&#8230; so this will be a great article to forward.</p>
+<p>Another thing worth mentioning (though completely optional) is instead of using JavaScript&#8230; use CoffeeScript.  A lot of the issues, especially surrounding working in Large Scale apps where you need to use objects, are elegantly solved this way.  The combo of the two really works wonders for me.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38632">
+        <div id="dsq-comment-header-38632" class="dsq-comment-header">
+            <cite id="dsq-cite-38632">
+                <span id="dsq-author-user-38632">Jarredqyj</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38632" class="dsq-comment-body">
+            <div id="dsq-comment-message-38632" class="dsq-comment-message"><p>So Why accomplish people today try to find Louis Vuitton bag price provides? It is because all people would certainly be aware that nearly all Louis Vuitton retailers world wide never ever before publicise your price ranges in store. The problem this most people include is definitely of which they do not learn how much just about every object would typically fee in advance.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38633">
+        <div id="dsq-comment-header-38633" class="dsq-comment-header">
+            <cite id="dsq-cite-38633">
+                <span id="dsq-author-user-38633">Natakeync</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38633" class="dsq-comment-body">
+            <div id="dsq-comment-message-38633" class="dsq-comment-message"><p>Hey, my name is Natalia. I’m a retired mastermind from Boston and I’m enjoying reading this forum. :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-41484">
+        <div id="dsq-comment-header-41484" class="dsq-comment-header">
+            <cite id="dsq-cite-41484">
+http://twitter.com/jbrukh                <span id="dsq-author-user-41484">Jake Brukhman</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-41484" class="dsq-comment-body">
+            <div id="dsq-comment-message-41484" class="dsq-comment-message"><p>&#8220;[...] by the time the conversation heats up with discussion of ports, sockets, and threads, you’ll tend to glaze over.&#8221; That&#8217;s really sad. :)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://radar.oreilly.com/2011/07/what-is-node.html';
+    var disqus_identifier = '46670 http://blogs.oreilly.com/radar/2011/07/what-is-node.html';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillyradar';
+    var disqus_title = "What is Node.js?";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=46670';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/radar.oreilly.com\/2011\/07\/what-is-node.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+				<div id="contributorswidget" class="widget-container widget_text">	
+				<h3 class="widget-title">CONTRIBUTORS</h3>			
+				<div class="text-widget">
+					<ul>
+				
+					<li>
+						<a href="http://radar.oreilly.com/tim">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_tim_s.jpg" class="au-photo" alt="" title="Tim O'Reilly" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/tim">Tim O'Reilly</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/resharing-differences-between-linkedin-and-radar.html">Resharing Differences Between LinkedIn and Radar</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/mikel">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_mikel_s.jpg" class="au-photo" alt="" title="Mike Loukides" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/mikel">Mike Loukides</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/genetically-modified-foods-asking-the-right-questions.html">Genetically modified foods: asking the right questions</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/jims">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_jims_s.jpg" class="au-photo" alt="" title="Jim Stogdill" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/jims">Jim Stogdill</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/07/where-innovation-lives.html">Where Innovation Lives</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/nat">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_nat_s.jpg" class="au-photo" alt="" title="Nat Torkington" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/nat">Nat Torkington</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/10/four-short-links-4-october-2013.html">Four short links: 4 October 2013</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/jbruner">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_jbruner_s.jpg" class="au-photo" alt="" title="Jon Bruner" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/jbruner">Jon Bruner</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/08/podcast-ratings-rankings-and-being-born-lucky.html">Podcast: ratings, rankings, and the advantage of being born lucky</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/jennw">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_jennw_s.jpg" class="au-photo" alt="" title="Jenn Webb" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/jennw">Jenn Webb</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/progressive-reduction-bret-victor-elon-musk-rmit-ui-design.html">Progressive reduction, Bret Victor rants, and Elon Musk is Tony Stark</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/reneed">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_reneed_s.jpg" class="au-photo" alt="" title="Renee DiResta" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/reneed">Renee DiResta</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/big-data-and-the-big-lie-the-challenges-facing-big-brand-marketers.html">Big data and the “Big Lie”: the challenges facing big brand marketers</a>
+						</p>
+					</li>
+							</ul>
+					
+					<p style="float:right; margin-bottom: 0;"><a href="/radar-contributors/">See all contributors</a></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+							
+	
+
+<div id="execphp-4" class="widget-container widget_execphp">			
+			<div class="execphpwidget"></div>
+		<div class="clear"></div></div><div id="execphp-5" class="widget-container widget_execphp">			
+			<div class="execphpwidget"><a class="twitter-timeline" width="318" data-dnt=true href="https://twitter.com/radar" data-widget-id="251056135732338688">Tweets by @radar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		<div class="clear"></div></div><div id="text-5" class="widget-container widget_text"><h3 class="widget-title">Most Recently Discussed</h3>			<div class="textwidget"><div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://oreillyradar.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script></div></div>
+		<div class="clear"></div></div><div  class="widget-container radar-archives">	
+	<h3 class="widget-title">Archives</h3>	
+		
+	<ul>
+		<li>
+			<select id="archive_id" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			  <option value="">Archives by Month...</option> 
+			  	<option value='http://radar.oreilly.com/2013/10'> October 2013 </option>
+	<option value='http://radar.oreilly.com/2013/09'> September 2013 </option>
+	<option value='http://radar.oreilly.com/2013/08'> August 2013 </option>
+	<option value='http://radar.oreilly.com/2013/07'> July 2013 </option>
+	<option value='http://radar.oreilly.com/2013/06'> June 2013 </option>
+	<option value='http://radar.oreilly.com/2013/05'> May 2013 </option>
+	<option value='http://radar.oreilly.com/2013/04'> April 2013 </option>
+	<option value='http://radar.oreilly.com/2013/03'> March 2013 </option>
+	<option value='http://radar.oreilly.com/2013/02'> February 2013 </option>
+	<option value='http://radar.oreilly.com/2013/01'> January 2013 </option>
+	<option value='http://radar.oreilly.com/2012/12'> December 2012 </option>
+	<option value='http://radar.oreilly.com/2012/11'> November 2012 </option>
+	<option value='http://radar.oreilly.com/2012/10'> October 2012 </option>
+	<option value='http://radar.oreilly.com/2012/09'> September 2012 </option>
+	<option value='http://radar.oreilly.com/2012/08'> August 2012 </option>
+	<option value='http://radar.oreilly.com/2012/07'> July 2012 </option>
+	<option value='http://radar.oreilly.com/2012/06'> June 2012 </option>
+	<option value='http://radar.oreilly.com/2012/05'> May 2012 </option>
+	<option value='http://radar.oreilly.com/2012/04'> April 2012 </option>
+	<option value='http://radar.oreilly.com/2012/03'> March 2012 </option>
+	<option value='http://radar.oreilly.com/2012/02'> February 2012 </option>
+	<option value='http://radar.oreilly.com/2012/01'> January 2012 </option>
+	<option value='http://radar.oreilly.com/2011/12'> December 2011 </option>
+	<option value='http://radar.oreilly.com/2011/11'> November 2011 </option>
+	<option value='http://radar.oreilly.com/2011/10'> October 2011 </option>
+	<option value='http://radar.oreilly.com/2011/09'> September 2011 </option>
+	<option value='http://radar.oreilly.com/2011/08'> August 2011 </option>
+	<option value='http://radar.oreilly.com/2011/07'> July 2011 </option>
+	<option value='http://radar.oreilly.com/2011/06'> June 2011 </option>
+	<option value='http://radar.oreilly.com/2011/05'> May 2011 </option>
+	<option value='http://radar.oreilly.com/2011/04'> April 2011 </option>
+	<option value='http://radar.oreilly.com/2011/03'> March 2011 </option>
+	<option value='http://radar.oreilly.com/2011/02'> February 2011 </option>
+	<option value='http://radar.oreilly.com/2011/01'> January 2011 </option>
+	<option value='http://radar.oreilly.com/2010/12'> December 2010 </option>
+	<option value='http://radar.oreilly.com/2010/11'> November 2010 </option>
+	<option value='http://radar.oreilly.com/2010/10'> October 2010 </option>
+	<option value='http://radar.oreilly.com/2010/09'> September 2010 </option>
+	<option value='http://radar.oreilly.com/2010/08'> August 2010 </option>
+	<option value='http://radar.oreilly.com/2010/07'> July 2010 </option>
+	<option value='http://radar.oreilly.com/2010/06'> June 2010 </option>
+	<option value='http://radar.oreilly.com/2010/05'> May 2010 </option>
+	<option value='http://radar.oreilly.com/2010/04'> April 2010 </option>
+	<option value='http://radar.oreilly.com/2010/03'> March 2010 </option>
+	<option value='http://radar.oreilly.com/2010/02'> February 2010 </option>
+	<option value='http://radar.oreilly.com/2010/01'> January 2010 </option>
+	<option value='http://radar.oreilly.com/2009/12'> December 2009 </option>
+	<option value='http://radar.oreilly.com/2009/11'> November 2009 </option>
+	<option value='http://radar.oreilly.com/2009/10'> October 2009 </option>
+	<option value='http://radar.oreilly.com/2009/09'> September 2009 </option>
+	<option value='http://radar.oreilly.com/2009/08'> August 2009 </option>
+	<option value='http://radar.oreilly.com/2009/07'> July 2009 </option>
+	<option value='http://radar.oreilly.com/2009/06'> June 2009 </option>
+	<option value='http://radar.oreilly.com/2009/05'> May 2009 </option>
+	<option value='http://radar.oreilly.com/2009/04'> April 2009 </option>
+	<option value='http://radar.oreilly.com/2009/03'> March 2009 </option>
+	<option value='http://radar.oreilly.com/2009/02'> February 2009 </option>
+	<option value='http://radar.oreilly.com/2009/01'> January 2009 </option>
+	<option value='http://radar.oreilly.com/2008/12'> December 2008 </option>
+	<option value='http://radar.oreilly.com/2008/11'> November 2008 </option>
+	<option value='http://radar.oreilly.com/2008/10'> October 2008 </option>
+	<option value='http://radar.oreilly.com/2008/09'> September 2008 </option>
+	<option value='http://radar.oreilly.com/2008/08'> August 2008 </option>
+	<option value='http://radar.oreilly.com/2008/07'> July 2008 </option>
+	<option value='http://radar.oreilly.com/2008/06'> June 2008 </option>
+	<option value='http://radar.oreilly.com/2008/05'> May 2008 </option>
+	<option value='http://radar.oreilly.com/2008/04'> April 2008 </option>
+	<option value='http://radar.oreilly.com/2008/03'> March 2008 </option>
+	<option value='http://radar.oreilly.com/2008/02'> February 2008 </option>
+	<option value='http://radar.oreilly.com/2008/01'> January 2008 </option>
+	<option value='http://radar.oreilly.com/2007/12'> December 2007 </option>
+	<option value='http://radar.oreilly.com/2007/11'> November 2007 </option>
+	<option value='http://radar.oreilly.com/2007/10'> October 2007 </option>
+	<option value='http://radar.oreilly.com/2007/09'> September 2007 </option>
+	<option value='http://radar.oreilly.com/2007/08'> August 2007 </option>
+	<option value='http://radar.oreilly.com/2007/07'> July 2007 </option>
+	<option value='http://radar.oreilly.com/2007/06'> June 2007 </option>
+	<option value='http://radar.oreilly.com/2007/05'> May 2007 </option>
+	<option value='http://radar.oreilly.com/2007/04'> April 2007 </option>
+	<option value='http://radar.oreilly.com/2007/03'> March 2007 </option>
+	<option value='http://radar.oreilly.com/2007/02'> February 2007 </option>
+	<option value='http://radar.oreilly.com/2007/01'> January 2007 </option>
+	<option value='http://radar.oreilly.com/2006/12'> December 2006 </option>
+	<option value='http://radar.oreilly.com/2006/11'> November 2006 </option>
+	<option value='http://radar.oreilly.com/2006/10'> October 2006 </option>
+	<option value='http://radar.oreilly.com/2006/09'> September 2006 </option>
+	<option value='http://radar.oreilly.com/2006/08'> August 2006 </option>
+	<option value='http://radar.oreilly.com/2006/07'> July 2006 </option>
+	<option value='http://radar.oreilly.com/2006/06'> June 2006 </option>
+	<option value='http://radar.oreilly.com/2006/05'> May 2006 </option>
+	<option value='http://radar.oreilly.com/2006/04'> April 2006 </option>
+	<option value='http://radar.oreilly.com/2006/03'> March 2006 </option>
+	<option value='http://radar.oreilly.com/2006/02'> February 2006 </option>
+	<option value='http://radar.oreilly.com/2006/01'> January 2006 </option>
+	<option value='http://radar.oreilly.com/2005/12'> December 2005 </option>
+	<option value='http://radar.oreilly.com/2005/11'> November 2005 </option>
+	<option value='http://radar.oreilly.com/2005/10'> October 2005 </option>
+	<option value='http://radar.oreilly.com/2005/09'> September 2005 </option>
+	<option value='http://radar.oreilly.com/2005/08'> August 2005 </option>
+	<option value='http://radar.oreilly.com/2005/07'> July 2005 </option>
+	<option value='http://radar.oreilly.com/2005/06'> June 2005 </option>
+	<option value='http://radar.oreilly.com/2005/05'> May 2005 </option>
+	<option value='http://radar.oreilly.com/2005/04'> April 2005 </option>
+	<option value='http://radar.oreilly.com/2005/03'> March 2005 </option>
+			</select>
+		</li>
+
+		<li>	
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='page_id' id='page_id' onchange='return this.form.submit()'>
+	<option value="">Archives by Topic...</option>
+	<option class="level-0" value="48427">Data</option>
+	<option class="level-0" value="48429">Gov 2.0</option>
+	<option class="level-0" value="48431">Mobile</option>
+	<option class="level-0" value="48433">Programming</option>
+	<option class="level-0" value="48435">Publishing</option>
+	<option class="level-0" value="48437">Web 2.0</option>
+</select>
+					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+
+		<li id="users">
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='author' id='author' class='' onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Author...</option>
+	<option value='4'>Adam DuVander</option>
+	<option value='3'>Adam Messinger</option>
+	<option value='5'>Adam Witwer</option>
+	<option value='2'>Alasdair Allan</option>
+	<option value='7'>Alex Bowyer</option>
+	<option value='9'>Alex Iskold</option>
+	<option value='6'>Alexander Macgillivray</option>
+	<option value='10'>Alistair Croll</option>
+	<option value='11'>Allen Noren</option>
+	<option value='12'>Allison Randal</option>
+	<option value='13'>Anant Jhingran</option>
+	<option value='414'>Andreas Antonopoulos</option>
+	<option value='15'>Andrew Odewahn</option>
+	<option value='14'>Andrew Savikas</option>
+	<option value='16'>Andrew Shafer</option>
+	<option value='18'>Andy Kirk</option>
+	<option value='19'>Andy Oram</option>
+	<option value='262'>Ann Waldo</option>
+	<option value='21'>Ari Gesher</option>
+	<option value='20'>Aria Haghighi</option>
+	<option value='22'>Artur Bergman</option>
+	<option value='23'>Audrey Watters</option>
+	<option value='26'>Barry Devlin</option>
+	<option value='390'>Beau Cronin</option>
+	<option value='27'>Ben Lorica</option>
+	<option value='28'>Bill McCoy</option>
+	<option value='30'>Bradley Voytek</option>
+	<option value='31'>Brady Forrest</option>
+	<option value='32'>Brett McLaughlin</option>
+	<option value='33'>Brett Sandusky</option>
+	<option value='34'>Brett Sheppard</option>
+	<option value='25'>Brian Ahier</option>
+	<option value='35'>Brian Boyer</option>
+	<option value='244'>Brian Jepson</option>
+	<option value='36'>Brian O&#039;Leary</option>
+	<option value='38'>Brian Sawyer</option>
+	<option value='37'>Bruce Stewart</option>
+	<option value='39'>Carl Hewitt</option>
+	<option value='40'>Carl Malamud</option>
+	<option value='41'>Chris Meade</option>
+	<option value='284'>Chris Vander Mey</option>
+	<option value='44'>Christine Perey</option>
+	<option value='42'>Ciara Byrne</option>
+	<option value='43'>Cliff Miller</option>
+	<option value='306'>Courtney Nash</option>
+	<option value='45'>Dale Dougherty</option>
+	<option value='46'>Darren Barefoot</option>
+	<option value='47'>Dave McClure</option>
+	<option value='49'>David Leinweber</option>
+	<option value='50'>David Recordon</option>
+	<option value='48'>David Sims</option>
+	<option value='51'>DC Denison</option>
+	<option value='242'>Deni Auclair</option>
+	<option value='313'>Derek Jacoby</option>
+	<option value='53'>DJ Patil</option>
+	<option value='52'>Doug Hill</option>
+	<option value='54'>Dylan Field</option>
+	<option value='55'>E.A. Vander Veer</option>
+	<option value='56'>Edd Dumbill</option>
+	<option value='236'>Edie Freedman</option>
+	<option value='58'>Elizabeth Corcoran</option>
+	<option value='59'>Eoin Purcell</option>
+	<option value='60'>Eric Ries</option>
+	<option value='61'>Francis Pedraza</option>
+	<option value='62'>Fred Trotter</option>
+	<option value='68'>Gabe Zichermann</option>
+	<option value='63'>Gavin Starks</option>
+	<option value='67'>Greg Whisenant</option>
+	<option value='69'>Heather McCormack</option>
+	<option value='70'>Howard Wen</option>
+	<option value='71'>Hugh McGuire</option>
+	<option value='72'>Imran Ali</option>
+	<option value='73'>James Bridle</option>
+	<option value='74'>James Turner</option>
+	<option value='75'>Jason Grigsby</option>
+	<option value='77'>Jeevan Padiyar</option>
+	<option value='78'>Jeffrey Carr</option>
+	<option value='80'>Jenn Webb</option>
+	<option value='81'>Jennifer Pahlka</option>
+	<option value='82'>Jeremy Howard</option>
+	<option value='83'>Jesper Andersen</option>
+	<option value='84'>Jesse Robbins</option>
+	<option value='88'>Jim Stogdill</option>
+	<option value='87'>Jimmy Guterman</option>
+	<option value='89'>Jodee Rich</option>
+	<option value='92'>John Allspaw</option>
+	<option value='93'>John Battelle</option>
+	<option value='86'>John Geraci</option>
+	<option value='85'>John Graham-Cumming</option>
+	<option value='94'>John Labovitz</option>
+	<option value='95'>John Warren</option>
+	<option value='255'>Jon Bruner</option>
+	<option value='101'>Jon Spinney</option>
+	<option value='98'>Jon Udell</option>
+	<option value='96'>Jonathan Alexander</option>
+	<option value='177'>Jonathan Reichental, Ph.D.</option>
+	<option value='97'>Jono Bacon</option>
+	<option value='90'>Joseph Hellerstein</option>
+	<option value='99'>Joseph J. Esposito</option>
+	<option value='100'>Joshua-Michéle Ross</option>
+	<option value='103'>Jud Valeski</option>
+	<option value='104'>Julie Steele</option>
+	<option value='106'>Justin Hall</option>
+	<option value='107'>Justo Hidalgo</option>
+	<option value='117'>Karl Fogel</option>
+	<option value='108'>Kassia Krozser</option>
+	<option value='112'>Kat Meyer</option>
+	<option value='109'>Kate Eltham</option>
+	<option value='110'>Kate Pullinger</option>
+	<option value='111'>Kathy Walrath</option>
+	<option value='113'>Keith Fahlgren</option>
+	<option value='114'>Ken Yarmosh</option>
+	<option value='115'>Kevin Shockey</option>
+	<option value='116'>Kevin Smokler</option>
+	<option value='118'>Kurt Cagle</option>
+	<option value='121'>Laura Dawson</option>
+	<option value='339'>Laurel Ruma</option>
+	<option value='122'>Laurie Petrycki</option>
+	<option value='123'>Leigh Dodds</option>
+	<option value='125'>Liliana Bounegru</option>
+	<option value='126'>Linda Stone</option>
+	<option value='127'>Liza Daly</option>
+	<option value='128'>Lucy Gray</option>
+	<option value='129'>Lukas Biewald</option>
+	<option value='151'>Mac Slocum</option>
+	<option value='130'>Madhusudhan Konda</option>
+	<option value='132'>Marc Goodman</option>
+	<option value='131'>Marc Hedlund</option>
+	<option value='133'>Marie Bjerede</option>
+	<option value='134'>Mark Drapeau</option>
+	<option value='135'>Mark Nelson</option>
+	<option value='150'>Mark Sigal</option>
+	<option value='136'>Marko Gargenta</option>
+	<option value='291'>Mary Treseler</option>
+	<option value='142'>Matt Garrish</option>
+	<option value='140'>Matt Wood</option>
+	<option value='137'>Matthew Burton</option>
+	<option value='460'>Matthew Gast</option>
+	<option value='138'>Matthew Russell</option>
+	<option value='141'>Melissa Morgan</option>
+	<option value='144'>Michael Driscoll</option>
+	<option value='145'>Michael Ferrari</option>
+	<option value='146'>Michael Jon Jensen</option>
+	<option value='418'>Mike Barlow</option>
+	<option value='147'>Mike Hendrickson</option>
+	<option value='143'>Mike Honda</option>
+	<option value='148'>Mike Loukides</option>
+	<option value='149'>Mike Shatzkin</option>
+	<option value='152'>Nat Torkington</option>
+	<option value='214'>Nate Osit</option>
+	<option value='308'>Nathan Jepson</option>
+	<option value='155'>Nick Bilton</option>
+	<option value='156'>Nick Farina</option>
+	<option value='157'>Nick Ruffilo</option>
+	<option value='158'>Nikolaj Nyholm</option>
+	<option value='159'>O&#039;Reilly Radar</option>
+	<option value='160'>Osman Rashid</option>
+	<option value='161'>Pablo Francisco Arrieta Gomez</option>
+	<option value='162'>Pamela Samuelson</option>
+	<option value='163'>Paul Spinrad</option>
+	<option value='167'>Pete Warden</option>
+	<option value='166'>Peter Bennett</option>
+	<option value='164'>Peter Meyers</option>
+	<option value='404'>Q Ethan McCallum</option>
+	<option value='169'>Quinn Norton</option>
+	<option value='172'>Rachel Roumeliotis</option>
+	<option value='173'>Rael Dornfest</option>
+	<option value='174'>Ramez Naam</option>
+	<option value='175'>Randy Bias</option>
+	<option value='176'>Raven Zachary</option>
+	<option value='263'>Renee DiResta</option>
+	<option value='183'>Rob Tucker</option>
+	<option value='179'>Robbie Allen</option>
+	<option value='182'>Robert Kaye</option>
+	<option value='181'>Robert Passarella</option>
+	<option value='180'>Roberta Cairney</option>
+	<option value='184'>Roger Magoulas</option>
+	<option value='287'>Ron Miller</option>
+	<option value='185'>Ryan Stewart</option>
+	<option value='186'>Sanders Kleinfeld</option>
+	<option value='191'>Sara Peyton</option>
+	<option value='187'>Sara Winge</option>
+	<option value='189'>Sarah Milstein</option>
+	<option value='190'>Sarah Novotny</option>
+	<option value='192'>Scott Ruthfield</option>
+	<option value='194'>Sébastien Pierre</option>
+	<option value='195'>Shahid Shah</option>
+	<option value='196'>Silona Bonewald</option>
+	<option value='215'>Simon Phipps</option>
+	<option value='198'>Simon St. Laurent</option>
+	<option value='197'>Simon Wardley</option>
+	<option value='199'>Steve Souders</option>
+	<option value='200'>Suzanne Axtell</option>
+	<option value='202'>Tara Hunt</option>
+	<option value='203'>Terry Jones</option>
+	<option value='201'>Tim Anderson</option>
+	<option value='204'>Tim O&#039;Reilly</option>
+	<option value='205'>Timothy M. O&#039;Brien</option>
+	<option value='206'>Tish Shute</option>
+	<option value='207'>Todd Sattersten</option>
+	<option value='208'>Tom Steinberg</option>
+	<option value='209'>Tony Quartarolo</option>
+	<option value='210'>Troy Topnik</option>
+	<option value='211'>Tyler Bell</option>
+	<option value='212'>Vanessa Fox</option>
+</select>					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="text-3" class="widget-container widget_text">			<div class="textwidget"><p>
+<a href="http://feeds.feedburner.com/oreilly/radar/atom">
+<img src="http://feeds.feedburner.com/~fc/oreilly/radar/atom?bg=ff6633&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt=""></a>
+</p></div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-top">			
+							
+			<div class="execphpwidget"><div class="label">
+Sign up today to receive special discounts,<br> product alerts, and news from O'Reilly.</div>
+<div class="form">
+	<form method="POST" id="emailSignUp" action="http://post.oreilly.com/client/o/oreilly/forms/quicksignup.cgi"> 
+		<input type="hidden" name="client_token" value="oreilly" />
+		<input type="hidden" name="subscribe" value="optin" />
+                 <input type="hidden" name="success_url" value="http://oreilly.com/store/newsletter-thankyou.html" /> 
+                  <input type="hidden" name="error_url" value="http://oreilly.com/store/newsletter-signup-error.html" /> 
+                  <input type="hidden" name="news_oreilly" value="1" />
+		  <input type="text" name="email_addr" value="Enter Email" onblur="if (this.value == '')  {this.value = 'Enter Email';}" onfocus="if (this.value == 'Enter Email') {this.value = '';}" widdit="off" autocomplete="off" maxlength="100" size="12" class="email-box" />
+		 <input border="0" type="image" alt="Submit" src="http://cdn.oreillystatic.com/images/sitewide-headers/emailsignup_btn.gif" name="submit" value="submit">
+		<div class="clear"></div>
+	</form>
+</div>
+<div class="privacy">					
+	<a href="http://oreilly.com/oreilly/privacy.html">Privacy Policy &gt;</a>					
+	<a href="http://oreilly.com/pdf/sample-newsletter.pdf">View Sample Newsletter &gt;</a>		
+</div>
+</div>
+			
+				
+				<div class="menu-social-btm"><ul id="menu-social-btn-bottom" class="menu"><li id="menu-item-48494" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-48494"><a href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-48491" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-48491"><a href="http://youtube.com/oreillymedia">YouTube</a></li>
+<li id="menu-item-48492" class="social slideshare menu-item menu-item-type-custom menu-item-object-custom menu-item-48492"><a href="http://slideshare.net/oreillymedia">Slideshare</a></li>
+<li id="menu-item-48493" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-48493"><a href="http://www.facebook.com/OReilly">Facebook</a></li>
+<li id="menu-item-48495" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-48495"><a href="https://plus.google.com/105451978536505503907">Google+</a></li>
+<li id="menu-item-48496" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48496"><a href="http://feeds.feedburner.com/oreilly/news">RSS</a></li>
+<li id="menu-item-48497" class="all-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48497"><a href="http://oreilly.com/feeds">View All RSS Feeds ></a></li>
+</ul></div>				<div class="clear"></div>
+			</div>
+			
+			
+							
+			<div class="execphpwidget"><div id="multiColumnFooter">	
+<div id="footer-branding">
+		<a href="http://oreilly.com/" target="_blank"><img src="http://cdn.oreillystatic.com/images/sitewide-headers/logo02.gif" alt="O'Reilly" border="0"></a>
+		<p class="copyright">&copy; 2013, O'Reilly Media, Inc.</p>
+		<p><span class="phone-number">(707) 827-7019</span><span class="phone-number">(800) 889-8969</span></p>
+		<p class="trademarks">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+	</div>
+	
+	<div class="contentSectionBlock">
+		<!-- style="width:25%;" -->
+		<div class="contentSectionContainer">			
+				<h3>About O'Reilly</h3>
+				<div class="menu-about-oreilly-container"><ul id="menu-about-oreilly" class="menu"><li id="menu-item-50110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50110"><a href="http://radar.oreilly.com/about/">About O&#8217;Reilly Radar</a></li>
+<li id="menu-item-48510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48510"><a href="http://oreilly.com/academic/">Academic Solutions</a></li>
+<li id="menu-item-48511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48511"><a href="http://oreilly.com/jobs/">Jobs</a></li>
+<li id="menu-item-48512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48512"><a href="http://oreilly.com/contact.html">Contacts</a></li>
+<li id="menu-item-48513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48513"><a href="http://oreilly.com/about/">Corporate Information</a></li>
+<li id="menu-item-48514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48514"><a href="http://press.oreilly.com/index.html">Press Room</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+<li id="menu-item-48516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48516"><a href="http://oreilly.com/terms/">Terms of Service</a></li>
+<li id="menu-item-48517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48517"><a href="http://oreilly.com/oreilly/author/intro.csp">Writing for O&#8217;Reilly</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Community</h3>
+				<div class="menu-community-2-container"><ul id="menu-community-2" class="menu"><li id="menu-item-48518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48518"><a href="http://oreilly.com/authors/">Authors</a></li>
+<li id="menu-item-48519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48519"><a href="http://oreilly.com/community/">Community &#038; Featured Users</a></li>
+<li id="menu-item-48520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48520"><a href="http://forums.oreilly.com/">Forums</a></li>
+<li id="menu-item-48521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48521"><a href="https://members.oreilly.com/">Membership</a></li>
+<li id="menu-item-48522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48522"><a href="http://elists.oreilly.com/">Newsletters</a></li>
+<li id="menu-item-48523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48523"><a href="http://answers.oreilly.com/">O&#8217;Reilly Answers</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48524"><a href="http://oreilly.com/feeds/">RSS Feeds</a></li>
+<li id="menu-item-56120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56120"><a href="http://chimera.labs.oreilly.com/">O&#8217;Reilly Chimera (beta)</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">	
+                                <h3>Partner Sites</h3>
+				  <div class="menu-partner-sites-container"><ul id="menu-partner-sites" class="menu"><li id="menu-item-48503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48503"><a target="_blank" href="http://makezine.com/">makezine.com</a></li>
+<li id="menu-item-48504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48504"><a target="_blank" href="http://makerfaire.com/">makerfaire.com</a></li>
+<li id="menu-item-55273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55273"><a target="_blank" href="http://craftzine.com/">craftzine.com</a></li>
+<li id="menu-item-55274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55274"><a target="_blank" href="http://igniteshow.com/">igniteshow.com</a></li>
+<li id="menu-item-55275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55275"><a target="_blank" href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+<li id="menu-item-55276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55276"><a target="_blank" href="http://blogs.forbes.com/oreillymedia/">O&#8217;Reilly Insights on Forbes.com</a></li>
+</ul></div>			
+		</div>
+			
+
+		<!-- style="width:24%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Shop O'Reilly</h3>
+			<div class="menu-shop-oreilly-container"><ul id="menu-shop-oreilly" class="menu"><li id="menu-item-48505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48505"><a href="http://shop.oreilly.com/category/customer-service.do">Customer Service</a></li>
+<li id="menu-item-48506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48506"><a href="http://shop.oreilly.com/category/customer-service.do">Contact Us</a></li>
+<li id="menu-item-48507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48507"><a href="http://shop.oreilly.com/category/customer-service/shipping-information.do">Shipping Information</a></li>
+<li id="menu-item-48508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48508"><a href="http://shop.oreilly.com/category/customer-service/ordering-payment.do">Ordering &#038; Payment</a></li>
+<li id="menu-item-56665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56665"><a href="http://oreilly.com/affiliates/">Affiliate Program</a></li>
+<li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do">The O&#8217;Reilly Guarantee</a></li>
+</ul></div>		
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div></div>
+			
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+<script type="text/javascript">
+    $(window).load(function() {	
+			var str = $(".nav-next").text();
+			if (str == '') {				
+				$(".nav-previous .meta-sep").css('display','none');  	
+			}
+		});   
+</script>
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'oreillyradar';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<!-- MathJax Latex Plugin installed: Disabled as no shortcodes on this page --><script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.5'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.5'></script>
+<script language="JavaScript" type="text/javascript">
+var s_account="orradar,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+s.pageName="radar:what is node js"
+s.channel= "radar"
+s.prop1="radar:radar"
+s.prop2="radar:radar:radar"
+s.prop3="radar:radar:radar:radar"
+s.prop4="article"
+s.hier1="radar,radar,radar,radar"
+s.prop5="what is node js"
+s.prop6="RD46670"
+s.prop7="07/06/2011" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="brett mclaughlin" // author name
+s.prop22="radar" // blog name
+s.prop23="what is node js" // entry title
+s.prop24="07/06/2011" // post date
+//s.prop25="" // days since last post
+s.prop26="wednesday" // day of week
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none"><a id="parsely-cfg" data-parsely-site="radar.oreilly.com" href="http://parsely.com">Powered by the Parse.ly Publisher Platform (P3).</a></div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"radar.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+</body>
+</html>

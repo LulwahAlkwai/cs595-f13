@@ -1,0 +1,142 @@
+   [1]Cornell University
+   [2]Cornell University [3]Library
+   [4]We gratefully acknowledge support from
+   the Simons Foundation
+   and member institutions
+
+[5]arXiv.org > [6]cs > arXiv:1305.1979
+
+   Search or Article-id
+   ([7]Help | [8]Advanced search)
+   ________________________   [All papers] Go!
+
+   Full-text links:
+
+Download:
+
+     * [9]PDF
+     * [10]PostScript
+     * [11]Other formats
+
+Current browse context:
+
+   cs.CC
+   [12]< prev | [13]next >
+   [14]new | [15]recent | [16]1305
+
+Change to browse by:
+
+   [17]cs
+
+References & Citations
+
+     * [18]NASA ADS
+
+[19]DBLP - CS Bibliography
+
+   [20]listing | [21]bibtex
+   [22]Irit Dinur
+   [23]David Steurer
+
+Bookmark
+
+   ([24]what is this?)
+   [25]CiteULike logo [26]BibSonomy logo [27]Mendeley logo [28]Facebook
+   logo [29]LinkedIn logo [30]del.icio.us logo [31]Digg logo [32]Reddit
+   logo [33]ScienceWISE logo
+
+Computer Science > Computational Complexity
+
+Title: Analytical Approach to Parallel Repetition
+
+   Authors: [34]Irit Dinur, [35]David Steurer
+   (Submitted on 9 May 2013 ([36]v1), last revised 15 May 2013 (this
+   version, v2))
+
+     Abstract: We propose an analytical framework for studying parallel
+     repetition, a basic product operation for one-round two-player
+     games. In this framework, we consider a relaxation of the value of a
+     game, $\mathrm{val}_+$, and prove that for projection games, it is
+     both multiplicative (under parallel repetition) and a good
+     approximation for the true value.
+     These two properties imply a parallel repetition bound as $$
+     \mathrm{val}(G^{\otimes k}) \approx \mathrm{val}_+(G^{\otimes k}) =
+     \mathrm{val}_+(G)^{k} \approx \mathrm{val}(G)^{k}. $$
+     Using this framework, we can also give a short proof for the
+     NP-hardness of Label-Cover$(1,\delta)$ for all $\delta>0$, starting
+     from the basic PCP theorem.
+     We prove the following new results:
+     - A parallel repetition bound for projection games with small
+     soundness. Previously, it was not known whether parallel repetition
+     decreases the value of such games. This result implies stronger
+     inapproximability bounds for Set-Cover and Label-Cover.
+     - An improved bound for few parallel repetitions of projection
+     games, showing that Raz's counterexample is tight even for a small
+     number of repetitions.
+     Our techniques also allow us to bound the value of the direct
+     product of multiple games, namely, a bound on
+     $\mathrm{val}(G_1\otimes ...\otimes G_k)$ for different projection
+     games $G_1,...,G_k$.
+
+   Comments: Expanded section on inapproximability results. Removed
+   erroneous claim about reducing parallel-repetition bounds for general
+   games to bounds for projection games
+   Subjects: Computational Complexity (cs.CC)
+   Cite as: [37]arXiv:1305.1979 [cs.CC]
+     (or [38]arXiv:1305.1979v2 [cs.CC] for this version)
+
+Submission history
+
+   From: David Steurer [[39]view email]
+   [40][v1] Thu, 9 May 2013 00:22:17 GMT (35kb)
+   [v2] Wed, 15 May 2013 02:07:42 GMT (33kb)
+   [41]Which authors of this paper are endorsers?
+
+   Link back to: [42]arXiv, [43]form interface, [44]contact.
+
+References
+
+   1. http://www.cornell.edu/
+   2. http://www.cornell.edu/
+   3. http://www.library.cornell.edu/
+   4. https://confluence.cornell.edu/x/9YhjCg
+   5. http://arxiv.org/
+   6. http://arxiv.org/list/cs/recent
+   7. http://arxiv.org/help
+   8. http://arxiv.org/find
+   9. http://arxiv.org/pdf/1305.1979v2
+  10. http://arxiv.org/ps/1305.1979v2
+  11. http://arxiv.org/format/1305.1979v2
+  12. http://arxiv.org/prevnext?site=arxiv.org&id=1305.1979&context=cs.CC&function=prev
+  13. http://arxiv.org/prevnext?site=arxiv.org&id=1305.1979&context=cs.CC&function=next
+  14. http://arxiv.org/list/cs.CC/new
+  15. http://arxiv.org/list/cs.CC/recent
+  16. http://arxiv.org/list/cs.CC/1305
+  17. http://arxiv.org/abs/1305.1979?context=cs
+  18. http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1305.1979
+  19. http://www.informatik.uni-trier.de/~ley/db/
+  20. http://www.informatik.uni-trier.de/~ley/db/journals/corr/corr1305.html#abs-1305-1979
+  21. http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1305-1979
+  22. http://dblp.uni-trier.de/search/author?author=Irit%20Dinur
+  23. http://dblp.uni-trier.de/search/author?author=David%20Steurer
+  24. http://arxiv.org/help/social_bookmarking
+  25. http://arxiv.org/ct?url=http%3A%2F%2Fwww.citeulike.org%2Fposturl%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979%26title%3DAnalytical%2520Approach%2520to%2520Parallel%2520Repetition%26authors%3D&v=38cf2561
+  26. http://arxiv.org/ct?url=http%3A%2F%2Fwww.bibsonomy.org%2FBibtexHandler%3FrequTask%3Dupload%26url%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979%26description%3DAnalytical%2520Approach%2520to%2520Parallel%2520Repetition&v=da921ad3
+  27. http://arxiv.org/ct?url=http%3A%2F%2Fwww.mendeley.com%2Fimport%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979&v=2d68d042
+  28. http://arxiv.org/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Farxivpost%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979&v=9c012e22
+  29. http://arxiv.org/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Flinkedin_post%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979&v=2993ed31
+  30. http://arxiv.org/ct?url=http%3A%2F%2Fdel.icio.us%2Fpost%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979%26description%3DAnalytical%2520Approach%2520to%2520Parallel%2520Repetition&v=b96120fb
+  31. http://arxiv.org/ct?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979%26title%3DAnalytical%2520Approach%2520to%2520Parallel%2520Repetition&v=44369012
+  32. http://arxiv.org/ct?url=http%3A%2F%2Freddit.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979%26title%3DAnalytical%2520Approach%2520to%2520Parallel%2520Repetition&v=28658d9a
+  33. http://arxiv.org/ct?url=http%3A%2F%2Fsciencewise.info%2Fbookmarks%2Fadd%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.1979&v=3339ac66
+  34. http://arxiv.org/find/cs/1/au:+Dinur_I/0/1/0/all/0/1
+  35. http://arxiv.org/find/cs/1/au:+Steurer_D/0/1/0/all/0/1
+  36. http://arxiv.org/abs/1305.1979v1
+  37. http://arxiv.org/abs/1305.1979
+  38. http://arxiv.org/abs/1305.1979v2
+  39. http://arxiv.org/auth/show-email/4050a864/1305.1979
+  40. http://arxiv.org/abs/1305.1979v1
+  41. http://arxiv.org/auth/show-endorsers/1305.1979
+  42. http://arxiv.org/
+  43. http://arxiv.org/form
+  44. http://arxiv.org/help/contact

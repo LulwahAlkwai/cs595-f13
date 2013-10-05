@@ -1,0 +1,740 @@
+   #[1]InsertCoin - Android Custom Roms RSS Feed [2]InsertCoin - Android
+   Custom Roms Atom Feed [3]InsertCoin - Android Custom Roms » Feed
+   [4]InsertCoin - Android Custom Roms » Comments Feed
+
+   ____________________ submit
+     * [5]Home
+     * [6]Team
+     * [7]InsertCoin SVN (HTC ONE - m7)
+     * [8]Donors
+     * [9]Contributors for second ONE
+
+   Hello visitor:
+   If you are seeing this text means you have AdBlock Plus or some other
+   adblocking software. Please disable it because this website only runs
+   un-harmful, non-invasive Google Ads. Money from online advertisement
+   are needed for operating this website. Thank you! [10]InsertCoin -
+   Android Custom Roms
+     * [11]Articles
+     * [12]Custom ROMs
+          + [13]Desire
+          + [14]Galaxy S3
+          + [15]HTC ONE - GPE
+          + [16]HTC ONE - Sense ROM
+          + [17]One X
+          + [18]One X Plus
+          + [19]One X Plus AT&T
+          + [20]Sensation
+     * [21]Custom Tools
+          + [22]HTC ONE
+     * [23]Piggy Bank
+
+[24]My HTC One story (broke and denied warranty) UPDATED
+
+   Posted by [25]baadnewz on Oct 3, 2013 in [26]Articles | [27]4 comments
+
+   I'll try to be as short as I can and not bore everyone to death with my
+   sob story.
+
+   Last week, Wednesday (25th September) my HTC One died, I took it out of
+   my pocket and it was off, I tried powering it on - nothing, kept the
+   vol-down + power button pressed for more than 1 minute, nothing, no
+   blinking soft keys lights, dead, kept it charging for 1 hour, no
+   charging on led,again nothing. Ultimately I took it to Regenersis
+   Romania to be fixed under warranty.
+
+   Along the way Regenersis Romania, did NOT give any information besides
+   the "under repair" status. I had to call HTC Romania to find out that
+   actually Regenersis Romania does NOT fix the HTC ONE phones here, but
+   instead they ship them to Poland and fix them there. Today I called
+   again Regenersis to find out whats happening with my phone( 8 days have
+   passed since I claimed the warranty), again I got the status "under
+   repair". So I called HTC Romania since they were always very nice and
+   helpful maybe the can give one more time more information and once
+   again they did. They told me that Regenersis Poland denied warranty
+   with the code S 400 (which basically means custom software). Now I'm
+   asking the HTC representative, how the hell did they saw it was
+   unlocked since the phone clearly didn't powered on, either they had to
+   replace the battery or the board. if it was the battery I would be
+   happy, ok new battery and although the "custom software" would break
+   the battery only in 0.1 % of the cases lets say i'm that 0.1%, I would
+   gladly pay for the new battery and their trouble (although again
+   normally I shouldn't but wth, I want my phone back) and get back in
+   business. If they had to replace the board, oh well new board means new
+   everything so no way they see it was unlocked, or least probable the
+   phone suddenly started to work again andi  couldn't care less about
+   everything else(well not quite I'll write below why not) But it seems
+   again I was wrong. They only checked the database and saw that I
+   unlocked my phone via htcdev (or at least this what my logic dictates
+   if you take in consideration what I wrote above). And continuing my
+   logic, from that moment they didn't even looked at the phone or the
+   defects I reported, unlocked bootloader = no warranty, doesn't matter
+   what's wrong with your phone we don't even look.
+
+   I read on forums (xda and others) - again read on forums, take it with
+   a grain of salt - that this is somewhat common practice for the
+   services to make an extra quick buck but what is funny they didn't even
+   mentioned whats broke and how much would cost me to fix it - maybe
+   they'll share more information once I'll pick up my phone.
+
+   Now I was saying above that I'll explain why even if the phone would
+   suddenly start working I wouldn't be pleased about them denying my
+   warranty. I wouldn't be pleased because apart the fact that the phone
+   wasn't powering on, I reported 2 other defects to be fixed, defects
+   that are under no way related to "custom software", 1st one was the
+   pink tint of camera under very low light condition, common problem with
+   HTC ONE, problem that from what i hear HTC's directive is to replace
+   the phone, no question asked, and 2nd one would be gaps, again nothing
+   to do with software. Regenersis decided to ignore everything and denied
+   my warranty based on the htc unlock database (see my logic above why I
+   argue that they did this based only on IMEI).
+
+   Right now my only possible way to attack this decision is to call
+   Customer Protection and let them take it from there. But given how
+   things work in Romania, by the time there would be an definitive
+   decision for my reclamation, HTC ONE would be as old as HTC Sensation
+   is these days.
+
+   While i'm pretty upset about the whole situation, I really want to
+   thank HTC Romania for all the information they gave me along they way
+   when Regenersis should have given them in the first place
+
+UPDATE
+
+   So due to numerous replies regarding this subject I feel there is need
+   to explain a bit more.
+
+   Since I live in Romania, the producer and the post sale service must
+   obey European Legislation. European Legislation says that in order to
+   void your warranty the producer or the service must prove that the
+   issue was generated by the customer. While yes HTC says warranty MIGHT
+   be void using unlock there is a "might" there and they have to prove
+   that me unlocking my phone is the reason the phone malfunctioned, which
+   they didn't, they saw i generated a code for an imei, i could have kept
+   that code on a txt on my desktop and never used it. And even if they
+   can prove I've used it, they still have to prove that a custom software
+   did the damage. sure one can argue, yes flashing roms broke your phones
+   - again they have to prove it. in the end flashing a rom is writing 3
+   partitions on phone /system /data and boot nothing so critical that can
+   make your phone power off for good and forever. Let's say the software
+   is bad and rendered the phone unusable, you either get stuck at splash
+   screen, or a bootloop, or phone reboots itself without any reason, data
+   connection is not stable gps doesn't work etc, even a brick - things
+   that can be generated by a software error. but from this to the phone
+   not powering on at all is a big difference. is highly unlikely a
+   software could to this to a phone, and even if it did they have to
+   prove it 1st before voiding my warranty. As i said even a bricked
+   device is visible to a PC when connected and can be fixed
+
+   I know some will argue, that with unlock you can flash a custom kernel
+   and overclock the hell out of the cpu and gpu and this might end its
+   life, but before it kills it, there will be some signs like
+   overheating, instability reboots etc, and it will be signs of
+   overheating on the board itself, which is not the case.
+   So as I argued before a bad software at most can cause instability, or
+   the phone not to boot, but at least you have bootloader or something.
+   even if you brick it as the lingo goes, the phone will still be visible
+   to the PC as QHSUSB_DLOAD in device manager and can be fixed. but from
+   this to not powering on at all is difference.
+
+   I really hope I can solve this without paying money for repair, because
+   unless they can prove it is my fault for this defect. will be like
+   feeding the beast, confirming them that this kind of practice is OK.
+
+   This is it, thanks for reading, I know i said i'd be short but I got
+   carried away. I hope this article will help me get the phone repaired
+   without additional charge, and help others who run into these kind of
+   issues.
+
+Update 04 October 2013
+
+   HTC Romania escalated this problem to their superiors and waiting for
+   reply
+   HTC international asked for my ticket no. and said they will look into
+   it. hope is up again.
+
+   For now I can only blame Regenersis for their [28]shady practices. This
+   link only confirms my logic. Sure one can blame HTC for their poor
+   choice of outsourcing companies, but at least here in Romania,
+   Regenersis is the go-to service for all major producers and carriers(
+   Regenersis services Samsung, BB, Apple, Vodafone etc.) . And at least
+   until now HTC escalated the situation in an effort to solve my problem.
+   Remains to be seen if they can come through.
+
+[29]InsertCoin HTC ONE v4.0-3 Sense 5 Android 4.3
+
+   Posted by [30]baadnewz on Sep 30, 2013 in [31]Custom ROMs, [32]HTC ONE
+   - Sense ROM | [33]5 comments
+
+4.0-3 (same as r101 SVN) - SHOULD work without full wipe coming from
+3.2-x/3.3-x/3.4-x/4.0-x
+
+   - implemented hamdir's GPU fix: more info [34]here
+   - fixed HTC Messages Contact Picture bug (it was a HTC base bug not
+   made by me) - has been hard to fix it since I still don't have my ONE,
+   but I managed in the end
+   If you only want the Messages Fix and you don't want to download the
+   whole ROM head over [35]here
+   - moved Blinkfeed share button to 3-dot menu (@grgsiocl)
+   It seems i forgot to include this after all. Here is a [36]flashable
+   zip to correct this issue
+   - updated Google Hangouts
+
+InsertCoin Nightly Project
+
+   (useful for those who always want the latest and greatest. and dont
+   always want to download 900 zips)
+   [37]Project Home
+   [38]Repository
+   [39]Commits Log
+   [40]Wiki: How to set up SVN and build rom
+
+Custom Full ROM
+
+   [41]Download from xdafileserver
+   [42]Download from androidfilehost
+   MD5: 18aff338351572d6a71bdaeb91377ca9
+
+Firmware
+
+   [43]3.22.1540.1 Custom Firmware (optional, rom works with older radios
+   / hboots / firmware).
+
+[44]InsertCoin HTC ONE v4.0-2 Sense 5 Android 4.3
+
+   Posted by [45]baadnewz on Sep 28, 2013 in [46]Custom ROMs, [47]HTC ONE
+   - Sense ROM | [48]0 comments
+
+4.0-2 (same as r97 SVN) - SHOULD work without full wipe coming from
+3.2-x/3.3-x/3.4-x/4.0-x
+
+   - fixed /system partition not being writable for S-ON users (thanks
+   flar2 for guidance)
+   Now Xposed Framework and Viper4Android will work just as before without
+   complicated tutorials ;)
+
+InsertCoin Nightly Project
+
+   (useful for those who always want the latest and greatest. and dont
+   always want to download 900 zips)
+   [49]Project Home
+   [50]Repository
+   [51]Commits Log
+   [52]Wiki: How to set up SVN and build rom
+
+Incremental Update - To be flashed only on InsertCoin 4.0-1
+
+   [53]insertcoin-m7-4.0-1_to_4.0-2-incremental.zip
+   MD5: 5f5108799a892823c8b7db3973573381
+
+Custom Full ROM
+
+   [54]Download from xdafileserver
+   [55]Download from androidfilehost
+   MD5: 4860c85ba6e9f0aa1720fea6be589d0e
+
+Firmware
+
+   [56]3.22.1540.1 Custom Firmware (optional, rom works with older radios
+   / hboots / firmware).
+
+[57]InsertCoin HTC ONE v4.0-1 Sense 5 Android 4.3
+
+   Posted by [58]baadnewz on Sep 27, 2013 in [59]Custom ROMs, [60]HTC ONE
+   - Sense ROM | [61]4 comments
+
+4.0-1 (same as r91 SVN) - SHOULD work without full wipe coming from
+3.2-x/3.3-x/3.4-x
+
+   - rebased to 3.22.1540.1 (HTC ONE DEV EDITION BASE) - mad props
+   @CoryTallman for his effort to offer system dump
+   - modified base to make it WWE! so in fact is 3.22.401.2
+   - works with kustomizer 1.1.0
+   - all mods ported! no old files used. And this without an actual phone
+   to test on (my phone is broken)
+   - rom is tested by InsertCoin most addicted users before release!
+
+InsertCoin Nightly Project
+
+   (useful for those who always want the latest and greatest. and dont
+   always want to download 900 zips)
+   [62]Project Home
+   [63]Repository
+   [64]Commits Log
+   [65]Wiki: How to set up SVN and build rom
+
+Custom Full ROM
+
+   [66]Download from xdafileserver
+   [67]Download from androidfilehost
+   MD5: f45ffa3aabf954464fb8cd39d646d505
+
+Firmware
+
+   [68]3.22.1540.1 Custom Firmware (optional, rom works with older radios
+   / hboots / firmware).
+
+[69]InsertCoin HTC ONE v3.5-1-RePack Sense 5 Android 4.3
+
+   Posted by [70]baadnewz on Sep 25, 2013 in [71]Custom ROMs, [72]HTC ONE
+   - Sense ROM | [73]5 comments
+
+3.5-1 - repack(same as r63 SVN) - works without full wipe coming from
+3.2-x/3.3-x/3.4-x
+
+   - rebased to 3.18.709.2 - final base!
+   - modified base to make it WWE! so in fact is 3.18.401.2
+   - works with kustomizer 1.1.0
+   - fixed sim contacts error
+   - fixed bluetooth issue with car audio systems
+   - fixed torch in HEQS
+   - fixed FC when quick settings was selected in home screen menu
+   - updated Twitter and Facebook
+   - system partition fully writable for S-ON users - props flar2 for
+   wp-mod.
+   - improved updater-script
+
+InsertCoin Nightly Project
+
+   (useful for those who always want the latest and greatest. and dont
+   always want to download 900 zips)
+   [74]Project Home
+   [75]Repository
+   [76]Commits Log
+   [77]Wiki: How to set up SVN and build rom
+
+Custom Full ROM
+
+   [78]Download from xdafileserver
+   [79]Download from androidfilehost
+   MD5: 9c74a8fa4f38af3bbe7497364df83c6c
+
+Firmware
+
+   [80]3.18 Firmware (optional, rom works ok with 2.24 / GPE firmware).
+   md5sum: e0db6248017daca039d7c9ea8325d479
+
+[81]InsertCoin HTC ONE v3.4-3-RePack Sense 5 Android 4.3
+
+   Posted by [82]baadnewz on Sep 24, 2013 in [83]Custom ROMs, [84]HTC ONE
+   - Sense ROM | [85]1 comment
+
+3.4-3 - repack(same as r46 SVN) - works without full wipe coming from
+3.2-x/3.3-x
+
+   - added horizontal extended settings mod (v6-manianc, lyapota,
+   w00dstock). press status bar date for hqeqs edit
+   - added editable quick settings (v6-manianc, lyapota, w00dstock). press
+   and hold the tiles in quick settings
+   - added 5×6 grid option (v6-maniac) (is selectable directly in grid
+   sizes)
+   - added AROMA optional for dim status bar effect (v6-maniac)
+
+InsertCoin Nightly Project
+
+   (useful for those who always want the latest and greatest. and dont
+   always want to download 900 zips)
+   [86]Project Home
+   [87]Repository
+   [88]Commits Log
+   [89]Wiki: How to set up SVN and build rom
+
+Custom Full ROM
+
+   [90]Download from xdafileserver
+   [91]Download from androidfilehost
+   MD5: e22fffc7bf8b37c6ec8d6c00e74ec1fe
+
+Firmware
+
+   [92]3.17.401.2 Firmware (optional, rom works ok with 2.24 / GPE
+   firmware). I Recommend using 3.06.1700.1 GPE Radio
+
+[93]InsertCoin Kustomizer v1.1.0
+
+   Posted by [94]baadnewz on Sep 24, 2013 in [95]Custom Tools, [96]HTC ONE
+   | [97]0 comments
+
+InsertCoin Kustomizer is a flashable zip that allows you to change different
+ROM themes, options and mods without you having to download / reflash the
+whole ROM:
+
+     * weather icons mods
+     * notification icons mods
+     * window transition animations mods
+     * fonts
+     * battery icons mods
+     * clock types mods
+     * transparency mods
+
+After flashing InsertCoin ROM perform a complete first boot, then reboot to
+recovery and flash kustomizer
+
+Changelog:
+
+   1.1.0
+   - update to be compatible with InsertCoin 3.4-3 and higher
+   1.0.9
+   - fixed for good status bar no clock option (V6-Maniac)
+   1.0.8
+   - fixed noclock option
+   1.0.7
+   - updated to work with 3.09.401 base
+   - removed Launcher (Sense) mods, will remake those once there is a
+   final base
+   1.0.6
+   - added AOSP / HTC Recenet Apps Style option
+   1.0.5- repack
+   - fixed Systemui Crashes if full wipe was selected.
+   Only to be used with 3.0-11-REPACK/r104 or higher.
+   1.0.5
+   - fixed battery mods (for good this time)
+   - some script fixes and improvements
+   - removed dark signal mod caused issues, cleaned script.
+   - fixed if battery mods were used it would overwrite ATT signal mod
+   from ROM.
+   - added option in transparency menu to remove all transparency mods (it
+   wont remove transparent blinkfeed / appdrawer. To remove that you need
+   to select stock prism (or whatever grid size you want).
+   1.0.4
+   - fixed not flashing 4×5/5×6 Transparent Prism
+   - fix for battery missing
+   - cache wiping is mandatory now to avoid bootloops
+   - cosmetics to weather menu
+   1.0.3
+   - added lockscreen lock / unlock sounds optional
+   - added blinkfeed and appdrawer transparency optional
+   - fixed green battery mod not flashing
+   1.0.2
+   - fixed stock weather mod.
+   - fixed dalvik-cache wiping and made it optional
+   v1.0.1
+   - added Sense Mods.
+   v1.0.0
+   - initial release
+
+Download: [98]from xdafileserver
+
+Download: [99]from androidfilehost
+
+   md5sum: 6d0dd3ac3990e7fc0315fe4fd2a5425b
+
+SVN: [100]Project Home
+
+[101]InsertCoin Kustomizer v1.0.9
+
+   Posted by [102]baadnewz on Sep 18, 2013 in [103]Custom Tools, [104]HTC
+   ONE | [105]0 comments
+
+InsertCoin Kustomizer is a flashable zip that allows you to change different
+ROM themes, options and mods without you having to download / reflash the
+whole ROM:
+
+     * weather icons mods
+     * notification icons mods
+     * window transition animations mods
+     * fonts
+     * battery icons mods
+     * clock types mods
+     * transparency mods
+
+After flashing InsertCoin ROM perform a complete first boot, then reboot to
+recovery and flash kustomizer
+
+Changelog:
+
+   1.0.9
+   - fixed for good status bar no clock option (V6-Maniac)
+   1.0.8
+   - fixed noclock option
+   1.0.7
+   - updated to work with 3.09.401 base
+   - removed Launcher (Sense) mods, will remake those once there is a
+   final base
+   1.0.6
+   - added AOSP / HTC Recenet Apps Style option
+   1.0.5- repack
+   - fixed Systemui Crashes if full wipe was selected.
+   Only to be used with 3.0-11-REPACK/r104 or higher.
+   1.0.5
+   - fixed battery mods (for good this time)
+   - some script fixes and improvements
+   - removed dark signal mod caused issues, cleaned script.
+   - fixed if battery mods were used it would overwrite ATT signal mod
+   from ROM.
+   - added option in transparency menu to remove all transparency mods (it
+   wont remove transparent blinkfeed / appdrawer. To remove that you need
+   to select stock prism (or whatever grid size you want).
+   1.0.4
+   - fixed not flashing 4×5/5×6 Transparent Prism
+   - fix for battery missing
+   - cache wiping is mandatory now to avoid bootloops
+   - cosmetics to weather menu
+   1.0.3
+   - added lockscreen lock / unlock sounds optional
+   - added blinkfeed and appdrawer transparency optional
+   - fixed green battery mod not flashing
+   1.0.2
+   - fixed stock weather mod.
+   - fixed dalvik-cache wiping and made it optional
+   v1.0.1
+   - added Sense Mods.
+   v1.0.0
+   - initial release
+
+Download: [106]from xdafileserver
+
+Download: [107]from androidfilehost
+
+   md5sum: efe31349ae2430061e2b51d797385e70
+
+SVN: [108]Project Home
+
+   [109]« Older Entries
+
+Donations
+
+                    You enjoy my work? Throw me a banana
+
+                PayPal - The safer, easier way to pay online!
+
+Online presence
+
+Recent Posts
+
+     * [110]My HTC One story (broke and denied warranty) UPDATED
+     * [111]InsertCoin HTC ONE v4.0-3 Sense 5 Android 4.3
+     * [112]InsertCoin HTC ONE v4.0-2 Sense 5 Android 4.3
+     * [113]InsertCoin HTC ONE v4.0-1 Sense 5 Android 4.3
+     * [114]InsertCoin HTC ONE v3.5-1-RePack Sense 5 Android 4.3
+
+Recent Comments
+
+     * elvis de kooning on [115]InsertCoin HTC ONE v4.0-3 Sense 5 Android
+       4.3
+     * baadnewz on [116]My HTC One story (broke and denied warranty)
+       UPDATED
+     * ArtyMarty on [117]My HTC One story (broke and denied warranty)
+       UPDATED
+     * IvanP on [118]My HTC One story (broke and denied warranty) UPDATED
+     * Volker on [119]InsertCoin HTC ONE v4.0-3 Sense 5 Android 4.3
+
+Archives
+
+     * [120]October 2013
+     * [121]September 2013
+     * [122]August 2013
+     * [123]July 2013
+     * [124]June 2013
+     * [125]May 2013
+     * [126]April 2013
+     * [127]March 2013
+     * [128]February 2013
+     * [129]January 2013
+     * [130]December 2012
+     * [131]November 2012
+     * [132]October 2012
+     * [133]September 2012
+     * [134]August 2012
+     * [135]July 2012
+     * [136]June 2012
+     * [137]May 2012
+     * [138]April 2012
+     * [139]March 2012
+     * [140]February 2012
+     * [141]January 2012
+     * [142]December 2011
+     * [143]November 2011
+     * [144]October 2011
+     * [145]September 2011
+     * [146]August 2011
+
+Categories
+
+     * [147]Articles
+     * [148]Custom ROMs
+     * [149]Custom Tools
+     * [150]Desire
+     * [151]Galaxy S3
+     * [152]HTC ONE
+     * [153]HTC ONE - GPE
+     * [154]HTC ONE - Sense ROM
+     * [155]One X
+     * [156]One X Plus
+     * [157]One X Plus AT&T
+     * [158]Piggy Bank
+     * [159]Sensation
+
+   Designed by [160]Elegant Themes | Powered by [161]Wordpress
+
+References
+
+   Visible links
+   1. http://insertcoin-roms.org/feed/
+   2. http://insertcoin-roms.org/feed/atom/
+   3. http://insertcoin-roms.org/feed/
+   4. http://insertcoin-roms.org/comments/feed/
+   5. http://insertcoin-roms.org/
+   6. http://insertcoin-roms.org/team/
+   7. https://code.google.com/p/insertcoin-m7-nightly/
+   8. http://insertcoin-roms.org/donors/
+   9. http://insertcoin-roms.org/contributors-for-second-chance/
+  10. http://insertcoin-roms.org/
+  11. http://insertcoin-roms.org/category/articles/
+  12. http://insertcoin-roms.org/category/devices/
+  13. http://insertcoin-roms.org/category/devices/desire/
+  14. http://insertcoin-roms.org/category/devices/galaxy-s3/
+  15. http://insertcoin-roms.org/category/devices/ge/
+  16. http://insertcoin-roms.org/category/devices/one/
+  17. http://insertcoin-roms.org/category/devices/one-x/
+  18. http://insertcoin-roms.org/category/devices/one-x-plus/
+  19. http://insertcoin-roms.org/category/devices/one-x-plus-att/
+  20. http://insertcoin-roms.org/category/devices/sensation/
+  21. http://insertcoin-roms.org/category/tools/
+  22. http://insertcoin-roms.org/category/tools/one-tools/
+  23. http://insertcoin-roms.org/category/piggy-bank/
+  24. http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/
+  25. http://insertcoin-roms.org/author/baadnewz/
+  26. http://insertcoin-roms.org/category/articles/
+  27. http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comments
+  28. http://forum.xda-developers.com/showpost.php?p=46161853&postcount=7291
+  29. http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/
+  30. http://insertcoin-roms.org/author/baadnewz/
+  31. http://insertcoin-roms.org/category/devices/
+  32. http://insertcoin-roms.org/category/devices/one/
+  33. http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/#comments
+  34. http://forum.xda-developers.com/showpost.php?p=46031842&postcount=5623
+  35. http://forum.xda-developers.com/showpost.php?p=46042037&postcount=6993
+  36. http://forum.xda-developers.com/showpost.php?p=46051155&postcount=7059
+  37. https://insertcoin-m7-nightly.googlecode.com/
+  38. https://insertcoin-m7-nightly.googlecode.com/svn/trunk/
+  39. https://code.google.com/p/insertcoin-m7-nightly/source/list
+  40. https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild
+  41. http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin
+  42. http://www.androidfilehost.com/?fid=23159073880932863
+  43. http://forum.xda-developers.com/showthread.php?t=2459147
+  44. http://insertcoin-roms.org/2013/09/28/insertcoin-htc-one-v4-0-2-sense-5-android-4-3/
+  45. http://insertcoin-roms.org/author/baadnewz/
+  46. http://insertcoin-roms.org/category/devices/
+  47. http://insertcoin-roms.org/category/devices/one/
+  48. http://insertcoin-roms.org/2013/09/28/insertcoin-htc-one-v4-0-2-sense-5-android-4-3/#respond
+  49. https://insertcoin-m7-nightly.googlecode.com/
+  50. https://insertcoin-m7-nightly.googlecode.com/svn/trunk/
+  51. https://code.google.com/p/insertcoin-m7-nightly/source/list
+  52. https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild
+  53. http://www.androidfilehost.com/?fid=23134718111256351
+  54. http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin
+  55. http://www.androidfilehost.com/?fid=23134718111256359
+  56. http://forum.xda-developers.com/showthread.php?t=2459147
+  57. http://insertcoin-roms.org/2013/09/27/insertcoin-htc-one-v4-0-1-sense-5-android-4-3/
+  58. http://insertcoin-roms.org/author/baadnewz/
+  59. http://insertcoin-roms.org/category/devices/
+  60. http://insertcoin-roms.org/category/devices/one/
+  61. http://insertcoin-roms.org/2013/09/27/insertcoin-htc-one-v4-0-1-sense-5-android-4-3/#comments
+  62. https://insertcoin-m7-nightly.googlecode.com/
+  63. https://insertcoin-m7-nightly.googlecode.com/svn/trunk/
+  64. https://code.google.com/p/insertcoin-m7-nightly/source/list
+  65. https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild
+  66. http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin
+  67. http://www.androidfilehost.com/?fid=23134718111256049
+  68. http://forum.xda-developers.com/showthread.php?t=2459147
+  69. http://insertcoin-roms.org/2013/09/25/insertcoin-htc-one-v3-5-1-repack-sense-5-android-4-3/
+  70. http://insertcoin-roms.org/author/baadnewz/
+  71. http://insertcoin-roms.org/category/devices/
+  72. http://insertcoin-roms.org/category/devices/one/
+  73. http://insertcoin-roms.org/2013/09/25/insertcoin-htc-one-v3-5-1-repack-sense-5-android-4-3/#comments
+  74. https://insertcoin-m7-nightly.googlecode.com/
+  75. https://insertcoin-m7-nightly.googlecode.com/svn/trunk/
+  76. https://code.google.com/p/insertcoin-m7-nightly/source/list
+  77. https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild
+  78. http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin
+  79. http://www.androidfilehost.com/?fid=23134718111255461
+  80. http://www.androidfilehost.com/?fid=23134718111255450
+  81. http://insertcoin-roms.org/2013/09/24/insertcoin-htc-one-v3-4-3-sense-5-android-4-3/
+  82. http://insertcoin-roms.org/author/baadnewz/
+  83. http://insertcoin-roms.org/category/devices/
+  84. http://insertcoin-roms.org/category/devices/one/
+  85. http://insertcoin-roms.org/2013/09/24/insertcoin-htc-one-v3-4-3-sense-5-android-4-3/#comments
+  86. https://insertcoin-m7-nightly.googlecode.com/
+  87. https://insertcoin-m7-nightly.googlecode.com/svn/trunk/
+  88. https://code.google.com/p/insertcoin-m7-nightly/source/list
+  89. https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild
+  90. http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin
+  91. http://www.androidfilehost.com/?fid=23134718111255091
+  92. http://forum.xda-developers.com/showthread.php?t=2419536
+  93. http://insertcoin-roms.org/2013/09/24/insertcoin-kustomizer-v1-1-0/
+  94. http://insertcoin-roms.org/author/baadnewz/
+  95. http://insertcoin-roms.org/category/tools/
+  96. http://insertcoin-roms.org/category/tools/one-tools/
+  97. http://insertcoin-roms.org/2013/09/24/insertcoin-kustomizer-v1-1-0/#respond
+  98. http://www.xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin%2FKustomizer
+  99. http://www.androidfilehost.com/?fid=23134718111255032
+ 100. https://code.google.com/p/insertcoin-m7-kustomizer/
+ 101. http://insertcoin-roms.org/2013/09/18/insertcoin-kustomizer-v1-0-9/
+ 102. http://insertcoin-roms.org/author/baadnewz/
+ 103. http://insertcoin-roms.org/category/tools/
+ 104. http://insertcoin-roms.org/category/tools/one-tools/
+ 105. http://insertcoin-roms.org/2013/09/18/insertcoin-kustomizer-v1-0-9/#respond
+ 106. http://www.xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin%2FKustomizer
+ 107. http://www.androidfilehost.com/?fid=23134718111253619
+ 108. https://code.google.com/p/insertcoin-m7-kustomizer/
+ 109. http://insertcoin-roms.org/page/2/
+ 110. http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/
+ 111. http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/
+ 112. http://insertcoin-roms.org/2013/09/28/insertcoin-htc-one-v4-0-2-sense-5-android-4-3/
+ 113. http://insertcoin-roms.org/2013/09/27/insertcoin-htc-one-v4-0-1-sense-5-android-4-3/
+ 114. http://insertcoin-roms.org/2013/09/25/insertcoin-htc-one-v3-5-1-repack-sense-5-android-4-3/
+ 115. http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/#comment-9921
+ 116. http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comment-9916
+ 117. http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comment-9915
+ 118. http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comment-9910
+ 119. http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/#comment-9909
+ 120. http://insertcoin-roms.org/2013/10/
+ 121. http://insertcoin-roms.org/2013/09/
+ 122. http://insertcoin-roms.org/2013/08/
+ 123. http://insertcoin-roms.org/2013/07/
+ 124. http://insertcoin-roms.org/2013/06/
+ 125. http://insertcoin-roms.org/2013/05/
+ 126. http://insertcoin-roms.org/2013/04/
+ 127. http://insertcoin-roms.org/2013/03/
+ 128. http://insertcoin-roms.org/2013/02/
+ 129. http://insertcoin-roms.org/2013/01/
+ 130. http://insertcoin-roms.org/2012/12/
+ 131. http://insertcoin-roms.org/2012/11/
+ 132. http://insertcoin-roms.org/2012/10/
+ 133. http://insertcoin-roms.org/2012/09/
+ 134. http://insertcoin-roms.org/2012/08/
+ 135. http://insertcoin-roms.org/2012/07/
+ 136. http://insertcoin-roms.org/2012/06/
+ 137. http://insertcoin-roms.org/2012/05/
+ 138. http://insertcoin-roms.org/2012/04/
+ 139. http://insertcoin-roms.org/2012/03/
+ 140. http://insertcoin-roms.org/2012/02/
+ 141. http://insertcoin-roms.org/2012/01/
+ 142. http://insertcoin-roms.org/2011/12/
+ 143. http://insertcoin-roms.org/2011/11/
+ 144. http://insertcoin-roms.org/2011/10/
+ 145. http://insertcoin-roms.org/2011/09/
+ 146. http://insertcoin-roms.org/2011/08/
+ 147. http://insertcoin-roms.org/category/articles/
+ 148. http://insertcoin-roms.org/category/devices/
+ 149. http://insertcoin-roms.org/category/tools/
+ 150. http://insertcoin-roms.org/category/devices/desire/
+ 151. http://insertcoin-roms.org/category/devices/galaxy-s3/
+ 152. http://insertcoin-roms.org/category/tools/one-tools/
+ 153. http://insertcoin-roms.org/category/devices/ge/
+ 154. http://insertcoin-roms.org/category/devices/one/
+ 155. http://insertcoin-roms.org/category/devices/one-x/
+ 156. http://insertcoin-roms.org/category/devices/one-x-plus/
+ 157. http://insertcoin-roms.org/category/devices/one-x-plus-att/
+ 158. http://insertcoin-roms.org/category/piggy-bank/
+ 159. http://insertcoin-roms.org/category/devices/sensation/
+ 160. http://www.elegantthemes.com/
+ 161. http://www.wordpress.org/
+
+   Hidden links:
+ 162. http://forum.xda-developers.com/search.php?searchid=82096516
+ 163. https://www.facebook.com/InsertCoinRoms
+ 164. https://twitter.com/baadnwz
+ 165. http://webchat.freenode.net/?channels=baadnwz-roms&uio=d4
+ 166. https://plus.google.com/118062549810600157384

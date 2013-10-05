@@ -1,0 +1,3191 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,e="jstiming",g="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,d]};this[g]("start",null,a)}var a=new d;b.jstiming={Timer:d,load:a};if(b.performance&&b.performance.timing){var a=b.performance.timing,c=b[e].load,f=a.navigationStart,a=a.responseStart;0<f&&a>=f&&(c[g]("_wtsrt",void 0,f),c[g]("wtsrt_","_wtsrt",a),c[g]("tbsd_","wtsrt_"))}try{a=null,b.chrome&&b.chrome.csi&&(a=Math.floor(b.chrome.csi().pageT),c&&0<f&&(c[g]("_tbnd",void 0,b.chrome.csi().startE),
+c[g]("tbnd_","_tbnd",f))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<f&&(c[g]("_tbnd",void 0,b.external.startE),c[g]("tbnd_","_tbnd",f))),a&&(b[e].pt=a)}catch(l){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[e].load[g]("aft")};var h=!1;function k(){h||(h=!0,b[e].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",k,!1):b.attachEvent("onscroll",k);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://mybiasedcoin.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="My Biased Coin - Atom" href="http://mybiasedcoin.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="My Biased Coin - RSS" href="http://mybiasedcoin.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="My Biased Coin - Atom" href="http://www.blogger.com/feeds/8890204/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="My Biased Coin - Atom" href="http://mybiasedcoin.blogspot.com/feeds/5854741366106181779/comments/default" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>My Biased Coin: Discussing STOC 2013 PC with Joan Feigenbaum</title>
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/static/v1/widgets/2775015444-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/dyn-css/authorization.css?targetBlogID=8890204&amp;zx=75b14341-a87e-41d2-a8bc-3ad14b3e8e4b&quot;/&gt;
+' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Minima
+Date:     26 Feb 2004
+Updated by: Blogger Team
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#666">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#999">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#c60">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#999">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Georgia, Serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 200% Georgia, Serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif">
+<Variable name="startSide" description="Side where text starts in blog language"
+type="automatic" default="left">
+<Variable name="endSide" description="Side where text ends in blog language"
+type="automatic" default="right">
+*/
+/* Use this with templates/template-twocol.html */
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font:x-small Georgia Serif;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a:link {
+color:#57778b;
+text-decoration:none;
+}
+a:visited {
+color:#57778b;
+text-decoration:none;
+}
+a:hover {
+color:#cc6600;
+text-decoration:underline;
+}
+a img {
+border-width:0;
+}
+/* Header
+-----------------------------------------------
+*/
+#header-wrapper {
+width:660px;
+margin:0 auto 10px;
+border:1px solid #cccccc;
+}
+#header-inner {
+background-position: center;
+margin-left: auto;
+margin-right: auto;
+}
+#header {
+margin: 5px;
+border: 1px solid #cccccc;
+text-align: center;
+color:#666666;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+font: normal normal 200% Georgia, Serif;
+}
+#header a {
+color:#666666;
+text-decoration:none;
+}
+#header a:hover {
+color:#666666;
+}
+#header .description {
+margin:0 5px 5px;
+padding:0 20px 15px;
+max-width:700px;
+text-transform:uppercase;
+letter-spacing:.2em;
+line-height: 1.4em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+}
+#header img {
+margin-left: auto;
+margin-right: auto;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+width: 660px;
+margin:0 auto;
+padding:10px;
+text-align:left;
+font: normal normal 100% Georgia, Serif;
+}
+#main-wrapper {
+width: 410px;
+float: left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;     /* fix for long non-text content breaking IE sidebar float */
+}
+#sidebar-wrapper {
+width: 220px;
+float: right;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 78% 'Trebuchet MS',Trebuchet,Arial,Verdana,Sans-serif;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color:#999999;
+}
+/* Posts
+-----------------------------------------------
+*/
+h2.date-header {
+margin:1.5em 0 .5em;
+}
+.post {
+margin:.5em 0 1.5em;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post h3 {
+margin:.25em 0 0;
+padding:0 0 4px;
+font-size:140%;
+font-weight:normal;
+line-height:1.4em;
+color:#cc6600;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+display:block;
+text-decoration:none;
+color:#cc6600;
+font-weight:normal;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post-body {
+margin:0 0 .75em;
+line-height:1.6em;
+}
+.post-body blockquote {
+line-height:1.3em;
+}
+.post-footer {
+margin: .75em 0;
+color:#999999;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img, table.tr-caption-container {
+padding:4px;
+border:1px solid #cccccc;
+}
+.tr-caption-container img {
+border: none;
+padding: 0;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:1em 0;
+font-weight: bold;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.2em;
+color: #999999;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.5em;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0;
+padding:0 0 0;
+}
+.sidebar li {
+margin:0;
+padding-top:0;
+padding-right:0;
+padding-bottom:.25em;
+padding-left:15px;
+text-indent:-15px;
+line-height:1.5em;
+}
+.sidebar .widget, .main .widget {
+border-bottom:1px dotted #cccccc;
+margin:0 0 1.5em;
+padding:0 0 1.5em;
+}
+.main .Blog {
+border-bottom-width: 0;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin-top: 0;
+margin-right: 5px;
+margin-bottom: 5px;
+margin-left: 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+color: #999999;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% 'Trebuchet MS', Trebuchet, Arial, Verdana, Sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+width:660px;
+clear:both;
+margin:0 auto;
+padding-top:15px;
+line-height: 1.6em;
+text-transform:uppercase;
+letter-spacing:.1em;
+text-align: center;
+}
+
+--></style>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                '//www.blogger.com/navbar.g?targetBlogID\758890204\46blogName\75My+Biased+Coin\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75BLUE\46layoutType\75LAYOUTS\46searchRoot\75http://mybiasedcoin.blogspot.com/search\46blogLocale\75en\46v\0752\46homepageUrl\75http://mybiasedcoin.blogspot.com/\46targetPostID\0755854741366106181779\46blogPostOrPageUrl\75http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html\46vt\75-5991846309559654884',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div id='header-wrapper'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://mybiasedcoin.blogspot.com/'>My Biased Coin</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>My take on computer science -- <br> 
+algorithms, networking, information theory -- <br> 
+and related items.</span></p>
+</div>
+</div>
+</div></div>
+</div>
+<div id='content-wrapper'>
+<div id='crosscol-wrapper' style='text-align:center'>
+<div class='crosscol section' id='crosscol'></div>
+</div>
+<div id='main-wrapper'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Wednesday, February 27, 2013</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='8890204' itemprop='blogId'/>
+<meta content='5854741366106181779' itemprop='postId'/>
+<a name='5854741366106181779'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+Discussing STOC 2013 PC with Joan Feigenbaum
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-5854741366106181779' itemprop='description articleBody'>
+Joan Feigenbaum is the Program Committee Chair for STOC 2013, where 
+papers decisions were recently announced;&nbsp; I served as part of the 
+Executive Committee.&nbsp; Joan did an excellent job running the entire 
+process, and experimented with a "two-tiered" PC.&nbsp; We agreed 
+that it would be interesting to talk about her experience on the blog, 
+and she agreed to answer some questions I posed.&nbsp; We hope you'll find 
+the discussion interesting.<br />
+<br />
+<b>1. &nbsp;You're now completing your stint as Program Committee Chair for STOC 2013.&nbsp; How do you think the program looks?</b>&nbsp; <br />
+I think it looks great. &nbsp;We had roughly 20% more submissions than last 
+year, and many of them were excellent -- an embarrassment of riches. 
+&nbsp;Once we decided to stick with the recent STOC practice of a three-day 
+program with two parallel tracks of talks, we were faced with the usual 
+problem for STOC PCs, namely having to reject many clearly acceptable 
+submissions. &nbsp;I guess that's a much better problem to have than an 
+insufficient number of clearly acceptable submissions, but I still have 
+reservations about this approach to conferences. &nbsp;(There's more on that 
+in my answer to questions 2 and 5 below.)<br />
+<br />
+<b>2. You tried a number of new things this year -- a "two-tiered" 
+PC being the most notable. &nbsp;How do you think it worked? &nbsp;Where do you 
+think it improved things, and where did it not work as you might have 
+hoped?</b><br />
+When Lance Fortnow, SIGACT Past Chair, asked me to be the Program Chair
+ for STOC 2013, he strongly encouraged me to "experiment" and, in 
+particular, strongly encouraged me to try a two-tiered PC. &nbsp;I agreed to 
+do so, but it was a strange "experiment" in that it was not clear to me 
+(or to anyone, for that matter) what problem a two-tiered PC might 
+solve. &nbsp;There was no hypothesis to test, and the whole exercise wasn't a
+ controlled experiment in any well defined sense. &nbsp;Nonetheless, I was 
+able to reverse engineer my way into some potential advantages of a 
+two-tiered PC and hence some good reasons for trying it.<br />
+&nbsp; &nbsp; &nbsp; Before I get into those reasons, however, I should state the 
+primary conclusion that I drew from this experience: Given the 
+extraordinarily high quantity and quality of STOC submissions, it's 
+extremely easy to put together a good program, and any reasonable PC 
+structure will do. &nbsp;That is, assuming that you don't want to change the 
+nature of the product (where the product is a three-day, two-track STOC 
+that has a fairly but not ridiculously low acceptance rate), you have a 
+lot of latitude in the program-committee process that you use to produce
+ it. &nbsp;There's nothing sacred about the "traditional," 20-person PC with 
+one chair and no PC-authored submissions; there's nothing definitively 
+wrong with it either.<br />
+&nbsp; &nbsp; &nbsp; Now what did we try this year, and what were some of its potential
+ advantages? &nbsp;First of all, we briefly considered changing the product, 
+e.g., by having three parallel sessions, but decided against it; we set 
+out to put together a STOC program that was similar in quality and 
+quantity to other recent STOC programs but to do so using a different 
+process. &nbsp;We had an Executive Committee (EC) of nine people (including 
+me) and a Program Committee (PC) of 62 people. &nbsp;PC members were allowed 
+to submit, but EC members were not. &nbsp;The job of the PC was to read the 
+submissions in detail and write reviews, and the job of the EC was to 
+oversee and coordinate the reviewing process. &nbsp;For example, EC members 
+reassigned submissions that HotCRP had assigned to inappropriate 
+reviewers, looked for submissions that required extra scrutiny because 
+they might have subtle technical flaws, and, most importantly, looked 
+for pairs of submissions that were directly comparable and needed to 
+have at least one reviewer in common. &nbsp;In order to promote high-quality 
+reviews (which I thought should be attainable, because each PC member 
+had fewer submissions to review than he would have in a traditional PC),
+ I put together a list of suggested review questions and regularly 
+reminded PC members to flesh out, revise, and polish their reviews based
+ on committee discussions. &nbsp;We made accept/reject decisions about a 
+hefty fraction of the submissions fairly early in the process, based on 
+two reviews of each submission. &nbsp;For the rest of the submissions, we got
+ additional reviews or asked the original two reviewers to consider them
+ in more detail or both; for each set of comparable submissions that 
+survived the first cut, an EC member conducted an online "meeting" 
+(using both email and HotCRP comments) of all of the reviewers of 
+submissions in the set.<br />
+&nbsp; &nbsp; &nbsp; One potential big advantage of this way of doing things over the 
+traditional way is that PC service can be much less burdensome. &nbsp;Each PC
+ member can review far fewer submissions than he would for a traditional
+ program committee and can also submit his own papers. &nbsp;He can devote 
+considerably more time and attention to each submission assigned to him 
+and still wind up spending considerably less total time and effort than 
+he would under the old system. &nbsp;He's also less likely to have to review 
+submissions that are outside of his area(s) of expertise, because there 
+are many more PC members to choose from when finalizing assignments. 
+&nbsp;The hope is that almost everyone in the theory community will be 
+willing to serve on a STOC PC when asked if the workload is manageable, 
+that PC members will be more satisfied with the quality of their work if
+ they can spend more time on each submission and don't have to review 
+submissions outside of their area(s), and that authors will get higher 
+quality reviews.<br />
+&nbsp; &nbsp; &nbsp;A second potential advantage is that the managerial and oversight 
+responsibilities can be shared by the entire EC and don't all fall on 
+the chair. &nbsp;In almost every traditional program committee I've served on
+ (not just STOC committees), there has been a great deal of last-minute 
+scrambling. &nbsp;In particular, I've been in many face-to-face 
+program-committee meetings at which we discovered that various pairs of 
+papers needed to be compared but had been read by disjoint sets of 
+reviewers. &nbsp;That's not surprising, of course, when everyone (except the 
+chair) had spent the previous few months trying to read the 60 
+submissions assigned to him and hence hadn't had a minute in which to at
+ least skim all of the other submissions. &nbsp;These relationships among 
+submissions can be discovered early in the process if there are enough 
+people whose job it is to look for them. &nbsp;Having an EC that can 
+facilitate many parallel, online "meetings" about disjoint sets of 
+gray-area submissions is also a big win over a monolithic face-to-face 
+program-committee meeting. &nbsp;The latter inevitably requires each PC 
+member to sit through long, tense discussions of submissions that he 
+hasn't read and isn't interested in; our procedure enabled everyone to 
+participate in the discussions to which he could really make a 
+contribution -- and only those.<br />
+&nbsp; &nbsp; &nbsp;I think that most of these hoped-for improvements actually 
+materialized. &nbsp;Certainly almost everyone whom I invited to serve on the 
+PC said yes, and many said explicitly "OK, I'll do it because the 
+workload looks as though it won't be crushing," or "I really appreciate 
+the opportunity to submit papers!" &nbsp;Similarly, we had no last-minute 
+scrambling, and I attribute that to the oversight work done by the EC. 
+&nbsp;All of the potential technical flaws in submissions that we discovered 
+were discovered early in the process and resolved one way or the other 
+(sometimes with the help of outside experts); similarly, all of the 
+pairs of submissions that, by the end, we thought should be compared 
+were assigned to common reviewers early in the process.<br />
+&nbsp; &nbsp; &nbsp; Unfortunately, the effect of the lower workload on quality of 
+reviews was disappointing. &nbsp;There was some improvement over the reviews 
+produced by traditional STOC PCs but not as much as I had hoped for.<br />
+<br />
+<b>3.
+ In my experience, our major PCs -- STOC and FOCS -- have small amounts 
+of institutional memory and even smaller amounts of actual analysis of 
+performance. &nbsp;What data would you like to have to help evaluate whether 
+the PC process went better this year?</b><br />
+For this year, I'd like to hear from PC members whether they did in 
+fact spend less time overall but more time per submission than they have
+ in the past on "traditional" PCs. &nbsp;I'd also like to know whether they 
+found the whole experience to be manageable and unstressful (if that's a
+ word) enough to be willing to do it often, by which I mean 
+significantly more often than they'd be willing to serve on traditional 
+PCs. &nbsp;Finally, I'd like to know whether the opportunity to submit papers
+ was a factor in their willingness to serve and whether they found it 
+awkward to review their fellow PC members' submissions.<br />
+&nbsp; &nbsp; &nbsp; If future PC Chairs continue to experiment with the process or 
+even with the product, as I suggest that they do in my answer to 
+question 5 below, then I hope they'll capture their PC members' opinions
+ of the experimental steps they take.<br />
+<br />
+<b>4. Are there things you did for the PC that you would change if you had to do it again?</b><br />
+Because the goals of this "experiment" were so amorphous, I and the 
+rest of the EC members made up a great deal of the process as we went 
+along. &nbsp;If I were to run <i>this</i> committee process again, I would 
+start by creating a detailed schedule, and I would distribute and 
+explain it to the entire PC at the beginning of the review process. &nbsp;I'd
+ also lengthen the amount of time PC members had to write their first 
+round of reviews (used to make the "first-cut" accept/reject decisions) 
+by a week or two. &nbsp;I'd also assign second-round reviewers at the 
+beginning, rather than waiting as we did until after the first round of 
+decisions had already been made; we wound up losing a fair amount of 
+time while we figured out whom to ask for additional reviews, and I 
+suspect that many PC members wound up losing interest during this down 
+time. &nbsp;So each submission would still receive just two reviews in the 
+first round, but third (and perhaps fourth) reviewers would have their 
+assignments and be ready to start immediately on all submissions on 
+which early decisions weren't made.<br />
+<br />
+<b>5. Are there things you would strongly recommend to future PC chairs?</b><br />
+I hope that the theory community as a whole will consider fundamental 
+changes to the form and function of STOC. &nbsp;As I said in my answer to 
+question 2, if we want to continue producing the same type of product (a
+ three-day, two-track conference with an acceptance rate somewhere 
+between 25% and 30%), then there are many PC processes that would work 
+well enough; each PC chair might as well choose the process that he or 
+she thinks will be easiest for all concerned. &nbsp;The more interesting 
+question is whether we want to change the product. &nbsp;Do we want more 
+parallel sessions, no parallel sessions, different numbers of parallel 
+sessions on different days, more invited talks, more papers but the same
+ number of talks (which could be achieved by having some papers 
+presented only in poster sessions), or something even more radical? 
+&nbsp;What do we want the goals of STOC to be, and how should we arrange the 
+program to achieve our goals?<br />
+&nbsp; &nbsp; &nbsp;The community should discuss these and other options. &nbsp;We should 
+elect SIGACT officers who support experimentation and empower future PC 
+Chairs to try fundamentally new things. <br />
+&nbsp; &nbsp; &nbsp; More specifically, I 
+recommend that future PC chairs include, as we did, a subcommittee whose
+ job it is to oversee the reviewing process rather than actually to 
+review submissions; in our case, this oversight function was the 
+responsibility of the executive "tier," but there might be other ways to
+ do it. &nbsp;As I said in my answer to question 2, giving oversight and 
+management responsibility to more people than just the PC Chair really 
+helped in uncovering problems early and in making sure that related 
+submissions were compared early. <br />
+&nbsp; &nbsp; &nbsp; Finally, I'd of course recommend that future PC chairs not make 
+the same mistakes I made -- see my answer to question 4.<br />
+<br />
+<b>6.
+ In my experience, the theoretical computer science community is known 
+for comparatively poor conference reviewing. &nbsp;Having been PC chair, do 
+you agree or disagree?&nbsp; Do you think the two-tiered structure help make 
+for better reviews? Do you have any thoughts on how to make reviewing 
+better in the future?</b><br />
+In my experience, reviews on submissions to theory conferences range 
+enormously in quality. &nbsp;The worst consist of just a few tossed-off 
+remarks and the best of very clear, well thought out, constructive 
+criticism. &nbsp;As I said in my answer to question 2, I had hoped that the 
+two-tiered PC and its concomitant lighter reviewing load (together with 
+my suggested review questions and regular prodding) would lead to a 
+marked improvement in the quality of reviews, but we got only a small 
+improvement. &nbsp;I was extremely disappointed. &nbsp;Frankly, I don't know what 
+the theory community can do about review quality. &nbsp;Maybe we should start
+ by discussing it frankly and finding out whether people really think 
+it's a problem. &nbsp;If most people don't see it as a serious problem, then 
+perhaps we don't have to do anything.<br />
+<br />
+<b>7. As you know, I'm a big fan of HotCRP.&nbsp; How did you like it?</b><br />
+I've used three web-based conference-management systems: HotCRP, 
+EasyChair, and Shai Halevi's system (the name of which I don't 
+remember). &nbsp;In my experience, they're all reasonable and certainly 
+capable of getting the job done, but none of them is great; HotCRP is 
+the best, but not by a wide margin. &nbsp;Part of my problem was that I had 
+unrealistic expectations going in. &nbsp;I'd been told that HotCRP was almost
+ infinitely flexible and configurable, and I thought that it would be 
+easy to set things up exactly as I wanted them; that turned out not to 
+be true. &nbsp;On the other hand, if you use HotCRP exactly as it was 
+designed to be used, it works quite well. &nbsp;I have the feeling that it is
+ a "system builder's system" in that it's very powerful and very 
+efficient but not all that easy on users; the UI is not great. &nbsp;Anyway, 
+you and I do agree on one thing: HotCRP's "tagging" feature is <i>amazing</i>; PCs of all shapes and sizes should make heavy use of it.
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='http://www.blogger.com/profile/02161161032642563814' itemprop='url'/>
+<a class='g-profile' href='http://www.blogger.com/profile/02161161032642563814' rel='author' title='author profile'>
+<span itemprop='name'>Michael Mitzenmacher</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html' itemprop='url'/>
+<a class='timestamp-link' href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2013-02-27T09:20:00-05:00'>9:20 AM</abbr></a>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-control blog-admin pid-1541790131'>
+<a href='http://www.blogger.com/post-edit.g?blogID=8890204&postID=5854741366106181779&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<span class='post-backlinks post-comment-link'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>43 comments:</h4>
+<div id='Blog1_comments-block-wrapper'>
+<dl class='avatar-comment-indent' id='comments-block'>
+<dt class='comment-author ' id='c6763608648051828390'>
+<a name='c6763608648051828390'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6763608648051828390'>
+<p>
+I have heard that the PC was encouraged to perform reviews themselves and not seek external reviewers. Is this accurate?<br /><br />I think such encouragement could be dangerous. For example, the few experts in the area might not be on the PC (or be, but have COIs), and the PC reviewers might then make mistakes. Indeed, I know at least one paper in this program whose results follow from previous work, and a scan of the PC, despite it being larger than normal, shows no experts in the relevant research area (any expert external reviewer would hopefully have seen this immediately).<br /><br />One issue is that it is hard to gather statistics about incidences like the above (one example does not amount to a trend), since people are generally hesitant about pointing out such papers and potentially creating bad relations with colleagues. However, I do think that there are some large benefits of not only having external reviewers, but strongly encouraging it, to ensure high-confidence and expert evaluations of submissions.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361976755060#c6763608648051828390' title='comment permalink'>
+February 27, 2013 at 9:52 AM
+</a>
+<span class='item-control blog-admin pid-902800475'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=6763608648051828390' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c7905727774635628688'>
+<a name='c7905727774635628688'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7905727774635628688'>
+<p>
+I found the reviews of my papers (either accepted or rejected) contained much more details than my previous STOC/FOCS submission reviews. While I may still disagree with some specific comments, I appreciate the dedicated effort of PC members, and in particular, the PC chair who did all the experiments in order to improve STOC/FOCS. (Somehow to my disappointment, the coming FOCS dates back to the one-tier PC system.)
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361979733272#c7905727774635628688' title='comment permalink'>
+February 27, 2013 at 10:42 AM
+</a>
+<span class='item-control blog-admin pid-1666580795'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7905727774635628688' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c8313071772501094517'>
+<a name='c8313071772501094517'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8313071772501094517'>
+<p>
+One thing not addressed in this post is the submission format. We heard of quite a lot noise of it. One thing I don&#39;t understand is that why so many people complained that no one would read this double column toy. As far as I know, Science, Nature, PNAS, all use double column. <br /><br />Either simple or double column is okay for me. My point is simple: we should keep the submission format the same as proceedings format. If adopted simple column in the final proceedings one day, then peace.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361980205164#c8313071772501094517' title='comment permalink'>
+February 27, 2013 at 10:50 AM
+</a>
+<span class='item-control blog-admin pid-1666580795'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=8313071772501094517' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c9085216891841707717'>
+<a name='c9085216891841707717'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-9085216891841707717'>
+<p>
+I don&#39;t think we can change the problem of poor reviewing quality overnight. Receiving poor reviews for many years sets certain precedents and expectations in people&#39;s minds. When the same people write reviews, this is what they expect because these are the reviews that they have always seen!<br /><br />Improving reviewing quality will be a long process, and making life easier for PC members is a step in the right direction. I would also suggest providing reviewers with detailed guidelines on how to write a review, including examples of what constitutes good and bad reviews. Finally, instituting a best reviewer award might help; each review could be rated on a 1-5 scale by the authors, and the reviewer who gets the most points would get an award.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361981124480#c9085216891841707717' title='comment permalink'>
+February 27, 2013 at 11:05 AM
+</a>
+<span class='item-control blog-admin pid-1860708596'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=9085216891841707717' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c4441970328556348971'>
+<a name='c4441970328556348971'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4441970328556348971'>
+<p>
+<i>20-person PC with one chair and no PC-authored submissions; there&#39;s nothing definitively wrong with it either.</i><br /><br />I was a bit surprised by this comment. Having a single person read 40-60 submissions for something as career changing as a STOC acceptance seems rather wrong to me.<br /><br />Aside from increasing the noise, it leads to a timid reviewing process. Time constraints means that incremental improvements over well known problems are favored over deeper research which takes longer to digest.<br /><br />As well the reluctance to change the program size is also very surprising. The percentage of papers in the field that STOC captures has gone down by an order of magnitude (if not two) within our lifetimes, yet for some reason the &quot;radical&quot; choice is to forestall this decline. Going to a three session conference would put us back roughly to where STOC was in 1999.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361981778454#c4441970328556348971' title='comment permalink'>
+February 27, 2013 at 11:16 AM
+</a>
+<span class='item-control blog-admin pid-1567562132'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=4441970328556348971' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c8975084949380084162'>
+<a name='c8975084949380084162'></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a href="http://www.blogger.com/profile/17633745186684887140" rel="nofollow" onclick="" class="avatar-hovercard" id="av-5-17633745186684887140"><img src="http://img1.blogblog.com/img/blank.gif" width="35" height="35" alt="" class="delayLoad" style="display: none;" longdesc="//lh4.googleusercontent.com/-tq0AfWKd2V8/AAAAAAAAAAI/AAAAAAAABMk/EyLwIkh2GRE/s512-c/photo.jpg" title="Jeff Erickson">
+
+<noscript><img src="//lh4.googleusercontent.com/-tq0AfWKd2V8/AAAAAAAAAAI/AAAAAAAABMk/EyLwIkh2GRE/s512-c/photo.jpg" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href='http://www.blogger.com/profile/17633745186684887140' rel='nofollow'>Jeff Erickson</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8975084949380084162'>
+<p>
+I can answer Joan&#39;s questions for PC members:<br /><br />Yes, I spent less significantly time overall but significantly more time per paper.<br /><br />Yes, I found the whole experience significantly less stressful than a traditional PC.<br /><br />No, the opportunity to submit was not a factor in my decision to serve.<br /><br />I don&#39;t think I reviewed any submissions from other PC members, but in light of HotCRP&#39;s handling of conflicts of interest, I would not have found it awkward.<br /><br />The only thing that was really awkward were discussions about whether a particular paper should really be accepted given the competitiveness of this year&#39;s submissions.  Because I only reviewed a dozen papers (and looked briefly at maybe twice that many), and discussions were limited to individual papers (or sometimes pairs), it was essentially impossible to have the global view necessary to make that judgement.<br /><br />But this is a relatively minor issue.  The program would still have been excellent if all the final-round decisions had been made by independent coin flips.<br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361982233542#c8975084949380084162' title='comment permalink'>
+February 27, 2013 at 11:23 AM
+</a>
+<span class='item-control blog-admin pid-479210782'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=8975084949380084162' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blog-author' id='c2385492336051447199'>
+<a name='c2385492336051447199'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/02161161032642563814" rel="nofollow" onclick="" class="avatar-hovercard" id="av-6-02161161032642563814"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Michael Mitzenmacher">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/02161161032642563814' rel='nofollow'>Michael Mitzenmacher</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2385492336051447199'>
+<p>
+I&#39;m enjoying all of the comment;  I especially appreciate Jeff&#39;s, as I know Joan is hoping to see feedback from the PC on these issues.  Of course, you can always mail her directly, but if you feel like commenting on your PC experience as Jeff did, it&#39;s very welcome.<br /><br />(Of course comments from all others -- those who submitted papers or people in other communities who want to relate their PC experience to this discussion -- are eagerly welcomed to continue commenting also!)  
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361985939370#c2385492336051447199' title='comment permalink'>
+February 27, 2013 at 12:25 PM
+</a>
+<span class='item-control blog-admin pid-1541790131'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2385492336051447199' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c2339111552142449598'>
+<a name='c2339111552142449598'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Giorgos">
+
+</span></div>
+Giorgos
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2339111552142449598'>
+<p>
+I am not sure if that was the case for STOC, but one thing that strikes me as odd is that I often have to rate my own reviews by providing some confidence level. I find this rather useless, and I wonder if it ends up making any difference. (Why would I volunteer to write a review if my confidence is low in the first place?)<br /><br />Instead, to improve review quality, I think reviewers should be rating each others&#39; reviews, possibly only revealing these scores to the EC/PC chair. This would both incentivize better reviewing, and provide useful feedback to the EC/PC chair. Not to mention that it would be very little extra work for the reviewers who have just spent a few hours each reading the paper in question.<br /><br />Anon 11:05 AM: I think authors rating reviews won&#39;t work: it&#39;s done too late in the process to make a difference, and I guess it would be severely biased. Would the reviewer of a rejected paper ever win the award you are proposing?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1361988288603#c2339111552142449598' title='comment permalink'>
+February 27, 2013 at 1:04 PM
+</a>
+<span class='item-control blog-admin pid-150565498'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2339111552142449598' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c235357462799904010'>
+<a name='c235357462799904010'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-235357462799904010'>
+<p>
+After serving in many committees over the years, I&#39;ve been in two or three where the number of submissions was below the historical average. As a consequence the PC load was lower than expected. In all cases the quality of the reviews by the PC members was invariably much better and the papers were discussed to much greater depth. 
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362003779821#c235357462799904010' title='comment permalink'>
+February 27, 2013 at 5:22 PM
+</a>
+<span class='item-control blog-admin pid-1018491690'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=235357462799904010' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c9132571314780962434'>
+<a name='c9132571314780962434'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-9132571314780962434'>
+<p>
+Thanks to all of you who have posted these great comments.  I will read them once a day and post replies to all of those that pose questions I can answer or otherwise cry out for a direct reply.<br /><br />Anonymous at 9:52 AM: PC members were not allowed to delegate unconditionally to &quot;subreviewers,&quot; but they were not discouraged from asking students, colleagues, and outside experts for input.  In fact, there were some submissions on which we were totally dependent on outside experts.  It turns out that the scope of STOC is so broad that even 62 very highly credentialed PC members don&#39;t collectively have all of the expertise that&#39;s needed.<br /><br />Anonymous at 10:42 AM: I&#39;m glad that you got some detailed reviews!  I wish that everyone had.  Still don&#39;t know how to accomplish that, though.<br /><br />Anonymous at 10:50 AM: Noise indeed.  Everyone (literally!) who submitted obeyed the submission instructions.  The STOC 2013 Executive Committee agrees with you that the most straightforward thing to do is to use precisely the same page limit and format for the submissions as we use for the proceedings.  Many other CS communities do the same thing; it&#39;s not a barrier to entry for anyone who really wants to submit to STOC.  So the real question is what the page limit and format should be for our proceedings.  ACM told me that there&#39;s a one-column format in the works and that it will be suitable for reading on screens, including tablet screens and small screens.  Hallelujah!  I hate two-column format, and it&#39;s a vestige of the print era; we&#39;ll be rid of it soon.  As far as the number of pages goes, I think we should preserve a clear distinction between conference publications and journal publications; the former should clearly be &quot;extended abstracts&quot; (and hence have strict and fairly small page limits), and the latter should be full papers (and hence not limited wrt number of pages).  This should be part of the general discussion about the form and function of STOC that I advocated in my answers to MIchael&#39;s questions.<br /><br />Anonymous at 11:16 AM: I had a very weak interpretation of &quot;nothing definitively wrong&quot; in mind, to wit: If all we want to do is continue producing three-day, two-track conferences with 20-minute talks each one of which corresponds to one high-quality proceedings contribution, then we can stick with traditional PCs if we want to.  We can also use two-tiered PCs like the one I used, and we can probably follow lots of other committee procedures as well.  There&#39;s a plethora of good submissions, and it&#39;s easy to choose a good subset.  Each PC Chair should just follow the committee procedure that he or she likes best.  The interesting question is whether all we want for the future of STOC is traditional three-day, two-track programs of 20-minute talks.  I hope we&#39;ll consider many other possibilities.<br /><br />Jeff E.: THANKS!<br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362014416534#c9132571314780962434' title='comment permalink'>
+February 27, 2013 at 8:20 PM
+</a>
+<span class='item-control blog-admin pid-991070524'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=9132571314780962434' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c1923428989898119718'>
+<a name='c1923428989898119718'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1923428989898119718'>
+<p>
+Anonymous at 11:16: I forgot to reply to your comment about three parallel tracks vs two.  As I said in my answers to Mike&#39;s questions, I&#39;m strongly in favor of experimentation with the format of the conference, including the number of parallel sessions.  I think that some of the STOC 2013 EC members agree with me about that.  We simply thought that it would be cleaner to experiment with exactly one of the product or the process but not both simultaneously.  Future program committees and their chairs should conduct more experiments.  We may need a groundswell of demand for more experimentation; there&#39;s a very conservative contingent among those who wield power in the theory community.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362016080873#c1923428989898119718' title='comment permalink'>
+February 27, 2013 at 8:48 PM
+</a>
+<span class='item-control blog-admin pid-991070524'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=1923428989898119718' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c6996617809766951891'>
+<a name='c6996617809766951891'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/18394636887484222063" rel="nofollow" onclick="" class="avatar-hovercard" id="av-11-18394636887484222063"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Russell Impagliazzo">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/18394636887484222063' rel='nofollow'>Russell Impagliazzo</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6996617809766951891'>
+<p>
+As a PC member, my general impression of the experiment is that it was a failure.  I was somewhat biased against it to start, but worried more about the results than the experience.  It surprised me how negative the actual experience of being a PC member was.<br /><br />1.  I spent about half as much time as I would have for a standard STOC PC, reviewing about 1/4 of the papers I would have.  This is about twice as much time per paper.  But I ended up feeling like I had spent an inadequate amount of time per paper.<br /><br />2.  The process was immensely stressful, much more than being on a PC. That is because I felt blinded by not having a global view.  I was asked to make recommendations about where a paper stood relative to others when I hadn&#39;t read or even seen the abstracts to the others we were comparing it to.  <br /><br />3.  This year, being able to submit papers was not a big issue, although I took advantage of it.  In steady state, I expect it would become very important, since I would expect to be asked to be on a STOC/FOCS committee three times as often as with a committee 1/3 the size.  <br /><br />I didn&#39;t ``lose interest&#39;&#39; in the process, but not having a PC meeting meant it became harder to keep track of the schedule, and other obligations began to take priority.  It was like Jaws 2: just when I thought I was safe, something else came along.  I really feel bad that I didn&#39;t do a better job of writing clear reviews and spending more time getting the context of a paper right.<br /><br />I think, as others have said, the high quality of submissions made the process fault-tolerant.  Any heuristic would lead to a pretty good conference, if not the ``optimal&#39;&#39; one.But papers were only initially reviewed by two people, who were usually not the world&#39;s experts on the particular subject since sub-referees were discouraged.  And if neither reviewer thought it was great (which was the standard for being further considered), it was then rejected without further review at all.  So I think probably many deserving papers got rejected through getting the wrong reviewers.  <br /><br />I also feel bad that the reviews I wrote are, e.g., nowhere near as helpful as if I were writing a  review of a paper I was really familiar with as a sub-referee.  I was assigned papers that met my general interests, but not usually where I had detailed knowledge of the subject in advance.  So I might not know about related work, for example.    Like on a normal committee, I was mainly reviewing for interest not technical correctness, and didn&#39;t have time or expertise to verify most of the claims.  <br /><br />After serving on a normal PC, I have a vastly improved vision of the state of ToC as a whole.  Right now, I really don&#39;t have much idea even about what papers got into STOC, never mind their significance.  So the experience is personally less rewarding and more frustrating.  <br /><br />In short, I doubt I&#39;d agree to be on such an extended PC again, even with the ability to submit papers. <br /><br />Russell
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362017991519#c6996617809766951891' title='comment permalink'>
+February 27, 2013 at 9:19 PM
+</a>
+<span class='item-control blog-admin pid-23282446'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=6996617809766951891' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c8231917638660246853'>
+<a name='c8231917638660246853'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/03019442378581634856" rel="nofollow" onclick="" class="avatar-hovercard" id="av-12-03019442378581634856"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Maurice">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/03019442378581634856' rel='nofollow'>Maurice</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8231917638660246853'>
+<p>
+As a PC member, I can testify that I did spend more time on each paper, I did find it less onerous than usual, and I would have been reluctant to sign up for the usual PC load, given the other demands on my time.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362019598731#c8231917638660246853' title='comment permalink'>
+February 27, 2013 at 9:46 PM
+</a>
+<span class='item-control blog-admin pid-276614256'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=8231917638660246853' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c3981469312771359063'>
+<a name='c3981469312771359063'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/03019442378581634856" rel="nofollow" onclick="" class="avatar-hovercard" id="av-13-03019442378581634856"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Maurice">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/03019442378581634856' rel='nofollow'>Maurice</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3981469312771359063'>
+<p>
+As a PC member, I can testify that I did spend more time on each paper, I did find it less onerous than usual, and I would have been reluctant to sign up for the usual PC load, given the other demands on my time.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362019654767#c3981469312771359063' title='comment permalink'>
+February 27, 2013 at 9:47 PM
+</a>
+<span class='item-control blog-admin pid-276614256'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=3981469312771359063' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c7664182569057023325'>
+<a name='c7664182569057023325'></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a href="http://www.blogger.com/profile/15898357513326041822" rel="nofollow" onclick="" class="avatar-hovercard" id="av-14-15898357513326041822"><img src="http://img1.blogblog.com/img/blank.gif" width="35" height="35" alt="" class="delayLoad" style="display: none;" longdesc="//lh4.googleusercontent.com/-ONBPD2_QxOQ/AAAAAAAAAAI/AAAAAAAAAAA/h0HoqjO7eSA/s512-c/photo.jpg" title="Suresh Venkatasubramanian">
+
+<noscript><img src="//lh4.googleusercontent.com/-ONBPD2_QxOQ/AAAAAAAAAAI/AAAAAAAAAAA/h0HoqjO7eSA/s512-c/photo.jpg" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href='http://www.blogger.com/profile/15898357513326041822' rel='nofollow'>Suresh Venkatasubramanian</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7664182569057023325'>
+<p>
+Regarding Russell&#39;s comments:<br /><br />* on the feeling of still not having enough time per paper. <br /><br />I wonder if the experiment is incomplete in that regard. The typical data mining conference has 700-800 submissions (and increasing!). They have two-tier PCs, and while the functions of the EC and PC are not exactly the same, they are essentially similar. However, a typical PC is 300+ people, and a typical &quot;EC&quot; is 35-40 people. Given that the number of papers is about 2.5X, we&#39;re not seeing the right PC size or EC size. <br /><br />* on the frustration over not getting a global view<br /><br />I wonder if this is a consequence of the blending of the two modes of PC. In our traditional 1-tier model, PC members participate actively in discussions on papers. In the two-tier model (again referring back to the PCs I&#39;ve been on) the &quot;PC&quot; members act like external reviewers, and it&#39;s the &quot;EC&quot; that does the deliberation. In other words, one should not expect to be getting a total view from reviewing 12 papers, and one should not be asked to rate papers in that way. that&#39;s the (larger) EC&#39;s job. 
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362021138360#c7664182569057023325' title='comment permalink'>
+February 27, 2013 at 10:12 PM
+</a>
+<span class='item-control blog-admin pid-1399323116'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7664182569057023325' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c3110891619863654645'>
+<a name='c3110891619863654645'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3110891619863654645'>
+<p>
+Suresh: I&#39;m not sure where you got this idea, but it&#39;s not true that &quot;the &#39;EC&#39; [did] the deliberation.&quot;  PC members absolutely &quot;deliberated&quot; (at great length!) about the submissions that were assigned to them and, in some cases, about other submissions as well.  The main responsibility of the EC during the period between the first round of (relatively easy) accept/reject decisions and the final (much harder) round of decisions was precisely to facilitate discussions by PC members who disagreed about the submissions whose fate hadn&#39;t been decided.  Groups of PC members used the HotCRP &quot;comment&quot; facility extensively both to discuss individual submissions and to discuss sets of comparable submissions.<br />     I think that there are also some misapprehensions out there about two aspects of the procedure: <br />     (1) As I said in response to Anonymous at 9:52 AM, we did get extensive input from people who were not on the PC.  Although PC members were not allowed simply to delegate a review unconditionally to a &quot;subreviewer,&quot; and they were required to come up with their own numerical scores, they were advised to ask for comments from outside experts whenever such outside expertise was needed and to incorporate outsiders&#39; comments into their reviews.  EC members also sought comments from outside experts when they were needed; I myself obtained long, detailed reviews from outside experts on a few submissions that no PC member felt comfortable evaluating.  Both reviews and HotCRP comments for this conference were full of prefatory remarks by PC and EC members of the form &quot;the following comments were provided by so-and-so.&quot;<br />     (2) Although each PC member was *required* to review and/or comment on considerably fewer submissions than he would have been on a traditional PC, all PC members were allowed (indeed explicitly encouraged) to comment on any submissions that they wanted to comment on (avoiding conflicts of interest, of course).  Indeed, some PC members chimed in on submissions that hadn&#39;t been assigned to them, and in several cases their comments led to long discussions, to requests for outside experts&#39; input, and to unexpected decisions.<br /><br />On the &quot;global view&quot; question: Indeed, there is a stark tradeoff between individual PC member&#39;s having a very light workload and their naturally developing a global view of all of the submissions.  To the extent that there are any precise &quot;hypotheses&quot; to what I hope will be ongoing experimentation with the process, one of them is definitely that many members of our community who are reluctant to commit the level of time and effort required for traditional committee service (even a &quot;global view&quot; in the offing) would be glad to make the much more modest commitment of time and effort that it takes to serve on a two-tiered committee (even if they have little prospect of a global view).  Let&#39;s hope that we can continue to experiment with this and other tradeoffs.<br />      I should add that, over many years in the field, I&#39;ve heard from many members of the community that they don&#39;t feel capable of a global view -- they think that the total scope of STOC is huge and that they can understand only a small portion of it.  One of the most common reasons given for declining an invitation to serve on a traditional STOC or FOCS committee is that one is bound to be asked to review numerous submissions outside of one&#39;s area(s) that one is not interested in.  Many people strongly prefer just to concentrate on fewer submissions all of which they understand and care about deeply.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362034797367#c3110891619863654645' title='comment permalink'>
+February 28, 2013 at 1:59 AM
+</a>
+<span class='item-control blog-admin pid-991070524'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=3110891619863654645' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c3624083231254655696'>
+<a name='c3624083231254655696'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/09644595632189419277" rel="nofollow" onclick="" class="avatar-hovercard" id="av-16-09644595632189419277"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="ryanw">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/09644595632189419277' rel='nofollow'>ryanw</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3624083231254655696'>
+<p>
+I&#39;m not as pessimistic as Russell...<br /><br />1. I definitely spent less time overall and more time per submission. In pretty much all cases, I felt I had a good sense of what the papers were about and what distinguished them from prior work. (In contrast, I was on simultaneously on the PODS program committee, and there I had a much longer/tougher time...)<br /><br />2. The experience was fine, I could easily do it again, but next time there should be a little more flexibility regarding subreviewers. There were a few cases where consulting an outside expert not at my institution would have been best for everyone. Perhaps a mix of &quot;traditional&quot; PC member roles (who may consult subreferees in the usual way but may not submit) and  &quot;extended&quot; PC member roles (as in the experiment under discussion) would help.<br /><br />3. For me, the ability to submit papers was indeed a factor in joining. I had some ideas cooking on low boil for several months and I figured they may be ready around November. It wasn&#39;t awkward, as the topics/areas of papers I reviewed had essentially no relation to that of my submission. That was perhaps lucky, and could have gone differently -- it is not hard to imagine cases where recusing myself from reviewing a paper would be the best course of action, even though I should be reviewing it.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362036017564#c3624083231254655696' title='comment permalink'>
+February 28, 2013 at 2:20 AM
+</a>
+<span class='item-control blog-admin pid-1016550155'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=3624083231254655696' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c4930632914570025602'>
+<a name='c4930632914570025602'></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a href="http://www.blogger.com/profile/15898357513326041822" rel="nofollow" onclick="" class="avatar-hovercard" id="av-17-15898357513326041822"><img src="http://img1.blogblog.com/img/blank.gif" width="35" height="35" alt="" class="delayLoad" style="display: none;" longdesc="//lh4.googleusercontent.com/-ONBPD2_QxOQ/AAAAAAAAAAI/AAAAAAAAAAA/h0HoqjO7eSA/s512-c/photo.jpg" title="Suresh Venkatasubramanian">
+
+<noscript><img src="//lh4.googleusercontent.com/-ONBPD2_QxOQ/AAAAAAAAAAI/AAAAAAAAAAA/h0HoqjO7eSA/s512-c/photo.jpg" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href='http://www.blogger.com/profile/15898357513326041822' rel='nofollow'>Suresh Venkatasubramanian</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4930632914570025602'>
+<p>
+Joan, maybe I wasn&#39;t clear. I didn&#39;t imply anything about the STOC EC - I was merely saying that in *other* venues that have a two-tier format, the EC does most of the deliberation, and this may be as it should be. <br /><br />As you rightly point out, there&#39;s a tradeoff between review load and the &quot;global view&quot; and it might very well be that the right balance is towards a less global view for the PC (and therefore lower load) combined with an active EC (or meta-reviewing body) that does have the global view.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362038544049#c4930632914570025602' title='comment permalink'>
+February 28, 2013 at 3:02 AM
+</a>
+<span class='item-control blog-admin pid-1399323116'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=4930632914570025602' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c7849138801796593573'>
+<a name='c7849138801796593573'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7849138801796593573'>
+<p>
+Reasonable objections by well-regarded members of the community:  &quot;Noise.&quot;<br /><br />Confirmation bias: No one risked outright rejection by submitting in the wrong format, thereby validating our choice.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362040979820#c7849138801796593573' title='comment permalink'>
+February 28, 2013 at 3:42 AM
+</a>
+<span class='item-control blog-admin pid-413995747'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7849138801796593573' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c1692376217235638933'>
+<a name='c1692376217235638933'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://robert-kleinberg.myopenid.com/" rel="nofollow" onclick="" class="avatar-hovercard" id="av-19-05241721988214901136"><img src="http://img1.blogblog.com/img/openid16-rounded.gif" width="16" height="16" alt="" title="robert-kleinberg">
+
+</a></span></div>
+<a href='http://robert-kleinberg.myopenid.com/' rel='nofollow'>robert-kleinberg</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1692376217235638933'>
+<p>
+My answers to Joan&#39;s questions:<br /><br />1. I spent significantly less time overall than when I&#39;m on a traditional PC, and I spent more time per paper. The time spent per paper was in between (a) the amount of time I spend on a paper that I assign to a subreviewer when I am on a traditional PC; (b) the amount of time I spend when I am a subreviewer for someone else serving on a traditional PC. The time spent per paper was much closer to (b) than (a).<br /><br />2. I&#39;d be willing to do it more often than serving on a traditional PC, because the workload is so much lighter. On the other hand, given a choice between serving on one traditional PC or two PCs like this one, I would greatly prefer to serve on one traditional PC (even if it was somewhat more than twice the workload) for the reason Russell explained: &quot;After serving on a normal PC, I have a vastly improved vision of the state of ToC as a whole.&quot; This new PC format doesn&#39;t afford the same benefit to its members.<br /><br />3. Once again, Russell&#39;s answer sums up my view: &quot;This year, being able to submit papers was not a big issue, although I took advantage of it. In steady state, I expect it would become very important, since I would expect to be asked to be on a STOC/FOCS committee three times as often as with a committee 1/3 the size.&quot;<br /><br />4. For this conference, none of papers assigned to me had an author on the PC. I&#39;ve served on other PCs for conferences that allowed PC-authored submissions and didn&#39;t find it excessively awkward.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362065018122#c1692376217235638933' title='comment permalink'>
+February 28, 2013 at 10:23 AM
+</a>
+<span class='item-control blog-admin pid-1212191066'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=1692376217235638933' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c8676642480288730933'>
+<a name='c8676642480288730933'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/10495805784088145688" rel="nofollow" onclick="" class="avatar-hovercard" id="av-20-10495805784088145688"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Mikkel Thorup">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/10495805784088145688' rel='nofollow'>Mikkel Thorup</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8676642480288730933'>
+<p>
+This was my 10th STOC/FOCS PC. I think Joan did an excellent job and introduced many good ideas, but I do think that the 2-tier system is a fundamental mistake that we will suffer from in the long run if it is continued.<br /><br />CRITICISM<br /><br />I will go straight to what I see as the main problem, and return with some praise in the end.<br /><br />The easy job of a PC is to compare like papers on similar subjects. The hard part is to compare accross areas, attempting some uniform accept level. This is where STOC/FOCS traditionally do much much better than journals.<br /><br />What makes cross-area comparision work with a traditional PC is that many of the more senior members have worked in several areas. Handling papers from multiple areas they offer direct<br />cross-comparisons. Here, by a direct comparison of two papers, I mean a comparison done by a PC member who is responsible for both papers.<br /><br />One of the ideas in the 2-tiered EC/PC was to minimize the number of cross-comparisons. It was attempted to let PC members handle like (same area)<br />papers, so most of the direct comparisons where not across areas.<br /><br />On top of that, note that with the same total reading load, we get only half as many direct comparisons if we double the PC size, giving each PC member only half the load; namely (2k choose 2) versus 2*(k choose 2).<br /><br />The result is that we have an EC doing cross comparisons indirectly, relying on the scores from different PC members for different fields. This means that we rely on PC members from different fields to have a uniform sense of quality. This is pretty much the problem with journals, where standards are much more fluctuating across fields.<br /><br />I do not think the problem is big yet, because thanks to the work of past STOC/FOCS PCs, we all have a pretty good feeling for STOC/FOCS standards. I am not saying that these are even remotely perfect, and<br />there will always be lots of papers in the gray zone, but compared with the journal situation, I think STOC/FOCS has a far more uniform accept level (the fact that conference papers are not refereed for<br />correctness is a totally different issue).<br /><br />Without direct cross-comparisons, subfields get to evaluate themselves, and establish their own standards.<br /><br />So stepping back: the hard part of selecting a program is to select across subflields. Normally, we have a PC of 20 members doing this in a discussion involving many direct cross comparisons. Instead this was done by a hardworking EC with only 10 members relying on different PC members<br />for reviews on different fields.<br /> <br />Joan was very focussed on getting good direct comparisons of like papers, but I think that has been a main emphasis of any PC chair I have served under... while it is the easier thing to do, it is also<br />the one that is most embarrassing to get wrong. As mentioned above, with more PC members handling fewer papers, we simply had much fewer direct<br />comparisons than usual.<br /><br /><br />Because of character limit, praise and conclusion follows in second comment.<br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362089692222#c8676642480288730933' title='comment permalink'>
+February 28, 2013 at 5:14 PM
+</a>
+<span class='item-control blog-admin pid-1028771330'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=8676642480288730933' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c8186494650384029773'>
+<a name='c8186494650384029773'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/10495805784088145688" rel="nofollow" onclick="" class="avatar-hovercard" id="av-21-10495805784088145688"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Mikkel Thorup">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/10495805784088145688' rel='nofollow'>Mikkel Thorup</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8186494650384029773'>
+<p>
+This is second part of my comment..<br /><br />PRAISE<br /><br />I think Joan was successful reducing the work load per PC member. One of the interesting new ideas was to have an initial round with only two reviewers per paper, thus trying to handle all the easy cases with minimal resources. I do think such an adaptive approach is a good idea.  Many of us procastinate, doing things as close to deadline as possible.  Having an initial round has two advantages: (1) spreading out the work, getting some done early for the initial round, and (2) minimizing the work on easy cases. I later got called in on other papers needing more reviews.<br /><br />About PC members submitting. I have no strong opinion. Obviously this meant that we got some extra submissions to this STOC. Next FOCS will be missing the submissions that it normally get from the preceding STOC PC.<br /><br />Also, I was quite happy with the electronic PC. Have tried electronic PCs both at SODA and at one previous STOC.<br /><br />All in all, this time I felt like a glorified referee, with very little feel for the overall program. With more effort, I could have have helped much more with the global program, but getting a global view would imply spending the same time as on a normal PC, and having 50 PC members do that would hugely increase the total work load for the community. Moreover, since I knew the EC would make all the final decisions, I didn&#39;t feel very motivated getting too involved outside my batch. That being said, I was totally happy with all decisions made<br />on the papers I handled.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362089758996#c8186494650384029773' title='comment permalink'>
+February 28, 2013 at 5:15 PM
+</a>
+<span class='item-control blog-admin pid-1028771330'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=8186494650384029773' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c7908783256797610725'>
+<a name='c7908783256797610725'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/18394636887484222063" rel="nofollow" onclick="" class="avatar-hovercard" id="av-22-18394636887484222063"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Russell Impagliazzo">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/18394636887484222063' rel='nofollow'>Russell Impagliazzo</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7908783256797610725'>
+<p>
+As someone posted earlier, the quality of reviews is affected by the number of submissions relative to the expected number.  In other words, if you get less than you expected, you do a better job, and more than you expected, you do worse.  The time required here was less than a normal PC, but more than I expected, and more than I budgeted for. If I did it again, I would budget more time, and maybe it would be less unpleasant and I would do a better job.  <br /><br />Maybe the actual sub-referee policy was less strict than what I thought.  The papers were in my general areas, but for only a few would I (or someone I work with) be a suitable sub-referee.  In particular, what I worried about was being ignorant of related work that was not cited in the<br />submission.  
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362094688786#c7908783256797610725' title='comment permalink'>
+February 28, 2013 at 6:38 PM
+</a>
+<span class='item-control blog-admin pid-23282446'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7908783256797610725' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c6447344550824562111'>
+<a name='c6447344550824562111'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6447344550824562111'>
+<p>
+This post is an utter shame, and this experiment is an utter failure.<br /><br />As few (or no?) external reviewers are summoned, while the committee is not representative enough, especially when the COI is taken into account, the review process is terribly bad.  Many submissions were reviewed by totally irrelevant and incompetent reviewers, though they&#39;re real experts in their own area.<br /><br />As a result, we might expect the lowest quality in general since the inception of STOC.  It will surprise nobody if FOCS&#39;13 turns out to contain better papers than STOC.  WHAT A SHAME!
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362123565640#c6447344550824562111' title='comment permalink'>
+March 1, 2013 at 2:39 AM
+</a>
+<span class='item-control blog-admin pid-1963824743'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=6447344550824562111' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c2879677495170115638'>
+<a name='c2879677495170115638'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2879677495170115638'>
+<p>
+With most high-quality conferences, I accept that random choices (after filtering) lead to a good program (albeit not optimal), and I don&#39;t mind (that much) even if my own deserving papers get rejected.    <br /><br />That is how I feel about the normal reviewing structure. But in the case, I was left unsatisfied by a 2-review rejection of one of my submissions: One review was by an admitted nonexpert, and hence probably had little chance of receiving the strongest score. The other review was one of the lowest-quality reviews I have ever received. An outright rejection at this point is disappointing. <br /><br />In my opinion, if this process is continued, the first-round rejections should be augmented to account for the quality of reviews. A paper should not be rejected based on first-round scores if the scores themselves are meaningless.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362178145643#c2879677495170115638' title='comment permalink'>
+March 1, 2013 at 5:49 PM
+</a>
+<span class='item-control blog-admin pid-1344642666'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2879677495170115638' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c1899554929545114234'>
+<a name='c1899554929545114234'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1899554929545114234'>
+<p>
+I was a member of the outer PC.  (I prefer not to identify myself for reasons that will be obvious from the contents of this comment.)  <br /><br />I am afraid that my experience is largely consistent with that of &quot;Anonymous March 1, 2013 at 5:49 PM&quot;.  A significant fraction of the papers I dealt with  received at least one very superficial and low-quality review.  Such reviews almost always corresponded to mediocre (though usually not really low) scores.  I think that in the normal three-review process one such review, if matched by two positive and more thorough reviews, would not torpedo a paper.  This year, with only two reviews, even in cases where the other review was significantly more positive and more thorough, the paper rarely survived to receive a third review.<br /><br />Like Russell and Mikkel, I felt that I did not get a &#39;global&#39; view of the submissions pool, so the experience of being on the PC was somehow unsatisfying (while certainly less time-consuming than it would have been to manage 40+ papers under the usual process).<br /><br />Apart from other aspects of the process, I think the fact that so many papers received only two reviews is a significant drawback of this STOC as opposed to previous conferences.  This feels to me like a step in the wrong direction -- a colleague recently told me over lunch how his submission to a top systems conference received *nine* detailed reviews.  I was ashamed to say that our flagship conferences in theory are experimenting with two reviews, down from three, and that those reviews are sometimes very superficial.<br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362199676707#c1899554929545114234' title='comment permalink'>
+March 1, 2013 at 11:47 PM
+</a>
+<span class='item-control blog-admin pid-957091988'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=1899554929545114234' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c2494393113046144708'>
+<a name='c2494393113046144708'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2494393113046144708'>
+<p>
+(Same commenter as previous comment) I would like to emphasize that I don&#39;t at all blame Joan for the negative aspects I described above.  She obviously worked extremely hard and repeatedly urged the committee members to do good reviewing, but this didn&#39;t always stick.  <br /><br />I think it&#39;s good that STOC did this experiment, but my sense is that having many papers receive only two reviews should be avoided in the future.  The real issue is how to increase the overall cultural norms of reviewing quality in our field.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362199922403#c2494393113046144708' title='comment permalink'>
+March 1, 2013 at 11:52 PM
+</a>
+<span class='item-control blog-admin pid-957091988'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2494393113046144708' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blog-author' id='c7256338069555718601'>
+<a name='c7256338069555718601'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/02161161032642563814" rel="nofollow" onclick="" class="avatar-hovercard" id="av-27-02161161032642563814"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Michael Mitzenmacher">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/02161161032642563814' rel='nofollow'>Michael Mitzenmacher</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7256338069555718601'>
+<p>
+While I&#39;m making an effort not to respond, I do have to clear something up for the last anonymous.<br /><br />Papers were initially assigned 2 reviewers.  After the first stage, they were rejected only if they got two very low (clear reject) scores.  Even if these papers had gotten a 3rd review, they were never going to make the top list.  They didn&#39;t have one positive score where another review might give them two positive scores.  They had two (very) negative scores;  they weren&#39;t getting accepted.<br /><br />Now, I do think that the papers left after the 3rd round should have consistently obtained a 3rd (or even 4th) review;  that&#39;s a different matter, and I do think Joan discussed that if she did it again she would have had additional reviewers pre-assigned for papers in the 2nd round.  <br /><br />I think there&#39;s nothing wrong (and a lot right) with a system that does 2 initial reviews and cuts a number of papers off at that point, and then focuses on the remaining X%, for some reasonable X and cutoff method.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362240232580#c7256338069555718601' title='comment permalink'>
+March 2, 2013 at 11:03 AM
+</a>
+<span class='item-control blog-admin pid-1541790131'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7256338069555718601' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c2817526574414774817'>
+<a name='c2817526574414774817'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2817526574414774817'>
+<p>
+Thanks again to all who have commented on the STOC 2013 experiment.  There are three themes in these comments that I&#39;d like to respond to.  I&#39;ll address two here and one in my next message.<br /><br /><b>&quot;Failure&quot;:</b> I am taken aback by Russell&#39;s and other&#39;s use of this extremely derogatory word.  As I explained in my original post, the goals of this experiment were (unavoidably, given how the experiment was undertaken) extremely modest and extremely vague.  To the extent that I can sum them up briefly, they were to answer the question &quot;Can we produce a high-quality STOC program with a different committee process from the one we&#39;ve traditionally used&quot;? and &quot;Which changes to the process should we consider&quot;?  We now have one (multidimensional) data point with which to start answering those questions.  If the answer to the first question is &quot;no,&quot; then the community has the option of simply reverting to the traditional process.  That doesn&#39;t make the experiment a &quot;failure.&quot;<br /><br />Are some of you using &quot;the experiment was a failure&quot; to mean &quot;I did not enjoy participating in this process&quot;?  If so, I think that&#39;s nonsensical.  One thing we can learn from experimentation is what type of process potential committee members prefer participating in.  Eliciting that information is a sign that the experiment was a success, not that it was failure.<br /><br />(BTW, unsurprisingly, the PC members who really liked this alternative process have, for the most part, been emailing their views to me privately rather than blogging about them.  I feel sort of like a professor reading course evaluations -- it&#39;s the dissatisfied students who feel the deepest need to make their views known. :=))<br /><br /><b>Early accept/reject decisions based on two reviews:</b> No decisions were made based only on numerical scores; the EC read the reviews carefully and in many cases asked for additional input from PC members and outside experts before making any decisions.  Moreover, <b>all PC members were empowered to prevent early decisions</b>.  Approximately a week and a half after the first round of scores and reviews were due, I sent email to the entire PC telling them (1) tentative early decisions had been made, and PC members had 12 days to raise objections and concerns before those early decisions were finalized, and (2) they were (as I had told them earlier) welcome to comment on any submissions they wished to comment on, regardless of whether those submissions had been assigned to them (except, of course, for those with which they have CoIs).  In fact, some PC members <b>did</b> raise objections and concerns during those 12 days, and some decisions were postponed for exactly that reason.  If there are PC members who now think that  particular submissions got short shrift, we need to ask why those PC members did not raise these concerns during the deliberation process when they were asked for their input.  Perhaps that problem can be avoided in the future by (as I also suggested in my original post) setting a firm schedule at the beginning and making sure that everyone is aware of it.<br /><br />That being said, I certainly agree (and said in my original post) that the quality of reviews in our community has always been inadequate and was inadequate this time as well.  I hoped that the markedly light load on each PC member would result in (almost) uniformly thorough reviews, but it did not.  Rather than focus on whether we should demand two or three reviews on each submission, I think we should figure out how to get <b>good</b> reviews on submissions to theory submissions.  Does anyone have any ideas?<br /><br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362242640801#c2817526574414774817' title='comment permalink'>
+March 2, 2013 at 11:44 AM
+</a>
+<span class='item-control blog-admin pid-362253721'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2817526574414774817' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c8612871441865190923'>
+<a name='c8612871441865190923'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8612871441865190923'>
+<p>
+This is the continuation of my previous post.<br /><br /><b>Global view</b>: As I said in an earlier post, it is impossible for a PC member to have both an extremely light work load and a global view.  The main value proposition to potential PC members whom I invited to serve on this committee was the chance to handle few papers but to do a very thorough job on each one.  Almost everyone whom I invited accepted the invitation, and many expressed delight that they&#39;d be handling few submissions and could do a great job on each one.  It never occurred to me to warn them that they would not have a &quot;global view&quot;; I thought that that was obvious.  Recall that PC members who wanted a broader view than just their assigned submissions were welcome to read and comment on other submissions.  Some of them did so; perhaps that&#39;s a disjoint set from people now regretting that they didn&#39;t have a global view!<br /><br />Anyway, this is another example of valuable information that we&#39;ve gained from this experiment: Even though they didn&#39;t think about it when they accepted the invitation to serve, some people care a lot about &quot;having a global view.&quot;  Another way in which the experiment was a success!<br /><br />Note that all of the so-called &quot;subreferees&quot; that traditional PCs enlist for detailed reviews also don&#39;t have a global view.  (BTW, I think that we should simply call these people &quot;reviewers&quot; or &quot;outside experts&quot; or something else more accurate.  We don&#39;t do full-fledged &quot;refereeing&quot; for conferences, and so there is no &quot;referee&quot; to which they people are sub&#39;d.)  <br /><br />There are several important functions that must be performed in order to put together the program.  They include:<br /><br />1. Detailed (written) reviewing.<br />2. Discussion of individual submissions (especial those about which reviewers disagree).<br />3. Discussion/comparison of comparable submissions to determine which are better than others.<br />4. Overall balance, apportionment of space to various technical areas, and attempts to compare, for lack of a better word, incomparable submissions.  Here is where one needs the vaunted &quot;global view.&quot;<br /><br />Somehow, we need to assign these functions to PC members and outside experts.  Traditionally, we have a monolithic PC that takes on all of 1 - 4 and delegates some of 1.  I maintain that there&#39;s no reason that that division of labor is sacrosanct, and I think that the STOC 2013 experiment, which produced a high-quality program, is evidence that I&#39;m right.  I think we should continue to experiment with a variety of divisions of labor.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362242697942#c8612871441865190923' title='comment permalink'>
+March 2, 2013 at 11:44 AM
+</a>
+<span class='item-control blog-admin pid-362253721'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=8612871441865190923' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c2089924596514079287'>
+<a name='c2089924596514079287'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/10495805784088145688" rel="nofollow" onclick="" class="avatar-hovercard" id="av-30-10495805784088145688"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Mikkel Thorup">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/10495805784088145688' rel='nofollow'>Mikkel Thorup</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2089924596514079287'>
+<p>
+I agree with Joan that it was a important experiment, and that it is not a failure to perform such experiments.<br /><br />My fundamental objection is that we had only 10 EC members with the global view, relying on different local PC members for reviews for different areas. <br /><br />This it to be contrasted with 20 traditional PC members being involved both globally and directly in the papers.<br /><br />As Joan pointed out, having 50 local PC members work globally would defeat the purpose of reduced work load for local PC members.<br /><br />I don&#39;t think more thorough reports are going to have any significant effect on acceptance/rejections. The significance of a paper should be explained in the abstract and introduction of a paper. The body of the paper (and possibly appendices) serves mostly to justify the claims made in abstract and intro. If there are some particularly interesting technical details, then the intro should at et least point to them, so the referee knows to check them out. I normally only read further details if the claims made surprise me, and very often this is when I end up finding a bug in the submission. <br /><br />I myself had a paper rejected based on two reviews. While I disagree with the conclusion of the referees (otherwise I would not have submitted), I do not think it would have made any difference if these particular referees had read and reviewed my paper in any more detail.<br /><br />Conference refereeing is extremely taxing for the community, making it very hard to get reviewers for the proper journal refereeing, which is where the detailed refereeing is really needed.<br /><br />Finally, getting a good program is not hard based on the submissions (this time with the extra PC submissions that would otherwise have gone to FOCS&#39;13). The hard part is to try to be as fair as possible in the rejections.<br /><br />Let me also say that I am proud of our community. I have had experience with systems conferences (both accepts and rejects), and while they may generate more reviews, the quality of those reviews in terms of understanding has typically been abysmal. I don&#39;t think we have much to learn from them.<br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362249721101#c2089924596514079287' title='comment permalink'>
+March 2, 2013 at 1:42 PM
+</a>
+<span class='item-control blog-admin pid-1028771330'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2089924596514079287' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c2968243290491987839'>
+<a name='c2968243290491987839'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/10495805784088145688" rel="nofollow" onclick="" class="avatar-hovercard" id="av-31-10495805784088145688"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Mikkel Thorup">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/10495805784088145688' rel='nofollow'>Mikkel Thorup</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2968243290491987839'>
+<p>
+Concerning participating in the PC, I participated for the sake of STOC. I was skeptical about 2-tier, and thought it very important that such an experiment was not run by only the people believing in it. I also wanted to help STOC&#39;13 as much as possible, giving the 2-tier system the best chances. I told Joan up-front about my skepticism, and that I would write my opinion about the experiment.<br /><br />My expectations were even worse, and I think Joan did a surprisingly good job.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362251272500#c2968243290491987839' title='comment permalink'>
+March 2, 2013 at 2:07 PM
+</a>
+<span class='item-control blog-admin pid-1028771330'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=2968243290491987839' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c6306691189731354678'>
+<a name='c6306691189731354678'></a>
+<div class="avatar-image-container vcard"><span dir="ltr"><a href="http://www.blogger.com/profile/15898357513326041822" rel="nofollow" onclick="" class="avatar-hovercard" id="av-32-15898357513326041822"><img src="http://img1.blogblog.com/img/blank.gif" width="35" height="35" alt="" class="delayLoad" style="display: none;" longdesc="//lh4.googleusercontent.com/-ONBPD2_QxOQ/AAAAAAAAAAI/AAAAAAAAAAA/h0HoqjO7eSA/s512-c/photo.jpg" title="Suresh Venkatasubramanian">
+
+<noscript><img src="//lh4.googleusercontent.com/-ONBPD2_QxOQ/AAAAAAAAAAI/AAAAAAAAAAA/h0HoqjO7eSA/s512-c/photo.jpg" width="35" height="35" class="photo" alt=""></noscript></a></span></div>
+<a href='http://www.blogger.com/profile/15898357513326041822' rel='nofollow'>Suresh Venkatasubramanian</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6306691189731354678'>
+<p>
+Joan&#39;s framing of the different tasks a PC performs and how one might refactor them is incredibly useful, and is an excellent basis for continued discussion. I don&#39;t see how this experiment is a failure at all. It&#39;s an experiment, and it has generated  observations and thoughts for the next experiment. Of course there&#39;s something both hilarious and ironic about theoreticians arguing about the nature of an experiment :). 
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362266283288#c6306691189731354678' title='comment permalink'>
+March 2, 2013 at 6:18 PM
+</a>
+<span class='item-control blog-admin pid-1399323116'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=6306691189731354678' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c1011052828970129958'>
+<a name='c1011052828970129958'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/18394636887484222063" rel="nofollow" onclick="" class="avatar-hovercard" id="av-33-18394636887484222063"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Russell Impagliazzo">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/18394636887484222063' rel='nofollow'>Russell Impagliazzo</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1011052828970129958'>
+<p>
+I apologize to Joan for using loaded language.  I only meant that, for me, the answer to the question ``Does the new process produce good results with less work and stress?&#39;&#39; was no.  Thus, the hypothesis the experiment was designed to test (if all the other runs were to be like mine) was not confirmed, and hence the experiment ``failed&#39;&#39;.    I didn&#39;t mean to imply that performing the experiment was not worthwhile, nor that it was not correctly designed, only that the outcome did not verify the hypothesis.  <br /><br />Russell
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362298321582#c1011052828970129958' title='comment permalink'>
+March 3, 2013 at 3:12 AM
+</a>
+<span class='item-control blog-admin pid-23282446'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=1011052828970129958' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blog-author' id='c1239989960937465040'>
+<a name='c1239989960937465040'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/02161161032642563814" rel="nofollow" onclick="" class="avatar-hovercard" id="av-34-02161161032642563814"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Michael Mitzenmacher">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/02161161032642563814' rel='nofollow'>Michael Mitzenmacher</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1239989960937465040'>
+<p>
+So, just to be clear Russell, while you have your opinion, it seems far from universal.  
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362359055394#c1239989960937465040' title='comment permalink'>
+March 3, 2013 at 8:04 PM
+</a>
+<span class='item-control blog-admin pid-1541790131'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=1239989960937465040' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c6560910772640309825'>
+<a name='c6560910772640309825'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6560910772640309825'>
+<p>
+Just as one more data point: this was the first time I got a STOC/FOCS review from a reviewer who showed no understanding of the field, and barely any understanding of the results of the paper. The review was close to nonsensical. The other review was extremely high quality and very useful. <br /><br />The obvious explanation is that there was only one expert on the PC qualified to review the paper (checking the list of PC members confirms this). I do understand the usefulness of making a first round of quick decisions after two reviews. However, I think that once a paper makes the cut and is eventually accepted, it should receive an additional review -- a great review and a bad one felt like less feedback than I get from other STOC/FOCS committees. <br /><br />Also, it seems that even though reviewers could ask the opinion of outside experts, some felt disinclined to do so, even when they were ill prepared to judge a paper.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362374550573#c6560910772640309825' title='comment permalink'>
+March 4, 2013 at 12:22 AM
+</a>
+<span class='item-control blog-admin pid-472228782'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=6560910772640309825' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c4318207725199072243'>
+<a name='c4318207725199072243'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4318207725199072243'>
+<p>
+While I do find this open discussion useful and interesting, I think it would be good to collect some harder data. Joan could run a poll among the members of the PC and EC and then release the numbers (maybe separately for PC and EC). For instances, we could ask a question like the following.<br /><br />Do you think STOC should adopt a two-tier PC approach in the future:<br /><br />a) no<br />b) yes, possibly with minor changes from this year<br />c) yes, but with major changes<br /><br />This would give us some quantitative feedback complementing the more qualitative feedback. In particular since, as Joan pointed out, the feedback received so far might suffer from a selection bias.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362407062399#c4318207725199072243' title='comment permalink'>
+March 4, 2013 at 9:24 AM
+</a>
+<span class='item-control blog-admin pid-2052434242'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=4318207725199072243' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c6563567572511728179'>
+<a name='c6563567572511728179'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6563567572511728179'>
+<p>
+Russell: Apology accepted.<br /><br />Anonymous on March 1, 2013 at 11:47 PM: Nine reviews per conference submission is just about the most asinine thing I&#39;ve ever heard about a CS conference!  We simply do not need nine reviews in order to make sound accept/reject decisions and to give constructive feedback to authors.  Perhaps systems people don&#39;t mind wasting their time on this type of overkill, but wasting STOC and FOCS people&#39;s time in that manner would be criminal.<br /><br />Anonymous on March 4, 2013 at 9:24 AM: In fact, after Jeff E. took the lead and, in his comment, answered the four questions I mentioned in my original post, I emailed the entire PC and asked them either to blog their answers to those four questions or to email me their answers.  I plan to summarize the results and distribute the summary in some medium or other.  However, I must warn everyone that the majority of the PC members have not answered.  Somehow, this feels analogous to the fact that many PC members did not write thorough reviews.  There seem to be some things that STOC PC members feel they must do and some that they don&#39;t.  Fortunately for all of us, they do seem to feel obligated to put together a high-quality STOC program by whatever means necessary!
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362422312711#c6563567572511728179' title='comment permalink'>
+March 4, 2013 at 1:38 PM
+</a>
+<span class='item-control blog-admin pid-362253721'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=6563567572511728179' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c460098039723283019'>
+<a name='c460098039723283019'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Anonymous">
+
+</span></div>
+Anonymous
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-460098039723283019'>
+<p>
+I completely agree with Anonymous on March 1, 2013 at 11:47 PM: Accepting and more importantly Rejecting<br />papers based on only two reviews was <br />a failure of this two-tiered PC. Indeed this was my first experience of a CS theory conferenc with only two reports.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362458347727#c460098039723283019' title='comment permalink'>
+March 4, 2013 at 11:39 PM
+</a>
+<span class='item-control blog-admin pid-697063475'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=460098039723283019' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c7458216375997615599'>
+<a name='c7458216375997615599'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Aleksander Madry">
+
+</span></div>
+Aleksander Madry
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7458216375997615599'>
+<p>
+1) I spent probably half as much time as on the SODA 2013 PC I just had been on before. <br /><br />Also, it was a much more enjoyable job as most of the papers I got to look at I truly wanted to read. <br /><br />Needless to say, this resulted in me spending more time on reading the submissions and ability to make much more knowledgeable recommendation on them.<br /><br />2) It was definitely less stressful and more manageable. So, indeed, I should be willing to do it more often. <br /><br />3) Yes, being able to submit was a factor in my decision (although, I ended up not submitting anything). I don&#39;t like this aspect in traditional PCs when you have to decide half-a-year in advance if there is something you will want to submit or not. (And if you have some co-authors this becomes even more complicated.) <br /><br />I did not feel awkward when reviewing PC member&#39;s submission. (I do not see much difference between reviewing PC member&#39;s submission and evaluating submission by my other colleagues.)<br />Also, the fact that I had time (and expertise) to make a fairly knowledgeable assessment - and thus stand by my decision - for most of the submissions I was handling, was a factor here too.<br /><br />Finally, one point I would like to make is that - similarly, to others commenting here - I really felt that the process behind making the final accept/reject decisions by the EC committee was very opaque to me. Of course, I could feel that our reviews were taken into account and there was a chance for us to discuss some of these preliminary decisions. But, overall, the thought process of the EC - especially, behind deciding between papers from different areas - was not disclosed to the PC.<br /><br />I am not saying that this is necessarily bad, but I would feel better if the invitation to the PC was more upfront about the fairly limited role of PC members in the whole selection process. <br /><br />However, I must say that I am happy with the final program of STOC (at least, regarding the papers I have some knowledge about). <br /><br /><br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1362563619715#c7458216375997615599' title='comment permalink'>
+March 6, 2013 at 4:53 AM
+</a>
+<span class='item-control blog-admin pid-1961079309'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7458216375997615599' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c1416591011074571137'>
+<a name='c1416591011074571137'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Joan Feigenbaum">
+
+</span></div>
+Joan Feigenbaum
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1416591011074571137'>
+<p>
+Alex: Thanks for your comments.  I agree with you that the PC Chair should explain the entire process that will be followed in making accept/reject decisions when the invitations to serve on the PC are issued; I certainly would have done so had I known exactly what the process would be.  This time, we were making much of this &quot;experimental&quot; process up as we went along, and we really didn&#39;t know exactly what we were going to do until we did it.  If the community continues to experiment with two-tiered PCs, I expect future chairs to benefit from our experience, to determine the entire process and schedule before getting started, and to make potential PC members aware of them.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1363097851808#c1416591011074571137' title='comment permalink'>
+March 12, 2013 at 10:17 AM
+</a>
+<span class='item-control blog-admin pid-886133770'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=1416591011074571137' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c3218652085364451766'>
+<a name='c3218652085364451766'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><img src="http://img1.blogblog.com/img/blank.gif" width="16" height="16" alt="" title="Sanjeev Arora">
+
+</span></div>
+Sanjeev Arora
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3218652085364451766'>
+<p>
+I enjoyed reading about this experiment. I have told SIGACT chairs before that there is no reason why traditional PCs have to stay at a size of 20. (The main reason as far as I can tell is to keep down the budget for PC meeting.) Sigact has a big reserve fund! Use it to subsidize the PC meeting and raise the size to 30. That would again reduce load per PC member to  a more manageable 30-35.<br /><br />I&#39;ll also send this suggestion to Paul Beame (new SIGACT chair) privately.<br /><br />On a different note, I think experimenting with the product (to use Joan&#39;s term) is more important.  
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1363153157964#c3218652085364451766' title='comment permalink'>
+March 13, 2013 at 1:39 AM
+</a>
+<span class='item-control blog-admin pid-443397304'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=3218652085364451766' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author ' id='c7285751001354531927'>
+<a name='c7285751001354531927'></a>
+<div class="avatar-image-container avatar-stock"><span dir="ltr"><a href="http://www.blogger.com/profile/10495805784088145688" rel="nofollow" onclick="" class="avatar-hovercard" id="av-42-10495805784088145688"><img src="http://img2.blogblog.com/img/b16-rounded.gif" width="16" height="16" alt="" title="Mikkel Thorup">
+
+</a></span></div>
+<a href='http://www.blogger.com/profile/10495805784088145688' rel='nofollow'>Mikkel Thorup</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7285751001354531927'>
+<p>
+Hi Sanjeev,<br /><br />About the magic size 20, it is of course not magic, but it is a balance based on experience.<br /><br />As discussed by many above, the cost of a global view is an additive cost per PC member.  The total global work load is thus proportional to the PC size, so for this cost, the work load on the community is minimized by a small PC.<br /><br />Joan realized this, which is why she for a larger PC, introduced a small EC, where only the EC had the global view.<br /><br />The large PC was focussed on the refereeing, which parallellizes perfectly since the total refereeing load only depends on the number of submissions and the number of reviews per submission (Joan cut this to an initial 2, which is something that could also be done with a normal PC).<br /><br />One prize payed was that for selecting papers from areas in different fields, the EC relied on reports from different PC members. In my opinion, this makes it much harder to make fair selection across areas. In a traditional PC, besides the simple comparison of like papers, you have PC members handling papers from different areas, and who are all involved in the global outcome.<br /><br />Direct comparisons is also an argument for fewer PC members taking many papers (with k papers you make k^2/2 direct comparisons).<br /><br />All in all, from a total work load and direct comparison perspective, we are better off with a small PC, but this has to be balanced with how much work a single person can take.<br /><br />To match the regular load of 20 PC members, in the new system with 10 EC and 50 local PC members, for each regular PC, we now have to be<br />on 0.5 EC and 2.5 local PC. <br /><br />Best, Mikkel
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html?showComment=1363200669602#c7285751001354531927' title='comment permalink'>
+March 13, 2013 at 2:51 PM
+</a>
+<span class='item-control blog-admin pid-1028771330'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=8890204&postID=7285751001354531927' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+</dl>
+</div>
+<p class='comment-footer'>
+<a href='http://www.blogger.com/comment.g?blogID=8890204&amp;postID=5854741366106181779' onclick=''>Post a Comment</a>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+<a name='links'></a><h4>
+</h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog1_backlinks-create-link' target='_blank'>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://mybiasedcoin.blogspot.com/2013/03/rankings-dont-matter-but.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://mybiasedcoin.blogspot.com/2013/02/icalp-formatting.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://mybiasedcoin.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://mybiasedcoin.blogspot.com/feeds/5854741366106181779/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div></div>
+</div>
+<div id='sidebar-wrapper'>
+<div class='sidebar section' id='sidebar'><div class='widget Gadget' id='Gadget2'>
+<h2 class='title'>Amazon Contextual Product Ads</h2>
+<div class='widget-content'>
+<script type="text/javascript">
+        if (!window.gadgets || !gadgets.rpc) {
+          document.write('<script type="text/javascript"' +
+                  'src="//www-blogger-opensocial.googleusercontent.com/gadgets/js/rpc.js?container\x3dblogger\x26nocache\x3d0\x26debug\x3d0\x26c\x3d1\x26v\x3dcf6fda8c4d3264bbcab6e336c75a6663\x26sv\x3d10">' +
+                  '</scr' + 'ipt>');
+        }
+      </script>
+<script type="text/javascript">
+    
+    function registerGetBlogUrls() {
+      gadgets.rpc.register('getBlogUrls', function() {
+        var holder = {};
+        
+          
+            
+            
+              holder.currentPost = "http://www.blogger.com/feeds/8890204/posts/default/5854741366106181779";
+            
+            
+            
+              holder.currentComments = "http://www.blogger.com/feeds/8890204/5854741366106181779/comments/default";
+            
+            holder.currentPostUrl = "";
+            holder.currentPostId = 5854741366106181779
+          
+          
+          
+            holder.postFeed = "http://www.blogger.com/feeds/8890204/posts/default";
+          
+          
+          
+            holder.commentFeed = "http://www.blogger.com/feeds/8890204/comments/default";
+          
+          holder.currentBlogUrl = "http://mybiasedcoin.blogspot.com/";
+          holder.currentBlogId = "8890204";
+        
+        return holder;
+      });
+    }
+  </script>
+<script type="text/javascript">
+  if (!window.registeredCommonBloggerCallbacks) {
+    window.registeredCommonBloggerCallbacks = true;
+
+    gadgets.rpc.register('resize_iframe', function(height) {
+      var el = document.getElementById(this['f']);
+      if (el) {
+        el.style.height = height + 'px';
+      }
+    });
+
+    
+    gadgets.rpc.register('set_pref', function() {});
+
+    registerGetBlogUrls();
+  }
+  </script>
+<iframe src="//9dl7h78ivl8smpn7vl3d9mo2g1ajbhaj-a-blogger-opensocial.googleusercontent.com/gadgets/ifr?url=http://wms.assoc-amazon.com/GoogleGadgets/amzn_omakase.xml&amp;container=blogger&amp;view=default&amp;lang=en&amp;country=ALL&amp;sanitize=0&amp;v=d5bbce1e3fdc973d&amp;libs=core:dynamic-height:google.blog:locked-domain:rpc:setprefs:skins:views&amp;parent=http://mybiasedcoin.blogspot.com/&amp;up_size=1&amp;up_color_theme=0&amp;mid=2#up_color_theme=0&amp;up_size=1&amp;st=e%3DAFlCd0VKubHhOvbwuTsri2ZHkaLUPqWZXaOhEN4gm6jAHtm3K58m1d%252F6xLWHhJc344AotEyjFnm4KZ9rCWDcT4cmQ4cre6Eoi09dh5B60oxWrO8mDgN2%252BVro%252FfoxPJd6MoUTENXFuLvU%26c%3Dblogger&amp;rpctoken=-7615468937369981110" frameborder="0" style="width: 100%; display: block" height="200" id="sidebar-gadget2" name="sidebar-gadget2"></iframe>
+<script type="text/javascript">
+        gadgets.rpc.setRelayUrl("sidebar-gadget2", '//9dl7h78ivl8smpn7vl3d9mo2g1ajbhaj-a-blogger-opensocial.googleusercontent.com/gadgets/files/container/rpc_relay.html');
+        gadgets.rpc.setAuthToken("sidebar-gadget2", "-7615468937369981110");
+      </script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=Gadget&widgetId=Gadget2&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Gadget2"));' target='configGadget2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Gadget' id='Gadget1'>
+<h2 class='title'>Amazon SearchBox</h2>
+<div class='widget-content'>
+<script type="text/javascript">
+        if (!window.gadgets || !gadgets.rpc) {
+          document.write('<script type="text/javascript"' +
+                  'src="//www-blogger-opensocial.googleusercontent.com/gadgets/js/rpc.js?container\x3dblogger\x26nocache\x3d0\x26debug\x3d0\x26c\x3d1\x26v\x3d70b6d958f06f63b805d51daeb0d3dfa8\x26sv\x3d10">' +
+                  '</scr' + 'ipt>');
+        }
+      </script>
+<script type="text/javascript">
+    
+    function registerGetBlogUrls() {
+      gadgets.rpc.register('getBlogUrls', function() {
+        var holder = {};
+        
+          
+            
+            
+              holder.currentPost = "http://www.blogger.com/feeds/8890204/posts/default/5854741366106181779";
+            
+            
+            
+              holder.currentComments = "http://www.blogger.com/feeds/8890204/5854741366106181779/comments/default";
+            
+            holder.currentPostUrl = "";
+            holder.currentPostId = 5854741366106181779
+          
+          
+          
+            holder.postFeed = "http://www.blogger.com/feeds/8890204/posts/default";
+          
+          
+          
+            holder.commentFeed = "http://www.blogger.com/feeds/8890204/comments/default";
+          
+          holder.currentBlogUrl = "http://mybiasedcoin.blogspot.com/";
+          holder.currentBlogId = "8890204";
+        
+        return holder;
+      });
+    }
+  </script>
+<script type="text/javascript">
+  if (!window.registeredCommonBloggerCallbacks) {
+    window.registeredCommonBloggerCallbacks = true;
+
+    gadgets.rpc.register('resize_iframe', function(height) {
+      var el = document.getElementById(this['f']);
+      if (el) {
+        el.style.height = height + 'px';
+      }
+    });
+
+    
+    gadgets.rpc.register('set_pref', function() {});
+
+    registerGetBlogUrls();
+  }
+  </script>
+<iframe src="//94ioh47ambsoose19no6q65gdjs5tj70-a-blogger-opensocial.googleusercontent.com/gadgets/ifr?url=http://wms.assoc-amazon.com/GoogleGadgets/amzn_searchbox.xml&amp;container=blogger&amp;view=default&amp;lang=en&amp;country=ALL&amp;sanitize=0&amp;v=d0bf7394d2b09003&amp;libs=core:dynamic-height:google.blog:locked-domain:rpc:setprefs:skins:views&amp;parent=http://mybiasedcoin.blogspot.com/&amp;up_size=1&amp;mid=1#up_size=1&amp;st=e%3DAFlCd0WC7H9rM02K7%252B2Jyq7ZO%252FCVhK9rbkqGI5b2qNiutxxJps3lfGDZLStHmpiBNHxQGKJvj6XaNZeZKXDPKgW2XkZvneO5d6zWGliXpd7aiCVphayu4ASb7EPk111lpG1kyV8dwHZc%26c%3Dblogger&amp;rpctoken=1643794255041747156" frameborder="0" style="width: 100%; display: block" height="200" id="sidebar-gadget1" name="sidebar-gadget1"></iframe>
+<script type="text/javascript">
+        gadgets.rpc.setRelayUrl("sidebar-gadget1", '//94ioh47ambsoose19no6q65gdjs5tj70-a-blogger-opensocial.googleusercontent.com/gadgets/files/container/rpc_relay.html');
+        gadgets.rpc.setAuthToken("sidebar-gadget1", "1643794255041747156");
+      </script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=Gadget&widgetId=Gadget1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Gadget1"));' target='configGadget1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML1'>
+<h2 class='title'>My Book on Randomized Algorithms</h2>
+<div class='widget-content'>
+<iframe scrolling="no" width="120" frameborder="0" src="http://rcm.amazon.com/e/cm?t=michaelmitzen-20&o=1&p=8&l=as1&asins=0521835402&fc1=000000&=1&lc1=0000ff&bc1=000000&lt1=_blank&IS2=1&f=ifr&bg1=ffffff&f=ifr" marginheight="0" height="240" marginwidth="0">
+</iframe>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget Gadget' id='Gadget3'>
+There was an error in this gadget
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=Gadget&widgetId=Gadget3&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Gadget3"));' target='configGadget3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2013-01-01T00:00:00-05:00&amp;updated-max=2014-01-01T00:00:00-05:00&amp;max-results=50'>2013</a>
+<span class='post-count' dir='ltr'>(61)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(7)</span>
+<ul class='posts'>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html'>Discussing STOC 2013 PC with Joan Feigenbaum</a></li>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/icalp-formatting.html'>ICALP formatting</a></li>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/online-censorship-day-and-other-links.html'>Online Censorship Day and Other Links</a></li>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/daily-show.html'>Daily Show</a></li>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/zachary-quinto-and-cherry-jones-are-in.html'>Zachary Quinto and Cherry Jones are in Town...</a></li>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/ad-board-update.html'>Ad Board Update</a></li>
+<li><a href='http://mybiasedcoin.blogspot.com/2013/02/friday-ruminations.html'>Friday Ruminations</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2013_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2012-01-01T00:00:00-05:00&amp;updated-max=2013-01-01T00:00:00-05:00&amp;max-results=50'>2012</a>
+<span class='post-count' dir='ltr'>(81)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(5)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(3)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2012_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2011-01-01T00:00:00-05:00&amp;updated-max=2012-01-01T00:00:00-05:00&amp;max-results=50'>2011</a>
+<span class='post-count' dir='ltr'>(78)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(4)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(2)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2011_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2010-01-01T00:00:00-05:00&amp;updated-max=2011-01-01T00:00:00-05:00&amp;max-results=50'>2010</a>
+<span class='post-count' dir='ltr'>(111)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2010_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2009-01-01T00:00:00-05:00&amp;updated-max=2010-01-01T00:00:00-05:00&amp;max-results=50'>2009</a>
+<span class='post-count' dir='ltr'>(173)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2009_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2008-01-01T00:00:00-05:00&amp;updated-max=2009-01-01T00:00:00-05:00&amp;max-results=50'>2008</a>
+<span class='post-count' dir='ltr'>(129)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2008_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/search?updated-min=2007-01-01T00:00:00-05:00&amp;updated-max=2008-01-01T00:00:00-05:00&amp;max-results=50'>2007</a>
+<span class='post-count' dir='ltr'>(91)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://mybiasedcoin.blogspot.com/2007_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' id='LinkList1'>
+<h2>Science/Tech Blogs I Read</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://polylogblog.wordpress.com/'>Andrew McGregor (polylogblog)</a></li>
+<li><a href='http://andysresearch.blogspot.com/'>Andy's Math/CS page (Drucker)</a></li>
+<li><a href='http://www.bitsbook.com/blog/'>Blown to Bits</a></li>
+<li><a href='http://weblog.fortnow.com/'>Computational Complexity (Gasarch/Fortnow)</a></li>
+<li><a href='http://3dpancakes.typepad.com/ernie/'>Ernie's 3d Pancakes (Erickson)</a></li>
+<li><a href='http://science-professor.blogspot.com/'>FemaleScienceProfessor</a></li>
+<li><a href='http://www.freedom-to-tinker.com/'>Freedom to Tinker (Felten)</a></li>
+<li><a href='http://geomblog.blogspot.com/'>Geomblog (Suresh)</a></li>
+<li><a href='http://in-theory.blogspot.com/'>In Theory (Trevisan)</a></li>
+<li><a href='http://infoweekly.blogspot.com/'>Informatics Weekly (Patrascu)</a></li>
+<li><a href='http://kdphd.blogspot.com/'>kd-PhD (Sorelle)</a></li>
+<li><a href='http://www.qinfo.org/people/nielsen/blog/'>Michael Nielsen</a></li>
+<li><a href='http://mysliceofpizza.blogspot.com/'>My Slice of Pizza (Muthu)</a></li>
+<li><a href='http://11011110.livejournal.com/'>OxDE (Eppstein)</a></li>
+<li><a href='http://www.scottaaronson.com/blog/'>Shtetl-Optimized (Aaronson)</a></li>
+<li><a href='http://cs.unm.edu/~aaron/blog/'>Structure And Strangeness (Clauset)</a></li>
+<li><a href='http://terrytao.wordpress.com/'>Terence Tao</a></li>
+<li><a href='http://matt-welsh.blogspot.com/'>Volatile and Decentralized (Matt Welsh)</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Profile' id='Profile1'>
+<h2>Contributors</h2>
+<div class='widget-content'>
+<ul>
+<li><a class='profile-name-link g-profile' href='http://www.blogger.com/profile/02161161032642563814' style='background-image: url(//www.blogger.com/img/logo-16.png);'>Michael Mitzenmacher</a></li>
+<li><a class='profile-name-link g-profile' href='http://www.blogger.com/profile/06738274256402616703' style='background-image: url(//www.blogger.com/img/logo-16.png);'>Michael Mitzenmacher</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Profile1"));' target='configProfile1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Text' id='Text1'>
+<h2 class='title'>Legal Statement</h2>
+<div class='widget-content'>
+While I do not generally advertise on the blog, I do sometimes link to books, and I take part in the Amazon Associates program, getting some small credit if you purchase a book I recommend.<br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=Text&widgetId=Text1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Text1"));' target='configText1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+<div class='clear'>&#160;</div>
+</div>
+<!-- end content-wrapper -->
+<div id='footer-wrapper'>
+<div class='footer section' id='footer'><div class='widget HTML' id='HTML3'>
+<h2 class='title'>Analytics</h2>
+<div class='widget-content'>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-2410887-1";
+urchinTracker();
+</script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=8890204&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=footer' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div></div>
+<!-- end outer-wrapper -->
+<script src='http://www.google-analytics.com/urchin.js' type='text/javascript'>
+</script>
+<script type='text/javascript'>
+_uacct = "UA-2410899-1";
+urchinTracker();
+</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="//www.blogger.com/static/v1/widgets/3545113424-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '8890204';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d8890204','//mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html','8890204');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '8890204', 'bloggerUrl': 'http://www.blogger.com', 'title': 'My Biased Coin', 'pageType': 'item', 'url': 'http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html', 'canonicalUrl': 'http://mybiasedcoin.blogspot.com/2013/02/discussing-stoc-2013-pc-with-joan.html', 'canonicalHomepageUrl': 'http://mybiasedcoin.blogspot.com/', 'homepageUrl': 'http://mybiasedcoin.blogspot.com/', 'blogspotFaviconUrl': 'http://mybiasedcoin.blogspot.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Discussing STOC 2013 PC with Joan Feigenbaum', 'pageTitle': 'My Biased Coin: Discussing STOC 2013 PC with Joan Feigenbaum', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42My Biased Coin - Atom\42 href\75\42http://mybiasedcoin.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42My Biased Coin - RSS\42 href\75\42http://mybiasedcoin.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42My Biased Coin - Atom\42 href\75\42http://www.blogger.com/feeds/8890204/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42My Biased Coin - Atom\42 href\75\42http://mybiasedcoin.blogspot.com/feeds/5854741366106181779/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,e\75\42jstiming\42,g\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){c\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[c,d]};this[g](\42start\42,null,a)}var a\75new d;b.jstiming\75{Timer:d,load:a};if(b.performance\46\46b.performance.timing){var a\75b.performance.timing,c\75b[e].load,f\75a.navigationStart,a\75a.responseStart;0\74f\46\46a\76\75f\46\46(c[g](\42_wtsrt\42,void 0,f),c[g](\42wtsrt_\42,\42_wtsrt\42,a),c[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,b.chrome\46\46b.chrome.csi\46\46(a\75Math.floor(b.chrome.csi().pageT),c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.chrome.csi().startE),\nc[g](\42tbnd_\42,\42_tbnd\42,f))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.external.startE),c[g](\42tbnd_\42,\42_tbnd\42,f))),a\46\46(b[e].pt\75a)}catch(l){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[e].load[g](\42aft\42)};var h\75!1;function k(){h||(h\75!0,b[e].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,k,!1):b.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/15de8d1bfc9ff1d1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'testHtml5CssSrc': '//www.blogger.com/static/v1/widgets/721438413-css_bundle_html5.css', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'sidebartextcolor': '#666666', 'linkcolor': '#57778b', 'visitedlinkcolor': '#57778b', 'textcolor': '#333333', 'headerfont': 'normal normal 78% \47Trebuchet MS\47,Trebuchet,Arial,Verdana,Sans-serif', 'pagetitlefont': 'normal normal 200% Georgia, Serif', 'bgcolor': '#ffffff', 'descriptioncolor': '#999999', 'titlecolor': '#cc6600', 'bordercolor': '#cccccc', 'postfooterfont': 'normal normal 78% \47Trebuchet MS\47, Trebuchet, Arial, Verdana, Sans-serif', 'pagetitlecolor': '#666666', 'bodyfont': 'normal normal 100% Georgia, Serif', 'endSide': 'right', 'startSide': 'left', 'descriptionfont': 'normal normal 78% \47Trebuchet MS\47, Trebuchet, Arial, Verdana, Sans-serif', 'sidebarcolor': '#999999'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'footer', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_GadgetView', new _WidgetInfo('Gadget2', 'sidebar', null, document.getElementById('Gadget2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_GadgetView', new _WidgetInfo('Gadget1', 'sidebar', null, document.getElementById('Gadget1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_GadgetView', new _WidgetInfo('Gadget3', 'sidebar', null, document.getElementById('Gadget3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_ProfileView', new _WidgetInfo('Profile1', 'sidebar', null, document.getElementById('Profile1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TextView', new _WidgetInfo('Text1', 'sidebar', null, document.getElementById('Text1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '5854741366106181779', 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/2456262163-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/4138445517-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body>
+</html>

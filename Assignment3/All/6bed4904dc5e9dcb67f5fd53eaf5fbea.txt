@@ -1,0 +1,924 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+
+	
+
+	<title>Is There a U.S. IT Worker Shortage? - IEEE Spectrum</title>
+
+	
+	<meta name="viewport" content="width=1024">
+
+	
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=9; IE=8; IE=7; IE=EDGE; chrome=1"/>
+	<![endif]-->
+
+    
+
+    
+	<link href="http://fnt.webink.com/wfs/webink.css/?project=C258B735-C9E7-45A9-8619-0A725F416F5E&fonts=3E55D2F1-1F5E-63EE-5EC0-8AE57E0AB083:f=AbrilText-Regular,E9C578BD-9CDA-FDBD-9DC7-51BE84C9A709:f=AbrilDisplay-Regular,82DA4627-8191-9CE4-706C-58F3C2615A95:f=Theinhardt-Bold,BA766C3D-9F83-4950-AFCD-AD9F2BF5CEAB:f=Theinhardt-Regular,C62E2C20-BEE2-86B6-FE22-96C38B6818CF:f=AbrilText-Bold,F77BBDE3-5270-5846-90AD-5529C2FFDA57:f=Theinhardt-Medium" rel="stylesheet" type="text/css"/>
+	<link rel="stylesheet" href="/assets/css/style.css">
+	<link rel="stylesheet" href="/assets/css/sb.css">
+	<link rel="stylesheet" href="/assets/css/slimbox2.css">
+	<link rel="stylesheet" href="/assets/css/site.css">
+
+	
+
+    
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/js/libs/jquery-1.7.1.min.js"><\/script>')</script>
+
+	
+	<script src="/assets/js/libs/modernizr-2.5.3.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="/assets/js/libs/respond.min.js"></script>
+	<![endif]-->
+
+	
+	
+	
+	<link rel="icon" href="/favicon.png" type="image/png" />
+
+	
+<meta name="layout" content="spectrum"/>
+<meta content="predictions, big data, cloud computing, IT shortage, STEM education, IT skills, Health IT" name="Keywords"/>
+
+
+
+	<meta name="description" content="New Big Data, Cloud Computing and HIT worker demand is in millions by 2015"/>
+
+
+	<link rel="image_src" href="/img/7-aIInufX8W85DA5uamiWcQ.jpg" />
+
+
+
+<script type="text/javascript">
+   var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-747464-1']);
+  _gaq.push(['_setCustomVar', 1, 'content-type-slug', 'blog-post']);
+_gaq.push(['_setCustomVar', 3, 'authors', 'Robert N. Charette']);
+
+  _gaq.push(['_trackPageview']);
+  
+  (function() {
+	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+
+	<link rel="alternate" title="IEEE Spectrum Recent Content full text" href="http://feeds.feedburner.com/IeeeSpectrumFullText" type="application/rss+xml">
+	<!-- begin static module global-head-spectrum4 --><link href="http://spectrum.ieee.org//ns/interactive/temp-styles/temp-styles-9.24.13.css" rel="stylesheet" type="text/css">
+
+<style type="text/css">
+<!--
+.feature-slides .slideshow-content strong {
+font-family: "Theinhardt-Medium", sans-serif!important;
+font-weight: 500;
+}
+
+.feature-slides.gallery .carousel img {
+vertical-align: top;
+}
+
+-->
+</style><!-- end static module -->
+</head>
+
+<body class="pageBody" onload="">
+	
+	
+		
+<div id="slashpage">
+	<div id="header" style="background: #5a5a5a;text-align:right; padding:20px; overflow:auto; margin-bottom:25px;">
+		<img src="/assets/img/logo-main.png" alt="IEEE Spectrum logo" style="float: left;height: 40px;">
+		<a href="javascript:splashpage.closeit()">Continue to site&nbsp;➔</a>
+	</div>
+	<div style="color:gray; font-size:18px; text-align:center; margin-bottom:8px;">ADVERTISEMENT</div>
+	<iframe name="splashpage-iframe" src="about:blank" scrolling="no" seamless="seamless" style="overflow:hidden; padding:0; z-index:6000000; width:660px; height:500px; margin:0 auto; display:block;" frameborder="0"></iframe>
+</div>
+		<script src="/assets/js/interstitial-ad.js"></script>
+		
+<script>
+	splashpage.splashenabled=1;
+	splashpage.splashpageurl= '/interstitial?splashType=welcome';
+	splashpage.enablefrequency=1;
+	splashpage.displayfrequency='sessiononly';
+	splashpage.cookiename = ['interstitialpagecookie2362218', 'path=/'];		
+	splashpage.autohidetimer=15;
+	splashpage.enablecounter=true;
+	splashpage.counter=1;
+	splashpage.timeremaining=0;
+	splashpage.sessiononlyCookieLifeTime=24;
+	if (splashpage.browserdetectstr && splashpage.splashenabled==1) {
+        //console.info('initializing interstitial ad');
+        splashpage.init();
+        //console.info('interstitial ad init finished');
+    }
+</script>
+	
+
+	<a href="/" class="backtotop"></a>
+<header id="header">
+	
+		<style>
+	    header #ieee-metanav ul li a:hover {
+               color: #03a6e3;
+            }
+	</style>
+        <div id="ieee-metanav" role="banner">
+		<div class="wrap">
+			<ul class="inline-list">
+				<li><a href="http://www.ieee.org" target="_blank">IEEE.org</a></li>
+				<li class="sep">|</li>
+				<li><a href="http://ieeexplore.ieee.org" target="_blank">IEEE <em>Xplore</em> Digital Library</a></li>
+				<li class="sep">|</li>
+				<li><a href="http://standards.ieee.org" target="_blank">IEEE Standards</a></li>
+				<li class="sep">|</li>
+				<li><a href="/"><span>IEEE Spectrum</span></a></li>
+				<li class="sep">|</li>
+				<li><a href="http://www.ieee.org/sitemap" target="_blank">More Sites</a></li>
+			</ul>
+		</div>
+	</div>
+	<section id="masthead">
+		<div class="masthead-wrap">
+			<div class="brand-space" role="img">
+				<a href="/" id="brand">
+					<img src="/assets/img/logo-main.png" alt="IEEE Spectrum logo">
+				</a>
+				<div id="social-space">
+					<span class="follow">Follow on:</span>
+					<ul class="inline-list social-links">
+						
+						
+						<li><a href="http://www.facebook.com/IEEE.Spectrum" target="_blank"><span class="faceBook"></span></a></li>
+						<li><a href="http://twitter.com/#!/IEEESpectrum" target="_blank"><span class="twitter"></span></a></li>
+						<li><a href="http://www.linkedin.com/groups/IEEE-Spectrum-1982451?home=&gid=1982451&trk=anet_ug_hm" target="_blank"><span class="linkedIn"></span></a></li>
+						<li><a href="https://plus.google.com/105079317383160047042/posts" target="_blank"><span class="google"></span></a></li>
+						<li><a href="/static/rss" target="_blank"><span class="rssFeed"></span></a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="ad-space" role="img">
+				<span>Advertisement</span>
+				<div class="leaderboard-wrap">
+					
+<script language="JavaScript" type="text/javascript">
+if (typeof dc_tile=='undefined') {dc_tile=1;} else {dc_tile++;}
+if (typeof ord=='undefined') {ord=Math.random()*10000000000000000;}document.write('<script language="JavaScript" src="http://ad.doubleclick.net/adj/f.site220.tmus/computing;pos=1;tile=' + dc_tile +';dcopt=ist;sz=728x90;ord=' + ord + '?" type="text/javascript"><\/script>');</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/computing;sz=728x90;pos=1;tile=1;ord=123456789?" target="_blank"><img src="http://ad.doubleclick.net/ad/f.site220.tmus/computing;sz=728x90;pos=1;tile=1;ord=123456789?" border="0" alt=""></a></noscript>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<nav id="mainNav" role="navigation">
+
+	
+	<div class="commonwrap">
+		<ul class="primary" role="menubar">
+			<li><a href="#" id="topics"><span class="trunc">Engineering </span>Topics<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="reports"><span class="trunc">Special </span>Reports<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="blogs">Blogs<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="multimedia">Multimedia<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="magazine"><span class="trunc">The </span>Magazine<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" id="resources"><span class="trunc">Professional </span>Resources<span class="arrow-icon">&nbsp;</span></a></li>
+			<li><a href="#" class="last" id="searchmenu">Search<span class="arrow-icon">&nbsp;</span></a></li>
+		</ul><!-- /.primary -->
+	</div>	
+	
+	<div class="slider collapsed" role="landmark">
+		<div id="menuCentered">
+			<div id="menuContainer"></div>
+		</div>
+	</div>
+	
+	
+</nav>
+</header>
+
+	<!-- begin static module global-footer-spectrum4 --><!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="spectrum.ieee.org"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+<!-- BEGIN SURVEY POPUP CODE -->
+<script>
+
+var config = new Object();
+config.surveyID = 3616763;
+config.animationMode = 2;
+config.takeSurveyURL = 'http://www.questionpro.com/a/TakeSurvey';
+config.windowPositionLeft = 200;
+config.windowPositionTop = 500;
+config.popupInvitationHeader = 'We need your feedback';
+config.home = 'http://www.questionpro.com/';
+config.isRightToLeft = false;
+config.surveyStartMessage = 'Start Survey';
+config.popupInvitationLaterMessage = 'Later';
+config.showFooter = false;
+config.invitationDelay = 0;
+config.skipCount = 0;
+config.popupMessage = '<img src="http://marketprobeint.com/wp-content/uploads/2013/09/IEEE-Spectrum_Horizontal_Small.jpg"/><br/><br/>IEEE Spectrum is looking for your feedback on our website and its content. Please help us by giving your opinion. We will donate $1 to your choice of charity for every completed survey.  The results of the survey will also be shared anonymously with you at a later date.';
+config.popupMode = 2;
+</script>
+<script language="javascript" type="text/javascript"  src="http://popup.questionpro.com//javascript/popupInvitation.js"></script>
+<noscript><a href="http://www.questionpro.com/a/TakeSurvey?id=3616763">Start Survey</a>  <a href="http://www.questionpro.com/">Survey</a></noscript>
+
+<!-- END SURVEY POPUP CODE --><!-- end static module -->
+
+	
+	<div id="main" role="main">
+		<div class="wrap">
+			<section id="medium-content">
+				<article role="heading" class="article-detail">
+	                <!-- Breadcrumbs - global module -->
+	                <ul id="breadcrumbs" role="menubar">
+						<li role="menuitem"><a href="/blog/riskfactor">Risk Factor</a></li>
+	                    <li role="menuitem"><a href="/computing">Computing</a></li>
+	                    <li role="menuitem"><a href="/computing/it">IT</a></li>
+				    </ul>
+						<h1>Is There a U.S. IT Worker Shortage?</h1>
+							<div class="metadata" role="contentinfo">
+	<div class="byline">By Robert N. Charette 
+	    <div>Posted <label style='cursor:default' datetime="">3 Sep 2013 | 15:00 GMT</label></div>
+	</div>
+
+	    <div style="float: right;" class="addthis_toolbox addthis_default_style" addthis:title="Is There a U.S. IT Worker Shortage?"> 	
+	    <ul class="inline-list article-share-options" class="addthis_toolbox addthis_default_style">
+		    <li><a href="#" class="addthis_button_compact"><span class="share icon" id="shareIconTop">&nbsp;</span><span>Share</span></a> </li>
+			<li class="sep">|</li>
+		    <li><a href="#" class="addthis_button_email"><span class="email icon">&nbsp;</span><span class="addthis_button_print">Email</span></a></li>
+			<li class="sep">|</li>
+		    <li><a href="#" class="addthis_button_print"><span class="print icon">&nbsp;</span><span>Print</span></a></li>
+		</ul>
+	</div>
+
+</div>
+	
+							
+
+<script type="text/javascript">
+var addthis_config = {
+	ui_cobrand: "IEEE Spectrum", 
+	data_track_clickback:true, 
+	ui_508_compliant: true, 
+	data_ga_property: 'UA-747464-1'
+}
+
+var addthis_share = {
+	    url_transforms: {
+	        clean: true, 
+	        shorten: {
+				twitter: 'bitly'
+		    }
+	    },
+	    shorteners: {
+			bitly: {
+				login: 'ieeespectrum',
+				apiKey: 'R_b7de0f8b69a2fad0397ee4360bf00ea4'
+			}
+		},
+		templates: { 
+			twitter: '{{title}} {{url}} via @IEEESpectrum'
+		}
+		
+}
+</script>
+
+<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4f4cf61812d7916f"></script>
+
+
+
+				            
+			            	<script src="http://spectrum.ieee.org/ns/interactive/0913STEM/STEM-nav.js" type="text/javascript"></script>
+
+	<link href="http://spectrum.ieee.org/ns/interactive/0913STEM/STEM-widget.css" rel="stylesheet" />
+
+<p>
+	Someone who is a data scientist today is said by <em>Harvard Business Review</em> to have the <a href="http://spectrum.ieee.org/tech-talk/computing/it/is-data-scientist-the-sexiest-job-of-our-time">sexiest job alive</a>. And if sexy isn&rsquo;t enough, how about being a savior of the economy? &nbsp;According to a 2011 report by consulting company McKinsey &amp; Company, &ldquo;Big Data&rdquo; is &ldquo;<a href="http://www.mckinsey.com/insights/business_technology/big_data_the_next_frontier_for_innovation">the next frontier for innovation, competition and productivity</a>.&rdquo; That is, of course, if enough of those sexy data scientists can be found.</p>
+<p>
+	For also according to McKinsey&rsquo;s report, &ldquo;the United States alone could face a shortage of 140,000 to 190,000 people with deep analytical skills as well as 1.5 million managers and analysts with the know-how to use the analysis of big data to make effective decisions,&rdquo; by 2018.</p>
+<p>
+	However, Peter Sondergaard, senior vice president at Gartner and global head of research asserts that the shortage <a href="http://www.gartner.com/newsroom/id/2207915">situation is even more frightening</a> than what McKinsey implies. Sondergaard stated in October 2012 that, &ldquo;By 2015, 4.4 million IT jobs globally will be created to support Big Data, generating 1.9 million IT jobs in the United States. In addition, every big data‐related role in the U.S. will create employment for three people outside of IT, so over the next four years a total of 6 million jobs in the U.S. will be generated by the information economy.&rdquo;</p>
+<p>
+	Wow. Not only will Big Data make a significant dent in the U.S. unemployment rate, but the U.S. IT technical workforce of 3.9 million or so needs to increase by almost 50 percent within the next two years.</p>
+<p>
+	But wait, there&rsquo;s more.</p>
+<!--nextpage-->
+<p>
+	<img alt="sensors icon" class="med rt" src="/img/7-aIInufX8W85DA5uamiWcQ.jpg" />According to a <a href="http://www.microsoft.com/en-us/news/download/presskits/learning/docs/IDC.pdf">2012 IDC study</a> (pdf) commissioned by Microsoft, cloud computing (<a href="http://smb.media.seagate.com/2010/10/storage-means-business/cloud-computing-makes-storage-sexy/">which made storage sexy</a>) is going to require 2.7 million cloud-related IT specialists in the U.S. and Canada by 2015 as well.</p>
+<p>
+	And as icing on the IT worker short(age) cake, the U.S. government&rsquo;s $30 billion <a href="http://www.hitechanswers.net/ehr-incentive-program/">electronic health record (EHR) initiative</a> has apparently created an even greater shortage of health information technology workers over the next few years, above the 50 0000 the U.S. government estimated, according to a <a href="http://www.pwc.com/us/HITtalent">report</a> earlier this year by the consulting company Price-Water House Coopers. Unfortunately, I can&rsquo;t find anyone who says these HIT jobs are sexy, so they may go wanting.</p>
+<p>
+	Given the intense competition for IT workers these thee shortage projections imply (and this doesn&#39;t include the recent claims that <a href="http://www.thefinancialist.com/corporate-it-spending-is-finally-set-to-rebound-in-a-big-way/">corporate IT spending will take off from 2014 to 2016</a> which should increase IT worker demand at least some), one would expect a huge, surging corporate and IT industry demand for IT professionals across the board, with job position listings, salaries and perks soaring as <a href="http://www.informationweek.com/682/82casal.htm">they did during the late 1990s Dot.com boom</a>. I would also expect government to publish worrisome studies about the issue, like the U.S. Department of Commerce did in 1997, under the title of <em><a href="http://America's New Deficiet - zThe shortage of IT workers">America&#39;s New Deficit: The Shortage of Information Technology Workers</a></em> (pdf).</p>
+<p>
+	I would also expect those <a href="http://www.technet.org/over-100-leading-tech-executives-urge-president-obama-and-congress-to-enact-high-skilled-immigration-reform/">100 high tech executives wanting an increase in the number of H-1B visas</a>&nbsp;issued would be baying for the limit to be raised to 500 000 or more instead of a measly 115 000. And why aren&#39;t these executives saying they have tens of thousands of open big data, cloud computing and HIT positions, instead of a paltry 10 000 being used as justification for more H-1B visas?</p>
+<p>
+	But strangely enough, recent <a href="http://www.computerworld.com/s/article/9237351/IT_Salary_Survey_2013">salary</a> and anecdotal data doesn&rsquo;t show this happening. Nor are tech companies like <a href="http://www.networkworld.com/news/2013/072413-tech-layoffs-272148.html?page=2">Cisco, IBM or HP</a> (some of the ones which are the ones begging for more H-1B visas) rescinding their decisions to lay off thousands of IT workers. And those laid off IT workers don&rsquo;t seem to be sucked into some huge Big Data-Cloud-HIT worker shortage whirlpool that should be growing by the day out there somewhere.</p>
+<p>
+	Perhaps Cisco, IBM and HP among others have discovered that perhaps these predictions are more fiction than reality. Even <a href="http://www.networkworld.com/community/node/83640">Gartner has recently admitted</a> that Big Data may be a wee bit overhyped.&nbsp; Or maybe, in the words of a recent <em>New York Times</em> <a href="http://www.nytimes.com/2013/08/18/sunday-review/is-big-data-an-economic-big-dud.html?pagewanted=all&amp;_r=0">article</a>, Big Data is really just a Big (unsexy) Dud, and no one wants to admit it.</p>
+<p>
+	We&#39;ve been here before, some 15 years ago, during the <a href="http://www.programmersguild.org/archives/lib/shortage/">great computer programmer shortage scare</a>. Projections at the time said that by 2008, the <a href="http://www.ipmall.info/hosted_resources/crs/RL30140.pDF">U.S. would need 839 000 computer programmers</a> (pdf) by 2008. The actual <a href="http://articles.philly.com/2012-08-06/news/33049806_1_programmer-kevin-flanagan-jobs">number computer programmers actually employed was in 2008 closer to 427 000</a>, due in part to outsourcing.</p>
+<p>
+	And speaking of outsourcing, an <a href="http://www.cio.com/article/738955/Offshoring_Will_Kill_1.5_Million_IT_Jobs_by_2017">article</a> in CIO magazine last week reports that a study by <a href="http://www.thehackettgroup.com/">The Hackett Group</a> says that since 2002, offshoring, new technology productivity improvements, and low business growth will have &ldquo;killed&rdquo; 1.5 million IT jobs across North America and Europe by 2017 <em><u>after</u></em> new job creation is factored in. The losses were roughly the same for both continents. Perhaps The Hackett Group hasn&#39;t heard about the Big Data-Cloud-HIT worker shortage either?</p>
+<p>
+	Even out in Silicon Valley, which is begging for more H-1B guestworkers because of a shortage of engineering and IT talent, all is not what it seems. As described in a recent <em>New York Times</em> article, the San Francisco talent search company Bright found that after examining three million of its r&eacute;sum&eacute;s of job seekers in the United States, there are &ldquo;<a href="http://bits.blogs.nytimes.com/2013/07/23/big-data-analysis-adds-to-guest-worker-debate/?_r=0">plenty of potential candidates [who] exist for thousands of positions for which companies want to import guest workers.</a>&rdquo;</p>
+<p>
+	Steve Goodman, Bright&#39;s CEO, was quoted by the <em>Times</em> as saying, &ldquo;I didn&#39;t expect this result.&rdquo;</p>
+<p>
+	The<a href="http://graphics8.nytimes.com/packages/pdf/technology/H1BReport_Bright_New_Method.pdf"> Bright report</a> (pdf) shows only a couple of jobs such as application developers or specialized computer occupations where hiring H-1B guestworkers might possibly be appropriate. However, in the other job categories where shortages are being claimed by high tech companies, qualified U.S. job seekers who could do the job already exist.</p>
+<p>
+	Goodman, whose company, the <em>Times</em> says, earns its revenue in part by placing qualified candidates with recruiters went on to say, &ldquo;We&rsquo;re Silicon Valley people, we just assumed the shortage was true. It turns out there is a little Silicon Valley groupthink going on about this, though it&rsquo;s not comfortable to say that.&rdquo;</p>
+<p>
+	Without trying to be too cynical, the claims of an impending multimillion IT worker shortage in the next 30 months almost make Bill Gates look like Nostradamus with his 2004 prediction that, &ldquo;Two years from now, spam will be solved.&rdquo;</p>
+<p>
+	<em>Photo: Baran Ozdemir/Getty Images</em></p>
+
+						
+					
+<section class="learn-more" role="menu">
+     <h5>Learn More</h5>
+     
+
+ <style>
+  u {
+	text-decoration: none;
+  }
+</style>
+<span style="text-decoration:underlined;">
+	
+	
+	    <a href="/tag/Health+IT"><u>Health IT</u></a>
+	     
+	
+	    <a href="/tag/IT+shortage"><u>IT shortage</u></a>
+	     
+	
+	    <a href="/tag/IT+skills"><u>IT skills</u></a>
+	     
+	
+	    <a href="/tag/STEM+education"><u>STEM education</u></a>
+	     
+	
+	    <a href="/tag/big+data"><u>big data</u></a>
+	     
+	
+	    <a href="/tag/cloud+computing"><u>cloud computing</u></a>
+	     
+	
+	    <a href="/tag/predictions"><u>predictions</u></a>
+	    
+	
+
+</span>
+</section>
+
+<section id="bottom-share-tools" class="bold-anchor" role="menu">  
+	<div class="metadata" role="contentinfo">
+
+		<div class="social-widget facebook">
+			<a class="addthis_button_facebook_like" fb:like:layout="box_count"></a>
+ 		</div>
+		<div class="social-widget twitter">
+			<a class="addthis_button_tweet" tw:count="vertical"></a> 
+		</div>
+		<div class="social-widget linkedin">
+			<a class="addthis_button_linkedin_counter" li:counter="top"></a> 
+		</div>
+		<div style="float:right;" class="addthis_toolbox addthis_default_style" addthis:title="Is There a U.S. IT Worker Shortage?">  
+			<ul class="inline-list article-share-options">
+				<li><a href="#" class="addthis_button_compact"><span class="share icon" id="shareIconTop">&nbsp;</span><span>Share</span></a> </li>
+				<li class="sep">|</li>
+				<li><a href="#" class="addthis_button_email" title="Email"><span class="email icon">&nbsp;</span><span class="addthis_button_print">Email</span></a></li>
+				<li class="sep">|</li>
+				<li><a href="#" class="addthis_button_print" title="Print"><span class="print icon">&nbsp;</span><span>Print</span></a></li>
+			</ul>                
+			<div class="atclear"></div>
+		</div>
+	</div>
+</section>
+<section id="comments-section" role="complementary">
+  <div class="split">
+    <div class="column">
+      <h6 class="section-title">Comments</h6>
+    </div>
+    <div class="column last align-right">
+      <div class="policy"><a href="/static/comment-policy">Comment Policy</a></div>
+    </div>
+    <div class="clear"></div>
+  </div>
+  <div id="disqus_thread"></div>
+
+<script type="text/javascript">
+  var disqus_shortname = 'ieeespectrum';
+  var disqus_developer = 1;
+  var disqus_identifier = '/riskfactor/computing/it/is-there-a-us-it-worker-shortage';
+  var disqus_title = 'Is There a U.S. IT Worker Shortage?';
+  var disqus_url = 'http://spectrum.ieee.org/riskfactor/computing/it/is-there-a-us-it-worker-shortage';
+
+  
+  (function() {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = 'http://' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the &lt;a
+  href="http://disqus.com/?ref_noscript"&gt;comments powered by
+  Disqus.&lt;/a&gt;</noscript>
+  <a href="http://disqus.com" class="dsq-brlink">Comments powered
+by <span class="logo-disqus">Disqus</span></a>
+</section>
+				
+				</article>
+			</section>
+			<section id="iso-content">
+                        <h2>Related Stories</h2>
+        	            <div class="articles" role="article">
+                                 <article class="item sml_article recent-item">
+<!-- begin static fragment riskfactor-spectrum4-blog-sidebar --><style type="text/css">
+<!--
+.articles article .border-box a.blog-rss {
+padding: 1px 1em 0 2.5em; 
+margin-bottom: 1em;
+}
+
+.twitter-links .column {
+float: none;
+margin: 0 auto;
+width: 181px;
+display: block;
+}
+
+.twitter-links {
+margin-bottom: 0;
+}
+
+--></style>
+	<article class="sm_article riskfactor">
+		<div class="border-box">
+			<a href="/blog/riskfactor" style="text-decoration:none;"><h3 class="isotope-title">
+				<img alt="" class="isotope-icon" src="/img/Risk_Factor_new_03-1359653751099.png" height="37px" width="37px" />Risk Factor</h3></a>
+			<p><i>IEEE Spectrum's</i> risk analysis blog, featuring daily news, updates and analysis on computing and IT projects, software and systems failures, successes and innovations, security threats, and more.</p>
+<div class="align-center"><a href="http://feeds.feedburner.com/IeeeSpectrumTheRiskFactorBlog" class="button sign-up blog-rss" title="Risk Factor RSS"><span class="icon-rss"></span>Subscribe to RSS Feed</a></div>
+			<div class="twitter-links">
+				<div class="column">
+					<a href="https://twitter.com/RiskFactorBlog" class="twitter-follow-button" data-show-count="false" data-size="large" data-dnt="true">Follow @RiskFactorBlog</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script></div>
+				
+				<div class="clear">
+					&nbsp;</div>
+			</div>
+			<div class="split">
+				<h3 class="contributors">
+					Contributors</h3>
+				<div class="clear">
+					&nbsp;</div>
+				<div class="column">
+					<strong>Editor</strong><br />
+					<a href="/searchContent?q=Robert%20Charette&media=&max=10&offset=0&sortby=newest">Robert Charette</a></div>
+				<div class="column">
+					<strong>Contributor</strong><br />
+					<a href="/searchContent?q=Willie%20Jones&media=&max=10&offset=0&sortby=newest">Willie D. Jones</a><br /></div>
+				<div class="clear">
+					&nbsp;</div>
+			</div>
+		</div>
+	</article>
+	<article class="sml_article riskfactor" style="padding-bottom: 0px;">
+		<div class="border-box">
+			<h3 class="isotope-title">
+				Newsletter Sign Up</h3>
+			<p>Sign up for the ComputerWise newsletter and get biweekly news and analysis on software, systems, and IT delivered directly to your inbox.</p>
+			<div class="align-center">
+				<a class="button sign-up" href="/static/newsletters?utm_source=internal&utm_medium=blog_page&utm_campaign=riskfactor" title="Sign Up">Sign Up</a></div>
+		</div>
+	</article><!-- end static fragment -->
+</article><article class="item sml_article ad-item recent-item corner-item" style="width: 300px; height: 270px;" >
+	<div class="ad-module"><div class="adtext">Advertisement</div><script type="text/javascript">
+if(typeof(cachebuster) == "undefined"){var cachebuster = Math.floor(Math.random()*10000000000)}
+if(typeof(dcopt) == "undefined"){var dcopt = "dcopt=ist;"} else {var dcopt = ""}
+if(typeof(tile) == "undefined"){var tile = 1} else {tile++}
+document.write('<scr'+'ipt src="http://ad.doubleclick.net/adj/f.site220.tmus/computing;pos=1;' + dcopt + ';tile=' + tile + ';sz=300x250;ord=' + cachebuster + '?"></scr'+'ipt>');
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/computing;pos=1;sz=300x250;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/f.site220.tmus/computing;pos=1;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript></div>
+</article>
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-californias-unemployment-system-upgrade-saga-continues"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7IwJNj7hMxyFlg-7QKtrvIg.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week: California’s Unemployment System Upgrade Saga Continues</h3>					
+            <p>Software fix for Jeep Cherokee transmission, Obamacare health exchanges cross their fingers<span class="pubDate"><label style='cursor:default' datetime="">30 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/this-week-in-cybercrime-nsa-director-gen-alexander-we-want-more-info-from-firms"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/26dCb75lEb6OjaZnTNPb-cg.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: NSA Wants More Info from Firms</h3>					
+            <p>Plus: Data clearinghouses make the best targets, and “Icefog” hackers strike with precision<span class="pubDate"><label style='cursor:default' datetime="">27 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-sp-warns-stock-exchanges-shape-up-their-it-or-else"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/99s0Z7CmkUT1gt45HtBRbbQ.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week: S&P Warns Stock Exchanges Shape Up Their IT or Else</h3>					
+            <p>Obamacare exchanges may not be ready for prime time, California unemployment system still suffering<span class="pubDate"><label style='cursor:default' datetime="">23 Sep</label></span></p>
+    	</a>
+    </article>
+<article class="item sml_article ad-item recent-item " style="width: 300px; height: 620px;" >
+	<div class="ad-module"><div class="adtext">Advertisement</div><script type="text/javascript">
+if(typeof(cachebuster) == "undefined"){var cachebuster = Math.floor(Math.random()*10000000000)}
+if(typeof(dcopt) == "undefined"){var dcopt = "dcopt=ist;"} else {var dcopt = ""}
+if(typeof(tile) == "undefined"){var tile = 1} else {tile++}
+document.write('<scr'+'ipt src="http://ad.doubleclick.net/adj/f.site220.tmus/computing;' + dcopt + ';tile=' + tile + ';sz=300x600;ord=' + cachebuster + '?"></scr'+'ipt>');
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/computing;sz=300x600;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/f.site220.tmus/computing;sz=300x600;ord=123456789?" border="0" alt="" /></a></noscript></div>
+</article>
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/this-week-in-cybercrime-how-secure-is-the-obamacare-data-service-hub"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/3J6c7wcu3I8pbTdz956agsg.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: How Secure is the Obamacare Data Service Hub?</h3>					
+            <p>Plus: NSA admits breaching its security was easy and budding cybercriminals attend online courses<span class="pubDate"><label style='cursor:default' datetime="">20 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-computer-issues-creates-misleading-us-jobless-claim-numbers-"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/39phHIkuKog9AR_g5fU31XA.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week: Computer Issues Create Misleading U.S. Jobless Numbers </h3>					
+            <p>Airline reservation problems at United and Jet Blue, UnitedHealth recalls EHR software<span class="pubDate"><label style='cursor:default' datetime="">16 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/can-the-ftc-really-do-that-asks-companies-it-wants-to-hammer-for-data-security-lapses"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7m8NBIG-UMEaxk3SVFJWM6A.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: Companies to FTC: Your Data Security Reach Exceeds Your Grasp</h3>					
+            <p>Plus: Bruce Schneier discusses the NSA’s war on cryptography, contractor steals 2 million Vodafone customers’ personal data<span class="pubDate"><label style='cursor:default' datetime="">13 Sep</label></span></p>
+    	</a>
+    </article>
+<article class="item sml_article ad-item recent-item " style="width: 300px; height: 270px;" >
+	<div class="ad-module"><div class="adtext">Advertisement</div><script type="text/javascript">
+if(typeof(cachebuster) == "undefined"){var cachebuster = Math.floor(Math.random()*10000000000)}
+if(typeof(dcopt) == "undefined"){var dcopt = "dcopt=ist;"} else {var dcopt = ""}
+if(typeof(tile) == "undefined"){var tile = 1} else {tile++}
+document.write('<scr'+'ipt src="http://ad.doubleclick.net/adj/f.site220.tmus/computing;pos=2;' + dcopt + ';tile=' + tile + ';sz=300x250;ord=' + cachebuster + '?"></scr'+'ipt>');
+</script>
+<noscript><a href="http://ad.doubleclick.net/jump/f.site220.tmus/computing;pos=2;sz=300x250;ord=123456789?" target="_blank" ><img src="http://ad.doubleclick.net/ad/f.site220.tmus/computing;pos=2;sz=300x250;ord=123456789?" border="0" alt="" /></a></noscript></div>
+</article>
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-a-bad-week-for-us-state-government-it"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/8mn4rC1XdBFn_6fouGLOmVw.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week: A Bad Week for U.S. State Government IT</h3>					
+            <p>Credit card problem saves man’s life, Volvo recalls 8000 cars to fix software issue<span class="pubDate"><label style='cursor:default' datetime="">9 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/this-week-in-cybercrime-middle-easts-upheaval-breeds-hacktivists"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/72jfMWN9A2vkh-qssM2d5pg.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: Middle East’s Upheaval Breeds Hacktivists</h3>					
+            <p>Plus: Sudoku prevents some IP theft, and parents targeted in back-to-school phishing scheme<span class="pubDate"><label style='cursor:default' datetime="">6 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/are-stem-workers-overpaid"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/1u-V4sxVRAuo-NNqkvZaEog.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>Are STEM Workers Overpaid?</h3>					
+            <p>Lowering STEM worker pay seems to be hidden agenda of many tech companies<span class="pubDate"><label style='cursor:default' datetime="">6 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/the-changing-pattern-of-stem-worker-employment"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/12K7eqMcyQ1A5t1mV7hoDxQ.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>What Ever Happened to STEM Job Security? </h3>					
+            <p>A personal view on how decades of recurring recessions, downsizing, outsourcing and H-1B visas changed the social compact between STEM workers and their employers<span class="pubDate"><label style='cursor:default' datetime="">5 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/an-engineering-career-only-a-young-persons-game"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/22i8d8gDXeqSSAKCpHDplIA.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>An Engineering Career: Only a Young Person’s Game?</h3>					
+            <p>Half-life of knowledge pressures employers to seek out young engineers<span class="pubDate"><label style='cursor:default' datetime="">4 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-sutter-healths-1-billion-ehr-system-crash"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/923uQML5F36-ABUBC8illAQ.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week: Sutter Health’s $1 Billion EHR System Crashes</h3>					
+            <p>Computer issue bites Japanese rocket launch, Nasdaq partially blames software bug for outage<span class="pubDate"><label style='cursor:default' datetime="">3 Sep</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/chinese-internet-rocked-by-cyberattack"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/68Js1swwVnrffg5iFlJ9k_g.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>Chinese Internet Rocked by Cyberattack</h3>					
+            <p>Distributed denial of service attack takes down part of .cn domain<span class="pubDate"><label style='cursor:default' datetime="">27 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-stock-exchange-gremlins-attack"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/2dfsCly9JMUjXgFzq0SL6TA.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week: Stock Exchange “Gremlins” Attack</h3>					
+            <p>Helsinki Metro driverless trains' first day is a bust, Indian Overseas Bank operations back to normal<span class="pubDate"><label style='cursor:default' datetime="">26 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/this-week-in-cybercrime-facebook-backlash"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/3OqZ825oW3U00_bz-07lUIA.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: Facebook Feels Backlash After Balking on Bug Bounty</h3>					
+            <p>Facebook didn't "Like" it when a researcher demonstrated an exploit by posting to Mark Zuckerberg's page<span class="pubDate"><label style='cursor:default' datetime="">23 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-you-may-want-that-burger-wellcooked"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/6aQnl6KuSr_BHyKv3SMUbzw.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week:  You May Want That Burger Well-Cooked</h3>					
+            <p>UK Post Office admits to system defects, New York Times and others have system outages<span class="pubDate"><label style='cursor:default' datetime="">19 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/this-week-in-cybercrime-computer-glitch-opens-prison-doors"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/7T0OvnhvSGXtmPlF1pcbhJg.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: Computer Glitch Opens Prison Doors?</h3>					
+            <p>Plus: Google soups up its bounty program, and the U.S. wins decryption battle<span class="pubDate"><label style='cursor:default' datetime="">18 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/it-hiccups-of-the-week-sabre-outage-hit-flights-worldwide"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/9YKsK5wQu_fgnBcFNlDwEiQ.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>IT Hiccups of the Week:  Sabre Outage Hit Flights Worldwide</h3>					
+            <p>False emergency warnings and Xerox scanners compression error issue<span class="pubDate"><label style='cursor:default' datetime="">12 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item telecom"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/telecom/security/this-week-in-cybercrime-is-there-anonymity-on-anonymity-networks"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/28OBPCvQGnXIyh4gHLUXUYA.jpg" width="300" height="225"/>
+                <figcaption>Telecom</figcaption>
+            </figure>
+            <h3>This Week in Cybercrime: Is there Anonymity on Anonymity Networks?</h3>					
+            <p>Researchers say it’s likely that the U.S. government is behind the unmasking of users of the Tor Anonymity network<span class="pubDate"><label style='cursor:default' datetime="">9 Aug</label></span></p>
+    	</a>
+    </article>
+
+    <article class="item sml_article recent-item computing"  >
+        <span class="blur">&nbsp;</span>
+        <a href="/riskfactor/computing/it/queensland-government-bans-ibm-from-it-contracts"> 
+            <figure>
+                <div class="shade">&nbsp;</div>
+                <img class="lazy" src="/assets/img/x.gif" data-original="/img/0KHu6bPE-8XoNZ9u8ZUEubA.jpg" width="300" height="225"/>
+                <figcaption>Computing</figcaption>
+            </figure>
+            <h3>Queensland Government Bans IBM from IT Contracts</h3>					
+            <p>IBM insists Queensland Health payroll debacle not its fault<span class="pubDate"><label style='cursor:default' datetime="">7 Aug</label></span></p>
+    	</a>
+    </article>
+
+        	            </div>
+                	</section>
+		</div>
+	</div>
+	
+
+
+	<footer id="global-footer" role="landmark">
+
+	
+    <div id="topFooter" role="region" >
+        <div class="commonwrap" role="section">
+            <a href="/">
+                
+                <img class="footerLogo lazy" src="/assets/img/x.gif" data-original="/assets/img/footer-logo.png" alt="IEEE Spectrum logo" width="270" role="img" />
+            </a>
+            <div id="footerTopMenu" role="navigation">
+                <ul role="menu">
+                    <h4 role="heading">Topics</h4>
+                    
+                    <li role="menuitem"><a href="/aerospace">Aerospace</a></li>
+                    <li role="menuitem"><a href="/at-work">At Work</a></li>
+                    <li role="menuitem"><a href="/biomedical">Biomedical</a></li>
+                    <li role="menuitem"><a href="/computing">Computing</a></li>
+                    <li role="menuitem"><a href="/energy">Energy</a></li>
+                    <li role="menuitem"><a href="/gadgets">Gadgets</a></li>
+                    <li role="menuitem"><a href="/geek-life">Geek Life</a></li>
+                    <li role="menuitem"><a href="/robotics">Robotics</a></li>
+                    <li role="menuitem"><a href="/semiconductors">Semiconductors</a></li>
+                    <li role="menuitem"><a href="/telecom">Telecom</a></li>
+                </ul>
+
+                <ul class="social-links" role="menu">
+                    <h4 role="heading">Connect</h4>
+                    <li role="menuitem"><a href="http://www.facebook.com/IEEE.Spectrum" class="icn-sml" target="_blank"><span class="faceBook"></span>Facebook</a></li>
+                    <li role="menuitem"><a href="http://twitter.com/#!/IEEESpectrum" class="icn-sml" target="_blank"><span class="twitter"></span>Twitter</a></li>
+					<li role="menuitem"><a href="http://www.linkedin.com/groups/IEEE-Spectrum-1982451?home=&gid=1982451&trk=anet_ug_hm" class="icn-sml" target="_blank"><span class="linkedIn"></span>LinkedIn</a></li>
+                    <li role="menuitem"><a href="https://plus.google.com/105079317383160047042/posts" class="icn-sml" target="_blank"><span class="google"></span>Google+</a></li>
+                    <li role="menuitem"><a href="/static/rss" class="icn-sml" target="_blank"><span class="rssFeed"></span>RSS</a></li>
+                </ul>
+
+                <ul role="menu">
+                    <h4 role="heading">IEEE Spectrum</h4>
+                    <li role="menuitem"><a href="/static/contactus">Contact Us</a></li>
+                    <li role="menuitem"><a href="/static/aboutus">About</a></li>
+                    <li role="menuitem"><a href="/static/newsletters">Newsletters</a></li>
+                    <li role="menuitem"><a href="http://m.spectrum.ieee.org/">Mobile Site</a></li>
+                    <h4 class="footerTitle" role="heading">IEEE Partners</h4>
+                    <li role="menuitem"><a href="http://advertise.ieee.org">Advertising &amp; Media Center</a></li>
+                    <li role="menuitem"><a href="http://careers.ieee.org/">IEEE Job Site</a></li>
+                    <li role="menuitem"><a href="http://spectrumsuppliermarketplace.com/">Buyer&rsquo;s Guide</a></li>
+                </ul>
+
+                <ul role="menu">
+                    <h4 role="heading">The Magazine</h4>
+                    <li role="menuitem"><a href="/magazine"><img class="lazy" src="/assets/img/x.gif" data-original="/img/10spectrum13-homepage-footer-1380636838203.jpg" width="100" height="133" alt="Magazine cover image"></a></li>
+                    <li role="menuitem"><a href="/static/readerservices">Subscribe Now</a></li>
+                    <li role="menuitem"><a href="http://www.qmags.com/subscribers">Digital Download</a></li>
+                </ul>
+            </div>
+
+            <ul id="footerCopy">
+                <li id="copyrightTag" role="contentinfo">&copy; Copyright 2013 IEEE Spectrum</li>
+                <li role="menu" id="policyNav"><a href="http://www.ieee.org/site_terms_conditions.html?WT.mc_id=hpf_terms">Terms &amp; Conditions</a> | <a href="http://www.ieee.org/privacy">Privacy &amp; Security</a> | <a href="http://www.ieee.org/nondiscrimination">Nondiscrimination Policy</a></li>
+            </ul>
+        </div>
+    </div>
+
+	
+    <div id="subFooter" role="navigation">
+        <div class="commonwrap" role="region">
+            <a href="http://www.ieee.org">
+                
+                <img class="footerLogo lazy" src="/assets/img/x.gif" data-original="/assets/img/ieee-logo.png" width="142" height="41" alt="IEEE logo" role="img" />
+            </a>
+
+            <div id="footerSubMenu" role="section">
+                <ul role="menu">
+                    <li role="menuitem"><a href="http://www.ieee.org/about/index.html">About IEEE</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/conferences_events/index.html">Conferences &amp; Events</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/education_careers/index.html">Education &amp; Careers</a></li>
+                </ul>
+
+                <ul role="menu">
+                    <li role="menuitem"><a href="http://www.ieee.org/membership_services/index.html">Membership &amp; Services</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/publications_standards/index.html">Publications and Standards</a></li>
+                    <li role="menuitem"><a href="http://www.ieee.org/societies_communities/index.html">Societies &amp; Communities</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>
+	
+
+<script src="/assets/js/libs/plugins.js"></script>
+<script src="/assets/js/libs/jquery.isotope.min.js"></script>
+<script src="/assets/js/slimbox2.min.js"></script>
+
+<script src="/assets/js/libs/autoload.js"></script>
+<script src="/assets/js/masonry-ads-right.min.js"></script>
+<script src="/assets/js/libs/spin.min.js"></script>
+<script src="/assets/js/libs/jquery-lazyload/jquery.lazyload.min.js"></script>
+<script src="/assets/js/libs/jquery.touchwipe.min.js"></script>
+<script src="/assets/js/script1.js"></script>
+
+
+
+<script type="text/javascript">
+function ss_track(slideshow_image, image_number, image_name, image_caption, path_to_assets){
+	//console.log(slideshow_image);
+	 _gaq.push(['_setAccount', 'UA-747464-1']);
+	 _gaq.push(['_trackEvent','Slideshows', 'Change Slide', '', image_number, true]);
+}
+</script>
+
+
+<script type="text/javascript">
+  var _bizo_data_partner_id = "473";
+  var _bizo_p = (("https:" == document.location.protocol) ? "https://sjs." : "http://js.");
+  document.write(unescape("%3Cscript src='" + _bizo_p + "bizographics.com/convert_data.js?partner_id=" + _bizo_data_partner_id + "' type='text/javascript'%3E%3C/script%3E"));
+</script>
+
+</body>
+</html>

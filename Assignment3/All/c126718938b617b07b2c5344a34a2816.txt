@@ -1,0 +1,133 @@
+<TITLE>Mining of Massive Datasets</TITLE>
+
+<BODY BGCOLOR = "E0F7F0">
+
+<CENTER><TABLE>
+<TR><TD><IMG SRC = "gifs/mmd_cover.jpg">
+<TD NOWRAP ALIGN = MIDDLE><FONT SIZE = 6>Mining of Massive Datasets
+</FONT>
+</TABLE></CENTER>
+
+<OL></ol><OL></ol>
+
+The book has now been published by Cambridge University Press.
+The publisher is offering a 20% discount to anyone who buys the hardcopy <A
+href="http://www.cambridge.org/us/knowledge/discountpromotion/?site_locale=en_US&code=L2MMD">
+Here</a>.
+
+By agreement with the publisher, you can still download it free from this page.
+Cambridge Press does, however, retain copyright on the work, and we expect that you will obtain their
+permission and acknowledge
+our authorship if you republish parts or all of it.  We are sorry to have to mention this
+point, but we have evidence that other items we have published on the Web have been
+appropriated and republished under other names.  It is easy to detect such misuse,
+by the way, as you will learn in Chapter 3.
+
+<CENTER>
+--- Anand Rajaraman (<A href = "http://twitter.com/#!/anand_raj">@anand_raj</a>) and Jeff Ullman
+</center>
+
+<H2>Contents</h2>
+<OL>
+<LI>
+<A href = "#original">The Original Book</a>.</li>
+<LI>
+<A href = "#latest">The Latest Version of the Book</a>.</li>
+<LI>
+<A href = "#gradiance">Support Materials</a>, including Gradiance automated homeworks for the book, slides,
+and the errata sheet.</li>
+</ol>
+
+<A name = "latest"></a>
+<H3>Download Version 1.3</h3>
+<P>
+Below is a draft, evolving version of the MMDS book.  We have added <A href =
+"http://cs.stanford.edu/~jure">Jure Leskovec</a>
+as a coauthor.  There are two new chapters, on mining large graphs and dimensionality reduction.
+A chapter on large-scale machine learning is expected soon.
+<P>
+There is a revised Chapter 2 that treats map-reduce programming
+in a manner closer to how it is used in practice, rather than how it was described in the
+original paper.  Chapter 2 also has new material on algorithm design techniques for map-reduce.
+<P>
+<A href="mmds/book.pdf">Download the Latest Book</a> (453 pages, approximately 2.7MB)
+<P>
+Download chapters of the book:
+<P>
+<A href="mmds/preface.pdf">Preface and Table of Contents</a>
+<BR><A href="mmds/ch1.pdf">Chapter 1</a> Data Mining
+<BR><A href="mmds/ch2.pdf">Chapter 2</a> Map-Reduce and the New Software Stack
+<BR><A href="mmds/ch3.pdf">Chapter 3</a> Finding Similar Items
+<BR><A href="mmds/ch4.pdf">Chapter 4</a> Mining Data Streams
+<BR><A href="mmds/ch5.pdf">Chapter 5</a> Link Analysis
+<BR><A href="mmds/ch6.pdf">Chapter 6</a> Frequent Itemsets
+<BR><A href="mmds/ch7.pdf">Chapter 7</a> Clustering
+<BR><A href="mmds/ch8.pdf">Chapter 8</a> Advertising on the Web
+<BR><A href="mmds/ch9.pdf">Chapter 9</a> Recommendation Systems
+<BR><A href="mmds/ch10.pdf">Chapter 10</a> Mining Social-Network Graphs
+<BR><A href="mmds/ch11.pdf">Chapter 11</a> Dimensionality Reduction
+<BR><A href="mmds/index.pdf">Index</a>
+
+<A href name = "original"></a>
+<H3>Download Version 1.0</h3>
+<P>
+The following materials are equivalent to the published book, with errata corrected to
+July 4, 2012.  It has been frozen as we revise the book.  The evolving book can
+be downloaded as <A href = "#latest">Version 1.3</a> above.
+<P>
+<A href="mmds/booka.pdf">Download the Book as Published</a> (340 pages, approximately 2MB)
+<P>
+Download chapters of the book:
+<P>
+<A href="mmds/prefacea.pdf">Preface and Table of Contents</a>
+<BR><A href="mmds/ch1a.pdf">Chapter 1</a> Data Mining
+<BR><A href="mmds/ch2a.pdf">Chapter 2</a> Large-Scale File Systems and Map-Reduce
+<BR><A href="mmds/ch3a.pdf">Chapter 3</a> Finding Similar Items
+<BR><A href="mmds/ch4a.pdf">Chapter 4</a> Mining Data Streams
+<BR><A href="mmds/ch5a.pdf">Chapter 5</a> Link Analysis
+<BR><A href="mmds/ch6a.pdf">Chapter 6</a> Frequent Itemsets
+<BR><A href="mmds/ch7a.pdf">Chapter 7</a> Clustering
+<BR><A href="mmds/ch8a.pdf">Chapter 8</a> Advertising on the Web
+<BR><A href="mmds/ch9a.pdf">Chapter 9</a> Recommendation Systems
+<BR><A href="mmds/indexa.pdf">Index</a>
+
+<A name = "gradiance"></a>
+<H3>Gradiance Support</h3>
+
+If you are an instructor interested in using the <A href = "http://www.gradiance.com">Gradiance Automated
+Homework System</a> with this book, start
+by creating an account for yourself at
+<A href = "http://www.gradiance.com/services"><TT>www.gradiance.com/services</tt></a>.
+Then, email your chosen login and the request to become an instructor for the MMDS book
+to support@gradiance.com
+You will then be able to create a class using these materials.
+Manuals explaining the use of the system are at
+<A href = "http://www.gradiance.com/info.html"><TT>www.gradiance.com/info.html</tt></a>.
+<P>
+Students who want to use the Gradiance system for self-study can register at
+<A href = "http://www.gradiance.com/services"><TT>www.gradiance.com/services</tt></a>.
+Then, use the class token <TT>1EDD8A1D</tt> to join the "omnibus class" for the MMDS book.
+See <A href = "pub/stud-guide.html">The Student Guide</a> for more information.
+
+<H3>Other Stuff</h3>
+
+<UL>
+
+<LI><A href = "http://cs246.stanford.edu">Jure's Materials</a> from the most recent CS246.
+<P>
+<LI><A href = "mining/mining.html">Slides and Course Material</a> from old CS345A.  Like the
+book, you are welcome to use these as you like, but please preserve our authorship.
+<P>
+<LI><A href = "mmds/errata.html">The Errata Sheet</a> for the hardcopy version.
+We shall endeavor to keep the downloads
+up to date.  Note that the pagination is different on the version we maintain, but you
+can check whether your download is up-to date from the hardcopy errata.
+Please report errata to ullman a t gmail.com.
+
+</ul>
+
+<!-- -->
+<script src="http://tags.stanford.edu/tags.js" type="text/javascript"></script>
+<!-- -->
+
+</BODY>

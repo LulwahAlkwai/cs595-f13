@@ -1,0 +1,306 @@
+
+   [1]Skip to Main Content
+   [2]Wiley Online Library
+   [3]Log in / Register
+
+   Log In
+
+   E-Mail Address ____________________
+   Password ____________________
+
+   [4]Forgotten Password?
+   Log In
+   [_] Remember Me
+
+     * [5]Register
+     * [6]Institutional Login
+
+   Old Dominion University
+     * [7]Home >
+     * [8]Computer Science >
+     * [9]Programming & Software Development >
+     * [10]Software: Practice and Experience >
+     * [11]Early View >
+     * [12]Abstract
+
+JOURNAL TOOLS
+
+     * [13]Get New Content Alerts
+     * [14]Get RSS feed
+     * [15]Save to My Profile
+     * [16]Get Sample Copy
+     * [17]Recommend to Your Librarian
+
+JOURNAL MENU
+
+     * [18]Journal Home
+
+FIND ISSUES
+
+     * [19]Current Issue
+     * [20]All Issues
+
+FIND ARTICLES
+
+     * [21]Early View
+     * [22]Most Accessed
+     * [23]Most Cited
+
+GET ACCESS
+
+     * [24]Subscribe / Renew
+
+FOR CONTRIBUTORS
+
+     * [25]OnlineOpen
+     * [26]Author Guidelines
+     * [27]Submit an Article
+
+ABOUT THIS JOURNAL
+
+     * [28]Overview
+     * [29]Editorial Board
+     * [30]Permissions
+     * [31]Advertise
+     * [32]Contact
+
+SPECIAL FEATURES
+
+     * [33]Computer Science Journals
+     * [34]Computer Science 2013 Free Sample Issues
+     * [35]Cloud Computing Collection
+     * [36]Submit a Special Issue Proposal
+     * [37]To our Authors: newsletter
+     * [38]Keyword Tag Cloud
+     * [39]La Tex Class file
+     * [40]Wiley Job Network
+     * [41]Computer Science Impact Factor News
+     * [42]Jobs
+
+   Research Article
+   You have full text access to this OnlineOpen article
+
+Decoding billions of integers per second through vectorization
+
+    1. D. Lemire^1,*,
+    2. L. Boytsov^2
+
+   Article first published online: 28 MAY 2013
+
+   DOI: 10.1002/spe.2203
+
+   Copyright © 2013 John Wiley & Sons, Ltd.
+
+   Issue
+   Cover image for Vol. 43 Issue 10
+
+Software: Practice and Experience
+
+   [43]Early View (Online Version of Record published before inclusion in
+   an issue)
+
+   Additional Information
+
+How to Cite
+
+   Lemire, D. and Boytsov, L. (2013), Decoding billions of integers per
+   second through vectorization. Softw: Pract. Exper..
+   doi: 10.1002/spe.2203
+
+Author Information
+
+    1. ^1
+       LICEF Research Center, TELUQ, Montreal, QC, Canada
+    2. ^2
+       Carnegie Mellon University, Pittsburgh, PA, USA
+
+   ^* Correspondence to: D. Lemire, LICEF Research Center, TELUQ,
+   Université du Québec, 5800 Saint-Denis, Montreal (Quebec) H2S 3L5
+   Canada.
+   E-mail: [44]lemire@gmail.com
+
+Publication History
+
+    1. Article first published online: 28 MAY 2013
+    2. Manuscript Accepted: 20 APR 2013
+    3. Manuscript Revised: 18 APR 2013
+    4. Manuscript Received: 17 SEP 2012
+
+SEARCH
+
+   Search Scope [In this issue.....]
+   Search String ____________________ Go
+
+     * [45]Advanced >
+     * [46]Saved Searches >
+
+SEARCH BY CITATION
+
+   Volume: ____________________
+   Issue: ____________________
+   Page: ____________________
+   Go
+
+ARTICLE TOOLS
+
+     * [47]Get PDF (1899K)
+     * [48]Save to My Profile
+     * [49]E-mail Link to this Article
+     * [50]Export Citation for this Article
+     * [51]Get Citation Alerts
+     * [52]Request Permissions
+
+     * Abstract
+     * [53]Article
+     * [54]References
+     * [55]Cited By
+
+   [56]View Full Article (HTML) [57]Get PDF (1899K)
+
+Keywords:
+
+     * performance;
+     * measurement;
+     * index compression;
+     * vector processing
+
+SUMMARY
+
+   In many important applications--such as search engines and relational
+   database systems--data are stored in the form of arrays of integers.
+   Encoding and, most importantly, decoding of these arrays consumes
+   considerable CPU time. Therefore, substantial effort has been made to
+   reduce costs associated with compression and decompression. In
+   particular, researchers have exploited the superscalar nature of modern
+   processors and single-instruction, multiple-data (SIMD) instructions.
+   Nevertheless, we introduce a novel vectorized scheme called SIMD-BP128^
+   STAR that improves over previously proposed vectorized approaches. It
+   is nearly twice as fast as the previously fastest schemes on desktop
+   processors (varint-G8IU and PFOR). At the same time, SIMD-BP128^ STAR
+   saves up to 2 bits/int. For even better compression, we propose another
+   new vectorized scheme (SIMD-FastPFOR) that has a compression ratio
+   within 10% of a state-of-the-art scheme (Simple-8b) while being two
+   times faster during decoding. Copyright © 2013 John Wiley & Sons, Ltd.
+   [58]View Full Article (HTML) [59]Get PDF (1899K)
+
+More content like this
+
+   Find more content:
+     * [60]like this article
+
+   Find more content written by:
+     * [61]D. Lemire
+     * [62]L. Boytsov
+     * [63]All Authors
+
+   [footer-wol-logo.png]
+     * [64]Publications
+     * [65]Browse by Subject
+     * [66]Resources
+
+     * [67]About Us
+     * [68]Help
+     * [69]Contact Us
+     * [70]Agents
+     * [71]Advertisers
+     * [72]Media
+     * [73]Privacy
+     * [74]Cookies
+     * [75]Terms & Conditions
+     * [76]Site Map
+
+   Copyright © 1999-2013 John Wiley & Sons, Inc. All Rights Reserved.
+     * [77]About Wiley
+     * [78]Wiley.com
+     * [79]Wiley Job Network
+     * [80]Wiley
+
+References
+
+   Visible links
+   1. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/abstract#content
+   2. http://onlinelibrary.wiley.com/
+   3. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/abstract
+   4. http://onlinelibrary.wiley.com/user/forgottenpassword
+   5. http://onlinelibrary.wiley.com/user-registration
+   6. http://onlinelibrary.wiley.com/login-options
+   7. http://onlinelibrary.wiley.com/
+   8. http://onlinelibrary.wiley.com/subject/code/000038
+   9. http://onlinelibrary.wiley.com/subject/code/CS50/titles
+  10. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X
+  11. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/earlyview
+  12. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/abstract
+  13. http://onlinelibrary.wiley.com/getEmailAlert?id=10.1002%2F%28ISSN%291097-024X&originUrl=%2Fdoi%2F10.1002%2Fspe.2203%2Fabstract
+  14. http://onlinelibrary.wiley.com/rss/journal/10.1002/(ISSN)1097-024X
+  15. http://onlinelibrary.wiley.com/saveTitle?id=10.1002%2F%28ISSN%291097-024X&type=JOURNAL&originUrl=%2Fdoi%2F10.1002%2Fspe.2203%2Fabstract
+  16. http://onlinelibrary.wiley.com/doi/10.1002/spe.v43.1/issuetoc
+  17. http://onlinelibrary.wiley.com/recommend/to/librarian/doi/10.1002/(ISSN)1097-024X
+  18. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X
+  19. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/currentissue
+  20. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/issues
+  21. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/earlyview
+  22. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/MostAccessed.html
+  23. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/MostCited.html
+  24. http://ordering.onlinelibrary.wiley.com/subs.asp?ref=1097-024X&doi=10.1002/(ISSN)1097-024X
+  25. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/FundedAccess.html
+  26. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/ForAuthors.html
+  27. http://mc.manuscriptcentral.com/spe
+  28. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/ProductInformation.html
+  29. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/EditorialBoard.html
+  30. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/Permissions.html
+  31. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/Advertise.html
+  32. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/Contact.html
+  33. http://onlinelibrary.wiley.com/subject/code/000038/homepage/computer_science.htm
+  34. http://onlinelibrary.wiley.com/subject/code/000038/homepage/free_sample_issues.htm
+  35. http://onlinelibrary.wiley.com/subject/code/000038/homepage/cloud_computing_collection.htm
+  36. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/submit_a_special_issue_proposal.htm
+  37. http://media.wiley.com/assets/7013/46/TOA_W_S_2012.pdf
+  38. http://eu.wiley.com/WileyCDA/Section/id-420739.html
+  39. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/la_tex_class_file.htm
+  40. http://www.wileyjobnetwork.com/
+  41. http://onlinelibrary.wiley.com/subject/code/000038/homepage/computer_science_impact_factor_news.htm
+  42. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/homepage/Jobs.html
+  43. http://onlinelibrary.wiley.com/journal/10.1002/(ISSN)1097-024X/earlyview
+  44. mailto:lemire@gmail.com
+  45. http://onlinelibrary.wiley.com/advanced/search
+  46. http://onlinelibrary.wiley.com/myprofile/displaySavedSearches
+  47. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/pdf
+  48. http://onlinelibrary.wiley.com/saveContent?doi=10.1002%2Fspe.2203&originUrl=%2Fdoi%2F10.1002%2Fspe.2203%2Fabstract
+  49. http://onlinelibrary.wiley.com/emailArticleLink?doi=10.1002/spe.2203&issueDoi=
+  50. http://onlinelibrary.wiley.com/documentcitationdownload?publicationDoi=10.1002/(ISSN)1097-024X&doi=10.1002/spe.2203&type=journal
+  51. http://onlinelibrary.wiley.com/getCitationAlert?id=10.1002%2Fspe.2203&originUrl=%2Fdoi%2F10.1002%2Fspe.2203%2Fabstract
+  52. JavaScript:RightslinkPopUp('https://s100.copyright.com/AppDispatchServlet?publisherName=Wiley&publication=SPE&title=Decoding%20billions%20of%20integers%20per%20second%20through%20vectorization&publicationDate=28%20MAY%202013&author=D.%20Lemire%2CL.%20Boytsov&startPage=n%2Fa&endPage=n%2Fa&copyright=Copyright%20%C2%A9%202013%20John%20Wiley%20%2526%20Sons%2C%20Ltd.&contentID=10.1002%2Fspe.2203&orderSource=Wileyonline&orderBeanReset=true')
+  53. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/full
+  54. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/references
+  55. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/citedby
+  56. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/full
+  57. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/pdf
+  58. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/full
+  59. http://onlinelibrary.wiley.com/doi/10.1002/spe.2203/pdf
+  60. http://onlinelibrary.wiley.com/advanced/search/results?articleDoi=10.1002/spe.2203&scope=allContent&start=1&resultsPerPage=20
+  61. http://onlinelibrary.wiley.com/advanced/search/results?searchRowCriteria[0].queryString="D.%20Lemire"&searchRowCriteria[0].fieldName=author&start=1&resultsPerPage=20
+  62. http://onlinelibrary.wiley.com/advanced/search/results?searchRowCriteria[0].queryString="L.%20Boytsov"&searchRowCriteria[0].fieldName=author&start=1&resultsPerPage=20
+  63. http://onlinelibrary.wiley.com/advanced/search/results?searchRowCriteria[0].queryString="D.%20Lemire"%20"L.%20Boytsov"&searchRowCriteria[0].fieldName=author&start=1&resultsPerPage=20
+  64. http://onlinelibrary.wiley.com/browse/publications
+  65. http://onlinelibrary.wiley.com/browse/subjects
+  66. http://olabout.wiley.com/WileyCDA/Section/id-390229.html
+  67. http://olabout.wiley.com/WileyCDA/Section/id-390001.html
+  68. http://onlinelibrary.custhelp.com/
+  69. http://olabout.wiley.com/WileyCDA/Section/id-397203.html
+  70. http://olabout.wiley.com/WileyCDA/Section/id-390243.html
+  71. http://olabout.wiley.com/WileyCDA/Section/id-390236.html
+  72. http://olabout.wiley.com/WileyCDA/Section/id-390242.html
+  73. http://onlinelibrary.wiley.com/privacyPolicy
+  74. http://olabout.wiley.com/WileyCDA/Section/id-813473.html
+  75. http://onlinelibrary.wiley.com/termsAndConditions
+  76. http://onlinelibrary.wiley.com/siteMap
+  77. http://olabout.wiley.com/WileyCDA/Section/id-390001.html
+  78. http://www.wiley.com/
+  79. http://www.wileyjobnetwork.com/
+  80. http://onlinelibrary.wiley.com/
+
+   Hidden links:
+  81. http://ad.uk.doubleclick.net/jump/wly.compu.sci_000038/softw-pract-experience_SPE;tile=1;pos=1;sz=728x90;doi=101002spe2203;ord=1216542073?
+  82. http://ad.uk.doubleclick.net/jump/wly.compu.sci_000038/softw-pract-experience_SPE;tile=2;pos=1;sz=160x600,160x320,160x160,120x600;%20doi=101002spe2203;ord=1216542073?
+  83. http://ad.uk.doubleclick.net/jump/wly.compu.sci_000038/softw-pract-experience_SPE;tile=4;sz=160X700;%20doi=101002spe2203;ord=1216542073?
+  84. http://www.omniture.com/

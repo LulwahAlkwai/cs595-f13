@@ -1,0 +1,1171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width" />
+<title>FOCS 2013 Accepted Papers (with pdf files) | My Brain is Open</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://kintali.wordpress.com/xmlrpc.php" />
+<!--[if lt IE 9]>
+<script src="http://s2.wp.com/wp-content/themes/pub/misty-lake/js/html5.js?m=1354305289g" type="text/javascript"></script>
+<![endif]-->
+
+<link rel="alternate" type="application/rss+xml" title="My Brain is Open &raquo; Feed" href="http://kintali.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="My Brain is Open &raquo; Comments Feed" href="http://kintali.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="My Brain is Open &raquo; FOCS 2013 Accepted Papers (with pdf&nbsp;files) Comments Feed" href="http://kintali.wordpress.com/2013/06/30/focs-2013/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s0.wp.com/_static/??-eJxlzsEOAiEMBNAfEhvFaDwYv4VlK7IUSmwJ8e8lXnaTPU7yJjPQq/FcFItCbqZSC7EIUEwosKBW55P5p6MXOcCGT8RhLXAIOHNT82Ii7tDjHFB3pc1GZRmaXPyA6JdwZ/WNebyobYIcBzHkEq72mR8ne7vby/lq7fIDFmhKig==' type='text/css' media='all' />
+<!--[if IE 8]>
+<link rel='stylesheet' id='mistylake-ie-css'  href='http://s2.wp.com/wp-content/themes/pub/misty-lake/ie.css?m=1377549400g&#038;ver=3.7-alpha-25157' type='text/css' media='all' />
+<![endif]-->
+<link rel='stylesheet' id='mistylake-open-sans-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic&#038;subset=latin,latin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='mistylake-droid-serif-css'  href='http://fonts.googleapis.com/css?family=Droid+Serif%3A400%2C400italic%2C400bold&#038;subset=latin&#038;ver=3.7-alpha-25157' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-6' href='http://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1335386953g' type='text/css' media='print' />
+<link rel='stylesheet' id='all-css-6' href='http://s2.wp.com/_static/??-eJxljNEKwjAMRX/IGMVZ2IP4LXXt2kialiZjvz8FBwOf7nk45+LaYKpiUQzLAo2XRKLYqhrM7KmjZt9J0r7nSfWEh8pyLFExD5i4vjz/CYfblUKKpvhRfgypUwAvAZjUvu2zPK4358bLfRzcewPk6jpP' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyFkNkOAjEIRX9IbFzixAfjt8yCDbWUWlon49c7rtE4iU8QONwLmD5CKyFjyMapYWnIIxTFVNuxBhQOMnc6MyNHofWlQ72B7lQwDc/wFwAmm+qMc6bwgj9co2hmVB0tJ7rfVhTOhP1fzGGOdXuEhEqXH9XGi4Xoi6WgZswtdlIyHMR76U1PncU8dVQrzLevJIx+mDqGy1v2oXIfe6TQFI7w3H7Pu8Wqqpabalut3RW0v5Hv'></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://kintali.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://kintali.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='TrueShelf&nbsp;1.0' href='http://kintali.wordpress.com/2013/06/06/trueshelf-1-0/' />
+<link rel='next' title='Book Review of &#8220;Boosting : Foundations and&nbsp;Algorithms&#8221;' href='http://kintali.wordpress.com/2013/07/10/book-review-boosting/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://kintali.wordpress.com/2013/06/30/focs-2013/' />
+<link rel='shortlink' href='http://wp.me/piT7D-fb' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fkintali.wordpress.com%2F2013%2F06%2F30%2Ffocs-2013%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fkintali.wordpress.com%2F2013%2F06%2F30%2Ffocs-2013%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="FOCS 2013 Accepted Papers (with pdf files)" />
+<meta property="og:url" content="http://kintali.wordpress.com/2013/06/30/focs-2013/" />
+<meta property="og:description" content="FOCS 2013 accepted paper list is here. Following are PDF pointers to online versions. OSNAP: Faster numerical linear algebra algorithms via sparser subspace embeddings, by Jelani Nelson and Huy L. ..." />
+<meta property="og:site_name" content="My Brain is Open" />
+<meta property="og:image" content="http://0.gravatar.com/blavatar/e1376dd220aa259d0efd0638d7619231?s=200" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://1.gravatar.com/blavatar/b26a8c2d6a037a383ccaa4e7f347c63d?s=16" sizes="16x16" />
+<link rel="icon" type="image/x-icon" href="http://1.gravatar.com/blavatar/b26a8c2d6a037a383ccaa4e7f347c63d?s=16" sizes="16x16" />
+<link rel="apple-touch-icon-precomposed" href="http://0.gravatar.com/blavatar/e1376dd220aa259d0efd0638d7619231?s=114" />
+<link rel='openid.server' href='http://kintali.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://kintali.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://kintali.wordpress.com/osd.xml" title="My Brain is Open" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+		<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="My Brain is Open" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Computational Complexity, Polyhedral Combinatorics, Algorithms and Graph Theory" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://kintali.wordpress.com/feed/;icon-uri=http://1.gravatar.com/blavatar/b26a8c2d6a037a383ccaa4e7f347c63d?s=16" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="FOCS 2013 Accepted Papers (with pdf&nbsp;files) | My Brain is Open on WordPress.com" />
+<meta name="description" content="FOCS 2013 accepted paper list is here. Following are PDF pointers to online versions. OSNAP: Faster numerical linear algebra algorithms via sparser subspace embeddings, by Jelani Nelson and Huy L. Nguyen [arXiv] A Polynomial Time Algorithm for Lossy Population Recovery, by Ankur Moitra and Michael Saks [arXiv] Direct products in communication complexity, by Mark Braverman, Anup Rao, Omri Weinstein&hellip;" />
+<style id="syntaxhighlighteranchor"></style>
+</head>
+
+<body class="single single-post postid-941 single-format-standard mp6 highlander-enabled highlander-light">
+<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+		<div class="site-branding">
+			<h1 class="site-title"><a href="http://kintali.wordpress.com/" title="My Brain is Open" rel="home">My Brain is Open</a></h1>
+			<h2 class="site-description">Computational Complexity, Polyhedral Combinatorics, Algorithms and Graph Theory</h2>
+		</div>
+
+		<nav id="nav" role="navigation" class="site-navigation main-navigation">
+			<h1 class="assistive-text">Menu</h1>
+			<div class="assistive-text skip-link"><a href="#content" title="Skip to content">Skip to content</a></div>
+
+			<div class="menu"><ul><li ><a href="http://kintali.wordpress.com/" title="Home">Home</a></li><li class="page_item page-item-2"><a href="http://kintali.wordpress.com/about/">About</a></li></ul></div>
+		</nav><!-- .site-navigation .main-navigation -->
+	</header><!-- #masthead .site-header -->
+
+	<div id="main" class="site-main">
+
+					<div class="header-image">
+				<a href="http://kintali.wordpress.com/" title="My Brain is Open" rel="home">
+					<img src="http://s2.wp.com/wp-content/themes/pub/misty-lake/images/header.jpg?m=1356071014g" width="1015" height="276" alt="" />
+				</a>
+			</div>
+		
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+		
+			
+<article id="post-941" class="post-941 post type-post status-publish format-standard hentry category-conferences">
+	<header class="entry-header">
+		<div class="entry-meta">
+			<a href="http://kintali.wordpress.com/2013/06/30/focs-2013/" title="2:29 PM" rel="bookmark"><time class="entry-date" datetime="2013-06-30T14:29:12+00:00" pubdate>June 30, 2013</time></a><span class="byline"> by <span class="author vcard"><a class="url fn n" href="http://kintali.wordpress.com/author/kintali/" title="View all posts by kintali" rel="author">kintali</a></span></span>		</div><!-- .entry-meta -->
+		<h1 class="entry-title">FOCS 2013 Accepted Papers (with pdf&nbsp;files)</h1>	</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<p>FOCS 2013 accepted paper list is <strong><a href="http://windowsontheory.org/2013/06/27/focs-2013-accepted-papers/" target="_blank">here</a></strong>. Following are PDF pointers to online versions.</p>
+<ul>
+<li>OSNAP: Faster numerical linear algebra algorithms via sparser subspace embeddings, by Jelani Nelson and Huy L. Nguyen [<strong><a href="http://arxiv.org/abs/1211.1002" target="_blank">arXiv</a></strong>]</li>
+</ul>
+<ul>
+<li>A Polynomial Time Algorithm for Lossy Population Recovery, by Ankur Moitra and Michael Saks [<a href="http://arxiv.org/abs/1302.1515" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Direct products in communication complexity, by Mark Braverman, Anup Rao, Omri Weinstein and Amir Yehudayoff [<a href="http://eccc.hpi-web.de/report/2012/143/" target="_blank"><strong>ECCC</strong></a>]</li>
+</ul>
+<ul>
+<li>Arithmetic circuits: A chasm at depth three, by Ankit Gupta, Pritish Kamath, Neeraj Kayal and Ramprasad Saptharishi [<a href="http://eccc.hpi-web.de/report/2013/026/" target="_blank"><strong>ECCC</strong></a>]</li>
+</ul>
+<ul>
+<li>Approximating Minimum-Cost k-Node Connected Subgraphs via Independence-Free Graphs, by Joseph Cheriyan and Laszlo A. Vegh [<a href="http://arxiv.org/abs/1212.3981" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>The Parity of Directed Hamiltonian Cycles, by Andreas Björklund and Thore Husfeldt [<a href="http://arxiv.org/abs/1301.7250" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Approximating Minimization Diagrams and Generalized Proximity Search, by Sariel Har-Peled and Nirman Kumar [<a href="http://arxiv.org/abs/1304.0393" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Quantum 3-SAT is QMA<sub>1</sub>-complete, by David Gosset and Daniel Nagaj [<a href="http://arxiv.org/abs/1302.0290" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>The Price of Stability for Undirected Broadcast Network Design with Fair Cost Allocation is Constant, by Vittorio Bilò, Michele Flammini and Luca Moscardelli</li>
+</ul>
+<ul>
+<li>Strong LTCs with inverse poly-log rate and constant soundness, by Michael Viderman [<a href="http://eccc.hpi-web.de/report/2013/022/" target="_blank"><strong>ECCC</strong></a>]</li>
+</ul>
+<ul>
+<li>All-or-nothing multicommodity flow problem with bounded fractionality in planar graphs, by Ken-ichi Kawarabayashi and Yusuke Kobayashi</li>
+</ul>
+<ul>
+<li>Approximating Bin Packing within O(log OPT * log log OPT) bins, by Thomas Rothvoss [<a href="http://arxiv.org/abs/1301.4010" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Common information and unique disjointness, by Gábor Braun, and Sebastian Pokutta [<a href="http://eccc.hpi-web.de/report/2013/056/" target="_blank"><strong>ECCC</strong></a>]</li>
+</ul>
+<ul>
+<li>Chasing the k-colorability threshold, by Amin Coja-Oghlan and Dan Vilenchik [<a href="http://arxiv.org/abs/1304.1063" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Three-player entangled XOR games are NP-hard to approximate, by Thomas Vidick [<a href="http://arxiv.org/abs/1302.1242" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Fully Dynamic $(1+\epsilon)$-Approximate Matchings, by Manoj Gupta, and Richard Peng [<a href="http://arxiv.org/abs/1304.0378" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Estimating the distance from testable affine-invariant properties, by Hamed Hatami and Shachar Lovett [<a href="http://arxiv.org/abs/1306.0649" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Approximation algorithms for Euler genus and related problems, by Chandra Chekuri and Anastasios Sidiropoulos [<a href="http://arxiv.org/abs/1304.2416" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Polar Codes: Speed of polarization and polynomial gap to capacity, by Venkatesan Guruswami and Patrick Xia [<a href="http://arxiv.org/abs/1304.4321" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>An Optimal Randomized Online Algorithm for Reordering Buffer Management, by Noa Avigdor-Elgrabli and Yuval Rabani [<a href="http://arxiv.org/abs/1303.3386" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Approximation Schemes for Maximum Weight Independent Set of Rectangles, by Anna Adamaszek and Andreas Wiese</li>
+</ul>
+<ul>
+<li>Playing Non-linear Games with Linear Oracles, by Dan Garber, and Elad Hazan</li>
+</ul>
+<ul>
+<li>Faster Canonical Forms for Strongly Regular Graphs, by Laszlo Babai, Xi Chen, Xiaorui Sun, Shang-Hua Teng and John Wilmes</li>
+</ul>
+<ul>
+<li>Constant rate PCPs for circuit-SAT with sublinear query complexity, by Eli Ben-Sasson, Yohay Kaplan, Swastik Kopparty, Or Meir and Henning Stichtenoth [<a href="http://www.math.rutgers.edu/~sk1233/AG-PCP.pdf" target="_blank"><strong>pdf</strong></a>] [<a href="http://video.ias.edu/csdm/1213/0318-EliBen-Sasson" target="_blank"><strong>video</strong></a>]</li>
+</ul>
+<ul>
+<li>How to Approximate A Set Without Knowing Its Size In Advance, by Rasmus Pagh, Gil Segev and Udi Wieder [<a href="http://arxiv.org/abs/1304.1188" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Quasipolynomial-time Identity Testing of Non-Commutative and Read-Once Oblivious Algebraic Branching Programs, by Michael A. Forbes, and Amir Shpilka [<a href="http://arxiv.org/abs/1209.2408" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>On Kinetic Delaunay Triangulations: A Near Quadratic Bound for Unit Speed Motions, by Natan Rubin</li>
+</ul>
+<ul>
+<li>Element Distinctness, Frequency Moments, and Sliding Windows, by Paul Beame, Raphael Clifford and Widad Machmouchi</li>
+</ul>
+<ul>
+<li>Spatial mixing and approximation algorithms for graphs with bounded connective constant, by Alistair Sinclair, Piyush Srivastava and Yitong Yin</li>
+</ul>
+<ul>
+<li>Algebraic Algorithms for b-Matching, Shortest Undirected Paths, and f-Factors, by Harold N. Gabow and Piotr Sankowski [<a href="http://arxiv.org/abs/1304.6740" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>A linear time approximation scheme for Euclidean TSP, by Yair Bartal and Lee-Ad Gottlieb</li>
+</ul>
+<ul>
+<li>Interactive Coding, Revisited, by Kai-Min Chung, Rafael Pass and Sidharth Telang [<a href="http://eprint.iacr.org/2013/160" target="_blank"><strong>ePrint</strong></a>]</li>
+</ul>
+<ul>
+<li>Improved approximation for 3-dimensional matching via bounded pathwidth local search, by Marek Cygan [<a href="http://arxiv.org/abs/1304.1424" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Strong Backdoors to Bounded Treewidth SAT, by Serge Gaspers and Stefan Szeider [<a href="http://arxiv.org/abs/1204.6233" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Explicit Subspace Designs, by Venkatesan Guruswami and Swastik Kopparty [<a href="http://eccc.hpi-web.de/report/2013/060/" target="_blank"><strong>ECCC</strong></a>]</li>
+</ul>
+<ul>
+<li>Dynamic Approximate All-Pairs Shortest Paths: Breaking the $ \tilde O(mn) $ Barrier and Derandomization, Monika Henzinger, Sebastian Krinninger and Danupon Nanongkai</li>
+</ul>
+<ul>
+<li>On Randomized Memoryless Algorithms for the Weighted $k$-server Problem, by Ashish Chiplunkar and Sundar Vishwanathan [<a href="http://arxiv.org/abs/1301.0123" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Constant-Round Concurrent Zero Knowledge From P-Certificates, by Kai-Min Chung, Huijia Lin and Rafael Pass [<a href="http://eprint.iacr.org/2012/563" target="_blank"><strong>ePrint</strong></a>]</li>
+</ul>
+<ul>
+<li>Learning Sums of Independent Integer Random Variables, by Constantinos Daskalakis, Ilias Diakonikolas, Ryan O’Donnell, Rocco A. Servedio and Li-Yang Tan [<a href="http://www.cs.cmu.edu/~odonnell/papers/learning-siirvs.pdf" target="_blank"><strong>pdf</strong></a>]</li>
+</ul>
+<ul>
+<li>Independent Set, Induced Matching, and Pricing: Connections and Tight (Subexponential Time) Approximation Hardnesses, by Parinya Chalermsook, Bundit Laekhanukit, and Danupon Nanongkai</li>
+</ul>
+<ul>
+<li>Online Node-weighted Steiner Forest and Extensions via Disk Paintings, by Mohammad Taghi Hajiaghayi, Vahid Liaghat, and Debmalya Panigrahi</li>
+</ul>
+<ul>
+<li>Klee’s Measure Problem Made Easy, by Timothy M. Chan</li>
+</ul>
+<ul>
+<li>Extractors for a Constant Number of Independent Sources with Polylogarithmic Min-Entropy, by Xin Li [<a href="http://eccc.hpi-web.de/report/2013/025/" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Navigating Central Path with Electrical Flows: from Flows to Matchings, and Back, by Aleksander Madry</li>
+</ul>
+<ul>
+<li>Fourier sparsity, spectral norm, and the Log-rank conjecture, Hing Yin Tsang, Chung Hoi Wong, Ning Xie and Shengyu Zhang [<a href="http://arxiv.org/abs/1304.1245" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Layered Separators for Queue Layouts, 3D Graph Drawing and Nonrepetitive Coloring, by Vida Dujmović, Pat Morin, and David R. Wood</li>
+</ul>
+<ul>
+<li>Average Case Lower Bounds for Monotone Switching Networks, by Yuval Filmus, Toniann Pitassi, Robert Robere and Stephen A. Cook [<a href="http://eccc.hpi-web.de/report/2013/054/" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>PCPs via low-degree long code and hardness for constrained hypergraph coloring, by Irit Dinur and Venkatesan Guruswami</li>
+</ul>
+<ul>
+<li>The planar directed k-Vertex-Disjoint Paths problem is fixed-parameter tractable, by Marek Cygan, Dániel Marx, Marcin Pilipczuk and Michał Pilipczuk [<a href="http://arxiv.org/abs/1304.4207" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>On the communication complexity of sparse set disjointness and exists-equal problems, Mert Sağlam and Gábor Tardos [<a href="http://arxiv.org/abs/1304.1217" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>The Simple Economics of Approximately Optimal Auctions, Saeed Alaei, Hu Fu, Nima Haghpanah and Jason Hartline [<a href="http://arxiv.org/abs/1206.3541" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Efficient Accelerated Coordinate Descent Methods and Faster Algorithms for Solving Linear Systems, by Yin Tat Lee and Aaron Sidford [<strong><a href="http://arxiv.org/abs/1305.1922" target="_blank">arXiv</a></strong>]</li>
+</ul>
+<ul>
+<li>Nearly Maximum Flows in Nearly Linear Time, by Jonah Sherman [<a href="http://arxiv.org/abs/1304.2077" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Improved Average-Case Lower Bounds for DeMorgan Formula Size, by Ilan Komargodski, Ran Raz and Avishay Tal [<a href="http://eccc.hpi-web.de/report/2013/058/" target="_blank"><strong>ECCC</strong></a>]</li>
+</ul>
+<ul>
+<li>Optimal Bounds on Approximation of Submodular and XOS Functions by Juntas, by Vitaly Feldman and Jan Vondrak</li>
+</ul>
+<ul>
+<li>Towards a better approximation for Sparsest Cut?, by Sanjeev Arora, Rong Ge and Ali Kemal Sinop [<a href="http://arxiv.org/abs/1304.3365" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Bandits with Knapsacks, Ashwinkumar Badanidiyuru, Robert Kleinberg and Aleksandrs Slivkins [<a href="http://arxiv.org/abs/1305.2545" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Approximate Constraint Satisfaction Requires Large LP Relaxations, by Siu On Chan, James R. Lee, Prasad Raghavendra and David Steurer</li>
+</ul>
+<ul>
+<li>Simple Tabulation, Fast Expanders, Double Tabulation, and High Independence, by Mikkel Thorup</li>
+</ul>
+<ul>
+<li>An LMP O(log n)-Approximation Algorithm for Node Weighted Prize Collecting Steiner Tree, by Jochen Koenemann, Sina Sadeghian and Laura Sanità [<a href="http://arxiv.org/abs/1302.2127" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>A Satisfiability Algorithm for Sparse Depth Two Threshold Circuits, by Russell Impagliazzo, Ramamohan Paturi, and Stefan Schneider [<a href="http://arxiv.org/abs/1212.4548" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>The Complexity of Approximating Vertex Expansion, by Anand Louis, Prasad Raghavendra and Santosh Vempala [<a href="http://arxiv.org/abs/1304.3139" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Tight Bounds for Set Disjointness in the Message Passing Model, by Mark Braverman, Faith Ellen, Rotem Oshman, Toni Pitassi and Vinod Vaikuntanathan [<a href="http://arxiv.org/abs/1305.4696" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Interlacing Families I: Bipartite Ramanujan Graphs of All Degrees, Adam Marcus, Daniel A. Spielman and Nikhil Srivastava [<a href="http://arxiv.org/abs/1304.4132" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Candidate Indistinguishability Obfuscation and Functional Encryption for all circuits, by Sanjam Garg, Craig Gentry, Shai Halevi, Mariana Raykova, Amit Sahai, and Brent Waters</li>
+</ul>
+<ul>
+<li>Iterative Row Sampling, by Mu Li, Gary L. Miller, and Richard Peng [<a href="http://arxiv.org/abs/1211.2713" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Simultaneous Resettability from One-Way Functions, Kai-Min Chung, Rafail Ostrovsky, Rafael Pass and Ivan Visconti</li>
+</ul>
+<ul>
+<li>Rational Protocol Design: Cryptography Against Incentive-driven Adversaries, by Juan Garay , Jonathan Katz, Ueli Maurer, Bjoern Tackmann and Vassilis Zikas</li>
+</ul>
+<ul>
+<li>Non-positive curvature, and the planar embedding conjecture, by Anastasios Sidiropoulos [<a href="http://arxiv.org/abs/1304.7512" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Local Privacy and Statistical Minimax Rates, by John C. Duchi, Michael I. Jordan, and Martin J. Wainwright [<a href="http://arxiv.org/abs/1302.3203" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>The Moser-Tardos Framework with Partial Resampling, by David G. Harris and Aravind Srinivasan</li>
+</ul>
+<ul>
+<li>On Clustering Induced Voronoi Diagrams, Danny Z. Chen, Ziyun Huang, Yangwei Liu, and Jinhui Xu</li>
+</ul>
+<ul>
+<li>A forward-backward single-source shortest paths algorithm, by David Wilson and Uri Zwick</li>
+</ul>
+<ul>
+<li>An O(c^k) n 5-Approximation Algorithm for Treewidth, by Hans L. Bodlaender, Paal G. Drange, Markus S. Dregi, Fedor V. Fomin, Daniel Lokshtanov and Michal Pulipczuk [<a href="http://arxiv.org/abs/1304.6321" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Understanding Incentives: Mechanism Design becomes Algorithm Design, by Yang Cai, Constantinos Daskalakis, and S. Matthew Weinberg [<a href="http://arxiv.org/abs/1305.4002" target="_blank"><strong>arXiv</strong></a>]</li>
+</ul>
+<ul>
+<li>Nondeterministic Direct Product Reductions and the Success Probability of SAT Solvers, by Andrew Drucker</li>
+</ul>
+<ul>
+<li>From Unprovability to Environementally Friendly Protocols, by Ran Canetti, Huijia Lin and Rafael Pass</li>
+</ul>
+<ul>
+<li>Adaptive Seeding in Social Networks, by Lior Seeman and Yaron Singer</li>
+</ul>
+<ul>
+<li>Coupled-Worlds Privacy: Exploiting Adversarial Uncertainty in Statistical Data Privacy, by Raef Bassily, Adam Groce, Jonathan Katz and Adam Smith</li>
+</ul>
+<p>&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8212;&#8211;</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/?share=email" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/#print" title="Click to print"><span>Print</span></a></li><li class="share-digg"><a rel="nofollow" class="share-digg sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/?share=digg" title="Click to Digg this post"><span>Digg</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/?share=facebook" title="Share on Facebook" id="sharing-facebook-941"><span>Facebook</span></a></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-941"><span>Twitter</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/?share=reddit" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://kintali.wordpress.com/2013/06/30/focs-2013/?share=stumbleupon" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-4501797-941-524fc6d1b21d7' data-src='//widgets.wp.com/likes/#blog_id=4501797&amp;post_id=941&amp;origin=kintali.wordpress.com&amp;obj_id=4501797-941-524fc6d1b21d7' data-name='like-post-frame-4501797-941-524fc6d1b21d7'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta">
+		This entry was posted in <a href="http://kintali.wordpress.com/category/conferences/" title="View all posts in conferences" rel="category tag">conferences</a>. Bookmark the <a href="http://kintali.wordpress.com/2013/06/30/focs-2013/" title="Permalink to FOCS 2013 Accepted Papers (with pdf&nbsp;files)" rel="bookmark">permalink</a>.
+			</footer><!-- .entry-meta -->
+</article><!-- #post-## -->
+
+				<nav role="navigation" id="nav-below" class="site-navigation post-navigation">
+		<h1 class="assistive-text">Post navigation</h1>
+
+	
+		<div class="nav-previous"><a href="http://kintali.wordpress.com/2013/06/06/trueshelf-1-0/" rel="prev"><span class="meta-nav">&larr;</span> TrueShelf&nbsp;1.0</a></div>		<div class="nav-next"><a href="http://kintali.wordpress.com/2013/07/10/book-review-boosting/" rel="next">Book Review of &#8220;Boosting : Foundations and&nbsp;Algorithms&#8221; <span class="meta-nav">&rarr;</span></a></div>
+	
+	</nav><!-- #nav-below -->
+	
+			
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			2 thoughts on &ldquo;<span>FOCS 2013 Accepted Papers (with pdf&nbsp;files)</span>&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-1275">
+		<article id="comment-1275" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://i1.wp.com/graph.facebook.com/100004083461572/picture?q=type%3Dlarge%26_md5%3Ddbdc7338c93c5c385750cd7691d43b3e&resize=50%2C50' class='avatar avatar-50' height='50' width='50' />					<cite class="fn"><a href='http://www.facebook.com/sariel.harpeled' rel='external nofollow' class='url'>Sariel Har-Peled</a></cite> |
+					<span class="comment-meta commentmetadata">
+						<a href="http://kintali.wordpress.com/2013/06/30/focs-2013/#comment-1275"><time pubdate datetime="2013-07-06T13:54:18+00:00">
+						July 6, 2013 at 1:54 PM						</time></a>
+											</span><!-- .comment-meta .commentmetadata -->
+
+				</div><!-- .comment-author .vcard -->
+							</footer>
+
+			<div class="comment-content"><p>Thanks for collecting the links and post this! &#8212; Sariel</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2013/06/30/focs-2013/?replytocom=1275#respond' onclick='return addComment.moveForm("comment-1275", "1275", "respond", "941")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-2 highlander-comment" id="li-comment-1276">
+		<article id="comment-1276" class="comment">
+			<footer>
+				<div class="comment-author vcard">
+					<img alt='' src='http://i1.wp.com/graph.facebook.com/100004083461572/picture?q=type%3Dlarge&resize=50%2C50' class='avatar avatar-50' height='50' width='50' />					<cite class="fn"><a href='http://www.facebook.com/sariel.harpeled' rel='external nofollow' class='url'>Sariel Har-Peled</a></cite> |
+					<span class="comment-meta commentmetadata">
+						<a href="http://kintali.wordpress.com/2013/06/30/focs-2013/#comment-1276"><time pubdate datetime="2013-07-06T13:55:04+00:00">
+						July 6, 2013 at 1:55 PM						</time></a>
+											</span><!-- .comment-meta .commentmetadata -->
+
+				</div><!-- .comment-author .vcard -->
+							</footer>
+
+			<div class="comment-content"><p>Thanks for collecting the links and posting this! Me English small.</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2013/06/30/focs-2013/?replytocom=1276#respond' onclick='return addComment.moveForm("comment-1276", "1276", "respond", "941")'>Reply</a>			</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol><!-- .commentlist -->
+
+		
+	
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/06/30/focs-2013/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://kintali.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="f0c9b3a8cd" /><input type="hidden" name="_wp_http_referer" value="/2013/06/30/focs-2013/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=1" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1289230950g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='941' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1380959953" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="d56a29c4f4" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="44"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>			
+</div><!-- #comments .comments-area -->
+
+		
+		</div><!-- #content .site-content -->
+	</div><!-- #primary .content-area -->
+
+
+<div id="secondary" class="updateable widget-area" role="complementary">
+		<aside id="search-3" class="widget widget_search"><h1 class="widget-title">Search this Blog</h1>	<form method="get" id="searchform" action="http://kintali.wordpress.com/" role="search">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" value="" id="s" placeholder="Search &hellip;" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+</aside><aside id="image-2" class="widget widget_image"><h1 class="widget-title">Shiva Kintali</h1><div style="overflow:hidden;"><a href="http://www.cs.princeton.edu/~kintali/"><img src="http://www.cs.princeton.edu/~kintali/images/11shiva.JPG" alt="Shiva Kintali" class="alignnone" width="185" height="185" /></a></div>
+</aside><aside id="image-3" class="widget widget_image"><h1 class="widget-title">TrueShelf</h1><div style="overflow:hidden;"><a href="http://www.trueshelf.com"><img src="http://www.cs.princeton.edu/~kintali/images/trueshelf.png" class="alignnone" width="185" height="185" /></a></div>
+</aside><aside id="image-4" class="widget widget_image"><h1 class="widget-title">Algorithms App (for iPad)</h1><div style="overflow:hidden;"><a href="http://itunes.apple.com/us/app/algorithms-app/id539362701"><img src="http://www.cs.princeton.edu/~kintali/images/algorithmsapp.png" class="alignnone" width="185" height="185" /></a></div>
+</aside><aside id="image-5" class="widget widget_image"><h1 class="widget-title">Algorithms App (for Mac)</h1><div style="overflow:hidden;"><a href="https://itunes.apple.com/us/app/algorithms-app/id577563313"><img src="http://www.cs.princeton.edu/~kintali/images/algorithmsapp.png" class="alignnone" width="300" height="300" /></a></div>
+</aside><aside id="top-posts-2" class="widget widget_top-posts"><h1 class="widget-title">Top Posts</h1><ul><li><a href="http://kintali.wordpress.com/2009/07/03/held-karp-relaxation/" class="bump-view" data-bump-view="tp">Held Karp Relaxation</a></li>
+<li><a href="http://kintali.wordpress.com/2010/06/06/np-intersect-conp/" class="bump-view" data-bump-view="tp">NP intersect coNP</a></li>
+<li><a href="http://kintali.wordpress.com/2012/09/24/how-to-teach-algorithms/" class="bump-view" data-bump-view="tp">How to teach Algorithms ?</a></li>
+<li><a href="http://kintali.wordpress.com/2009/06/23/graceful-tree-conjecture/" class="bump-view" data-bump-view="tp">Graceful Tree Conjecture</a></li>
+<li><a href="http://kintali.wordpress.com/2013/08/19/polytopix/" class="bump-view" data-bump-view="tp">PolyTopix</a></li>
+</ul></aside>		<aside id="recent-posts-2" class="widget widget_recent_entries">		<h1 class="widget-title">Recent Posts</h1>		<ul>
+					<li>
+				<a href="https://kintali.wordpress.com/2013/08/19/polytopix/" title="PolyTopix">PolyTopix</a>
+						</li>
+					<li>
+				<a href="https://kintali.wordpress.com/2013/08/08/forbidden-directed-minors-and-kelly-width/" title="Forbidden Directed Minors and&nbsp;Kelly-width">Forbidden Directed Minors and&nbsp;Kelly-width</a>
+						</li>
+					<li>
+				<a href="https://kintali.wordpress.com/2013/07/10/book-review-boosting/" title="Book Review of &#8220;Boosting : Foundations and&nbsp;Algorithms&#8221;">Book Review of &#8220;Boosting : Foundations and&nbsp;Algorithms&#8221;</a>
+						</li>
+					<li>
+				<a href="https://kintali.wordpress.com/2013/06/30/focs-2013/" title="FOCS 2013 Accepted Papers (with pdf&nbsp;files)">FOCS 2013 Accepted Papers (with pdf&nbsp;files)</a>
+						</li>
+					<li>
+				<a href="https://kintali.wordpress.com/2013/06/06/trueshelf-1-0/" title="TrueShelf&nbsp;1.0">TrueShelf&nbsp;1.0</a>
+						</li>
+				</ul>
+		</aside><aside id="categories-2" class="widget widget_categories"><h1 class="widget-title">Categories</h1>		<ul>
+	<li class="cat-item cat-item-3378"><a href="http://kintali.wordpress.com/category/algorithms/" title="View all posts filed under algorithms">algorithms</a> (15)
+</li>
+	<li class="cat-item cat-item-178"><a href="http://kintali.wordpress.com/category/books/" title="View all posts filed under books">books</a> (5)
+</li>
+	<li class="cat-item cat-item-312353"><a href="http://kintali.wordpress.com/category/combinatorics/" title="View all posts filed under combinatorics">combinatorics</a> (7)
+</li>
+	<li class="cat-item cat-item-3494"><a href="http://kintali.wordpress.com/category/complexity/" title="View all posts filed under complexity">complexity</a> (19)
+</li>
+	<li class="cat-item cat-item-9204"><a href="http://kintali.wordpress.com/category/conferences/" title="View all posts filed under conferences">conferences</a> (12)
+</li>
+	<li class="cat-item cat-item-751916"><a href="http://kintali.wordpress.com/category/graph-theory/" title="View all posts filed under graph theory">graph theory</a> (18)
+</li>
+	<li class="cat-item cat-item-40978"><a href="http://kintali.wordpress.com/category/machine-learning/" title="View all posts filed under machine learning">machine learning</a> (2)
+</li>
+	<li class="cat-item cat-item-3582"><a href="http://kintali.wordpress.com/category/mathematics/" title="View all posts filed under mathematics">mathematics</a> (8)
+</li>
+	<li class="cat-item cat-item-20829284"><a href="http://kintali.wordpress.com/category/polyhedral-combinatorics/" title="View all posts filed under polyhedral combinatorics">polyhedral combinatorics</a> (6)
+</li>
+		</ul>
+</aside><aside id="archives-3" class="widget widget_archive"><h1 class="widget-title">Archives</h1>		<ul>
+			<li><a href='http://kintali.wordpress.com/2013/08/' title='August 2013'>August 2013</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2013/07/' title='July 2013'>July 2013</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2013/06/' title='June 2013'>June 2013</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2013/05/' title='May 2013'>May 2013</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2013/03/' title='March 2013'>March 2013</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2013/02/' title='February 2013'>February 2013</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2012/10/' title='October 2012'>October 2012</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2012/09/' title='September 2012'>September 2012</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2012/08/' title='August 2012'>August 2012</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2012/07/' title='July 2012'>July 2012</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2012/06/' title='June 2012'>June 2012</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2012/05/' title='May 2012'>May 2012</a>&nbsp;(3)</li>
+	<li><a href='http://kintali.wordpress.com/2012/03/' title='March 2012'>March 2012</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2012/02/' title='February 2012'>February 2012</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2011/09/' title='September 2011'>September 2011</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2011/07/' title='July 2011'>July 2011</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2011/06/' title='June 2011'>June 2011</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2011/03/' title='March 2011'>March 2011</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2011/02/' title='February 2011'>February 2011</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2010/11/' title='November 2010'>November 2010</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2010/09/' title='September 2010'>September 2010</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2010/07/' title='July 2010'>July 2010</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2010/06/' title='June 2010'>June 2010</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2010/02/' title='February 2010'>February 2010</a>&nbsp;(2)</li>
+	<li><a href='http://kintali.wordpress.com/2010/01/' title='January 2010'>January 2010</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2009/11/' title='November 2009'>November 2009</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2009/10/' title='October 2009'>October 2009</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2009/09/' title='September 2009'>September 2009</a>&nbsp;(3)</li>
+	<li><a href='http://kintali.wordpress.com/2009/08/' title='August 2009'>August 2009</a>&nbsp;(1)</li>
+	<li><a href='http://kintali.wordpress.com/2009/07/' title='July 2009'>July 2009</a>&nbsp;(3)</li>
+	<li><a href='http://kintali.wordpress.com/2009/06/' title='June 2009'>June 2009</a>&nbsp;(3)</li>
+	<li><a href='http://kintali.wordpress.com/2009/05/' title='May 2009'>May 2009</a>&nbsp;(2)</li>
+		</ul>
+</aside><aside id="twitter-2" class="widget widget_twitter"><h1 class="widget-title"><a href='http://twitter.com/kintali'>Kintali&#8217;s Twitter</a></h1><ul class='tweets'>
+			<li>
+				TrueShelf now shows trending questions and trending tags. <a href="http://www.trueshelf.com"> trueshelf.com</a> 				<a href="http://twitter.com/kintali/statuses/386180985773375488" class="timesince">14&nbsp;hours&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				One more article about <a href="http://trueshelf.com"> trueshelf.com</a> and recent tweets. <a href="http://www.universitypressclub.com/archive/2013/10/princeton-tweets/"> universitypressclub.com/archive/2013/1…</a> 				<a href="http://twitter.com/kintali/statuses/385953984424722433" class="timesince">1&nbsp;day&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				The Twin Prime Hero. <a href="http://nautil.us/issue/5/fame/the-twin-prime-hero"> nautil.us/issue/5/fame/t…</a> 				<a href="http://twitter.com/kintali/statuses/385865511634239488" class="timesince">1&nbsp;day&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				New graph theory exercises on TrueShelf. <a href="http://trueshelf.com/all/scope:all/sort:age-desc/page:1/"> trueshelf.com/all/scope:all/…</a> 				<a href="http://twitter.com/kintali/statuses/385862984041766912" class="timesince">1&nbsp;day&nbsp;ago</a>
+			</li>
+
+			
+			<li>
+				Dirichlet approximation. <a href="http://trueshelf.com/exercise/374/dirichlet-approximation"> trueshelf.com/exercise/374/d…</a> 				<a href="http://twitter.com/kintali/statuses/384448279611990017" class="timesince">5&nbsp;days&nbsp;ago</a>
+			</li>
+
+			</ul></aside></div><!-- #secondary .widget-area -->
+
+	</div><!-- #main .site-main -->
+
+	<footer id="colophon" class="site-footer" role="contentinfo">
+		<div class="site-info">
+						<a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.
+			<span class="sep"> | </span>
+			<a href="http://theme.wordpress.com/themes/misty-lake/" title="Learn more about this theme">The Misty Lake Theme</a>. 		</div><!-- .site-info -->
+	</footer><!-- #colophon .site-footer -->
+</div><!-- #page .hfeed .site -->
+
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom" height="1" width="1" alt="" /></div></noscript>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-645abc2266d4bf9005f3d99c737bdd4c">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/kintali.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/kintali.wordpress.com\/wp-login.php?action=logout&_wpnonce=36ee73df56","homeURL":"http:\/\/kintali.wordpress.com\/","postID":"941","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1379020420j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;My Brain is Open&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 55 other followers</p>
+			<p><input type="email" name="email" style="width: 95%; padding: 1px 2px" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="4501797"/>
+			<input type="hidden" name="source" value="http://kintali.wordpress.com/2013/06/30/focs-2013/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="312cd5c309" /><input type="hidden" name="_wp_http_referer" value="/2013/06/30/focs-2013/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/kintali.wordpress.com\/2013\/06\/30\/focs-2013\/":941}	</script>
+	<div id="sharing_email" style="display: none;">
+		<form action="/2013/06/30/focs-2013/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+			
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" />
+			<img style="float: right; display: none" class="loading" src="http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif?m=1315610318g" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						var requests = [];
+						jQuery( '.jetpack-likes-widget-wrapper' ).each( function( i ) {
+							var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+							var match = regex.exec( this.id );
+							if ( ! match || match.length != 5 )
+								return;
+
+							var info = {
+								blog_id: match[2],
+								width:   this.width
+							};
+
+							if ( 'post' == match[1] ) {
+								info.post_id = match[3];
+							} else if ( 'comment' == match[1] ) {
+								info.comment_id = match[3];
+							}
+
+							info.obj_id = match[4];
+
+							requests.push( info );
+						});
+
+						JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 10 );
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=20111117'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/themes/pub/misty-lake/js/small-menu.js,/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1373391538j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'4501797','v':'wpcom','tz':'-4','user_id':'0','post':'941','subd':'kintali'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1oOHBqWkJdYy5wL35xRnR4SVtWLmluVHQrZ3JdejZPY3Z1KzdLPS5kdmx1VSVDa1FVTTl0MWkvQk5jaVJTayYsbXVuRVIvMGQ5cVNkajlEaFZhSDdvfmI0dyV1P0MvdGVGYXNfVS5zcHFwPUNTdU1JMTNvMDBQW2tEYy9wVXVLLUtJc0ZXYkE1T0FfN1NSWCVvenx2P3lven49enFRJV1Bb3gmclpmam8ldVdITnA4eCY5T3RaTGExUkJIQzJEVkNRaVRLWW81PUVoQXBfMUtVdmpWRGxaOS9fNlhycXA9NWN+TH4lRElWMU4mJjlKP049c1pEZ0lYUy09MGZJWGolNDVOOW0yUUxZVHxMVHpFT1dBL1ArTn5BWDlTbHRbMjRlJQ=='});
+addLoadEvent(function(){linktracker_init('4501797',941);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>
+</body>
+</html>

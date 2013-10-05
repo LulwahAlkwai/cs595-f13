@@ -1,0 +1,809 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd"><html
+xmlns="http://www.w3.org/1999/xhtml"><head><meta
+http-equiv="Content-Type" content="text/html; charset=UTF-8" /><title>The Fundamentals of Bash Scripting | Nettuts+</title><link
+rel='stylesheet' href='http://net.tutsplus.com/wp-content/plugins/wp-minify/min/?f=wp-content/plugins/wp-post-ratings/wp-post-ratings.css,wp-content/themes/tuts/style.css,wp-content/themes/tuts/images/theme/nettuts/theme.css,wp-content/themes/tuts/css/jobs-widget.css,wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelementplayer.css,wp-content/plugins/organize-series/orgSeries.css&amp;m=1380850884' type='text/css' media='screen' /><link
+href="http://envato.s3.amazonaws.com/widget/widget.css" rel="stylesheet" type="text/css" media="screen" /><link
+rel="shortcut icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/favicon.ico" /><link
+rel="apple-touch-icon" href="http://net.tutsplus.com/wp-content/themes/tuts/images/theme/nettuts/apple-touch-icon.png" /> <script>Env = window.Env || {};
+  Env.facebookUrl = 'http://facebook.com/nettutsplus';
+  Env.mailChimpUrl = 'http://net.tutsplus.com/wp-content/themes/tuts/functions/mc/mail-chimp.php';
+  Env.trackingCode = 'UA-11792865-8';
+  Env.boxUrl = 'http://net.tutsplus.com/wp-content/themes/tuts/images/global/box.gif';
+      Env.trackingFields = [
+      {id: 1, name: 'Author', value: 'Patkos Csaba'},
+      {id: 2, name: 'Category', value: 'tutorials/other'},
+      {id: 3, name: 'Publish Date', value: '2013-05'}
+    ];</script> <script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/wp-minify/min/?f=wp-content/themes/tuts/js/jquery-1.8.3.min.js,wp-content/plugins/wp-post-ratings/wp-post-ratings.js,wp-content/themes/tuts/js/jquery.ui.widget.js,wp-content/themes/tuts/js/jquery.ui.tabs.js,wp-content/themes/tuts/js/jobs.main.js,wp-content/themes/tuts/js/marketplace-url-rewriter.js,wp-content/themes/tuts/js/lazyload.js,wp-content/themes/tuts/js/google-analytics.js,wp-content/themes/tuts/js/mail-chimp.js,wp-content/themes/tuts/js/header.js,wp-includes/js/comment-reply.min.js,wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelement-and-player.min.js,wp-content/plugins/flash-player/swfobject.js&amp;m=1380850912'></script> <link
+rel='stylesheet' id='print-css'  href='http://net.tutsplus.com/wp-content/themes/tuts/css/print.css?ver=2.0' type='text/css' media='print' /><link
+rel="EditURI" type="application/rsd+xml" title="RSD" href="http://net.tutsplus.com/xmlrpc.php?rsd" /><link
+rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://net.tutsplus.com/wp-includes/wlwmanifest.xml" /><link
+rel='prev' title='Say Hello to PowerShell' href='http://net.tutsplus.com/tutorials/asp-net/say-hello-to-powershell/' /><link
+rel='next' title='Just Released: Laravel Testing Decoded' href='http://net.tutsplus.com/articles/news/just-released-laravel-testing-decoded/' /><link
+rel='shortlink' href='http://net.tutsplus.com/?p=32093' /><meta
+name="description" content="Shell scripts are widely used in the UNIX world. They're excellent for speeding up repetitive tasks and simplifying complex execution logic. They can be as" /><meta
+name="keywords" content="bash,other" /><link
+rel="canonical" href="http://net.tutsplus.com/tutorials/other/the-fundamentals-of-bash-scripting/" /><meta
+id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.3" /> <script type="text/javascript" src="http://osc.optimize.webtrends.com/628645/wt_capi.js"></script> <link
+rel="alternate" type="application/rss+xml" title="Nettuts+ RSS Feed" href="http://net.tutsplus.com/feed/" /><link
+rel="pingback" href="http://net.tutsplus.com/xmlrpc.php" /><meta
+name="google-site-verification" content="aoXTcdQJMMCGh8FUsMlj35Qw-2jK83Wpt7XnqUPB9KI" /><link
+href="https://plus.google.com/100395074731712398322" rel="publisher" /></head><body
+class="single single-post postid-32093 single-format-standard"> <script type="text/javascript">/*<![CDATA[*/if(window.WTOptimize && typeof wtObj != "undefined"){
+    WTOptimize.setup(wtObj);
+  }/*]]>*/</script>  <script type='text/javascript'>var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+(function() {
+  var gads = document.createElement('script');
+  gads.async = true;
+  gads.type = 'text/javascript';
+  var useSSL = 'https:' == document.location.protocol;
+  gads.src = (useSSL ? 'https:' : 'http:') + 
+    '//www.googletagservices.com/tag/js/gpt.js';
+  var node = document.getElementsByTagName('script')[0];
+  node.parentNode.insertBefore(gads, node);
+})();</script> <script type='text/javascript'>googletag.cmd.push(function() {
+  googletag.defineSlot('/11757429/net_leaderboard', [728, 90], 'div-gpt-ad-leaderboard').addService(googletag.pubads());
+  googletag.defineSlot('/11757429/net_sidebar_premium', [300, 250], 'div-gpt-ad-sidebar-premium').addService(googletag.pubads());
+  googletag.defineSlot('/11757429/net_featured_sidebar', [300, 250], 'div-gpt-ad-featured-sidebar').addService(googletag.pubads());
+  googletag.pubads().enableSingleRequest();
+  googletag.enableServices();
+});</script>  <script type="text/javascript">if (!plus_member_logged_in()) {
+  (function(){
+    var bsa = document.createElement('script');
+       bsa.type = 'text/javascript';
+       bsa.async = true;
+       bsa.src = '//s3.buysellads.com/ac/bsa.js';
+    (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(bsa);
+  })();
+}</script> <div
+id="fb-root"></div>  <script type="text/javascript">(function(){
+  var fb = document.createElement('script');
+  fb.type = 'text/javascript';
+  fb.async = true;
+  fb.src = document.location.protocol + '//connect.facebook.net/en_US/all.js#xfbml=1';
+  (document.getElementsByTagName('head')[0]||document.getElementsByTagName('body')[0]).appendChild(fb);
+})();</script> <div
+id="header_wrap"><div
+id="header"><a
+href="http://net.tutsplus.com" class="logo">Nettuts+</a><ul
+class="top_navigation"><li><a
+href="http://net.tutsplus.com/advertise/">Advertise</a></li><li><a
+href="http://net.tutsplus.com/about/write-for-us/">Write for Us</a></li><li><a
+href="http://net.tutsplus.com/about/">About</a></li></ul><div
+class="search_form"><form
+method="get" action="http://net.tutsplus.com/"> <input
+type="text" class="submit_input" name="s" id="s" placeholder="Search..." /> <input
+class="submit_button" type="submit" value="Search" /></form></div><div
+id="navigation"><ul
+class="navigation"><li><a
+href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><ul
+class="child-nav"><li
+class="cat-item cat-item-568"><a
+href="http://net.tutsplus.com/category/tutorials/asp-net/" title="ASP.NET programming tutorials.">ASP.NET</a></li><li
+class="cat-item cat-item-464"><a
+href="http://net.tutsplus.com/category/tutorials/cmss/" title="Tutorials that details how to work with various CMSs.">CMSs</a></li><li
+class="cat-item cat-item-547"><a
+href="http://net.tutsplus.com/category/tutorials/databases/" title="Learn how to work more efficiently with databases.">Databases</a></li><li
+class="cat-item cat-item-286"><a
+href="http://net.tutsplus.com/category/tutorials/design-tutorials/" title="Learn the ins and outs of web design.">Design</a></li><li
+class="cat-item cat-item-8"><a
+href="http://net.tutsplus.com/category/tutorials/html-css-techniques/" title="Get up to speed with HTML and CSS.">HTML &amp; CSS</a></li><li
+class="cat-item cat-item-10"><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/" title="Learn about vanilla JavaScript, and the various popular libraries that are available, like jQuery.">JavaScript &amp; AJAX</a></li><li
+class="cat-item cat-item-153"><a
+href="http://net.tutsplus.com/category/tutorials/other/" title="View all posts filed under Other">Other</a></li><li
+class="cat-item cat-item-41"><a
+href="http://net.tutsplus.com/category/tutorials/php/" title="Learn how to use PHP.">PHP</a></li><li
+class="cat-item cat-item-1285"><a
+href="http://net.tutsplus.com/category/tutorials/python-tutorials/" title="View all posts filed under Python">Python</a></li><li
+class="cat-item cat-item-124"><a
+href="http://net.tutsplus.com/category/tutorials/ruby/" title="High quality Ruby and RoR tutorials and screencasts.">Ruby</a></li><li
+class="cat-item cat-item-1650"><a
+href="http://net.tutsplus.com/category/tutorials/scala-tutorials/" title="View all posts filed under Scala">Scala</a></li><li
+class="cat-item cat-item-7"><a
+href="http://net.tutsplus.com/category/tutorials/site-builds/" title="Learn how to convert a PSD to HTML from scratch.">Site Builds</a></li><li
+class="cat-item cat-item-29"><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/" title="Details the most popular tools when building web applications.">Tools &amp; Tips</a></li><li
+class="cat-item cat-item-35"><a
+href="http://net.tutsplus.com/category/tutorials/wordpress/" title="Become a WordPress master.">Wordpress</a></li></ul></li><li><a
+href="http://net.tutsplus.com/category/articles/">Articles</a><ul
+class="child-nav"><li
+class="cat-item cat-item-1334"><a
+href="http://net.tutsplus.com/category/articles/editorials/" title="Opinion pieces on the web development arena. ">Editorials</a></li><li
+class="cat-item cat-item-128"><a
+href="http://net.tutsplus.com/category/articles/general/" title="Generic articles on web development.">General</a></li><li
+class="cat-item cat-item-127"><a
+href="http://net.tutsplus.com/category/articles/interviews/" title="Interviews with prominent developers in the web development industry.">Interviews</a></li><li
+class="cat-item cat-item-1084"><a
+href="http://net.tutsplus.com/category/articles/lectures/" title="Featured talks from web development conferences around the world.">Lectures</a></li><li
+class="cat-item cat-item-1"><a
+href="http://net.tutsplus.com/category/articles/news/" title="Recent news in the web development industry.">News</a></li><li
+class="cat-item cat-item-1251"><a
+href="http://net.tutsplus.com/category/articles/quizzes/" title="Quizzes to check your knowledge.">Quizzes</a></li><li
+class="cat-item cat-item-437"><a
+href="http://net.tutsplus.com/category/articles/reviews/" title="Reviews of new web apps, frameworks, and books.">Reviews</a></li><li
+class="cat-item cat-item-1379"><a
+href="http://net.tutsplus.com/category/articles/roundups-articles/" title="Compilations of tools, frameworks and other assorted stuff.">Roundups</a></li><li
+class="cat-item cat-item-23"><a
+href="http://net.tutsplus.com/category/articles/web-roundups/" title="Compilations of popular articles from around the web.">Web Roundups</a></li></ul></li><li><a
+href="http://net.tutsplus.com/tag/tips/">Tips</a><ul
+class="child-nav"><li><a
+href="http://net.tutsplus.com/category/tutorials/ruby/?tag=tips" title="Ruby">Ruby</a></li><li><a
+href="http://net.tutsplus.com/category/articles/?tag=tips" title="Articles">Articles</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=tips" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=tips" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/other/?tag=tips" title="Other">Other</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/php/?tag=tips" title="PHP">PHP</a></li></ul></li><li><a
+href="http://net.tutsplus.com/sessions/">Sessions</a></li><li><a
+href="http://net.tutsplus.com/resources/">Resources</a></li><li><a
+href="http://net.tutsplus.com/tag/videos/">Videos</a><ul
+class="child-nav"><li><a
+href="http://net.tutsplus.com/category/tutorials/python-tutorials/?tag=videos" title="Python">Python</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/tools-and-tips/?tag=videos" title="Tools &amp; Tips">Tools &amp; Tips</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/javascript-ajax/?tag=videos" title="JavaScript &amp; AJAX">JavaScript &amp; AJAX</a></li><li><a
+href="http://net.tutsplus.com/category/tutorials/php/?tag=videos" title="PHP">PHP</a></li></ul></li><li
+id="nav-premium-link"> <a
+href="http://tutsplus.com/courses/?q=true&filter_topic=35" target="_blank">Tuts+ Premium</a></li></ul></div><div
+class="site_switcher"><ul><li
+class="link-hub"><a
+href="http://hub.tutsplus.com/">Tuts+ Hub <span>The Latest Tuts+ Updates</span></a></li><li
+class="link-psd"><a
+href="http://psd.tutsplus.com/">Psdtuts+ <span>Adobe Photoshop</span></a></li><li
+class="link-net"><a
+href="http://net.tutsplus.com/">Nettuts+ <span>Web Development</span></a></li><li
+class="link-vector"><a
+href="http://vector.tutsplus.com/">Vectortuts+ <span>Illustrator and Vector</span></a></li><li
+class="link-audio"><a
+href="http://audio.tutsplus.com/">Audiotuts+ <span>Audio and Production</span></a></li><li
+class="link-ae"><a
+href="http://ae.tutsplus.com/">Aetuts+ <span>Adobe After Effects</span></a></li><li
+class="link-cg"><a
+href="http://cg.tutsplus.com/">Cgtuts+ <span>Computer Graphics</span></a></li><li
+class="link-photo"><a
+href="http://photo.tutsplus.com/">Phototuts+ <span>Photography</span></a></li><li
+class="link-mobile"><a
+href="http://mobile.tutsplus.com/">Mobiletuts+ <span>Mobile Development</span></a></li><li
+class="link-webdesign"><a
+href="http://webdesign.tutsplus.com/">Webdesigntuts+ <span>Web Design</span></a></li><li
+class="link-wp"><a
+href="http://wp.tutsplus.com/">Wptuts+ <span>WordPress</span></a></li><li
+class="link-mac"><a
+href="http://mac.tutsplus.com/">Mactuts+ <span>Mac &amp; OS X</span></a></li><li
+class="link-gamedev"><a
+href="http://gamedev.tutsplus.com/">Gamedevtuts+ <span>Game Development</span></a></li><li
+class="link-craft"><a
+href="http://craft.tutsplus.com/">Crafttuts+ <span>Craft &amp; Handmade</span></a></li></ul> <a
+href="javascript:void(0);" class="site_switcher_button">Toggle</a></div><div
+class="header-marketplace-ad ad-themeforest"><a
+href="http://themeforest.net?WT.mc_id=TutsHeader&ref=NetPremium" rel="external"><span>&nbsp;</span>Website Templates</a></div></div></div><div
+id="content_wrap"><div
+id="content" class="clearfix"><div
+class="page_wrap"><div
+id="leader-board-wrap" style="display: none"><div
+class="leader_board"> <a
+href="http://net.tutsplus.com/advertise/" class="LB_advert">Advertise Here</a><div
+class="lb_inner"><div
+id='div-gpt-ad-leaderboard' style='width:728px; height:90px;'> <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-leaderboard'); });</script> </div></div></div></div> <script type="text/javascript">if (!plus_member_logged_in()) {
+    $('#leader-board-wrap').show()
+  }</script> <div
+id="page" class="single_post"><div
+class="page_inner"><div
+class="post post_inner" id="post-32093"><div
+class="tut_top"><div
+class="post_image"> <a
+href="http://net.tutsplus.com/tutorials/other/the-fundamentals-of-bash-scripting/"><img
+src="http://cdn.tutsplus.com/net.tutsplus.com/uploads/2013/05/bash-script-fundamentals-200.jpg" alt="The Fundamentals of Bash Scripting" width="200" height="200" /></a></div><div
+class="preview"><div
+class="post_taxonomy"><ul><li><a
+href="http://net.tutsplus.com/category/tutorials/">Tutorials</a><span>\</span></li><li><a
+href="http://net.tutsplus.com/category/tutorials/other/">Other</a></li></ul></div><h1 class="post_title"> The Fundamentals of Bash Scripting</h1><div
+class="post_meta"> <a
+href="http://net.tutsplus.com/author/csaba-patkos/" title="Posts by Patkos Csaba" rel="author">Patkos Csaba</a> on May 31st 2013 with <a
+href="http://net.tutsplus.com/tutorials/other/the-fundamentals-of-bash-scripting/#comments" title="Comment on The Fundamentals of Bash Scripting"><span
+class="dsq-postid" rel="32093 http://net.tutsplus.com/?p=32093">22 comments</span></a></div><div
+class="article_social_media"><div
+class="tweetmeme_btn"> <a
+href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="nettuts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> </div><div
+class="facebook_send_btn left"> <g:plusone size="medium" count="false"></g:plusone></div><div
+class="facebook_btn"> <fb:like layout="button_count" width="90" height="21"></fb:like></div></div></div></div></div><div
+class="tut_bottom"><div
+class="tutorial_details"><h5>Tutorial Details</h5><ul><li><li><strong>Difficulty:</strong> Beginner</li><li><strong>Completion Time:</strong> 1 Hour</li></li></ul></div><div
+class="hublink"><a
+href="http://hub.tutsplus.com/tutorials/the-fundamentals-of-bash-scripting--net-32093" class="hublink_button">View post on <span>Tuts+ Beta</span></a><strong>Tuts+ Beta</strong> is an optimized, mobile-friendly and easy-to-read version of the Tuts+ network.</div></div><div
+class="post post_inner_article"> <script type="text/javascript">/*<![CDATA[*///
+(function($) { $(function() { WpPostRatings({context: $('#post-32093'), post_id: 32093, rpc: 'http://net.tutsplus.com/wp-admin/admin-ajax.php', base_url: 'http://net.tutsplus.com', allow_voting: true}).init() })})(jQuery)
+//]]&gt;/*]]>*/</script><p>Shell scripts are widely used in the UNIX world. They&#8217;re excellent for speeding up repetitive tasks and simplifying complex execution logic. They can be as simple as a set of commands, or they can orchestrate complex tasks. In this tutorial, we&#8217;ll learn more about the Bash scripting language by writing an example script step-by-step.</p><p><span
+id="more-32093"></span></p><hr
+/><h2>The Fizz-Buzz Problem</h2><p>One of the best way to learn about a new language is by example. Let&#8217;s start with one.</p><p>The Fizz-Buzz problem is a very simple one. It became famous after a programmer, named Imran, used it as an interview test. It turns out that 90-99.5% of the candidates for a programming job are simply unable to write the simplest program. Imran took this simple Fizz-Buzz game and asked the candidates to solve it. Many followed Imran&#8217;s example, and, today, it is one of the most asked frequently asked questions for a programming job. If you&#8217;re hiring, and need a way to filter through 90% of the candidates, this is a great problem to present.</p><p>Here are the rules:</p><ul><li>Take and print the numbers between 1 and 100.</li><li>When a number is divisible by 3, print &#8220;Fizz&#8221; instead of the number.</li><li>When it is divisible by 5, print &#8220;Buzz&#8221; instead.</li><li>When it is divisible both by 3 and 5, print &#8220;FizzBuzz&#8221;.</li></ul><p>That&#8217;s all there is to it. I&#8217;m sure most of you can already visualize the two or three <code>if</code> statements to solve this. Let&#8217;s work through this using the Bash scripting language.</p><hr
+/><h2>Shebang</h2><p>A shebang refers to the combination of the hash and exclamation mark characters: <code>&num;!</code>. The program loader will look for a shebang on the first line of the script, and use the interpreter specified in it. A shebang consists of the following syntax: <code>&num;!interpreter [parameters]</code>. The interpreter is the program that is used to interpret our language. For bash scripting, that would be <code>/bin/bash</code>. For example, if you want to create a script in PHP and run it in console, you&#8217;d probably want to use <code>/usr/bin/php</code> (or the path to the PHP executable on your machine) as the interpreter.</p><pre class="brush: bash; title: ; notranslate" title="">#!/usr/bin/php
+&lt;?php
+phpinfo();</pre><p>Yes, that will actually work! Isn&#8217;t it simple? Just be sure to make your file executable first. Once you do, this script will output your PHP information as you would expect.</p><div
+class="tip-shortcode"><p><strong>Tip:</strong> To ensure that your script will work on as many systems as possible, you can use <code>/bin/env</code> in the shebang. As such, instead of <code>/bin/bash</code>, you could use <code>/bin/env bash</code>, which will work on systems where the bash executable is not within <code>/bin</code>.</p></div><hr
+/><h2>Outputting Text</h2><p>The output of a script will be equal to, as you might expect, whatever is outputted from your command. However, if we explicitly want to write something to the screen, we can use <code>echo</code>.</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+echo &quot;Hello World&quot;</pre><p>Running this script will print &#8220;Hello World&#8221; in the console.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba ~ $ ./helloWorld.sh
+Hello World
+csaba@csaba ~ $
+</pre><hr
+/><h2>Introducing Variables</h2><p>As with any programming language, when writing shell scripts, you can use variables.</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+message=&quot;Hello World&quot;
+echo $message</pre><p>This code produces exactly the same &#8220;Hello World&#8221; message. As you can see, to assign a value to a variable, simply write its name &#8211; exclude the dollar sign in front of it. Also, be careful with spaces; there can&#8217;t be any spaces between the variable name and the equal sign. So <code>message="Hello"</code> instead of <code>message = 'Hello'</code></p><p>When you wish to use a variable, you can take the value from it just as we did in the <code>echo</code> command. Prepending a <code>$</code> to the variable&#8217;s name will return its value.</p><div
+class="tip-shortcode"><p><strong>Tip:</strong> Semicolons aren&#8217;t required in bash scripting. You can use them in most cases, but be careful: they may have a different meaning than what you expect.</p></div><hr
+/><h2>Printing the Numbers Between 1 and 100</h2><p>Continuing on with our demo project, we need to cycle through all numbers between 1 and 100. For this, we&#8217;ll need to use a <code>for</code> loop.</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+for number in {1..100}; do
+    echo $number
+done</pre><p>There are several new things worth noting in this example &#8211; which by the way, prints all the numbers from 1 to 100, one number at a time.</p><ul><li>The <code>for</code> syntax in Bash is: <code>for VARIABLE in RANGE; do COMMAND done</code>.</li><li>The curly braces will transform <code>1..100</code> into a range in our example. They&#8217;re used  in other contexts as well, which we&#8217;ll review shortly.</li><li><code>do</code> and <code>for</code> are actually two separate commands. If you want to place two commands on a single line, you&#8217;ll need to separate them somehow. One way is to use semicolon. Alternatively you could write the code without a semicolon by moving <code>do</code> to the following line.</li></ul><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+for number in {1..100}
+do
+    echo $number
+done</pre><hr
+/><h2>The First Decision</h2><p>Now that we know how to print all the numbers between 1 and 100, it&#8217;s time to make our first decision.</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+for number in {1..100}; do
+    if [ $((number%3)) -eq 0 ]; then
+        echo &quot;Fizz&quot;
+    else
+        echo $number
+    fi
+done</pre><p>This example will output &#8220;Fizz&#8221; for numbers divisible by 3. Again, we have to deal with a bit of new syntax. Let&#8217;s take them one by one.</p><ul><li><code>if..then..else..fi</code> &#8211; this is the classic syntax for an <code>if</code> statement in Bash. Of course, the <code>else</code> part is optional &#8211; but required for our logic in this case.</li><li><code>if COMMAND-RETURN-VALUE; then...</code> &#8211; <code>if</code> will execute if the return value of the command is zero. Yes, logic in Bash is zero based, meaning that commands that execute successfully exit with a code of 0. If something goes wrong, on the other hand, a positive integer will be returned. To simplify things: anything other than 0 is considered <code>false</code>.</li><li>Mathematical expressions in Bash are specified by double parentheses. <code>$((number%3))</code> will return the remaining value of dividing the variable, <code>number</code>, by 3. Please note that we did not use <code>$</code> inside the parenthesis &#8211; only in front of them.</li></ul><p>You might be wondering where the command is in our example. Isn&#8217;t there just a bracket with an odd expression in it? Well, it turns out that <code>[</code> is actually an executable command. To play around with this, try out the following commands in your console.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba ~ $ which [
+/usr/bin/[
+csaba@csaba ~ $ [ 0 -eq 1 ]
+csaba@csaba ~ $ echo $?
+1
+csaba@csaba ~ $ [ 0 -eq 0 ]
+csaba@csaba ~ $ echo $?
+0
+</pre><blockquote><p><strong>Tip:</strong> A command's exit value is always returned into the variable, <code>?</code> (question mark). It is overwritten after each new command's execution.</p></blockquote><hr
+/><h2>Checking for Buzz</h2><p>We're doing well so far. We have "Fizz"; now let's do the "Buzz" part.</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+for number in {1..100}; do
+    if [ $((number%3)) -eq 0 ]; then
+        echo &quot;Fizz&quot;
+    elif [ $((number%5)) -eq 0 ]; then
+        echo &quot;Buzz&quot;
+    else
+        echo $number
+    fi
+done</pre><p>Above, we've introduced another condition for divisibility by 5: the <code>elif</code> statement. This, of course, translates to <em>else if</em>, and will be executed if the command following it returns <code>true</code> (or <code>0</code>). As you can observe, the conditional statements within <code>[]</code> are usually evaluated with the help of parameters, such as <code>-eq</code>, which stands for "equals."</p><blockquote><p>For the syntax, <code>arg1 OP arg2</code>, <code>OP</code> is one of <code>-eq</code>, <code>-ne</code>, <code>-lt</code>, <code>-le</code>, <code>-gt</code>, or <code>-ge</code>. These arithmetic binary operators return <code>true</code> if <code>arg1</code> is equal to, not equal to, less than, less than or equal to, greater than, or greater than or equal to <code>arg2</code>, respectively.<code>arg1</code> and <code>arg2</code> may be positive or negative integers. - <em>Bash Manual</em></p></blockquote><p>When you're attempting to compare strings, you may use the well-known <code>==</code> sign, or even a single equal sign will do. <code>!=</code> returns <code>true</code> when the strings are different.</p><hr
+/><h2>But the Code isn't Quite Correct</h2><p>So far, the code runs, but the logic is not correct. When the number is divisible by both 3 and 5, our logic will echo only "Fizz." Let's modify our Code to satisfy the last requirement of FizzBuzz.</p><div
+class="tutorial_image"><script type="text/javascript">google_ad_client = "pub-9093712935949486";
+/* 300x250 nettuts middle tutsads */
+google_ad_slot = "1775681443";
+google_ad_width = 300;
+google_ad_height = 250;</script> <script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js"></script></div><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+for number in {1..100}; do
+    output=&quot;&quot;
+    if [ $((number%3)) -eq 0 ]; then
+        output=&quot;Fizz&quot;
+    fi
+    if [ $((number%5)) -eq 0 ]; then
+        output=&quot;${output}Buzz&quot;
+    fi
+    if [ -z $output ]; then
+        echo $number
+    else
+        echo $output;
+    fi
+done</pre><p>Again, we've had to make a handful of changes. The most notable one is the introduction of a variable, and then the concatenation of "Buzz" to it, if necessary. Strings in bash are typically defined between double quotes ("). Single quotes are usable as well, but for easier concatenation, doubles are the better choice. Within these double quotes, you can reference variables: <code>some text $variable some other text</code>" will replace <code>$variable</code> with its contents. When you want to concatenate variables with strings without spaces between them, you may prefer to put the variable's name within curly braces. In most cases, like PHP, you're not required to do so, but it helps a lot when it comes to the code's readability.</p><div
+class="tip-shortcode"><p><strong>Tip:</strong> You can't compare empty strings. That would return a missing parameter.</p></div><p>Because arguments inside <code>[ ]</code> are treated as parameters, for <code>"["</code>, they must be different from an empty string. So this expression, even though logical, will output an error: <code>[ $output != "" ]</code>. That's why we've used <code>[ -z $output ]</code>, which returns <code>true</code> if the string has a length of zero.</p><hr
+/><h2>Extract Method for Logical Expression</h2><p>One way to improve our example is to extract into functions the mathematical expression from the <code>if</code> statements, like so:</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+function isDivisibleBy {
+    return $(($1%$2))
+}
+
+for number in {1..100}; do
+    output=&quot;&quot;
+    if isDivisibleBy $number 3; then
+        output=&quot;Fizz&quot;
+    fi
+    if isDivisibleBy $number 5; then
+        output=&quot;${output}Buzz&quot;
+    fi
+    if [ -z $output ]; then
+        echo $number
+    else
+        echo $output;
+    fi
+done</pre><p>We took the expressions comparing the rest with zero, and moved them into a function. Even more, we eliminated the comparison with zero, because zero means true for us. We only have to return the value from the mathematical expression - very simple!</p><div
+class="tip-shortcode"><p><strong>Tip:</strong> A function's definition must precede its call.</p></div><p>In Bash, you can define a method as <code>function func_name { commands; }</code>. Optionally, there is a second syntax for declaring functions: <code>func_name () { commands; }</code>. So, we can drop the string, <code>function</code> and add <code>"()"</code> after its name. I personally prefer this option, as exemplified in the example above. It's more explicit and resembles traditional programming languages.</p><p>You do not need to specify the parameters for a function in Bash. Sending parameters to a function is accomplished by simply enumerating over them after the function call separated by white spaces. Do not place commas or parenthesis in the function call - it won't work.</p><p>Received parameters are automatically assigned to variables by number. The first parameter goes to <code>$1</code>, the second to <code>$2</code>, and so on. The special variable, <code>$0</code> refers the current script's file name.</p><h3>Let's Play with Parameters</h3><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+function exampleFunc {
+    echo $1
+    echo $0
+    IFS=&quot;X&quot;
+    echo &quot;$@&quot;
+    echo &quot;$*&quot;
+}
+
+exampleFunc &quot;one&quot; &quot;two&quot; &quot;three&quot;</pre><p>This code will produce the following output:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba ~ $ ./parametersExamples.sh
+one
+./parametersExamples.sh
+one two thre
+oneXtwoXthre
+</pre><p>Let's analyze the source, line by line.</p><ul><li>The last line is the function call. We call it with three string parameters.</li><li>The first line after the shebang is the function definition.</li><li>The first line in the function outputs the first parameter: "one". So far so simple.</li><li>The second line outputs current script's file name. Again, very simple.</li><li>The third line changes the default character separator to the letter, "X". By default, this is " " (a space). That's how Bash knows how the parameters are separated.</li><li>The fourth line outputs a special variable, <code>$@</code>. It represents all the parameters as a single word, exactly as specified in the function call.</li><li>The final line outputs another special variable, <code>$*</code>. It represents all the parameters, taken one-by-one and concatenated with the first letter of the IFS variable. That's why the result is <code>oneXtwoXthre</code>.</li></ul><hr
+/><h2>Returning Strings From Functions</h2><p>As I noted earlier, functions in Bash can return only integers. As such, writing <code>return "a string"</code> would be invalid code. Still, in many situations, you need more than just a zero or one. We can refactor our FizzBuzz example so that, in the <code>for</code> statement, we will just make a function call.</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+function isDivisibleBy {
+    return $(($1%$2))
+}
+
+function fizzOrBuzz {
+    output=&quot;&quot;
+    if isDivisibleBy $1 3; then
+        output=&quot;Fizz&quot;
+    fi
+    if isDivisibleBy $1 5; then
+        output=&quot;${output}Buzz&quot;
+    fi
+    if [ -z $output ]; then
+        echo $1
+    else
+        echo $output;
+    fi
+}
+
+for number in {1..100}; do
+    fizzOrBuzz $number
+done</pre><p>Well, this is the first step. We just extracted all the code into a function, called <code>fizzOrBuzz</code>, and then replaced <code>$number</code> with <code>$1</code>. However, all outputting occurs in the <code>fizzOrBuzz</code> function. We want to output from the <code>for</code> loop with an <code>echo</code> statement, so that we can prepend each line with another string. We have to capture the <code>fizzOrBuzz</code> function's output.</p><pre class="brush: bash; title: ; notranslate" title="">#[...]
+for number in {1..100}; do
+    echo &quot;-`fizzOrBuzz $number`&quot;
+    fizzBuzzer=$(fizzOrBuzz $number)
+    echo &quot;-${fizzBuzzer}&quot;
+done</pre><p>We've updated our <code>for</code> loop just a bit (no other changes). We've now echoed everything twice in two different ways to exemplify the differences between the two solutions to the same problem.</p><p>The first solution to capture the output of a function or another command is to use backticks. In 99% of the cases, this will work just fine. You can simply reference a variable within backticks by their names, as we did with <code>$number</code>. The first few lines of the output should now look like:</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba ~/Personal/Programming/NetTuts/The Basics of BASH Scripting/Sources $ ./fizzBuzz.sh
+-1
+-1
+-2
+-2
+-Fizz
+-Fizz
+-4
+-4
+-Buzz
+-Buzz
+-Fizz
+-Fizz
+-7
+-7
+</pre><p>As you can see, everything is duplicated. Same output.</p><p>For the second solution, we've chosen to first assign the return value to a variable. In that assignment, we used <code>$()</code>, which, in this case, forks the script, executes the code, and returns its output.</p><hr
+/><h2>&semi;, &amp;&amp; and ||</h2><p>Do you remember that we used semicolon here and there? They can be used to execute several commands written on the same line. If you separate them by semicolons, they will just simply be executed.</p><p>A more sophisticated case is to use <code>&amp;&amp;</code> between two commands. Yes, that's a logical AND; it means that the second command will be executed only if the first one returns <code>true</code> (it exits with 0). This is helpful; we can simplify the <code>if</code> statements into these shorthands:</p><pre class="brush: bash; title: ; notranslate" title="">#!/bin/bash
+
+function isDivisibleBy {
+    return $(($1%$2))
+}
+
+function fizzOrBuzz {
+    output=&quot;&quot;
+    isDivisibleBy $1 3 &amp;&amp; output=&quot;Fizz&quot;
+    isDivisibleBy $1 5 &amp;&amp; output=&quot;${output}Buzz&quot;
+    if [ -z $output ]; then
+        echo $1
+    else
+        echo $output;
+    fi
+}
+
+for number in {1..100}; do
+    echo &quot;-`fizzOrBuzz $number`&quot;
+done</pre><p>As our function, <code>isDivisibleBy</code> returns a proper return value, we can then use <code>&amp;&amp;</code> to set the variable we want. What's after <code>&amp;&amp;</code> will be executed only if the condition is <code>true</code>. In the same manner, we can use <code>||</code> (double pipe character) as a logical OR. Here's a quick example below.</p><pre class="brush: bash; title: ; notranslate" title="">csaba@csaba ~ $ echo &quot;bubu&quot; || echo &quot;bibi&quot;
+bubu
+csaba@csaba ~ $ echo false || echo &quot;bibi&quot;
+false
+csaba@csaba ~ $</pre><hr
+/><h2>Final Thoughts</h2><p>So that does it for this tutorial! I hope that you've picked up a handful of new tips and techniques for writing your own Bash scripts. Thanks for reading, and stay tuned for more advanced articles on this subject.</p><div
+style="clear:both;padding-bottom:20px;"><fb:like layout="standard" width="450" height="30"></fb:like></div><p
+style="text-align: center;"><div
+id="bsap_1284118" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div></p></div><div
+id="tag-list"><span>Tags:</span> <a
+href="http://net.tutsplus.com/tag/bash/">bash</a></div><div
+class="post_footer" style="padding-bottom: 170px;"><div
+class="enjoyed_post"> <span
+class="thumb_icon">&nbsp;</span><h5>Enjoyed this Post?</h5><p>Subscribe to our <a
+href="http://feeds.feedburner.com/nettuts">RSS Feed</a>, <a
+href="http://twitter.com/nettuts">Follow us on Twitter</a> or simply recommend us to friends and colleagues!</p><div
+class="article_social_media"><div
+class="tweetmeme_btn"> <a
+href="http://twitter.com/share" class="twitter-share-button" data-count="none" data-via="nettuts">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script> </div><div
+class="facebook_send_btn left"> <g:plusone size="medium" count="false"></g:plusone></div><div
+class="facebook_btn"> <fb:like layout="button_count" width="100" height="21"></fb:like></div></div></div><div
+class="the_author"> <img
+alt='' src='http://1.gravatar.com/avatar/dfa06b20297d7fddd2fa5c4a1d4990dd?s=40&amp;d=http%3A%2F%2Ftutsplus.s3.amazonaws.com%2Fgeneral%2Favatar.jpg%3Fs%3D40&amp;r=PG' class='avatar avatar-40 photo' height='40' width='40' /><h5>By <a
+href="http://net.tutsplus.com/author/csaba-patkos/" title="Posts by Patkos Csaba" rel="author">Patkos Csaba</a></h5><p
+class="the_author_p">Rollover to read this author's bio or click through to see a full list of posts by this author.</p><div
+class="autor_div"> I had my first contact with computers in the mid-80s when I visited my father at work. Probably it was an important moment for what I am doing now. I am a proud member of an agile team working for a company called Syneto.Through my carrier I programmed in several programming languages and I had the chance to learn and use daily all the major Agile techniques from Scrum to Lean and from TDD to DDD.Since August 2012 I am sharing my knowledge with the Nettuts+ readers by articles, tutorials and premium courses, all about programming. <span
+class="arrow">&nbsp;</span></div></div> <br
+class="clear" /><div
+class="plus_membership"><div
+class="plus_membership_text"> <a
+href="" class="plus_icon">Plus Premium</a><div
+id="logged-in-plus-footer" style="display: none;"><div
+class="plus_content wide"><h3>Hello!</h3><p>You can grab source files and bonus tutorials from the <a
+href="http://tutsplus.com/">members area</a>.</p></div><div
+class="plus_form"></div></div><div
+id="logged-out-plus-footer" style="display: none;"><div
+class="plus_content"><h3>Premium Members</h3><p>Source Files, Bonus Tutorials &amp; More for all relevant Tuts+ sites in one subscription. <a
+href="http://tutsplus.com/amember/signup.php">Join Now</a></p></div><div
+class="plus_form"><form
+name="login" method="post" action="http://tutsplus.com/amember/login.php?amember_redirect_url=http://net.tutsplus.com/tutorials/other/the-fundamentals-of-bash-scripting/" id="signIn"><fieldset> <input
+type="text" name="amember_login" id="username" class="input" /> <input
+type="password" name="amember_pass" id="password" class="input" /> <input
+type="submit" id="submit_plus" class="submit_plus" value="Sign In" /></fieldset></form></div></div></div><div
+class="left_corner">&nbsp;</div><div
+class="right_corner">&nbsp;</div></div> <script type="text/javascript">if (plus_member_logged_in()) {
+                  $('#logged-in-plus-footer').show()
+                } else {
+                  $('#logged-out-plus-footer').show()
+                }</script> </div><div
+class="post extra_posts single"></div><div
+class='discus-note'><strong>Note:</strong> Want to add some source code? Type &lt;pre&gt;&lt;code&gt; before it and &lt;/code&gt;&lt;/pre&gt; after it. <a
+href="http://help.disqus.com/customer/portal/articles/665057" target="_blank">Find out more</a></div><div
+class="comments"><div
+id="disqus_thread"><div
+id="dsq-content"><ul
+id="dsq-comments"><li
+class="comment even thread-even depth-1" id="dsq-comment-465753"><div
+id="dsq-comment-header-465753" class="dsq-comment-header"><cite
+id="dsq-cite-465753"> <span
+id="dsq-author-user-465753">Abderrahmane_TJ</span></cite></div><div
+id="dsq-comment-body-465753" class="dsq-comment-body"><div
+id="dsq-comment-message-465753" class="dsq-comment-message"><p>Nice job</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-465756"><div
+id="dsq-comment-header-465756" class="dsq-comment-header"><cite
+id="dsq-cite-465756"> <span
+id="dsq-author-user-465756">Maks Rafalko</span></cite></div><div
+id="dsq-comment-body-465756" class="dsq-comment-body"><div
+id="dsq-comment-message-465756" class="dsq-comment-message"><p>Thank you!</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-465761"><div
+id="dsq-comment-header-465761" class="dsq-comment-header"><cite
+id="dsq-cite-465761"> <span
+id="dsq-author-user-465761">bash_kiddie</span></cite></div><div
+id="dsq-comment-body-465761" class="dsq-comment-body"><div
+id="dsq-comment-message-465761" class="dsq-comment-message"><blockquote><p>Because arguments inside [ ] are treated as parameters, for &#8220;[", they must be different from an empty string. So this expression, even though logical, will output an error: [ $output != "" ]. That&#8217;s why we&#8217;ve used [ -z $output ], which returns true if the string has a length of zero.</p></blockquote><p>Can you elaborate on this? <code>$output</code> isn&#8217;t a string inside the &#8221; [ &#8220;? Thanks</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2 is-author" id="dsq-comment-465825"><div
+id="dsq-comment-header-465825" class="dsq-comment-header"><cite
+id="dsq-cite-465825"> <span
+id="dsq-author-user-465825">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-465825" class="dsq-comment-body"><div
+id="dsq-comment-message-465825" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>Try to forget the concept of &#8220;empty string&#8221; for a moment and think in &#8220;replace with&#8221; way. So, if we have [ $val == "something" ] and than we have val=&#8221;somethingElse&#8221; that would expand into [ "somethingElse" == "something" ] which would fail, correctly. However when you have an empty string is like you have nothing. So it would expand into [ == "something" ] which is a syntax error. Maybe you could trick it with some enforced extra quoting, but the more elegant and recommended way is to use to built-in modifiers like -z for zero-length-string or -f for file-exists and so on.</p></div></div></li></li></ul></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-465762"><div
+id="dsq-comment-header-465762" class="dsq-comment-header"><cite
+id="dsq-cite-465762"> <span
+id="dsq-author-user-465762">Geoff</span></cite></div><div
+id="dsq-comment-body-465762" class="dsq-comment-body"><div
+id="dsq-comment-message-465762" class="dsq-comment-message"><p>for n in {1..100}; do</p><p>case &#8220;$((n%3))$((n%5))&#8221; in</p><p>00) echo Fizzbuzz;;</p><p>0*) echo Fizz;;</p><p>*0) echo Buzz;;</p><p> *) echo $n ;;</p><p>esac</p><p>done</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2" id="dsq-comment-465824"><div
+id="dsq-comment-header-465824" class="dsq-comment-header"><cite
+id="dsq-cite-465824"> <span
+id="dsq-author-user-465824">joanmi</span></cite></div><div
+id="dsq-comment-body-465824" class="dsq-comment-body"><div
+id="dsq-comment-message-465824" class="dsq-comment-message"><p>You forgiven &#8216;-n&#8217; in the echo&#8230;</p></div></div></li></li><li
+class="comment even depth-2 is-author" id="dsq-comment-465826"><div
+id="dsq-comment-header-465826" class="dsq-comment-header"><cite
+id="dsq-cite-465826"> <span
+id="dsq-author-user-465826">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-465826" class="dsq-comment-body"><div
+id="dsq-comment-message-465826" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>Nice one. Clever but not beautiful. There is just too much knowledge in too few lines for that kind of solutions to be practical. However I appreciate the reply.</p></div></div></li></li><li
+class="comment odd alt depth-2" id="dsq-comment-465930"><div
+id="dsq-comment-header-465930" class="dsq-comment-header"><cite
+id="dsq-cite-465930"> <span
+id="dsq-author-user-465930">doug finke</span></cite></div><div
+id="dsq-comment-body-465930" class="dsq-comment-body"><div
+id="dsq-comment-message-465930" class="dsq-comment-message"><p>Here is a quick and dirty PowerShell version:</p><p>switch (1..100) {<br
+/> {!($_ % 3) -and !($_ % 5)} {&#8216;fizzbuzz&#8217;; continue}<br
+/> {!($_ % 3)} {&#8216;fizz&#8217;}<br
+/> {!($_ % 5)} {&#8216;buzz&#8217;}<br
+/> default {$_}<br
+/> }</p></div></div></li></li></ul></li><li
+class="comment even thread-even depth-1" id="dsq-comment-465786"><div
+id="dsq-comment-header-465786" class="dsq-comment-header"><cite
+id="dsq-cite-465786"> <span
+id="dsq-author-user-465786">organicit</span></cite></div><div
+id="dsq-comment-body-465786" class="dsq-comment-body"><div
+id="dsq-comment-message-465786" class="dsq-comment-message"><p>upvote for an envato site dedicated to DevOps/IT Pro. The reactions and usefulness for this, the powershell, and python articles proves it&#8217;s demand.</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-465792"><div
+id="dsq-comment-header-465792" class="dsq-comment-header"><cite
+id="dsq-cite-465792"> <span
+id="dsq-author-user-465792">webri</span></cite></div><div
+id="dsq-comment-body-465792" class="dsq-comment-body"><div
+id="dsq-comment-message-465792" class="dsq-comment-message"><p>Thank you for the great tutorial! Is there a reason why the last if statement is not eliminated as well in function fizzOrBuzz like so:</p><p>function fizzOrBuzz {<br
+/> output=&#8221;"<br
+/> isDivisibleBy $1 3 &amp;&amp; output=&#8221;Fizz&#8221;<br
+/> isDivisibleBy $1 5 &amp;&amp; output=&#8221;${output}Buzz&#8221;<br
+/> [ -z $output ] &amp;&amp; output=$1<br
+/> echo $output<br
+/> }</p></div></div></li><ul
+class="children"><li
+class="comment even depth-2 is-author" id="dsq-comment-465827"><div
+id="dsq-comment-header-465827" class="dsq-comment-header"><cite
+id="dsq-cite-465827"> <span
+id="dsq-author-user-465827">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-465827" class="dsq-comment-body"><div
+id="dsq-comment-message-465827" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>There is no technical reason. I just thought I leave it in because it is cleaner that way. Your suggestion would be perfect in a real application for persons used with BASH and it&#8217;s syntax.</p></div></div></li></li></ul></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-465793"><div
+id="dsq-comment-header-465793" class="dsq-comment-header"><cite
+id="dsq-cite-465793"> <span
+id="dsq-author-user-465793">Cody Lopez</span></cite></div><div
+id="dsq-comment-body-465793" class="dsq-comment-body"><div
+id="dsq-comment-message-465793" class="dsq-comment-message"><p>This is a great start, thanks.</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-465806"><div
+id="dsq-comment-header-465806" class="dsq-comment-header"><cite
+id="dsq-cite-465806"> http://www.dallton.com/ <span
+id="dsq-author-user-465806">Dallton</span></cite></div><div
+id="dsq-comment-body-465806" class="dsq-comment-body"><div
+id="dsq-comment-message-465806" class="dsq-comment-message"><p>big thanks for sharing this tutorial.</p><p><a
+href="http://www.dallton.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.dallton.com']);" rel="nofollow">http://www.dallton.com</a></p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-465807"><div
+id="dsq-comment-header-465807" class="dsq-comment-header"><cite
+id="dsq-cite-465807"> http://www.dallton.com/ <span
+id="dsq-author-user-465807">Dallton</span></cite></div><div
+id="dsq-comment-body-465807" class="dsq-comment-body"><div
+id="dsq-comment-message-465807" class="dsq-comment-message"><p>big thanks for sharing, great post!<br
+/> <a
+href="http://www.dallton.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.dallton.com']);" rel="nofollow">http://www.dallton.com</a></p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-465808"><div
+id="dsq-comment-header-465808" class="dsq-comment-header"><cite
+id="dsq-cite-465808"> <span
+id="dsq-author-user-465808">Cris</span></cite></div><div
+id="dsq-comment-body-465808" class="dsq-comment-body"><div
+id="dsq-comment-message-465808" class="dsq-comment-message"><p>Big thanks great post <a
+href="http://www.dallton.com" onclick="javascript:_gaq.push(['_trackEvent','outbound-comment','www.dallton.com']);" rel="nofollow">http://www.dallton.com</a></p></div></div></li></li><li
+class="comment odd alt thread-even depth-1" id="dsq-comment-465809"><div
+id="dsq-comment-header-465809" class="dsq-comment-header"><cite
+id="dsq-cite-465809"> <span
+id="dsq-author-user-465809">Ermand Duro</span></cite></div><div
+id="dsq-comment-body-465809" class="dsq-comment-body"><div
+id="dsq-comment-message-465809" class="dsq-comment-message"><p>Thank you :)</p></div></div></li></li><li
+class="comment even thread-odd thread-alt depth-1" id="dsq-comment-465835"><div
+id="dsq-comment-header-465835" class="dsq-comment-header"><cite
+id="dsq-cite-465835"> <span
+id="dsq-author-user-465835">ruben</span></cite></div><div
+id="dsq-comment-body-465835" class="dsq-comment-body"><div
+id="dsq-comment-message-465835" class="dsq-comment-message"><p>When you say &#8220;oneXtwoXthre&#8221;, shouldn&#8217;t it be &#8220;oneXtwoXthree&#8221;?</p></div></div></li><ul
+class="children"><li
+class="comment odd alt depth-2 is-author" id="dsq-comment-465843"><div
+id="dsq-comment-header-465843" class="dsq-comment-header"><cite
+id="dsq-cite-465843"> <span
+id="dsq-author-user-465843">Patkos Csaba</span></cite></div><div
+id="dsq-comment-body-465843" class="dsq-comment-body"><div
+id="dsq-comment-message-465843" class="dsq-comment-message"><div
+class="comment-ribbon author">Author</div><p>That is obviously a typo there. I meant three. But it can be anything considering the context.</p></div></div></li></li></ul></li><li
+class="comment even thread-even depth-1" id="dsq-comment-465849"><div
+id="dsq-comment-header-465849" class="dsq-comment-header"><cite
+id="dsq-cite-465849"> <span
+id="dsq-author-user-465849">pixelBender67</span></cite></div><div
+id="dsq-comment-body-465849" class="dsq-comment-body"><div
+id="dsq-comment-message-465849" class="dsq-comment-message"><p>Love my terminal &lt;3</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-466558"><div
+id="dsq-comment-header-466558" class="dsq-comment-header"><cite
+id="dsq-cite-466558"> <span
+id="dsq-author-user-466558">Cesar</span></cite></div><div
+id="dsq-comment-body-466558" class="dsq-comment-body"><div
+id="dsq-comment-message-466558" class="dsq-comment-message"><p>Thank you. This was very useful to me</p></div></div></li></li><li
+class="comment even thread-even depth-1" id="dsq-comment-468353"><div
+id="dsq-comment-header-468353" class="dsq-comment-header"><cite
+id="dsq-cite-468353"> <span
+id="dsq-author-user-468353">StoyanDeckoff</span></cite></div><div
+id="dsq-comment-body-468353" class="dsq-comment-body"><div
+id="dsq-comment-message-468353" class="dsq-comment-message"><p>Really nice &#8211; I would like to read some bash magic and dealing with file name with spaces, &#8221; and &#8216;. I know the basics, but when i have to pass a file name through some commands, and file name has spaces, it gets really funky sometimes :)<br
+/> Great tutorial :)</p></div></div></li></li><li
+class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-468781"><div
+id="dsq-comment-header-468781" class="dsq-comment-header"><cite
+id="dsq-cite-468781"> <span
+id="dsq-author-user-468781">james</span></cite></div><div
+id="dsq-comment-body-468781" class="dsq-comment-body"><div
+id="dsq-comment-message-468781" class="dsq-comment-message"><p>awesome intro to bash for those familiar with basics of programming. Thanks!</p></div></div></li></li></ul></div></div> <script type="text/javascript">/*<![CDATA[*//*  */
+    var disqus_url = 'http://net.tutsplus.com/tutorials/other/the-fundamentals-of-bash-scripting/';
+    var disqus_identifier = '32093 http://net.tutsplus.com/?p=32093';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'nettuts';
+    var disqus_title = "The Fundamentals of Bash Scripting";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=32093';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+    var facebookXdReceiverPath = 'http://net.tutsplus.com/wp-content/plugins/disqus-comment-system/xd_receiver.htm';
+/*  *//*]]>*/</script> <script type="text/javascript">/*  */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/net.tutsplus.com\/tutorials\/other\/the-fundamentals-of-bash-scripting\/trackback\/"    };
+/*  */</script> <script type="text/javascript">/*<![CDATA[*//*  */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+        dsq.src = 'http' + '://' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.73';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/*  *//*]]>*/</script> </div></div></div></div><div
+id="sidebar"><div
+id="social-stats"><ul><li
+class="ss-twitter"> <a
+href="http://twitter.com/nettuts" rel="nofollow external"> <span>Twitter</span> <large>88,182</large> <small>Twitter Followers</small> </a></li><li
+class="ss-facebook"> <a
+href="http://facebook.com/nettutsplus" rel="nofollow external"> <span>Facebook</span> <large>76,109</large> <small>Facebook Fans</small> </a></li><li
+class="ss-google-plus"> <a
+href="https://plus.google.com/100395074731712398322" rel="nofollow external"> <span>Google+</span> <large>21,394</large> <small>Google+ Followers</small> </a></li></ul></div><div
+id="site-updates"><ul
+class="navfor-sections"><li
+class="mail-chimp-nav"><a
+href="#mail-chimp-section"><span>&nbsp;</span>Get Email Updates</a></li><li
+class="rss-nav"><a
+href="#rss-section"><span>&nbsp;</span>Subscribe via RSS</a></li></ul><div
+id="mail-chimp-section" class="section-fornav"><div
+id="mail-chimp-response"></div><form
+id="mail-chimp-form" action="" method="get"> <input
+type="text" name="mail-chimp-email" class="mail-chimp-email" value="" placeholder="me@email.com" /> <input
+type="submit" name="mail-chimp-subscribe" value="Subscribe" id="mail-chimp-subscribe" /></form></div><div
+id="rss-section" class="section-fornav"><ul><li><a
+href="javascript:void(0);">Select a subscription type...</a><ul><li><a
+href="http://feeds.feedburner.com/nettuts">Full Post RSS</a></li><li><a
+href="http://feedproxy.google.com/nettuts-summary">Summary RSS</a></li></ul></li></ul></div></div><div
+id="ad-sidebar-premium"><div
+id='div-gpt-ad-sidebar-premium' style='width:300px; height:250px;'> <script type='text/javascript'>googletag.cmd.push(function() { googletag.display('div-gpt-ad-sidebar-premium'); });</script> </div></div><div
+id="ad-block"><div
+id="bsap_1616" class="bsarocks bsap_d754f1e9ba63a736ba8ff5ece958f7dd"></div> <a
+href="http://net.tutsplus.com/advertise/" class="end-ad-here">advertise here</a></div><div
+id="ad-tuts-premium"> <a
+href="http://tutsplus.com/">Become a Tuts+ Premium member to support this site and get access to more than <span>750</span> extra tutorials.</a></div>  <script type="text/javascript">if ( ! plus_member_logged_in()) {
+    $('#ad-block').show();
+    $('#ad-sidebar-premium').show();
+    $('#temp-ads').show();
+    $('#ad-tuts-premium').show();
+  }</script> <div
+id="tutsjobs" class="jobs"><h3 class="jobs_header"> Full-time, Part-time and Contract Jobs</h3><div
+class="jobs_body"><ul
+class="jobs_list"></ul> <a
+class="more_jobs" href="http://jobs.tutsplus.com" title="Tuts+ Job Board"> More on Tuts+ Jobs... </a></div></div><div
+id="fsjobs" class="jobs"><h3 class="jobs_header"> Freelance Jobs</h3><div
+class="jobs_body"><ul
+class="jobs_list"></ul> <a
+class="more_jobs" href="http://jobs.freelanceswitch.com" title="Freelance Job Board"> More Freelance Jobs... </a></div></div><div
+id="social-networking"><ul
+class="navfor-sections"><li
+class="facebook-nav"><a
+href="#facebook-section"><span>&nbsp;</span>Facebook</a></li><li
+class="twitter-nav"><a
+href="#twitter-section"><span>&nbsp;</span>Twitter</a></li><li
+class="google-plus-nav"><a
+href="#google-plus-section"><span>&nbsp;</span>Google+</a></li></ul><div
+id="facebook-section" class="section-fornav"></div><div
+id="twitter-section" class="section-fornav"><div><h3>Follow <a
+href="http://twitter.com/nettuts"><span>Nettuts+</a></span> and <span><a
+href="http://twitter.com/tutsplus">Tuts+</a></span> on Twitter</h3><ul><li>The latest Twitter feed isn't piping through at the moment, check back soon!<br
+/><br
+/>Sorry for the inconvenience.</li></ul></div></div><div
+id="google-plus-section" class="section-fornav"><div
+class="g-plus" data-href="https://plus.google.com/100395074731712398322" data-size="badge" data-width="388"></div></div></div></div></div></div><div
+id="footer_wrap"><div
+id="footer"><p
+class="footer_text"><strong>Nettuts+</strong> is part of the <a
+href="http://tutsplus.com/">Tuts+ Network</a>, teaching creative skills to millions worldwide.</p><ul><li><a
+href="http://net.tutsplus.com/advertise/">Advertise</a><span>&middot;</span></li><li><a
+href="http://www.formstack.com/forms/envato-tuts__contact_form">Suggestions</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/">About Us</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/tuts-terms-user-agreement/">Terms and Conditions</a><span>&middot;</span></li><li><a
+href="/about/privacy-policy/">Privacy Policy</a><span>&middot;</span></li><li><a
+href="http://net.tutsplus.com/about/write-for-us/">Write for Us</a></li></ul> <a
+href="http://net.tutsplus.com" class="footer_logo">Nettuts+</a><div
+class="lower_footer"><p
+class="footer_copy">Copyright &copy; 2013 Envato</p> <a
+href="http://envato.com" class="envato_logo">Envato</a></div></div></div>
+ <script type="text/javascript" src="http://envato.s3.amazonaws.com/widget/widget.js"></script> <script type='text/javascript'>var seriesdropdown = document.getElementById("orgseries_dropdown");
+			if (seriesdropdown) { 
+			 function onSeriesChange() {
+					if ( seriesdropdown.options[seriesdropdown.selectedIndex].value != ( 0 || -1 ) ) {
+						location.href = "http://net.tutsplus.com/series/"+seriesdropdown.options[seriesdropdown.selectedIndex].value;
+					}
+				}
+				seriesdropdown.onchange = onSeriesChange;
+			}</script> <script type="text/javascript">/*<![CDATA[*/// 
+        var disqus_shortname = 'nettuts';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+                        s.src = 'http' + '://' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    ///*]]>*/</script> <script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shCore.js"></script> <script class="javascript" src="http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/shBrushAll.js"></script> <script class="javascript">dp.SyntaxHighlighter.ClipboardSwf = 'http://net.tutsplus.com/wp-content/plugins/google-syntax-highlighter/Scripts/clipboard.swf';
+dp.SyntaxHighlighter.HighlightAll('code');</script><script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shCore.js?ver=3.0.83c'></script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/scripts/shBrushBash.js?ver=3.0.83c'></script>
+<script type='text/javascript'>
+	(function(){
+		var corecss = document.createElement('link');
+		var themecss = document.createElement('link');
+		var corecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shCore.css?ver=3.0.83c";
+		if ( corecss.setAttribute ) {
+				corecss.setAttribute( "rel", "stylesheet" );
+				corecss.setAttribute( "type", "text/css" );
+				corecss.setAttribute( "href", corecssurl );
+		} else {
+				corecss.rel = "stylesheet";
+				corecss.href = corecssurl;
+		}
+		document.getElementsByTagName("head")[0].insertBefore( corecss, document.getElementById("syntaxhighlighteranchor") );
+		var themecssurl = "http://net.tutsplus.com/wp-content/plugins/syntaxhighlighter/syntaxhighlighter3/styles/shThemeDefault.css?ver=3.0.83c";
+		if ( themecss.setAttribute ) {
+				themecss.setAttribute( "rel", "stylesheet" );
+				themecss.setAttribute( "type", "text/css" );
+				themecss.setAttribute( "href", themecssurl );
+		} else {
+				themecss.rel = "stylesheet";
+				themecss.href = themecssurl;
+		}
+		//document.getElementById("syntaxhighlighteranchor").appendChild(themecss);
+		document.getElementsByTagName("head")[0].insertBefore( themecss, document.getElementById("syntaxhighlighteranchor") );
+	})();
+	SyntaxHighlighter.config.strings.expandSource = '+ expand source';
+	SyntaxHighlighter.config.strings.help = '?';
+	SyntaxHighlighter.config.strings.alert = 'SyntaxHighlighter\n\n';
+	SyntaxHighlighter.config.strings.noBrush = 'Can\'t find brush for: ';
+	SyntaxHighlighter.config.strings.brushNotHtmlScript = 'Brush wasn\'t configured for html-script option: ';
+	SyntaxHighlighter.defaults['pad-line-numbers'] = false;
+	SyntaxHighlighter.defaults['tab-size'] = 3;
+	SyntaxHighlighter.defaults['toolbar'] = false;
+	SyntaxHighlighter.all();
+</script>
+<script type='text/javascript' src='http://net.tutsplus.com/wp-content/themes/tuts/js/footer.js?ver=2.0'></script>
+
+    <!-- Remarketing tags --> 
+    <script type="text/javascript">
+    /* <![CDATA[ */
+    var google_conversion_id = 1065398951;
+    var google_conversion_label = "YJmqCNWStQQQp-WC_AM";
+    var google_custom_params = window.google_tag_params;
+    var google_remarketing_only = true;
+    /* ]]> */
+    </script>
+    <script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js"></script>
+    <noscript>
+      <div style="display:inline;">
+        <img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/1065398951/?value=0&label=YJmqCNWStQQQp-WC_AM&guid=ON&script=0"/>
+      </div>
+    </noscript>
+    
+<script type="text/javascript" src="http://s.skimresources.com/js/1342X589339.skimlinks.js"></script>  </body>
+</html>
+<!-- Dynamic Page Served (once) in 0.861 seconds -->

@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<!--[if IE 7]>
+<html class="ie ie7" lang="en-US">
+<![endif]-->
+<!--[if IE 8]>
+<html class="ie ie8" lang="en-US">
+<![endif]-->
+<!--[if !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en-US">
+<!--<![endif]-->
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<title>What should a theory of Big Data say? | Moody Rd</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11">
+	<link rel="pingback" href="http://mrtz.org/blog/xmlrpc.php">
+	<!--[if lt IE 9]>
+	<script src="http://mrtz.org/blog/wp-content/themes/twentythirteen/js/html5.js"></script>
+	<![endif]-->
+	<link rel="alternate" type="application/rss+xml" title="Moody Rd &raquo; Feed" href="http://mrtz.org/blog/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Moody Rd &raquo; Comments Feed" href="http://mrtz.org/blog/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Moody Rd &raquo; What should a theory of Big Data say? Comments Feed" href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/feed/" />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://mrtz.org/blog/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-fonts-css'  href='//fonts.googleapis.com/css?family=Source+Sans+Pro%3A300%2C400%2C700%2C300italic%2C400italic%2C700italic%7CBitter%3A400%2C700&#038;subset=latin%2Clatin-ext' type='text/css' media='all' />
+<link rel='stylesheet' id='genericons-css'  href='http://mrtz.org/blog/wp-content/plugins/jetpack/_inc/genericons.css?ver=2.3.3' type='text/css' media='all' />
+<link rel='stylesheet' id='twentythirteen-style-css'  href='http://mrtz.org/blog/wp-content/themes/twentythirteen/style.css?ver=2013-07-18' type='text/css' media='all' />
+<!--[if lt IE 9]>
+<link rel='stylesheet' id='twentythirteen-ie-css'  href='http://mrtz.org/blog/wp-content/themes/twentythirteen/css/ie.css?ver=2013-07-18' type='text/css' media='all' />
+<![endif]-->
+<script type='text/javascript' src='http://mrtz.org/blog/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://mrtz.org/blog/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://mrtz.org/blog/wp-includes/js/comment-reply.min.js?ver=3.6'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://mrtz.org/blog/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://mrtz.org/blog/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Is Differential Privacy practical?' href='http://mrtz.org/blog/dp-practical/' />
+<link rel='next' title='The Zen of Gradient Descent' href='http://mrtz.org/blog/the-zen-of-gradient-descent/' />
+<meta name="generator" content="WordPress 3.6" />
+<link rel='canonical' href='http://mrtz.org/blog/what-should-a-theory-of-big-data-do/' />
+<link rel='shortlink' href='http://wp.me/p3O1Tu-1q' />
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="What should a theory of Big Data say?" />
+<meta property="og:url" content="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/" />
+<meta property="og:description" content="I checked out my new apartment in Berkeley a few days ago. My very senior landlord asked me to explain to him what it is that I do. So, I said: &quot;I&#039;m a computer scientist.&quot; He gave me an empty stare..." />
+<meta property="og:site_name" content="Moody Rd" />
+	<style type="text/css" id="twentythirteen-header-css">
+			.site-header {
+			background: url(http://mrtz.org/blog/wp-content/uploads/2013/09/cropped-aspenalley.jpg) no-repeat scroll top;
+			background-size: 1600px auto;
+		}
+			.site-title,
+		.site-description {
+			color: #ffe9a8;
+		}
+		</style>
+	</head>
+
+<body class="single single-post postid-88 single-format-standard single-author">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<a class="home-link" href="http://mrtz.org/blog/" title="Moody Rd" rel="home">
+				<h1 class="site-title">Moody Rd</h1>
+				<h2 class="site-description"></h2>
+			</a>
+
+			<div id="navbar" class="navbar">
+				<nav id="site-navigation" class="navigation main-navigation" role="navigation">
+					<h3 class="menu-toggle">Menu</h3>
+					<a class="screen-reader-text skip-link" href="#content" title="Skip to content">Skip to content</a>
+					<div class="nav-menu"><ul><li class="page_item page-item-2"><a href="http://mrtz.org/blog/about/">About</a></li></ul></div>
+					<form role="search" method="get" class="search-form" action="http://mrtz.org/blog/">
+				<label>
+					<span class="screen-reader-text">Search for:</span>
+					<input type="search" class="search-field" placeholder="Search &hellip;" value="" name="s" title="Search for:" />
+				</label>
+				<input type="submit" class="search-submit" value="Search" />
+			</form>				</nav><!-- #site-navigation -->
+			</div><!-- #navbar -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="site-main">
+
+	<div id="primary" class="content-area">
+		<div id="content" class="site-content" role="main">
+
+						
+				
+<article id="post-88" class="post-88 post type-post status-publish format-standard hentry category-events category-simons tag-berkeley tag-big-data tag-complexity tag-simons tag-tcs tag-theory">
+	<header class="entry-header">
+		
+				<h1 class="entry-title">What should a theory of Big Data say?</h1>
+		
+		<div class="entry-meta">
+			<span class="date"><a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/" title="Permalink to What should a theory of Big Data say?" rel="bookmark"><time class="entry-date" datetime="2013-08-26T11:36:29+00:00">August 26, 2013</time></a></span><span class="categories-links"><a href="http://mrtz.org/blog/category/events/" title="View all posts in events" rel="category tag">events</a>, <a href="http://mrtz.org/blog/category/simons/" title="View all posts in simons" rel="category tag">simons</a></span><span class="tags-links"><a href="http://mrtz.org/blog/tag/berkeley/" rel="tag">berkeley</a>, <a href="http://mrtz.org/blog/tag/big-data/" rel="tag">big data</a>, <a href="http://mrtz.org/blog/tag/complexity/" rel="tag">complexity</a>, <a href="http://mrtz.org/blog/tag/simons/" rel="tag">simons</a>, <a href="http://mrtz.org/blog/tag/tcs/" rel="tag">tcs</a>, <a href="http://mrtz.org/blog/tag/theory/" rel="tag">theory</a></span><span class="author vcard"><a class="url fn n" href="http://mrtz.org/blog/author/mrtz/" title="View all posts by Moritz Hardt" rel="author">Moritz Hardt</a></span>					</div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
+
+		<div class="entry-content">
+		<p>I checked out my new apartment in Berkeley a few days ago. My very senior landlord asked me to explain to him what it is that I do. So, I said: &#8220;I&#8217;m a computer scientist.&#8221; He gave me an empty stare as if he had never heard of such a thing. I tried again: &#8220;I work on algorithms.&#8221; Nothing. Not a sign of engagement. Fine, I thought to myself, here&#8217;s one last attempt: &#8220;Well, the program I&#8217;m attending at Berkeley is on what they call <em>Big Data</em>&#8220;. His eyes lit up. He smiled and replied without a moment of hesitation: &#8220;Big Data! Why didn&#8217;t you just say that?&#8221; He went on to tell me all about what Big Data is going to do in the next years, how important it is, how it is going to advance medical research and lead to new scientific discovery. This is really only a case in point. The words &#8220;big data&#8221; have apparently become more evocative to the greater public than either of the terms &#8220;algorithm&#8221; or &#8220;computer science&#8221;.</p>
+<p>At any rate, the program I&#8217;m attending, called <a href="http://simons.berkeley.edu/programs/bigdata2013">&#8220;The Theoretical Foundations of Big Data&#8221;</a>, is an incredibly promising endeavor of the new <a href="http://simons.berkeley.edu/">Simons Institute for Theoretical Computer Science</a>. As already <a href="http://geomblog.blogspot.com/2013/08/simons-institute-opening-with-pictures.html">featured</a> by Suresh, the new institute is amazing. It has outside blackboards (at least soon enough), plenty of collaboration space, and most importantly, a really fun group of visitors. The fact that it&#8217;s located in Berkeley sure doesn&#8217;t hurt either. <a href="http://geomblog.blogspot.com/">Suresh</a>, <a href="http://polylogblog.wordpress.com/">Andrew</a> and I will try to cover some of the exciting events. So, check back regularly, if you&#8217;re interested.</p>
+<p>I want to start out by asking the obvious question. What is it that the <em>theoretical foundations of Big Data</em> should be about? A naïve answer is that Big Data is all about making stuff faster. So, we should be talking about the theory of making stuff faster. There&#8217;s nothing wrong with making stuff faster. It&#8217;s important. No doubt. Nevertheless I think a lot is lost if we take this as our narrow interpretation of Big Data. Computer Scientists, theorists and non-theorists alike, have been making stuff faster in various models of computation for ages. It&#8217;s not that we&#8217;ve only come around to this now that there&#8217;s a need to analyze larger data sets. The description suggested on the Simons website is certainly more nuanced. It still focuses on scalability: <em>&#8220;The challenge is to develop the theoretical principles needed to scale inference and learning algorithms to massive, even arbitrary, scale.&#8221; </em></p>
+<p>I think a fundamental challenge for anything like a &#8220;theory of Big Data&#8221; lies somewhere else. It&#8217;s got something to do with our choice of precedence. The classical point of view in complexity theory is that <strong>the problem comes first, the input second</strong>. We first fix a problem that we would like to study, say, 3-Coloring, TSP, Clique etc. Then we discuss algorithms for the specific problem we chose. The input and various properties that it might have are often secondary. This viewpoint has fundamentally shaped the research culture. Algorithms are often carefully tailored over the course of many decades to a particularly important problem such as 3-Coloring.</p>
+<p>Perplexingly, the viewpoint perpetuated by &#8220;Big Data&#8221; is exactly the opposite. The input, the data set, is the protagonist. Data gets all the attention. The problem that needs to be solved is negotiable. You rarely hear a data analyst tell you exactly which problem they need to solve. Even if you poke them, they&#8217;ll rarely give you a precise answer. Try it out! As theoreticians we often suspect the issue is that those guys simply haven&#8217;t formalized their problems yet. That&#8217;s partially true. The more fundamental reason though is that <strong>the problem genuinely depends on the data set</strong>. Let me make this point more clear through an example. Suppose a scientist collects a large set of data records about cancer patients. If my landlord is to be trusted, and for various reasons I hope he is, the goal now is scientific discovery. There are many ways to go about it. There are many ways to explore the data set. The analyst will use her domain knowledge and the specifics of the data set to make an initial guess. A first try might be linear regression (which is of course by itself well-defined). If that doesn&#8217;t work, she might try logistic regression, and then any of thousands of possible methods. Of course, there is the danger that as more and more methods are evaluated against the data set, any observed pattern is increasingly likely to be a result of over-fitting. Regardless, the problem that the scientist will have solved at the end of the day is ill-defined. More importantly, even if there were a definition of the problem it would inevitably depend on the data set. It is unlikely that a different medical study would want to solve precisely the same problem.</p>
+<p>This situation should fill any theorist with discomfort. If the input determines the problem that we need to solve, <em>what problem then should we study</em>? Or, rather, from the point of view of the data analyst, what guidance does our theory provide in choosing one approach over another? I&#8217;m not suggesting that we should tailor more theory around what we currently perceive as practical. There&#8217;s a good reason to be a step removed from practice. However, there are two legitimate ways of deciding the precedence of <em>problem</em> versus <em>data</em>. In theory we chose one over the other and moved on.</p>
+<p>Similar questions came up in the Stanford workshop  <a href="http://theory.stanford.edu/~tim/bwca/bwca.html">&#8220;Beyond Worst-Case Complexity&#8221;</a>. I vividly remember the workshop as one of my favorite workshops of all times. It&#8217;s true that Big Data is also at odds with worst-case analysis. As a starting point, theory folks could try to figure out what the properties are that large data sets exhibit and how they might affect algorithm design. This research direction has already gained some momentum. I still feel like this doesn&#8217;t address the heart of the problem described above. Average-case complexity doesn&#8217;t attempt to reverse the role of problem and data. It only advocates thinking about properties of the input for a specific problem that are <em>typically</em> true and might make the problem easier.</p>
+<p>Another perspective was offered by Prabhakar Raghavan&#8217;s invited talk at <a href="http://theory.stanford.edu/stoc2013/program.php">STOC 2013</a>. Interestingly, he described Big Data as bad news for  algorithm design. His point was that sophisticated algorithms have been replaced by less clever algorithms run on larger data sets. My view is quite a bit more optimistic. I consider Big Data as an opportunity for algorithm design to revisit some of its theoretical foundations.</p>
+<p><strong>Update (8/27): </strong>Suresh posted an interesting <a href="http://geomblog.blogspot.com/2013/08/on-theory-of-big-data.html">response</a> to this post.</p>
+			</div><!-- .entry-content -->
+	
+	<footer class="entry-meta">
+		
+			</footer><!-- .entry-meta -->
+</article><!-- #post -->
+					<nav class="navigation post-navigation" role="navigation">
+		<h1 class="screen-reader-text">Post navigation</h1>
+		<div class="nav-links">
+
+			<a href="http://mrtz.org/blog/dp-practical/" rel="prev"><span class="meta-nav">&larr;</span> Is Differential Privacy practical?</a>			<a href="http://mrtz.org/blog/the-zen-of-gradient-descent/" rel="next">The Zen of Gradient Descent <span class="meta-nav">&rarr;</span></a>
+		</div><!-- .nav-links -->
+	</nav><!-- .navigation -->
+					
+<div id="comments" class="comments-area">
+
+			<h2 class="comments-title">
+			7 thoughts on &ldquo;<span>What should a theory of Big Data say?</span>&rdquo;		</h2>
+
+		<ol class="comment-list">
+					<li id="comment-6" class="comment even thread-even depth-1">
+			<article id="div-comment-6" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://1.gravatar.com/avatar/7023344d812302a993986ecf280aac48?s=74&amp;d=identicon&amp;r=G' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='http://blog.mikael.johanssons.org' rel='external nofollow' class='url'>Mikael Vejdemo-Johansson</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/#comment-6">
+							<time datetime="2013-08-26T13:53:37+00:00">
+								August 26, 2013 at 1:53 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>This is a really interesting perspective on defining the area. I&#8217;d want to add to it by pointing out that every so often you&#8217;ll run into datasets where even though you may have opinions about the propriety of its collection, collection or re-collection or completion is a ridiculously expensive task: so not only is the question ill-defined, but you don&#8217;t get to do much to fix it.</p>
+<p>Case in point: the World Color Survey. It is a survey of color naming patterns soliciting 23k different terms from 2.6k informants speaking 110 languages. Linguists use it to study color naming patterns and color semantics.</p>
+<p>The colors solicited are 320 color chips of maximum saturation and 10 chips along a grey scale. Now, you may ask, and indeed people currently do, what about the low-saturated colors? What about pastels? What about languages that may name pastels as important colors in their own right?</p>
+<p>And the answer, so far, is that for this dataset the train has already left the station. It took some 30-odd years to collect, using field workers in remote corners of the world. We&#8217;re Just Not Going to go back and complete the data collection.</p>
+<p>More than that, asking someone to name 330 color chips in a row is a REALLY exhausting task in its own right. To get a good sampling of the pastels with the same perceptual density as the WCS would put is into the thousands of chips to query.</p>
+<p>I don&#8217;t know whether this actually qualifies as Big Data in your context; but it is one example of where good or bad, computational approaches and data analysts will just have to make do with whatever actually exists, and temper their answers to point out the strength of what they are actually saying.</p>
+<p>The programme sounds amazing. Wish I could come by.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/blog/what-should-a-theory-of-big-data-do/?replytocom=6#respond' onclick='return addComment.moveForm("div-comment-6", "6", "respond", "88")'>Reply</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-7" class="comment odd alt thread-odd thread-alt depth-1 parent">
+			<article id="div-comment-7" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/8a0feb696726551b2821969c6013021a?s=74&amp;d=identicon&amp;r=G' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='https://paul.rutgers.edu/~anikolov' rel='external nofollow' class='url'>Sasho Nikolov</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/#comment-7">
+							<time datetime="2013-08-27T20:26:11+00:00">
+								August 27, 2013 at 8:26 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Moritz, I feel like like the overfitting concern is a good reason the data analyst should be very principled about using the data, even when there is a lot of it. Each time he&#8217;s using the data he&#8217;s paying for it in terms of the power of the statistical tests (and eventually in danger of making discoveries about the emotional state of dead salmon <a href="http://prefrontal.org/blog/2009/09/the-story-behind-the-atlantic-salmon/" rel="nofollow">http://prefrontal.org/blog/2009/09/the-story-behind-the-atlantic-salmon/</a> or the link between green jelly beans and acne <a href="http://xkcd.com/882/" rel="nofollow">http://xkcd.com/882/</a>). And an unprincipled exploratory approach to data analysis sounds like fertile ground for all flavors of selection bias. </p>
+<p>This may be just my own bias of my education, but I&#8217;d still like to see the problems defined. I feel like your argument points out that the problems should be a higher level ones, and solutions should be meta-algorithms.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/blog/what-should-a-theory-of-big-data-do/?replytocom=7#respond' onclick='return addComment.moveForm("div-comment-7", "7", "respond", "88")'>Reply</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-9" class="comment byuser comment-author-mrtz bypostauthor even depth-2 parent">
+			<article id="div-comment-9" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/eff289c3e1d1d215a8d24a8eb19e20eb?s=74&amp;d=identicon&amp;r=G' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn">Moritz Hardt</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/#comment-9">
+							<time datetime="2013-09-09T11:41:32+00:00">
+								September 9, 2013 at 11:41 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Sasho, I completely agree and that&#8217;s why I pointed out this issue in the post. As they say: &#8220;If you torture your data set long enough, it&#8217;ll confess anything.&#8221; </p>
+<p>Which meta-algorithms were you thinking of?</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/blog/what-should-a-theory-of-big-data-do/?replytocom=9#respond' onclick='return addComment.moveForm("div-comment-9", "9", "respond", "88")'>Reply</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+<ol class="children">
+		<li id="comment-19" class="comment odd alt depth-3">
+			<article id="div-comment-19" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/8a0feb696726551b2821969c6013021a?s=74&amp;d=identicon&amp;r=G' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn"><a href='https://paul.rutgers.edu/~anikolov' rel='external nofollow' class='url'>Sasho Nikolov</a></b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/#comment-19">
+							<time datetime="2013-09-13T15:09:19+00:00">
+								September 13, 2013 at 3:09 pm							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Moritz, I wish I had a few good examples, but the only one I can think of is boosting. I also wish I could say more precisely what I mean by a &#8220;meta-algorithm&#8221;, I need to think more about how to start defining something like that. It would be nice to have something more concrete than what we&#8217;d usually call techniques (and, in particular, concrete enough to still make some formal analysis possible), but also at a higher level than we usually define problems and design algorithms.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/blog/what-should-a-theory-of-big-data-do/?replytocom=19#respond' onclick='return addComment.moveForm("div-comment-19", "19", "respond", "88")'>Reply</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+</ol><!-- .children -->
+</li><!-- #comment-## -->
+		<li id="comment-8" class="comment even thread-even depth-1">
+			<article id="div-comment-8" class="comment-body">
+				<footer class="comment-meta">
+					<div class="comment-author vcard">
+						<img alt='' src='http://0.gravatar.com/avatar/2e42d0fac33c548f2ab6438d40a51e1a?s=74&amp;d=identicon&amp;r=G' class='avatar avatar-74 photo' height='74' width='74' />						<b class="fn">Jon Ullman</b> <span class="says">says:</span>					</div><!-- .comment-author -->
+
+					<div class="comment-metadata">
+						<a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/#comment-8">
+							<time datetime="2013-08-29T07:47:32+00:00">
+								August 29, 2013 at 7:47 am							</time>
+						</a>
+											</div><!-- .comment-metadata -->
+
+									</footer><!-- .comment-meta -->
+
+				<div class="comment-content">
+					<p>Sasho, I completely agree with your point and agree that problems should be clearly defined.  Perhaps because I suffer from the same bias of education as you.  If the current way in which problems are defined in TCS isn&#8217;t a good match for big data, maybe the right solution isn&#8217;t to throw the baby out with the bathwater and stop defining problems, but to change the way in which problems are defined to fit the way data analysts think?  For instance, if all the algorithmic tools are designed to solve problems like &#8220;fit parameters for model X&#8221;, then it may seem like the only choice for the analyst is to run several algorithms to fit models X,Y,Z, which could lead to overfitting.  If instead we defined problems like &#8220;find an interesting pattern of type X&#8221; then any good solution to the problem would have to avoid overfitting explicitly.  I admit to having no idea what data analysts actually do, I just wanted to make the point that the possibility different ways of carefully reasoning about well-defined data analysis tasks that are just as rigorous but may be a better match for the way analysts reason about data.</p>
+				</div><!-- .comment-content -->
+
+				<div class="reply">
+					<a class='comment-reply-link' href='/blog/what-should-a-theory-of-big-data-do/?replytocom=8#respond' onclick='return addComment.moveForm("div-comment-8", "8", "respond", "88")'>Reply</a>				</div><!-- .reply -->
+			</article><!-- .comment-body -->
+</li><!-- #comment-## -->
+		<li id="comment-12" class="pingback odd alt thread-odd thread-alt depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://mrtz.org/blog/hello-tcs-aggregator/' rel='external nofollow' class='url'>Hello TCS Aggregator! | Moody Rd</a> 			</div>
+</li><!-- #comment-## -->
+		<li id="comment-20" class="pingback even thread-even depth-1">
+			<div class="comment-body">
+				Pingback: <a href='http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/' rel='external nofollow' class='url'>Is it a blog? Or is it epsilon-far from being a blog? | the polylogblog</a> 			</div>
+</li><!-- #comment-## -->
+		</ol><!-- .comment-list -->
+
+		
+		
+	
+						
+		<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/blog/what-should-a-theory-of-big-data-do/#respond" style="display:none;">Cancel reply</a></small></h3>
+			<div id="commentform" class="comment-form">
+				<iframe src="http://jetpack.wordpress.com/jetpack-comment/?blogid=56252692&#038;postid=88&#038;comment_registration=0&#038;require_name_email=1&#038;stc_enabled=1&#038;stb_enabled=1&#038;show_avatars=1&#038;avatar_default=identicon&#038;greeting=Leave+a+Reply&#038;greeting_reply=Leave+a+Reply+to+%25s&#038;color_scheme=light&#038;lang=en-US&#038;jetpack_version=2.3.3&#038;sig=f92ea185644da8c541e166f7cef9f3f59fa819b1#parent=http%3A%2F%2Fmrtz.org%2Fblog%2Fwhat-should-a-theory-of-big-data-do%2F" allowtransparency="false" style="width:100%; height: 430px;border:0px;" frameBorder="0" scrolling="no" name="jetpack_remote_comment" id="jetpack_remote_comment"></iframe>
+			</div>
+		</div>
+
+		
+		<input type="hidden" name="comment_parent" id="comment_parent" value="" />
+
+					
+</div><!-- #comments -->
+			
+		</div><!-- #content -->
+	</div><!-- #primary -->
+
+
+		</div><!-- #main -->
+		<footer id="colophon" class="site-footer" role="contentinfo">
+				<div id="secondary" class="sidebar-container" role="complementary">
+		<div class="widget-area">
+					<aside id="recent-posts-3" class="widget widget_recent_entries">		<h3 class="widget-title">Recent posts</h3>		<ul>
+					<li>
+				<a href="http://mrtz.org/blog/hello-tcs-aggregator/" title="Hello TCS Aggregator!">Hello TCS Aggregator!</a>
+						</li>
+					<li>
+				<a href="http://mrtz.org/blog/the-zen-of-gradient-descent/" title="The Zen of Gradient Descent">The Zen of Gradient Descent</a>
+						</li>
+					<li>
+				<a href="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/" title="What should a theory of Big Data say?">What should a theory of Big Data say?</a>
+						</li>
+					<li>
+				<a href="http://mrtz.org/blog/dp-practical/" title="Is Differential Privacy practical?">Is Differential Privacy practical?</a>
+						</li>
+					<li>
+				<a href="http://mrtz.org/blog/occupy-algorithms/" title="Occupy Algorithms: Will Algorithms Serve the 99%?">Occupy Algorithms: Will Algorithms Serve the 99%?</a>
+						</li>
+				</ul>
+		</aside><aside id="blog_subscription-2" class="widget jetpack_subscription_widget"><h3 class="widget-title"><label for="subscribe-field">Subscribe to Blog via Email</label></h3>
+		<form action="" method="post" accept-charset="utf-8" id="subscribe-blog-blog_subscription-2">
+			<p>Enter your email address to subscribe to this blog and receive notifications of new posts by email.</p>
+			<p><input type="text" name="email" style="width: 95%; padding: 1px 2px" value="Email Address" id="subscribe-field" onclick="if ( this.value == 'Email Address' ) { this.value = ''; }" onblur="if ( this.value == '' ) { this.value = 'Email Address'; }" /></p>
+
+			<p>
+				<input type="hidden" name="action" value="subscribe" />
+				<input type="hidden" name="source" value="http://mrtz.org/blog/what-should-a-theory-of-big-data-do/" />
+				<input type="hidden" name="sub-type" value="widget" />
+				<input type="hidden" name="redirect_fragment" value="blog_subscription-2" />
+								<input type="submit" value="Subscribe" name="jetpack_subscriptions_widget" />
+			</p>
+		</form>
+
+		
+</aside>		</div><!-- .widget-area -->
+	</div><!-- #secondary -->
+
+			<div class="site-info">
+								<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+
+		<div style="display:none">
+	<div class="grofile-hash-map-7023344d812302a993986ecf280aac48">
+	</div>
+	<div class="grofile-hash-map-8a0feb696726551b2821969c6013021a">
+	</div>
+	<div class="grofile-hash-map-eff289c3e1d1d215a8d24a8eb19e20eb">
+	</div>
+	<div class="grofile-hash-map-2e42d0fac33c548f2ab6438d40a51e1a">
+	</div>
+	</div>
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201340'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2013Octaa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://mrtz.org/blog/wp-content/plugins/jetpack/modules/wpgroho.js?ver=3.6'></script>
+<script type='text/javascript' src='http://mrtz.org/blog/wp-includes/js/jquery/jquery.masonry.min.js?ver=2.1.05'></script>
+<script type='text/javascript' src='http://mrtz.org/blog/wp-content/themes/twentythirteen/js/functions.js?ver=2013-07-18'></script>
+
+		<!--[if IE]>
+		<script type="text/javascript">
+		if ( 0 === window.location.hash.indexOf( '#comment-' ) ) {
+			// window.location.reload() doesn't respect the Hash in IE
+			window.location.hash = window.location.hash;
+		}
+		</script>
+		<![endif]-->
+		<script type="text/javascript">
+			var comm_par_el = document.getElementById( 'comment_parent' ),
+			    comm_par = (comm_par_el && comm_par_el.value) ? comm_par_el.value : '',
+			    frame = document.getElementById( 'jetpack_remote_comment' ),
+			    tellFrameNewParent;
+
+			tellFrameNewParent = function() {
+				if ( comm_par ) {
+					frame.src = "http:\/\/jetpack.wordpress.com\/jetpack-comment\/?blogid=56252692&postid=88&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=identicon&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=2.3.3&sig=f92ea185644da8c541e166f7cef9f3f59fa819b1#parent=http%3A%2F%2Fmrtz.org%2Fblog%2Fwhat-should-a-theory-of-big-data-do%2F" + '&replytocom=' + parseInt( comm_par, 10 ).toString();
+				} else {
+					frame.src = "http:\/\/jetpack.wordpress.com\/jetpack-comment\/?blogid=56252692&postid=88&comment_registration=0&require_name_email=1&stc_enabled=1&stb_enabled=1&show_avatars=1&avatar_default=identicon&greeting=Leave+a+Reply&greeting_reply=Leave+a+Reply+to+%25s&color_scheme=light&lang=en-US&jetpack_version=2.3.3&sig=f92ea185644da8c541e166f7cef9f3f59fa819b1#parent=http%3A%2F%2Fmrtz.org%2Fblog%2Fwhat-should-a-theory-of-big-data-do%2F";
+				}
+			};
+
+	
+			if ( 'undefined' !== typeof addComment ) {
+				addComment._Jetpack_moveForm = addComment.moveForm;
+
+				addComment.moveForm = function( commId, parentId, respondId, postId ) {
+					var returnValue = addComment._Jetpack_moveForm( commId, parentId, respondId, postId ), cancelClick, cancel;
+
+					if ( false === returnValue ) {
+						cancel = document.getElementById( 'cancel-comment-reply-link' );
+						cancelClick = cancel.onclick;
+						cancel.onclick = function() {
+							var cancelReturn = cancelClick.call( this );
+							if ( false !== cancelReturn ) {
+								return cancelReturn;
+							}
+
+							if ( !comm_par ) {
+								return cancelReturn;
+							}
+
+							comm_par = 0;
+
+							tellFrameNewParent();
+
+							return cancelReturn;
+						};
+					}
+
+					if ( comm_par == parentId ) {
+						return returnValue;
+					}
+
+					comm_par = parentId;
+
+					tellFrameNewParent();
+
+					return returnValue;
+				};
+			}
+
+	
+			if ( window.postMessage ) {
+				if ( document.addEventListener ) {
+					window.addEventListener( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				} else if ( document.attachEvent ) {
+					window.attachEvent( 'message', function( event ) {
+						if ( "http:\/\/jetpack.wordpress.com" !== event.origin ) {
+							return;
+						}
+
+						jQuery( frame ).height( event.data );
+					} );
+				}
+			}
+		</script>
+
+	
+	<script src="http://stats.wordpress.com/e-201340.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:2.3.3',blog:'56252692',post:'88',tz:'-7'});
+	var load_cmc = function(){linktracker_init(56252692,88,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script></body>
+</html>
+<!-- Dynamic page generated in 3.532 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-10-05 01:11:25 -->
+
+<!-- super cache -->

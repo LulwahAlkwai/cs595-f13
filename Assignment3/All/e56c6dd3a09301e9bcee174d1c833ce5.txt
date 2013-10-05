@@ -1,0 +1,2240 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7 ]>   <html lang="en-us" class="no-js iem7"> <![endif]-->
+<!--[if lt IE 7]>       <html lang="en-us" class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>          <html lang="en-us" class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>          <html lang="en-us" class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->  <html lang="en-us" class="no-js"> <!--<![endif]-->
+<head>
+    <!-- Use latest IE rendering mode, or Chrome Frame if available, this must go first -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta charset="utf-8">
+
+    
+    <!-- Facebook open graph settings -->
+    <meta property="og:title" content="99designs" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="99designs" />
+    <meta property="og:url" content="http://99designs.com/" />
+    <meta property="fb:app_id" content="51230776953" />
+    <meta property="og:image" content="http://99designs.com/static/images/frontpage/facebook-logo.png" />
+
+    <!-- Device settings -->
+    <meta name="format-detection" content="telephone=no">
+
+    <!-- Robot settings -->
+    <meta name="robots" content="NOODP,NOYDIR" />
+
+    <!-- Meta description and keywords -->
+    <meta name="description" content="The #1 marketplace for graphic design, including logo design, web design and other design contests." />
+    <meta name="keywords" content="crowdsource, graphic design, design" />
+    <meta name="author" content="99designs" />
+
+    <!-- This page in other languages/regions -->
+    <link rel="alternate" hreflang="en-us" href="http://99designs.com/" />
+    <link rel="alternate" hreflang="es-us" href="http://es.99designs.com/" />
+    <link rel="alternate" hreflang="en-au" href="http://99designs.com.au/" />
+    <link rel="alternate" hreflang="en-ca" href="http://99designs.ca/" />
+    <link rel="alternate" hreflang="en-gb" href="http://99designs.co.uk/" />
+    <link rel="alternate" hreflang="de-de" href="http://99designs.de/" />
+    <link rel="alternate" hreflang="en-de" href="http://en.99designs.de/" />
+    <link rel="alternate" hreflang="en-dk" href="http://99designs.dk/" />
+    <link rel="alternate" hreflang="fr-fr" href="http://99designs.fr/" />
+    <link rel="alternate" hreflang="en-fr" href="http://en.99designs.fr/" />
+    <link rel="alternate" hreflang="it-it" href="http://99designs.it/" />
+    <link rel="alternate" hreflang="en-it" href="http://en.99designs.it/" />
+    <link rel="alternate" hreflang="en-no" href="http://99designs.no/" />
+    <link rel="alternate" hreflang="nl-nl" href="http://99designs.nl/" />
+    <link rel="alternate" hreflang="en-nl" href="http://en.99designs.nl/" />
+    <link rel="alternate" hreflang="pt-br" href="http://99designs.com.br/" />
+    <link rel="alternate" hreflang="en-br" href="http://en.99designs.com.br/" />
+    <link rel="alternate" hreflang="es-ar" href="http://99designs.com.ar/" />
+    <link rel="alternate" hreflang="en-ar" href="http://en.99designs.com.ar/" />
+    <link rel="alternate" hreflang="es-cl" href="http://99designs.cl/" />
+    <link rel="alternate" hreflang="en-cl" href="http://en.99designs.cl/" />
+    <link rel="alternate" hreflang="es-co" href="http://99designs.com.co/" />
+    <link rel="alternate" hreflang="en-co" href="http://en.99designs.com.co/" />
+    <link rel="alternate" hreflang="es-mx" href="http://99designs.com.mx/" />
+    <link rel="alternate" hreflang="en-mx" href="http://en.99designs.com.mx/" />
+    <link rel="alternate" hreflang="es-es" href="http://99designs.es/" />
+    <link rel="alternate" hreflang="en-es" href="http://en.99designs.es/" />
+    <link rel="alternate" hreflang="de-ch" href="http://99designs.ch/" />
+    <link rel="alternate" hreflang="it-ch" href="http://it.99designs.ch/" />
+    <link rel="alternate" hreflang="fr-ch" href="http://fr.99designs.ch/" />
+    <link rel="alternate" hreflang="en-ch" href="http://en.99designs.ch/" />
+    <link rel="alternate" hreflang="en-hk" href="http://99designs.hk/" />
+    <link rel="alternate" hreflang="en-sg" href="http://99designs.com.sg/" />
+    <link rel="alternate" hreflang="nl-be" href="http://99designs.be/" />
+    <link rel="alternate" hreflang="fr-be" href="http://fr.99designs.be/" />
+    <link rel="alternate" hreflang="en-be" href="http://en.99designs.be/" />
+    <link rel="alternate" hreflang="de-at" href="http://99designs.at/" />
+    <link rel="alternate" hreflang="en-at" href="http://en.99designs.at/" />
+    
+    <!-- Use device width, allow pinch+zoom -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Mobile IE ClearType -->
+    <meta http-equiv="cleartype" content="on">
+
+    <!-- Specifying Sub-pixel Metrics in IE's Legacy Modes -->
+    <!-- http://www.webappers.com/2012/12/25/how-to-correct-legacy-document-problems-with-fonts/ -->
+    <meta http-equiv="X-UA-TextLayoutMetrics" content="natural" />
+
+    <!-- Retina favicon -->
+    <link rel="icon" sizes="16x16" href="/favicon.ico" />
+
+    <!-- Retina icon for Web Clips on iOS devices -->
+    <link rel="apple-touch-icon" href="http://99designs.com/static/images/iphone-icon.png">
+
+    <!-- A HTTP canonical URL to ensure search engines do not index HTTPS  -->
+    <link rel="canonical" href="http://99designs.com/" />
+
+    <!-- Title for Web Clips on iOS devices -->
+    <meta name="apple-mobile-web-app-title" content="99designs">
+
+    <title>Logo Design, Web Design and More. | 99designs</title>
+
+    <!--[if IE 8]>
+        <link href="http://d8u1nmttd4enu.cloudfront.net/css/cd3068a00c50a30/Sy4u1tfT00_Ozy3Iz0vNKynWTyzOzM0v003OzytJLQbyk4EqYBy9zFQLvdzMPOtkorRBxDKBYsUgXQA---" rel="stylesheet" media="screen,projection" />
+        <!--<![endif]-->
+        <!--[if gt IE 8]><!-->
+        <link href="http://d8u1nmttd4enu.cloudfront.net/css/cd3068a00c50a30/Sy4u1tfT00_Ozy3Iz0vNKynWTyzOzM0v003OzytJLQbyk4EqYBy93Mw862SitKQBOaSoh4hlAsXAugA---" rel="stylesheet" media="screen,projection" />
+        <!--<![endif]-->
+
+        <link href="http://d8u1nmttd4enu.cloudfront.net/css/cd3068a00c50a30/fZLRcsQgCEW_iPq8068hShMTIy6o2fx9bafT2dmGvnKuXC4ytRwSqcNSnFd1CU9uVd.nl7ouuNMPNWDGbhD2YEPMcccaOf81TXFygbpb743kfLvXWIwmfVW43UC3mA2FFvQxz9f00rnHQLxeT.U5sUz8.IU7ykZ1GDxt0YBK_iuuQT.Ec4WCMxmChYTVYCPjNl5aeOEDYoWDZVPQSsUSeqw0s5yQMIdR_G8eeuBeEkER6pEOKxZhbUIBPAo3pWTovpdufWGbxhl9Ag--" rel="stylesheet" media="screen,projection" />
+        <link href="http://d8u1nmttd4enu.cloudfront.net/css/cd3068a00c50a30/SyrNS8lJLdbPTSzKTi3JzEvXTy4u1i_OSMxNBQA---" rel="stylesheet" media="screen,projection" />
+        
+            <!-- https://rollbar.com/docs/project/3758/notifier/rollbar.js/ -->
+<script>
+var _rollbarParams = {
+    "server.environment": "production",
+    "checkIgnore": function (errMsg, url, lineNo) {
+        return !!!(
+            // whitelist domains we expect legit errors to occur from
+            (url.match(/^\w+:\/\/99designs/) || url.match(/^\w+:\/\/d8u1nmttd4enu\.cloudfront\.net/))
+
+            // http://stackoverflow.com/questions/5913978/cryptic-script-error-reported-in-javascript-in-chrome-and-firefox
+            && errMsg !== 'Script error.'
+            // http://stackoverflow.com/questions/1087518/firefox-error-loading-script
+            && errMsg !== 'Error loading script'
+
+            // Script failed to load - generally happens during deployments
+            && !errMsg.match(/\[object HTMLScriptElement\]/)
+
+            // Chrome extensions
+            // https://developer.chrome.com/extensions/storage.html
+            && errMsg !== 'TypeError: Cannot read property \'local\' of undefined'
+
+            // 3rd party toolbar http://toolbar.conduit.com/
+            && !errMsg.match(/conduitPage/)
+            && !errMsg.match(/EBCallBackMessageReceived/)
+            // 3rd party toolbar http://www.dealply.com/
+            && !errMsg.match(/DealPly/)
+
+            // The Tale of an Unfindable JS Error http://blog.errorception.com/2012/03/tale-of-unfindable-js-error.html
+            && !errMsg.match(/originalCreateNotification/)
+            && !errMsg.match(/atomicFindClose/)
+            && !errMsg.match(/jid1-ejhbjdxm9zr4tq/)
+            && !errMsg.match(/miscellaneous_bindings/)
+
+            // IE8
+            // http://support.microsoft.com/kb/2688188
+            && !errMsg.match(/Invalid pointer/)
+
+            // IE10
+            // Local storage permissions https://github.com/meteor/meteor/issues/1291
+            && !errMsg.match(/Access is denied/)
+
+            // Firefox
+            // Extension erors https://support.mozilla.org/en-US/questions/942331
+            && !errMsg.match(/Error: syntax error/)
+        );
+    },
+    "client.rev": "523125a"
+};
+_rollbarParams["notifier.snippet_version"] = "2"; var _rollbar=["e989a22833c94e969ccb11a98abaca5a", _rollbarParams]; var _ratchet=_rollbar;
+(function(w,d){w.onerror=function(e,u,l){_rollbar.push({_t:'uncaught',e:e,u:u,l:l});};var i=function(){var s=d.createElement("script");var
+f=d.getElementsByTagName("script")[0];s.src="//d37gvrvc0wt4s1.cloudfront.net/js/1/rollbar.min.js";s.async=!0;
+f.parentNode.insertBefore(s,f);};if(w.addEventListener){w.addEventListener("load",i,!1);}else{w.attachEvent("onload",i);}})(window,document);
+</script>
+    
+    
+    <script src="http://d8u1nmttd4enu.cloudfront.net/en/js/cd3068a00c50a30/hcs9DoAwCEDhEwmTk6eplkRIoRXs4un9GZxM3N7wPQkEwKVqq0a2B1KMQ6ysb4DEJD8qPWrulgsFptbwOgrPqDWTGx8OyvYFnLbOThI3OAE---"></script>
+    
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+
+    <!-- Orientation change zooming bug in iOS -->
+    <!-- http://www.andrespagella.com/browser-bugs-tricks-any-frontend-dev-should-know#12 -->
+    <script>
+    (function(a){function m(){d.setAttribute("content",g),h=!0}function n(){d.setAttribute("content",f),h=!1}function o(b){l=b.accelerationIncludingGravity,i=Math.abs(l.x),j=Math.abs(l.y),k=Math.abs(l.z),(!a.orientation||a.orientation===180)&&(i>7||(k>6&&j5))?h&&n():h||m()}var b=navigator.userAgent;if(!(/iPhone|iPad|iPod/.test(navigator.platform)&&/OS [1-5]_[0-9_]* like Mac OS X/i.test(b)&&b.indexOf("AppleWebKit")>-1))return;var c=a.document;if(!c.querySelector)return;var d=c.querySelector("meta[name=viewport]"),e=d&&d.getAttribute("content"),f=e+",maximum-scale=1",g=e+",maximum-scale=10",h=!0,i,j,k,l;if(!d)return;a.addEventListener("orientationchange",m,!1),a.addEventListener("devicemotion",o,!1)})(this);
+    </script>
+</head>
+<body class="l-max--desktop app-layout app-layout--default">
+    <div class="oc-wrapper" data-oc-name="left right">
+        <div class="oc-content--main" data-oc-canvas="left right">
+            
+    
+            <header role="header" class="text-center">
+            <div class="contact-links">
+    <span class="call">Questions? Call us <span itemprop="telephone"><span class="sl_notranslate">1 800 513 1678</span></span></span>
+    <a class="designers-link" href="http://99designs.com/design-consultation">
+        <p class="consultation">
+            <span class="cosmetic-edge cosmetic-edge--dark"></span>
+            <span class="cosmetic-edge cosmetic-edge--light"></span>
+            REQUEST A DESIGN CONSULTATION<span class="icon icon--right-1"></span>
+        </p>
+    </a>
+</div>
+
+<div class="l-row">
+    <div class="l-columns">
+
+        <a href="#menu" class="navicon oc-trigger left button--primary" data-oc-trigger="left"></a>
+
+        <div class="logo">
+            <a href="http://99designs.com/" title="99designs">
+                <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAVoAAABgCAMAAABrGUo7AAAAGFBMVEWogHuesckmUHY7V3NMcpbzaC8WQmkAAAC5QyHpAAAACHRSTlOD86BE9vv+ABsJBsIAAAe9SURBVHja7d3RmppADAXgmIPM+79xt3xqgJNMBstQWsiVlcjIv1MmBtyVckeneNPKgLJLYAoRnWKYB65JOwzDH2mKOYYhN+0WzyELfcc9a7OYRGNGEUzBr7tpt5KqTpj5QBem1RhV1QctFjftJlpA1CH9Tkhv2gCVSL+hxbVpAd3X1E7mj1fIT+BatBDdGZVpLa5Ciw4zlWghP3ElWoguVcvuwdXdJWgNVdFJlddJPB5yEVqFHXmfwJoW/z/tq948gFZmo16CFsfS2qn2ErR6DC2uRjst3cfTSklC34F/l1aHAf1pxWjbCoTxHbrb1Y/DaXEIrRotrWL9aaHTrnA8rR5CW+a05UhajK/AsbTTyTamFXn+jnpDBZRUpX0cTKvjOw6m1WFAQCvPeQgncFKgO/xN2vETOJZWiJbNDJeTKBpo5Uha/DVa/GZlWjy9wCrLTZKI1gqES8za6bCZVliM2RAmMa1SgXA5WpZltjwpoS2H0sL2dTCtDgNWtIbGAZqzue1i/4+jaQuOkWVaEC3WSBBnmaomEa0cSMsBa0cfTCuvZYbQxNEWki2ONrcQjFY60J4u5HUiXNCKKbrea2s3CREtLkU7RYTI81YoKXutGK0VCFeg1RctGaKiFqxY0kKbdKcyWgDYq8uFjcntm8UukMU6TB4kheQ6DPVVDNA3JWq0UB2XiSXc/knAJ9bJlrpMnD9e7VgbxjVaGC3hRGrPlPaZ0vIxmibTct6obEUJYXsGnPmhnj/mHRMuxlVoRotQjf3rc35Y0ErQmbIA0TIcf7xytmtEC29XY0CrTm5tV1OCTBsXtCAbViP/dloYrYlRgGntKbKLt4Noaxz2aEGrXm593NKDFraFaKlACMXYTpPtxd1amDbeGTza0U9G9f3rh1a30qKFVua0Gp1qxzZa/SpBiTbZmUMbJNP7Z9pPiQCyQQstlf/baLWNFstFBNAZxDpBAajGtBhbaDf/yG3YER9aGC3ZZLTPhlkLj5aPEvDKhaAWQ7RUYXYSh0vLqz00pjW3ZRbX37Z2lIz2+Q2t+LTir2LJgkRw6r0Wy39YoHi0mo3JtOpkwZ6gus5oS0CLqPgCCVpSSgs6HRDJ6qjAFItn+RAtmJbEWG1FCy9Lk1awRytxe8BoEfwAJKDFukCgo2Q1rivhk7XTLs0oi2n5J8A7y2k9Q1/2iSU0yzKtd6oFHaVvHrx/GAWMJaMdo9SQNsiiXRPtu/qSmg/kOQ8vyZ4jcQlolSaGuwURm+WAwCJaJGMyrW7IYlpZ0JZnFtUkptU5raT3XqwBlLKIltfDnBY0po+GOIvXNaLFsLxrO6VtsfW6MzBa+s9FasSGVcxeTv2TiFbrtBtpC/V4EtoiLWrYSGurGE/NhDYL/higSGlLI20li8fFmrbMaGO2D7hUk5h2mNMG7zKmRQstZylcWtu+C21RGpdph7IINrOnUEkyf4/20Y3WSdPOtGFLtEbLc1LmkJTkFWU4kjaw7Uwb2eqcVpnW7gB9ilAnNkqC365VKxB60IYHeQRtgbIt08ZB8zFJEo8WfWn5IJVp91zGwnFhtJLR8qTl4ElrLQQqELhCyGkRROWiBbpWCHF31Ghhn3Tz+VhLSmkDPwtWjzA4GFdjWuxHy+OCaBvR8iS49848AtqxjRbbbrFnzezD9fe03FX6zMCMNrnvnntmKW08g9YAyhjttlgoJS2hr2l5H820T4tmWerOWIGwrfMFykoDIW3cyNyDFg6tLvozlRIXLfzi04Jos/YS3+8RxyJ82qT9fjytEFqS9ORvNnGBUDnMeB3SP6NlQzPpRiv8RRG/U+sHJUW09E5YjS9LgToDdAFMNdgxK6nTaNDxS1pqsvEyBo8WYmSMlifZeZxWMVcRKKD7ulgDNraqXfJVv6fGSqsBVC1hKy2W4+ro0fr3hVfRJEvKaTEm8ZZjDnX+l6sqAE2UeNBvaW1crMYtW2j5PJvKMq2URlsYbaYB2h7O+eqg+gWtxuPaoaa0XBsk/NRCANGGb06LPWIN5tOQ3VWCP+R22vAtzWmVaEOzPIlpuUCoHyZfxdUabSzrK8FL3U6L6B2tacFqsVmeRCtk8K0mVLGU8ihsU9YKr965jL1otTTTCnwzgg1pxWi90Mqt3BpycHp+AYfbKZYKS2tfxuJxzUN8WiHXPIlpUaXlw6TvElieLgoF0CZvi7cv28Ro4YtoA40LA+W5lX/ZJE9i2vwLY3wYcWaYS1uao70LlI/LtFq6hBgtgpRe0Z+Wg2lLd1o5KS2fRPenHfr9tqRz/+K0eLE7P205Py32/uqqHPCL0ocPrZzFUVGp/7A7rXSmxUloqV+1Lk/LjrRWffWiPdMqtu5XgS6v96DVTrT6oj3fisWxm4EY7DuU/pTNDrTnWsX6yjJtGBP199A4HS16yjJtgZBp6Cx4RSOtnKtA0EpXfU9ai2Fr8Ckkoj1ZgaB9pyzTqmf2eTSF4+rOawBzWliBcFpdRSkdaNsLWwAi0so8IcuHtpwqgNfFS+3zO8CEPqM0BURefyeoCRm2il0nJEtIhad4Gd+0O9Ea8GMWnrAA+PG/ab+fwBbyE2tiFeCm3WUCiwCAKAHftLv4TpAA5sA37W6+IphWMUD0pu1x/n0/e59r956+Uu4KoRMvLkb7C5VoN8l1qmFIAAAAAElFTkSuQmCC" width="130" height="36" alt="99designs" />
+            </a>
+        </div>
+
+        <nav id="menu" class="app-menu--primary" role="navigation">
+            
+<ul class="app-menu--list list--vertical" data-list-expand-to="horizontal-list" data-list-expand-at="desktop"><li class="list__item menu__item menu__item--home"><a class="list__item__content" href="http://99designs.com/">HOME</a></li><li class="list__item menu__item"><a class="list__item__content dropdown--trigger" href="#">BROWSE CATEGORIES<span class="icon icon--down-1 l-hide-t l-hide-m m-none-right"></span></a><div
+    class="
+        list--vertical dropdown--content
+        dropdown--content--categories
+        app-menu--list__submenu
+    "
+    data-list-expand-to="horizontal-list"
+    data-list-expand-at="desktop"
+><ul class="list__item list list--horizontal"><li class="list__item list__item--align-top grouped-list"><ul class="grouped-list__list"><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Logo &amp; Identity
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/logo-design"
+                                    >
+                                        Logo design
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/logo-business-card-design"
+                                    >
+                                        Logo &amp; business card
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/business-card-design"
+                                    >
+                                        Business card
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/stationery-design"
+                                    >
+                                        Stationery
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Website &amp; App
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/web-design"
+                                    >
+                                        Website
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/landing-page-design"
+                                    >
+                                        Landing page
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/icon-button-design"
+                                    >
+                                        Icon or button
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/mobile-app-design"
+                                    >
+                                        Mobile app
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/social-media-page-design"
+                                    >
+                                        Social media page
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-website-app-design"
+                                    >
+                                        Other website or app
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Business &amp; Advertising
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/postcard-flyer-design"
+                                    >
+                                        Postcard, Flyer &amp; Print
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/brochure-design"
+                                    >
+                                        Brochure
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/banner-ad-design"
+                                    >
+                                        Banner ad
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/flash-banner-design"
+                                    >
+                                        Flash Banner
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/signage-design"
+                                    >
+                                        Signage
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/email-design"
+                                    >
+                                        Email
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-business-advertising"
+                                    >
+                                        Other business or advertising
+                                    </a></li></ul></div></li></ul></li><li class="list__item list__item--align-top grouped-list"><ul class="grouped-list__list"><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Clothing &amp; Merchandise
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/t-shirt-design"
+                                    >
+                                        T-Shirt
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/clothing-apparel-design"
+                                    >
+                                        Clothing or apparel
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/merchandise-design"
+                                    >
+                                        Merchandise
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-clothing-merchandise-design"
+                                    >
+                                        Other clothing or merchandise
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Art &amp; Illustration
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/illustrations"
+                                    >
+                                        Illustration &amp; Graphics
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/card-invitation-design"
+                                    >
+                                        Card or invitation
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/infographic-design"
+                                    >
+                                        Infographic
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-art-illustration"
+                                    >
+                                        Other art or illustration
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Packaging &amp; Label
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/product-packaging-design"
+                                    >
+                                        Product packaging
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/product-label-design"
+                                    >
+                                        Product label
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-packaging-label-design"
+                                    >
+                                        Other packaging or label
+                                    </a></li></ul></div></li></ul></li><li class="list__item list__item--align-top grouped-list"><ul class="grouped-list__list"><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Book &amp; Magazine
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/book-cover-design"
+                                    >
+                                        Book cover
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/magazine-cover-design"
+                                    >
+                                        Magazine cover
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-book-magazine-design"
+                                    >
+                                        Other book or magazine
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Other
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-design"
+                                    >
+                                        Other design
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                    Need something else?
+                </div><ul class="grouped-list__list"><li class="list__item"><a class="list__item__content" href="http://99designs.com/categories">
+                            See all categories
+                        </a></li></ul></div></li></ul></li></ul><ul class="
+        list__item list__item--align-top
+        list--vertical
+        dropdown--content--categories--oc
+    "><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Logo &amp; Identity
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/logo-design"
+                            >
+                                Logo design
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/logo-business-card-design"
+                            >
+                                Logo &amp; business card
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/business-card-design"
+                            >
+                                Business card
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/stationery-design"
+                            >
+                                Stationery
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Website &amp; App
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/web-design"
+                            >
+                                Website
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/landing-page-design"
+                            >
+                                Landing page
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/icon-button-design"
+                            >
+                                Icon or button
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/mobile-app-design"
+                            >
+                                Mobile app
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/social-media-page-design"
+                            >
+                                Social media page
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-website-app-design"
+                            >
+                                Other website or app
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Business &amp; Advertising
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/postcard-flyer-design"
+                            >
+                                Postcard, Flyer &amp; Print
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/brochure-design"
+                            >
+                                Brochure
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/banner-ad-design"
+                            >
+                                Banner ad
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/flash-banner-design"
+                            >
+                                Flash Banner
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/signage-design"
+                            >
+                                Signage
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/email-design"
+                            >
+                                Email
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-business-advertising"
+                            >
+                                Other business or advertising
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Clothing &amp; Merchandise
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/t-shirt-design"
+                            >
+                                T-Shirt
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/clothing-apparel-design"
+                            >
+                                Clothing or apparel
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/merchandise-design"
+                            >
+                                Merchandise
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-clothing-merchandise-design"
+                            >
+                                Other clothing or merchandise
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Art &amp; Illustration
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/illustrations"
+                            >
+                                Illustration &amp; Graphics
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/card-invitation-design"
+                            >
+                                Card or invitation
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/infographic-design"
+                            >
+                                Infographic
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-art-illustration"
+                            >
+                                Other art or illustration
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Packaging &amp; Label
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/product-packaging-design"
+                            >
+                                Product packaging
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/product-label-design"
+                            >
+                                Product label
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-packaging-label-design"
+                            >
+                                Other packaging or label
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Book &amp; Magazine
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/book-cover-design"
+                            >
+                                Book cover
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/magazine-cover-design"
+                            >
+                                Magazine cover
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-book-magazine-design"
+                            >
+                                Other book or magazine
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Other
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-design"
+                            >
+                                Other design
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><a class="list__item__content" href="http://99designs.com/categories">
+                See all categories
+            </a></li></ul></div></li><li class="list__item menu__item"><a class="list__item__content" href="http://99designs.com/how-it-works">HOW IT WORKS</a></li><li class="list__item menu__item"><a class="list__item__content" href="http://99designs.com/pricing">PRICING</a></li><li class="list__item menu__item"><a class="list__item__content" href="http://99designs.com/testimonials">TESTIMONIALS</a></li><li class="list__item menu__item menu__item--userbar"></li></ul>        </nav>
+
+    </div>
+</div>
+        </header>
+    
+            <div role="main">
+                            <div class="marketing-page">
+        <div class="mkt-hero mkt-hero--default">
+            <div class="l-row">
+                <div class="l-columns">
+                    <h2 class="mkt-hero__heading h-main-crosshead">Get a design you'll love — guaranteed</h2>
+                    <h2 class="mkt-hero__lead">Let our community of <span class="sl_notranslate">253,776</span> designers create dozens of designs for you</h2>
+                </div>
+            </div>
+
+            <div class="l-row">
+                <div class="mkt-hero__actions l-columns">
+                    <div class="mkt-hero__actions__cta">
+                        <a
+                                                    href="https://99designs.com/launch"
+                                                class="button button--primary">GET STARTED NOW<span class="icon icon--right-1"></span></a>
+                    </div>
+                    <div class="mkt-hero__actions__video">
+                        <a class="primary-link watch-video play-video-link" data-modal-name="welcome-video" data-modal-content="#welcome-video-content" data-version="1" data-modal-animation="scale" href="https://d218k77ayymx7j.cloudfront.net/welcome-to-99designs.mp4">SEE HOW IT WORKS<span class="icon icon--play-1 icon icon--valigned icon--large"></span></a>
+                    </div>
+                </div>
+            </div>
+
+                            <a href="http://swiftly.com/" class="marketing-page__violator violator--swiftly l-hide-t l-hide-m"></a>
+            
+        </div>
+
+        
+            <div class="front-page">
+
+        
+<div class="l-row-wrap row--subnav">
+    <div class="l-row l-collapse">
+        <div class="l-center l-column l-one-whole">
+            <div class="nav nav--2">
+                <nav class="list--subnav subnav--primary list list--vertical list--accordion" data-list-expand-to="horizontal-list" data-list-expand-at="tablet">
+                    
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/logo-design" data-key=logo-design>
+                                <span class="list__item__content">
+                                    LOGO DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/web-design" data-key=web-design>
+                                <span class="list__item__content">
+                                    WEB PAGE DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/business-card-design" data-key=business-card-design>
+                                <span class="list__item__content">
+                                    BUSINESS CARD DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/mobile-app-design" data-key=mobile-app-design>
+                                <span class="list__item__content">
+                                    MOBILE APP DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/t-shirt-design" data-key=t-shirt-design>
+                                <span class="list__item__content">
+                                    T-SHIRT DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/banner-ad-design" data-key=banner-ad-design>
+                                <span class="list__item__content">
+                                    BANNER AD DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/book-cover-design" data-key=book-cover-design>
+                                <span class="list__item__content">
+                                    BOOK COVER DESIGN                                </span>
+                            </a>
+                                            
+                        
+                                                                            
+                        
+                                                    <a class="list__item menu__item" href="http://99designs.com/art-illustration" data-key=art-illustration>
+                                <span class="list__item__content">
+                                    ART &amp; ILLUSTRATION                                </span>
+                            </a>
+                                            
+                    <a class="menu__item list__item list__item--toggle l-columns l-center" href="#">
+                        <span class="list__item__content">
+                            SHOW MORE                        </span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+        <div class="mkt-featured-carousel" data-endpoint="http://99designs.com/front-page-featured-contests/d3ddeefbe88c2ea72261c05c3b472bf1/20"></div>
+
+        <div class="mkt-section">
+
+    <div class="l-row">
+        <div class="l-columns">
+                            <h1 class="h-main-crosshead">Logo design, web design &amp; more!</h1>
+                    </div>
+    </div>
+
+    <div class="l-row">
+        <div class="mkt-how-it-works-step l-one-third l-columns">
+            <div class="flag flag--vertical">
+                <a href="http://99designs.com/how-it-works" class="flag__mast">
+                    <img class="mkt-how-it-works-step__image" alt="How it works - step 1" src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/how-it-works/step-1.png" />
+                </a>
+                <div class="flag__flag">
+                    <h3 class="h-sub-crosshead">Tell us what you need</h3>
+                    <p class="mkt-how-it-works-step__description">
+                        Fill in our online  design brief, and choose how much you'll pay. Our designers compete to win the money in what we call a design contest.
+                    </p>
+                    <a class="mkt-how-it-works-step__action learn-more-link" href="http://99designs.com/how-it-works">LEARN MORE<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="l-one-third l-columns">
+            <div class="mkt-how-it-works-step flag flag--vertical">
+                <a href="http://99designs.com/how-it-works" class="flag__mast">
+                    <img class="mkt-how-it-works-step__image" alt="How it works - step 2" src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/how-it-works/step-2.png" />
+                </a>
+                <div class="flag__flag">
+                    <h3 class="h-sub-crosshead">Receive dozens of designs</h3>
+                    <p class="mkt-how-it-works-step__description">
+                        Designers start to compete in your  design contest. They submit designs, and you give them feedback. Together, you polish the designs over 7 days.
+                    </p>
+                    <a class="mkt-how-it-works-step__action learn-more-link" href="http://99designs.com/how-it-works">LEARN MORE<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="l-one-third l-columns">
+            <div class="mkt-how-it-works-step flag flag--vertical">
+                <a href="http://99designs.com/how-it-works" class="flag__mast">
+                    <img class="mkt-how-it-works-step__image" alt="How it works - step 3" src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/how-it-works/step-3.png" />
+                </a>
+                <div class="flag__flag">
+                    <h3 class="h-sub-crosshead">Pick your favorite design</h3>
+                    <p class="mkt-how-it-works-step__description">
+                        Choose the  design you love best, and sign our copyright agreement. The designer gets the prize money, and you get a gorgeous new design.
+                    </p>
+                    <a class="mkt-how-it-works-step__action learn-more-link" href="http://99designs.com/how-it-works">LEARN MORE<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+                    <div class="projects-section mkt-section mkt-section--alt">
+    <div class="l-row text-center">
+        <div class="l-two-thirds l-nine-twelfths-t l-columns l-center">
+            <div class="flag flag--vertical" data-flag-expand-to="middle" data-flag-expand-at="tablet">
+                <div class="flag__mast">
+                    <img alt="1&#8209;to&#8209;1&nbsp;Projects" src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/projects/projects-icon.png" width="125" height="100" />
+                </div>
+                <div class="flag__flag">
+                    <h2 class="h-sub-crosshead">Continue working with a designer</h2>
+                    <p class="m-none-vert">
+                        After your contest, work directly with a designer
+                        using&nbsp;<a href="http://99designs.com/projects/about">1&#8209;to&#8209;1&nbsp;Projects</a>.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+        
+        <div class="trust section">
+
+                            <div class="l-row text-center-m statistics">
+                    <div class="l-one-quarter l-columns statistic">
+                        <div class="statistic__inner">
+                            <div class="white"><span class="sl_notranslate">1,977</span></div>
+                            <div class="title">Open contests</div>
+                        </div>
+                    </div>
+
+                    <div class="l-one-quarter l-columns statistic">
+                        <div class="statistic__inner">
+                            <div class="white">247K</div>
+                            <div class="title">Contests to date</div>
+                        </div>
+                    </div>
+
+                    <div class="l-one-quarter l-columns statistic">
+                        <div class="statistic__inner">
+                            <div class="white">$1.8M</div>
+                            <div class="title">Payouts last month</div>
+                        </div>
+                    </div>
+
+                    <div class="l-one-quarter l-columns statistic">
+                        <div class="statistic__inner">
+                            <div class="white">$61.0M</div>
+                            <div class="title">Payouts to date</div>
+                        </div>
+                    </div>
+                </div>
+            
+            <div class="l-row">
+                <div class="l-five-twelfths l-columns">
+                    <div class="flag flag--vertical">
+                        <div class="flag__mast">
+                            <div class="testimonial">
+                                <div class="wrapper">
+                                    <p class="body"><span class="sl_notranslate">99designs will get you the best results. I will continue recommending 99designs to every business owner that needs a website or logo designed. Thanks so much for the serv</span>&hellip;</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="flag__flag">
+                            <div class="message">
+                                <h3 class="h-sub-crosshead heading">Customer testimonials</h3>
+                                <p class="white">
+                                    Hear from some of our thousands of happy customers.
+                                </p>
+                                <a class="primary-link" href=http://99designs.com/testimonials>SEE MORE CUSTOMER TESTIMONIALS<span class="icon icon--right-1"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-four-twelfths l-columns">
+                    <div class="flag flag--vertical">
+                        <div class="flag__mast">
+                            <img class="circle" alt="" src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/trust/customer.jpg" />
+                        </div>
+                        <div class="flag__flag">
+                            <div class="message">
+                                <h3 class="h-sub-crosshead heading">Customer perspective</h3>
+                                <p class="white">
+                                    Jenn, founder of Le Floq, explains how 99designs helped
+                                    her brand get attention in a tough market.
+                                </p>
+                                <a data-modal-name="99designed-jenn-lefloq" data-modal-content="#99designed-jenn-lefloq-content" data-modal-animation="scale" data-version="1" href="http://video.99designs.com/99designed-lefloq.mp4" class="primary-link watch-video">WATCH JENN'S VIDEO<span class="icon icon--right-1"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="l-three-twelfths l-columns">
+                    <div class="flag flag--vertical">
+                        <div class="flag__mast">
+                            <img class="circle" alt="" src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/trust/designer.jpg" />
+                        </div>
+                        <div class="flag__flag">
+                            <div class="message">
+                                <h3 class="h-sub-crosshead heading">Designer insight</h3>
+                                <p class="white">
+                                    Nicholas, one of 99designs' top designers, talks about his favorite contests &mdash; and clients.
+                                </p>
+                                <a data-modal-name="99designer-nicholas" data-modal-content="#99designer-nicholas-content" data-modal-animation="scale" data-version="1" href="http://video.99designs.com/99designer-nicholas.mp4" class="primary-link watch-video">WATCH NICK'S VIDEO<span class="icon icon--right-1"></span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+        <div class="support section">
+    <div class="l-row">
+        <div class="l-columns text-center">
+            <h2 class="heading h-main-crosshead">Got a question? Get in touch</h2>
+            <p class="white">
+                <span class="m-block">
+                    We're here to help. Check out our <a class="primary-link" href="http://99designs.com/help">FAQs</a>,
+                    <a class="primary-link" href="http://99designs.com/contact">send us an email</a>
+                    or call us at
+                    <a class="primary-link mobile-tel" href="tel:1 800 513 1678" itemprop="telephone"><span class="sl_notranslate">1 800 513 1678</span></a>
+                    <span class="desktop-tel" itemprop="telephone"><span class="sl_notranslate">1 800 513 1678</span></span>
+                </span>
+
+                <a class="m-block primary-link m-gutter-horz" href="http://99designs.com/design-consultation">
+                    REQUEST A FREE DESIGN CONSULTATION
+                   <span class="icon icon--right-1"></span>
+                </a>
+            </p>
+        </div>
+    </div>
+</div>
+
+                
+    </div>
+        </div>
+    
+            <footer role="footer">
+            <div class="site-footer site-footer--default">
+            <div class="site-footer__navigation l-row-wrap">
+            <div class="site-footer__navigation__inner l-row">
+                <div class="l-columns">
+                    <div class="matrix matrix--of-four-w matrix--of-four-d matrix--of-four-t matrix--of-one-m">
+                        <div class="site-footer__navigation__group matrix__item">
+                            <h2 class="grouped-list__heading">Company</h2>
+                            <ul class="grouped-list__list">
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/about">About</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/contact">Contact</a></li>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/about/jobs">Jobs</a></li>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/about/meet-the-team">Team</a></li>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/about/press-releases">Press</a></li>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/about/buzz">Buzz</a></li>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-footer__navigation__group matrix__item">
+                            <h2 class="grouped-list__heading">Resources</h2>
+                            <ul class="grouped-list__list">
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/help">Help</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/designers">Designers</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/affiliates">Affiliates</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/customer-blog/99nonprofits/">99nonprofits</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-footer__navigation__group matrix__item">
+                            <h2 class="grouped-list__heading">Other products</h2>
+                            <ul class="grouped-list__list">
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/logo-design/store">Ready Made Logos</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/projects/about">1&#8209;to&#8209;1&nbsp;Projects</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://swiftly.com">Swiftly</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="site-footer__navigation__group matrix__item">
+                            <h2 class="grouped-list__heading">Social</h2>
+                            <ul class="grouped-list__list">
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/customer-blog"><span class="icon icon--rss-1"></span>Customer Blog</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://99designs.com/designer-blog"><span class="icon icon--rss-1"></span>Designer Blog</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://www.twitter.com/99designs"><span class="icon icon--twitter-2"></span>Twitter</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://www.facebook.com/99designs"><span class="icon icon--facebook-1"></span>Facebook</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="https://plus.google.com/+99designs"><span class="icon icon--gplus-1"></span>Google+</a>
+                                </li>
+                                <li class="list__item">
+                                    <a class="list__item__link" href="http://pinterest.com/99designs"><span class="icon icon--pinterest-1"></span>Pinterest</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="l-row">
+        <div class="l-columns">
+            <div class="site-footer__sub">
+                <div class="site-footer__sub__inner">
+                    <div class="site-footer__legal">
+                        <span class="site-footer__legal__copyright-message">All Rights Reserved | 99designs&reg; 2006–2013</span>
+                        <ul class="site-footer__legal__privacy-links">
+                            <li class="list__item">
+                                <a class="list__item__link" href="http://99designs.com/legal/terms-of-use">Terms</a>
+                            </li>
+                            <li class="list__item">
+                                <a class="list__item__link" href="http://99designs.com/legal/privacy">Privacy</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="site-footer__language">
+                        <ul class="site-footer__language__language-selector sl_notranslate">
+                                                                                                <li class="list__item" data-state="selected">
+                                        English
+                                    </li>
+                                                                                                                                <li class="list__item">
+                                        <a class="list__item__link" href="http://es.99designs.com?preferredlanguage=true">Español</a>
+                                    </li>
+                                                                                    </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+            <div class="press-logo-panel press-logo-panel--default">
+    <div class="press-logo-panel__inner l-row">
+        <div class="l-columns">
+            <h2 class="press-logo-panel__heading">As featured in...</h2>
+            <div class="press-logo-panel">
+                        <div class="press-logo-panel__item">
+                            <a title="See what The New York Times has to say about 99designs"
+                               href="http://www.nytimes.com/2009/06/25/business/smallbusiness/25freelance.html?_r=2" rel="external"
+                               target="_blank">
+                                <span class="press-logo-panel__logo image image--new-york-times-inversed"></span>
+                            </a>
+                        </div>
+
+                    
+                        <div class="press-logo-panel__item">
+                            <a title="See what The Wall Street Journal has to say about 99designs"
+                               href="http://blogs.wsj.com/venturecapital/2011/04/28/accel-again-looks-down-under-leads-35m-for-99designs/" rel="external"
+                               target="_blank">
+                                <span class="press-logo-panel__logo image image--wall-street-journal-inversed"></span>
+                            </a>
+                        </div>
+
+                    
+                        <div class="press-logo-panel__item">
+                            <a title="See what Entrepreneur has to say about 99designs"
+                               href="http://www.entrepreneur.com/magazine/entrepreneur/2010/June/206722-7.html" rel="external"
+                               target="_blank">
+                                <span class="press-logo-panel__logo image image--entrepreneur-inversed"></span>
+                            </a>
+                        </div>
+
+                    
+                        <div class="press-logo-panel__item">
+                            <a title="See what TechCrunch has to say about 99designs"
+                               href="http://techcrunch.com/2011/04/28/accel-invests-35m-in-99designs-after-years-of-trying/" rel="external"
+                               target="_blank">
+                                <span class="press-logo-panel__logo image image--tech-crunch-inversed"></span>
+                            </a>
+                        </div>
+
+                    
+                        <div class="press-logo-panel__item">
+                            <a title="See what Forbes has to say about 99designs"
+                               href="http://blogs.forbes.com/stevenbertoni/2011/04/28/facebook-backer-accel-bets-35-million-on-crowdsourcer-99designs/" rel="external"
+                               target="_blank">
+                                <span class="press-logo-panel__logo image image--forbes-inversed"></span>
+                            </a>
+                        </div>
+
+                    </div>
+        </div>
+    </div>
+</div>
+        </footer>
+    
+                        <script src="/analytics/ga.js"></script>
+        
+        <!--[if (gte IE 6)&(lte IE 8)]>
+                    <script src="http://d8u1nmttd4enu.cloudfront.net/en/js/cd3068a00c50a30/SyrNS8lJLdZPLCjQzyrWz8lM0i9OzUlNLsksy6wq0svNzAMA"></script>
+                <![endif]-->
+
+                    <script src="http://d8u1nmttd4enu.cloudfront.net/en/js/cd3068a00c50a30/nY9BEsMgCEVPZDxAT0MUO2QQrGg6uX2TzqSLdpO64vP5D4bF_DT5oLmooDTzYJR1dUGloe39clo.a.yM5pmsOQhBaySV2_L_hoyRwD061m0I1wg8AmpKLoCsYJfojz75ion1OcZaIRGsY3AvrBAv0l9PN1VuVEbQCnJHYzouz13i4UEpR5Jp9us.0F2_65RJfkKwaW8v"></script>
+        
+                    <script src="http://d8u1nmttd4enu.cloudfront.net/en/js/cd3068a00c50a30/SyrNS8lJLdbPTSzKTi3JzEvXzyrWT04sSU3PL6rULUhMTwUA"></script>
+            
+                        
+    <script type="text/javascript">
+  (function() {
+    window._pa = window._pa || {};
+    var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.async = true;
+    pa.src = ('https:' == document.location.protocol ? 'https:' : 'http:') + "//tag.perfectaudience.com/serve/505a4ddb01a0ef000200000b.js";
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+  })();
+</script>    <!-- BEGIN: Marin Software Tracking Script (Landing Page) -->
+<script type='text/javascript'>
+var _mTrack = _mTrack || [];
+_mTrack.push(['trackPage']);
+
+(function() {
+var mClientId = '75mlvfed70';
+var mProto = (('https:' == document.location.protocol) ? 'https://' : 'http://');
+var mHost = 'tracker.marinsm.com';
+
+var mt = document.createElement('script'); mt.type = 'text/javascript'; mt.async = true; mt.src = mProto + mHost + '/tracker/async/' + mClientId + '.js';
+var fscr = document.getElementsByTagName('script')[0]; fscr.parentNode.insertBefore(mt, fscr);
+})();
+</script>
+<noscript>
+<img width="1" height="1" src="https://tracker.marinsm.com/tp?act=1&cid=75mlvfed70&script=no" />
+</noscript>
+<!-- END: Copyright Marin Software -->
+    
+    
+    
+
+        </div>
+        <div class="oc-content list--subnav" data-oc-content="left">
+            <nav id="oc_menu" class="oc_menu" role="navigation">
+                
+<ul class="app-menu--list list--vertical" data-list-expand-to="horizontal-list" data-list-expand-at="desktop"><li class="list__item menu__item menu__item--home"><a class="list__item__content" href="http://99designs.com/">HOME</a></li><li class="list__item menu__item"><a class="list__item__content dropdown--trigger" href="#">BROWSE CATEGORIES<span class="icon icon--down-1 l-hide-t l-hide-m m-none-right"></span></a><div
+    class="
+        list--vertical dropdown--content
+        dropdown--content--categories
+        app-menu--list__submenu
+    "
+    data-list-expand-to="horizontal-list"
+    data-list-expand-at="desktop"
+><ul class="list__item list list--horizontal"><li class="list__item list__item--align-top grouped-list"><ul class="grouped-list__list"><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Logo &amp; Identity
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/logo-design"
+                                    >
+                                        Logo design
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/logo-business-card-design"
+                                    >
+                                        Logo &amp; business card
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/business-card-design"
+                                    >
+                                        Business card
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/stationery-design"
+                                    >
+                                        Stationery
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Website &amp; App
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/web-design"
+                                    >
+                                        Website
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/landing-page-design"
+                                    >
+                                        Landing page
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/icon-button-design"
+                                    >
+                                        Icon or button
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/mobile-app-design"
+                                    >
+                                        Mobile app
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/social-media-page-design"
+                                    >
+                                        Social media page
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-website-app-design"
+                                    >
+                                        Other website or app
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Business &amp; Advertising
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/postcard-flyer-design"
+                                    >
+                                        Postcard, Flyer &amp; Print
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/brochure-design"
+                                    >
+                                        Brochure
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/banner-ad-design"
+                                    >
+                                        Banner ad
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/flash-banner-design"
+                                    >
+                                        Flash Banner
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/signage-design"
+                                    >
+                                        Signage
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/email-design"
+                                    >
+                                        Email
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-business-advertising"
+                                    >
+                                        Other business or advertising
+                                    </a></li></ul></div></li></ul></li><li class="list__item list__item--align-top grouped-list"><ul class="grouped-list__list"><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Clothing &amp; Merchandise
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/t-shirt-design"
+                                    >
+                                        T-Shirt
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/clothing-apparel-design"
+                                    >
+                                        Clothing or apparel
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/merchandise-design"
+                                    >
+                                        Merchandise
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-clothing-merchandise-design"
+                                    >
+                                        Other clothing or merchandise
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Art &amp; Illustration
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/illustrations"
+                                    >
+                                        Illustration &amp; Graphics
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/card-invitation-design"
+                                    >
+                                        Card or invitation
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/infographic-design"
+                                    >
+                                        Infographic
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-art-illustration"
+                                    >
+                                        Other art or illustration
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Packaging &amp; Label
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/product-packaging-design"
+                                    >
+                                        Product packaging
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/product-label-design"
+                                    >
+                                        Product label
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-packaging-label-design"
+                                    >
+                                        Other packaging or label
+                                    </a></li></ul></div></li></ul></li><li class="list__item list__item--align-top grouped-list"><ul class="grouped-list__list"><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Book &amp; Magazine
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/book-cover-design"
+                                    >
+                                        Book cover
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/magazine-cover-design"
+                                    >
+                                        Magazine cover
+                                    </a></li><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-book-magazine-design"
+                                    >
+                                        Other book or magazine
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                            Other
+                        </div><ul class="grouped-list__list"><li class="list__item"><a
+                                        class="list__item__content"
+                                        href="http://99designs.com/other-design"
+                                    >
+                                        Other design
+                                    </a></li></ul></div></li><li class="list__item"><div class="grouped-list grouped-list--3"><div class="grouped-list__heading">
+                    Need something else?
+                </div><ul class="grouped-list__list"><li class="list__item"><a class="list__item__content" href="http://99designs.com/categories">
+                            See all categories
+                        </a></li></ul></div></li></ul></li></ul><ul class="
+        list__item list__item--align-top
+        list--vertical
+        dropdown--content--categories--oc
+    "><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Logo &amp; Identity
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/logo-design"
+                            >
+                                Logo design
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/logo-business-card-design"
+                            >
+                                Logo &amp; business card
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/business-card-design"
+                            >
+                                Business card
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/stationery-design"
+                            >
+                                Stationery
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Website &amp; App
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/web-design"
+                            >
+                                Website
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/landing-page-design"
+                            >
+                                Landing page
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/icon-button-design"
+                            >
+                                Icon or button
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/mobile-app-design"
+                            >
+                                Mobile app
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/social-media-page-design"
+                            >
+                                Social media page
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-website-app-design"
+                            >
+                                Other website or app
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Business &amp; Advertising
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/postcard-flyer-design"
+                            >
+                                Postcard, Flyer &amp; Print
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/brochure-design"
+                            >
+                                Brochure
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/banner-ad-design"
+                            >
+                                Banner ad
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/flash-banner-design"
+                            >
+                                Flash Banner
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/signage-design"
+                            >
+                                Signage
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/email-design"
+                            >
+                                Email
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-business-advertising"
+                            >
+                                Other business or advertising
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Clothing &amp; Merchandise
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/t-shirt-design"
+                            >
+                                T-Shirt
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/clothing-apparel-design"
+                            >
+                                Clothing or apparel
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/merchandise-design"
+                            >
+                                Merchandise
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-clothing-merchandise-design"
+                            >
+                                Other clothing or merchandise
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Art &amp; Illustration
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/illustrations"
+                            >
+                                Illustration &amp; Graphics
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/card-invitation-design"
+                            >
+                                Card or invitation
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/infographic-design"
+                            >
+                                Infographic
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-art-illustration"
+                            >
+                                Other art or illustration
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Packaging &amp; Label
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/product-packaging-design"
+                            >
+                                Product packaging
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/product-label-design"
+                            >
+                                Product label
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-packaging-label-design"
+                            >
+                                Other packaging or label
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Book &amp; Magazine
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/book-cover-design"
+                            >
+                                Book cover
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/magazine-cover-design"
+                            >
+                                Magazine cover
+                            </a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-book-magazine-design"
+                            >
+                                Other book or magazine
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><span class="list__item__content">
+                    Other
+                </span><ul class="list--vertical app-menu--list__submenu block-d block-w"><li class="menu__item menu__item--back"><a class="list__item__content" href="#">Back</a></li><li class="list__item menu__item"><a
+                                class="list__item__content"
+                                href="http://99designs.com/other-design"
+                            >
+                                Other design
+                            </a></li></ul></li><li class="list__item menu__item list__item--align-top"><a class="list__item__content" href="http://99designs.com/categories">
+                See all categories
+            </a></li></ul></div></li><li class="list__item menu__item"><a class="list__item__content" href="http://99designs.com/how-it-works">HOW IT WORKS</a></li><li class="list__item menu__item"><a class="list__item__content" href="http://99designs.com/pricing">PRICING</a></li><li class="list__item menu__item"><a class="list__item__content" href="http://99designs.com/testimonials">TESTIMONIALS</a></li><li class="list__item menu__item menu__item--userbar"></li></ul>            </nav>
+        </div>
+        <div class="oc-content" data-oc-variation="right" data-oc-content="right">
+                    </div>
+    </div>
+            <div id="welcome-video-content" class="modal mkt-modal--video p-none">
+        <a href="#" class="icon icon--x-1" data-modal-close></a>
+        <video id="welcome-video-video" class="video-js vjs-default-skin vjs-99-skin" controls preload="none" width="740" height="410">
+        <source type="video/mp4" src="https://d218k77ayymx7j.cloudfront.net/welcome-to-99designs.mp4"/>
+        </video>
+    </div>
+
+
+                <div class="modal mkt-modal--preview" id="featured-contest-155326-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/155326/hero_medium_art_crrusader_155326.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">90studio</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Traditional illustration, new technology</h3>
+                    
+                                            <p class="content">Monitor manufacturer Overlord Computer needed an illustrated warrior to adorn their product packaging. And this dramatic, durable caped crusader was the perfect candidate.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">48</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">17</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">299</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/155326/thumbnail_art_crrusader_1_155326.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/155326/thumbnail_art_crrusader_2_155326.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/155326/thumbnail_art_crrusader_3_155326.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/155326/thumbnail_art_crrusader_4_155326.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/illustrations/contests/help-overlord-computer-illustration-155326">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-176608-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/176608/hero_medium_other_sskdrift_176608.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">Artichoke Design</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">A car decal that loves the lens</h3>
+                    
+                                            <p class="content">Drift driver Ssk needed a design for vehicle decals that would wow crowds—and catch the eyes of photographers. This creative, fun design took the prize.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">58</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">16</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">299</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/176608/thumbnail_other_sskdrift_1_176608.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/176608/thumbnail_other_sskdrift_2_176608.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/176608/thumbnail_other_sskdrift_3_176608.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/176608/thumbnail_other_sskdrift_4_176608.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/other-design/contests/create-next-design-ssk-drift-176608">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-131451-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/131451/hero_medium_package_package_buglinbull_131451.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">CuppyCake</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Labels with history</h3>
+                    
+                                            <p class="content">The Buglin’ Bull Restaurant and Sports Bar needed 4 beer labels for exclusive brews. These product label designs drew on the history and atmosphere of the venue’s location.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">13</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">4</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">299</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/131451/thumbnail_package_buglinbull_1_131451.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/131451/thumbnail_package_buglinbull_2_131451.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/131451/thumbnail_package_buglinbull_3_131451.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/131451/thumbnail_package_buglinbull_4_131451.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/product-label-design/contests/beer-labels-buglin-bull-restaurant-sports-bar-t-131451">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-195603-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/195603/hero_medium_bookmagazine_nameless_195603.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">PINTADO</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">A book cover that thrills</h3>
+                    
+                                            <p class="content">Suspense thriller Nameless needed a book cover design that compelled readers to pick the book up. This haunting design makes a lasting impression.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">225</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">35</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">499</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/195603/thumbnail_bookmagazine_nameless_1_195603.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/195603/thumbnail_bookmagazine_nameless_2_195603.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/195603/thumbnail_bookmagazine_nameless_3_195603.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/195603/thumbnail_bookmagazine_nameless_4_195603.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/book-cover-design/contests/book-magazine-cover-wanted-joe-conlan-195603">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-83275-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/83275/hero_medium_icon_exploration_83275.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">ozonostudio</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">An icon with depth</h3>
+                    
+                                            <p class="content">This app developer needed an icon design that reflected the richness his app brought to users&#039; lives. The winner used a 3D effect to create depth and interest.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">76</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">17</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">145</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/83275/thumbnail_icon_exploration_1_83275.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/83275/thumbnail_icon_exploration_2_83275.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/83275/thumbnail_icon_exploration_3_83275.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/83275/thumbnail_icon_exploration_4_83275.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/buttons-icons/contests/icon-exploration-based-iphone-app-83275">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-139772-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/139772/hero_medium_icon_hcwallet_139772.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">cerpow</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Quality design for a quality app</h3>
+                    
+                                            <p class="content">This classy icon design emphasized the brown leather-style visuals of the app it branded, reinforcing the product&#039;s consistency and quality.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">35</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">8</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">299</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/139772/thumbnail_icon_hcwallet_1_139772.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/icon-button-design/139772/thumbnail_icon_hcwallet_2_139772.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/logo-design/contests/help-required-iphone-app-icon-139772">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-173181-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/173181/hero_medium_art_jpnet_173181.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">GmbH</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Illustrating a community</h3>
+                    
+                                            <p class="content">Community activist group Jamaica Plain New Economy Transition needed an illustration designed for a community currency that reflected diversity. The winning design was worth every cent.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">35</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">11</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">299</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/173181/thumbnail_art_jpnet_1_173181.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/173181/thumbnail_art_jpnet_2_173181.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/illustrations/173181/thumbnail_art_jpnet_3_173181.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/illustrations/contests/design-local-currency-boston-jp-173181">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-120841-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/t-shirt-design/120841/hero_medium_clothing_turnitup_120841.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">Eday Inc.</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">A t-shirt that turns it up</h3>
+                    
+                                            <p class="content">Dance Euphoria’s t-shirt design was created to sell as fast on the Dance Euphoria website as it does at festivals and events.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">64</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">24</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">&pound;</span><span class="amount">145</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/t-shirt-design/120841/thumbnail_clothing_turnitup_1_120841.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/t-shirt-design/120841/thumbnail_clothing_turnitup_2_120841.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/t-shirt-design/120841/thumbnail_clothing_turnitup_3_120841.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/t-shirt-design/120841/thumbnail_clothing_turnitup_4_120841.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/t-shirt-design/contests/dance-euphoria-music-related-t-shirt-design-120841">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-169289-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/169289/hero_medium_logodesign_bostonboy_169289.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">maleskuliah</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Say it loud—with a logo</h3>
+                    
+                                            <p class="content">Boston Boy apparel is loud and proud! And this iconic, cheeky logo design tells it exactly how it is—with added attitude.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">57</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">11</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">499</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/169289/thumbnail_logo_boston_boy_1_169289.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/169289/thumbnail_logo_boston_boy_2_169289.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/169289/thumbnail_logo_boston_boy_3_169289.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/logo-design/contests/logo-boston-boy-169289">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-152385-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/mobile-app-design/152385/hero_medium_app_geodirectory_152385.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">bartollo</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">An app you’ll love to touch</h3>
+                    
+                                            <p class="content">Kloud ID needed a mobile app design that users loved to touch … which is our designers’ speciality.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">166</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">37</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">1,009</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/mobile-app-design/152385/thumbnail_app_geodirectory_1_152385.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/mobile-app-design/152385/thumbnail_app_geodirectory_2_152385.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/mobile-app-design/152385/thumbnail_app_geodirectory_3_152385.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/mobile-app-design/152385/thumbnail_app_geodirectory_4_152385.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/mobile-app-design/contests/help-required-mobile-app-design-152385">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-140675-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/140675/hero_medium_bookmagazine_gate_defenders_140675.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">paganus</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Futuristic fiction meets the middle ages</h3>
+                    
+                                            <p class="content">Creative fiction needs a creative book cover design. This lushly illustrated cover was perfect for a futuristic novel inspired by the middle ages.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">190</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">35</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">499</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/140675/thumbnail_bookmagazine_gatedefenders_1_140675.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/140675/thumbnail_bookmagazine_gatedefenders_2_140675.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/140675/thumbnail_bookmagazine_gatedefenders_3_140675.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/book-cover-design/140675/thumbnail_bookmagazine_gatedefenders_4_140675.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/book-cover-design/contests/book-magazine-cover-wanted-nadia-j-alshatti-140675">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-140351-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/140351/hero_medium_package_amphorawinegroup_140351.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">TokageCreative</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">A high-end product label</h3>
+                    
+                                            <p class="content">This wine label design needed to reference the Italian opera Rigoletto. Amphora Wine Group loved this stylish design—perfect for a high-end product.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">76</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">17</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">AU$</span><span class="amount">299</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/140351/thumbnail_package_amphorawinegroup_1_140351.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/140351/thumbnail_package_amphorawinegroup_2_140351.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/140351/thumbnail_package_amphorawinegroup_3_140351.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/product-label-design/140351/thumbnail_package_amphorawinegroup_4_140351.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/product-label-design/contests/rigoletto-wine-label-140351">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-19269-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/19269/hero_medium_logodesign_gravitybear_19269.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">urbansicc</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Lovable logo design</h3>
+                    
+                                            <p class="content">Gravity Bear games wanted a logo that mixed “the spirit of the old with the possibility of the new.” This playful company logo design was a clear winner.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">215</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">63</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">424</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/19269/thumbnail_logo_gravity_bear_1_19269.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/19269/thumbnail_logo_gravity_bear_2_19269.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/19269/thumbnail_logo_gravity_bear_3_19269.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/logo-design/19269/thumbnail_logo_gravity_bear_4_19269.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/logo-design/contests/logo-unique-creative-game-company-19269">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+                <div class="modal mkt-modal--preview" id="featured-contest-144074-content">
+            <a href="#" class="icon icon--x-1" data-modal-close></a>
+            <div class="l-row p-none-horz">
+                <div class="l-columns l-five-twelfths p-none-left p-none-right-m">
+                    <img
+                                            data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/144074/hero_medium_other_classroomwindow_144074.jpg"
+                                            alt="Featured contest winning design"
+                        width="100%"
+                    />
+                                            <p class="m-space6-top">By <span class="sl_notranslate">sundayrain</span></p>
+                                    </div>
+                <div class="l-columns l-seven-twelfths p-none-right-d">
+                                            <h3 class="heading">Attracting an audience</h3>
+                    
+                                            <p class="content">A professional infographic design is a great way to target a specialized audience, as education researchers ClassroomWindow found with this attractive design.</p>
+                    
+                                            <ul class="stats">
+                            <li class="stat">
+                                <h5 class="stat-name">ENTRIES</h5>
+                                <p class="stat-value"><span class="sl_notranslate">20</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">DESIGNERS</h5>
+                                <p class="stat-value"><span class="sl_notranslate">6</span></p>
+                            </li>
+                            <li class="stat">
+                                <h5 class="stat-name">TOTAL PAID</h5>
+                                <p class="stat-value"><span class="sl_notranslate"><span class="symbol">$</span><span class="amount">550</span></span></p>
+                            </li>
+                        </ul>
+                    
+                                            <div class="runner-up-designs">
+                            <h5 class="small-heading">RUNNER-UP DESIGNS</h5>
+                            <ul class="designs">
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/infographic-design/144074/thumbnail_other_classroomwindow_1_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/infographic-design/144074/thumbnail_other_classroomwindow_2_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/infographic-design/144074/thumbnail_other_classroomwindow_3_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/infographic-design/144074/thumbnail_other_classroomwindow_4_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/144074/thumbnail_other_classroomwindow_1_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/144074/thumbnail_other_classroomwindow_2_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/144074/thumbnail_other_classroomwindow_3_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                                    <li class="design">
+                                        <img data-src="http://d8u1nmttd4enu.cloudfront.net/static/bundles/marketing/images/featured-contests/other-design/144074/thumbnail_other_classroomwindow_4_144074.jpg" alt="Featured contest runner up thumbnail"  width="60" height="60" />
+                                    </li>
+                                                            </ul>
+                        </div>
+                    
+                    <a class="contest-link secondary-link font-weight-bold" href="http://99designs.com/other-design/contests/help-create-great-infographic-classroomwindow-144074">SEE ALL ENTRIES<span class="icon icon--right-1"></span></a>
+                </div>
+            </div>
+        </div>
+    
+    <div id="99designed-jenn-lefloq-content" class="modal mkt-modal--video p-none">
+        <a href="#" class="icon icon--x-1" data-modal-close></a>
+        <video id="99designed-jenn-lefloq-video" class="video-js vjs-default-skin vjs-99-skin" controls preload="none" width="740" height="405">
+            <source type="video/mp4" src="http://video.99designs.com/99designed-lefloq.mp4"/>
+        </video>
+    </div>
+
+    <div id="99designer-nicholas-content" class="modal mkt-modal--video p-none">
+        <a href="#" class="icon icon--x-1" data-modal-close></a>
+        <video id="99designer-nicholas-video" class="video-js vjs-default-skin vjs-99-skin" controls preload="none" width="740" height="405">
+            <source type="video/mp4" src="http://video.99designs.com/99designer-nicholas.mp4"/>
+        </video>
+    </div>
+
+    </body>
+</html>

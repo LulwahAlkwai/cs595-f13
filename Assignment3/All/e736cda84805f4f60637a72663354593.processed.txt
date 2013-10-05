@@ -1,0 +1,135 @@
+   [1]Cornell University
+   [2]Cornell University [3]Library
+   [4]We gratefully acknowledge support from
+   the Simons Foundation
+   and member institutions
+
+[5]arXiv.org > [6]cs > arXiv:1305.2103
+
+   Search or Article-id
+   ([7]Help | [8]Advanced search)
+   ________________________   [All papers] Go!
+
+   Full-text links:
+
+Download:
+
+     * [9]PDF
+     * [10]PostScript
+     * [11]Other formats
+
+Current browse context:
+
+   cs.DB
+   [12]< prev | [13]next >
+   [14]new | [15]recent | [16]1305
+
+Change to browse by:
+
+   [17]cs
+
+References & Citations
+
+     * [18]NASA ADS
+
+[19]DBLP - CS Bibliography
+
+   [20]listing | [21]bibtex
+   [22]Jacek Sroka
+   [23]Krzysztof Stencel
+   [24]Jerzy Tyszkiewicz
+
+Bookmark
+
+   ([25]what is this?)
+   [26]CiteULike logo [27]BibSonomy logo [28]Mendeley logo [29]Facebook
+   logo [30]LinkedIn logo [31]del.icio.us logo [32]Digg logo [33]Reddit
+   logo [34]ScienceWISE logo
+
+Computer Science > Databases
+
+Title: Translating Relational Queries into Spreadsheets
+
+   Authors: [35]Jacek Sroka, [36]Krzysztof Stencel, [37]Jerzy Tyszkiewicz
+   (Submitted on 9 May 2013)
+
+     Abstract: Spreadsheets are among the most commonly used applications
+     for data management and analysis. Perhaps they are even among the
+     most widely used computer applications of all kinds. However, the
+     spreadsheet paradigm of computation still lacks sufficient analysis.
+     In this article we demonstrate that a spreadsheet can play the role
+     of a relational database engine, without any use of macros or
+     built-in programming languages, merely by utilizing spreadsheet
+     formulae. We achieve this by implementing all operators of
+     relational algebra by means of spreadsheet functions. However, we
+     realize also practical SQL parts that go beyond the algebra. They
+     are: sorting, SQL:1999 transitive closures and genuine NULL values
+     that exactly reflect the three-valued logic of SQL.
+     Spreadsheets serve as data storage and can execute relational
+     queries. Therefore they can act as relational database management
+     systems. Apart from the structural design of such a database engine
+     we also describe our proof-of-concept implementation of a query
+     compiler that accepts a user description of the desired query and
+     translates it into an Excel workbook. Therefore, the users can
+     define their queries using a high-level language and then get their
+     execution plans in a plain vanilla spreadsheet. No sophisticated
+     database system is needed.
+
+   Subjects: Databases (cs.DB)
+   Cite as:  [38]arXiv:1305.2103 [cs.DB]
+             (or [39]arXiv:1305.2103v1 [cs.DB] for this version)
+
+Submission history
+
+   From: Jacek Sroka [[40]view email]
+   [v1] Thu, 9 May 2013 14:30:12 GMT (344kb)
+   [41]Which authors of this paper are endorsers?
+
+   Link back to: [42]arXiv, [43]form interface, [44]contact.
+
+References
+
+   1. http://www.cornell.edu/
+   2. http://www.cornell.edu/
+   3. http://www.library.cornell.edu/
+   4. https://confluence.cornell.edu/x/9YhjCg
+   5. http://arxiv.org/
+   6. http://arxiv.org/list/cs/recent
+   7. http://arxiv.org/help
+   8. http://arxiv.org/find
+   9. http://arxiv.org/pdf/1305.2103v1
+  10. http://arxiv.org/ps/1305.2103v1
+  11. http://arxiv.org/format/1305.2103v1
+  12. http://arxiv.org/prevnext?site=arxiv.org&id=1305.2103&context=cs.DB&function=prev
+  13. http://arxiv.org/prevnext?site=arxiv.org&id=1305.2103&context=cs.DB&function=next
+  14. http://arxiv.org/list/cs.DB/new
+  15. http://arxiv.org/list/cs.DB/recent
+  16. http://arxiv.org/list/cs.DB/1305
+  17. http://arxiv.org/abs/1305.2103?context=cs
+  18. http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1305.2103
+  19. http://www.informatik.uni-trier.de/~ley/db/
+  20. http://www.informatik.uni-trier.de/~ley/db/journals/corr/corr1305.html#abs-1305-2103
+  21. http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1305-2103
+  22. http://dblp.uni-trier.de/search/author?author=Jacek%20Sroka
+  23. http://dblp.uni-trier.de/search/author?author=Krzysztof%20Stencel
+  24. http://dblp.uni-trier.de/search/author?author=Jerzy%20Tyszkiewicz
+  25. http://arxiv.org/help/social_bookmarking
+  26. http://arxiv.org/ct?url=http%3A%2F%2Fwww.citeulike.org%2Fposturl%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26title%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets%26authors%3D&v=3b1d0fc5
+  27. http://arxiv.org/ct?url=http%3A%2F%2Fwww.bibsonomy.org%2FBibtexHandler%3FrequTask%3Dupload%26url%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26description%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&v=84e0cf2f
+  28. http://arxiv.org/ct?url=http%3A%2F%2Fwww.mendeley.com%2Fimport%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&v=54e689cf
+  29. http://arxiv.org/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Farxivpost%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&v=6925907c
+  30. http://arxiv.org/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Flinkedin_post%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&v=6be631fb
+  31. http://arxiv.org/ct?url=http%3A%2F%2Fdel.icio.us%2Fpost%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26description%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&v=c4851972
+  32. http://arxiv.org/ct?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26title%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&v=bf721fa1
+  33. http://arxiv.org/ct?url=http%3A%2F%2Freddit.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26title%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&v=66f82862
+  34. http://arxiv.org/ct?url=http%3A%2F%2Fsciencewise.info%2Fbookmarks%2Fadd%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&v=0f4d72e6
+  35. http://arxiv.org/find/cs/1/au:+Sroka_J/0/1/0/all/0/1
+  36. http://arxiv.org/find/cs/1/au:+Stencel_K/0/1/0/all/0/1
+  37. http://arxiv.org/find/cs/1/au:+Tyszkiewicz_J/0/1/0/all/0/1
+  38. http://arxiv.org/abs/1305.2103
+  39. http://arxiv.org/abs/1305.2103v1
+  40. http://arxiv.org/auth/show-email/f7301ea4/1305.2103
+  41. http://arxiv.org/auth/show-endorsers/1305.2103
+  42. http://arxiv.org/
+  43. http://arxiv.org/form
+  44. http://arxiv.org/help/contact

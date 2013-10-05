@@ -1,0 +1,1048 @@
+   #[1]Combinatorics and more » Feed [2]Combinatorics and more » Comments
+   Feed [3]Combinatorics and more » Some old and new problems in
+   combinatorics and geometry Comments Feed [4]The Kadison-Singer
+   Conjecture has beed Proved by Adam Marcus, Dan Spielman, and Nikhil
+   Srivastava [5]Auction-based Tic Tac Toe: Solution [6]alternate
+   [7]alternate [8]Combinatorics and more [9]WordPress.com
+
+   [10]Combinatorics and more
+   Gil Kalai's blog
+   [11]Skip to content
+     * [12]Home
+     * [13]`Gina Says'
+     * [14]About
+     * [15]Analysis of Boolean Functions
+     * [16]J+W+P+J+H+ ShL+ H+M+T+M+TjJ+Q+H+
+
+   [17]<- The Kadison-Singer Conjecture has beed Proved by Adam Marcus,
+   Dan Spielman, and Nikhil Srivastava
+   [18]Auction-based Tic Tac Toe: Solution ->
+
+[19]Some old and new problems in combinatorics and geometry
+
+   Posted on [20]July 6, 2013 by [21]Gil Kalai
+
+[22]Paul99
+
+   Paul Erdo"s in Jerusalem, [DEL: 1933 :DEL]  1993
+
+   I just came back from a great [23]Erdo"s Centennial conference in
+   wonderful Budapest. I gave a lecture on old and new problems (mainly)
+   in combinatorics and geometry ([24]here are the slides), where I
+   presented twenty problems, here they are:
+
+Around Borsuk's Problem
+
+   Let f(d) be the smallest integer so that every set of diameter one in
+   R^d can be covered by f(d) sets of smaller diameter. Borsuk conjectured
+   that f(d) \le d+1 .
+
+   It is known (Kahn and Kalai, 1993) that : f(d) \ge 1.2^{\sqrt d} , and
+   also that (Schramm, 1989) f(d) \le (\sqrt{3/2}+o(1))^d .
+
+   Problem 1: Is f(d) exponential in d?
+
+   Problem 2: What is the smallest dimension for which Borsuk's conjecture
+   is false?
+
+Volume of sets of constant width in high dimensions
+
+   Problem 3: Let us denote the volume of the n-ball of radius 1/2 by V_n
+   .
+
+   Question (Oded Schramm): Is there some \epsilon >0 so that for every
+   n>1  there exist a set K_n of constant width 1 in dimension n whose
+   volume satisfies VOL(K_n) \le (1-\epsilon)^n V_n .
+
+Around Tverberg's theorem
+
+   Tverberg's Theorem states the following: Let x_1,x_2,\dots, x_m be
+   points in  R^d with m \ge (r-1)(d+1)+1 . Then there is a partition
+   S_1,S_2,\dots, S_r of \{1,2,\dots,m\} such that   \cap _{j=1}^rconv
+   (x_i: i \in S_j) \ne \emptyset .
+
+   Problem 4:  Let t(d,r,k) be the smallest integer such that given m
+   points  x_1,x_2,\dots, x_m in R^d , m \ge t(d,r,k) there exists a
+   partition S_1,S_2,\dots, S_r of \{1,2,\dots,m\} such that every k among
+   the convex hulls conv (x_i: i \in S_j) , j=1,2,\dots,r   have a point
+   in common.
+
+     Reay's "relaxed Tverberg conjecture" asserts that that whenever k >1
+     (and k \le r ), t(d,r,k)= (d+1)(r-1)+1 .
+
+   Problem 5: For a set A , denote by T_r(A) those points in R^d which
+   belong to the convex hull of r pairwise disjoint subsets of X . We call
+   these points Tverberg points of order  r .
+
+     Conjecture: For every A \subset R^d , \sum_{r=1}^{|A|} {\rm dim}
+     T_r(A) \ge 0 .
+
+   Note that \dim \emptyset = -1 .
+
+   Problem 6:   How many points T(d;s,t) in R^d guarantee that they can be
+   divided into two parts so that every union of s convex sets containing
+   the first part has a non empty intersection with every union of t
+   convex sets containing the second part.
+
+A question about directed graphs
+
+   Problem 7: Let G be a directed graph with n vertices and
+   2n-2 edges. When can you divide your set of edges into two trees T_1
+   and T_2 (so far we disregard the orientation of edges,) so that when
+   you reverse the directions of all edges in T_2 you get a strongly
+   connected digraph.
+
+Erdo"s-Ko-Rado theorem meets Catalan
+
+   Problem 8
+
+   Conjecture: Let \cal C be a collection of triangulations of an n-gon so
+   that every two triangulations in \cal C  share a diagonal.  Then |{\cal
+   C}| is at most the number of triangulations of an (n-1)-gon.
+
+F <= 4E
+
+   Problem 9: Let K be a two-dimensional simplicial complex and suppose
+   that K can be embedded in R^4 . Denote by E the number of edges
+   of K and by F the number of 2-faces of K.
+
+   Conjecture: F <= 4E
+
+   A weaker version which is also widely open and very interesting is: For
+   some absolute constant C, F <= C E.
+
+Polynomial Hirsch
+
+   Problem 10:  The diameter of graphs of d-polytopes with n facets is
+   bounded above by a polynomial in d and n.
+
+Analysis - Fixed points
+
+   Problem 11: Let K be a convex body in R^d . (Say, a ball, say a
+   cube...) For which classes \cal C of functions, every  f \in {\cal C}
+   which takes K into itself admits a fixed point in K.
+
+Number theory - infinitely many primes in sparse sets
+
+   Problem 12: Find a (not extremely artificial) set A of integers so that
+   for every n, |A\cap [n]| \le n^{0.499} , where you can prove that A
+   contains infinitely many primes.
+
+Möbius randomness for sparse sets
+
+   Problem 13: Find a (not extremely artificial) set A of integers so that
+   for every n, |A\cap [n]| \le n^{0.499}  where you can prove that
+
+   \sum \{\mu(k): k \le n, k \in A\} = o(|A \cap [n]).
+
+Computation - noisy game of life
+
+   Problem 14: Does a noisy version of Conway's game of life support
+   universal computation?
+
+Ramsey for polytopes
+
+   Problem 15:
+
+   Conjecture: For a fixed k, every d-polytope of sufficiently high
+   dimension d contains a k-face which is either a simplex or a
+   (combinatorial) cube.
+
+Expectation thresholds and thresholds
+
+   Problem 16: Consider a random graph G in G(n,p) and the graph property:
+   G contains a copy of a specific graph H. (Note: H depends on n; a
+   motivating example: H is a Hamiltonian cycle.) Let q be the minimal
+   value for which the expected number of copies of H' in G in G(n,q) is
+   at least 1/2 for every subgraph H' of H. Let p be the value for which
+   the probability that G in G(n,p) contains a copy of H is 1/2.
+
+   Conjecture: [Kahn - Kalai 2006]  p/q = O( log n)
+
+Traces
+
+   Problem 17: Let X be a family of subsets of [n]=\{1,2,\dots,n\} .
+   How large X is needed to be so that the restriction (trace) of X to
+   some set B \subset [n] ,  |B|=(1/2+\delta)n has at least 3/4 \cdot
+   2^{|B|} elements?
+
+Graph-codes
+
+   Problem 18: Let  P  be a property of graphs. Let \cal G be a collection
+   of graphs with n vertices so that the symmetric difference of two
+   graphs in \cal G has property P. How large can \cal G be.
+
+Conditions for colorability
+
+   Problem 19: A conjecture by Roy Meshulam and me:
+
+   There is a constant C such that every graph G
+   with no induced cycles of order divisible by 3 is colorable by C
+   colors.
+
+   Problem 20:
+
+   Another conjecture by Roy Meshulam and me: For every b>0 there
+   is a constant C=C(b) with the following property:
+
+   Let G be a graph such that for all its induced subgraphs H
+
+     The number of independent sets of odd size minus the number of
+     independent sets of even size is between -b  and b.
+
+   Then G is colorable by C(b) colors.
+
+Remarks:
+
+   The title of the lecture is borrowed from several papers and talks by
+   Erdo"s. (And I tried to imitate a little his lectures.)  The
+   presentation give some more details on the twenty problems, and here
+   are a few further comments. I devoted a few posts to questions around
+   Borsuk's problem ([25]I, [26]II, [27]III), and an [28]MO question for
+   problem 3 on sets of constant width in high dimensions. I also
+   [29]devoted a post to questions around Tverberg's theorem where
+   problems 4 and 5 are mentioned. I asked problems 5 and 6 in the early
+   70's. Problem 7 is motivated by a very special case of problem 5.
+   Problem 8 is recent and was [30]asked also on MO. Gjergji Zaimi
+   (private communication) proposed a far-reaching extension:
+
+   Question: Let P be a convex polytope without triangular two dimsneional
+   faces. Is it true that a collection of vertices so that every two of
+   them belongs to a facet, has at most as many vertices as the largest
+   facet?
+
+   Problem 9 which represents one of my current main research effort was
+   asked by Sarkaria, me, and perhaps others in the late 80s. (See also
+   [31]this post.) Problem 10 was the subject of polymath 3 that started
+   [32]here. Problem 11 intrigued me since my undergraduate years, [33]see
+   this post, and I recalled it again after hearing a lecture by Haim
+   Brezis. (See [34]Haim's publication list for some relevant papers with
+   Bourgain,  Mironescu, Nguyen, and others.) Problems 12 and 13 are
+   motivated by recent progress on Möbius randomness and on finding primes
+   in various sets of integers, and also by [35]this MO problem. Problem
+   14 was motivated by a lecture of Bollobas and by my general interest in
+   fault-tolerance see this [36]TCSoverfow problem and this [37]MO
+   problem. For open problems on polytopes including Problems 10, and 15
+   see [38]this post.  Problems 16, 17 also represent one of my main
+   current research efforts, see [39]this paper with Jeff Kahn for problem
+   16 and [40]this paper with Kahn on problem 17. (The best known very
+   recent upper bound by Bourgain fot problem 17 is not yet published.)
+   Variants of problem 18 were raised by several other people (Körner,
+   Katona, Gowers). Problems 19 and 20 are motivated by Helly-type
+   questions and in particular by the fractional Helly property.
+
+   More comments: (The post was launched a day too early before it was
+   completed, so let me add a few more comments.)
+
+   The solution of Borsuk's problem was a very nice success to Erdo"s'
+   mathematics. It relies on the interplay between combinatorial and
+   geometric structures. In fact, Erdo"s himself, Rogers, Danzer, and
+   perhaps others suggested that combinatorial configurations will lead to
+   counterexamples. Larman made a crucial step in translating the question
+   from geometry to combinatorics. Larman also asked about 2-distance sets
+   and this was crucial to the recent counterexample in dimension 65. (See
+   [41]this post.) Problem 7 is related to a special case of Conjecture 5.
+   It is based on replacing a directed edge from vertex i to vertex j by
+   the point e_i-e_j . Problem 15 is known only for k=2 . It is true for
+   zonotopes (where a simplex face is not an option) with d=2k.  This case
+   is a high-dimensional analog of Gallai-Sylvester theorem. It is quite
+   interesting for simple polytopes.
+   [42]About these ads
+
+Share this:
+
+     * [43]Share
+     *
+
+     * [44]Facebook
+     * [45]Reddit
+     *
+     * [46]Twitter
+     * [47]Google
+     *
+     *
+
+Like this:
+
+   Like Loading...
+   This entry was posted in [48]Combinatorics, [49]Geometry, [50]Open
+   problems and tagged [51]Paul Erdos. Bookmark the [52]permalink.
+   [53]<- The Kadison-Singer Conjecture has beed Proved by Adam Marcus,
+   Dan Spielman, and Nikhil Srivastava
+   [54]Auction-based Tic Tac Toe: Solution ->
+
+4 Responses to Some old and new problems in combinatorics and geometry
+
+    1. [55]Joseph Malkevitch says:
+       [56]July 6, 2013 at 5:44 pm
+       Dear Gil,
+       Thanks for the nice collection of problems. It is hard to believe
+       that the photo at the top is from 1933!
+       Best,
+       Joe
+       [57]Reply
+    2. [58]Kamran says:
+       [59]July 14, 2013 at 8:37 pm
+       Reblogged this on [60]Observer.
+       [61]Reply
+    3. [62]Alexander Vlasov says:
+       [63]July 27, 2013 at 6:57 pm
+       Dear Gil,
+       Relating Problem 14 and my earlier comment on universality and
+       (ir)reversibility in Scott's blog -- I do not know, if other CA are
+       interesting for you, but not long time ago I realized that
+       reversible CA I used earlier for some experiments is likely
+       computationally universal
+       [64]http://quantumbot.wordpress.com/2013/07/27/reversible-anto-logi
+       c/
+       Sincerely, Alex
+       [65]Reply
+    4. Pingback: [66]Random Graphs Week - Monday | Eventually Almost
+       Everywhere
+
+Leave a Reply [67]Cancel reply
+
+   Enter your comment here...
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Fill in your details below or click an icon to log in:
+     *
+     *
+     *
+     *
+     *
+
+       IFRAME: [68]googleplus-sign-in
+
+   [69]Gravatar
+   Email (required) (Address never made public)
+   ____________________
+   Name (required)
+   ____________________
+   Website
+   ____________________
+   WordPress.com Logo
+
+   You are commenting using your WordPress.com account.
+   ( [70]Log Out / [71]Change )
+   Twitter picture
+
+   You are commenting using your Twitter account.
+   ( [72]Log Out / [73]Change )
+   Facebook photo
+
+   You are commenting using your Facebook account.
+   ( [74]Log Out / [75]Change )
+   Google+ photo
+
+   You are commenting using your Google+ account.
+   ( [76]Log Out / [77]Change )
+   [78]Cancel
+
+   Connecting to %s
+
+   [_] Notify me of follow-up comments via email.
+
+   [_] Notify me of new posts via email.
+
+   Post Comment
+
+     * Recent Comments
+
+       [79]zhang twin prime bre... on [80]Polymath 8 - a Succ...
+       ST on [81]Polymath 8 - a Succ...
+       [82]Gil Kalai on Zhang... on [83]Polymath 8 - a Succ...
+       [84]Analysis of Boolean... on [85]Combinatorics, Mathematics, Ac...
+       [86]Analysis of Boolean... on [87]Extremal Combinatorics III: So...
+       [88]Marcelo de Almeida on [89]Open Collaborative Mathematics...
+       [90]Polymath8 - A... on [91]Polymath 8 - a Succ...
+       [92]Is it a blog? Or is... on [93]Simons@UCBerkeley
+       Sid Hollander on [94]Two Math Riddles
+       [95]Gil Kalai on [96]Richard Stanley: How the Proof...
+       [97]Johnny Gaddaar on [98]Richard Stanley: How the Proof...
+       [99]Richard Stanley: How... on [100]How the g-Conjecture Came...
+     * Recent Posts
+          + [101]Real Analysis Introductory Mini-courses at
+            Simons Institute
+          + [102]Analysis of Boolean Functions - week 4
+          + [103]Polymath 8 - a Success!
+          + [104]Analysis of Boolean Functions - Week 3
+          + [105]Richard Stanley: How the Proof of the Upper Bound Theorem
+            (for spheres) was Found
+          + [106]Simons@UCBerkeley
+          + [107]Analysis of Boolean functions - week 2
+          + [108]Around Borsuk's Conjecture 3: How to Save
+            Borsuk's conjecture
+          + [109]Analysis of Boolean Functions - week 1
+     * Top Posts & Pages
+          + [110]Chess can be a Game of Luck
+          + [111]Polymath 8 - a Success!
+          + [112]The Kadison-Singer Conjecture has beed Proved by Adam
+            Marcus, Dan Spielman, and Nikhil Srivastava
+          + [113]Real Analysis Introductory Mini-courses at Simons
+            Institute
+          + [114]Analysis of Boolean Functions
+          + [115]Richard Stanley: How the Proof of the Upper Bound Theorem
+            (for spheres) was Found
+          + [116]Emmanuel Abbe: Erdal Arikan's Polar Codes
+          + [117]Answer: Lord Kelvin, The Age of the Earth, and the Age of
+            the Sun
+          + [118]'Gina Says'
+     * Search for: ____________________ Search
+     * RSS
+          + [119]Register
+          + [120]Log in
+          + [121]Entries RSS
+          + [122]Comments RSS
+          + [123]WordPress.com
+
+     * Categories
+          + [124]Academics (5)
+          + [125]Algebra and Number Theory (8)
+          + [126]Analysis (3)
+          + [127]Applied mathematics (2)
+          + [128]Art (5)
+          + [129]Blogging (12)
+          + [130]Book review (4)
+          + [131]Combinatorics (87)
+          + [132]Computer Science and Optimization (55)
+          + [133]Conferences (29)
+          + [134]Controversies and debates (20)
+          + [135]Convex polytopes (46)
+          + [136]Convexity (21)
+          + [137]Economics (18)
+          + [138]Education (1)
+          + [139]Games (24)
+          + [140]Geology (2)
+          + [141]Geometry (13)
+          + [142]Gina Says (7)
+          + [143]Guest blogger (16)
+          + [144]Guest post (1)
+          + [145]Information theory (2)
+          + [146]Law (6)
+          + [147]Mathematical logic and set theory (1)
+          + [148]Mathematics over the Internet (11)
+          + [149]Mathematics to the rescue (10)
+          + [150]Music (1)
+          + [151]Number theory (4)
+          + [152]Obituary (6)
+          + [153]Open discussion (16)
+          + [154]Open problems (65)
+          + [155]Philosophy (15)
+          + [156]Physics (21)
+          + [157]Poetry (5)
+          + [158]Polymath3 (9)
+          + [159]Probability (42)
+          + [160]Rationality (20)
+          + [161]Riddles (7)
+          + [162]Sport (4)
+          + [163]Statistics (3)
+          + [164]Taxi-and-other-stories (16)
+          + [165]Teaching (9)
+          + [166]Test your intuition (33)
+          + [167]Uncategorized (17)
+          + [168]Updates (27)
+          + [169]What is Mathematics (15)
+          + [170]Women in science (3)
+     * Blogroll
+          + [171]A CS Professor Blog
+          + [172]Accidental Mathematician
+          + [173]Algorithmic Game Theory
+          + [174]Analysis of Boolean functions
+          + [175]Andreas Caicedo's teaching pages
+          + [176]Annoying Precision
+          + [177]Area777
+          + [178]Asymptotia
+          + [179]Computational complexity
+          + [180]Frank Morgan
+          + [181]Geomblog
+          + [182]Geometry and the Imagination
+          + [183]God Plays Dice
+          + [184]Godel's lost letter and P=NP
+          + [185]Gowers's blog
+          + [186]http://prelive.tricki.org/
+          + [187]Igor Pak's blog
+          + [188]In theory
+          + [189]John Baez
+          + [190]Konard Swanepoel's Blog
+          + [191]Kowalski's Blog
+          + [192]Low dimensional topology
+          + [193]Machine learning (theory)
+          + [194]Math Overflow
+          + [195]Mathemata
+          + [196]Mathematical Musing
+          + [197]Michael Nielsen
+          + [198]My Biased Coin
+          + [199]My Qstate
+          + [200]n-category cafe
+          + [201]Noncommutative analysis
+          + [202]Noncommutative geometry
+          + [203]Open Problems Garden
+          + [204]OXdE
+          + [205]Peter Cameron's Blog
+          + [206]Peter Sarnak's letters (and more)
+          + [207]Piece of mind
+          + [208]Quantum Frontiers
+          + [209]Quomodocumque
+          + [210]Sébastien Bubeck
+          + [211]Secret blogging seminar
+          + [212]Shtetl Optimized
+          + [213]Statistical Modeling
+          + [214]Tanya Khovanova Math Blog
+          + [215]TCS Math
+          + [216]TCS stackexchange
+          + [217]The Geometry Junkyard
+          + [218]The Polymath Blog
+          + [219]The Quantum Pontiff
+          + [220]The Unapologetic Mathematician
+          + [221]Theory of computing blog aggregator
+          + [222]Todd's and Vishal's Blog
+          + [223]Tricky wiki
+          + [224]What's new
+          + [225]Windows on Theory
+          + [226]xkcd
+          + [227]N+S+J+K+T+ H+M+D+E+J+M%
+     * Archives
+          + [228]September 2013 (9)
+          + [229]August 2013 (3)
+          + [230]July 2013 (3)
+          + [231]June 2013 (3)
+          + [232]May 2013 (10)
+          + [233]April 2013 (8)
+          + [234]March 2013 (9)
+          + [235]February 2013 (2)
+          + [236]January 2013 (4)
+          + [237]December 2012 (5)
+          + [238]November 2012 (3)
+          + [239]October 2012 (1)
+          + [240]August 2012 (2)
+          + [241]July 2012 (2)
+          + [242]June 2012 (5)
+          + [243]May 2012 (2)
+          + [244]April 2012 (5)
+          + [245]March 2012 (4)
+          + [246]February 2012 (2)
+          + [247]January 2012 (2)
+          + [248]December 2011 (4)
+          + [249]November 2011 (3)
+          + [250]October 2011 (2)
+          + [251]September 2011 (2)
+          + [252]August 2011 (3)
+          + [253]July 2011 (3)
+          + [254]June 2011 (4)
+          + [255]April 2011 (1)
+          + [256]February 2011 (3)
+          + [257]January 2011 (6)
+          + [258]November 2010 (8)
+          + [259]October 2010 (9)
+          + [260]September 2010 (1)
+          + [261]August 2010 (1)
+          + [262]July 2010 (1)
+          + [263]June 2010 (4)
+          + [264]May 2010 (3)
+          + [265]April 2010 (1)
+          + [266]March 2010 (3)
+          + [267]February 2010 (10)
+          + [268]January 2010 (9)
+          + [269]December 2009 (7)
+          + [270]November 2009 (5)
+          + [271]October 2009 (1)
+          + [272]September 2009 (3)
+          + [273]August 2009 (9)
+          + [274]July 2009 (12)
+          + [275]June 2009 (11)
+          + [276]May 2009 (12)
+          + [277]April 2009 (12)
+          + [278]March 2009 (10)
+          + [279]February 2009 (10)
+          + [280]January 2009 (11)
+          + [281]December 2008 (13)
+          + [282]November 2008 (12)
+          + [283]October 2008 (5)
+          + [284]September 2008 (8)
+          + [285]August 2008 (6)
+          + [286]July 2008 (8)
+          + [287]June 2008 (13)
+          + [288]May 2008 (11)
+          + [289]April 2008 (1)
+
+     * [290]Algebra and Number Theory [291]Blogging [292]Combinatorics
+       [293]Computer Science and Optimization [294]Conferences
+       [295]Controversies and debates [296]Convexity [297]Convex polytopes
+       [298]Economics [299]Games [300]Geometry [301]Gina Says [302]Guest
+       blogger [303]Mathematics over the Internet [304]Mathematics to the
+       rescue [305]Obituary [306]Open discussion [307]Open problems
+       [308]Philosophy [309]Physics [310]Polymath3 [311]Probability
+       [312]Rationality [313]Riddles [314]Taxi-and-other-stories
+       [315]Teaching [316]Test your intuition [317]Uncategorized
+       [318]Updates [319]What is Mathematics
+
+     * [320]Aram Harrow [321]Art [322]Blogs [323]Book review [324]Boolean
+       functions [325]Borsuk's conjecture [326]Bruhat order [327]Cap sets
+       [328]Cayley theorem [329]Chessboard complexes [330]Chip firing
+       games [331]Collective coin flipping [332]Combinatorics
+       [333]Conferences [334]Controversies [335]Convexity [336]Convex
+       polytopes [337]Debates [338]Discrepancy [339]Economics [340]Endre
+       Szemeredi [341]Enumerative Combinatorics [342]Expected utility
+       [343]Extremal combinatorics [344]f-vectores [345]g-conjecture
+       [346]Games [347]Game theory [348]Geometric combinatorics [349]Greg
+       Kuperberg [350]Hebrew University of Jerusalem [351]Helly type
+       theorems [352]Hirsch conjecture [353]Influence [354]Itai Benjamini
+       [355]Jean Bourgain [356]Jerusalem [357]Kimmo Eriksson [358]Linear
+       programming [359]Mathematics [360]Mathematics to the rescue
+       [361]Michal Linial [362]Mittag-Leffler Institute [363]Noise
+       [364]Noise-sensitivity [365]Oded Schramm [366]Open problems
+       [367]Paul Erdos [368]Percolation [369]Philosophy [370]Philosophy of
+       science [371]Physics [372]polymath1 [373]Polymath3 [374]Polytopes
+       [375]Posets [376]Probability [377]Quantum computation [378]Quantum
+       computers [379]Quantum error-correction [380]Randomness [381]Roth's
+       theorem [382]Sex [383]Shallability [384]Subspace arrangements
+       [385]Szemeredi's theorem [386]Taxi-and-other-stories [387]Test your
+       intuition [388]Tim Gowers [389]Tits Building [390]Topological
+       combinatorics [391]Trees [392]Turan's problem [393]Tverberg's
+       theorem [394]Updates
+
+   [395]Combinatorics and more
+   [396]The Twenty Ten Theme. [397]Blog at WordPress.com.
+
+   [398]Follow
+
+Follow "Combinatorics and more"
+
+   Get every new post delivered to your Inbox.
+
+   Join 402 other followers
+
+   ____________________
+
+   Sign me up
+   [399]Powered by WordPress.com
+
+   IFRAME: [400]likes-master
+
+   %d bloggers like this:
+
+References
+
+   Visible links
+   1. http://gilkalai.wordpress.com/feed/
+   2. http://gilkalai.wordpress.com/comments/feed/
+   3. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/feed/
+   4. http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/
+   5. http://gilkalai.wordpress.com/2013/07/09/auction-based-tic-tac-toe-solution/
+   6. http://public-api.wordpress.com/oembed/1.0/?format=json&url=http%3A%2F%2Fgilkalai.wordpress.com%2F2013%2F07%2F06%2Fsome-old-and-new-problems-in-combinatorics-and-geometry%2F&for=wpcom-auto-discovery
+   7. http://public-api.wordpress.com/oembed/1.0/?format=xml&url=http%3A%2F%2Fgilkalai.wordpress.com%2F2013%2F07%2F06%2Fsome-old-and-new-problems-in-combinatorics-and-geometry%2F&for=wpcom-auto-discovery
+   8. http://gilkalai.wordpress.com/osd.xml
+   9. http://wordpress.com/opensearch.xml
+  10. http://gilkalai.wordpress.com/
+  11. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#content
+  12. http://gilkalai.wordpress.com/
+  13. http://gilkalai.wordpress.com/gina-says/
+  14. http://gilkalai.wordpress.com/about/
+  15. http://gilkalai.wordpress.com/analysis-of-boolean-functions/
+  16. http://gilkalai.wordpress.com/%d7%99%d7%95%d7%a4%d7%99%d7%94-%d7%a9%d7%9c-%d7%94%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%a7%d7%94/
+  17. http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/
+  18. http://gilkalai.wordpress.com/2013/07/09/auction-based-tic-tac-toe-solution/
+  19. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  20. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  21. http://gilkalai.wordpress.com/author/gilkalai/
+  22. http://gilkalai.files.wordpress.com/2013/07/paul99.jpg
+  23. http://www.renyi.hu/conferences/erdos100/
+  24. http://gilkalai.files.wordpress.com/2013/07/erdos100-20.pdf
+  25. http://gilkalai.wordpress.com/2011/06/30/around-borsuks-conjecture-1-some-problems/
+  26. http://gilkalai.wordpress.com/2011/06/15/the-combinatorics-of-cocycles-and-borsuks-problem/
+  27. http://gilkalai.wordpress.com/2012/07/23/a-weak-form-of-borsuk-conjecture/
+  28. http://mathoverflow.net/questions/29000/volumes-of-sets-of-constant-width-in-high-dimensions
+  29. http://gilkalai.wordpress.com/2008/12/23/seven-problems-around-tverbergs-theorem/
+  30. http://mathoverflow.net/questions/114646/intersecting-family-of-triangulations
+  31. http://gilkalai.wordpress.com/2013/02/01/f-4e/
+  32. http://gilkalai.wordpress.com/2010/09/29/polymath-3-polynomial-hirsch-conjecture/
+  33. http://gilkalai.wordpress.com/2008/08/20/two-very-early-problems-a-simple-solution-and-a-new-problem/
+  34. http://www.math.rutgers.edu/~brezis/publications.html
+  35. http://mathoverflow.net/questions/79113/why-so-difficult-to-prove-infinitely-many-restricted-primes
+  36. http://cstheory.stackexchange.com/questions/17914/does-a-noisy-version-of-conways-game-of-life-support-universal-computation
+  37. http://mathoverflow.net/questions/132402/conways-game-of-life-for-random-initial-position
+  38. http://gilkalai.wordpress.com/2008/05/07/five-open-problems-regarding-convex-polytopes/
+  39. http://front.math.ucdavis.edu/0603.5218
+  40. http://gilkalai.files.wordpress.com/2013/07/chor8-4.pdf
+  41. http://gilkalai.wordpress.com/2013/05/27/andriy-bondarenko-showed-that-borsuks-conjecture-is-false-for-dimensions-greater-than-65/
+  42. http://en.wordpress.com/about-these-ads/
+  43. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  44. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=facebook
+  45. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=reddit
+  46. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=twitter
+  47. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=google-plus-1
+  48. http://gilkalai.wordpress.com/category/combinatorics/
+  49. http://gilkalai.wordpress.com/category/geometry/
+  50. http://gilkalai.wordpress.com/category/open-problems/
+  51. http://gilkalai.wordpress.com/tag/paul-erdos/
+  52. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  53. http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/
+  54. http://gilkalai.wordpress.com/2013/07/09/auction-based-tic-tac-toe-solution/
+  55. http://www.york.cuny.edu/~malk
+  56. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-9884
+  57. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?replytocom=9884#respond
+  58. http://kamranrmp.wordpress.com/
+  59. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-9967
+  60. http://kamranrmp.wordpress.com/2013/07/14/some-old-and-new-problems-in-combinatorics-and-geometry/
+  61. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?replytocom=9967#respond
+  62. http://ayvlasov.wordpress.com/
+  63. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-10053
+  64. http://quantumbot.wordpress.com/2013/07/27/reversible-anto-logic/
+  65. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?replytocom=10053#respond
+  66. http://eventuallyalmosteverywhere.wordpress.com/2013/08/19/random-graphs-week-monday/
+  67. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#respond
+  68. https://public-api.wordpress.com/connect/?googleplus-sign-in=1
+  69. https://gravatar.com/site/signup/
+  70. javascript:HighlanderComments.doExternalLogout( 'wordpress' );
+  71. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  72. javascript:HighlanderComments.doExternalLogout( 'twitter' );
+  73. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  74. javascript:HighlanderComments.doExternalLogout( 'facebook' );
+  75. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  76. javascript:HighlanderComments.doExternalLogout( 'googleplus' );
+  77. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/
+  78. javascript:HighlanderComments.cancelExternalWindow();
+  79. http://vzn1.wordpress.com/2013/10/04/zhang-twin-prime-breakthru-vs-academic-trackgrind/
+  80. http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10332
+  81. http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10311
+  82. http://eklausmeier.wordpress.com/2013/09/27/gil-kalai-on-zhangs-breakthrough-in-number-theory/
+  83. http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10306
+  84. http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/
+  85. http://gilkalai.wordpress.com/2008/04/29/hello-world/#comment-10292
+  86. http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/
+  87. http://gilkalai.wordpress.com/2008/09/28/extremal-combinatorics-iii-some-basic-theorems/#comment-10291
+  88. http://nucaltiado.wordpress.com/
+  89. http://gilkalai.wordpress.com/2013/08/19/open-collaborative-mathematics-over-the-internet-three-examples/#comment-10278
+  90. http://polymathprojects.org/2013/09/20/polymath8-a-success/
+  91. http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10277
+  92. http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/
+  93. http://gilkalai.wordpress.com/2013/09/09/simonsucberkeley/#comment-10260
+  94. http://gilkalai.wordpress.com/2008/10/23/two-math-riddles/#comment-10254
+  95. http://www.ma.huji.ac.il/~kalai/
+  96. http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/#comment-10240
+  97. http://www.facebook.com/johnny.gaddaar.184
+  98. http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/#comment-10239
+  99. http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/
+ 100. http://gilkalai.wordpress.com/2009/04/04/how-the-g-conjecture-came-about/#comment-10237
+ 101. http://gilkalai.wordpress.com/2013/09/30/real-analysis-introductory-mini-courses-at-simons-institute/
+ 102. http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/
+ 103. http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/
+ 104. http://gilkalai.wordpress.com/2013/09/18/analysis-of-boolean-functions-week-3/
+ 105. http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/
+ 106. http://gilkalai.wordpress.com/2013/09/09/simonsucberkeley/
+ 107. http://gilkalai.wordpress.com/2013/09/08/analysis-of-boolean-functions-week-2/
+ 108. http://gilkalai.wordpress.com/2013/09/04/around-borsuks-conjecture-3-how-to-save-borsuks-conjecture/
+ 109. http://gilkalai.wordpress.com/2013/09/03/analysis-of-boolean-functions-week-1/
+ 110. http://gilkalai.wordpress.com/2009/07/05/chess-can-be-a-game-of-luck/
+ 111. http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/
+ 112. http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/
+ 113. http://gilkalai.wordpress.com/2013/09/30/real-analysis-introductory-mini-courses-at-simons-institute/
+ 114. http://gilkalai.wordpress.com/analysis-of-boolean-functions/
+ 115. http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/
+ 116. http://gilkalai.wordpress.com/2010/11/25/emmanuel-abbe-polar-codes/
+ 117. http://gilkalai.wordpress.com/2013/05/12/answer-lord-kelvin-the-age-of-the-earth-and-the-age-of-the-sun/
+ 118. http://gilkalai.wordpress.com/gina-says/
+ 119. http://wordpress.com/signup/?ref=wplogin
+ 120. http://gilkalai.wordpress.com/wp-login.php
+ 121. http://gilkalai.wordpress.com/feed/
+ 122. http://gilkalai.wordpress.com/comments/feed/
+ 123. http://wordpress.com/
+ 124. http://gilkalai.wordpress.com/category/academics/
+ 125. http://gilkalai.wordpress.com/category/algebra-and-number-theory/
+ 126. http://gilkalai.wordpress.com/category/analysis/
+ 127. http://gilkalai.wordpress.com/category/applied-mathematics/
+ 128. http://gilkalai.wordpress.com/category/art/
+ 129. http://gilkalai.wordpress.com/category/blogging/
+ 130. http://gilkalai.wordpress.com/category/book-review/
+ 131. http://gilkalai.wordpress.com/category/combinatorics/
+ 132. http://gilkalai.wordpress.com/category/computer-science-and-optimization/
+ 133. http://gilkalai.wordpress.com/category/conferences/
+ 134. http://gilkalai.wordpress.com/category/controversies-and-debates/
+ 135. http://gilkalai.wordpress.com/category/convex-polytopes/
+ 136. http://gilkalai.wordpress.com/category/convexity/
+ 137. http://gilkalai.wordpress.com/category/economics/
+ 138. http://gilkalai.wordpress.com/category/education/
+ 139. http://gilkalai.wordpress.com/category/games/
+ 140. http://gilkalai.wordpress.com/category/geology/
+ 141. http://gilkalai.wordpress.com/category/geometry/
+ 142. http://gilkalai.wordpress.com/category/gina-says/
+ 143. http://gilkalai.wordpress.com/category/guest-blogger/
+ 144. http://gilkalai.wordpress.com/category/guest-post/
+ 145. http://gilkalai.wordpress.com/category/information-theory/
+ 146. http://gilkalai.wordpress.com/category/law/
+ 147. http://gilkalai.wordpress.com/category/mathematical-logic-and-set-theory/
+ 148. http://gilkalai.wordpress.com/category/mathematics-over-the-internet/
+ 149. http://gilkalai.wordpress.com/category/mathematics-to-the-rescue/
+ 150. http://gilkalai.wordpress.com/category/music/
+ 151. http://gilkalai.wordpress.com/category/number-theory/
+ 152. http://gilkalai.wordpress.com/category/obituary/
+ 153. http://gilkalai.wordpress.com/category/open-discussion/
+ 154. http://gilkalai.wordpress.com/category/open-problems/
+ 155. http://gilkalai.wordpress.com/category/philosophy/
+ 156. http://gilkalai.wordpress.com/category/physics/
+ 157. http://gilkalai.wordpress.com/category/poetry/
+ 158. http://gilkalai.wordpress.com/category/polymath3/
+ 159. http://gilkalai.wordpress.com/category/probability/
+ 160. http://gilkalai.wordpress.com/category/rationality/
+ 161. http://gilkalai.wordpress.com/category/riddles/
+ 162. http://gilkalai.wordpress.com/category/sport/
+ 163. http://gilkalai.wordpress.com/category/statistics/
+ 164. http://gilkalai.wordpress.com/category/taxi-and-other-stories/
+ 165. http://gilkalai.wordpress.com/category/teaching/
+ 166. http://gilkalai.wordpress.com/category/test-your-intuition/
+ 167. http://gilkalai.wordpress.com/category/uncategorized/
+ 168. http://gilkalai.wordpress.com/category/updates/
+ 169. http://gilkalai.wordpress.com/category/what-is-mathematics/
+ 170. http://gilkalai.wordpress.com/category/women-in-science/
+ 171. http://teachingintrotocs.blogspot.com/
+ 172. http://ilaba.wordpress.com/
+ 173. http://agtb.wordpress.com/
+ 174. http://analysisofbooleanfunctions.org/
+ 175. http://caicedoteaching.wordpress.com/
+ 176. http://qchu.wordpress.com/
+ 177. http://conan777.wordpress.com/
+ 178. http://asymptotia.com/
+ 179. http://weblog.fortnow.com/
+ 180. http://blogs.williams.edu/Morgan/
+ 181. http://geomblog.blogspot.com/
+ 182. http://lamington.wordpress.com/
+ 183. http://godplaysdice.blogspot.com/
+ 184. http://rjlipton.wordpress.com/
+ 185. http://gowers.wordpress.com/
+ 186. http://TheTricki/
+ 187. https://igorpak.wordpress.com/
+ 188. http://lucatrevisan.wordpress.com/
+ 189. http://math.ucr.edu/home/baez/
+ 190. http://konradswanepoel.wordpress.com/
+ 191. http://blogs.ethz.ch/kowalski/
+ 192. http://ldtopology.wordpress.com/
+ 193. http://hunch.net/
+ 194. http://mathoverflow.net/
+ 195. http://dorais.wordpress.com/about/
+ 196. http://matthewkahle.wordpress.com/
+ 197. http://michaelnielsen.org/blog/
+ 198. http://mybiasedcoin.blogspot.com/
+ 199. http://mycqstate.wordpress.com/
+ 200. http://golem.ph.utexas.edu/category/
+ 201. http://noncommutativeanalysis.wordpress.com/
+ 202. http://noncommutativegeometry.blogspot.com/index.html
+ 203. http://garden.irmacs.sfu.ca/
+ 204. http://11011110.livejournal.com/
+ 205. http://cameroncounts.wordpress.com/
+ 206. http://www.math.princeton.edu/sarnak/
+ 207. http://nghoussoub.com/
+ 208. http://quantumfrontiers.com/
+ 209. http://quomodocumque.wordpress.com/
+ 210. https://blogs.princeton.edu/imabandit/
+ 211. http://sbseminar.wordpress.com/
+ 212. http://www.scottaaronson.com/blog/
+ 213. http://www.stat.columbia.edu/~cook/movabletype/mlm/
+ 214. http://blog.tanyakhovanova.com/
+ 215. http://tcsmath.wordpress.com/
+ 216. http://cstheory.stackexchange.com/
+ 217. http://www.ics.uci.edu/~eppstein/junkyard/
+ 218. http://polymathprojects.org/
+ 219. http://dabacon.org/pontiff/
+ 220. http://unapologetic.wordpress.com/
+ 221. http://feedworld.net/toc/
+ 222. http://topologicalmusings.wordpress.com/
+ 223. http://www.tricki.org/
+ 224. http://terrytao.wordpress.com/
+ 225. http://windowsontheory.org/
+ 226. http://www.xkcd.com/
+ 227. http://www.sci-princess.info/
+ 228. http://gilkalai.wordpress.com/2013/09/
+ 229. http://gilkalai.wordpress.com/2013/08/
+ 230. http://gilkalai.wordpress.com/2013/07/
+ 231. http://gilkalai.wordpress.com/2013/06/
+ 232. http://gilkalai.wordpress.com/2013/05/
+ 233. http://gilkalai.wordpress.com/2013/04/
+ 234. http://gilkalai.wordpress.com/2013/03/
+ 235. http://gilkalai.wordpress.com/2013/02/
+ 236. http://gilkalai.wordpress.com/2013/01/
+ 237. http://gilkalai.wordpress.com/2012/12/
+ 238. http://gilkalai.wordpress.com/2012/11/
+ 239. http://gilkalai.wordpress.com/2012/10/
+ 240. http://gilkalai.wordpress.com/2012/08/
+ 241. http://gilkalai.wordpress.com/2012/07/
+ 242. http://gilkalai.wordpress.com/2012/06/
+ 243. http://gilkalai.wordpress.com/2012/05/
+ 244. http://gilkalai.wordpress.com/2012/04/
+ 245. http://gilkalai.wordpress.com/2012/03/
+ 246. http://gilkalai.wordpress.com/2012/02/
+ 247. http://gilkalai.wordpress.com/2012/01/
+ 248. http://gilkalai.wordpress.com/2011/12/
+ 249. http://gilkalai.wordpress.com/2011/11/
+ 250. http://gilkalai.wordpress.com/2011/10/
+ 251. http://gilkalai.wordpress.com/2011/09/
+ 252. http://gilkalai.wordpress.com/2011/08/
+ 253. http://gilkalai.wordpress.com/2011/07/
+ 254. http://gilkalai.wordpress.com/2011/06/
+ 255. http://gilkalai.wordpress.com/2011/04/
+ 256. http://gilkalai.wordpress.com/2011/02/
+ 257. http://gilkalai.wordpress.com/2011/01/
+ 258. http://gilkalai.wordpress.com/2010/11/
+ 259. http://gilkalai.wordpress.com/2010/10/
+ 260. http://gilkalai.wordpress.com/2010/09/
+ 261. http://gilkalai.wordpress.com/2010/08/
+ 262. http://gilkalai.wordpress.com/2010/07/
+ 263. http://gilkalai.wordpress.com/2010/06/
+ 264. http://gilkalai.wordpress.com/2010/05/
+ 265. http://gilkalai.wordpress.com/2010/04/
+ 266. http://gilkalai.wordpress.com/2010/03/
+ 267. http://gilkalai.wordpress.com/2010/02/
+ 268. http://gilkalai.wordpress.com/2010/01/
+ 269. http://gilkalai.wordpress.com/2009/12/
+ 270. http://gilkalai.wordpress.com/2009/11/
+ 271. http://gilkalai.wordpress.com/2009/10/
+ 272. http://gilkalai.wordpress.com/2009/09/
+ 273. http://gilkalai.wordpress.com/2009/08/
+ 274. http://gilkalai.wordpress.com/2009/07/
+ 275. http://gilkalai.wordpress.com/2009/06/
+ 276. http://gilkalai.wordpress.com/2009/05/
+ 277. http://gilkalai.wordpress.com/2009/04/
+ 278. http://gilkalai.wordpress.com/2009/03/
+ 279. http://gilkalai.wordpress.com/2009/02/
+ 280. http://gilkalai.wordpress.com/2009/01/
+ 281. http://gilkalai.wordpress.com/2008/12/
+ 282. http://gilkalai.wordpress.com/2008/11/
+ 283. http://gilkalai.wordpress.com/2008/10/
+ 284. http://gilkalai.wordpress.com/2008/09/
+ 285. http://gilkalai.wordpress.com/2008/08/
+ 286. http://gilkalai.wordpress.com/2008/07/
+ 287. http://gilkalai.wordpress.com/2008/06/
+ 288. http://gilkalai.wordpress.com/2008/05/
+ 289. http://gilkalai.wordpress.com/2008/04/
+ 290. http://gilkalai.wordpress.com/category/algebra-and-number-theory/
+ 291. http://gilkalai.wordpress.com/category/blogging/
+ 292. http://gilkalai.wordpress.com/category/combinatorics/
+ 293. http://gilkalai.wordpress.com/category/computer-science-and-optimization/
+ 294. http://gilkalai.wordpress.com/category/conferences/
+ 295. http://gilkalai.wordpress.com/category/controversies-and-debates/
+ 296. http://gilkalai.wordpress.com/category/convexity/
+ 297. http://gilkalai.wordpress.com/category/convex-polytopes/
+ 298. http://gilkalai.wordpress.com/category/economics/
+ 299. http://gilkalai.wordpress.com/category/games/
+ 300. http://gilkalai.wordpress.com/category/geometry/
+ 301. http://gilkalai.wordpress.com/category/gina-says/
+ 302. http://gilkalai.wordpress.com/category/guest-blogger/
+ 303. http://gilkalai.wordpress.com/category/mathematics-over-the-internet/
+ 304. http://gilkalai.wordpress.com/category/mathematics-to-the-rescue/
+ 305. http://gilkalai.wordpress.com/category/obituary/
+ 306. http://gilkalai.wordpress.com/category/open-discussion/
+ 307. http://gilkalai.wordpress.com/category/open-problems/
+ 308. http://gilkalai.wordpress.com/category/philosophy/
+ 309. http://gilkalai.wordpress.com/category/physics/
+ 310. http://gilkalai.wordpress.com/category/polymath3/
+ 311. http://gilkalai.wordpress.com/category/probability/
+ 312. http://gilkalai.wordpress.com/category/rationality/
+ 313. http://gilkalai.wordpress.com/category/riddles/
+ 314. http://gilkalai.wordpress.com/category/taxi-and-other-stories/
+ 315. http://gilkalai.wordpress.com/category/teaching/
+ 316. http://gilkalai.wordpress.com/category/test-your-intuition/
+ 317. http://gilkalai.wordpress.com/category/uncategorized/
+ 318. http://gilkalai.wordpress.com/category/updates/
+ 319. http://gilkalai.wordpress.com/category/what-is-mathematics/
+ 320. http://gilkalai.wordpress.com/tag/aram-harrow/
+ 321. http://gilkalai.wordpress.com/tag/art/
+ 322. http://gilkalai.wordpress.com/tag/blogs/
+ 323. http://gilkalai.wordpress.com/tag/book-review/
+ 324. http://gilkalai.wordpress.com/tag/boolean-functions/
+ 325. http://gilkalai.wordpress.com/tag/borsuks-conjecture/
+ 326. http://gilkalai.wordpress.com/tag/bruhat-order/
+ 327. http://gilkalai.wordpress.com/tag/cap-sets/
+ 328. http://gilkalai.wordpress.com/tag/cayley-theorem/
+ 329. http://gilkalai.wordpress.com/tag/chessboard-complexes/
+ 330. http://gilkalai.wordpress.com/tag/chip-firing-games/
+ 331. http://gilkalai.wordpress.com/tag/collective-coin-flipping/
+ 332. http://gilkalai.wordpress.com/tag/combinatorics/
+ 333. http://gilkalai.wordpress.com/tag/conferences/
+ 334. http://gilkalai.wordpress.com/tag/controversies/
+ 335. http://gilkalai.wordpress.com/tag/convexity/
+ 336. http://gilkalai.wordpress.com/tag/convex-polytopes/
+ 337. http://gilkalai.wordpress.com/tag/debates/
+ 338. http://gilkalai.wordpress.com/tag/discrepancy/
+ 339. http://gilkalai.wordpress.com/tag/economics/
+ 340. http://gilkalai.wordpress.com/tag/endre-szemeredi/
+ 341. http://gilkalai.wordpress.com/tag/enumerative-combinatorics/
+ 342. http://gilkalai.wordpress.com/tag/expected-utility/
+ 343. http://gilkalai.wordpress.com/tag/extremal-combinatorics/
+ 344. http://gilkalai.wordpress.com/tag/f-vectores/
+ 345. http://gilkalai.wordpress.com/tag/g-conjecture/
+ 346. http://gilkalai.wordpress.com/tag/games/
+ 347. http://gilkalai.wordpress.com/tag/game-theory/
+ 348. http://gilkalai.wordpress.com/tag/geometric-combinatorics/
+ 349. http://gilkalai.wordpress.com/tag/greg-kuperberg/
+ 350. http://gilkalai.wordpress.com/tag/hebrew-university-of-jerusalem/
+ 351. http://gilkalai.wordpress.com/tag/helly-type-theorems/
+ 352. http://gilkalai.wordpress.com/tag/hirsch-conjecture/
+ 353. http://gilkalai.wordpress.com/tag/influence/
+ 354. http://gilkalai.wordpress.com/tag/itai-benjamini/
+ 355. http://gilkalai.wordpress.com/tag/jean-bourgain/
+ 356. http://gilkalai.wordpress.com/tag/jerusalem/
+ 357. http://gilkalai.wordpress.com/tag/kimmo-eriksson/
+ 358. http://gilkalai.wordpress.com/tag/linear-programming/
+ 359. http://gilkalai.wordpress.com/tag/mathematics/
+ 360. http://gilkalai.wordpress.com/tag/mathematics-to-the-rescue/
+ 361. http://gilkalai.wordpress.com/tag/michal-linial/
+ 362. http://gilkalai.wordpress.com/tag/mittag-leffler-institute/
+ 363. http://gilkalai.wordpress.com/tag/noise/
+ 364. http://gilkalai.wordpress.com/tag/noise-sensitivity/
+ 365. http://gilkalai.wordpress.com/tag/oded-schramm/
+ 366. http://gilkalai.wordpress.com/tag/open-problems/
+ 367. http://gilkalai.wordpress.com/tag/paul-erdos/
+ 368. http://gilkalai.wordpress.com/tag/percolation/
+ 369. http://gilkalai.wordpress.com/tag/philosophy/
+ 370. http://gilkalai.wordpress.com/tag/philosophy-of-science/
+ 371. http://gilkalai.wordpress.com/tag/physics/
+ 372. http://gilkalai.wordpress.com/tag/polymath1/
+ 373. http://gilkalai.wordpress.com/tag/polymath3/
+ 374. http://gilkalai.wordpress.com/tag/polytopes/
+ 375. http://gilkalai.wordpress.com/tag/posets/
+ 376. http://gilkalai.wordpress.com/tag/probability/
+ 377. http://gilkalai.wordpress.com/tag/quantum-computation/
+ 378. http://gilkalai.wordpress.com/tag/quantum-computers/
+ 379. http://gilkalai.wordpress.com/tag/quantum-error-correction/
+ 380. http://gilkalai.wordpress.com/tag/randomness/
+ 381. http://gilkalai.wordpress.com/tag/roths-theorem/
+ 382. http://gilkalai.wordpress.com/tag/sex/
+ 383. http://gilkalai.wordpress.com/tag/shallability/
+ 384. http://gilkalai.wordpress.com/tag/subspace-arrangements/
+ 385. http://gilkalai.wordpress.com/tag/szemeredis-theorem/
+ 386. http://gilkalai.wordpress.com/tag/taxi-and-other-stories/
+ 387. http://gilkalai.wordpress.com/tag/test-your-intuition/
+ 388. http://gilkalai.wordpress.com/tag/tim-gowers/
+ 389. http://gilkalai.wordpress.com/tag/tits-building/
+ 390. http://gilkalai.wordpress.com/tag/topological-combinatorics/
+ 391. http://gilkalai.wordpress.com/tag/trees/
+ 392. http://gilkalai.wordpress.com/tag/turans-problem/
+ 393. http://gilkalai.wordpress.com/tag/tverbergs-theorem/
+ 394. http://gilkalai.wordpress.com/tag/updates/
+ 395. http://gilkalai.wordpress.com/
+ 396. http://theme.wordpress.com/themes/twentyten/
+ 397. http://wordpress.com/?ref=footer
+ 398. javascript:void(0)
+ 399. http://wordpress.com/signup/?ref=lof
+ 400. http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&mp6=1
+
+   Hidden links:
+ 401. http://gilkalai.wordpress.com/
+ 402. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-form-guest
+ 403. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-form-load-service:WordPress.com
+ 404. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-form-load-service:Twitter
+ 405. http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-form-load-service:Facebook
+ 406. http://vzn1.wordpress.com/2013/10/04/zhang-twin-prime-breakthru-vs-academic-trackgrind/
+ 407. http://eklausmeier.wordpress.com/2013/09/27/gil-kalai-on-zhangs-breakthrough-in-number-theory/
+ 408. http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/
+ 409. http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/
+ 410. http://nucaltiado.wordpress.com/
+ 411. http://polymathprojects.org/2013/09/20/polymath8-a-success/
+ 412. http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/
+ 413. http://www.ma.huji.ac.il/~kalai/
+ 414. http://www.facebook.com/johnny.gaddaar.184
+ 415. http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/

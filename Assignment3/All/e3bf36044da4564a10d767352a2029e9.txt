@@ -1,0 +1,450 @@
+<!DOCTYPE HTML>
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if IEMobile 7 ]><html class="no-js iem7" manifest="default.appcache?v=1"><![endif]--> 
+<!--[if lt IE 7 ]><html class="no-js ie6" lang="en"><![endif]--> 
+<!--[if IE 7 ]><html class="no-js ie7" lang="en"><![endif]--> 
+<!--[if IE 8 ]><html class="no-js ie8" lang="en"><![endif]--> 
+<!--[if (gte IE 9)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
+	<head>
+		<title>Opportunity Notes | Turning the Tables at a Messy Hackathon</title>
+		<meta charset="UTF-8" />
+	  	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"><!-- Remove if you're not building a responsive site. (But then why would you do such a thing?) -->
+		<link rel="pingback" href="http://blog.evernote.com/opportunitynotes/xmlrpc.php" />
+		<link rel="icon" href="http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/img/icons/favicon.png" type="image/png"/>
+	<link rel="apple-touch-icon" href="http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/img/icons/57px_icon_oppnotes.png" />
+	<link rel="apple-touch-icon" sizes="72x72" href="http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/img/icons/72px_icon_oppnotes.png" />
+	<link rel="apple-touch-icon" sizes="114x114" href="http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/img/icons/retina_icon_oppnotes.png" />
+	<!-- Facebook Opengraph and Google Plus Meta -->
+ 
+
+
+	<meta property="fb:app_id" content=""/>
+	<meta property="fb:admins" content=""/>
+	<meta itemprop="name" content="Turning the Tables at a Messy Hackathon" />
+	<meta property="og:title" content="Turning the Tables at a Messy Hackathon"/> 
+	<meta property="og:url" content="http://blog.evernote.com/opportunitynotes/2013/05/14/turning-the-tables-at-a-messy-hackathon/"/>
+    <meta property="og:site_name" content="Opportunity Notes | Evernote"/>
+	<meta property="og:type" content="article"/>
+	<meta itemprop="description" content="I’m partial to the the Messy Hackathon. These hacks, like the TechCrunch Disrupt weekend hackathons that usually precede the official Disrupt conferences, are massive and chaotic. They attract hundreds of developers — the last TechCrunch hack in New York had about 600 — and dozens of API provider companies. I was at this Messy Hack. It was glorious." />
+	<meta property="og:description" content="I’m partial to the the Messy Hackathon. These hacks, like the TechCrunch Disrupt weekend hackathons that usually precede the official Disrupt conferences, are massive and chaotic. They attract hundreds of developers — the last TechCrunch hack in New York had about 600 — and dozens of API provider companies. I was at this Messy Hack. It was glorious."/>
+	<meta property="og:image" content="http://blog.evernote.com/opportunitynotes/files/2013/05/TCDHackNYCsq-150x150.jpg" />
+	<meta itemprop="image" content="http://blog.evernote.com/opportunitynotes/files/2013/05/TCDHackNYCsq-150x150.jpg" />	
+		<link rel="alternate" type="application/rss+xml" title="Opportunity Notes &raquo; Turning the Tables at a Messy Hackathon Comments Feed" href="http://blog.evernote.com/opportunitynotes/2013/05/14/turning-the-tables-at-a-messy-hackathon/feed/" />
+<link rel='stylesheet' id='evernote_style-css'  href='http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/css/evernote/940.css?ver=3.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='evernote_fonts_eng-css'  href='http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/css/evernote/fonts_english_only.css?ver=3.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='css-css'  href='http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/style.css?ver=3.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='mediaelementjs-styles-css'  href='http://blog.evernote.com/opportunitynotes/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelementplayer.css?ver=3.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://blog.evernote.com/opportunitynotes/wp-content/themes/evernote-opportunity/js/site.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://blog.evernote.com/opportunitynotes/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/mediaelement-and-player.min.js?ver=2.1.3'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.evernote.com/opportunitynotes/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.evernote.com/opportunitynotes/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Are you ready to share your broadband?' href='http://blog.evernote.com/opportunitynotes/2013/05/06/are-you-ready-to-share-your-broadband/' />
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='http://blog.evernote.com/opportunitynotes/2013/05/14/turning-the-tables-at-a-messy-hackathon/' />
+<link rel='shortlink' href='http://blog.evernote.com/opportunitynotes/?p=1444' />
+<link rel="alternate" type="application/rss+xml" title="Default Podcast Feed" href="http://blog.evernote.com/opportunitynotes/feed/podcast/" />
+		<script type="text/javascript">//<![CDATA[
+	// Google Analytics for WordPress by Yoast v4.2.3 | http://yoast.com/wordpress/google-analytics/
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount','UA-285778-10']);
+	_gaq.push(['_trackPageview']);
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	//]]></script>
+	</head>
+	<body class="single single-post postid-1444 single-format-standard turning-the-tables-at-a-messy-hackathon">
+
+ 	
+<header id="h-global">
+ <div class="header">
+		<header class="content clearfix">
+			<h1>
+				<a href="http://evernote.com/">
+					<div data-picture="data-picture" data-alt="Evernote logo">
+					<img src="http://trunk.evernote.com/images/design/logo.png" alt="Evernote logo" />
+					</div>
+				</a>
+			</h1>
+			<nav class="secondary_nav">
+				<h1 class="invisible">Account Links</h1>
+				<ul>
+					<li><a href="https://www.evernote.com/Home.action">Web Sign In</a></li>
+					<li><a href="https://www.evernote.com/Registration.action">Create Account</a></li>
+					<li><a href="http://evernote.com/premium/">Go Premium</a></li>
+				</ul>
+			</nav>
+			<nav class="primary_nav clearfix">
+				<h1 class="invisible">Products, Blog, and The Trunk</h1>
+				<ul>
+					<li class="nav_products clearfix">
+						<a href="" class="do_nothing">Products<span class="nav_sub_carrot"></span></a>
+						<span class="nav_sub_bridge"></span>
+						<ul>
+							<li class="nav_evernote"><a href="http://evernote.com/evernote/">Evernote <em>Remember everything</em></a></li>
+							<li class="nav_skitch"><a href="http://evernote.com/skitch/">Skitch <em>Draw attention</em></a></li>
+							<li class="nav_penultimate"><a href="http://evernote.com/penultimate/">Penultimate <em>Beautiful digital handwriting</em></a></li>
+							<li class="nav_web_clipper"><a href="http://evernote.com/webclipper/">Evernote Web Clipper <em>Save webpages forever</em></a></li>
+							<li class="nav_hello"><a href="http://evernote.com/hello/">Evernote Hello <em>Remember people</em></a></li>
+							<li class="nav_food"><a href="http://evernote.com/food/">Evernote Food <em>Preserve your food memories</em></a></li>
+							<li class="nav_clearly"><a href="http://evernote.com/clearly/">Evernote Clearly <em>Distraction-free reading</em></a></li>
+							<li class="nav_peek"><a href="http://evernote.com/peek/">Evernote Peek <em>Study smarter</em></a></li>
+						</ul>
+					</li>
+					<li><a href="http://blog.evernote.com/">Noteworthy Blog</a></li>
+					<li><a href="http://trunk.evernote.com/">The Trunk</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div></header>
+
+<div id="page-wrap">
+ 	
+ 	<section id="maincontent">
+ 	 <header id="intro">
+  	 <h1><a href="http://blog.evernote.com/opportunitynotes/">Opportunity Notes</a></h1>
+  	 <div class="description">By Rafe Needleman</div>
+ 	 </header>
+ 	 
+ 	 
+ 	 <nav id="main-nav">
+  	 <ul id="main-menu" class="menu"><li id="menu-item-6" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-6"><a href="http://blog.evernote.com/opportunitynotes/">All Articles</a></li>
+<li id="menu-item-913" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-913"><a href="http://blog.evernote.com/opportunitynotes/category/hardware/">Hardware</a></li>
+<li id="menu-item-917" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-917"><a href="http://blog.evernote.com/opportunitynotes/category/software/">Software</a></li>
+<li id="menu-item-916" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-916"><a href="http://blog.evernote.com/opportunitynotes/category/service/">Service</a></li>
+<li id="menu-item-914" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-914"><a href="http://blog.evernote.com/opportunitynotes/category/infrastructure/">Infrastructure</a></li>
+<li id="menu-item-915" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-915"><a href="http://blog.evernote.com/opportunitynotes/category/invention/">Invention</a></li>
+</ul>  	 
+  	 <form action="http://blog.evernote.com/opportunitynotes" id="searchform" method="get">
+ <label for="s">Search for:</label>
+ <input type="text" id="s" name="s" value=""  placeholder="Search"/>
+ <input type="submit" value="Search" id="searchsubmit" style="display:none;" />
+</form> 	 </nav>
+ 	 
+
+
+<article class="single">
+
+	<h2>Turning the Tables at a Messy Hackathon</h2>
+	
+	<div class="article-info">
+	 <a href="http://blog.evernote.com/opportunitynotes/category/software/" title="View all posts in Software" rel="category tag">Software</a> <span class="separator">|</span> <time datetime="2013-05-14" pubdate>May 14, 2013 9:22 am</time>	
+	</div>
+	
+	
+	
+	<div id="attachment_1453" class="wp-caption aligncenter" style="width: 670px"><img class="size-large wp-image-1453" alt="At the TechCrunch Disrupt hackathon in New York, April 27, 2013." src="http://blog.evernote.com/opportunitynotes/files/2013/05/enattdch-660x233.png" width="660" height="233" /><p class="wp-caption-text">At the TechCrunch Disrupt hackathon in New York, April 27, 2013.</p></div>
+<p>There are two kinds of hackathons that I&#8217;m familiar with. The first, of which Evernote produces more than a dozen a year, are focused on one (or maybe two) platforms &#8212; like the Evernote API. Companies like ours will set up a space for a 24-hour coding spree, invite a bunch of developers, and parachute in a few engineers and evangelists to help out.</p>
+<p>Focused hackathons are fun and productive. They&#8217;re a chance for us to bond with young (usually) developers, and to learn what these devs are looking for as they bang on our platform. We always get cool projects from these hackathons, like <a href="https://www.hackerleague.org/hackathons/deutsche-telekom-and-evernote-berlin-hackathon/hacks/context-booster">Context Booster</a> from our recent Berlin hack, and <a href="https://www.hackerleague.org/hackathons/evernote-hackathon-brazil/hacks/epicnote/">Epicnote</a> from one before that in Sao Paulo.</p>
+<p>But I&#8217;m partial to the second kind of hackathon: the Messy Hack. These hacks, like the <a href="http://techcrunch.com/events/disrupt-ny-2013/event-info/">TechCrunch Disrupt</a> weekend hackathons that usually precede the official Disrupt conferences, are massive and chaotic. They attract hundreds of developers &#8212; the <a href="http://techcrunch.com/events/disrupt-ny-hackathon-2013/event-info/">last TechCrunch hack</a> in New York had about 600 &#8212; and dozens of API provider companies. I was at this Messy Hack. It was glorious.</p>
+<p>At these hackathons, platform companies like Evernote have to compete with other platform companies (In New York they included <a href="http://www.twilio.com/">Twilio</a>, <a href="http://msdn.microsoft.com/en-us/library/live/hh826521.aspx">Microsoft</a>, <a href="http://developers.box.com/">Box</a>, and others) for attention and love from developers.</p>
+<p>I spent more than 20 years covering startups for the tech press, and I&#8217;m accustomed to watching new tech company CEOs pitch their hearts out to media, funding sources, and potential partner companies. The pecking order is clear: The startups are the supplicants; the established companies and media are the power brokers. I&#8217;m used to being in the power seat.</p>
+<p>At a Messy Hack, the dynamic is reversed. The coders are in the audience, doling out attention to a string of platform evangelists who take the stage, one after the other, pleading in their brief pitches for the devs to code up apps using their APIs.</p>
+<p>It&#8217;s a bracing reversal. Personally, I find it fun to pitch for a change, instead of being pitched. But it&#8217;s also a great opportunity to refine your business and your message. You can tell, after a few short hours, if your pitch is successful, and by extension if your company&#8217;s platform strategy is working. You tell by the number of developers who come up to your table during the hackathon to ask questions, and then you tell, at the end of the event, by the number and quality of the projects presented.</p>
+<p>Another great thing about Messy Hacks: Mashups. With multiple APIs being supported at these events, developers are more likely to go off and build apps that bring different platforms together.</p>
+<div id="attachment_1456" class="wp-caption alignright" style="width: 330px"><img src="http://blog.evernote.com/opportunitynotes/files/2013/05/TCDHackNYCsq-320x320.jpg" alt="Don&#039;t bother trying to leave. Just sit down and code." width="320" height="320" class="size-medium wp-image-1456" /><p class="wp-caption-text">Don&#8217;t bother trying to leave. Just sit down and code.</p></div>
+<h3>Hacking the hackathon</h3>
+<p>Now, it&#8217;s not hard for platform companies to game these hackathons, by offering prizes to developers who use their APIs. We have done that, and it does drum up interest from hackers who come to have some fun and maybe win a few bucks over the weekend. In New York, some companies with serious APIs offered prizes, and they got some decent projects. But at least one company offered a prize that was too big for the value of its simple API (in my editorial judgement) and it got more projects created than it deserved. Hacks created just to win a prize have a lower probability of moving to the next stage of development; the payout is too much and too early.</p>
+<p>At the recent New York TechCrunch hackathon, we offered no immediate prizes, and yet we were gratified to see six teams present interesting projects at the end of the event. My favorite was <a href="http://techcrunch.com/2013/04/28/hackathon-squirrel-evernote/">Squirrel</a>, which is creating a nice-looking reading list that&#8217;s made up of the articles users clip to Evernote. We also liked the hacks <a href="http://techcrunch.com/2013/04/28/everslide-turns-evernote-notes-into-slideshows/">Everslide</a>, which makes quick presentation slides from Evernote notes; and <a href="https://www.hackerleague.org/hackathons/techcrunch-disrupt-nyc-2013/hacks/evernote-quick-team-manager">Evernote-Quick Team Manager</a>, which mashes Evernote together with <a href="http://highrisehq.com/">Highrise</a> or <a href="http://basecamp.com/">Basecamp</a> for group task management.</p>
+<p>It was all the sweeter to see these projects given the competition we were up against and the fact that our only prize was far in the future &#8212; well-developed Evernote integrations might win our three-month-long <a href="https://www.hackerleague.org/hackathons/evernote-devcup-2013/">Devcup</a> competition and some of <i>those</i> winners might be invited to our <a href="http://dev.evernote.com/accelerator/">Evernote Accelerator</a>. And, to be fair, there were <a href="https://www.hackerleague.org/hackathons/techcrunch-disrupt-nyc-2013/hacks">183 projects</a> at the hackathon, so seeing six Evernote projects didn&#8217;t mean we &#8220;won&#8221; the event by any stretch.</p>
+<p>But the developers who built for Evernote did so for the best reasons: They saw value in our API and our base of users. While we&#8217;re not above sweetening the pot a bit to encourage developers who are on the fence to to hack at Evernote, in this case, we didn&#8217;t even do that and we still got neat projects.</p>
+<p>A competitive hackathon where you don&#8217;t give out prizes is a brutal opportunity. But the payoff is sweet.</p>
+<p>-<a href="http://twitter.com/rafe">Rafe</a></p>
+<p>&nbsp;</p>
+<h3>Audio version of this column</h3>
+	<audio id="wp_mep_1" src="http://blog.evernote.com/opportunitynotes/files/2013/05/OppNotes56-TCHack.mp3"     controls="controls" preload="none"  >
+		
+		
+		
+		
+		
+		
+		
+		<object width="660" height="30" type="application/x-shockwave-flash" data="http://blog.evernote.com/opportunitynotes/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/flashmediaelement.swf">
+			<param name="movie" value="http://blog.evernote.com/opportunitynotes/wp-content/plugins/media-element-html5-video-and-audio-player/mediaelement/flashmediaelement.swf" />
+			<param name="flashvars" value="controls=true&amp;file=http://blog.evernote.com/opportunitynotes/files/2013/05/OppNotes56-TCHack.mp3" />			
+		</object>		
+	</audio>
+<script type="text/javascript">
+jQuery(document).ready(function($) {
+	$('#wp_mep_1').mediaelementplayer({
+		m:1
+		
+		,features: ['playpause','current','progress','duration','volume','tracks','fullscreen']
+		,audioWidth:660,audioHeight:30
+	});
+});
+</script>
+
+<h3 style="margin-top: 40px">Our next hackathon</h3>
+<p>Join Evernote and Honda at our first  <a href="http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/">Design &amp; Build Weekend</a> at Evernote HQ!</p>
+		
+	
+		
+	<div class="tags">
+ 	 	</div>
+	
+	<div class="social">
+ 	<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox addthis_default_style ">
+<a class="addthis_button_facebook_like" fb:like:layout="button_count"></a>
+<a class="addthis_button_tweet"></a>
+<a class="addthis_button_google_plusone" g:plusone:size="medium"></a> 
+<a class="addthis_button_linkedin_counter"></a> 
+</div>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=xa-506c2815584e1424"></script>
+<!-- AddThis Button END -->
+	</div>
+		
+
+	<div class='yarpp-related yarpp-related-none'>
+</div>
+
+	
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-284">
+        <div id="dsq-comment-header-284" class="dsq-comment-header">
+            <cite id="dsq-cite-284">
+http://twitter.com/kylejelse                <span id="dsq-author-user-284">Kyle Else</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-284" class="dsq-comment-body">
+            <div id="dsq-comment-message-284" class="dsq-comment-message"><p>Also first-of-a-kind civic innovation and data hackathon festival is taking shape across the U.S.A. Here is a link to the Silicon Valley Business Journals story on CityCamp Palo Alto June 1st, 2013: <a href="http://www.bizjournals.com/sanjose/news/2013/04/17/palo-alto-hack-our-data-to-help-our.html" rel="nofollow">http://www.bizjournals.com/sanjose/news/2013/04/17/palo-alto-hack-our-data-to-help-our.html</a>  #HackPaloAlto #HackforChange <a href="http://www.hackpaloalto.org" rel="nofollow">http://www.hackpaloalto.org</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-333">
+        <div id="dsq-comment-header-333" class="dsq-comment-header">
+            <cite id="dsq-cite-333">
+                <span id="dsq-author-user-333">melanie powel</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-333" class="dsq-comment-body">
+            <div id="dsq-comment-message-333" class="dsq-comment-message"><p>stringnote is amazing softwer.stringnote allows you to easily make quick notes,including 9 seconds of video, audio, or text, and sync them to Evernote! The latest version also allows you to easily share these notes via email and all your favorite social networks. Auto-geotagging helps you remember when and where you the note was taken so you never lose that stroke of genius regardless of where it hits you.</p>
+<p>take a look also google play page:      <a href="https://play.google.com/store/apps/details?id=com.kandasoft.stringnote" rel="nofollow">https://play.google.com/store/apps/details?id=com.kandasoft.stringnote</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://blog.evernote.com/opportunitynotes/2013/05/14/turning-the-tables-at-a-messy-hackathon/';
+    var disqus_identifier = '1444 http://blog.evernote.com/opportunitynotes/?p=1444';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'opportunitynotes';
+    var disqus_title = "Turning the Tables at a Messy Hackathon";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=1444';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/blog.evernote.com\/opportunitynotes\/2013\/05\/14\/turning-the-tables-at-a-messy-hackathon\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+	
+	<a href="#h-global" class="backtop">Back to Top</a>
+
+
+
+</article>
+
+</section>
+
+<aside id="sidebar">
+ <section id="about">
+ <div id="text-2" class="widget widget_text"><h4>About Rafe</h4>			<div class="textwidget"><p>Journalist Rafe Needleman has been covering new technologies, products, and companies since 1988. He has written and edited at CNET, Red Herring, Byte, and other publications.</p>
+<p>In this column, he examines the opportunities represented by today's startups and new ideas. Opportunity Notes is sponsored by Evernote but is editorially independent of it. <a href="http://blog.evernote.com/opportunitynotes/about-rafe/">Read more</a> about Opportunity Notes.</p>
+<p>Evernote helps you Remember Everything. <a href="http://evernote.com/evernote/">Get it here</a>.</p>
+<p><a href="http://blog.evernote.com/opportunitynotes/about-rafe/" class="about-rafe">More about Rafe</a></p>
+</div>
+		</div></section>
+
+<section id="signup">
+ <h4>Subscribe by email</h4>
+<form id="form5" name="form5" class="wufoo topLabel page" autocomplete="off" enctype="multipart/form-data" method="post" novalidate action="https://ahanda.wufoo.com/forms/s7x2r7/#public">
+	<label class="desc" id="title1" for="Field1">Get the latest blog posts sent to your inbox daily</label><br />
+<input id="Field1" name="Field1" type="email" spellcheck="false" class="field text medium" value="" maxlength="255" tabindex="1" required placeholder="Email Address" /> 
+	<input id="saveForm" name="saveForm" type="submit" value="&gt;" />
+	<!--
+		<label for="comment">Do Not Fill This Out</label>
+		<textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+	-->
+	<input type="hidden" id="idstamp" name="idstamp" value="0MzLCitSo3IJ9KCpbBQbL2OYowcrrChF5IsASsVO4M4=" />
+	<div class="clear"></div>
+</form>
+
+
+
+
+
+
+
+</section>  
+
+
+<section id="connect">
+ <h4>Connect</h4>
+ <ul class="connect">
+  <li class="con-tw soclink"><a href="http://twitter.com/Rafe" target="_blank">Follow Rafe on Twitter</a></li>
+  <li class="con-fb soclink"><a href="http://www.facebook.com/RafeNeedleman" target="_blank">Connect on Facebook</a></li>
+  <li class="con-gp soclink"><a href="https://plus.google.com/+RafeNeedleman" target="_blank">Join Rafe on Google+</a></li>
+  <li class="con-em"><a href="mailto:rafe@evernote.com?subject=Opportunity%20Notes">Email Rafe</a></li>
+  <li class="con-rss"><a href="http://blog.evernote.com/opportunitynotes/rss">Subscribe by RSS feed</a></li>
+ </ul>
+</section>
+
+<section id="archive-link">
+ <h4>Archive</h4>
+ <ul class="discover">
+  <li class="arc-link"><a href="http://blog.evernote.com/opportunitynotes/2013">Articles</a></li>
+  <li class="aud-link"><a href="http://soundcloud.com/oppnotes/" target="_blank" >Audio Articles</a></li>
+  <!-- <li class="pod-link"><a href="http://blog.evernote.com/opportunitynotes/opportunity-notes-podcast/">Podcasts</a></li> -->
+ </ul>
+</section></aside>
+
+</div>
+
+
+
+<div class="footer">
+	<footer class="content clearfix">
+		<div class="main_col clearfix">
+			<div class="footer_col">
+				<dl>
+					<dt>Products</dt>
+					<dd><a href="http://evernote.com/evernote/">Evernote</a></dd>
+					<dd><a href="http://evernote.com/skitch/">Skitch</a></dd>
+					<dd><a href="http://evernote.com/penultimate/">Penultimate</a></dd>
+					<dd><a href="http://evernote.com/webclipper/">Evernote Web Clipper</a></dd>
+					<dd><a href="http://evernote.com/hello/">Evernote Hello</a></dd>
+					<dd><a href="http://evernote.com/food/">Evernote Food</a></dd>
+					<dd><a href="http://evernote.com/clearly/">Evernote Clearly</a></dd>
+					<dd><a href="http://evernote.com/peek/">Evernote Peek</a></dd>
+					<dd><a href="http://evernote.com/trunk/">The Trunk</a></dd>
+				</dl>
+			</div>
+			<div class="footer_col">
+				<dl>
+					<dt>About</dt>
+					<dd><a href="http://evernote.com/corp/">Company Info</a></dd>
+					<dd><a href="http://evernote.com/careers/">Careers</a></dd>
+					<dd><a href="http://evernote.com/contact/">Contact</a></dd>
+					<dd><a href="http://shop.evernote.com/">Store</a></dd>
+					<dd><a href="http://evernote.com/trademark/">Trademark</a></dd>
+					<dd><a href="http://evernote.com/tos/">Terms of Service</a></dd>
+					<dd><a href="http://evernote.com/privacy/">Privacy Policy</a></dd>
+					<dd><a href="http://evernote.com/legal/">Legal Information</a></dd>
+				</dl>
+			</div>
+			<div class="footer_col">
+				<dl>
+					<dt>Support</dt>
+					<dd><a href="http://evernote.com/contact/support/">Support Home</a></dd>
+					<dd><a href="http://evernote.com/kb/">Knowledge Base</a></dd>
+					<dd><a href="http://discussion.evernote.com/">Forum</a></dd>
+				</dl>
+				<dl>
+					<dt>Premium</dt>
+					<dd><a href="http://evernote.com/premium/">For Individuals</a></dd>
+					<dd><a href="http://evernote.com/business/">For Business</a></dd>
+				</dl>
+			</div>
+			<div class="footer_col">
+				<dl>
+					<dt>Community</dt>
+					<dd><a href="http://blog.evernote.com/">Blog</a></dd>
+					<dd><a href="http://twitter.com/evernote">Twitter</a></dd>
+					<dd><a href="http://facebook.com/evernote">Facebook</a></dd>
+					<dd><a href="http://evernote.com/video/">Video</a></dd>
+					<dd><a href="http://evernote.com/community/">Ambassadors</a></dd>
+					<dd><a href="http://dev.evernote.com/">Developers</a></dd>
+				</dl>
+			</div>
+		</div>
+		<div class="secondary_col">
+			<ul class="social_icons">
+				<li><a href="http://twitter.com/evernote" class="icon_twitter"><span class="ir">Twitter</span></a></li>
+				<li><a href="http://facebook.com/evernote/" class="icon_facebook"><span class="ir">Facebook</span></a></li>
+				<li><a href="http://www.youtube.com/user/EvernoteVideos" class="icon_youtube"><span class="ir">YouTube</span></a></li>
+			</ul>
+			<div class="fb_like">
+				<iframe src="https://www.facebook.com/plugins/like.php?href=http%3A%2F%2Ffacebook.com%2Fevernote&amp;layout=button_count&amp;show_faces=false&amp;width=89&amp;action=like&amp;colorscheme=light&amp;height=35&amp;locale=en_US" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:8.9em; height:2.1em;" allowTransparency="true"></iframe>
+			</div>
+			<div class="lang_picker">
+				
+			</div>
+			<p class="copyright">Copyright 2013 Evernote Corporation. <span>All rights reserved.</span></p>
+		</div>
+	</footer>
+</div>
+
+
+
+		</body>
+</html>
+<!-- Dynamic page generated in 0.261 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-10-04 23:38:41 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

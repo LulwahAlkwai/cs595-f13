@@ -1,0 +1,212 @@
+    #[1]alternate
+
+[2]ArsTechnica
+
+     * [3]Forums
+     * [4]Log In
+
+[5]Risk Assessment / Security & Hacktivism
+
+Unpatched Mac bug gives attackers "super user" status by going back in time
+
+Exploiting the five-month-old "sudo" flaw in OS X just got easier.
+
+   by [6]Dan Goodin - Aug 28, 2013 10:20 pm UTC
+     * [7]Hacking
+     * [8]OS X
+
+   [9]59
+   [back-to-the-future-640x391.jpg]
+   [10]luispita.com
+
+   Researchers have made it easier to exploit a five-month-old security
+   flaw that allows penetration testers and less-ethical hackers to gain
+   nearly unfettered "root" access to Macs over which they already have
+   limited control.
+
+   The [11]authentication bypass vulnerability was reported in March and
+   resides in a Unix component known as sudo. While the program is
+   designed to require a password before granting "super user" privileges
+   such as access to other users' files, the bug makes it possible to
+   obtain that sensitive access by resetting the computer clock to January
+   1, 1970. That date is known in computing circles as the [12]Unix epoch,
+   and it represents the beginning of time as measured by the operating
+   system and most of the applications that run on it. By invoking the
+   sudo command and then resetting the date, computers can be [13]tricked
+   into turning over root privileges without a password.
+
+   Developers of [14]Metasploit, an open-source software framework that
+   streamlines the exploitation of vulnerabilities in a wide array of
+   operating systems and applications, [15]recently added a module that
+   makes it easier to exploit the sudo vulnerability on Macs. The addition
+   capitalizes on the fact that all versions of OS X from 10.7 through the
+   current 10.8.4 remain vulnerable. While the bug also affected many
+   Linux distributions, most of those require a root password to change
+   the computer clock. Macs impose no such restrictions on clock changes,
+   thanks to the [16]systemsetup binary.
+
+   Mac users should realize that an attacker must satisfy a variety of
+   conditions before being able to exploit this vulnerability. For one,
+   the end-user who is logged in must already have administrator
+   privileges. And for another, the user must have successfully run sudo
+   at least once in the past. And of course, the attacker must already
+   have either physical or remote shell access to the target machine. In
+   other words: this exploit can't be used in the kind of drive-by webpage
+   attacks that last year [17]infected some 650,000 Macs with the
+   Flashback malware. This doesn't mean it's a non-issue though, since the
+   exploit can be used in concert with other attacks to magnify the damage
+   they can do.
+
+   "The bug is significant because it allows any user-level compromise to
+   become root, which in turn exposes things like clear-text passwords
+   from Keychain and makes it possible for the intruder to install a
+   permanent rootkit," HD Moore, the founder of the Metasploit project and
+   the chief research officer at security firm Rapid7, told Ars. "I
+   believe Apple should take this more seriously but am not surprised with
+   the slow response given their history of responding to vulnerabilities
+   in the open source tools they package."
+
+   Apple representatives didn't respond to an e-mail seeking comment for
+   this post.
+
+   Post updated in third-to-last paragraph to changed "invoked" to
+   "successfully run."
+
+   [18]Expand full story
+
+Promoted Comments
+
+     * [19]Abhi BeckertArs Praetorian [20]jump to post
+       [21]Liquid Snake X wrote:
+       [22]Cowicide wrote:
+       Is Snow Leopard 10.6.8 affected at all?
+       It also uses sudo and doesn't require a password for clock changes
+       by default, so I would say... yes.
+       What version of sudo does 10.6.8 have? This bug only effects sudo
+       1.6 and greater. You can check by running `man sudo` and it at the
+       end of the pan page (bottom left corner).
+       If you have 1.6 or greater, then I suggest creating a cron job that
+       runs `sudo -K` every 5 minutes. This will delete the timestamp
+       file... which will cause you to see the "there be dragons here"
+       message every time you run sudo, but otherwise won't harm anything.
+       557 posts | registered Sep 27, 2005
+     * [23]cheriffWise, Aged Ars Veteran[24]et Subscriptor [25]jump to
+       post
+       Haha, fun party trick at the office.. Sit at a macos terminal (with
+       permission, of course)
+       $ systemsetup -setusingnetworktime off
+       $ systemsetup -setdate 01:01:1970
+       $ systemsetup -settime 10:02 // account for being in GMT+10
+       timezone
+       $ sudo -k
+       $ sudo su
+       # whoami
+       root
+       #
+       Nice.
+       182 posts | registered Nov 9, 2009
+     * [26]ScorpanSmack-Fu Master, in training [27]jump to post
+       How about running
+       $ sudo visudo
+       to edit the sudo config, and adding the line
+       Defaults timestamp_timeout=0
+       You'll then be asked for a password at each sudo call, no matter
+       how close to the previous successful call.
+       46 posts | registered Nov 11, 2004
+
+   [28]Reader comments 59
+
+   You must [29]login or create an account to comment.
+   [30][Dan-Goodin-sq.jpg]
+
+   [31]Dan Goodin / Dan is the IT Security Editor at Ars Technica, which
+   he joined in 2012 after working for The Register, the Associated Press,
+   Bloomberg News, and other publications.
+   [32]@dangoodin001
+   [33]<- Older Story
+   [34]Newer Story ->
+
+Site Theme
+
+     * [35]Light on Dark
+     * [36]Dark on Light
+
+[37]View Full Site
+
+   © 2013 Condé Nast. All rights reserved
+   Use of this Site constitutes acceptance of our [38]User Agreement
+   (effective 3/21/12) and [39]Privacy Policy (effective 3/21/12), and
+   [40]Ars Technica Addendum (effective 5/17/2012)
+   [41]Your California Privacy Rights
+   The material on this site may not be reproduced, distributed,
+   transmitted, cached or otherwise used, except with the prior written
+   permission of Condé Nast.
+   [42]Ad Choices [ad_choices_arrow.png]
+
+Log In
+
+   Username or Email: ____________________ Password: ____________________
+   [_] Keep me logged in Login
+   [43]Forgot your password? | [44]Resend activation e-mail
+
+Register an Account
+
+   Don't have an Ars account? It's fast and easy to register for one.
+   [BUTTON Input] (not implemented)_______
+
+Need to register for a new account?
+
+   If you don't have an account yet it's free and easy.
+   [45]Register
+
+References
+
+   Visible links
+   1. http://feeds.arstechnica.com/arstechnica/index/
+   2. http://arstechnica.com/
+   3. http://arstechnica.com/civis/
+   4. http://arstechnica.com/civis/ucp.php?mode=login&return_to=http%3A%2F%2Farstechnica.com%2Fsecurity%2F2013%2F08%2Funpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time%2F
+   5. http://arstechnica.com/security/
+   6. http://arstechnica.com/author/dan-goodin/
+   7. http://arstechnica.com/discipline/hacking-2
+   8. http://arstechnica.com/discipline/os-x
+   9. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1
+  10. http://www.luispita.com/2008/08/en-pleno-flash-back-veraniego-me-he.html
+  11. http://www.sudo.ws/sudo/alerts/epoch_ticket.html
+  12. https://en.wikipedia.org/wiki/Unix_time
+  13. https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2013-1775
+  14. http://www.metasploit.com/
+  15. http://packetstormsecurity.com/files/122965
+  16. https://developer.apple.com/library/mac/documentation/Darwin/Reference/ManPages/man8/systemsetup.8.html
+  17. http://arstechnica.com/apple/2012/04/flashback-infections-not-waning-after-all-650000-macs-still-hijacked/
+  18. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/
+  19. http://arstechnica.com/civis/memberlist.php?mode=viewprofile&u=82575
+  20. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1&post=25186765#comment-25186765
+  21. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1&post=25186659
+  22. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1&post=25186643
+  23. http://arstechnica.com/civis/memberlist.php?mode=viewprofile&u=232664
+  24. http://arstechnica.com/subscriptions/
+  25. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1&post=25187263#comment-25187263
+  26. http://arstechnica.com/civis/memberlist.php?mode=viewprofile&u=181918
+  27. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1&post=25187377#comment-25187377
+  28. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?comments=1
+  29. http://arstechnica.com/civis/ucp.php?mode=login
+  30. http://arstechnica.com/author/dan-goodin
+  31. http://arstechnica.com/author/dan-goodin
+  32. https://twitter.com/dangoodin001
+  33. http://arstechnica.com/information-technology/2013/08/parallels-offers-awkward-access-to-windows-apps-on-ipad-for-80-a-year/
+  34. http://arstechnica.com/gaming/2013/08/how-the-2ds-could-have-been-nintendos-first-true-portable-tablet/
+  35. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?mobile_theme=dark
+  36. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?mobile_theme=light
+  37. http://arstechnica.com/security/2013/08/unpatched-mac-bug-gives-attackers-super-user-status-by-going-back-in-time/?view=grid
+  38. http://www.condenast.com/privacy-policy
+  39. http://www.condenast.com/privacy-policy#privacypolicy
+  40. http://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/
+  41. http://www.condenast.com/privacy-policy#privacypolicy-california
+  42. http://www.condenast.com/privacy-policy#privacypolicy-optout
+  43. https://arstechnica.com/civis/ucp.php?mode=sendpassword
+  44. https://arstechnica.com/civis/ucp.php?mode=resend_act
+  45. https://arstechnica.com/civis/ucp.php?mode=register
+
+   Hidden links:
+  46. http://www.omniture.com/

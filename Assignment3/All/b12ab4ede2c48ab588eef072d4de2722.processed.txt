@@ -1,0 +1,526 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]What are the genuinely useful ideas in programming?
+
+   The software industry is probably the most dynamic and innovation of
+   all industries. However, many people also try to convince us to adapt
+   new ideas despite their dubious practical value.
+
+   So what are the ideas that stick... ideas that are genuinely good and
+   important?
+
+   Here is my current list:
+     * Structured programming;
+     * Unix and its corresponding philosophy;
+     * Database transactions;
+     * The "relational database";
+     * The [DEL: graphical :DEL] user interface ;
+     * Software testing;
+     * The most basic data structures (the heap, the hash table, and
+       trees) and a handful of basic algorithms such as Quicksort;
+     * Public-key encryption and cryptographic hashing;
+     * (new:) High-level programming and typing;
+     * (new:) Version control.
+
+   Naturally, you can argue that I am missing many important things. Maybe
+   you feel that functional and object-oriented programming are essential.
+   Maybe you think that I should include complexity analysis, JavaScript,
+   XML or garbage collection. One can have endless debates... but I am
+   trying to narrow it down to an uncontroversial list. That is, I want
+   key ideas that are universally recognized as useful.
+
+   Let me put it this way: if you were to meet a master of software
+   programming, what are you absolutely sure he will recommend to a kid
+   who wants to become a programmer?
+
+   Am I missing anything important?
+   [5]Tweet
+   [6]Comments (18)
+
+[7]The written word took over the world
+
+   Whereas most human beings learn to speak in the first two years of
+   their life, written languages are more of an acquired ability. We learn
+   to speak before we learn to write. It is not uncommon for adults to be
+   illiterate, even in rich countries. In this sense, the written language
+   is a high-level ability.
+
+   For centuries, only a small elite knew how to write and read. I suspect
+   that it was widespread at first among wealthy merchants.
+
+   Learning how to read and write a natural language was probably like
+   learning to program software today. Few could do it well. If you were
+   part of the literate elite, you could expect good jobs.
+
+   The written language was a powerful technology when it first arose,
+   akin to the computer today. Instead of having to painful remember who
+   bought what and when, you could write it down. You could hand out
+   receipt. You could create money in the form of IOUs. In time, people
+   could use the written language to tell stories, to seduce remote
+   princesses... The possibilities were endless.
+
+   What is amazing, to me, is the rise of written language as an essential
+   medium via platforms like Facebook or email. To our ancestors, this
+   would be unbelievable. How can all these people be expected to
+   communicate effectively through writing?
+
+   Today, we say that software is eating the world: most jobs and
+   industries are becoming software-related. But it is maybe useful to
+   view this as the continuation of a trend that started when the written
+   word is took over the world.
+
+   As software eats up our world, people urge us to prepare. Our kids need
+   to learn how to program. But as someone who officially receives over
+   100 emails a day... let me add that your kids should first learn to
+   write well.
+
+   The written language remains an acquired ability, and mastering it is a
+   matter of constant effort. But, most importantly, it requires a
+   different work ethic.
+
+   When I help my sons to study, I expect them to always write down the
+   answer. It is not uncommon for one of my sons to pass a test if I ask
+   him to speak it out, but to fail it when I ask him to write it down.
+   Part of the reason is that, as the person asking the question, you
+   provide many more clues when you speak and listen to someone. "Does it
+   end up a `t'? I can't remember, but dad seems to be waiting for
+   more..." It is simply harder to write down the answer.
+
+   We should not underestimate this challenge. Let me contrast these two
+   actions:
+     * If I come to meet you in person to communicate a message (or if I
+       call you), I do not have to spend much effort preparing. I can
+       figure out what I need to say as you are waiting. Moreover, I can
+       rely on the recipient to give various non-verbal clues to guide me
+       through the process. And even if I ended up failing to communicate
+       any meaningful information, we can still smile.
+     * If I send you an email, I may have to put my emotions aside and
+       think through my problem. What do I really want to say? What is my
+       context? When I write, I have to make an effort to anticipate the
+       reactions of the recipient without any guinea pig. I also can't
+       corner him or her: I must get to the point without undue delay. And
+       if my email ends up being gibberish, I probably won't get a smile
+       back.
+
+   Of course, this analysis extends to meetings. People who love meetings
+   are often the very same people who have trouble writing. In a meeting,
+   you can talk for 15 minutes without any message... you can fill the
+   time with empty posturing. In written form, you'd be ridiculed... but,
+   after a long diatribe that nobody could quite follow, you are unlikely
+   to hear anyone point out how empty your words were. Once more: the bar
+   is set higher when you use the written language.
+
+   I should stress that effective written communication is not necessarily
+   limited by your mastery of the grammar or your spelling abilities. The
+   main issue is effort. Writing well takes time. It is a habit.
+
+   When you write... "I can't explain myself by email, let me call you"...
+   you may be letting us know more about your work ethic than you think...
+   There are good reasons to call people up. For example, if you are the
+   CEO, and you want to stress the importance of a project, you better
+   call up the project manager. It is hard to convey emotions reliably by
+   email. However, if you are the CEO and can't explain your decisions or
+   state your questions by email, then maybe you are all fluff. Both Bill
+   Gates and Steve Jobs are famous for some of their emails. Both of them
+   write well and are to the point. Steve Jobs often wrote back to lay
+   users. His emails were often communication masterpieces. Clear,
+   concise, and powerful. Other powerful writers include Linus Torvalds,
+   Tim Berners-Lee, Tim Bray...
+
+   Not all our leaders can write well. But if the most powerful CEO of his
+   era would take the time to explain himself by email, what does it mean
+   for the rest of us?
+
+   Before email, it was enough to be able to read most things, and to
+   write semi-competently when you had to. Today, you shouldn't hire an
+   engineer unless if he can explain a difficult technical issue in ten
+   lines or less.
+
+   A friend of mine once asked whether we could offer a college course on
+   "efficient use of email". I have no doubt that this would be
+   ridiculed... but it could be the most useful course many students ever
+   take.
+
+   I wrote that the written word requires a different work ethic. You
+   can't figure out what you want to write as you go. We should realize
+   that software programming takes this up to another level. Once you code
+   your ideas in software, you have to know exactly what they are, down
+   the smallest detail. The future belongs to people who can be precise,
+   concise and accurate. It will become harder and harder to get by with
+   fuzzy messages.
+
+   Update: Some have raised the counterpoint that video lectures and great
+   talks can be precise, concise and accurate. For example, Steve Jobs
+   produced great presentations that no only presented the facts, but also
+   shared his enthusiasm. However, such presentations are akin to the
+   written word: the author has had to prepare extensively and he must be
+   mindful of the time the recipient is willing to spend. At any time, you
+   can tune out a presentation or just leave. It is also not a natural
+   form of "talk": giving good presentations is an acquired skill that
+   relies on rigor and hard work. Others have argued that the written word
+   could be just as sloppy at the spoken word, e.g., as in so-called
+   "texting". This is true, of course... you can use the written word as
+   merely a transcription of your immediate thoughts. Whether it is
+   effective, e.g., in a business context, is another issue.
+   [8]Tweet
+   [9]Comments (14)
+
+[10]Why can't you find a job with a Stanford computer science PhD?
+
+   To many of my older colleagues, the idea that you possibly couldn't
+   find a job with a good degree, let alone a PhD, is unthinkable. And
+   what about a promising young graduate in Computer Science from Stanford
+   University? What if he has a PhD? He may not be able to secure an
+   academic job, but industry recruiters will be all over him (or her).
+   Surely!
+
+   The truth is maybe harsher.
+
+   [11]Chand John wrote a touching article recounting his personal
+   experience. No doubt, he expected to easily land a good industry job.
+   At least, that is what his professors expected. Yet it took him a year
+   to get a job. He was dismissed by most employers:
+
+     Despite having programmed computers since age 8, I was rejected from
+     about 20 programming jobs. (...) my experience writing code at a
+     university, even on a product with 47,000 unique downloads, didn't
+     count as coding "experience".
+
+   There is a hidden assumption on campus that academic jobs are hard to
+   get, but industry jobs are easy. Many computer science professors
+   assume that they and their students could easily land a job at Google
+   or any other tech company nearby. Along with this belief goes the fact
+   that whatever happens on campus is years ahead, and much more
+   sophisticated, than what industry does. The story goes like this:
+   government funds professors who have the ideas, they get their students
+   to develop these ideas... and eventually these ideas end up getting
+   picked up by industry when students get industry jobs. The story goes
+   back to [12]Vannevar Bush.
+
+   There is a problem however: this story does not match the facts.
+   Employers do not recruit graduate students to get access to the work
+   they did on campus. When a graduate student is recruited, he will be
+   very lucky if his new employer has more than a passing interest in what
+   he did on campus. It is not just employer reluctance: very few students
+   could take what they learned as a graduate student and launch a
+   business or a consulting venture.
+
+   The truth is that if you are fresh out of school, you will be the one
+   doing most of the learning in industry. Even someone with a PhD can
+   expect to be an apprentice for many years.
+
+   Also, let us be honest: the software produced on campus is rarely good.
+   It is often made of untested, undocumented, and barely functioning
+   prototypes. I have no doubt that Chand John wrote beautiful and
+   maintainable software while at the university. However, I understand
+   the skepticism of employers who hear "I wrote code as a student". It is
+   simply not a great reference. They hear "I wrote software for fun".
+
+   So, people like Chand John end up with prize-winning research that is
+   of little interest to anyone in industry. They wrote code on campus,
+   but employers think "Oh! God! They will have to unlearn everything and
+   start from scratch". Is it any surprise that they are not offered the
+   top programming jobs?
+
+   Of course, it is not entirely fair to say that Chand John couldn't
+   easily get an industry job. He does not tell us how selective he was. I
+   am asked routinely by people from industry about clever graduate
+   students. Presumably, what he couldn't get easily is an interesting
+   job. A job that would allow him to pay his student debts and offer him
+   with a intellectual challenge.
+
+   These jobs are scarce, both in industry and in academia.
+
+   Update: It looks like Chand now works for Honda Research in what must
+   be a desirable position.
+
+   Source: The idea for this post came to me from a G+ post by Suresh
+   Venkatasubramanian.
+   [13]Tweet
+   [14]Comments (19)
+
+   Related posts (automatically generated):
+     * [15]Will I get a job with this degree?
+
+[16]What do computer scientists know about performance?
+
+   Scientists make predictions and are judged on these predictions. If you
+   study global warming, then your job is to predict the climate for the
+   next few decades. But what do computer scientists predict with respect
+   to performance?
+
+   A lot of classical computer science is focused on performance. That is,
+   it provides us with a repertoire of data structures and algorithms. You
+   can solve 99.9% of all practical software problems using textbook data
+   structures and algorithms. From time to time, you may need to invent
+   something new... but there is very little you cannot do efficiently
+   with heaps, hash tables, trees, graphs, sorting algorithms...
+
+   This leaves us with the impression that computer science tells us a lot
+   about efficiency. And, for an untrained programmer, using the tools of
+   computer science, that is, using the right standard data structures and
+   the right standard algorithms, goes a long way toward improving
+   efficiency for large problems.
+
+   That's because computer science is just great at predicting the
+   asymptotical performance of algorithms. I cannot stress this last point
+   enough, so let me tell you about my own story.
+
+   Like many people of my generation, I started programming when I was
+   around 12 on a [17]TRS-80 my parent bought me. They had no idea what
+   they had unleashed. My TRS-80 came with a beautiful manual from which I
+   taught myself programming (in basic, unfortunately).
+
+   When I finished high school, I thought I was a pretty neat programmer.
+   I could basically program anything. Or so I thought.
+
+   In my first Physics college class, the professor noticed that I was
+   bored to death so he took upon himself to challenge me. He gave me
+   access to an Apple II and asked me to "simulate a galaxy" by modelling
+   gravitational forces.
+
+   I could model one, two or three stars well enough using a naive
+   numerical method. However, as I added stars, my model got slower. Much
+   slower. It did not help when I switched to a more advanced computer.
+   Though I had had no exposure to computational complexity, I recognized
+   that something was up. And this is one of the great lessons that
+   computer science teaches us: think about how the speed of your programs
+   scale. Had I taken a good computer science class, I wouldn't have been
+   caught in a dead-end...
+
+   Let us fast-forward a couple of decades... Today I would never try to
+   simulate a galaxy by considering the effect of each star of all other
+   stars. I would recognize this as a dead-end right away, without
+   thinking.
+
+   However, computational complexity accounts for less than 1% of the work
+   I do when I program for efficiency. In practice, chasing efficiency
+   (for me) is all about reducing the factors. The goal is hardly never to
+   replace an O(N^2) algorithm by an O(N) algorithm. The goal is to reduce
+   the running time of a program by 50%.
+
+   Why can't computer science help us with constant factors? It can but
+   computer scientists spend little time on the the key factors impacting
+   efficiency: pipeline width, number of units, throughput and latency of
+   the various instructions, memory latency and bandwidth, CPU caching
+   strategies, CPU branching predictions, instruction reordering,
+   superscalar execution, compiler heuristics and vectorization... and so
+   on.
+
+   Sometimes, computer scientists will be even dismissive of such constant
+   factors. For example, they may object that as computers get faster
+   anyhow, investing in making your code run twice as fast is wasted
+   effort. Thankfully, not all computer scientists have this attitude.
+   Knuth famously wrote:
+
+     In established engineering disciplines a 12% improvement, easily
+     obtained, is never considered marginal and I believe the same
+     viewpoint should prevail in software engineering.
+
+   Knuth is correct by the way: if you get hired by Google and manage to
+   improve the performance of a key system by 12%, you are probably in a
+   good position to ask for a huge raise. The difference between running
+   100 servers and 112 servers can mean a lot of money. Shaving off 12% to
+   the latency can be worth millions of dollars. You are much less likely
+   to be able to replace a key O(N^2) algorithm by an equivalent O(N)
+   algorithm. Google engineers are probably good enough that opportunities
+   to reduce the complexity are rare.
+
+   How do we proceed to target these 12% gains? There are some guiding
+   principles: keep memory access local, avoid difficult-to-predict
+   branches... But even though computer science can help model either of
+   these (e.g., use a complexity measures based on branching, or use a
+   memory model with caching), I don't know of any practical framework to
+   really take them into account in a useful way.
+
+   Ultimately, it is all about being able to predict. Given two
+   algorithms, if you want to predict which one will fare better by a
+   constant factor... then computer science often leaves you dry. Your
+   options are to ask a more experience programmer, or maybe to implement
+   both to try and see.
+
+   This is often an expensive and crude process. When I review papers, I
+   am often stuck in how to assess the efficiency of their implementation.
+   It all comes down to trusting the authors. Very few papers are able to
+   conclude something like this: "in the worst case, our implementation is
+   within 10% of optimality" or "no software could be twice as fast as
+   ours in solving this problem".
+
+   I think that computer science needs to try harder.
+   [18]Tweet
+   [19]Comments (11)
+
+   Related posts (automatically generated):
+     * [20]Big-O notation and real-world performance
+     * [21]Should computer scientists run experiments?
+     * [22]A criticism of computer science: models or modèles?
+     * [23]Computer scientists need to learn about significant digits
+
+[24]To solve hard problems, you need to use bricolage
+
+   People who think that they can design efficient solutions in the
+   abstract, effectively believe in Oracles. That is, they somehow believe
+   that from their desk, and using only their mind, they can anticipate
+   all the implementation issues that will come up after hours of
+   programming. They somehow believe that before they even start building
+   the software, they can know everything there is to know about a
+   practical problem.
+
+   In a [25]talk about a neat software component he designed, Bruce Haddon
+   observed that there is no way that the final structure and algorithmic
+   behavior of this component could have been predicted, designed, or
+   otherwise anticipated.
+
+   Haddon observed that computer science serves as a source of core ideas:
+   it provides the data structures and algorithms that are the building
+   blocks. Meanwhile, he views software engineering as a useful set of
+   methods to help design reliable software without losing your mind. Yet
+   he points out that neither captures the whole experience.
+
+   That's because much of the work is what Haddon calls hacking, but what
+   others would call bricolage. Simply put, there is much trial and error:
+   we put ideas to together and see where it goes.
+
+   It is common to be dismissive of bricolage (or hacking). However, I
+   think it is a grave mistake to discourage it.
+
+   It is common that my students will ask me "how do I do X?" and my
+   answer is "try something, anything." Though I don't put it in words, I
+   am encouraging them to use bricolage. I may need to urge them 2 or 3
+   times before they try it. And you know what happens? Often the student
+   actually solves the problem!
+
+   I believe that a common process is as follows:
+     * You are given a problem. You lack the necessary information to
+       solve it. For example, maybe you are in Europe and you want to go
+       to India but you have no map.
+     * You could try to build a simplified model of the problem and solve
+       that. For example, you might decide that the world is round and
+       that you simply have to sail West. There is no harm done unless
+       hubris takes over and you conclude hastily that the problem is
+       effectively solved. Something you did not know that you did not
+       know might get in the way (e.g., there is an extra continent called
+       America in your way).
+     * You could try something, anything. Chances are that it will fail.
+       If it does, chances are that you will learn something. Something
+       that might not have been obvious. For example, you may decide to go
+       South along the coast of Africa. In the process, you may discover
+       cities ripe for plunder.
+
+   Most problems become reasonably easy once you have all the relevant
+   information. The really difficult problems are such that you lack
+   critical information. And, hence, almost all hard problems require
+   bricolage.
+   [26]Tweet
+   [27]Comments (1)
+   [28]Next Page »
+   Daniel Lemire's picture
+     * [29]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [30]Follow on Google Plus
+       22,500 followers
+     * twitter logo [31]Follow @lemire
+       4,000 followers
+     * Facebook logo [32]Follow on Facebook
+     * Google Scholar logo [33]Follow on Google Scholar
+     * Subscribe to this blog
+       - [34]in a reader,
+       - [35]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1421 posts and 5865 comments:
+       ____________________
+       Search
+     *
+          + [36]About me
+          + [37]Book recommendations
+          + [38]My readers
+          + [39]Terms of use
+          + [40]Write good papers
+     * Recent Comments:
+          + Preston L. Bannister on [41]What are the genuinely useful
+            ideas in programming?
+          + Mark Bernstein on [42]What are the genuinely useful ideas in
+            programming?
+          + Preston L. Bannister on [43]What are the genuinely useful
+            ideas in programming?
+          + Keith Trnka on [44]What are the genuinely useful ideas in
+            programming?
+          + Greg Linden on [45]What are the genuinely useful ideas in
+            programming?
+     * Some popular posts
+          + [46]Why I still program
+          + [47]Emotions killing your intellectual productivity
+          + [48]Turn your weaknesses into strengths
+          + [49]It is not where you work, but who you work with
+     * [50]Home page
+       [51]Google Scholar profile
+       [52]arXiv
+       [53]DBLP
+
+   Powered by [54]WordPress
+
+   © 2004-2013, [55]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [56]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/atom
+   4. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/
+   5. https://twitter.com/share
+   6. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comments
+   7. http://lemire.me/blog/archives/2013/10/01/the-written-word/
+   8. https://twitter.com/share
+   9. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comments
+  10. http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/
+  11. https://chronicle.com/blogs/phd/2013/09/19/the-ph-d-industry-gap/
+  12. http://en.wikipedia.org/wiki/Vannevar_Bush
+  13. https://twitter.com/share
+  14. http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comments
+  15. http://lemire.me/blog/archives/2012/10/08/will-i-get-a-job-with-this-degree/
+  16. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/
+  17. http://en.wikipedia.org/wiki/TRS-80_Color_Computer
+  18. https://twitter.com/share
+  19. http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/#comments
+  20. http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/
+  21. http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/
+  22. http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/
+  23. http://lemire.me/blog/archives/2012/04/20/computer-scientists-need-to-learn-about-significant-digits/
+  24. http://lemire.me/blog/archives/2013/09/16/bricolage/
+  25. http://www.boulderstartups.org/ai1ec_event/cu-cs-colloquium-is-it-computer-science-software-engineering-or-hacking/?instance_id=
+  26. https://twitter.com/share
+  27. http://lemire.me/blog/archives/2013/09/16/bricolage/#comments
+  28. http://lemire.me/blog/page/2/
+  29. http://lemire.me/
+  30. https://plus.google.com/105888615414982242080/about
+  31. http://www.twitter.com/lemire/
+  32. http://www.facebook.com/daniel.lemire
+  33. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  34. http://lemire.me/blog/feed/
+  35. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  36. http://lemire.me/blog/about-me/
+  37. http://lemire.me/blog/book-recommendations/
+  38. http://lemire.me/blog/my-readers/
+  39. http://lemire.me/blog/terms-of-use/
+  40. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  41. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95857
+  42. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95844
+  43. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95832
+  44. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95829
+  45. http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95824
+  46. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  47. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  48. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  49. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  50. http://lemire.me/en/
+  51. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  52. http://arxiv.org/a/lemire_d_1
+  53. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  54. http://wordpress.org/
+  55. http://lemire.me/en/
+  56. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  57. http://lemire.me/blog/feed/

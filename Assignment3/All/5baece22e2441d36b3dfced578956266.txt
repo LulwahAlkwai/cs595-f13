@@ -1,0 +1,1448 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en">
+<![endif]-->
+<!--[if IE 7]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html lang="en">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<title>Some old and new problems in combinatorics and geometry | Combinatorics and more</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://s1.wp.com/wp-content/themes/pub/twentyten/style.css?m=1375463477g" />
+<link rel="pingback" href="http://gilkalai.wordpress.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Combinatorics and more &raquo; Feed" href="http://gilkalai.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Combinatorics and more &raquo; Comments Feed" href="http://gilkalai.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Combinatorics and more &raquo; Some old and new problems in combinatorics and&nbsp;geometry Comments Feed" href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s0.wp.com/_static/??-eJyNkN0OwiAMhV9IbHSLxgvjszBAhiuUjBKyt5dsGpcsGq/6k+/0tIUShaLAJjD4LCJm60ICdINJ8DAcpRrEXO1VSjtY4R2S/QjIWqMps7gTIhUoTlvDG9HKI1KqNEo3QuIJzYbl3vi6RcwdcKmNqXYXVJSoyP87vJejC/Ydv9n0LVikTuKvsctVCSryyoUdnRYy6PqlNN9789dDc7407fHUNI8nvISD5Q==' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??-eJyFkNkOAjEIRX9IbFzixAfjt8yCDbWUWlon49c7rtE4iU8QONwLmD5CKyFjyMapYWnIIxTFVNuxBhQOMnc6MyNHofWlQ72B7lQwDc/wFwAmm+qMc6bwgj9co2hmVB0tJ7rfVhTOhP1fzGGOdXuEhEqXH9XGi4Xoi6WgZswtdlIyHMR76U1PncU8dVQrzLevJIx+mDqGy1v2oXIfe6TQFI7w3H7Pu8Wqqpabalut3RW0v5Hv'></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://gilkalai.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://gilkalai.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The Kadison-Singer Conjecture has beed Proved by Adam Marcus, Dan Spielman, and Nikhil&nbsp;Srivastava' href='http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/' />
+<link rel='next' title='Auction-based Tic Tac Toe:&nbsp;Solution' href='http://gilkalai.wordpress.com/2013/07/09/auction-based-tic-tac-toe-solution/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/' />
+<link rel='shortlink' href='http://wp.me/pdu8v-2JF' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fgilkalai.wordpress.com%2F2013%2F07%2F06%2Fsome-old-and-new-problems-in-combinatorics-and-geometry%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fgilkalai.wordpress.com%2F2013%2F07%2F06%2Fsome-old-and-new-problems-in-combinatorics-and-geometry%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Some old and new problems in combinatorics and geometry" />
+<meta property="og:url" content="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/" />
+<meta property="og:description" content="Paul Erdős in Jerusalem, 1933  1993 I just came back from a great Erdős Centennial conference in wonderful Budapest. I gave a lecture on old and new problems (mainly) in combinatorics and geometry ..." />
+<meta property="og:site_name" content="Combinatorics and more" />
+<meta property="og:image" content="http://i2.wp.com/gilkalai.files.wordpress.com/2013/07/paul99.jpg?fit=1600%2C1600" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:image" content="http://i2.wp.com/gilkalai.files.wordpress.com/2013/07/paul99.jpg?fit=1600%2C1600" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:creator" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="http://s0.wp.com/i/webclip.png?m=1355642671g" />
+<link rel='openid.server' href='http://gilkalai.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://gilkalai.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://gilkalai.wordpress.com/osd.xml" title="Combinatorics and more" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+				<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none !important;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Combinatorics and more" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Gil Kalai&#039;s blog" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://gilkalai.wordpress.com/feed/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="Some old and new problems in combinatorics and&nbsp;geometry | Combinatorics and more on WordPress.com" />
+<meta name="description" content="Paul Erdős in Jerusalem, 1933  1993 I just came back from a great Erdős Centennial conference in wonderful Budapest. I gave a lecture on old and new problems (mainly) in combinatorics and geometry (here are the slides), where I presented twenty problems, here they are: Around Borsuk&#039;s Problem Let $latex f(d)$ be the smallest integer so&hellip;" />
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post_adsafe"); }
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 3214111, pt: 'permalink', wa: 0, as: 1, domain: 'gilkalai.wordpress.com', url: 'http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/', gid: '', };
+</script>
+<style id="syntaxhighlighteranchor"></style>
+<script type="text/javascript"> 
+	window.google_analytics_uacct = "UA-52447-2"; 
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="single single-post postid-10519 single-format-standard single-author mp6 highlander-enabled highlander-light">
+<div id="wrapper" class="hfeed">
+	<div id="header">
+		<div id="masthead">
+			<div id="branding" role="banner">
+								<div id="site-title">
+					<span>
+						<a href="http://gilkalai.wordpress.com/" title="Combinatorics and more" rel="home">Combinatorics and more</a>
+					</span>
+				</div>
+				<div id="site-description">Gil Kalai&#8217;s blog</div>
+
+										<a class="home-link" href="http://gilkalai.wordpress.com/" title="Combinatorics and more" rel="home">
+							<img src="http://gilkalai.files.wordpress.com/2011/01/cropped-us-oct09-083.jpg" width="940" height="198" alt="" />
+						</a>
+								</div><!-- #branding -->
+
+			<div id="access" role="navigation">
+			  				<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+								<div class="menu"><ul><li ><a href="http://gilkalai.wordpress.com/" title="Home">Home</a></li><li class="page_item page-item-3983"><a href="http://gilkalai.wordpress.com/gina-says/">&#8216;Gina&nbsp;Says&#8217;</a></li><li class="page_item page-item-2"><a href="http://gilkalai.wordpress.com/about/">About</a></li><li class="page_item page-item-10812"><a href="http://gilkalai.wordpress.com/analysis-of-boolean-functions/">Analysis of Boolean&nbsp;Functions</a></li><li class="page_item page-item-5175"><a href="http://gilkalai.wordpress.com/%d7%99%d7%95%d7%a4%d7%99%d7%94-%d7%a9%d7%9c-%d7%94%d7%9e%d7%aa%d7%9e%d7%98%d7%99%d7%a7%d7%94/">יופיה של&nbsp;המתמטיקה</a></li></ul></div>
+			</div><!-- #access -->
+		</div><!-- #masthead -->
+	</div><!-- #header -->
+
+	<div id="main">
+
+		<div id="container">
+			<div id="content" role="main">
+
+			
+
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/" rel="prev"><span class="meta-nav">&larr;</span> The Kadison-Singer Conjecture has beed Proved by Adam Marcus, Dan Spielman, and Nikhil&nbsp;Srivastava</a></div>
+					<div class="nav-next"><a href="http://gilkalai.wordpress.com/2013/07/09/auction-based-tic-tac-toe-solution/" rel="next">Auction-based Tic Tac Toe:&nbsp;Solution <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-above -->
+
+				<div id="post-10519" class="post-10519 post type-post status-publish format-standard hentry category-combinatorics category-open-problems category-geometry tag-paul-erdos">
+											<h2 class="entry-title"><a href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/" rel="bookmark">Some old and new problems in combinatorics and&nbsp;geometry</a></h2>					
+					<div class="entry-meta">
+													<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/" title="9:00 am" rel="bookmark"><span class="entry-date">July 6, 2013</span></a>							<span class="by-author"><span class="sep">by</span> <span class="author vcard"><a class="url fn n" href="http://gilkalai.wordpress.com/author/gilkalai/" title="View all posts by Gil Kalai" rel="author">Gil Kalai</a></span> </span>											</div><!-- .entry-meta -->
+
+					<div class="entry-content">
+						<h2><a href="http://gilkalai.files.wordpress.com/2013/07/paul99.jpg"><img class="alignnone size-full wp-image-10529" alt="Paul99" src="http://gilkalai.files.wordpress.com/2013/07/paul99.jpg?w=640"   /></a></h2>
+<p><strong><span style="color:#ff0000;">Paul Erdős in Jerusalem, <del>1933</del>  1993</span></strong></p>
+<p>I just came back from a great <a href="http://www.renyi.hu/conferences/erdos100/">Erdős Centennial conference</a> in wonderful Budapest. I gave a lecture on old and new problems (mainly) in combinatorics and geometry (<a href="http://gilkalai.files.wordpress.com/2013/07/erdos100-20.pdf">here are the slides</a>), where I presented twenty problems, here they are:</p>
+<h2>Around Borsuk&#8217;s Problem</h2>
+<p>Let <img src='http://s0.wp.com/latex.php?latex=f%28d%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='f(d)' title='f(d)' class='latex' /> be the smallest integer so that every set of diameter <span style="line-height:1.5;">one in <img src='http://s0.wp.com/latex.php?latex=R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^d' title='R^d' class='latex' /> can be covered by <img src='http://s0.wp.com/latex.php?latex=f%28d%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='f(d)' title='f(d)' class='latex' /> sets of smaller diameter. Borsuk conjectured that <img src='http://s0.wp.com/latex.php?latex=f%28d%29+%5Cle+d%2B1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='f(d) &#92;le d+1' title='f(d) &#92;le d+1' class='latex' />.</span></p>
+<p>It is known (Kahn and Kalai, 1993) that : <img src='http://s0.wp.com/latex.php?latex=f%28d%29+%5Cge+1.2%5E%7B%5Csqrt+d%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='f(d) &#92;ge 1.2^{&#92;sqrt d}' title='f(d) &#92;ge 1.2^{&#92;sqrt d}' class='latex' />, <span style="line-height:1.5;">and also that (Schramm, 1989) <img src='http://s0.wp.com/latex.php?latex=f%28d%29+%5Cle+%28%5Csqrt%7B3%2F2%7D%2Bo%281%29%29%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='f(d) &#92;le (&#92;sqrt{3/2}+o(1))^d' title='f(d) &#92;le (&#92;sqrt{3/2}+o(1))^d' class='latex' />.</span></p>
+<p><span style="color:#800080;"><strong>Problem 1:</strong></span> Is <em>f(d)</em> exponential in <em>d</em>?</p>
+<p><span style="color:#800080;"><strong>Problem 2:</strong></span> What is the smallest dimension for which Borsuk&#8217;s conjecture is false?</p>
+<h2>Volume of sets of constant width in high dimensions</h2>
+<p><span style="color:#800080;"><strong>Problem 3:</strong></span> Let us denote the volume of the n-ball of radius 1/2 by <img src='http://s0.wp.com/latex.php?latex=V_n&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='V_n' title='V_n' class='latex' />.</p>
+<p><strong>Question</strong> (Oded Schramm): Is there some <img src='http://s0.wp.com/latex.php?latex=%5Cepsilon+%3E0&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;epsilon &gt;0' title='&#92;epsilon &gt;0' class='latex' /> so that for every <img src='http://s0.wp.com/latex.php?latex=n%3E1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='n&gt;1' title='n&gt;1' class='latex' /> there exist a set <img src='http://s0.wp.com/latex.php?latex=K_n&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='K_n' title='K_n' class='latex' /> of constant width 1 in dimension n whose volume satisfies <img src='http://s0.wp.com/latex.php?latex=VOL%28K_n%29+%5Cle+%281-%5Cepsilon%29%5En+V_n&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='VOL(K_n) &#92;le (1-&#92;epsilon)^n V_n' title='VOL(K_n) &#92;le (1-&#92;epsilon)^n V_n' class='latex' />.</p>
+<h2>Around Tverberg&#8217;s theorem</h2>
+<p>Tverberg&#8217;s Theorem states the following: Let <img src='http://s0.wp.com/latex.php?latex=x_1%2Cx_2%2C%5Cdots%2C+x_m&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='x_1,x_2,&#92;dots, x_m' title='x_1,x_2,&#92;dots, x_m' class='latex' /> be points in <span style="line-height:1.5;"><img src='http://s0.wp.com/latex.php?latex=R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^d' title='R^d' class='latex' /> with <img src='http://s0.wp.com/latex.php?latex=m+%5Cge+%28r-1%29%28d%2B1%29%2B1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='m &#92;ge (r-1)(d+1)+1' title='m &#92;ge (r-1)(d+1)+1' class='latex' />. </span><span style="line-height:1.5;">Then there is a partition <img src='http://s0.wp.com/latex.php?latex=S_1%2CS_2%2C%5Cdots%2C+S_r&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='S_1,S_2,&#92;dots, S_r' title='S_1,S_2,&#92;dots, S_r' class='latex' /> of <img src='http://s0.wp.com/latex.php?latex=%5C%7B1%2C2%2C%5Cdots%2Cm%5C%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;{1,2,&#92;dots,m&#92;}' title='&#92;{1,2,&#92;dots,m&#92;}' class='latex' /> such that  </span><span style="line-height:1.5;"><img src='http://s0.wp.com/latex.php?latex=%5Ccap+_%7Bj%3D1%7D%5Erconv+%28x_i%3A+i+%5Cin+S_j%29+%5Cne+%5Cemptyset&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cap _{j=1}^rconv (x_i: i &#92;in S_j) &#92;ne &#92;emptyset' title='&#92;cap _{j=1}^rconv (x_i: i &#92;in S_j) &#92;ne &#92;emptyset' class='latex' />.</span></p>
+<p><span style="color:#800080;"><strong>Problem 4:</strong></span>  Let <img src='http://s0.wp.com/latex.php?latex=t%28d%2Cr%2Ck%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='t(d,r,k)' title='t(d,r,k)' class='latex' /> be the smallest integer such that given <img src='http://s0.wp.com/latex.php?latex=m&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='m' title='m' class='latex' /> points  <img src='http://s0.wp.com/latex.php?latex=x_1%2Cx_2%2C%5Cdots%2C+x_m&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='x_1,x_2,&#92;dots, x_m' title='x_1,x_2,&#92;dots, x_m' class='latex' /> in <img src='http://s0.wp.com/latex.php?latex=R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^d' title='R^d' class='latex' />, <img src='http://s0.wp.com/latex.php?latex=m+%5Cge+t%28d%2Cr%2Ck%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='m &#92;ge t(d,r,k)' title='m &#92;ge t(d,r,k)' class='latex' /> there exists a partition <img src='http://s0.wp.com/latex.php?latex=S_1%2CS_2%2C%5Cdots%2C+S_r&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='S_1,S_2,&#92;dots, S_r' title='S_1,S_2,&#92;dots, S_r' class='latex' /> of <img src='http://s0.wp.com/latex.php?latex=%5C%7B1%2C2%2C%5Cdots%2Cm%5C%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;{1,2,&#92;dots,m&#92;}' title='&#92;{1,2,&#92;dots,m&#92;}' class='latex' /> such that every <img src='http://s0.wp.com/latex.php?latex=k&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='k' title='k' class='latex' /> among the convex hulls <img src='http://s0.wp.com/latex.php?latex=conv+%28x_i%3A+i+%5Cin+S_j%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='conv (x_i: i &#92;in S_j)' title='conv (x_i: i &#92;in S_j)' class='latex' />, <img src='http://s0.wp.com/latex.php?latex=j%3D1%2C2%2C%5Cdots%2Cr&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='j=1,2,&#92;dots,r' title='j=1,2,&#92;dots,r' class='latex' />  have a point in common.</p>
+<blockquote><p><strong>Reay&#8217;s</strong> &#8221;<strong>relaxed Tverberg conjecture</strong>&#8220; asserts that that whenever <img src='http://s0.wp.com/latex.php?latex=k+%3E1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='k &gt;1' title='k &gt;1' class='latex' /> (and <img src='http://s0.wp.com/latex.php?latex=k+%5Cle+r&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='k &#92;le r' title='k &#92;le r' class='latex' />), <img src='http://s0.wp.com/latex.php?latex=t%28d%2Cr%2Ck%29%3D+%28d%2B1%29%28r-1%29%2B1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='t(d,r,k)= (d+1)(r-1)+1' title='t(d,r,k)= (d+1)(r-1)+1' class='latex' />.</p></blockquote>
+<p><strong><span style="color:#800080;">Problem 5:</span> </strong>For a set <img src='http://s0.wp.com/latex.php?latex=A&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='A' title='A' class='latex' />, denote by <img src='http://s0.wp.com/latex.php?latex=T_r%28A%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='T_r(A)' title='T_r(A)' class='latex' /> those points in <img src='http://s0.wp.com/latex.php?latex=R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^d' title='R^d' class='latex' /> which belong to the convex hull of <img src='http://s0.wp.com/latex.php?latex=r&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='r' title='r' class='latex' /> pairwise disjoint subsets of <img src='http://s0.wp.com/latex.php?latex=X&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='X' title='X' class='latex' />. We call these points <strong>Tverberg points of order</strong> <img src='http://s0.wp.com/latex.php?latex=r&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='r' title='r' class='latex' />.</p>
+<blockquote><p><strong>Conjecture:</strong> For every <img src='http://s0.wp.com/latex.php?latex=A+%5Csubset+R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='A &#92;subset R^d' title='A &#92;subset R^d' class='latex' /> , <img src='http://s0.wp.com/latex.php?latex=%5Csum_%7Br%3D1%7D%5E%7B%7CA%7C%7D+%7B%5Crm+dim%7D+T_r%28A%29+%5Cge+0&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;sum_{r=1}^{|A|} {&#92;rm dim} T_r(A) &#92;ge 0' title='&#92;sum_{r=1}^{|A|} {&#92;rm dim} T_r(A) &#92;ge 0' class='latex' />.</p></blockquote>
+<p><img title="More..." alt="" src="http://gilkalai.wordpress.com/wp-includes/js/tinymce/plugins/wordpress/img/trans.gif?m=1207340914g" />Note that <img src='http://s0.wp.com/latex.php?latex=%5Cdim+%5Cemptyset+%3D+-1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;dim &#92;emptyset = -1' title='&#92;dim &#92;emptyset = -1' class='latex' />.</p>
+<p><span style="color:#800080;"><strong>Problem 6:</strong></span>   How many points <img src='http://s0.wp.com/latex.php?latex=T%28d%3Bs%2Ct%29&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='T(d;s,t)' title='T(d;s,t)' class='latex' /> in <img src='http://s0.wp.com/latex.php?latex=R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^d' title='R^d' class='latex' /> guarantee that they can be divided into two <span style="line-height:1.5;">parts so that every union of <img src='http://s0.wp.com/latex.php?latex=s&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='s' title='s' class='latex' /> convex sets containing the first part has a n</span><span style="line-height:1.5;">on empty intersection with every </span><span style="line-height:1.5;">union of <img src='http://s0.wp.com/latex.php?latex=t&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='t' title='t' class='latex' /> convex sets containing the second part.</span></p>
+<h2>A question about directed graphs</h2>
+<p><span style="color:#800080;"><strong>Problem 7:</strong></span> Let <em>G</em> be a directed graph with <em>n</em> vertices and <em>2n-2</em> edges. When can you divide your set of edges into two trees <img src='http://s0.wp.com/latex.php?latex=T_1&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='T_1' title='T_1' class='latex' /> and <img src='http://s0.wp.com/latex.php?latex=T_2&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='T_2' title='T_2' class='latex' /> (so far we disregard the orientation of edges,) so that when you reverse the directions of all edges in <img src='http://s0.wp.com/latex.php?latex=T_2&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='T_2' title='T_2' class='latex' /> you get a strongly connected digraph.</p>
+<h2>Erdős-Ko-Rado theorem meets Catalan</h2>
+<p><strong><span style="color:#800080;">Problem 8</span> </strong></p>
+<p><strong>Conjecture:</strong> Let <img src='http://s0.wp.com/latex.php?latex=%5Ccal+C&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cal C' title='&#92;cal C' class='latex' /> be a collection of triangulations of an <em>n</em>-gon so that every two triangulations in <img src='http://s0.wp.com/latex.php?latex=%5Ccal+C&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cal C' title='&#92;cal C' class='latex' /> <span style="line-height:1.5;">share a diagonal.  </span>Then <img src='http://s0.wp.com/latex.php?latex=%7C%7B%5Ccal+C%7D%7C&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='|{&#92;cal C}|' title='|{&#92;cal C}|' class='latex' /> is at most the number of triangulations of an <em>(n-1)</em>-gon.</p>
+<h2>F ≤ 4E</h2>
+<p><span style="color:#800080;"><strong>Problem 9:</strong> </span>Let <em>K</em> be a two-dimensional simplicial complex and suppose that <em>K</em> can be embedded in <img src='http://s0.wp.com/latex.php?latex=R%5E4&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^4' title='R^4' class='latex' />. Denote by <em>E</em> the number of edges of <em>K</em> and by <em>F</em> the number of 2-faces of K.</p>
+<p><strong>Conjecture: </strong><em><strong>F <strong>≤</strong> 4E</strong></em></p>
+<p>A weaker version which is also widely open and very interesting is: For some absolute constant <em>C</em>, <strong><em>F <strong>≤</strong> C E.</em></strong></p>
+<h2>Polynomial Hirsch</h2>
+<p><strong><span style="color:#800080;">Problem 10:</span>  </strong>The diameter of graphs of <em>d</em>-polytopes with <em>n</em> facets is bounded above by a polynomial in <em>d</em> and <em>n</em>.</p>
+<h2>Analysis &#8211; Fixed points</h2>
+<p><span style="color:#800080;"><strong>Problem 11:</strong></span> Let <em>K</em> be a convex body in <img src='http://s0.wp.com/latex.php?latex=R%5Ed&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='R^d' title='R^d' class='latex' />. (Say, a ball, say a cube&#8230;) <span style="line-height:1.5;">For which classes <img src='http://s0.wp.com/latex.php?latex=%5Ccal+C&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cal C' title='&#92;cal C' class='latex' /> of functions, every <img src='http://s0.wp.com/latex.php?latex=f+%5Cin+%7B%5Ccal+C%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='f &#92;in {&#92;cal C}' title='f &#92;in {&#92;cal C}' class='latex' /> which takes </span><em style="color:#444444;line-height:1.5;">K</em><span style="line-height:1.5;"> into </span><span style="line-height:1.5;">itself admits a fixed point in </span><em style="color:#444444;line-height:1.5;">K</em><span style="line-height:1.5;">.</span></p>
+<h2>Number theory &#8211; infinitely many primes in sparse sets</h2>
+<p><span style="color:#800080;"><strong>Problem 12</strong>:</span> Find a (not extremely artificial) set <em>A</em> of integers so that for every <em>n</em>, <img src='http://s0.wp.com/latex.php?latex=%7CA%5Ccap+%5Bn%5D%7C+%5Cle+n%5E%7B0.499%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='|A&#92;cap [n]| &#92;le n^{0.499}' title='|A&#92;cap [n]| &#92;le n^{0.499}' class='latex' />, <span style="line-height:1.5;">where you can prove that </span><em style="color:#444444;line-height:1.5;">A</em><span style="line-height:1.5;"> contains </span><span style="line-height:1.5;">infinitely many primes.</span></p>
+<h2>Möbius randomness for sparse sets</h2>
+<p><span style="color:#800080;"><strong>Problem 13:</strong></span> Find a (not extremely artificial) <span style="line-height:1.5;">set <em>A</em> of integers so that for every <em>n</em>, <img src='http://s0.wp.com/latex.php?latex=%7CA%5Ccap+%5Bn%5D%7C+%5Cle+n%5E%7B0.499%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='|A&#92;cap [n]| &#92;le n^{0.499}' title='|A&#92;cap [n]| &#92;le n^{0.499}' class='latex' /> </span><span style="line-height:1.5;">where you can prove that</span></p>
+<p><img src='http://s0.wp.com/latex.php?latex=%5Csum+%5C%7B%5Cmu%28k%29%3A+k+%5Cle+n%2C+k+%5Cin+A%5C%7D+%3D+o%28%7CA+%5Ccap+%5Bn%5D%29.&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;sum &#92;{&#92;mu(k): k &#92;le n, k &#92;in A&#92;} = o(|A &#92;cap [n]).' title='&#92;sum &#92;{&#92;mu(k): k &#92;le n, k &#92;in A&#92;} = o(|A &#92;cap [n]).' class='latex' /></p>
+<h2>Computation &#8211; noisy game of life</h2>
+<p><span style="color:#800080;"><strong>Problem 14:</strong></span> Does a noisy version of Conway&#8217;s game of life support universal computation?</p>
+<h2>Ramsey for polytopes</h2>
+<p><span style="color:#800080;"><strong>Problem 15: </strong></span></p>
+<p><strong>Conjecture:</strong> For a fixed <em>k,</em> every <em>d</em>-polytope of sufficiently high dimension <em>d </em><span style="line-height:1.5;">contains a </span><em style="color:#444444;line-height:1.5;">k</em><span style="line-height:1.5;">-face which is either a simplex or a (combinatorial) cube.</span></p>
+<h2>Expectation thresholds and thresholds</h2>
+<p><span style="color:#800080;"><strong>Problem 16:</strong></span> Consider a random graph <em>G</em> in <strong>G(n,p)</strong> and the graph property: <em>G</em> contains a copy of a specific graph <em>H</em>. (Not<span style="line-height:1.5;">e: <em>H</em> depends on <em>n</em>; a motivating example: <em>H</em> is a Hamiltonian cycle.) </span><span style="line-height:1.5;">Let </span><em style="color:#444444;line-height:1.5;">q</em><span style="line-height:1.5;"> be the minimal value for which the expected number of copies of </span><em style="color:#444444;line-height:1.5;">H&#8217;</em><span style="line-height:1.5;"> in </span><em style="color:#444444;line-height:1.5;">G in </em><strong style="line-height:1.5;">G(n,q)</strong><span style="line-height:1.5;"> is at least 1/2 for every sub</span><span style="line-height:1.5;">graph <em>H&#8217;</em> of <em>H</em>. Let <em>p</em> be the value for which the probability that <em>G</em> in <strong>G(n,p)</strong> contains a copy of <em>H</em> is 1/2.</span></p>
+<p><strong>Conjecture:</strong> [Kahn - Kalai 2006]  <em>p/q = O( </em>log<em> n)</em></p>
+<h2>Traces</h2>
+<p><span style="color:#800080;"><strong>Problem 17:</strong> </span>Let <em>X</em> be a family of subsets of <img src='http://s0.wp.com/latex.php?latex=%5Bn%5D%3D%5C%7B1%2C2%2C%5Cdots%2Cn%5C%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='[n]=&#92;{1,2,&#92;dots,n&#92;}' title='[n]=&#92;{1,2,&#92;dots,n&#92;}' class='latex' />.<br />
+How large <em>X</em> is needed to be so that the restriction (trace) of <em>X</em> to some set <img src='http://s0.wp.com/latex.php?latex=B+%5Csubset+%5Bn%5D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='B &#92;subset [n]' title='B &#92;subset [n]' class='latex' />, <span style="line-height:1.5;"><img src='http://s0.wp.com/latex.php?latex=%7CB%7C%3D%281%2F2%2B%5Cdelta%29n&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='|B|=(1/2+&#92;delta)n' title='|B|=(1/2+&#92;delta)n' class='latex' /> has at least <img src='http://s0.wp.com/latex.php?latex=3%2F4+%5Ccdot+2%5E%7B%7CB%7C%7D&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='3/4 &#92;cdot 2^{|B|}' title='3/4 &#92;cdot 2^{|B|}' class='latex' /> elements?</span></p>
+<h2>Graph-codes</h2>
+<p><span style="color:#800080;"><strong>Problem 18:</strong></span> Let <strong> P</strong>  be a property of graphs. Let <img src='http://s0.wp.com/latex.php?latex=%5Ccal+G&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cal G' title='&#92;cal G' class='latex' /> be a collection of graphs with<em> n</em> vertices so that the symmetric difference of two graphs in <img src='http://s0.wp.com/latex.php?latex=%5Ccal+G&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cal G' title='&#92;cal G' class='latex' /> has property <strong>P</strong>. <span style="line-height:1.5;">How large can <img src='http://s0.wp.com/latex.php?latex=%5Ccal+G&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='&#92;cal G' title='&#92;cal G' class='latex' /> be.</span></p>
+<h2>Conditions for colorability</h2>
+<p><strong><span style="color:#800080;">Problem 19:</span> </strong>A conjecture by Roy Meshulam and me:</p>
+<p>There is a constant <em>C</em> such that every graph <em>G</em><br />
+with no induced cycles of order divisible by 3 is colorable by <em>C</em> colors.</p>
+<p><span style="color:#800080;"><strong>Problem 20:</strong></span></p>
+<p>Another conjecture by Roy Meshulam and me: For every <em>b&gt;0</em> there<br />
+is a constant <em>C=C(b)</em> with the following property:</p>
+<p>Let <em>G</em> be a graph such that for all its induced subgraphs <em>H</em></p>
+<blockquote><p><em>The number of independent sets of odd size minus the number of independent sets of even size is between </em>-b<em>  <span style="line-height:1.5;">and </span></em><span style="line-height:1.5;">b</span><em><span style="line-height:1.5;">.</span></em></p></blockquote>
+<p>Then <em>G</em> is colorable by <em>C(b)</em> colors.</p>
+<h2>Remarks:</h2>
+<p>The title of the lecture is borrowed from several papers and talks by Erdős.<span id="more-10519"></span> (And I tried to imitate a little his lectures.)  The presentation give some more details on the twenty problems, and here are a few further comments. I devoted a few posts to questions around Borsuk&#8217;s problem (<a href="http://gilkalai.wordpress.com/2011/06/30/around-borsuks-conjecture-1-some-problems/">I</a>, <a href="http://gilkalai.wordpress.com/2011/06/15/the-combinatorics-of-cocycles-and-borsuks-problem/">II</a>, <a href="http://gilkalai.wordpress.com/2012/07/23/a-weak-form-of-borsuk-conjecture/">III</a>), and an <a href="http://mathoverflow.net/questions/29000/volumes-of-sets-of-constant-width-in-high-dimensions">MO question</a> for problem 3 on sets of constant width in high dimensions. I also <a href="http://gilkalai.wordpress.com/2008/12/23/seven-problems-around-tverbergs-theorem/">devoted a post</a> to questions around Tverberg&#8217;s theorem where problems 4 and 5 are mentioned. I asked problems 5 and 6 in the early 70&#8242;s. Problem 7 is motivated by a very special case of problem 5. Problem 8 is recent and was <a href="http://mathoverflow.net/questions/114646/intersecting-family-of-triangulations">asked also on MO</a>. Gjergji Zaimi (private communication) proposed a far-reaching extension:</p>
+<p><strong style="line-height:1.5;">Question:</strong><span style="line-height:1.5;"> Let <img src='http://s0.wp.com/latex.php?latex=P&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='P' title='P' class='latex' /> be a convex polytope without triangular two dimsneional faces. Is it true that a collection of vertices so that every two of them belongs to a facet, has at most as many vertices as the largest facet?</span></p>
+<p>Problem 9 which represents one of my current main research effort was asked by Sarkaria, me, and perhaps others in the late 80s. (See also <a href="http://gilkalai.wordpress.com/2013/02/01/f-4e/">this post</a>.) Problem 10 was the subject of polymath 3 that started <a href="http://gilkalai.wordpress.com/2010/09/29/polymath-3-polynomial-hirsch-conjecture/">here</a>. Problem 11 intrigued me since my undergraduate years, <a href="http://gilkalai.wordpress.com/2008/08/20/two-very-early-problems-a-simple-solution-and-a-new-problem/">see this post</a>, and I recalled it again after hearing a lecture by Haim Brezis. (See <a href="http://www.math.rutgers.edu/~brezis/publications.html">Haim&#8217;s publication list</a> for some relevant papers with Bourgain,  Mironescu, Nguyen, and others.) Problems 12 and 13 are motivated by recent progress on Möbius randomness and on finding primes in various sets of integers, and also by <a href="http://mathoverflow.net/questions/79113/why-so-difficult-to-prove-infinitely-many-restricted-primes">this MO problem</a>. Problem 14 was motivated by a lecture of Bollobas and by my general interest in fault-tolerance see this <a href="http://cstheory.stackexchange.com/questions/17914/does-a-noisy-version-of-conways-game-of-life-support-universal-computation">TCSoverfow problem</a> and this <a href="http://mathoverflow.net/questions/132402/conways-game-of-life-for-random-initial-position">MO problem</a>. For open problems on polytopes including Problems 10, and 15 see <a href="http://gilkalai.wordpress.com/2008/05/07/five-open-problems-regarding-convex-polytopes/">this post</a>.  Problems 16, 17 also represent one of my main current research efforts, see <a href="http://front.math.ucdavis.edu/0603.5218">this paper with Jeff Kahn</a> for problem 16 and <a href="http://gilkalai.files.wordpress.com/2013/07/chor8-4.pdf">this paper with Kahn</a> on problem 17. (The best known very recent upper bound by Bourgain fot problem 17 is not yet published.)  Variants of problem 18 were raised by several other people (Körner, Katona, Gowers). Problems 19 and 20 are motivated by Helly-type questions and in particular by the fractional Helly property.</p>
+<p>More comments: (The post was launched a day too early before it was completed, so let me add a few more comments.)</p>
+<p>The solution of Borsuk&#8217;s problem was a very nice success to Erdős&#8217; mathematics. It relies on the interplay between combinatorial and geometric structures. In fact, Erdős himself, Rogers, Danzer, and perhaps others suggested that combinatorial configurations will lead to counterexamples. Larman made a crucial step in translating the question from geometry to combinatorics. Larman also asked about 2-distance sets and this was crucial to the recent counterexample in dimension 65. (See <a href="http://gilkalai.wordpress.com/2013/05/27/andriy-bondarenko-showed-that-borsuks-conjecture-is-false-for-dimensions-greater-than-65/">this post</a>.) Problem 7 is related to a special case of Conjecture 5. It is based on replacing a directed edge from vertex<em> i</em> to vertex <em>j</em> by the point <img src='http://s0.wp.com/latex.php?latex=e_i-e_j&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='e_i-e_j' title='e_i-e_j' class='latex' />. Problem 15 is known only for <img src='http://s0.wp.com/latex.php?latex=k%3D2&amp;bg=ffffff&amp;fg=333333&amp;s=0' alt='k=2' title='k=2' class='latex' />. It is true for zonotopes (where a simplex face is not an option) with <em>d=2k</em>.  This case is a high-dimensional analog of Gallai-Sylvester theorem. It is quite interesting for simple polytopes.</p>
+
+<div class="wpa" style="position: relative; width:300px; text-align: center; padding: 0; margin: 10px auto; overflow: hidden; clear: both;">
+<a style="position: absolute; text-align: left; display: block; font: 9px/1 sans-serif; text-decoration: underline;" href="http://en.wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Twenty Ten";
+		var wpcom_adclk_slot = "wpcom_below_post_adsafe";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "gilkalai.wordpress.com");
+GA_googleAddAttr("BlogId", "3214111");
+GA_googleAddAttr("AdSafe", "1");
+GA_googleAddAttr("Autotag", "entertainment");
+GA_googleAddAttr("Autotag", "science");
+GA_googleAddAttr("Autotag", "books");
+GA_googleAddAttr("Tag", "combinatorics");
+GA_googleAddAttr("Tag", "open-problems");
+GA_googleAddAttr("Tag", "geometry");
+GA_googleAddAttr("Tag", "paul-erdos");
+GA_googleAddAttr("Partner", "AOL");
+GA_googleAddAttr("theme_bg", "ffffff");
+GA_googleAddAttr("theme_text", "333333");
+GA_googleAddAttr("theme_link", "0066cc");
+GA_googleAddAttr("theme_border", "cccccc");
+GA_googleAddAttr("theme_url", "ff4b33");
+GA_googleAddAdSensePageAttr("google_page_url", "http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/");
+GA_googleFillSlot("wpcom_below_post_adsafe");
+}
+</script>
+</div>
+<style type="text/css">
+div.wpa>div { margin-top: 1em; } #google_ads_div_wpcom_below_post_adsafe_ad_container { display: block !important; }
+</style>
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li><a href="#" class="sharing-anchor sd-button share-more"><span>Share</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=facebook" title="Share on Facebook" id="sharing-facebook-10519"><span>Facebook</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=reddit" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-10519"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?share=google-plus-1" title="Click to share on Google+" id="sharing-google-10519"><span>Google</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-3214111-10519-524fc6877740f' data-src='//widgets.wp.com/likes/#blog_id=3214111&amp;post_id=10519&amp;origin=gilkalai.wordpress.com&amp;obj_id=3214111-10519-524fc6877740f' data-name='like-post-frame-3214111-10519-524fc6877740f'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>											</div><!-- .entry-content -->
+
+
+					<div class="entry-utility">
+												This entry was posted in <a href="http://gilkalai.wordpress.com/category/combinatorics/" title="View all posts in Combinatorics" rel="category tag">Combinatorics</a>, <a href="http://gilkalai.wordpress.com/category/open-problems/" title="View all posts in Open problems" rel="category tag">Open problems</a>, <a href="http://gilkalai.wordpress.com/category/geometry/" title="View all posts in Geometry" rel="category tag">Geometry</a> and tagged <a href="http://gilkalai.wordpress.com/tag/paul-erdos/" rel="tag">Paul Erdos</a>. Bookmark the <a href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/" title="Permalink to Some old and new problems in combinatorics and&nbsp;geometry" rel="bookmark">permalink</a>.											</div><!-- .entry-utility -->
+				</div><!-- #post-## -->
+
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><a href="http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/" rel="prev"><span class="meta-nav">&larr;</span> The Kadison-Singer Conjecture has beed Proved by Adam Marcus, Dan Spielman, and Nikhil&nbsp;Srivastava</a></div>
+					<div class="nav-next"><a href="http://gilkalai.wordpress.com/2013/07/09/auction-based-tic-tac-toe-solution/" rel="next">Auction-based Tic Tac Toe:&nbsp;Solution <span class="meta-nav">&rarr;</span></a></div>
+				</div><!-- #nav-below -->
+
+				
+			<div id="comments">
+
+
+			<h3 id="comments-title">4 Responses to <em>Some old and new problems in combinatorics and&nbsp;geometry</em></h3>
+
+
+			<ol class="commentlist">
+					<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-9884">
+		<div id="comment-9884">
+			<div class="comment-author vcard">
+				<img alt='' src='http://2.gravatar.com/avatar/e27637afc5d8ebb8dbfb0c13e18075c5?s=40&amp;d=identicon&amp;r=PG' class='avatar avatar-40' height='40' width='40' />				<cite class="fn"><a href='http://www.york.cuny.edu/~malk' rel='external nofollow' class='url'>Joseph Malkevitch</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-9884">
+				July 6, 2013 at 5:44 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Dear Gil,</p>
+<p>Thanks for the nice collection of problems. It is hard to believe that the photo at the top is from 1933!<br />
+Best,</p>
+<p>Joe</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?replytocom=9884#respond' onclick='return addComment.moveForm("comment-9884", "9884", "respond", "10519")'>Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-kamran12341 odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-9967">
+		<div id="comment-9967">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/7ac7d664f9ebbdd9ab149c583d5aef63?s=40&amp;d=identicon&amp;r=PG' class='avatar avatar-40' height='40' width='40' />				<cite class="fn"><a href='http://kamranrmp.wordpress.com' rel='external nofollow' class='url'>Kamran</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-9967">
+				July 14, 2013 at 8:37 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Reblogged this on <a href="http://kamranrmp.wordpress.com/2013/07/14/some-old-and-new-problems-in-combinatorics-and-geometry/" rel="nofollow">Observer</a>.</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?replytocom=9967#respond' onclick='return addComment.moveForm("comment-9967", "9967", "respond", "10519")'>Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-ayvlasov even thread-even depth-1 highlander-comment" id="li-comment-10053">
+		<div id="comment-10053">
+			<div class="comment-author vcard">
+				<img alt='' src='http://1.gravatar.com/avatar/afe859a3470cfd1e40a0468c1f5e3b42?s=40&amp;d=identicon&amp;r=PG' class='avatar avatar-40' height='40' width='40' />				<cite class="fn"><a href='http://ayvlasov.wordpress.com' rel='external nofollow' class='url'>Alexander Vlasov</a></cite> <span class="says">says:</span>			</div><!-- .comment-author .vcard -->
+			
+			<div class="comment-meta commentmetadata"><a href="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#comment-10053">
+				July 27, 2013 at 6:57 pm</a>			</div><!-- .comment-meta .commentmetadata -->
+
+			<div class="comment-body"><p>Dear Gil,<br />
+Relating Problem 14 and my earlier comment on universality and (ir)reversibility in Scott&#8217;s blog &#8212; I do not know, if other CA are interesting for you, but not long time ago I realized that reversible CA I used earlier for some experiments is likely computationally universal  <a href="http://quantumbot.wordpress.com/2013/07/27/reversible-anto-logic/" rel="nofollow">http://quantumbot.wordpress.com/2013/07/27/reversible-anto-logic/</a><br />
+Sincerely, Alex</p>
+</div>
+
+			<div class="reply">
+				<a class='comment-reply-link' href='/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/?replytocom=10053#respond' onclick='return addComment.moveForm("comment-10053", "10053", "respond", "10519")'>Reply</a>			</div><!-- .reply -->
+		</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://eventuallyalmosteverywhere.wordpress.com/2013/08/19/random-graphs-week-monday/' rel='external nofollow' class='url'>Random Graphs Week &#8211; Monday | Eventually Almost Everywhere</a></p>
+	</li><!-- #comment-## -->
+			</ol>
+
+
+	
+
+								<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://gilkalai.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="f0c9b3a8cd" /><input type="hidden" name="_wp_http_referer" value="/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=1" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=PG" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1289230950g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=PG" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=PG" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=PG" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p><p class="post-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto;" tabindex="7"/> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog"  style="display: inline;">Notify me of new posts via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='10519' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1380959879" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="5aa2c513b4" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="73"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>			
+</div><!-- #comments -->
+
+
+			</div><!-- #content -->
+		</div><!-- #container -->
+
+
+		<div id="primary" class="widget-area" role="complementary">
+						<ul class="xoxo">
+
+<li id="recent-comments-2" class="widget-container widget_recent_comments"><h3 class="widget-title">Recent Comments</h3>				<table class="recentcommentsavatar" cellspacing="0" cellpadding="0" border="0">
+					<tr><td title="zhang twin prime breakthru vs academic track/grind | Turing Machine" class="recentcommentsavatartop" style="height:48px; width:48px;"><a href="http://vzn1.wordpress.com/2013/10/04/zhang-twin-prime-breakthru-vs-academic-trackgrind/" rel="nofollow"></a></td><td class="recentcommentstexttop" style=""><a href="http://vzn1.wordpress.com/2013/10/04/zhang-twin-prime-breakthru-vs-academic-trackgrind/" rel="nofollow">zhang twin prime bre&hellip;</a> on <a href="http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10332">Polymath 8 &#8211; a&nbsp;Succ&hellip;</a></td></tr><tr><td title="ST" class="recentcommentsavatarend" style="height:48px; width:48px;"><img alt='' src='http://2.gravatar.com/avatar/b14e6683785719fb28d3728eef2b3e2c?s=48&amp;d=identicon&amp;r=PG' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstextend" style="">ST on <a href="http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10311">Polymath 8 &#8211; a&nbsp;Succ&hellip;</a></td></tr><tr><td title="Gil Kalai on Zhang&#8217;s Breakthrough in Number Theory | Elmar Klausmeier&#039;s Weblog" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://eklausmeier.wordpress.com/2013/09/27/gil-kalai-on-zhangs-breakthrough-in-number-theory/" rel="nofollow"><img alt='' src='http://0.gravatar.com/blavatar/6a84862ab3bbfea0c6cb37c4ff64d795?s=48' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://eklausmeier.wordpress.com/2013/09/27/gil-kalai-on-zhangs-breakthrough-in-number-theory/" rel="nofollow">Gil Kalai on Zhang&hellip;</a> on <a href="http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10306">Polymath 8 &#8211; a&nbsp;Succ&hellip;</a></td></tr><tr><td title="Analysis of Boolean Functions &#8211; week 4 | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/" rel="nofollow">Analysis of Boolean&hellip;</a> on <a href="http://gilkalai.wordpress.com/2008/04/29/hello-world/#comment-10292">Combinatorics, Mathematics, Ac&hellip;</a></td></tr><tr><td title="Analysis of Boolean Functions &#8211; week 4 | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/" rel="nofollow">Analysis of Boolean&hellip;</a> on <a href="http://gilkalai.wordpress.com/2008/09/28/extremal-combinatorics-iii-some-basic-theorems/#comment-10291">Extremal Combinatorics III: So&hellip;</a></td></tr><tr><td title="Marcelo de Almeida" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://nucaltiado.wordpress.com" rel="nofollow"><img alt='' src='http://0.gravatar.com/avatar/9fe87c782fddc88deb4c248ab8d08d92?s=48&amp;d=identicon&amp;r=PG' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://nucaltiado.wordpress.com" rel="nofollow">Marcelo de Almeida</a> on <a href="http://gilkalai.wordpress.com/2013/08/19/open-collaborative-mathematics-over-the-internet-three-examples/#comment-10278">Open Collaborative Mathematics&hellip;</a></td></tr><tr><td title="Polymath8 &#8211; A Success ! | The polymath blog" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://polymathprojects.org/2013/09/20/polymath8-a-success/" rel="nofollow"><img alt='' src='http://0.gravatar.com/blavatar/a4c2287293dfa76bb5608d416529a0d6?s=48' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://polymathprojects.org/2013/09/20/polymath8-a-success/" rel="nofollow">Polymath8 &#8211; A&hellip;</a> on <a href="http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/#comment-10277">Polymath 8 &#8211; a&nbsp;Succ&hellip;</a></td></tr><tr><td title="Is it a blog? Or is it epsilon-far from being a blog? | the polylogblog" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/" rel="nofollow"><img alt='' src='http://1.gravatar.com/blavatar/de3938169031cf15bbcc541db1d9ba57?s=48' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/" rel="nofollow">Is it a blog? Or is&hellip;</a> on <a href="http://gilkalai.wordpress.com/2013/09/09/simonsucberkeley/#comment-10260">Simons@UCBerkeley</a></td></tr><tr><td title="Sid Hollander" class="recentcommentsavatarend" style="height:48px; width:48px;"><img alt='' src='http://0.gravatar.com/avatar/c6e1b8cecadadebac6cf328d17d6d157?s=48&amp;d=identicon&amp;r=PG' class='avatar avatar-48' height='48' width='48' /></td><td class="recentcommentstextend" style="">Sid Hollander on <a href="http://gilkalai.wordpress.com/2008/10/23/two-math-riddles/#comment-10254">Two Math&nbsp;Riddles</a></td></tr><tr><td title="Gil Kalai" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://www.ma.huji.ac.il/~kalai/" rel="nofollow"><img alt='' src='http://1.gravatar.com/avatar/a23b9df554f5ee2e60fdc13645e4c50d?s=48&amp;d=identicon&amp;r=PG' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://www.ma.huji.ac.il/~kalai/" rel="nofollow">Gil Kalai</a> on <a href="http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/#comment-10240">Richard Stanley: How the Proof&hellip;</a></td></tr><tr><td title="Johnny Gaddaar" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://www.facebook.com/johnny.gaddaar.184" rel="nofollow"><img alt='' src='http://1.gravatar.com/avatar/dda196fdfd25b6f945a472f570406ff0?s=48&amp;d=identicon&amp;r=PG' class='avatar avatar-48' height='48' width='48' /></a></td><td class="recentcommentstextend" style=""><a href="http://www.facebook.com/johnny.gaddaar.184" rel="nofollow">Johnny Gaddaar</a> on <a href="http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/#comment-10239">Richard Stanley: How the Proof&hellip;</a></td></tr><tr><td title="Richard Stanley: How the Proof of the Upper Bound Theorem (for spheres) was Found | Combinatorics and more" class="recentcommentsavatarend" style="height:48px; width:48px;"><a href="http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/" rel="nofollow"></a></td><td class="recentcommentstextend" style=""><a href="http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/" rel="nofollow">Richard Stanley: How&hellip;</a> on <a href="http://gilkalai.wordpress.com/2009/04/04/how-the-g-conjecture-came-about/#comment-10237">How the g-Conjecture Came&hellip;</a></td></tr>				</table>
+				</li>		<li id="recent-posts-3" class="widget-container widget_recent_entries">		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/30/real-analysis-introductory-mini-courses-at-simons-institute/" title="Real Analysis Introductory Mini-courses at Simons&nbsp;Institute">Real Analysis Introductory Mini-courses at Simons&nbsp;Institute</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/24/analysis-of-boolean-functions-week-4/" title="Analysis of Boolean Functions &#8211; week&nbsp;4">Analysis of Boolean Functions &#8211; week&nbsp;4</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/" title="Polymath 8 &#8211; a&nbsp;Success!">Polymath 8 &#8211; a&nbsp;Success!</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/18/analysis-of-boolean-functions-week-3/" title="Analysis of Boolean Functions &#8211; Week&nbsp;3">Analysis of Boolean Functions &#8211; Week&nbsp;3</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/" title="Richard Stanley: How the Proof of the Upper Bound Theorem (for spheres) was&nbsp;Found">Richard Stanley: How the Proof of the Upper Bound Theorem (for spheres) was&nbsp;Found</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/09/simonsucberkeley/" title="Simons@UCBerkeley">Simons@UCBerkeley</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/08/analysis-of-boolean-functions-week-2/" title="Analysis of Boolean functions &#8211; week&nbsp;2">Analysis of Boolean functions &#8211; week&nbsp;2</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/04/around-borsuks-conjecture-3-how-to-save-borsuks-conjecture/" title="Around Borsuk’s Conjecture 3: How to Save Borsuk&#8217;s&nbsp;conjecture">Around Borsuk’s Conjecture 3: How to Save Borsuk&#8217;s&nbsp;conjecture</a>
+						</li>
+					<li>
+				<a href="http://gilkalai.wordpress.com/2013/09/03/analysis-of-boolean-functions-week-1/" title="Analysis of Boolean Functions &#8211; week&nbsp;1">Analysis of Boolean Functions &#8211; week&nbsp;1</a>
+						</li>
+				</ul>
+		</li><li id="top-posts-3" class="widget-container widget_top-posts"><h3 class="widget-title">Top Posts &amp; Pages</h3><ul><li><a href="http://gilkalai.wordpress.com/2009/07/05/chess-can-be-a-game-of-luck/" class="bump-view" data-bump-view="tp">Chess can be a Game of Luck </a></li>
+<li><a href="http://gilkalai.wordpress.com/2013/09/20/polymath-8-a-success/" class="bump-view" data-bump-view="tp">Polymath 8 - a Success!</a></li>
+<li><a href="http://gilkalai.wordpress.com/2013/06/19/the-kadison-singer-conjecture-has-beed-proved-by-adam-marcus-dan-spielman-and-nikhil-srivastava/" class="bump-view" data-bump-view="tp">The Kadison-Singer Conjecture has beed Proved by Adam Marcus, Dan Spielman, and Nikhil Srivastava</a></li>
+<li><a href="http://gilkalai.wordpress.com/2013/09/30/real-analysis-introductory-mini-courses-at-simons-institute/" class="bump-view" data-bump-view="tp">Real Analysis Introductory Mini-courses at Simons Institute</a></li>
+<li><a href="http://gilkalai.wordpress.com/analysis-of-boolean-functions/" class="bump-view" data-bump-view="tp">Analysis of Boolean Functions</a></li>
+<li><a href="http://gilkalai.wordpress.com/2013/09/10/how-the-proof-of-the-upper-bound-theorem-for-spheres-was-found/" class="bump-view" data-bump-view="tp">Richard Stanley: How the Proof of the Upper Bound Theorem (for spheres) was Found</a></li>
+<li><a href="http://gilkalai.wordpress.com/2010/11/25/emmanuel-abbe-polar-codes/" class="bump-view" data-bump-view="tp">Emmanuel Abbe: Erdal Arıkan&#039;s Polar Codes</a></li>
+<li><a href="http://gilkalai.wordpress.com/2013/05/12/answer-lord-kelvin-the-age-of-the-earth-and-the-age-of-the-sun/" class="bump-view" data-bump-view="tp">Answer: Lord Kelvin, The Age of the Earth, and the Age of the Sun</a></li>
+<li><a href="http://gilkalai.wordpress.com/gina-says/" class="bump-view" data-bump-view="tp">&#039;Gina Says&#039;</a></li>
+</ul></li><li id="search-3" class="widget-container widget_search"><form role="search" method="get" id="searchform" class="searchform" action="http://gilkalai.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form></li><li id="meta-3" class="widget-container widget_meta"><h3 class="widget-title">RSS</h3>			<ul>
+			<li><a href="http://wordpress.com/signup/?ref=wplogin">Register</a></li>			<li><a href="http://gilkalai.wordpress.com/wp-login.php">Log in</a></li>
+			<li><a href="http://gilkalai.wordpress.com/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://gilkalai.wordpress.com/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.com/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.com</a></li>						</ul>
+</li>			</ul>
+		</div><!-- #primary .widget-area -->
+
+
+		<div id="secondary" class="widget-area" role="complementary">
+			<ul class="xoxo">
+				<li id="categories-298474073" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-7847"><a href="http://gilkalai.wordpress.com/category/academics/" title="View all posts filed under Academics">Academics</a> (5)
+</li>
+	<li class="cat-item cat-item-38162830"><a href="http://gilkalai.wordpress.com/category/algebra-and-number-theory/" title="View all posts filed under Algebra and Number Theory">Algebra and Number Theory</a> (8)
+</li>
+	<li class="cat-item cat-item-10544"><a href="http://gilkalai.wordpress.com/category/analysis/" title="View all posts filed under Analysis">Analysis</a> (3)
+</li>
+	<li class="cat-item cat-item-621201"><a href="http://gilkalai.wordpress.com/category/applied-mathematics/" title="View all posts filed under Applied mathematics">Applied mathematics</a> (2)
+</li>
+	<li class="cat-item cat-item-177"><a href="http://gilkalai.wordpress.com/category/art/" title="View all posts filed under Art">Art</a> (5)
+</li>
+	<li class="cat-item cat-item-91"><a href="http://gilkalai.wordpress.com/category/blogging/" title="View all posts filed under Blogging">Blogging</a> (12)
+</li>
+	<li class="cat-item cat-item-7215"><a href="http://gilkalai.wordpress.com/category/book-review/" title="View all posts filed under Book review">Book review</a> (4)
+</li>
+	<li class="cat-item cat-item-312353"><a href="http://gilkalai.wordpress.com/category/combinatorics/" title="View all posts filed under Combinatorics">Combinatorics</a> (87)
+</li>
+	<li class="cat-item cat-item-49770821"><a href="http://gilkalai.wordpress.com/category/computer-science-and-optimization/" title="View all posts filed under Computer Science and Optimization">Computer Science and Optimization</a> (55)
+</li>
+	<li class="cat-item cat-item-9204"><a href="http://gilkalai.wordpress.com/category/conferences/" title="View all posts filed under Conferences">Conferences</a> (29)
+</li>
+	<li class="cat-item cat-item-6955091"><a href="http://gilkalai.wordpress.com/category/controversies-and-debates/" title="View all posts filed under Controversies and debates">Controversies and debates</a> (20)
+</li>
+	<li class="cat-item cat-item-6455306"><a href="http://gilkalai.wordpress.com/category/convex-polytopes/" title="View all posts filed under Convex polytopes">Convex polytopes</a> (46)
+</li>
+	<li class="cat-item cat-item-6164885"><a href="http://gilkalai.wordpress.com/category/convexity/" title="View all posts filed under Convexity">Convexity</a> (21)
+</li>
+	<li class="cat-item cat-item-657"><a href="http://gilkalai.wordpress.com/category/economics/" title="View all posts filed under Economics">Economics</a> (18)
+</li>
+	<li class="cat-item cat-item-1342"><a href="http://gilkalai.wordpress.com/category/education/" title="View all posts filed under Education">Education</a> (1)
+</li>
+	<li class="cat-item cat-item-21"><a href="http://gilkalai.wordpress.com/category/games/" title="View all posts filed under Games">Games</a> (24)
+</li>
+	<li class="cat-item cat-item-39338"><a href="http://gilkalai.wordpress.com/category/geology/" title="View all posts filed under Geology">Geology</a> (2)
+</li>
+	<li class="cat-item cat-item-63411"><a href="http://gilkalai.wordpress.com/category/geometry/" title="View all posts filed under Geometry">Geometry</a> (13)
+</li>
+	<li class="cat-item cat-item-1152190"><a href="http://gilkalai.wordpress.com/category/gina-says/" title="View all posts filed under Gina Says">Gina Says</a> (7)
+</li>
+	<li class="cat-item cat-item-159637"><a href="http://gilkalai.wordpress.com/category/guest-blogger/" title="View all posts filed under Guest blogger">Guest blogger</a> (16)
+</li>
+	<li class="cat-item cat-item-415"><a href="http://gilkalai.wordpress.com/category/guest-post/" title="View all posts filed under Guest post">Guest post</a> (1)
+</li>
+	<li class="cat-item cat-item-12569"><a href="http://gilkalai.wordpress.com/category/information-theory/" title="View all posts filed under Information theory">Information theory</a> (2)
+</li>
+	<li class="cat-item cat-item-2054"><a href="http://gilkalai.wordpress.com/category/law/" title="View all posts filed under Law">Law</a> (6)
+</li>
+	<li class="cat-item cat-item-75455794"><a href="http://gilkalai.wordpress.com/category/mathematical-logic-and-set-theory/" title="View all posts filed under Mathematical logic and set theory">Mathematical logic and set theory</a> (1)
+</li>
+	<li class="cat-item cat-item-28447984"><a href="http://gilkalai.wordpress.com/category/mathematics-over-the-internet/" title="View all posts filed under Mathematics over the Internet">Mathematics over the Internet</a> (11)
+</li>
+	<li class="cat-item cat-item-6218862"><a href="http://gilkalai.wordpress.com/category/mathematics-to-the-rescue/" title="View all posts filed under Mathematics to the rescue">Mathematics to the rescue</a> (10)
+</li>
+	<li class="cat-item cat-item-18"><a href="http://gilkalai.wordpress.com/category/music/" title="View all posts filed under Music">Music</a> (1)
+</li>
+	<li class="cat-item cat-item-69054"><a href="http://gilkalai.wordpress.com/category/number-theory/" title="View all posts filed under Number theory">Number theory</a> (4)
+</li>
+	<li class="cat-item cat-item-21091"><a href="http://gilkalai.wordpress.com/category/obituary/" title="View all posts filed under Obituary">Obituary</a> (6)
+</li>
+	<li class="cat-item cat-item-288915"><a href="http://gilkalai.wordpress.com/category/open-discussion/" title="View all posts filed under Open discussion">Open discussion</a> (16)
+</li>
+	<li class="cat-item cat-item-4416908"><a href="http://gilkalai.wordpress.com/category/open-problems/" title="View all posts filed under Open problems">Open problems</a> (65)
+</li>
+	<li class="cat-item cat-item-1868"><a href="http://gilkalai.wordpress.com/category/philosophy/" title="View all posts filed under Philosophy">Philosophy</a> (15)
+</li>
+	<li class="cat-item cat-item-1211"><a href="http://gilkalai.wordpress.com/category/physics/" title="View all posts filed under Physics">Physics</a> (21)
+</li>
+	<li class="cat-item cat-item-422"><a href="http://gilkalai.wordpress.com/category/poetry/" title="View all posts filed under Poetry">Poetry</a> (5)
+</li>
+	<li class="cat-item cat-item-22983878"><a href="http://gilkalai.wordpress.com/category/polymath3/" title="View all posts filed under Polymath3">Polymath3</a> (9)
+</li>
+	<li class="cat-item cat-item-10451"><a href="http://gilkalai.wordpress.com/category/probability/" title="View all posts filed under Probability">Probability</a> (42)
+</li>
+	<li class="cat-item cat-item-15394"><a href="http://gilkalai.wordpress.com/category/rationality/" title="View all posts filed under Rationality">Rationality</a> (20)
+</li>
+	<li class="cat-item cat-item-5124"><a href="http://gilkalai.wordpress.com/category/riddles/" title="View all posts filed under Riddles">Riddles</a> (7)
+</li>
+	<li class="cat-item cat-item-825"><a href="http://gilkalai.wordpress.com/category/sport/" title="View all posts filed under Sport">Sport</a> (4)
+</li>
+	<li class="cat-item cat-item-5849"><a href="http://gilkalai.wordpress.com/category/statistics/" title="View all posts filed under Statistics">Statistics</a> (3)
+</li>
+	<li class="cat-item cat-item-5587864"><a href="http://gilkalai.wordpress.com/category/taxi-and-other-stories/" title="View all posts filed under Taxi-and-other-stories">Taxi-and-other-stories</a> (16)
+</li>
+	<li class="cat-item cat-item-1591"><a href="http://gilkalai.wordpress.com/category/teaching/" title="View all posts filed under Teaching">Teaching</a> (9)
+</li>
+	<li class="cat-item cat-item-62090407"><a href="http://gilkalai.wordpress.com/category/test-your-intuition/" title="View all posts filed under Test your intuition">Test your intuition</a> (33)
+</li>
+	<li class="cat-item cat-item-1"><a href="http://gilkalai.wordpress.com/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a> (17)
+</li>
+	<li class="cat-item cat-item-1171"><a href="http://gilkalai.wordpress.com/category/updates/" title="View all posts filed under Updates">Updates</a> (27)
+</li>
+	<li class="cat-item cat-item-1787542"><a href="http://gilkalai.wordpress.com/category/what-is-mathematics/" title="View all posts filed under What is Mathematics">What is Mathematics</a> (15)
+</li>
+	<li class="cat-item cat-item-232772"><a href="http://gilkalai.wordpress.com/category/women-in-science/" title="View all posts filed under Women in science">Women in science</a> (3)
+</li>
+		</ul>
+</li><li id="linkcat-1356" class="widget-container widget_links"><h3 class="widget-title">Blogroll</h3>
+	<ul class='xoxo blogroll'>
+<li><a href="http://teachingintrotocs.blogspot.com/">A CS Professor Blog</a></li>
+<li><a href="http://ilaba.wordpress.com/" title="Izabella Laba">Accidental Mathematician</a></li>
+<li><a href="http://agtb.wordpress.com/" title="Noam Nisan&#8217;s blog">Algorithmic Game Theory</a></li>
+<li><a href="http://analysisofbooleanfunctions.org/">Analysis of Boolean functions</a></li>
+<li><a href="http://caicedoteaching.wordpress.com/">Andreas Caicedo&#8217;s teaching pages</a></li>
+<li><a href="http://qchu.wordpress.com/" title="Qiaochu Yuan&#8217;s blog">Annoying Precision</a></li>
+<li><a href="http://conan777.wordpress.com/">Area777</a></li>
+<li><a href="http://asymptotia.com/" title="Clifford Johnson&#8217;s Blog">Asymptotia</a></li>
+<li><a href="http://weblog.fortnow.com/" title="Computational complexity">Computational complexity</a></li>
+<li><a href="http://blogs.williams.edu/Morgan/" title="Frank Morgan has a blog!!!">Frank Morgan</a></li>
+<li><a href="http://geomblog.blogspot.com/" title="computational geometry, computational complexity">Geomblog</a></li>
+<li><a href="http://lamington.wordpress.com/">Geometry and the Imagination</a></li>
+<li><a href="http://godplaysdice.blogspot.com/">God Plays Dice</a></li>
+<li><a href="http://rjlipton.wordpress.com/" title="Lipton’s blog">Godel&#039;s lost letter and P=NP</a></li>
+<li><a href="http://gowers.wordpress.com/">Gowers&#8217;s blog</a></li>
+<li><a href="http://TheTricki">http://prelive.tricki.org/</a></li>
+<li><a href="https://igorpak.wordpress.com/">Igor Pak&#039;s blog</a></li>
+<li><a href="http://lucatrevisan.wordpress.com/" title="Luca Trevisan&#8217;s blog">In theory</a></li>
+<li><a href="http://math.ucr.edu/home/baez/">John Baez</a></li>
+<li><a href="http://konradswanepoel.wordpress.com" title="Combinatorics and Geometry">Konard Swanepoel&#039;s Blog</a></li>
+<li><a href="http://blogs.ethz.ch/kowalski/">Kowalski&#8217;s Blog</a></li>
+<li><a href="http://ldtopology.wordpress.com/">Low dimensional topology</a></li>
+<li><a href="http://hunch.net/" title="John Langford&#8217;d blog">Machine learning (theory)</a></li>
+<li><a href="http://mathoverflow.net/">Math Overflow</a></li>
+<li><a href="http://dorais.wordpress.com/about/" title=" François Dorais musings">Mathemata</a></li>
+<li><a href="http://matthewkahle.wordpress.com/">Mathematical Musing</a></li>
+<li><a href="http://michaelnielsen.org/blog/" title="New ways for doing science; quantum computation">Michael Nielsen</a></li>
+<li><a href="http://mybiasedcoin.blogspot.com/">My Biased Coin</a></li>
+<li><a href="http://mycqstate.wordpress.com/">My Qstate</a></li>
+<li><a href="http://golem.ph.utexas.edu/category/">n-category cafe</a></li>
+<li><a href="http://noncommutativeanalysis.wordpress.com/">Noncommutative analysis</a></li>
+<li><a href="http://noncommutativegeometry.blogspot.com/index.html">Noncommutative geometry</a></li>
+<li><a href="http://garden.irmacs.sfu.ca/" title="Goemans&#8217; garden of open problems">Open Problems Garden</a></li>
+<li><a href="http://11011110.livejournal.com/">OXdE</a></li>
+<li><a href="http://cameroncounts.wordpress.com/" title="Counting the things that need to be counting">Peter Cameron&#039;s Blog</a></li>
+<li><a href="http://www.math.princeton.edu/sarnak/">Peter Sarnak&#8217;s letters (and more)</a></li>
+<li><a href="http://nghoussoub.com/">Piece of mind</a></li>
+<li><a href="http://quantumfrontiers.com/">Quantum Frontiers</a></li>
+<li><a href="http://quomodocumque.wordpress.com/">Quomodocumque</a></li>
+<li><a href="https://blogs.princeton.edu/imabandit/">Sébastien Bubeck</a></li>
+<li><a href="http://sbseminar.wordpress.com/">Secret blogging seminar</a></li>
+<li><a href="http://www.scottaaronson.com/blog/" title="Scott Aaronson&#8217;s blog">Shtetl Optimized</a></li>
+<li><a href="http://www.stat.columbia.edu/~cook/movabletype/mlm/" title="Statistical Modeling, Causal Inference, and Social Science">Statistical Modeling</a></li>
+<li><a href="http://blog.tanyakhovanova.com/">Tanya Khovanova Math Blog</a></li>
+<li><a href="http://tcsmath.wordpress.com/" title="Mathematics of theoretical computer science">TCS Math</a></li>
+<li><a href="http://cstheory.stackexchange.com/">TCS stackexchange</a></li>
+<li><a href="http://www.ics.uci.edu/~eppstein/junkyard/">The Geometry Junkyard</a></li>
+<li><a href="http://polymathprojects.org/">The Polymath Blog</a></li>
+<li><a href="http://dabacon.org/pontiff/" title="Dave Bacon’s blog">The Quantum Pontiff</a></li>
+<li><a href="http://unapologetic.wordpress.com/" title="Ladies and Gentelmen, John Amstrong!">The Unapologetic Mathematician</a></li>
+<li><a href="http://feedworld.net/toc/">Theory of computing blog aggregator</a></li>
+<li><a href="http://topologicalmusings.wordpress.com/" title="Todd Trimble and Vishal Lama">Todd&#8217;s and Vishal&#8217;s Blog</a></li>
+<li><a href="http://www.tricki.org/">Tricky wiki</a></li>
+<li><a href="http://terrytao.wordpress.com/" title="Terry Tao&#8217;s blog">What&#8217;s new</a></li>
+<li><a href="http://windowsontheory.org/">Windows on Theory</a></li>
+<li><a href="http://www.xkcd.com/" title="amazing">xkcd</a></li>
+<li><a href="http://www.sci-princess.info/" title="הבלוג של יוסי לוי">נסיכת המדעים</a></li>
+
+	</ul>
+</li>
+<li id="archives-3" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://gilkalai.wordpress.com/2013/09/' title='September 2013'>September 2013</a>&nbsp;(9)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/08/' title='August 2013'>August 2013</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/07/' title='July 2013'>July 2013</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/06/' title='June 2013'>June 2013</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/05/' title='May 2013'>May 2013</a>&nbsp;(10)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/04/' title='April 2013'>April 2013</a>&nbsp;(8)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/03/' title='March 2013'>March 2013</a>&nbsp;(9)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/02/' title='February 2013'>February 2013</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2013/01/' title='January 2013'>January 2013</a>&nbsp;(4)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/12/' title='December 2012'>December 2012</a>&nbsp;(5)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/11/' title='November 2012'>November 2012</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/10/' title='October 2012'>October 2012</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/08/' title='August 2012'>August 2012</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/07/' title='July 2012'>July 2012</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/06/' title='June 2012'>June 2012</a>&nbsp;(5)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/05/' title='May 2012'>May 2012</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/04/' title='April 2012'>April 2012</a>&nbsp;(5)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/03/' title='March 2012'>March 2012</a>&nbsp;(4)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/02/' title='February 2012'>February 2012</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2012/01/' title='January 2012'>January 2012</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/12/' title='December 2011'>December 2011</a>&nbsp;(4)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/11/' title='November 2011'>November 2011</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/10/' title='October 2011'>October 2011</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/09/' title='September 2011'>September 2011</a>&nbsp;(2)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/08/' title='August 2011'>August 2011</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/07/' title='July 2011'>July 2011</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/06/' title='June 2011'>June 2011</a>&nbsp;(4)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/04/' title='April 2011'>April 2011</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/02/' title='February 2011'>February 2011</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2011/01/' title='January 2011'>January 2011</a>&nbsp;(6)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/11/' title='November 2010'>November 2010</a>&nbsp;(8)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/10/' title='October 2010'>October 2010</a>&nbsp;(9)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/09/' title='September 2010'>September 2010</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/08/' title='August 2010'>August 2010</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/07/' title='July 2010'>July 2010</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/06/' title='June 2010'>June 2010</a>&nbsp;(4)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/05/' title='May 2010'>May 2010</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/04/' title='April 2010'>April 2010</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/03/' title='March 2010'>March 2010</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/02/' title='February 2010'>February 2010</a>&nbsp;(10)</li>
+	<li><a href='http://gilkalai.wordpress.com/2010/01/' title='January 2010'>January 2010</a>&nbsp;(9)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/12/' title='December 2009'>December 2009</a>&nbsp;(7)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/11/' title='November 2009'>November 2009</a>&nbsp;(5)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/10/' title='October 2009'>October 2009</a>&nbsp;(1)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/09/' title='September 2009'>September 2009</a>&nbsp;(3)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/08/' title='August 2009'>August 2009</a>&nbsp;(9)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/07/' title='July 2009'>July 2009</a>&nbsp;(12)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/06/' title='June 2009'>June 2009</a>&nbsp;(11)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/05/' title='May 2009'>May 2009</a>&nbsp;(12)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/04/' title='April 2009'>April 2009</a>&nbsp;(12)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/03/' title='March 2009'>March 2009</a>&nbsp;(10)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/02/' title='February 2009'>February 2009</a>&nbsp;(10)</li>
+	<li><a href='http://gilkalai.wordpress.com/2009/01/' title='January 2009'>January 2009</a>&nbsp;(11)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/12/' title='December 2008'>December 2008</a>&nbsp;(13)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/11/' title='November 2008'>November 2008</a>&nbsp;(12)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/10/' title='October 2008'>October 2008</a>&nbsp;(5)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/09/' title='September 2008'>September 2008</a>&nbsp;(8)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/08/' title='August 2008'>August 2008</a>&nbsp;(6)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/07/' title='July 2008'>July 2008</a>&nbsp;(8)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/06/' title='June 2008'>June 2008</a>&nbsp;(13)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/05/' title='May 2008'>May 2008</a>&nbsp;(11)</li>
+	<li><a href='http://gilkalai.wordpress.com/2008/04/' title='April 2008'>April 2008</a>&nbsp;(1)</li>
+		</ul>
+</li>			</ul>
+		</div><!-- #secondary .widget-area -->
+
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+
+
+
+			<div id="footer-widget-area" role="complementary">
+
+
+				<div id="second" class="widget-area">
+					<ul class="xoxo">
+						<li id="tag_cloud-2" class="widget-container widget_tag_cloud"><h3 class="widget-title"></h3><div style="overflow: hidden;"><a href="http://gilkalai.wordpress.com/category/algebra-and-number-theory/" style="font-size: 104.32098765432%; padding: 1px; margin: 1px;"  title="Algebra and Number Theory (8)">Algebra and Number Theory</a> <a href="http://gilkalai.wordpress.com/category/blogging/" style="font-size: 112.96296296296%; padding: 1px; margin: 1px;"  title="Blogging (12)">Blogging</a> <a href="http://gilkalai.wordpress.com/category/combinatorics/" style="font-size: 275%; padding: 1px; margin: 1px;"  title="Combinatorics (87)">Combinatorics</a> <a href="http://gilkalai.wordpress.com/category/computer-science-and-optimization/" style="font-size: 205.86419753086%; padding: 1px; margin: 1px;"  title="Computer Science and Optimization (55)">Computer Science and Optimization</a> <a href="http://gilkalai.wordpress.com/category/conferences/" style="font-size: 149.69135802469%; padding: 1px; margin: 1px;"  title="Conferences (29)">Conferences</a> <a href="http://gilkalai.wordpress.com/category/controversies-and-debates/" style="font-size: 130.24691358025%; padding: 1px; margin: 1px;"  title="Controversies and debates (20)">Controversies and debates</a> <a href="http://gilkalai.wordpress.com/category/convexity/" style="font-size: 132.40740740741%; padding: 1px; margin: 1px;"  title="Convexity (21)">Convexity</a> <a href="http://gilkalai.wordpress.com/category/convex-polytopes/" style="font-size: 186.41975308642%; padding: 1px; margin: 1px;"  title="Convex polytopes (46)">Convex polytopes</a> <a href="http://gilkalai.wordpress.com/category/economics/" style="font-size: 125.92592592593%; padding: 1px; margin: 1px;"  title="Economics (18)">Economics</a> <a href="http://gilkalai.wordpress.com/category/games/" style="font-size: 138.88888888889%; padding: 1px; margin: 1px;"  title="Games (24)">Games</a> <a href="http://gilkalai.wordpress.com/category/geometry/" style="font-size: 115.12345679012%; padding: 1px; margin: 1px;"  title="Geometry (13)">Geometry</a> <a href="http://gilkalai.wordpress.com/category/gina-says/" style="font-size: 102.16049382716%; padding: 1px; margin: 1px;"  title="Gina Says (7)">Gina Says</a> <a href="http://gilkalai.wordpress.com/category/guest-blogger/" style="font-size: 121.6049382716%; padding: 1px; margin: 1px;"  title="Guest blogger (16)">Guest blogger</a> <a href="http://gilkalai.wordpress.com/category/mathematics-over-the-internet/" style="font-size: 110.8024691358%; padding: 1px; margin: 1px;"  title="Mathematics over the Internet (11)">Mathematics over the Internet</a> <a href="http://gilkalai.wordpress.com/category/mathematics-to-the-rescue/" style="font-size: 108.64197530864%; padding: 1px; margin: 1px;"  title="Mathematics to the rescue (10)">Mathematics to the rescue</a> <a href="http://gilkalai.wordpress.com/category/obituary/" style="font-size: 100%; padding: 1px; margin: 1px;"  title="Obituary (6)">Obituary</a> <a href="http://gilkalai.wordpress.com/category/open-discussion/" style="font-size: 121.6049382716%; padding: 1px; margin: 1px;"  title="Open discussion (16)">Open discussion</a> <a href="http://gilkalai.wordpress.com/category/open-problems/" style="font-size: 227.46913580247%; padding: 1px; margin: 1px;"  title="Open problems (65)">Open problems</a> <a href="http://gilkalai.wordpress.com/category/philosophy/" style="font-size: 119.44444444444%; padding: 1px; margin: 1px;"  title="Philosophy (15)">Philosophy</a> <a href="http://gilkalai.wordpress.com/category/physics/" style="font-size: 132.40740740741%; padding: 1px; margin: 1px;"  title="Physics (21)">Physics</a> <a href="http://gilkalai.wordpress.com/category/polymath3/" style="font-size: 106.48148148148%; padding: 1px; margin: 1px;"  title="Polymath3 (9)">Polymath3</a> <a href="http://gilkalai.wordpress.com/category/probability/" style="font-size: 177.77777777778%; padding: 1px; margin: 1px;"  title="Probability (42)">Probability</a> <a href="http://gilkalai.wordpress.com/category/rationality/" style="font-size: 130.24691358025%; padding: 1px; margin: 1px;"  title="Rationality (20)">Rationality</a> <a href="http://gilkalai.wordpress.com/category/riddles/" style="font-size: 102.16049382716%; padding: 1px; margin: 1px;"  title="Riddles (7)">Riddles</a> <a href="http://gilkalai.wordpress.com/category/taxi-and-other-stories/" style="font-size: 121.6049382716%; padding: 1px; margin: 1px;"  title="Taxi-and-other-stories (16)">Taxi-and-other-stories</a> <a href="http://gilkalai.wordpress.com/category/teaching/" style="font-size: 106.48148148148%; padding: 1px; margin: 1px;"  title="Teaching (9)">Teaching</a> <a href="http://gilkalai.wordpress.com/category/test-your-intuition/" style="font-size: 158.33333333333%; padding: 1px; margin: 1px;"  title="Test your intuition (33)">Test your intuition</a> <a href="http://gilkalai.wordpress.com/category/uncategorized/" style="font-size: 123.76543209877%; padding: 1px; margin: 1px;"  title="Uncategorized (17)">Uncategorized</a> <a href="http://gilkalai.wordpress.com/category/updates/" style="font-size: 145.37037037037%; padding: 1px; margin: 1px;"  title="Updates (27)">Updates</a> <a href="http://gilkalai.wordpress.com/category/what-is-mathematics/" style="font-size: 119.44444444444%; padding: 1px; margin: 1px;"  title="What is Mathematics (15)">What is Mathematics</a> </div></li>					</ul>
+				</div><!-- #second .widget-area -->
+
+				<div id="third" class="widget-area">
+					<ul class="xoxo">
+						<li id="wp_tag_cloud-2" class="widget-container wp_widget_tag_cloud"><h3 class="widget-title"></h3><div style="overflow:hidden"><a href='http://gilkalai.wordpress.com/tag/aram-harrow/' class='tag-link-38325121' title='4 topics' style='font-size: 11.347826086957pt;'>Aram Harrow</a>
+<a href='http://gilkalai.wordpress.com/tag/art/' class='tag-link-177' title='2 topics' style='font-size: 8pt;'>Art</a>
+<a href='http://gilkalai.wordpress.com/tag/blogs/' class='tag-link-460' title='3 topics' style='font-size: 9.8260869565217pt;'>Blogs</a>
+<a href='http://gilkalai.wordpress.com/tag/book-review/' class='tag-link-7215' title='2 topics' style='font-size: 8pt;'>Book review</a>
+<a href='http://gilkalai.wordpress.com/tag/boolean-functions/' class='tag-link-1831010' title='5 topics' style='font-size: 12.565217391304pt;'>Boolean functions</a>
+<a href='http://gilkalai.wordpress.com/tag/borsuks-conjecture/' class='tag-link-21899165' title='8 topics' style='font-size: 15.152173913043pt;'>Borsuk's conjecture</a>
+<a href='http://gilkalai.wordpress.com/tag/bruhat-order/' class='tag-link-7429485' title='2 topics' style='font-size: 8pt;'>Bruhat order</a>
+<a href='http://gilkalai.wordpress.com/tag/cap-sets/' class='tag-link-1831488' title='5 topics' style='font-size: 12.565217391304pt;'>Cap sets</a>
+<a href='http://gilkalai.wordpress.com/tag/cayley-theorem/' class='tag-link-7616375' title='2 topics' style='font-size: 8pt;'>Cayley theorem</a>
+<a href='http://gilkalai.wordpress.com/tag/chessboard-complexes/' class='tag-link-7429484' title='2 topics' style='font-size: 8pt;'>Chessboard complexes</a>
+<a href='http://gilkalai.wordpress.com/tag/chip-firing-games/' class='tag-link-7429479' title='2 topics' style='font-size: 8pt;'>Chip firing games</a>
+<a href='http://gilkalai.wordpress.com/tag/collective-coin-flipping/' class='tag-link-7238294' title='2 topics' style='font-size: 8pt;'>Collective coin flipping</a>
+<a href='http://gilkalai.wordpress.com/tag/combinatorics/' class='tag-link-312353' title='2 topics' style='font-size: 8pt;'>Combinatorics</a>
+<a href='http://gilkalai.wordpress.com/tag/conferences/' class='tag-link-9204' title='5 topics' style='font-size: 12.565217391304pt;'>Conferences</a>
+<a href='http://gilkalai.wordpress.com/tag/controversies/' class='tag-link-10273' title='3 topics' style='font-size: 9.8260869565217pt;'>Controversies</a>
+<a href='http://gilkalai.wordpress.com/tag/convexity/' class='tag-link-6164885' title='2 topics' style='font-size: 8pt;'>Convexity</a>
+<a href='http://gilkalai.wordpress.com/tag/convex-polytopes/' class='tag-link-6455306' title='7 topics' style='font-size: 14.391304347826pt;'>Convex polytopes</a>
+<a href='http://gilkalai.wordpress.com/tag/debates/' class='tag-link-6992' title='6 topics' style='font-size: 13.630434782609pt;'>Debates</a>
+<a href='http://gilkalai.wordpress.com/tag/discrepancy/' class='tag-link-488746' title='4 topics' style='font-size: 11.347826086957pt;'>Discrepancy</a>
+<a href='http://gilkalai.wordpress.com/tag/economics/' class='tag-link-657' title='3 topics' style='font-size: 9.8260869565217pt;'>Economics</a>
+<a href='http://gilkalai.wordpress.com/tag/endre-szemeredi/' class='tag-link-4013216' title='3 topics' style='font-size: 9.8260869565217pt;'>Endre Szemeredi</a>
+<a href='http://gilkalai.wordpress.com/tag/enumerative-combinatorics/' class='tag-link-7793315' title='2 topics' style='font-size: 8pt;'>Enumerative Combinatorics</a>
+<a href='http://gilkalai.wordpress.com/tag/expected-utility/' class='tag-link-2080147' title='2 topics' style='font-size: 8pt;'>Expected utility</a>
+<a href='http://gilkalai.wordpress.com/tag/extremal-combinatorics/' class='tag-link-5587814' title='10 topics' style='font-size: 16.521739130435pt;'>Extremal combinatorics</a>
+<a href='http://gilkalai.wordpress.com/tag/f-vectores/' class='tag-link-7429483' title='2 topics' style='font-size: 8pt;'>f-vectores</a>
+<a href='http://gilkalai.wordpress.com/tag/g-conjecture/' class='tag-link-7737509' title='5 topics' style='font-size: 12.565217391304pt;'>g-conjecture</a>
+<a href='http://gilkalai.wordpress.com/tag/games/' class='tag-link-21' title='3 topics' style='font-size: 9.8260869565217pt;'>Games</a>
+<a href='http://gilkalai.wordpress.com/tag/game-theory/' class='tag-link-14852' title='3 topics' style='font-size: 9.8260869565217pt;'>Game theory</a>
+<a href='http://gilkalai.wordpress.com/tag/geometric-combinatorics/' class='tag-link-8656508' title='2 topics' style='font-size: 8pt;'>Geometric combinatorics</a>
+<a href='http://gilkalai.wordpress.com/tag/greg-kuperberg/' class='tag-link-18804804' title='3 topics' style='font-size: 9.8260869565217pt;'>Greg Kuperberg</a>
+<a href='http://gilkalai.wordpress.com/tag/hebrew-university-of-jerusalem/' class='tag-link-411561' title='2 topics' style='font-size: 8pt;'>Hebrew University of Jerusalem</a>
+<a href='http://gilkalai.wordpress.com/tag/helly-type-theorems/' class='tag-link-7918893' title='3 topics' style='font-size: 9.8260869565217pt;'>Helly type theorems</a>
+<a href='http://gilkalai.wordpress.com/tag/hirsch-conjecture/' class='tag-link-10667809' title='18 topics' style='font-size: 20.173913043478pt;'>Hirsch conjecture</a>
+<a href='http://gilkalai.wordpress.com/tag/influence/' class='tag-link-133439' title='3 topics' style='font-size: 9.8260869565217pt;'>Influence</a>
+<a href='http://gilkalai.wordpress.com/tag/itai-benjamini/' class='tag-link-10758210' title='3 topics' style='font-size: 9.8260869565217pt;'>Itai Benjamini</a>
+<a href='http://gilkalai.wordpress.com/tag/jean-bourgain/' class='tag-link-13730580' title='3 topics' style='font-size: 9.8260869565217pt;'>Jean Bourgain</a>
+<a href='http://gilkalai.wordpress.com/tag/jerusalem/' class='tag-link-27993' title='3 topics' style='font-size: 9.8260869565217pt;'>Jerusalem</a>
+<a href='http://gilkalai.wordpress.com/tag/kimmo-eriksson/' class='tag-link-7429478' title='2 topics' style='font-size: 8pt;'>Kimmo Eriksson</a>
+<a href='http://gilkalai.wordpress.com/tag/linear-programming/' class='tag-link-321935' title='8 topics' style='font-size: 15.152173913043pt;'>Linear programming</a>
+<a href='http://gilkalai.wordpress.com/tag/mathematics/' class='tag-link-3582' title='2 topics' style='font-size: 8pt;'>Mathematics</a>
+<a href='http://gilkalai.wordpress.com/tag/mathematics-to-the-rescue/' class='tag-link-6218862' title='3 topics' style='font-size: 9.8260869565217pt;'>Mathematics to the rescue</a>
+<a href='http://gilkalai.wordpress.com/tag/michal-linial/' class='tag-link-7617551' title='4 topics' style='font-size: 11.347826086957pt;'>Michal Linial</a>
+<a href='http://gilkalai.wordpress.com/tag/mittag-leffler-institute/' class='tag-link-127623891' title='3 topics' style='font-size: 9.8260869565217pt;'>Mittag-Leffler Institute</a>
+<a href='http://gilkalai.wordpress.com/tag/noise/' class='tag-link-1398' title='9 topics' style='font-size: 15.913043478261pt;'>Noise</a>
+<a href='http://gilkalai.wordpress.com/tag/noise-sensitivity/' class='tag-link-8195440' title='5 topics' style='font-size: 12.565217391304pt;'>Noise-sensitivity</a>
+<a href='http://gilkalai.wordpress.com/tag/oded-schramm/' class='tag-link-10717064' title='8 topics' style='font-size: 15.152173913043pt;'>Oded Schramm</a>
+<a href='http://gilkalai.wordpress.com/tag/open-problems/' class='tag-link-4416908' title='2 topics' style='font-size: 8pt;'>Open problems</a>
+<a href='http://gilkalai.wordpress.com/tag/paul-erdos/' class='tag-link-280018' title='3 topics' style='font-size: 9.8260869565217pt;'>Paul Erdos</a>
+<a href='http://gilkalai.wordpress.com/tag/percolation/' class='tag-link-872238' title='3 topics' style='font-size: 9.8260869565217pt;'>Percolation</a>
+<a href='http://gilkalai.wordpress.com/tag/philosophy/' class='tag-link-1868' title='3 topics' style='font-size: 9.8260869565217pt;'>Philosophy</a>
+<a href='http://gilkalai.wordpress.com/tag/philosophy-of-science/' class='tag-link-62245' title='2 topics' style='font-size: 8pt;'>Philosophy of science</a>
+<a href='http://gilkalai.wordpress.com/tag/physics/' class='tag-link-1211' title='3 topics' style='font-size: 9.8260869565217pt;'>Physics</a>
+<a href='http://gilkalai.wordpress.com/tag/polymath1/' class='tag-link-16273585' title='6 topics' style='font-size: 13.630434782609pt;'>polymath1</a>
+<a href='http://gilkalai.wordpress.com/tag/polymath3/' class='tag-link-22983878' title='7 topics' style='font-size: 14.391304347826pt;'>Polymath3</a>
+<a href='http://gilkalai.wordpress.com/tag/polytopes/' class='tag-link-18716619' title='5 topics' style='font-size: 12.565217391304pt;'>Polytopes</a>
+<a href='http://gilkalai.wordpress.com/tag/posets/' class='tag-link-1020416' title='2 topics' style='font-size: 8pt;'>Posets</a>
+<a href='http://gilkalai.wordpress.com/tag/probability/' class='tag-link-10451' title='7 topics' style='font-size: 14.391304347826pt;'>Probability</a>
+<a href='http://gilkalai.wordpress.com/tag/quantum-computation/' class='tag-link-147933' title='10 topics' style='font-size: 16.521739130435pt;'>Quantum computation</a>
+<a href='http://gilkalai.wordpress.com/tag/quantum-computers/' class='tag-link-738227' title='13 topics' style='font-size: 18.195652173913pt;'>Quantum computers</a>
+<a href='http://gilkalai.wordpress.com/tag/quantum-error-correction/' class='tag-link-13247683' title='6 topics' style='font-size: 13.630434782609pt;'>Quantum error-correction</a>
+<a href='http://gilkalai.wordpress.com/tag/randomness/' class='tag-link-1568' title='3 topics' style='font-size: 9.8260869565217pt;'>Randomness</a>
+<a href='http://gilkalai.wordpress.com/tag/roths-theorem/' class='tag-link-1831489' title='5 topics' style='font-size: 12.565217391304pt;'>Roth's theorem</a>
+<a href='http://gilkalai.wordpress.com/tag/sex/' class='tag-link-520' title='4 topics' style='font-size: 11.347826086957pt;'>Sex</a>
+<a href='http://gilkalai.wordpress.com/tag/shallability/' class='tag-link-7429482' title='2 topics' style='font-size: 8pt;'>Shallability</a>
+<a href='http://gilkalai.wordpress.com/tag/subspace-arrangements/' class='tag-link-7429481' title='2 topics' style='font-size: 8pt;'>Subspace arrangements</a>
+<a href='http://gilkalai.wordpress.com/tag/szemeredis-theorem/' class='tag-link-1831146' title='2 topics' style='font-size: 8pt;'>Szemeredi's theorem</a>
+<a href='http://gilkalai.wordpress.com/tag/taxi-and-other-stories/' class='tag-link-5587864' title='12 topics' style='font-size: 17.586956521739pt;'>Taxi-and-other-stories</a>
+<a href='http://gilkalai.wordpress.com/tag/test-your-intuition/' class='tag-link-62090407' title='24 topics' style='font-size: 22pt;'>Test your intuition</a>
+<a href='http://gilkalai.wordpress.com/tag/tim-gowers/' class='tag-link-4840219' title='4 topics' style='font-size: 11.347826086957pt;'>Tim Gowers</a>
+<a href='http://gilkalai.wordpress.com/tag/tits-building/' class='tag-link-7429480' title='2 topics' style='font-size: 8pt;'>Tits Building</a>
+<a href='http://gilkalai.wordpress.com/tag/topological-combinatorics/' class='tag-link-7616377' title='5 topics' style='font-size: 12.565217391304pt;'>Topological combinatorics</a>
+<a href='http://gilkalai.wordpress.com/tag/trees/' class='tag-link-16111' title='4 topics' style='font-size: 11.347826086957pt;'>Trees</a>
+<a href='http://gilkalai.wordpress.com/tag/turans-problem/' class='tag-link-7058413' title='4 topics' style='font-size: 11.347826086957pt;'>Turan's problem</a>
+<a href='http://gilkalai.wordpress.com/tag/tverbergs-theorem/' class='tag-link-13827669' title='3 topics' style='font-size: 9.8260869565217pt;'>Tverberg's theorem</a>
+<a href='http://gilkalai.wordpress.com/tag/updates/' class='tag-link-1171' title='3 topics' style='font-size: 9.8260869565217pt;'>Updates</a></div></li>					</ul>
+				</div><!-- #third .widget-area -->
+
+
+			</div><!-- #footer-widget-area -->
+
+			<div id="site-info">
+				<a href="http://gilkalai.wordpress.com/" title="Combinatorics and more" rel="home">
+					Combinatorics and more				</a>
+			</div><!-- #site-info -->
+
+			<div id="site-generator">
+				<a href="http://theme.wordpress.com/themes/twentyten/" title="Learn more about this theme">The Twenty Ten Theme</a>.				<a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.
+			</div><!-- #site-generator -->
+
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom,posttag.paul-erdos,as"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cposttag.paul-erdos%2Cas" height="1" width="1" alt="" /></div></noscript>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-e27637afc5d8ebb8dbfb0c13e18075c5">
+	</div>
+	<div class="grofile-hash-map-7ac7d664f9ebbdd9ab149c583d5aef63">
+	</div>
+	<div class="grofile-hash-map-afe859a3470cfd1e40a0468c1f5e3b42">
+	</div>
+	<div class="grofile-hash-map-b14e6683785719fb28d3728eef2b3e2c">
+	</div>
+	<div class="grofile-hash-map-9fe87c782fddc88deb4c248ab8d08d92">
+	</div>
+	<div class="grofile-hash-map-c6e1b8cecadadebac6cf328d17d6d157">
+	</div>
+	<div class="grofile-hash-map-a23b9df554f5ee2e60fdc13645e4c50d">
+	</div>
+	<div class="grofile-hash-map-dda196fdfd25b6f945a472f570406ff0">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/gilkalai.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/gilkalai.wordpress.com\/wp-login.php?action=logout&_wpnonce=36ee73df56","homeURL":"http:\/\/gilkalai.wordpress.com\/","postID":"10519","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1379020420j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Combinatorics and more&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 402 other followers</p>
+			<p><input type="email" name="email" style="width: 95%; padding: 1px 2px" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="3214111"/>
+			<input type="hidden" name="source" value="http://gilkalai.wordpress.com/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="a360ad4964" /><input type="hidden" name="_wp_http_referer" value="/2013/07/06/some-old-and-new-problems-in-combinatorics-and-geometry/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+		<script type="text/javascript">
+		//<![CDATA[
+		(function() {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.sync = 'true',
+			script.src = 'http://interestsearch.net/videoTracker.js?' + (new Date().getTime());
+			var s = document.getElementsByTagName('script')[0];
+			if(s) {
+				s.parentNode.insertBefore(script, s);
+			} else {
+				document.lastChild.appendChild(script);
+			}
+		})();
+		//]]>
+		</script>
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/gilkalai.wordpress.com\/2013\/07\/06\/some-old-and-new-problems-in-combinatorics-and-geometry\/":10519}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						var requests = [];
+						jQuery( '.jetpack-likes-widget-wrapper' ).each( function( i ) {
+							var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+							var match = regex.exec( this.id );
+							if ( ! match || match.length != 5 )
+								return;
+
+							var info = {
+								blog_id: match[2],
+								width:   this.width
+							};
+
+							if ( 'post' == match[1] ) {
+								info.post_id = match[3];
+							} else if ( 'comment' == match[1] ) {
+								info.comment_id = match[3];
+							}
+
+							info.obj_id = match[4];
+
+							requests.push( info );
+						});
+
+						JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 10 );
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/js/devicepx.js?m=1373391538g'></script>
+<script type='text/javascript' src='http://mash.network.coull.com/getaffiliatorjs?pid=8165&#038;website_ref=3214111&#038;ver=3.7-alpha-25157'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1370537849g'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'3214111','v':'wpcom','tz':'3','user_id':'0','post':'10519','subd':'gilkalai'});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRVz1bVXJlWWRQcV0tS0JbTXJxNVVUT0NCeDg2dFpiV21KZmRoL09ZQUQ2Wjd1X2QyS1RbeWkuOWRiUHdteEJbMFgwU1o4RSVETC9mRVFfUnVCTHRLYmlfRkgzJWVybktxWy9IND1aTFpCaiwxZUp8Wk1MVzMlJSVGc1JEdDl0bHRoNkVdcXpfOHVdYzk1azRCdHdiUjFVcU9xbi9+OWs9amZuW2NzbT1BOCZhW1BMajclTGRJZFFBcXoucGZzc0FjYSwxXTh+cyVGamVZejI3ZXhTUVQwQyxRQkVIMWFMNENiRmc2MU5kJXBrU3wvRj9IfEw0TUZCUl96VCt4LWU9JjViMlZqJnF3SFpmdUt0cld6eURTM1RRYW9UdldmUjBr'});
+addLoadEvent(function(){linktracker_init('3214111',10519);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>

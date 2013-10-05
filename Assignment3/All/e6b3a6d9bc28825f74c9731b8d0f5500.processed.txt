@@ -1,0 +1,829 @@
+   #[1]Cisco Blog RSS Feed [2]Cisco Blog » Limitations of a Software-Only
+   Approach to Data Center Networking Comments Feed [3]How Can One Cisco
+   Intern Impact the World? [4]Collaboration Solutions: Choose the Right
+   Ones for Productive, Effective Teleworking
+
+     *
+          + [5]Blogs Home
+          + [6]All of Cisco
+
+   Cisco Blogs
+
+     * [7]Tweet
+     *
+     *
+     *
+     *
+     * [white-15.png] Kindle
+     *
+
+   ____________________ Submit
+     * Technology
+     * [8]Borderless Networks
+     * [9]Collaboration
+     * [10]Data Center and Cloud
+     * [11]Mobility
+     * [12]Security
+     * [13]Small Business
+     * [14]SP360:Service Provider
+     * [15]Video
+
+     * Industries
+     * [16]Education
+     * [17]Financial Services
+     * [18]Government
+     * [19]Healthcare
+     * [20]Manufacturing
+     * [21]Retail
+
+     * Support
+     * [22]Cisco Support Community
+
+     * Partners
+     * [23]Channels
+     * [24]Cisco Developer Network
+
+     * More From Cisco
+     * [25]Architect & DE Discussions
+     * [26]Connected Life Exchange
+     * [27]Digital and Social
+     * [28]High Peformance Computing Networking
+     * [29]Inside Cisco IT
+     * [30]Open at Cisco
+     * [31]Perspectives
+     * [32]TechWiseTV
+
+     * Corporate/News
+     * [33]The Platform
+     * [34]Corporate Social Responsibility
+     * [35]High Tech Policy
+     * [36]Inclusion and Diversity
+     * [37]Internet of Everything
+
+     * Countries and Regions
+     * [38]Brazil
+     * [39]Canada
+          + [40]English
+          + [41]French
+     * [42]Emerging Countries
+     * [43]France
+          + [44]Réseaux
+          + [45]Data Center
+          + [46]Green IT
+          + [47]IPv6
+          + [48]Collaboration
+          + [49]Sécurité
+          + [50]Smart Cities
+     * [51]Germany
+     * [52]Italy
+     * [53]Japan
+     * [54]Korea
+     * [55]Latin America
+     * [56]Netherlands
+     * [57]Poland
+     * [58]Portugal
+     * [59]Russia
+     * [60]Spain
+
+   [61]Cisco Blog > [62]Data Center and Cloud
+
+Limitations of a Software-Only Approach to Data Center Networking
+
+   Padmasree Warrior
+   [63]Padmasree Warrior | August 29, 2013 at 8:04 am PST
+   ([64]9 Comments)
+
+   I want to address some questions about VMware's NSX virtual networking
+   announcement that have been asked of us by the media and social Web
+   commentators in the past few days. Specifically, they have asked  why
+   Cisco did not announce support for NSX and whether the announcement
+   changes the long-standing strategic relationship between our two
+   companies.
+
+   First, let me be clear: VMware is an important partner to Cisco, and we
+   expect to continue our close collaboration around private [65]cloud and
+   desktop virtualization.  As we outlined yesterday in a [66]joint news
+   release about Cisco and VMware's mutual customers, thousands of
+   organizations rely on our combined innovation in their businesses each
+   and every day and I look forward to continued success in this area.
+
+   While we share a common vision for private [67]cloud and desktop
+   virtualization, there are significant differences in our visions over
+   the future of networking.
+
+   Network virtualization is important. We both agree on that. In fact,
+   over the past several years, we have delivered game-changing
+   innovations in this area particularly with the Nexus 1000v and more
+   recently with NFV solutions, both of which are key elements of the
+   [68]Cisco ONE portfolio. Today, more than 6,000 Nexus 1000v customers
+   benefit from the flexibility delivered by our virtual networking
+   technology.
+
+   However, a software-only approach to network virtualization places
+   significant constraints on customers.  It doesn't scale, and it fails
+   to provide full real-time visibility of both physical and virtual
+   infrastructure.  In addition this approach does not provide key
+   capabilities such as multi-hypervisor support, integrated security,
+   systems point-of-view or end-to-end telemetry for application placement
+   and troubleshooting.  This loosely-coupled approach forces the user to
+   tie multiple 3^rd party components together adding cost and complexity
+   in day-to-day operations as well as throughout the network lifecycle.
+   Users are forced to address multiple management points and maintain
+   version control for each of the independent components.  Software
+   network virtualization treats physical and virtual infrastructure as
+   separate entities, and denies customers a common policy framework and
+   common operational model for management, orchestration and monitoring.
+
+   Cisco has a different strategy and that is embodied in the Application
+   Centric Infrastructure.  Application Centric Infrastructure (ACI) is an
+   innovative secure architecture that delivers centralized
+   application-driven policy automation, management and visibility of
+   physical and virtual networks.  It's built upon a fabric foundation
+   that delivers best-in-class infrastructure by combining hardware,
+   software and ASIC innovations into an integrated system.
+
+   The architecture provides a common management framework for network,
+   application, security and virtualization teams -- making IT more agile
+   while reducing application deployment time.  It's built for
+   multi-tenancy ensuring proper isolation and detailed telemetry of SLAs
+   across different consumers of the infrastructure while also providing a
+   consistent security policy across both physical and virtual
+   applications.  ACI allows IT teams to offer a public cloud experience
+   and economics to their customers while maintaining the associated SLAs
+   and performance requirements for the most demanding business
+   applications.  It's an open programmable architecture with a
+   comprehensive set of APIs that enables the broadest ecosystem of
+   datacenter management and L4-7 services.  Finally, ACI enables
+   comprehensive investment protection by leveraging existing IT teams'
+   skillset and infrastructure to lower overall TCO.
+
+   I recently wrote a blog post about how [69]Network Virtualization is a
+   Different to Server Virtualization as we think about the next chapter
+   of networking.  It's key to remember that underutilized compute
+   resources created the opportunity for server virtualization.
+   Underutilization is not a problem in the network. In fact, server
+   virtualization is pushing the limits of today's network utilization and
+   driving demand for higher port counts, application and policy-driven
+   automation, and unified management of physical, virtual and cloud
+   infrastructures in a single system.  Businesses today are looking for
+   more from their investments as they turn on new services and
+   applications more quickly, in a way that is easier to manage and that
+   can scale with applications needs.
+
+   We believe that delivering those benefits requires the flexibility of
+   software coupled tightly with the performance and scalability of
+   hardware and ASICs. That's what we're delivering with our
+   [70]Application-Centric Infrastructure vision and throughout the entire
+   Unified Data Center portfolio.
+
+   Stay tuned for some exciting news from us in this area in the next few
+   months.
+
+   Tags: [71]application centric infrastructure, [72]Cisco, [73]data
+   center, [74]NSX, [75]padmasree warrior, [76]SDN, [77]VMware
+   [78]Leave a comment
+
+9 Comments.
+
+     August 30, 2013 at 2:54 am
+   [javascript]
+   Reputation
+
+   This meter represents your reputation at a 100% scale based on your
+   level of participation on the site.
+   [79]Find out more
+
+   Dear Ms. Warrior
+
+   Thanks a lot! Great wrap up and makes loads of sense. Being a network
+   engineer, what I fundamentally never understood is how on earth would a
+   software-only approach work in the first place?! Your typically lucid
+   commentary addresses the same. Application centric Infrastructure
+   indeed makes sense from a point of view of scalability and as an answer
+   to "what is required as infrastructure to support my apps and
+   scalability?"
+
+   As virtualization keeps evolving in different flavours, questions about
+   Application Centric management of Cloud services are also being asked,
+   especially as related to managing complex applications and workloads in
+   the clouds which require automation of timely infrastructure
+   reconfiguration. Do you envisage Cisco's vision of ACI to also include
+   addressing of similar scenarios please?
+
+   Thank you!
+
+   Best Regards
+   santanu
+
+   Vote    0 likes
+   [80]Reply
+
+
+
+   [81]Ricky [82]August 30, 2013 at 7:48 am
+
+   "what is required as infrastructure to support my apps and
+   scalability?"-It is a great ACI question. Hope Ms. Warrior an help.
+
+   Another great question would be: How RJ's 10G-HDPP-(High Density Patch
+   Panel)can help the ACI?
+
+   For Ms Warrior, it may involve with "The Controllbility of the Coupled
+   System". For HDPP, it is an integration of the ACI.
+   Why Cisco not try?
+
+   Vote    0 likes
+   [83]Reply
+
+
+
+   [84]Keith Townsend [85]August 30, 2013 at 10:08 am
+
+   I read this at 2:00 AM and wanted to re-read it before I posted a
+   comment. I'm not completely sold on VMware NSX for network
+   virtualization as it is yet to be even released. However, I'd like to
+   hear some clarity around your statement that software based network
+   virtualization doesn't support multiple hypervisors and doesn't scale.
+
+   As I understand it PayPal (48th most visited site on the Internet) uses
+   Nicira v3.0 which tells me that it scales and they have over a combined
+   60,000 cores of ESXi and KVM running on their, I'm assuming virtualized
+   network. I see this as a discrepancy between Cisco and the Software
+   Defined industry (VMware/Nicira). As one of those bloggers that have
+   been questioning the strength of VMware/Cisco relationship, I'd like to
+   see specifics around these claims.
+
+   Vote    0 likes
+   [86]Reply
+
+
+
+   [87]Robert [88]August 31, 2013 at 5:19 am
+
+   During the VMworld keynote, CITI, eBay and GE attested to their
+   deployments of Nicira and its capabilities - scale being one of several
+   discussed. This appears to conflict with your statement "It doesn't
+   scale" among others. Can you offer some context and clarify what you
+   meant here and why it's scaled so well with these very large customer
+   deployments?
+
+   Vote    0 likes
+   [89]Reply
+
+     * John [90]September 1, 2013 at 7:09 am
+       "During the VMworld keynote, CITI, eBay and GE attested to their
+       deployments of Nicira and its capabilities - scale being one of
+       several discussed" - No they did not. I attended the keynote. They
+       talked about VMware in general, not Nicira. They use ESX heavily,
+       but not yet Nicira (I asked).
+       In any case, the future is public cloud, not on-prem components
+       like Nicira. Witness AWS's remarkable growth. VMware has taken the
+       right step by now investing in vCHS. That is the right bet for the
+       future, not Nicira.
+       Vote    0 likes
+       [91]Reply
+
+     * [92]Keith Townsend [93]September 1, 2013 at 8:25 pm
+       John, I as at Scott Carlson's OpenStack session on on Paypal's
+       experience integrating ESXi, KVM on OpenStack over their Nicira
+       based network. He specifically said they were running Nicira v. 3.
+       Vote    0 likes
+       [94]Reply
+
+     * Nicolas MICHEL [95]September 4, 2013 at 12:38 am
+       Anyway Rackspace is using Nicira :) So yeah I guess it scales ...
+       :( )
+       Vote    0 likes
+       [96]Reply
+
+
+
+   [97]Kyriakos Kaimis [98]September 3, 2013 at 9:19 pm
+
+   I attended the session as well and all three companies spoke about
+   VMware nothing specific about the VMware NSX. In addition, the message
+   about NSX was not clear define. It seems promising but the question is
+   "Can this be possible today?"
+
+   Vote    0 likes
+   [99]Reply
+
+
+
+   john [100]September 18, 2013 at 1:27 pm
+
+   This brings up several issues for me surrounding virtualized network
+   components that I haven't yet seen addressed. The first being how do
+   software-implemented network functions stackup up against
+   ASIC-implemented network functions in terms of performance? Is a VEM,
+   for example, faster than a linecard? I'm sure in terms of east-west
+   traffic it's as fast if not faster, but what about traffic exiting and
+   leaving the area served by the VEMS - north/south traffic?
+
+   Anyone who has worked with cisco equipment has seen that the biggest
+   advancements in terms of performance often happen when functions are
+   moved from software to custome hardware. So if those are moved back
+   into software, isn't that a step back in time?
+
+   So yes idle compute cycles are an opportunity to virtualize, but the
+   just doesn't extend logically to the network. Unused bandwidth isn't an
+   opportunity to virtualize network components.
+
+   However, when all you have is a hammer, as the saying goes, everything
+   looks like a nail. Or a cloud in this case. So it seems like what to
+   virtualize and where to leverage hardware is a topic not yet hashed
+   out.
+
+   Vote    0 likes
+   [101]Reply
+
+Leave a Reply
+
+   [102]Click here to cancel reply.
+
+   We'd love to hear from you! To earn points and badges for participating
+   in the conversation, join [103]Cisco Social Rewards. Your comment(s)
+   will appear instantly on the live site. Spam, promotional and
+   derogatory comments will be removed.
+   Earn badges for your comments. Start today! Creating an account is fast
+   and easy.
+   [104]Learn More.
+
+   Already a rewards member? [105]Log In
+
+   ______________________ Name
+
+   ______________________ Mail (will not be published)
+
+   ______________________ Website (please include "http://")
+
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Submit Comment
+
+   [_]  Notify me of follow-up comments via email
+
+     * Subscribe Now ____________________ Submit
+       RSS Feed
+     *
+          + [106]LinkedIn
+          + [107]Google+
+          + [108]Pinterest
+          + [109]SlideShare
+          + [110]News@Cisco
+          + [111]Twitter
+          + [112]Facebook
+          + [113]YouTube
+          + [114]Flickr
+          + [115]More ->
+     * [116]Learn More
+       Already a rewards member? [117]Log In
+     * Blogs at a Glance
+          + [118]Most
+            Recent
+          + [119]Most
+            Commented
+          + [120]Popular
+       [121]How can the Internet of Everything Improve Our World?
+       [122]Mary Anne Petrillo | 04 Oct 2013
+       ([123]0 Comments)
+       [124]Tweet
+       [125]Sports & Entertainment, the Internet of Things, and the
+       Internet of Everything
+       [126]Chris White | 04 Oct 2013
+       ([127]0 Comments)
+       [128]Tweet
+       [129]Cisco Partners Recognized for Promoting Achievement in K-12
+       Education
+       [130]Alexis Raymond | 04 Oct 2013
+       ([131]0 Comments)
+       [132]Tweet
+       [133]Ender's Game - Coming to a Town Near You
+       [134]Adrian den Hartog | 04 Oct 2013
+       ([135]5 Comments)
+       [136]Tweet
+       [137]Behind the Scenes of Cisco Live Orlando
+       [138]Tamara Gardner | 04 Oct 2013
+       ([139]2 Comments)
+       [140]Tweet
+       [141]More Posts >
+       [142]How the World's Most Advanced Network Processor is Making the
+       Internet of Everything Possible
+       <[143]Nikhil Jayaram | 12 Sep 2013
+       ([144]26 Comments)
+       [145]Tweet
+       [146]Introducing Kvasir
+       <[147]Kurt Grutzmacher | 23 Sep 2013
+       ([148]16 Comments)
+       [149]Tweet
+       [150]Get Your Network Ready For iOS7
+       <[151]Jeevan Patil | 13 Sep 2013
+       ([152]11 Comments)
+       [153]Tweet
+       [154]#ExecInsights: Defend, Discover and Remediate with Security
+       Services
+       <[155]Chris Young | 10 Sep 2013
+       ([156]8 Comments)
+       [157]Tweet
+       [158]Tick Tock Goes the Server Clock
+       <[159]Todd Brannon | 10 Sep 2013
+       ([160]8 Comments)
+       [161]Tweet
+       [162]How the World's Most Advanced Network Processor is Making the
+       Internet of Everything Possible
+       [163]Nikhil Jayaram | 12 Sep 2013
+       ([164]26 Comments)
+       [165]Tweet
+       [166]Introducing Kvasir
+       [167]Kurt Grutzmacher | 23 Sep 2013
+       ([168]16 Comments)
+       [169]Tweet
+       [170]The Fifth Step to Enterprise Mobility: Defending Your Data
+       [171]Prashanth Shenoy | 11 Sep 2013
+       ([172]0 Comments)
+       [173]Tweet
+       [174]Cisco Announces Intent to Acquire WHIPTAIL
+       [175]Hilton Romanski | 10 Sep 2013
+       ([176]7 Comments)
+       [177]Tweet
+       [178]Get Your Network Ready For iOS7
+       [179]Jeevan Patil | 13 Sep 2013
+       ([180]11 Comments)
+       [181]Tweet
+     *
+
+       IFRAME:
+       [182]http://www.youtube.com/embed/wYTIwm63pSs?list=PLBC4D7F497D395F
+       36&hl=en_US
+
+     * [183]Ad Banner
+     * Archives [Select........]
+     *
+          + What We're Reading
+          + [184]Blade Watch
+          + [185]Byte and Switch
+          + [186]ComputerWorld
+          + [187]CSO
+          + [188]GigaOm
+          + [189]InfoWorld
+          + [190]Network World
+          + [191]TechRepublic
+          + [192]The Data Center Journal
+          + Technology
+          + [193]Borderless Networks
+          + [194]Collaboration
+          + [195]Data Center and Cloud
+          + [196]Mobility
+          + [197]Security
+          + [198]Small Business
+          + [199]SP360:Service Provider
+          + [200]Video
+          + Industries
+          + [201]Education
+          + [202]Financial Services
+          + [203]Government
+          + [204]Healthcare
+          + [205]Manufacturing
+          + [206]Retail
+          + Support
+          + [207]Cisco Support Community
+          + Partners
+          + [208]Channels
+          + [209]Cisco Developer Network
+          + More From Cisco
+          + [210]Architect & DE Discussions
+          + [211]Connected Life Exchange
+          + [212]Digital and Social
+          + [213]High Peformance Computing Networking
+          + [214]Inside Cisco IT
+          + [215]Open at Cisco
+          + [216]Perspectives
+          + [217]TechWiseTV
+          + Corporate/News
+          + [218]The Platform
+          + [219]Corporate Social Responsibility
+          + [220]High Tech Policy
+          + [221]Inclusion and Diversity
+          + [222]Internet of Everything
+          + Countries and Regions
+          + [223]Brazil
+          + [224]Canada
+               o [225]English
+               o [226]French
+          + [227]Emerging Countries
+          + [228]France
+               o [229]Réseaux
+               o [230]Data Center
+               o [231]Green IT
+               o [232]IPv6
+               o [233]Collaboration
+               o [234]Sécurité
+               o [235]Smart Cities
+          + [236]Germany
+          + [237]Italy
+          + [238]Japan
+          + [239]Korea
+          + [240]Latin America
+          + [241]Netherlands
+          + [242]Poland
+          + [243]Portugal
+          + [244]Russia
+          + [245]Spain
+       [246]Contacts | [247]Feedback | [248]Help | [249]Site Map |
+       [250]Terms & Conditions | [251]Privacy Statement | [252]Cookie
+       Policy | [253]Trademarks
+       Legal Disclaimer
+       Some of the individuals posting to this site, including the
+       moderators, work for Cisco Systems. Opinions expressed here and in
+       any corresponding comments are the personal opinions of the
+       original authors, not of Cisco. The content is provided for
+       informational purposes only and is not meant to be an endorsement
+       or representation by Cisco or any other party. This site is
+       available to the public. No information you consider confidential
+       should be posted to this site. By posting you agree to be solely
+       responsible for the content of all information you contribute, link
+       to, or otherwise upload to the Website and release Cisco from any
+       liability related to your use of the Website. You also grant to
+       Cisco a worldwide, perpetual, irrevocable, royalty-free and
+       fully-paid, transferable (including rights to sublicense) right to
+       exercise all copyright, publicity, and moral rights with respect to
+       any original content you provide. The comments are moderated.
+       Comments will appear as soon as they are approved by the moderator.
+       [254]Switch to our mobile site
+
+References
+
+   Visible links
+   1. http://blogs.cisco.com/feed/
+   2. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/feed/
+   3. http://blogs.cisco.com/csr/how-can-one-cisco-intern-impact-the-world/
+   4. http://blogs.cisco.com/video/collaboration-solutions-choose-the-right-ones-for-productive-effective-teleworking/
+   5. http://blogs.cisco.com/
+   6. http://www.cisco.com/
+   7. https://twitter.com/share
+   8. http://blogs.cisco.com/borderless
+   9. http://blogs.cisco.com/collaboration
+  10. http://blogs.cisco.com/datacenter
+  11. http://blogs.cisco.com/wireless
+  12. http://blogs.cisco.com/security
+  13. http://blogs.cisco.com/smallbusiness
+  14. http://blogs.cisco.com/sp
+  15. http://blogs.cisco.com/video
+  16. http://blogs.cisco.com/education
+  17. http://blogs.cisco.com/financialservices
+  18. http://blogs.cisco.com/government
+  19. http://blogs.cisco.com/healthcare
+  20. http://blogs.cisco.com/manufacturing
+  21. http://blogs.cisco.com/retail
+  22. https://supportforums.cisco.com/blogs/
+  23. http://blogs.cisco.com/channels
+  24. http://developer.cisco.com/web/events-community/blogs
+  25. http://blogs.cisco.com/getyourbuildon
+  26. http://blogs.cisco.com/cle
+  27. http://blogs.cisco.com/socialmedia
+  28. http://blogs.cisco.com/performance
+  29. http://blogs.cisco.com/ciscoit
+  30. http://blogs.cisco.com/openatcisco
+  31. http://blogs.cisco.com/perspectives
+  32. http://blogs.cisco.com/cin
+  33. http://blogs.cisco.com/news
+  34. http://blogs.cisco.com/csr
+  35. http://blogs.cisco.com/gov
+  36. http://blogs.cisco.com/diversity
+  37. http://blogs.cisco.com/ioe
+  38. http://gblogs.cisco.com/br/
+  39. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/
+  40. http://canadablog.cisco.com/
+  41. http://ciscocanadafr.wordpress.com/
+  42. http://blogs.cisco.com/emerging
+  43. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/
+  44. http://gblogs.cisco.com/fr-reseaux/blog
+  45. http://gblogs.cisco.com/fr-datacenter/blog
+  46. http://gblogs.cisco.com/fr-greenit/blog
+  47. http://gblogs.cisco.com/fr-ipv6/blog
+  48. http://gblogs.cisco.com/fr-collaboration/blog
+  49. http://gblogs.cisco.com/fr-security/blog
+  50. http://gblogs.cisco.com/fr-smartcities/blog
+  51. http://gblogs.cisco.com/de
+  52. http://gblogs.cisco.com/it
+  53. http://gblogs.cisco.com/jp/
+  54. http://ciscokrblog.com/
+  55. http://cisco-latinoamerica.com/
+  56. http://gblogs.cisco.com/nl
+  57. http://gblogs.cisco.com/pl
+  58. http://gblogs.cisco.com/pt
+  59. http://gblogs.cisco.com/ru
+  60. http://gblogs.cisco.com/es
+  61. http://blogs.cisco.com/
+  62. http://blogs.cisco.com/category/datacenter/
+  63. http://newsroom.cisco.com/padmasree-warrior?articleId=34150
+  64. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comments
+  65. http://www.cisco.com/web/solutions/trends/cloud/index.html?CAMPAIGN=cloud+story&COUNTRY_SITE=us&POSITION=social+media&REFERRING_SITE=cisco+blog&CREATIVE=cloud+keyword
+  66. http://newsroom.cisco.com/press-release-content?type=webcontent&articleId=1252300
+  67. http://www.cisco.com/web/solutions/trends/cloud/index.html?CAMPAIGN=cloud+story&COUNTRY_SITE=us&POSITION=social+media&REFERRING_SITE=cisco+blog&CREATIVE=cloud+keyword
+  68. http://www.cisco.com/web/solutions/trends/open_network_environment/index.html
+  69. http://blogs.cisco.com/news/three-truths-about-networking-the-next-chapter/
+  70. http://blogs.cisco.com/news/application-centric-infrastructure-a-new-era-in-the-data-center/
+  71. http://blogs.cisco.com/tag/application-centric-infrastructure/
+  72. http://blogs.cisco.com/tag/cisco/
+  73. http://blogs.cisco.com/tag/data-center/
+  74. http://blogs.cisco.com/tag/nsx/
+  75. http://blogs.cisco.com/tag/padmasree-warrior/
+  76. http://blogs.cisco.com/tag/sdn/
+  77. http://blogs.cisco.com/tag/vmware/
+  78. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#respond
+  79. http://blogs.cisco.com/rewards-about
+  80. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=784328#respond
+  81. http://www.rj-enterprises.com/
+  82. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-784633
+  83. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=784633#respond
+  84. http://virtualizedgeek.com/
+  85. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-784684
+  86. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=784684#respond
+  87. http://www.l4net.com/
+  88. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-785635
+  89. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=785635#respond
+  90. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-786545
+  91. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=786545#respond
+  92. http://virtualizedgeek.com/
+  93. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-787353
+  94. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=787353#respond
+  95. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-790855
+  96. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=790855#respond
+  97. http://www.customonline.com/
+  98. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-790722
+  99. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=790722#respond
+ 100. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#comment-833286
+ 101. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?replytocom=833286#respond
+ 102. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#respond
+ 103. http://blogs.cisco.com/rewards-about
+ 104. http://blogs.cisco.com/rewards-about
+ 105. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+ 106. http://www.linkedin.com/company/cisco
+ 107. https://plus.google.com/106092229730683979920
+ 108. http://pinterest.com/ciscosystems/
+ 109. http://www.slideshare.net/ciscosystems
+ 110. http://newsroom.cisco.com/dlls/index.html
+ 111. http://twitter.com/CiscoDC
+ 112. http://www.facebook.com/ciscodc
+ 113. http://youtubecisco.com/datacenter
+ 114. http://www.flickr.com/photos/25679159@N03/
+ 115. http://socialmedia.cisco.com/
+ 116. http://blogs.cisco.com/rewards-about
+ 117. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+ 118. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#tab1
+ 119. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#tab2
+ 120. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/#tab3
+ 121. http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/
+ 122. http://blogs.cisco.com/author/maryannepetrillo/
+ 123. http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/#comments
+ 124. https://twitter.com/share
+ 125. http://blogs.cisco.com/news/sportsandioe/
+ 126. http://blogs.cisco.com/author/chriswhite/
+ 127. http://blogs.cisco.com/news/sportsandioe/#comments
+ 128. https://twitter.com/share
+ 129. http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/
+ 130. http://blogs.cisco.com/author/alexisraymond/
+ 131. http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/#comments
+ 132. https://twitter.com/share
+ 133. http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/
+ 134. http://blogs.cisco.com/author/adriandenhartog/
+ 135. http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/#comments
+ 136. https://twitter.com/share
+ 137. http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/
+ 138. http://blogs.cisco.com/author/tamaragardner/
+ 139. http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/#comments
+ 140. https://twitter.com/share
+ 141. http://blogs.cisco.com/2013/page/2
+ 142. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/
+ 143. http://blogs.cisco.com/author/nikhiljayaram/
+ 144. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments
+ 145. https://twitter.com/share
+ 146. http://blogs.cisco.com/security/introducing-kvasir/
+ 147. http://blogs.cisco.com/author/kurtgrutzmacher/
+ 148. http://blogs.cisco.com/security/introducing-kvasir/#comments
+ 149. https://twitter.com/share
+ 150. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/
+ 151. http://blogs.cisco.com/author/jeevanpatil/
+ 152. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments
+ 153. https://twitter.com/share
+ 154. http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/
+ 155. http://newsroom.cisco.com/christopher-young?articleId=614047
+ 156. http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/#comments
+ 157. https://twitter.com/share
+ 158. http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/
+ 159. http://blogs.cisco.com/author/toddbrannon/
+ 160. http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/#comments
+ 161. https://twitter.com/share
+ 162. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/
+ 163. http://blogs.cisco.com/author/nikhiljayaram/
+ 164. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments
+ 165. https://twitter.com/share
+ 166. http://blogs.cisco.com/security/introducing-kvasir/
+ 167. http://blogs.cisco.com/author/kurtgrutzmacher/
+ 168. http://blogs.cisco.com/security/introducing-kvasir/#comments
+ 169. https://twitter.com/share
+ 170. http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/
+ 171. http://blogs.cisco.com/author/PrashanthShenoy/
+ 172. http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/#comments
+ 173. https://twitter.com/share
+ 174. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/
+ 175. http://blogs.cisco.com/author/hilton-romanski/
+ 176. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/#comments
+ 177. https://twitter.com/share
+ 178. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/
+ 179. http://blogs.cisco.com/author/jeevanpatil/
+ 180. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments
+ 181. https://twitter.com/share
+ 182. http://www.youtube.com/embed/wYTIwm63pSs?list=PLBC4D7F497D395F36&hl=en_US
+ 183. http://iotwf.com/sign-up.html
+ 184. http://www.bladewatch.com/
+ 185. http://www.networkcomputing.com/blogs.asp
+ 186. http://blogs.computerworld.com/servers
+ 187. http://blogs.csoonline.com/blog_categories/infrastructure/data_center
+ 188. http://gigaom.com/
+ 189. http://www.infoworld.com/?source=nav_BLOGS
+ 190. http://www.networkworld.com/blogs/
+ 191. http://blogs.techrepublic.com.com/
+ 192. http://datacenterjournal.com/index.php
+ 193. http://blogs.cisco.com/borderless
+ 194. http://blogs.cisco.com/collaboration
+ 195. http://blogs.cisco.com/datacenter
+ 196. http://blogs.cisco.com/wireless
+ 197. http://blogs.cisco.com/security
+ 198. http://blogs.cisco.com/smallbusiness
+ 199. http://blogs.cisco.com/sp
+ 200. http://blogs.cisco.com/video
+ 201. http://blogs.cisco.com/education
+ 202. http://blogs.cisco.com/financialservices
+ 203. http://blogs.cisco.com/government
+ 204. http://blogs.cisco.com/healthcare
+ 205. http://blogs.cisco.com/manufacturing
+ 206. http://blogs.cisco.com/retail
+ 207. https://supportforums.cisco.com/blogs/
+ 208. http://blogs.cisco.com/channels
+ 209. http://developer.cisco.com/web/events-community/blogs
+ 210. http://blogs.cisco.com/getyourbuildon
+ 211. http://blogs.cisco.com/cle
+ 212. http://blogs.cisco.com/socialmedia
+ 213. http://blogs.cisco.com/performance
+ 214. http://blogs.cisco.com/ciscoit
+ 215. http://blogs.cisco.com/openatcisco
+ 216. http://blogs.cisco.com/perspectives
+ 217. http://blogs.cisco.com/cin
+ 218. http://blogs.cisco.com/news
+ 219. http://blogs.cisco.com/csr
+ 220. http://blogs.cisco.com/gov
+ 221. http://blogs.cisco.com/diversity
+ 222. http://blogs.cisco.com/ioe
+ 223. http://gblogs.cisco.com/br/
+ 224. http://canadablog.cisco.com/
+ 225. http://canadablog.cisco.com/
+ 226. http://ciscocanadafr.wordpress.com/
+ 227. http://blogs.cisco.com/emerging
+ 228. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/
+ 229. http://gblogs.cisco.com/fr-reseaux/blog
+ 230. http://gblogs.cisco.com/fr-datacenter/blog
+ 231. http://gblogs.cisco.com/fr-greenit/blog
+ 232. http://gblogs.cisco.com/fr-ipv6/blog
+ 233. http://gblogs.cisco.com/fr-collaboration/blog
+ 234. http://gblogs.cisco.com/fr-security/blog
+ 235. http://gblogs.cisco.com/fr-smartcities/blog
+ 236. http://gblogs.cisco.com/de
+ 237. http://gblogs.cisco.com/it/
+ 238. http://gblogs.cisco.com/jp/
+ 239. http://ciscokrblog.com/
+ 240. http://cisco-latinoamerica.com/
+ 241. http://gblogs.cisco.com/nl
+ 242. http://gblogs.cisco.com/pl
+ 243. http://gblogs.cisco.com/pt
+ 244. http://gblogs.cisco.com/ru
+ 245. http://gblogs.cisco.com/es
+ 246. http://www.cisco.com/web/siteassets/contacts/index.html
+ 247. http://tools.cisco.com/cdc/feedbk/public/FeedbackAction.cdcfdb
+ 248. http://www.cisco.com/web/help/index.html
+ 249. http://www.cisco.com/web/siteassets/sitemap/index.html
+ 250. http://www.cisco.com/web/siteassets/legal/terms_condition.html
+ 251. http://www.cisco.com/web/siteassets/legal/privacy.html
+ 252. http://www.cisco.com/web/siteassets/legal/privacy.html#cookies
+ 253. http://www.cisco.com/web/siteassets/legal/trademark.html
+ 254. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/?wpmp_switcher=mobile
+
+   Hidden links:
+ 255. mailto:?subject=Cisco%20Blog%20E-Mail:Limitations%20of%20a%20Software-Only%20Approach%20to%20Data%20Center%20Networking&body=I%20saw%20this%20post%20on%20Cisco%20Data%20Center%20and%20Cloud%20blog%20and%20thought%20you%20should%20read%20it.%0A%0ALimitations%20of%20a%20Software-Only%20Approach%20to%20Data%20Center%20Networking%0A%0Ahttp://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/%0A%0A****Disclaimer****%0A%0ACisco%20is%20not%20responsible%20for%20the%20content%20of%20this%20email,%20and%20its%20contents%20do%20not%20necessarily%20reflect%20Cisco%E2%80%99s%20views%20or%20opinions.%20Cisco%20has%20not%20verified%20the%20email%20address%20or%20name%20of%20the%20sender.
+ 256. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/
+ 257. http://blogs.cisco.com/rewards-profile/22129
+ 258. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+ 259. http://feeds.feedburner.com/CiscoBlogDataCenterNetworks
+ 260. http://blogs.cisco.com/datacenter/limitations-of-a-software-only-approach-to-data-center-networking/
+ 261. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php

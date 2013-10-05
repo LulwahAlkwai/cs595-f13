@@ -1,0 +1,520 @@
+   #[1]Harder, Better, Faster, Stronger » Feed [2]Harder, Better, Faster,
+   Stronger » Comments Feed [3]Harder, Better, Faster, Stronger » Finding
+   Collisions Comments Feed [4]OpenMP and The N Queens Problem [5]Herding
+   Cats [6]alternate [7]alternate [8]Harder, Better, Faster, Stronger
+   [9]WordPress.com
+
+[10]Harder, Better, Faster, Stronger
+
+   Explorations in better, faster, stronger code.
+     * [11]Home
+     * [12]About the author
+     * [13]About this blog
+
+
+Finding Collisions
+
+   Some time ago, a friend was trying to find an efficient way (storage
+   and time complexity) to find collisions for a (secure) hash function.
+   Hashing random keys until you get a collision is reminiscent of von
+   Mises' [14]birthday paradox.
+
+   In is simplest form, the birthday paradox states that, amongst
+   (randomly) gathered people, the probability that (at least) two share a
+   birthday increases counter-intuitively fast with the number of gathered
+   people. This mean that even if your hash function is random (i.e.,
+   strong), you may not have to try a very large number of random keys
+   before finding collisions. Or does it?
+
+   Let us forget about people. Let us consider hash functions. Suppose we
+   have d , the number of possible values the hash will take. Typically,
+   we have a large number, say d=2^{128} . Let n be the number of keys to
+   hash. The probability of not having a collision after n hashes is:
+
+     \displaystyle Q(n,d)=\frac{d}{d} \frac{d-1}{d}\frac{d-2}{d} \cdots
+         \frac{d-(n-2)}{d} \frac{d-(n-1)}{d} = \frac{d!}{(d-n)!d^n}
+
+   (Because at first, you have zero items drawn so far, and there are d
+   hashes still free, thus the probability is d/d=1 of not having a
+   collision. Then you draw one, and have (d-1)/d chances of not having a
+   collision, since d-1 are still available, and so on until you draw the
+   n th hash, and you have d-(n-1) keys already drawn from a possible set
+   of d , giving you a chance of (d-(n-1))/d of not having a collision.)
+   And therefore, the probability of having a collision is simply:
+
+                              P(n,d)=1-Q(n,d) .
+
+   Whenever d and n are largish, we can safely approximate using:
+
+           \displaystyle P(n,d)\approx{}1-e^{-\frac{n(n-1)}{2d}} .
+
+   So, knowing d (for example d=2^{128} ), how large does n have to be to
+   have a collision? OK, let us say only to have a probability \alpha of
+   collision?
+
+   Well, we just solve
+
+                                P(n,d)=\alpha
+
+   for n .
+
+   After a bit of pain, we find
+
+     \displaystyle n=\frac{1}{2}\left(\sqrt{1-8d\ln(1-\alpha)}\right) .
+
+                                      *
+                                     * *
+
+   OK, let's say now that we want a 50% chance of finding a collision, how
+   large should n be? Well, now we have \alpha=0.5 , d=2^{128} , and we
+   solve for n , finding that
+
+      \displaystyle n=\frac{1}{2}\left(\sqrt{1-8d\ln(1-\alpha)}\right)
+
+                                \displaystyle
+        n=\frac{1}{2}\left(\sqrt{1-8(2^{128})\ln(\frac{1}{2})}\right)
+
+   and finally
+
+                \displaystyle n\approx{}2.17\times{}10^{19} .
+
+   We observe that n\approx 1.17 \sqrt{d} (for \alpha=\frac{1}{2} ,
+   anyways).
+
+                                      *
+                                     * *
+
+   Therefore, before reasonably expecting a collision with probability
+   \alpha=\frac{1}{2} using d=2^{128} , we would have to hash about
+   2.17\times{}10^{19} keys, which... may take a while.
+
+Share this:
+
+     * [15]StumbleUpon
+     * [16]Digg
+     * [17]Reddit
+     * [18]Twitter
+     * [19]More
+     *
+
+     * [20]Facebook
+     * [21]Email
+     *
+     *
+
+Like this:
+
+   Like Loading...
+
+   This entry was posted on Friday, March 30th, 2012 at 22:31 pm and is
+   filed under [22]algorithms, [23]Mathematics. You can follow any
+   responses to this entry through the [24]RSS 2.0 feed. You can [25]leave
+   a response, or [26]trackback from your own site.
+
+Post navigation
+
+   [27]« Previous Post [28]Next Post »
+
+5 Responses to Finding Collisions
+
+    1. [29]Daniel Lemire says:
+       [30]June 13, 2013 at 13:00 pm
+       Interesting.
+       This assumes, of course, that hash values are truly random over
+       128-bit. That's a strong requirement.
+       A slightly more realistic requirement would be to assume 32-bit
+       hash values (as in, for example, Java). Your formula then gives me
+       77163. Not quite as good, right?
+       But what about truly random hashing?
+       I would argue that there is no such thing in practice. For example,
+       the best we ever do in actual software over strings is to have
+       pairwise independence (i.e., strong universality). For a
+       mathematical justification, see...
+       Daniel Lemire, The universality of iterated hashing over
+       variable-length strings, Discrete Applied Mathematics 160 (4-5),
+       2012.
+       [31]http://arxiv.org/abs/1008.1715
+       and
+       Daniel Lemire and Owen Kaser, Recursive n-gram hashing is pairwise
+       independent, at best, Computer Speech & Language 24 (4), pages
+       698-710, 2010.
+       [32]http://arxiv.org/abs/0705.4676
+       Formally speaking, some people get 4-wise and 5-wise independence
+       using tabulation, but I would argue that just getting "random
+       hashing" (at all!) in software is quite something. I haven't seen
+       tabulation hashing ever used...
+       The Ruby and Perl languages do have random hashing... but that is
+       about it.
+       Most software uses deterministic hashing and, in that case, the
+       probability of having a collision is either 1 or 0.
+       Final plug: Strongly universal hashing over strings is quite
+       fast... see [33]http://arxiv.org/abs/1202.4961 But it is
+       inconvenient because... well, you need to read my paper to see the
+       downside. ;-)
+       [34]Reply
+    2. [35]Steven Pigeon says:
+       [36]June 14, 2013 at 23:40 pm
+       That's mostly the point: to get good hashing, you need more bits,
+       even if it's strong hashing. But that's intuitive in some sense:
+       you would'nt be surprised to need very few trials to get collisions
+       on, say, 4 bits, even though you throw a perfectly random dice to
+       get your bits. If you have a very small number of bits, collisions
+       are easy to understand. It's when the number of bits grows that the
+       result counter-intuitive. You kind of expect the number of trials
+       needed to get a collision to be somewhat linear in d and instead
+       it's O(\sqrt(d)) . That's the core of von Mises' argument.
+       (and yes, that's quite a bit of shameless plugs.)
+       [37]Reply
+    3. [38]Daniel Lemire says:
+       [39]June 17, 2013 at 12:33 pm
+       Indeed, it is an interesting result.
+       My own point (and sorry for the plugs) is that actual results using
+       actual random hash functions may differ substantially from your
+       estimate because hash values are not really random.
+       Could be better, could be worse.
+       It is also maybe interesting to note that most hash values aren't
+       random at all! Cryptographic hash functions are certainly not
+       random... they are very much deterministic.
+       [40]Reply
+    4. [41]Daniel Lemire says:
+       [42]June 17, 2013 at 14:51 pm
+       I have formally my thoughts on this issue as a blog post:
+       Hashing and the Birthday paradox: a cautionary tale
+       [43]http://lemire.me/blog/archives/2013/06/17/hashing-and-the-birth
+       day-paradox-cautionary-tale/
+       Thanks for the nice idea.
+       [44]Reply
+    5. [45]Hashing and the Birthday paradox: a cautionary tale says:
+       [46]June 17, 2013 at 15:24 pm
+       [...] to the Birthday paradox. How bad is it? Assuming that hashing
+       is perfectly random, Steven Pigeon worked out some of the
+       mathematics. To have a significant (50%) risk to find a collision
+       when using 128-bit [...]
+       [47]Reply
+
+Leave a Reply [48]Cancel reply
+
+   Enter your comment here...
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Fill in your details below or click an icon to log in:
+     *
+     *
+     *
+     *
+     *
+
+       IFRAME: [49]googleplus-sign-in
+
+   [50]Gravatar
+   Email (required) (Address never made public)
+   ____________________
+   Name (required)
+   ____________________
+   Website
+   ____________________
+   WordPress.com Logo
+
+   You are commenting using your WordPress.com account.
+   ( [51]Log Out / [52]Change )
+   Twitter picture
+
+   You are commenting using your Twitter account.
+   ( [53]Log Out / [54]Change )
+   Facebook photo
+
+   You are commenting using your Facebook account.
+   ( [55]Log Out / [56]Change )
+   Google+ photo
+
+   You are commenting using your Google+ account.
+   ( [57]Log Out / [58]Change )
+   [59]Cancel
+
+   Connecting to %s
+
+   [_] Notify me of follow-up comments via email.
+
+   Post Comment
+
+     * [60]Le Tweet
+          + The Role of Science and Mathematics in Software Development
+            [61]youtube.com/watch?v=Q12QvB... via
+            [62]sebinsphilip.wordpress.com/2013/10/04/wor...
+            [63]8 hours ago
+          + 24 heures d'honnêteté totale sur Facebook : Il perd la moitié
+            de ses amis [64]eurobuzz.net/24-heures-dhon... (merci @ gonzo
+            pour le link) [65]1 day ago
+          + [66]#twitter How do I disable the picture autoshow in the
+            browser-based version? Now I have like 2 tweets per page
+            [67]1 day ago
+          + Asteroids - The Good the Bad and the Ugly
+            [68]youtube.com/watch?v=Ake18D... [69]2 days ago
+          + RT @[70]dubejf: Double-Checked Locking Is Fixed In C++11
+            [71]preshing.com/20130930/doubl... [72]3 days ago
+     * Recent Posts
+          + [73]Two Features I'd Like to See in C and C++
+          + [74]Euclid, Primes numbers, and a Bit of Algorithm Analysis
+            (Part IV)
+          + [75]Hash Table and Magic (Relatively Primes) Numbers
+          + [76]Amicable Numbers (Part II)
+          + [77]The Sieve of Eratosthenes
+     * Categories [Select Category.............]
+     * Archives
+          + [78]October 2013
+          + [79]September 2013
+          + [80]August 2013
+          + [81]July 2013
+          + [82]June 2013
+          + [83]May 2013
+          + [84]April 2013
+          + [85]March 2013
+          + [86]February 2013
+          + [87]January 2013
+          + [88]August 2012
+          + [89]July 2012
+          + [90]June 2012
+          + [91]May 2012
+          + [92]April 2012
+          + [93]March 2012
+          + [94]February 2012
+          + [95]January 2012
+          + [96]December 2011
+          + [97]November 2011
+          + [98]October 2011
+          + [99]September 2011
+          + [100]August 2011
+          + [101]July 2011
+          + [102]June 2011
+          + [103]May 2011
+          + [104]April 2011
+          + [105]March 2011
+          + [106]February 2011
+          + [107]January 2011
+          + [108]December 2010
+          + [109]November 2010
+          + [110]October 2010
+          + [111]September 2010
+          + [112]August 2010
+          + [113]July 2010
+          + [114]June 2010
+          + [115]May 2010
+          + [116]April 2010
+          + [117]March 2010
+          + [118]February 2010
+          + [119]January 2010
+          + [120]December 2009
+          + [121]November 2009
+          + [122]October 2009
+          + [123]September 2009
+          + [124]August 2009
+          + [125]July 2009
+          + [126]June 2009
+          + [127]May 2009
+          + [128]April 2009
+          + [129]March 2009
+          + [130]February 2009
+          + [131]January 2009
+          + [132]December 2008
+          + [133]November 2008
+          + [134]October 2008
+          + [135]September 2008
+          + [136]August 2008
+     * Blogroll
+          + [137]DebugFailure
+          + [138]Dr Frankenstein's Lab
+          + [139]LostWebSite
+          + [140]Occasionnally Sane
+          + [141]Ofek's Visual C++ stuff
+     * RSS
+          + [142]RSS Feed
+
+   [143]The Contempt Theme.
+   [144]Blog at WordPress.com.
+
+   [145]Follow
+
+Follow "Harder, Better, Faster, Stronger"
+
+   Get every new post delivered to your Inbox.
+
+   Join 55 other followers
+
+   ____________________
+
+   Sign me up
+   [146]Powered by WordPress.com
+
+   Send to Email Address ____________________ Your Name
+   ____________________ Your Email Address ____________________
+   loading Send Email [147]Cancel
+   Post was not sent - check your email addresses!
+   Email check failed, please try again
+   Sorry, your blog cannot share posts by email.
+
+   IFRAME: [148]likes-master
+
+   %d bloggers like this:
+
+References
+
+   Visible links
+   1. http://hbfs.wordpress.com/feed/
+   2. http://hbfs.wordpress.com/comments/feed/
+   3. http://hbfs.wordpress.com/2012/03/30/finding-collisions/feed/
+   4. http://hbfs.wordpress.com/2012/03/27/openmp-and-the-n-queens-problem/
+   5. http://hbfs.wordpress.com/2012/04/10/herding-cats/
+   6. http://public-api.wordpress.com/oembed/1.0/?format=json&url=http%3A%2F%2Fhbfs.wordpress.com%2F2012%2F03%2F30%2Ffinding-collisions%2F&for=wpcom-auto-discovery
+   7. http://public-api.wordpress.com/oembed/1.0/?format=xml&url=http%3A%2F%2Fhbfs.wordpress.com%2F2012%2F03%2F30%2Ffinding-collisions%2F&for=wpcom-auto-discovery
+   8. http://hbfs.wordpress.com/osd.xml
+   9. http://wordpress.com/opensearch.xml
+  10. http://hbfs.wordpress.com/
+  11. http://hbfs.wordpress.com/
+  12. http://hbfs.wordpress.com/about-the-author/
+  13. http://hbfs.wordpress.com/about/
+  14. http://en.wikipedia.org/wiki/Birthday_problem
+  15. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?share=stumbleupon
+  16. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?share=digg
+  17. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?share=reddit
+  18. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?share=twitter
+  19. http://hbfs.wordpress.com/2012/03/30/finding-collisions/
+  20. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?share=facebook
+  21. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?share=email
+  22. http://hbfs.wordpress.com/category/algorithms/
+  23. http://hbfs.wordpress.com/category/mathematics/
+  24. http://hbfs.wordpress.com/2012/03/30/finding-collisions/feed/
+  25. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#respond
+  26. http://hbfs.wordpress.com/2012/03/30/finding-collisions/trackback/
+  27. http://hbfs.wordpress.com/2012/03/27/openmp-and-the-n-queens-problem/
+  28. http://hbfs.wordpress.com/2012/04/10/herding-cats/
+  29. http://lemire.me/blog/
+  30. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-4127
+  31. http://arxiv.org/abs/1008.1715
+  32. http://arxiv.org/abs/0705.4676
+  33. http://arxiv.org/abs/1202.4961
+  34. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?replytocom=4127#respond
+  35. http://www.stevenpigeon.com/
+  36. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-4130
+  37. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?replytocom=4130#respond
+  38. http://lemire.me/blog/
+  39. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-4138
+  40. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?replytocom=4138#respond
+  41. http://lemire.me/blog/
+  42. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-4139
+  43. http://lemire.me/blog/archives/2013/06/17/hashing-and-the-birthday-paradox-cautionary-tale/
+  44. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?replytocom=4139#respond
+  45. http://lemire.me/blog/archives/2013/06/17/hashing-and-the-birthday-paradox-cautionary-tale/
+  46. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-4140
+  47. http://hbfs.wordpress.com/2012/03/30/finding-collisions/?replytocom=4140#respond
+  48. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#respond
+  49. https://public-api.wordpress.com/connect/?googleplus-sign-in=1
+  50. https://gravatar.com/site/signup/
+  51. javascript:HighlanderComments.doExternalLogout( 'wordpress' );
+  52. http://hbfs.wordpress.com/2012/03/30/finding-collisions/
+  53. javascript:HighlanderComments.doExternalLogout( 'twitter' );
+  54. http://hbfs.wordpress.com/2012/03/30/finding-collisions/
+  55. javascript:HighlanderComments.doExternalLogout( 'facebook' );
+  56. http://hbfs.wordpress.com/2012/03/30/finding-collisions/
+  57. javascript:HighlanderComments.doExternalLogout( 'googleplus' );
+  58. http://hbfs.wordpress.com/2012/03/30/finding-collisions/
+  59. javascript:HighlanderComments.cancelExternalWindow();
+  60. http://twitter.com/steven_pigeon
+  61. http://www.youtube.com/watch?v=Q12QvBf5CKo
+  62. http://sebinsphilip.wordpress.com/2013/10/04/worst-case-upper-bounds-is-wrong-metric-to-compare-algorithms/
+  63. http://twitter.com/steven_pigeon/statuses/386265023988772864
+  64. http://www.eurobuzz.net/24-heures-dhonnetete-totale-sur-facebook-il-perd-la-moitie-de-ses-amis-3439/
+  65. http://twitter.com/steven_pigeon/statuses/385946020640587776
+  66. http://twitter.com/search?q=%23twitter
+  67. http://twitter.com/steven_pigeon/statuses/385931927955308544
+  68. http://www.youtube.com/watch?v=Ake18DGolg0
+  69. http://twitter.com/steven_pigeon/statuses/385579123227111424
+  70. http://twitter.com/dubejf
+  71. http://preshing.com/20130930/double-checked-locking-is-fixed-in-cpp11/
+  72. http://twitter.com/steven_pigeon/statuses/385192292882984960
+  73. http://hbfs.wordpress.com/2013/10/01/two-features-id-like-to-see-in-c-and-c/
+  74. http://hbfs.wordpress.com/2013/09/24/euclid-primes-numbers-and-a-bit-of-algorithm-analysis-part-iv/
+  75. http://hbfs.wordpress.com/2013/09/17/hash-table-and-magic-relatively-primes-numbers/
+  76. http://hbfs.wordpress.com/2013/09/10/amicable-numbers-part-ii/
+  77. http://hbfs.wordpress.com/2013/09/03/the-sieve-of-eratosthenes/
+  78. http://hbfs.wordpress.com/2013/10/
+  79. http://hbfs.wordpress.com/2013/09/
+  80. http://hbfs.wordpress.com/2013/08/
+  81. http://hbfs.wordpress.com/2013/07/
+  82. http://hbfs.wordpress.com/2013/06/
+  83. http://hbfs.wordpress.com/2013/05/
+  84. http://hbfs.wordpress.com/2013/04/
+  85. http://hbfs.wordpress.com/2013/03/
+  86. http://hbfs.wordpress.com/2013/02/
+  87. http://hbfs.wordpress.com/2013/01/
+  88. http://hbfs.wordpress.com/2012/08/
+  89. http://hbfs.wordpress.com/2012/07/
+  90. http://hbfs.wordpress.com/2012/06/
+  91. http://hbfs.wordpress.com/2012/05/
+  92. http://hbfs.wordpress.com/2012/04/
+  93. http://hbfs.wordpress.com/2012/03/
+  94. http://hbfs.wordpress.com/2012/02/
+  95. http://hbfs.wordpress.com/2012/01/
+  96. http://hbfs.wordpress.com/2011/12/
+  97. http://hbfs.wordpress.com/2011/11/
+  98. http://hbfs.wordpress.com/2011/10/
+  99. http://hbfs.wordpress.com/2011/09/
+ 100. http://hbfs.wordpress.com/2011/08/
+ 101. http://hbfs.wordpress.com/2011/07/
+ 102. http://hbfs.wordpress.com/2011/06/
+ 103. http://hbfs.wordpress.com/2011/05/
+ 104. http://hbfs.wordpress.com/2011/04/
+ 105. http://hbfs.wordpress.com/2011/03/
+ 106. http://hbfs.wordpress.com/2011/02/
+ 107. http://hbfs.wordpress.com/2011/01/
+ 108. http://hbfs.wordpress.com/2010/12/
+ 109. http://hbfs.wordpress.com/2010/11/
+ 110. http://hbfs.wordpress.com/2010/10/
+ 111. http://hbfs.wordpress.com/2010/09/
+ 112. http://hbfs.wordpress.com/2010/08/
+ 113. http://hbfs.wordpress.com/2010/07/
+ 114. http://hbfs.wordpress.com/2010/06/
+ 115. http://hbfs.wordpress.com/2010/05/
+ 116. http://hbfs.wordpress.com/2010/04/
+ 117. http://hbfs.wordpress.com/2010/03/
+ 118. http://hbfs.wordpress.com/2010/02/
+ 119. http://hbfs.wordpress.com/2010/01/
+ 120. http://hbfs.wordpress.com/2009/12/
+ 121. http://hbfs.wordpress.com/2009/11/
+ 122. http://hbfs.wordpress.com/2009/10/
+ 123. http://hbfs.wordpress.com/2009/09/
+ 124. http://hbfs.wordpress.com/2009/08/
+ 125. http://hbfs.wordpress.com/2009/07/
+ 126. http://hbfs.wordpress.com/2009/06/
+ 127. http://hbfs.wordpress.com/2009/05/
+ 128. http://hbfs.wordpress.com/2009/04/
+ 129. http://hbfs.wordpress.com/2009/03/
+ 130. http://hbfs.wordpress.com/2009/02/
+ 131. http://hbfs.wordpress.com/2009/01/
+ 132. http://hbfs.wordpress.com/2008/12/
+ 133. http://hbfs.wordpress.com/2008/11/
+ 134. http://hbfs.wordpress.com/2008/10/
+ 135. http://hbfs.wordpress.com/2008/09/
+ 136. http://hbfs.wordpress.com/2008/08/
+ 137. http://debugfailure.wordpress.com/
+ 138. http://frankensteinslab.wordpress.com/
+ 139. http://lostwebsite.wordpress.com/
+ 140. http://gnuvince.wordpress.com/
+ 141. http://thetweaker.wordpress.com/
+ 142. http://hbfs.wordpress.com/feed/
+ 143. http://theme.wordpress.com/themes/contempt/
+ 144. http://wordpress.com/?ref=footer
+ 145. javascript:void(0)
+ 146. http://wordpress.com/signup/?ref=lof
+ 147. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#cancel
+ 148. http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&mp6=1
+
+   Hidden links:
+ 149. http://hbfs.files.wordpress.com/2010/08/cake-2.png
+ 150. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-form-guest
+ 151. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-form-load-service:WordPress.com
+ 152. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-form-load-service:Twitter
+ 153. http://hbfs.wordpress.com/2012/03/30/finding-collisions/#comment-form-load-service:Facebook

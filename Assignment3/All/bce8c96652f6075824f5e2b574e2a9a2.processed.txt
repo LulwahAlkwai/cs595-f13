@@ -1,0 +1,256 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]You probably shouldn't use a spreadsheet for important work
+
+   Following the [5]Reinhart-Rogoff case, where famous scientists go
+   formulas wrong in the Excel spreadsheet that supported their research,
+   a lot of people commented on the adequacy of a spreadsheet tool for
+   important work.
+
+   Excel does have one tremendous benefit: it is accessible. Most people
+   using spreadsheets don't even realize that they are programming. In the
+   Reinhart-Rogoff case, this accessibility was a great virtue: it allowed
+   a regular PhD student to verify the computations.
+
+   However, there are several critical problems with a tool like Excel
+   that need to be widely known:
+     * Spreadsheets do not support testing. For anything that matters, you
+       should validate and test your code automatically and
+       systematically.
+     * Spreadsheets make code reviews impractical. To inspect the code,
+       you need to look at every cell. In practice, this means that you
+       cannot reasonably ask someone to read over your formulas to make
+       sure that there is no mistake.
+     * Spreadsheet encourage redundancies. Spreadsheets encourage
+       copy-and-paste. Though copying and pasting is sometimes the right
+       tool, it also creates redundancies. These redundancies make it very
+       difficult to update a spreadsheet: are you absolutely sure that you
+       have changed the formula throughout?
+
+   Unfortunately, spreadsheet programming is far more common in research
+   than we would like to admit. I keep reviewing research manuscripts
+   where the figures were obviously made with Excel. It is also very
+   widespread in business: decisions worth millions (if not billions) of
+   dollars are taken on the basis of a spreadsheet all the time.
+
+   Professionals should avoid spreadsheets for activities where mistakes
+   matter. Reinhart and Rogoff should have used a bona fide programming
+   language with proper testing, code review and documentation.
+
+   Further reading: [6]Lotus Improv was an early attempt to build a
+   spreadsheet tool that did not have some of these problems. It was a
+   market failure. (Credit: Preston L. Bannister)
+   [7]Tweet
+   [8]Comments (7)
+
+   Related posts (automatically generated):
+     * [9]Share your software early: the Reinhart-Rogoff case
+     * [10]Time-saving versus work-inducing software
+
+7 Comments
+
+    1. Here, here!
+       As a programmer, I was shocked when I read the Reinhart-Rogoff
+       calculations were done on Excel. As a researcher, however, I was
+       not.
+       At least tools like Matlab make the algorithms easily verifiable,
+       the idea of writing tests in research is still an anomaly. The
+       research groups that open source their projects do a much better
+       job at this.
+       Comment by [11]Bart G -- 24/4/2013 @ [12]21:19
+    2. Two nice blog posts on spreadsheet.
+       But if we want to manipulate cross-referenced data on an intranet,
+       do you have an idea of the best opensource tools or libraries to
+       substitute to Excel usage ?
+       Comment by Thierry Lhôte -- 25/4/2013 @ [13]7:07
+    3. IMHO, the biggest problem with Excel is that it is difficult to
+       place logic in separate plain-text source files. By wrapping the
+       logic and the data up into opaque binary .xls files, standard
+       management tools like "diff" and "blame" cannot be used, which
+       makes it extraordinarily and unnecessarily hard to effectively
+       manage and review business critical (not to mention
+       global-economy-critical) logic stored in Excel.
+       Comment by [14]William Payne -- 25/4/2013 @ [15]9:30
+    4. Thanks for posting this.
+       IMO, everyone who may be in a job where automation via spreadsheet
+       is likely, needs training in SDE fundamentals: unit testing, the
+       important of open source and open data for reproducibility, version
+       control, and code review. We are all computer scientists now.
+       Comment by [16]Justin Mason -- 25/4/2013 @ [17]9:49
+    5. I haven't used Excel in a few years, but it certainly used to have
+       a control (I think it was Cntl-`) to display the formula in each
+       cell instead of the values.
+       Now, I agree it's still a nightmare to read and validate pages of
+       cells with crazy formulae in them, but it's slightly better than
+       clicking into each cell and should help spot discrepancies like
+       "this cell is doing sum(A10:A50) and the one next to it is doing
+       sum(B10:B35). But just a FYI.
+       Ironically enough I learnt this when supporting some people doing
+       self-directed learning on Excel at a very low level. It really
+       started from "this is how you turn the computer on, this is how you
+       start Excel" in lesson 1 and this was in about lesson 3. I'd been
+       using Excel for keeping accounts and the like for several years and
+       training people to use it for a few by then. And, as you can,
+       memory of the keystroke clearly lingered because I still never used
+       it!
+       Comment by Eloise Pasteur -- 25/4/2013 @ [18]10:28
+    6. I dare to disagree.
+       People have good reasons to use spreadsheets, rather than telling
+       them not to use spreadsheets we, as academics, should show how to
+       fix spreadsheets. Or programming languages, for that matter.
+       The one huge killer feature of spreadsheets is live programming!
+       Spreadsheet are always running, output is immediate and input
+       always has concrete values rather than being abstract variable
+       names.
+       Telling people to use "bona fide" programming languages instead of
+       spreadsheets is like telling people to read musical scores rather
+       than listening to recorded concert sessions. Nobody but a few
+       highly skilled experts get the same value out of it.
+       Here's what we can and should do about it,
+       -- Fix spreadsheets to support best practices like testing, code
+       reviews and version control.
+       -- Fix programming languages to be live, ie to be always running,
+       having immediate output and concrete input available at all times
+       of the programming activity.
+       Academics telling people to change their behavior has never worked
+       and will never work. People are not stupid, they are fully aware of
+       the shortcomings of spreadsheets but use them because their added
+       value (ie live programming) is just so much bigger. Where we, as
+       academics, can add value to this is by fixing spreadsheets and
+       programming language.
+       Comment by [19]Adrian -- 26/4/2013 @ [20]20:01
+    7. Ok, yes, fair point.
+       I agree that both spreadsheets and traditional programming tools
+       are badly, badly broken, although for different reasons.
+       I totally agree with your "liveness" argument -- it is a massive
+       feature, and it is something that mainstream software development
+       environments badly need.
+       I am super excited by the attention that projects like light table
+       are getting, and hope that they spur others onto the same
+       bandwagon.
+       I also occasionally implement a poor-man's version of "live coding"
+       when writing python scripts by having my unit tests run every time
+       I save one of my source files.
+       My main problem with Excel is not the way that people interact with
+       it; I am fine with spreadsheet programming, and would not expect
+       people to have to learn a programming language just to edit a
+       spreadsheet! The main problem that I have is that it is not
+       (out-of-the box) possible to extract the formulae in a spreadsheet
+       into a plain text file, merge it with somebody else's changes, and
+       import the merged document back into the main spreadsheet.
+       Now, I admit, the .xlsx format does take some steps to address
+       these concerns, but the format is not particularly transparent,
+       well documented, simple or readable.
+       As for your proposed fixes, I can do nothing else but support them
+       wholeheartedly. I wonder if we should turn to KickStarter to try to
+       fund an Excel alternative that sits on top of Python? (A highly
+       scriptable spreadsheet implemented in the spirit of Sublime Text)?
+       Comment by [21]William Payne -- 29/4/2013 @ [22]10:25
+
+   Sorry, the comment form is closed at this time.
+   « « [23]Previous: Share your software early: the Reinhart-Rogoff case
+   [24]Next: P equal to NP and all that » »
+
+   [25]« Blog's main page
+   Daniel Lemire's picture
+     * [26]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [27]Follow on Google Plus
+       22,500 followers
+     * twitter logo [28]Follow @lemire
+       4,000 followers
+     * Facebook logo [29]Follow on Facebook
+     * Google Scholar logo [30]Follow on Google Scholar
+     * Subscribe to this blog
+       - [31]in a reader,
+       - [32]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [33]About me
+          + [34]Book recommendations
+          + [35]My readers
+          + [36]Terms of use
+          + [37]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [38]The written word took over the world
+          + Thierry Lhôte on [39]The written word took over the world
+          + Ben on [40]The written word took over the world
+          + Anonymous on [41]The written word took over the world
+          + kilian on [42]The written word took over the world
+     * Some popular posts
+          + [43]Why I still program
+          + [44]Emotions killing your intellectual productivity
+          + [45]Turn your weaknesses into strengths
+          + [46]It is not where you work, but who you work with
+     * [47]Home page
+       [48]Google Scholar profile
+       [49]arXiv
+       [50]DBLP
+
+   Powered by [51]WordPress
+
+   © 2004-2013, [52]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [53]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/atom
+   4. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/
+   5. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/
+   6. http://en.wikipedia.org/wiki/Lotus_Improv
+   7. https://twitter.com/share
+   8. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/#comments
+   9. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/
+  10. http://lemire.me/blog/archives/2011/05/16/time-saving-versus-work-inducing-software/
+  11. http://bart.org/
+  12. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83145
+  13. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83193
+  14. http://blog.wtpayne.info/
+  15. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83225
+  16. http://taint.org/
+  17. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83231
+  18. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83238
+  19. http://twitter.com/akuhn
+  20. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83406
+  21. http://blog.wtpayne.info/
+  22. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/?utm_source=feedburner#comment-83687
+  23. http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/
+  24. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/
+  25. http://lemire.me/blog/
+  26. http://lemire.me/
+  27. https://plus.google.com/105888615414982242080/about
+  28. http://www.twitter.com/lemire/
+  29. http://www.facebook.com/daniel.lemire
+  30. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  31. http://lemire.me/blog/feed/
+  32. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  33. http://lemire.me/blog/about-me/
+  34. http://lemire.me/blog/book-recommendations/
+  35. http://lemire.me/blog/my-readers/
+  36. http://lemire.me/blog/terms-of-use/
+  37. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  38. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  39. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  40. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  41. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  42. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  43. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  44. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  45. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  46. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  47. http://lemire.me/en/
+  48. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  49. http://arxiv.org/a/lemire_d_1
+  50. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  51. http://wordpress.org/
+  52. http://lemire.me/en/
+  53. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  54. http://lemire.me/blog/feed/

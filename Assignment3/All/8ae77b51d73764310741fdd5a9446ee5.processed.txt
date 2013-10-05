@@ -1,0 +1,1044 @@
+   #[1]The Pith of Performance - Atom [2]The Pith of Performance - RSS
+   [3]The Pith of Performance - Atom
+
+[4]The Pith of Performance
+
+   Possibly pithy insights into computer performance analysis and capacity
+   planning based on the Guerrilla [5]series of books and [6]training
+   classes provided by [7]Performance Dynamics Company.
+
+Wednesday, April 11, 2012
+
+PostgreSQL Scalability Analysis Deconstructed
+
+   In 2010, I presented my [8]universal scalability law (USL) at the
+   [9]SURGE conference. I came away with the impression that nobody really
+   understood what I was talking about (quantifying scalability) or, maybe
+   DevOps types thought it was all too hard (math). Since then, however,
+   I've come to find out that people like Baron Schwartz did get it and
+   have since applied the USL to [10]database scalability analysis.
+   Apparently, things have continued to propagate to the point where
+   others have heard about the USL from Baron and are now using it too.
+
+   Robert Haas is one of those people and he has applied the USL to
+   [11]Postgres scalability analysis. This is all good news. However,
+   there are plenty of traps for new players and Robert has walked in
+   several of them to the point where, by his own admission, he became
+   confused about what conclusions could be drawn from his USL results. In
+   fact, he analyzed three cases:
+    1. PostgreSQL 9.1
+    2. PostgreSQL 9.2 with fast locking
+    3. PostgreSQL 9.2 current release
+
+   I know nothing about Postgres but thankfully, Robert tabulated on his
+   blog the performance data he used and that allows me to deconstruct
+   what he did with the USL. Here, I am only going to review the first of
+   these cases: PostgreSQL 9.1 scalability. I intend to return to the
+   claimed superlinear effects in another blog post.
+
+The USL in Brief
+
+   The USL is expressed in terms of the relative capacity \begin{equation}
+   C_N = \frac{X_N}{X_1} \end{equation} a ratio defined exclusively by the
+   data; the actual throughput measurements, $X_N$. Here, $X_1$ is the
+   throughput measured for a single client $N=1$ load and $X_N$ is the
+   throughput measured with any $N > 1$ clients.
+
+   But that's only one side of the proverbial coin. On the flip side, the
+   USL provides the following abstract model \begin{equation} C_N =
+   \frac{N}{1 + \alpha N + \beta N (N-1)} \end{equation} against which we
+   can regress those same throughput measurements. The USL equation states
+   that the relative capacity is characterized by three effects:
+    1. The level of concurrency or ideal parallelism (the '1' in the
+       denominator)
+    2. Degradation of linear scaling due to contention effects (the
+       $\alpha$ term)
+    3. Retrograde scaling due to coherency delays (the $\beta$ term)
+
+   Since each of these physical effects has a corresponding term in the
+   USL model, the assertion is: measurements must match the model. Where
+   they don't match, start explaining why not. The method of nonlinear
+   statistical regression is used to determine what values of the $\alpha$
+   and $\beta$ parameters best account for the variation in the
+   scalability measurements. The relative capacity $C_N$ is a normalized
+   number. To get the corresponding throughput values (that can be
+   compared with measurements), multiply the relative capacity by $X_1$,
+   i.e., $X_N = C_N \, X_1$. More details about regression techniques and
+   the USL are presented in my Guerrilla capacity planning [12]book and
+   [13]training class.
+
+   My purpose here is not to discourage Robert or anyone else from using
+   the USL model, but if you are going to use it, then it really is in
+   your own interest to learn to use it correctly. It's not just a matter
+   of throwing performance data at the USL model and seeing if the plots
+   look like what you were expecting. If the USL always did what we
+   expected, there would be little point in doing it at all because no new
+   insights would be gleaned. It's also not a one-shot, but an exploratory
+   process in which the USL should be applied iteratively. Performance
+   modeling and analysis is a very technical skill, and that's why I run
+   [14]Guerrilla training classes. To give you a better idea of how all
+   that should go, let's see what the USL analysis of Postgres 9.1 looks
+   like when it's done a bit more rigorously.
+
+The Original Analysis
+
+   For reference, the full complement of load test points runs between $N
+   = 1$ and $N = 80$ clients. However, the original plot (Fig. 1 by
+   Robert) only shows the USL analysis performed with [15]gnuplot on a
+   subset of data points for $N \le 32$ clients (shown as little circles).
+
+   [16][gnuplot-pg91vu32.png]
+
+    Figure 1. Original PG 9.1 scalability analysis in gnuplot for $N \le
+                                32$ clients.
+
+   What happened to the remaining 48 data points? Apparently, Robert
+   decided that he wanted "to avoid confusing the tool." It's not clear
+   whether that is an anthropomorphic reference to the limitations of
+   [17]gnuplot (never used it) or the [18]USL. Regardless, that statement
+   tells me more about the modeler than the model. Only modelers get
+   confused, not models. How can that happen? Let me count the ways:
+    1. If all three throughput measurements $X_N$ per each client load
+       point $N$ were shown (rather than the median) there would be a
+       spread in the data. Which is the "true" value?
+    2. [19]Guerrilla Mantra 1.16: Data are not divine.
+    3. [20]Guerrilla Mantra 2.25: All measurements are wrong by
+       definition.
+    4. Benchmarks (especially those involving databases) are highly
+       complex simulations that provide a myriad of opportunities for
+       things to go wrong with the measurements.
+    5. [21]Guerrilla Mantra 1.16: Data comes from the Devil, only models
+       come from God.
+    6. Applying a performance model is like legally [22]waterboarding your
+       data for the truth.
+    7. It is not the goal of the USL to [23]fit an elephant.
+
+   Without a full appreciation of these concepts, there is always the
+   tendency to believe the data over the model. It's that bias that led
+   Robert to fit the USL to a subset of his data. Since the USL curve
+   passes through most of those data points, that's better. Right?
+   [24]Wrong!
+
+Same USL Analysis in R
+
+   Next, let me redo the USL fit in R so as to get calibrated with Fig. 1.
+   First, I create a dataframe in R, normalize the throughputs (Norm)
+   using $C_N$ and check the efficiencies (Effcy) using $C_N/N$.
+> input
+    N      X_N      Norm     Effcy
+1   1  4373.30  1.000000 1.0000000
+2   4 15582.91  3.563192 0.8907979
+3   8 27353.51  6.254661 0.7818326
+4  12 37502.23  8.575270 0.7146058
+5  16 45365.16 10.373210 0.6483256
+6  20 46926.75 10.730283 0.5365142
+7  24 42854.19  9.799051 0.4082938
+8  28 39835.95  9.108900 0.3253178
+9  32 38862.98  8.886419 0.2777006
+10 36 38303.05  8.758385 0.2432885
+11 40 37881.29  8.661945 0.2165486
+12 44 37647.48  8.608483 0.1956473
+13 48 37379.05  8.547103 0.1780646
+14 52 37421.44  8.556796 0.1645538
+15 56 37306.11  8.530424 0.1523290
+16 60 37235.20  8.514211 0.1419035
+17 64 37220.38  8.510821 0.1329816
+18 68 37045.14  8.470751 0.1245699
+19 72 36793.40  8.413190 0.1168499
+20 76 36998.60  8.460109 0.1113172
+21 80 36734.52  8.399726 0.1049966
+
+   There are 21 data points with clients in the range $1 \le N \le 80$
+   with corresponding throughputs lying in the range $4373.30 \le X_N \le
+   36734.52$. Then, I do the formal statistical regression on the same $N
+   \le 32$ data subset as that used in Fig. 1 to get the following
+   numerical parameter values.
+> summary(usl)
+
+Formula: Norm ~ N/(1 + alpha * (N - 1) + beta * N * (N - 1))
+
+Parameters:
+       Estimate Std. Error t value Pr(>|t|)
+alpha 0.0009561  0.0072754   0.131 0.899146
+beta  0.0025427  0.0003228   7.876 0.000101 ***
+---
+Signif. codes:  0 `***' 0.001 `**' 0.01 `*' 0.05 `.' 0.1 ` ' 1
+
+Residual standard error: 0.4759 on 7 degrees of freedom
+
+Number of iterations to convergence: 7
+Achieved convergence tolerance: 8.836e-07
+
+   These values are then combined with $X_1$ and $C_N$, as described
+   above, to plot the USL curve as well as some other numerical
+   scalability quantities that are collected into a legend in Fig. 2. As
+   you can see, it agrees with the USL curve in Fig. 1. In addition, I've
+   shown the full range of measurements (circles) as well as the (dashed)
+   line corresponding to ideal linear scaling, i.e., $\alpha = \beta = 0$
+   in the USL model.
+
+   [25][Rplot-pg91vu32.png]
+
+               Figure 2. Same USL analysis as Fig. 1 using R.
+
+   The virtue of including the additional reference information is that it
+   allows me to draw the following conclusions. Suppose Robert had not yet
+   measured a client load above $N = 32$ in his benchmark tests. I can see
+   that PG 9.1 scales quite linearly up through the first dozen or so
+   clients, and then begins to fall away from linear due to the nonzero
+   but small value of $\alpha \approx 1\%$. That looks very promising!
+
+   However, something "bad" seems to happen above $N \approx 20$ clients.
+   The USL predicts that scaling (as depicted by the regression curve)
+   will go severely retrograde. Moreover, because the $\alpha$ and $\beta$
+   parameters in the USL model have distinct physical interpretations, I
+   can say that the retrograde scaling (if it occurs--remember, we're
+   pretending we don't have the additional data points yet) will not be
+   due to contention (the $\alpha$ term in the USL) but delays caused by
+   some kind of pairwise exchange (the $N^2$ term in the USL) between the
+   clients--a coherency penalty. Since I'm not a Postgres expert, I have
+   no idea what that could mean, but Robert might. Furthermore, locks are
+   associated with sequencing or serialization (the linear $N$ term in the
+   denominator of the USL) so, any retrograde behavior will be due to
+   something other than locking.
+
+Complete USL Analysis
+
+   Now, let's suppose the additional measurements become available and we
+   fit the USL to all those data. The result is shown in Fig. 3. This is
+   the result that put Robert off. Why? Because he hasn't yet learnt his
+   catechism about models coming from God.
+
+   [26][Rplot-pg91usl.png]
+
+      Figure 3. ULS analysis of the full complement of 21 data points.
+
+   Robert looks at the USL curve and says "Why?" I look at the USL curve
+   and say "Why not?" The USL predicts that the peak should be closer to
+   $N = 30$, whereas the data peaks prematurely around $N = 20$ (when
+   viewed from the standpoint of the USL). When you think about it, if
+   something is giving you a hint that the scalability could be better
+   than the current data indicates, wouldn't you want to investigate
+   further to see if that performance improvement might be achievable?
+   Reviewing Fig. 3 more carefully, I can also say with some authority
+   that PG 9.1 is now scaling better than expected (based on the USL curve
+   in Fig. 2) because it did not go as retrograde as anticipated by the
+   USL, based on the load points up to $N = 32$. In other words, if we
+   already see one improvement, could there be yet more improvements?
+
+   Another way of stating this conclusion is to note the throughput data
+   are somewhat exceeding USL expectations in the window just prior to the
+   predicted USL peak (say, $15 < N < 20$), they are failing to meet USL
+   expectations in the window $20 < N < 60$, but finally recover again in
+   the window $60 < N < 80$. This view of the data immediately raises
+   questions about possible room for performance improvements. Can PG do
+   better? Can the scaling be more consistent? If not, why not? Maybe PG
+   can't get there, but we need to understand why not. In this sense, USL
+   modeling is often more about driving explanations than fitting data.
+
+Extended USL Analysis
+
+   Finally, let's switch gears again and ask, What would happen if we
+   could magically "turn off" the coherency penalty (i.e., set $\beta =
+   0$) in Fig. 3? The USL prediction is shown in Fig. 4.
+
+   [27][Rplot-pg91amdOR.png]
+
+         Figure 4. ULS analysis with $\beta$ parameters suppressed.
+
+   This USL analysis says the following. If you could maintain the level
+   of contention at the value in Fig. 3 (i.e. $\alpha \approx 4\%$), then
+   near linear scaling could take throughput performance up to a higher
+   plateau (denoted $X_{roof}$ in the legend) given by: \begin{equation}
+   \frac{X_1}{\alpha} = \frac{4373.30}{0.03855} = 113,444.90~\text{TPS}
+   \end{equation} If we consider the data circles beyond say, $N = 40$
+   clients in Fig. 4 to constitute an approximate throughput plateau for
+   PG 9.1, then the predicted $X_{roof}$ plateau would be about 4x higher
+   than that. As you can see, under these assumptions, the USL scalability
+   curve would be off the chart!
+
+   In case you think that's a completely crazy projection coming from the
+   USL, then [28]check out what actually happened to the newer version of
+   Postgres with the so-called fast locking modification. Those PG 9.2
+   throughput measurements, [29]shown as green joined data points, reached
+   an $X_{roof}$ that is 5x higher than expected from the PG 9.1 data. The
+   PG 9.2 fast lock data makes the PG 9.1 USL prediction look
+   conservative. Some of the additional boost to $X_{roof}$ may have come
+   from the apparent superlinear effect, but I won't go into that aspect
+   here.
+
+   Of course, the architectural changes to Postgres 9.2 were not made as a
+   consequence of any USL modeling (that I know about), but they could
+   have been. I hope you can see now how the modeling scenarios (different
+   parameter values) that I've presented here could have been applied to
+   the PG data within the context of the USL. Most importantly, each of
+   these USL scenarios in Figs. 2, 3 and 4 should be seen as fitting
+   together logically and reinforcing one another. All that information
+   was hidden in the original data.
+
+   Indeed, I can say with hindsight, that whatever changes were made
+   between PG 9.1 and 9.2 with fast locking, it had the predicted effect
+   of making the USL $\beta$ parameter vanishing small (but not zero since
+   some slight retrograde behavior persists). In addition, the fast locks
+   reduced the $\alpha$ parameter to something smaller than the PG 9.1
+   value of $\alpha = 0.03855$. Simply put, if the USL had been used to
+   reach these conclusions, I would've been in a position to say, "I told
+   you so." ;-)
+
+Summary
+
+   These are just some of the insights you can gain from the appropriate
+   use of the USL model. In fact, this PostgreSQL example would make a
+   great case study for a [30]Guerrilla training class.
+   Posted by [31]Neil Gunther at [32]8:37 AM
+   [33]Email This[34]BlogThis![35]Share to Twitter[36]Share to Facebook
+   Labels: [37]databases, [38]performance models, [39]R, [40]scalability,
+   [41]USL
+
+9 comments:
+
+   [42]metasoft said...
+          the equation didn't display correctly on Firefox 11.
+
+          [43]Wednesday, April 11, 2012 at 12:29:00 PM PDT
+          [44][icon_delete13.gif]
+
+   [45]Neil Gunther said...
+          Looks great in Safari. :)
+
+          [46]Wednesday, April 11, 2012 at 12:34:00 PM PDT
+          [47][icon_delete13.gif]
+
+   [48]Neil Gunther said...
+          More about MJ on FF:
+          * [49]Browser Compatibility
+          * [50]MJ 2.0 and default rendering in Firefox
+          Welcome to the web. :/
+
+          [51]Wednesday, April 11, 2012 at 12:59:00 PM PDT
+          [52][icon_delete13.gif]
+
+   [53]LAKSHMINARAYANAN SESHADRI said...
+          Should the first Normalized Capacity/Throughput equation be
+          otherway around i.e
+          Normalized capacity at N i.e CN = XN /X1
+          Please ignore if you had spotted it already.
+          Cheers
+          Laks
+
+          [54]Wednesday, April 11, 2012 at 8:12:00 PM PDT
+          [55][icon_delete13.gif]
+
+   [56]Neil Gunther said...
+          Laks,
+          You are quite correct but someone pointed out the same typo via
+          email earlier today. Now corrected and thank you for pointing it
+          out.
+
+          [57]Wednesday, April 11, 2012 at 8:24:00 PM PDT
+          [58][icon_delete13.gif]
+
+   [59]Robert Haas said...
+          The reason I ignored the points where N>32 is because the data
+          were collected on a system with 32 cores. So there are multiple
+          factors limiting scalability here. Where clients <= cores, we
+          have one set of bottlenecks, principally due to lock contention
+          within PostgreSQL but perhaps also partly due to operating
+          system or hardware effects. However, once the number of clients
+          exceeds the number of cores, we're bound to hit a wall: if all
+          the available CPU resources are already in use, adding more
+          clients can't really continue to improve throughput. What I want
+          to measure is whether it's possible to add throughput by adding
+          more hardware resources (cores), NOT whether or not throughput
+          will flatten out when we run out of cores. The answer to the
+          latter question seems pretty self-evident: if we're efficiently
+          using every core, then the best we can hope for when we run out
+          of cores is that throughput will remain stable. In reality, of
+          course, it will drop off slightly, because task-switching is not
+          perfectly efficient.
+
+          [60]Friday, April 13, 2012 at 10:51:00 AM PDT
+          [61][icon_delete13.gif]
+
+   [62]Mohan Radhakrishnan said...
+          I believe a list of basic reading resources could help any
+          technical lead who meaasures performance. Apart from your blog I
+          think these well known links helped me.But I had to search hard.
+          These are the basics though.
+          http://www.itl.nist.gov/div898/handbook/index.htm
+          The desk reference of statistical quality methods
+          What is recommendation for techniques to fit data to
+          distributions ?
+          Is something like "Goodness-of-fit techniques" by Ralph B.
+          D'Agostino, Michael A. Stephens is recommended ?
+          Also
+          http://cran.r-project.org/doc/contrib/Ricci-distributions-en.pdf
+          Thanks.
+          for the enlightenment
+
+          [63]Thursday, April 19, 2012 at 3:03:00 AM PDT
+          [64][icon_delete13.gif]
+
+   [65]Matteo said...
+          Hi Dr. Gunther,
+          I have a question that is maybe more linked to response time
+          analysis than scaling (if you allow such a distinction). Many
+          performance tools and collectors return service time metrics in
+          a synthetic way, such as: avg time, median, 90th, 95th, 99th
+          percentiles. Is it possible from these numbers to understand
+          which dsn they belong to (exponential, power law, normal, etc)?
+          I'm wondering if this would help as an indication of the correct
+          queueing model to be used (I'm re-reading 2.11 paragraph
+          "Generalized servers" of your great "Analyzing Computer System
+          Performance with Perl::PDQ" book).
+          Thanks
+          MatteoP
+
+          [66]Monday, April 30, 2012 at 5:26:00 AM PDT
+          [67][icon_delete13.gif]
+
+   [68]Neil Gunther said...
+          Matteo,
+          Indeed, it is possible to talk about response-time (R)
+          scalability and from the USL standpoint, we can derive R from
+          the throughput data (X). I explain how to do all this in my
+          upcoming [69]Guerrilla classes.
+          If we take the Postgres data (above) as the example, then what
+          we can calculate from the USL model is the mean R: as in,
+          statistical mean (average) or 1st moment. The median is p50 and
+          is not a moment of the underlying statistical dsn; which we
+          generally don't know. If I were to plot mean-R for the Postgres
+          data, I already know that it should have the classic "hockey
+          stick" shape. To the degree that it doesn't, we have to explain
+          why not.
+          With regard to your point about identifying queueing models,
+          most queueing models compute measures that are characterized by
+          the statistical mean. We may also be able to calculate higher
+          moments from the assumed dsn in certain cases.
+          So, on the one hand, we would prefer to have sample moments
+          (average, variance, etc.) from the data to compare with any
+          queueing models. Percentiles (e.g., p50, p90, p95), on the other
+          hand, are merely a way of producing a ranked categorization of
+          the sampled data.
+
+          [70]Monday, April 30, 2012 at 9:43:00 AM PDT
+          [71][icon_delete13.gif]
+
+   [72]Post a Comment
+   [73]Newer Post [74]Older Post [75]Home
+   Subscribe to: [76]Post Comments (Atom)
+
+Subscribe To
+
+   [arrow_dropdown.gif] Posts
+   [77][subscribe-netvibes.png] [78][subscribe-yahoo.png]
+   [79][icon_feed12.png] Atom
+   [arrow_dropdown.gif] Posts
+   [arrow_dropdown.gif] Comments
+   [80][subscribe-netvibes.png] [81][subscribe-yahoo.png]
+   [82][icon_feed12.png] Atom
+   [arrow_dropdown.gif] Comments
+
+Click on the Guerrilla Gorilla
+
+   [83]Click on the Guerrilla Gorilla
+   Guerrilla 2013 training schedule
+
+Events
+
+     * [84]CMG La Jolla Nov 4-8, 2013
+     * [85]GBoot/GCaP Aug 1-9, 2013
+     * [86]GDAT class, May 6-10, 2013
+     * [87]Monitorama March 28-29, 2013
+     * [88]Hotsos Symp March 3-7, 2013
+
+Twitter Updates
+
+   [89]Tweets by @DrQz
+
+Tag Cloud
+
+   [90]A.A. Michelson [91]Amazon [92]AMD [93]Amdahl's law [94]Apdex
+   [95]Apple [96]bandwidth [97]barycentric coordinates [98]batteries
+   [99]benchmark [100]Best Practices [101]big data [102]BitTorrent
+   [103]black swans [104]bottleneck [105]Brooks' law [106]browsers
+   [107]business [108]capacity planning [109]CAPTCHA [110]chemistry
+   [111]China [112]Cisco [113]classes [114]cloud computing [115]CMG
+   [116]CMOS [117]Cobham's Theorem [118]Conficker [119]Crypto
+   [120]databases [121]datacenter [122]Dirac [123]Einstein [124]Erlang
+   [125]FOSS [126]Galileo [127]game theory [128]GBoot [129]GCaP [130]GDAT
+   [131]Gmail [132]Google [133]GPU [134]Green [135]GRIDs [136]Guerrilla
+   capacity planning [137]Guerrilla Manual [138]Hadoop [139]Higgs boson
+   [140]homunculus [141]Hotsos [142]IBM [143]Ignite [144]instantons
+   [145]instrumentation [146]Intel [147]iPhone [148]Java [149]JMeter
+   [150]Kepler [151]Knuth [152]Larkspur Landing [153]latency [154]Linux
+   [155]Little's law [156]load average [157]load test [158]LoadRunner
+   [159]MacOS X [160]mainframe [161]mapreduce [162]Mathematica
+   [163]MeasureIT [164]melbourne [165]metastability [166]metro map
+   [167]Microsoft [168]Monte Carlo [169]Moore's law [170]multicore
+   [171]multiprocessor [172]nanotechnology [173]Newton [174]operating
+   systems [175]optimization [176]ORACLE [177]parallel [178]PDQ
+   [179]penryn [180]performance [181]performance management
+   [182]performance models [183]PerfViz [184]Perl [185]physics [186]python
+   [187]quantum information [188]queueing theory [189]R [190]response time
+   [191]Risk Management [192]Ruby [193]scalability [194]schedulers
+   [195]simulation [196]Solaris [197]spam [198]SPARC [199]SPEC
+   [200]statistics [201]steady state [202]Stephen Hawking [203]Steve
+   Ballmer [204]Steve Jobs [205]storage [206]stretch factor [207]Sun
+   Microsystems [208]supercomputer [209]TeamQuest [210]TPC [211]training
+   [212]Twitter [213]USL [214]Velocity Conference [215]Virtualization
+   [216]VMware [217]Wall Street [218]web 2.0 [219]WebLogic [220]Windows
+   [221]Xerox PARC [222]Zipf's law
+
+About Me
+
+   [223]My Photo
+
+   [224]Neil Gunther
+          [225]Blogger code: B7 d++ t k+ s u-- f i++ o x e+ l- c--;
+          [226]Bio page
+
+   [227]View my complete profile
+
+Blog Archive
+
+     * [228]|>  [229]2013 (19)
+          + [230]|>  [231]September (1)
+          + [232]|>  [233]August (1)
+          + [234]|>  [235]July (1)
+          + [236]|>  [237]June (1)
+          + [238]|>  [239]May (1)
+          + [240]|>  [241]April (6)
+          + [242]|>  [243]March (1)
+          + [244]|>  [245]February (1)
+          + [246]|>  [247]January (6)
+
+     * [248]v  [249]2012 (23)
+          + [250]|>  [251]December (2)
+          + [252]|>  [253]November (4)
+          + [254]|>  [255]October (2)
+          + [256]|>  [257]August (1)
+          + [258]|>  [259]July (1)
+          + [260]|>  [261]June (1)
+          + [262]|>  [263]May (2)
+          + [264]v  [265]April (2)
+               o [266]PostgreSQL Scalability Analysis Deconstructed
+               o [267]Sex, Lies and Log Plots
+          + [268]|>  [269]March (3)
+          + [270]|>  [271]February (3)
+          + [272]|>  [273]January (2)
+
+     * [274]|>  [275]2011 (31)
+          + [276]|>  [277]December (2)
+          + [278]|>  [279]October (3)
+          + [280]|>  [281]September (2)
+          + [282]|>  [283]August (4)
+          + [284]|>  [285]July (2)
+          + [286]|>  [287]June (5)
+          + [288]|>  [289]May (5)
+          + [290]|>  [291]April (1)
+          + [292]|>  [293]March (4)
+          + [294]|>  [295]February (1)
+          + [296]|>  [297]January (2)
+
+     * [298]|>  [299]2010 (43)
+          + [300]|>  [301]December (1)
+          + [302]|>  [303]November (3)
+          + [304]|>  [305]October (1)
+          + [306]|>  [307]September (1)
+          + [308]|>  [309]August (6)
+          + [310]|>  [311]July (3)
+          + [312]|>  [313]June (7)
+          + [314]|>  [315]May (9)
+          + [316]|>  [317]April (3)
+          + [318]|>  [319]March (4)
+          + [320]|>  [321]February (5)
+
+     * [322]|>  [323]2009 (102)
+          + [324]|>  [325]December (1)
+          + [326]|>  [327]November (8)
+          + [328]|>  [329]October (8)
+          + [330]|>  [331]September (5)
+          + [332]|>  [333]August (8)
+          + [334]|>  [335]July (4)
+          + [336]|>  [337]June (5)
+          + [338]|>  [339]May (7)
+          + [340]|>  [341]April (17)
+          + [342]|>  [343]March (15)
+          + [344]|>  [345]February (7)
+          + [346]|>  [347]January (17)
+
+     * [348]|>  [349]2008 (79)
+          + [350]|>  [351]December (6)
+          + [352]|>  [353]November (3)
+          + [354]|>  [355]October (6)
+          + [356]|>  [357]September (6)
+          + [358]|>  [359]August (5)
+          + [360]|>  [361]July (8)
+          + [362]|>  [363]May (10)
+          + [364]|>  [365]April (7)
+          + [366]|>  [367]March (11)
+          + [368]|>  [369]February (8)
+          + [370]|>  [371]January (9)
+
+     * [372]|>  [373]2007 (57)
+          + [374]|>  [375]December (3)
+          + [376]|>  [377]November (4)
+          + [378]|>  [379]October (3)
+          + [380]|>  [381]September (8)
+          + [382]|>  [383]August (5)
+          + [384]|>  [385]July (2)
+          + [386]|>  [387]June (4)
+          + [388]|>  [389]May (6)
+          + [390]|>  [391]April (5)
+          + [392]|>  [393]March (7)
+          + [394]|>  [395]February (10)
+
+   [396]Site Feed  [397]Site Feed
+
+Recommended Reads
+
+     * [398]Performance Dynamics on Facebook
+     * [399]arXiv Performance e-Prints
+     * [400]Computer Measurement Group
+     * [401]MeasureIT e-Zine
+     * [402]NorCal CMG Meetings
+     * [403]Steve on IT
+     * [404]Mostly Color Channel
+
+   Simple template. Powered by [405]Blogger.
+
+References
+
+   Visible links
+   1. http://perfdynamics.blogspot.com/feeds/posts/default
+   2. http://perfdynamics.blogspot.com/feeds/posts/default?alt=rss
+   3. http://perfdynamics.blogspot.com/feeds/5327312516285387277/comments/default
+   4. http://perfdynamics.blogspot.com/
+   5. http://www.perfdynamics.com/books.html
+   6. http://www.perfdynamics.com/Classes/schedule.html
+   7. http://www.perfdynamics.com/
+   8. http://www.perfdynamics.com/Manifesto/USLscalability.html#tth_sEc1
+   9. http://perfdynamics.blogspot.com/2011/05/quantifying-scalability-ftw-movie.html
+  10. http://www.mysqlperformanceblog.com/2011/02/28/is-voltdb-really-as-scalable-as-they-claim/
+  11. http://rhaas.blogspot.com/2011/09/scalability-in-graphical-form-analyzed.html
+  12. http://www.perfdynamics.com/iBook/gcap.html
+  13. http://www.perfdynamics.com/Classes/Outlines/guerilla.html
+  14. http://www.perfdynamics.com/Classes/schedule.html
+  15. http://www.gnuplot.info/
+  16. http://3.bp.blogspot.com/-M8c5luF4mUI/T4D8oDFMtjI/AAAAAAAABDs/qDTdXiwqNlg/s1600/gnuplot-pg91vu32.png
+  17. http://www.gnuplot.info/
+  18. http://www.perfdynamics.com/Manifesto/USLscalability.html
+  19. http://www.perfdynamics.com/Manifesto/gcaprules.html#tth_sEc1.16
+  20. http://www.perfdynamics.com/Manifesto/gcaprules.html#tth_sEc2.25
+  21. http://www.perfdynamics.com/Manifesto/gcaprules.html#tth_sEc1.16
+  22. http://en.wikipedia.org/wiki/Waterboarding
+  23. http://perfdynamics.blogspot.com/2011/06/winking-pink-elephant.html
+  24. http://perfdynamics.blogspot.com/2011/06/winking-pink-elephant.html
+  25. http://1.bp.blogspot.com/-4KnkZcZ1NSc/T4D7-IPKwcI/AAAAAAAABDI/nelwB5eRRBo/s1600/Rplot-pg91vu32.png
+  26. http://4.bp.blogspot.com/-afpwKumqKic/T4D8ELvNBUI/AAAAAAAABDU/kha4K_OGYgo/s1600/Rplot-pg91usl.png
+  27. http://4.bp.blogspot.com/-rqUsThTxpK8/T4D8MLkFDEI/AAAAAAAABDg/ltDiu6l_xf4/s1600/Rplot-pg91amdOR.png
+  28. http://rhaas.blogspot.com/2011/09/scalability-in-graphical-form-analyzed.html
+  29. http://2.bp.blogspot.com/-2Ft63JuwHO8/ToXX4zw2X8I/AAAAAAAAAEs/l3i3ESLPhWU/s1600/read-scaling.png
+  30. http://www.perfdynamics.com/Classes/schedule.html
+  31. http://www.blogger.com/profile/11441377418482735926
+  32. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html
+  33. http://www.blogger.com/share-post.g?blogID=6977755959349847093&postID=5327312516285387277&target=email
+  34. http://www.blogger.com/share-post.g?blogID=6977755959349847093&postID=5327312516285387277&target=blog
+  35. http://www.blogger.com/share-post.g?blogID=6977755959349847093&postID=5327312516285387277&target=twitter
+  36. http://www.blogger.com/share-post.g?blogID=6977755959349847093&postID=5327312516285387277&target=facebook
+  37. http://perfdynamics.blogspot.com/search/label/databases
+  38. http://perfdynamics.blogspot.com/search/label/performance%20models
+  39. http://perfdynamics.blogspot.com/search/label/R
+  40. http://perfdynamics.blogspot.com/search/label/scalability
+  41. http://perfdynamics.blogspot.com/search/label/USL
+  42. http://www.blogger.com/profile/17149213781391733478
+  43. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334172545441#c6233454075179244712
+  44. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=6233454075179244712
+  45. http://www.blogger.com/profile/11441377418482735926
+  46. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334172879465#c8077851464720972351
+  47. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=8077851464720972351
+  48. http://www.blogger.com/profile/11441377418482735926
+  49. http://www.mathjax.org/resources/browser-compatibility/
+  50. http://www.mathjax.org/2012/03/02/news/mathjax-2-0-and-the-default-rendering-in-firefox/
+  51. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334174349059#c5725890680164866130
+  52. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=5725890680164866130
+  53. http://www.blogger.com/profile/04134848453971331207
+  54. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334200363589#c1614040825922887056
+  55. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=1614040825922887056
+  56. http://www.blogger.com/profile/11441377418482735926
+  57. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334201099472#c7876885522924138784
+  58. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=7876885522924138784
+  59. http://www.blogger.com/profile/08393677427643988650
+  60. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334339473178#c7997089642998268200
+  61. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=7997089642998268200
+  62. http://www.blogger.com/profile/08457140016320542845
+  63. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1334829802588#c5747464634697672910
+  64. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=5747464634697672910
+  65. http://www.blogger.com/profile/04543214611852575232
+  66. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1335788777342#c7993100141162992440
+  67. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=7993100141162992440
+  68. http://www.blogger.com/profile/11441377418482735926
+  69. http://www.perfdynamics.com/Classes/schedule.html
+  70. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html?showComment=1335804183865#c4418038010712912123
+  71. http://www.blogger.com/delete-comment.g?blogID=6977755959349847093&postID=4418038010712912123
+  72. http://www.blogger.com/comment.g?blogID=6977755959349847093&postID=5327312516285387277
+  73. http://perfdynamics.blogspot.com/2012/05/load-testing-with-uniform-vs.html
+  74. http://perfdynamics.blogspot.com/2012/04/sex-lies-and-log-plots.html
+  75. http://perfdynamics.blogspot.com/
+  76. http://perfdynamics.blogspot.com/feeds/5327312516285387277/comments/default
+  77. http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fperfdynamics.blogspot.com%2Ffeeds%2Fposts%2Fdefault
+  78. http://add.my.yahoo.com/content?url=http%3A%2F%2Fperfdynamics.blogspot.com%2Ffeeds%2Fposts%2Fdefault
+  79. http://perfdynamics.blogspot.com/feeds/posts/default
+  80. http://www.netvibes.com/subscribe.php?url=http%3A%2F%2Fperfdynamics.blogspot.com%2Ffeeds%2F5327312516285387277%2Fcomments%2Fdefault
+  81. http://add.my.yahoo.com/content?url=http%3A%2F%2Fperfdynamics.blogspot.com%2Ffeeds%2F5327312516285387277%2Fcomments%2Fdefault
+  82. http://perfdynamics.blogspot.com/feeds/5327312516285387277/comments/default
+  83. http://www.perfdynamics.com/Classes/schedule.html
+  84. http://www.cmg.org/press-releases/2013-03-08.html
+  85. http://www.perfdynamics.com/Classes/schedule.html
+  86. http://www.perfdynamics.com/Classes/Outlines/gdata.html
+  87. http://monitorama.com/#speakers
+  88. http://www.hotsos.com/sym13.html
+  89. https://twitter.com/DrQz
+  90. http://perfdynamics.blogspot.com/search/label/A.A.%20Michelson
+  91. http://perfdynamics.blogspot.com/search/label/Amazon
+  92. http://perfdynamics.blogspot.com/search/label/AMD
+  93. http://perfdynamics.blogspot.com/search/label/Amdahl%27s%20law
+  94. http://perfdynamics.blogspot.com/search/label/Apdex
+  95. http://perfdynamics.blogspot.com/search/label/Apple
+  96. http://perfdynamics.blogspot.com/search/label/bandwidth
+  97. http://perfdynamics.blogspot.com/search/label/barycentric%20coordinates
+  98. http://perfdynamics.blogspot.com/search/label/batteries
+  99. http://perfdynamics.blogspot.com/search/label/benchmark
+ 100. http://perfdynamics.blogspot.com/search/label/Best%20Practices
+ 101. http://perfdynamics.blogspot.com/search/label/big%20data
+ 102. http://perfdynamics.blogspot.com/search/label/BitTorrent
+ 103. http://perfdynamics.blogspot.com/search/label/black%20swans
+ 104. http://perfdynamics.blogspot.com/search/label/bottleneck
+ 105. http://perfdynamics.blogspot.com/search/label/Brooks%27%20law
+ 106. http://perfdynamics.blogspot.com/search/label/browsers
+ 107. http://perfdynamics.blogspot.com/search/label/business
+ 108. http://perfdynamics.blogspot.com/search/label/capacity%20planning
+ 109. http://perfdynamics.blogspot.com/search/label/CAPTCHA
+ 110. http://perfdynamics.blogspot.com/search/label/chemistry
+ 111. http://perfdynamics.blogspot.com/search/label/China
+ 112. http://perfdynamics.blogspot.com/search/label/Cisco
+ 113. http://perfdynamics.blogspot.com/search/label/classes
+ 114. http://perfdynamics.blogspot.com/search/label/cloud%20computing
+ 115. http://perfdynamics.blogspot.com/search/label/CMG
+ 116. http://perfdynamics.blogspot.com/search/label/CMOS
+ 117. http://perfdynamics.blogspot.com/search/label/Cobham%27s%20Theorem
+ 118. http://perfdynamics.blogspot.com/search/label/Conficker
+ 119. http://perfdynamics.blogspot.com/search/label/Crypto
+ 120. http://perfdynamics.blogspot.com/search/label/databases
+ 121. http://perfdynamics.blogspot.com/search/label/datacenter
+ 122. http://perfdynamics.blogspot.com/search/label/Dirac
+ 123. http://perfdynamics.blogspot.com/search/label/Einstein
+ 124. http://perfdynamics.blogspot.com/search/label/Erlang
+ 125. http://perfdynamics.blogspot.com/search/label/FOSS
+ 126. http://perfdynamics.blogspot.com/search/label/Galileo
+ 127. http://perfdynamics.blogspot.com/search/label/game%20theory
+ 128. http://perfdynamics.blogspot.com/search/label/GBoot
+ 129. http://perfdynamics.blogspot.com/search/label/GCaP
+ 130. http://perfdynamics.blogspot.com/search/label/GDAT
+ 131. http://perfdynamics.blogspot.com/search/label/Gmail
+ 132. http://perfdynamics.blogspot.com/search/label/Google
+ 133. http://perfdynamics.blogspot.com/search/label/GPU
+ 134. http://perfdynamics.blogspot.com/search/label/Green
+ 135. http://perfdynamics.blogspot.com/search/label/GRIDs
+ 136. http://perfdynamics.blogspot.com/search/label/Guerrilla%20capacity%20planning
+ 137. http://perfdynamics.blogspot.com/search/label/Guerrilla%20Manual
+ 138. http://perfdynamics.blogspot.com/search/label/Hadoop
+ 139. http://perfdynamics.blogspot.com/search/label/Higgs%20boson
+ 140. http://perfdynamics.blogspot.com/search/label/homunculus
+ 141. http://perfdynamics.blogspot.com/search/label/Hotsos
+ 142. http://perfdynamics.blogspot.com/search/label/IBM
+ 143. http://perfdynamics.blogspot.com/search/label/Ignite
+ 144. http://perfdynamics.blogspot.com/search/label/instantons
+ 145. http://perfdynamics.blogspot.com/search/label/instrumentation
+ 146. http://perfdynamics.blogspot.com/search/label/Intel
+ 147. http://perfdynamics.blogspot.com/search/label/iPhone
+ 148. http://perfdynamics.blogspot.com/search/label/Java
+ 149. http://perfdynamics.blogspot.com/search/label/JMeter
+ 150. http://perfdynamics.blogspot.com/search/label/Kepler
+ 151. http://perfdynamics.blogspot.com/search/label/Knuth
+ 152. http://perfdynamics.blogspot.com/search/label/Larkspur%20Landing
+ 153. http://perfdynamics.blogspot.com/search/label/latency
+ 154. http://perfdynamics.blogspot.com/search/label/Linux
+ 155. http://perfdynamics.blogspot.com/search/label/Little%27s%20law
+ 156. http://perfdynamics.blogspot.com/search/label/load%20average
+ 157. http://perfdynamics.blogspot.com/search/label/load%20test
+ 158. http://perfdynamics.blogspot.com/search/label/LoadRunner
+ 159. http://perfdynamics.blogspot.com/search/label/MacOS%20X
+ 160. http://perfdynamics.blogspot.com/search/label/mainframe
+ 161. http://perfdynamics.blogspot.com/search/label/mapreduce
+ 162. http://perfdynamics.blogspot.com/search/label/Mathematica
+ 163. http://perfdynamics.blogspot.com/search/label/MeasureIT
+ 164. http://perfdynamics.blogspot.com/search/label/melbourne
+ 165. http://perfdynamics.blogspot.com/search/label/metastability
+ 166. http://perfdynamics.blogspot.com/search/label/metro%20map
+ 167. http://perfdynamics.blogspot.com/search/label/Microsoft
+ 168. http://perfdynamics.blogspot.com/search/label/Monte%20Carlo
+ 169. http://perfdynamics.blogspot.com/search/label/Moore%27s%20law
+ 170. http://perfdynamics.blogspot.com/search/label/multicore
+ 171. http://perfdynamics.blogspot.com/search/label/multiprocessor
+ 172. http://perfdynamics.blogspot.com/search/label/nanotechnology
+ 173. http://perfdynamics.blogspot.com/search/label/Newton
+ 174. http://perfdynamics.blogspot.com/search/label/operating%20systems
+ 175. http://perfdynamics.blogspot.com/search/label/optimization
+ 176. http://perfdynamics.blogspot.com/search/label/ORACLE
+ 177. http://perfdynamics.blogspot.com/search/label/parallel
+ 178. http://perfdynamics.blogspot.com/search/label/PDQ
+ 179. http://perfdynamics.blogspot.com/search/label/penryn
+ 180. http://perfdynamics.blogspot.com/search/label/performance
+ 181. http://perfdynamics.blogspot.com/search/label/performance%20management
+ 182. http://perfdynamics.blogspot.com/search/label/performance%20models
+ 183. http://perfdynamics.blogspot.com/search/label/PerfViz
+ 184. http://perfdynamics.blogspot.com/search/label/Perl
+ 185. http://perfdynamics.blogspot.com/search/label/physics
+ 186. http://perfdynamics.blogspot.com/search/label/python
+ 187. http://perfdynamics.blogspot.com/search/label/quantum%20information
+ 188. http://perfdynamics.blogspot.com/search/label/queueing%20theory
+ 189. http://perfdynamics.blogspot.com/search/label/R
+ 190. http://perfdynamics.blogspot.com/search/label/response%20time
+ 191. http://perfdynamics.blogspot.com/search/label/Risk%20Management
+ 192. http://perfdynamics.blogspot.com/search/label/Ruby
+ 193. http://perfdynamics.blogspot.com/search/label/scalability
+ 194. http://perfdynamics.blogspot.com/search/label/schedulers
+ 195. http://perfdynamics.blogspot.com/search/label/simulation
+ 196. http://perfdynamics.blogspot.com/search/label/Solaris
+ 197. http://perfdynamics.blogspot.com/search/label/spam
+ 198. http://perfdynamics.blogspot.com/search/label/SPARC
+ 199. http://perfdynamics.blogspot.com/search/label/SPEC
+ 200. http://perfdynamics.blogspot.com/search/label/statistics
+ 201. http://perfdynamics.blogspot.com/search/label/steady%20state
+ 202. http://perfdynamics.blogspot.com/search/label/Stephen%20Hawking
+ 203. http://perfdynamics.blogspot.com/search/label/Steve%20Ballmer
+ 204. http://perfdynamics.blogspot.com/search/label/Steve%20Jobs
+ 205. http://perfdynamics.blogspot.com/search/label/storage
+ 206. http://perfdynamics.blogspot.com/search/label/stretch%20factor
+ 207. http://perfdynamics.blogspot.com/search/label/Sun%20Microsystems
+ 208. http://perfdynamics.blogspot.com/search/label/supercomputer
+ 209. http://perfdynamics.blogspot.com/search/label/TeamQuest
+ 210. http://perfdynamics.blogspot.com/search/label/TPC
+ 211. http://perfdynamics.blogspot.com/search/label/training
+ 212. http://perfdynamics.blogspot.com/search/label/Twitter
+ 213. http://perfdynamics.blogspot.com/search/label/USL
+ 214. http://perfdynamics.blogspot.com/search/label/Velocity%20Conference
+ 215. http://perfdynamics.blogspot.com/search/label/Virtualization
+ 216. http://perfdynamics.blogspot.com/search/label/VMware
+ 217. http://perfdynamics.blogspot.com/search/label/Wall%20Street
+ 218. http://perfdynamics.blogspot.com/search/label/web%202.0
+ 219. http://perfdynamics.blogspot.com/search/label/WebLogic
+ 220. http://perfdynamics.blogspot.com/search/label/Windows
+ 221. http://perfdynamics.blogspot.com/search/label/Xerox%20PARC
+ 222. http://perfdynamics.blogspot.com/search/label/Zipf%27s%20law
+ 223. http://www.blogger.com/profile/11441377418482735926
+ 224. http://www.blogger.com/profile/11441377418482735926
+ 225. http://travis.kroh.net/blogger_decoder/
+ 226. http://www.perfdynamics.com/Bio/njg.html
+ 227. http://www.blogger.com/profile/11441377418482735926
+ 228. javascript:void(0)
+ 229. http://perfdynamics.blogspot.com/search?updated-min=2013-01-01T00:00:00-08:00&updated-max=2014-01-01T00:00:00-08:00&max-results=19
+ 230. javascript:void(0)
+ 231. http://perfdynamics.blogspot.com/2013_09_01_archive.html
+ 232. javascript:void(0)
+ 233. http://perfdynamics.blogspot.com/2013_08_01_archive.html
+ 234. javascript:void(0)
+ 235. http://perfdynamics.blogspot.com/2013_07_01_archive.html
+ 236. javascript:void(0)
+ 237. http://perfdynamics.blogspot.com/2013_06_01_archive.html
+ 238. javascript:void(0)
+ 239. http://perfdynamics.blogspot.com/2013_05_01_archive.html
+ 240. javascript:void(0)
+ 241. http://perfdynamics.blogspot.com/2013_04_01_archive.html
+ 242. javascript:void(0)
+ 243. http://perfdynamics.blogspot.com/2013_03_01_archive.html
+ 244. javascript:void(0)
+ 245. http://perfdynamics.blogspot.com/2013_02_01_archive.html
+ 246. javascript:void(0)
+ 247. http://perfdynamics.blogspot.com/2013_01_01_archive.html
+ 248. javascript:void(0)
+ 249. http://perfdynamics.blogspot.com/search?updated-min=2012-01-01T00:00:00-08:00&updated-max=2013-01-01T00:00:00-08:00&max-results=23
+ 250. javascript:void(0)
+ 251. http://perfdynamics.blogspot.com/2012_12_01_archive.html
+ 252. javascript:void(0)
+ 253. http://perfdynamics.blogspot.com/2012_11_01_archive.html
+ 254. javascript:void(0)
+ 255. http://perfdynamics.blogspot.com/2012_10_01_archive.html
+ 256. javascript:void(0)
+ 257. http://perfdynamics.blogspot.com/2012_08_01_archive.html
+ 258. javascript:void(0)
+ 259. http://perfdynamics.blogspot.com/2012_07_01_archive.html
+ 260. javascript:void(0)
+ 261. http://perfdynamics.blogspot.com/2012_06_01_archive.html
+ 262. javascript:void(0)
+ 263. http://perfdynamics.blogspot.com/2012_05_01_archive.html
+ 264. javascript:void(0)
+ 265. http://perfdynamics.blogspot.com/2012_04_01_archive.html
+ 266. http://perfdynamics.blogspot.com/2012/04/postgresql-scalability-analysis.html
+ 267. http://perfdynamics.blogspot.com/2012/04/sex-lies-and-log-plots.html
+ 268. javascript:void(0)
+ 269. http://perfdynamics.blogspot.com/2012_03_01_archive.html
+ 270. javascript:void(0)
+ 271. http://perfdynamics.blogspot.com/2012_02_01_archive.html
+ 272. javascript:void(0)
+ 273. http://perfdynamics.blogspot.com/2012_01_01_archive.html
+ 274. javascript:void(0)
+ 275. http://perfdynamics.blogspot.com/search?updated-min=2011-01-01T00:00:00-08:00&updated-max=2012-01-01T00:00:00-08:00&max-results=31
+ 276. javascript:void(0)
+ 277. http://perfdynamics.blogspot.com/2011_12_01_archive.html
+ 278. javascript:void(0)
+ 279. http://perfdynamics.blogspot.com/2011_10_01_archive.html
+ 280. javascript:void(0)
+ 281. http://perfdynamics.blogspot.com/2011_09_01_archive.html
+ 282. javascript:void(0)
+ 283. http://perfdynamics.blogspot.com/2011_08_01_archive.html
+ 284. javascript:void(0)
+ 285. http://perfdynamics.blogspot.com/2011_07_01_archive.html
+ 286. javascript:void(0)
+ 287. http://perfdynamics.blogspot.com/2011_06_01_archive.html
+ 288. javascript:void(0)
+ 289. http://perfdynamics.blogspot.com/2011_05_01_archive.html
+ 290. javascript:void(0)
+ 291. http://perfdynamics.blogspot.com/2011_04_01_archive.html
+ 292. javascript:void(0)
+ 293. http://perfdynamics.blogspot.com/2011_03_01_archive.html
+ 294. javascript:void(0)
+ 295. http://perfdynamics.blogspot.com/2011_02_01_archive.html
+ 296. javascript:void(0)
+ 297. http://perfdynamics.blogspot.com/2011_01_01_archive.html
+ 298. javascript:void(0)
+ 299. http://perfdynamics.blogspot.com/search?updated-min=2010-01-01T00:00:00-08:00&updated-max=2011-01-01T00:00:00-08:00&max-results=43
+ 300. javascript:void(0)
+ 301. http://perfdynamics.blogspot.com/2010_12_01_archive.html
+ 302. javascript:void(0)
+ 303. http://perfdynamics.blogspot.com/2010_11_01_archive.html
+ 304. javascript:void(0)
+ 305. http://perfdynamics.blogspot.com/2010_10_01_archive.html
+ 306. javascript:void(0)
+ 307. http://perfdynamics.blogspot.com/2010_09_01_archive.html
+ 308. javascript:void(0)
+ 309. http://perfdynamics.blogspot.com/2010_08_01_archive.html
+ 310. javascript:void(0)
+ 311. http://perfdynamics.blogspot.com/2010_07_01_archive.html
+ 312. javascript:void(0)
+ 313. http://perfdynamics.blogspot.com/2010_06_01_archive.html
+ 314. javascript:void(0)
+ 315. http://perfdynamics.blogspot.com/2010_05_01_archive.html
+ 316. javascript:void(0)
+ 317. http://perfdynamics.blogspot.com/2010_04_01_archive.html
+ 318. javascript:void(0)
+ 319. http://perfdynamics.blogspot.com/2010_03_01_archive.html
+ 320. javascript:void(0)
+ 321. http://perfdynamics.blogspot.com/2010_02_01_archive.html
+ 322. javascript:void(0)
+ 323. http://perfdynamics.blogspot.com/search?updated-min=2009-01-01T00:00:00-08:00&updated-max=2010-01-01T00:00:00-08:00&max-results=50
+ 324. javascript:void(0)
+ 325. http://perfdynamics.blogspot.com/2009_12_01_archive.html
+ 326. javascript:void(0)
+ 327. http://perfdynamics.blogspot.com/2009_11_01_archive.html
+ 328. javascript:void(0)
+ 329. http://perfdynamics.blogspot.com/2009_10_01_archive.html
+ 330. javascript:void(0)
+ 331. http://perfdynamics.blogspot.com/2009_09_01_archive.html
+ 332. javascript:void(0)
+ 333. http://perfdynamics.blogspot.com/2009_08_01_archive.html
+ 334. javascript:void(0)
+ 335. http://perfdynamics.blogspot.com/2009_07_01_archive.html
+ 336. javascript:void(0)
+ 337. http://perfdynamics.blogspot.com/2009_06_01_archive.html
+ 338. javascript:void(0)
+ 339. http://perfdynamics.blogspot.com/2009_05_01_archive.html
+ 340. javascript:void(0)
+ 341. http://perfdynamics.blogspot.com/2009_04_01_archive.html
+ 342. javascript:void(0)
+ 343. http://perfdynamics.blogspot.com/2009_03_01_archive.html
+ 344. javascript:void(0)
+ 345. http://perfdynamics.blogspot.com/2009_02_01_archive.html
+ 346. javascript:void(0)
+ 347. http://perfdynamics.blogspot.com/2009_01_01_archive.html
+ 348. javascript:void(0)
+ 349. http://perfdynamics.blogspot.com/search?updated-min=2008-01-01T00:00:00-08:00&updated-max=2009-01-01T00:00:00-08:00&max-results=50
+ 350. javascript:void(0)
+ 351. http://perfdynamics.blogspot.com/2008_12_01_archive.html
+ 352. javascript:void(0)
+ 353. http://perfdynamics.blogspot.com/2008_11_01_archive.html
+ 354. javascript:void(0)
+ 355. http://perfdynamics.blogspot.com/2008_10_01_archive.html
+ 356. javascript:void(0)
+ 357. http://perfdynamics.blogspot.com/2008_09_01_archive.html
+ 358. javascript:void(0)
+ 359. http://perfdynamics.blogspot.com/2008_08_01_archive.html
+ 360. javascript:void(0)
+ 361. http://perfdynamics.blogspot.com/2008_07_01_archive.html
+ 362. javascript:void(0)
+ 363. http://perfdynamics.blogspot.com/2008_05_01_archive.html
+ 364. javascript:void(0)
+ 365. http://perfdynamics.blogspot.com/2008_04_01_archive.html
+ 366. javascript:void(0)
+ 367. http://perfdynamics.blogspot.com/2008_03_01_archive.html
+ 368. javascript:void(0)
+ 369. http://perfdynamics.blogspot.com/2008_02_01_archive.html
+ 370. javascript:void(0)
+ 371. http://perfdynamics.blogspot.com/2008_01_01_archive.html
+ 372. javascript:void(0)
+ 373. http://perfdynamics.blogspot.com/search?updated-min=2007-01-01T00:00:00-08:00&updated-max=2008-01-01T00:00:00-08:00&max-results=50
+ 374. javascript:void(0)
+ 375. http://perfdynamics.blogspot.com/2007_12_01_archive.html
+ 376. javascript:void(0)
+ 377. http://perfdynamics.blogspot.com/2007_11_01_archive.html
+ 378. javascript:void(0)
+ 379. http://perfdynamics.blogspot.com/2007_10_01_archive.html
+ 380. javascript:void(0)
+ 381. http://perfdynamics.blogspot.com/2007_09_01_archive.html
+ 382. javascript:void(0)
+ 383. http://perfdynamics.blogspot.com/2007_08_01_archive.html
+ 384. javascript:void(0)
+ 385. http://perfdynamics.blogspot.com/2007_07_01_archive.html
+ 386. javascript:void(0)
+ 387. http://perfdynamics.blogspot.com/2007_06_01_archive.html
+ 388. javascript:void(0)
+ 389. http://perfdynamics.blogspot.com/2007_05_01_archive.html
+ 390. javascript:void(0)
+ 391. http://perfdynamics.blogspot.com/2007_04_01_archive.html
+ 392. javascript:void(0)
+ 393. http://perfdynamics.blogspot.com/2007_03_01_archive.html
+ 394. javascript:void(0)
+ 395. http://perfdynamics.blogspot.com/2007_02_01_archive.html
+ 396. http://perfdynamics.blogspot.com/atom.xml
+ 397. http://perfdynamics.blogspot.com/atom.xml
+ 398. http://www.facebook.com/#!/pages/Performance-Dynamics-Company/264734140266109
+ 399. http://arxiv.org/list/cs.PF/recent
+ 400. http://www.cmg.org/
+ 401. http://www.cmg.org/measureit/
+ 402. http://regions.cmg.org/regions/nccmg/
+ 403. http://stevej-on-it.blogspot.com/
+ 404. http://www.mostlycolor.ch/
+ 405. http://www.blogger.com/
+
+   Hidden links:
+ 406. http://www.blogger.com/email-post.g?blogID=6977755959349847093&postID=5327312516285387277
+ 407. http://www.blogger.com/post-edit.g?blogID=6977755959349847093&postID=5327312516285387277&from=pencil
+ 408. http://www.blogger.com/profile/17149213781391733478
+ 409. http://www.blogger.com/profile/11441377418482735926
+ 410. http://www.blogger.com/profile/11441377418482735926
+ 411. http://www.blogger.com/profile/04134848453971331207
+ 412. http://www.blogger.com/profile/11441377418482735926
+ 413. http://www.blogger.com/profile/08393677427643988650
+ 414. http://www.blogger.com/profile/08457140016320542845
+ 415. http://www.blogger.com/profile/04543214611852575232
+ 416. http://www.blogger.com/profile/11441377418482735926
+ 417. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=Subscribe&widgetId=Subscribe1&action=editWidget&sectionId=sidebar-right-1
+ 418. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=Image&widgetId=Image1&action=editWidget&sectionId=sidebar-right-1
+ 419. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=TextList&widgetId=TextList1&action=editWidget&sectionId=sidebar-right-1
+ 420. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar-right-1
+ 421. http://www.facebook.com/PerformanceDynamics
+ 422. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=Image&widgetId=Image2&action=editWidget&sectionId=sidebar-right-1
+ 423. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-right-1
+ 424. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-right-1
+ 425. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1
+ 426. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar-right-2-1
+ 427. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=sidebar-right-2-2
+ 428. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar-right-3
+ 429. http://www.blogger.com/rearrange?blogID=6977755959349847093&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3

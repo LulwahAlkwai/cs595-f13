@@ -1,0 +1,633 @@
+
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<meta charset="UTF-8" />
+<title>The Myth of the Private API - Programming - O'Reilly Media</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="apple-touch-icon" href="http://s.radar.oreilly.com/apple-touch-icon.png" type="image/png" />
+<link rel="shortcut icon" href="http://blogs.oreilly.com/wp-content/themes/programming/favicon.ico" />
+<link rel="icon" href="http://blogs.oreilly.com/wp-content/themes/programming/favicon.ico" />
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://programming.oreilly.com/wp-content/themes/programming/style.css" />
+<link rel="pingback" href="http://programming.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/107099255932164370486" rel="publisher" />
+
+
+
+
+ 
+	<meta name="description" content="A little over a week ago, I wrote about how the authentication model for an unpublished Tesla REST API was architecturally flawed because it failed to take basic precautions..." />
+	<meta name="author" content="George Reese" />
+	<meta name="search_date" content="2013-09-06" />
+	<meta name="keywords" content="API,architecture,BYOD,device,Industrial Internet,internet of things,IOT,oauth,raspberry pi,REST,SOAP,transportation" />
+	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html"> 
+	<meta name="twitter:title" content="The Myth of the Private API"> 
+	<meta name="twitter:description" content="A little over a week ago, I wrote about how the authentication model for an unpublished Tesla REST API was architecturally flawed because it failed to take basic precautions..."> 
+		<meta name="twitter:image" content="http://cdn.oreillystatic.com/oreilly/images/programming-social-icon-120.png" />
+			<meta name="twitter:creator" content="GeorgeReese"> 
+		<meta name="twitter:site" content="oreillymedia">
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_greese_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/programming-social-icon-200.png" /> 	
+	
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22979035-1']);
+_gaq.push(['_setDomainName', 'oreilly.com']);
+_gaq.push(['_addIgnoredRef', 'oreilly.com']);
+_gaq.push(['_setSiteSpeedSampleRate', 50]);
+_gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<meta name='rpuPlugin' content='v4.04' />
+<meta name='RepostUsAPIKey' content='5b6082810033fe668cde79581ff6a40d' />
+<link rel="alternate" type="application/rss+xml" title="Programming &raquo; Feed" href="http://programming.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="Programming &raquo; Comments Feed" href="http://programming.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="Programming &raquo; The Myth of the Private API Comments Feed" href="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html/feed" />
+<link rel='stylesheet' id='mediaelement-css'  href='http://programming.oreilly.com/wp-includes/js/mediaelement/mediaelementplayer.min.css?ver=2.13.0' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-mediaelement-css'  href='http://programming.oreilly.com/wp-includes/js/mediaelement/wp-mediaelement.css?ver=3.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='socialite-css-css'  href='http://programming.oreilly.com/wp-content/plugins/wpsocialite/lib/wpsocialite.css?ver=3.6.1' type='text/css' media='all' />
+<link rel='stylesheet' id='pretty-photo-style-css'  href='http://programming.oreilly.com/wp-content/plugins/contextly-related-links/css/prettyPhoto/style.css?ver=1.0.87' type='text/css' media='all' />
+<link rel='stylesheet' id='contextly-branding-css'  href='http://programming.oreilly.com/wp-content/plugins/contextly-related-links/css/branding/branding.css?ver=1.0.87' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/powerpress-mejs.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/json2.min.js?ver=2011-02-23'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var Contextly = [];
+Contextly = {"ajax_url":"http:\/\/programming.oreilly.com\/wp-admin\/admin-ajax.php","api_server":"http:\/\/rest.contextly.com\/","main_server":"https:\/\/contextly.com\/","popup_server":"https:\/\/app.contextly.com\/","app_id":"programmingoreilly","settings":{"link_type":"","target_id":"disqus_thread","block_position":"before","display_type":["post"]},"post":{"post_id":63228,"post_date":"2013-09-06 10:30:56","post_modified":"2013-09-06 12:46:11","author":"463","type":"post"},"admin":false,"mode":"production","https":false,"version":"1.0.87","ajax_nonce":"58f51202cf"};;
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://contextlysitescripts.contextly.com/js/easyXDM.min.js'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/contextly-related-links/js/contextly-class.js'></script>
+<script type='text/javascript' src='http://contextlysiteimages.contextly.com/_plugin/1.0.87/js/contextly-wordpress.js'></script>
+<script type='text/javascript' src='http://contextlysiteimages.contextly.com/_plugin/1.0.87/js/jquery.prettyPhoto.js'></script>
+<script type='text/javascript' src='http://contextlysiteimages.contextly.com/_plugin/1.0.87/js/mobile_optimization.js'></script>
+<script type='text/javascript' src='//s7.addthis.com/js/250/addthis_widget.js?ver=3.6.1#pubid=xa-4f6110d016518605'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/themes/programming/js/rs_embhl_v2_en_us.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/themes/programming/js/jquery.cookie.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://static.1.rp-api.com/rjs/repostus.js?v4_04&#038;ver=3.6.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://programming.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://programming.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Working in the Hadoop Ecosystem' href='http://programming.oreilly.com/2013/09/working-in-the-hadoop-ecosystem.html' />
+<link rel='next' title='Upward Mobility: Buddy System' href='http://programming.oreilly.com/2013/09/upward-mobility-buddy-system.html' />
+<link rel='canonical' href='http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html' />
+<link rel='shortlink' href='http://programming.oreilly.com/?p=63228' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://programming.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://programming.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+
+<script>
+	$(window).load(function () {
+		var swwcontent = $('#sww-content').height();
+		var swwcontent1 = swwcontent + 'px';
+	     if (swwcontent <= 30) {
+			$('#sww-content').css({display:none});
+		 }
+	});
+</script>
+
+</head>
+
+<body class="single single-post postid-63228 single-format-standard wpsocialite-scroll">
+<div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">		
+				<div class="logo">
+					<a href="http://programming.oreilly.com/" title="Programming" rel="home">Programming</a>
+				</div>  
+					
+				<div id="tools-section">					
+					<div id="menu-social">	
+						<div class="menu-social-top"><ul id="menu-social-btn-top" class="menu"><li id="menu-item-56526" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-56526"><a target="_blank" href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-56527" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-56527"><a target="_blank" href="http://www.youtube.com/playlist?list=PL586C8FE242700A4D&#038;feature=plcp">YouTube</a></li>
+<li id="menu-item-56528" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-56528"><a target="_blank" href="https://plus.google.com/107099255932164370486">Google+</a></li>
+<li id="menu-item-56529" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-56529"><a target="_blank" href="https://www.facebook.com/OReilly">Facebook</a></li>
+<li id="menu-item-56530" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-56530"><a target="_blank" href="http://feeds.feedburner.com/oreilly/programming">Subscribe to Programming</a></li>
+</ul></div>					</div>
+					<div id="search-box">
+						<div id= "search-box" > 
+	<form name= "searchform" method= "get" id= "searchform" action= "http://search.oreilly.com/" > 
+		<div class= "search" > 		
+			<fieldset> 
+				<span id= "search-input" > 
+					<div class= "searchInput" > 
+						<input type= "text" value= "Search" name= "q" id= "q" onblur= " if ( this .value == '') { this .value = 'Search';}" onfocus= " if ( this .value == 'Search') { this .value = '';}" autocomplete= "off" > 
+					</div> 
+					<span id= "search-button" > 
+						<input type= "submit" class= "submit" name= "submit" id= "searchsubmit" value="" /> 
+						<input type= "hidden" name= "tmpl" value= "programming" > 
+					</span> 
+				</span> 
+			</fieldset> 
+		</div> 
+	</form> 
+</div>					</div>					
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+			</div><!-- #header -->			
+			<div class="clear"></div>
+		</div>		
+	</div>
+	
+	<div id="populartopics">		
+					<div class="textwidget"><h3>Popular topics:</h3>
+<ul class="populartopics"> 
+<li><a href="/web-platform">Web Platform</a></li> 
+<li><a href="/programming">Programming</a></li> 
+<li><a href="/microsoft-dev">Microsoft Dev</a></li> 
+<li><a href="/web-perf">Web Perf/Ops</a></li> 
+<li><a href="/business-culture">Business & Culture</a></li> 
+</ul>
+<div class="clear"></div></div>
+				<a class="visit-oreilly" href="http://oreilly.com" title="">Visit oreilly.com</a>
+		<div class="clear"></div>
+	</div>
+	
+	<div id="inner-wrapper">
+	
+		<div id="sww-content">
+									<div class="textwidget"><!-- Either there are no banners, they are disabled or none qualified for this location! --></div>
+				<div class="clear"></div>
+		</div>
+		<div id="main">			<div id="container">
+		<div id="content" class="post_block" role="main">
+						
+		<div id="post-63228" class="post-63228 post type-post status-publish format-standard hentry category-programming tag-api tag-architecture tag-byod tag-device tag-industrial-internet tag-internet-of-things tag-iot tag-oauth tag-raspberry-pi tag-rest tag-soap tag-transportation">				 
+			<ul class="entry-tools">
+				<span class="tool-block">
+					<li class="button print">
+												<a target="_new" href="#" onclick="window.open('http://programming.oreilly.com/print/','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print<img src="http://cdn.oreillystatic.com/news/images/printtag.jpg" width="16" height="16"  alt="" /></a>
+					</li>
+					<li class="button listen">
+						<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen<img src="http://cdn.oreillystatic.com/radar/images/icon_listen_small.gif" width="10" height="9" alt="Speech Icon"></a> </div>
+					</li>
+					
+					<li class="read-later-single">
+											</li>
+					
+					<div id="content_start" style="display: block; "></div>			
+				</span>
+			</ul>		
+		
+															<a href="http://programming.oreilly.com/greese">
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_greese_s.jpg" class="au-photo" alt="" title="George Reese" />
+					</a>
+									
+						<!-- RSPEAK_START -->
+			<div id="body-content">
+			<h1 class="entry-title">The Myth of the Private API</h1>
+					
+				
+				<h2 class="subhead">The Fundamental Interconnectedness of Things</h2>
+						
+			<div class="entry-meta test">				
+									<span class="meta-sep">by</span> 	
+											<span class="author vcard"><a class="url fn n" rel="author" href="http://programming.oreilly.com/greese" title="View all posts by George Reese">
+						George Reese</a></span> |								
+									<!-- RSPEAK_STOP -->
+									<a href="http://twitter.com/GeorgeReese"> @GeorgeReese</a> |
+																	<span class="comments-link utility-items"><a href="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html#comments" title="Comment on The Myth of the Private API"><span class="dsq-postid" rel="63228 http://programming.oreilly.com/?p=63228">Comments: 5</span></a></span>
+					<span class="meta-sep utility-items"> | </span>
+					
+				<span class="entry-date">September 6, 2013</span> 				
+			</div><!-- .entry-meta -->
+			
+			<!-- AddThis Button BEGIN -->					
+			<div class="utility-items addthis_toolbox addthis_default_style home " addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API">					
+				<a class="addthis_button_tweet" tw:text="The Fundamental Interconnectedness of Things" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>						
+				<a class="addthis_button_google_plusone" g:plusone:size="medium" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>	
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>	
+				<a class="addthis_button_linkedin_counter" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>
+				<div class="clear"></div>
+			</div>		
+
+				<script type="text/javascript">
+				   var addthis_config = {
+				      data_ga_property: 'UA-22979035-1',
+				      data_ga_social: true
+				   };
+				</script>		
+			<!-- AddThis Button END -->			
+			
+			<div class="entry-content">
+							
+								
+				<!-- RSPEAK_START --><p>A little over a week ago, I wrote about how the authentication model for an <a href="http://docs.timdorr.apiary.io">unpublished Tesla REST API</a> was <a href="http://programming.oreilly.com/2013/08/tesla-model-s-rest-api-authentication-flaws.html">architecturally flawed</a> because it failed to take basic precautions against the sharing of credentials with third-parties common to most REST-based services these days. Since its publication, the main criticism of the article centered around the fact that the API is neither a published API nor has it been advertised as being meant for third-party consumption.</p>
+<p>The adding of value to devices and services with or without the knowledge/permission of their creators is an integral part of the Internet of Things. These days, people expect an API around their devices. They will discover any APIs and add value to the device/service&mdash;even if the task requires a little reverse engineering work. A responsible creator of a device or service in today&#8217;s world defined by the Internet of Things must therefore do the following things&mdash;always:</p>
+<ol>
+<li>Give it a public API</li>
+<li>Protect any internal communications so they can&#8217;t be reverse engineered</li>
+<li>Protect any public communications so that they don&#8217;t put end users at risk when they leverage third-party devices and services</li>
+</ol>
+<div id='ctx_linker' class='ctx_widget'></div><span id="more-63228"></span>							
+				<p>Whether the API is published or not, this perspective doesn&#8217;t consider that we&#8217;ve slowly been evolving the way we use technology. As we rethink many of the devices we use at work and home, we have to rethink our expectations not only of how these devices work in isolation, but also of how they work together. Whether it&#8217;s a phone, a car, or a light bulb, technology users should expect that these devices are capable of secure interactions.</p>
+<p><strong>The Burden of Security</strong></p>
+<p>The flaw I exposed in the Tesla API results from Tesla placing the burden of managing authentication credentials entirely on the shoulders of end users. In other words, the soundness of the Tesla API rests on the premise that end users should never, in any circumstances, leverage third-party tools to interact with their cars. Tesla has no responsibility to make an unpublished API secure against third-party malfeasance or misfeasance.  </p>
+<p>As a general rule, I don&#8217;t like approaches to software architecture that force users to choose between leveraging useful functionality and being secure, especially when the option to have both is easily addressed. If you place the burden of security on the user instead of the API, the proper response for a user is to forgo all value-added functionality from third parties in order to operate securely. In my experience, convenience always wins in the battle of convenience versus security, and it&#8217;s folly to expect users to change.</p>
+<p><strong>Three phenomena exemplify my view of this problem:</strong></p>
+<ul>
+<li>Cloud computing, where end users are sticking things &#8220;into the cloud&#8221; for greater agility while central IT admonishes them for &#8220;going rogue&#8221;</li>
+<li>BYOD (bring your own device), where end users are leveraging a wider variety of devices than those vetted by corporate IT to enable them to do things corporate IT can&#8217;t envision</li>
+<li>The &#8220;Internet of Things,&#8221; where all services and devices are interconnected via rich APIs and function well beyond the intentions of their designers</li>
+</ul>
+<p>If we didn&#8217;t have users going beyond the intent of the creators of a device or service, we wouldn&#8217;t have any of these things. We wouldn&#8217;t even have many of the things we take for granted today like online banking. </p>
+<p>Cloud computing is most secure when the cloud providers empower users with the tools to operate securely in the cloud. Trying to stop people from going into the cloud isn&#8217;t the solution. The same goes with BYOD. You can try to stop people from using their devices on your corporate network. The result, however, will be that they will stop using your corporate network. That neither provides you with greater security nor does it stop users from using their devices to do work.</p>
+<p>When speaking of the Tesla Model S, however, we&#8217;re talking about the &#8220;Internet of Things&#8221;&mdash;the point at which all devices and all services communicate with one another as needed without much, if any, human intervention. </p>
+<p><strong>A Story of an Interconnected World</strong></p>
+<p>One of the fundamental aspects of the Internet of Things is that the vendor doesn&#8217;t get to determine valid &#8220;use cases&#8221; for their devices or services. In fact, the point of an interconnected world is to create value well beyond the imagination of a device&#8217;s original inventors. Tesla, for example, may or may not have envisioned a world in which my car, my alarm clock, the weather, light bulbs, and my home security system are talking to each other to get me out of the house. I have and likely so have many, many others.</p>
+<p>It takes only a few modern devices and some programming know-how to start building your own Internet of Things. No fancy wiring or custom hardware is necessary.</p>
+<p><strong>Here are the components:</strong></p>
+<ul>
+<li>Light bulbs with an API like the <a href="https://www.meethue.com">Philips Hue light bulbs</a></li>
+<li><a href="http://www.raspberrypi.org">A Raspberry Pi</a> or even a general purpose laptop, desktop, or server</li>
+<li>A car with an API like a <a href="http://teslamotors.com">Tesla Model S</a></li>
+<li>A programmable thermostat with an API</li>
+<li>An internet connection</li>
+<li>A tablet device</li>
+</ul>
+<p>The critical features of all of these components are that they can connect to the Internet and they have an API. Except for the custom programming on the Raspberry Pi, they don&#8217;t know anything about the other things they will work with.</p>
+<p>They are specifically not connected through some purpose-specific local connection. None of them are built knowing anything about the others, yet they end up being fundamentally interconnected by RESTful APIs and a bit of programming.</p>
+<p><strong>The Myth of the Private API</strong></p>
+<p>Perhaps the root of the question where security lies boils down to the question of whether the Tesla should be considered part of the Internet of Things. While it&#8217;s cool to have your house automatically warm up your car when you wake up, it may not be a scenario in which Tesla has chosen to participate. They have not published their API and, for all we know, it was never designed to support such an interconnected reality.</p>
+<p>When it comes to modern devices and cloud services, however, there&#8217;s no such thing as a private API. More to the point, Tesla didn&#8217;t take the most basic precautions to make the API a truly private API, nor did they take the most basic precautions to protect users against the use of the API in third-party applications. In other words, it&#8217;s the worst of all worlds&mdash;not published, private, or secure.</p>
+<p>I sincerely believe that ultimately there is no such thing as a private API for consumption over the public Internet. Certainly there exist APIs of all sorts to support private communications between components of an application. The <a href="http://www.enstratius.com">Dell MCM</a> software acquired from the company I founded, Enstratius, has both a public <a href="http://docs.enstratius.com/console/api/api.html">RESTful API</a> and several internal SOAP APIs. We neither publish nor talk much about the internal APIs. What&#8217;s important to note, however, is that a customer can do anything they need to do using the public REST API and we&#8217;ve also taken steps to make sure that customers can&#8217;t reverse engineer and leverage the internal APIs.</p>
+<p>While Tesla uses the APIs for communication between their mobile apps and the car, they&#8217;ve neither taken the basic steps to protect it against third-party usage nor is it constructed in a tightly coupled, private fashion. As a consequence, people have reverse engineered the API and begun creating value-added services around it. These aren&#8217;t rogue tools aimed at capturing your credentials&mdash;they are truly valuable services that should not require Tesla&#8217;s blessing. I have even used some of them myself.</p>
+<p>The Philips Hue also followed a similar path. The last time I checked, it was also &#8220;not published.&#8221; That didn&#8217;t stop me from writing a generic light bulb management API to talk to the Hue light bulbs and it certainly hasn&#8217;t stopped the rich ecosystem that has grown around those APIs. It also didn&#8217;t stop an outside researcher from <a href="http://www.dhanjani.com/blog/2013/08/hacking-lightbulbs.html">skewering the security model of the Hue API</a>. In short, failure to publish an API doesn&#8217;t make an API a private API. As long as it is consumable over the Internet and in a format that can be reverse engineered, people will reverse engineer it and add value to your creation.</p>
+<p>One thing lost in my original article is the fact that I have been praising Tesla for having an API. In fact, in discussing it on Twitter and in other places, I noted that I&#8217;d rather have my Tesla with its flawed API than to have it with no API at all. The key point of the article, however, was that in an interconnected world, it is irresponsible to create an API without protections that enable users to leverage that API with third-party devices and services. It&#8217;s especially irresponsible because common best practices for REST API security (OAuth and request signing) easily deal with that problem without a lot of programming overhead.</p>
+<div id='ctx_linker' class='ctx_widget'></div><!-- RSPEAK_STOP -->
+							</div><!-- .entry-content -->
+			</div>
+			<div class="entry-utility">	
+				<div>
+				topic: <a href='http://programming.oreilly.com/programming' title='Programming Categoty'>Programming</a>				</div>
+				<div>
+				tags: <a href='http://programming.oreilly.com/tag/api' title='API Tag' rel='tag'>API</a>, <a href='http://programming.oreilly.com/tag/architecture' title='architecture Tag' rel='tag'>architecture</a>, <a href='http://programming.oreilly.com/tag/byod' title='BYOD Tag' rel='tag'>BYOD</a>, <a href='http://programming.oreilly.com/tag/device' title='device Tag' rel='tag'>device</a>, <a href='http://programming.oreilly.com/tag/industrial-internet' title='Industrial Internet Tag' rel='tag'>Industrial Internet</a>, <a href='http://programming.oreilly.com/tag/internet-of-things' title='internet of things Tag' rel='tag'>internet of things</a>, <a href='http://programming.oreilly.com/tag/iot' title='IOT Tag' rel='tag'>IOT</a>, <a href='http://programming.oreilly.com/tag/oauth' title='oauth Tag' rel='tag'>oauth</a>, <a href='http://programming.oreilly.com/tag/raspberry-pi' title='raspberry pi Tag' rel='tag'>raspberry pi</a>, <a href='http://programming.oreilly.com/tag/rest' title='REST Tag' rel='tag'>REST</a>, <a href='http://programming.oreilly.com/tag/soap' title='SOAP Tag' rel='tag'>SOAP</a>, <a href='http://programming.oreilly.com/tag/transportation' title='transportation Tag' rel='tag'>transportation</a>				</div>			
+			</div><!-- .entry-utility -->
+			
+			<!-- AddThis Button BEGIN -->					
+			<div class="utility-items addthis_toolbox addthis_default_style home " addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API">					
+				<a class="addthis_button_tweet"  addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>						
+				<a class="addthis_button_google_plusone" g:plusone:size="medium" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>	
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>
+				<a class="addthis_button_linkedin_counter" addthis:url="http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html" addthis:title="The Myth of the Private API"></a>
+				<div id="repost-icon">
+									</div>				
+				<div class="clear"></div>
+			</div>				
+			<!-- AddThis Button END -->			
+				
+				<script type="text/javascript"> 
+					$(".button.print a").click(function () { 					  
+					  jQuery.cookie('thePostID', "63228" , {expires: 1, path: '/' }); 					 
+					});  					
+				</script>	
+			 
+		</div><!-- #post-## -->		
+		<a name="comments"></a>
+		<a name="respond"></a>
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-1794">
+        <div id="dsq-comment-header-1794" class="dsq-comment-header">
+            <cite id="dsq-cite-1794">
+                <span id="dsq-author-user-1794">Gareth Patterson</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1794" class="dsq-comment-body">
+            <div id="dsq-comment-message-1794" class="dsq-comment-message"><p>While this is especially true now, it has been going on for decades.  People directly access the SQL tables rather than going through the &#8220;service layer&#8221; (stored procs or another technology), they inject HTML to add function, they call a Java Session Bean to do something that wasn&#8217;t intended.</p>
+<p>While the author never mentions the term, we are now at the &#8220;API first&#8221; stage of architecture.  If the architect truly thinks about everything as an API, then the kinds of things that Tesla did don&#8217;t happen.  You put security in because you are thinking about the API, etc.  However, I agree with George &#8211; I&#8217;m glad Tesla did what they did.</p>
+<p>Too many companies don&#8217;t think about APIs at all.  In this world of applications, thinking about the API is key.  Don&#8217;t think about functionality as what you can make the application do &#8211; think of it as what information can you share (securely) and what functions should be made available.  (And then maybe write a doc or two!)</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-1797">
+        <div id="dsq-comment-header-1797" class="dsq-comment-header">
+            <cite id="dsq-cite-1797">
+                <span id="dsq-author-user-1797">flasherz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1797" class="dsq-comment-body">
+            <div id="dsq-comment-message-1797" class="dsq-comment-message"><p>Sorry, Gareth, that&#8217;s an idealistic view of the world.  Yes, I agree with you that it would be great if every single system we ever worked with came with full UML specs, full industry standardization of messaging with all the other vendors playing in the ecosystem, full API development and runtime with all that good stuff I mention above, full everything &#8211; but that all costs a lot of money.  The perfect is the enemy of the good, and those who spend forever mastering integration will lose to those who are faster to give the functionality.</p>
+<p>Tesla&#8217;s customers wanted a mobile app.  They didn&#8217;t care about third-party ecosystems.  Tesla built a private communications mechanism that could be extended later.  If they had to stand up an OAUTH server, web widgets, subscription manager, etc., it may have taken them 2 additional months to get the functionality out there.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+    <li class="comment even thread-odd thread-alt depth-1" id="dsq-comment-1796">
+        <div id="dsq-comment-header-1796" class="dsq-comment-header">
+            <cite id="dsq-cite-1796">
+                <span id="dsq-author-user-1796">flasherz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1796" class="dsq-comment-body">
+            <div id="dsq-comment-message-1796" class="dsq-comment-message"><p>George unfortunately believes that my mail transport agent (Postfix) should use an open web services API with OAUTH to speak to my malware scanner, which should use the same type of API to speak to my virus scanner, which should use the same type of API to speak to my IMAP server, even though it is plainly obvious that those three items are parts of a closed system.</p>
+<p>Now, it is a given that someone might want to use my virus scanner to, for example, pipe web pages through&#8230;  or perhaps deliver other messages to my IMAP server.  However, they weren&#8217;t designed for that and it wasn&#8217;t intended, just as Tesla&#8217;s API&#8217;s were intended only for communication between its official mobile apps and its servers.  If they do make their way in that direction, I&#8217;m sure that a new standard or API will emerge, it will be published as an open API, and then George can be happy that his religion once again reigns supreme.</p>
+<p>In the author&#8217;s other post, I already have explained the difference between a public REST API and a closed API that just happens to use REST-like syntax.  I already explained that I&#8217;d happily support and upvote every one of George&#8217;s posts IF Tesla had said it was an open API to be used for third parties to provide capabilities to your car. But it&#8217;s not.</p>
+<p>Tesla&#8217;s API just doesn&#8217;t fit the author&#8217;s religion, and that&#8217;s ok. He has a right to believe every API should be an open API that uses OAUTH. That&#8217;s okay, in my early days of IT architecture I used to believe everything should be 100% modular and should use very expensive integration capabilites; that compilers shouldn&#8217;t have loop unrolling or use inline code. Someone might use that snippet of code one day and keeping it modular is the only way, etc., etc.</p>
+<p>I don&#8217;t believe that anymore. I&#8217;ve moved on. And I can admit that I was wrong back then, that there are places for single-use code, closed API&#8217;s, and narrow optimizations. Moreover, in my daytime job, I am responsible for application integration services and API&#8217;s, and the budget I&#8217;m responsible for doesn&#8217;t leave room for such overly complex architectures.  There are times that tightly-integrated systems are most appropriate, and there are times (such as when an API is published specifically for the purpose of an ecosystem) when the bulletproof capabilities the author desires are required.  Adopting OAUTH, among other requirements needed for open API environments (subscription management, audit, performance management, etc.), does not come free&#8230;  it comes with cost &#8212; cost in design, cost in development, cost in implementation, and cost in operations.  If Tesla isn&#8217;t ready to take that step, then that&#8217;s their prerogative. </p>
+<p>When Tesla advertises that API as an open programming interface to its vehicles, then the author is right.  Until then, he espouses an unrealistic ideology.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment odd alt depth-2" id="dsq-comment-1798">
+        <div id="dsq-comment-header-1798" class="dsq-comment-header">
+            <cite id="dsq-cite-1798">
+                <span id="dsq-author-user-1798">GeorgeReese</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1798" class="dsq-comment-body">
+            <div id="dsq-comment-message-1798" class="dsq-comment-message"><p>I don&#8217;t think it&#8217;s appropriate to make up positions and assign them to someone just to suit your rhetorical purposes. I do not believe this about Postfix and I definitely don&#8217;t believe you grok the concepts I am articulating.</p>
+</div>
+        </div>
+
+    <ul class="children">
+    <li class="comment even depth-3" id="dsq-comment-1799">
+        <div id="dsq-comment-header-1799" class="dsq-comment-header">
+            <cite id="dsq-cite-1799">
+                <span id="dsq-author-user-1799">flasherz</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-1799" class="dsq-comment-body">
+            <div id="dsq-comment-message-1799" class="dsq-comment-message"><p>They&#8217;re not made up.  You said that:</p>
+<p>&#8220;A responsible creator of a device or service&#8230;must therefore do the following things—always:</p>
+<p>Give it a public API<br />
+[...]&#8221;</p>
+<p>So therefore, my virus scanning service running on my UNIX machine must have a full public API with OAUTH authentication and every other complex mechanism you can think of, just because someone might want to use it for something that wasn&#8217;t intended.  So must any other daemon running on the machine.</p>
+<p>That&#8217;s not a very feasible position, and certainly no CIO in the world would accept a good chunk of her or his budget to create a perfect architecture with every single module independently modularized.</p>
+<p>You obviously live in a world where IT budgets are unlimited and real productivity isn&#8217;t demanded.  That&#8217;s not the world I live in, unfortunately.</p>
+<p>But hey, thanks for the downvotes.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html';
+    var disqus_identifier = '63228 http://programming.oreilly.com/?p=63228';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillycode';
+    var disqus_title = "The Myth of the Private API";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=63228';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/programming.oreilly.com\/2013\/09\/the-myth-of-the-private-api.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+	<div id="text-10" class="widget-container widget_text"><h3 class="widget-title">Popular Posts</h3>			<div class="textwidget"><ul class="popular-post-widget">
+
+<li><a href="http://programming.oreilly.com/2013/10/the-joys-of-static-memory-javascript.html">	The Joys of Static Memory JavaScript</a></li>	
+<li><a href="http://programming.oreilly.com/2013/10/security-after-death-trust.html">Security After the Death of Trust</a></li>
+<li><a href="http://What Developers Can Learn from healthcare.gov">What Developers Can Learn from healthcare.gov</a></li>
+<li><a href="http://programming.oreilly.com/2013/09/making-the-leap-to-ios-7.html">Making the Leap to iOS 7</a</li>
+<li><a href="http://programming.oreilly.com/2013/10/the-programming-industry-not-a-womans-world-yet.html">The Programming Industry: Not a Woman’s World – Yet</a></li>
+
+</ul></div>
+		<div class="clear"></div></div><div class="widget-container ad-widget fullwidth" style="border: 0px none"><div class="widget-content"><div id="newslet">
+<h3>Get the Programming  Weekly Newsletter</h3>
+
+<div id="newlet-content">
+<iframe src="http://oreilly.com/conferences/bulletin_form.html?conference=prognews&locationSource=prog_blog_widget&colorLink=237CC0" height="75px" width="202px" scrolling="no" frameborder="0"></iframe>
+</div>
+</div> <div class="clear" /></div></div></div><div id="text-3" class="widget-container widget_text"><h3 class="widget-title">Ebook Deals of the Day</h3>			<div class="textwidget"><iframe src="http://oreilly.com/programming/dotd.html" height="380px" width="200px" scrolling="no" frameborder="0"></iframe>
+<br >
+<iframe src="http://oreilly.com/programming/mspdotd.html" height="375px" width="200px" scrolling="no" frameborder="0"></iframe>
+</div>
+		<div class="clear"></div></div><div id="text-7" class="widget-container widget_text"><h3 class="widget-title">Video Deal of the Week</h3>			<div class="textwidget"><iframe src="http://oreilly.com/programming/dotw.html" height="375px" width="200px" scrolling="no" frameborder="0"></iframe><!-- deals2 --></div>
+		<div class="clear"></div></div><div class="sidebar-subscribe">
+	<ul>		
+			</ul>
+</div><div id="text-4" class="widget-container widget_text">			<div class="textwidget"><a href="http://oreilly.com/" target="_blank"><img src="http://cdn.oreillystatic.com/images/sitewide-headers/logo02.gif" alt="O'Reilly" border="0"></a>
+		<p class="copyright">&copy; 2013, O'Reilly Media, Inc.</p>
+
+<div class="menu-programming-container"><ul id="menu-programming" class="menu"><li id="menu-item-56926" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56926"><a target="_blank" href="http://oreilly.com/about/">About</a></li>
+<li id="menu-item-56524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56524"><a target="_blank" href="http://oreilly.com/oreilly/privacy.html">Privacy Policy</a></li>
+<li id="menu-item-57909" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-57909"><a target="_blank" href="http://oreilly.com/terms/">Terms of Service</a></li>
+</ul></div>		</div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+		</div><!-- #main -->
+
+		<div id="footer" role="contentinfo">
+			<div id="colophon">				
+									
+			</div><!-- #colophon -->
+		</div><!-- #footer -->
+	</div><!-- #inner-wrapper -->
+
+</div><!-- #wrapper -->
+<script type="text/javascript">		
+	jQuery(document).ready(function ($) {	
+		var str = $(".nav-next").text();
+		if (str == '') {				
+			$(".nav-previous .meta-sep").css('display','none');  	
+		}	
+		
+		$(".post-ad").wrap('<div id="article-ads-wrap" class="article-ads-wrap"><div id="article-ads"></div></div>');
+		$(".article-ads-wrap").prepend('<div id="article-ads-title">You might be interested in</div>');
+	
+	});   	
+</script>
+
+<script src="http://s.radar.oreilly.com/wp-content/themes/programming/js/jquery.fitvids.js"></script>
+<script>	
+	$(".entry-summary.entry-blurb").fitVids();  
+	$(".single .entry-content").fitVids();
+</script>
+
+<script language="JavaScript" type="text/javascript">
+var s_account="ororeilly,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+s.pageName="oreilly:programming:the myth of the private api"
+s.channel= "oreilly"
+s.prop1="oreilly:programming"
+s.prop2="oreilly:programming:programming"
+s.prop3="oreilly:programming:programming:programming"
+s.prop4="article"
+s.hier1="programming,programming,programming,programming"
+s.prop5="the myth of the private api"
+s.prop6="RD63228"
+s.prop7="09/06/2013" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="george reese" // author name
+s.prop22="programming" // blog name
+s.prop23="the myth of the private api" // entry title
+s.prop24="09/06/2013" // post date
+//s.prop25="" // days since last post
+s.prop26="friday" // day of week
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active--><script type='text/javascript'>
+/* <![CDATA[ */
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+var mejsL10n = {"language":"en-US","strings":{"Close":"Close","Fullscreen":"Fullscreen","Download File":"Download File","Download Video":"Download Video","Play\/Pause":"Play\/Pause","Mute Toggle":"Mute Toggle","None":"None","Turn off Fullscreen":"Turn off Fullscreen","Go Fullscreen":"Go Fullscreen","Unmute":"Unmute","Mute":"Mute","Captions\/Subtitles":"Captions\/Subtitles"}};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/mediaelement/mediaelement-and-player.min.js?ver=2.13.0'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/wpsocialite/Socialite/socialite.min.js?ver=2.0'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/wpsocialite/wpsocialite.js?ver=1.0'></script>
+<script type="text/javascript">Socialite.setup({facebook:{lang:'en_US',appId:null},twitter:{lang:'en'},googleplus:{lang:'en'},vkontakte:{apiId:''}});</script><script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"programming.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+<!-- on the home page, check user screen size and append the load button instead of auto loading content from second page -->
+<script type="text/javascript">
+//jQuery.noConflict();
+jQuery(document).ready(function($) {
+	if($('body').hasClass('home')){
+		var w_width = $(window).width();
+
+		$('<a href="#" id="load-more-post-btn">Load more</a>').insertAfter('#content-inner');
+
+		$(window).resize(function(){
+			w_width = $(window).width();
+			if (w_width <= 723 && w_width >= 320) {
+				$(window).unbind('.infscr');
+			}else{
+				$('#content-inner').infinitescroll('bind');
+			}
+		});
+		
+		if (w_width <= 723 && w_width >= 320) {
+			$(window).unbind('.infscr');
+		}
+
+		$(document).on('click', '#load-more-post-btn', function(e){
+			e.preventDefault();
+			$('#content-inner').infinitescroll('retrieve');
+	      	return false;
+
+		});
+	}
+});
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,1914 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,e="jstiming",g="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,d]};this[g]("start",null,a)}var a=new d;b.jstiming={Timer:d,load:a};if(b.performance&&b.performance.timing){var a=b.performance.timing,c=b[e].load,f=a.navigationStart,a=a.responseStart;0<f&&a>=f&&(c[g]("_wtsrt",void 0,f),c[g]("wtsrt_","_wtsrt",a),c[g]("tbsd_","wtsrt_"))}try{a=null,b.chrome&&b.chrome.csi&&(a=Math.floor(b.chrome.csi().pageT),c&&0<f&&(c[g]("_tbnd",void 0,b.chrome.csi().startE),
+c[g]("tbnd_","_tbnd",f))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<f&&(c[g]("_tbnd",void 0,b.external.startE),c[g]("tbnd_","_tbnd",f))),a&&(b[e].pt=a)}catch(l){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[e].load[g]("aft")};var h=!1;function k(){h||(h=!0,b[e].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",k,!1):b.attachEvent("onscroll",k);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://googlewebmastercentral.blogspot.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Official Google Webmaster Central Blog - Atom" href="http://googlewebmastercentral.blogspot.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Official Google Webmaster Central Blog - RSS" href="http://googlewebmastercentral.blogspot.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Official Google Webmaster Central Blog - Atom" href="http://www.blogger.com/feeds/32069983/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Official Google Webmaster Central Blog - Atom" href="http://googlewebmastercentral.blogspot.com/feeds/5930626542015959833/comments/default" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Official Google Webmaster Central Blog: Better backlink data for site owners</title>
+<meta content='+nxGUDJ4QpAZ5l9BHwTtLVC21AIh5d1N2d8vVuFHs34=' name='verify-v1'/>
+<meta content='Nn/2f+scpViAH2JLXNI1/MJYlewUHNXJerjbLtyKJRc=' name='verify-v1'/>
+<meta content='wUW3GJPzCoFGqOlXdueInzLyIUrlVjCykjTfUgGUGHk=' name='verify-v1'/>
+<meta content='ff4ac922c4e4fdf6-14e8adee4fbeadeb-g4bd5407d8c8fe095-20' name='google-translate-customization'/>
+<link href='http://www2.blogger.com/widgets/3319451950-blogarchive.css' rel='stylesheet' type='text/css'/><link href='http://www2.blogger.com/widgets/2791266615-blog.css' rel='stylesheet' type='text/css'/><!-- --><link type='text/css' rel='stylesheet' href='//www.blogger.com/static/v1/widgets/2775015444-widget_css_bundle.css' />
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/dyn-css/authorization.css?targetBlogID=32069983&amp;zx=7b23d7be-b0ca-4cb3-9ea6-d4b67e314e5a&quot;/&gt;
+' />
+<style type='text/css'>@import url('http://www2.blogger.com/css/blog_controls.css');
+@import url('http://www2.blogger.com/dyn-css/authorization.css?blogID=8975829421217267474');
+</style>
+<link href='http://www.google.com/uds/css/gsearch.css' rel='stylesheet' type='text/css'/>
+<style id='page-skin-1' type='text/css'><!--
+/*
+/* Variable definitions
+====================
+<Variable name="bgcolor" description="Page Background Color"
+type="color" default="#fff">
+<Variable name="textcolor" description="Text Color"
+type="color" default="#333">
+<Variable name="linkcolor" description="Link Color"
+type="color" default="#58a">
+<Variable name="pagetitlecolor" description="Blog Title Color"
+type="color" default="#929292">
+<Variable name="pagesubtitlecolor" description="Blog Sub Title Color"
+type="color" default="#929292">
+<Variable name="descriptioncolor" description="Blog Description Color"
+type="color" default="#666666">
+<Variable name="titlecolor" description="Post Title Color"
+type="color" default="#0093bb">
+<Variable name="bordercolor" description="Border Color"
+type="color" default="#ccc">
+<Variable name="sidebarcolor" description="Sidebar Title Color"
+type="color" default="#000000">
+<Variable name="sidebartextcolor" description="Sidebar Text Color"
+type="color" default="#666">
+<Variable name="visitedlinkcolor" description="Visited Link Color"
+type="color" default="#999">
+<Variable name="bodyfont" description="Text Font"
+type="font" default="normal normal 100% Arial, sans-serif">
+<Variable name="headerfont" description="Sidebar Title Font"
+type="font"
+default="normal normal 95% Arial, sans-serif">
+<Variable name="pagetitlefont" description="Blog Title Font"
+type="font"
+default="normal normal 150% Arial, sans-serif">
+<Variable name="pagesubtitlefont" description="Blog Sub Title Font"
+type="font"
+default="normal normal 50% Arial, sans-serif">
+<Variable name="descriptionfont" description="Blog Description Font"
+type="font"
+default="normal normal 100% Arial, sans-serif">
+<Variable name="postfooterfont" description="Post Footer Font"
+type="font"
+default="normal normal 78% Arial, sans-serif">
+*/
+/* Use this with templates/template-twocol.html */
+body {
+background:#ffffff;
+margin:0;
+color:#333333;
+font-size/* */:/**/small;
+font-size: /**/small;
+text-align: center;
+}
+a img {
+border-width:0;
+}
+code {
+font-family: courier new;
+}
+/* Header
+-----------------------------------------------
+*/
+#searchcontrol {
+width : 180px;
+}
+#searchResults .gsc-ad-box { display : none; }
+#searchResults {
+margin-right: 25px;
+}
+#searchResults .gsc-control {
+width : 100%;
+}
+#searchResults .gsc-resultsbox-visible {
+border-bottom : 1px solid #e9e9e9;
+margin-bottom : 10px;
+}
+#webcontrol .gsc-ad-box { display : none; }
+#header-wrapper {
+margin:0 auto 15px;
+min-width:550px;
+}
+#header {
+margin: 5px;
+color:#929292;
+}
+#logo {
+background-image:url('http://photos1.blogger.com/x/blogger2/6495/3914/1600/z/104716/gse_multipart40542.png');
+background-repeat:no-repeat;
+padding-left:240px;
+padding-top:20px;
+padding-bottom:0px;
+height:90px;
+width:750px;
+font:normal normal 150% Arial, sans-serif;
+}
+#logo h1 {
+color:#929292;
+padding:0px;
+margin:0px;
+font: Arial, Helvetica, sans-serif;
+font-weight:bold;
+font-size:1.2em;
+}
+#logo h2 {
+color:#929292;
+padding:0px;
+margin:0px;
+font: Arial, Helvetica, sans-serif;
+font-size:.7em;
+}
+#header h1 {
+margin:5px 5px 0;
+padding:15px 20px .25em;
+line-height:1.2em;
+text-transform:uppercase;
+letter-spacing:.2em;
+}
+#header .description {
+margin:0;
+max-width:700px;
+font: normal normal 100% Arial, sans-serif;
+color: #666666;
+}
+/* Outer-Wrapper
+----------------------------------------------- */
+#outer-wrapper {
+margin:10px 0px 0px 0px;
+padding:0px;
+text-align:left;
+font: normal normal 100% Arial, sans-serif;
+width:760px;
+}
+#main-wrapper {
+width:570px;
+margin:0 0px 5px;
+float:left;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+#sidebar-wrapper {
+margin-left:10px;
+padding-left:10px;
+width: 180px;
+word-wrap: break-word; /* fix for long text breaking sidebar float in IE */
+overflow: hidden;      /* fix for long non-text content breaking IE sidebar float */
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+margin:1.5em 0 .75em;
+font:normal normal 95% Arial, sans-serif;
+color:#666666;
+}
+/* Posts
+-----------------------------------------------
+*/
+h2.date-header {
+margin:0;
+padding:0;
+}
+h2.post-author {
+margin:0 0 .5em;
+padding-top:0;
+}
+.byline-author {
+margin: 0;
+padding: 0 0 0 0;
+color: #666666;
+}
+.post {
+margin:.5em 0 1.5em 0;
+border-bottom:1px dotted #cccccc;
+padding-bottom:1.5em;
+}
+.post-body p {
+margin-bottom:0;
+padding-bottom:0;
+}
+.post h3 {
+margin:.25em 0 0 0;
+padding:0;
+font-size:160%;
+font-weight:normal;
+line-height:1.4em;
+color:#0093bb;
+}
+.post acronym, abbr {
+border: none;
+cursor: help;
+}
+.post h3 a, .post h3 a:visited, .post h3 strong {
+display:block;
+text-decoration:none;
+color:#0093bb;
+font-weight:normal;
+margin-bottom:0;
+padding-bottom:0;
+}
+.post h3 strong, .post h3 a:hover {
+color:#333333;
+}
+.post p {
+}
+.post-footer {
+margin: .75em 0;
+color:#666666;
+font: normal normal 100% Arial, sans-serif;
+line-height: 1.4em;
+}
+.comment-link {
+margin-left:.6em;
+}
+.post img {
+padding:4px;
+border:1px solid #cccccc;
+}
+.post blockquote {
+margin:1em 20px;
+}
+.post blockquote p {
+margin:.75em 0;
+}
+/* Comments
+----------------------------------------------- */
+#comments h4 {
+margin:.25em 0 .5em 0;
+padding:0 0 4px;
+font-size:160%;
+font-weight:normal;
+line-height:1.4em;
+color:#0093bb;
+}
+#comments-block {
+margin:1em 0 1.5em;
+line-height:1.6em;
+}
+#comments-block .comment-author {
+margin:.5em 0;
+}
+#comments-block .comment-body {
+margin:.25em 0 0;
+}
+#comments-block .comment-footer {
+margin:-.25em 0 2em;
+line-height: 1.4em;
+text-transform:uppercase;
+letter-spacing:.1em;
+}
+#comments-block .comment-body p {
+margin:0 0 .75em;
+}
+.deleted-comment {
+font-style:italic;
+color:gray;
+}
+#blog-pager-newer-link {
+float: left;
+}
+#blog-pager-older-link {
+float: right;
+}
+#blog-pager {
+text-align: center;
+}
+.feed-links {
+clear: both;
+line-height: 2.5em;
+}
+/* Sidebar Content
+----------------------------------------------- */
+.sidebar {
+color: #666666;
+line-height: 1.5em;
+}
+.sidebar h2 {
+margin:1em 0 .25em 0;
+padding:7px 0 2px;
+font: Arial, Helvetica, sans-serif;
+font-size:115%;
+font-weight:bold;
+}
+.sidebar ul {
+list-style:none;
+margin:0 0 0 0;
+padding:0 0 0 0;
+text-indent:none;
+}
+.sidebar li {
+margin:0;
+padding:0 0 .25em 0px;
+line-height:1.5em;
+}
+.smalllink {
+font-size:75%;
+color:#666666;
+}
+.listelement {
+margin-bottom: .7em;
+}
+padding:
+.sidebar .widget, .main .widget {
+margin:0 0 1.5em;
+padding:0 0 1.5em;
+}
+.main .Blog {
+border-bottom-width: 0;
+margin-left: 5px;
+}
+/* Profile
+----------------------------------------------- */
+.profile-img {
+float: left;
+margin: 0 5px 5px 0;
+padding: 4px;
+border: 1px solid #cccccc;
+}
+.profile-data {
+margin:0;
+text-transform:uppercase;
+letter-spacing:.1em;
+font: normal normal 78% Arial, sans-serif;
+color: #666666;
+font-weight: bold;
+line-height: 1.6em;
+}
+.profile-datablock {
+margin:.5em 0 .5em;
+}
+.profile-textblock {
+margin: 0.5em 0;
+line-height: 1.6em;
+}
+.profile-link {
+font: normal normal 78% Arial, sans-serif;
+text-transform: uppercase;
+letter-spacing: .1em;
+}
+/* Footer
+----------------------------------------------- */
+#footer {
+margin:0 auto;
+clear:both;
+padding-top:15px;
+line-height: 1.6em;
+text-align: left;
+font: normal normal 100% Arial, sans-serif;
+}
+/** Page structure tweaks for layout editor wireframe */
+body#layout #header {
+margin-left: 0px;
+margin-right: 0px;
+}
+
+--></style>
+<script src='http://www.google.com/uds/api?file=uds.js&v=1.0&key=ABQIAAAAGe7PxO_cWM9yMd6ildkwxBQB-lgBGc7c8kPNvhnjM5YgBILVQBREChuf4qx3V2vAw6jKsJqcRFC0Sw' type='text/javascript'></script>
+<script language='Javascript' type='text/javascript'>
+    //<![CDATA[
+
+    function OnLoad() {
+      var controlRoot = document.getElementById("searchResults");
+      // Create a search control
+      var searchControl = new GSearchControl();
+      searchControl.setLinkTarget(GSearch.LINK_TARGET_SELF);
+      searchControl.setResultSetSize(GSearch.LARGE_RESULTSET);
+
+
+
+      // Tell the searcher to draw itself and tell it where to attach
+       
+      var searchFormElement = document.getElementById("searchcontrol");
+      var drawOptions = new GdrawOptions();
+      drawOptions.setSearchFormRoot(searchFormElement);
+      drawOptions.setDrawMode(GSearchControl.DRAW_MODE_TABBED);
+      
+        // This Blog
+      var searcher = new GwebSearch();
+      searcher.setSiteRestriction("http://googlewebmastercentral.blogspot.com/");
+      searcher.setUserDefinedLabel("This Blog");
+      searchControl.addSearcher(searcher);
+
+      // Official Google Blogs
+      var searcher = new GwebSearch();
+      searcher.setSiteRestriction("010222979794876194725:abdomvzqczg");
+      searcher.setUserDefinedLabel("Google Blogs");
+      searchControl.addSearcher(searcher);
+
+      // the web
+      searcher = new GwebSearch();
+      searchControl.addSearcher(searcher);
+
+
+      // all blogs
+      searcher = new GblogSearch();
+      searchControl.addSearcher(searcher);
+
+      // news
+      searcher = new GnewsSearch();
+      searchControl.addSearcher(searcher);
+
+      // draw it
+      searchControl.draw(controlRoot, drawOptions);
+
+    }
+
+//function registerLoadHandler(handler) {
+    //  var node = window;
+    //  if (node.addEventListener) {
+    //    node.addEventListener("load", handler, false);
+    //  } else if (node.attachEvent) {
+    //    node.attachEvent("onload", handler);
+    //  } else {
+    //    node['onload'] = handler;
+    //  }
+    //  return true;
+    //}
+
+    //registerLoadHandler(OnLoad);
+    //]]>
+</script>
+<meta content='A59633DB71864B02823A08A9AE47425D' name='msvalidate.01'/>
+<script type='text/javascript'>
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-18009-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                '//www.blogger.com/navbar.g?targetBlogID\07532069983\46blogName\75Official+Google+Webmaster+Central+Blog\46publishMode\75PUBLISH_MODE_BLOGSPOT\46navbarType\75SILVER\46layoutType\75LAYOUTS\46searchRoot\75http://googlewebmastercentral.blogspot.com/search\46blogLocale\75en_US\46v\0752\46homepageUrl\75http://googlewebmastercentral.blogspot.com/\46targetPostID\0755930626542015959833\46blogPostOrPageUrl\75http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html\46vt\0754926321619019393204',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<center>
+<div id='outer-wrapper'><div id='wrap2'>
+<!-- skip links for text browsers -->
+<span id='skiplinks' style='display:none;'>
+<a href='#main'>skip to main </a> |
+      <a href='#sidebar'>skip to sidebar</a>
+</span>
+<div class='header-wrapper'>
+<div><a href='http://googlewebmastercentral.blogspot.com/'><img alt='Google Webmaster Central Blog - Official news on crawling and indexing sites for the Google index' src='http://photos1.blogger.com/x/blogger2/6495/3914/1600/z/104716/gse_multipart40542.png'/></a></div>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<p class='description'><span>
+</span></p>
+</div></div>
+</div>
+<div id='content-wrapper'>
+<div id='main-wrapper'>
+<div id='searchResults'></div>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts'>
+<div class='post uncustomized-post-template'>
+<a name='5930626542015959833'></a>
+<h3 class='post-title'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html'>Better backlink data for site owners</a>
+</h3>
+<div class='post-body'>
+<h2 class='date-header'>Thursday, September 12, 2013
+at
+9:15 AM
+</h2>
+Webmaster level: intermediate<br />
+<br />
+In recent years, our free Webmaster Tools product has provided roughly 100,000 <a href="https://support.google.com/webmasters/answer/55281">backlinks</a> when you click the "Download more sample links" button. Until now, we've selected those links primarily by lexicographical order. That meant that for some sites, you didn't get as complete of a picture of the site's backlinks because the link data skewed toward the beginning of the alphabet.<br />
+<br />
+Based on feedback from the webmaster community, we're improving how we select these backlinks to give sites a fuller picture of their backlink profile. The most significant improvement you'll see is that most of the links are now sampled uniformly from the full spectrum of backlinks rather than alphabetically. You're also more likely to get example links from different top-level domains (TLDs) as well as from different domain names. The new links you see will still be sorted alphabetically.<br />
+<br />
+Starting soon, when you download your data, you'll notice a much broader, more diverse cross-section of links. Site owners looking for insights into who recommends their content will now have a better overview of those links, and those working on cleaning up any bad linking practices will find it easier to see where to spend their time and effort. <br />
+<br />
+Thanks for the feedback, and we'll keep working to provide helpful data and resources in <a href="http://www.google.com/webmasters/">Webmaster Tools</a>. As always, please ask in our <a href="http://productforums.google.com/forum/#!forum/webmasters">forums</a> if you have any questions.<br />
+<br />
+<span class="byline-author">Posted by Yinnon Haviv, Software Engineer, Webmaster Tools Team</span><br />
+<br />
+<br />
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<p class='post-footer-line post-footer-line-1'><span class='post-author'>
+</span>
+<br/>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=32069983&postID=5930626542015959833' title='Email Post'>
+<span class='email-post-icon'>&#160;</span>
+</a>
+</span>
+<span class='item-control blog-admin pid-1394863640'>
+<a href='http://www.blogger.com/post-edit.g?blogID=32069983&postID=5930626542015959833&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+</p>
+<p class='post-footer-line post-footer-line-2'>
+<span class='post-labels'>
+Labels:
+<a href='http://googlewebmastercentral.blogspot.com/search/label/advanced' rel='tag'>advanced</a>,
+<a href='http://googlewebmastercentral.blogspot.com/search/label/intermediate' rel='tag'>intermediate</a>,
+<a href='http://googlewebmastercentral.blogspot.com/search/label/webmaster%20tools' rel='tag'>webmaster tools</a>
+</span>
+</p>
+<div class='post-share-buttons'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=32069983&postID=5930626542015959833&target=email' target='_blank' title='Email This'>
+<span class='share-button-link-text'>Email This</span>
+</a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=32069983&postID=5930626542015959833&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'>
+<span class='share-button-link-text'>BlogThis!</span>
+</a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=32069983&postID=5930626542015959833&target=twitter' target='_blank' title='Share to Twitter'>
+<span class='share-button-link-text'>Share to Twitter</span>
+</a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=32069983&postID=5930626542015959833&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'>
+<span class='share-button-link-text'>Share to Facebook</span>
+</a>
+<div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+</div>
+</div>
+<span class='disclaimer'>The comments you read here belong only to the person who posted them. We do, however, reserve the right to remove off-topic comments.</span>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>41 comments:</h4>
+<div id='Blog1_comments-block-wrapper'>
+<dl class='' id='comments-block'>
+<dt class='comment-author blogger-comment-icon' id='c9059979128073369435'>
+<a name='c9059979128073369435'></a>
+<a href='http://www.blogger.com/profile/17234304457563423719' rel='nofollow'>Mirza Sharz</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-9059979128073369435'>
+<p>
+I am so happy to see my blog has so many quality back links
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379009120000#c9059979128073369435' title='comment permalink'>
+September 12, 2013 at 11:05 AM
+</a>
+<span class='item-control blog-admin pid-104931927'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=9059979128073369435' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c6993357837759634435'>
+<a name='c6993357837759634435'></a>
+<a href='http://www.blogger.com/profile/17234304457563423719' rel='nofollow'>Mirza Sharz</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6993357837759634435'>
+<p>
+.. and I dont mind to put this Official Google Webmaster Central Blog on my blog roll
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379009259850#c6993357837759634435' title='comment permalink'>
+September 12, 2013 at 11:07 AM
+</a>
+<span class='item-control blog-admin pid-104931927'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=6993357837759634435' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c558752051308571276'>
+<a name='c558752051308571276'></a>
+<a href='http://www.blogger.com/profile/18063939385899842034' rel='nofollow'>Rama Krishna Sistu</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-558752051308571276'>
+<p>
+Thanks for the useful update
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379017173183#c558752051308571276' title='comment permalink'>
+September 12, 2013 at 1:19 PM
+</a>
+<span class='item-control blog-admin pid-1681814000'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=558752051308571276' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3263324157253125125'>
+<a name='c3263324157253125125'></a>
+<a href='http://www.blogger.com/profile/09052015791533809748' rel='nofollow'>Oliver Worthington</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3263324157253125125'>
+<p>
+Thanks, this will be interesting, however &quot;Starting soon&quot; is a little vague, will this roll out at different times across different countries?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379031653994#c3263324157253125125' title='comment permalink'>
+September 12, 2013 at 5:20 PM
+</a>
+<span class='item-control blog-admin pid-491173555'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3263324157253125125' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3252004203809129038'>
+<a name='c3252004203809129038'></a>
+<a href='http://www.blogger.com/profile/10743590715671860432' rel='nofollow'>Aaron</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3252004203809129038'>
+<p>
+Sounds like a useful addition - it will be especially interesting how you determine backlinks defined as &quot;bad linking practices&quot;
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379039657107#c3252004203809129038' title='comment permalink'>
+September 12, 2013 at 7:34 PM
+</a>
+<span class='item-control blog-admin pid-330322924'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3252004203809129038' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c4768624725536402486'>
+<a name='c4768624725536402486'></a>
+<a href='http://www.blogger.com/profile/01374054234254744974' rel='nofollow'>Get Right Music</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4768624725536402486'>
+<p>
+Great news! Now you guys just have to solve the issue of how easy it is to knock a competitor out of the search results with a little negative SAPE SEO...
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379040371205#c4768624725536402486' title='comment permalink'>
+September 12, 2013 at 7:46 PM
+</a>
+<span class='item-control blog-admin pid-1382110025'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=4768624725536402486' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author openid-comment-icon' id='c3509195038922922324'>
+<a name='c3509195038922922324'></a>
+<a href='http://www.whytochoose.com/' rel='nofollow'>whytochoose.com</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3509195038922922324'>
+<p>
+thats nice and needy
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379041742290#c3509195038922922324' title='comment permalink'>
+September 12, 2013 at 8:09 PM
+</a>
+<span class='item-control blog-admin pid-80467622'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3509195038922922324' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3805515721036604664'>
+<a name='c3805515721036604664'></a>
+<a href='http://www.blogger.com/profile/09998327190124635614' rel='nofollow'>Jim Munro</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3805515721036604664'>
+<p>
+Still no complete solution for sites impacted by Negative SEO. Surely it would not be impossible to do?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379042290044#c3805515721036604664' title='comment permalink'>
+September 12, 2013 at 8:18 PM
+</a>
+<span class='item-control blog-admin pid-261809581'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3805515721036604664' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c2493015683716501186'>
+<a name='c2493015683716501186'></a>
+<a href='http://www.blogger.com/profile/16293319806143176027' rel='nofollow'>Matt Sells</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2493015683716501186'>
+<p>
+So it will only show examples and not all your backlinks?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379042378491#c2493015683716501186' title='comment permalink'>
+September 12, 2013 at 8:19 PM
+</a>
+<span class='item-control blog-admin pid-1211146265'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=2493015683716501186' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author openid-comment-icon' id='c8790616340425014745'>
+<a name='c8790616340425014745'></a>
+<a href='http://topspot-official.blogspot.com/' rel='nofollow'>topspot-official</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8790616340425014745'>
+<p>
+Webmasters can also use this information to clean up any bad linking practices since it is now easier to see where to spend time and effort.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379044184325#c8790616340425014745' title='comment permalink'>
+September 12, 2013 at 8:49 PM
+</a>
+<span class='item-control blog-admin pid-1640090526'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=8790616340425014745' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c7012632281859283425'>
+<a name='c7012632281859283425'></a>
+<a href='http://www.blogger.com/profile/02284011263403920462' rel='nofollow'>Daniel Benny Simanjuntak</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7012632281859283425'>
+<p>
+What they should be doing is identifying sitewide links as a single reference and then documenting other links from the same site. And then allow a SECOND download. And a THIRD.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379044411834#c7012632281859283425' title='comment permalink'>
+September 12, 2013 at 8:53 PM
+</a>
+<span class='item-control blog-admin pid-5704777'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=7012632281859283425' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3168922054303528561'>
+<a name='c3168922054303528561'></a>
+<a href='http://www.blogger.com/profile/14169139730818715294' rel='nofollow'>webpromotioner</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3168922054303528561'>
+<p>
+Yah, it was required for long. For many of our clients we see 50,000 links but could only download some of them. 
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379051636382#c3168922054303528561' title='comment permalink'>
+September 12, 2013 at 10:53 PM
+</a>
+<span class='item-control blog-admin pid-310430005'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3168922054303528561' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c6939350690165792686'>
+<a name='c6939350690165792686'></a>
+<a href='http://www.blogger.com/profile/12261929466381709295' rel='nofollow'>明美光电</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6939350690165792686'>
+<p>
+The problem is how to quickly remove these links?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379060652410#c6939350690165792686' title='comment permalink'>
+September 13, 2013 at 1:24 AM
+</a>
+<span class='item-control blog-admin pid-664257793'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=6939350690165792686' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c1897355947594134479'>
+<a name='c1897355947594134479'></a>
+<a href='http://www.blogger.com/profile/11663090498400940824' rel='nofollow'>Jammy k Cric</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1897355947594134479'>
+<p>
+Nice to see these changes .. Now Google is trying to give more information to webmaster in order to improve the search Quality.<br />It&#39;s good for end user in many sense.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379061156953#c1897355947594134479' title='comment permalink'>
+September 13, 2013 at 1:32 AM
+</a>
+<span class='item-control blog-admin pid-1329493624'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=1897355947594134479' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c5557466477494071645'>
+<a name='c5557466477494071645'></a>
+<a href='http://www.blogger.com/profile/10611385459469134225' rel='nofollow'>Krinal Mehta</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-5557466477494071645'>
+<p>
+Great, but this still isn&#39;t ALL the backlinks that a site has, correct? You are only trying to show us most of our backlinks!
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379064178564#c5557466477494071645' title='comment permalink'>
+September 13, 2013 at 2:22 AM
+</a>
+<span class='item-control blog-admin pid-460926156'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=5557466477494071645' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c2500418824575127783'>
+<a name='c2500418824575127783'></a>
+<a href='http://www.blogger.com/profile/00686355360410305097' rel='nofollow'>Shubham Tiwari</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2500418824575127783'>
+<p>
+This is really a good news for webmasters. I hope, that would help us.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379071711829#c2500418824575127783' title='comment permalink'>
+September 13, 2013 at 4:28 AM
+</a>
+<span class='item-control blog-admin pid-453745968'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=2500418824575127783' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c6423751598516745612'>
+<a name='c6423751598516745612'></a>
+<a href='http://www.blogger.com/profile/01164063308064564385' rel='nofollow'>Alok Raghuwanshi</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-6423751598516745612'>
+<p>
+Very Good Move Google 
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379098609637#c6423751598516745612' title='comment permalink'>
+September 13, 2013 at 11:56 AM
+</a>
+<span class='item-control blog-admin pid-1553564620'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=6423751598516745612' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c5511930397893784870'>
+<a name='c5511930397893784870'></a>
+<a href='http://www.blogger.com/profile/03204826740567940680' rel='nofollow'>שחר עזר</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-5511930397893784870'>
+<p>
+Great, just good news!<br />Maybe this is the end for payment for external programs :)
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379234048659#c5511930397893784870' title='comment permalink'>
+September 15, 2013 at 1:34 AM
+</a>
+<span class='item-control blog-admin pid-845580386'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=5511930397893784870' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c4992998296048306713'>
+<a name='c4992998296048306713'></a>
+<a href='http://www.blogger.com/profile/13048592020057515002' rel='nofollow'>Antulio Lopez</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4992998296048306713'>
+<p>
+Thanks for the update, we look forward to keep using the powerful tool!
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379267342734#c4992998296048306713' title='comment permalink'>
+September 15, 2013 at 10:49 AM
+</a>
+<span class='item-control blog-admin pid-249988471'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=4992998296048306713' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3462843464805771191'>
+<a name='c3462843464805771191'></a>
+<a href='http://www.blogger.com/profile/06766219824703671037' rel='nofollow'>i gede hendra tirtana, ST.</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3462843464805771191'>
+<p>
+Thanks for the sharing . . .<br /><br />until now , my blog did not get any quality back link . . . <br /><br />oh oh oh <br /><br />thanks
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379285045749#c3462843464805771191' title='comment permalink'>
+September 15, 2013 at 3:44 PM
+</a>
+<span class='item-control blog-admin pid-762694602'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3462843464805771191' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c4960228038359653275'>
+<a name='c4960228038359653275'></a>
+<a href='http://www.blogger.com/profile/15944388724272341602' rel='nofollow'>Amulya Sem</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4960228038359653275'>
+<p>
+This is very useful for those who wants to trace out the bad/spammy links pointing out to the site...Great feature..Thanks Google!!!!
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379336895712#c4960228038359653275' title='comment permalink'>
+September 16, 2013 at 6:08 AM
+</a>
+<span class='item-control blog-admin pid-1277729075'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=4960228038359653275' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3265295783594206708'>
+<a name='c3265295783594206708'></a>
+<a href='http://www.blogger.com/profile/15474499823220566235' rel='nofollow'>nursyam septiadi</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3265295783594206708'>
+<p>
+Very Good Move Google.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379385038047#c3265295783594206708' title='comment permalink'>
+September 16, 2013 at 7:30 PM
+</a>
+<span class='item-control blog-admin pid-1015987464'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3265295783594206708' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c7802491178006529143'>
+<a name='c7802491178006529143'></a>
+<a href='http://www.blogger.com/profile/14034674093846314441' rel='nofollow'>Western Environmental Liner</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7802491178006529143'>
+<p>
+nice update..thanks for the sharing . .
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379395173816#c7802491178006529143' title='comment permalink'>
+September 16, 2013 at 10:19 PM
+</a>
+<span class='item-control blog-admin pid-800377354'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=7802491178006529143' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c538188779860265483'>
+<a name='c538188779860265483'></a>
+<a href='http://www.blogger.com/profile/08249498802307940071' rel='nofollow'>Lovely Prem Talluri</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-538188779860265483'>
+<p>
+I think that from now, we can get more detailed information about the back-link data. Keep on going like these good updates...
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379436423178#c538188779860265483' title='comment permalink'>
+September 17, 2013 at 9:47 AM
+</a>
+<span class='item-control blog-admin pid-1386261978'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=538188779860265483' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c4113499768472013094'>
+<a name='c4113499768472013094'></a>
+<a href='http://www.blogger.com/profile/10367196711387201558' rel='nofollow'>Nakamura Agatha</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-4113499768472013094'>
+<p>
+thanks for information
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379494352621#c4113499768472013094' title='comment permalink'>
+September 18, 2013 at 1:52 AM
+</a>
+<span class='item-control blog-admin pid-1807938738'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=4113499768472013094' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c1990347399553020704'>
+<a name='c1990347399553020704'></a>
+<a href='http://www.blogger.com/profile/13190343655668826004' rel='nofollow'>MR-IT-Cologne</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1990347399553020704'>
+<p>
+Why don&#39;t Google use the great old robot.txt head and title tags a little meta information and not ranking with links, the pagerank is just good for big Websites a small startup i think could be supportet a Tony little better. For example it is really hard for a searchengine startup Tod get content without a Good crawler. And Please Google, there is an opinion to live without, the free Internet is in its 30th century this year, I&#39;m sad when I imagine a child not able to use a dictionary.<br />
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379544966067#c1990347399553020704' title='comment permalink'>
+September 18, 2013 at 3:56 PM
+</a>
+<span class='item-control blog-admin pid-1943239275'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=1990347399553020704' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c2989174498211178916'>
+<a name='c2989174498211178916'></a>
+<a href='http://www.blogger.com/profile/05471808657414965616' rel='nofollow'>Daniel Sokolowski</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2989174498211178916'>
+<span class='deleted-comment'>This comment has been removed by the author.</span>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379683106310#c2989174498211178916' title='comment permalink'>
+September 20, 2013 at 6:18 AM
+</a>
+<span class='item-control blog-admin '>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=2989174498211178916' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c5935759172018387686'>
+<a name='c5935759172018387686'></a>
+<a href='http://www.blogger.com/profile/05471808657414965616' rel='nofollow'>Daniel Sokolowski</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-5935759172018387686'>
+<p>
+@Google - you may want to take a look at bing.com&#39;s webmaster tools link explorer module for more ideas. 
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379683208048#c5935759172018387686' title='comment permalink'>
+September 20, 2013 at 6:20 AM
+</a>
+<span class='item-control blog-admin pid-1588310272'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=5935759172018387686' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c7167871285574725639'>
+<a name='c7167871285574725639'></a>
+<a href='http://www.blogger.com/profile/01325558864478711949' rel='nofollow'>Emmanuel Obarhua</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7167871285574725639'>
+<p>
+Hi, the good leader is usually concerned about his followers&#39; complaints, and that&#39;s Google. I like the way you are handling issues. Only keep the good work, and Thanks.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379720537381#c7167871285574725639' title='comment permalink'>
+September 20, 2013 at 4:42 PM
+</a>
+<span class='item-control blog-admin pid-806334056'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=7167871285574725639' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3956383658948804030'>
+<a name='c3956383658948804030'></a>
+<a href='http://www.blogger.com/profile/09654739825768465266' rel='nofollow'>NORMAN SHAPIRO</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3956383658948804030'>
+<p>
+Under &quot;other&quot; domains, how/where do I enter &quot;hostgator&quot;?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379794608923#c3956383658948804030' title='comment permalink'>
+September 21, 2013 at 1:16 PM
+</a>
+<span class='item-control blog-admin pid-382379589'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3956383658948804030' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c7131787022398221990'>
+<a name='c7131787022398221990'></a>
+<a href='http://www.blogger.com/profile/04176559912153142988' rel='nofollow'>Madly Bangladesh</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7131787022398221990'>
+<p>
+Very Good Thinking
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379796551739#c7131787022398221990' title='comment permalink'>
+September 21, 2013 at 1:49 PM
+</a>
+<span class='item-control blog-admin pid-1736603746'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=7131787022398221990' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c7287687682323117454'>
+<a name='c7287687682323117454'></a>
+<a href='http://www.blogger.com/profile/04057650340701725599' rel='nofollow'>Robert Wright</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7287687682323117454'>
+<p>
+Great info!!
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379823485692#c7287687682323117454' title='comment permalink'>
+September 21, 2013 at 9:18 PM
+</a>
+<span class='item-control blog-admin pid-805303643'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=7287687682323117454' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c5926877211574884218'>
+<a name='c5926877211574884218'></a>
+<a href='http://www.blogger.com/profile/04057650340701725599' rel='nofollow'>Robert Wright</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-5926877211574884218'>
+<span class='deleted-comment'>This comment has been removed by the author.</span>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379823518632#c5926877211574884218' title='comment permalink'>
+September 21, 2013 at 9:18 PM
+</a>
+<span class='item-control blog-admin '>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=5926877211574884218' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c8474439365686519810'>
+<a name='c8474439365686519810'></a>
+<a href='http://www.blogger.com/profile/17624737346760397677' rel='nofollow'>Strange</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8474439365686519810'>
+<p>
+It will be a very useful for all webmasters. But is any one knows when it will be launched?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379912069183#c8474439365686519810' title='comment permalink'>
+September 22, 2013 at 9:54 PM
+</a>
+<span class='item-control blog-admin pid-1590624703'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=8474439365686519810' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c7760392669889492003'>
+<a name='c7760392669889492003'></a>
+<a href='http://www.blogger.com/profile/12208548862396735265' rel='nofollow'>Trekking in Nepal</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-7760392669889492003'>
+<span class='deleted-comment'>This comment has been removed by the author.</span>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379932303723#c7760392669889492003' title='comment permalink'>
+September 23, 2013 at 3:31 AM
+</a>
+<span class='item-control blog-admin '>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=7760392669889492003' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c5122889111131823806'>
+<a name='c5122889111131823806'></a>
+<a href='http://www.blogger.com/profile/16578260026571259558' rel='nofollow'>Thi Thanh Hoa Nguyen</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-5122889111131823806'>
+<p>
+Thanks for your update, but I have problem for Seo local place.<br />The backlink from Google Webmaster blog high quality for Seo, is rights ?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379946575534#c5122889111131823806' title='comment permalink'>
+September 23, 2013 at 7:29 AM
+</a>
+<span class='item-control blog-admin pid-1909766147'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=5122889111131823806' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c9173016396187942096'>
+<a name='c9173016396187942096'></a>
+<a href='http://www.blogger.com/profile/04131359127546150717' rel='nofollow'>Wolston Lobo</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-9173016396187942096'>
+<p>
+This is really a good news for all of us.
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1379974044158#c9173016396187942096' title='comment permalink'>
+September 23, 2013 at 3:07 PM
+</a>
+<span class='item-control blog-admin pid-135465822'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=9173016396187942096' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c8488529029365655673'>
+<a name='c8488529029365655673'></a>
+<a href='http://www.blogger.com/profile/14362094943810920727' rel='nofollow'>Himanchal Sharma</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-8488529029365655673'>
+<p>
+Sir In Some Previous Days Sir Whenever I Resubmitted My Sitemap To My Google Webmaster Tool Box The Red Line Is Not Increasing Which Was Usually Increasing Previously And People Say This Mean That The Sitemap&#39;s Process Is Pending<br />Sir Please Tell Me Why My Sitemap&#39;s Process Pending For 5-6 Days
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1380016725158#c8488529029365655673' title='comment permalink'>
+September 24, 2013 at 2:58 AM
+</a>
+<span class='item-control blog-admin pid-1136843516'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=8488529029365655673' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author openid-comment-icon' id='c1053837177610044099'>
+<a name='c1053837177610044099'></a>
+<a href='http://www.warungjamtangan.com/' rel='nofollow'>warungjamtangan.com</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-1053837177610044099'>
+<p>
+really good news..thank you for sharing
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1380125735539#c1053837177610044099' title='comment permalink'>
+September 25, 2013 at 9:15 AM
+</a>
+<span class='item-control blog-admin pid-41291245'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=1053837177610044099' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author openid-comment-icon' id='c2827257727860343087'>
+<a name='c2827257727860343087'></a>
+<a href='http://www.cyberkendra.com/' rel='nofollow'>cyberkendra.com</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-2827257727860343087'>
+<p>
+Thanks, I am very happy that, mu blog have much amount of good back links.. :)
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1380549016798#c2827257727860343087' title='comment permalink'>
+September 30, 2013 at 6:50 AM
+</a>
+<span class='item-control blog-admin pid-552245008'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=2827257727860343087' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+<dt class='comment-author blogger-comment-icon' id='c3351977459617768596'>
+<a name='c3351977459617768596'></a>
+<a href='http://www.blogger.com/profile/10477293873345737045' rel='nofollow'>Abs Riyadi</a>
+said...
+</dt>
+<dd class='comment-body' id='Blog1_cmt-3351977459617768596'>
+<p>
+back links?
+</p>
+</dd>
+<dd class='comment-footer'>
+<span class='comment-timestamp'>
+<a href='http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html?showComment=1380549535331#c3351977459617768596' title='comment permalink'>
+September 30, 2013 at 6:58 AM
+</a>
+<span class='item-control blog-admin pid-1017742020'>
+<a class='comment-delete' href='http://www.blogger.com/delete-comment.g?blogID=32069983&postID=3351977459617768596' title='Delete Comment'>
+<img src='//www.blogger.com/img/icon_delete13.gif'/>
+</a>
+</span>
+</span>
+</dd>
+</dl>
+</div>
+<p class='comment-footer'>
+<a href='http://www.blogger.com/comment.g?blogID=32069983&amp;postID=5930626542015959833' onclick=''>Post a Comment</a>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+</div>
+</div>
+</div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://googlewebmastercentral.blogspot.com/2013/09/video-expanding-your-site-to-more.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://googlewebmastercentral.blogspot.com/2013/08/relauthor-frequently-asked-advanced.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://googlewebmastercentral.blogspot.com/'>Home</a>
+</div>
+<div class='clear'></div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en_US'};</script>
+</div></div>
+</div>
+<div id='sidebar-wrapper'>
+<div id='searchcontrol'></div>
+<br/>
+<script language='Javascript' type='text/javascript'>OnLoad();</script>
+<div class='sidebar section' id='sidebar'><div class='widget BlogArchive' id='BlogArchive1'>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<select id='BlogArchive1_ArchiveMenu'>
+<option value=''>Archive</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_09_01_archive.html'>September 2013 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_08_01_archive.html'>August 2013 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_07_01_archive.html'>July 2013 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_06_01_archive.html'>June 2013 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_05_01_archive.html'>May 2013 (3)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_04_01_archive.html'>April 2013 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_03_01_archive.html'>March 2013 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_02_01_archive.html'>February 2013 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2013_01_01_archive.html'>January 2013 (1)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_12_01_archive.html'>December 2012 (3)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_11_01_archive.html'>November 2012 (1)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_10_01_archive.html'>October 2012 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_09_01_archive.html'>September 2012 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_08_01_archive.html'>August 2012 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_07_01_archive.html'>July 2012 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_06_01_archive.html'>June 2012 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_05_01_archive.html'>May 2012 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_04_01_archive.html'>April 2012 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_03_01_archive.html'>March 2012 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_02_01_archive.html'>February 2012 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2012_01_01_archive.html'>January 2012 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_12_01_archive.html'>December 2011 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_11_01_archive.html'>November 2011 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_10_01_archive.html'>October 2011 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_09_01_archive.html'>September 2011 (8)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_08_01_archive.html'>August 2011 (10)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_07_01_archive.html'>July 2011 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_06_01_archive.html'>June 2011 (10)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_05_01_archive.html'>May 2011 (8)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_04_01_archive.html'>April 2011 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_03_01_archive.html'>March 2011 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_02_01_archive.html'>February 2011 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2011_01_01_archive.html'>January 2011 (3)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_12_01_archive.html'>December 2010 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_11_01_archive.html'>November 2010 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_10_01_archive.html'>October 2010 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_09_01_archive.html'>September 2010 (8)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_08_01_archive.html'>August 2010 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_07_01_archive.html'>July 2010 (2)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_06_01_archive.html'>June 2010 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_05_01_archive.html'>May 2010 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_04_01_archive.html'>April 2010 (12)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_03_01_archive.html'>March 2010 (11)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_02_01_archive.html'>February 2010 (1)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2010_01_01_archive.html'>January 2010 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_12_01_archive.html'>December 2009 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_11_01_archive.html'>November 2009 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_10_01_archive.html'>October 2009 (13)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_09_01_archive.html'>September 2009 (8)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_08_01_archive.html'>August 2009 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_07_01_archive.html'>July 2009 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_06_01_archive.html'>June 2009 (18)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_05_01_archive.html'>May 2009 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_04_01_archive.html'>April 2009 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_03_01_archive.html'>March 2009 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_02_01_archive.html'>February 2009 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2009_01_01_archive.html'>January 2009 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_12_01_archive.html'>December 2008 (12)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_11_01_archive.html'>November 2008 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_10_01_archive.html'>October 2008 (16)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_09_01_archive.html'>September 2008 (8)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_08_01_archive.html'>August 2008 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_07_01_archive.html'>July 2008 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_06_01_archive.html'>June 2008 (12)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_05_01_archive.html'>May 2008 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_04_01_archive.html'>April 2008 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_03_01_archive.html'>March 2008 (11)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_02_01_archive.html'>February 2008 (4)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2008_01_01_archive.html'>January 2008 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_12_01_archive.html'>December 2007 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_11_01_archive.html'>November 2007 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_10_01_archive.html'>October 2007 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_09_01_archive.html'>September 2007 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_08_01_archive.html'>August 2007 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_07_01_archive.html'>July 2007 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_06_01_archive.html'>June 2007 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_05_01_archive.html'>May 2007 (6)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_04_01_archive.html'>April 2007 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_03_01_archive.html'>March 2007 (9)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_02_01_archive.html'>February 2007 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2007_01_01_archive.html'>January 2007 (3)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2006_12_01_archive.html'>December 2006 (5)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2006_11_01_archive.html'>November 2006 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2006_10_01_archive.html'>October 2006 (7)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2006_09_01_archive.html'>September 2006 (8)</option>
+<option value='http://googlewebmastercentral.blogspot.com/2006_08_01_archive.html'>August 2006 (7)</option>
+</select>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML2'>
+<div class='widget-content'>
+<br/><a href="http://googlewebmastercentral.blogspot.com/atom.xml"><img src="http://www.google.com/images/feed-icon.gif"/></a> <a href="http://googlewebmastercentral.blogspot.com/atom.xml">Site Feed</a><br/>
+<a href="http://fusion.google.com/add?feedurl=http%3A//googlewebmastercentral.blogspot.com/atom.xml"><img border="0" alt="Add to Google" style="padding-top:5px;" width="104" src="http://buttons.googlesyndication.com/fusion/add.gif" height="17"/></a>
+<br/>
+
+<p><a href="http://feeds.feedburner.com/blogspot/amDG"><img width="88" style="border:0" alt="" src="http://feeds.feedburner.com/~fc/blogspot/amDG?bg=0033FF&amp;fg=FFFFFF&amp;anim=0" height="26"/></a></p>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML9'>
+<div class='widget-content'>
+<div id="google_translate_element"></div><script type="text/javascript">function googleTranslateElementInit() {new google.translate.TranslateElement({pageLanguage: 'en', layout: google.translate.TranslateElement.InlineLayout.SIMPLE, gaTrack: true, gaId: 'UA-18009-4'}, 'google_translate_element');}</script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML9&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML9"));' target='configHTML9' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget LinkList' id='LinkList2'>
+<h2>Useful links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.google.com/webmasters/#utm_source=en-et-gwcblog&utm_medium=link&utm_campaign=sitemaps-us-gwcblog'>Google Webmaster Central</a></li>
+<li><a href='http://www.google.com/support/webmasters/'>Webmaster Help Center</a></li>
+<li><a href='http://www.google.com/webmasters/tools/#utm_source=en-et-gwcblog&utm_medium=link&utm_campaign=sitemaps-us-gwcblog'>Google Webmaster Tools</a></li>
+<li><a href='http://www.youtube.com/GoogleWebmasterHelp'>Webmaster Central on YouTube</a></li>
+<li><a href='http://googlewebmaster-cn.blogspot.com/'>Webmaster Central China Blog</a></li>
+<li><a href='http://googlewebmastercentral-ja.blogspot.com/'>Webmaster Central Japanese Blog</a></li>
+<li><a href='http://googlewebmastercentral-de.blogspot.com/'>Webmaster Central German Blog</a></li>
+<li><a href='http://googlewebmaster-es.blogspot.com/'>Webmaster Central Spanish Blog</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=LinkList&widgetId=LinkList2&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList2"));' target='configLinkList2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' id='Label1'>
+<h2>Labels</h2>
+<div class='widget-content list-label-widget-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/accessibility'>accessibility</a>
+<span dir='ltr'>(8)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/advanced'>advanced</a>
+<span dir='ltr'>(160)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/beginner'>beginner</a>
+<span dir='ltr'>(152)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/crawling%20and%20indexing'>crawling and indexing</a>
+<span dir='ltr'>(121)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/events'>events</a>
+<span dir='ltr'>(44)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/feedback%20and%20communication'>feedback and communication</a>
+<span dir='ltr'>(71)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/general%20tips'>general tips</a>
+<span dir='ltr'>(72)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/hacked%20sites'>hacked sites</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/hreflang'>hreflang</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/images'>images</a>
+<span dir='ltr'>(6)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/intermediate'>intermediate</a>
+<span dir='ltr'>(178)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/localization'>localization</a>
+<span dir='ltr'>(19)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/malware'>malware</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/mobile'>mobile</a>
+<span dir='ltr'>(13)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/performance'>performance</a>
+<span dir='ltr'>(9)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/products%20and%20services'>products and services</a>
+<span dir='ltr'>(52)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/search%20results'>search results</a>
+<span dir='ltr'>(87)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/sitemaps'>sitemaps</a>
+<span dir='ltr'>(39)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/structured%20data'>structured data</a>
+<span dir='ltr'>(7)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/verification'>verification</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/video'>video</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/webmaster%20guidelines'>webmaster guidelines</a>
+<span dir='ltr'>(33)</span>
+</li>
+<li>
+<a dir='ltr' href='http://googlewebmastercentral.blogspot.com/search/label/webmaster%20tools'>webmaster tools</a>
+<span dir='ltr'>(137)</span>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML5'>
+<h2 class='title'>We love feedback!</h2>
+<div class='widget-content'>
+Post a comment on the blog or visit our <a href="http://www.google.com/support/forum/p/Webmasters?hl=en">discussion forum for webmasters</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML5&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target='configHTML5' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML6'>
+<h2 class='title'>New to Webmaster Central?</h2>
+<div class='widget-content'>
+The <a href="http://support.google.com/webmasters/bin/static.py?hl=en&page=checklist.cs&tab=1095580">Webmaster Academy</a>  will walk you through the basics.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML6&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML6"));' target='configHTML6' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML10'>
+<h2 class='title'>Subscribe via email</h2>
+<div class='widget-content'>
+<form #nsubmit="window.open('http://www.feedburner.com/fb/a/emailverifySubmit?feedId=1092589', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true" action="http://www.feedburner.com/fb/a/emailverify" style="border:1px solid #ccc;padding:3px;text-align:center;" target="popupwindow" method="post"><p>Enter your email address:</p><p><input style="width:140px" name="email" type="text"/></p><input value="http://feeds.feedburner.com/~e?ffid=1092589" name="url" type="hidden"/><input value="Official Google Webmaster Central Blog" name="title" type="hidden"/><input value="en_US" name="loc" type="hidden"/><input value="Subscribe" type="submit"/><p>Delivered by <a href="http://www.feedburner.com" target="_blank">FeedBurner</a></p></form>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML10&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML10"));' target='configHTML10' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML3'>
+<h2 class='title'>More Blogs from Google</h2>
+<div class='widget-content'>
+Visit our <a href="http://www.google.com/press/blogs/directory.html#tab0"> directory</a> for more information about Google blogs.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML4'>
+<div class='widget-content'>
+<br/><br/>Google Webmaster Central Blog is powered by Blogger. <a href="http://www.blogger.com/">Start your own weblog</a>.<br/><br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target='configHTML4' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BloggerButton' id='BloggerButton1'>
+<div class='widget-content'>
+<a href='http://www.blogger.com'><img alt='Powered By Blogger' src='http://www.blogger.com/buttons/blogger-simple-kahki.gif'/></a>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=BloggerButton&widgetId=BloggerButton1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BloggerButton1"));' target='configBloggerButton1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div></div>
+<br/><br/><br/>
+</div>
+<!-- spacer for skins that want sidebar and main to be the same height-->
+</div><!-- end content-wrapper -->
+<div class='footer'>
+<div class='section' id='footer'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+&#169; Google Inc. All rights reserved.<br/>
+   <a href="http://www.google.com/privacy.html">Privacy Policy</a> | 
+	      <a href="http://www.google.com/terms_of_service.html">Terms of Service</a>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=32069983&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=footer' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div></div>
+</center><!-- end outer-wrapper -->
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="//www.blogger.com/static/v1/widgets/3545113424-widgets.js"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV1";window['blogger_blog_id'] = '32069983';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d32069983','//googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html','32069983');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '32069983', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Official Google Webmaster Central Blog', 'pageType': 'item', 'url': 'http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html', 'canonicalUrl': 'http://googlewebmastercentral.blogspot.com/2013/09/better-backlink-data-for-site-owners.html', 'canonicalHomepageUrl': 'http://googlewebmastercentral.blogspot.com/', 'homepageUrl': 'http://googlewebmastercentral.blogspot.com/', 'blogspotFaviconUrl': 'http://googlewebmastercentral.blogspot.com/favicon.ico', 'enabledCommentProfileImages': false, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Better backlink data for site owners', 'pageTitle': 'Official Google Webmaster Central Blog: Better backlink data for site owners', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Official Google Webmaster Central Blog - Atom\42 href\75\42http://googlewebmastercentral.blogspot.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Official Google Webmaster Central Blog - RSS\42 href\75\42http://googlewebmastercentral.blogspot.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Official Google Webmaster Central Blog - Atom\42 href\75\42http://www.blogger.com/feeds/32069983/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Official Google Webmaster Central Blog - Atom\42 href\75\42http://googlewebmastercentral.blogspot.com/feeds/5930626542015959833/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,e\75\42jstiming\42,g\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){c\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[c,d]};this[g](\42start\42,null,a)}var a\75new d;b.jstiming\75{Timer:d,load:a};if(b.performance\46\46b.performance.timing){var a\75b.performance.timing,c\75b[e].load,f\75a.navigationStart,a\75a.responseStart;0\74f\46\46a\76\75f\46\46(c[g](\42_wtsrt\42,void 0,f),c[g](\42wtsrt_\42,\42_wtsrt\42,a),c[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,b.chrome\46\46b.chrome.csi\46\46(a\75Math.floor(b.chrome.csi().pageT),c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.chrome.csi().startE),\nc[g](\42tbnd_\42,\42_tbnd\42,f))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.external.startE),c[g](\42tbnd_\42,\42_tbnd\42,f))),a\46\46(b[e].pt\75a)}catch(l){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[e].load[g](\42aft\42)};var h\75!1;function k(){h||(h\75!0,b[e].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,k,!1):b.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/15de8d1bfc9ff1d1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'testHtml5CssSrc': '//www.blogger.com/static/v1/widgets/721438413-css_bundle_html5.css', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'sidebartextcolor': '#666666', 'linkcolor': '#0093bb', 'visitedlinkcolor': '#999999', 'textcolor': '#333333', 'headerfont': 'normal normal 95% Arial, sans-serif', 'pagetitlefont': 'normal normal 150% Arial, sans-serif', 'bgcolor': '#ffffff', 'descriptioncolor': '#666666', 'pagesubtitlecolor': '#929292', 'titlecolor': '#0093bb', 'bordercolor': '#cccccc', 'postfooterfont': 'normal normal 78% Arial, sans-serif', 'pagetitlecolor': '#929292', 'bodyfont': 'normal normal 100% Arial, sans-serif', 'descriptionfont': 'normal normal 100% Arial, sans-serif', 'sidebarcolor': '#666666', 'pagesubtitlefont': 'normal normal 50% Arial, sans-serif'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'footer', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'sidebar', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML9', 'sidebar', null, document.getElementById('HTML9'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar', null, document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML6', 'sidebar', null, document.getElementById('HTML6'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML10', 'sidebar', null, document.getElementById('HTML10'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BloggerButtonView', new _WidgetInfo('BloggerButton1', 'sidebar', null, document.getElementById('BloggerButton1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/2456262163-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/4138445517-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://googlewebmastercentral.blogspot.com/', 'title': 'Home', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+</html>

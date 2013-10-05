@@ -1,0 +1,407 @@
+   #[1]publisher [2]Programming » Feed [3]Programming » Comments Feed
+   [4]Programming » The Myth of the Private API Comments Feed [5]Working
+   in the Hadoop Ecosystem [6]Upward Mobility: Buddy System
+
+   [7]Programming
+     * [8]Twitter
+     * [9]YouTube
+     * [10]Google+
+     * [11]Facebook
+     * [12]Subscribe to Programming
+
+   ____________________
+   Submit
+
+Popular topics:
+
+     * [13]Web Platform
+     * [14]Programming
+     * [15]Microsoft Dev
+     * [16]Web Perf/Ops
+     * [17]Business & Culture
+
+   [18]Visit oreilly.com
+     * [19]Print
+     * [20]Listen Speech Icon
+     *
+
+The Myth of the Private API
+
+The Fundamental Interconnectedness of Things
+
+   by [21]George Reese | [22]@GeorgeReese | [23]Comments: 5 | September 6,
+   2013
+
+   A little over a week ago, I wrote about how the authentication model
+   for an [24]unpublished Tesla REST API was [25]architecturally flawed
+   because it failed to take basic precautions against the sharing of
+   credentials with third-parties common to most REST-based services these
+   days. Since its publication, the main criticism of the article centered
+   around the fact that the API is neither a published API nor has it been
+   advertised as being meant for third-party consumption.
+
+   The adding of value to devices and services with or without the
+   knowledge/permission of their creators is an integral part of the
+   Internet of Things. These days, people expect an API around their
+   devices. They will discover any APIs and add value to the
+   device/service--even if the task requires a little reverse engineering
+   work. A responsible creator of a device or service in today's world
+   defined by the Internet of Things must therefore do the following
+   things--always:
+    1. Give it a public API
+    2. Protect any internal communications so they can't be reverse
+       engineered
+    3. Protect any public communications so that they don't put end users
+       at risk when they leverage third-party devices and services
+
+   Whether the API is published or not, this perspective doesn't consider
+   that we've slowly been evolving the way we use technology. As we
+   rethink many of the devices we use at work and home, we have to rethink
+   our expectations not only of how these devices work in isolation, but
+   also of how they work together. Whether it's a phone, a car, or a light
+   bulb, technology users should expect that these devices are capable of
+   secure interactions.
+
+   The Burden of Security
+
+   The flaw I exposed in the Tesla API results from Tesla placing the
+   burden of managing authentication credentials entirely on the shoulders
+   of end users. In other words, the soundness of the Tesla API rests on
+   the premise that end users should never, in any circumstances, leverage
+   third-party tools to interact with their cars. Tesla has no
+   responsibility to make an unpublished API secure against third-party
+   malfeasance or misfeasance.
+
+   As a general rule, I don't like approaches to software architecture
+   that force users to choose between leveraging useful functionality and
+   being secure, especially when the option to have both is easily
+   addressed. If you place the burden of security on the user instead of
+   the API, the proper response for a user is to forgo all value-added
+   functionality from third parties in order to operate securely. In my
+   experience, convenience always wins in the battle of convenience versus
+   security, and it's folly to expect users to change.
+
+   Three phenomena exemplify my view of this problem:
+     * Cloud computing, where end users are sticking things "into the
+       cloud" for greater agility while central IT admonishes them for
+       "going rogue"
+     * BYOD (bring your own device), where end users are leveraging a
+       wider variety of devices than those vetted by corporate IT to
+       enable them to do things corporate IT can't envision
+     * The "Internet of Things," where all services and devices are
+       interconnected via rich APIs and function well beyond the
+       intentions of their designers
+
+   If we didn't have users going beyond the intent of the creators of a
+   device or service, we wouldn't have any of these things. We wouldn't
+   even have many of the things we take for granted today like online
+   banking.
+
+   Cloud computing is most secure when the cloud providers empower users
+   with the tools to operate securely in the cloud. Trying to stop people
+   from going into the cloud isn't the solution. The same goes with BYOD.
+   You can try to stop people from using their devices on your corporate
+   network. The result, however, will be that they will stop using your
+   corporate network. That neither provides you with greater security nor
+   does it stop users from using their devices to do work.
+
+   When speaking of the Tesla Model S, however, we're talking about the
+   "Internet of Things"--the point at which all devices and all services
+   communicate with one another as needed without much, if any, human
+   intervention.
+
+   A Story of an Interconnected World
+
+   One of the fundamental aspects of the Internet of Things is that the
+   vendor doesn't get to determine valid "use cases" for their devices or
+   services. In fact, the point of an interconnected world is to create
+   value well beyond the imagination of a device's original inventors.
+   Tesla, for example, may or may not have envisioned a world in which my
+   car, my alarm clock, the weather, light bulbs, and my home security
+   system are talking to each other to get me out of the house. I have and
+   likely so have many, many others.
+
+   It takes only a few modern devices and some programming know-how to
+   start building your own Internet of Things. No fancy wiring or custom
+   hardware is necessary.
+
+   Here are the components:
+     * Light bulbs with an API like the [26]Philips Hue light bulbs
+     * [27]A Raspberry Pi or even a general purpose laptop, desktop, or
+       server
+     * A car with an API like a [28]Tesla Model S
+     * A programmable thermostat with an API
+     * An internet connection
+     * A tablet device
+
+   The critical features of all of these components are that they can
+   connect to the Internet and they have an API. Except for the custom
+   programming on the Raspberry Pi, they don't know anything about the
+   other things they will work with.
+
+   They are specifically not connected through some purpose-specific local
+   connection. None of them are built knowing anything about the others,
+   yet they end up being fundamentally interconnected by RESTful APIs and
+   a bit of programming.
+
+   The Myth of the Private API
+
+   Perhaps the root of the question where security lies boils down to the
+   question of whether the Tesla should be considered part of the Internet
+   of Things. While it's cool to have your house automatically warm up
+   your car when you wake up, it may not be a scenario in which Tesla has
+   chosen to participate. They have not published their API and, for all
+   we know, it was never designed to support such an interconnected
+   reality.
+
+   When it comes to modern devices and cloud services, however, there's no
+   such thing as a private API. More to the point, Tesla didn't take the
+   most basic precautions to make the API a truly private API, nor did
+   they take the most basic precautions to protect users against the use
+   of the API in third-party applications. In other words, it's the worst
+   of all worlds--not published, private, or secure.
+
+   I sincerely believe that ultimately there is no such thing as a private
+   API for consumption over the public Internet. Certainly there exist
+   APIs of all sorts to support private communications between components
+   of an application. The [29]Dell MCM software acquired from the company
+   I founded, Enstratius, has both a public [30]RESTful API and several
+   internal SOAP APIs. We neither publish nor talk much about the internal
+   APIs. What's important to note, however, is that a customer can do
+   anything they need to do using the public REST API and we've also taken
+   steps to make sure that customers can't reverse engineer and leverage
+   the internal APIs.
+
+   While Tesla uses the APIs for communication between their mobile apps
+   and the car, they've neither taken the basic steps to protect it
+   against third-party usage nor is it constructed in a tightly coupled,
+   private fashion. As a consequence, people have reverse engineered the
+   API and begun creating value-added services around it. These aren't
+   rogue tools aimed at capturing your credentials--they are truly
+   valuable services that should not require Tesla's blessing. I have even
+   used some of them myself.
+
+   The Philips Hue also followed a similar path. The last time I checked,
+   it was also "not published." That didn't stop me from writing a generic
+   light bulb management API to talk to the Hue light bulbs and it
+   certainly hasn't stopped the rich ecosystem that has grown around those
+   APIs. It also didn't stop an outside researcher from [31]skewering the
+   security model of the Hue API. In short, failure to publish an API
+   doesn't make an API a private API. As long as it is consumable over the
+   Internet and in a format that can be reverse engineered, people will
+   reverse engineer it and add value to your creation.
+
+   One thing lost in my original article is the fact that I have been
+   praising Tesla for having an API. In fact, in discussing it on Twitter
+   and in other places, I noted that I'd rather have my Tesla with its
+   flawed API than to have it with no API at all. The key point of the
+   article, however, was that in an interconnected world, it is
+   irresponsible to create an API without protections that enable users to
+   leverage that API with third-party devices and services. It's
+   especially irresponsible because common best practices for REST API
+   security (OAuth and request signing) easily deal with that problem
+   without a lot of programming overhead.
+   topic: [32]Programming
+   tags: [33]API, [34]architecture, [35]BYOD, [36]device, [37]Industrial
+   Internet, [38]internet of things, [39]IOT, [40]oauth, [41]raspberry pi,
+   [42]REST, [43]SOAP, [44]transportation
+     * Gareth Patterson
+       While this is especially true now, it has been going on for
+       decades. People directly access the SQL tables rather than going
+       through the "service layer" (stored procs or another technology),
+       they inject HTML to add function, they call a Java Session Bean to
+       do something that wasn't intended.
+       While the author never mentions the term, we are now at the "API
+       first" stage of architecture. If the architect truly thinks about
+       everything as an API, then the kinds of things that Tesla did don't
+       happen. You put security in because you are thinking about the API,
+       etc. However, I agree with George - I'm glad Tesla did what they
+       did.
+       Too many companies don't think about APIs at all. In this world of
+       applications, thinking about the API is key. Don't think about
+       functionality as what you can make the application do - think of it
+       as what information can you share (securely) and what functions
+       should be made available. (And then maybe write a doc or two!)
+          + flasherz
+            Sorry, Gareth, that's an idealistic view of the world. Yes, I
+            agree with you that it would be great if every single system
+            we ever worked with came with full UML specs, full industry
+            standardization of messaging with all the other vendors
+            playing in the ecosystem, full API development and runtime
+            with all that good stuff I mention above, full everything -
+            but that all costs a lot of money. The perfect is the enemy of
+            the good, and those who spend forever mastering integration
+            will lose to those who are faster to give the functionality.
+            Tesla's customers wanted a mobile app. They didn't care about
+            third-party ecosystems. Tesla built a private communications
+            mechanism that could be extended later. If they had to stand
+            up an OAUTH server, web widgets, subscription manager, etc.,
+            it may have taken them 2 additional months to get the
+            functionality out there.
+     * flasherz
+       George unfortunately believes that my mail transport agent
+       (Postfix) should use an open web services API with OAUTH to speak
+       to my malware scanner, which should use the same type of API to
+       speak to my virus scanner, which should use the same type of API to
+       speak to my IMAP server, even though it is plainly obvious that
+       those three items are parts of a closed system.
+       Now, it is a given that someone might want to use my virus scanner
+       to, for example, pipe web pages through... or perhaps deliver other
+       messages to my IMAP server. However, they weren't designed for that
+       and it wasn't intended, just as Tesla's API's were intended only
+       for communication between its official mobile apps and its servers.
+       If they do make their way in that direction, I'm sure that a new
+       standard or API will emerge, it will be published as an open API,
+       and then George can be happy that his religion once again reigns
+       supreme.
+       In the author's other post, I already have explained the difference
+       between a public REST API and a closed API that just happens to use
+       REST-like syntax. I already explained that I'd happily support and
+       upvote every one of George's posts IF Tesla had said it was an open
+       API to be used for third parties to provide capabilities to your
+       car. But it's not.
+       Tesla's API just doesn't fit the author's religion, and that's ok.
+       He has a right to believe every API should be an open API that uses
+       OAUTH. That's okay, in my early days of IT architecture I used to
+       believe everything should be 100% modular and should use very
+       expensive integration capabilites; that compilers shouldn't have
+       loop unrolling or use inline code. Someone might use that snippet
+       of code one day and keeping it modular is the only way, etc., etc.
+       I don't believe that anymore. I've moved on. And I can admit that I
+       was wrong back then, that there are places for single-use code,
+       closed API's, and narrow optimizations. Moreover, in my daytime
+       job, I am responsible for application integration services and
+       API's, and the budget I'm responsible for doesn't leave room for
+       such overly complex architectures. There are times that
+       tightly-integrated systems are most appropriate, and there are
+       times (such as when an API is published specifically for the
+       purpose of an ecosystem) when the bulletproof capabilities the
+       author desires are required. Adopting OAUTH, among other
+       requirements needed for open API environments (subscription
+       management, audit, performance management, etc.), does not come
+       free... it comes with cost -- cost in design, cost in development,
+       cost in implementation, and cost in operations. If Tesla isn't
+       ready to take that step, then that's their prerogative.
+       When Tesla advertises that API as an open programming interface to
+       its vehicles, then the author is right. Until then, he espouses an
+       unrealistic ideology.
+          + GeorgeReese
+            I don't think it's appropriate to make up positions and assign
+            them to someone just to suit your rhetorical purposes. I do
+            not believe this about Postfix and I definitely don't believe
+            you grok the concepts I am articulating.
+               o flasherz
+                 They're not made up. You said that:
+                 "A responsible creator of a device or service...must
+                 therefore do the following things--always:
+                 Give it a public API
+                 [...]"
+                 So therefore, my virus scanning service running on my
+                 UNIX machine must have a full public API with OAUTH
+                 authentication and every other complex mechanism you can
+                 think of, just because someone might want to use it for
+                 something that wasn't intended. So must any other daemon
+                 running on the machine.
+                 That's not a very feasible position, and certainly no CIO
+                 in the world would accept a good chunk of her or his
+                 budget to create a perfect architecture with every single
+                 module independently modularized.
+                 You obviously live in a world where IT budgets are
+                 unlimited and real productivity isn't demanded. That's
+                 not the world I live in, unfortunately.
+                 But hey, thanks for the downvotes.
+
+Popular Posts
+
+     * [45]The Joys of Static Memory JavaScript
+     * [46]Security After the Death of Trust
+     * [47]What Developers Can Learn from healthcare.gov
+     * [48]Making the Leap to iOS 7
+     * [49]The Programming Industry: Not a Woman's World - Yet
+
+Get the Programming Weekly Newsletter
+
+   IFRAME:
+   [50]http://oreilly.com/conferences/bulletin_form.html?conference=progne
+   ws&locationSource=prog_blog_widget&colorLink=237CC0
+
+Ebook Deals of the Day
+
+   IFRAME: [51]http://oreilly.com/programming/dotd.html
+
+   IFRAME: [52]http://oreilly.com/programming/mspdotd.html
+
+Video Deal of the Week
+
+   IFRAME: [53]http://oreilly.com/programming/dotw.html
+
+   [54]O'Reilly
+
+   © 2013, O'Reilly Media, Inc.
+     * [55]About
+     * [56]Privacy Policy
+     * [57]Terms of Service
+
+References
+
+   Visible links
+   1. https://plus.google.com/107099255932164370486
+   2. http://programming.oreilly.com/feed
+   3. http://programming.oreilly.com/comments/feed
+   4. http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html/feed
+   5. http://programming.oreilly.com/2013/09/working-in-the-hadoop-ecosystem.html
+   6. http://programming.oreilly.com/2013/09/upward-mobility-buddy-system.html
+   7. http://programming.oreilly.com/
+   8. http://twitter.com/oreillymedia
+   9. http://www.youtube.com/playlist?list=PL586C8FE242700A4D&feature=plcp
+  10. https://plus.google.com/107099255932164370486
+  11. https://www.facebook.com/OReilly
+  12. http://feeds.feedburner.com/oreilly/programming
+  13. http://programming.oreilly.com/web-platform
+  14. http://programming.oreilly.com/programming
+  15. http://programming.oreilly.com/microsoft-dev
+  16. http://programming.oreilly.com/web-perf
+  17. http://programming.oreilly.com/business-culture
+  18. http://oreilly.com/
+  19. http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html?cmp=tw-prog-books-videos-article-pr_the_myth_of_the_private_api
+  20. http://app.readspeaker.com/cgi-bin/rsent?customerid=14&lang=en_us&readid=body-content&url=http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html
+  21. http://programming.oreilly.com/greese
+  22. http://twitter.com/GeorgeReese
+  23. http://programming.oreilly.com/2013/09/the-myth-of-the-private-api.html#comments
+  24. http://docs.timdorr.apiary.io/
+  25. http://programming.oreilly.com/2013/08/tesla-model-s-rest-api-authentication-flaws.html
+  26. https://www.meethue.com/
+  27. http://www.raspberrypi.org/
+  28. http://teslamotors.com/
+  29. http://www.enstratius.com/
+  30. http://docs.enstratius.com/console/api/api.html
+  31. http://www.dhanjani.com/blog/2013/08/hacking-lightbulbs.html
+  32. http://programming.oreilly.com/programming
+  33. http://programming.oreilly.com/tag/api
+  34. http://programming.oreilly.com/tag/architecture
+  35. http://programming.oreilly.com/tag/byod
+  36. http://programming.oreilly.com/tag/device
+  37. http://programming.oreilly.com/tag/industrial-internet
+  38. http://programming.oreilly.com/tag/internet-of-things
+  39. http://programming.oreilly.com/tag/iot
+  40. http://programming.oreilly.com/tag/oauth
+  41. http://programming.oreilly.com/tag/raspberry-pi
+  42. http://programming.oreilly.com/tag/rest
+  43. http://programming.oreilly.com/tag/soap
+  44. http://programming.oreilly.com/tag/transportation
+  45. http://programming.oreilly.com/2013/10/the-joys-of-static-memory-javascript.html
+  46. http://programming.oreilly.com/2013/10/security-after-death-trust.html
+  47. http://WhatDevelopersCanLearnfromhealthcare.gov/
+  48. http://programming.oreilly.com/2013/09/making-the-leap-to-ios-7.html
+  49. http://programming.oreilly.com/2013/10/the-programming-industry-not-a-womans-world-yet.html
+  50. http://oreilly.com/conferences/bulletin_form.html?conference=prognews&locationSource=prog_blog_widget&colorLink=237CC0
+  51. http://oreilly.com/programming/dotd.html
+  52. http://oreilly.com/programming/mspdotd.html
+  53. http://oreilly.com/programming/dotw.html
+  54. http://oreilly.com/
+  55. http://oreilly.com/about/
+  56. http://oreilly.com/oreilly/privacy.html
+  57. http://oreilly.com/terms/
+
+   Hidden links:
+  58. http://programming.oreilly.com/greese

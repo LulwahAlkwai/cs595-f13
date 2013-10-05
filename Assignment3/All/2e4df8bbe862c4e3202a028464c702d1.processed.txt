@@ -1,0 +1,209 @@
+    #[1]PEMPEK.NET
+
+   [2]skip to content
+     * [3]Home
+     * [4]Articles
+     * [5]Blog
+     * [6]About
+
+   [7]Articles Archive :: [8]2013 :: [9]August :: [10]03 ::
+
+PackedArray: Packing Unsigned Integers Tightly
+
+   For a long time, I've been wanting to release my implementation of
+   random access container capable of randomly accessing unsigned integers
+   packed at the bit-level.
+
+   Meet PackedArray.
+
+   When you want to hold an unordered sequence of unsigned integers into
+   memory, the C programming language lets you choose among 4 data types:
+     * uint8_t
+     * uint16_t
+     * uint32_t
+     * uint64_t
+
+   If your numbers are within the [0, 100000] range, only 17 bits per
+   integer are needed since 2^17 = 131072. However, you can't use an array
+   of uint16_t because 16 bits are not enough to store numbers between
+   65536 and 100000. When you use the next available type, uint32_t,
+   you're wasting 15 bits per integer which represents a 47% overhead in
+   terms of storage requirements.
+
+   PackedArray comes to the rescue e.g. when you're in a desperate need
+   for a uint9_t or uint17_t array. PackedArray is a bit packer. Bit
+   packing consists in saving memory by packing integers/items together at
+   the bit-level:
+   b0       b1          b2          ...
+   i0 i1 i2 i3 i4 i5 i6 i7 i8 i9 ...
+
+   A PackedArray is backed by an uint32_t buffer. Several items end up
+   being stored inside the same buffer cell, e.g. i0, i1, and i2. Some
+   items span two buffer cells, e.g. i3, and i7. PackedArray is
+   responsible for encoding/decoding items into/from the storage buffer.
+
+Discussion
+
+   PackedArray's main purpose is not data serialization or message
+   encoding: for that, one would typically investigate fast compression
+   algorithms like [11]LZ4 or [12]Snappy.
+
+   Random access and dense data are the key features.
+
+   PackedArray is designed as a drop-in replacement for an unsigned
+   integer array yet imposes the following requirements:
+     * you must know in advance how many bits are needed to hold a single
+       item
+     * you must know in advance how many items you want to store
+     * when packing, behavior is undefined if items have more than the
+       specified maximum bits per item
+
+   Instead of writing:
+uint32_t* a = (uint32_t*)malloc(sizeof(uint32_t) * count);
+...
+value = a[i];
+...
+a[j] = value;
+
+   You write:
+PackedArray* a = PackedArray_create(bitsPerItem, count);
+...
+value = PackedArray_get(a, i);
+...
+PackedArray_set(a, j, value);
+
+   There are also PackedArray_pack and PackedArray_unpack that operate on
+   several items in a row. Those two could really have been named
+   PackedArray_write and PackedArray_read but I decided "pack" / "unpack"
+   conveys better something is happening under the hood.
+// bulk packing / unpacking
+PackedArray_pack(a, j, in, count);
+PackedArray_unpack(a, j, out, count);
+
+// the following are semantically equivalent
+PackedArray_set(a, j, value);
+PackedArray_pack(a, j, &value, 1);
+
+value = PackedArray_get(a, i);
+PackedArray_unpack(a, i, &value, 1);
+
+   Current implementations of PackedArray_pack and PackedArray_unpack are
+   unrolled and generated with the help of the C preprocessor. Unrolling
+   brings the following micro-benchmark speed gains (compiled with -O2):
+     * 76%, Macbook Pro Mid 2010 (2,67GHz Core i7 M 620)
+     * 50%, Samsung Galaxy Note (1.4 GHz ARM Cortex-A9)
+     * 79%, iPhone 5 (1.3 GHz ARM Apple A6)
+
+   References implementations can be found inside the PackedArray.c file
+   yet are compiled out unless compiling in self-test mode. Those
+   reference implementations can conceptually be viewed as loops around
+   PackedArray_set and PackedArray_get.
+
+   To better understand the unrolling happening in PackedArray_pack and
+   PackedArray_unpack, it is possible to generate a preprocessed version
+   of PackedArray.c, see instructions in README.md.
+
+   PackedArray is released under the WTFPL v2 and is available on my
+   [13]GitHub account.
+
+Going SIMD
+
+   After having unrolled PackedArray_pack and PackedArray_unpack I started
+   wondering about speeding it up further with SIMD instructions. Looking
+   for prior art, it seems that I found the most comprehensive study on
+   the subject: [14]Decoding billions of integers per second through
+   vectorization by [15]Daniel Lemire and [16]Leonid Boystov.
+
+   I initially tried to implement an SIMD version compatible with the non
+   SIMD one. This would involve independent shifts on the vector
+   components (available with NEON, doable by multiplying with SSE2) and
+   also horizontal adds.
+
+   However, as described in the paper, it is possible to replace scalar
+   shifts and logical operations (or, and, not) with their SIMD equivalent
+   instructions. Packing with SIMD instructions processes integers 4 by 4
+   but imposes an interleaved layout in the storage buffer.
+
+   Interleaved layout, 13 bits per item:
+   b0        b1        b2         b3         ...
+   i0 i4 i8a i1 i5 i9a i2 i6 i10a i3 i7 i11a i8b ...
+
+   As a consequence, the data layout of PackedArraySIMD isn't compatible
+   with its non-SIMD counterpart. In other words, you cannot use
+   PackedArray to unpack data packed with PackedArraySIMD or the other way
+   around.
+
+   PackedArraySIMD.c implements packing at the bit-level using SSE2 or
+   NEON instructions.
+
+   PackedArraySIMD compiled as self-bench exhibits the following speed
+   improvements over PackedArray:
+     * 60%, Macbook Pro Mid 2010 (2,67GHz Core i7 M 620)
+     * 16%, Samsung Galaxy Note (1.4 GHz ARM Cortex-A9)
+     * 22%, iPhone 5 (1.3 GHz ARM Apple A6)
+
+   Since this is a micro-benchmark, you will experience different
+   behaviors depending on your platform, the amount of data you process,
+   and the access pattern.
+
+   It is also worth noting the implementations of PackedArraySIMD_pack and
+   PackedArraySIMD_unpack require more plumbing than their non-SIMD
+   counterparts. Additional computations are needed to find out and adjust
+   a data window that can be processed 4 by 4 with SIMD instructions.
+
+What's next?
+
+   PackedArray and PackedArraySIMD serve as building blocks for more
+   elaborate data structures. If you decide to build on top of it, I would
+   appreciate you drop me a note :).
+
+   In any case, feedback on the implementation and/or suggestions are
+   greatly appreciated. Particularly, I'm no SIMD expert so if you find
+   ways to further improve the implementation, please [17]fork the GitHub
+   project and send me a pull request.
+   [18]programming [19]data-structures [20]optimization [21]c [22]c++
+   [23]archive [24]feed [25]twitter [26]github
+   [27]The content of this web site is licensed under a Creative Commons
+   Attribution-NonCommercial-ShareAlike 3.0 Unported License Grégory
+   Pakosz © 2013--
+   [28]scroll to top
+   Made with [29]nanoc by Denis Defreyne
+   [30]Entypo pictograms by Daniel Bruce -- [31]Subtle Pattern by Jorge
+   Fuentes -- [32]Share font by Ralph du Carrois -- Modified [33]Diskun
+   font by Garon Rossignol
+
+References
+
+   1. http://pempek.net/feed/
+   2. http://pempek.net/articles/2013/08/03/packedarray-random-access-array-tightly-packed-unsigned-integers/#content
+   3. http://pempek.net/
+   4. http://pempek.net/articles/
+   5. http://pempek.net/blog/
+   6. http://pempek.net/about/
+   7. http://pempek.net/articles/
+   8. http://pempek.net/articles/2013/
+   9. http://pempek.net/articles/2013/08/
+  10. http://pempek.net/articles/2013/08/03/
+  11. https://code.google.com/p/lz4/
+  12. https://code.google.com/p/snappy/
+  13. https://github.com/gpakosz/PackedArray
+  14. http://arxiv.org/abs/1209.2137
+  15. https://twitter.com/lemire
+  16. https://twitter.com/srchvrs
+  17. https://github.com/gpakosz/PackedArray/fork
+  18. http://pempek.net/tags/programming/
+  19. http://pempek.net/tags/data-structures/
+  20. http://pempek.net/tags/optimization/
+  21. http://pempek.net/tags/c/
+  22. http://pempek.net/tags/cpp/
+  23. http://pempek.net/archive/
+  24. http://pempek.net/feed/
+  25. https://twitter.com/gpakosz
+  26. https://github.com/gpakosz
+  27. http://creativecommons.org/licenses/by-nc-sa/3.0
+  28. http://pempek.net/articles/2013/08/03/packedarray-random-access-array-tightly-packed-unsigned-integers/#top
+  29. http://nanoc.ws/
+  30. http://www.entypo.com/
+  31. http://subtlepatterns.com/light-paper-fibers/
+  32. http://typo3.org/the-brand/style-guide/the-typo3-font/
+  33. http://www.fontspace.com/jackster-productions/diskun

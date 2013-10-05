@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta name="generator" content="HTML Tidy for Linux (vers 25 March 2009), see www.w3.org" />
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii" />
+    <meta http-equiv="Content-Language" content="en-GB" />
+    <link rel="shortcut icon" href="http://www.itoworld.com//images/favicon.ico" type="image/x-icon" />
+
+    <title>ITO - Road Fatalities USA</title>
+    <link href="main.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+	<script type="text/javascript">
+		function getInternetExplorerVersion()
+		// Returns the version of Internet Explorer or a -1
+		// (indicating the use of another browser).
+		{
+		  var rv = -1; // Return value assumes failure.
+		  if (navigator.appName == 'Microsoft Internet Explorer')
+		  {
+			var ua = navigator.userAgent;
+			var re  = new RegExp("MSIE ([0-9]{1,}[\.0-9]{0,})");
+			if (re.exec(ua) != null)
+			  rv = parseFloat( RegExp.$1 );
+		  }
+		  return rv;
+		}
+
+		var ver = getInternetExplorerVersion();
+
+		if ( ver > -1 )
+		{
+			if ( ver < 8.0 ) 
+				window.location = "http://map.itoworld.com/ie-error.html";
+		}
+	</script>
+    <div class="slice_white">
+        <div class="segment">
+            <div class="cells_1 img_no_border">
+                <div class="contents">
+                    <p><a href="http://www.itoworld.com"><img class="image" src="images/ito_b.png" width="73" height="55" alt="" style="margin-top: 5px;" /></a></p>
+                </div>
+            </div>
+
+            <div class="cells_11 margin_left">
+                <div class="contents">
+	                <h1><img src="images/road_fatalities_usa_23.png" width="479" height="66" alt="road fatalities usa" /></h1>
+    
+                </div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+
+    <div class="slice_dark_grey dark_banner">
+        <div class="segment">
+            <div class="cells_8 no_margin">
+                <div class="contents">
+                	<script type='text/javascript'>
+var external_libs = new Array();
+var index = 0;var map_embed;
+function AddExternalJs(lib)
+{
+external_libs.push(lib);
+}
+function LoadLibraries(callback)
+{
+var script = document.createElement('script');
+script.type = 'text/javascript';
+if (script.readyState)
+{
+script.onreadystatechange = function()
+{
+if (script.readyState == 'loaded' || script.readyState == 'complete')
+{
+index++;
+script.onreadystatechange = null;
+if(index == external_libs.length){
+callback();
+}else{
+LoadLibraries(callback);
+}}
+};
+}
+else
+{
+script.onload = function()
+{
+index++;
+if(index == external_libs.length){
+callback();
+}else{
+LoadLibraries(callback);
+}};
+}
+script.src = external_libs[index];
+document.body.appendChild(script);
+}
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/jquery/jquery-1.6.1.min.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/oo_map_browser.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/ito_map/OL_ito_map/2.11/OpenLayers.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/OpenStreetMap/OpenStreetMap.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/proj4js/proj4js-combined.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/ITOXYZ/ITOXYZ.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/ITOXYZ/ItoPanZoomBar.js');
+AddExternalJs('http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/nominatim.js');
+</script>
+<link rel='stylesheet' type='text/css' href='http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/ito_map/ito_map_embed.css' />
+<div id='map_embed' style='width:960px; height:540px; background-color:white; position:relative'></div>
+<script type='text/javascript'>var generic_url_prefix = 'http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/generic/';var static_url_prefix = 'http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/static/';var product_url_prefix = 'http://static.itoworld.com/r/ito_map_embed-beta/PjaP/p/ito_map/';function BuildMapJs(){map_embed = new MapObject();map_embed.map_id = 8;map_embed.layer_limited_zoom = 0;map_embed.fancy_zoombar=true;map_embed.resolutions = new Array(19567.8792382812499,9783.93961914062493,4891.96980957031246,2445.98490478515623,1222.99245239257812,611.496226196289058,305.748113098144529,152.874056549072264,76.4370282745361322,38.2185141372680661,19.1092570686340331,9.55462853431701653,4.77731426715850827);map_embed.zoomOffset = 3;map_embed.AddXYZLayer('Script','MULTI:b,8,39,87,81,110,0,15|b,6,2,15,10,21,0,12|b,7,7,55,9,58,0,12:http://pt${t}.itoworld.com/8/b/${z}/${x}/${y}.png;b,8,39,87,81,110,0,15|b,6,2,15,10,21,0,12|b,7,7,55,9,58,0,12:http://mt${t}.itoworld.com/8/ce65a5cd3a17844b29ff927b69e81101/${z}/${x}/${y}.png;a:http://static.itoworld.com/tiles/blank.png',8,'image%2Fpng',1,0,1,'EPSG:900913','null');map_embed.AddLayer('OpenStreetMap','','','image/png',0,1,1,'EPSG:900913','mapquest');map_embed.CreateMap('map_embed','map_embed',-20037508.34,567587.542872,-3505382.6431935,12050149.5445898,'EPSG:900913',0,0,'ito_map_embed');map_embed.SetOpacity('OpenStreetMap',1);map_embed.SetMapCentre(-11000000,4500000,1);map_embed.AddZoomEventFunction('map_embed.CheckShareWindowClosed()');$(document).ready(function(){map_embed.BuildUserInterfaceEmbed('map_embed','map_embed','casualties_usa','key_road_casualties_usa.png','Images &copy; ITO World Ltd. Fatality data from <a href="http://www-fars.nhtsa.dot.gov/QueryTool/QuerySection/SelectYear.aspx" target="_blank">FARs</a> (<a href="http://www.nhtsa.gov/About+NHTSA/Statement+of+Ownership+and+Restriction+of+Liability" target="blank">public information</a>). <br/>Base mapping &copy; <a href="http://developer.mapquest.com/web/products/open" target="blank">MapQuest</a> 2011, map data &copy; <a href="http://www.openstreetmap.org/" target="blank">OpenStreetMap</a> and contributors <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="blank">CC-BY-SA</a>',0,'us',0);}); }</script>
+<script type='text/javascript'>LoadLibraries(BuildMapJs)</script>
+                </div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+    
+    <div class="slice_light_grey dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">
+                
+                	<p>Use this site to view information about virtually every fatality that occurred on roads in the United States as a result of a collision involving a motor vehicle between between 1 January 2001 and 31 December 2009. For each incident you will be able to see the person's age, sex and the year in which the crash took place. Where information is not available fields are left blank.</p>
+
+					<p>To start enter a place name into the search box, press return and then select the correct result from the results list. If the place is not listed then try a larger place nearby.</p>
+
+					<p>When you are in the right area of the country use the mouse and the zoom buttons to move around the map. Use the 'bigger/smaller' icon in the top-right corner of the map to make the map larger or smaller. Use the 'key' button in the top-left corner to open or close the key for the map.</p>
+					
+                </div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+
+    <div class="slice_white dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">
+	                <h2><img src="images/sharing_19.png" width="77" height="26" alt="sharing" /></h2>
+	                <p>There are a number of ways to share Road Fatalities USA with others.</p>
+	                <p>First click on the share icon. Then, either: </p>
+	                
+	                <ol>
+	                	<li style="padding-bottom: 5px; font-size: 14px; line-height:1.4;">Click on the twitter icon to share your current view with your friends on these services.</li>
+						<li style="padding-bottom: 5px; font-size: 14px; line-height:1.4;">Click on the 'link' text  and cut the highlighted URL to send using email or use elsewhere.</li>
+						<li style="padding-bottom: 5px; font-size: 14px; line-height:1.4;">Copy the 'embed iframe' text which can then be used to embed the map into another website. This text can be used 'as is' in a web page or in Blogger. The size given in the height and width commands can be varied to create a bigger or smaller map.</li>
+					</ol>	                	                
+                </div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+
+	<div class="slice_white dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">
+                    <h2><img src="images/media_18.png" width="64" height="26" alt="media" /></h2>
+
+					<p>Feel free to take screen grabs and reproduce them in any medium, including print,  web and within broadcasts. There is no fee, the only requirements are that the maps carry the same credits as are included on the maps on this website.</p>
+				</div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+    
+    <div class="slice_white dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">
+                    <h2><img src="images/about_the_mapping_data_16.png" width="249" height="26" alt="about the mapping data" /></h2>
+
+					<p>Fatality data for the USA online mapping is supplied via the <a target="_blank" href="http://www-fars.nhtsa.dot.gov/QueryTool/QuerySection/SelectYear.aspx">Fatality Analysis Reporting System</a> of the <a target="_blank" href="http://www.nhtsa.gov/About">National Highway Traffic Safety Administration</a></p>
+					
+					<p>Base mapping tiles and search facilities for Road Casualties UK are provided courtesy of <a href="http://www.mapquest.com/" target="_blank">MapQuest</a> based on mapping data from <a href="http://www.openstreetmap.org" target="_blank">OpenStreetMap</a> and contributors. It is available under a <a href="http://creativecommons.org/licenses/by-sa/2.0/" target="_blank">Creative Commons licence (cc-by-sa 2.0)</a>.</p>																				
+					
+					<p>We have a <a target="_blank" href="http://map.itoworld.com/road-casualties-uk">similar map for the UK</a> and are keen to also create one for Canada using <a href="http://www.tc.gc.ca/eng/roadsafety/tp-tp3322-2009-1173.htm">their data</a> and for any other country that can provide us with suitable geocoded information. If you want to see a map for your country and know where we can get data then people email us at info@itoworld.com with the details.</p>
+				</div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+    
+    <div class="slice_white dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">
+                    <h2><img src="images/about_itoworld_15.png" width="147" height="26" alt="about itoworld" /></h2>
+
+					<p>ITO World are transport information specialists. Based in the UK, we produce mapping and visualisations to help people understand and analyse complex transport data. Our clients include Google, the UK Department of Transport and also many transport agencies and operators.</p>
+				</div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+
+    <div class="slice_white dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">
+
+                    <h2><img src="images/road_safety_in_the_united_states_20.png" width="314" height="26" alt="road safety in the united states" /></h2>
+					
+					<p>A list of <a target="_blank" href="http://www.driveandstayalive.com/info%20section/links/links_road-safety_organizations_usa.htm">Major Road Safety Organizations</a> in the United States is available on the <a target="_blank" href="http://www.driveandstayalive.com/index.htm">Drive and Stay Alive</a> website. <a target="_blank" href="http://www.transalt.org/">Transport Alternatives</a> have <a target="_blank" href="http://crashstat.org/">a very detailed interactive map</a> showing fatalities and injuries of pedestrians and cyclists in the New York area.</p>
+				</div>
+            </div>
+            <div class="clearer"></div>
+        </div>
+    </div>
+
+	<div class="slice_white dark_banner">
+        <div class="segment">
+            <div class="cells_12 no_margin">
+                <div class="contents">    
+				    <h3><img src="/images/disclaimer_and_limitation_of_liability_20.png" width="274" height="20" alt="disclaimer and limitation of liability" /></h3>
+				    
+					<p>This web site and the information it contains is provided as a public service by ITO World Ltd, using data supplied by the National Highway Traffic Safety Administration (NHTSA), U.S. Department of Transportation (DOT). ITO World Ltd makes no claims, promises or guarantees about the accuracy, completeness, or adequacy of the contents of this web site and expressly disclaims liability for errors and omissions in the contents of this web site. No warranty of any kind, implied, expressed or statutory, including but not limited to the warranties of non-infringement of third party rights, title, merchantability, fitness for a particular purpose and freedom from computer virus, is given with respect to the contents of this web site or its links to other Internet resources.</p>
+
+					<p>Users of the service <a target="_blank" href="http://www.nhtsa.gov/About+NHTSA/Statement+of+Ownership+and+Restriction+of+Liability">should note that the NHTSA/DOT makes</a> no claims, promises or guarantees about the accuracy, completeness, or adequacy of the road fatality data used within this web site.</p>				    
+					
+				</div>
+            </div>
+            <div class="clearer"></div>
+        </div>
+    </div>
+    <div class="slice_white footer_gap">
+        <div class="segment">
+            <div class="clearer"></div>
+        </div>
+    </div>
+
+    <div class="slice_white footer">
+        <div class="segment">
+            <div class="cells_2">
+                <div class="contents">
+                    <h4><img src="images/follow_8.png" width="42" height="18" alt="follow" /></h4>
+
+                    <p><a href="http://itoworld.blogspot.com">Blog</a><br />
+                    <a href="http://vimeo.com/itoworld">Vimeo</a><br />
+                    <a href="http://www.flickr.com/photos/itoworld">Flickr</a><br />
+                    <a href="http://www.twitter.com/itoworld">Twitter</a></p>
+                </div>
+            </div>
+
+            <div class="cells_2">
+                <div class="contents">
+                    <h4><img src="images/about_9.png" width="41" height="18" alt="about" /></h4>
+
+                    <p>
+                    <a href="http://www.itoworld.com/static/contact.html">Contact</a><br />
+                    <a href="http://www.itoworld.com/static/privacy.html">Privacy Policy</a><br />
+                    <a href="http://www.itoworld.com/static/terms_of_service.html">Terms of Service</a></p>
+                </div>
+            </div>
+
+			<div class="cells_6">
+                <div class="contents">
+                </div>
+            </div>
+            
+            <div class="cells_2 legal">
+                <div class="contents">
+                    <p>&copy; 2011 Ito World Ltd.</p>
+                </div>
+            </div>
+
+            <div class="clearer"></div>
+        </div>
+    </div>
+    
+	<script type="text/javascript">
+//<![CDATA[
+
+                          var _gaq = _gaq || [];
+                          _gaq.push(['_setAccount', 'UA-12649955-1']);
+                          _gaq.push(['_trackPageview']);
+                          _gaq.push(['_trackPageLoadTime']);
+
+                          (function() {
+                                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+                          })();
+
+    //]]>
+    </script>
+</body>
+</html>

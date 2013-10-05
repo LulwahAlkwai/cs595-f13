@@ -1,0 +1,247 @@
+    #[1]alternate
+
+[2]ArsTechnica
+
+     * [3]Forums
+     * [4]Log In
+
+[5]Risk Assessment / Security & Hacktivism
+
+"Bloodsucking leech" puts 100,000 servers at risk of potent attacks
+
+Think IPMI admin tool is secure and no one connects it to public addresses?
+Nope.
+
+   by [6]Dan Goodin - Aug 16, 2013 2:25 pm UTC
+     * [7]Hacking
+     * [8]Information Technology
+
+   [9]49
+   [leech.jpg]
+   [10]Pat Joyce
+
+   At least 100,000 Internet-connected servers sold by Dell, HP, and other
+   large manufacturers contain hardware that is vulnerable to potent
+   remote hack attacks that steal passwords and install malware on their
+   host systems, researchers said.
+
+   The threat stems from baseboard management controllers that are
+   embedded onto the motherboards of most servers. Widely known as BMCs,
+   the microcontrollers allow administrators to monitor the physical
+   status of large fleets of servers, including their temperatures, disk
+   and memory performance, and fan speeds. But serious design flaws in the
+   underlying [11]intelligent platform management interface, or IPMI, make
+   BMCs highly susceptible to hacks that can cascade throughout a network,
+   according to a paper presented at this week's [12]Usenix Workshop on
+   Offensive Technologies.
+
+   Heightening the risk, a recent Internet scan detected at least 100,000
+   IPMI-enabled servers running on publicly accessible addresses, despite
+   long-standing admonitions from security professionals never to do so.
+
+   "IPMI can be a convenient administrative tool, but under the control of
+   attackers, it can also serve as a powerful backdoor," the scientists
+   from the University of Michigan wrote in the paper, which was titled
+   [13]Illuminating the Security Issues Surrounding Lights-out Server
+   Management. "Attackers who take control of the BMC can use it to attack
+   the host system and network in a variety of ways."
+
+"Parasitic server"
+
+   One possibility, the paper continued, is the installation of
+   BMC-resident spyware that captures administrative passwords when an
+   operator remotely accesses a host server. Another scenario: attackers
+   could gain unfettered "root" access to the host by remotely booting the
+   server into recovery mode. Worse yet, attackers could abuse vulnerable
+   BMCs to run an unauthorized operating system on the host that gives raw
+   access to the server disks.
+
+   The researchers aren't the first to warn of the threats posed by widely
+   used IPMI and BMC technologies. Last month, Dan Farmer, the highly
+   regarded white-hat hacker, posted his [14]own manifesto that used even
+   stronger language to describe the lurking danger. At one point he
+   wrote:
+
+     Imagine trying to secure a computer with a small but powerful
+     parasitic server on its motherboard; a bloodsucking leech that can't
+     be turned off and has no documentation; you can't login, patch, or
+     fix problems on it; server-based defensive, audit, or anti-malware
+     software can't be used for protection; its design is secret,
+     implementation old, and it can fully control the computer's hardware
+     and software; and it shares passwords with a bunch of other
+     important servers, stores them in clear text for attackers to
+     access.
+
+   HD Moore, chief research officer of security firm Rapid7 and chief
+   architect of the Metasploit project used by penetration testers and
+   hackers, provides an equally bleak security assessment of IPMI and BMC
+   [15]here.
+
+   BMCs contain different names and specifications depending on the server
+   they're bundled with, and there's little public material documenting
+   their inner workings. But because each runs the same IMPI protocol,
+   they're all believed to be susceptible to the same threats. The
+   University of Michigan researchers tested this hypothesis by selecting
+   one such controller, which came embedded on the Super X9SCL-F
+   motherboard of a Supermicro SYS-5017C-LF 1U rack-mounted server. After
+   performing a thorough analysis of the device, the scientists found that
+   its firmware (designed by a firm called ATEN Technology) contained
+   "numerous textbook security flaws, including exploitable privilege
+   escalation, shell injection, and buffer overflow vulnerabilities." The
+   researchers developed proof-of-concept attack code that exploited the
+   vulnerabilities to remotely obtain root access on the BMC. (Supermicro
+   has since [16]issued BMC firmware updates that fix some or all of the
+   vulnerabilities.)
+
+   They went on to catalog a list of attack scenarios malicious hackers
+   could mount when exploiting the bugs. They included:
+     * Subverting the host system or other machines on the management
+       network
+     * Installing BMC spyware that eavesdrops on remote management
+       sessions to sniff passwords or even the physical server console
+     * Installing persistent BMC rootkits that provide attackers with
+       backdoor access that remains hidden from IPMI logs
+     * The creation of IPMI botnets to take advantage of the large amount
+       of network bandwidth at their disposal
+
+   In all, the scientists detected more than 100,000 Internet-exposed IMPI
+   devices, 40,000 of which used the Supermicro BMC they tested at length.
+
+   "We conservatively estimate that it would take less than an hour to
+   launch successful parallel attacks against all of the 40,000 ATEN-based
+   Supermicro IPMI devices that we observed listening on public IP
+   addresses," they reported.
+
+Either incompetence or indifference
+
+   The paper includes a list of defenses that should be required reading
+   for anyone who administers a server anywhere. Suggestions include
+   keeping IPMI firmware up to date, changing default passwords, and
+   never, ever running IPMI devices on public IP addresses. This last
+   admonition is widely repeated--often by the manufacturers of the
+   servers that are put at risk by the vulnerabilities. The scientists'
+   Internet scans provide convincing evidence that this advice is
+   frequently ignored, so unfortunately, it's worth repeating often.
+
+   But the researchers also take engineers at original equipment
+   manufacturers (OEMs) to task for, among other things, building devices
+   that have IPMI capabilities turned on by default. The researchers go on
+   to direct some harsh words at the people developing IPMI devices and
+   the servers they go into.
+
+   "Given the power that IPMI provides, the blatant textbook
+   vulnerabilities we found in a widely used implementation suggest either
+   incompetence or indifference towards customers' security," the paper
+   states. "While some OEMs recommend helpful precautions such as
+   dedicated management networks, this should not be an excuse to shift
+   blame to users who fail to heed this advice and suffer damage because
+   of vulnerabilities in IPMI firmware. We believe that properly securing
+   IPMI will require OEMs to take a defense-in-depth approach that
+   combines hardening the implementations with encouraging users to
+   properly isolate devices."
+
+   [17]Expand full story
+
+Promoted Comments
+
+     * [18]pat.proSmack-Fu Master, in training [19]jump to post
+       On Supermicro X9SCM-F/X9SCL-F/X9SCL+-F series, you can:
+       - disable BMC on motherboard (jumper)
+       - disable BMC in BIOS
+       - render IPMI unusable by entering bogus network config on the BMC
+       - configure IP ACLs into BMC to limit access.
+       Best choice if you want IPMI over internet is to use the dedicated
+       eth port if available, configure a dedicated vlan, use a firewall
+       and/or VPN in front of that vlan.
+       If you can, of course, use private IP address and don't use IPMI
+       over internet.
+       6 posts | registered Oct 17, 2012
+
+   [20]Reader comments 49
+
+   You must [21]login or create an account to comment.
+   [22][Dan-Goodin-sq.jpg]
+
+   [23]Dan Goodin / Dan is the IT Security Editor at Ars Technica, which
+   he joined in 2012 after working for The Register, the Associated Press,
+   Bloomberg News, and other publications.
+   [24]@dangoodin001
+   [25]<- Older Story
+   [26]Newer Story ->
+
+Site Theme
+
+     * [27]Light on Dark
+     * [28]Dark on Light
+
+[29]View Full Site
+
+   © 2013 Condé Nast. All rights reserved
+   Use of this Site constitutes acceptance of our [30]User Agreement
+   (effective 3/21/12) and [31]Privacy Policy (effective 3/21/12), and
+   [32]Ars Technica Addendum (effective 5/17/2012)
+   [33]Your California Privacy Rights
+   The material on this site may not be reproduced, distributed,
+   transmitted, cached or otherwise used, except with the prior written
+   permission of Condé Nast.
+   [34]Ad Choices [ad_choices_arrow.png]
+
+Log In
+
+   Username or Email: ____________________ Password: ____________________
+   [_] Keep me logged in Login
+   [35]Forgot your password? | [36]Resend activation e-mail
+
+Register an Account
+
+   Don't have an Ars account? It's fast and easy to register for one.
+   [BUTTON Input] (not implemented)_______
+
+Need to register for a new account?
+
+   If you don't have an account yet it's free and easy.
+   [37]Register
+
+References
+
+   Visible links
+   1. http://feeds.arstechnica.com/arstechnica/index/
+   2. http://arstechnica.com/
+   3. http://arstechnica.com/civis/
+   4. http://arstechnica.com/civis/ucp.php?mode=login&return_to=http%3A%2F%2Farstechnica.com%2Fsecurity%2F2013%2F08%2Fremote-admin-tool-imperils-servers%2F
+   5. http://arstechnica.com/security/
+   6. http://arstechnica.com/author/dan-goodin/
+   7. http://arstechnica.com/discipline/hacking-2
+   8. http://arstechnica.com/discipline/information-technology-3
+   9. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/?comments=1
+  10. http://www.flickr.com/photos/phatcontroller/2620032517/sizes/l/in/photolist-4Zwmor-4ZBTUm-58Yf4k-5d3cvz-5qhUNu-5CRX4q-5EJeza-5GuZez-5KWgQU-5QaBRS-5ToXJK-5TtjLd-5TxThD-69S6hZ-6bCiec-6bCiPF-6bCj2P-6bGr65-6bGrU9-6hQHc2-6nXQyb-6pLANU-6tkdoA-6w9PvU-6DRZKF-6DV2Zo-6GVXC3-6Nfbfy-6NnosD-6NruaE-7eq4oG-8wGQdC-dFEgMR-c8gsZq-aE1AWo-8fkPYy-7W5Epp-c8hH8q-bATUCv-bnZ4vm-bnZ4xS-abZeBq-aE1vWf-dU2iS7-avtPEW-avtPDm-fd9hgw-9QazUn-9QdrfN-buVosA-dNNF6V/
+  11. https://en.wikipedia.org/wiki/Intelligent_Platform_Management_Interface
+  12. https://www.usenix.org/conference/woot13
+  13. https://www.usenix.org/system/files/conference/woot13/woot13-bonkoski_0.pdf
+  14. http://fish2.com/ipmi/
+  15. https://community.rapid7.com/community/metasploit/blog/2013/07/02/a-penetration-testers-guide-to-ipmi
+  16. http://www.supermicro.com/FAQ/index.aspx?&se=16536&k=y
+  17. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/
+  18. http://arstechnica.com/civis/memberlist.php?mode=viewprofile&u=353152
+  19. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/?comments=1&post=25110003#comment-25110003
+  20. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/?comments=1
+  21. http://arstechnica.com/civis/ucp.php?mode=login
+  22. http://arstechnica.com/author/dan-goodin
+  23. http://arstechnica.com/author/dan-goodin
+  24. https://twitter.com/dangoodin001
+  25. http://arstechnica.com/science/2013/08/surprise-there-are-no-quick-solutions-to-our-climate-problems/
+  26. http://arstechnica.com/tech-policy/2013/08/ars-technicast-ep-32-nsa-snowden-and-why-lavabit-had-to-go-down/
+  27. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/?mobile_theme=dark
+  28. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/?mobile_theme=light
+  29. http://arstechnica.com/security/2013/08/remote-admin-tool-imperils-servers/?view=grid
+  30. http://www.condenast.com/privacy-policy
+  31. http://www.condenast.com/privacy-policy#privacypolicy
+  32. http://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/
+  33. http://www.condenast.com/privacy-policy#privacypolicy-california
+  34. http://www.condenast.com/privacy-policy#privacypolicy-optout
+  35. https://arstechnica.com/civis/ucp.php?mode=sendpassword
+  36. https://arstechnica.com/civis/ucp.php?mode=resend_act
+  37. https://arstechnica.com/civis/ucp.php?mode=register
+
+   Hidden links:
+  38. http://www.omniture.com/

@@ -1,0 +1,135 @@
+<!doctype html> 
+<!--[if IE 8]>    <html class="no-js ie8 oldie" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	
+		<meta name="apple-itunes-app" content="app-id=506556769, app-argument=dps.bf2b2a9d91b7462fb2eaf4a39e300a90://v1/folio/October%202013/opinions_segan">
+		<title>PC Magazine October 2013: Microsoft Finally Commits to a Path</title>
+	<link rel="shortcut icon" href="http://cdn-contentviewer.adobe.com/public/pepper/img/dps_app_16.ico" />
+	<meta name="viewport" content="width=device-width,maximum-scale=1">
+
+	<link rel="stylesheet" href="http://cdn-contentviewer.adobe.com/public/pepper/css/pepper.css">
+
+		<script type="text/javascript">
+		var s_account = 'adp.sj.ziffdavispcmag';
+	</script>
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/lib/sc-H.25.2.js"></script>
+	<script type="text/javascript">
+	var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+	<script language="JavaScript" type="text/javascript"><!--
+	if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+	//--></script><!--/DO NOT REMOVE/-->
+		
+		<script type="text/javascript">
+		if (window.navigator.userAgent.indexOf('iPad') > -1) {
+			window.boolIsTablet = true;
+		}
+	</script>
+		
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/lib/modernizr/modernizr-2.6.2.min.js"></script>
+	<script type="text/javascript" src="http://use.typekit.com/kyn5jxf.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/lib/jquery/jquery-ui-1.8.16.custom.min.js"></script>
+	<script data-main="http://cdn-contentviewer.adobe.com/public/pepper/jsdist/pepper-localization.js" src="http://cdn-contentviewer.adobe.com/public/pepper/lib/require.js"></script>
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/jsdist/pepper.min.js"></script>
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/jsdist/pepper-chrome.min.js"></script>
+	<link href="http://cdn-contentviewer.adobe.com/public/pepper/css/video-js.min.css" rel="stylesheet">
+	<script src="http://cdn-contentviewer.adobe.com/public/pepper/lib/videoJS/video.min.js"></script>
+	<script>
+		_V_.options.flash.swf = "http://cdn-contentviewer.adobe.com/public/pepper/lib/videoJS/video-js.swf"
+	</script>
+	
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/lib/reel/jquery.reel.js"></script>
+	<script type="text/javascript" src="http://cdn-contentviewer.adobe.com/public/pepper/lib/jquery.mousewheel.js"></script>
+	
+	<script type="text/javascript">
+		if (!(window.console && console.log)) {
+			(function() {
+				var noop = function() {};
+				var methods = ['assert', 'clear', 'count', 'debug', 'dir', 'dirxml', 'error', 'exception', 'group', 'groupCollapsed', 'groupEnd', 'info', 'log', 'markTimeline', 'profile', 'profileEnd', 'markTimeline', 'table', 'time', 'timeEnd', 'timeStamp', 'trace', 'warn'];
+				var length = methods.length;
+				var console = window.console = {};
+				while (length--) {
+					console[methods[length]] = noop;
+				}
+			}());
+		}
+		
+		Modernizr.load({
+			test: Modernizr.progressbar,
+			nope: ['http://cdn-contentviewer.adobe.com/public/pepper/lib/progress-polyfill/progress-polyfill.min.js', 'http://cdn-contentviewer.adobe.com/public/pepper/lib/progress-polyfill/progress-polyfill.css']
+		});
+		
+		jQuery(function() {
+			jQuery('body').addClass('hidden');
+			var url = 'http://cdn-contentviewer.adobe.com/v/ea737111-2b71-4c15-b193-bd2f5bef306f/opinions_segan/3/Folio.xml';
+			var issueId = 'ea737111-2b71-4c15-b193-bd2f5bef306f';
+			var startPageNum = window.location.hash.slice(1);
+			var initOptions = {
+				skipLandingPage: true,
+				strSCSProtocolAndHost: 'http://contentviewer.adobe.com/',
+				strCDNProtocolAndHost: 'http://cdn-contentviewer.adobe.com/',
+				strOMPAllowedURL: '',
+				strTOCPath: 'v/ea737111-2b71-4c15-b193-bd2f5bef306f/133/toc.json',
+				strHTMLArticleURIBase: 'http://cdn-contentviewer.adobe.com/vh/3/ea737111-2b71-4c15-b193-bd2f5bef306f/opinions_segan/',
+				strArticleXRef: 'opinions_segan',
+				strArticleTitle: 'Microsoft Finally Commits to a Path',
+				strPaywallText: '',
+				
+				strIntegratorId : '',
+				strAccountId : 'bf2b2a9d91b7462fb2eaf4a39e300a90',
+				boolIsTicketExpired : false,
+				boolIsAssociated : false,
+				strEntitlementToken : 'Fc83wP8YC3BzE8mizUNALvK_OgI3W412_mikrfA7snVp1l3xbiCrLT1Q9K8fAUE8DqzZRH7ybUd5k5cWAzoFq3P5cKXjGkx3f54IqCuJ29o',
+				strBaseEntURL : 'https://subscriber.adobepublish.com/entitlement/v1',
+				
+				strPaywallUrl: 'https://itunes.apple.com/us/app/pc-magazine/id506556769?mt=8',
+				strItunesStoreUrl: 'https://itunes.apple.com/us/app/pc-magazine/id506556769?mt=8',
+				strApplicationLaunchUrl: 'dps.bf2b2a9d91b7462fb2eaf4a39e300a90://v1/folio/October%202013/opinions_segan',
+				
+				strPublicationName: 'com.ziffdavis.pcmag',
+				strArticleDescription: '',
+				strIssuePreviewImageUrlLandscape: 'http://edge.adobe-dcfs.com/ddp/issueServer/issues/ea737111-2b71-4c15-b193-bd2f5bef306f/libraryPreview/landscape',
+				strIssuePreviewImageUrlPortrait: 'http://edge.adobe-dcfs.com/ddp/issueServer/issues/ea737111-2b71-4c15-b193-bd2f5bef306f/libraryPreview/portrait',
+				strPublicationDate: '2013-09-13T04:00:00Z'
+
+			};
+
+						var	metrics = {
+				s_gi: s_gi,
+				s_account: s_account,
+				issueManifestId: 'October 2013',
+				isAd: false
+			};
+			initOptions.metrics = metrics;
+						
+			// to account for the possibility that once we get here the load has already happened
+            if (window.pepperStrings) {
+                pepperChrome.initChrome(pepper, '#pepper_container', url, issueId, startPageNum, initOptions);
+            } else {
+                jQuery(document).on('localized', function(){   
+                      pepperChrome.initChrome(pepper, '#pepper_container', url, issueId, startPageNum, initOptions);
+                });
+            }
+		});
+	</script>
+	
+	<link rel="stylesheet" href="http://cdn-contentviewer.adobe.com/public/pepper/css/style.css">
+	<link rel="stylesheet" href="http://cdn-contentviewer.adobe.com/public/pepper/css/pepper-chrome.css">
+	
+	<meta property="og:image" content="http://cdn-contentviewer.adobe.com/v/ea737111-2b71-4c15-b193-bd2f5bef306f/opinions_segan/3/StackResources/thumb_P1.jpg"/>
+	<meta property="og:site_name" content="PC Magazine October 2013"/>
+	<meta property="og:title" content="Microsoft Finally Commits to a Path"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:description" content=""/>
+</head>
+
+<body onunload="">
+	<noscript>
+		<p>Javascript Required</p>	
+	</noscript>	
+	<div id="pepper_container"></div>
+</body>
+</html>

@@ -1,0 +1,343 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://gmpg.org/xfn/11">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" href="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/style.css" type="text/css" />
+  <link rel="shortcut icon" href="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/favicon2.ico" />
+  <link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="http://blog.rememberthemilk.com/feed/atom/" />
+  <link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://blog.rememberthemilk.com/feed/" />
+  <link rel="alternate" type="text/xml" title="RSS .92" href="http://blog.rememberthemilk.com/feed/rss/" />
+
+  <meta property="og:type" content="article" />
+  <meta property="og:title" content="Manage your Evernote Reminders with Remember The Milk" />
+  <meta property="og:description" content="Yes, the cow and the elephant are together at last! Evernote integration has been one of our most requested features, and since Evernote launched Reminders last week, Bob T. Monkey has been furiously coding away. (The only time he surfaced over the weekend was when he ran out of bananas&amp;#8230;) We&#039;re excited to announce that [&amp;#8230;]" />
+  <meta property="og:url" content="http://blog.rememberthemilk.com/2013/05/manage-your-evernote-reminders-with-remember-the-milk/"/>
+  <meta property="og:image" content="http://blog.rememberthemilk.com/wp-content/uploads/ss_evernote.png"/>
+
+<title>  Manage your Evernote Reminders with Remember The Milk - Remember The Milk Blog</title>
+<script type="text/javascript"> 
+ 
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-176427-3']);
+  _gaq.push(['_trackPageview']);
+ 
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+ 
+</script>
+</head>
+
+<body id="bd-blog">
+
+<div id="topbar">
+  <div class="content">
+  <span class="login">Already a member? <a class="login-link" href="http://www.rememberthemilk.com/login/">Login</a>.</span>
+  <table class="tbl-container">
+  <tr>
+    <td>&nbsp;</td>
+    <td></td>
+  </tr>
+  </table>
+  </div>
+</div> <!-- /topbar -->
+
+<div id="topnav">
+  <div class="logo">
+    <a href="http://blog.rememberthemilk.com/"><img src="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/logo2.png" alt="Remember The Milk" id="topnav-logo" /></a>
+  </div>
+  <div class="content">
+    <ul>
+    <li class="top-nav-home"><a href="http://www.rememberthemilk.com/">Home</a></li>
+    <li class="top-nav-signup"><a href="http://www.rememberthemilk.com/signup/">Sign Up</a> (Free!)</li>
+    <li class="top-nav-services"><a href="http://www.rememberthemilk.com/services/">Apps</a></li>
+    <li class="top-nav-blog"><a href="http://blog.rememberthemilk.com/">Blog</a></li>
+    <li class="top-nav-help"><a href="http://www.rememberthemilk.com/help/">Help</a></li>
+    </ul>
+  </div>
+</div> <!-- /topnav -->
+
+<div id="pageheader">
+  <div class="content">
+    <h1>Remember The Milk Blog</h1>
+  </div>
+</div> <!-- /pageheader -->
+
+<div id="container">
+  <div class="content">
+
+<div id="rtm-blog">
+
+  <div class="blog-nav">
+
+    <p class="about">The companion blog to <a href="http://www.rememberthemilk.com/">Remember The Milk</a>, the best way to manage your tasks.</p>
+
+    <h2>ARCHIVES</h2>
+
+    <ul class="post-count">
+      	<li><a href='http://blog.rememberthemilk.com/2013/10/' title='October 2013'>October 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/09/' title='September 2013'>September 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/08/' title='August 2013'>August 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/07/' title='July 2013'>July 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/06/' title='June 2013'>June 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/05/' title='May 2013'>May 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/04/' title='April 2013'>April 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/03/' title='March 2013'>March 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/02/' title='February 2013'>February 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2013/01/' title='January 2013'>January 2013</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2012/12/' title='December 2012'>December 2012</a></li>
+	<li><a href='http://blog.rememberthemilk.com/2012/11/' title='November 2012'>November 2012</a></li>
+    </ul>
+
+<select name="archive-dropdown" class="archive-dropdown" onChange='document.location.href=this.options[this.selectedIndex].value;'> 
+  <option value="">View all archives</option> 
+  	<option value='http://blog.rememberthemilk.com/2013/10/'> October 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/09/'> September 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/08/'> August 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/07/'> July 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/06/'> June 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/05/'> May 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/04/'> April 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/03/'> March 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/02/'> February 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2013/01/'> January 2013 </option>
+	<option value='http://blog.rememberthemilk.com/2012/12/'> December 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/11/'> November 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/10/'> October 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/09/'> September 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/08/'> August 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/07/'> July 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/06/'> June 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/05/'> May 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/04/'> April 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/03/'> March 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/02/'> February 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2012/01/'> January 2012 </option>
+	<option value='http://blog.rememberthemilk.com/2011/12/'> December 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/11/'> November 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/10/'> October 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/09/'> September 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/08/'> August 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/07/'> July 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/06/'> June 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/05/'> May 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/04/'> April 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/03/'> March 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/02/'> February 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2011/01/'> January 2011 </option>
+	<option value='http://blog.rememberthemilk.com/2010/12/'> December 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/11/'> November 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/10/'> October 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/09/'> September 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/08/'> August 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/07/'> July 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/06/'> June 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/05/'> May 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/04/'> April 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/03/'> March 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/02/'> February 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2010/01/'> January 2010 </option>
+	<option value='http://blog.rememberthemilk.com/2009/12/'> December 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/11/'> November 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/10/'> October 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/09/'> September 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/08/'> August 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/07/'> July 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/06/'> June 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/05/'> May 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/04/'> April 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/03/'> March 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2009/02/'> February 2009 </option>
+	<option value='http://blog.rememberthemilk.com/2008/12/'> December 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/11/'> November 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/10/'> October 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/09/'> September 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/08/'> August 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/07/'> July 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/06/'> June 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/05/'> May 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/04/'> April 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/03/'> March 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/02/'> February 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2008/01/'> January 2008 </option>
+	<option value='http://blog.rememberthemilk.com/2007/12/'> December 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/11/'> November 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/10/'> October 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/09/'> September 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/08/'> August 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/07/'> July 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/06/'> June 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/05/'> May 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/04/'> April 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/03/'> March 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/02/'> February 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2007/01/'> January 2007 </option>
+	<option value='http://blog.rememberthemilk.com/2006/12/'> December 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/11/'> November 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/10/'> October 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/09/'> September 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/08/'> August 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/07/'> July 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/06/'> June 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/05/'> May 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/04/'> April 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/03/'> March 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/02/'> February 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2006/01/'> January 2006 </option>
+	<option value='http://blog.rememberthemilk.com/2005/12/'> December 2005 </option>
+	<option value='http://blog.rememberthemilk.com/2005/11/'> November 2005 </option>
+	<option value='http://blog.rememberthemilk.com/2005/10/'> October 2005 </option>
+ </select>
+
+
+    <h2>CATEGORIES</h2>
+
+    <ul class="post-count">
+       	<li class="cat-item cat-item-9"><a href="http://blog.rememberthemilk.com/category/tips-tricks/" title="View all posts filed under Tips &amp; Tricks">Tips &amp; Tricks</a> (231)
+</li>
+	<li class="cat-item cat-item-10"><a href="http://blog.rememberthemilk.com/category/new-features-updates/" title="View all posts filed under New Features &amp; Updates">New Features &amp; Updates</a> (125)
+</li>
+	<li class="cat-item cat-item-11"><a href="http://blog.rememberthemilk.com/category/behind-scenes/" title="View all posts filed under Behind the Scenes">Behind the Scenes</a> (55)
+</li>
+	<li class="cat-item cat-item-13"><a href="http://blog.rememberthemilk.com/category/featured-apps/" title="View all posts filed under Featured Apps">Featured Apps</a> (25)
+</li>
+	<li class="cat-item cat-item-12"><a href="http://blog.rememberthemilk.com/category/interviews-buzz/" title="View all posts filed under Interviews &amp; Buzz">Interviews &amp; Buzz</a> (18)
+</li>
+    </ul>
+
+    <h2>MORE BLOGS</h2>
+
+    <ul>
+    <li><a href="http://blog.rememberthemilk.com/">English</a></li>
+    <li><a href="http://blog.rememberthemilk.jp/">日本語</a></li>
+    <li><a href="http://status.rememberthemilk.com/">Status</a></li>
+    </ul>
+
+    <div class="feed">
+      <a href="http://blog.rememberthemilk.com/feed/atom/"><img src="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/ico_feed.gif" alt="Blog Feed"></a> <a href="http://blog.rememberthemilk.com/feed/atom/">Subscribe</a>
+    </div>
+
+  </div> <!-- /blog-nav -->
+
+<div class="blog-content">
+                        
+     <div class="blog-entry">
+
+     <a name="4628"></a>
+     <h1>
+     <a href="http://blog.rememberthemilk.com/2013/05/manage-your-evernote-reminders-with-remember-the-milk/">Manage your Evernote Reminders with Remember The Milk</a>
+     </h1>
+     <p class="blog-date">Tuesday, May 28, 2013 by Emily Boyd</p>
+     <p>Yes, the cow and the elephant are together at last! Evernote integration has been one of our most requested features, and since Evernote <a href="http://blog.evernote.com/blog/2013/05/23/evernote-reminders-are-here-on-mac-ios-and-web-2/">launched Reminders</a> last week, Bob T. Monkey has been furiously coding away. (The only time he surfaced over the weekend was when he ran out of bananas&#8230;)</p>
+<p>We're excited to announce that you can now automagically sync your Evernote Reminders with Remember The Milk. When you create Reminders in Evernote, they'll be added to your Remember The Milk account. You can edit and complete them in either Evernote or Remember The Milk, and we'll keep everything up-to-date!</p>
+<p><img src="http://blog.rememberthemilk.com/wp-content/uploads/ss_evernote.png" width="441" height="245" alt="Evernote + Remember The Milk" /></p>
+<h2>Powerful task features for your Evernote Reminders</h2>
+<p>The really cool thing about having your Evernote Reminders in Remember The Milk is all of the awesome extra features you can now use for your Reminders: you can give them priorities, time estimates, tags, locations, and URLs. Plus, you can make them repeat, too!</p>
+<p>You can also take advantage of powerful features like the ability to edit the properties for multiple tasks at once, options for sorting your lists, and the very cool <a href="http://www.rememberthemilk.com/help/?ctx=basics.smartlists.whatare">Smart Lists</a> for showing tasks that meet your criteria.</p>
+<h2>Link with your Notes in Evernote</h2>
+<p>Not only do your Evernote Reminders appear in Remember The Milk, but there's a handy Evernote icon on each one that opens the related Evernote Note. In our <a href="http://www.rememberthemilk.com/services/webapp/">web app</a>, clicking the icon will pop up the Note:</p>
+<p><img src="http://blog.rememberthemilk.com/wp-content/uploads/ss_link_note_web.png" width="600" height="263" alt="Remember The Milk web app linking to Evernote Note" /></p>
+<p>While in our <a href="http://www.rememberthemilk.com/services/android/">Android app</a>, tapping the icon will take you straight to the Note in Evernote's Android app:</p>
+<p><img src="http://blog.rememberthemilk.com/wp-content/uploads/ss_link_note_android.png" alt="Remember The Milk Android app linking to Evernote Note" /></p>
+<p>What about iOS, you ask? Support for this feature in our <a href="http://www.rememberthemilk.com/services/iphone/">iPhone</a> and <a href="http://www.rememberthemilk.com/services/ipad/">iPad</a> apps is coming soon!</p>
+<h2>Take your Evernote Reminders everywhere</h2>
+<p>Check out all the new places your Evernote Reminders can go! Not only can you manage your Evernote Reminders in our <a href="http://www.rememberthemilk.com/services/webapp/">web</a>, <a href="http://www.rememberthemilk.com/services/android/">Android</a>, <a href="http://www.rememberthemilk.com/services/iphone/">iPhone</a>, <a href="http://www.rememberthemilk.com/services/ipad/">iPad</a>, and <a href="http://www.rememberthemilk.com/services/blackberry/">BlackBerry 10</a> apps, but you can now sync your Evernote Reminders with Microsoft Outlook via <a href="http://www.rememberthemilk.com/services/milksync/outlook/">MilkSync</a>, and see your Reminders in <a href="http://www.rememberthemilk.com/services/gmail/">Gmail</a> and <a href="http://www.rememberthemilk.com/services/googlecalendar/">Google Calendar</a>, too.</p>
+<h2>Reminders for Evernote Reminders</h2>
+<p><img src="http://blog.rememberthemilk.com/wp-content/uploads/reminder_icons.png" width="348" height="87" alt="Reminder methods" style="padding: 10px 12px; border: 1px solid #ccc;" /></p>
+<p>Once your Evernote Reminders are in Remember The Milk, you can take advantage of the ridonculous number of reminder methods we support to get reminded about your Evernote Reminders (that sounds slightly meta&#8230;).</p>
+<p>You can get reminded by email, SMS, instant messenger (AIM, Gadu-Gadu, Google+ Hangouts (Google Talk), ICQ, Jabber (XMPP), Microsoft Messenger, Skype, and Yahoo! Messenger), <a href="http://www.rememberthemilk.com/services/twitter/">Twitter</a>, desktop notifications, and notifications on <a href="http://www.rememberthemilk.com/services/android/">Android</a>, <a href="http://www.rememberthemilk.com/services/iphone/">iPhone</a>, <a href="http://www.rememberthemilk.com/services/ipad/">iPad</a>, and <a href="http://www.rememberthemilk.com/services/blackberry/">BlackBerry 10</a>. Learn more about <a href="http://www.rememberthemilk.com/help/guide/reminders/">setting up reminders</a>.</p>
+<h2>Sound good?</h2>
+<div class="largelinkwrap"><span class="largelink"><a href="http://www.rememberthemilk.com/services/evernote/" target="_blank">Get started with Evernote and Remember The Milk</a></span></div>
+
+     <p class="blog-link">
+       <a title="permanent link" href="http://blog.rememberthemilk.com/2013/05/manage-your-evernote-reminders-with-remember-the-milk/">Permanent Link</a>
+     </p>
+
+     <p class="blog-category">Posted in: <a href="http://blog.rememberthemilk.com/category/new-features-updates/" title="View all posts in New Features &amp; Updates" rel="category tag">New Features &amp; Updates</a></p>
+
+     <!-- p class="blog-date blog-link">Posted at <a href="http://blog.rememberthemilk.com/2013/05/manage-your-evernote-reminders-with-remember-the-milk/">7:13pm</a> AEST by Emily</p -->
+     </div> <!-- blog-entry -->
+
+                
+                <div style="margin-top: 10px;">
+                        <div style="float:left;"></div>
+                        <div style="float:right;"></div>
+                </div>
+          
+
+        
+   </div>
+   </div>
+  </div>
+</div> <!-- /container-->
+
+<div id="footer">
+  <div id="footer-content">
+    <ul id="footer-nav">
+    <li class="footer-nav-accounts"><a href="http://www.rememberthemilk.com/signup/">Accounts</a>
+      <ul>
+      <li><a href="http://www.rememberthemilk.com/signup/">Sign Up (Free!)</a></li>
+      <li><a href="http://www.rememberthemilk.com/login/">Login</a></li>
+      <li><a href="http://www.rememberthemilk.com/tour/">Learn More</a></li>
+      <li><a href="http://www.rememberthemilk.com/upgrade/">Upgrade to <img src="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/ico_pro.gif" style="width: 20px; height: 11px; vertical-align: middle;" alt="Pro" /></a></a></li>
+      </ul>
+    </li>
+    <li class="footer-nav-about"><a href="http://www.rememberthemilk.com/about/">About</a>
+      <ul>
+      <li><a href="http://www.rememberthemilk.com/about/">Our Story</a></li>
+      <li><a href="http://www.rememberthemilk.com/about/jobs.rtm">Jobs</a></li>
+      <li><a href="http://www.rememberthemilk.com/about/press.rtm">Press</a></li>
+      <li><a href="http://blog.rememberthemilk.com/">English Blog</a></li>
+      <li><a href="http://blog.rememberthemilk.jp/">日本語 Blog</a></li>
+      <li><a href="http://www.rememberthemilk.com/about/contact.rtm">Contact Us</a></li>
+      </ul>
+    </li>
+    <li class="footer-nav-services"><a href="http://www.rememberthemilk.com/services/">Apps</a>
+      <ul>
+      <li><a href="http://www.rememberthemilk.com/services/android/">Android</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/blackberry/">BlackBerry 10</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/email/">Email</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/evernote/">Evernote</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/gmail/">Gmail</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/googlecalendar/">Google Calendar</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/ipad/">iPad</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/iphone/">iPhone/iPod touch</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/milksync/outlook/">Microsoft Outlook</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/siri/">Siri</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/twitter/">Twitter</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/webapp/">Web app</a></li>
+      </ul>
+    </li>
+    <li class="footer-nav-forums"><a href="http://www.rememberthemilk.com/forums/">Community</a>
+      <ul>
+      <li><a href="http://www.rememberthemilk.com/forums/help/">Help Forum</a></li>
+      <li><a href="http://www.rememberthemilk.com/forums/ideas/">Vote on Ideas</a></li>
+      <li><a href="http://www.rememberthemilk.com/forums/tips/">Tips & Tricks</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/tester/">Tester Program</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/translate/">Translations</a></li>
+      <li><a href="http://www.rememberthemilk.com/services/api/">API</a></li>
+      </ul>
+    </li>
+    <li class="footer-nav-help"><a href="http://www.rememberthemilk.com/help/">Help</a>
+      <ul>
+      <li><a href="http://www.rememberthemilk.com/help/">Help Center</a></li>
+      <li><a href="http://www.rememberthemilk.com/help/guide/">Getting Started</a></li>
+      <li><a href="http://status.rememberthemilk.com/">System Status</a></li>
+      <li><a href="http://www.rememberthemilk.com/help/contact/">Help by Email</a></li>
+      <li class="footer-nav-help-social"><a href="http://twitter.com/rememberthemilk"><img src="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/ico_twitter_16.png" /></a><a href="http://www.facebook.com/rememberthemilk"><img src="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/ico_facebook_16.png" /></a><a href="http://google.com/+RememberTheMilk"><img src="http://blog.rememberthemilk.com/wp-content/themes/RememberTheMilk/images/ico_googleplus_16.png" /></a>
+      </ul>
+    </li>
+    </ul>
+
+<div id="footer-legal">
+      &copy; 2013 Remember The Milk <span class="divider">|</span> <a href="http://www.rememberthemilk.com/help/terms.rtm">Terms of Use</a> <span class="divider">|</span> <a href="http://www.rememberthemilk.com/help/privacy.rtm">Privacy Policy</a>
+    </div> <!-- /footer-legal -->
+
+  </div> <!-- /footer-content -->
+</div> <!-- /footer -->
+
+</body>
+</html>

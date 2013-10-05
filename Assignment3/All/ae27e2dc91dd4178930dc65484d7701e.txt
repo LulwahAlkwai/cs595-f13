@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<script>var __pbpa = true;</script><script>var translated_warning_string = 'Warning: Never enter your Tumblr password unless \u201chttps://www.tumblr.com/login\u201d\x0ais the address in your web browser.\x0a\x0aYou should also see a green \u201cTumblr, Inc.\u201d identification in the address bar.\x0a\x0aSpammers and other bad guys use fake forms to steal passwords.\x0a\x0aTumblr will never ask you to log in from a user\u2019s blog.\x0a\x0aAre you absolutely sure you want to continue?';</script><script type="text/javascript" language="javascript" src="http://assets.tumblr.com/assets/scripts/pre_tumblelog.js?_v=23a92b4d68873f0a4c3da4fee4cc3958"></script>
+<!DOCTYPE html>
+<!--[if lt IE 7]><html class="lt-ie10 lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html class="lt-ie10 lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html class="lt-ie10 lt-ie9"> <![endif]-->
+<!--[if IE 9]><html class="lt-ie10"> <![endif]-->
+<!--[if gt IE 9]><!--> <html> <!--<![endif]-->
+    <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# blog: http://ogp.me/ns/blog#">
+        
+        <meta charset="utf-8">
+        <title>Cover Blog — Build Cover with the best Android developers in New York</title>
+        
+        
+        <!-- Theme Defaults -->
+        <meta name="Title font" content="Helvetica Neue">
+        <meta name="Body font" content="Helvetica Neue">
+        <meta name="Background color" content="#f6f6f6">
+        <meta name="Title color" content="#444444">
+        <meta name="Link color" content="#529ecc">
+        <meta name="Header image" content="">
+
+        <meta name="if:Sliding header" content="1">
+        <meta name="if:Stretch header image" content="1">     
+        <meta name="if:Collapse navigation" content="1">
+        <meta name="if:Show description" content="1">
+        <meta name="if:Show title" content="1">
+        <meta name="if:Show header image" content="1">
+        <meta name="if:Endless scrolling" content="1">
+
+        <meta name="select:Avatar style" content="circle" title="Circle">
+        <meta name="select:Avatar style" content="square" title="Square">
+        <meta name="select:Avatar style" content="hidden" title="Hidden">
+
+        <meta name="select:Layout" content="regular" title="Regular">
+        <meta name="select:Layout" content="narrow" title="Narrow">
+        <meta name="select:Layout" content="grid" title="Grid">
+
+        <meta name="text:Disqus shortname" content="">
+        <meta name="text:Google analytics ID" content="">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="shortcut icon" href="http://25.media.tumblr.com/avatar_e33cecbc522f_128.png">
+        <link rel="apple-touch-icon-precomposed" href="http://25.media.tumblr.com/avatar_e33cecbc522f_128.png">
+        <link rel="alternate" type="application/rss+xml" href="http://blog.paywithcover.com/rss">
+        
+        <link rel="stylesheet" href="http://static.tumblr.com/vr9xgox/PuGmmhqcs/normalize.css">
+        <link rel="stylesheet" href="http://static.tumblr.com/fjg9fbh/IBVmu5sr1/main.css">
+
+        <!-- HTML5 Shiv -->
+        <!--[if lt IE 9]>
+                <script src="http://static.tumblr.com/hriofhd/Qj0m8pn7q/html5shiv.js"></script>
+        <![endif]-->
+
+        <style>
+            /* Colors */
+            body {
+                background: #f6f6f6;
+                font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+            }
+
+            h1 {
+                font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+            }
+
+            h2, .attribution-tags {
+                font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif, "Helvetica Neue", HelveticaNeue, Arial, sans-serif;
+            }
+
+            h1 a,
+            #pagination a,
+            .exposed-nav-wrapper li a,
+            .sub-title,
+            .search-header {
+                color: #444444;
+            }
+            
+            #pagination a.next:after {
+                border-left-color: #444444;
+            }
+
+            #pagination a.previous:after {
+                border-right-color: #444444;
+            }
+
+            .h-line {
+                background: #444444;
+            }
+
+            a {
+                color: #529ecc;
+            }
+
+            .link-wrapper h2 a {
+                background-color: #529ecc;
+            }
+
+            .nav-menu-bg {
+                background: #f6f6f6;
+            }
+            
+            .header-image {
+                background-image: url(http://static.tumblr.com/9aa84f1e513ad8543ab55cc87e1d714f/4zv6hn4/iw8ms7ezr/tumblr_static_bg.png);
+            }
+
+            .user-avatar {
+                background-color: #f6f6f6;
+                border-color: #f6f6f6;
+            }
+
+            .avatar-style-square .user-avatar {
+                -wekbit-box-shadow: 0 0 0 4px #f6f6f6;
+                -moz-box-shadow: 0 0 0 4px #f6f6f6;
+                box-shadow: 0 0 0 4px #f6f6f6;
+            }
+            
+            @media screen and (max-device-width: 568px) {
+                .header-image {
+                    background-image: url(http://static.tumblr.com/9aa84f1e513ad8543ab55cc87e1d714f/4zv6hn4/iw8ms7ezr/tumblr_static_bg_1024.png);
+                }
+            }
+
+            /* Custom CSS */
+            img.full{width:100%}
+        </style>
+    
+<!-- BEGIN TUMBLR FACEBOOK OPENGRAPH TAGS -->
+<!-- If you'd like to specify your own Open Graph tags, define the og:url and og:title tags in your theme's HTML. -->
+<!-- Read more: http://ogp.me/ -->
+<meta property="fb:app_id" content="48119224995" />
+<meta property="og:site_name" content="Cover Blog" />
+<meta property="og:title" content="Build Cover with the best Android developers in New York" />
+<meta property="og:url" content="http://blog.paywithcover.com/post/60180636249/build-cover-with-the-best-android-developers-in-new" />
+<meta property="og:description" content="Cover is in development on Android. We want you to have a better dining experience, regardless of what phone you have.
+The Cover iPhone app embodies our core experience, and that experience is coming..." />
+<meta property="og:determiner" content="a" />
+<meta property="og:type" content="tumblr-feed:entry" />
+<meta property="og:image" content="http://assets.tumblr.com/images/og/text_200.png" />
+<!-- END TUMBLR FACEBOOK OPENGRAPH TAGS -->
+
+
+<!-- TWITTER TAGS -->
+<meta charset="utf-8">
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:description" content="Cover is in development on Android. We want you to have a better dining experience, regardless of what phone you have.
+
+ The Cover iPhone app embodies our core experience, and that experience is coming to Android. Cover for Android is being crafted with the same attention to visual detail and interaction while incorporating Android&amp;#8217;s design language and hardware features.
+
+ To meet our Android goals, we&amp;#8217;re working with TouchLab. Kevin and his team build some of the best apps on the platform, and they share our goal for Cover to provide the best payment experience on any device. As part of our relationship, we are hiring a team member to embed in TouchLab, to build the app with them and then lead our ongoing Android development after the app is released.
+
+ If you are an experienced Java, embedded systems, or iOS developer who wants to focus fully on Android, this is a chance to learn from the best in the industry. There aren&amp;#8217;t enough top-tier Android developers in New York. Let&amp;#8217;s change that.
+
+ If you are already an experienced Android developer, this is an opportunity to collaborate with other Android experts on a leading app. After your time with TouchLab you will head Android development at Cover.  This is a major role - we expect to put more energy as a team into Android than iOS as we move forward.
+
+ We&amp;#8217;ll be interviewing candidates together with TouchLab to find someone who both fits at Cover and has the skills to excel on Android. You&amp;#8217;ll be a full-time Cover employee with full salary and benefits even while you are embedded at TouchLab. If you&amp;#8217;re not in New York, we&amp;#8217;ll pay to get you here.
+
+ To apply, send us a message on AngelList Talent. If you can get a warm introduction to someone on our team or at TouchLabs, you should.
+
+ Cover works with the best restaurants in your city so you can have the best dining experience. We&amp;#8217;re a small team working out of SoHo, and backed by some of the best investors on both coasts, including OATV, Lerer Ventures, and Naval Ravikant." />
+            <meta name="twitter:title" content="Build Cover with the best Android developers in New York" />
+            <meta name="twitter:url" content="http://blog.paywithcover.com/post/60180636249/build-cover-with-the-best-android-developers-in-new" />
+            <meta name="twitter:site" content="tumblr" />
+            <meta name="twitter:creator" content="coverpay" />
+            <meta name="twitter:app:name:iphone" content="Tumblr" />
+            <meta name="twitter:app:name:ipad" content="Tumblr" />
+            <meta name="twitter:app:name:googleplay" content="Tumblr" />
+            <meta name="twitter:app:id:iphone" content="305343404" />
+            <meta name="twitter:app:id:ipad" content="305343404" />
+            <meta name="twitter:app:id:googleplay" content="com.tumblr" />
+            <meta name="twitter:app:url:iphone" content="tumblr://x-callback-url/blog?blogName=coverpay-blog&amp;postID=60180636249&amp;referrer=twitter-cards" />
+            <meta name="twitter:app:url:ipad" content="tumblr://x-callback-url/blog?blogName=coverpay-blog&amp;postID=60180636249&amp;referrer=twitter-cards" />
+            <meta name="twitter:app:url:googleplay" content="tumblr://x-callback-url/blog?blogName=coverpay-blog&amp;postID=60180636249&amp;referrer=twitter-cards" />
+    
+
+<script type="text/javascript" src="http://assets.tumblr.com/assets/scripts/tumblelog.js?_v=1d79e7ed390dcc21351433ebdc4b7879"></script>
+<meta http-equiv="x-dns-prefetch-control" content="off"/>
+</head>
+    <body data-urlencoded-name="coverpay-blog" class="regular permalink">
+        <section id="page">
+            <div class="nav-menu-wrapper ">
+                <nav class="nav-menu pop">
+                    <a class="selector"><span class="icon"></span></a>
+                    <div class="pop-menu west">
+                        <ul>
+                            <li class="no-hover">
+                                <form action="/search" method="get" id="search">
+                                    <input type="text" name="q" id="q" placeholder="Search" value="">
+                                    <button type="submit"></button>
+                                </form>
+                            </li>
+                            
+                                <li>
+                                    <a href="/archive" class="archive arrow">Archive</a>
+                                </li>
+                                
+                                
+                                
+                            
+                        </ul>
+                    </div> 
+                </nav>
+                <div class="glass"></div>
+            </div>
+            <div class="nav-menu-bg"></div>
+            <div class="header-wrapper
+                
+                
+                
+                avatar-style-circle">
+
+                <header id="header">
+                    
+                    <div class="header-image-wrapper">
+                        <a href="/" class="header-image parallax cover" data-bg-image="http://static.tumblr.com/9aa84f1e513ad8543ab55cc87e1d714f/4zv6hn4/iw8ms7ezr/tumblr_static_bg.png"></a>
+                    </div>
+                    
+
+                    <div class="blog-title content">
+                        <figure class="avatar-wrapper">
+                            <a href="/" style="background-image: url(http://25.media.tumblr.com/avatar_e33cecbc522f_128.png)" class="user-avatar"><img src="http://25.media.tumblr.com/avatar_e33cecbc522f_128.png" alt="" class="print-only invisible"></a>
+                        </figure>
+                        
+                        <h1><a href="/">Cover Blog</a></h1>
+                        
+                        
+                        <span class="sub-title">
+                            
+                        </span>
+                        
+                    </div>
+
+                    
+
+                    <div class="back-to-top"><a class="top" href="#"></a></div>
+                </header>
+            </div>
+            
+            <section id="posts" class="content clearfix  avatar-style-circle">
+    
+                <div data-page-id="1">
+                    
+                            <article class="text not-page post-60180636249  active exposed" data-post-id="post_60180636249">
+                                <div class="post-wrapper clearfix">
+                                    <section class="post">
+                                        
+                                            <h2><a href="http://blog.paywithcover.com/post/60180636249/build-cover-with-the-best-android-developers-in-new">Build Cover with the best Android developers in New York</a></h2>
+                                            
+                                            <div class="body-text">
+                                                <p><a href="http://www.paywithcover.com">Cover</a> is in development on Android. We want you to have a better dining experience, regardless of what phone you have.</p>
+
+<p>The Cover <a href="http://bit.ly/cover_iphone">iPhone app</a> embodies our core experience, and that experience is coming to Android. Cover for Android is being crafted with the same attention to visual detail and interaction while incorporating Android&#8217;s design language and hardware features.</p>
+
+<p>To meet our Android goals, we&#8217;re working with <a href="http://touchlab.co/">TouchLab</a>. Kevin and his team build some of the best apps on the platform, and they share our goal for Cover to provide the best payment experience on any device. As part of our relationship, we are hiring a team member to embed in TouchLab, to build the app with them and then lead our ongoing Android development after the app is released.</p>
+
+<p>If you are an experienced Java, embedded systems, or iOS developer who wants to focus fully on Android, this is a chance to learn from the best in the industry. There aren&#8217;t enough top-tier Android developers in New York. Let&#8217;s change that.</p>
+
+<p>If you are already an experienced Android developer, this is an opportunity to collaborate with other Android experts on a leading app. After your time with TouchLab you will head Android development at Cover.  This is a major role - we expect to put more energy as a team into Android than iOS as we move forward.</p>
+
+<p>We&#8217;ll be interviewing candidates together with TouchLab to find someone who both fits at Cover and has the skills to excel on Android. You&#8217;ll be a full-time Cover employee with full salary and benefits even while you are embedded at TouchLab. If you&#8217;re not in New York, we&#8217;ll pay to get you here.</p>
+
+<p>To apply, send us a message on <a href="https://angel.co/cover/jobs">AngelList Talent</a>. If you can get a warm introduction to someone on our team or at TouchLabs, you should.</p>
+
+<p><em>Cover works with the best restaurants in your city so you can have the best dining experience. We&#8217;re a small team working out of SoHo, and backed by some of the best investors on both coasts, including OATV, Lerer Ventures, and Naval Ravikant.</em></p>
+                                            </div>
+                                            
+                                        
+
+                                        
+
+                                        
+
+                                        
+
+
+                                        
+
+
+                                        
+
+
+                                        
+
+
+                                        
+
+                                        
+
+                                        
+
+                                        
+                                                                            
+                                        
+
+                                    </section>
+                                    
+                                    
+                                    <section class="panel">
+                                        <footer class="post-footer">
+                                            <section class="meta"> 
+                                                <ul class="post-date">
+                                                    <li>
+                                                        <a href="http://blog.paywithcover.com/post/60180636249/build-cover-with-the-best-android-developers-in-new" title="1 month ago">Sep 3rd, 2013</a>
+                                                    </li>
+                                                    
+                                                    <li> 
+                                                        <a href="http://blog.paywithcover.com/post/60180636249/build-cover-with-the-best-android-developers-in-new#notes">4 notes</a>
+                                                    </li>
+                                                    
+                                                </ul>
+                                            </section>
+                                            
+                                            <section class="post-controls">
+                                                <ul>
+                                                    <li class="share-control">
+                                                        <nav class="pop">
+                                                            <a href="#" class="share selector"></a>
+                                                            <div class="pop-menu share-menu south" id="share_60180636249">
+                                                                <ul>
+                                                                    <li class="open-in-app"><a href="#" class="share-item open-in-app" data-post="60180636249">Open in app</a></li>
+                                                                    <li><a href="http://facebook.com/sharer.php?u=http%3A%2F%2Fblog.paywithcover.com%2Fpost%2F60180636249%2Fbuild-cover-with-the-best-android-developers-in-new&amp;t=Build%20Cover%20with%20the%20best%20Android%20developers%20in%20New%20York" class="share-item facebook" target="_blank">Facebook</a></li>
+                                                                    <li><a href="https://twitter.com/intent/tweet?text=Build%20Cover%20with%20the%20best%20Android%20developers%20in%20New%20York%20-%20Cover%20is%20in%20development%20on%20Android.%20We%20want%20you...%20http%3A%2F%2Ftmblr.co%2FZeJhcqu32w9P" class="share-item twitter" target="_blank">Tweet</a></li>
+                                                                    <li><a href="mailto:?subject=A%20post%20from%20Cover%20Blog&amp;body=Build%20Cover%20with%20the%20best%20Android%20developers%20in%20New%20York%20-%20Cover%20is%20in%20development%20on%20Android.%20We%20want%20you%20to%20have%20a%20better%20dining%20experience%2C%20regardless...%20http%3A%2F%2Fblog.paywithcover.com%2Fpost%2F60180636249%2Fbuild-cover-with-the-best-android-developers-in-new" class="share-item mail">Mail</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                    </li>
+                                                    <li class="reblog-control"><a href="http://www.tumblr.com/reblog/60180636249/X6NLsEGA" class="reblog_button"style="display: block;width:21px;height:21px;"><svg width="100%" height="100%" viewBox="0 0 537 512" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" fill="#000"><path d="M 98.893,177.139c0.00-7.462, 4.826-12.275, 12.288-12.275L 405.12,164.864 l0.00,83.469 l 118.72-120.947L 405.12,8.678l0.00,81.51 L 49.382,90.189 c-15.206,0.00-27.648,12.429-27.648,27.648l0.00,171.814 l 77.146-71.603L 98.88,177.139 z M 438.874,332.646c0.00,7.45-4.826,12.275-12.275,12.275L 123.75,344.922 l0.00-83.469 l-116.506,120.922l 116.506,120.947l0.00-81.498 l 356.864,0.00 c 15.206,0.00, 27.648-12.454, 27.648-27.648L 508.262,220.134 l-69.402,71.59L 438.861,332.646 z" ></path></svg></a></li>
+                                                    <li class="like-control"><div class="like_button" data-post-id="60180636249" id="like_button_60180636249"><iframe id="like_iframe_60180636249" src="http://assets.tumblr.com/assets/html/like_iframe.html?_v=23802c8e8fcc6d1aa36c2d4774f537f5#name=coverpay-blog&amp;post_id=60180636249&amp;color=black&amp;rk=X6NLsEGA" scrolling="no" width="20" height="20" frameborder="0" class="like_toggle" allowTransparency="true"></iframe></div></li>
+                                                </ul>
+                                            </section>
+                                        </footer>
+                                    </section>
+                                    
+                                    
+
+                                        
+                                        <section id="notes" class="notes-wrapper clearfix">
+                                            
+
+<ol class="notes">
+
+    <!-- START NOTES -->
+                            
+        
+                                                                
+        
+        
+        <li class="note like tumblelog_aainslie without_commentary">
+
+                                                                                <a rel="nofollow" class="avatar_frame" target="_blank" href="http://aainslie.tumblr.com/" title="Pachinko Samurai " rel="nofollow"><img src="http://25.media.tumblr.com/avatar_1da7f0a4b564_64.png" class="avatar " alt="" /></a>
+                
+                <span class="action">
+                    
+                                            <a rel="nofollow" href="http://aainslie.tumblr.com/" title="Pachinko Samurai" rel="nofollow">aainslie</a> likes this                                    </span>
+
+                <div class="clear"></div>
+
+                        
+        </li>
+                            
+        
+                                                                
+        
+        
+        <li class="note like tumblelog_shindigapp without_commentary">
+
+                                                                                <a rel="nofollow" class="avatar_frame" target="_blank" href="http://shindigapp.tumblr.com/" title="Shindig Blog " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_bdd51db170ec_64.png" class="avatar " alt="" /></a>
+                
+                <span class="action">
+                    
+                                            <a rel="nofollow" href="http://shindigapp.tumblr.com/" title="Shindig Blog" rel="nofollow">shindigapp</a> likes this                                    </span>
+
+                <div class="clear"></div>
+
+                        
+        </li>
+                            
+        
+                                                                
+        
+        
+        <li class="note like tumblelog_touchlabny without_commentary">
+
+                                                                                <a rel="nofollow" class="avatar_frame" target="_blank" href="http://touchlabny.tumblr.com/" title="Touch Lab NY " rel="nofollow"><img src="http://25.media.tumblr.com/avatar_8f32aca8eda2_64.png" class="avatar " alt="" /></a>
+                
+                <span class="action">
+                    
+                                            <a rel="nofollow" href="http://touchlabny.tumblr.com/" title="Touch Lab NY" rel="nofollow">touchlabny</a> likes this                                    </span>
+
+                <div class="clear"></div>
+
+                        
+        </li>
+                            
+        
+                                                                
+        
+        
+        <li class="note reblog tumblelog_aac-cover without_commentary">
+
+                        
+                
+                                                                                        <a rel="nofollow" class="avatar_frame" target="_blank" href="http://aac-cover.tumblr.com/" title="@aac"><img src="http://31.media.tumblr.com/avatar_5175674c7249_64.png" class="avatar " alt="" /></a>
+                    
+                    <span class="action" data-post-url="http://aac-cover.tumblr.com/post/60181085371">
+                                                    
+                                                                                                                                                                                    <a rel="nofollow" href="http://aac-cover.tumblr.com/" class="tumblelog" title="@aac">aac-cover</a> reblogged this from <a rel="nofollow" href="http://blog.paywithcover.com/" class="source_tumblelog" title="Cover Blog">coverpay-blog</a>                                                                                                                                                                                    </span>
+                    <div class="clear"></div>
+
+                                    
+                        
+        </li>
+                            
+        
+                                                                
+        
+        
+        <li class="note like tumblelog_aac-cover without_commentary">
+
+                                                                                <a rel="nofollow" class="avatar_frame" target="_blank" href="http://aac-cover.tumblr.com/" title="@aac " rel="nofollow"><img src="http://31.media.tumblr.com/avatar_5175674c7249_64.png" class="avatar " alt="" /></a>
+                
+                <span class="action">
+                    
+                                            <a rel="nofollow" href="http://aac-cover.tumblr.com/" title="@aac" rel="nofollow">aac-cover</a> likes this                                    </span>
+
+                <div class="clear"></div>
+
+                        
+        </li>
+                            
+        
+                                                                
+        
+        
+        <li class="note reblog tumblelog_coverpay-blog original_post without_commentary">
+
+                        
+                
+                                                                                        <a rel="nofollow" class="avatar_frame" target="_blank" href="http://blog.paywithcover.com/" title="Cover Blog"><img src="http://24.media.tumblr.com/avatar_e33cecbc522f_64.png" class="avatar " alt="" /></a>
+                    
+                    <span class="action" data-post-url="http://blog.paywithcover.com/post/60180636249">
+                                                    
+                                                            <a rel="nofollow" href="http://blog.paywithcover.com/" class="tumblelog" title="Cover Blog">coverpay-blog</a> posted this                                                                        </span>
+                    <div class="clear"></div>
+
+                                    
+                        
+        </li>
+    
+    
+    <!-- END NOTES -->
+</ol>
+
+                                        </section>
+                                        
+
+                                        
+
+                                            
+
+                                        
+
+                                    
+                                </div>
+                            </article>
+                    
+                </div>
+            </section>
+            <footer id="footer" class="content clearfix">
+                
+            </footer>
+        </section>
+        <script>
+            var Optica = {};
+            Optica.TITLE_COLOR = "#444444";
+            Optica.ENDLESS_SCROLLING = true;
+            Optica.LAYOUT = "regular";
+            Optica.GRID_LAYOUT = (Optica.LAYOUT === 'grid');
+            Optica.ENDLESS_NOTES_SCROLLING = true;
+        </script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+        <script>!window.jQuery && document.write(unescape('%3Cscript src="http://static.tumblr.com/vr9xgox/sBgmmjhyw/jquery-1.9.1.min.js"%3E%3C/script%3E'));</script>
+        <script src="http://static.tumblr.com/vr9xgox/Azhmnml1q/jquery.masonry.min.js"></script>
+        <script src="http://static.tumblr.com/ehm1tdz/TyFmu1xus/main-min.js"></script>
+
+        
+            <script>
+              (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+              (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+              m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+              })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+              ga('create', 'UA-41225003-4', 'tumblr.com');
+              ga('send', 'pageview');
+            </script>
+        
+    <!-- BEGIN TUMBLR CODE -->
+        
+    
+        <iframe id="tumblr_controls" width="1" height="1" frameborder="0" scrolling="no" style="position:absolute; z-index:2147483647; top:0; right:0; border:0; background-color:transparent; overflow:hidden; " src="http://assets.tumblr.com/assets/html/iframe/o.html?_v=a31ca58f6990a84dbc0f548ca4e651e2#src=http%3A%2F%2Fblog.paywithcover.com%2Fpost%2F60180636249%2Fbuild-cover-with-the-best-android-developers-in-new&amp;pid=60180636249&amp;rk=X6NLsEGA&amp;lang=en_US&amp;name=coverpay-blog&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_e33cecbc522f_64.png&amp;title=Cover+Blog&amp;url=http%3A%2F%2Fblog.paywithcover.com%2F&amp;page_slide=slide"></iframe>    <div id="teaser_iframe_container" style="display:none;"><iframe scrolling="no" frameborder="0" src="http://www.tumblr.com/assets/html/iframe/teaser.html#src=http%3A%2F%2Fblog.paywithcover.com%2Fpost%2F60180636249%2Fbuild-cover-with-the-best-android-developers-in-new&amp;pid=60180636249&amp;rk=X6NLsEGA&amp;lang=en_US&amp;name=coverpay-blog&amp;avatar=http%3A%2F%2F24.media.tumblr.com%2Favatar_e33cecbc522f_64.png&amp;title=Cover+Blog&amp;url=http%3A%2F%2Fblog.paywithcover.com%2F&amp;page_slide=slide" id="teaser_iframe" width="1" height="1"></iframe></div>
+
+<script type="text/javascript">
+    (function(Tumblr){
+        var follow_iframe_initialized = false;
+        if (Tumblr.FollowTeaser && Tumblr.PostMessageListener) {
+            // Don't do anything until the first initialize event
+            Tumblr.PostMessageListener.initialize(function(message, origin) {
+                if (follow_iframe_initialized || message.length < 2) return;
+
+                if (message[0] === 'follow_iframe' && message[1] === 'enable') {
+                    Tumblr.FollowTeaser.current_page = 1;
+                    Tumblr.FollowTeaser.infer_infinite_scroll = true;
+                    Tumblr.FollowTeaser.create_from_tumblr_controls("http:\/\/assets.tumblr.com\/assets\/html\/iframe\/follow.html?_v=5b8651447b41c23ba275120251b61646");
+                    Tumblr.FollowTeaser.scroll_listener(true);
+                    follow_iframe_initialized = true;
+                }
+            });
+        }
+    })(this.Tumblr || (this.Tumblr = {}));
+</script>
+    
+    <!--[if IE]><script type="text/javascript">document.getElementById('tumblr_controls').allowTransparency=true;</script><![endif]-->
+    
+        
+<iframe src="http://assets.tumblr.com/analytics.html?24dd99cdd6b147f74d7b795ff466a978" scrolling="no" width="1" height="1" frameborder="0" style="background-color:transparent; overflow:hidden; position:absolute; top:0; left:0 z-index:9999;" id="ga_target"></iframe>
+
+    <script>
+        var COMSCORE = true;
+        window.setTimeout(function() {
+            var analytics_frame = document.getElementById('ga_target');
+            analytics_frame.contentWindow.postMessage('enable_comscore;' + window.location, analytics_frame.src.split('/analytics.html')[0]);
+        }, 1000);
+    </script>
+
+
+
+    <script type="text/javascript">
+      var _qevents = _qevents || [];
+
+      (function() {
+       var elem = document.createElement('script');
+
+       elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+       elem.async = true;
+       elem.type = "text/javascript";
+       var scpt = document.getElementsByTagName('script')[0];
+       scpt.parentNode.insertBefore(elem, scpt);
+      })();
+    </script>
+    <script type="text/javascript">
+        _qevents.push( { qacct: 'p-19UtqE8ngoZbM' } );
+    </script>
+    <noscript>
+        <div style="display: none;"><img src="//pixel.quantserve.com/pixel/'p-19UtqE8ngoZbM'.gif" height="1" width="1" alt="Quantcast"/></div>
+    </noscript>
+
+
+    <script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1380959485&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5wYXl3aXRoY292ZXIuY29tXC9wb3N0XC82MDE4MDYzNjI0OVwvYnVpbGQtY292ZXItd2l0aC10aGUtYmVzdC1hbmRyb2lkLWRldmVsb3BlcnMtaW4tbmV3IiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkifQ==&U=JLCAMJNJAC&K=451322bfae2f50d8088b8e6997a0ae9ec059349dae582c8506d72ec820df59c7&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1380959485&J=eyJ0eXBlIjoidXJsIiwidXJsIjoiaHR0cDpcL1wvYmxvZy5wYXl3aXRoY292ZXIuY29tXC9wb3N0XC82MDE4MDYzNjI0OVwvYnVpbGQtY292ZXItd2l0aC10aGUtYmVzdC1hbmRyb2lkLWRldmVsb3BlcnMtaW4tbmV3IiwicmVxdHlwZSI6MCwicm91dGUiOiJcL3Bvc3RcLzppZFwvOnN1bW1hcnkiLCJub3NjcmlwdCI6MX0=&U=JLCAMJNJAC&K=1602410d564da7f92e5b1298b2bd6f4b7831011ef1344b69c4e2885623dc6558&R="></noscript>
+<script type="text/javascript">!function(s){s.src='http://www.tumblr.com/impixu?T=1380959485&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cucGF5d2l0aGNvdmVyLmNvbVwvcG9zdFwvNjAxODA2MzYyNDlcL2J1aWxkLWNvdmVyLXdpdGgtdGhlLWJlc3QtYW5kcm9pZC1kZXZlbG9wZXJzLWluLW5ldyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjYwMTgwNjM2MjQ5IiwiYmxvZ2lkIjoiMTM0MDI0Mjc2Iiwic291cmNlIjozM31dfQ==&U=MHIOHLPMBA&K=ad0d4659ba91c665ed7229fad782feeac374a73b100faa6ded01a7d07260b41a&R='.replace(/&R=[^&$]*/,'').concat('&R='+escape(document.referrer)).slice(0,2000).replace(/%.?.?$/,'');}(new Image());</script><noscript><img style="position:absolute;z-index:-3334;top:0px;left:0px;visibility:hidden;" src="http://www.tumblr.com/impixu?T=1380959485&J=eyJ0eXBlIjoicG9zdCIsInVybCI6Imh0dHA6XC9cL2Jsb2cucGF5d2l0aGNvdmVyLmNvbVwvcG9zdFwvNjAxODA2MzYyNDlcL2J1aWxkLWNvdmVyLXdpdGgtdGhlLWJlc3QtYW5kcm9pZC1kZXZlbG9wZXJzLWluLW5ldyIsInJlcXR5cGUiOjAsInJvdXRlIjoiXC9wb3N0XC86aWRcLzpzdW1tYXJ5IiwicG9zdHMiOlt7InBvc3RpZCI6IjYwMTgwNjM2MjQ5IiwiYmxvZ2lkIjoiMTM0MDI0Mjc2Iiwic291cmNlIjozM31dLCJub3NjcmlwdCI6MX0=&U=MHIOHLPMBA&K=c196f9958d59e86cee048a124c808b4d091a923cbe5ba2edd756474ce06dd54c&R="></noscript>
+<!-- END TUMBLR CODE -->
+</body>
+</html>

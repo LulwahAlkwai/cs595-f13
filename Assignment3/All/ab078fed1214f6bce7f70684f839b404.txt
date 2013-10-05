@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+  <meta charset="utf-8">
+  <!--  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">-->
+  <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+  <title>Mayvenn Beauty Supply</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/portfoliostyle.css" />
+  <link rel="stylesheet" href="css/roll_over.css" />
+  <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css" media="screen" />
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <link rel="apple-touch-icon-precomposed" href="img/apple-touch-icon-precomposed.png">
+  <!-- <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+  <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png"> -->
+  <script src="js/vendor/modernizr.custom.76532.js"></script>  
+  
+  <script type="text/javascript">
+
+            function hidestuff(boxid){
+               document.getElementById(boxid).style.visibility="hidden";
+            }
+  
+</script>
+  
+  
+  <style>
+      
+      #notic_container
+      {
+          width: 100%;
+          height: 100%;
+          background-color: rgba(51,51,51,0.4);
+          z-index: 5000;
+          position: fixed;
+          visibility: hidden;          
+      }
+      
+      #notification
+      {
+          width:30%;
+          margin:15% auto 0 auto;
+          text-align: center;
+          font-size: 90%;
+          padding: 20px;
+          background-color: white;
+          color:  #666666;
+          border: 4px solid #cccccc;
+          font: arial; 
+          -moz-border-radius: 15px;
+          border-radius: 15px;
+          box-shadow: 0 0 15px #333333;
+          
+      }
+</style>
+
+</head>
+<body>
+    
+    <div id="notic_container">
+        <div id="notification">
+                        </br></br>
+            <input type="button" onclick="hidestuff('notic_container')" value="close">
+        </div>
+    </div>   
+    
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+    <div id="header" class="parentContainer container">
+        <div class="header-container">
+            <div class="content-logo">
+            	<div class="logo"></div>
+                <div class="company-name"></div>
+            </div>
+            
+            <div class="menu-select">
+                <nav>
+                    <ol class="contentMenu">
+                        <li>
+                          <div class="phonetitle"> CALL US TODAY! 1 (888)562-7952</li>
+                                
+                                
+                          </div></a>
+                        </li>
+     
+                  </ol>
+                </nav>
+            </div>
+        </div>
+    </div> <!-- end header-->
+    
+    <div id="banner" class="parallax">
+        <div class="infobanner">
+            <div class="titlebanner"></div>
+<div class="welcome">
+              <p>Sell Hair Extensions</p>
+            <p> Direct to Your Clients.</p>
+              <p>No More Beauty Supply Store.</p>
+</div>
+            <p>&nbsp;</p>
+            <div class="textbanner">
+              <p>&quot;I'm earning an extra 40% per client that buys their hair through my Mayvenn website!&quot;</p>
+			  <p>- Michelle, Goddess Hair             </p>
+              <div class="bannerfoot"></div>
+          </div>
+        </div>
+    </div>
+    <!-- end banner -->
+    
+  <section id="about"><div id="ancla1"></div>
+        <div class="section">
+            <article class="contentsection">
+            	<div class="profile">
+                    <div class="pofile-item">
+                        <div class="profile-element element-2">
+                        </div>
+                        <div class="profile-title">1. Become a mayvenn</div>
+                    </div>
+                    <div class="pofile-item">
+                        <div class="profile-element element-1">
+                        </div>
+                        <div class="profile-title">2. refer your clients</div>
+                    </div>
+                    <div class="pofile-item">
+                        <div class="profile-element element-3"></div>
+                        <div class="profile-title">3. earn commission!</div>
+                    </div>
+                </div>
+            	<div class="title-profile" style="line-height:normal;">what we do</div>
+            	<div class="data-content">Mayvenn enables Hair Stylists to sell products directly to your clients, without the upfront costs and burdens of having inventory. We provide you the tools you need to be successful from the start and you make 15-20% of every sale you make! Call today and we can have you up and running by tomorrow!</div>
+                <a href="#sup"><div class="footer-profile"></div></a>
+        </div>
+    </section><!-- end about -->
+
+    <section id="freebies" class="container">
+  	<div class="section">
+        	<div class="last-projects">
+              <div class="imagefribbies">
+                  <div class="brillo"></div>
+              </div>
+            </div>
+            <div class="last-project-title" style="line-height:normal;">How it works</div>
+            <article class="data-content2">You probably already suggest to your clients what to buy and where to buy it. When you join Mayvenn, simply refer your clients to your own Mayvenn website where they can buy the style and length of hair they need. We'll ship out the product directly to your client and handle all the customer service.  Best of all, YOU get the sale.... not the beauty supply store!</article>
+      <a href="#sup"><div class="last-project-footer"></div></a>
+      </div>
+    </section><!-- end freebies -->
+    
+    
+    <div class="bgsepara parallax bg-freebies">
+    	<div class="section">
+      	<div class="last-project-title" style="color:#FFF; line-height:normal;">MAKE MONEY</div>
+        <article class="data-content2"><span>You make 15-20% off of every sale made through your website. Mayvenn will send you  a check for your earned commissions  every month. You can do anything you want with it – pay rent, pay for your car or buy those shoes you wanted!</span></article>
+        <div id="ancla3" class="anchor-position"></div>
+        </div><!-- end freebies -->
+    </div><!-- end team -->
+    
+    
+<div class="works-container">
+<div class="works-header">
+         <div class="works-title" style="line-height:normal;">testimonials</div>
+         <article class="data-content2">Read below to see how Mayvenn works for stylists everyday.</article>
+    </div>
+    <!-- Project -->
+    
+    <!-- =======================  video part Start ====================== -->
+   <!-- <div class="project-window">
+        <div class="project-content"></div><!-- AJAX Dinamic Content --
+    </div><!-- end Project -->
+    <!-- =======================  video part end ====================== -->
+    
+    <div id="portfolio" class="container">
+      <div class="section portfoliocontent">
+        <section id="options" class="clearfix"></section> 
+        <div id="container2" class="clearfix">
+          <div class="inici"></div>
+          <div class="element design websites element05">
+              <div class="ch-grid" id="portfolio1.html">
+                  <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-1"><div class="ch-infoie9"> <![endif]--> 
+                  <!--[if gt IE 9]><!-->
+                 <div class="ch-item ch-img-1">
+                      <div class="ch-info">                         
+                          <div class="h3"><div class="bottom">Tamika</div></div>
+                          <p>That's Hot Hair Studio<br><span class="view-project"></span></p>
+                      </div>
+                  </div>
+              </div>
+              <div class="info-pf">
+                  <div class="infoproject">Tamika</div>
+                  <div class="date">"I never sold hair because I didn't want to take the risk of buying a lot of hair.  I don't have to worry about that with Mayvenn and I still make money."</div>
+              </div>
+        </div>
+    <div class="element websites motion element05">
+        <div class="ch-grid" id="portfolio2.html">
+            <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-2"><div class="ch-infoie9"> <![endif]--> 
+            <!--[if gt IE 9]><!-->
+            <div class="ch-item ch-img-2">
+                <div class="ch-info">                        
+                    <div class="h3"><div class="bottom">Rachel</div></div>
+                    <p>Studio Hair Salon<br>
+                    <span class="view-project"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="info-pf">
+            <div class="infoproject">Rachel</div>
+            <div class="date">"I made $250 last month without doing anything - all I did was tell my clients to buy from my site."</div>
+        </div>
+    </div>
+    <div class="element design websites element05">
+        <div class="ch-grid" id="portfolio3.html">
+            <!--[if lte IE 9]> <div class="ch-itemie9 ch-img-3"><div class="ch-infoie9"> <![endif]--> 
+            <!--[if gt IE 9]><!-->
+            <div class="ch-item ch-img-3">
+                <div class="ch-info">                       
+                    <div class="h3"><div class="bottom">Destiny</div></div>
+                    <p>Hair by Destiny<br>
+                    <span class="view-project"></span></p>
+                </div>
+            </div>
+        </div>
+        <div class="info-pf">
+            <div class="infoproject">Destiny</div>
+            <div class="date">"Mayvenn has given my clients another option for getting their products and they have great customer service"</div>
+        </div>
+    </div>
+      
+   
+    
+</div> <!-- #container -->
+                
+            </div> <!-- /END ISOTOPE PORTFOLIO-->
+    </div><!-- end portfolio -->
+</div>
+      <div class="bgsepara2 parallax bg-portfolio">
+       
+          <div id="ancla5" class="anchor-position"></div>
+      </div>
+      <!-- services --><!-- end services -->
+
+    <div id="contact" class="container">
+        <div class="section">
+          <A Name="sup">
+    <div class="works-header">
+              <div class="last-project-title" style="line-height:normal;">join us today</div>
+              <article class="data-content2">Have questions? Want to become a Mayvenn? Getting setup is easy and you can be selling products by tomorrow! Call us today and we can get you started right away. 1(888) 562-7952</article>
+          </div>
+          <div class="contactinfo">
+            <h2 class="titlecontact">CONTACT US!</h2>
+            <div class="email">
+                <div class="infocontact">info@mayvenn.com</div>
+            </div>
+            <div class="phone">
+                <div class="infocontact">1(888)562-7952</div>
+            </div>
+            <!-- <div class="skype">
+                <div class="infocontact">orion.studio</div>
+            </div>-->
+          </div>
+            <center><font color="#00CC00" size="+1"></font></center>
+            <center><font color="#FF0000" size="+1"></font></center>
+            
+            
+            <form id="formularioMail" action="" method="POST">
+                <fieldset>
+                    <div class="first">					
+                        <label for="nameform"></label>
+                        <div class="form_1" style="">
+                        <span>Name (required)<br></span>			
+                        <input type="text" name="first_name" id="nameform" value="" style=" " />	
+                        </div>	
+                        
+                        <label for="emailform"></label>
+                        <div class="form_2" style="">
+                        <span style="clear:right;">E-mail (required)<br></span>		
+                        <input type="text" name="email" id="emailform" value="" style="  " />	
+                        </div>		
+                        
+                        <label for="emailform"></label>
+                        <div class="form_2" style="">
+                        <span style="">Telephone (required)<br></span>		
+                        <input type="text" name="tel" id="emailform" value="" style="  " />	
+                        </div>	
+                        
+                        <input type="hidden" value="true" name="send" />
+                        
+                    </div>			
+                    <div style="clear:both; height:1px; width:100%;"></div>
+                    <div>
+                        <label for="messageform"></label>
+                        Your message<br>
+                        <textarea name="massage" id="messageform" style="  "></textarea>
+                    </div>					
+                    <p>
+                    <input type="submit" id="submitBtn" value="Send" />
+                    </p>	
+                </fieldset>								
+            </form> 
+            
+            
+    </div>
+</div><!-- end contact -->
+<!-- end map -->
+
+<div id="footer" class="container">
+    <div class="footerContent">
+        <div class="socialtext">
+            follow us on our social networks
+        </div>
+            <ol class="sociafoot">
+                <a href="http://www.twitter.com/mayvennhair"><li class="icon sc-tw"></li></a>
+                <a href="http://www.angel.co/mayvenn"><li class="icon sc-frr"></li> </a>               
+                <a href="http://www.facebook.com/mayvennhair"><li class="icon sc-fb"></li></a>
+
+            </ol>
+  </div>
+</div><!-- end footer -->
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+<script>window.jQuery || document.write('<script src="js/vendor/jquery-1.9.0.min.js"><\/script>')</script>
+<script src="js/plugins.js"></script>
+<script src="js/respond.min.js"></script>
+<script src="js/jquery.inview.js"></script>
+<script src="js/customScripts.js"></script>
+<script type="text/javascript" src="js/jquery.fancybox.js"></script>
+<script type="text/javascript" src="js/source/helpers/jquery.fancybox-media.js"></script>
+
+<!--	<script type="text/javascript">
+	
+		$(document).ready(function() {
+			
+			$('#btnContact').on('click', function() {
+				
+				$.ajax({
+				  type: "POST",
+				  url: "../contact.php",
+				  data: { name: "John", from: "bruno.kenj@pinmypet.com", message: 'mensagem' }
+				})
+				.success(function(data, textStatus, jqXHR) {
+					alert('success');
+				})
+				.error(function() {
+					alert('error');
+				})
+				.done(function( msg ) {
+				  alert('Done');
+				});
+								
+			});
+			
+		});
+	
+		$(document).ready(function() {
+	
+			/*
+			 *  Simple image gallery. Uses default settings
+			 */
+
+			$('.fancybox').fancybox();
+			$('.fancybox-media')
+				.attr('rel', 'media-gallery')
+				.fancybox({
+					openEffect : 'none',
+					closeEffect : 'none',
+					prevEffect : 'none',
+					nextEffect : 'none',
+
+					arrows : false,
+					helpers : {
+						media : {},
+						buttons : {}
+					}
+				});
+	
+		});
+	</script>-->
+    
+
+<!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+<script>
+	var _gaq=[['_setAccount','UA-36226630-1'],['_trackPageview']];
+	(function(d,t){var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
+	g.src=('https:'==location.protocol?'//ssl':'//www')+'.google-analytics.com/ga.js';
+	s.parentNode.insertBefore(g,s)}(document,'script'));
+</script>
+
+<!-- isotope -->
+<script src="js/jquery.isotope.min.js"></script>
+<script>
+
+	calcul();
+	
+	function calcul(){
+		size=$(window).width();
+		if (size > 959) { tam=4;} else
+		if (size > 767) { tam=3;} else
+		if (size > 479) { tam=2;} else
+		if (size < 480) { tam=1;}
+	}
+  
+
+  $(function(){
+	
+	var $container = $('#container2');
+
+	$container.isotope({
+	  itemSelector : '.element'
+	});
+	
+	$(window).bind("resize", function(){
+	  	vell=tam;
+		calcul();
+		if(vell!=tam){
+			$container.isotope( 'reLayout')
+		}
+	});
+
+	$('.logo').click(function(){
+		alert(registre)
+	});	 
+	
+	var $optionSets = $('#options .option-set'),
+		$optionLinks = $optionSets.find('a');
+
+	$optionLinks.click(function(){
+		$(".project-window").slideUp("slow");
+	  var $this = $(this);
+	  // don't proceed if already selected
+	  if ( $this.hasClass('selected') ) {
+		return false;
+	  }
+	  var $optionSet = $this.parents('.option-set');
+	  $optionSet.find('.selected').removeClass('selected');
+	  $this.addClass('selected');
+
+	  // make option object dynamically, i.e. { filter: '.my-filter-class' }
+	  var options = {},
+		  key = $optionSet.attr('data-option-key'),
+		  value = $this.attr('data-option-value');
+	  // parse 'false' as false boolean
+	  value = value === 'false' ? false : value;
+	  options[ key ] = value;
+	  if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
+		// changes in layout modes need extra logic
+		changeLayoutMode( $this, options )
+	  } else {
+		// otherwise, apply new options
+		$container.isotope( options );
+	  }
+	  
+	  return false;
+	});
+  });
+</script>
+  
+    </body>
+</html>

@@ -1,0 +1,886 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:fb="http://ogp.me/ns/fb#">
+	<!--
+	generated in 0.341 seconds
+	53270 bytes batcached for 300 seconds
+-->
+<head>
+		<meta charset="utf-8">
+		<title>  Hardware Innovation Workshop | MAKE</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="">
+
+		<!-- Le HTML5 shim, for IE6-8 support of HTML5 elements -->
+		<!--[if lt IE 9]>
+		<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+
+		
+
+		<script type='text/javascript'>
+			var googletag = googletag || {};
+			googletag.cmd = googletag.cmd || [];
+			(function() {
+			var gads = document.createElement('script');
+			gads.async = true;
+			gads.type = 'text/javascript';
+			var useSSL = 'https:' == document.location.protocol;
+			gads.src = (useSSL ? 'https:' : 'http:') + 
+			'//www.googletagservices.com/tag/js/gpt.js';
+			var node = document.getElementsByTagName('script')[0];
+			node.parentNode.insertBefore(gads, node);
+			})();
+		</script>
+		<script type="text/javascript">
+
+		googletag.cmd.push(function() {
+
+					var slot1= googletag.defineSlot('/11548178/Makezine/Blog', [[728,90]],'div-gpt-ad-664089004995786621-1').addService(googletag.pubads()).setTargeting('pos', 'atf');
+			var slot2= googletag.defineSlot('/11548178/Makezine/Blog', [[300,250],[300,600]],'div-gpt-ad-664089004995786621-2').addService(googletag.pubads()).setTargeting('pos', 'atf');
+			var slot3= googletag.defineSlot('/11548178/Makezine/Blog', [[300,250],[300,600]],'div-gpt-ad-664089004995786621-3').addService(googletag.pubads()).setTargeting('pos', 'btf');
+			var slot4= googletag.defineSlot('/11548178/Makezine/Blog', [[728,90]],'div-gpt-ad-664089004995786621-4').addService(googletag.pubads()).setTargeting('pos', 'btf');
+							
+						googletag.enableServices();
+			});
+		</script>
+		<!-- End: GPT -->
+		<!-- Le fav and touch icons -->
+		<link rel="shortcut icon" href="http://1.gravatar.com/blavatar/dab43acfe30c0e28a023bb3b7a700440?s=14">
+		<script type="text/javascript" src="http://use.typekit.com/fzm8sgx.js"></script>
+		<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+		<script type="text/javascript">
+
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-51157-1']);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+
+		</script>
+
+				<script src='http://r-login.wordpress.com/remote-login.php?action=js&amp;host=makezine.com&amp;id=30206320&amp;t=1380960621&amp;back=makezine.com%2Fhardware-innovation-workshop%2F' type="text/javascript"></script>
+		<script type="text/javascript">
+		/* <![CDATA[ */
+			if ( 'function' === typeof WPRemoteLogin ) {
+				document.cookie = "wordpress_test_cookie=test; path=/";
+				if ( document.cookie.match( /(;|^)\s*wordpress_test_cookie\=/ ) ) {
+					WPRemoteLogin();
+				}
+			}
+		/* ]]> */
+		</script>
+		<link rel="dns-prefetch" href="//connect.facebook.net" />
+<link rel="alternate" type="application/rss+xml" title="MAKE &raquo; Feed" href="http://makezine.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="MAKE &raquo; Comments Feed" href="http://makezine.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="MAKE &raquo; Hardware Innovation&nbsp;Workshop Comments Feed" href="http://makezine.com/hardware-innovation-workshop/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/_static/??-eJytkd1OBCEMRl9IrBvNRi+Mr+ArFOjMsBRKoKPO2y9L1JismjXxhr+eHOgHvBbjJCtlhbSawusccgMOkRocSAu6aMbu2rV2Bd/jRZqaiTFUaLoxnbG6UOrCl1AgYSTLMkNn/kCH7Hj1/XRAb8qbqcSo5PvzcmxDVyqpbs+LqPy32lbMPuT5c/Gb+iOXXp3qKHuzFhb0VHu2dhjPKpcYJ3RkRWJvDzW4LyGmkC/9ogXrqZP3+adrlzuYWSzyCXhKj7vb+5uHXR/3hyMq69Wz' type='text/css' media='all' />
+<link rel='stylesheet' id='screen-css-0' href='http://s0.wp.com/wp-content/themes/vip/plugins/taxonomy-images/style.css?m=1340680964g' type='text/css' media='screen' />
+<link rel='stylesheet' id='print-css-0' href='http://s1.wp.com/wp-content/themes/vip/makeblog/css/print.css?m=1378314213g' type='text/css' media='print' />
+<script type='text/javascript' src='http://s2.wp.com/_static/??-eJyNz9EKwjAMBdAfstahMF/Eb+m260xdm9pkE/16KygoCu4pkJzkEntJpuWoiGq92MANDTCjILu+9AzFAy+9LGxxFNth7CAP6M8j8vVZ/gITqM9OsQwUX/gtNbFogEiJ/DH9jKI4ES5/mYcm155MhtDt66oeUfLsRMkGd0IzcP840TCraHZppk+ZPVqVmfwI1yHPxM8/GKFBV3b2YVet621dV5tV5e+oMKQM'></script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/themes/vip/plugins/wp-frontend-uploader//lib/js/validate/jquery.validate.js?m=1365547409g&amp;ver=3.7-alpha-25157'></script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/themes/vip/plugins/wp-frontend-uploader/lib/js/frontend-uploader.js?m=1361241376g'></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://makezineblog.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://makezineblog.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Frequently Asked&nbsp;Questions' href='http://makezine.com/faq/' />
+<link rel='next' title='Overview&nbsp;2013' href='http://makezine.com/hardware-innovation-workshop/overview/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://makezine.com/hardware-innovation-workshop/' />
+<link rel='shortlink' href='http://wp.me/P22K2I-1huI' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fmakezine.com%2Fhardware-innovation-workshop%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fmakezine.com%2Fhardware-innovation-workshop%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Hardware Innovation Workshop" />
+<meta property="og:url" content="http://makezine.com/hardware-innovation-workshop/" />
+<meta property="og:description" content="MAKE magazine is bringing its popular Hardware Innovation Workshop to New York for a one-day event at the New York Hall of Science. Don’t miss this unprecedented opportunity to network with fellow ..." />
+<meta property="og:site_name" content="MAKE" />
+<meta property="og:image" content="http://i1.wp.com/makezineblog.files.wordpress.com/2013/07/cochair-image-for-website.jpg?fit=1600%2C1600" />
+<meta name="twitter:site" content="@make" />
+<meta name="twitter:image" content="http://i1.wp.com/makezineblog.files.wordpress.com/2013/07/cochair-image-for-website.jpg?fit=1600%2C1600" />
+<meta name="twitter:card" content="photo" />
+<meta name="twitter:creator" content="@make" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel='openid.server' href='http://makezineblog.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://makezineblog.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://makezine.com/osd.xml" title="MAKE" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+		<link rel="stylesheet" href="http://s.wordpress.com/wp-content/themes/vip/plugins/wp-page-numbers/default/wp-page-numbers.css?m=1276404093g" type="text/css" media="screen" /><!-- wp-parsely Plugin Version 1.5 -->
+<meta name='wp-parsely_version' id='wp-parsely_version' content='1.5' />
+<meta name='parsely-page' id='parsely-page' content='{"type":"sectionpage","title":"Hardware Innovation&nbsp;Workshop","link":"http:\/\/makezine.com\/hardware-innovation-workshop\/"}' />
+<meta name="application-name" content="MAKE" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="DIY projects, how-tos, and inspiration from geeks, makers, and hackers" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://makezine.com/feed/;icon-uri=http://1.gravatar.com/blavatar/14b3aa835e1ef41047dacf9a29aabb6f?s=16" /><style id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://makezine.com/?custom-css=1&#038;csblog=22K2I&#038;cscache=6&#038;csrev=32" />
+		
+	</head>
+	<body class="page page-id-305580 page-parent page-template page-template-page-hiw-php hiw typekit-enabled mp6 highlander-enabled highlander-light">
+
+		<header>
+				<div class="make-popdown">
+		<div class="wrapper-container">
+			<div class="container">
+				<div class="row">
+					<div class="span3 offset2 border-right">
+						<div class="row-fluid">
+							<a href="https://readerservices.makezine.com/mk/subscribe.aspx?PC=MK&amp;PK=M37BN05" class="span4" onClick="_gaq.push(['_trackEvent', 'popdown-subscribe', 'Click', 'Subscribe Image']);"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/footer-make-cover.jpg?m=1374909291g" alt=""></a>
+							<div class="span7 side-text">
+								<a href="https://readerservices.makezine.com/mk/subscribe.aspx?PC=MK&amp;PK=M37BN05" onClick="_gaq.push(['_trackEvent', 'popdown-subscribe', 'Click', 'Subscribe Link']);">Subscribe to MAKE!</a> Receive both print &amp; digital editions.
+							</div>
+						</div>
+					</div>
+					<div class="span2 border-right">
+						<ul id="menu-popdown-top" class="first nav ga-nav"><li id="menu-item-321696" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321696"><a href="http://makezine.com/">Make:</a></li>
+<li id="menu-item-320687" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-320687"><a href="http://makerfaire.com">Maker Faire</a></li>
+<li id="menu-item-320686" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-320686"><a href="http://www.makershed.com/?Click=19208">Maker Shed</a></li>
+</ul>					</div>
+					<div class="span4">
+						<ul id="menu-popdown-middle" class="second nav ga-nav"><li id="menu-item-321697" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321697"><a href="http://makezine.com/maker-camp/">Maker Camp</a></li>
+<li id="menu-item-321698" class="menu-item menu-item-type-post_type menu-item-object-page current-menu-item page_item page-item-305580 current_page_item menu-item-321698"><a href="http://makezine.com/hardware-innovation-workshop/">Hardware Innovation Workshop</a></li>
+<li id="menu-item-321700" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-321700"><a href="http://makezine.com/education/">Make: Education</a></li>
+</ul>					</div>
+				</div>
+				<div class="row">
+					<div class="span9 offset2 menu-bottom">
+						<p>What's Hot on Makezine.com:</p>
+						<ul id="menu-popdown-last" class="last nav ga-nav"><li id="menu-item-321701" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-321701"><a href="http://makezine.com/category/workshop/3d-printing-workshop/">3D Printing</a></li>
+<li id="menu-item-321702" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-321702"><a href="http://makezine.com/category/electronics/arduino/">Arduino</a></li>
+<li id="menu-item-321703" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-321703"><a href="http://makezine.com/category/electronics/raspberry-pi/">Raspberry Pi</a></li>
+<li id="menu-item-320712" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-320712"><a href="http://makezine.com/category/maker-pro/">Maker Pro</a></li>
+<li id="menu-item-320707" class="last menu-item menu-item-type-taxonomy menu-item-object-category menu-item-320707"><a></a></li>
+</ul>					</div>
+				</div>
+			</div>
+		</div>
+		<div class="menu-button">
+			<span class="popdown-btn"></span>
+		</div>
+	</div>
+		</header>
+
+		<div class="fix">
+			<div id="header-area">      
+				<div class="container">	
+					<div class="row">
+						<div class="span12 header-image">
+							<h1><a href="http://makezine.com/hardware-innovation-workshop/"><img style="margin:0 auto" src="http://s2.wp.com/wp-content/themes/vip/makeblog/images/hiw-hdr-01.png?m=1380784481g" alt="Hardware Innovation Workshop" title="Hardware Innovation Workshop" /></a></h1>
+						</div> <!-- END span12 -->
+					</div> <!-- END row -->	
+				</div> <!-- END container -->		
+				</div> <!-- END header -->
+				<div class="clear"></div>
+		</div> <!-- END fix -->
+		
+	<div class="single">
+	
+		<div class="container">
+
+			<div class="row">	
+
+								<div class="span3 sidebar-left">
+					<ul class="left-nav">
+						<li><a href="http://makezine.com/hardware-innovation-workshop/">Home</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/">2013 New York Event</a></li>
+						<div style="padding-left:15px;">
+							<li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/agenda/">Agenda</a></li>
+							<li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/speakers/">Speakers</a></li>
+							<li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/tickets/">Tickets</a></li>
+							<li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/hotel/">Travel</a></li>
+                    	</div>  
+						<li><a href="http://makezine.com/hardware-innovation-workshop/research/">Maker Market Research</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/press/">Press</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/contact/">Contact</a></li>
+					</ul>
+					<div class="accordion">
+						<div class="accordion">
+							<div class="accordion-heading">
+								<h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseOne">2013 Bay Area Event</a></h3>
+							</div>
+							<div id="collapseOne" class="accordion-body collapse in">
+								<div class="accordion-inner">
+									<ul class="left-nav left-nav-accord">
+										<li><a href="http://makezine.com/hardware-innovation-workshop/overview/">2013 Bay Area Overview</a></li>
+										<li><a href="http://makezine.com/hardware-innovation-workshop/agenda/">2013 Agenda</a></li>
+										<li><a href="http://makezine.com/hardware-innovation-workshop/keynotes/">2013 Speaker Roster</a></li>
+										<li><a href="http://makezine.com/hardware-innovation-workshop/innovators/">2013 Showcase Innovators</a></li>  
+										<li><a href="http://makezine.com/hardware-innovation-workshop/master-class/">2013 Master Class Workshop</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="accordion">
+						<div class="accordion">
+							<div class="accordion-heading">
+								<h3><a class="accordion-toggle" data-toggle="collapse" data-parent="#accordion2" href="#collapseTwo">2012 Bay Area Event</a></h3>
+							</div>
+							<div id="collapseTwo" class="accordion-body collapse in">
+								<div class="accordion-inner">
+									<ul class="left-nav left-nav-accord">
+										<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/">2012 Bay Area Overview</a></li>
+										<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/agenda-2012/">2012 Agenda</a></li>
+										<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/speaker-roster-2012/">2012 Speaker Roster</a></li>
+										<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/showcase-innovators-2012/">2012 Showcase Innovators</a></li> 
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					
+					<h4>Follow us:</h4>
+
+					<ul class="left-nav">
+						<li><a href="https://twitter.com/#!/makeHIW">Twitter</a></li>
+						<li><a href="https://www.facebook.com/MakeHIW">Facebook</a></li>  
+						<li><a href="https://plus.google.com/u/0/b/106948221845841665405/106948221845841665405/posts">Google+</a></li>
+						<li><a href="http://www.linkedin.com/groups/Make-Hardware-Innovation-4458111?home=&amp;gid=4458111&amp;trk=anet_ug_hm">Linkedin</a></li>
+					</ul>
+
+					<!--<img src="http://cdn.makezine.com/make/bootstrap/img/etc/quote.png" alt="Quote" class="quote"/> -->
+				<div class="row">
+					<blockquote>
+						<p><strong style="color:#0075BE">New from the editors of MAKE magazine!</strong></p>
+						<p><a href="http://makezine.com/maker-pro-newsletter/">Maker Pro Newsletter</a> is a weekly roundup of news about the impact makers are having on business and technology. From new hardware products and devices, hot startups, incubators and innovators, to new tools and market trends, Maker Pro delivers a quick read to keep you up to speed on the business of making. <a href="http://makezine.com/maker-pro-newsletter/">Subscribe today</a>!</p>
+					</blockquote>
+				</div><!-- END row-->
+					<div class="clear"></div>
+			
+				</div> <!-- END span3 sidebar-left -->			
+				<div class="span7">
+
+									
+					<article class="post-305580 page type-page status-publish hentry">
+
+						<p class="lead">MAKE magazine is bringing its popular Hardware Innovation Workshop to New York for a one-day event at the New York Hall of Science. Don’t miss this unprecedented opportunity to network with fellow maker pros as you learn tips and hints, best practices and avenues to successfully navigate the transition to maker pro.</p>
+<p>A leader of the maker movement, MAKE has been integral in helping DIY hobbyists avail themselves of the tools and technologies—such as 3D printers, CNC mills, and microcontrollers—to design and engineer innovative products and devices. Increasingly, these projects provide real solutions that enhance consumers’ lifestyles. As a result, many of these maker pros find themselves running startup companies with little experience or knowledge of the business ecosystem. Facing the challenges of every business, they seek out experts and others who have been there, to advise them on manufacturing, distribution, pricing, funding, customer acquisition and marketing,</p>
+<p>With the launch of its Hardware Innovation Workshop, MAKE has provided a forum for conversation to help makers connect with makers, and makers connect with pros in an intimate, collaborative environment.</p>
+<p>This one-day event at NYSCI will take the best of the content, ideas, views and visions from the Bay Area event, and consolidate it into the ultimate “toolbox for maker pros.”</p>
+<p><strong> <span style="text-decoration:underline;">Topics and sessions will include</span>:</strong></p>
+<ul>
+<li>Digital manufacturing: Getting to Scale</li>
+<li>Prototyping and Fabrication</li>
+<li>Partnering to Get it Made</li>
+<li>Wisdom of the Crowd: Crowdsourcing</li>
+<li>Getting Started: Maker Pro Case Studies</li>
+<li>Manufacturing &amp; The New World Order</li>
+<li>Maker-to-Market: Incubators &amp; Accelerators</li>
+</ul>
+<p><strong><span style="text-decoration:underline;">Pitch your Prototype </span></strong></p>
+<p>Plus, in the final session, entrepreneurs (who have submitted their concepts and have been selected as finalists) present their prototypes to the audience of their peers and experts, to convince them their ideas have merit and commercial viability. At the evening event, they will have the opportunity to display their projects and explain their business strategy to the assembled crowd. The finalists have been determined! They are: CopyCat, Firefly Newborn Phototherapy, Grow Cubes, Keen Vent, and Quench Equitable Smart Water Dispenser.  Complete contest rules: <a href="http://makezineblog.files.wordpress.com/2013/05/pitches-with-prototypes-contest-rules-1.docx">Pitches With Prototypes Contest Rules-1</a></p>
+<p><a href="http://makezineblog.files.wordpress.com/2013/07/cochair-image-for-website.jpg"><img class="wp-image-322282 alignright" alt="CoChair-Image-for-website" src="http://s0.wp.com/wp-content/themes/vip/plugins/lazy-load/images/1x1.trans.gif?m=1322061781g" data-lazy-src="http://makezineblog.files.wordpress.com/2013/07/cochair-image-for-website.jpg?w=223&#038;h=178" width="223" height="178" /><noscript><img class="wp-image-322282 alignright" alt="CoChair-Image-for-website" src="http://makezineblog.files.wordpress.com/2013/07/cochair-image-for-website.jpg?w=223&#038;h=178" width="223" height="178" /></noscript></a></p>
+<p><b>Co-hosts Dale Dougherty, Travis Good and Haytham Elhawary</b> join leaders at the forefront of the maker movement—early pioneers who paved the road for others to benefit from their experience, both successes and pitfalls.</p>
+<div id='ctx_linker' class='ctx_widget'></div><div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-official sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-stumbleupon"><div class="stumbleupon_button"><iframe src="http://www.stumbleupon.com/badge/embed/1/?url=http%3A%2F%2Fmakezine.com%2Fhardware-innovation-workshop%2F&amp;title=Hardware%20Innovation%20Workshop" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:74px; height: 18px;" allowTransparency="true"></iframe></div></li><li class="share-google-plus-1"><div class="googleplus1_button"><div class="g-plus" data-action="share" data-annotation="bubble" data-href="http://makezine.com/hardware-innovation-workshop/"></div></div></li><li class="share-twitter"><div class="twitter_button"><iframe allowtransparency="true" frameborder="0" scrolling="no" src="http://platform.twitter.com/widgets/tweet_button.html?url=http%3A%2F%2Fwp.me%2FP22K2I-1huI&#038;counturl=http%3A%2F%2Fmakezine.com%2Fhardware-innovation-workshop%2F&#038;count=horizontal&#038;text=Hardware%20Innovation%20Workshop%3A&#038;via=make&#038;related=wordpressdotcom" style="width:101px; height:20px;"></iframe></div></li><li class="share-facebook"><div class="like_button"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fmakezine.com%2Fhardware-innovation-workshop%2F&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;height=21&amp;locale=en_US&amp;width=90" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:96px; height:21px;" allowTransparency="true"></iframe></div></li><li class="share-pinterest"><div class="pinterest_button"><a href="http://pinterest.com/pin/create/button/?url=http%3A%2F%2Fmakezine.com%2Fhardware-innovation-workshop%2F&#038;description=Hardware%20Innovation%20Workshop&#038;media=http%3A%2F%2Fmakezineblog.files.wordpress.com%2F2013%2F07%2Fcochair-image-for-website.jpg%3Fw%3D620" class="pin-it-button" count-layout="horizontal"> Pin It</a></div></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-30206320-305580-524fc96d5c344' data-src='//widgets.wp.com/likes/#blog_id=30206320&amp;post_id=305580&amp;origin=makezineblog.wordpress.com&amp;obj_id=30206320-305580-524fc96d5c344' data-name='like-post-frame-30206320-305580-524fc96d5c344'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>					
+					</article>
+					
+										
+									</div> <!-- END span8 -->	
+
+									
+				<div class="span2 right-sidebar">				
+
+					<!-- Social Media Buttons BEGIN -->
+					<h4>Be Social</h4>
+					<div class="socialArea">
+							<p class="links">
+								<span class="soci"><a href="http://twitter.com/make" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/twitter.png?m=1351191030g" alt="Make on Twitter"></a></span>
+								<span class="soci"><a href="http://youtube.com/make" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/youtube.png?m=1347432875g" alt="Make on YouTube"></a></span>
+								<span class="soci"><a href="http://pinterest.com/makemagazine/" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/pinterest.png?m=1351191030g" alt="Make on Pintrest"></a></span>
+								<span class="soci"><a href="http://www.flickr.com/groups/make/" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/flickr.png?m=1347432875g" alt="Make on Flickr"></a></span>
+								<span class="soci"><a href="http://facebook.com/makemagazine" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/facebook.png?m=1347432875g" alt="Make on Facebook"></a></span>
+								<span class="soci"><a href="http://www.stumbleupon.com/to/stumble/stumblethru:makezine.com?utm_source=Makezine&amp;utm_medium=StumbleThru&amp;utm_campaign=StumbleThruButton" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/stumbleupon.png?m=1351191030g" alt="Stumble Make Magazine"></a></span>
+								<span class="soci"><a href="http://instagram.com/makemagazine" target="_blank"><img src="http://makezineblog.files.wordpress.com/2012/12/instagram.png" alt="MAKE on Instagram"></a></span>
+								<span class="soci"><a href="https://google.com/+MAKE/" target="_blank"><img src="http://s2.wp.com/wp-content/themes/vip/makeblog/img/google-plus.png?m=1347432875g" alt="MAKE on Google+"></a></span>
+							</p>
+					</div> 
+					<!-- Social Media Buttons END -->
+					<div class="clearfix"></div>
+					
+					<h4>Presenting Sponsor</h4>
+					<ul class="unstyled" id="presenting-sponsor">
+					  	<li>
+							<a style="margin-bottom:10px;" href="http://www.ge.com/" class="thumbnail">
+								<img src="http://makezineblog.files.wordpress.com/2013/04/ge_logo.jpg?w=130" alt="General Electric Logo" width="130">
+							</a>
+						</li>
+					</ul>
+					<h4>Supporting Sponsor</h4>
+					<ul class="unstyled" id="supporting-sponsor">
+						<li>
+							<a style="margin-bottom:10px;" href="http://www.shopbottools.com/" class="thumbnail">
+								<img src="http://cdn.makezine.com/make/bootstrap/img/etc/ShopBot-Logo-w-Reg.png" alt="ShopBot" width="130">
+							</a>
+						</li>
+					</ul>
+					<h4>Partner</h4>
+					<ul class="unstyled" id="partner">
+					  	<li>
+							<a style="margin-bottom:10px;" href="http://www.nysci.org/" class="thumbnail">
+								<img src="http://makezineblog.files.wordpress.com/2013/08/hiw-sponsor-nysci.png?w=130" alt="NY SCI" width="130">
+							</a>
+						</li>
+						<li>
+							<a href="http://www.nycedc.com" class="thumbnail">
+								<img src="http://makezineblog.files.wordpress.com/2013/08/hiw-sponsor-nycedc.jpg?W=130" alt="NYC EDU">
+							</a>
+						</li>
+					</ul>
+						<h4>Media Partner</h4>
+					<ul class="unstyled" id="media-partner">
+						<li>
+							<a style="margin-bottom:10px;" href="http://www.engadget.com/expand/about/" target="_blank">
+								<img class="thumbnail" src="http://makezineblog.files.wordpress.com/2013/04/engadget-logo.jpg?w=130" alt="ShopBot" width="130">
+							</a>
+						</li>
+					</ul>
+					<h4>Press</h4>
+						<img class="thumbnail" src="http://makezineblog.files.wordpress.com/2013/03/hiw_web-asset_cnet-quote1.jpg" alt="">
+					<img src="http://cdn.makezine.com/make/bootstrap/img/etc/businessweek.jpg" alt="Bloomberg Businessweek" class="thumbnail" width="130">
+					<h4>The Maker Movement Meets the VCs</h4>
+					<p>"[The maker movement is] as significant as the shift from agriculture to the early industrial era." Jeremy Rifkin, Wharton economist. Bloomberg Business Week, 2/16/12</p>
+					<hr>
+					<img src="http://cdn.makezine.com/make/bootstrap/img/etc/washington_post.jpg" alt="Washington Post" class="thumbnail" width="130">
+					<h4>Why It's China's Turn to Worry about Manufacturing</h4>
+					<p>"Artificial intelligence, robotics, and digital manufacturing . . . these technologies will make manufacturing more creative, less expensive, more local and more personal." 1/10/12</p>
+					<hr>
+					<img src="http://cdn.makezine.com/make/bootstrap/img/etc/economist.jpg" alt="The Economist" class="thumbnail" width="130">
+					<h4>More than Just Digital Quilting</h4>
+					<p>"The maker movement could change how science is taught and boost innovation. It may even herald a new industrial revolution." 12/3/11</p>
+					<hr>
+					<img src="http://cdn.makezine.com/make/bootstrap/img/etc/forbes.jpg" alt="Forbes" class="thumbnail" width="130">
+					<h4>Moving the Economy: The Future of the Maker Movement</h4>
+					<p>"I'm motivated and moved by the idea, the belief-that the people who invent and build and make things have the power to change the world." TJ McCue, 10/26/11 Forbes Blog</p>
+					<hr>
+					<img src="http://cdn.makezine.com/make/bootstrap/img/etc/wired.jpg" alt="Wired" class="thumbnail" width="130">
+					<h4>Big DYI: The Year the Maker Movement Broke</h4>
+					<p>"Between MakerBot, Adafruit, MakerSHED and SparkFun, that's well over tens of millions of revenue . . .it's a real industry now." Phillip Torrone, Adafruit. 8/6/11</p>
+					<hr>
+					<img src="http://cdn.makezine.com/make/bootstrap/img/etc/entrepreneur.jpg" alt="Entrepreneur" class="thumbnail" width="130">
+					<h4>Maker Faire and the Growth of Do-It-Yourself</h4>
+					<p>"The movement that caught on in the garages and basements of California's Bay Area is showing signs of true financial power."  Gwen Moran 10/25/11</p>
+					
+				</div> <!-- END span2 -->				
+					
+			</div> <!-- END row -->	
+
+		</div> <!-- END container -->	
+
+	</div> <!-- END single -->	
+
+
+		<div class="hiw-footer">
+			<div class="container">
+				<!-- HIDING FOOTER NAV AS ITS NOT USED ON ORIGINAL SITE
+				<ul class="hiw-footer-nav">
+						<li><a href="http://makezine.com/hardware-innovation-workshop/overview.html">Overview</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/register.html">Register</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/hotel.html">Hotel</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/agenda.html">Agenda at a Glance</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/keynotes.html">Speaker Roster</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/innovators.html">Showcase Innovators</a></li>  
+						<li><a href="http://makezine.com/hardware-innovation-workshop/research.html">Maker Market Research</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/press.html">Press</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/contact.html">Contact</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012.html">Hardware Innovation Workshop 2012</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/agenda-2012.html">2012 Agenda</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/keynotes-2012.html">2012 Speaker Roster</a></li>
+						<li><a href="http://makezine.com/hardware-innovation-workshop/innovators-2012.html">2012 Showcase Innovators</a></li>
+				</ul>
+				-->	
+			</div><!-- END container -->
+		</div><!-- END hiw-footer -->
+
+		<!-- Le javascript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script>jQuery(".entry-content:odd").addClass('odd');</script>
+
+		<script type="text/javascript">
+		jQuery(document).ready(function(){
+			jQuery(".scroll").click(function(event){
+				//prevent the default action for the click event
+				event.preventDefault();
+		 
+				//get the full url - like mysitecom/index.htm#home
+				var full_url = this.href;
+		 
+				//split the url by # and get the anchor target name - home in mysitecom/index.htm#home
+				var parts = full_url.split("#");
+				var trgt = parts[1];
+		 
+				//get the top offset of the target anchor
+				var target_offset = jQuery("#"+trgt).offset();
+				var target_top = target_offset.top;
+		 
+				//goto that anchor by setting the body scroll top to anchor top
+				jQuery('html, body').animate({scrollTop:target_top - 50}, 1000);
+
+				//Style the pagination links				
+			});
+			jQuery('.hide-thumbnail').removeClass('thumbnail');
+		});
+		</script>
+
+		<script type="text/javascript">
+			setTimeout(function(){var a=document.createElement("script");
+			var b=document.getElementsByTagName("script")[0];
+			a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0013/2533.js?"+Math.floor(new Date().getTime()/3600000);
+			a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+		</script>
+
+		
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom,vip.makezineblog"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cvip.makezineblog" height="1" width="1" alt="" /></div></noscript>
+
+		<!-- Quantcast Tag -->
+		<script type="text/javascript">
+			var _qevents = _qevents || [];
+
+			(function() {
+				var elem = document.createElement('script');
+				elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+				elem.async = true;
+				elem.type = "text/javascript";
+				var scpt = document.getElementsByTagName('script')[0];
+				scpt.parentNode.insertBefore(elem, scpt);
+			})();
+
+			_qevents.push({
+				qacct:"p-c0y51yWFFvFCY"
+			});
+		</script>
+
+		<noscript>
+			<div style="display:none;">
+				<img src="//pixel.quantserve.com/pixel/p-c0y51yWFFvFCY.gif" border="0" height="1" width="1" alt="Quantcast"/>
+			</div>
+		</noscript>
+		<!-- End Quantcast tag -->
+
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none">
+  <div id="parsely-cfg" data-parsely-site="makezine.com"></div>
+</div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include: Standard -->
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/makezineblog.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/makezineblog.wordpress.com\/wp-login.php?action=logout&_wpnonce=36ee73df56","homeURL":"http:\/\/makezine.com\/","postID":"305580","gravDefault":"retro","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1379020420j'></script>
+			<script type="text/javascript">
+			  (function() {
+			    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+			    po.src = 'https://apis.google.com/js/plusone.js';
+			    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+			  })();
+			</script>
+					<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+							<script type="text/javascript">
+				// Pinterest shared resources
+				var s = document.createElement("script");
+				s.type = "text/javascript";
+				s.async = true;
+				s.src = window.location.protocol + "//assets.pinterest.com/js/pinit.js";
+				var x = document.getElementsByTagName("script")[0];
+				x.parentNode.insertBefore(s, x);
+				// if 'Pin it' button has 'counts' make container wider
+				jQuery(window).load( function(){ jQuery( 'li.share-pinterest a span:visible' ).closest( '.share-pinterest' ).width( '80px' ); } );
+			</script>
+				<iframe src='http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						var requests = [];
+						jQuery( '.jetpack-likes-widget-wrapper' ).each( function( i ) {
+							var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+							var match = regex.exec( this.id );
+							if ( ! match || match.length != 5 )
+								return;
+
+							var info = {
+								blog_id: match[2],
+								width:   this.width
+							};
+
+							if ( 'post' == match[1] ) {
+								info.post_id = match[3];
+							} else if ( 'comment' == match[1] ) {
+								info.comment_id = match[3];
+							}
+
+							info.obj_id = match[4];
+
+							requests.push( info );
+						});
+
+						JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 10 );
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??-eJydy7EOwjAMBNAfIrGqVioMiG8JqVUSYsfEaaF8PWRBTAxsd7p7cBfjM1fkClFhwjV4lIeNuoOvqV6QUGENAuSueE55bveWi/GOxFLgH0jSMgdWSO65mZTd1HS8LVg2q5ld+cd/yhue6Nj149Adhn4/xhebvE5z'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var FB_WP=FB_WP||{};FB_WP.queue={_methods:[],flushed:false,add:function(fn){FB_WP.queue.flushed?fn():FB_WP.queue._methods.push(fn)},flush:function(){for(var fn;fn=FB_WP.queue._methods.shift();){fn()}FB_WP.queue.flushed=true}};window.fbAsyncInit=function(){FB.init({"channelUrl":"http:\/\/makezineblog.wordpress.com\/wp-content\/themes\/vip\/plugins\/facebook\/channel.php","xfbml":true,"appId":"216859768380573"});if(FB_WP && FB_WP.queue && FB_WP.queue.flush){FB_WP.queue.flush()}}
+/* ]]> */
+</script>
+<div id="fb-root"></div><script type="text/javascript">(function(d){var id="facebook-jssdk";if(!d.getElementById(id)){var js=d.createElement("script"),ref=d.getElementsByTagName("script")[0];js.id=id,js.async=true,js.src="http:\/\/connect.facebook.net\/en_US\/all.js",ref.parentNode.insertBefore(js,ref)}})(document)</script>
+<script type='text/javascript' src=''></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1370537849g'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'30206320','v':'wpcom','tz':'-7','user_id':'0','post':'305580','subd':'makezineblog'});
+function st_vt() {var x=document.createElement("img");x.src="http://stats.wordpress.com/g.gif?blog=30206320&v=wpcomvt&tz=-7&user_id=0&post=305580&subd=makezineblog&rand="+Math.random();}
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1BNmNJfGhxNCVxUDExYmtXRThKbHcwXTdETWI1alhvb1oseHImN101ZFpEakVpYjlQYVFLYzBaVHRtPz0wXS9bZWE0P3U9KzImalpxcjN1eWlVcFZ5Ym9EMiV3JXVRRGlfbzY1Zm1mJVFpfEFjQj1Vb1AxRm12M21YUzRoWWVDNDZYZ001W1ZFRy9oVkxNbXB3Unpyamp+b0hdT3ltWV9HYVosTE4yZllhdWcydllLfERMRWwsZGVBaVVtTjIuTm52YlZOMXZILUtQTF9GNHU0YVF8T3pFTkp5dHBKY1hzNVp0PXZMel9FR2JUTw=='});
+addLoadEvent(function(){linktracker_init('30206320',305580);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script>		
+	</body>
+</html>

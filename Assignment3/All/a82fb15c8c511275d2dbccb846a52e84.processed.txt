@@ -1,0 +1,151 @@
+   [1]Cornell University
+   [2]Cornell University [3]Library
+   [4]We gratefully acknowledge support from
+   the Simons Foundation
+   and member institutions
+
+[5]arXiv.org > [6]cs > arXiv:1304.2338
+
+   Search or Article-id
+   ([7]Help | [8]Advanced search)
+   ________________________   [All papers] Go!
+
+   Full-text links:
+
+Download:
+
+     * [9]PDF
+     * [10]Other formats
+
+Current browse context:
+
+   cs.DS
+   [11]< prev | [12]next >
+   [13]new | [14]recent | [15]1304
+
+Change to browse by:
+
+   [16]cs
+
+References & Citations
+
+     * [17]NASA ADS
+
+[18]DBLP - CS Bibliography
+
+   [19]listing | [20]bibtex
+   [21]Jonathan A. Kelner
+   [22]Lorenzo Orecchia
+   [23]Yin Tat Lee
+   [24]Aaron Sidford
+
+Bookmark
+
+   ([25]what is this?)
+   [26]CiteULike logo [27]BibSonomy logo [28]Mendeley logo [29]Facebook
+   logo [30]LinkedIn logo [31]del.icio.us logo [32]Digg logo [33]Reddit
+   logo [34]ScienceWISE logo
+
+Computer Science > Data Structures and Algorithms
+
+Title: An Almost-Linear-Time Algorithm for Approximate Max Flow in Undirected
+Graphs, and its Multicommodity Generalizations
+
+   Authors: [35]Jonathan A. Kelner, [36]Yin Tat Lee, [37]Lorenzo Orecchia,
+   [38]Aaron Sidford
+   (Submitted on 8 Apr 2013 ([39]v1), last revised 23 Sep 2013 (this
+   version, v2))
+
+     Abstract: In this paper, we introduce a new framework for
+     approximately solving flow problems in capacitated, undirected
+     graphs and apply it to provide asymptotically faster algorithms for
+     the maximum $s$-$t$ flow and maximum concurrent multicommodity flow
+     problems. For graphs with $n$ vertices and $m$ edges, it allows us
+     to find an $\epsilon$-approximate maximum $s$-$t$ flow in time
+     $O(m^{1+o(1)}\epsilon^{-2})$, improving on the previous best bound
+     of $\tilde{O}(mn^{1/3} poly(1/\epsilon))$. Applying the same
+     framework in the multicommodity setting solves a maximum concurrent
+     multicommodity flow problem with $k$ commodities in
+     $O(m^{1+o(1)}\epsilon^{-2}k^2)$ time, improving on the existing
+     bound of $\tilde{O}(m^{4/3} poly(k,\epsilon^{-1})$.
+     Our algorithms utilize several new technical tools that we believe
+     may be of independent interest:
+     - We give a non-Euclidean generalization of gradient descent and
+     provide bounds on its performance. Using this, we show how to reduce
+     approximate maximum flow and maximum concurrent flow to the
+     efficient construction of oblivious routings with a low competitive
+     ratio.
+     - We define and provide an efficient construction of a new type of
+     flow sparsifier. In addition to providing the standard properties of
+     a cut sparsifier our construction allows for flows in the sparse
+     graph to be routed (very efficiently) in the original graph with low
+     congestion.
+     - We give the first almost-linear-time construction of an
+     $O(m^{o(1)})$-competitive oblivious routing scheme. No previous such
+     algorithm ran in time better than $\tilde{{\Omega}}(mn)$.
+     We also note that independently Jonah Sherman produced an almost
+     linear time algorithm for maximum flow and we thank him for
+     coordinating submissions.
+
+   Subjects: Data Structures and Algorithms (cs.DS)
+   Cite as:  [40]arXiv:1304.2338 [cs.DS]
+             (or [41]arXiv:1304.2338v2 [cs.DS] for this version)
+
+Submission history
+
+   From: Aaron Sidford [[42]view email]
+   [43][v1] Mon, 8 Apr 2013 20:06:45 GMT (46kb,D)
+   [v2] Mon, 23 Sep 2013 17:41:00 GMT (46kb,D)
+   [44]Which authors of this paper are endorsers?
+
+   Link back to: [45]arXiv, [46]form interface, [47]contact.
+
+References
+
+   1. http://www.cornell.edu/
+   2. http://www.cornell.edu/
+   3. http://www.library.cornell.edu/
+   4. https://confluence.cornell.edu/x/9YhjCg
+   5. http://arxiv.org/
+   6. http://arxiv.org/list/cs/recent
+   7. http://arxiv.org/help
+   8. http://arxiv.org/find
+   9. http://arxiv.org/pdf/1304.2338v2
+  10. http://arxiv.org/format/1304.2338v2
+  11. http://arxiv.org/prevnext?site=arxiv.org&id=1304.2338&context=cs.DS&function=prev
+  12. http://arxiv.org/prevnext?site=arxiv.org&id=1304.2338&context=cs.DS&function=next
+  13. http://arxiv.org/list/cs.DS/new
+  14. http://arxiv.org/list/cs.DS/recent
+  15. http://arxiv.org/list/cs.DS/1304
+  16. http://arxiv.org/abs/1304.2338?context=cs
+  17. http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1304.2338
+  18. http://www.informatik.uni-trier.de/~ley/db/
+  19. http://www.informatik.uni-trier.de/~ley/db/journals/corr/corr1304.html#abs-1304-2338
+  20. http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1304-2338
+  21. http://dblp.uni-trier.de/search/author?author=Jonathan%20A.%20Kelner
+  22. http://dblp.uni-trier.de/search/author?author=Lorenzo%20Orecchia
+  23. http://dblp.uni-trier.de/search/author?author=Yin%20Tat%20Lee
+  24. http://dblp.uni-trier.de/search/author?author=Aaron%20Sidford
+  25. http://arxiv.org/help/social_bookmarking
+  26. http://arxiv.org/ct?url=http%3A%2F%2Fwww.citeulike.org%2Fposturl%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338%26title%3DAn%2520Almost-Linear-Time%2520Algorithm%2520for%2520Approximate%2520Max%2520Flow%2520in%2520Undirected%250A%2520%2520Graphs%252C%2520and%2520its%2520Multicommodity%2520Generalizations%26authors%3D&v=c10104d2
+  27. http://arxiv.org/ct?url=http%3A%2F%2Fwww.bibsonomy.org%2FBibtexHandler%3FrequTask%3Dupload%26url%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338%26description%3DAn%2520Almost-Linear-Time%2520Algorithm%2520for%2520Approximate%2520Max%2520Flow%2520in%2520Undirected%250A%2520%2520Graphs%252C%2520and%2520its%2520Multicommodity%2520Generalizations&v=f99d38af
+  28. http://arxiv.org/ct?url=http%3A%2F%2Fwww.mendeley.com%2Fimport%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338&v=c7773b4c
+  29. http://arxiv.org/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Farxivpost%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338&v=809ee636
+  30. http://arxiv.org/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Flinkedin_post%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338&v=b0473344
+  31. http://arxiv.org/ct?url=http%3A%2F%2Fdel.icio.us%2Fpost%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338%26description%3DAn%2520Almost-Linear-Time%2520Algorithm%2520for%2520Approximate%2520Max%2520Flow%2520in%2520Undirected%250A%2520%2520Graphs%252C%2520and%2520its%2520Multicommodity%2520Generalizations&v=4ed59799
+  32. http://arxiv.org/ct?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338%26title%3DAn%2520Almost-Linear-Time%2520Algorithm%2520for%2520Approximate%2520Max%2520Flow%2520in%2520Undirected%250A%2520%2520Graphs%252C%2520and%2520its%2520Multicommodity%2520Generalizations&v=60479c58
+  33. http://arxiv.org/ct?url=http%3A%2F%2Freddit.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338%26title%3DAn%2520Almost-Linear-Time%2520Algorithm%2520for%2520Approximate%2520Max%2520Flow%2520in%2520Undirected%250A%2520%2520Graphs%252C%2520and%2520its%2520Multicommodity%2520Generalizations&v=d116c2bc
+  34. http://arxiv.org/ct?url=http%3A%2F%2Fsciencewise.info%2Fbookmarks%2Fadd%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1304.2338&v=b4bfde08
+  35. http://arxiv.org/find/cs/1/au:+Kelner_J/0/1/0/all/0/1
+  36. http://arxiv.org/find/cs/1/au:+Lee_Y/0/1/0/all/0/1
+  37. http://arxiv.org/find/cs/1/au:+Orecchia_L/0/1/0/all/0/1
+  38. http://arxiv.org/find/cs/1/au:+Sidford_A/0/1/0/all/0/1
+  39. http://arxiv.org/abs/1304.2338v1
+  40. http://arxiv.org/abs/1304.2338
+  41. http://arxiv.org/abs/1304.2338v2
+  42. http://arxiv.org/auth/show-email/c308d38a/1304.2338
+  43. http://arxiv.org/abs/1304.2338v1
+  44. http://arxiv.org/auth/show-endorsers/1304.2338
+  45. http://arxiv.org/
+  46. http://arxiv.org/form
+  47. http://arxiv.org/help/contact

@@ -1,0 +1,167 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]P equal to NP and all that
+
+   [5][j9937.gif]
+
+   One of the better known problems in Computer Science is the [6]P versus
+   NP problem. It is often related to the following question: do all
+   problems for which we can check the correctness of a solution quickly
+   can also be solved quickly.
+
+   Most computer scientists believe that P is different from NP. In
+   colloquial terms, this means that we believe that there are problems
+   whose solution can be checked quickly but such that it is very
+   difficult to find the solution.
+
+   One relevant problem is the [7]Hamiltonian path problem: given a set of
+   roads and cities, is there a path that visits every city exactly once?
+   It is easy to check any given solution, but it is thought to be quite
+   hard (in general) to find such a solution.
+
+   A typical application for our belief that P is different from NP is to
+   show that a given problem is difficult. Proving that something is
+   difficult does not sound very important and practical at first, but it
+   can save your job!
+
+   There is a million dollar prize to whoever can resolve the P is equal
+   to NP question. This fact alone has attracted much attention to the
+   problem. Whoever solves it would get not only instant fame, but quite a
+   bit of wealth as well.
+
+   Lance Fortnow has spent a few years on a book that recounts all the
+   fascinating adventures related to this problem. He explains the problem
+   in depth in an accessible book entitled [8]The Golden Ticket. The book
+   is thoroughly researched and reviewed. Anyone from a smart high school
+   student to a computer scientist is sure to get a lot of this book. The
+   presentation is beautiful. There are few formulas but lots of facts.
+   The book is of course kept simple, so hard-core computational
+   complexity expert might be disappointed, but I think many of them will
+   enjoy the stories Fortnow offer.
+
+   Disclosure: I received a free review copy of the book. I am otherwise
+   unrelated to Fortnow.
+   [9]Tweet
+   [10]Comments (3)
+
+3 Comments
+
+    1. btw, there also made a movie about P =NP
+       [11]http://en.wikipedia.org/wiki/Travelling_Salesman_(2012_film)
+       Comment by Djamé -- 26/4/2013 @ [12]18:48
+    2. Lance Fortnow has also written a recent review paper on CACM called
+       [13]The Status of the P Versus NP Problem .
+       Comment by Mehmet Suzen -- 29/4/2013 @ [14]4:44
+    3. What I think really makes P=NP interesting is that proving them
+       equal is seemingly within range of many programmers. All you need
+       to do is take an exponential algorithm for one of the reference
+       problems and optimize it down to polynomial time. The existance of
+       the algorithm would prove equality, and net the author a cool
+       million.
+       Easy to consider, perhaps a little harder in practice :-)
+       Paul.
+       Comment by [15]Paul W Homer -- 30/4/2013 @ [16]19:49
+
+   Sorry, the comment form is closed at this time.
+   « « [17]Previous: You probably shouldn't use a spreadsheet for
+   important work
+   [18]Next: How to be effective at open source: by programmers, for
+   programmers » »
+
+   [19]« Blog's main page
+   Daniel Lemire's picture
+     * [20]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [21]Follow on Google Plus
+       22,500 followers
+     * twitter logo [22]Follow @lemire
+       4,000 followers
+     * Facebook logo [23]Follow on Facebook
+     * Google Scholar logo [24]Follow on Google Scholar
+     * Subscribe to this blog
+       - [25]in a reader,
+       - [26]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [27]About me
+          + [28]Book recommendations
+          + [29]My readers
+          + [30]Terms of use
+          + [31]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [32]The written word took over the world
+          + Thierry Lhôte on [33]The written word took over the world
+          + Ben on [34]The written word took over the world
+          + Anonymous on [35]The written word took over the world
+          + kilian on [36]The written word took over the world
+     * Some popular posts
+          + [37]Why I still program
+          + [38]Emotions killing your intellectual productivity
+          + [39]Turn your weaknesses into strengths
+          + [40]It is not where you work, but who you work with
+     * [41]Home page
+       [42]Google Scholar profile
+       [43]arXiv
+       [44]DBLP
+
+   Powered by [45]WordPress
+
+   © 2004-2013, [46]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [47]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/atom
+   4. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/
+   5. http://www.amazon.com/The-Golden-Ticket-Search-Impossible/dp/0691156492/?tag=daniellemires-20
+   6. http://en.wikipedia.org/wiki/P_versus_NP_problem
+   7. http://en.wikipedia.org/wiki/Hamiltonian_cycle
+   8. http://www.amazon.com/The-Golden-Ticket-Search-Impossible/dp/0691156492/?tag=daniellemires-20
+   9. https://twitter.com/share
+  10. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/#comments
+  11. http://en.wikipedia.org/wiki/Travelling_Salesman_(2012_film)
+  12. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/?utm_source=feedburner#comment-83399
+  13. http://cacm.acm.org/magazines/2009/9/38904-the-status-of-the-p-versus-np-problem
+  14. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/?utm_source=feedburner#comment-83652
+  15. http://theprogrammersparadox.blogspot.ca/
+  16. http://lemire.me/blog/archives/2013/04/26/p-equal-to-np-and-all-that/?utm_source=feedburner#comment-83838
+  17. http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/
+  18. http://lemire.me/blog/archives/2013/05/06/how-to-be-effective-at-open-source-by-programmers-for-programmers/
+  19. http://lemire.me/blog/
+  20. http://lemire.me/
+  21. https://plus.google.com/105888615414982242080/about
+  22. http://www.twitter.com/lemire/
+  23. http://www.facebook.com/daniel.lemire
+  24. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  25. http://lemire.me/blog/feed/
+  26. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  27. http://lemire.me/blog/about-me/
+  28. http://lemire.me/blog/book-recommendations/
+  29. http://lemire.me/blog/my-readers/
+  30. http://lemire.me/blog/terms-of-use/
+  31. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  32. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  33. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  34. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  35. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  36. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  37. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  38. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  39. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  40. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  41. http://lemire.me/en/
+  42. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  43. http://arxiv.org/a/lemire_d_1
+  44. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  45. http://wordpress.org/
+  46. http://lemire.me/en/
+  47. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  48. http://lemire.me/blog/feed/

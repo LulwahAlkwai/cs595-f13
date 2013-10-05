@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">     
+<title>12th International Conference on Entertainment Computing</title>
+<link href="css/bootstrap.min.css" rel="stylesheet" media="all">
+<!--[if lt IE 9]>
+   <script src="js/html5shiv.js"></script>
+<![endif]-->
+<link rel="apple-touch-icon-precomposed" sizes="144x144" href="ico/apple-touch-icon-144-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="ico/apple-touch-icon-114-precomposed.png">
+<link rel="apple-touch-icon-precomposed" sizes="72x72" href="ico/apple-touch-icon-72-precomposed.png">
+<link rel="apple-touch-icon-precomposed" href="ico/apple-touch-icon-57-precomposed.png">
+<link rel="shortcut icon" href="ico/favicon.png">
+</head>
+<body>
+<div id="skip" style="position:absolute;left:0px;top:-500px;width:1px;height:1px;overflow:hidden;">
+<a href="#navigation">Skip to navigation</a>
+<a href="#content">Skip to content</a>
+</div>
+<div class="navbar-wrapper hidden-print"> 
+  <div class="container fluidfill">
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner" id="navigation">
+        <div class="container"> 
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse"> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span> </button>
+          <a href="index.php" class="brand visible-phone visible-tablet"><img src="img/logotopICEC.png" alt="12th International Conference on Entertainment Computing" title="Go to homepage" width="140" height="31"></a> 
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li class='active'><a href="callforpapers.php">Call For Papers</a></li>
+              <li ><a href="topics.php">Topics</a></li>
+			  <li ><a href="speakers.php">Keynote Speakers</a></li>
+              <li ><a href="organization.php">Committees</a></li>
+              <li ><a href="program.php">Program</a></li>
+              <li ><a href="registration.php">Registration</a></li>
+              <li ><a href="venue.php">Venue</a></li>
+			  <li ><a href="travel.php">Accommodations and Hotels</a></li>
+			  <li ><a href="visa.php">Brazil VISA</a></li>
+            </ul>
+          </div>
+           </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Carousel    ================================================== -->
+<div class="hidden-print">
+  <div id="myCarousel" class="carousel slide hidden-phone">
+    <div style="position: absolute; bottom: 130px; margin-left:auto;margin-right:auto;width:100%;"> 
+      <div class="container" >
+        <div class="fundoimgtop"><a href="index.php"><img src="img/logoicec2013.png" class="imgtop" width="121" alt="12th International Conference on Entertainment Computing" title="Go to homepage" height="108"></a>
+          <h1 class="h1imgtop">12<sup>th</sup> International Conference on <br/>
+            Entertainment Computing</h1>
+          <p class="h2imgtop">October 16-18 2013&nbsp;&nbsp;|&nbsp;&nbsp;São Paulo, Brazil</p>
+        </div>
+      </div>
+    </div>
+    <div style="position: absolute; top: 75px; margin-left:auto;margin-right:auto;width:100%;">
+      <div class="container" > <a href="http://www.sbgames.org/sbgames2013/" target="_blank"><img  alt="12th International Conference on Entertainment Computing" title="Go to SBGames" src="img/logosbgames.png" class="logosbgames" width="191" height="46"></a>
+      </div>
+    </div>
+    <div class="carousel-inner" style="background:#111">
+      <!-- http://www.flickr.com/photos/carreon/3500074501/ -->
+      <div class="item active" style="background: #111 url(img/bgtop.png) no-repeat center top"></div>
+      <!-- http://www.flickr.com/photos/stankuns/61064466/ -->
+      <div class="item" style="background: #111 url(img/bgtop2.png) no-repeat center top"></div>
+      <!-- http://www.flickr.com/photos/frans16611/5189993733/ -->
+      <div class="item" style="background: #111 url(img/bgtop3.png) no-repeat center top"></div>
+    </div>
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">&lsaquo;</a> <a class="right carousel-control" href="#myCarousel" data-slide="next">&rsaquo;</a>
+    <div style="background:url(img/masktop.png) repeat-x; position:relative; bottom:40px; height:40px;"></div>
+  </div>
+</div>
+<!-- /.carousel --><div class="visible-phone titulo">
+  <h2 class="container">12th International Conference on Entertainment Computing</h2>
+</div>
+<div class="container" id="content">
+  <div class="row">
+    <div class="span9">
+    <div class="span8">
+	  <h2>Call for Papers</h3>
+      <p >The IFIP International Conference on Entertainment Computing explores the application of computational technology to entertainment. The conference brings together practitioners and researchers interested in the art and design of entertainment computing applications. ICEC 2013 welcomes submissions on the design, engineering, application and theory of entertainment technology. We solicit paper, poster and demonstration submissions, as well as proposals for tutorials and workshops.</p>
+      <p>Papers will be published by Springer as a LNCS and should be in the required format (<a href="http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0" target="_blank">http://www.springer.com/computer/lncs?SGWID=0-164-6-793341-0</a>). They
+will also be published in the ACM Digital Library..</p>
+        <h3>Submission Types and Deadlines</h3>
+		<strong>28 April 2013</strong>
+        <ul>
+		  <li>Tutorial/Workshop submissions (maximum length of 4 pages)</li>
+        </ul><br/>
+		<strong>07 May 2013</strong>
+        <ul>
+          <li>Full Technical Papers (maximum length of 12 pages)</li>
+		  <li>Short Technical Papers (maximum length of 6 pages)</li>
+		   <li>Interactive Art Installation Proposals (maximum length of 2 pages plus companion multimedia material)</li>
+        </ul><br/>
+		<strong>11 June 2013</strong>
+        <ul>
+          <li>Full, Short Technical Papers and Interactive Art Installation Proposals notifications</li>
+        </ul><br/>
+		<strong>18 June 2013</strong>
+        <ul>
+          <li>Poster Papers (maximum length of 4 pages)</li>
+		  <li>Demonstration Papers (maximum length of 4 pages)</li>
+		  <li>Industrial Papers (maximum length of 4 pages)</li>
+		  <li>Doctoral Consortium Papers (maximum length of 4 pages)</li>
+        </ul>
+		<br/>
+		<strong>8 July 2013</strong>
+        <ul>
+          <li>Poster, Demonstration, Industrial Papers and Doctoral Consortium notifications</li>
+        </ul>
+		<br/>
+		<strong>13 July 2013</strong>
+        <ul>
+          <li>Camera-ready submission</li>
+        </ul>
+
+        
+        <p>Submissions shall be made through EasyChair: <a href="https://www.easychair.org/conferences/?conf=icec20130" target="_blank">https://www.easychair.org/conferences/?conf=icec20130</a>.</p>
+    </div>
+    </div>
+<div class="span3 hidden-print">
+      <div class="row">
+        <iframe src="https://www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2FICEC2013&amp;send=false&amp;layout=box_count&amp;width=60&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;font=segoe+ui&amp;height=62&amp;appId=171183019630403" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:62px;" class="hidelike" allowTransparency="true"></iframe>
+      <a href="http://www.ifip.org/" target="_blank"><img src="img/ifip.png" alt="IFIP - International Federation for Information Processing" width="118" height="52" class="pull-right"></a> <a href="http://www.sbc.org.br/" target="_blank"><img src="img/logosbc.png" alt="SBC - Sociedade Brasileira de Computação" width="118" height="64" class="pull-right"></a></div>
+      <div class="row spacebottom10">
+        <iframe src="https://www.facebook.com/plugins/facepile.php?href=https%3A%2F%2Fwww.facebook.com%2FICEC2013&amp;action=like&amp;size=medium&amp;max_rows=1&amp;show_count=true&amp;colorscheme=light&amp;appId=171183019630403" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:100%; height:85px;" allowTransparency="true"></iframe>
+      </div>
+      <div class="row infosocial spacebottom20">
+        <div class="spacebottom10">Spread for the world</div>
+        <div class="spacebottom10"> <a href="#"  title="Share on Twitter"  rel="nofollow"  onClick="javascript:sharethis('http://twitter.com/home?status=ICEC%202013%20http%3A%2F%2Flia.dc.ufscar.br%2FICEC2013');" class="botaosocial"><img src="img/botao_03.gif" alt="Share on Twitter" width="37" height="36"></a><a href="#"  title="Share on Facebook"   rel="nofollow" onClick="javascript:sharethis('http://www.facebook.com/share.php?u=http%3A%2F%2Flia.dc.ufscar.br%2FICEC2013');" class="botaosocial"><img src="img/botao_05.gif" alt="Share on Facebook" width="37" height="36"></a><a href="#"  rel="nofollow" title="Share on Google+" onClick="javascript:sharethis('https://plus.google.com/share?url=http%3A%2F%2Flia.dc.ufscar.br%2FICEC2013');" class="botaosocial"><img src="img/botao_07.gif" alt="Share on Google+" width="38" height="37"></a> </div>
+      </div>
+	  <div class="row marketing hidden-print" style="text-align:center"> 
+	  <a href="http://www.capes.gov.br/" target="_blank"><img alt="Capes" src="img/logocapes.jpg" width="187" height="79" class="imghover"></a>
+	  <a href="http://www.grand-nce.ca/" target="_blank"><img alt="Grand" src="img/granp.png" width="187" height="79" class="imghover"></a>
+	  <a href="http://www.fapesp.br/" target="_blank"><img alt="Fapesp" src="img/logofapesp.gif" width="187" height="79" class="imghover"></a>
+	  <a href="http://www2.ufscar.br/home/index.php" target="_blank"><img src="img/logoa_03.png" alt="Universidade Federal de São Carlos" width="186" height="79" border="0" class="imghover"></a>
+    <a href="http://www.uff.br/" target="_blank"><img src="img/logoa_04.png" width="187" height="79" alt="Universidade Federal Fluminense" class="imghover"></a>
+	<a href="http://lia.dc.ufscar.br/" target="_blank"><img alt="Laboratório de Interação Avançada - UFSCar" src="img/logoa_06.png" width="187"
+	height="79" class="imghover"></a>
+    <a href="http://www.mackenzie.br/portal/principal.php" target="_blank"><img src="img/logoa_05.png" alt="Mackenzie" width="187" height="79" class="imghover"></a>
+	<br/>
+	</div>
+      <div class="row" style="text-align:center"><a href="previousconferences.php"><b>Previous Conferences</b></a></div>
+    </div>  </div>
+</div>
+
+<div class="container marketing">
+
+</div>
+
+<!-- /END --> 
+
+<!-- FOOTER -->
+<div class="infofooter hidden-print">
+  <div class="infoinfooter"></div>
+  <div class="container containerfooter">
+    <footer class="textinfooter"> <a href="http://www.egocriativo.com.br" ><img src="img/logo_ego1.png" alt="Egocriativo" title="Go to Egocriativo" width="88" class="pull-right" height="17"></a>
+      <p class="visible-desktop">&copy; 2013 &middot; International Conference on Entertainment Computing</p>
+      <p class="hidden-desktop hidden-print">&copy; 2013 &middot; ICEC</p>
+    </footer>
+  </div>
+</div>
+
+<script src="js/jquery.js"></script> 
+<script src="js/bootstrap.min.js"></script> 
+<script>
+function sharethis(url)
+{
+window.open (url, "Facebook_Share","menubar=1,resizable=1,width=750,height=500");
+}
+      !function ($) {
+        $(function(){
+          $('#myCarousel').carousel()
+        })
+      }(window.jQuery)
+
+</script>
+</body>
+</html>

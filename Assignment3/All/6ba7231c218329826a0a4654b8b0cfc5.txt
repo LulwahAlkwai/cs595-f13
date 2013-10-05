@@ -1,0 +1,671 @@
+<!DOCTYPE html>
+<!--html5-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Arduino Blog  &raquo; Blog Archive   &raquo; The Power of Temboo: connect the Yún to 100+ APIs</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="/favicon.png">
+<meta name="generator" content="WordPress 3.6.1" /> <!-- leave this for stats -->
+
+<link rel="stylesheet" href="http://fonts.typonine.com/WF-003562-000476.css" type="text/css">
+<link rel="stylesheet" href="https://id.arduino.cc/css/arduino-icons.css">
+<link rel="stylesheet" href="https://id.arduino.cc/css/animation.css"><!--[if IE 7]>
+<link rel="stylesheet" href="https://id.arduino.cc/css/arduino-icons-ie7.css"><![endif]-->
+<!--[if gte IE 9]><!-->
+<link rel='stylesheet' href='https://id.arduino.cc/css/foundation2.css' type='text/css' />
+<![endif]-->
+<!--[if IE 8]>
+	<link rel='stylesheet' href='https://id.arduino.cc/css/foundation_ie8.css' type='text/css' />	
+<![endif]-->
+<link rel="stylesheet" href="https://id.arduino.cc/css/typeplate.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://blog.arduino.cc/wp-content/themes/arduinoWide/style.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="https://id.arduino.cc/css/common.css" type="text/css" media="screen" />
+<link rel="alternate" type="application/rss+xml" title="Arduino Blog RSS Feed" href="http://blog.arduino.cc/feed/" />
+
+<link rel="pingback" href="http://blog.arduino.cc/xmlrpc.php" />
+<script src="https://id.todo.arduino.cc/js/vendor/jquery.js"></script>
+<script src="https://id.arduino.cc//js/vendor/custom.modernizr.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="Arduino Blog &raquo; The Power of Temboo: connect the Yún to 100+ APIs Comments Feed" href="http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/feed/" />
+<link rel='stylesheet' id='formidable-css'  href='http://blog.arduino.cc/wp-content/uploads/formidable/css/formidablepro.css?ver=1.07.01' type='text/css' media='all' />
+<link rel='stylesheet' id='output-css'  href='http://blog.arduino.cc/wp-content/plugins/addthis/css/output.css?ver=3.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://blog.arduino.cc/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blog.arduino.cc/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://blog.arduino.cc/?ver=pprjq1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.arduino.cc/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.arduino.cc/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='canonical' href='http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/' />
+<link rel='shortlink' href='http://blog.arduino.cc/?p=8031' />
+
+  <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22581631-3']);
+    _gaq.push(['_setDomainName', 'arduino.cc']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+
+  </script>
+
+</head>
+<body>
+<div id="menuWings" class="fixed"></div>
+<div id="page">
+	
+<script>
+	var userAgent = (navigator.userAgent || navigator.vendor || window.opera).toLowerCase();
+	if(userAgent.indexOf('mac')>0){
+		$("head").append('<style type="text/css">@-moz-document url-prefix() {h1 a, h2 a, h3 a, h4 a, h5 a, h1 a:hover, h2 a:hover, th a, th a:hover, h3 a:hover, h4 a:hover, h5 a:hover, #wikitext h2 a:hover, #wikitext h3 a:hover, #wikitext h4 a:hover {padding-bottom: 0.5em!important;} #pageheader .search input{font-family: "TyponineSans Regular 18";} #pagefooter .monospace{margin-top: -4px;} #navWrapper ul.left &gt; li{margin-top: -2px; padding-bottom: 2px;}#navWrapper ul.right &gt; li{margin-top: -5px; padding-bottom: 5px;}#navWrapper ul.right &gt; li ul{margin-top: 4px;} .slider-container .fixed-caption p{padding:8px 0 14px 0}}</style>');
+	}
+</script>
+
+<!--[if IE]>
+<link rel='stylesheet' href='https://id.arduino.cc//css/ie-monospace.css' type='text/css' />
+<![endif]-->
+
+<div id="menuWings" class="fixed"></div>
+
+<!--[if IE 8]>
+<div class="alert-box panel ie8alert">
+  <p><strong>Arduino.cc offers limited compatibility for Internet Explorer 8. Get a modern browser as Chrome, Firefox or Safari.</strong></p>
+  <a href="" class="close">&times;</a>
+</div>
+<![endif]-->
+
+<div id="pageheader">
+	<div class="row" class="contain-to-grid">
+		<div class="small-6 large-8 eight columns">
+			<div class="title"><a href="http://arduino.cc">Arduino</a></div>
+		</div>
+		<div class="small-6 large-4 four columns search">
+			<div class="row collapse">
+				<form method="GET" action="http://blog.arduino.cc/">
+	<div class="small-12 twelve columns">
+		<input type="text" id="s" name="s" value="" placeholder="Search the Arduino Blog">
+		<input type="submit" name="btnG" VALUE="search">
+	</div>
+</form>			</div>
+		</div>
+	</div>
+
+	<!--[if gte IE 9]><!-->
+	<div id="navWrapper"  class="sticky">
+	<![endif]-->
+	<!--[if IE 8]>
+		<div id="navWrapper">
+	<![endif]-->
+		<nav class="top-bar"  data-options="is_hover:true" >
+			<ul class="title-area">
+				<li class="name"></li>
+			</ul>
+
+			<section class="top-bar-section">
+				<ul class="left">
+					<li id="navLogo">
+						<a href="http://arduino.cc">
+							<img src="https://id.arduino.cc//img/logo_46.png" alt="userpicture" />
+						</a>
+					</li>
+					<li id="navHome"><a href="http://arduino.cc">Home</a></li>
+					<li class="has-dropdown"><a href="#">Buy</a>
+						<ul class="dropdown">
+							<li><a href="http://store.arduino.cc/ww/index.php">Store</a></li>
+							<li><a href="http://arduino.cc/en/Main/Buy">Distributors</a></li>
+						</ul>
+					</li>
+					<li><a href="http://arduino.cc/en/Main/Software">Download</a></li>
+					<li><a href="http://arduino.cc/en/Main/Products">Products</a></li>
+					<li class="has-dropdown"><a href="#">Learning</a>
+						<ul class="dropdown">
+							<li><a href="http://arduino.cc/en/Guide/HomePage">Getting started</a></li>
+							<li><a href="http://arduino.cc/en/Tutorial/HomePage">Examples</a></li>
+							<li><a href="http://playground.arduino.cc">Playground</a></li>
+						</ul>
+					</li>
+					<li><a href="http://arduino.cc/en/Reference/HomePage">Reference</a></li>
+					<li class="has-dropdown"><a href="#">Support</a>
+						<ul class="dropdown">
+							<li><a href="http://arduino.cc/en/Main/FAQ">FAQ</a></li>
+							<li><a href="http://forum.arduino.cc">Forum</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="http://blog.arduino.cc">Blog</a></li>
+				</ul>
+
+								<ul class="right">
+					<li><a href="https://id.arduino.cc/auth/login/?returnurl=http%3A%2F%2Fblog.arduino.cc%2F2013%2F09%2F11%2Fthe-power-of-temboo-connect-the-yun-to-100-apis%2F" class="cart">LOG IN</a></li>
+					<li><a href="https://id.arduino.cc/auth/register" class="cart">SIGN UP</a></li>
+				</ul>
+							</section>
+		</nav>
+	</div>
+</div>
+
+
+
+	<div id="content" class="narrowcolumn">
+
+	
+		<div class="navigation singlePost">
+			<div class="alignleft"><a href="http://blog.arduino.cc/2013/09/10/its-time-to-enjoy-the-arduino-yun-now-available-for-purchase/" rel="prev">It’s time to enjoy the Arduino Yún: now available for purchase!</a></div>
+			<div class="alignright"><a href="http://blog.arduino.cc/2013/09/12/the-interactive-veil-expressing-emotions-with-lilypad/" rel="next">The interactive veil expressing emotions with Lilypad</a></div>
+		</div>
+
+		<div class="post" id="post-8031">
+			<h3>The Power of Temboo: connect the Yún to 100+ APIs</h3>
+			<div class="info">
+				<span class="author">Zoe Romano</span> &mdash; <span class="date">September 11th, 2013</span>
+			</div>
+			
+			
+			<div class="entry">
+				<p><a href="http://blog.arduino.cc/wp-content/uploads/2013/09/1-Arduino-Temboo-schema.png"><img class="alignnone  wp-image-8032" title="1 - Arduino Temboo schema" alt="1 - Arduino Temboo schema" src="http://blog.arduino.cc/wp-content/uploads/2013/09/1-Arduino-Temboo-schema-1024x453.png" width="614" height="272" /></a></p>
+<p><em>(Guest post by Temboo Team)</em></p>
+<p>Ever wish your Arduino could respond to the weather on the other side of the world? Or send you an email to let you know what it&#8217;s up to? Upload stuff to your Dropbox account? Or detect if you&#8217;re at risk of exposure to toxic chemicals?</p>
+<p>Now it can. The <a title="http://arduino.cc/en/Main/ArduinoYUN" href="http://arduino.cc/en/Main/ArduinoYUN">Arduino Yún</a> can easily grab all sorts of data and interact with tons of web-based services like Fitbit, Facebook, and Google because every Yún comes loaded with the power of <a title="Temboo" href="http://www.temboo.com">Temboo</a>. Using the Yún&#8217;s built in wi-fI capabilities, Temboo makes it easy for the Yún to connect to over 100 Application Programming Interfaces (APIs).</p>
+<p>Don&#8217;t know what an <a title="API on wikipedia" href="http://en.wikipedia.org/wiki/Application_programming_interface">API</a> is or how to use one? Don&#8217;t worry. You don&#8217;t need to. With Temboo you can start using APIs with your Yún in minutes. We&#8217;ve standardized how to program with them and made sure they play nice with Arduino. <span id="more-8031"></span></p>
+<p><strong>So how do you get your Yún to Temboo?</strong></p>
+<p>That&#8217;s easy too. When you&#8217;re setting up your Arduino account, you can quickly register for a free Temboo account right from your Arduino profile page. All you need to do for that is pick a Temboo username, and we&#8217;ll automatically email you your Temboo account details along with some ideas on where to begin. You should definitely check out the dedicated <a title="Arduino on temboo" href="https://www.temboo.com/arduino">Arduino section</a> of our website. We&#8217;ve created several how-to examples to get you Tweeting, texting, and more from your Yún in minutes. We&#8217;ve even put some examples right into the Arduino IDE (File-&gt;Examples&gt;Bridge-&gt;Temboo).</p>
+<p><a href="http://blog.arduino.cc/wp-content/uploads/2013/09/2-Temboos-Arduino-page.png"><img class="alignnone  wp-image-8033" title="Temboo's special page for the Arduino Yún." alt="Temboo's special page for the Arduino Yún." src="http://blog.arduino.cc/wp-content/uploads/2013/09/2-Temboos-Arduino-page.png" width="529" height="517" /></a></p>
+<p>&nbsp;</p>
+<p>Click on the image below to see one of the Temboo examples on Arduino IDE</p>
+<p>&nbsp;</p>
+<p><a href="http://blog.arduino.cc/wp-content/uploads/2013/09/3-Arduino-IDE-example.png"><img class="alignnone  wp-image-8034" title="One of the Temboo examples in the Arduino IDE." alt="One of the Temboo examples in the Arduino IDE." src="http://blog.arduino.cc/wp-content/uploads/2013/09/3-Arduino-IDE-example-1024x640.png" width="491" height="307" /></a></p>
+<p><strong>What&#8217;s under the hood?</strong></p>
+<p>Temboo has written a special Python program on the Linino processor that interacts with the Temboo platform, sending and receiving data. A C++ library we created for the Arduino processor allows makers to communicate with the Linino-side Temboo program in a powerful yet user-friendly way. Sketch code for interacting with any Temboo process is generated live on our site for copying into the Arduino IDE. We&#8217;ve even developed a unique way for users to select the particular data they need from APIs and web-based resources, filtering out extraneous information and reducing the load on the board. For all the power that Temboo provides, our technology leaves a remarkably light footprint.</p>
+<p><a href="http://blog.arduino.cc/wp-content/uploads/2013/09/4-Arduino-sketch-code.png"><img class="alignnone  wp-image-8035" title="The Temboo website generates sketch code for the Arduino Yún. Above: Create an event on a Google Calendar." alt="The Temboo website generates sketch code for the Arduino Yún. Above: Create an event on a Google Calendar." src="http://blog.arduino.cc/wp-content/uploads/2013/09/4-Arduino-sketch-code.png" width="484" height="463" /></a></p>
+<p>We can&#8217;t even begin to imagine all the cool stuff that makers will do with the Yún. We&#8217;ll be adding more Arduino examples to our site as we continue to brainstorm, but we&#8217;d love to feature your ideas and projects as well. Shoot us an email at <em>hey [at] temboo.com</em> or tweet at us at <em>@Temboo</em> to tell us about what you&#8217;re working on or to ask any questions.</p>
+<p>&nbsp;</p>
+<p>&nbsp;</p>
+<div class="addthis_toolbox addthis_default_style " addthis:url='http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/' addthis:title='The Power of Temboo: connect the Yún to 100+ APIs ' ><a href="//addthis.com/bookmark.php?v=300&amp;username=xa-4d2b47597ad291fb" class="addthis_button_compact">Share</a><span class="addthis_separator">|</span><a class="addthis_button_preferred_1"></a><a class="addthis_button_preferred_2"></a><a class="addthis_button_preferred_3"></a><a class="addthis_button_preferred_4"></a></div>
+				
+				<p class="postmetadata alt">
+					<small>
+						This entry was posted
+												by Zoe Romano                                                on Wednesday, September 11th, 2013 <!--at 3:05 pm-->
+						and is filed under <a href="http://blog.arduino.cc/category/arduino/" title="View all posts in arduino" rel="category tag">arduino</a>, <a href="http://blog.arduino.cc/category/social-media/" title="View all posts in Social Media" rel="category tag">Social Media</a>, <a href="http://blog.arduino.cc/category/arduino/yun/" title="View all posts in Yún" rel="category tag">Yún</a>.
+						You can follow any responses to this entry through the <a href='http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/feed/'>RSS 2.0</a> feed.
+
+													You can <a href="#respond">leave a response</a>, or <a href="http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/trackback/" rel="trackback">trackback</a> from your own site.
+
+						
+					</small>
+				</p>
+
+			</div>
+		</div>
+
+	
+<!-- You can start editing here. -->
+
+	<h3 id="comments">One Response to &#8220;The Power of Temboo: connect the Yún to 100+ APIs&#8221;</h3>
+
+	<ol class="commentlist">
+
+	
+		<li class="alt" id="comment-234464">
+			<cite>jonsmirl</cite> Says:
+						<br />
+
+			<small class="commentmetadata"><a href="#comment-234464" title="">September 11th, 2013 at 15:41:17</a> </small>
+
+			<p>Where is the Linino source? Are you going to submit it back into the OpenWRT? OpenWRT is preparing to do a major release in the next month or so.</p>
+
+		</li>
+
+	
+	
+	</ol>
+
+ 
+
+
+<h3 id="respond">Leave a Reply</h3>
+
+<p>You must be <a href="https://id.arduino.cc/auth/login/?returnurl=http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/">logged in with your Arduino account</a> to post a comment.</p>
+
+
+	
+	</div>
+
+	<div id="sidebar">
+		<ul>
+			<li id="text-3" class="widget widget_text">			<div class="textwidget"><a href="http://blog.arduino.cc/submit-your-project/" style="border: 0px">
+    <img src="http://blog.arduino.cc/wp-includes/images/submitproject.png" alt="Submit Your Project" />
+</a></div>
+		</li><li id="text-4" class="widget widget_text">			<div class="textwidget"><a href="http://www.makerfairerome.eu/" style="border: 0px">
+    <img src="http://blog.arduino.cc/wp-includes/images/makerfaire.jpg" alt="Maker Faire" />
+</a></div>
+		</li><li id="twitter-3" class="widget widget_twitter"><div><h2 class="widgettitle"><span class='twitterwidget twitterwidget-title'>@arduino on twitter</span></h2><ul><li><span class='entry-content'>Arduino Robot is at <a href="http://twitter.com/search?q=%23makerfairerome" class="twitter-hashtag">#makerfairerome</a> - discover first Video Tutorial featuring <a href="http://twitter.com/dcuartielles" class="twitter-user">@dcuartielles</a> <a href="http://t.co/FKWKTtGP8p">http://t.co/FKWKTtGP8p</a> <a href="http://twitter.com/rselectronics" class="twitter-user">@rselectronics</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/arduino/statuses/386395349881221120">about 5 minutes ago</a></span> <span class='from-meta'>from <a href="http://bufferapp.com" rel="nofollow">Buffer</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=386395349881221120" data-lang="en" class="in-reply-to" title="Reply">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=386395349881221120" data-lang="en" class="retweet" title="Retweet">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=386395349881221120" data-lang="en" class="favorite" title="Favorite">Favorite</a></span></li><li><span class='entry-content'>RT <a href="http://twitter.com/RSElectronics" class="twitter-user">@RSElectronics</a>: Did you know <a href="http://twitter.com/search?q=%23ArduinoRobot" class="twitter-hashtag">#ArduinoRobot</a> can play 8-bit music? Here's what you need to know -&gt; <a href="http://t.co/pvUABD2MFJ">http://t.co/pvUABD2MFJ</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/arduino/statuses/386393499056488448">about 12 minutes ago</a></span> <span class='from-meta'>from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=386393499056488448" data-lang="en" class="in-reply-to" title="Reply">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=386393499056488448" data-lang="en" class="retweet" title="Retweet">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=386393499056488448" data-lang="en" class="favorite" title="Favorite">Favorite</a></span></li><li><span class='entry-content'>The <a href="http://twitter.com/search?q=%23makerfairerome" class="twitter-hashtag">#makerfairerome</a> weekend is starting! Ready to explore more than 200 makers from all over europe? <a href="http://t.co/Q1JNdG7xhK">http://t.co/Q1JNdG7xhK</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/arduino/statuses/386388100383248384">about 34 minutes ago</a></span> <span class='from-meta'>from <a href="http://bufferapp.com" rel="nofollow">Buffer</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=386388100383248384" data-lang="en" class="in-reply-to" title="Reply">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=386388100383248384" data-lang="en" class="retweet" title="Retweet">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=386388100383248384" data-lang="en" class="favorite" title="Favorite">Favorite</a></span></li><li><span class='entry-content'>RT <a href="http://twitter.com/briantun" class="twitter-user">@briantun</a>: <a href="http://twitter.com/Arduino" class="twitter-user">@Arduino</a> <a href="http://twitter.com/search?q=%23Yun" class="twitter-hashtag">#Yun</a> based security system <a href="http://t.co/vzLi1pnqzB">http://t.co/vzLi1pnqzB</a></span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/arduino/statuses/386206296439267329">about 12 hours ago</a></span> <span class='from-meta'>from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=386206296439267329" data-lang="en" class="in-reply-to" title="Reply">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=386206296439267329" data-lang="en" class="retweet" title="Retweet">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=386206296439267329" data-lang="en" class="favorite" title="Favorite">Favorite</a></span></li><li><span class='entry-content'>RT <a href="http://twitter.com/TXInstruments" class="twitter-user">@TXInstruments</a>: Are you at <a href="http://twitter.com/MakerFaireRome" class="twitter-user">@MakerFaireRome</a>? Don’t miss our own <a href="http://twitter.com/jadon" class="twitter-user">@jadon</a> &amp; <a href="http://twitter.com/gcoley1" class="twitter-user">@gcoley1</a> speaking with <a href="http://twitter.com/Arduino" class="twitter-user">@Arduino</a>’s <a href="http://twitter.com/mbanzi" class="twitter-user">@mbanzi</a> about the TRE at 3:30 …</span> <span class='entry-meta'><span class='time-meta'><a href="http://twitter.com/arduino/statuses/386191293950734336">about 13 hours ago</a></span> <span class='from-meta'>from <a href="http://twitter.com/download/android" rel="nofollow">Twitter for Android</a></span></span> <span class="intent-meta"><a href="http://twitter.com/intent/tweet?in_reply_to=386191293950734336" data-lang="en" class="in-reply-to" title="Reply">Reply</a><a href="http://twitter.com/intent/retweet?tweet_id=386191293950734336" data-lang="en" class="retweet" title="Retweet">Retweet</a><a href="http://twitter.com/intent/favorite?tweet_id=386191293950734336" data-lang="en" class="favorite" title="Favorite">Favorite</a></span></li></ul><div class="follow-button"><a href="http://twitter.com/arduino" class="twitter-follow-button" title="Follow @arduino" data-lang="en">@arduino</a></div></div></li><!-- Wordpress Popular Posts Plugin v2.3.7 [W] [all] [views] [regular] -->
+<li id="wpp-2" class="widget popular-posts">
+<h2 class="widgettitle">Popular Posts</h2><ul class="wpp-list">
+<li><a href="http://blog.arduino.cc/2013/05/18/welcome-arduino-yun-the-first-member-of-a-series-of-wifi-products-combining-arduino-with-linux/" title="Welcome Arduino Yún &#8211;  the first member of a series of wifi products combining Arduino with Linux" class="wpp-post-title" target="_self">Welcome Arduino Yún &#8211;  the first member of a series of wifi products combining Arduino with Linux</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/07/18/how-to-control-arduino-board-using-an-android-phone/" title="How to control Arduino board using an Android phone" class="wpp-post-title" target="_self">How to control Arduino board using an Android phone</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2012/12/19/arduino-ir-remote-control/" title="Arduino IR Remote Control" class="wpp-post-title" target="_self">Arduino IR Remote Control</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/07/10/send-in-the-clones/" title="Send in the clones" class="wpp-post-title" target="_self">Send in the clones</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/08/12/diy-cellphone/" title="My open-source, do-it-yourself cellphone (built with Arduino)." class="wpp-post-title" target="_self">My open-source, do-it-yourself cellphone (built with Arduino).</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/07/09/let-your-arduino-talk-to-your-android-phone-without-any-android-programming/" title="Let your Arduino talk with your Android" class="wpp-post-title" target="_self">Let your Arduino talk with your Android</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/04/15/talking-about-hacking-secondary-school-education-in-spain-at-coderdojo-conference/" title="Talking about hacking secondary school education in Spain at Coderdojo conference" class="wpp-post-title" target="_self">Talking about hacking secondary school education in Spain at Coderdojo conference</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/05/22/introducing-the-arduino-tft-lcd-screen/" title="Introducing the Arduino TFT LCD screen" class="wpp-post-title" target="_self">Introducing the Arduino TFT LCD screen</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/06/11/a-painting-machine-sensing-your-touch/" title="A painting machine sensing your touch" class="wpp-post-title" target="_self">A painting machine sensing your touch</a> <span class="post-stats"></span></li>
+<li><a href="http://blog.arduino.cc/2013/06/08/a-diy-magnetic-levitation-vehicle-to-inspire-future-engineers/" title="A DIY magnetic levitation vehicle to inspire future engineers" class="wpp-post-title" target="_self">A DIY magnetic levitation vehicle to inspire future engineers</a> <span class="post-stats"></span></li>
+
+</ul>
+</li>
+<!-- End Wordpress Popular Posts Plugin v2.3.7 -->
+<li id="archives-3" class="widget widget_archive"><h2 class="widgettitle">Archives</h2>		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://blog.arduino.cc/2013/10/'> October 2013 </option>
+	<option value='http://blog.arduino.cc/2013/09/'> September 2013 </option>
+	<option value='http://blog.arduino.cc/2013/08/'> August 2013 </option>
+	<option value='http://blog.arduino.cc/2013/07/'> July 2013 </option>
+	<option value='http://blog.arduino.cc/2013/06/'> June 2013 </option>
+	<option value='http://blog.arduino.cc/2013/05/'> May 2013 </option>
+	<option value='http://blog.arduino.cc/2013/04/'> April 2013 </option>
+	<option value='http://blog.arduino.cc/2013/03/'> March 2013 </option>
+	<option value='http://blog.arduino.cc/2013/02/'> February 2013 </option>
+	<option value='http://blog.arduino.cc/2013/01/'> January 2013 </option>
+	<option value='http://blog.arduino.cc/2012/12/'> December 2012 </option>
+	<option value='http://blog.arduino.cc/2012/11/'> November 2012 </option>
+	<option value='http://blog.arduino.cc/2012/10/'> October 2012 </option>
+	<option value='http://blog.arduino.cc/2012/09/'> September 2012 </option>
+	<option value='http://blog.arduino.cc/2012/08/'> August 2012 </option>
+	<option value='http://blog.arduino.cc/2012/07/'> July 2012 </option>
+	<option value='http://blog.arduino.cc/2012/06/'> June 2012 </option>
+	<option value='http://blog.arduino.cc/2012/05/'> May 2012 </option>
+	<option value='http://blog.arduino.cc/2012/04/'> April 2012 </option>
+	<option value='http://blog.arduino.cc/2012/03/'> March 2012 </option>
+	<option value='http://blog.arduino.cc/2012/02/'> February 2012 </option>
+	<option value='http://blog.arduino.cc/2012/01/'> January 2012 </option>
+	<option value='http://blog.arduino.cc/2011/12/'> December 2011 </option>
+	<option value='http://blog.arduino.cc/2011/11/'> November 2011 </option>
+	<option value='http://blog.arduino.cc/2011/10/'> October 2011 </option>
+	<option value='http://blog.arduino.cc/2011/09/'> September 2011 </option>
+	<option value='http://blog.arduino.cc/2011/08/'> August 2011 </option>
+	<option value='http://blog.arduino.cc/2011/07/'> July 2011 </option>
+	<option value='http://blog.arduino.cc/2011/06/'> June 2011 </option>
+	<option value='http://blog.arduino.cc/2011/05/'> May 2011 </option>
+	<option value='http://blog.arduino.cc/2011/04/'> April 2011 </option>
+	<option value='http://blog.arduino.cc/2011/03/'> March 2011 </option>
+	<option value='http://blog.arduino.cc/2011/02/'> February 2011 </option>
+	<option value='http://blog.arduino.cc/2011/01/'> January 2011 </option>
+	<option value='http://blog.arduino.cc/2010/12/'> December 2010 </option>
+	<option value='http://blog.arduino.cc/2010/11/'> November 2010 </option>
+	<option value='http://blog.arduino.cc/2010/10/'> October 2010 </option>
+	<option value='http://blog.arduino.cc/2010/09/'> September 2010 </option>
+	<option value='http://blog.arduino.cc/2010/08/'> August 2010 </option>
+	<option value='http://blog.arduino.cc/2010/07/'> July 2010 </option>
+	<option value='http://blog.arduino.cc/2010/06/'> June 2010 </option>
+	<option value='http://blog.arduino.cc/2010/05/'> May 2010 </option>
+	<option value='http://blog.arduino.cc/2010/04/'> April 2010 </option>
+	<option value='http://blog.arduino.cc/2010/03/'> March 2010 </option>
+	<option value='http://blog.arduino.cc/2010/02/'> February 2010 </option>
+	<option value='http://blog.arduino.cc/2010/01/'> January 2010 </option>
+	<option value='http://blog.arduino.cc/2009/12/'> December 2009 </option>
+	<option value='http://blog.arduino.cc/2009/11/'> November 2009 </option>
+	<option value='http://blog.arduino.cc/2009/10/'> October 2009 </option>
+	<option value='http://blog.arduino.cc/2009/09/'> September 2009 </option>
+	<option value='http://blog.arduino.cc/2009/08/'> August 2009 </option>
+	<option value='http://blog.arduino.cc/2009/07/'> July 2009 </option>
+	<option value='http://blog.arduino.cc/2009/06/'> June 2009 </option>
+	<option value='http://blog.arduino.cc/2009/05/'> May 2009 </option>
+	<option value='http://blog.arduino.cc/2009/04/'> April 2009 </option>
+	<option value='http://blog.arduino.cc/2009/03/'> March 2009 </option>
+	<option value='http://blog.arduino.cc/2009/02/'> February 2009 </option>
+	<option value='http://blog.arduino.cc/2009/01/'> January 2009 </option>
+	<option value='http://blog.arduino.cc/2008/12/'> December 2008 </option>
+	<option value='http://blog.arduino.cc/2008/11/'> November 2008 </option>
+	<option value='http://blog.arduino.cc/2008/10/'> October 2008 </option>
+	<option value='http://blog.arduino.cc/2008/09/'> September 2008 </option>
+	<option value='http://blog.arduino.cc/2008/08/'> August 2008 </option>
+	<option value='http://blog.arduino.cc/2008/07/'> July 2008 </option>
+	<option value='http://blog.arduino.cc/2008/06/'> June 2008 </option>
+	<option value='http://blog.arduino.cc/2008/05/'> May 2008 </option>
+	<option value='http://blog.arduino.cc/2008/04/'> April 2008 </option>
+	<option value='http://blog.arduino.cc/2008/03/'> March 2008 </option>
+	<option value='http://blog.arduino.cc/2008/02/'> February 2008 </option>
+	<option value='http://blog.arduino.cc/2008/01/'> January 2008 </option>
+	<option value='http://blog.arduino.cc/2007/12/'> December 2007 </option>
+	<option value='http://blog.arduino.cc/2007/10/'> October 2007 </option>
+	<option value='http://blog.arduino.cc/2007/09/'> September 2007 </option>
+	<option value='http://blog.arduino.cc/2007/08/'> August 2007 </option>
+ </select>
+</li><li id="categories-3" class="widget widget_categories"><h2 class="widgettitle">Categories</h2><select name='cat' id='cat' class='postform' >
+	<option value='-1'>Select Category</option>
+	<option class="level-0" value="442">3D</option>
+	<option class="level-0" value="1273">3D printing</option>
+	<option class="level-0" value="148">74HC59</option>
+	<option class="level-0" value="4">About</option>
+	<option class="level-0" value="301">accelerometer</option>
+	<option class="level-0" value="81">Actuators</option>
+	<option class="level-0" value="401">ADC</option>
+	<option class="level-0" value="636">ADK</option>
+	<option class="level-0" value="560">Air</option>
+	<option class="level-0" value="370">aJson</option>
+	<option class="level-0" value="173">alarm</option>
+	<option class="level-0" value="82">All Stars</option>
+	<option class="level-0" value="149">Android</option>
+	<option class="level-0" value="671">Announcements</option>
+	<option class="level-0" value="9">Ar(t)duino</option>
+	<option class="level-0" value="663">Architecture</option>
+	<option class="level-0" value="464">Arduina</option>
+	<option class="level-0" value="42">arduino</option>
+	<option class="level-0" value="1425">ArduinoCertified</option>
+	<option class="level-0" value="426">AREF</option>
+	<option class="level-0" value="597">around the world</option>
+	<option class="level-0" value="83">Audio</option>
+	<option class="level-0" value="150">AVR</option>
+	<option class="level-0" value="84">Bare Bones</option>
+	<option class="level-0" value="85">batteries</option>
+	<option class="level-0" value="652">Bio</option>
+	<option class="level-0" value="672">Blender</option>
+	<option class="level-0" value="151">Bluetooth</option>
+	<option class="level-0" value="324">Body Hacks</option>
+	<option class="level-0" value="853">browser compatible</option>
+	<option class="level-0" value="76">business</option>
+	<option class="level-0" value="555">C++</option>
+	<option class="level-0" value="153">Camera</option>
+	<option class="level-0" value="431">CAN</option>
+	<option class="level-0" value="459">Car Hacks</option>
+	<option class="level-0" value="842">Cars</option>
+	<option class="level-0" value="154">Circuit Etching</option>
+	<option class="level-0" value="811">Circuit Milling</option>
+	<option class="level-0" value="86">Clocks</option>
+	<option class="level-0" value="876">CNC</option>
+	<option class="level-0" value="155">Coding</option>
+	<option class="level-0" value="63">Community</option>
+	<option class="level-0" value="8">competition</option>
+	<option class="level-0" value="87">Competition(s)</option>
+	<option class="level-0" value="579">conference</option>
+	<option class="level-0" value="88">controllers</option>
+	<option class="level-0" value="900">Decoration</option>
+	<option class="level-0" value="1113">DUE</option>
+	<option class="level-0" value="156">Eagle</option>
+	<option class="level-0" value="690">earthquake detector</option>
+	<option class="level-0" value="637">EasyTransfer</option>
+	<option class="level-0" value="474">Education</option>
+	<option class="level-0" value="157">eHome</option>
+	<option class="level-0" value="385">electret microphone</option>
+	<option class="level-0" value="78">English</option>
+	<option class="level-0" value="89">Enviroment</option>
+	<option class="level-0" value="79">Español</option>
+	<option class="level-0" value="1200">Esplora</option>
+	<option class="level-0" value="372">Ethernet</option>
+	<option class="level-0" value="52">ethernet</option>
+	<option class="level-0" value="11">events</option>
+	<option class="level-0" value="452">Exhibition</option>
+	<option class="level-0" value="394">Facebook</option>
+	<option class="level-0" value="593">FastSPI LED</option>
+	<option class="level-0" value="386">FFT</option>
+	<option class="level-0" value="662">FireFly</option>
+	<option class="level-0" value="413">Firmata</option>
+	<option class="level-0" value="158">Flash</option>
+	<option class="level-0" value="159">Floppy</option>
+	<option class="level-0" value="824">food</option>
+	<option class="level-0" value="677">Fritzing</option>
+	<option class="level-0" value="1426">Galileo</option>
+	<option class="level-0" value="1139">Gallery</option>
+	<option class="level-0" value="763">Galvanic Skin Response</option>
+	<option class="level-0" value="827">Game</option>
+	<option class="level-0" value="90">game controllers</option>
+	<option class="level-0" value="256">game controllers</option>
+	<option class="level-0" value="538">GameBoy</option>
+	<option class="level-0" value="584">Geiger Tube</option>
+	<option class="level-0" value="160">GPS</option>
+	<option class="level-0" value="661">Grasshopper</option>
+	<option class="level-0" value="455">GuitarHero</option>
+	<option class="level-0" value="777">Gyroscope</option>
+	<option class="level-0" value="972">Hackathon</option>
+	<option class="level-0" value="91">Hacks</option>
+	<option class="level-0" value="681">Hall Sensor</option>
+	<option class="level-0" value="161">Hard Drives</option>
+	<option class="level-0" value="3">Hardware</option>
+	<option class="level-0" value="785">HC-SR04 Ultrasonic</option>
+	<option class="level-0" value="92">Home Hacks</option>
+	<option class="level-0" value="319">I2C</option>
+	<option class="level-0" value="93">IC</option>
+	<option class="level-0" value="314">IDE</option>
+	<option class="level-0" value="94">Image(s)</option>
+	<option class="level-0" value="810">iModela</option>
+	<option class="level-0" value="95">inspiration</option>
+	<option class="level-0" value="1242">Interview</option>
+	<option class="level-0" value="275">iPad</option>
+	<option class="level-0" value="57">iPhone</option>
+	<option class="level-0" value="163">iPod</option>
+	<option class="level-0" value="164">IR</option>
+	<option class="level-0" value="351">IR</option>
+	<option class="level-0" value="80">Italiano</option>
+	<option class="level-0" value="96">iThings</option>
+	<option class="level-0" value="526">Java</option>
+	<option class="level-0" value="75">job offer</option>
+	<option class="level-0" value="97">Junk</option>
+	<option class="level-0" value="98">keyboard</option>
+	<option class="level-0" value="99">Kids</option>
+	<option class="level-0" value="505">Kinect</option>
+	<option class="level-0" value="507">Kinect</option>
+	<option class="level-0" value="506">Kinect / Processing</option>
+	<option class="level-0" value="316">LabView</option>
+	<option class="level-0" value="100">Lamp(s)</option>
+	<option class="level-0" value="77">languages</option>
+	<option class="level-0" value="101">Languages</option>
+	<option class="level-0" value="102">lcd</option>
+	<option class="level-0" value="103">Led(s)</option>
+	<option class="level-0" value="255">Led(s)</option>
+	<option class="level-0" value="269">Led(s)</option>
+	<option class="level-0" value="274">Led(s)</option>
+	<option class="level-0" value="277">Led(s)</option>
+	<option class="level-0" value="278">Led(s)</option>
+	<option class="level-0" value="285">LEGO</option>
+	<option class="level-0" value="1005">Leonardo</option>
+	<option class="level-0" value="104">Libraries</option>
+	<option class="level-0" value="1215">Licensing</option>
+	<option class="level-0" value="165">LilyPad</option>
+	<option class="level-0" value="1319">Lilypad</option>
+	<option class="level-0" value="105">Linux</option>
+	<option class="level-0" value="346">LUFA Hacks</option>
+	<option class="level-0" value="106">Machine Hacks</option>
+	<option class="level-0" value="963">MakerFaire</option>
+	<option class="level-0" value="297">MatLab</option>
+	<option class="level-0" value="107">Matrix</option>
+	<option class="level-0" value="108">Max/MSP</option>
+	<option class="level-0" value="430">MCP2515</option>
+	<option class="level-0" value="109">Mechanics</option>
+	<option class="level-0" value="65">Mega</option>
+	<option class="level-0" value="166">MIDI</option>
+	<option class="level-0" value="254">MIDI</option>
+	<option class="level-0" value="772">MindWave</option>
+	<option class="level-0" value="110">Mirrors</option>
+	<option class="level-0" value="111">Motors</option>
+	<option class="level-0" value="294">MQ-3 (alcohol)</option>
+	<option class="level-0" value="352">Multi-touch</option>
+	<option class="level-0" value="112">Multiplexer</option>
+	<option class="level-0" value="19">music</option>
+	<option class="level-0" value="530">NanoNote</option>
+	<option class="level-0" value="113">Network</option>
+	<option class="level-0" value="114">New</option>
+	<option class="level-0" value="441">Nunchuck</option>
+	<option class="level-0" value="703">office</option>
+	<option class="level-0" value="338">Open Source</option>
+	<option class="level-0" value="115">OpenFrameworks</option>
+	<option class="level-0" value="339">Opinion</option>
+	<option class="level-0" value="303">Optocoupler</option>
+	<option class="level-0" value="116">OS</option>
+	<option class="level-0" value="167">OSC</option>
+	<option class="level-0" value="168">Pachube</option>
+	<option class="level-0" value="117">PCB</option>
+	<option class="level-0" value="292">PH</option>
+	<option class="level-0" value="118">Photo</option>
+	<option class="level-0" value="119">php</option>
+	<option class="level-0" value="609">Pick &amp; Place</option>
+	<option class="level-0" value="120">PID</option>
+	<option class="level-0" value="169">Ping</option>
+	<option class="level-0" value="13">press</option>
+	<option class="level-0" value="121">Printers</option>
+	<option class="level-0" value="122">Processing</option>
+	<option class="level-0" value="245">Processing</option>
+	<option class="level-0" value="251">Processing</option>
+	<option class="level-0" value="258">Processing</option>
+	<option class="level-0" value="267">Processing</option>
+	<option class="level-0" value="268">Processing</option>
+	<option class="level-0" value="271">Processing</option>
+	<option class="level-0" value="276">Processing</option>
+	<option class="level-0" value="5">Projects</option>
+	<option class="level-0" value="123">Protocols</option>
+	<option class="level-0" value="865">Prototyping</option>
+	<option class="level-0" value="279">pulse sensor</option>
+	<option class="level-0" value="412">Pure Data</option>
+	<option class="level-0" value="124">Python</option>
+	<option class="level-0" value="682">Reed Switch</option>
+	<option class="level-0" value="6">Related Initiatives</option>
+	<option class="level-0" value="125">Relay</option>
+	<option class="level-0" value="46">research</option>
+	<option class="level-0" value="607">REST</option>
+	<option class="level-0" value="423">reverse engineering</option>
+	<option class="level-0" value="1260">Review</option>
+	<option class="level-0" value="62">reviews</option>
+	<option class="level-0" value="170">RFID</option>
+	<option class="level-0" value="127">robot</option>
+	<option class="level-0" value="1414">Robot</option>
+	<option class="level-0" value="462">RTC</option>
+	<option class="level-0" value="128">Schematics</option>
+	<option class="level-0" value="329">School</option>
+	<option class="level-0" value="70">science</option>
+	<option class="level-0" value="406">Scracth</option>
+	<option class="level-0" value="129">sensors</option>
+	<option class="level-0" value="605">Serial To Socket</option>
+	<option class="level-0" value="130">servo</option>
+	<option class="level-0" value="389">Sharp RangeFinder</option>
+	<option class="level-0" value="575">shield</option>
+	<option class="level-0" value="131">Shields</option>
+	<option class="level-0" value="132">Social Media</option>
+	<option class="level-0" value="7">Software</option>
+	<option class="level-0" value="133">solar</option>
+	<option class="level-0" value="416">Solenoids</option>
+	<option class="level-0" value="556">Speech Recognition</option>
+	<option class="level-0" value="402">SPI</option>
+	<option class="level-0" value="831">Sports</option>
+	<option class="level-0" value="1089">StarterKit</option>
+	<option class="level-0" value="620">Store</option>
+	<option class="level-0" value="440">Techincal Drawings</option>
+	<option class="level-0" value="527">Themal</option>
+	<option class="level-0" value="1111">Thermocam</option>
+	<option class="level-0" value="393">TinkerKit</option>
+	<option class="level-0" value="364">TinkerToolKit</option>
+	<option class="level-0" value="135">Toy Hacking</option>
+	<option class="level-0" value="835">Toys</option>
+	<option class="level-0" value="55">travels</option>
+	<option class="level-0" value="1427">TRE</option>
+	<option class="level-0" value="1259">Tutorial</option>
+	<option class="level-0" value="136">tutorials</option>
+	<option class="level-0" value="137">Tv</option>
+	<option class="level-0" value="384">TVOut</option>
+	<option class="level-0" value="138">Twitter</option>
+	<option class="level-0" value="786">Ultrasonic</option>
+	<option class="level-0" value="1">Uncategorized</option>
+	<option class="level-0" value="139">unity</option>
+	<option class="level-0" value="140">Urban Hacks</option>
+	<option class="level-0" value="420">USB</option>
+	<option class="level-0" value="141">Video</option>
+	<option class="level-0" value="758">video</option>
+	<option class="level-0" value="142">Vintage</option>
+	<option class="level-0" value="143">Visualising Data</option>
+	<option class="level-0" value="392">VVVV</option>
+	<option class="level-0" value="144">Wearable Computing</option>
+	<option class="level-0" value="12">web&#8217;n'stuff</option>
+	<option class="level-0" value="443">Wifi</option>
+	<option class="level-0" value="1084">wifi</option>
+	<option class="level-0" value="59">wiimote</option>
+	<option class="level-0" value="683">Wired</option>
+	<option class="level-0" value="145">Wireless</option>
+	<option class="level-0" value="872">wishlist</option>
+	<option class="level-0" value="146">workshop(s)</option>
+	<option class="level-0" value="259">workshop(s)</option>
+	<option class="level-0" value="10">workshops</option>
+	<option class="level-0" value="147">Xbee</option>
+	<option class="level-0" value="369">XML</option>
+	<option class="level-0" value="631">Yahoo</option>
+	<option class="level-0" value="1391">Yún</option>
+</select>
+
+<script type='text/javascript'>
+/* <![CDATA[ */
+	var dropdown = document.getElementById("cat");
+	function onCatChange() {
+		if ( dropdown.options[dropdown.selectedIndex].value > 0 ) {
+			location.href = "http://blog.arduino.cc/?cat="+dropdown.options[dropdown.selectedIndex].value;
+		}
+	}
+	dropdown.onchange = onCatChange;
+/* ]]> */
+</script>
+
+</li><li id="linkcat-2" class="widget widget_links"><h2 class="widgettitle">Blogroll</h2>
+	<ul class='xoxo blogroll'>
+<li><a href="http://david.cuartielles.com" rel="co-worker" title="Articles about Arduino (mostly) in Spanish" target="_blank">David Cuartielles (Spanish)</a></li>
+<li><a href="http://www.makezine.com/blog/archive/arduino/">MAKE: Blog&#8217;s Arduino archive</a></li>
+<li><a href="http://www.tigoe.net/pcomp/">Tom Igoe&#8217;s PComp Site</a></li>
+
+	</ul>
+</li>
+<li id="meta-3" class="widget widget_meta"><h2 class="widgettitle">Meta</h2>			<ul>
+						<li><a href="http://blog.arduino.cc/wp-login.php">Log in</a></li>
+			<li><a href="http://blog.arduino.cc/feed/" title="Syndicate this site using RSS 2.0">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://blog.arduino.cc/comments/feed/" title="The latest comments to all posts in RSS">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>						</ul>
+</li>		</ul>
+	</div>
+
+
+
+</div>
+<br class="clear" />
+<div id="pagefooter">
+<!-- If you'd like to support WordPress, having the "powered by" link somewhere on your blog is the best way, it's our only promotion or advertising. -->
+	<div class="row">
+	  <div class="small-8 eight columns">
+		<ul class="inline-list">
+			<li class="monospace">&copy;Arduino</li>
+			<li><a href="http://arduino.cc/en/Main/CopyrightNotice">Copyright Notice</a></li>
+	<!--		<li><a href='#'>About us</a></li>-->
+			<li><a href='http://arduino.cc/en/Main/ContactUs'>Contact us</a></li>
+		</ul>
+	  </div>
+	</div>
+</div>
+
+
+<!-- Gorgeous design by Michael Heilemann - http://binarybonsai.com/kubrick/ -->
+
+		<script type="text/javascript">
+
+var addthis_config = {"data_track_clickback":true,"data_track_addressbar":false,"data_track_textcopy":false,"ui_language":"en","ui_atversion":"300"};
+var addthis_product = 'wpp-3.1';
+</script><script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=arduinoteam"></script><script type='text/javascript' src='http://blog.arduino.cc/wp-includes/js/jquery/ui/jquery.ui.core.min.js?ver=1.10.3'></script>
+<script type='text/javascript' src='http://platform.twitter.com/widgets.js?ver=1.0.0'></script>
+<!--wp_footer-->
+		<script src="https://id.arduino.cc/js/vendor/jquery.js"></script>
+		<!--[if gte IE 9]><!-->
+		<script src="https://id.arduino.cc/js/foundation.min.js"></script>
+		<script src="https://id.arduino.cc/js/foundation.topbar.custom.js"></script>
+		<script>
+		  $(document).foundation();
+		</script>
+		<!--<![endif]-->
+		<!--[if IE 8]>
+		<script src="https://id.arduino.cc/js/foundation_ie8.min.js"></script>
+		<script src="https://id.arduino.cc/js/jquery.foundation.alerts.js"></script>
+			<script src="https://id.arduino.cc/js/app.js"></script>
+		<![endif]-->
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Served from: blog.arduino.cc @ 2013-10-05 07:45:41 -->

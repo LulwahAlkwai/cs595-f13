@@ -1,0 +1,773 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortcut icon" href="http://ca.statewater.org/sites/default/files/favicon.ico" type="image/vnd.microsoft.icon" />
+  <title>New California Water Atlas | Making Water Understandable in California</title>  
+  <style type="text/css" media="all">@import url("http://ca.statewater.org/modules/system/system.base.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/system/system.menus.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/system/system.messages.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/system/system.theme.css?mr3bf6");</style>
+<style type="text/css" media="all">@import url("http://ca.statewater.org/sites/all/libraries/mediaelement/build/mediaelementplayer.min.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/themes/base/minified/jquery.ui.core.min.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/themes/base/minified/jquery.ui.theme.min.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/themes/base/minified/jquery.ui.tabs.min.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/themes/base/minified/jquery.ui.accordion.min.css?mr3bf6");</style>
+<style type="text/css" media="all">@import url("http://ca.statewater.org/modules/comment/comment.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/field/theme/field.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/logintoboggan/logintoboggan.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/mollom/mollom.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/node/node.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/search/search.css?mr3bf6");
+@import url("http://ca.statewater.org/modules/user/user.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/views/css/views.css?mr3bf6");</style>
+<style type="text/css" media="all">@import url("http://ca.statewater.org/sites/all/libraries/chosen/chosen/chosen.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/colorbox/styles/default/colorbox_default_style.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/ctools/css/ctools.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-dev/oembed/oembed.base.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-dev/oembed/oembed.theme.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-dev/panels/css/panels.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/contrib-stable/views_slideshow/views_slideshow.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/libraries/bootstrap/css/bootstrap.min.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/libraries/bootstrap/css/bootstrap-responsive.min.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/modules/custom/mukurtu_apps/statewater_home/css/style.css?mr3bf6");</style>
+<style type="text/css" media="all">@import url("http://ca.statewater.org/sites/all/themes/mukurtu_theme/fonts/lato/stylesheet.css?mr3bf6");</style>
+<style type="text/css" media="screen, projection, handheld">@import url("http://ca.statewater.org/sites/all/themes/mukurtu_theme/css/mukurtu_theme_jquery_ui_theme/jquery-ui-1.8.20.custom.css?mr3bf6");</style>
+<style type="text/css" media="all">@import url("http://ca.statewater.org/sites/all/themes/omega/alpha/css/alpha-reset.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/alpha/css/alpha-mobile.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/alpha/css/alpha-alpha.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/omega/css/formalize.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/omega/css/omega-text.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/omega/css/omega-branding.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/omega/css/omega-menu.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/omega/css/omega-forms.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/all/themes/omega/omega/css/omega-visuals.css?mr3bf6");
+@import url("http://ca.statewater.org/sites/default/files/color/mukurtu_theme-525cbdc8/global.css?mr3bf6");</style>
+  <script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/jquery/1.8/jquery.min.js?v=1.8.2"></script>
+<script type="text/javascript" src="http://ca.statewater.org/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript" src="http://ca.statewater.org/misc/drupal.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/fitvids/jquery.fitvids.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/ui/minified/jquery.ui.core.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/ui/minified/jquery.ui.widget.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/mediaelement/build/mediaelement-and-player.min.js?v=2.1.6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/ui/minified/jquery.ui.tabs.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/jquery_update/replace/ui/ui/minified/jquery.ui.accordion.min.js?v=1.8.11"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/chosen/chosen/chosen.jquery.min.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/chosen/chosen.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/colorbox/colorbox/jquery.colorbox-min.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/colorbox/js/colorbox.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/colorbox/styles/default/colorbox_default_style.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/mediaelement/mediaelement.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/modernizr/modernizr.min.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-dev/panels/js/panels.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/views_slideshow/js/views_slideshow.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/google_analytics/googleanalytics.js?mr3bf6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-38509245-1"]);_gaq.push(["_setDomainName", ".ca.statewater.org"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/underscore/underscore-min.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/libraries/bootstrap/js/bootstrap.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/contrib-stable/jcarousel/js/jquery.jcarousel.min.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/modules/custom/mukurtu_apps/statewater_home/js/statewater_home.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/themes/mukurtu_theme/js/mukurtu.jquery.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/themes/omega/omega/js/jquery.formalize.js?mr3bf6"></script>
+<script type="text/javascript" src="http://ca.statewater.org/sites/all/themes/omega/omega/js/omega-mediaqueries.js?mr3bf6"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mukurtu_theme","theme_token":"9WQu5efmJfkCYlOarjzKb68bSL4COEvXecjYggDeOao","js":{"0":1,"sites\/all\/modules\/contrib-stable\/jquery_update\/replace\/jquery\/1.8\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/libraries\/fitvids\/jquery.fitvids.js":1,"sites\/all\/modules\/contrib-stable\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.core.min.js":1,"sites\/all\/modules\/contrib-stable\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.widget.min.js":1,"sites\/all\/libraries\/mediaelement\/build\/mediaelement-and-player.min.js":1,"sites\/all\/modules\/contrib-stable\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.tabs.min.js":1,"sites\/all\/modules\/contrib-stable\/jquery_update\/replace\/ui\/ui\/minified\/jquery.ui.accordion.min.js":1,"sites\/all\/libraries\/chosen\/chosen\/chosen.jquery.min.js":1,"sites\/all\/modules\/chosen\/chosen.js":1,"sites\/all\/libraries\/colorbox\/colorbox\/jquery.colorbox-min.js":1,"sites\/all\/modules\/contrib-stable\/colorbox\/js\/colorbox.js":1,"sites\/all\/modules\/contrib-stable\/colorbox\/styles\/default\/colorbox_default_style.js":1,"sites\/all\/modules\/contrib-stable\/mediaelement\/mediaelement.js":1,"sites\/all\/libraries\/modernizr\/modernizr.min.js":1,"sites\/all\/modules\/contrib-dev\/panels\/js\/panels.js":1,"sites\/all\/modules\/contrib-stable\/views_slideshow\/js\/views_slideshow.js":1,"sites\/all\/modules\/contrib-stable\/google_analytics\/googleanalytics.js":1,"1":1,"sites\/all\/libraries\/underscore\/underscore-min.js":1,"sites\/all\/libraries\/bootstrap\/js\/bootstrap.js":1,"sites\/all\/modules\/contrib-stable\/jcarousel\/js\/jquery.jcarousel.min.js":1,"sites\/all\/modules\/custom\/mukurtu_apps\/statewater_home\/js\/statewater_home.js":1,"sites\/all\/themes\/mukurtu_theme\/js\/mukurtu.jquery.js":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/libraries\/mediaelement\/build\/mediaelementplayer.min.css":1,"misc\/ui\/jquery.ui.core.css":1,"misc\/ui\/jquery.ui.theme.css":1,"misc\/ui\/jquery.ui.tabs.css":1,"misc\/ui\/jquery.ui.accordion.css":1,"modules\/comment\/comment.css":1,"modules\/field\/theme\/field.css":1,"sites\/all\/modules\/contrib-stable\/logintoboggan\/logintoboggan.css":1,"sites\/all\/modules\/contrib-stable\/mollom\/mollom.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/contrib-stable\/views\/css\/views.css":1,"sites\/all\/libraries\/chosen\/chosen\/chosen.css":1,"sites\/all\/modules\/contrib-stable\/colorbox\/styles\/default\/colorbox_default_style.css":1,"sites\/all\/modules\/contrib-stable\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/contrib-dev\/oembed\/oembed.base.css":1,"sites\/all\/modules\/contrib-dev\/oembed\/oembed.theme.css":1,"sites\/all\/modules\/contrib-dev\/panels\/css\/panels.css":1,"sites\/all\/modules\/contrib-stable\/views_slideshow\/views_slideshow.css":1,"sites\/all\/libraries\/bootstrap\/css\/bootstrap.min.css":1,"sites\/all\/libraries\/bootstrap\/css\/bootstrap-responsive.min.css":1,"sites\/all\/modules\/custom\/mukurtu_apps\/statewater_home\/css\/statewater_home.css":1,"sites\/all\/modules\/custom\/mukurtu_apps\/statewater_home\/css\/style.css":1,"sites\/all\/themes\/mukurtu_theme\/fonts\/lato\/stylesheet.css":1,"sites\/all\/themes\/mukurtu_theme\/colors.css":1,"sites\/all\/themes\/mukurtu_theme\/css\/mukurtu_theme_jquery_ui_theme\/jquery-ui-1.8.20.custom.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-text.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-branding.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-menu.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-forms.css":1,"sites\/all\/themes\/omega\/omega\/css\/omega-visuals.css":1,"sites\/all\/themes\/mukurtu_theme\/css\/global.css":1}},"chosen":{"selector":"select:visible[name=\u0022field_communities[und][]\u0022], select:visible[name=\u0022field_culturalprotocol[und][]\u0022]","minimum":"0"},"colorbox":{"opacity":"0.85","current":"{current} of {total}","previous":"\u00ab Prev","next":"Next \u00bb","close":"Close","maxWidth":"100%","maxHeight":"100%","fixed":true},"jcarousel":{"ajaxPath":"\/jcarousel\/ajax\/views"},"mediaelementAll":true,"modernizrPath":false,"modernizrServerside":false,"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackDomainMode":"1"},"statewater_home":{"menu_element":"#main-menu","base_path":"\/"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+  <!--[if lt IE 9]><script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+</head>
+
+<body class="html front not-logged-in page-statewater-frontpage">
+  <div id="skip-link">
+    <a href="#main-content" class="element-invisible element-focusable">Skip to main content</a>
+  </div>
+    <div class="container-fluid main-content">
+
+<div class="header">
+  <div class="header-block">
+   <div class="block block-boxes block-boxes-simple block-ma-site-header block-boxes-ma-site-header odd block-without-title" id="block-boxes-ma-site-header">
+  <div class="block-inner clearfix">
+                
+    <div class="content clearfix">
+      <div id='boxes-box-ma_site_header' class='boxes-box'><div class="boxes-box-content"><div class="masthead">
+<div class="container-narrow">
+<div id="state-logo" class="inline">
+          <a href="/"><img src="/sites/default/files/bio-boundaries.png" alt="CA State with watershed boundaries" /></a></div>
+<div class="inline title-block">
+The New California Water Atlas
+<h4 class="title-block-title-sub">Making water understandable in California</h4>
+</div>
+</div>
+</div></div></div>    </div>
+  </div>
+</div>  </div>
+
+  
+
+ 
+
+     <nav class="navigation">
+        <h2 class="element-invisible">Main menu</h2>
+
+        <ul class="links inline clearfix main-menu" id="main-menu">
+            <li class="menu-1148 first">
+                <a href="/interactives">Interactives</a>
+            </li>
+
+            <li class="menu-1149">
+                <a href="/proposed-projects">Projects</a>
+            </li>
+
+            <li class="menu-1146">
+                <a href="/blog">Blog</a>
+            </li>
+
+            <li class="menu-1147">
+                <a href="/calendar">Calendar</a>
+            </li>
+
+            <li class="menu-675 last">
+                <a href="/about">About</a>
+            </li>
+        </ul>
+    </nav>
+  </div>
+<div class="frontpage-content frontpage-0 row" id=""><style>
+blockquote p {
+display: block;
+}
+</style>
+
+
+    <div class="row-fluid">
+        <div class="carousel slide" id="myCarousel">
+            <h2>Current Projects</h2><!-- Carousel items -->
+
+            <div class="carousel-inner">
+                <div class="active item">
+                    <a href="http://ca.statewater.org/water-rights"><img src=
+                    "/sites/default/files/styles/banner/public/media/Screen%20Shot%202013-05-21%20at%2011.51.58%20AM.png"></a>
+
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-inner">
+                            <h3 id="carousel-title"><a href=
+                            "http://ca.statewater.org/water-rights">Water
+                            Rights</a></h3>
+
+                            <h4 id="carousel-title-sub">Who diverts water for
+                            use and storage?</h4><a href=
+                            "http://ca.statewater.org/water-rights">Explore
+                            ›</a> | <a href="/content/water-rights">Discuss
+                            &amp; Contribute</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="item">
+                    <a href="/summer-groundwater"><img src=
+                    "/sites/default/files/styles/banner/public/media/groundwater.png"></a>
+
+                    <div class="carousel-caption">
+                        <div class="carousel-caption-inner">
+                            <h3 id="carousel-title"><a href=
+                            "/summer-groundwater">Summer of
+                            Groundwater</a></h3>
+
+                            <h4 id="carousel-title-sub">Help make groundwater
+                            visualizations Summer 2013</h4><a href=
+                            "/summer-groundwater">Get Involved ›</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!-- Carousel nav -->
+        <a class="carousel-control left" data-slide="prev" href=
+        "#myCarousel">‹</a> <a class="carousel-control right" data-slide="next"
+        href="#myCarousel">›</a>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span6">
+            <h3>What we are doing</h3>
+
+            <p>We are building a next-generation version of the landmark
+            <a href="/content/original-california-water-atlas">California Water
+            Atlas</a></p>
+
+            <ul>
+                <li>Improving open data</li>
+
+                <li>Building community &amp; sharing methods</li>
+
+                <li>Creating high-end, legible visualizations</li>
+
+                <li>Sharing open source code</li>
+
+                <li>Adopting radically inclusive &amp; equitable ways of
+                working</li>
+
+                <li>Building a public work for Californians</li>
+
+                <li>Incorporating science and encouraging accuracy</li>
+
+                <li>Seeking peer-reviews</li>
+
+                <li>Including historical data</li>
+
+                <li>Healing damages of the past, non-violent
+                communications</li>
+
+                <li>Working for the future</li>
+            </ul>
+        </div>
+
+        <div class="span4">
+            <img alt="California Water Atlas book" src=
+            "http://live-ca-statewater.gotpantheon.com/sites/default/files/styles/large/public/field/image/californiawateratlas_45-45.jpg">
+
+            <h3>The original California Water Atlas</h3>
+
+            <p>The California Water Atlas, a book published in 1979, continues
+            to inspire map-makers and water lovers alike. We are making a new
+            version of this Atlas for our generation as a public work for
+            Californians using dynamic maps, open data and lots of citizen
+            involvement. <a href=
+            "/content/original-california-water-atlas">Learn more</a></p>
+        </div>
+    </div>
+
+    <div class="row-fluid">
+        <div class="span6">
+            <h3>Why this project matters</h3>
+
+            <blockquote>
+                <p>"The New California Water Atlas could catalyze a shift in California water policy and governance that will make California water policy capable of supporting the state’s natural resources, human population and agricultural sector in perpetuity. That's why we're funding it."<br><br><small>Huey Johnson, President Resource Renewal
+                Institute, former Secretary of Resource for the State of
+                California (1978-1982), Advisory Group for the original
+                California Water Atlas</small></p>
+            </blockquote>
+
+            <div class="divider-h"></div>
+
+            <blockquote>
+                <p>"The NCWA is filling an essential need by making it easier for Californians to understand who uses how much water where. That's not happening now, and we see the results in lawsuits, collapsing ecosystems, and overspending on attempts to compensate for mismanagement. Support the NCWA and support our future."<br><br><small>David Zetland, Project Advisor</small></p>
+            </blockquote>
+
+            <div class="divider-h"></div>
+
+            <blockquote>
+                <p>"How do we re-prioritize a water system designed by previous generations to meet the unique challenges of our time?  The New California Water Atlas is the much needed conduit between government and citizens to aid in facilitating dialogue, transparency, and data sharing about future social, environmental, and economic priorities for our water in California."<br><br><small>Laci Videmsky, Project Director</small></p>
+            </blockquote>
+
+            <span class="inset"><a href=
+            "/content/why-does-project-matter-you-please-leave-us-quote">Tell
+            us what you think</a></span>
+        </div>
+    </div>
+
+    <div class="divider-h"></div>
+
+    <div class="row-fluid">
+        <div class="span6">
+            <h3>What we are making</h3>
+
+            <p>The original California Water Atlas described the water system
+            of California through many maps and infographics.</p>
+
+            <p>These are proposed interactive projects that are being created
+            as a new Public Work for Californians.</p>
+
+            <p>As an open source and collaborative effort, there are plenty of
+            maps to make. Please help. We need all kinds of expertise:
+            programmers, designers, scientists, writers, documentary-makers and
+            more.</p>
+
+            <ul class="inset">
+                <li>
+                    <a href="/content/plan">The Plan</a>
+                </li>
+
+                <li>
+                    <a href="/content/standards">Designs &amp; Standards</a>
+                </li>
+
+                <li>
+                    <a href="/content/proposed-projects">Suggest an
+                    interactive</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="span6">
+            <h3>Proposed maps and visualizations</h3>
+
+            <h4>There are currently</h4>
+            <ul>
+            <li>1 released interactive</li>
+            <li>1 project in the
+            works.</li></ul>
+
+            <p>Click a link to share resources, ideas or get involved with any
+            of these projects.</p>
+
+            <section>
+                <h5>WATERSCAPE</h5>
+
+                <ul class="map-list">
+                    <li>
+                        <a href="/content/virgin-waterscape">The Virgin
+                        Waterscape</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/plumbing-california">The Plumbing of
+                        California</a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="divider-h"></div>
+
+            <section>
+                <h5>FLOW &amp; STORAGE</h5>
+
+                <ul class="map-list">
+                    <li>
+                        <a href="/content/precipitation">Precipitation</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/watershed-basins">Watershed
+                        Basins</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/reservoirs-storage">Reservoirs &amp;
+                        Storage</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/streamflow">Streamflow</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/consumptive-modeling">Consumptive
+                        Modeling</a>
+                    </li>
+
+                    <li class="inprogress">
+                        <a href="/project/groundwater">Groundwater</a> |
+                        <a href="/summer-groundwater">Help make it happen Summer 2013 »</a>
+                    </li>
+                </ul>
+            </section>
+            <!-- @TODO to the rest of these & make sure all the pages exist & update the pages URLs if necessary -->
+
+            <div class="divider-h"></div>
+
+            <section>
+                <h5>ATTRIBUTES</h5>
+
+                <ul class="map-list">
+                    <li>
+                        <a href="/content/water-quality">Water Quality</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/fish-wildlife">Fish &amp;
+                        Wildlife</a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="divider-h"></div>
+
+            <section>
+                <h5>PLACES &amp; FEATURES</h5>
+
+                <ul class="map-list">
+                    <li>
+                        <a href="/content/federal-projects">Federal
+                        Projects</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/flood-control-infrastructure">Flood
+                        Control Infrastructure</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/conservation-efforts">Conservation
+                        Efforts</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/dams-water-banks">Dams &amp; Water
+                        Banks</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/development">Development</a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="divider-h"></div>
+
+            <section>
+                <h5>USAGE &amp; MANAGEMENT</h5>
+
+                <ul class="map-list">
+                    <li class="inprogress">
+                        <a href="/content/water-rights">Water Rights</a> |
+                        <a href="http://ca.statewater.org/water-rights">Explore
+                        »</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/water-pricing">Water Pricing</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/water-governance">Water
+                        Governance</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/water-usage">Total Water Usage</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/water-districts">Water Districts</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/rights-seniority">Rights &amp;
+                        Seniority</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/stakeholders">Stakeholders</a>
+                    </li>
+                </ul>
+            </section>
+
+            <div class="divider-h"></div>
+
+            <section>
+                <h5>CONFLICT</h5>
+
+                <ul class="map-list">
+                    <li>
+                        <a href="/content/drought">Drought</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/equity">Equity</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/litigation">Litigation</a>
+                    </li>
+
+                    <li>
+                        <a href="/content/abuse">Abuse</a>
+                    </li>
+                </ul>
+            </section>
+        </div>
+    </div></div><div class="frontpage-content frontpage-1 row" id="footer">    <div class="row-fluid">
+        <div class="span6">
+            <ul>
+                <li>
+                    <a href="/content/communications">Communications</a>
+                </li>
+
+                <li>
+                    <img alt="Github" src="/sites/all/modules/custom/mukurtu_apps/statewater_home/images/github_alt.png" width="20"> <a href="https://github.com/organizations/NewCaliforniaWaterAtlas">Github</a>
+                </li>
+
+                <li>
+                    <a href="/content/data">Data</a>
+                </li>
+
+                <li>
+                    <a href="/content/standards">Standards (Design, Data, Code,
+                    Maps, Writing)</a>
+                </li>
+
+                <li>
+                    <a href="/content/community-guidelines">Community
+                    Guidelines</a>
+                </li>
+
+                <li>
+                    <a href="/content/project-planning">Project Planning (Team
+                    Only)</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="span6">
+            <ul>
+                <li>
+                    <a data-toggle="modal" href="#team">Team</a>
+                </li>
+
+                <li>
+                    <a data-toggle="modal" href="#partners">Partners</a>
+                </li>
+
+                <li>
+                    <a data-toggle="modal" href="#sponsors">Sponsors</a>
+                </li>
+
+               <li>
+                     <a href="/support">Support this project</a>
+              </li>
+
+                <li>
+                    <a href="http://eepurl.com/zBc7P">Sign up for the Mailing
+                    List</a>
+                </li>
+
+                <li>
+                    <img alt="Twitter" src="/sites/all/modules/custom/mukurtu_apps/statewater_home/images/twitter-gray.jpg" width="20"> Follow Us on Twitter <a href="https://twitter.com/CAWaterAtlas" target="_blank">@CAWaterAtlas</a>
+                </li>
+
+                <li>
+                    <img alt="email" src="/sites/all/modules/custom/mukurtu_apps/statewater_home/images/mailbox-gray2.png" width="20"> Contact us <a href="mailto:info@statewater.org" target="_blank">info (at) statewater.org</a>
+                </li>
+            </ul>
+        </div>
+    </div><!-- Modals -->
+
+    <div class="modal hide fade" id="partners" tabindex="-1">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button">×</button>
+
+            <h3 id="partnersLabel">Partners</h3>
+        </div>
+
+        <div class="modal-body row">
+            <div class="span5">
+                The following organizations are involved in helping to incubate
+                this project as a public work.
+
+                <h4>Mentoring Organizations</h4>
+
+                <ul>
+                    <li>
+                        <a href="http://rri.org">Resource Renewal Institute</a>
+                    </li>
+
+                    <li>
+                        <a href="http://stamen.com">Stamen</a>
+                    </li>
+                </ul>
+
+                <h4>Organizations we talk to</h4>
+
+                <ul>
+                    <li>
+                        <a href="http://mapbox.com">Mapbox</a>
+                    </li>
+
+                    <li>
+                        <a href="http://esri.com">ESRI</a>
+                    </li>
+
+                    <li>
+                        <a href="http://www.waterboards.ca.gov/">State Water
+                        Resource Control Board</a>
+                    </li>
+                </ul>We are looking for more partners. If you are interested in
+                being involved with a particular mapping project or the Atlas
+                as a whole, please contact us.
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hide fade" id="team" tabindex="-1">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button">×</button>
+
+            <h3 id="teamLabel">Team &amp; Advisors</h3>
+        </div>
+
+        <div class="modal-body row">
+            <div class="span5">
+                <h3>New California Water Atlas</h3>
+
+                <h4>Project Directors</h4>
+
+                <p>We are a team of programmers, web developers, designers,
+                fundraising specialists, and environmentalists. We are excited
+                to inform our work with open government experience and
+                expertise, led by Code for America 2011 Alum Chach Sikes. Our
+                core team consists of Laci (pronounced Lahtsee) &amp; Chach
+                (pronounced Chotch) right now, who are co-directing this
+                project.</p>
+
+                <ul>
+                    <li>
+                        <a href="http://twitter.com/chachasikes">Chacha
+                        Sikes</a>Specialties: Open Gov, Engineering, Design,
+                        Strategy, Public Science Education. <a href=
+                        "http://codeforamerica.org" rel="nofollow" target=
+                        "_blank" title="Code for America">Code for America</a>
+                        Alum (2011), co-founder of the <a href=
+                        "http://iconathon.org/" rel="nofollow" style=
+                        "font-weight: bold;" target="_blank"><span style=
+                        "font-weight: normal;">Iconathon</span></a>
+                        <span style="font-weight: normal;">and</span> <a href=
+                        "http://www.fastcoexist.com/1679829/lemonopoly-an-online-game-that-trades-in-real-world-lemons"
+                        rel="nofollow" style="font-weight: bold;" target=
+                        "_blank"><span style=
+                        "font-weight: normal;">Lemonopoly</span></a><span style="font-weight: normal;">.
+                        Chach brings her creative talents as a programmer,
+                        experience designer and community organizer. She is
+                        currently the Lead Engineer for the</span> <a href=
+                        "http://www.mukurtu.org/" rel="nofollow" style=
+                        "font-weight: bold;" target="_blank"><span style=
+                        "font-weight: normal;">Mukurtu</span></a> <span style=
+                        "font-weight: normal;">project, developing a platform
+                        for blending indigenous knowledge with water science.
+                        She has extensive experience creating inquiry-based
+                        science exhibits for museums. She will lead our open
+                        government and open data strategy. @chachasikes</span>
+                        <a href="http://chachaville.com" rel="nofollow" style=
+                        "font-weight: bold;" target="_blank"><span style=
+                        "font-weight: normal;">http://chachaville.com</span></a>
+                    </li>
+
+                    <li>
+                        <a href="http://twitter.com/videmsky">Laci Videmsky</a>
+                        Specialties: Research, GIS. A designer and product
+                        developer, Laci has worked with NGOs and nonprofits to
+                        promote environmentally resilient, economically vital,
+                        and socially aware places and things. As a research
+                        assistant and GIS cartographer at Harvard University,
+                        he studied water and development issues in the <a href=
+                        "http://news.harvard.edu/gazette/story/2010/05/rising-seas-raising-hopes/"
+                        rel="nofollow" target="_blank" title="">Netherlands</a>
+                        and the West Bank. He currently is a Project Director
+                        with the <a href="http://www.rri.org/index.php" rel=
+                        "nofollow" target="_blank" title=
+                        "Resource Renewal Institute">Resource Renewal
+                        Institute</a> and Co-founder of <a href=
+                        "http://fogbank.me" rel="nofollow" target="_blank"
+                        title="Fog">Fog</a>. He will coordinate research.
+                    </li>
+                </ul>
+
+                <h2>Interactives</h2>
+
+                <p>Each interactive has its own team.</p>
+
+                <h3>Water Rights</h3>
+
+                <h4>Project Directors</h4>
+
+                <ul>
+                    <li>Chach Sikes &amp; Laci Videmsky</li>
+                </ul>
+
+                <h4>Advisors</h4>
+
+                <ul>
+                    <li>Huey Johnson</li>
+
+                    <li>Tom Hicks</li>
+
+                    <li>Tim Stroshane</li>
+                </ul>
+
+                <h3>Groundwater</h3>
+
+                <h4>Project Directors</h4>
+
+                <ul>
+                    <li>Chach Sikes &amp; Laci Videmsky</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal hide fade" id="sponsors" tabindex="-1">
+        <div class="modal-header">
+            <button class="close" data-dismiss="modal" type="button">×</button>
+
+            <h3 id="sponsorsLabel">Sponsors</h3>
+        </div>
+
+        <div class="modal-body row">
+            <div class="span5">
+                <p>We are grateful to these organizations for helping with the
+                Atlas as a whole, as well as specific interactive projects.</p>
+
+                <ul>
+                    <li>
+                        <a href="http://patagonia.com">Patagonia</a>
+                    </li>
+
+                    <li>
+                        <a href="http://rri.org">Resource Renewal Institute</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="span12">
+    <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-sa/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" property="dct:title">New California Water Atlas</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://ca.statewater.org" property="cc:attributionName" rel="cc:attributionURL">New California Water Atlas</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/3.0/deed.en_US">Creative Commons Attribution-ShareAlike 3.0 Unported License</a>.
+    </div>    </div><div class="footer-block">   
+ </div>  
+</div>
+  <div class="region region-page-bottom" id="region-page-bottom">
+  <div class="region-inner region-page-bottom-inner">
+      </div>
+</div><script type="text/javascript">
+<!--//--><![CDATA[//><!--
+/* Output by FitVids module */
+(function ($) {
+    Drupal.behaviors.fitvids = {
+      attach: function (context, settings) {
+if ($(".media-youtube-outer-wrapper").length) {
+ $(".media-youtube-outer-wrapper").removeAttr("style");
+ $(".media-youtube-preview-wrapper").removeAttr("style");
+ $(".media-youtube-outer-wrapper").removeClass("media-youtube-outer-wrapper");
+ $(".media-youtube-preview-wrapper").removeClass("media-youtube-preview-wrapper");
+}
+if ($(".media-vimeo-outer-wrapper").length) {
+ $(".media-vimeo-outer-wrapper").removeAttr("style");
+ $(".media-vimeo-preview-wrapper").removeAttr("style");
+ $(".media-vimeo-outer-wrapper").removeClass("media-vimeo-outer-wrapper");
+ $(".media-vimeo-preview-wrapper").removeClass("media-vimeo-preview-wrapper");
+}
+$(".node.view-mode-full .oembed-video", context).fitVids();
+$(".node .file-type-video", context).fitVids();
+$(".frontpage-app .file-type-video", context).fitVids();
+$(".frontpage-app .oembed-video", context).fitVids();
+}
+      };
+    }(jQuery));
+//--><!]]>
+</script>
+</body>
+</html>

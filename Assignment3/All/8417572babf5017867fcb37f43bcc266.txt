@@ -1,0 +1,636 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://opengraphprotocol.org/schema/" xml:lang="en" lang="en" dir="ltr" 
+  xmlns:og="http://ogp.me/ns#">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="shortcut icon" href="http://mentalfloss.com/sites/default/themes/mental_floss/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta name="description" content="Test your knowledge with fun, free online quizzes on Mental Floss." />
+<link rel="alternate" type="application/rss+xml" title="Home Page" href="http://mentalfloss.com/blogs/feed/rss" />
+
+  <meta name="viewport" content="width=1098px, initial-scale=.6">
+  <meta name="google-site-verification" content="ikSyTd3PjNri23s_gQqBWW0tmtM7JQDLHaF1lF1TOqk" />
+
+  <title>Fun Quizzes Online | Mental Floss</title>
+  <link rel="canonical" href="http://mentalfloss.com/quizzes" />
+  <link href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/themes/base/jquery-ui.css" rel="stylesheet" type="text/css"/>	
+  <style type="text/css" media="all">@import url("http://mentalfloss.com/modules/system/system.base.css?mu26mh");
+@import url("http://mentalfloss.com/modules/system/system.messages.css?mu26mh");
+@import url("http://mentalfloss.com/modules/system/system.theme.css?mu26mh");</style>
+<style type="text/css" media="all">@import url("http://mentalfloss.com/sites/all/modules/lightbox2/css/lightbox_alt.css?mu26mh");
+@import url("http://mentalfloss.com/profiles/dennis_distro/modules/contrib/quiz/quiz.css?mu26mh");
+@import url("http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/css/superfish.css?mu26mh");
+@import url("http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/css/superfish-vertical.css?mu26mh");
+@import url("http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/css/superfish-navbar.css?mu26mh");
+@import url("http://mentalfloss.com/modules/aggregator/aggregator.css?mu26mh");</style>
+<style type="text/css" media="all">@import url("http://mentalfloss.com/sites/default/files/less/profiles/dennis_distro/themes/custom/dennis_base/assets/css/dennis_base-master.css?mu26mh");
+@import url("http://mentalfloss.com/sites/default/files/less/sites/default/themes/mental_floss/assets/css/mental_floss-master.css?mu26mh");</style>
+
+<!--[if IE 6]>
+<link type="text/css" rel="stylesheet" href="http://mentalfloss.com/profiles/dennis_distro/themes/custom/dennis_base/assets/css/ie6-fixes.css?mu26mh" media="all" />
+<![endif]-->
+
+<!--[if IE 7]>
+<link type="text/css" rel="stylesheet" href="http://mentalfloss.com/profiles/dennis_distro/themes/custom/dennis_base/assets/css/ie7-fixes.css?mu26mh" media="all" />
+<![endif]-->
+
+<!--[if IE 8]>
+<link type="text/css" rel="stylesheet" href="http://mentalfloss.com/profiles/dennis_distro/themes/custom/dennis_base/assets/css/ie8-fixes.css?mu26mh" media="all" />
+<![endif]-->
+<style type="text/css" media="all">@import url("http://mentalfloss.com/sites/default/themes/mental_floss/assets/css/grid24-1022.css?mu26mh");</style>
+  
+  <script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/jquery_update/replace/jquery/jquery.min.js?v=1.5.2"></script>
+<script type="text/javascript" src="http://mentalfloss.com/misc/jquery.once.js?v=1.2"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var googletag = googletag || {};
+googletag.cmd = googletag.cmd || [];
+
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://www.googletagservices.com/tag/js/gpt.js"></script>
+<script type="text/javascript" src="http://mentalfloss.com/misc/drupal.js?mu26mh"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("4697366/mentalfloss.com/quizzes", [[728, 90], [970, 90]], "dfp-ad-quizzes_leaderboard")
+  .addService(googletag.pubads())
+  .setTargeting("position", "1");
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.defineSlot("4697366/mentalfloss.com/quizzes", [[300, 250], [480, 600]], "dfp-ad-quizzes")
+  .addService(googletag.pubads())
+  .setTargeting("position", "2");
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://mentalfloss.com/misc/states.js?v=7.14"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/addthis/addthis.js?mu26mh"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+googletag.cmd.push(function() {
+  googletag.pubads().enableAsyncRendering();
+  googletag.pubads().collapseEmptyDivs();
+});
+googletag.enableServices();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://mentalfloss.com/sites/all/modules/lightbox2/js/lightbox.js?1380960139"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/pullquote/pullquote.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/jquery.hoverIntent.minified.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/jquery.bgiframe.min.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/superfish.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/supersubs.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/supposition.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/libraries/superfish/sftouchscreen.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/sites/all/modules/custom_search/js/custom_search.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/google_analytics/googleanalytics.js?mu26mh"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-177269-1"]);_gaq.push(["_setDomainName", ".mentalfloss.com"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://" : "http://") + "stats.g.doubleclick.net/dc.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/dart/dart.js?mu26mh"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var dart_url = "http://ad.doubleclick.net";
+var tile = 1;
+var ord = 1000000000 + Math.floor(Math.random() * 900000000);
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.noConflict();
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+if(document.location.protocol=='http:'){ var Tynt=Tynt||[];Tynt.push('aecSskWTar4lCQadbi-bnq');Tynt.i={"ap":"Read the full text here: ","as":"--brought to you by mental_floss!"}; (function(){var s=document.createElement('script');s.async="async";s.type="text/javascript";s.src='http://tcr.tynt.com/ti.js';var h=document.getElementsByTagName('script')[0];h.parentNode.insertBefore(s,h);})(); }
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/quiz_question_attach_node/quiz_question_attach_node.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/profiles/dennis_distro/modules/contrib/load_more/mentalfloss.loadmore.js?mu26mh"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'normal',
+autoArrows: false,
+dropShadows: false});
+});
+//--><!]]>
+</script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+animation: {opacity:'show'},
+speed: 'normal',
+autoArrows: false,
+dropShadows: false});
+});
+//--><!]]>
+</script>
+<script type="text/javascript" src="http://mentalfloss.com/sites/default/themes/mental_floss/assets/js/mentalfloss.js?mu26mh"></script>
+<script type="text/javascript" src="http://mentalfloss.com/sites/default/themes/mental_floss/assets/js/jquery.corner.js?mu26mh"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"mental_floss","theme_token":"13ETEVQmuUfg9tFQ79S9rvKoNi5UlNQEt_GYYZ-gMyg","js":{"profiles\/dennis_distro\/modules\/contrib\/jquery_update\/replace\/jquery\/jquery.min.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"misc\/states.js":1,"profiles\/dennis_distro\/modules\/contrib\/addthis\/addthis.js":1,"sites\/all\/modules\/lightbox2\/js\/lightbox.js":1,"profiles\/dennis_distro\/modules\/contrib\/pullquote\/pullquote.js":1,"profiles\/dennis_distro\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"profiles\/dennis_distro\/libraries\/superfish\/jquery.bgiframe.min.js":1,"profiles\/dennis_distro\/libraries\/superfish\/superfish.js":1,"profiles\/dennis_distro\/libraries\/superfish\/supersubs.js":1,"profiles\/dennis_distro\/libraries\/superfish\/supposition.js":1,"profiles\/dennis_distro\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/modules\/custom_search\/js\/custom_search.js":1,"profiles\/dennis_distro\/modules\/contrib\/google_analytics\/googleanalytics.js":1,"0":1,"profiles\/dennis_distro\/modules\/contrib\/dart\/dart.js":1,"1":1,"2":1,"sites\/default\/themes\/mental_floss\/assets\/js\/mentalfloss.js":1,"sites\/default\/themes\/mental_floss\/assets\/js\/jquery.corner.js":1,"3":1,"4":1,"http:\/\/www.googletagservices.com\/tag\/js\/gpt.js":1,"5":1,"6":1,"7":1,"8":1,"9":1,"http:\/\/ajax.googleapis.com\/ajax\/libs\/jqueryui\/1.8\/jquery-ui.min.js":1,"10":1,"11":1,"profiles\/dennis_distro\/modules\/contrib\/quiz_question_attach_node\/quiz_question_attach_node.js":1,"profiles\/dennis_distro\/modules\/contrib\/load_more\/mentalfloss.loadmore.js":1,"12":1,"13":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/lightbox2\/css\/lightbox_alt.css":1,"profiles\/dennis_distro\/modules\/contrib\/quiz\/quiz.css":1,"profiles\/dennis_distro\/libraries\/superfish\/css\/superfish.css":1,"profiles\/dennis_distro\/libraries\/superfish\/css\/superfish-vertical.css":1,"profiles\/dennis_distro\/libraries\/superfish\/css\/superfish-navbar.css":1,"modules\/aggregator\/aggregator.css":1,"profiles\/dennis_distro\/themes\/custom\/dennis_base\/assets\/css\/dennis_base-master.css.less":1,"sites\/default\/themes\/mental_floss\/assets\/css\/mental_floss-master.css.less":1,"profiles\/dennis_distro\/themes\/custom\/dennis_base\/assets\/css\/ie6-fixes.css":1,"profiles\/dennis_distro\/themes\/custom\/dennis_base\/assets\/css\/ie7-fixes.css":1,"profiles\/dennis_distro\/themes\/custom\/dennis_base\/assets\/css\/ie8-fixes.css":1,"sites\/default\/themes\/mental_floss\/assets\/css\/grid24-1022.css":1}},"lightbox2":{"rtl":0,"file_path":"\/(\\w\\w\/)public:\/","default_image":"\/sites\/all\/modules\/lightbox2\/images\/brokenimage.jpg","border_size":10,"font_color":"000","box_color":"fff","top_position":"","overlay_opacity":"0.8","overlay_color":"000","disable_close_click":0,"resize_sequence":0,"resize_speed":400,"fade_in_speed":400,"slide_down_speed":600,"use_alt_layout":1,"disable_resize":0,"disable_zoom":0,"force_show_nav":0,"show_caption":1,"loop_items":0,"node_link_text":"View Image Details","node_link_target":0,"image_count":"Image !current of !total","video_count":"Video !current of !total","page_count":"Page !current of !total","lite_press_x_close":"press \u003Ca href=\u0022#\u0022 onclick=\u0022hideLightbox(); return FALSE;\u0022\u003E\u003Ckbd\u003Ex\u003C\/kbd\u003E\u003C\/a\u003E to close","download_link_text":"","enable_login":false,"enable_contact":false,"keys_close":"c x 27","keys_previous":"p 37","keys_next":"n 39","keys_zoom":"z","keys_play_pause":"32","display_image_size":"original","image_node_sizes":"()","trigger_lightbox_classes":"","trigger_lightbox_group_classes":"","trigger_slideshow_classes":"","trigger_lightframe_classes":"","trigger_lightframe_group_classes":"","custom_class_handler":0,"custom_trigger_classes":"","disable_for_gallery_lists":true,"disable_for_acidfree_gallery_lists":true,"enable_acidfree_videos":true,"slideshow_interval":5000,"slideshow_automatic_start":true,"slideshow_automatic_exit":true,"show_play_pause":true,"pause_on_next_click":false,"pause_on_previous_click":true,"loop_slides":false,"iframe_width":600,"iframe_height":400,"iframe_border":1,"enable_video":0},"custom_search":{"form_target":"_self","solr":0},"states":{"#edit-term":{"visible":{":input[name=\u0022options[operator]\u0022],dummy-empty":{"!value":"empty"},":input[name=\u0022options[operator]\u0022],dummy-not-empty":{"!value":"not empty"}}}},"addthis":{"widget_url":"http:\/\/s7.addthis.com\/js\/250\/addthis_widget.js#pubid=ra-508584d6026095b3?async=1"},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip","trackDomainMode":"1","trackCrossDomains":["mentalfloss.com"]}});
+//--><!]]>
+</script>
+  
+  <script type="text/javascript" src="//use.typekit.net/hlq3feh.js"></script>
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+  <!-- script src="http://ajax.googleapis.com/ajax/libs/jquery/1.5/jquery.min.js"></script -->
+  <!-- script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.8/jquery-ui.min.js"></script -->
+  <script type="text/javascript" src="//native.sharethrough.com/assets/tag.js"></script>
+
+
+	<script type="text/javascript">
+	function goToNextPage() {
+		document.location.href=jQuery("link[rel=next]").attr('href');
+	}
+	jQuery(function() { 
+		jQuery("a.nextPageLink").click(goToNextPage);
+	});
+	</script>
+
+</head>
+<body id="pid-quizzes" class="html not-front not-logged-in one-sidebar sidebar-second page-quizzes sidebars-split grid-type-1022 grid-width-24" >
+
+  <div id="skip-link">
+    <a href="#main-content-area">Skip to main content area</a>
+  </div>
+    
+<div id="page" class="page grid24-24">
+  
+    <!-- header-top region -->
+  <div id="header-top" class="region region-header-top header-top">
+    <div id="header-top-inner" class="header-top-inner inner clearfix">
+    <div id="block-dfp-quizzes_leaderboard" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-quizzes_leaderboard-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-quizzes_leaderboard" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-quizzes_leaderboard");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /header-top-inner -->
+  </div><!-- /header-top -->
+
+    <div id="header-group" class="header-group region">
+    <div id="header-group-inner" class="header-group-inner inner clearfix">
+      		        
+                <div id="logo">
+                    <a href="/" title="Mental Floss">
+                        <img src="http://mentalfloss.com/sites/default/files/logo_mental_floss.png" alt="Mental Floss" />
+                    </a>
+                </div>
+            		   
+        <!-- header region -->
+  <div id="header" class="region region-header header nested">
+    <div id="header-inner" class="header-inner inner clearfix">
+    <div id="block-boxes-mental_floss_get_the_magazine" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id='boxes-box-mental_floss_get_the_magazine' class='boxes-box'><div class="boxes-box-content">  <img src="/sites/default/themes/mental_floss/assets/images/magazine-cover.png" width="69" height="69" alt="Magazine Cover" class="thumb" />
+<a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=8411351" class="arrow">Get a RISK-FREE issue</a>  <a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=8011351" class="arrow">Give a Gift</a>
+<a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=2011361" class="arrow">iPad Subscription</a>
+</div></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-views-b9412dcbf7cb02313d6e2f823d89becd" class="block block-views">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <form action="/search" method="get" id="views-exposed-form-mental-floss-search-results-page" accept-charset="UTF-8"><div><div class="views-exposed-form">
+  <div class="views-exposed-widgets clearfix">
+          <div id="edit-term-wrapper" class="views-exposed-widget views-widget-filter-search_api_views_fulltext">
+                  <label for="edit-term">
+            Fulltext search          </label>
+                        <div class="views-widget">
+           <input placeholder="SEARCH THE SITE" type="text" id="edit-term" name="term" value="" size="30" maxlength="128" class="form-text required" />
+        </div>
+      </div>
+                    <div class="views-exposed-widget views-submit-button">
+      <input type="submit" id="edit-submit-mental-floss-search-results" name="" value="Search" />    </div>
+      </div>
+</div>
+</div></form>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-boxes-social_top_mental_floss" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id='boxes-box-social_top_mental_floss' class='boxes-box'><div class="boxes-box-content"><style>
+.social-top{
+
+margin-right:12px;
+margin-top: -41px;
+height: 5px;
+position: relative;
+}
+.follow-twitter-button{
+background-image:url("/sites/default/themes/mental_floss/assets/images/social-top/twitter.png");
+}
+</style>
+<div class="social-top" style="float:right; display:inline;">
+<div id="rail-social-like">
+  <div id="rail-twitter-button" style="margin-top:2px">
+   <iframe src="//www.facebook.com/plugins/like.php?href=https%3A%2F%2Fwww.facebook.com%2Fmentalflossmagazine&amp;send=false&amp;layout=button_count&amp;width=90&amp;show_faces=false&amp;font&amp;colorscheme=light&amp;action=like&amp;height=21&amp;appId=337544083028338" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:90px; height:21px;" allowTransparency="true"></iframe>
+  </div>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>	
+ <div id="rail-like-button" style="padding-left:6px">
+			<a href="https://twitter.com/mental_floss" class="twitter-follow-button" data-show-screen-name="false" data-show-count="false" data-dnt="true"></a>
+		</div>
+<div id="rail-like-button" style="padding-left:6px">
+    <a href=" http://www.youtube.com/MentalFlossVideo"><img src="/sites/default/themes/mental_floss/assets/images/social-top/youtube.png" alt="Follow us on YouTube"></a>
+  </div>  
+</div>
+</div></div></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /header-inner -->
+  </div><!-- /header -->
+    </div><!-- /header-group-inner -->
+  </div><!-- /header-group -->
+    
+  <div id="menu-group" class="menu-group region">
+    <div id="menu-group-inner" class="menu-group-inner inner clearfix">
+        <!-- main-menu region -->
+  <div id="main-menu" class="region region-main-menu main-menu">
+    <div id="main-menu-inner" class="main-menu-inner inner clearfix">
+    <div id="block-superfish-1" class="block block-superfish">
+  <div class="gutter inner clearfix">
+            <h2 class="title block-title"><span>Main menu</span></h2>
+        
+    <div class="content clearfix">
+      <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-default sf-total-items-7 sf-parent-items-0 sf-single-items-7"><li id="menu-753-1" class="first odd sf-item-1 sf-depth-1 sf-no-children"><a href="/amazingfactgenerator" class="sf-depth-1 ">Amazing Facts</a></li><li id="menu-550-1" class="middle even sf-item-2 sf-depth-1 sf-no-children"><a href="/section" style="width: 163px; margin-right: 15px; margin-left:-10px;" class="sf-depth-1 ">Knowledge Feed</a></li><li id="menu-1000-1" class="middle odd sf-item-3 sf-depth-1 sf-no-children"><a href="/section/dosequis" title="Be More Interesting Menu Item" style="background-position: -3px -1948px;" class="sf-depth-1 ">Be More Interesting</a></li><li id="menu-954-1" class="middle even sf-item-4 sf-depth-1 sf-no-children"><a href="/lists" style="margin-left:10px;" class="sf-depth-1 ">LIsts</a></li><li id="menu-757-1" class="active-trail middle odd sf-item-5 sf-depth-1 sf-no-children"><a href="/quizzes" class="sf-depth-1  active">Quizzes</a></li><li id="menu-615-1" class="middle even sf-item-6 sf-depth-1 sf-no-children"><a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=8311351" class="icon-subscribe-wh sf-depth-1">Subscribe</a></li><li id="menu-616-1" class="last odd sf-item-7 sf-depth-1 sf-no-children"><a href="http://store.mentalfloss.com/" class="icon-cart-wh sf-depth-1" target="_blank">Store</a></li></ul>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /main-menu-inner -->
+  </div><!-- /main-menu -->
+          </div><!-- /menu-group-inner -->
+  </div><!-- /menu-group -->
+
+  
+
+    <div id="main" class="main region">
+    <div id="main-inner" class="main-inner inner clearfix">
+      
+            <div id="main-group" class="main-group region grid24-24">
+        <div id="main-group-inner" class="main-group-inner inner">
+          
+          <div id="main-content" class="main-content region nested">
+            <div id="main-content-inner" class="main-content-inner inner">
+			    	  <div id="content-group" class="content-group grid24-16">
+                <div id="content-group-inner" class="content-group-inner inner">
+                  <a id="main-content-area"></a>
+
+                                    <div id="title-group" class="title-group">
+                    <div class="inner clearfix">
+                                                                  <h1 class="title"><span>Fun Quizzes Online</span></h1>
+                                                                </div><!-- /title-group-inner -->
+                  </div><!-- /title-group -->
+                  
+                                                      
+                  
+                  				                    <div id="content-content"><div class="view view-mentalfloss-quizzes view-id-mentalfloss_quizzes view-display-id-page_1 view-dom-id-f6bf7c3878d1a10b476a6586b4be1fa2">
+      
+    <div class="view-header">
+      <h1 id="big-questions-header">Quizzes</h1>
+    </div>
+
+
+  
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/14218/name-professional-wrestler/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1346774935990.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13299/simpsons-softball-quiz/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1211344486553.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13929/stage-name-quiz/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/quiz_stage-name.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13913/which-companys-older/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1292256411868.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13884/carmen-sandiego-quiz/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/quiz_carmensandiego.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-6 views-row-even clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13917/who-said-it-jack-kennedy-or-jack-donaghy/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1292860253387.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-7 views-row-odd clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/14164/tip-managing-millennials-or-advice-puppy-owners/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1338310620167.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-8 views-row-even clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13304/super-mario-bros-villain-or-obscure-dinosaur/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1212414277175.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-9 views-row-odd clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13257/whos-money/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1207235801288.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+  <div class="views-row views-row-10 views-row-even views-row-last clearfix">
+      
+  <div class="views-field views-field-field-quiz-banner">        <div class="field-content"><a href="/quiz/13748/frasier-frasier/take"><img src="http://mentalfloss.com/sites/default/files/quiz-banners/1269403323156.jpg" width="550" height="153" alt="" /></a></div>  </div>  </div>
+    </div>
+  
+      <h2 class="element-invisible">Pages</h2><div class="item-list"><ul class="pager"><li class="pager-current first">1</li>
+<li class="pager-item"><a title="Go to page 2" href="/quizzes/page/1/0">2</a></li>
+<li class="pager-item"><a title="Go to page 3" href="/quizzes/page/2/0">3</a></li>
+<li class="pager-item"><a title="Go to page 4" href="/quizzes/page/3/0">4</a></li>
+<li class="pager-item"><a title="Go to page 5" href="/quizzes/page/4/0">5</a></li>
+<li class="pager-item"><a title="Go to page 6" href="/quizzes/page/5/0">6</a></li>
+<li class="pager-item"><a title="Go to page 7" href="/quizzes/page/6/0">7</a></li>
+<li class="pager-item"><a title="Go to page 8" href="/quizzes/page/7/0">8</a></li>
+<li class="pager-item"><a title="Go to page 9" href="/quizzes/page/8/0">9</a></li>
+<li class="pager-ellipsis">…</li>
+<li class="pager-next"><a title="Go to next page" href="/quizzes/page/1/0">next ›</a></li>
+<li class="pager-last last"><a title="Go to last page" href="/quizzes/page/112/0">last »</a></li>
+</ul></div>  
+  
+  
+  
+  
+</div></div>
+                                                      
+                  <div id="content-bottom"></div>
+                </div><!-- /content-group-inner -->
+              </div><!-- /content-group -->
+
+                <!-- sidebar-second region -->
+  <div id="sidebar-second" class="region region-sidebar-second sidebar sidebar-second nested grid24-8">
+    <div id="sidebar-second-inner" class="sidebar-second-inner inner clearfix">
+    <div id="block-views-most_popular-block" class="block block-views">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="view view-most-popular view-id-most_popular view-display-id-block view-dom-id-8cdd31611fac50ee799d348ada06291b">
+            <div class="view-header">
+      <h2 class="wrap">most popular</h2>    </div>
+  
+  
+  
+      <div class="view-content">
+          <ul>          <li class="views-row views-row-1 views-row-odd views-row-first">  
+          <h3><a href="/article/30649/11-problems-music-can-solve">11 Problems Music Can Solve</a></h3>  </li>
+          <li class="views-row views-row-2 views-row-even">  
+          <h3><a href="/article/12350/dirty-etymology-9-everyday-words">The Dirty Etymology of 9 Everyday Words</a></h3>  </li>
+          <li class="views-row views-row-3 views-row-odd views-row-last">  
+          <h3><a href="/article/12337/10-things-created-over-couple-beers">10 Things Created Over a Couple of Beers </a></h3>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-dfp-quizzes" class="block block-dfp">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="dfp-ad-quizzes-wrapper" class="dfp-tag-wrapper">
+<div  id="dfp-ad-quizzes" class="dfp-tag-wrapper">
+  <script type="text/javascript">
+    googletag.cmd.push(function() {
+      googletag.display("dfp-ad-quizzes");
+    });
+  </script>
+</div>
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /sidebar-second-inner -->
+  </div><!-- /sidebar-second -->
+            </div><!-- /main-content-inner -->
+          </div><!-- /main-content -->
+
+            <!-- postscript-top region -->
+  <div id="postscript-top" class="region region-postscript-top postscript-top nested">
+    <div id="postscript-top-inner" class="postscript-top-inner inner clearfix">
+    <div id="block-load_more-load_more" class="block block-load-more">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id="load-more" onClick="clickLoadMore();"><img src="../sites/default/themes/mental_floss/assets/images/load_more.png"/></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /postscript-top-inner -->
+  </div><!-- /postscript-top -->
+        </div><!-- /main-group-inner -->
+      </div><!-- /main-group -->
+    </div><!-- /main-inner -->
+  </div><!-- /main -->
+
+  </div><!-- /page -->
+
+  <!-- footer-top region -->
+  <div id="footer-top" class="region region-footer-top footer-top">
+    <div id="footer-top-inner" class="footer-top-inner inner clearfix">
+    <div id="block-views-article_promos-block" class="block block-views">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div class="view view-article-promos view-id-article_promos view-display-id-block view-dom-id-9361adb96f18f8d8e729596ade05d7ae">
+            <div class="view-header">
+      <!--smart_paging_autop_filter--><!--smart_paging_filter--> <h3>Also on Mental Floss:</h3>     </div>
+  
+  
+  
+      <div class="view-content">
+          <ul class="promo">          <li class="views-row views-row-1 views-row-odd views-row-first">  
+          <a href="/blogs/archives/142550"><div class="lifted promo"><img src="http://mentalfloss.com/sites/default/files/styles/promo_230x130/public/image-1.png" width="230" height="130" alt="" /></div></a>  </li>
+          <li class="views-row views-row-2 views-row-even">  
+          <a href="http://store.mentalfloss.com/the-mental_floss-store/Books/F-in-Exams?utm_source=ROS_ArticlePromo&utm_medium=230x130&utm_term=FinExams&utm_content=FinExams&utm_campaign=FinExams"><div class="lifted promo"><img src="http://mentalfloss.com/sites/default/files/styles/promo_230x130/public/230x130_fexamsbook.jpg" width="230" height="130" alt="" /></div></a>  </li>
+          <li class="views-row views-row-3 views-row-odd">  
+          <a href="/blogs/archives/5943"><div class="lifted promo"><img src="http://mentalfloss.com/sites/default/files/styles/promo_230x130/public/image.png" width="230" height="130" alt="" /></div></a>  </li>
+          <li class="views-row views-row-4 views-row-even views-row-last">  
+          <a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=8111351"><div class="lifted promo"><img src="http://mentalfloss.com/sites/default/files/styles/promo_230x130/public/free-offer.png" width="230" height="130" alt="" /></div></a>  </li>
+      </ul>    </div>
+  
+  
+  
+  
+  
+  
+</div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /footer-top-inner -->
+  </div><!-- /footer-top -->
+
+  <!-- footer region -->
+  <div id="footer" class="region region-footer footer">
+    <div id="footer-inner" class="footer-inner inner clearfix">
+    <div id="block-boxes-mental_floss_footer" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id='boxes-box-mental_floss_footer' class='boxes-box'><div class="boxes-box-content"> <!--NAV START-->
+<div style="float:left; width:760px;">
+<nav>
+
+<ul>
+	<li>© 2012 Mental Floss</li>
+	<li><a href="/about-us" rel="nofollow">About</a></li>
+        <li><a href="/rss.xml" rel="nofollow">RSS</a></li>
+	<li><a href="/privacy-policy" rel="nofollow">Privacy</a></li>
+	<li><a href="/terms-service" rel="nofollow">Terms</a></li>
+	<li><a href="/contact-us" rel="nofollow">Contact</a></li>
+	<li><a href="/press-room" rel="nofollow">Press</a></li>
+	<li><a href="/advertise" rel="nofollow">Advertising</a></li>
+	<li><a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=2311361" rel="nofollow">Subscribe</a></li>
+	<li><a href="http://store.mentalfloss.com" rel="nofollow">Store</a></li>
+	<li><a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=2511361" rel="nofollow">Give a Gift</a></li>
+	<li><a href="https://secure.palmcoastd.com/pcd/!dynredirect.main?iID=2611361" rel="nofollow">iPad</a></li>
+	<li><a href="http://mentalfloss.com/service" rel="nofollow">Subscriber Services</a></li>
+	<li><a href="http://mentalfloss.com/giveaway" rel="nofollow">Giveaways</a></li>
+	<li><a href="http://store.mentalfloss.com/Single-Issues" rel="nofollow">Back Issues</a></li>
+</ul>
+
+</nav>
+</div>
+<!--NAV END-->
+
+<!-- AddThis Button BEGIN -->
+<div class="addthis_toolbox">
+<div class="custom_images">
+<a class="addthis_button_facebook socialfooterfirst"><img class="socialfooterlike" src="/sites/default/themes/mental_floss/assets/images/social_footer/like-icon.png" /></a>
+<a href="http://www.facebook.com/mentalflossmagazine"><img src="/sites/default/themes/mental_floss/assets/images/social_footer/fb.png"  border="0" alt="Share to Facebook" /></a>
+<a class="addthis_button_twitter socialfooternext"><img src="/sites/default/themes/mental_floss/assets/images/social_footer/tw.png"  border="0" alt="Share to Twitter" /></a>
+</div>
+</div>
+<script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+<script type="text/javascript" src="http://s7.addthis.com/js/300/addthis_widget.js#pubid=ra-508584d6026095b3"></script>
+<!-- AddThis Button END -->
+
+<div style="float:left;">
+<span class="font-bold">DID YOU KNOW?</span>&nbsp;Marlon Brando hated memorizing lines so much that he posted cue cards everywhere to help him get through scenes.
+He even asked for lines to be written on an actress's posterior. (That request was denied.)
+</div> </div></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+<div id="block-boxes-mental_floss_heartbeats" class="block block-boxes block-boxes-simple">
+  <div class="gutter inner clearfix">
+            
+    <div class="content clearfix">
+      <div id='boxes-box-mental_floss_heartbeats' class='boxes-box'><div class="boxes-box-content"><!--smart_paging_autop_filter--><!--smart_paging_filter--> <!--ChartBeat Tag--><script type="text/javascript" src="http://static.chartbeat.com/js/chartbeat.js?uid=77&amp;domain=mentalfloss.com"></script><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+var _sf_async_config={uid:8273,domain:"mentalfloss.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+
+//--><!]]>
+</script><!-- Quantcast Tag, part 1 --><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+  var _qevents = _qevents || [];
+
+  (function() {
+   var elem = document.createElement('script');
+
+   elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+   elem.async = true;
+   elem.type = "text/javascript";
+   var scpt = document.getElementsByTagName('script')[0];
+   scpt.parentNode.insertBefore(elem, scpt);  
+  })();
+
+//--><!]]>
+</script><!--ComScore Tag--><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+        var _comscore = _comscore || [];
+        _comscore.push({ c1: "2", c2: "9929026"});
+        (function() {
+          var s = document.createElement("script"), el = document.getElementsByTagName("script")[0]; s.async = true;
+          s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+          el.parentNode.insertBefore(s, el);
+        })();
+      
+//--><!]]>
+</script><p>      </p><noscript><br /><img src="http://b.scorecardresearch.com/p?c1=2&amp;c2=9929026&amp;cv=2.0&amp;cj=1" /><br /></noscript>
+<!--CrazyEgg Tag--><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName('script')[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/8334.js";
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+
+//--><!]]>
+</script><!-- Quantcast Tag, part 2 --><script type="text/javascript">
+<!--//--><![CDATA[// ><!--
+
+_qevents.push( { qacct:"p-c99KiP7-l3Cng"} );
+
+//--><!]]>
+</script><p></p><noscript>
+<div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-c99KiP7-l3Cng.gif" height="1" width="1" alt="Quantcast" /></div>
+<p></p></noscript>
+ </div></div>    </div>
+  </div><!-- /block-inner -->
+</div><!-- /block -->
+    </div><!-- /footer-inner -->
+  </div><!-- /footer -->
+  <script type="text/javascript">
+<!--//--><![CDATA[//><!--
+var addthis_config = {"services_compact":"more","data_track_clickback":false,"ui_508_compliant":false,"ui_click":false,"ui_cobrand":"","ui_delay":0,"ui_header_background":"","ui_header_color":"","ui_open_windows":false,"ui_use_css":true,"ui_use_addressbook":false,"ui_language":"en"}
+var addthis_share = {"templates":{"twitter":"{{title}} {{url}} via @AddThis"}}
+//--><!]]>
+</script>
+
+<!--Bizo tag-->
+<script type="text/javascript">
+  _bizo_data_partner_id = "2306";
+</script>
+<script type="text/javascript">
+(function(){var b,a,u;a=document.createElement("script");a.type="text/javascript";a.async=true;u=(window.location.protocol==="https:"?"https://sjs.":"http://js.")+"bizographics.com/insight.min.js";a.src=u;b=document.getElementsByTagName("script")[0];return b.parentNode.insertBefore(a,b)})();
+</script>
+<noscript>
+  <img height="1" width="1" alt="" style="display:none;" src="//www.bizographics.com/collect/?pid=2306&fmt=gif" />
+</noscript>
+
+<!-- BuzzFeed Tag -->
+<div id="BF_WIDGET_1">&nbsp;</div>
+<script type="text/javascript">
+(function( ){
+BF_WIDGET_JS=document.createElement("script"); BF_WIDGET_JS.type="text/javascript";
+BF_WIDGET_SRC="http://ct.buzzfeed.com/wd/UserWidget?u=mentalfloss.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+setTimeout(function() {document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);BF_WIDGET_JS.src=BF_WIDGET_SRC},1);
+})();
+</script>
+
+</body>
+</html>

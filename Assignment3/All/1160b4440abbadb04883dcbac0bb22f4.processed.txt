@@ -1,0 +1,256 @@
+   #[1]Tom MacWright
+
+     * [2]Tom MacWright
+     * [3]About
+     * [4]Archive
+     * [5]Talks
+     * [6]Code
+     * [7]@tmcw
+
+Buttons
+
+   For years, I saw the consumerization^[8]1 of computers as a decision
+   passed down from corporations.
+
+   Computers in 1980s and 2010s
+
+   And it made sense. The optimal user in the eyes of industry is a user
+   of major social networks, a buyer of apps: a person for whom
+   expectations of technology have drifted from power to simplicity.
+
+   But the third or fourth time watching [9]The Future of Programming,
+   after [10]the [11]preceding [12]series by [13]Bret Victor, I saw more.
+
+   The task of changing the way people think about computing is in the
+   hands of people like you and me - there's no establishment preventing
+   progress besides the enforcement of norms by a community.
+
+   We are in a stage of stunted development - using computers creatively
+   is still unnecessarily hard, unjustly handicapping people with great
+   ideas but neither time nor the `[14]symbol manipulation' skills
+   currently required to `become programmers.'
+
+Creativity
+
+   Technology is naturally an instrument of efficiency: rarely is there
+   more than a second between a person's request for some total, average,
+   or search, and a computer's production of a result.
+
+   In this way, efficiency is simple: one person defines one operation and
+   refines it to perfection.
+
+   Creativity requires something more. Not just polishing a single path,
+   but determining the minimal universal set of building blocks. Building
+   creative tools is deciding the dimension of a Lego.
+
+Typing Everything
+
+   Like the [15]AI winter, the idea of computers being user-friendly in
+   ways beyond being `simple' is a fascination that comes and goes and is
+   currently gone.
+
+   Right now I'm trying this in [16]vim, a twenty-one year old text editor
+   with notoriously difficult user-experience choices: to quit, a user
+   must type :wq. To delete this paragraph, I type <escape>vjjd. It makes
+   sense after a while, or so they say. When I'm done, it's commited with
+   [17]git, a CLI-centric tool for managing source code, and pushed to
+   [18]GitHub, where it's compiled with [19]Jekyll and the text-based
+   [20]Markdown content is processed into HTML with templates.
+
+   Five years ago, I would go to [21]WordPress and press `Save'.
+
+   To generate a visualization, I usually break out [22]d3js, a low-level
+   Javascript library that expects at a minimum knowledge of [23]SVG,
+   [24]data joining, [25]HTML, and CSS. Either that, or I'll use
+   [26]node-canvas, which requires [27]node.js proficiency and a solid
+   dose of trigonometry in order to do anything interesting.
+
+   Ten years ago, I would open Excel, make a chart, and press `Save'.
+
+Precision and Control
+
+   Espresso Machine
+
+   There's a beauty to removing abstraction, to low-maintenance [28]fixies
+   and the resurgence of the [29]straight razor.
+
+   But is it useful to remove abstraction when it exposes a much larger
+   surface of unrelated complexity? If an artist has an idea of a
+   beautiful visualization, should they spend a year learning JavaScript?
+   And is that startup cost reasonable, like the time invested in learning
+   the way paint mixes?
+
+   IFRAME:
+   [30]//player.vimeo.com/video/5047563?title=0&byline=0&portrait=0
+
+   [31]ART && CODE Symposium: Hackety Hack, why the lucky stiff from
+   [32]STUDIO for Creative Inquiry on [33]Vimeo.
+
+   [34]_why, his presentation at art && code, referred to the `learn web
+   programming' argument as unreasonable - for people just starting to
+   understand programming, why learn three inter-connected languages at
+   once?
+
+   Is it even reasonable or useful to recommend people learn a computer
+   language to complete basic tasks like drawing a picture or running a
+   calculation? While we have [35]better resources than ever before to
+   learn programming, programming hasn't changed in years, and the basic
+   assumption of those writing languages, libraries and more is that they
+   write tools for people who know programming already.
+
+   Only a few examples, like Mary Rose Cooke's [36]Isla and Alan Kay's
+   [37]Squeak languages are written for anyone other than an adult with
+   lots of time on their hands.
+
+The Unhappy Simplicity of Choices
+
+   And so the positive argument is to make things visible, to reconsider
+   and eliminate historical complexity. In other words, to fight for
+   simple and easy.
+
+   There are different kinds of easy.
+
+   There's the easy of choosing the right thing: this is the land of
+   presets, of `builders' that are just glorified [38]wizard patterns,
+   with the same baked in assumption: `a single goal'. This is what you
+   can see in tools like [39]Highcharts, that attempt to build `all
+   possible variations' and invite you to choose one.
+
+   Anyone can guess the ending - opinionated software is only cool if you
+   have cool opinions, and even then presets will never capture
+   creativity.
+
+   Charts
+
+   [40]d3 takes a different approach. It's a visualization library that
+   grapples with the fact that visualizations have very little in common
+   with each other: the `atoms' of d3, the lowest-level `things' you can
+   do, are very low-level. At the most basic level, you're drawing lines,
+   polygons, text, and primitives. Abstractions above these things, like
+   axes and charts, can be broken down, decomposed as necessary.
+
+   This makes d3 hard, and makes some things `more complicated' in
+   comparison to libraries that correctly guess what you want and `have it
+   already'. But instead of fighting assumptions and instead of hiding
+   complexity in them, d3 successfully tackles nearly the entire
+   `visualization space' and, after the initial brain-crunch, is actually
+   simpler to understand deeply.
+
+Interface Atoms
+
+   IFRAME:
+   [41]//player.vimeo.com/video/66085662?title=0&byline=0&portrait=0
+
+   [42]Drawing Dynamic Visualizations from [43]Bret Victor on [44]Vimeo.
+
+   The demo in this video is interesting because it's so fundamental.
+
+   A simpler, easier thing to implement would have a person dragging data
+   onscreen, the software automatically chooses 20 chart types that seem
+   right, and then present a limited set of options. Not only would this
+   be much easier to do, but it would result in fewer clicks, a shorter
+   learning curve, and an easier thing to sell.
+
+   But that would be doing it wrong - that would result in the same
+   contained, handicapped experimentation as we've had in years of bad
+   wizard user interfaces. Instead, the basic units of this demo are on
+   the level of d3 - unopinioned visual elements that can be composed into
+   a much larger and more diverse set of outcomes.
+
+Next
+
+   I've started on minor work that pushes in this direction - that tries
+   to make `user interface' elements behave like code and to enable
+   `users' to think more like coders, the way they already think when
+   writing Excel macros or meal recipes.
+
+   And it's hard. Libraries like [45]jQuery UI have faded in importance
+   and attention and in their place we have tools like [46]Bootstrap that
+   embrace `content as king' and punt on user interaction beyond clicking
+   buttons.
+
+   This isn't an immediate need for me, nor is it a simple thing that can
+   be packaged up into a trendy JavaScript library. In between thinking
+   these thoughts and having something usable, it's a lot of building
+   difficult things from scratch with little to show for it. And there are
+   numerous distractions and skeletons of previous efforts along the path
+   - after all, visual programming is a 1960s idea that hasn't stuck yet.
+
+   But I can't picture anything more interesting to work on at this point.
+   It has been stunning to see people exploit what little means of
+   expression are exposed on the web, despite the efforts of industry and
+   programmers to restrict us to 140 chars and [47]sanitized ASCII text.
+
+   Or that it seems unimaginative to constrain creativity to inputs and
+   outputs designed by others and assume that the true power of computers
+   - programmability - is something to be exploited by the select few.
+     * that is, the way that new computers emphasize consumption of
+       premade content over the creation of new content, and present
+       software as a completed thing with no way to poke around at the
+       inside and understand how things work.
+
+   Sep 05, 2013
+     * [48]Tom MacWright
+     * [49]Blog
+     * [50]Projects
+     * [51]About
+     * [52]Archive
+     * [53]@tmcw
+     * [54]RSS
+
+References
+
+   1. http://macwright.org/atom.xml
+   2. http://macwright.org/
+   3. http://macwright.org/about/
+   4. http://macwright.org/archive/
+   5. http://macwright.org/presentations/
+   6. http://github.com/tmcw/
+   7. http://twitter.com/tmcw/
+   8. http://macwright.org/2013/09/05/buttons.html#consumerization
+   9. http://vimeo.com/71278954
+  10. http://vimeo.com/64895205
+  11. http://vimeo.com/66085662
+  12. http://vimeo.com/67076984
+  13. http://worrydream.com/
+  14. http://worrydream.com/KillMath/
+  15. https://en.wikipedia.org/wiki/AI_winter
+  16. http://www.vim.org/
+  17. http://git-scm.com/
+  18. https://github.com/
+  19. http://jekyllrb.com/
+  20. http://daringfireball.net/projects/markdown/
+  21. http://wordpress.org/
+  22. http://d3js.org/
+  23. http://macwright.org/2013/06/25/just-enough-svg.html
+  24. http://macwright.org/presentations/dcjq/
+  25. http://macwright.org/2013/07/07/d3-for-html.html
+  26. https://github.com/learnboost/node-canvas
+  27. http://nodejs.org/
+  28. https://en.wikipedia.org/wiki/Fixed-gear_bicycle
+  29. https://en.wikipedia.org/wiki/Straight_razor
+  30. http://player.vimeo.com/video/5047563?title=0&byline=0&portrait=0
+  31. http://vimeo.com/5047563
+  32. http://vimeo.com/sfci
+  33. https://vimeo.com/
+  34. http://vimeo.com/5047563
+  35. http://www.codecademy.com/
+  36. https://github.com/maryrosecook/islaclj
+  37. http://www.squeak.org/
+  38. http://ui-patterns.com/patterns/Wizard
+  39. http://www.highcharts.com/products/highcharts
+  40. http://d3js.org/
+  41. http://player.vimeo.com/video/66085662?title=0&byline=0&portrait=0
+  42. http://vimeo.com/66085662
+  43. http://vimeo.com/worrydream
+  44. https://vimeo.com/
+  45. http://jqueryui.com/
+  46. http://getbootstrap.com/
+  47. https://twitter.com/glitchr_
+  48. http://macwright.org/
+  49. http://macwright.org/
+  50. http://macwright.org/projects/
+  51. http://macwright.org/about/
+  52. http://macwright.org/archive/
+  53. http://twitter.com/tmcw
+  54. http://macwright.org/atom.xml

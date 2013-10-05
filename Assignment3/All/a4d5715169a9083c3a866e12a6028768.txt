@@ -1,0 +1,475 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta property="fb:page_id" content="181913601820752" />
+	<meta name="Description" content="Geekatoo connects customers with tech and computer repair providers. Providers bid on problems, and customers choose their favorite bid!">
+	
+		<title>Save on Local Tech Help and Computer Repair with Geekatoo</title>
+	
+	<meta property="og:image" content="http://static.geekatoo.com/images/logo-facebook.png"/>
+	<link rel="shortcut icon" type="image/x-icon" href="http://static.geekatoo.com/images/favicon.ico?cb=1" />
+	<link href="/stylesheets/base_packaged.css?1377555898" media="screen" rel="stylesheet" type="text/css" />
+	<!--[if IE 6]><link href="css/ie6.css" media="screen" rel="stylesheet" type="text/css" /><![endif]-->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+	<script src="/javascripts/base_packaged.js?1377555898" type="text/javascript"></script>
+	
+	
+			<script src="http://maps.google.com/maps?file=api&amp;v=2.155&amp;key=ABQIAAAA-M_Ppx3RzAD4krD5K1rPPhQmOsrs4eKFlxo1CD5rjVWfTM28QhTDWUUcqa_d-23FnSeduADk6xfO1Q&amp;hl=&amp;sensor=false" type="text/javascript"></script>
+	
+	<script src="http://static.geekatoo.com/javascripts/ym4r-gm.js" type="text/javascript"></script>
+	
+	<script src="/javascripts/rails.js?1292750242" type="text/javascript"></script>
+<script src="/javascripts/application.js?1370998779" type="text/javascript"></script>
+<script src="/javascripts/jquery-fns.js?1377555860" type="text/javascript"></script>
+	<script src="/javascripts/jquery.textlimit.min.js?1300449827" type="text/javascript"></script>
+	<style>
+	label.error {
+		color:red;
+		font-size:10px;
+	}
+
+}
+	</style>
+	
+	<script type="text/javascript" charset="utf-8">
+		var validationDate = '1995-10-05';
+		$(function(){
+			$('.help-field').keypress(function() {
+				if ($('.help-field').val().length > 1){
+					$('.help-submit').addClass('submit-h');
+				} else {
+					$('.help-submit').removeClass('submit-h');
+				}
+			});
+		});
+	</script>
+	
+	<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.0/css/font-awesome.css" rel="stylesheet">
+	<script>
+    var asData = { asId: 'f7d6bf5e-f0be-44ca-add8-d49862916260' };
+    (function (d) {
+        var a = d.createElement('script'); a.type = 'text/javascript';
+        a.src = 'https://s3.amazonaws.com/adstage/adstage.min.js';
+        var s = d.getElementsByTagName('script')[0]; s.parentNode.insertBefore(a, s);
+    })(document);
+</script>
+</head>
+<body id="home" class="home-new home-new2">
+	<script>
+        document.body.className += ' js-enabled';
+    </script>
+    <div id="fb-root"></div>
+	<noscript>
+<div id="noscript">
+	<style>
+		* { padding: 0; margin: 0; outline: 0; }
+		body{background:#3e2700 url(http://static.geekatoo.com/images/bambi_bcg_errorpages.jpg) repeat-x;}
+		.shell { width: 940px; margin: 0 auto; position: relative; }
+		a { color: #ccc; cursor: pointer; text-decoration: none; }
+		a:hover { text-decoration: underline; }
+		a img { border: 0; }
+		a.img  { }
+		a.img img { display: block; border: 1px solid #ccc; }
+		.error-pages{font:normal 30px Arial; color:#fff; margin-top:50px;}
+		.error-pages h1{font:bold 50px "Myriad Pro"; margin-bottom:30px;}
+		.error-pages a{color:#e7762a;}
+		.error-pages p{margin-bottom:30px;}
+    </style>
+	<div class="shell">
+    	<div class="error-pages">
+        	<div style="padding:0px 70px 30px 0; float:left;"><img src="http://static.geekatoo.com/images/huge-bird.png" width="308" height="439" /></div>
+            <div style="padding-top:100px;">
+                <h1>You have javascript disabled in your browser.</h1>
+                <p>Please enable it to access our website correctly.</p>
+            </div>
+		</div>
+	</div>
+</div>
+</noscript>
+	<div id="fb-root"></div>
+<script>
+  window.fbAsyncInit = function() {
+    FB.init({
+      appId      : '149318181796434', // App ID
+      channelUrl : '//www.geekatoo.com/channel.html', // Channel File
+      status     : true, // check login status
+      cookie     : true, // enable cookies to allow the server to access the session
+      xfbml      : true  // parse XFBML
+    });
+
+    // Additional initialization code here
+  };
+
+  // Load the SDK Asynchronously
+  (function(d){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/en_US/all.js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document));
+</script>
+
+				
+	<!-- END Shell -->
+	<div class="shell" style="display:none">
+		
+			<div id="sticky-bar">
+	<div class="content">
+		<form action="/clients/new" class="sticky-from" method="get">
+			<h2 class="aktuelle">get free estimates for:</h2>
+			<input type="text" name="summary" class="problem blink" value="enter your problem here" title="enter your problem here">
+			<button type="submit" value="Find Help" class="submit archer">Find Help Now!</button>
+		</form>
+	</div>
+</div><!--sticky-bar-->
+<script>
+	$(document).ready(function($) {
+		if($('.welcomeInner').length > 0) {
+			$(window).scroll(function() {
+				if($(window).scrollTop() <= $('.welcomeInner').height()) {
+					$('.welcomeInner').show();
+					$('#sticky-bar').hide();
+				} else {
+					$('.welcomeInner').hide();
+					$('#sticky-bar').show();
+				}
+			});
+		}
+	});
+
+</script>
+		
+		<div id="header">
+			<div class="notext big-geek">&nbsp;</div>
+			<div class="cl">&nbsp;</div>
+			<div class="get-help">
+				<h1><span>Save on local</span> <span class="alfa">Tech Help</span> <span>&amp; More!</span></h1>
+				
+					
+				
+				<form action="http://services.geekatoo.com/search" class="geekatoo-search" method="get">
+					<fieldset>
+						<div class="col-l">
+							<div class="field">
+								<input type="text" class="blink help-field" name="q" maxlength="60" title="what device do you need help with..." value="what device do you need help with..." />
+							</div>
+
+							<!--<p><span>Save hundreds</span> with our exclusive offers! Membership is free!</p>-->
+							
+							<h2><!--<span class="aktuelle">Free estimates Online!</span>--><a href="#" onclick="olark('api.box.expand'); return false;"><i class="icon-comment"></i> Chat</a> or <i class="icon-phone"></i> call 1-800-456-1306 <div id="flipper">
+					<div id="back">
+				         <div id="upperHalfBack">
+				         		<img src="http://static.geekatoo.com/images/flip-spacer.png" width="1" height="14" /><img id="secondsUpRightBack" src="http://static.geekatoo.com/images/flip/1-up.png" width="163" height="14" />
+				         </div>
+				         <div id="lowerHalfBack">
+				         		<img src="http://static.geekatoo.com/images/flip-spacer.png" width="1" height="14" /><img id="secondsDownRightBack" src="http://static.geekatoo.com/images/flip/1-down.png" width="163" height="14" />
+				         </div>
+					</div>
+				    <div id="front">
+				         <div id="upperHalf">
+				         		<img src="http://static.geekatoo.com/images/flip-spacer.png" width="1" height="14" /><img id="secondsUpRight" src="http://static.geekatoo.com/images/flip/1-up.png" width="163" height="14" />
+				         </div>
+				         <div id="lowerHalf">
+				         		<img src="http://static.geekatoo.com/images/flip-spacer.png" width="1" height="14" /><img id="secondsDownRight" src="http://static.geekatoo.com/images/flip/1-down.png" width="163" height="14" />
+				         </div>
+					</div>
+				</div><!--flipper--></h2>
+							<!--
+							<p>Save <span>up to 74%!</span> Get started now for <span>FREE!</span></p>
+							-->
+							
+							
+							
+						</div>
+						<input type="submit" class="notext submit help-submit" id="find_help_home_page" value="Geekatoo!" />
+					</fieldset>
+				</form>
+				
+			</div>
+			
+	<div id="logo" class="notext"><img src="http://static.geekatoo.com/images/computerrepair.png" alt="Computer Repair" width="385" height="112"></div>
+
+			<div id="logintip" style="z-index:5;">
+	<a class="btn-close"></a>
+	<form action="/login" method="post"><div style="margin:0;padding:0;display:inline"><input name="authenticity_token" type="hidden" value="e3WCWrWvlGj2hBY3oJ7g/TXkD9OSok2hTLostC8KWGE=" /></div>
+		<fieldset>
+			<label>Email</label>
+			<div class="field"><input id="user_email" name="user[email]" size="30" type="text" /></div>
+		</fieldset>
+		
+		<fieldset>
+			<label>Password</label>
+			<div class="field"><input id="user_password" name="user[password]" size="30" type="password" /> </div>
+		</fieldset>
+		
+		<fieldset style="padding-bottom:8px; width: 115px; float: left; ">
+			<input name="user[remember_me]" type="hidden" value="0" /><input class="checkbox custom-checkbox" id="user_remember_me" name="user[remember_me]" type="checkbox" value="1" /><label class="checkbox" for="user_remember_me">Remember Me</label>
+		</fieldset>
+		<fieldset style="padding: 3px 0 8px 0; margin: 0 40px 0 0;  float: right; width: 100px;">
+			 <a href="/users/password/new">Forgot password?</a>
+		</fieldset>
+		<fieldset style="clear:both;">
+			<input class="submit notext" id="user_submit" name="commit" type="submit" value="Sign in" />
+		</fieldset>
+		<fieldset class="facebook">
+			<a href="https://www.facebook.com/dialog/oauth?client_id=149318181796434&redirect_uri=http://Geekatoo.com/users/facebook&scope=status_update,offline_access,user_location,email,publish_stream"><img src="http://static.geekatoo.com/images/login-new-facebook.png" width="218" height="50"></a>
+		</fieldset>	
+	</form>
+</div>
+			<div id="navigation">
+	<ul>
+
+
+	
+		
+	    <li><a href="/" class="active">Welcome</a></li>
+		
+		<li><a href="http://services.geekatoo.com" class="">Services</a></li>
+	    <li><a href="/geeks" class="">Geeks</a></li>
+	    <li><a href="/signup" class="">Sign up</a></li>
+	    
+		<li class="last"><a href="http://geeks.geekatoo.com/login" class="login">Login</a></li>
+		
+
+	</ul>
+</div>
+			<div class="cl">&nbsp;</div>
+		</div>
+		<div id="content">
+			
+			<div class="mainbox">
+	<div class="mainbox-top notext">&nbsp;</div>
+	<div class="mainbox-cnt">
+		<div class="rel">
+			<!-- Welcome -->
+			<div class="cl">&nbsp;</div>
+			<div class="welcome">
+				<div class="welcomeInner">
+					
+				</div>
+			</div>
+			<!-- END Welcome -->
+			
+			<div class="holder">
+				<div class="holder-c">
+					<div class="holder-bg">
+
+					<div class="home-focus">
+						<a href="http://services.geekatoo.com/"><img src="http://static.geekatoo.com/images/focus.jpg" alt=""></a>
+					</div>
+					<div id="city-bar" class="map-bar">Tech Help Near You and Across America</div>
+						<div id="home-down">
+							<div class="home-down-left left">
+								<h3 class="aktuelle">we’re growing up!</h3>
+								<p>We have a network of <span>thousands of geeks</span> across the country, and we’re getting bigger everyday!</p>
+								<a href="http://geeks.geekatoo.com/geeks/signup">GOT THE TECH SKILLS TO PAY THE BILLS?</a>
+							</div><!--home-down-left-->	
+							<div id="local-geeks" class="right">
+								<h3 class="left">Friendly Neighborhood Geeks</h3>
+								<div class="more-geeks right"><a href="http://services.geekatoo.com/">GET SERVICE NEAR YOU</a></div>
+								<ul>
+									
+								</ul>	
+							</div><!--local-geeks-->	
+						</div><!--home-down-->	
+					</div>
+				</div>
+			</div>
+			
+		</div>
+		<div class="cl">&nbsp;</div>
+	</div>
+	<div class="mainbox-bottom notext">&nbsp;</div>
+</div>
+
+
+<script>
+	$('.geekatoo-search').submit(function() {
+		$(document).bind('reveal.facebox', function() {
+			if($('.geekatoo-search input[type=text]').val() != $('.geekatoo-search input[type=text]').attr('title')) {
+				$('#client_tickets_attributes_0_summary').val($('.geekatoo-search input[type=text]').val())
+				
+			}
+		});
+	})
+</script>
+<script type="text/javascript" charset="utf-8">
+	$(document).ready(function() {
+		$(".geekatoo-search").submit(function(e) {
+			e.preventDefault();
+			if( !$('input[name="q"]').val() ) {
+	      $(this).attr("action", "http://services.geekatoo.com");
+	    }
+	    this.submit();
+		});
+		$.get('/about/geo_info', function(response) {
+			var location_obj = response;
+			//console.log(response);
+			if(location_obj.status != false) {
+				$("#city-bar").html("Tech Help Near " + location_obj.city +" and Across America");
+				$('.help-field').val("what device do you need help with near " + location_obj.city + "...");
+				$('.help-field').attr("title", "what device do you need help with near " + location_obj.city + "...");
+			}
+		})
+	})
+</script>
+
+		</div>
+		<script type="text/javascript" charset="utf-8">
+				$('.shell').show();
+		</script>
+				<div id="footer">
+			<div class="footer-box">
+				<h3>ABOUT GEEKATOO</h3>
+				<ul>
+					<li><a href="/signup">Sign up</a> / <a href="http://geeks.geekatoo.com/login">Log in</a></li>
+					<li><a href="/geek-listing">Meet our Geeks</a></li>
+					<li><a href="/recent-jobs">Recent Jobs</a></li>
+				</ul>	
+			</div><!--box-->
+			<div class="footer-box">
+				<h3>Great Deals</h3>
+				<ul>
+					<!--<li><a href="/affiliates">Affiliates</a></li>-->
+					<li><a href="/guides">Buying Guide</a></li>
+					<li><a href="/invite">Earn Credits</a></li>
+					<li><a href="/affiliates">Affiliates</a></li>
+				</ul>	
+			</div><!--box-->
+			<div class="footer-box footer-box-legal">
+				<h3>Legal</h3>
+				<ul>
+					<li><a href="/about/tos">Terms</a></li>
+					<li><a href="/privacy">Privacy</a></li>
+				</ul>	
+			</div><!--box-->
+			<div class="footer-box footer-box-support">
+				<h3>Support</h3>
+				<ul>
+					<li><a href="http://support.geekatoo.com/">FAQ</a></li>
+					<li><a target="_blank" href="http://support.geekatoo.com/anonymous_requests/new">Contact Us</a></li>
+				</ul>	
+			</div><!--box-->
+			<div class="footer-box footer-box-refer">
+				<h3>Social Geekatoo</h3>
+				<div class="footer-like">
+				<div class="fb-like" data-href="http://www.facebook.com/geekatoo" data-send="false" data-width="280" data-show-faces="true" data-colorscheme="dark"></div>
+				</div><!--footer-like-->
+				<!--<h3>Contest</h3>
+				<a href="/contest"><img border="0" src="http://static.geekatoo.com/images/footer-contest.png" width="305" height="73" alt="Contest" /></a>-->
+			</div><!--box-->
+			
+		</div><!--footer-->	
+		<div id="social">
+			<div class="footer-box footer-box-social">
+				
+				<a href="https://twitter.com/intent/follow?screen_name=geekatoo" class="footer-twitter" title="Follow Us on Twitter" />Follow Us on Twitter</a>
+				<div class="plus">
+				<!-- Place this tag where you want the +1 button to render -->
+				<g:plusone href="http://www.geekatoo.com" annotation="none"></g:plusone>
+				<!-- Place this render call where appropriate -->
+				<script type="text/javascript">
+				  (function() {
+				    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+				    po.src = 'https://apis.google.com/js/plusone.js';
+				    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+				  })();
+				</script>
+				</div><!--plus-->
+				<div class="linkedin">
+					<script src="http://platform.linkedin.com/in.js" type="text/javascript"></script>
+					<script type="IN/Share" data-url="http://www.geekatoo.com"></script>
+				</div><!--linkedin-->					
+			</div><!--box-->
+			<div class="copy">&copy; 2012 Geekatoo</div>
+		</div><!--social-->	
+<!--<script type="text/javascript">
+document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
+SnapABug.setButton("http://static.geekatoo.com/images/snap.png",39,103);
+SnapABug.addButton("7d5085b9-9bbf-4e8c-9911-73f8cdea4963","0","45%");
+</script>-->
+
+<!-- begin olark code -->
+<script data-cfasync="false" type='text/javascript'>/*<![CDATA[*/window.olark||(function(c){var f=window,d=document,l=f.location.protocol=="https:"?"https:":"http:",z=c.name,r="load";var nt=function(){
+f[z]=function(){
+(a.s=a.s||[]).push(arguments)};var a=f[z]._={
+},q=c.methods.length;while(q--){(function(n){f[z][n]=function(){
+f[z]("call",n,arguments)}})(c.methods[q])}a.l=c.loader;a.i=nt;a.p={
+0:+new Date};a.P=function(u){
+a.p[u]=new Date-a.p[0]};function s(){
+a.P(r);f[z](r)}f.addEventListener?f.addEventListener(r,s,false):f.attachEvent("on"+r,s);var ld=function(){function p(hd){
+hd="head";return["<",hd,"></",hd,"><",i,' onl' + 'oad="var d=',g,";d.getElementsByTagName('head')[0].",j,"(d.",h,"('script')).",k,"='",l,"//",a.l,"'",'"',"></",i,">"].join("")}var i="body",m=d[i];if(!m){
+return setTimeout(ld,100)}a.P(1);var j="appendChild",h="createElement",k="src",n=d[h]("div"),v=n[j](d[h](z)),b=d[h]("iframe"),g="document",e="domain",o;n.style.display="none";m.insertBefore(n,m.firstChild).id=z;b.frameBorder="0";b.id=z+"-loader";if(/MSIE[ ]+6/.test(navigator.userAgent)){
+b.src="javascript:false"}b.allowTransparency="true";v[j](b);try{
+b.contentWindow[g].open()}catch(w){
+c[e]=d[e];o="javascript:var d="+g+".open();d.domain='"+d.domain+"';";b[k]=o+"void(0);"}try{
+var t=b.contentWindow[g];t.write(p());t.close()}catch(x){
+b[k]=o+'d.write("'+p().replace(/"/g,String.fromCharCode(92)+'"')+'");d.close();'}a.P(2)};ld()};nt()})({
+loader: "static.olark.com/jsclient/loader0.js",name:"olark",methods:["configure","extend","declare","identify"]});
+/* custom configuration goes here (www.olark.com/documentation) */
+olark.identify('5649-202-10-4873');/*]]>*/</script><noscript><a href="https://www.olark.com/site/5649-202-10-4873/contact" title="Contact us" target="_blank">Questions? Feedback?</a> powered by <a href="http://www.olark.com?welcome" title="Olark live chat software">Olark live chat software</a></noscript>
+<!-- end olark code -->
+
+
+
+<!-- Google Code for Geekatoo Can Do It -->
+<!-- Remarketing tags may not be associated with personally identifiable information or placed on pages related to sensitive categories. For instructions on adding this tag and more information on the above requirements, read the setup guide: google.com/ads/remarketingsetup -->
+<script type="text/javascript">
+/* <![CDATA[ */
+var google_conversion_id = 963538967;
+var google_conversion_label = "DyngCMm0pwQQl-C5ywM";
+var google_custom_params = window.google_tag_params;
+var google_remarketing_only = true;
+/* ]]> */
+</script>
+<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+</script>
+<noscript>
+<div style="display:inline;">
+<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/963538967/?value=0&amp;label=DyngCMm0pwQQl-C5ywM&amp;guid=ON&amp;script=0"/>
+</div>
+</noscript>
+
+<script type="text/javascript">
+  var _kmq = _kmq || [];
+  var _kmk = _kmk || '2730e6b0f613c97a926bed5652f160366c5954ef';
+  function _kms(u){
+    setTimeout(function(){
+      var d = document, f = d.getElementsByTagName('script')[0],
+      s = d.createElement('script');
+      s.type = 'text/javascript'; s.async = true; s.src = u;
+      f.parentNode.insertBefore(s, f);
+    }, 1);
+  }
+  _kms('//i.kissmetrics.com/i.js');
+  _kms('//doug1izaerwt3.cloudfront.net/' + _kmk + '.1.js');
+</script>
+		<!--#include virtual="ssi-footer.html" -->
+	</div>
+	
+<!--
+
+-->
+		<script type="text/javascript">
+		pageLoaded();
+		</script>
+	
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-20337796-1']);
+_gaq.push(['_trackPageview']);
+
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+
+</script>
+
+
+</body>
+</html>

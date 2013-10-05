@@ -1,0 +1,954 @@
+
+
+
+
+
+
+  
+
+
+
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+	"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<!-- Following contents formerly from: http://www.aaas.org/inc/templates/page_menu_2008a.inc -->
+
+
+<link rel="SHORTCUT ICON" href="http://www.aaas.org/favicon.ico" type="image/x-icon">
+<link rel="icon" href="http://www.aaas.org/favicon.ico">
+
+<title>AAAS - The World's Largest General Scientific Society</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<script type="text/javascript" src="/inc/detectstyle.js"></script>
+<script type="text/javascript" src="/inc/menuarrays.js"></script>
+<script type="text/javascript" src="/inc/foldoutMenu.js"></script>
+<script type="text/javascript" src="/inc/jslibrary.js"></script>
+<script type="text/javascript" src="/inc/scripts/jquery.js"></script>
+
+<link rel="alternate" type="application/rss+xml" title="AAAS News RSS Feed" href="http://www.aaas.org/news/rss/AAAS.xml">
+<link type="text/css" rel="stylesheet" href="http://www.aaas.org/css/general.css?version=20110921b" media="all">
+
+<script type="text/javascript">
+// 	Force the Programs tab (#3) &
+// 	its submenu Science & Policy item to show
+//	Only necessary in domains wholly possessed
+//	by a program, such as Fellowships.
+	window.onload = function() {
+	initFoldout();
+		toggleMenuActive(3); // mark root-menu as active
+		MM_showHideLayers('sub3','','show'); // display submenu for current root-menu
+		MM_findObj("s3c2").style.backgroundColor = '#3B8ACC'; // mark current submenu-item as active
+
+}
+</script>
+
+
+	<link type="text/css" id="general_print"  rel="stylesheet" href="http://www.aaas.org/css/general_print_2008a.css" media="print">
+	<link type="text/css" id="general_print"  rel="alternate stylesheet" title="Show easy-to-print page" href="http://www.aaas.org/css/general_print_2008a.css" media="screen">
+	<script src="http://www.aaas.org/inc/scripts/styleswitcher.js" type="text/javascript"></script>
+
+
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-8394046-1']);
+  _gaq.push(['_setDomainName', '.aaas.org']);
+	_gaq.push(['_trackPageview']);
+//	_gaq.push(['_setAllowLinker', true]);	
+// 	_gaq.push(['_addOrganic', 'vivo.aaas.org', 'query']);
+	
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	})();
+	
+</script>
+<script type="text/javascript" src="http://www.aaas.org/inc/scripts/analytics/track_clicks.js"></script>
+
+
+<link type="text/css" rel="stylesheet" href="local.css" media="all">
+</head>
+
+<body bgcolor="#FFFFFF">
+<div id="top"></div>
+
+
+<table width="752" border="0" cellspacing="0" cellpadding="0"
+	id="organizational_menus" class="fusion_html_upgrade_marker fusion_html_upgrade_marker_20110617a">
+	<tr>
+		<td rowspan="2" width="196">
+			<div class="aaas_logo">
+				<a href="http://www.aaas.org"><img src="/images/main_logo.gif" alt="Triple-A S: Advancing Science, Serving Society" width="196"	height="62" border="0"></a>
+			</div
+		</td>
+		<td class="service_menu" width="575" height="39" align="right">
+			<div class="service_menu">
+				<a href="http://www.aaasmember.org" class="blacklinksubmenu">Log
+					In</a> | <a
+					href="https://pubs.aaas.org/org_membership/new_member_setup.asp"
+					class="blacklinksubmenu">Join</a> | <a
+					href="http://www.aaas.org/search.shtml" class="blacklinksubmenu">Search</a>
+				| <a href="http://www.aaas.org/sitemap.shtml"
+					class="blacklinksubmenu">Site Map</a> | <a
+					href="http://www.aaas.org/contact.shtml" class="blacklinksubmenu">Contact</a>
+			</div>
+		</td>
+	</tr>
+	<tr>
+		<td width="575" height="23" align="center" class="topmenu">
+			<table border="0" cellspacing="0" cellpadding="0">
+				<tr bgcolor="#307EC0">
+					<td bgcolor="#307EC0" width="6"><img
+						src="/images/topmenu_left_on.gif" width="6" height="23" id="sep1">
+					</td>
+					<td nowrap bgcolor="#0A599B" id="m1"><a
+						href="http://www.aaas.org/">Home</a>
+					</td>
+					<td width="13"><img src="/images/topmenu_sep3.gif" width="13"
+						height="23" id="sep2">
+					</td>
+					<td nowrap id="m2"><a href="http://www.aaas.org/aboutaaas/">About
+							AAAS</a>
+					</td>
+					<td width="13"><img src="/images/topmenu_sep1.gif" width="13"
+						height="23" id="sep3">
+					</td>
+					<td nowrap id="m3"><a href="http://www.aaas.org/programs/">Programs</a>
+					</td>
+					<td width="13"><img src="/images/topmenu_sep1.gif" width="13"
+						height="23" id="sep4">
+					</td>
+					<td nowrap id="m4"><a href="http://www.aaas.org/membership/">Membership</a>
+					</td>
+					<td width="13"><img src="/images/topmenu_sep1.gif" width="13"
+						height="23" id="sep5">
+					</td>
+					<td nowrap id="m5"><a href="http://www.aaas.org/publications/">Publications</a>
+					</td>
+					<td width="13"><img src="/images/topmenu_sep1.gif" width="13"
+						height="23" id="sep6">
+					</td>
+					<td nowrap id="m6"><a href="http://www.aaas.org/news/">News</a>
+					</td>
+					<td width="13"><img src="/images/topmenu_sep1.gif" width="13"
+						height="23" id="sep7">
+					</td>
+					<td nowrap id="m7"><a href="http://www.aaas.org/careercenter/">Career
+							Resources</a>
+					</td>
+					<td width="6"><img src="/images/topmenu_right_off.gif"
+						width="6" height="23" id="sep8">
+					</td>
+				</tr>
+			</table>
+		</td>
+	</tr>
+	<tr>
+		<td colspan="2" height="25" background="/images/submenu_bg.gif">
+			&nbsp;</td>
+	</tr>
+</table>
+
+
+
+
+<!-- [Message: SSI Encoding is supported!] --><!--  [Message: mid_banner.inc] -->
+
+<table border="0" cellspacing="0" cellpadding="0" id="sectional_table" class="cspsp">
+<tr>
+	<td colspan="2">
+		<img src="/images/leftcol_frame_top.gif" width="174" height="7"></td>
+	<td id="page_hed_lvl_1_block_top"></td>
+</tr>
+<tr>
+<!--
+This cell extends down on far left of
+H1 & H2 banners
+-->
+		<td bgcolor="#757575" width="1" rowspan="2">
+			<img src="/images/pixel.gif" width="1" height="1"></td>
+<td width="173" bgcolor="#3483C5" valign="top">
+
+<table width="173" border="0" cellspacing="0" cellpadding="0" bgcolor="#3483C5">
+<form action="http://vivo.aaas.org/vivisimo/cgi-bin/query-meta?v:project=aaas-website&query=" name="simple" method="GET">
+<input type="hidden" name="input-form" value="simple">
+	<tr>
+		<td colspan="3"><img src="/images/pixel.gif" width="1" height="7"></td>
+	</tr>
+	<tr>
+		<td width="10"><img src="/images/pixel.gif" width="10" height="8"></td>
+		<td width="154"><img src="/images/header_search.gif" width="106" height="11"></td>
+		<td width="9"><img src="/images/pixel.gif" width="9" height="8"></td>
+	</tr>
+	<tr>
+		<td>&nbsp;</td>
+		<td>
+			<table width="154" border="0" cellpadding="0" cellspacing="0">
+				<tr>
+					<td>
+					<input type="text" name="query" size="8" id="text" style="width: 120px; height:20px" value="">
+                
+                    <input name="v:project" type="hidden" value="aaas-website">
+					</td>
+					<td><input TYPE="image" src="/images/btn_search.gif" width="20" height="20" border="0" NAME="search" ALT="Search"></td>
+				</tr>
+			</table>
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	</form>
+	<tr>
+		<td>&nbsp;</td>
+		<td align="right"><a href="http://vivo.aaas.org/vivisimo/cgi-bin/query-meta?v:project=aaas-website&form=advanced-aaas&v:frame=form" class="blacklinkSearch">Advanced search</a></td>
+		<td>&nbsp;</td>
+	</tr>
+	<tr>
+		<td colspan="3"><img src="/images/pixel.gif" width="1" height="7"></td>
+	</tr>
+	<form>
+	<tr>
+		<td>&nbsp;</td>
+		<td>
+
+		<select name="select2" style="width: 140px" class="qLink"
+		onChange="MM_jumpMenu('parent',this,0)">
+			<option selected value="">
+				Quick Links &raquo;</option>
+			<option value="http://membercentral.aaas.org/?sa_campaign=Internal_Ads/AAAS/quick_links/2009-11-23/quick_links_dropdown_menu">
+				MemberCentral</option>
+			<option value="http://www.aaas.org/news/events/">
+				Events</option>
+			<option value="http://www.aaas.org/aboutaaas/organization/board.shtml">
+				AAAS Board</option>
+			<option value="http://www.aaas.org/aboutaaas/organization/council.shtml">
+				AAAS Council</option>
+			<option value="http://www.aaas.org/aboutaaas/elections.shtml">
+				AAAS Elections</option>
+			<option value="http://www.aaas.org/policy_pos.shtml">
+				AAAS Statements</option>
+			<option value="http://www.aaas.org/publications/store/">
+				AAAS Store</option>
+			<option value="http://www.aaasmeeting.org/">
+				Annual Meeting</option>
+			<option value="http://archives.aaas.org/">
+				Archives</option>
+			<option value="http://www.aaas.org/aboutaaas/awards/">
+				Awards</option>
+			<option value="http://www.aaas.org/aboutaaas/giving/">
+				Development</option>
+			<option value="http://www.aaas.org/programs/education/">
+				Education</option>
+			<option value="http://www.aaas.org/careercenter/employmentataaas/">
+				Employment</option>
+			<option value="http://www.aaas.org/ScienceTalk/">
+				Experts</option>
+			<option value="http://www.aaas.org/aboutaaas/organization/">
+				Governance</option>
+			<option value="http://www.aaas.org/programs/international/">
+				International</option>
+			<option value="http://www.aaas.org/aboutaaas/giving/">
+				Make a Gift</option>
+			<option value="http://www.aaas.org/news/press_room/">
+				Media Relations</option>
+			<option value="http://www.aaas.org/membership/">
+				Membership</option>
+			<option value="http://www.aaas.org/aboutaaas/organization/">
+				Organization</option>
+			<option value="http://www.aaas.org/news/">
+				Press Releases</option>
+			<option value="http://www.aaas.org/spp/rd/">
+				R&amp;D Budget and Policy</option>
+			<option value="http://www.sciencemag.org/">
+				Science</option>
+			<option value="http://www.sbfonline.com/">
+				Science Books &amp; Film</option>
+			<option value="http://www.aaas.org/programs/science_policy/">
+				Science &amp; Policy</option>
+			<option value="http://fellowships.aaas.org/">
+				S&amp;T Policy Fellowships</option>
+			<option value="">
+				&nbsp;</option>
+		</select>
+		
+		</td>
+		<td>&nbsp;</td>
+	</tr>
+	</form>
+	<tr>
+		<td colspan="3">&nbsp;</td>
+	</tr>
+</table>
+
+</td>
+		<td valign="top" class="right_edge">
+			<div id="page_hed_lvl_1_block">
+				<h1>
+					<img src="http://www.aaas.org/images/banners/cspsp_all/lvl_1_title.gif" width="233" height="72" alt="Programs">
+				</h1>
+		</div></td>
+	</tr>
+	<tr>
+		<td colspan="3" class="right_edge">
+			<div id="page_hed_lvl_2_block" class="cspsp">
+				<div id="page_hed_lvl_2">
+					<h2 class="cspsp">
+						<img src="http://www.aaas.org/images/banners/cspsp_all/lvl_2_title.gif" width="219" height="28" alt="Science and Policy"></h2>
+				</div>
+			</div></td>
+	</tr>
+</table>
+
+
+
+
+
+<div id="main_content_table">
+					<div id="main_content_block">
+						<div id="main_content_inner_block">
+<!-- DO NOT REMOVE! This comment fixes IE -->
+							<div id="main_content">
+<!-- END Updated version of top include -->
+
+
+
+
+
+
+
+<div id="printable_info">
+
+	<div class="headings">
+		<h1><img src="http://www.aaas.org/images/main_logo.gif" alt="Triple-A S: Advancing Science, Serving Society" width="196" height="62"></h1>
+		
+		<h2>Programs: Science and Policy</h2>
+		
+	</div>
+	<div class="info">
+	<script type="text/javascript"><!--
+		// if (is_preview) {
+			document.write('<p class="printable_notice">This page has been formatted for easy printing.<br>');
+			document.write('<a href="#" onclick="setActiveStyleSheet(\'\');return false;">Return to the normal display<\/a>.<\/p>');
+		// }
+		//-->
+	</script>
+
+<p class="url">http://fellowships.aaas.org//02_Areas/02_index.shtml</p>
+	</div>
+	<hr class="std_separator">
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- BEGIN CONTENT -->
+
+
+
+                        <span class="blueHeaderMedium"> AAAS Science &amp; Technology 
+
+
+
+                        Policy Fellowships </span><br>
+
+
+
+                        <img src="/images_Fellows/Elements/Dot_grey.gif" width="100%" height="1" vspace="5"> 
+
+
+
+                        <p><span class="bodyUrgent">Fellowship Program Areas</span></p>
+
+
+
+                        <p>AAAS offers fellowships in nine programmatic areas. 
+
+
+
+                          Click on the programs shown for a brief description. 
+
+
+
+                          You can also click on the placement opportunities for 
+
+
+
+                          more detail on the types of assignments available. Specific 
+
+
+
+                          host offices and assignments vary from year to year.</p>
+
+
+
+<ul>
+
+
+
+                          <li><a href="#Congressional">Congressional</a></li>
+
+
+
+                          <li><a href="#DSD">Diplomacy, Security&amp; Development</a></li>
+
+
+
+                          <li><a href="#EEA">Energy, Environment &amp; Agriculture</a></li>
+
+
+
+                          <li><a href="#HEHS">Health, Education &amp; Human Services</a></li>
+                          <li><a href="#data">Big Data &amp; Analytics</a></li>
+                          <li><a href="#judicial">Judicial Branch</a></li>
+
+                          <li><a href="#Revelle">Roger Revelle Fellowship in Global Stewardship</a></li>
+                          <li><a href="#overseas">AAAS Overseas Fellowships at USAID Missions</a> (limited eligibility)</li>
+                          <li><a href="#GHD">Global Health &amp; Development Fellowships</a> (limited eligibility)   	</li>
+
+</ul>
+
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" width="100%" height="1" vspace="5"><br>
+
+
+
+  <a name="Congressional" id="Congressional"></a></b><span style="font-weight: bold">Congressional</span> (2 placements sponsored by AAAS*)</p>
+
+                        <p>AAAS Congressional Science &amp; Engineering Fellows&reg;  spend a year on Capitol Hill helping to research, develop and draft legislation and provide input to policy review and oversight. </p>
+<p>Anticipated placement opportunities:</p>
+                        <ul>
+                        	<li>Offices of Members of Congress </li>
+                        	<li> Congressional Committees </li>
+</ul>
+<p>*AAAS sponsors two congressional placements. Additional congressional placements are available through approximately <a href="http://fellowships.aaas.org/01_society_partners/01_SponSocieties.shtml">30 scientific society partners</a>. 
+
+                          Individuals are encouraged to apply to a AAAS sponsored Fellowship as well as to any partner societies for which they qualify. 
+
+	<span class="body">AAAS administers the placement process for all Congressional 
+                          Science and Engineering Fellows&reg; and Fellows are 
+                          not to solicit potential placements before the end of 
+                          their orientation (varies, but typically the third week 
+of September each year).</span></p>
+
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" width="100%" height="1" vspace="5"><br>
+
+
+
+                          <a name="DSD" id="DSD"></a></b><span style="font-weight: bold">Diplomacy, Security &amp; Development Program </span>30-40 Placements</p>
+
+                        <p>Infuse scientific and technical expertise into policy development and program planning, implementation and evaluation in the areas of:</p>
+
+                        <ul>
+
+                          <li>Foreign policy and international trade, treaty engagement, and multilateral cooperation<br>
+
+                          </li>
+
+                          <li>Disaster preparedness and response<br>
+
+                          </li>
+
+                          <li>Infrastructure, environmental, cyber and health security, terrorism and warfare prevention, and nonproliferation<br>
+
+                          </li>
+
+                          <li>International aid, capacity building, and development assistance</li>
+
+                        </ul>
+
+                        <p><a href="/01_host_agencies/01_Partners.shtml">Anticipated placement opportunities:</a></p>
+
+                        <ul>
+
+                          <li> Agency for International Development<br>
+
+                          </li>
+
+                          <li>Department of Defense<br>
+
+                          </li>
+
+                          <li>Department of Homeland Security<br>
+
+                          </li>
+
+                          <li>Department of State<br>
+
+                          </li>
+
+                          <li>Fogarty International Center of the National Institutes of Health<br>
+
+                          </li>
+
+                          <li>Foreign Agricultural Service of the Department of Agriculture</li>
+
+                        </ul>
+
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" width="100%" height="1" vspace="5"><br>
+
+
+
+                          <a name="EEA" id="EEA"></a>Energy, Environment, Agriculture <span style="font-weight: bold">Program</span> </b>30-40 Placements</p>
+
+<p>Engage in projects, policies, risk assessment, evaluation, and outreach initiatives to: </p>
+
+                        <ul>
+
+                          <li>Protect animal, plant and environmental health<br>
+
+                          </li>
+
+                          <li>Address ecosystem degradation, pollution, and biological threats<br>
+
+                          </li>
+
+                          <li>Tackle challenges and opportunities in agriculture, fisheries, climate change, and energy<br>
+
+                          </li>
+
+                          <li>Safeguard air, water, land, wildlife, and natural resources</li>
+
+                        </ul>
+
+                        <p><a href="/01_host_agencies/01_Partners.shtml">Anticipated placement opportunities:                        </a></p>
+
+                        <ul>
+
+                          <li>Department of Agriculture <br>
+
+                          </li>
+
+                          <li>Department of Energy<br>
+                          </li>
+
+                          <li>Environmental Protection Agency</li>
+                          <li>National Aeronautics and Space Administration<br>
+                          	
+                          	</li>
+
+                          <li>National Oceanic and Atmospheric Administration<br>
+
+                          </li>
+
+                          <li>National Science Foundation</li>
+                          <li>U.S. Geological Survey<br>
+                          	
+                          	</li>
+
+</ul>
+
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" alt="line" width="100%" height="1" vspace="5"><br>
+
+                          <a name="HEHS" id="HEHS"></a></b><span style="font-weight: bold">Health, 
+
+
+
+                        Education, &amp; Human Services</span> <span style="font-weight: bold">Program</span> 30-40 Placements</p>
+
+<p>Support improved programs, policies, planning, risk analysis, regulation, monitoring and evaluation for a broad range of initiatives in: </p>
+
+                        <ul>
+
+                          <li>Preventive and community health, disease identification and response, and medical research<br>
+
+                          </li>
+
+                          <li>Individual, family and community social services, systems and support<br>
+
+                          </li>
+
+                          <li>Food, processing and distribution safety<br>
+
+                          </li>
+
+                          <li>Science education, research, and innovation</li>
+
+                        </ul>
+
+<p><a href="/01_host_agencies/01_Partners.shtml">Anticipated placement opportunities:</a></p>
+
+<ul>
+
+                          <li> Department of Health and Human Services<br>
+
+                          </li>
+
+                          <li>Department of Veterans Affairs<br>
+
+                          </li>
+
+                          <li>National Institutes of Health<br>
+
+                          </li>
+
+                          <li>National Science Foundation<br>
+
+                          </li>
+
+                          <li>Food Safety Inspection Service of the Department of Agriculture</li>
+                        </ul>
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" alt="line" width="100%" height="1" vspace="5"></b><strong><a name="data"></a>Big Data &amp; Analytics* </strong>5-15 placements (Pilot program for the 2014-15 and 2015-16 fellowship years)</p>
+<p>	Address a broad range of policymaking and implementation challenges by applying your analytical skills to data and trend analysis issues from infrastructure, technology, quality control, and presentation to security, integrity, and ethics. <br>
+	<br>
+	Anticipated placement opportunities: Any federal agency in Washington, D.C. that partners with AAAS</p>
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" alt="line" width="100%" height="1" vspace="5"></b><strong><a name="judicial"></a>Judicial Branch* </strong>1-2 placements (Pilot program for the 2014-15 and 2015-16 fellowship years)</p>
+<p> Spend a year contributing scientific and technical expertise to judicial administration, operations, education programs, protocol and discovery, or courtroom technology while learning first-hand about contemporary policy issues facing the judiciary. <br>
+	<br>
+	Anticipated placement opportunities: </p>
+<ul>
+  <li>Federal Judicial Center </li>
+  <li>Federal Judicial Court of Washington, D.C.</li>
+</ul>
+<p>* This program area is open to applicants with a minimum of three years of post-doctoral professional experience. Applicants who also hold a J.D. degree or have legal experience are preferred.<br>
+	<b><img src="/images_Fellows/Elements/Dot_grey.gif" alt="line" width="100%" height="1" vspace="5"></b><b><a name="Revelle" id="Revelle"></a> <b>Roger Revelle Fellowship in Global 
+		
+		
+		
+		Stewardship </b></b><span class="bodyUrgent">(Not available in 2014-14)</span></p>
+<p>The Roger Revelle Fellowship in Global Stewardship 
+                          was established in 1997 in recognition of Roger 
+                          R.D. Revelle, who was an internationally renowned 
+  statesman of science. His interests were broad, and he excelled across numerous fields of study.</p>
+                        <p>The Revelle Fellow will engage with professionals in 
+                          the public policy arena to strengthen his or her understanding 
+                          of the intricacies of environmental policymaking and 
+                          make practical contributions to the more effective use 
+                        of scientific and technical knowledge in federal decision-making.						The Revelle Fellowship is designed to 
+                          provide a unique opportunity for an accomplished scientist 
+                          to address global stewardship issues by applying his 
+                          or her broad, multidisciplinary background toward solutions 
+                        to  important societal problems, including:</p>
+<ul>
+							<li>ecosystems						
+							</li>
+							<li>population						
+							</li>
+							<li>sustainable
+								development						
+							</li>
+							<li> global climate change</li>
+</ul>
+<p>Anticipated placement opportunities:
+</li>
+</p>
+<ul>
+	<li> Any federal agency</li>
+	<li>Congressional office or committee</li>
+	<li>Any environmental or
+	sustainability oriented non-profit organization in Washington, DC</li>
+</ul>
+<p><strong>Note:</strong> <strong>This fellowship is open only to applicants with three years of post-doctoral degree professional experience (or six years of post-degree professional experience for applicants with an MS in engineering). </strong>
+<p><a href="02_RevelleFellows.shtml">Click here for a complete list  of the former Revelle Fellows, 
+	as well as their education, fellowship placement, and 
+current position.</a></p>
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" alt="line" width="100%" height="1" vspace="5"></b></p>
+
+		
+	<p>
+		
+	<!-- END CONTENT --><strong><a name="overseas" id="overseas"></a>AAAS Overseas Fellowships at USAID Missions</strong> (Eligibility limited to current/alumni AAAS Fellows only)</p>
+<p>Re-launched in 2011, the AAAS Overseas Fellowships  offer Fellows the experience of living and working overseas at a U.S. Embassy or US Agency for International Development (USAID) Mission , as well as the opportunity to expand both the service and professional development opportunities of the S&amp;T Policy Fellowship experience. AAAS supports Fellows to pursue international assignments via the Overseas Fellowships. AAAS Overseas Fellowships are currently available only at USAID Missions. Overseas Fellowships offer one- to two-year international assignments. </p>
+<p> The Fellow's primary responsibility will be to help the Mission identify key opportunities to develop strategies and programs that contribute to development in science and technology (S&amp;T) and areas where S&amp;T can be harnessed to advance development in the host country and/or region.</p>
+<p> This fellowship opportunity is limited to current and alumni AAAS Science &amp; Technology Policy Fellows. Fellows may have served in any program area. Additional criteria and the evaluation and placement processes are outlined in the <a href="/PDFs/Overseas_Fellowship_Guidelines_2012.pdf">AAAS Overseas Fellowship Guidelines</a>. You can also find more information in the <a href="/PDFs/Overseas_fellowships_FAQs.pdf" target="_blank">AAAS  Overseas Fellowships FAQs</a>.</p>
+<p>You can learn more about how Fellows  contribute to USAID Missions in this short <a href="http://www.youtube.com/watch?v=BZJ4MW8Al74&feature=youtu.be">video</a>.</p>
+<p>Anticipated placement opportunities will  vary from year to year. For more information, please contact <a href="mailto:ckalyand@aaas.org">Chitra  Kalyandurg</a>,  program manager. </p>
+<p><b><img src="/images_Fellows/Elements/Dot_grey.gif" alt="line" width="100%" height="1" vspace="5"></b></p>
+	<p><strong><a name="GHD"></a>Global Health &amp; Development Fellowships</strong> (Eligibility limited to current/alumni AAAS Fellows only)</p>
+<p>The AAAS S&amp;T Policy Fellowships have partnered with the Bill &amp; Melinda Gates Foundation to create the Global Health &amp; Development (GHD) Fellowships. This new fellowship opportunity places Fellows at the Gates Foundation in Seattle, Washington, for one year, with the potential to renew for a second year. </p>
+<p> The GHD Fellowships provide opportunities for Fellows to learn from and contribute to the international development initiatives of the Foundation, by helping to identify and support strategies and programs in which science and technology can be harnessed to advance development in designated countries and/or regions. </p>
+<p> This fellowship opportunity is open to current and alumni AAAS Science &amp; Technology Policy Fellows. Fellows may have served in any program area. Please refer to the <a href="/PDFs/2013-14_GHD_guidelines.pdf" target="_blank">AAAS Global Health &amp; Development Fellowship Guidelines</a> for additional information on eligibility criteria, the application process, and the program in general.</p>
+	<p>If you have questions please contact <a href="mailto:%20srussell@aaas.org">Sage Russell</a>, associate director.
+
+
+
+
+
+				<div class="page_end_symbol">
+					&nbsp; 
+				</div>
+
+			</div>
+		</div>
+	</div>
+</div>
+
+
+
+
+<div id="btm_horiz_menu">
+	<img src="http://www.aaas.org/images/greywhole3.gif" width="579" height="14" border="0" usemap="#Map" alt=""></div>
+<div id="btm_copyright_line">
+
+						Copyright &copy; 2013. American Association for the Advancement of Science. 
+	<br>
+	All rights reserved. <span class="links">Read our <a href="http://www.aaas.org/privacy.shtml">privacy policy</a> and <a href="http://www.aaas.org/terms_of_use.shtml">terms of use</a>. <a href="http://www.aaas.org/contact.shtml">Contact info.</a></span>
+</div>
+
+<map name="Map">
+	<area shape="rect" coords="11,2,85,13" href="#top">
+	<area shape="rect" coords="100,2,141,13" href="http://www.aaas.org/">
+	<area shape="rect" coords="262,2,293,13" href="http://www.aaas.org/news/press_room/">
+	<area shape="rect" coords="311,4,339,10" href="http://www.aaas.org/port_policy.shtml">
+	<area shape="rect" coords="359,3,411,11" href="http://www.aaas.org/port_educators.shtml">
+	<area shape="rect" coords="427,3,475,11" href="http://www.aaas.org/port_students.shtml">
+	<area shape="rect" coords="490,3,562,11" href="http://www.aaas.org/port_kid.shtml">
+</map>
+
+
+<div id="sub2" class="topLayer">
+	<table width="735" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="19" align="right" class="topsub">
+				<table border="0" cellspacing="0" cellpadding="3" height="19">
+					<tr>
+						<td id="s2c1"><a href="http://www.aaas.org/aboutaaas/mission">Mission</a></td>
+						<td class="whitetext">|</td>
+						<td id="s2c2"><a href="http://archives.aaas.org/">History</a></td>
+						<td class="whitetext">|</td>
+						<td id="s2c3"><a href="http://www.aaas.org/aboutaaas/organization">Governance</a></td>
+						<td class="whitetext">|</td>
+						<td id="s2c4"><a href="http://www.aaas.org/aboutaaas/fellows">Fellows</a></td>
+						<td class="whitetext">|</td>
+						<td id="s2c5"><a href="http://www.aaas.org/meetings/">Annual Meeting</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s2c6"><a href="http://www.aaas.org/aboutaaas/affiliates">Affiliates</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s2c7"><a href="http://www.aaas.org/aboutaaas/awards">Awards</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s2c8"><a href="http://www.aaas.org/aboutaaas/giving">Giving</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sub3" class="topLayer">
+	<table width="735" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="19" align="right" class="topsub">
+				<table border="0" cellspacing="0" cellpadding="3" height="19">
+					<tr>
+						<td id="s3c1"><a href="http://www.aaas.org/programs/education/">Education</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s3c2"><a href="http://www.aaas.org/programs/science_policy/">Science &amp; Policy</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s3c3"><a href="http://www.aaas.org/gr/">Government Relations</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s3c4"><a href="http://www.aaas.org/programs/international/">International Office</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s3c5"><a href="http://www.aaas.org/programs/centers/">Centers</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sub4" class="topLayer">
+	<table width="735" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="19" align="right" class="topsub">
+				<table border="0" cellspacing="0" cellpadding="3" height="19">
+					<tr>
+						<td id="s4c1"><a href="https://pubs.aaas.org/org_membership/new_member_setup.asp">Join</a></td>
+						<td class="whitetext">|</td>
+						<td id="s4c2"><a href="https://pubs.aaas.org/org_membership/aaas_member_ren.asp">Renew</a></td>
+						<td class="whitetext">|</td>
+						<td id="s4c3"><a href="http://www.aaas.org/membership/benefits/">Benefits</a></td>
+						<td class="whitetext">|</td>
+						<td id="s4c4"><a href="http://www.aaas.org/membership/m_sections/">Member Sections</a></td>
+						<td class="whitetext">|</td>
+						<td id="s4c5"><a href="http://www.aaas.org/membership/m_categories/">Membership Categories</a></td>
+						<td class="whitetext">|</td>
+						<td id="s4c6"><a href="http://www.aaas.org/membership/cust/">Member Help</a></td>
+						<td class="whitetext">|</td>
+						<td id="s4c7"><a href="http://aaasmember.org/">Log in</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sub5" class="topLayer">
+	<table width="735" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="19" align="right" class="topsub">
+				<table border="0" cellspacing="0" cellpadding="3" height="19">
+					<tr>
+						<td id="s5c1"><a href="http://www.aaas.org/publications/science_online/"><em>Science</em> Online</a></td>
+						<td class="whitetext">|</td>
+						<td id="s5c2"><a href="http://www.aaas.org/publications/books_reports/">Books &amp; Reports</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s5c3"><a href="http://www.aaas.org/publications/newsletters/">Newsletters</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s5c4"><a href="http://www.aaas.org/publications/sb_f/">SB&amp;F</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s5c5"><a href="http://www.aaas.org/publications/annual_report">Annual Report</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s5c6"><a href="http://www.aaas.org/publications/store">Store</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sub6" class="topLayer">
+	<table width="735" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="19" align="right" class="topsub">
+				<table border="0" cellspacing="0" cellpadding="3" height="19">
+					<tr>
+						<td id="s6c1"><a href="http://www.aaas.org/news/press_room/">Press Room</a></td>
+						<td class="whitetext">|</td>
+						<td id="s6c2"><a href="http://www.aaas.org/news/events/">Events</a></td>
+						<td class="whitetext">|</td>
+						<td id="s6c3"><a href="http://www.aaas.org/news/media_contacts/">Media Contacts</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s6c4"><a href="http://www.aaas.org/news/releases/">News Archives</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+<div id="sub7" class="topLayer">
+	<table width="735" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td height="19" align="right" class="topsub">
+				<table border="0" cellspacing="0" cellpadding="3" height="19">
+					<tr>
+						<td id="s7c1"><a href="http://sciencecareers.sciencemag.org/"><em>Science</em> Careers</a></td>
+						<td class="whitetext">|</td>
+						<td id="s7c2"><a href="http://www.aaas.org/careercenter/fellowships/">Fellowships</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s7c3"><a href="http://www.aaas.org/careercenter/internships/">Internships</a></td>
+						<td width="11" align="center" class="whitetext">|</td>
+						<td id="s7c4"><a href="http://www.aaas.org/careercenter/employmentataaas/">Employment at AAAS</a></td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
+</div>
+
+<script language="JavaScript">
+	FoldNumber = 16;					//How many toplinks do you have?
+</script>
+<div id="divCont" class="divContStyle">
+	<table width="174" border="0" cellspacing="0" cellpadding="0">
+		<tr>
+			<td colspan="4" class="subLevelMenuBg"><img src="/images/pixel.gif" width="1" height="15"></td>
+		</tr>
+		<tr> 
+			<td width="2"><img src="/images/pixel.gif" width="1" height="1"></td>
+			<td width="135" bgcolor="#3B8ACC" align="right" class="header"><a href="/index.shtml"  style="text-decoration: none"><font color="#000000"><b>Fellowships</b></font></a></td>
+			<td width="23" bgcolor="#3B8ACC" align="center"><img src="/images/submenu_blackarrow.gif" width="6" height="4"></td>
+			<td width="15"align="right"><img src="/images/submenu_arrow.gif" width="9" height="17"></td>
+		</tr>
+	</table>
+
+	<div id="divTop0" class="clTopFirst"><a href="#" class="blacklinksubmenu" onclick="menu(0); return false" onfocus="this.blur()">About</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA0"><div id="divSub0" class="clSub">
+			<a href="/01_About/01_index.shtml" class="subblue">Overview</a><br>
+			<a href="/01_About/01_History.shtml" class="subblue">History</a><br>
+			<a href="/01_About/mission_vision.shtml" class="subblue">Vision and Mission</a><br>
+			<a href="http://aaaspolicyfellowships.org/staff" class="subblue" target="_blank" title="Opens new tab/window">Staff</a><br>
+			<br>
+		</div>
+	</div>
+
+	<div id="divTop1" class="clTop"><a href="/01_host_agencies/01_Partners.shtml" class="blacklinksubmenu">Host Agencies</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA1"><div id="divSub1" class="clSub"> </div>
+	</div>
+
+	<div id="divTop2" class="clTop"><a href="/01_society_partners/01_SponSocieties.shtml" class="blacklinksubmenu">Society Partners</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA2"><div id="divSub2" class="clSub"> </div>
+	</div>
+	
+	<div id="divTop3" class="clTop"><a href="/02_Areas/02_index.shtml" class="blacklinksubmenu">Fellowship Areas</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA3"><div id="divSub3" class="clSub"> </div>
+	</div>
+
+	<div id="divTop4" class="clTop"><a href="http://www.aaaspolicyfellowships.org/directory" class="blacklinksubmenu" target="_blank">Fellows Directory</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA4"><div id="divSub4" class="clSub"> </div>
+	</div>
+	
+	<div id="divTop5" class="clTop"><a href="#" class="blacklinksubmenu" onclick="menu(5); return false" onfocus="this.blur()">Become a Fellow</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA5"><div id="divSub5" class="clSub">
+			<a href="/04_Become/04_Eligibility.shtml" class="subblue">Eligibility & Criteria</a><br>
+			<a href="/04_Become/04_Application.shtml" class="subblue">Application</a><br>
+			<a href="/04_Become/04_Evaluation_Scoring.shtml" class="subblue">Evaluation & Scoring</a><br>
+			<a href="/04_Become/04_Review_Selection.shtml" class="subblue">Selection & Placement</a><br>
+			<a href="/04_Become/04_Ethics_Policy.shtml" class="subblue">Ethics Policy</a><br>
+			<a href="/04_Become/04_Security_Clearance.shtml" class="subblue">Security Clearance</a><br>
+			<br>
+      </div>
+	</div>
+	
+	<div id="divTop6" class="clTop"><a href="#" class="blacklinksubmenu" onclick="menu(6); return false" onfocus="this.blur()">Fellowship Support</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA6"><div id="divSub6" class="clSub">
+			<a href="/05_Support/05_index.shtml" class="subblue">Overview</a><br>
+			<a href="/05_Support/05_Stipend.shtml" class="subblue">Stipend</a><br>
+			<a href="/05_Support/05_Prof_Dev.shtml" class="subblue">Professional Development</a><br>
+			<a href="/05_Support/05_Travel_Policy.shtml" class="subblue">Travel</a><br>
+			<a href="/05_Support/05_Health.shtml" class="subblue">Health Insurance</a><br>
+			<a href="/05_Support/05_Relocation.shtml" class="subblue">Relocation</a><br>
+			<br>
+      </div>
+	</div>
+
+	<div id="divTop7" class="clTop"><a href="/09_Testimonials/09_index2.shtml" class="blacklinksubmenu">Testimonials</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA7"><div id="divSub7" class="clSub"> </div>
+	</div>
+
+	<div id="divTop8" class="clTop"><a href="/10_Annual_Review/10_indexAR.shtml" class="blacklinksubmenu">Annual Review</a><img src="/images/pixel.gif" width="12" height="7" name="imgA8"><div id="divSub8" class="clSub"></div>
+	</div>
+
+	<div id="divTop9" class="clTop"><a href="#" class="blacklinksubmenu" onclick="menu(9); return false" onfocus="this.blur()">Host a Fellow</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA9"><div id="divSub9" class="clSub">
+			<a href="/06_Host/05_index.shtml" class="subblue">Overview</a><br>
+			<a href="/06_Host/congressional/" class="subblue">Congressional</a><br>
+			<br>
+      </div>
+	</div>
+
+	<div id="divTop10" class="clTop"><a href="http://aaaspolicyfellowships.org/all-news" target="_blank" class="blacklinksubmenu" >News</a><img src="/images/pixel.gif" width="12" height="7" name="imgA10"><div id="divSub10" class="clSub"></div>
+	</div>
+
+	<div id="divTop11" class="clTop"><a href="http://aaaspolicyfellowships.org/education-events" target="_blank" class="blacklinksubmenu">Events</a><img src="/images/pixel.gif" width="12" height="7" name="imgA11"><div id="divSub11" class="clSub"></div>
+	</div>
+
+	<div id="divTop12" class="clTop"><a href="http://fellowshipapp.aaas.org/applications/subsectionid.3,pageid.19/default.asp" target="_blank" class="blacklinksubmenu">FAQ</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA12">
+	  <div id="divSub12" class="clSub"> </div>
+  </div>
+
+	<div id="divTop13" class="clTop"><a href="/11_Resources.shtml" class="blacklinksubmenu">Resources</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA13">
+	  <div id="divSub13" class="clSub"> </div>
+  </div>
+
+	<div id="divTop14" class="clTop"><a href="http://aaaspolicyfellowships.org/current-fellows" class="blacklinksubmenu" target="_blank">Current Fellows</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA14">
+	  <div id="divSub14" class="clSub"> </div>
+  </div>
+
+	<div id="divTop15" class="clTop"><a href="/12_Contact.shtml" class="blacklinksubmenu">Contact</a>  <img src="/images/pixel.gif" width="12" height="7" name="imgA15"><div id="divSub15" class="clSub"> </div>
+	</div>
+
+	<div id="divTop16" class="clTopBlank"><img src="/images/submenu_bottom.gif" width="174" height="4"><div id="divSub16" class="clSub"> </div>
+	</div>
+</div> 
+
+
+
+
+<script type='text/javascript' src='http://www.aaas.org/inc/scripts/elqNow/elqCfg.js'></script>
+<script type='text/javascript' src='http://www.aaas.org/inc/scripts/elqNow/elqImg.js'></script>
+
+
+
+
+
+</body>
+</html>
+
+
+<br>
+	</p>

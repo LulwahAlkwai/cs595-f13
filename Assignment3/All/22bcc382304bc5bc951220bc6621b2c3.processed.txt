@@ -1,0 +1,877 @@
+   #[1]Edit this page [2]Wikipedia (en) [3]copyright [4]Wikipedia Atom
+   feed
+
+     * [5]Home
+     * [6]Random
+     * [7]Nearby
+
+     * [8]Watchlist
+     * [9]Uploads
+     * [10]Settings
+     * [11]Log in
+
+     * [12]About Wikipedia
+     * [13]Disclaimers
+
+   ____________________ Go
+
+Detection theory
+
+     *
+     *
+     * [14]Talk
+     *
+
+   Detection theory, or signal detection theory, is a means to quantify
+   the ability to discern between information-bearing patterns (called
+   [15]stimulus in humans, [16]signal in machines) and random patterns
+   that distract from the information (called [17]noise, consisting of
+   background stimuli and random activity of the detection machine and of
+   the nervous system of the operator). In the field of [18]electronics,
+   the separation of such patterns from a disguising background is
+   referred to as signal recovery.^[19][1]
+
+   According to the theory, there are a number of determiners of how a
+   detecting system will detect a signal, and where its threshold levels
+   will be. The theory can explain how changing the threshold will affect
+   the ability to discern, often exposing how adapted the system is to the
+   task, purpose or goal at which it is aimed.
+
+   When the detecting system is a human being, experience, expectations,
+   physiological state (e.g. fatigue) and other factors can affect the
+   threshold applied. For instance, a sentry in wartime will likely detect
+   fainter stimuli than the same sentry in peacetime due to a lower
+   criterion, however they will also be more likely to treat innocuous
+   stimuli as a threat.^[[20]citation needed]
+
+   Much of the early work in detection theory was done by [21]radar
+   researchers.^[22][2] By 1954 the theory was fully developed on the
+   theoretical side as described by [23]Peterson, Birdsall and Fox^[24][3]
+   and the foundation for the psychological theory was made by Wilson P.
+   Tanner, David M. Green, and [25]John A. Swets, also in 1954.^[26][4]
+   Detection theory was used in 1966 by [27]John A. Swets and David M.
+   Green for [28]psychophysics.^[29][5] Green and [30]Swets criticized the
+   traditional methods of psychophysics for their inability to
+   discriminate between the real sensitivity of subjects and their
+   (potential) [31]response biases.^[32][6]
+
+   Detection theory has applications in many fields such as
+   [33]diagnostics of any kind, [34]quality control,
+   [35]telecommunications, and [36]psychology. The concept is similar to
+   the [37]signal to noise ratio used in the sciences and [38]confusion
+   matrices used in [39]artificial intelligence. It is also usable in
+   [40]alarm management, where it is important to separate important
+   events from [41]background [42]noise.
+
+Psychology[43]Edit
+
+   Signal detection theory (SDT) is used when psychologists want to
+   measure the way we make decisions under conditions of uncertainty, such
+   as how we would perceive distances in foggy conditions. SDT assumes
+   that the decision maker is not a passive receiver of information, but
+   an active decision-maker who makes difficult perceptual judgements
+   under conditions of uncertainty. In foggy circumstances, we are forced
+   to decide how far away from us an object is, based solely upon visual
+   stimulus which is impaired by the fog. Since the brightness of the
+   object, such as a traffic light, is used by the brain to discriminate
+   the distance of an object, and the fog reduces the brightness of
+   objects, we perceive the object to be much farther away than it
+   actually is (see also [44]decision theory).
+
+   To apply signal detection theory to a data set where stimuli were
+   either present or absent, and the observer categorized each trial as
+   having the stimulus present or absent, the trials are sorted into one
+   of four categories:
+
+                           Respond "Absent"  Respond "Present"
+          Stimulus Present [45]Miss          Hit
+          Stimulus Absent  Correct Rejection [46]False Alarm
+
+   Based on the proportions of these types of trials, numerical estimates
+   of sensitivity can be obtained with statistics like the [47]sensitivity
+   index d' and A',^[48][7] and response bias can be estimated with
+   statistics like c and b.^[49][8]
+
+   Signal detection theory can also be applied to memory experiments,
+   where items are presented on a study list for later testing. A test
+   list is created by combining these 'old' items with novel, 'new' items
+   that did not appear on the study list. On each test trial the subject
+   will respond 'yes, this was on the study list' or 'no, this was not on
+   the study list'. Items presented on the study list are called Targets,
+   and new items are called Distractors. Saying 'Yes' to a target
+   constitutes a Hit, while saying 'Yes' to a distractor constitutes a
+   False Alarm.
+
+                       Respond "No"     Respond "Yes"
+            Target   [50]Miss          Hit
+          Distractor Correct Rejection [51]False Alarm
+
+Applications[52]Edit
+
+   Signal Detection Theory has wide application, both in humans and
+   [53]other animals. Topics include [54]memory, stimulus characterists of
+   schedules of reinforcement, etc.
+
+Sensitivity or discriminability[55]Edit
+
+   Conceptually, sensitivity refers to how hard or easy it is to detect
+   that a target stimulus is present from background events. For example,
+   in a recognition memory paradigm, having longer to study
+   to-be-remembered words makes it easier to recognize previously seen or
+   heard words. In contrast, having to remember 30 words rather than 5
+   makes the discrimination harder. One of the most commonly used
+   statistics for computing sensitivity is the so-called [56]sensitivity
+   index, or [57]d'. There are also [58]non-parametric measures, such as
+   the area under the [59]ROC-curve.^[60][6]
+
+Bias[61]Edit
+
+   Bias is the extent to which one response is more probable than another.
+   That is, a receiver may be more likely to respond that a stimulus is
+   present or more likely to respond that a stimulus is not present. Bias
+   is independent of sensitivity. For example, if there is a penalty for
+   either false alarms or misses, this may influence bias. If the stimulus
+   is a bomber, then a miss (failing to detect the plane) may increase
+   deaths, so a liberal bias is likely. In contrast, [62]crying wolf (a
+   false alarm) too often may make people less likely to respond, grounds
+   for a conservative bias.
+
+Mathematics[63]Edit
+
+P(H1|y) > P(H2|y) / MAP Testing[64]Edit
+
+   In the case of making a decision between two [65]hypotheses, H1,
+   absent, and H2, present, in the event of a particular [66]observation,
+   y, a classical approach is to choose H1 when p(H1|y) > p(H2|y) and H2
+   in the reverse case.^[67][9] In the event that the two [68]a posteriori
+   [69]probabilities are equal, one typically defaults to a single choice,
+   say H2. One could also flip a coin although the expected number of
+   errors would be the same.
+
+   When taking this approach, usually what one knows are the conditional
+   probabilities, p(y|H1) and p(y|H2), and the [70]a priori probabilities
+   p(H1) = \pi_1 and p(H2) = \pi_2 . In this case,
+
+   p(H1|y) = \frac{p(y|H1) \cdot \pi_1}{p(y)} ,
+
+   p(H2|y) = \frac{p(y|H2) \cdot \pi_2}{p(y)}
+
+   where p(y) is the total probability of event y,
+
+   p(y|H1) \cdot \pi_1 + p(y|H2) \cdot \pi_2 .
+
+   H2 is chosen in case
+
+   \frac{p(y|H2) \cdot \pi_2}{p(y|H1) \cdot \pi_1 + p(y|H2) \cdot \pi_2}
+   \ge \frac{p(y|H1) \cdot \pi_1}{p(y|H1) \cdot \pi_1 + p(y|H2) \cdot
+   \pi_2}
+
+   \Rightarrow \frac{p(y|H2)}{p(y|H1)} \ge \frac{\pi_1}{\pi_2}
+
+   and H1 otherwise.
+
+   Often, the ratio \frac{\pi_1}{\pi_2} is called \tau_{MAP} and
+   \frac{p(y|H2)}{p(y|H1)} is called L(y) , the [71]likelihood ratio.
+
+   Using this terminology, H2 is chosen in case L(y) \ge \tau_{MAP} . This
+   is called MAP testing, where MAP stands for "maximum a posteriori").
+
+   Taking this approach minimizes the expected number of errors one will
+   make.
+
+Bayes Criterion[72]Edit
+
+   In some cases, it is far more important to respond appropriately to H1
+   than it is to respond appropriately to H2. For example, if one is
+   trying to detect an incoming bomber known to be carrying a [73]nuclear
+   weapon, it is much more important to shoot down the bomber if it is
+   there, than it is not to send a fighter squadron to inspect a false
+   alarm (assuming a large supply of fighter squadrons). The [74]Bayes
+   criterion is an approach suitable for such cases.^[75][9]
+
+   Here a [76]utility is associated with each of four situations:
+     * U_{11} : One responds with behavior appropriate to H1 and H1 is
+       true: fighters destroy bomber, incurring fuel, maintenance, and
+       weapons costs, take risk of some being shot down;
+     * U_{12} : One responds with behavior appropriate to H1 and H2 is
+       true: fighters sent out, incurring fuel and maintenance costs,
+       bomber location remains unknown;
+     * U_{21} : One responds with behavior appropriate to H2 and H1 is
+       true: city destroyed;
+     * U_{22} : One responds with behavior appropriate to H2 and H2 is
+       true: fighters stay home, bomber location remains unknown;
+
+   As is shown below, what is important are the differences, U_{11} -
+   U_{21} and U_{22} - U_{12} .
+
+   Similarly, there are four probabilities, P_{11} , P_{12} , etc., for
+   each of the cases (which are dependent on one's decision strategy).
+
+   The Bayes criterion approach is to maximize the expected utility:
+
+   U = P_{11} \cdot U_{11} + P_{21} \cdot U_{21} + P_{12} \cdot U_{12} +
+   P_{22} \cdot U_{22}
+
+   U = P_{11} \cdot U_{11} + (1-P_{11}) \cdot U_{21} + P_{12} \cdot U_{21}
+   + (1-P_{12}) \cdot U_{22}
+
+   U = U_{12} + U_{21} + P_{11} \cdot (U_{11} - U_{21}) - P_{12} \cdot
+   (U_{22} - U_{12})
+
+   Effectively, one may maximize the sum,
+
+   U' = P_{11} \cdot (U_{11} - U_{21}) - P_{12} \cdot (U_{22} - U_{12}) ,
+
+   and make the following substitutions:
+
+   P_{11} = \pi_1 \cdot \int_{R_1}p(y|H1)\, dy
+
+   P_{12} = \pi_2 \cdot \int_{R_1}p(y|H2)\, dy
+
+   where \pi_1 and \pi_2 are the a priori probabilities, P(H1) and P(H2) ,
+   and R_1 is the region of observation events, y, that are responded to
+   as though H1 is true.
+
+   \Rightarrow U' = \int_{R_1} \left \{ \pi_1 \cdot (U_{11} - U_{21})
+   \cdot p(y|H1) - \pi_2 \cdot (U_{22} - U_{12}) \cdot p(y|H2) \right \}
+   \, dy
+
+   U' and thus U are maximized by extending R_1 over the region where
+
+   \pi_1 \cdot (U_{11} - U_{21}) \cdot p(y|H1) - \pi_2 \cdot (U_{22} -
+   U_{12}) \cdot p(y|H2) > 0
+
+   This is accomplished by deciding H2 in case
+
+   \pi_2 \cdot (U_{22} - U_{12}) \cdot p(y|H2) \ge \pi_1 \cdot (U_{11} -
+   U_{21}) \cdot p(y|H1)
+
+   \Rightarrow L(y) \equiv \frac{p(y|H2)}{p(y|H1)} \ge \frac{\pi_1 \cdot
+   (U_{11} - U_{21})}{\pi_2 \cdot (U_{22} - U_{12})} \equiv \tau_B
+
+   and H1 otherwise, where L(y) is the so-defined [77]likelihood ratio.
+
+See also[78]Edit
+
+     * [79]Constant false alarm rate
+     * [80]Demodulation
+     * [81]Detector (radio)
+     * [82]Decision theory
+     * [83]Estimation theory
+     * [84]Likelihood-ratio test
+     * [85]Modulation
+     * [86]Neyman-Pearson lemma
+     * [87]Receiver operating characteristic
+     * [88]Statistical signal processing
+     * [89]Just noticeable difference
+     * [90]Psychometric function
+     * [91]Statistical hypothesis testing
+     * [92]Two-alternative forced choice
+     * [93]Type I and type II errors
+
+References[94]Edit
+
+    1. [95]^ T. H. Wilmshurst (1990). [96]Signal Recovery from Noise in
+       Electronic Instrumentation (2nd ed.). CRC Press. pp. 11 ff.
+       [97]ISBN [98]0-7503-0058-2.
+    2. [99]^ Marcum, J. I. (1947). [100]"A Statistical Theory of Target
+       Detection by Pulsed Radar". The Research Memorandum: 90. Retrieved
+       2009-06-28.
+    3. [101]^ Peterson,W.W., Birdsall, T. G. & Fox, W. C. (1954) The
+       theory of signal detectability. Proceedings of the IRE Professional
+       Group on Information Theory 4, 171-212.
+    4. [102]^ Tanner Jr., Wilson P.; John A. Swets (1954-11). [103]"A
+       decision-making theory of visual detection.". Psychological Review.
+       61 (6): 401-409. [104]doi:[105]10.1037/h0058700.
+       [106]PMID [107]13215690. Retrieved 2009-06-24.
+    5. [108]^ Swets, J.A. (ed.) (1964) Signal detection and recognition by
+       human observers. New York: Wiley
+    6. ^ [109]^a [110]^b Green, D.M., Swets J.A. (1966) Signal Detection
+       Theory and Psychophysics. New York: Wiley. ([111]ISBN
+       0-471-32420-5)
+    7. [112]^ Stanislaw, H; Todorov, N (1999 Feb). "Calculation of signal
+       detection theory measures.". Behavior research methods,
+       instruments, & computers : a journal of the Psychonomic Society,
+       Inc 31 (1): 137-49. [113]PMID [114]10495845.
+    8. [115]^ Stanislaw, H; Todorov, N (1999 Feb). "Calculation of signal
+       detection theory measures.". Behavior research methods,
+       instruments, & computers : a journal of the Psychonomic Society,
+       Inc 31 (1): 137-49. [116]PMID [117]10495845.
+    9. ^ [118]^a [119]^b Schonhoff, T.A. and Giordano, A.A. (2006)
+       Detection and Estimation Theory and Its Applications. New Jersey:
+       Pearson Education ([120]ISBN 0-13-089499-0)
+
+   This article includes a [121]list of references, but its sources remain
+   unclear because it has insufficient [122]inline citations. Please help
+   to [123]improve this article by [124]introducing more precise
+   citations. (April 2009)
+     * Coren, S., Ward, L.M., Enns, J. T. (1994) Sensation and Perception.
+       (4th Ed.) Toronto: Harcourt Brace.
+     * Kay, SM. Fundamentals of Statistical Signal Processing: Detection
+       Theory ([125]ISBN 0-13-504135-X)
+     * McNichol, D. (1972) A Primer of Signal Detection Theory. London:
+       George Allen & Unwin.
+     * Van Trees HL. Detection, Estimation, and Modulation Theory, Part 1
+       ([126]ISBN 0-471-09517-6; [127]website)
+     * Wickens, Thomas D., (2002) Elementary Signal Detection Theory. New
+       York: Oxford University Press. ([128]ISBN 0-19-509250-3)
+
+External links[129]Edit
+
+     * [130]A Description of Signal Detection Theory
+     * [131]An application of SDT to safety
+     * [132]Signal Detection Theory by Garrett Neske, [133]The Wolfram
+       Demonstrations Project
+
+     * [134]v
+     * [135]t
+     * [136]e
+
+   [137]Psychology
+     * [138]History
+     * [139]Portal
+     * [140]Psychologist
+
+   [141]Basic psychology
+     * [142]Abnormal
+     * [143]Affective science
+     * [144]Affective neuroscience
+     * [145]Behaviorism
+     * [146]Behavioral neuroscience
+     * [147]Cognitive
+     * [148]Cognitive neuroscience
+     * [149]Comparative
+     * [150]Cultural
+     * [151]Developmental
+     * [152]Differential
+     * [153]Evolutionary
+     * [154]Experimental
+     * [155]Intelligence
+     * [156]Mathematical
+     * [157]Neuropsychology
+     * [158]Personality
+     * [159]Psycholinguistics
+     * [160]Psychophysics
+     * [161]Psychophysiology
+     * [162]Social
+     * [163]Theoretical
+
+   [164]Applied psychology
+     * [165]Anomalistic
+     * [166]Applied behavior analysis
+     * [167]Assessment
+     * [168]Clinical
+     * [169]Community psychology
+     * [170]Consumer
+     * [171]Counseling
+     * [172]Educational
+     * [173]Feminist
+     * [174]Forensic
+     * [175]Health
+     * [176]Industrial and organizational
+     * [177]Legal
+     * [178]Media
+     * [179]Military
+     * [180]Occupational health
+     * [181]Pastoral
+     * [182]Political
+     * [183]Psychometrics
+     * [184]School
+     * [185]Sport and exercise
+     * [186]Suicidology
+     * [187]Systems
+     * [188]Traffic
+
+   [189]Methodologies
+     * [190]Animal testing
+     * [191]Archival research
+     * [192]Behavior genetics
+     * [193]Behavior epigenetics
+     * [194]Case study
+     * [195]Content analysis
+     * [196]Experiments
+     * [197]Human subject research
+     * [198]Interviews
+     * [199]Neuroimaging
+     * [200]Observation
+     * [201]Qualitative research
+     * [202]Quantitative research
+     * [203]Self-report inventory
+     * [204]Statistical surveys
+
+   Orientations
+     * [205]Adlerian
+     * [206]Analytical
+     * [207]Behaviorism
+     * [208]Cognitive behavioral therapy
+     * [209]Cognitivism
+     * [210]Descriptive
+     * [211]Ecological systems theory
+     * [212]Existential therapy
+     * [213]Family therapy
+     * [214]Feminist therapy
+     * [215]Gestalt psychology
+     * [216]Humanistic
+     * [217]Logotherapy
+     * [218]Narrative therapy
+     * [219]Philosophy
+     * [220]Psychoanalysis
+     * [221]Psychoanalytic theory
+     * [222]Psychodynamic psychotherapy
+     * [223]Rational emotive behavior therapy
+     * [224]Transpersonal
+
+   [225]Notable
+   psychologists
+     * [226]Alfred Adler
+     * [227]Gordon Allport
+     * [228]Albert Bandura
+     * [229]Aaron Beck
+     * [230]Hubert Benoit
+     * [231]John Bowlby
+     * [232]Raymond Cattell
+     * [233]Kenneth and Mamie Clark
+     * [234]Albert Ellis
+     * [235]Erik Erikson
+     * [236]Hans Eysenck
+     * [237]Leon Festinger
+     * [238]Viktor Frankl
+     * [239]Sigmund Freud
+     * [240]Harry Harlow
+     * [241]Donald O. Hebb
+     * [242]Clark L. Hull
+     * [243]William James
+     * [244]Carl Jung
+     * [245]Jerome Kagan
+     * [246]Kurt Lewin
+     * [247]Ivar Lovaas
+     * [248]Abraham Maslow
+     * [249]David McClelland
+     * [250]George A. Miller
+     * [251]Neal E. Miller
+     * [252]Walter Mischel
+     * [253]Ivan Pavlov
+     * [254]Jean Piaget
+     * [255]Carl Rogers
+     * [256]Stanley Schachter
+     * [257]B. F. Skinner
+     * [258]Edward Thorndike
+     * [259]John B. Watson
+     * [260]Wilhelm Wundt
+
+   [261]Lists
+     * [262]Counseling topics
+     * [263]Disciplines
+     * [264]Important publications
+     * [265]Organizations
+     * [266]Outline
+     * [267]Psychologists
+     * [268]Psychotherapies
+     * [269]Research methods
+     * [270]Schools of thought
+     * [271]Timeline
+     * [272]Topics
+
+     * [273]Wiktionary definition
+     * [274]Wiktionary category
+     * [275]Wikisource
+     * [276]Wikimedia Commons
+     * [277]Wikiquote
+     * [278]Wikinews
+     * [279]Wikibooks
+
+     * [280]v
+     * [281]t
+     * [282]e
+
+   [283]Digital signal processing
+   Theory
+     * Detection theory
+     * [284]Discrete signal
+     * [285]Estimation theory
+     * [286]Nyquist-Shannon sampling theorem
+
+   Sub-fields
+     * [287]Audio signal processing
+     * [288]Digital image processing
+     * [289]Speech processing
+     * [290]Statistical signal processing
+
+   Techniques
+     * [291]Advanced Z-transform
+     * [292]Bilinear transform
+     * [293]Discrete Fourier transform (DFT)
+     * [294]Discrete-time Fourier transform (DTFT)
+     * [295]Impulse invariance
+     * [296]Matched Z-transform method
+     * [297]Z-transform
+
+   [298]Sampling
+     * [299]Aliasing
+     * [300]Anti-aliasing filter
+     * [301]Downsampling
+     * [302]Nyquist rate / [303]frequency
+     * [304]Oversampling
+     * [305]Quantization
+     * [306]Sampling rate
+     * [307]Undersampling
+     * [308]Upsampling
+
+Read in another language
+
+   This page is available in 12 languages
+     * [309]B"lgarski
+     * [310]Català
+     * [311]Deutsch
+     * [312]Español
+     * [313]­´
+     * [314]Italiano
+     * [315]E+B+R+J+T+
+     * [316]Nederlands
+     * [317]Russkij
+     * [318]Ukrayins'ka
+     * [319]Tie>'ng Vie>-.t
+     * [320]­
+
+   [321]Last modified on 18 September 2013, at 19:29
+     * Wikipedia ®
+          + Mobile
+          + [322]Desktop
+     * Content is available under [323]CC BY-SA 3.0 unless otherwise
+       noted.
+
+     * [324]Terms of Use
+     * [325]Privacy
+
+References
+
+   Visible links
+   1. http://en.m.wikipedia.org/w/index.php?title=Detection_theory&action=edit
+   2. http://en.m.wikipedia.org/w/opensearch_desc.php
+   3. http://creativecommons.org/licenses/by-sa/3.0/
+   4. http://en.m.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom
+   5. http://en.m.wikipedia.org/wiki/Main_Page
+   6. http://en.m.wikipedia.org/wiki/Special:Random
+   7. http://en.m.wikipedia.org/wiki/Special:Nearby
+   8. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Special%3AWatchlist
+   9. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Special%3AUploads
+  10. http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&returnto=Detection+theory
+  11. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Detection+theory&returntoquery=welcome%3Dyes
+  12. http://en.m.wikipedia.org/wiki/Wikipedia:About
+  13. http://en.m.wikipedia.org/wiki/Wikipedia:General_disclaimer
+  14. http://en.m.wikipedia.org/wiki/Talk:Detection_theory
+  15. http://en.m.wikipedia.org/wiki/Stimulus_(psychology)
+  16. http://en.m.wikipedia.org/wiki/Signal_(electronics)
+  17. http://en.m.wikipedia.org/wiki/Noise_(electronics)
+  18. http://en.m.wikipedia.org/wiki/Electronics
+  19. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-Wilmshurst-1
+  20. http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed
+  21. http://en.m.wikipedia.org/wiki/Radar
+  22. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-2
+  23. http://en.m.wikipedia.org/wiki/W._Wesley_Peterson
+  24. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-3
+  25. http://en.m.wikipedia.org/wiki/John_A._Swets
+  26. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-4
+  27. http://en.m.wikipedia.org/wiki/John_A._Swets
+  28. http://en.m.wikipedia.org/wiki/Psychophysics
+  29. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-5
+  30. http://en.m.wikipedia.org/wiki/John_A._Swets
+  31. http://en.m.wikipedia.org/wiki/Response_bias
+  32. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-Green.26Swets-6
+  33. http://en.m.wikipedia.org/wiki/Diagnostics
+  34. http://en.m.wikipedia.org/wiki/Quality_control
+  35. http://en.m.wikipedia.org/wiki/Telecommunications
+  36. http://en.m.wikipedia.org/wiki/Psychology
+  37. http://en.m.wikipedia.org/wiki/Signal_to_noise_ratio
+  38. http://en.m.wikipedia.org/wiki/Confusion_matrix
+  39. http://en.m.wikipedia.org/wiki/Artificial_intelligence
+  40. http://en.m.wikipedia.org/wiki/Alarm_management
+  41. http://en.m.wikipedia.org/wiki/Background_noise
+  42. http://en.m.wikipedia.org/wiki/Noise_(environmental)
+  43. http://en.m.wikipedia.org/wiki/Detection_theory#editor/1
+  44. http://en.m.wikipedia.org/wiki/Decision_theory
+  45. http://en.m.wikipedia.org/wiki/Type_1_error#Type_I_and_type_II_errors
+  46. http://en.m.wikipedia.org/wiki/Type_1_error#Type_I_and_type_II_errors
+  47. http://en.m.wikipedia.org/wiki/D%27
+  48. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-7
+  49. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-8
+  50. http://en.m.wikipedia.org/wiki/Type_1_error#Type_I_and_type_II_errors
+  51. http://en.m.wikipedia.org/wiki/Type_1_error#Type_I_and_type_II_errors
+  52. http://en.m.wikipedia.org/wiki/Detection_theory#editor/2
+  53. http://en.m.wikipedia.org/wiki/Comparative_psychology
+  54. http://en.m.wikipedia.org/wiki/Memory
+  55. http://en.m.wikipedia.org/wiki/Detection_theory#editor/3
+  56. http://en.m.wikipedia.org/wiki/D%27
+  57. http://en.m.wikipedia.org/wiki/D%27
+  58. http://en.m.wikipedia.org/wiki/Non-parametric
+  59. http://en.m.wikipedia.org/wiki/Receiver_operating_characteristic
+  60. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-Green.26Swets-6
+  61. http://en.m.wikipedia.org/wiki/Detection_theory#editor/4
+  62. http://en.m.wikipedia.org/wiki/Crying_wolf
+  63. http://en.m.wikipedia.org/wiki/Detection_theory#editor/5
+  64. http://en.m.wikipedia.org/wiki/Detection_theory#editor/6
+  65. http://en.m.wikipedia.org/wiki/Hypothesis
+  66. http://en.m.wikipedia.org/wiki/Observation
+  67. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-Schonhoff-9
+  68. http://en.m.wikipedia.org/wiki/A_posteriori
+  69. http://en.m.wikipedia.org/wiki/Probability
+  70. http://en.m.wikipedia.org/wiki/A_priori_and_a_posteriori
+  71. http://en.m.wikipedia.org/wiki/Likelihood_ratio
+  72. http://en.m.wikipedia.org/wiki/Detection_theory#editor/7
+  73. http://en.m.wikipedia.org/wiki/Nuclear_weapon
+  74. http://en.m.wikipedia.org/wiki/Thomas_Bayes
+  75. http://en.m.wikipedia.org/wiki/Detection_theory#cite_note-Schonhoff-9
+  76. http://en.m.wikipedia.org/wiki/Utility
+  77. http://en.m.wikipedia.org/wiki/Likelihood_ratio
+  78. http://en.m.wikipedia.org/wiki/Detection_theory#editor/8
+  79. http://en.m.wikipedia.org/wiki/Constant_false_alarm_rate
+  80. http://en.m.wikipedia.org/wiki/Demodulation
+  81. http://en.m.wikipedia.org/wiki/Detector_(radio)
+  82. http://en.m.wikipedia.org/wiki/Decision_theory
+  83. http://en.m.wikipedia.org/wiki/Estimation_theory
+  84. http://en.m.wikipedia.org/wiki/Likelihood-ratio_test
+  85. http://en.m.wikipedia.org/wiki/Modulation
+  86. http://en.m.wikipedia.org/wiki/Neyman-Pearson_lemma
+  87. http://en.m.wikipedia.org/wiki/Receiver_operating_characteristic
+  88. http://en.m.wikipedia.org/wiki/Statistical_signal_processing
+  89. http://en.m.wikipedia.org/wiki/Just_noticeable_difference
+  90. http://en.m.wikipedia.org/wiki/Psychometric_function
+  91. http://en.m.wikipedia.org/wiki/Statistical_hypothesis_testing
+  92. http://en.m.wikipedia.org/wiki/Two-alternative_forced_choice
+  93. http://en.m.wikipedia.org/wiki/Type_I_and_type_II_errors
+  94. http://en.m.wikipedia.org/wiki/Detection_theory#editor/9
+  95. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-Wilmshurst_1-0
+  96. http://books.google.com/books?id=49hfsIPpGwYC&pg=PP11
+  97. http://en.m.wikipedia.org/wiki/International_Standard_Book_Number
+  98. http://en.m.wikipedia.org/wiki/Special:BookSources/0-7503-0058-2
+  99. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-2
+ 100. http://www.rand.org/pubs/research_memoranda/RM754/
+ 101. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-3
+ 102. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-4
+ 103. http://psycnet.apa.org/journals/rev/61/6/401/
+ 104. http://en.m.wikipedia.org/wiki/Digital_object_identifier
+ 105. http://dx.doi.org/10.1037%2Fh0058700
+ 106. http://en.m.wikipedia.org/wiki/PubMed_Identifier
+ 107. http://www.ncbi.nlm.nih.gov/pubmed/13215690
+ 108. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-5
+ 109. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-Green.26Swets_6-0
+ 110. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-Green.26Swets_6-1
+ 111. http://en.m.wikipedia.org/wiki/Special:BookSources/0471324205
+ 112. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-7
+ 113. http://en.m.wikipedia.org/wiki/PubMed_Identifier
+ 114. http://www.ncbi.nlm.nih.gov/pubmed/10495845
+ 115. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-8
+ 116. http://en.m.wikipedia.org/wiki/PubMed_Identifier
+ 117. http://www.ncbi.nlm.nih.gov/pubmed/10495845
+ 118. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-Schonhoff_9-0
+ 119. http://en.m.wikipedia.org/wiki/Detection_theory#cite_ref-Schonhoff_9-1
+ 120. http://en.m.wikipedia.org/wiki/Special:BookSources/0130894990
+ 121. http://en.m.wikipedia.org/wiki/Wikipedia:Citing_sources
+ 122. http://en.m.wikipedia.org/wiki/Wikipedia:INCITE
+ 123. http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check
+ 124. http://en.m.wikipedia.org/wiki/Wikipedia:When_to_cite
+ 125. http://en.m.wikipedia.org/wiki/Special:BookSources/013504135X
+ 126. http://en.m.wikipedia.org/wiki/Special:BookSources/0471095176
+ 127. http://gunston.gmu.edu/demt/demtp1/
+ 128. http://en.m.wikipedia.org/wiki/Special:BookSources/0195092503
+ 129. http://en.m.wikipedia.org/wiki/Detection_theory#editor/10
+ 130. http://www.cns.nyu.edu/~david/sdt/sdt.html
+ 131. http://strobos.cee.vt.edu/IGLC11/PDF%20Files/19.pdf
+ 132. http://demonstrations.wolfram.com/SignalDetectionTheory/
+ 133. http://en.m.wikipedia.org/wiki/The_Wolfram_Demonstrations_Project
+ 134. http://en.m.wikipedia.org/wiki/Template:Psychology
+ 135. http://en.m.wikipedia.org/wiki/Template_talk:Psychology
+ 136. http://en.wikipedia.org/w/index.php?title=Template:Psychology&action=edit
+ 137. http://en.m.wikipedia.org/wiki/Psychology
+ 138. http://en.m.wikipedia.org/wiki/History_of_psychology
+ 139. http://en.m.wikipedia.org/wiki/Portal:Psychology
+ 140. http://en.m.wikipedia.org/wiki/Psychologist
+ 141. http://en.m.wikipedia.org/wiki/Basic_science_(psychology)
+ 142. http://en.m.wikipedia.org/wiki/Abnormal_psychology
+ 143. http://en.m.wikipedia.org/wiki/Affective_science
+ 144. http://en.m.wikipedia.org/wiki/Affective_neuroscience
+ 145. http://en.m.wikipedia.org/wiki/Behaviorism
+ 146. http://en.m.wikipedia.org/wiki/Behavioral_neuroscience
+ 147. http://en.m.wikipedia.org/wiki/Cognitive_psychology
+ 148. http://en.m.wikipedia.org/wiki/Cognitive_neuroscience
+ 149. http://en.m.wikipedia.org/wiki/Comparative_psychology
+ 150. http://en.m.wikipedia.org/wiki/Cultural_psychology
+ 151. http://en.m.wikipedia.org/wiki/Developmental_psychology
+ 152. http://en.m.wikipedia.org/wiki/Differential_psychology
+ 153. http://en.m.wikipedia.org/wiki/Evolutionary_psychology
+ 154. http://en.m.wikipedia.org/wiki/Experimental_psychology
+ 155. http://en.m.wikipedia.org/wiki/Intelligence
+ 156. http://en.m.wikipedia.org/wiki/Mathematical_psychology
+ 157. http://en.m.wikipedia.org/wiki/Neuropsychology
+ 158. http://en.m.wikipedia.org/wiki/Personality_psychology
+ 159. http://en.m.wikipedia.org/wiki/Psycholinguistics
+ 160. http://en.m.wikipedia.org/wiki/Psychophysics
+ 161. http://en.m.wikipedia.org/wiki/Psychophysiology
+ 162. http://en.m.wikipedia.org/wiki/Social_psychology
+ 163. http://en.m.wikipedia.org/wiki/Theoretical_psychology
+ 164. http://en.m.wikipedia.org/wiki/Applied_psychology
+ 165. http://en.m.wikipedia.org/wiki/Anomalistic_psychology
+ 166. http://en.m.wikipedia.org/wiki/Applied_behavior_analysis
+ 167. http://en.m.wikipedia.org/wiki/Psychological_testing
+ 168. http://en.m.wikipedia.org/wiki/Clinical_psychology
+ 169. http://en.m.wikipedia.org/wiki/Community_psychology
+ 170. http://en.m.wikipedia.org/wiki/Consumer_behaviour
+ 171. http://en.m.wikipedia.org/wiki/Counseling_psychology
+ 172. http://en.m.wikipedia.org/wiki/Educational_psychology
+ 173. http://en.m.wikipedia.org/wiki/Feminist_psychology
+ 174. http://en.m.wikipedia.org/wiki/Forensic_psychology
+ 175. http://en.m.wikipedia.org/wiki/Health_psychology
+ 176. http://en.m.wikipedia.org/wiki/Industrial_and_organizational_psychology
+ 177. http://en.m.wikipedia.org/wiki/Legal_psychology
+ 178. http://en.m.wikipedia.org/wiki/Media_psychology
+ 179. http://en.m.wikipedia.org/wiki/Military_psychology
+ 180. http://en.m.wikipedia.org/wiki/Occupational_health_psychology
+ 181. http://en.m.wikipedia.org/wiki/Pastoral_psychology
+ 182. http://en.m.wikipedia.org/wiki/Political_psychology
+ 183. http://en.m.wikipedia.org/wiki/Psychometrics
+ 184. http://en.m.wikipedia.org/wiki/School_psychology
+ 185. http://en.m.wikipedia.org/wiki/Sport_psychology
+ 186. http://en.m.wikipedia.org/wiki/Suicidology
+ 187. http://en.m.wikipedia.org/wiki/Systems_psychology
+ 188. http://en.m.wikipedia.org/wiki/Traffic_psychology
+ 189. http://en.m.wikipedia.org/wiki/List_of_psychological_research_methods
+ 190. http://en.m.wikipedia.org/wiki/Animal_testing
+ 191. http://en.m.wikipedia.org/wiki/Archival_research
+ 192. http://en.m.wikipedia.org/wiki/Behavioural_genetics
+ 193. http://en.m.wikipedia.org/wiki/Behavioral_epigenetics
+ 194. http://en.m.wikipedia.org/wiki/Case_study
+ 195. http://en.m.wikipedia.org/wiki/Content_analysis
+ 196. http://en.m.wikipedia.org/wiki/Experimental_psychology
+ 197. http://en.m.wikipedia.org/wiki/Human_subject_research
+ 198. http://en.m.wikipedia.org/wiki/Interview
+ 199. http://en.m.wikipedia.org/wiki/Neuroimaging
+ 200. http://en.m.wikipedia.org/wiki/Observation
+ 201. http://en.m.wikipedia.org/wiki/Qualitative_psychological_research
+ 202. http://en.m.wikipedia.org/wiki/Quantitative_psychological_research
+ 203. http://en.m.wikipedia.org/wiki/Self-report_inventory
+ 204. http://en.m.wikipedia.org/wiki/Statistical_survey
+ 205. http://en.m.wikipedia.org/wiki/Adlerian_psychology
+ 206. http://en.m.wikipedia.org/wiki/Analytical_psychology
+ 207. http://en.m.wikipedia.org/wiki/Behaviorism
+ 208. http://en.m.wikipedia.org/wiki/Cognitive_behavioral_therapy
+ 209. http://en.m.wikipedia.org/wiki/Cognitivism_(psychology)
+ 210. http://en.m.wikipedia.org/wiki/Descriptive_psychology
+ 211. http://en.m.wikipedia.org/wiki/Ecological_systems_theory
+ 212. http://en.m.wikipedia.org/wiki/Existential_therapy
+ 213. http://en.m.wikipedia.org/wiki/Family_therapy
+ 214. http://en.m.wikipedia.org/wiki/Feminist_therapy
+ 215. http://en.m.wikipedia.org/wiki/Gestalt_psychology
+ 216. http://en.m.wikipedia.org/wiki/Humanistic_psychology
+ 217. http://en.m.wikipedia.org/wiki/Logotherapy
+ 218. http://en.m.wikipedia.org/wiki/Narrative_therapy
+ 219. http://en.m.wikipedia.org/wiki/Philosophy_of_psychology
+ 220. http://en.m.wikipedia.org/wiki/Psychoanalysis
+ 221. http://en.m.wikipedia.org/wiki/Psychoanalytic_theory
+ 222. http://en.m.wikipedia.org/wiki/Psychodynamic_psychotherapy
+ 223. http://en.m.wikipedia.org/wiki/Rational_emotive_behavior_therapy
+ 224. http://en.m.wikipedia.org/wiki/Transpersonal_psychology
+ 225. http://en.m.wikipedia.org/wiki/List_of_psychologists
+ 226. http://en.m.wikipedia.org/wiki/Alfred_Adler
+ 227. http://en.m.wikipedia.org/wiki/Gordon_Allport
+ 228. http://en.m.wikipedia.org/wiki/Albert_Bandura
+ 229. http://en.m.wikipedia.org/wiki/Aaron_T._Beck
+ 230. http://en.m.wikipedia.org/wiki/Hubert_Benoit_(psychotherapist)
+ 231. http://en.m.wikipedia.org/wiki/John_Bowlby
+ 232. http://en.m.wikipedia.org/wiki/Raymond_Cattell
+ 233. http://en.m.wikipedia.org/wiki/Kenneth_and_Mamie_Clark
+ 234. http://en.m.wikipedia.org/wiki/Albert_Ellis
+ 235. http://en.m.wikipedia.org/wiki/Erik_Erikson
+ 236. http://en.m.wikipedia.org/wiki/Hans_Eysenck
+ 237. http://en.m.wikipedia.org/wiki/Leon_Festinger
+ 238. http://en.m.wikipedia.org/wiki/Viktor_Frankl
+ 239. http://en.m.wikipedia.org/wiki/Sigmund_Freud
+ 240. http://en.m.wikipedia.org/wiki/Harry_Harlow
+ 241. http://en.m.wikipedia.org/wiki/Donald_O._Hebb
+ 242. http://en.m.wikipedia.org/wiki/Clark_L._Hull
+ 243. http://en.m.wikipedia.org/wiki/William_James
+ 244. http://en.m.wikipedia.org/wiki/Carl_Jung
+ 245. http://en.m.wikipedia.org/wiki/Jerome_Kagan
+ 246. http://en.m.wikipedia.org/wiki/Kurt_Lewin
+ 247. http://en.m.wikipedia.org/wiki/Ole_Ivar_Lovaas
+ 248. http://en.m.wikipedia.org/wiki/Abraham_Maslow
+ 249. http://en.m.wikipedia.org/wiki/David_McClelland
+ 250. http://en.m.wikipedia.org/wiki/George_Armitage_Miller
+ 251. http://en.m.wikipedia.org/wiki/Neal_E._Miller
+ 252. http://en.m.wikipedia.org/wiki/Walter_Mischel
+ 253. http://en.m.wikipedia.org/wiki/Ivan_Pavlov
+ 254. http://en.m.wikipedia.org/wiki/Jean_Piaget
+ 255. http://en.m.wikipedia.org/wiki/Carl_Rogers
+ 256. http://en.m.wikipedia.org/wiki/Stanley_Schachter
+ 257. http://en.m.wikipedia.org/wiki/B._F._Skinner
+ 258. http://en.m.wikipedia.org/wiki/Edward_Thorndike
+ 259. http://en.m.wikipedia.org/wiki/John_B._Watson
+ 260. http://en.m.wikipedia.org/wiki/Wilhelm_Wundt
+ 261. http://en.m.wikipedia.org/wiki/Category:Psychology_lists
+ 262. http://en.m.wikipedia.org/wiki/List_of_counseling_topics
+ 263. http://en.m.wikipedia.org/wiki/List_of_psychology_disciplines
+ 264. http://en.m.wikipedia.org/wiki/List_of_important_publications_in_psychology
+ 265. http://en.m.wikipedia.org/wiki/List_of_psychology_organizations
+ 266. http://en.m.wikipedia.org/wiki/Outline_of_psychology
+ 267. http://en.m.wikipedia.org/wiki/List_of_psychologists
+ 268. http://en.m.wikipedia.org/wiki/List_of_psychotherapies
+ 269. http://en.m.wikipedia.org/wiki/List_of_psychological_research_methods
+ 270. http://en.m.wikipedia.org/wiki/List_of_psychological_schools
+ 271. http://en.m.wikipedia.org/wiki/Timeline_of_psychology
+ 272. http://en.m.wikipedia.org/wiki/Index_of_psychology_articles
+ 273. http://en.wiktionary.org/wiki/psychology
+ 274. http://en.wiktionary.org/wiki/Category:en:Psychology
+ 275. http://en.wikisource.org/wiki/Category:Psychology
+ 276. http://commons.wikimedia.org/wiki/category:Psychology
+ 277. http://en.wikiquote.org/wiki/Psychology
+ 278. http://en.wikinews.org/wiki/Special:Search/Psychology
+ 279. http://en.wikibooks.org/wiki/Psychology
+ 280. http://en.m.wikipedia.org/wiki/Template:DSP
+ 281. http://en.m.wikipedia.org/wiki/Template_talk:DSP
+ 282. http://en.wikipedia.org/w/index.php?title=Template:DSP&action=edit
+ 283. http://en.m.wikipedia.org/wiki/Digital_signal_processing
+ 284. http://en.m.wikipedia.org/wiki/Discrete_signal
+ 285. http://en.m.wikipedia.org/wiki/Estimation_theory
+ 286. http://en.m.wikipedia.org/wiki/Nyquist%E2%80%93Shannon_sampling_theorem
+ 287. http://en.m.wikipedia.org/wiki/Audio_signal_processing
+ 288. http://en.m.wikipedia.org/wiki/Digital_image_processing
+ 289. http://en.m.wikipedia.org/wiki/Speech_processing
+ 290. http://en.m.wikipedia.org/wiki/Statistical_signal_processing
+ 291. http://en.m.wikipedia.org/wiki/Advanced_Z-transform
+ 292. http://en.m.wikipedia.org/wiki/Bilinear_transform
+ 293. http://en.m.wikipedia.org/wiki/Discrete_Fourier_transform
+ 294. http://en.m.wikipedia.org/wiki/Discrete-time_Fourier_transform
+ 295. http://en.m.wikipedia.org/wiki/Impulse_invariance
+ 296. http://en.m.wikipedia.org/wiki/Matched_Z-transform_method
+ 297. http://en.m.wikipedia.org/wiki/Z-transform
+ 298. http://en.m.wikipedia.org/wiki/Sampling_(signal_processing)
+ 299. http://en.m.wikipedia.org/wiki/Aliasing
+ 300. http://en.m.wikipedia.org/wiki/Anti-aliasing_filter
+ 301. http://en.m.wikipedia.org/wiki/Downsampling
+ 302. http://en.m.wikipedia.org/wiki/Nyquist_rate
+ 303. http://en.m.wikipedia.org/wiki/Nyquist_frequency
+ 304. http://en.m.wikipedia.org/wiki/Oversampling
+ 305. http://en.m.wikipedia.org/wiki/Quantization_(signal_processing)
+ 306. http://en.m.wikipedia.org/wiki/Sampling_rate
+ 307. http://en.m.wikipedia.org/wiki/Undersampling
+ 308. http://en.m.wikipedia.org/wiki/Upsampling
+ 309. http://bg.m.wikipedia.org/wiki/%D0%A2%D0%B5%D0%BE%D1%80%D0%B8%D1%8F_%D0%B7%D0%B0_%D1%80%D0%B0%D0%B7%D0%BF%D0%BE%D0%B7%D0%BD%D0%B0%D0%B2%D0%B0%D0%BD%D0%B5_%D0%BD%D0%B0_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%B0
+ 310. http://ca.m.wikipedia.org/wiki/Teoria_de_detecci%C3%B3_de_senyals
+ 311. http://de.m.wikipedia.org/wiki/Signalentdeckungstheorie
+ 312. http://es.m.wikipedia.org/wiki/Teor%C3%ADa_de_detecci%C3%B3n_de_se%C3%B1ales
+ 313. http://ko.m.wikipedia.org/wiki/%EC%8B%A0%ED%98%B8%ED%83%90%EC%A7%80%EC%9D%B4%EB%A1%A0
+ 314. http://it.m.wikipedia.org/wiki/Teoria_della_detezione_del_segnale
+ 315. http://he.m.wikipedia.org/wiki/%D7%AA%D7%90%D7%95%D7%A8%D7%99%D7%99%D7%AA_%D7%92%D7%99%D7%9C%D7%95%D7%99_%D7%94%D7%90%D7%95%D7%AA%D7%95%D7%AA
+ 316. http://nl.m.wikipedia.org/wiki/Signaaldetectietheorie
+ 317. http://ru.m.wikipedia.org/wiki/%D0%9E%D0%B1%D0%BD%D0%B0%D1%80%D1%83%D0%B6%D0%B5%D0%BD%D0%B8%D0%B5_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D0%B0
+ 318. http://uk.m.wikipedia.org/wiki/%D0%92%D0%B8%D1%8F%D0%B2%D0%BB%D0%B5%D0%BD%D0%BD%D1%8F_%D1%81%D0%B8%D0%B3%D0%BD%D0%B0%D0%BB%D1%83
+ 319. http://vi.m.wikipedia.org/wiki/L%C3%BD_thuy%E1%BA%BFt_ph%C3%A1t_hi%E1%BB%87n_t%C3%ADn_hi%E1%BB%87u
+ 320. http://zh.m.wikipedia.org/wiki/%E4%BF%A1%E5%8F%B7%E6%A3%80%E6%B5%8B%E7%90%86%E8%AE%BA
+ 321. http://en.m.wikipedia.org/w/index.php?title=Detection_theory&action=history
+ 322. http://en.wikipedia.org/w/index.php?title=Detection_theory&mobileaction=toggle_view_desktop
+ 323. http://creativecommons.org/licenses/by-sa/3.0/
+ 324. http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile
+ 325. http://wikimediafoundation.org/wiki/Privacy_policy
+
+   Hidden links:
+ 326. http://en.m.wikipedia.org/wiki/Special:MobileMenu#mw-mf-page-left
+ 327. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Detection+theory

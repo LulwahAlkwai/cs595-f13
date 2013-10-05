@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Big-O notation and real-world performance </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5448" itemprop="name"><a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/" rel="bookmark" itemprop="url"  title="Posted on July 11th, 2013">Big-O notation and real-world performance</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>Classical Newtonian mechanics is always mathematically consistent. However, Newtonian mechanics assumes that bodies move without friction and that we stay far from the speed of light. When your car is stuck in the mud or you are running an intergalactic spaceship, frictionless Newtonian mechanics is the wrong model <strong>even though</strong> it remains mathematically consistent. Why do we still use Newtonian mechanics? Because it gets the job done in many practical cases.</p>
+<p>Similarly, in computer science, we routinely analyze algorithms using the <a href="http://en.wikipedia.org/wiki/Big_O_notation">big-O notation</a>. This notation is always mathematically consistent. In this sense, it is always right.</p>
+<p>However, most computer scientists and engineers use the big-O notation as a model for real-world performance (at a high level). So if a computer scientist tells you that algorithm X runs in time O(<em>n</em><sup>2</sup>) whereas a algorithm Y runs in time O(<em>n</em> log <em>n</em>), you expect that for some large but reasonable value of <em>n</em> and for some data, algorithm Y will be faster than algorithm X. If it does not happen, it does not mean that the big-O notation is mathematically wrong, but it means that it is wrong as model for real-world performance. It must be rejected. That is, the big-O notation does not model real-world performance and is not useful as a scientific model. That&#8217;s just like saying that if you run an intergalactic spaceship, Newtonian mechanics is wrong. It is not up to debate: Newtonian mechanics will simply fail to model how your engine relate to the speed of your ship.</p>
+<p>What do I mean by large but reasonable value of <em>n</em>? First we must agree that there is a limit. Just consider that our solar system is finite. We could spend all our ressources on a single massive computer, but it would still be finite. Even if we were to expand the computer to encompass all of the universe, it would still be finite. So there is clearly a limit to how big <em>n</em> can be. In practice, this limit is set by the practical problems we encounter. If, for your problems, <em>n</em> is too small, then the big-O notation is the wrong model for you.</p>
+<p>To make matters worse, nobody uses the same program to process 10KB and to process 100TB of data. Suresh <a href="http://geomblog.blogspot.ca/2012/05/in-long-run.html">summarizes</a> the problem:</p>
+<blockquote><p> Asymptotics will eventually win out, as long as everything else stays fixed. But that&#8217;s the precise problem. Everything else doesn&#8217;t stay fixed. Well before your <em>n</em> log <em>n</em> algorithm beats the <em>n</em> <sup>2</sup> algorithm, we run out of memory, or local cache, or something else, and the computational model changes on us.</p></blockquote>
+<p>So even if your algorithm would eventually win out for a value of <em>n</em> that is not outrageous, your asymptotic analysis can still be irrelevant because larger values of <em>n</em> are handled with a different architecture. </p>
+<p>Ultimately, the big-O notation is a tremendously useful but crude tool. It is great to convey broad ideas. It can help to explain some simple decisions. For example, if you need to search an element in an array and you expect the array to be large, you might just say that you opt for a binary search instead of a sequential scan because the former has O(log <em>n</em>) complexity wheres the latter has O(<em>n</em>) complexity. It is unlikely that your colleagues will expect you to run benchmarks. In this case, the big-O notation captures and summarizes our knowledge of the problem.</p>
+<p>However, when designing a software system, the fraction of your decisions that rely on big-O analysis is small. Good engineers rely on more sophisticated models and metrics. In this sense, it is unfair to compare the big-O notation with Newtonian mechanics. The latter allows you to model complex problems from start to finish with exact results (under some assumptions that can be almost realized). The big-O notation is far more limited in its applications. Of course, when it is applicable, the big-O notation is tremendously powerful.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/" data-text="Big-O notation and real-world performance" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comments" title="Comment on Big-O notation and real-world performance">Comments (16)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2013/02/11/the-big-o-notation-is-a-teaching-tool/" rel="bookmark">The big-O notation is a teaching tool</a><!-- (11.6)--></li>
+	</ul>
+</div>
+
+</div>
+
+
+
+<h2 id="comments">16 Comments 
+	<a href="#postcomment" title="Leave a comment">&raquo;</a>
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-89765">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b85e6b127c527c8dcebe18d1c985e48?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>This reminds me of my post, O(n) beats O(lg n) I wrote a while ago:</p>
+<p><a href="http://willwhim.wpengine.com/2011/07/07/on-beats-olg-n/" rel="nofollow">http://willwhim.wpengine.com/2011/07/07/on-beats-olg-n/</a></p>
+	<p><cite>Comment by <a href='http://willwhim.wpengine.com' rel='external nofollow' class='url'>Will Fitzgerald</a> &#8212; 11/7/2013 @ <a href="#comment-89765">9:28</a></cite> </p>
+	</li>
+
+	<li id="comment-89813">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/cdbd04afdb5401d1cbbd390416f3c1e3?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Further, Jeff Ulmann complained about people using easy test sets that show their algorithm working, while, in the real word this would not happen. Some, even cheat.</p>
+<p>The same problem is with Big-O notation. Computer scientists derive new estimates using clever mathematical tricks. The problem is that these tricks introduce such enormous constants, so that (I believe) a majority of Big-O published formulas are totally bogus. </p>
+<p>They are mathematically correct, but you would never get a sufficiently large n.</p>
+	<p><cite>Comment by <a href='http://boytsov.info' rel='external nofollow' class='url'>Itman</a> &#8212; 11/7/2013 @ <a href="#comment-89813">22:42</a></cite> </p>
+	</li>
+
+	<li id="comment-89823">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/3484e2a454a76cba8a1bc2a81244d26a?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I recently optimised an algorithm that was part of a scientist&#8217;s MATLAB program. I described how I did it to a computer scientist who poured scorn on my work &#8216;Trival! It changes nothing in the big-O sense&#8217; </p>
+<p>The scientist,  who&#8217;s workflow was now many times faster, bought me a case of wine.</p>
+	<p><cite>Comment by <a href='http://www.walkingrandomly.com' rel='external nofollow' class='url'>Mike Croucher</a> &#8212; 12/7/2013 @ <a href="#comment-89823">2:44</a></cite> </p>
+	</li>
+
+	<li id="comment-89843">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/?d=wavatar&amp;s=32' class='avatar avatar-32 photo avatar-default' height='32' width='32' /></div>
+	<p>I think another way to say this is that for real world problems the constant matters.  If you really want to know what is faster you need to work harder and get a sharp bound.  Big-O just tells you how the bound will scale with size.  However, if the difference is between O(log(n)) and O(n), then the ratio of constants must be pretty big for log(n) not to win for any appreciable n.</p>
+	<p><cite>Comment by <a href='http://sciencehouse.wordpress.com' rel='external nofollow' class='url'>Carson Chow</a> &#8212; 12/7/2013 @ <a href="#comment-89843">11:54</a></cite> </p>
+	</li>
+
+	<li id="comment-89845">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/cdbd04afdb5401d1cbbd390416f3c1e3?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Carson Chow. The problem is that it is not always log(n) vs n. Quite often it is log^3(n) or, say, log^5(n). (have a real example, of course).</p>
+	<p><cite>Comment by <a href='http://boytsov.info' rel='external nofollow' class='url'>Itman</a> &#8212; 12/7/2013 @ <a href="#comment-89845">12:22</a></cite> </p>
+	</li>
+
+	<li id="comment-89848">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/3ccaf45d7ab8ecc0e412fe911c9b9d10?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Mike, you need to find a computer scientist to talk to who isn&#8217;t an idiot.</p>
+	<p><cite>Comment by <a href='http://www.cs.utah.edu/~regehr/' rel='external nofollow' class='url'>John Regehr</a> &#8212; 12/7/2013 @ <a href="#comment-89848">12:47</a></cite> </p>
+	</li>
+
+	<li id="comment-89851">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/db30653dd9479bbbcc01413081ee2496?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>In addition to this point, the smaller but important point is that big-O gives only an upper bound, asymptotically, and not necessarily a tight one. Use big-Omega for that. See <a href="http://mcw.wordpress.fos.auckland.ac.nz/2011/09/27/big-omicron-and-big-omega-and-big-theta/" rel="nofollow">http://mcw.wordpress.fos.auckland.ac.nz/2011/09/27/big-omicron-and-big-omega-and-big-theta/</a></p>
+	<p><cite>Comment by <a href='http://mcw.wordpress.fos.auckland.ac.nz' rel='external nofollow' class='url'>Mark C. Wilson</a> &#8212; 12/7/2013 @ <a href="#comment-89851">13:34</a></cite> </p>
+	</li>
+
+	<li id="comment-89863">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b4f7452c0ec9116cd0e4cdb9c3262726?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>So, if I may paraphrase, big O-notation is a mathematically very useful notion that allows us to talk about algorithms very reasonably, and often corresponds pretty directly to reality.  But you have to consider it with a grain of salt &#8212; hidden constant factors, the fact that it&#8217;s asymptotic, it doesn&#8217;t (by itself, necessarily) take into account parallelism/caches/other hardware issues all are things to worry about.  </p>
+<p>Great.  My lecture in my algorithms class has all bases covered.</p>
+	<p><cite>Comment by Michael Mitzenmacher &#8212; 12/7/2013 @ <a href="#comment-89863">18:29</a></cite> </p>
+	</li>
+
+	<li id="comment-89864">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b4f7452c0ec9116cd0e4cdb9c3262726?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>(Oh, and I forgot &#8212; it&#8217;s worst case analysis, not average/typical/whatever your case is analysis.  That&#8217;s in my lecture too.)</p>
+	<p><cite>Comment by Michael Mitzenmacher &#8212; 12/7/2013 @ <a href="#comment-89864">18:30</a></cite> </p>
+	</li>
+
+	<li id="comment-89884">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Michael</p>
+<p>I would hope that everything in this blog post is standard knowledge and uncontroversial.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 12/7/2013 @ <a href="#comment-89884">23:23</a></cite> </p>
+	</li>
+
+	<li id="comment-89887">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b4f7452c0ec9116cd0e4cdb9c3262726?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>While I&#8217;d agree that the limitations of the O notation you describe should be uncontroversial (and should be clearly taught with the notation), I think you exaggerate when you say:<br />
+&#8220;However, when designing a software system, the fraction of your decisions that rely on big-O analysis is small. Good engineers rely on more sophisticated models and metrics.&#8221;<br />
+and<br />
+&#8220;The big-O notation is far more limited in its applications.&#8221;<br />
+In my experience, a great many basic decisions stem from understanding what your code is doing at the level of counting operations &#8212; is it linear, quadratic, n log n, etc. &#8212; and then fine-tuning for constant factors.  </p>
+<p>So while I agree with all of your caveats, I think of O-notation as not being useful as still an exceptional rather than common case.</p>
+	<p><cite>Comment by Michael Mitzenmacher &#8212; 12/7/2013 @ <a href="#comment-89887">23:45</a></cite> </p>
+	</li>
+
+	<li id="comment-90038">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/8af88bac916c9bf3f45831c114d30b0e?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Asymptotic analysis tends to be more relevant with polynomial complexities than with (poly-)logarithmic ones. After all, log n ≈ 30 is usually a reasonable estimate, while cache misses cost from tens to hundreds of CPU cycles.</p>
+	<p><cite>Comment by <a href='http://iki.fi/jouni.siren/' rel='external nofollow' class='url'>Jouni</a> &#8212; 15/7/2013 @ <a href="#comment-90038">9:49</a></cite> </p>
+	</li>
+
+	<li id="comment-90040">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/cdbd04afdb5401d1cbbd390416f3c1e3?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Jouni, as far as I remember (let anybody correct me if I am wrong), quadratic time algorithm for suffix-tree(array) construction are faster in practice than linear ones.</p>
+	<p><cite>Comment by <a href='http://boytsov.info' rel='external nofollow' class='url'>Itman</a> &#8212; 15/7/2013 @ <a href="#comment-90040">10:07</a></cite> </p>
+	</li>
+
+	<li id="comment-90043">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/8af88bac916c9bf3f45831c114d30b0e?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Itman: A few years ago the fastest suffix array construction algorithms (at least under some assumptions) were indeed O(n^2 log n)-time. These days the fastest well-known implementation (under similar assumptions) is Yuta Mori&#8217;s libdivsufsort, which uses an O(n log n)-time algorithm.</p>
+<p>The caveat is that the benchmarks are usually done with small inputs of up to ~100 MB in size. With such small inputs, memory locality and various heuristic tricks play more important role than in the multi-gigabyte range.</p>
+	<p><cite>Comment by <a href='http://iki.fi/jouni.siren/' rel='external nofollow' class='url'>Jouni</a> &#8212; 15/7/2013 @ <a href="#comment-90043">10:36</a></cite> </p>
+	</li>
+
+	<li id="comment-90047">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/cdbd04afdb5401d1cbbd390416f3c1e3?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Jouni,</p>
+<p>Thank you for the update. Yes, this may be the case. But, still, up to a &#8220;small&#8221; 100 MB input, the quadratic beats the classic LINEAR.</p>
+	<p><cite>Comment by <a href='http://boytsov.info' rel='external nofollow' class='url'>Itman</a> &#8212; 15/7/2013 @ <a href="#comment-90047">11:16</a></cite> </p>
+	</li>
+
+	<li id="comment-90075">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/8af88bac916c9bf3f45831c114d30b0e?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Itman: The quadratic complexities of those fast algorithms are basically rough upper bounds. A reasonably straightforward implementation of naive suffix sorting takes O(nL log n) time, where L is the average LCP value. The fast &#8220;quadratic time&#8221; algorithms basically improve upon this in two ways:</p>
+<p>1) They identify a subset of suffixes, whose sorted order can be used to induce the order of the rest of the suffixes. This typically improves the running time by a constant factor.</p>
+<p>2) They use some heuristics to identify long repetitions, and sort them in some other way. There are known bad cases for some of the heuristics, but even then the asymptotic complexity does not grow over the naive O(nL log n). For other heuristics, neither bad cases nor better time bounds are known.</p>
+<p>Now consider a snapshot of the English language Wikipedia. In the first tens of megabytes, the average LCP is in low tens. When we increase dataset size to hundreds of megabytes or even a few gigabytes, L increases into the 50-100 range. After that, L starts to rise, reaching the 500-1000 range with dataset size in tens of gigabytes.</p>
+<p>Then consider the human genome. Due to the long runs of Ns (unknown bases), the average LCP in the entire reference genome is in hundreds of thousands. Yet this is exactly the kind of repetition the heuristics in the quadratic algorithms can easily handle. If we ignore the Ns, the average LCP drops below 100 for the most of the chromosomes (I couldn&#8217;t find the numbers for the entire genome).</p>
+<p>In both cases, asymptotic analysis gives us reasons to believe that the speed of the &#8220;quadratic&#8221; algorithms should be in the same neighborhood as the linear and O(n log n)-time algorithms, at least if we consider the typical ~100 MB test cases. Yet as the Wikipedia example suggests, the situation may change with larger inputs.</p>
+	<p><cite>Comment by <a href='http://iki.fi/jouni.siren/' rel='external nofollow' class='url'>Jouni</a> &#8212; 15/7/2013 @ <a href="#comment-90075">23:28</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<h2 id="postcomment">Leave a comment</h2>
+
+
+<form action="http://lemire.me/blog/wp-comments-post.php" method="post" id="commentform">
+<!--bot-->
+
+<!--bot-->
+
+<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" />
+<label for="author"><small>Name </small></label></p>
+
+<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" />
+<label for="email"><small>Mail (will not be published) </small></label></p>
+
+<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" />
+<label for="url"><small>Blog or personal home page</small></label></p>
+
+
+
+
+<p style="background:#ccc;font-size:0.8em;"><strong>Warning</strong>: When entering a long comment, please
+ensure that you make copy of your text prior to submitting it.
+If the server should fail or if you hit a bug, you might lose your work. I am
+not responsible for your lost effort.</p>
+
+<p style="font-size:0.8em;"><strong>To spammers</strong>: I carefully review every single post
+and make sure that spam gets deleted. <strong>You are wasting your time if you
+are manually entering spam using this form.</strong> Read my 
+<a href="http://lemire.me/blog/terms-of-use/">terms of use</a> to see 
+what I consider to be abusive. </p>
+
+
+<!--<p style="font-size:0.8em;"><strong>XHTML:</strong> You can use these tags: &lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </p>-->
+
+<p><textarea name="comment" id="comment" cols="40" rows="10" tabindex="4"></textarea></p>
+<p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
+<input type="hidden" name="comment_post_ID" value="5448" />
+</p>
+ <p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="a753823ba4" /></p><p style="clear:both"><input style="width: 20px" type="checkbox" value="1" name="subscribe" id="subscribe" checked="checked"/>&nbsp;<label style="margin:0; padding:0; position:relative; left:0; top:0;" for="subscribe">Notify me when new comments are added</label></p><!--<php show_subscription_checkbox(); ?>
+-->
+</form>
+
+
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/">Previous: Should computer scientists run experiments?</a></div>
+<div  style="text-align:right">
+</div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>3,800</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1410&nbsp;posts and 5739&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90075" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90047" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90043" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90040" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90038" title="11/7/2013">Big-O notation and real-world performance</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.135 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-07-16 22:49:47 -->

@@ -1,0 +1,453 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+  <script type="text/javascript">         
+    window.onerror = function (e) { return true; }        
+  </script>
+  <title>
+	The biomess - Matt Ridley
+</title><meta name="Description" content="Times column on biomass" /><meta name="Keywords" content="biomass, wood, carbon, energy, Drax, pollution" /><meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1" /><link href="http://fonts.googleapis.com/css?family=Ubuntu:400,700,400italic,700italic" rel="stylesheet" type="text/css" /><link href="/css/site.css" rel="stylesheet" type="text/css" /><link rel="shortcut icon" href="/media/17012/favicon.ico" /><link rel="apple-touch-icon-precomposed" sizes="114x114" href="/media/17017/icon114.png" /><link rel="apple-touch-icon-precomposed" sizes="72x72" href="/media/17022/icon72.png" /><link rel="apple-touch-icon-precomposed" href="/media/17027/icon57.png" />
+
+  <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  
+  <script type="text/javascript">var switchTo5x=true;</script>
+<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+<script type="text/javascript">stLight.options({publisher: "85aa3a3d-018d-4f87-82f4-e172211f9664", doNotHash: true, doNotCopy: true, hashAddressBar: false});</script>
+
+  
+  <script type="text/javascript">window.jQuery || document.write("<script src='assets/js/libs/jquery-1.7.1.min.js'>\x3C/script>")</script>
+  <script type="text/javascript" src="/scripts/cookie/jquery.cookie.js"></script>
+  <script type="text/javascript" src="/scripts/cookie/jquery.cookiecuttr.js"></script>
+  <link type="text/css" rel="stylesheet" href="/scripts/cookie/cookiecuttr.css" />
+  
+  <script type="text/javascript">    
+    $(document).ready(function() {
+      $.cookieCuttr();
+       $.getJSON("https://api.twitter.com/1/statuses/user_timeline.json?screen_name=mattwridley&count=1&callback=?",
+                function(data) {
+                  var tweet = jQuery.trim(data[0].text).substring(0, 69).split(" ").slice(0, -1).join(" ");
+                  tweet = tweet + " - ... <a href=\"http://www.twitter.com/mattwridley\">More</a>";
+                  $("#LatestTweetContent3").html(tweet);
+                });
+    });
+     
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-16388536-27']);
+    _gaq.push(['_trackPageview']);
+    (function() {
+      var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+      ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+    })();
+  </script>
+  
+
+  
+  <script type="text/javascript">
+
+  </script>
+</head>
+<body class="StandardBackGroundWrapper">
+   
+    <div class="SiteWrapper">
+      <div id="LatestTweet">
+        <div id="LatestTweetContent">
+          
+        </div>
+      </div>
+      <div class="SocialLinks">
+        <img src="/Global/Images/FollowMe.png" alt="Follow Me" title="Follow Me" />
+        <a href="https://twitter.com/#!/mattwridley"><img src="/Global/Images/TwitterIcon.png" alt="Twitter" title="Twitter" /></a>
+        <img src="/Global/Images/LinkedInIcon.png" alt="LinkedIn" title="LinkedIn" />
+         <a href="/explore-blagdon">
+          <img src="/Global/Images/ExploreBlagdonEstateBanner.png" alt="Explore Blagdon Estate" title="Explore Blagdon Estate" />
+        </a>
+      </div>
+      <div class="clear"></div>
+      <div class="MattRidleyLogo">
+        <img src="/Global/Images/MattRidleyLogo.png" alt="Matt Ridley" title="Matt Ridley" />
+      </div>
+   <form action="/search.aspx" method="get">
+     <div class="Search">
+        <input type="text" name="search" class="SearchInput" /> <div class="SearchBtn"><input type="image" src="/Global/Images/MattRidleySearchBtn.gif" alt="Search" title="Search" value="Search" /></div>
+      </div>
+      </form>
+       <form name="aspnetForm" method="post" action="/blog/the-biomess.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUENTM4MWRkuOwJIW0vVHwR5Kg5BXGsfnv4AnA=" />
+</div>
+
+      <div class="clear"></div>
+      <div class="Navigation">
+        <ul id="tabnav"><li class="tab1"><a href="/home">HOME</a></li><li class="tab2"><a href="/biography">BIOGRAPHY</a></li><li class="tab3 selected"><a href="/blog">BLOG</a></li><li class="tab4"><a href="/videos">VIDEOS</a></li><li class="tab5"><a href="/speaking">SPEAKING</a></li><li class="tab6"><a href="/rational-optimist">RATIONAL OPTIMIST</a></li><li class="tab7"><a href="/publications">BOOKS &amp; PUBLICATIONS</a></li><li class="tab8"><a href="/contact">CONTACT ME</a></li></ul>
+      </div>
+      <div class="clear"></div>
+      <div class="Content">
+            <div class="HomePageImage">
+              <!--<img src="/Global/Images/WelcomeImage.jpg" alt=" " width="539" height="233" />-->
+              <img src="/Global/Images/WelcomeImage.jpg" alt="" width="539" height="233" />          
+            </div>    
+            <div class="BlogPanel">
+              <div class="BlogHeader">LATEST BLOG</div>
+              <div class="BlogContent">
+                <div class="BlogPostHeader"><a href="/blog/global-lukewarming-need-not-be-catastrophic.aspx">Global lukewarming need not be catastrophic</a><img src="/Global/Images/Arrow.png" alt=" " /></div><div class="BlogPostDescription">Tuesday, October 01, 2013</div><div class="BlogPostHeader"><a href="/blog/cheap-energy-or-green-energy-you-cannot-have-both.aspx">Cheap energy or green energy - you cannot have both</a><img src="/Global/Images/Arrow.png" alt=" " /></div><div class="BlogPostDescription">Monday, September 30, 2013</div><div class="BlogPostHeader"><a href="/blog/bill-bryson's-1927.aspx">Bill Bryson's 1927</a><img src="/Global/Images/Arrow.png" alt=" " /></div><div class="BlogPostDescription">Tuesday, September 24, 2013</div>
+              </div>
+            </div>
+            <div class="clear"></div>
+            
+  <div class="InnerContentPanel"><div class="InnerContentHeader">Welcome to Matt Ridley's Blog</div><div class="InnerContent"><span class="blogRootContentHeading">Matt Ridley is the author of provocative books on evolution, genetics and society. His books have sold over a million copies, been translated into thirty languages, and have won several awards.</span>
+<p>Please note that this blog no longer accepts comments (there was
+too much spam coming in!). If you're reading this blog and want to
+respond then please use the contact form on the site.</p>
+
+<p>You can also follow me on <a
+href="https://twitter.com/#!/mattwridley"
+target="_blank">twitter</a>.</p>
+<div class="clear" /></div></div>
+  <div class="blogContent"><div class="hentry post publish author- tag-boat tag-lake 13YYYY 2306 y2008 m10 d17 h04"><h1 class="entry-title" id="post-1695"><a href="/blog/the-biomess.aspx" title="Permalink to The biomess">The biomess</a></h1><div class="entry-date"><abbr class="published" title="6/22/2013">
+            Published on Saturday, June 22, 2013</abbr>, 
+      <abbr class="published" title="6/22/2013">
+        updated Saturday, June 22, 2013</abbr></div><h3 class="entry-subheading">Making electricity from burning wood is bad for the economy and the environment</h3><div class="entry-content">
+<p class="first">My column in <a
+href="http://www.thetimes.co.uk/tto/opinion/columnists/article3795489.ece"
+ target="_blank">the Times</a> on 20 June 2013:</p>
+
+<p class="first">&nbsp;</p>
+
+<p class="first">In the Energy Bill going through Parliament there
+is allowance for generous subsidy for a huge push towards burning
+wood to produce electricity. It’s already happening. Drax power
+station in Yorkshire has converted one of its boilers to burn wood
+pellets instead of coal; soon three of its six boilers will be
+doing this and the power station will then be receiving north of
+half a billion pounds a year in subsidy. By 2020, the Government
+estimates, up to 11 per cent of our generating capacity will be
+from burning wood.</p>
+
+<p>This is a really bad idea. It will cost a fortune, worsen air
+pollution, exacerbate dependency on foreign energy and increase
+greenhouse gas emissions compared with burning gas and maybe even
+with burning coal. All these are in direct contradiction of the
+Energy Bill’s ostensible purpose. Yet “biomass” is trumpeted as a
+key part of the Government’s strategy to keep the lights on and
+combat climate change.</p>
+
+<p>It is also a retrograde step, taking us back towards the days
+when we relied on plant growth for most of our energy. According to
+Tony Wrigley’s recent book,&nbsp;<a
+href="http://www.amazon.co.uk/Energy-English-Industrial-Revolution-Wrigley/dp/0521131855"
+ target="_blank"><span>Energy and the&nbsp;English&nbsp;Industrial
+Revolution</span></a>, firewood provided a third of Britain’s
+energy under Elizabeth I, more than draught animals, human
+muscle-power, wind, water or coal. By the time of Queen Victoria,
+firewood’s contribution had fallen to 0.1 per cent.</p>
+
+<p>This astonishing change was key to the industrial revolution. To
+sustain an industrial economy requires far more energy than can be
+obtained from even the fastest-growing trees, crops or from horses.
+Britain would have stagnated in the early 1800s if it had not
+tapped almost inexhaustible supplies of coal to replace the need to
+fell trees and grow oats for horses. By 1850 England was each year
+burning coal equivalent in energy terms to the maximum output of a
+forest one and a half times the country’s land area. Thanks to
+coal, that deforestation could begin to be reversed. By 2000,
+Britain’s forest cover had trebled since its low point in 1900.</p>
+
+<p>Under the Government’s plan, biomass power stations will soon be
+burning much more wood than the country can possibly produce. There
+is a comforting myth out there that biomass imports are mainly
+waste that would otherwise decompose: peanut husks, olive pips,
+bark trimmings and the like. Actually, the bulk of the imports are
+already and will continue to be of wood pellets.</p>
+
+<p>It is instructive to trace these back to their origin. Reporters
+for&nbsp;<span>The Wall Street Journal</span> recently <a
+href="http://online.wsj.com/article/SB10001424127887324082604578485491298208114.html"
+ target="_blank">found that</a> the two pelleting plants
+established in the southern US specifically to supply Drax are not
+just taking waste or logs from thinned forest, but also taking logs
+from cleared forest, including swamp woodlands in North Carolina
+cleared by “shovel-logging” with giant bulldozers (running on
+diesel). Local environmentalists are up in arms.</p>
+
+<p>The logs are taken to the pelleting plants where they are dried,
+chopped and pelleted, in an industrial process that emits lots of
+carbon dioxide and pollutants. They are then trucked (more diesel)
+to ports, loaded on ships (diesel again), offloaded at the Humber
+on to (yet more diesel) trains, 40 of which arrive at Drax each
+day.</p>
+
+<p>Yet until recently the Government was in denial about all this
+diesel. “No net emissions during production are assumed,” it said
+in its 2007&nbsp;<span>Biomass Strategy</span>. More
+recently,&nbsp;<a
+href="https://www.gov.uk/government/uploads/system/uploads/attachment_data/file/48337/5142-bioenergy-strategy-.pdf"
+ target="_blank">it has admitted</a> that the energy costs of
+transporting biomass can be up to “46 per cent of the energy
+generated by combustion at the power station” if shipped from
+afar.</p>
+
+<p>Storing the pellets is not easy. If too dry, they spontaneously
+burst into flames, as happened at Tilbury last year. The Health and
+Safety Executive warns that stored wood pellets also produce carbon
+monoxide, which can suffocate in a confined space.</p>
+
+<p>Burn the pellets and you produce smoke. The Committee on the
+Medical Effects of Air Pollutants says airborne particulates kill
+more people than road traffic accidents. It is no accident that the
+Renewable Heat Incentive, designed to subsidise us replacing gas
+boilers with wood burners for central heating, is not available in
+cities because it could break air-quality limits. To put it more
+bluntly, your Government has decided that there is not enough
+pollution in the countryside.</p>
+
+<p>Moreover, soot — or “black carbon” as scientists now call it —
+has recently been shown to have a much bigger impact on climate
+than previously thought. “Global atmospheric absorption
+attributable to black carbon is too low in many models and should
+be increased by a factor of almost 3,” <a
+href="http://onlinelibrary.wiley.com/doi/10.1002/jgrd.50171/abstract"
+ target="_blank">reads the key paper</a> published this month.
+Because burning gas does not produce soot, this is another black
+mark against wood.</p>
+
+<p>As for carbon dioxide, clear-felling a forest is like raiding
+the carbon bank. Wood is the most carbon-rich fuel of all — more so
+than coal and much more so than oil or gas. The biomass industry
+and the Government respond that trees regrow, so reabsorbing from
+the atmosphere the CO2 emitted when they were burnt. The
+Government’s 2012&nbsp;<span>UK Bioenergy Strategy</span> says that
+wood burning “results in lower total GHG [greenhouse gas] emissions
+than leaving the wood unharvested”.</p>
+
+<p>But it only achieves this result by measuring the effect over
+100 years. That’s how long it takes on average for the forest to
+regrow. And this assumes that you do not then cut it down again, or
+you are back to square one.</p>
+
+<p>Over 20 or 40 years, study after study shows that wood burning
+is far worse than gas, and worse even than coal, in terms of its
+greenhouse gas emissions. The effect on forest soil, especially if
+it is peaty, only exacerbates the disparity. The peat dries out and
+oxidises.</p>
+
+<p>Yet the Government persists in regarding biomass burning as
+zero-carbon and therefore deserving of subsidy. It does so by the
+Orwellian feat of defining sustainability as a 60 per cent
+reduction in emissions from fossil fuels. As Calor Gas puts it:
+“This is a logical somersault too far, conveniently — for the sake
+of cherry-picking the technology — equating 40 per cent to 0 per
+cent.” (Calor Gas supplies rural gas and is understandably miffed
+at being punitively treated while a higher- carbon rival industry
+is subsidised. See <a
+href="http://www.publications.parliament.uk/pa/cm200910/cmselect/cmenvaud/229/229we02.htm"
+ target="_blank">here</a>, <a
+href="http://www.publications.parliament.uk/pa/cm200910/cmselect/cmenvaud/229/229we25.htm"
+ target="_blank">here</a> and <a
+href="http://www.senedd.cynulliadcymru.org/documents/s500000461/Ymateb%20ir%20Ymgynghoriad%20EPP%20008%20-%20Nwy%20Calor%20Saesneg%20yn%20unig.pdf"
+ target="_blank">here</a>) Moreover, unlike gas or coal, you are
+pinching nature’s lunch when you cut down trees. Unfelled, the
+trees would feed beetles, woodpeckers, fungi and all sorts of other
+wildlife when they died, let alone when they lived. Nothing eats
+coal.</p>
+
+<p>So, compared with gas, the biomass dash is bad for the climate,
+bad for energy security and dependence on imports, bad for human
+health, bad for wildlife and very bad for the economy. Apart from
+that, what’s not to like?</p>
+
+<p>&nbsp;</p>
+
+<p>Postscript: For those who objected to my comment that wood
+produces more carbon dioxide than coal, please see the following
+short note from the Partnership for Policy Integrity
+(http://www.pfpi.net/carbon-emissions):</p>
+
+<p>&nbsp;</p>
+
+<p><span>"Burning biomass emits more CO<span>2</span> than fossil
+fuels per megawatt energy generated:</span></p>
+
+<p><span></span> 1. Wood inherently emits more carbon per Btu than
+other fuels</p>
+
+<ul>
+<li class="first-child"><a
+href="http://www.eia.doe.gov/oiaf/1605/coefficients.html"><span>Natural
+gas</span></a>: 117.8 lb CO<span>2</span>/mmbtu</li>
+
+<li><a
+href="http://www.eia.doe.gov/oiaf/1605/coefficients.html"><span>Bituminous
+coal</span></a>: 205.3 lb CO<span>2</span>/mmbtu</li>
+
+<li class="last-child"><a
+href="http://bioenergy.ornl.gov/papers/misc/energy_conv.html">Wood</a>:
+213 lb CO<span>2</span>/mmbtu (bone dry)</li>
+</ul>
+
+<p>2.&nbsp; Wood is often wet and dirty, which degrades heating
+value Typical moisture content of wood is 45 – 50%, which means its
+btu content per pound is about half that of bone dry wood. Before
+“useful” energy can be derived from burning wood, some of the
+wood’s btu’s are required to evaporate all that water.</p>
+
+<p>3.&nbsp; Biomass boilers operate less efficiently than fossil
+fuel boilers (data from air plant permit reviews and the Energy
+Information Administration)</p>
+
+<ul>
+<li class="first-child">Utility-scale biomass boiler: 24%</li>
+
+<li>Average efficiency US coal fleet: 33%</li>
+
+<li class="last-child">Average gas plant: 43%"</li>
+</ul>
+</div><div class="entry-meta"><span class="author vcard">
+        By: <span class="fn n">Matt Ridley
+        </span></span><span class="meta-sep"> |</span><span class="tag-links">
+            Tagged:
+            <a href="/blog.aspx?filterby=rational-optimist" rel="tag">rational-optimist</a>, <a href="/blog.aspx?filterby=the-times" rel="tag">the-times</a></span><br /><br /><span class="st_facebook_large" displayText="Facebook" /><span class="st_twitter_large" displayText="Tweet" /><span class="st_googleplus_large" displayText="Google +" /><span class="st_linkedin_large" displayText="LinkedIn" /></div></div></div>  
+  </div>
+  <div class="blogSidebar">
+    <div class="blogArchive">
+      <span>Archive</span>
+      <ul xmlns:math="http://exslt.org/math">
+  <li>
+    <h3>2010</h3>
+    <ul>
+      <li><a href="/blog.aspx?filterbydate=12-2010">December (15)</a></li>
+      <li><a href="/blog.aspx?filterbydate=11-2010">November (16)</a></li>
+      <li><a href="/blog.aspx?filterbydate=10-2010">October (16)</a></li>
+      <li><a href="/blog.aspx?filterbydate=09-2010">September (13)</a></li>
+      <li><a href="/blog.aspx?filterbydate=08-2010">August (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=07-2010">July (17)</a></li>
+      <li><a href="/blog.aspx?filterbydate=06-2010">June (11)</a></li>
+      <li><a href="/blog.aspx?filterbydate=05-2010">May (20)</a></li>
+      <li><a href="/blog.aspx?filterbydate=04-2010">April (25)</a></li>
+      <li><a href="/blog.aspx?filterbydate=03-2010">March (6)</a></li>
+    </ul>
+  </li>
+  <li>
+    <h3>2011</h3>
+    <ul>
+      <li><a href="/blog.aspx?filterbydate=12-2011">December (8)</a></li>
+      <li><a href="/blog.aspx?filterbydate=11-2011">November (9)</a></li>
+      <li><a href="/blog.aspx?filterbydate=10-2011">October (18)</a></li>
+      <li><a href="/blog.aspx?filterbydate=09-2011">September (7)</a></li>
+      <li><a href="/blog.aspx?filterbydate=08-2011">August (9)</a></li>
+      <li><a href="/blog.aspx?filterbydate=07-2011">July (13)</a></li>
+      <li><a href="/blog.aspx?filterbydate=06-2011">June (14)</a></li>
+      <li><a href="/blog.aspx?filterbydate=05-2011">May (16)</a></li>
+      <li><a href="/blog.aspx?filterbydate=04-2011">April (17)</a></li>
+      <li><a href="/blog.aspx?filterbydate=03-2011">March (14)</a></li>
+      <li><a href="/blog.aspx?filterbydate=02-2011">February (9)</a></li>
+      <li><a href="/blog.aspx?filterbydate=01-2011">January (16)</a></li>
+    </ul>
+  </li>
+  <li>
+    <h3>2012</h3>
+    <ul>
+      <li><a href="/blog.aspx?filterbydate=12-2012">December (8)</a></li>
+      <li><a href="/blog.aspx?filterbydate=11-2012">November (7)</a></li>
+      <li><a href="/blog.aspx?filterbydate=10-2012">October (5)</a></li>
+      <li><a href="/blog.aspx?filterbydate=09-2012">September (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=08-2012">August (5)</a></li>
+      <li><a href="/blog.aspx?filterbydate=07-2012">July (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=06-2012">June (4)</a></li>
+      <li><a href="/blog.aspx?filterbydate=05-2012">May (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=04-2012">April (4)</a></li>
+      <li><a href="/blog.aspx?filterbydate=03-2012">March (9)</a></li>
+      <li><a href="/blog.aspx?filterbydate=02-2012">February (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=01-2012">January (8)</a></li>
+    </ul>
+  </li>
+  <li>
+    <h3>2013</h3>
+    <ul>
+      <li><a href="/blog.aspx?filterbydate=10-2013">October (1)</a></li>
+      <li><a href="/blog.aspx?filterbydate=09-2013">September (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=08-2013">August (3)</a></li>
+      <li><a href="/blog.aspx?filterbydate=07-2013">July (7)</a></li>
+      <li><a href="/blog.aspx?filterbydate=06-2013">June (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=05-2013">May (4)</a></li>
+      <li><a href="/blog.aspx?filterbydate=04-2013">April (4)</a></li>
+      <li><a href="/blog.aspx?filterbydate=03-2013">March (6)</a></li>
+      <li><a href="/blog.aspx?filterbydate=02-2013">February (4)</a></li>
+      <li><a href="/blog.aspx?filterbydate=01-2013">January (6)</a></li>
+    </ul>
+  </li>
+</ul>
+    </div>
+    <div class="blogCategories">
+      <span>Categories</span>
+      <ul><li class="cat-item"><a href="/blog.aspx">All</a><span> (416)</span></li><li class="cat-link"><a href="/blog.aspx?filterby=rational-optimist">rational-optimist</a> 
+      (321)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=Spectator">Spectator</a> 
+      (7)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=wall-street-journal">wall-street-journal</a> 
+      (105)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=general">general</a> 
+      (39)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=the-times">the-times</a> 
+      (47)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=human-genome">human-genome</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=Telegraph">Telegraph</a> 
+      (2)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=Prospect">Prospect</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=Lecture">Lecture</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=Radio">Radio</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=the times">the times</a> 
+      (2)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=climate">climate</a> 
+      (2)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=meteorite">meteorite</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=ice age">ice age</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=confirmation bias">confirmation bias</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=poverty reduction">poverty reduction</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=shale-gas">shale-gas</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=evolution">evolution</a> 
+      (2)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=technology">technology</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=genetics">genetics</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=spiked!">spiked!</a> 
+      (1)
+    </li><li class="cat-link"><a href="/blog.aspx?filterby=Australian">Australian</a> 
+      (1)
+    </li></ul>
+    </div>    
+  </div>  
+      
+     
+      
+      
+      <div class="clear"></div>
+      </div>
+      </form>
+      <div class="Footer">
+        <ul>
+          <li><a href="/sitemap">Sitemap</a></li>
+          <li><a href="/terms">Terms &amp; Conditions</a></li>
+        </ul>
+        <div class="RetoxDigital">
+          <a href="http://www.retoxdigital.com/">Website Design | Newcastle | Retox Digital</a>
+        </div>
+        <div class="clear"></div>
+      </div>
+      </div>
+
+</body>
+</html>
+

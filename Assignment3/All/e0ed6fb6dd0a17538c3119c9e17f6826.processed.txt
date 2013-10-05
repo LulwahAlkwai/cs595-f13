@@ -1,0 +1,1129 @@
+   #[1]Computational Complexity - Atom [2]Computational Complexity - RSS
+   [3]Computational Complexity - Atom
+
+[4]Computational Complexity
+
+   Computational Complexity and other fun stuff in math and computer
+   science from Lance Fortnow and Bill Gasarch
+
+Tuesday, June 11, 2013
+
+STOC: Some NON-radical ideas
+
+   At the STOC business meeting Joan Feigenbaum (PC chair) raised some
+   very good points. There was no real discussion (or perhaps the burning
+   car was the discussion). Here are the issues and some thoughts as I see
+   them. Note that I am not speaking in any official capacity. I speak of
+   STOC but many of my comments apply to other conferences.
+   What is the purpose of STOC? Initially it was to help spread knowledge
+   of the latest results, through both talks and lunch. Even though we can
+   now tweet the latest VDW numbers, STOC still serves this purpose.
+   Another (likely unintended) purpose of STOC is to give researchers a
+   quick yet prestigious way to publish. Hiring committees and Tenure
+   committee's DO ask questions like How many STOC/FOCS publications does
+   she have?. Some people think this is an awful system since these papers
+   are not refereed carefully. I am not going to debate that here. My only
+   concern is making STOC better at spreading knowledge.
+   What are some of the problems with STOC?
+    1. People don't want to serve on the program committee since its a lot
+       of time and they can't submit. The two-tiered system used for STOC
+       2013 seems like a good solution to this.
+    2. Referees Reports (can we even call them that?) are often not very
+       informative. The two-tiered system COULD help this since each
+       committee member has less work and there is a small oversight
+       committee. Another solution that some conferences use is to give
+       the authors a chance to rebut a report and/or rewrite the paper.
+       I'll discuss this more in the next point.
+    3. Since the reviewing process is rushed there have been papers that
+       are just plain WRONG. This can be confusing for someone coming to
+       the literature. Also there are throw-away- comments like This can
+       easily be extended to the case of weighted graphs. where this is
+       not easy at all. How big a problem is this? How much worse than
+       Journals is it? I DON"T KNOW. Would the Rebut/Rewrite help this?
+       PRO: Referees don't have to decide RIGHT NOW what to do and can ask
+       the authors things? CON: More back and fourth, more work. CAVEAT:
+       This might make STOC more like a journal with fast turn-around
+       time.
+    4. Some of the papers never get into Journal Form. Again Rebut/Rewrite
+       may help in that the STOC version is better, but this is more
+       giving in to the problem rather than solving it. Demanding full
+       versions of papers (now possible since with e-proceedings page
+       limits are less of an issue) is a good idea (and I think IS being
+       used now by STOC).
+    5. Many good papers get turned down. Going to three parallel sessions
+       would help this. There may be logistical problems here, but I think
+       this is a good idea. Are there enough good papers to make this
+       work? I think so- and the committee would have the freedom to NOT
+       use all the sessions in case there aren't quite enough papers. I do
+       not think this would make STOC's prestige decline.
+    6. It has been said that only narrow technically hard stuff gets in
+       and not simple short new ideas. Its hard to know if this is really
+       true. But in any case the three-parallel sessions may help this
+       since there would be room for diff types of papers.
+    7. Personally I get more out of the workshops and invited talks then
+       out of the refereed talks. Hence I would like more of those.
+       Posters are good also. More to the point- I would like more VARIETY
+       in whats at a conference since people get knowledge in different
+       ways.
+    8. Can you really communicate your latest and greatest result in a 20
+       minute time slot in a crowded room where the adjacent bathroom is
+       out of order? Even though we've made great advances in technology
+       (I call PowerPoint PROGRESS but some disagree) and in plumbing (in
+       the old days STOC people had to use an outhouse- do young people
+       even know what an outhouse is anymore?), is there a better way to
+       do this? It was suggested that ALL talks be POSTER sessions (NIPS
+       does this). This should NOT be viewed as inferior or demeaning so
+       long as we still have published proceedings (whatever that means in
+       the days of arXiv) and high standards. The only relevant question
+       is: Would posters be a better way to convey results? I DO NOT KNOW,
+       but I think it would be worth trying out.
+
+   So in summary I want to see (1) more workshops, invited talks, and
+   student posters, (2) Full papers in the proceedings, (3) two-tiered
+   program comm. (4) either go to three parallel sessions or have posters.
+   Some of these could be combined-- like a workshop on max flows, and
+   them posters on the max flow papers that got in. The rebut/rewrite I am
+   more ambivalent on but that may also be a good idea. These ideas are
+   NOT radical (and not even original) and it is NOT my purpose to drain
+   STOC of its prestige. Whether that is a good idea is another debate.
+   Posted by [5]GASARCH at [6]8:31 AM
+   [7]Email This[8]BlogThis![9]Share to Twitter[10]Share to Facebook
+
+12 comments:
+
+    1. [anon36.png]
+       Anonymous[11]9:34 AM, June 11, 2013
+       Reviews of accepted and rejected papers should be publicly
+       available in the style of a voting-based discussion board like
+       cstheory.stackexchange. Reviews can be made anonymously, good
+       reviews get voted up, and bad reviews can be commented on. It is
+       such a huge waste of effort that rejected papers get reviewed a
+       bunch of times at different venues, and then again for the journal
+       submission.
+       [12]Reply[13]Delete
+    2. [anon36.png]
+       Anonymous[14]10:39 AM, June 11, 2013
+       This is indeed a huge waste of our community resources, see
+       http://windowsontheory.org/2012/07/16/community-brain-2/ for some
+       thoughts.
+       [15]Reply[16]Delete
+    3. [b36-rounded.png]
+       [17]msleifer[18]3:26 PM, June 11, 2013
+       I don't personally like your idea of posters. Whether or not
+       posters should be regarded as inferior to talks, the plain fact is
+       that people usually treat them as if they are inferior to talks and
+       that is enough to make them a bad idea. The organizers usually
+       display the posters in overly cramped conditions that make it hard
+       to see the popular posters or the ones next to them due to the
+       crowds. Wine and/or refreshments are often served during poster
+       sessions, which definitely shows a lack of respect for them. Would
+       you consider it appropriate to show your respect for a speaker by
+       getting drunk or stuffing your face in the middle of their talk?
+       Also, given the availability of this stuff, people often treat
+       poster sessions as a time to socialize and chat in general, rather
+       than actually looking at the posters.
+       Poster sessions are also incredibly tiring for the poster
+       presenters, who have to stand up and explain their stuff many times
+       over for several hours rather than just doing it once for twenty
+       minutes. They are also tiring for the few non presenters who take
+       them seriously who have to spend a long time on their feet
+       negotiating the crowds to see all the interesting posters. They are
+       also discriminatory, in that if you have a disability that makes it
+       hard for you to stand for a long time and negotiate crowds then you
+       cannot do a poster session either as a presenter or a poster
+       viewer. They are also discriminatory because you can't really video
+       a poster session like you can with a talk, so you can't really make
+       them available to those researchers who cannot attend the
+       conference, e.g. due to lack of funds, illness, or looking after
+       kids. These discriminatory issues apply to me, so I am strongly
+       against poster sessions on these grounds alone.
+       Universities have rules and regulations about discrimination that
+       they have to follow and they generally have committees to sort out
+       just these sort of problems. Conferences are independent entities
+       and they generally do not have this sort of oversight. Most of them
+       are a mess when it comes to issues of discrimination, because they
+       are only ever managed by those researchers who have no trouble
+       showing up and negotiating the conference in the first place.
+       [19]Reply[20]Delete
+    4. [funny_picture_of_me.jpg]
+       [21]GASARCH[22]3:33 PM, June 11, 2013
+       The NIPS conference does Posters instead of talks--- this is NOT an
+       argument for doing it, but it does indicate people we could ask
+       about to see how that goes.
+       I agree that food should not be served during it.
+       If there were posters INSTEAD of talks there would be more time for
+       them
+       and similar ones would be in the same place, same room.
+       That might help the tiredness issues since it wouldn't be hours.
+       The Discrimination issue is a good counterargument.
+       [23]Reply[24]Delete
+    5. [anon36.png]
+       Anonymous[25]4:02 PM, June 11, 2013
+       - I hope the second tier PC will be larger in size and more diverse
+       in terms of areas of expertise. Otherwise, consulting with experts
+       outside the PC should be encouraged. Last time one of my paper get
+       ALL reviews that are clearly from non-expert reviewers (something
+       like "I am ok with accepting this paper if an expert in this area
+       would say so"). I have heard similar complains from many other
+       people. And, please have 3 reviewers for every paper.
+       - I think having one round of rebuttal is a good idea. I have
+       experienced such a system in some previous conferences and was
+       pretty happy with it (even when my papers got rejected).
+       - I fully support the poster session. I have previously enjoyed
+       poster sessions at STOC, SIGMOD, and VLDB as both a presenter and
+       audience. If some people still prefer to have talks, we can even
+       have BOTH poster sessions and talks (SIGMOD did this last year and
+       I liked it). Of course, this requires more work for the authors's
+       side but isn't it worth it given that you have more opportunity to
+       advertise your work?
+       [26]Reply[27]Delete
+    6. [anon36.png]
+       Eldar Fischer[28]6:35 PM, June 11, 2013
+       My take on the ideas:
+       Workshops - This has been done before (at least with FOCS), on the
+       day before the conference. Not a bad idea, but I don't think that
+       more than a day or two would work, as together with the conference
+       it would get too long. In particular more invited talks could take
+       place inside the workshop day(s).
+       Full papers in the proceedings - I'm for it. The only reason not to
+       have them was the publishing expense, but now this can be
+       electronic only.
+       Two tiered PC - A good idea, maybe even a necessity. There are just
+       too many submissions.
+       Having three parallel sessions is not a good idea, people should
+       have a chance to hear more of the talks. Going all-poster is IMHO a
+       really bad idea, and a radical one. A poster is in my eyes
+       informationally equivalent to a 5-minute lecture, I'll take the
+       20-minute lectures. Student and open problem posters are Ok
+       (without a "published proceedings" status as some may eventually
+       become conference submissions).
+       [29]Reply[30]Delete
+       [31]Replies
+         1. [anon36.png]
+            Anonymous[32]11:32 PM, June 11, 2013
+            but I don't think that more than a day or two would work, as
+            together with the conference it would get too long.
+            I don't get this comment at all. If the conference is too long
+            for you just skip some of the workshops. ALGO in Europe lasts
+            an entire week and most people attend only for a subset of
+            those days. As simple as that.
+            [33]Delete
+            [34]Reply
+    7. [anon36.png]
+       [35]Paul Beame[36]8:21 PM, June 11, 2013
+       There are a number of reasonable options for the STOC PC structure,
+       the 2-tier one among them. I don't see any one structure by itself
+       as a panacea. We still are not at the level of SODA's 500+
+       submissions or AAAI's 1000+ submissions so there is more
+       flexibility. As Joan said, optimizing the PC itself is the lesser
+       issue (though there is the radical VLDB "conference as fast
+       journal" option also - see below).
+       For the conference itself, 3 parallel sessions rather than 2
+       parallel sessions would not radically change the atmosphere,
+       provided that the conference retains some plenary sessions. SODA
+       has done this for a while: In New Orleans it did not have a
+       significantly different feeling from STOC (maybe because the number
+       of attendees was similar) and there was a good distribution of
+       attendees. If venues can accommodate this then it would be vastly
+       preferable to extending the time, since extended time runs into
+       loss of stamina from attendees and costs more.
+       For many years it seems to me that the sweet spot wrt STOC/FOCS has
+       been in the 25-30% acceptance range and when they go out of that
+       range (particularly going to the low 20-22% range but also when the
+       range went significantly above 30%) I have noticed more
+       consternation.
+       Workshops have been a very positive thing for STOC and FOCS. The
+       more that the conference activities can make it a destination than
+       merely an anointing of papers, the better.
+       I am quite leery of posters as a solution to the paper crowding
+       problem. It seems to me that having fewer papers presented makes it
+       more a matter of a anointing a very select few for presentation. I
+       would rather have it be the case that presented papers are ALSO
+       posters so that people get a chance to find out about the talks
+       they missed in parallel session.
+       One radical option that Joan did not mention is the VLDB-style
+       "conference as fast journal" format is being picked up by several
+       other conferences. It resolves the problem of PC overload in a
+       short 8-10 week stretch by making it a full year occupation (more
+       likely half-year for us). For VLDB there are monthly deadlines. The
+       same PC operates all year and accepts papers as they come. A paper
+       can be sent back for revisions (and returned only once during that
+       year). This allows the PC to do more full refereeing. The papers
+       are presented at the conference as usual, though they appear in the
+       PVLDB journal when they are accepted - even before the conference.
+       I can certainly see potential pitfalls - and it may be less good in
+       an area like TCS with many thriving journals - but the idea is
+       intriguing.
+       [37]Reply[38]Delete
+    8. [photo.jpg]
+       [39]Yisong Yue[40]9:32 PM, June 11, 2013
+       Chiming in as a NIPS regular.
+       -- NIPS papers that are presented as posters have the same
+       "prestige" as a conference talk paper in the machine learning
+       community. This is probably a cultural thing. I suspect that if
+       poster sessions became a regular event at STOC, then there would be
+       a cultural shift.
+       -- Food/drink are a NECESSITY for poster sessions. There will
+       always be a healthy amount of socializing at any poster session.
+       It's unclear to what extent having food/drink will create MORE
+       socializing that there would be otherwise. But it is clear that a
+       lack of food/drink at a poster session leads to a rather miserable
+       experience. NIPS 2011 in Granada had very limited amounts of
+       food/drink at the poster sessions, which was widely complained
+       about.
+       -- Regarding whether having food/drink is a sign of lack of respect
+       for the poster session, this is the first time such a thought has
+       crossed my mind (although perhaps this is because I'm used to
+       poster sessions). It could very well be the case that, compared to
+       STOCS, it seems like people treat NIPS poster sessions with a
+       disdainful lack of respect. But I haven't been bothered by this
+       either as a poster peruser or presenter at NIPS.
+       -- One distinct advantage of NIPS posters over standard conference
+       talks is the personal interaction with the poster presenter. You
+       can back up the presenter to clear up confusing points or speed up
+       the presentation if you understand the motivation, etc. This can
+       often be a very big plus.
+       -- Poster sessions are VERY tiring for the presenters. The good
+       news is that most papers have multiple co-authors, who can take
+       shifts. Even single authors can take sizable breaks during the
+       poster session to peruse other posters. It's OK to leave your
+       poster un-attended for 20-30 minutes and just have people stare at
+       it.
+       [41]Reply[42]Delete
+    9. [IMG_5294.JPG]
+       [43]Sasho[44]9:33 PM, June 11, 2013
+       Maybe it's fair to point out that NIPS is not quite all-poster
+       (although it almost is). Besides keynotes and invited talks, a
+       small selection of papers are presented in a single track session.
+       For our community this will be the equivalent of presenting only
+       the papers that are now invited to a special journal issue, and
+       moving everything else to posters.
+       I agree that this is a strange model that I do not prefer. I do
+       like a poster session for ongoing work/work presented in other
+       theory venues, etc.
+       [45]Reply[46]Delete
+   10. [b36-rounded.png]
+       [47]Jelani Nelson[48]9:26 AM, June 12, 2013
+       If we're really serious about comparing PC methods, we should email
+       submitters to these conferences after the reviews have been
+       returned and ask them to fill out surveys concerning their
+       submission experience.
+       [49]Reply[50]Delete
+   11. [b36-rounded.png]
+       [51]AC[52]12:42 PM, June 12, 2013
+       +1 to Jelani's comment
+       -- Amit C
+       [53]Reply[54]Delete
+
+   [55]Add comment
+   [56]Load more...
+
+   [57]Newer Post [58]Older Post [59]Home
+   Subscribe to: [60]Post Comments (Atom)
+   [61]Tweets by @fortnow
+
+Popular Posts
+
+     * [62]The Annual Fall Jobs Post
+     * [63]On demand Publishing (guest post)
+     * [64]Myhill Nerode versus Pumping Lemma
+     * [65]Did YOU think the NSA could factor fast?
+     * [66]STOC CFP still delayed- but I was asked to pass this along
+     * [67]Cryptography and the NSA
+     * [68]Complexity and FOCS
+     * [69]tl;dr
+     * [70]Crystal Math- What NUMB3RS and BREAKING BAD both get wrong
+     * [71]Dealing with Death
+
+Blog Links
+
+     * [72]Bill's Home Page
+     * [73]Lance's Home Page
+     * [74]Videos
+     * [75]Podcast
+     * [76]Posts Feed
+     * [77]Comments Feed
+     * [78]Mailing List
+     * [79]CACM Viewpoint
+     * [80]Foundations of Complexity
+     * [81]Graduate Student Guide
+     * [82]Favorite Theorems
+
+Links
+
+     * [83]Favorite Complexity Books
+     * [84]TCS Q&A
+     * [85]Complexity on ArXiv
+     * [86]ECCC Paper Archive
+     * [87]Complexity Conference
+     * [88]Complexity Zoo
+     * [89]BEATCS Complexity Column
+     * [90]SIGACT
+     * [91]Theory Matters
+     * [92]AIP FYI
+     * [93]Parberry Speakers Guide
+     * [94]Parberry Referees Guide
+     * [95]DMANET/TheoryNet Announcements
+
+Blog List
+
+     * [96]0xDE
+       [97]WG 2013 CFP
+       4 days ago
+     * [98]A CS Professor's blog
+       [99]"à Pâques ou à la Trinité"
+       4 months ago
+     * [100]Algorithmic Game-Theory/Economics
+       [101]AGT lecture videos and notes
+       4 days ago
+     * [102]Analysis of Boolean Functions
+       [103]Chapter 9 exercises
+       1 week ago
+     * [104]Ars Mathematica
+       [105]A Generalized Fermat Equation
+       4 weeks ago
+     * [106]Bits and Pieces
+       [107]The End of Summers
+       2 weeks ago
+     * [108]COMPUTING RESEARCH POLICY BLOG
+       [109]Golden Goose Award Video
+       2 weeks ago
+     * [110]Ernie's 3D Pancakes
+       [111]Three talks at SOCG
+       3 months ago
+     * [112]Essays and Opinions by Oded Goldreich
+     * [113]Glencora Borradaile
+       [114]The power of a sysadmin
+       3 months ago
+     * [115]Gödel's Lost Letter and P=NP
+       [116]Stealing Strategies
+       2 days ago
+     * [117]Healthy Algorithms
+       [118]IHME Seminar: Captricity
+       23 hours ago
+     * [119]in theory
+       [120]So you are going to FOCS
+       3 days ago
+     * [121]kd-PhD
+       [122]What's the matter with MOOCs?
+       10 months ago
+     * [123]LEARNINGlover.com
+       [124]Polynomial Arithmetic
+       5 weeks ago
+     * [125]Machine Learning (Theory)
+       [126]No NY ML Symposium in 2013, and some good news
+       2 weeks ago
+     * [127]Michael Nielsen
+       [128]The artist and the machine
+       7 months ago
+     * [129]My Biased Coin
+       [130]Some Advice on Entrepreneurship from the AH meeting
+       2 days ago
+     * [131]My Brain is Open
+       [132]PolyTopix
+       1 month ago
+     * [133]my slice of pizza
+       [134]Federal Govt Shutdown, Fallout in Details
+       2 days ago
+     * [135]Oddhead Blog
+       [136]Last call: Postdoc positions at Microsoft Research NYC
+       8 months ago
+     * [137]Opinions of Doron Zeilberger
+     * [138]Paul Goldberg
+       [139]2 research posts in Algorithms and Complexity, Oxford
+       3 days ago
+     * [140]Process Algebra Diary
+       [141]Turing Machine Opera by Helsinki Skaala Opera
+       4 days ago
+     * [142]Random bits
+       [143]Undergraduate Research Opportunities this Summer
+       8 months ago
+     * [144]Shtetl-Optimized
+       [145]Five announcements
+       4 days ago
+     * [146]Speedup in Computational Complexity
+       [147]Levin's and Schnorr's optimality results
+       6 months ago
+     * [148]The Geomblog
+       [149]Call for tutorials at SIAM Data Mining
+       2 days ago
+     * [150]The MPC Lounge
+       [151]Workshop on Applied Multi-Party Computation (February 20-21,
+       2014, MSR Redmond)
+       2 months ago
+     * [152]the polylogblog
+       [153]Is it a blog? Or is it epsilon-far from being a blog?
+       2 weeks ago
+     * [154]What's new
+       [155]Polymath8: Writing the paper, III
+       1 week ago
+     * [156]Windows On Theory
+       [157]FOCS 2013 Registration
+       4 weeks ago
+
+Search This Blog
+
+   Loading...
+
+Blog Archive
+
+     * [158]v  [159]2013 (84)
+          + [160]|>  [161]October (1)
+          + [162]|>  [163]September (11)
+          + [164]|>  [165]August (9)
+          + [166]|>  [167]July (9)
+          + [168]v  [169]June (8)
+               o [170]Friends Don't Let Friends Carpool
+               o [171]Quantum Tecniques/Gen Functions- don't be afraid
+                 o...
+               o [172]Automate Me
+               o [173]Fraud or not ?
+               o [174]The Internship
+               o [175]STOC: Some NON-radical ideas
+               o [176]Complexity Typecast
+               o [177]STOC is Burning
+          + [178]|>  [179]May (9)
+          + [180]|>  [181]April (10)
+          + [182]|>  [183]March (9)
+          + [184]|>  [185]February (9)
+          + [186]|>  [187]January (9)
+
+     * [188]|>  [189]2012 (132)
+          + [190]|>  [191]December (7)
+          + [192]|>  [193]November (9)
+          + [194]|>  [195]October (12)
+          + [196]|>  [197]September (10)
+          + [198]|>  [199]August (10)
+          + [200]|>  [201]July (9)
+          + [202]|>  [203]June (10)
+          + [204]|>  [205]May (12)
+          + [206]|>  [207]April (12)
+          + [208]|>  [209]March (15)
+          + [210]|>  [211]February (14)
+          + [212]|>  [213]January (12)
+
+     * [214]|>  [215]2011 (134)
+          + [216]|>  [217]December (10)
+          + [218]|>  [219]November (10)
+          + [220]|>  [221]October (12)
+          + [222]|>  [223]September (13)
+          + [224]|>  [225]August (10)
+          + [226]|>  [227]July (10)
+          + [228]|>  [229]June (14)
+          + [230]|>  [231]May (11)
+          + [232]|>  [233]April (12)
+          + [234]|>  [235]March (12)
+          + [236]|>  [237]February (11)
+          + [238]|>  [239]January (9)
+
+     * [240]|>  [241]2010 (193)
+          + [242]|>  [243]December (8)
+          + [244]|>  [245]November (12)
+          + [246]|>  [247]October (15)
+          + [248]|>  [249]September (14)
+          + [250]|>  [251]August (18)
+          + [252]|>  [253]July (16)
+          + [254]|>  [255]June (17)
+          + [256]|>  [257]May (20)
+          + [258]|>  [259]April (22)
+          + [260]|>  [261]March (20)
+          + [262]|>  [263]February (15)
+          + [264]|>  [265]January (16)
+
+     * [266]|>  [267]2009 (249)
+          + [268]|>  [269]December (16)
+          + [270]|>  [271]November (19)
+          + [272]|>  [273]October (23)
+          + [274]|>  [275]September (21)
+          + [276]|>  [277]August (21)
+          + [278]|>  [279]July (23)
+          + [280]|>  [281]June (23)
+          + [282]|>  [283]May (22)
+          + [284]|>  [285]April (21)
+          + [286]|>  [287]March (22)
+          + [288]|>  [289]February (20)
+          + [290]|>  [291]January (18)
+
+     * [292]|>  [293]2008 (253)
+          + [294]|>  [295]December (19)
+          + [296]|>  [297]November (18)
+          + [298]|>  [299]October (27)
+          + [300]|>  [301]September (21)
+          + [302]|>  [303]August (19)
+          + [304]|>  [305]July (22)
+          + [306]|>  [307]June (23)
+          + [308]|>  [309]May (23)
+          + [310]|>  [311]April (22)
+          + [312]|>  [313]March (20)
+          + [314]|>  [315]February (21)
+          + [316]|>  [317]January (18)
+
+     * [318]|>  [319]2007 (159)
+          + [320]|>  [321]December (10)
+          + [322]|>  [323]November (15)
+          + [324]|>  [325]October (18)
+          + [326]|>  [327]September (10)
+          + [328]|>  [329]August (13)
+          + [330]|>  [331]July (11)
+          + [332]|>  [333]June (8)
+          + [334]|>  [335]May (8)
+          + [336]|>  [337]April (7)
+          + [338]|>  [339]March (16)
+          + [340]|>  [341]February (20)
+          + [342]|>  [343]January (23)
+
+     * [344]|>  [345]2006 (238)
+          + [346]|>  [347]December (18)
+          + [348]|>  [349]November (22)
+          + [350]|>  [351]October (22)
+          + [352]|>  [353]September (19)
+          + [354]|>  [355]August (24)
+          + [356]|>  [357]July (18)
+          + [358]|>  [359]June (18)
+          + [360]|>  [361]May (18)
+          + [362]|>  [363]April (18)
+          + [364]|>  [365]March (21)
+          + [366]|>  [367]February (20)
+          + [368]|>  [369]January (20)
+
+     * [370]|>  [371]2005 (237)
+          + [372]|>  [373]December (18)
+          + [374]|>  [375]November (20)
+          + [376]|>  [377]October (24)
+          + [378]|>  [379]September (19)
+          + [380]|>  [381]August (22)
+          + [382]|>  [383]July (17)
+          + [384]|>  [385]June (19)
+          + [386]|>  [387]May (21)
+          + [388]|>  [389]April (19)
+          + [390]|>  [391]March (17)
+          + [392]|>  [393]February (17)
+          + [394]|>  [395]January (24)
+
+     * [396]|>  [397]2004 (200)
+          + [398]|>  [399]December (18)
+          + [400]|>  [401]November (16)
+          + [402]|>  [403]October (19)
+          + [404]|>  [405]September (15)
+          + [406]|>  [407]August (16)
+          + [408]|>  [409]July (15)
+          + [410]|>  [411]June (18)
+          + [412]|>  [413]May (13)
+          + [414]|>  [415]April (13)
+          + [416]|>  [417]March (17)
+          + [418]|>  [419]February (16)
+          + [420]|>  [421]January (24)
+
+     * [422]|>  [423]2003 (149)
+          + [424]|>  [425]December (13)
+          + [426]|>  [427]November (12)
+          + [428]|>  [429]October (15)
+          + [430]|>  [431]September (11)
+          + [432]|>  [433]August (7)
+          + [434]|>  [435]July (11)
+          + [436]|>  [437]June (13)
+          + [438]|>  [439]May (10)
+          + [440]|>  [441]April (15)
+          + [442]|>  [443]March (15)
+          + [444]|>  [445]February (11)
+          + [446]|>  [447]January (16)
+
+     * [448]|>  [449]2002 (76)
+          + [450]|>  [451]December (20)
+          + [452]|>  [453]November (17)
+          + [454]|>  [455]October (15)
+          + [456]|>  [457]September (18)
+          + [458]|>  [459]August (6)
+
+   [460]Creative Commons License
+   Computational Complexity Weblog by [461]Lance Fortnow and William
+   Gasarch is licensed under a [462]Creative Commons
+   Attribution-NonCommercial 3.0 Unported License.
+   Quantcast
+   Awesome Inc. template. Powered by [463]Blogger.
+
+References
+
+   Visible links
+   1. http://blog.computationalcomplexity.org/feeds/posts/default
+   2. http://blog.computationalcomplexity.org/feeds/posts/default?alt=rss
+   3. http://blog.computationalcomplexity.org/feeds/6339829284482566639/comments/default
+   4. http://blog.computationalcomplexity.org/
+   5. http://www.blogger.com/profile/06134382469361359081
+   6. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html
+   7. http://www.blogger.com/share-post.g?blogID=3722233&postID=6339829284482566639&target=email
+   8. http://www.blogger.com/share-post.g?blogID=3722233&postID=6339829284482566639&target=blog
+   9. http://www.blogger.com/share-post.g?blogID=3722233&postID=6339829284482566639&target=twitter
+  10. http://www.blogger.com/share-post.g?blogID=3722233&postID=6339829284482566639&target=facebook
+  11. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1370961247088#c5550672843626890816
+  12. javascript:;
+  13. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=5550672843626890816
+  14. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1370965179537#c278538177786299348
+  15. javascript:;
+  16. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=278538177786299348
+  17. http://www.blogger.com/profile/06482653494158110204
+  18. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1370982391207#c7513182931661043733
+  19. javascript:;
+  20. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=7513182931661043733
+  21. http://www.blogger.com/profile/06134382469361359081
+  22. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1370982822738#c6043316503528519521
+  23. javascript:;
+  24. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=6043316503528519521
+  25. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1370984577842#c3229308419212452195
+  26. javascript:;
+  27. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=3229308419212452195
+  28. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1370993708326#c5316532144841896919
+  29. javascript:;
+  30. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=5316532144841896919
+  31. javascript:;
+  32. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1371011528183#c7577050230265427942
+  33. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=7577050230265427942
+  34. javascript:;
+  35. http://www.cs.washington.edu/people/faculty/beame
+  36. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1371000084507#c3495669479221347795
+  37. javascript:;
+  38. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=3495669479221347795
+  39. http://www.blogger.com/profile/07112299585878991257
+  40. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1371004362934#c9032847803401408298
+  41. javascript:;
+  42. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=9032847803401408298
+  43. http://www.blogger.com/profile/09380390882603977159
+  44. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1371004404357#c1581441105175784018
+  45. javascript:;
+  46. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=1581441105175784018
+  47. http://www.blogger.com/profile/00216475103758212305
+  48. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1371047189337#c8156503435108508165
+  49. javascript:;
+  50. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=8156503435108508165
+  51. http://www.blogger.com/profile/14911233583375020356
+  52. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html?showComment=1371058944779#c8758538462815989151
+  53. javascript:;
+  54. http://www.blogger.com/delete-comment.g?blogID=3722233&postID=8758538462815989151
+  55. javascript:;
+  56. javascript:;
+  57. http://blog.computationalcomplexity.org/2013/06/the-internship.html
+  58. http://blog.computationalcomplexity.org/2013/06/complexity-typecast.html
+  59. http://blog.computationalcomplexity.org/
+  60. http://blog.computationalcomplexity.org/feeds/6339829284482566639/comments/default
+  61. https://twitter.com/fortnow
+  62. http://blog.computationalcomplexity.org/2011/11/annual-fall-jobs-post.html
+  63. http://blog.computationalcomplexity.org/2011/05/on-demand-publishing-guest-post.html
+  64. http://blog.computationalcomplexity.org/2013/09/myhill-nerode-versus-pumping-lemma.html
+  65. http://blog.computationalcomplexity.org/2013/09/did-you-think-nsa-could-factor-fast.html
+  66. http://blog.computationalcomplexity.org/2013/09/stoc-cfp-still-delayed-but-i-was-asked.html
+  67. http://blog.computationalcomplexity.org/2013/09/cryptography-and-nsa.html
+  68. http://blog.computationalcomplexity.org/2013/09/complexity-and-focs.html
+  69. http://blog.computationalcomplexity.org/2013/09/tldr.html
+  70. http://blog.computationalcomplexity.org/2013/09/crystal-math-what-numb3rs-and-breaking.html
+  71. http://blog.computationalcomplexity.org/2013/09/dealing-with-death.html
+  72. http://www.cs.umd.edu/~gasarch/
+  73. http://lance.fortnow.com/
+  74. http://www.youtube.com/user/fortnow
+  75. http://blog.computationalcomplexity.org/podcast.xml
+  76. http://blog.computationalcomplexity.org/rss.xml
+  77. http://www.blogger.com/feeds/3722233/comments/default
+  78. http://groups.yahoo.com/group/complexityweblog
+  79. http://blog.computationalcomplexity.org/2009/07/time-for-computer-science-to-grow-up.html
+  80. http://blog.computationalcomplexity.org/2009/05/foundations-of-complexity.html
+  81. http://blog.computationalcomplexity.org/2007/02/graduate-student-guide.html
+  82. http://blog.computationalcomplexity.org/2006/12/favorite-theorems-second-decade-recap.html
+  83. http://www.amazon.com/exec/obidos/redirect?tag=computation09-20&path=tg/listmania/list-browse/-/22R1UX0Y9YRT2/ref=cm_aya_lm_title.more
+  84. http://cstheory.stackexchange.com/
+  85. http://arxiv.org/list/cs.CC/recent
+  86. http://www.eccc.uni-trier.de/eccc
+  87. http://www.computationalcomplexity.org/
+  88. http://qwiki.stanford.edu/index.php/Complexity_Zoo
+  89. http://theorie.informatik.uni-ulm.de/Personen/toran/beatcs/
+  90. http://sigact.acm.org/
+  91. http://theorymatters.org/
+  92. http://www.aip.org/fyi/
+  93. http://www.eng.unt.edu/ian/pubs/speaker.pdf
+  94. http://www.eng.unt.edu/ian/pubs/referee.pdf
+  95. http://dmatheorynet.blogspot.com/
+  96. http://11011110.livejournal.com/
+  97. http://11011110.livejournal.com/276984.html
+  98. http://teachingintrotocs.blogspot.com/
+  99. http://teachingintrotocs.blogspot.com/2013/05/paques-ou-la-trinite.html
+ 100. https://agtb.wordpress.com/
+ 101. https://agtb.wordpress.com/2013/09/30/agt-lecture-videos-and-notes/
+ 102. http://www.contrib.andrew.cmu.edu/~ryanod
+ 103. http://www.contrib.andrew.cmu.edu/~ryanod/?p=1501
+ 104. http://www.arsmathematica.net/
+ 105. http://www.arsmathematica.net/?p=1686
+ 106. http://harry-lewis.blogspot.com/
+ 107. http://harry-lewis.blogspot.com/2013/09/the-end-of-summers.html
+ 108. http://cra.org/govaffairs/blog
+ 109. http://feedproxy.google.com/~r/cra/WxKq/~3/XmEQk3JMHMM/
+ 110. http://3dpancakes.typepad.com/ernie/
+ 111. http://3dpancakes.typepad.com/ernie/2013/06/three-talks-at-socg.html
+ 112. http://www.wisdom.weizmann.ac.il/~oded/essays.html
+ 113. http://blogs.oregonstate.edu/glencora
+ 114. http://blogs.oregonstate.edu/glencora/2013/06/10/the-power-of-a-sysadmin/
+ 115. http://rjlipton.wordpress.com/
+ 116. http://rjlipton.wordpress.com/2013/10/02/stealing-strategies/
+ 117. http://healthyalgorithms.com/
+ 118. http://healthyalgorithms.com/2013/10/04/ihme-seminar-captricity/
+ 119. http://lucatrevisan.wordpress.com/
+ 120. http://lucatrevisan.wordpress.com/2013/10/01/so-you-are-going-to-focs-2/
+ 121. http://kdphd.blogspot.com/
+ 122. http://kdphd.blogspot.com/2012/11/whats-matter-with-moocs.html
+ 123. http://learninglover.com/blog
+ 124. http://learninglover.com/blog/?p=656
+ 125. http://hunch.net/
+ 126. http://hunch.net/?p=2674
+ 127. http://michaelnielsen.org/blog
+ 128. http://feedproxy.google.com/~r/michaelnielsen/wmna/~3/5CXu218UGDo/
+ 129. http://mybiasedcoin.blogspot.com/
+ 130. http://mybiasedcoin.blogspot.com/2013/10/some-advice-on-entrepreneurship-from-ah.html
+ 131. http://kintali.wordpress.com/
+ 132. http://kintali.wordpress.com/2013/08/19/polytopix/
+ 133. http://mysliceofpizza.blogspot.com/
+ 134. http://mysliceofpizza.blogspot.com/2013/10/federal-govt-shutdown-fallout-in-details.html
+ 135. http://blog.oddhead.com/
+ 136. http://blog.oddhead.com/2013/01/11/last-call-postdoc-positions-at-microsoft-research-nyc/
+ 137. http://www.math.rutgers.edu/~zeilberg/OPINIONS.html
+ 138. http://paulwgoldberg.blogspot.com/
+ 139. http://paulwgoldberg.blogspot.com/2013/10/2-research-posts-in-algorithms-and.html
+ 140. http://processalgebra.blogspot.com/
+ 141. http://processalgebra.blogspot.com/2013/09/turing-machine-opera-by-helsinki-skaala.html
+ 142. http://jonkatz.wordpress.com/
+ 143. http://jonkatz.wordpress.com/2013/02/01/undergraduate-research-opportunities-this-summer/
+ 144. http://www.scottaaronson.com/blog
+ 145. http://www.scottaaronson.com/blog/?p=1552
+ 146. http://speedupblogger.wordpress.com/
+ 147. http://speedupblogger.wordpress.com/2013/03/22/levins-and-schnorrs-optimality-results/
+ 148. http://geomblog.blogspot.com/
+ 149. http://feedproxy.google.com/~r/TheGeomblog/~3/VJgRLi_IHhg/call-for-tutorials-at-siam-data-mining.html
+ 150. http://mpclounge.wordpress.com/
+ 151. http://mpclounge.wordpress.com/2013/07/29/workshop-on-applied-multi-party-computation-february-20-21-2014-msr-redmond/
+ 152. http://polylogblog.wordpress.com/
+ 153. http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/
+ 154. http://terrytao.wordpress.com/
+ 155. http://terrytao.wordpress.com/2013/09/22/polymath8-writing-the-paper-iii/
+ 156. http://windowsontheory.org/
+ 157. http://windowsontheory.org/2013/09/05/focs-2013-registration/
+ 158. javascript:void(0)
+ 159. http://blog.computationalcomplexity.org/search?updated-min=2013-01-01T00:00:00-06:00&updated-max=2014-01-01T00:00:00-06:00&max-results=50
+ 160. javascript:void(0)
+ 161. http://blog.computationalcomplexity.org/2013_10_01_archive.html
+ 162. javascript:void(0)
+ 163. http://blog.computationalcomplexity.org/2013_09_01_archive.html
+ 164. javascript:void(0)
+ 165. http://blog.computationalcomplexity.org/2013_08_01_archive.html
+ 166. javascript:void(0)
+ 167. http://blog.computationalcomplexity.org/2013_07_01_archive.html
+ 168. javascript:void(0)
+ 169. http://blog.computationalcomplexity.org/2013_06_01_archive.html
+ 170. http://blog.computationalcomplexity.org/2013/06/friends-dont-let-friends-carpool.html
+ 171. http://blog.computationalcomplexity.org/2013/06/quantum-tecniquesgen-functions-dont-be.html
+ 172. http://blog.computationalcomplexity.org/2013/06/automate-me.html
+ 173. http://blog.computationalcomplexity.org/2013/06/fraud-or-not.html
+ 174. http://blog.computationalcomplexity.org/2013/06/the-internship.html
+ 175. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html
+ 176. http://blog.computationalcomplexity.org/2013/06/complexity-typecast.html
+ 177. http://blog.computationalcomplexity.org/2013/06/stoc-is-burning.html
+ 178. javascript:void(0)
+ 179. http://blog.computationalcomplexity.org/2013_05_01_archive.html
+ 180. javascript:void(0)
+ 181. http://blog.computationalcomplexity.org/2013_04_01_archive.html
+ 182. javascript:void(0)
+ 183. http://blog.computationalcomplexity.org/2013_03_01_archive.html
+ 184. javascript:void(0)
+ 185. http://blog.computationalcomplexity.org/2013_02_01_archive.html
+ 186. javascript:void(0)
+ 187. http://blog.computationalcomplexity.org/2013_01_01_archive.html
+ 188. javascript:void(0)
+ 189. http://blog.computationalcomplexity.org/search?updated-min=2012-01-01T00:00:00-06:00&updated-max=2013-01-01T00:00:00-06:00&max-results=50
+ 190. javascript:void(0)
+ 191. http://blog.computationalcomplexity.org/2012_12_01_archive.html
+ 192. javascript:void(0)
+ 193. http://blog.computationalcomplexity.org/2012_11_01_archive.html
+ 194. javascript:void(0)
+ 195. http://blog.computationalcomplexity.org/2012_10_01_archive.html
+ 196. javascript:void(0)
+ 197. http://blog.computationalcomplexity.org/2012_09_01_archive.html
+ 198. javascript:void(0)
+ 199. http://blog.computationalcomplexity.org/2012_08_01_archive.html
+ 200. javascript:void(0)
+ 201. http://blog.computationalcomplexity.org/2012_07_01_archive.html
+ 202. javascript:void(0)
+ 203. http://blog.computationalcomplexity.org/2012_06_01_archive.html
+ 204. javascript:void(0)
+ 205. http://blog.computationalcomplexity.org/2012_05_01_archive.html
+ 206. javascript:void(0)
+ 207. http://blog.computationalcomplexity.org/2012_04_01_archive.html
+ 208. javascript:void(0)
+ 209. http://blog.computationalcomplexity.org/2012_03_01_archive.html
+ 210. javascript:void(0)
+ 211. http://blog.computationalcomplexity.org/2012_02_01_archive.html
+ 212. javascript:void(0)
+ 213. http://blog.computationalcomplexity.org/2012_01_01_archive.html
+ 214. javascript:void(0)
+ 215. http://blog.computationalcomplexity.org/search?updated-min=2011-01-01T00:00:00-06:00&updated-max=2012-01-01T00:00:00-06:00&max-results=50
+ 216. javascript:void(0)
+ 217. http://blog.computationalcomplexity.org/2011_12_01_archive.html
+ 218. javascript:void(0)
+ 219. http://blog.computationalcomplexity.org/2011_11_01_archive.html
+ 220. javascript:void(0)
+ 221. http://blog.computationalcomplexity.org/2011_10_01_archive.html
+ 222. javascript:void(0)
+ 223. http://blog.computationalcomplexity.org/2011_09_01_archive.html
+ 224. javascript:void(0)
+ 225. http://blog.computationalcomplexity.org/2011_08_01_archive.html
+ 226. javascript:void(0)
+ 227. http://blog.computationalcomplexity.org/2011_07_01_archive.html
+ 228. javascript:void(0)
+ 229. http://blog.computationalcomplexity.org/2011_06_01_archive.html
+ 230. javascript:void(0)
+ 231. http://blog.computationalcomplexity.org/2011_05_01_archive.html
+ 232. javascript:void(0)
+ 233. http://blog.computationalcomplexity.org/2011_04_01_archive.html
+ 234. javascript:void(0)
+ 235. http://blog.computationalcomplexity.org/2011_03_01_archive.html
+ 236. javascript:void(0)
+ 237. http://blog.computationalcomplexity.org/2011_02_01_archive.html
+ 238. javascript:void(0)
+ 239. http://blog.computationalcomplexity.org/2011_01_01_archive.html
+ 240. javascript:void(0)
+ 241. http://blog.computationalcomplexity.org/search?updated-min=2010-01-01T00:00:00-06:00&updated-max=2011-01-01T00:00:00-06:00&max-results=50
+ 242. javascript:void(0)
+ 243. http://blog.computationalcomplexity.org/2010_12_01_archive.html
+ 244. javascript:void(0)
+ 245. http://blog.computationalcomplexity.org/2010_11_01_archive.html
+ 246. javascript:void(0)
+ 247. http://blog.computationalcomplexity.org/2010_10_01_archive.html
+ 248. javascript:void(0)
+ 249. http://blog.computationalcomplexity.org/2010_09_01_archive.html
+ 250. javascript:void(0)
+ 251. http://blog.computationalcomplexity.org/2010_08_01_archive.html
+ 252. javascript:void(0)
+ 253. http://blog.computationalcomplexity.org/2010_07_01_archive.html
+ 254. javascript:void(0)
+ 255. http://blog.computationalcomplexity.org/2010_06_01_archive.html
+ 256. javascript:void(0)
+ 257. http://blog.computationalcomplexity.org/2010_05_01_archive.html
+ 258. javascript:void(0)
+ 259. http://blog.computationalcomplexity.org/2010_04_01_archive.html
+ 260. javascript:void(0)
+ 261. http://blog.computationalcomplexity.org/2010_03_01_archive.html
+ 262. javascript:void(0)
+ 263. http://blog.computationalcomplexity.org/2010_02_01_archive.html
+ 264. javascript:void(0)
+ 265. http://blog.computationalcomplexity.org/2010_01_01_archive.html
+ 266. javascript:void(0)
+ 267. http://blog.computationalcomplexity.org/search?updated-min=2009-01-01T00:00:00-06:00&updated-max=2010-01-01T00:00:00-06:00&max-results=50
+ 268. javascript:void(0)
+ 269. http://blog.computationalcomplexity.org/2009_12_01_archive.html
+ 270. javascript:void(0)
+ 271. http://blog.computationalcomplexity.org/2009_11_01_archive.html
+ 272. javascript:void(0)
+ 273. http://blog.computationalcomplexity.org/2009_10_01_archive.html
+ 274. javascript:void(0)
+ 275. http://blog.computationalcomplexity.org/2009_09_01_archive.html
+ 276. javascript:void(0)
+ 277. http://blog.computationalcomplexity.org/2009_08_01_archive.html
+ 278. javascript:void(0)
+ 279. http://blog.computationalcomplexity.org/2009_07_01_archive.html
+ 280. javascript:void(0)
+ 281. http://blog.computationalcomplexity.org/2009_06_01_archive.html
+ 282. javascript:void(0)
+ 283. http://blog.computationalcomplexity.org/2009_05_01_archive.html
+ 284. javascript:void(0)
+ 285. http://blog.computationalcomplexity.org/2009_04_01_archive.html
+ 286. javascript:void(0)
+ 287. http://blog.computationalcomplexity.org/2009_03_01_archive.html
+ 288. javascript:void(0)
+ 289. http://blog.computationalcomplexity.org/2009_02_01_archive.html
+ 290. javascript:void(0)
+ 291. http://blog.computationalcomplexity.org/2009_01_01_archive.html
+ 292. javascript:void(0)
+ 293. http://blog.computationalcomplexity.org/search?updated-min=2008-01-01T00:00:00-06:00&updated-max=2009-01-01T00:00:00-06:00&max-results=50
+ 294. javascript:void(0)
+ 295. http://blog.computationalcomplexity.org/2008_12_01_archive.html
+ 296. javascript:void(0)
+ 297. http://blog.computationalcomplexity.org/2008_11_01_archive.html
+ 298. javascript:void(0)
+ 299. http://blog.computationalcomplexity.org/2008_10_01_archive.html
+ 300. javascript:void(0)
+ 301. http://blog.computationalcomplexity.org/2008_09_01_archive.html
+ 302. javascript:void(0)
+ 303. http://blog.computationalcomplexity.org/2008_08_01_archive.html
+ 304. javascript:void(0)
+ 305. http://blog.computationalcomplexity.org/2008_07_01_archive.html
+ 306. javascript:void(0)
+ 307. http://blog.computationalcomplexity.org/2008_06_01_archive.html
+ 308. javascript:void(0)
+ 309. http://blog.computationalcomplexity.org/2008_05_01_archive.html
+ 310. javascript:void(0)
+ 311. http://blog.computationalcomplexity.org/2008_04_01_archive.html
+ 312. javascript:void(0)
+ 313. http://blog.computationalcomplexity.org/2008_03_01_archive.html
+ 314. javascript:void(0)
+ 315. http://blog.computationalcomplexity.org/2008_02_01_archive.html
+ 316. javascript:void(0)
+ 317. http://blog.computationalcomplexity.org/2008_01_01_archive.html
+ 318. javascript:void(0)
+ 319. http://blog.computationalcomplexity.org/search?updated-min=2007-01-01T00:00:00-06:00&updated-max=2008-01-01T00:00:00-06:00&max-results=50
+ 320. javascript:void(0)
+ 321. http://blog.computationalcomplexity.org/2007_12_01_archive.html
+ 322. javascript:void(0)
+ 323. http://blog.computationalcomplexity.org/2007_11_01_archive.html
+ 324. javascript:void(0)
+ 325. http://blog.computationalcomplexity.org/2007_10_01_archive.html
+ 326. javascript:void(0)
+ 327. http://blog.computationalcomplexity.org/2007_09_01_archive.html
+ 328. javascript:void(0)
+ 329. http://blog.computationalcomplexity.org/2007_08_01_archive.html
+ 330. javascript:void(0)
+ 331. http://blog.computationalcomplexity.org/2007_07_01_archive.html
+ 332. javascript:void(0)
+ 333. http://blog.computationalcomplexity.org/2007_06_01_archive.html
+ 334. javascript:void(0)
+ 335. http://blog.computationalcomplexity.org/2007_05_01_archive.html
+ 336. javascript:void(0)
+ 337. http://blog.computationalcomplexity.org/2007_04_01_archive.html
+ 338. javascript:void(0)
+ 339. http://blog.computationalcomplexity.org/2007_03_01_archive.html
+ 340. javascript:void(0)
+ 341. http://blog.computationalcomplexity.org/2007_02_01_archive.html
+ 342. javascript:void(0)
+ 343. http://blog.computationalcomplexity.org/2007_01_01_archive.html
+ 344. javascript:void(0)
+ 345. http://blog.computationalcomplexity.org/search?updated-min=2006-01-01T00:00:00-06:00&updated-max=2007-01-01T00:00:00-06:00&max-results=50
+ 346. javascript:void(0)
+ 347. http://blog.computationalcomplexity.org/2006_12_01_archive.html
+ 348. javascript:void(0)
+ 349. http://blog.computationalcomplexity.org/2006_11_01_archive.html
+ 350. javascript:void(0)
+ 351. http://blog.computationalcomplexity.org/2006_10_01_archive.html
+ 352. javascript:void(0)
+ 353. http://blog.computationalcomplexity.org/2006_09_01_archive.html
+ 354. javascript:void(0)
+ 355. http://blog.computationalcomplexity.org/2006_08_01_archive.html
+ 356. javascript:void(0)
+ 357. http://blog.computationalcomplexity.org/2006_07_01_archive.html
+ 358. javascript:void(0)
+ 359. http://blog.computationalcomplexity.org/2006_06_01_archive.html
+ 360. javascript:void(0)
+ 361. http://blog.computationalcomplexity.org/2006_05_01_archive.html
+ 362. javascript:void(0)
+ 363. http://blog.computationalcomplexity.org/2006_04_01_archive.html
+ 364. javascript:void(0)
+ 365. http://blog.computationalcomplexity.org/2006_03_01_archive.html
+ 366. javascript:void(0)
+ 367. http://blog.computationalcomplexity.org/2006_02_01_archive.html
+ 368. javascript:void(0)
+ 369. http://blog.computationalcomplexity.org/2006_01_01_archive.html
+ 370. javascript:void(0)
+ 371. http://blog.computationalcomplexity.org/search?updated-min=2005-01-01T00:00:00-06:00&updated-max=2006-01-01T00:00:00-06:00&max-results=50
+ 372. javascript:void(0)
+ 373. http://blog.computationalcomplexity.org/2005_12_01_archive.html
+ 374. javascript:void(0)
+ 375. http://blog.computationalcomplexity.org/2005_11_01_archive.html
+ 376. javascript:void(0)
+ 377. http://blog.computationalcomplexity.org/2005_10_01_archive.html
+ 378. javascript:void(0)
+ 379. http://blog.computationalcomplexity.org/2005_09_01_archive.html
+ 380. javascript:void(0)
+ 381. http://blog.computationalcomplexity.org/2005_08_01_archive.html
+ 382. javascript:void(0)
+ 383. http://blog.computationalcomplexity.org/2005_07_01_archive.html
+ 384. javascript:void(0)
+ 385. http://blog.computationalcomplexity.org/2005_06_01_archive.html
+ 386. javascript:void(0)
+ 387. http://blog.computationalcomplexity.org/2005_05_01_archive.html
+ 388. javascript:void(0)
+ 389. http://blog.computationalcomplexity.org/2005_04_01_archive.html
+ 390. javascript:void(0)
+ 391. http://blog.computationalcomplexity.org/2005_03_01_archive.html
+ 392. javascript:void(0)
+ 393. http://blog.computationalcomplexity.org/2005_02_01_archive.html
+ 394. javascript:void(0)
+ 395. http://blog.computationalcomplexity.org/2005_01_01_archive.html
+ 396. javascript:void(0)
+ 397. http://blog.computationalcomplexity.org/search?updated-min=2004-01-01T00:00:00-06:00&updated-max=2005-01-01T00:00:00-06:00&max-results=50
+ 398. javascript:void(0)
+ 399. http://blog.computationalcomplexity.org/2004_12_01_archive.html
+ 400. javascript:void(0)
+ 401. http://blog.computationalcomplexity.org/2004_11_01_archive.html
+ 402. javascript:void(0)
+ 403. http://blog.computationalcomplexity.org/2004_10_01_archive.html
+ 404. javascript:void(0)
+ 405. http://blog.computationalcomplexity.org/2004_09_01_archive.html
+ 406. javascript:void(0)
+ 407. http://blog.computationalcomplexity.org/2004_08_01_archive.html
+ 408. javascript:void(0)
+ 409. http://blog.computationalcomplexity.org/2004_07_01_archive.html
+ 410. javascript:void(0)
+ 411. http://blog.computationalcomplexity.org/2004_06_01_archive.html
+ 412. javascript:void(0)
+ 413. http://blog.computationalcomplexity.org/2004_05_01_archive.html
+ 414. javascript:void(0)
+ 415. http://blog.computationalcomplexity.org/2004_04_01_archive.html
+ 416. javascript:void(0)
+ 417. http://blog.computationalcomplexity.org/2004_03_01_archive.html
+ 418. javascript:void(0)
+ 419. http://blog.computationalcomplexity.org/2004_02_01_archive.html
+ 420. javascript:void(0)
+ 421. http://blog.computationalcomplexity.org/2004_01_01_archive.html
+ 422. javascript:void(0)
+ 423. http://blog.computationalcomplexity.org/search?updated-min=2003-01-01T00:00:00-06:00&updated-max=2004-01-01T00:00:00-06:00&max-results=50
+ 424. javascript:void(0)
+ 425. http://blog.computationalcomplexity.org/2003_12_01_archive.html
+ 426. javascript:void(0)
+ 427. http://blog.computationalcomplexity.org/2003_11_01_archive.html
+ 428. javascript:void(0)
+ 429. http://blog.computationalcomplexity.org/2003_10_01_archive.html
+ 430. javascript:void(0)
+ 431. http://blog.computationalcomplexity.org/2003_09_01_archive.html
+ 432. javascript:void(0)
+ 433. http://blog.computationalcomplexity.org/2003_08_01_archive.html
+ 434. javascript:void(0)
+ 435. http://blog.computationalcomplexity.org/2003_07_01_archive.html
+ 436. javascript:void(0)
+ 437. http://blog.computationalcomplexity.org/2003_06_01_archive.html
+ 438. javascript:void(0)
+ 439. http://blog.computationalcomplexity.org/2003_05_01_archive.html
+ 440. javascript:void(0)
+ 441. http://blog.computationalcomplexity.org/2003_04_01_archive.html
+ 442. javascript:void(0)
+ 443. http://blog.computationalcomplexity.org/2003_03_01_archive.html
+ 444. javascript:void(0)
+ 445. http://blog.computationalcomplexity.org/2003_02_01_archive.html
+ 446. javascript:void(0)
+ 447. http://blog.computationalcomplexity.org/2003_01_01_archive.html
+ 448. javascript:void(0)
+ 449. http://blog.computationalcomplexity.org/search?updated-min=2002-01-01T00:00:00-06:00&updated-max=2003-01-01T00:00:00-06:00&max-results=50
+ 450. javascript:void(0)
+ 451. http://blog.computationalcomplexity.org/2002_12_01_archive.html
+ 452. javascript:void(0)
+ 453. http://blog.computationalcomplexity.org/2002_11_01_archive.html
+ 454. javascript:void(0)
+ 455. http://blog.computationalcomplexity.org/2002_10_01_archive.html
+ 456. javascript:void(0)
+ 457. http://blog.computationalcomplexity.org/2002_09_01_archive.html
+ 458. javascript:void(0)
+ 459. http://blog.computationalcomplexity.org/2002_08_01_archive.html
+ 460. http://creativecommons.org/licenses/by-nc/3.0/
+ 461. http://blog.computationalcomplexity.org/
+ 462. http://creativecommons.org/licenses/by-nc/3.0/
+ 463. http://www.blogger.com/
+
+   Hidden links:
+ 464. http://www.blogger.com/email-post.g?blogID=3722233&postID=6339829284482566639
+ 465. http://www.blogger.com/post-edit.g?blogID=3722233&postID=6339829284482566639&from=pencil
+ 466. http://www.blogger.com/comment-iframe.g?blogID=3722233&postID=6339829284482566639
+ 467. http://blog.computationalcomplexity.org/2013/06/stoc-some-non-radical-ideas.html
+ 468. http://goldenticket.fortnow.com/
+ 469. http://www.blogger.com/rearrange?blogID=3722233&widgetType=Image&widgetId=Image1&action=editWidget&sectionId=sidebar-left-1
+ 470. http://www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar-left-1
+ 471. http://www.blogger.com/rearrange?blogID=3722233&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar-left-1
+ 472. http://www.blogger.com/rearrange?blogID=3722233&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar-left-1
+ 473. http://www.blogger.com/rearrange?blogID=3722233&widgetType=LinkList&widgetId=LinkList2&action=editWidget&sectionId=sidebar-left-1
+ 474. http://www.blogger.com/rearrange?blogID=3722233&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=sidebar-left-1
+ 475. http://www.blogger.com/rearrange?blogID=3722233&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget&sectionId=sidebar-left-1
+ 476. http://www.blogger.com/rearrange?blogID=3722233&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-left-1
+ 477. http://www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar-left-1
+ 478. http://www.blogger.com/rearrange?blogID=3722233&widgetType=AdSense&widgetId=AdSense2&action=editWidget&sectionId=footer-1
+ 479. http://www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=footer-1
+ 480. http://www.blogger.com/rearrange?blogID=3722233&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3

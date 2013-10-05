@@ -1,0 +1,679 @@
+   #[1]R is my friend » Feed [2]R is my friend » Comments Feed [3]R is my
+   friend » Visualizing neural networks from the nnet package Comments
+   Feed [4]Data fishing: R and XML part 3 [5]Animating neural networks
+   from the nnet package [6]alternate [7]alternate [8]R is my friend
+   [9]WordPress.com
+
+   [10]R is my friend
+
+[11]R is my friend
+
+'R challenge is like the Rubik's cube of our people' - Sarah Thompson
+
+Menu
+
+   [12]Skip to content
+     * [13]Home
+     * [14]About
+
+Visualizing neural networks from the nnet package
+
+   Neural networks have received a lot of attention for their abilities to
+   `learn' relationships among variables. They represent an innovative
+   technique for model fitting that doesn't rely on conventional
+   assumptions necessary for standard models and they can also quite
+   effectively handle multivariate response data. A neural network model
+   is very similar to a non-linear regression model, with the exception
+   that the former can handle an incredibly large amount of model
+   parameters. For this reason, neural network models are said to have the
+   ability to approximate any continuous function.
+
+   I've been dabbling with neural network models for my `research' over
+   the last few months. I'll admit that I was drawn to the approach given
+   the incredible amount of hype and statistical voodoo that is attributed
+   to these models. After working with neural networks, I've found that
+   they are often no better, and in some cases much worse, than standard
+   statistical techniques for predicting relationships among variables.
+   Regardless, the foundational theory of neural networks is pretty
+   interesting, especially when you consider how computer science and
+   informatics has improved our ability to create useful models.
+
+   R has a few packages for creating neural network models ([15]neuralnet,
+   [16]nnet, [17]RSNNS). I have worked extensively with the nnet package
+   created by Brian Ripley. The functions in this package allow you to
+   develop and validate the most common type of neural network model, i.e,
+   the feed-forward multi-layer perceptron. The functions have enough
+   flexibility to allow the user to develop the best or most optimal
+   models by varying parameters during the training process. One major
+   disadvantage is an inability to visualize the models. In fact, neural
+   networks are commonly criticized as `black-boxes' that offer little
+   insight into causative relationships among variables. Recent research,
+   primarily in the ecological literature, has addressed this criticism
+   and several approaches have since been developed to `illuminate the
+   black-box'.[18]^1
+
+   As far as I know, none of the recent techniques for evaluating neural
+   network models are available in R. Özesmi and Özemi (1999)[19]^2
+   describe a neural interpretation diagram (NID) to visualize parameters
+   in a trained neural network model. These diagrams allow the modeler to
+   qualitatively examine the importance of explanatory variables given
+   their relative influence on response variables, using model weights as
+   inference into causation. More specifically, the diagrams illustrate
+   connections between layers with width and color in proportion to
+   magnitude and direction of each weight. More influential variables
+   would have lots of thick connections between the layers.
+
+   In this blog I present a function for plotting neural networks from the
+   nnet package. This function allows the user to plot the network as a
+   neural interpretation diagram, with the option to plot without
+   color-coding or shading of weights. The neuralnet package also offers a
+   plot method for neural network objects and I encourage interested
+   readers to [20]check it out. I have created the function for the nnet
+   package given my own preferences for aesthetics, so its up to the
+   reader to choose which function to use. I plan on preparing this
+   function as a contributed package to CRAN, but thought I'd present it
+   in my blog first to gauge interest.
+
+   Let's start by creating an artificial dataset to build the model. This
+   is a similar approach that I used in my previous blog about
+   [21]collinearity. We create eight random variables with an arbitrary
+   correlation struction and then create a response variable as a linear
+   combination of the eight random variables.
+require(clusterGeneration)
+
+set.seed(2)
+num.vars<-8
+num.obs<-1000
+
+#arbitrary correlation matrix and random variables
+cov.mat<-genPositiveDefMat(num.vars,covMethod=c("unifcorrmat"))$Sigma
+rand.vars<-mvrnorm(num.obs,rep(0,num.vars),Sigma=cov.mat)
+parms<-runif(num.vars,-10,10)
+
+#response variable as linear combination of random variables and random error te
+rm
+y<-rand.vars %*% matrix(parms) + rnorm(num.obs,sd=20)
+
+   Now we can create a neural network model using our synthetic dataset.
+   The nnet function can input a formula or two separate arguments for the
+   response and explanatory variables (we use the latter here). We also
+   have to convert the response variable to a 0-1 continuous scale in
+   order to use the nnet function properly (via the linout argument, see
+   the [22]documentation).
+require(nnet)
+
+rand.vars<-data.frame(rand.vars)
+y<-data.frame((y-min(y))/(max(y)-min(y)))
+names(y)<-'y'
+
+mod1<-nnet(rand.vars,y,size=10,linout=T)
+
+   We've created a neural network model with ten nodes in the hidden layer
+   and a linear transfer function for the response variable. All other
+   arguments are as default. The tricky part of developing an optimal
+   neural network model is identifying a combination of parameters that
+   produces model predictions closest to observed. Keeping all other
+   arguments as default is not a wise choice but is a trivial matter for
+   this blog. Next, we use the plot function now that we have a neural
+   network object.
+
+   First we import the function from my Github account (aside: does anyone
+   know a better way to do this?).
+#import function from Github
+require(RCurl)
+
+root.url<-'https://gist.github.com/fawda123'
+raw.fun<-paste(
+  root.url,
+  '5086859/raw/17fd6d2adec4dbcf5ce750cbd1f3e0f4be9d8b19/nnet_plot_fun.r',
+  sep='/'
+  )
+script<-getURL(raw.fun, ssl.verifypeer = FALSE)
+eval(parse(text = script))
+rm('script','raw.fun')
+
+   The function is now loaded in our workspace as plot.nnet. We can use
+   the function just by calling plot since it recognizes the neural
+   network object as input.
+par(mar=numeric(4),mfrow=c(1,2),family='serif')
+plot(mod1,nid=F)
+plot(mod1)
+
+   [23][nnet1.jpg?w=525]
+
+   The image on the left is a standard illustration of a neural network
+   model and the image on the right is the same model illustrated as a
+   neural interpretation diagram (default plot). The black lines are
+   positive weights and the grey lines are negative weights. Line
+   thickness is in proportion to magnitude of the weight relative to all
+   others. Each of the eight random variables are shown in the first layer
+   (labelled as X1-X8) and the response variable is shown in the far right
+   layer (labelled as `y'). The hidden layer is labelled as H1 through
+   H10, which was specified using the size argument in the nnet function.
+   B1 and B2 are bias layers that apply constant values to the nodes,
+   similar to intercept terms in a regression model.
+
+   The function has several arguments that affect the plotting method:
+   mod.in model object for input created from nnet function
+   nid logical value indicating if neural interpretation diagram is
+   plotted, default T
+   all.out logical value indicating if all connections from each response
+   variable are plotted, default T
+   all.in logical value indicating if all connections to each input
+   variable are plotted, default T
+   wts.only logical value indicating if connections weights are returned
+   rather than a plot, default F
+   rel.rsc numeric value indicating maximum width of connection lines,
+   default 5
+   circle.cex numeric value indicating size of nodes, passed to cex
+   argument, default 5
+   node.labs logical value indicating if text labels are plotted, default
+   T
+   line.stag numeric value that specifies distance of connection weights
+   from nodes
+   cex.val numeric value indicating size of text labels, default 1
+   alpha.val numeric value (0-1) indicating transparency of connections,
+   default 1
+   circle.col text value indicating color of nodes, default `lightgrey'
+   pos.col text value indicating color of positive connection weights,
+   default `black'
+   neg.col text value indicating color of negative connection weights,
+   default `grey'
+   ... additional arguments passed to generic plot function
+
+   Most of the arguments can be tweaked for aesthetics. We'll illustrate
+   using a neural network model created in the example code for the nnet
+   function:
+#example data and code from nnet function examples
+ir<-rbind(iris3[,,1],iris3[,,2],iris3[,,3])
+targets<-class.ind( c(rep("s", 50), rep("c", 50), rep("v", 50)) )
+samp<-c(sample(1:50,25), sample(51:100,25), sample(101:150,25))
+ir1<-nnet(ir[samp,], targets[samp,], size = 2, rang = 0.1,decay = 5e-4, maxit =
+200)
+
+#plot the model with different default values for the arguments
+par(mar=numeric(4),family='serif')
+plot.nnet(ir1,pos.col='darkgreen',neg.col='darkblue',alpha.val=0.7,rel.rsc=15,
+circle.cex=10,cex=1.4,
+        circle.col='brown')
+
+   [24][nnet2.jpg?w=525]
+
+   The neural network plotted above shows how we can tweak the arguments
+   based on our preferences. This figure also shows that the function can
+   plot neural networks with multiple response variables (`c', `s', and
+   `v' in the iris dataset).
+
+   Another useful feature of the function is the ability to get the
+   connection weights from the original nnet object. Admittedly, the
+   weights are an attribute of the original function but they are not
+   nicely arranged. We can get the weight values directly with the
+   plot.nnet function using the wts.only argument.
+plot.nnet(ir1,wts.only=T)
+
+$`hidden 1`
+[1]  0.2440625  0.5161636  1.9179850 -2.8496175
+[5] -1.4606777
+
+$`hidden 2`
+[1]   9.222086   6.350143   7.896035 -11.666666
+[5]  -8.531172
+
+$`out 1`
+[1]  -5.868639 -10.334504  11.879805
+
+$`out 2`
+[1] -4.6083813  8.8040909  0.1754799
+
+$`out 3`
+[1]   6.2251557  -0.3604812 -12.7215625
+
+   The function returns a list with all connections to the hidden layer
+   (hidden 1 through hidden 2) and all connections to the output layer
+   (out1 through out3). The first value in each element of the list is the
+   weight from the bias layer.
+
+   The last features of the plot.nnet function we'll look at are the
+   all.in and all.out arguments. We can use these arguments to plot
+   connections for specific variables of interest. For example, what if we
+   want to examine the weights that are relevant only for sepal width
+   (`Sepal W.') and virginica sp. (`v')?
+plot.nnet(ir1,pos.col='darkgreen',neg.col='darkblue',alpha.val=0.7,rel.rsc=15,
+        circle.cex=10,cex=1.4,circle.col='brown',all.in='Sepal W.',all.out='v')
+
+   [25][nnet3.jpg?w=525]
+
+   This exercise is relatively trivial for a small neural network model
+   but can be quite useful for a [26]larger model.
+
+   Feel free to grab the function from Github (linked above). I encourage
+   suggestions on ways to improve its functionality. I will likely present
+   more quantitative methods of evaluating neural networks in a future
+   blog, so stay tuned!
+
+   ^1Olden, J.D., Jackson, D.A. 2002. Illuminating the `black-box': a
+   randomization approach for understanding variable contributions in
+   artificial neural networks. Ecological Modelling. 154:135-150.
+   ^2Özesmi, S.L., Özesmi, U. 1999. An artificial neural network approach
+   to spatial habitat modeling with interspecific interaction. Ecological
+   Modelling. 116:15-31.
+
+Share this:
+
+     * [27]Twitter
+     * [28]Facebook
+     *
+
+Like this:
+
+   Like Loading...
+   Posted on [29]March 4, 2013 by [30]beckmw. This entry was posted in
+   [31]R, [32]Uncategorized and tagged [33]neural network, [34]nnet,
+   [35]plot, [36]r. Bookmark the [37]permalink.
+
+Post navigation
+
+   [38]<- Data fishing: R and XML part 3
+   [39]Animating neural networks from the nnet package ->
+
+23 thoughts on "Visualizing neural networks from the nnet package"
+
+    1. [40]GekkoQuant says:
+       [41]March 5, 2013 at 3:54 am
+       Fantastic blog post and code.
+       I used neuralnet simply so I could plot the network however my
+       preference is for nnet package. I'm not sure why but nnet seems
+       easier to train.
+       It'd be good to get this functionality in the main R package.
+       [42]Reply
+    2. Pierre says:
+       [43]March 5, 2013 at 6:08 am
+       Thank you for this post, it's very interesting
+       Few bugs :
+       You need to add
+       require(clusterGeneration) # for access to genPositiveDefMat
+       function
+       I had this error "requires numeric matrix/vector arguments" for
+       this line :
+       y<-rand.vars %*% matrix(parms) + rnorm(num.obs,sd=20)
+       Which i fixed this way, it didn't like the dataframe class for %*%
+       :
+       y<-as.matrix(rand.vars) %*% matrix(parms) + rnorm(num.obs,sd=20)
+       And also an error on the plot
+       plot(nnet.mod1,nid=F)
+       Fixed by :
+       plot(mod1, nid = F)
+       [44]Reply
+          + [45]fawda123 says:
+            [46]March 5, 2013 at 11:27 am
+            Thanks Pierre, my mistake. I've made the changes, should work
+            correctly now.
+            [47]Reply
+    3. [48]Visualizing neural networks from the nnet package | spider's
+       space
+    4. [49]harald says:
+       [50]March 5, 2013 at 1:46 pm
+       "First we import the function from my Github account (aside: does
+       anyone know a better way to do this?"
+       I'd try this:
+       require(devtools)
+       source_gist("5086859'')
+       Cheers
+       harald
+       [51]Reply
+          + [52]fawda123 says:
+            [53]March 6, 2013 at 7:21 pm
+            Excellent, thanks Harald. I'll try that in future posts.
+            [54]Reply
+    5. [55]sjewo says:
+       [56]March 6, 2013 at 8:37 am
+       Thanks for your interesting post! I adopted this idea for the
+       neuralnet package: [57]https://gist.github.com/sjewo/5099683
+       [58]Reply
+    6. [59]MySchizoBuddy says:
+       [60]March 6, 2013 at 3:49 pm
+       if you have a very large dataset with like 500+ variables
+       (predictors), can neural networks give me a list of variable
+       importance and a metric on the optimal number of variables to use.
+       Like in randomForest package it gives you the variable importance
+       and additional package AUCRF gives me a optimal set of variables
+       [61]Reply
+          + [62]fawda123 says:
+            [63]March 6, 2013 at 7:22 pm
+            I have some code I might share in future posts about variable
+            importance values for neural networks. The optimal number of
+            variables is a more tricky issue... stay tuned.
+            [64]Reply
+    7. nuada says:
+       [65]March 10, 2013 at 4:04 pm
+       I've found some strange error:
+       df <- data.frame(x=1:10, y=sqrt(1:10))
+       n <- nnet(y ~ x, data=df, size=2)
+       plot(n) # OK
+       n <- nnet(as.formula('y ~ x'), data=df, size=2)
+       plot(n) # Almost OK, broken input and output labels
+       f <- as.formula('y ~ x')
+       n <- nnet(f, data=df, size=2)
+       plot(n) # Error: object of type 'symbol' is not subsettable
+       [66]Reply
+          + [67]fawda123 says:
+            [68]March 11, 2013 at 9:34 am
+            Ah, thanks for pointing this out. I still need to tweak the
+            function to deal with different methods for the nnet object.
+            [69]Reply
+          + [70]fawda123 says:
+            [71]March 11, 2013 at 2:41 pm
+            Alright, I was missing a call to eval on line 56 of the
+            function on the Github account. This should work correctly
+            now.
+            [72]Reply
+    8. [73]Jeffrey Shaffer says:
+       [74]March 13, 2013 at 11:45 am
+       Terrific blog post! This is really a fantastic tool that I've put
+       to use already. Thanks.
+       [75]Reply
+    9. [76]Animating neural networks from the nnet package - R is my
+       friend
+   10. Julie Tseng-Crank says:
+       [77]April 8, 2013 at 7:35 pm
+       Here is the error I got.
+       Error in loadNamespace(i, c(lib.loc, .libPaths())) :
+       there is no package called `munsell'
+       I found no munsell package in CRAN.
+       [78]Reply
+          + [79]beckmw says:
+            [80]April 9, 2013 at 7:24 am
+            Hi Julie,
+            That's strange. This isn't a required package for the plot,
+            but check it out anyway:
+            [81]http://cran.r-project.org/web/packages/munsell/index.html
+            -Marcus
+            [82]Reply
+   11. [83]Ameen Zhao (@AmeenZhao) says:
+       [84]April 18, 2013 at 9:49 am
+       Hi, thanks for your post! I try to use it in classification model
+       but it's failed. Does it only for regression? Thanks!
+       [85]Reply
+          + [86]beckmw says:
+            [87]April 18, 2013 at 11:28 am
+            Hi,
+            The function is meant for neural network models created using
+            the [88]nnet package. It will not work for other model types.
+            -Marcus
+            [89]Reply
+   12. [90]Visualizing neural networks from the nnet package - R is my
+       friend | luiz p. c. de freitas
+   13. [91]Variable importance in neural networks - R is my friend
+   14. zzztilt says:
+       [92]August 16, 2013 at 7:41 am
+       Hi, your graph is great! How to use this plot function for a neural
+       network without a hidden layer? doenst seems to work.
+       Error: Error in matrix(seq(1, layers[1] * layers[2] + layers[2]),
+       ncol = layers[2]) :
+       data is too long
+       [93]Reply
+          + [94]beckmw says:
+            [95]August 16, 2013 at 7:53 am
+            Thanks! The function only works with model objects from the
+            nnet package. As far as I know, the package cannot create
+            neural networks w/o a hidden layer.
+            [96]Reply
+   15. zzztilt says:
+       [97]August 20, 2013 at 8:49 am
+       Hi in your plot, for example if the weight is 0, but there is still
+       a line plotted. Is there anyway to change this?
+       [98]Reply
+
+Leave a Reply [99]Cancel reply
+
+   Enter your comment here...
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Fill in your details below or click an icon to log in:
+     *
+     *
+     *
+     *
+     *
+
+       IFRAME: [100]googleplus-sign-in
+
+   [101]Gravatar
+   Email (required) (Address never made public)
+   ____________________
+   Name (required)
+   ____________________
+   Website
+   ____________________
+   WordPress.com Logo
+
+   You are commenting using your WordPress.com account.
+   ( [102]Log Out / [103]Change )
+   Twitter picture
+
+   You are commenting using your Twitter account.
+   ( [104]Log Out / [105]Change )
+   Facebook photo
+
+   You are commenting using your Facebook account.
+   ( [106]Log Out / [107]Change )
+   Google+ photo
+
+   You are commenting using your Google+ account.
+   ( [108]Log Out / [109]Change )
+   [110]Cancel
+
+   Connecting to %s
+
+   [_] Notify me of follow-up comments via email.
+
+   Post Comment
+
+   Search ____________________ Search
+
+Recent Posts
+
+     * [111]A nifty area plot (or a bootleg of a ggplot geom)
+     * [112]Variable importance in neural networks
+     * [113](Another) introduction to R
+     * [114]Integration take two - Shiny application
+     * [115]Poor man's integration - a simulated visualization approach
+
+Archives
+
+     * [116]September 2013
+     * [117]August 2013
+     * [118]May 2013
+     * [119]April 2013
+     * [120]March 2013
+     * [121]February 2013
+     * [122]January 2013
+     * [123]December 2012
+
+Categories
+
+     * [124]R
+     * [125]Uncategorized
+
+Blogroll
+
+     * [126]CI BioBase blog
+     * [127]R-bloggers
+
+Meta
+
+     * [128]Register
+     * [129]Log in
+     * [130]Entries RSS
+     * [131]Comments RSS
+     * [132]WordPress.com
+
+   [133]Blog at WordPress.com. [134]Customized Publish Theme.
+
+   [135]Follow
+
+Follow "R is my friend"
+
+   Get every new post delivered to your Inbox.
+
+   Join 44 other followers
+
+   ____________________
+
+   Sign me up
+   [136]Powered by WordPress.com
+
+   IFRAME: [137]likes-master
+
+   %d bloggers like this:
+
+References
+
+   Visible links
+   1. http://beckmw.wordpress.com/feed/
+   2. http://beckmw.wordpress.com/comments/feed/
+   3. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/feed/
+   4. http://beckmw.wordpress.com/2013/02/18/data-fishing-r-and-xml-part-3/
+   5. http://beckmw.wordpress.com/2013/03/19/animating-neural-networks-from-the-nnet-package/
+   6. http://public-api.wordpress.com/oembed/1.0/?format=json&url=http%3A%2F%2Fbeckmw.wordpress.com%2F2013%2F03%2F04%2Fvisualizing-neural-networks-from-the-nnet-package%2F&for=wpcom-auto-discovery
+   7. http://public-api.wordpress.com/oembed/1.0/?format=xml&url=http%3A%2F%2Fbeckmw.wordpress.com%2F2013%2F03%2F04%2Fvisualizing-neural-networks-from-the-nnet-package%2F&for=wpcom-auto-discovery
+   8. http://beckmw.wordpress.com/osd.xml
+   9. http://wordpress.com/opensearch.xml
+  10. http://beckmw.wordpress.com/
+  11. http://beckmw.wordpress.com/
+  12. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#content
+  13. http://beckmw.wordpress.com/
+  14. http://beckmw.wordpress.com/about/
+  15. http://cran.r-project.org/web/packages/neuralnet/index.html
+  16. http://cran.r-project.org/web/packages/nnet/index.html
+  17. http://cran.r-project.org/web/packages/RSNNS/index.html
+  18. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#ref1
+  19. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#ref2
+  20. http://gekkoquant.com/2012/05/26/neural-networks-with-r-simple-example/
+  21. http://beckmw.wordpress.com/2013/02/05/collinearity-and-stepwise-vif-selection/
+  22. http://cran.r-project.org/web/packages/nnet/nnet.pdf
+  23. http://beckmw.files.wordpress.com/2013/03/nnet1.pdf
+  24. http://beckmw.files.wordpress.com/2013/03/nnet2.pdf
+  25. http://beckmw.files.wordpress.com/2013/03/nnet3.pdf
+  26. http://beckmw.files.wordpress.com/2013/03/nnet_ex.pdf
+  27. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?share=twitter
+  28. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?share=facebook
+  29. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/
+  30. http://beckmw.wordpress.com/author/fawda123/
+  31. http://beckmw.wordpress.com/category/r/
+  32. http://beckmw.wordpress.com/category/uncategorized/
+  33. http://beckmw.wordpress.com/tag/neural-network/
+  34. http://beckmw.wordpress.com/tag/nnet/
+  35. http://beckmw.wordpress.com/tag/plot/
+  36. http://beckmw.wordpress.com/tag/r-2/
+  37. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/
+  38. http://beckmw.wordpress.com/2013/02/18/data-fishing-r-and-xml-part-3/
+  39. http://beckmw.wordpress.com/2013/03/19/animating-neural-networks-from-the-nnet-package/
+  40. http://www.gekkoquant.com/
+  41. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-25
+  42. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=25#respond
+  43. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-26
+  44. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=26#respond
+  45. http://beckmw.wordpress.com/
+  46. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-29
+  47. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=29#respond
+  48. http://spiderspace.wordpress.com/2013/03/05/visualizing-neural-networks-from-the-nnet-package/
+  49. http://adistantobserver.blogspot.com/
+  50. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-30
+  51. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=30#respond
+  52. http://beckmw.wordpress.com/
+  53. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-35
+  54. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=35#respond
+  55. https://twitter.com/sjewor
+  56. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-33
+  57. https://gist.github.com/sjewo/5099683
+  58. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=33#respond
+  59. http://gravatar.com/myschizobuddy
+  60. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-34
+  61. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=34#respond
+  62. http://beckmw.wordpress.com/
+  63. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-36
+  64. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=36#respond
+  65. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-40
+  66. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=40#respond
+  67. http://beckmw.wordpress.com/
+  68. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-41
+  69. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=41#respond
+  70. http://beckmw.wordpress.com/
+  71. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-42
+  72. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=42#respond
+  73. http://www.facebook.com/jeffrey.shaffer.7
+  74. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-43
+  75. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=43#respond
+  76. http://beckmw.wordpress.com/2013/03/15/animating-neural-networks-from-the-nnet-package/
+  77. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-67
+  78. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=67#respond
+  79. http://beckmw.wordpress.com/
+  80. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-68
+  81. http://cran.r-project.org/web/packages/munsell/index.html
+  82. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=68#respond
+  83. http://twitter.com/AmeenZhao
+  84. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-80
+  85. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=80#respond
+  86. http://beckmw.wordpress.com/
+  87. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-83
+  88. http://cran.r-project.org/web/packages/nnet/index.html
+  89. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=83#respond
+  90. http://notes.luizfreitas.com/2013/06/04/visualizing-neural-networks-from-the-nnet-package-r-is-my-friend/
+  91. http://beckmw.wordpress.com/2013/08/12/variable-importance-in-neural-networks/
+  92. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-430
+  93. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=430#respond
+  94. http://beckmw.wordpress.com/
+  95. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-431
+  96. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=431#respond
+  97. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/comment-page-1/#comment-436
+  98. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/?replytocom=436#respond
+  99. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#respond
+ 100. https://public-api.wordpress.com/connect/?googleplus-sign-in=1
+ 101. https://gravatar.com/site/signup/
+ 102. javascript:HighlanderComments.doExternalLogout( 'wordpress' );
+ 103. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/
+ 104. javascript:HighlanderComments.doExternalLogout( 'twitter' );
+ 105. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/
+ 106. javascript:HighlanderComments.doExternalLogout( 'facebook' );
+ 107. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/
+ 108. javascript:HighlanderComments.doExternalLogout( 'googleplus' );
+ 109. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/
+ 110. javascript:HighlanderComments.cancelExternalWindow();
+ 111. http://beckmw.wordpress.com/2013/09/17/a-nifty-area-plot-or-a-bootleg-of-a-ggplot-geom/
+ 112. http://beckmw.wordpress.com/2013/08/12/variable-importance-in-neural-networks/
+ 113. http://beckmw.wordpress.com/2013/05/27/another-introduction-to-r/
+ 114. http://beckmw.wordpress.com/2013/05/13/integration-take-two-shiny-application/
+ 115. http://beckmw.wordpress.com/2013/04/29/poor-mans-integration-a-simulated-visualization-approach/
+ 116. http://beckmw.wordpress.com/2013/09/
+ 117. http://beckmw.wordpress.com/2013/08/
+ 118. http://beckmw.wordpress.com/2013/05/
+ 119. http://beckmw.wordpress.com/2013/04/
+ 120. http://beckmw.wordpress.com/2013/03/
+ 121. http://beckmw.wordpress.com/2013/02/
+ 122. http://beckmw.wordpress.com/2013/01/
+ 123. http://beckmw.wordpress.com/2012/12/
+ 124. http://beckmw.wordpress.com/category/r/
+ 125. http://beckmw.wordpress.com/category/uncategorized/
+ 126. http://cibiobase.blogspot.com/
+ 127. http://www.r-bloggers.com/
+ 128. http://wordpress.com/signup/?ref=wplogin
+ 129. http://beckmw.wordpress.com/wp-login.php
+ 130. http://beckmw.wordpress.com/feed/
+ 131. http://beckmw.wordpress.com/comments/feed/
+ 132. http://wordpress.com/
+ 133. http://wordpress.com/?ref=footer
+ 134. http://theme.wordpress.com/credits/beckmw.wordpress.com/
+ 135. javascript:void(0)
+ 136. http://wordpress.com/signup/?ref=lof
+ 137. http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&mp6=1
+
+   Hidden links:
+ 138. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#comment-form-guest
+ 139. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#comment-form-load-service:WordPress.com
+ 140. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#comment-form-load-service:Twitter
+ 141. http://beckmw.wordpress.com/2013/03/04/visualizing-neural-networks-from-the-nnet-package/#comment-form-load-service:Facebook

@@ -1,0 +1,694 @@
+   #[1]Cisco Blog RSS Feed [2]Cisco Blog » Evolving Cisco's Unified
+   Computing System for Big Data and the Internet of Everything Comments
+   Feed [3]Cisco Announces Intent to Acquire WHIPTAIL [4]VDI Roundup:
+   Cisco and VMware - Better Together
+
+     *
+          + [5]Blogs Home
+          + [6]All of Cisco
+
+   Cisco Blogs
+
+     * [7]Tweet
+     *
+     *
+     *
+     *
+     * [white-15.png] Kindle
+     *
+
+   ____________________ Submit
+     * Technology
+     * [8]Borderless Networks
+     * [9]Collaboration
+     * [10]Data Center and Cloud
+     * [11]Mobility
+     * [12]Security
+     * [13]Small Business
+     * [14]SP360:Service Provider
+     * [15]Video
+
+     * Industries
+     * [16]Education
+     * [17]Financial Services
+     * [18]Government
+     * [19]Healthcare
+     * [20]Manufacturing
+     * [21]Retail
+
+     * Support
+     * [22]Cisco Support Community
+
+     * Partners
+     * [23]Channels
+     * [24]Cisco Developer Network
+
+     * More From Cisco
+     * [25]Architect & DE Discussions
+     * [26]Connected Life Exchange
+     * [27]Digital and Social
+     * [28]High Peformance Computing Networking
+     * [29]Inside Cisco IT
+     * [30]Open at Cisco
+     * [31]Perspectives
+     * [32]TechWiseTV
+
+     * Corporate/News
+     * [33]The Platform
+     * [34]Corporate Social Responsibility
+     * [35]High Tech Policy
+     * [36]Inclusion and Diversity
+     * [37]Internet of Everything
+
+     * Countries and Regions
+     * [38]Brazil
+     * [39]Canada
+          + [40]English
+          + [41]French
+     * [42]Emerging Countries
+     * [43]France
+          + [44]Réseaux
+          + [45]Data Center
+          + [46]Green IT
+          + [47]IPv6
+          + [48]Collaboration
+          + [49]Sécurité
+          + [50]Smart Cities
+     * [51]Germany
+     * [52]Italy
+     * [53]Japan
+     * [54]Korea
+     * [55]Latin America
+     * [56]Netherlands
+     * [57]Poland
+     * [58]Portugal
+     * [59]Russia
+     * [60]Spain
+
+   [61]Cisco Blog > [62]Data Center and Cloud
+
+Evolving Cisco's Unified Computing System for Big Data and the Internet of
+Everything
+
+   Paul Perez
+   [63]Paul Perez | September 10, 2013 at 5:05 am PST
+   ([64]1 Comment)
+   Evolving Cisco UCS for Big Data and the Internet of Everything
+
+   Image credit: imediaconnection.com
+
+   In an earlier blog, I discussed the [65]incredible success behind the
+   Cisco Unified Computing System (UCS) in Darwinian evolutionary terms.
+   Since I wrote that blog three months ago, we've continued to grow
+   rapidly and have strengthened our position as the #2 blade server
+   player worldwide from 19.3% to 21.5% revenue share (per IDC 2CQ2013
+   server market tracker, September 2013), with 33.9% revenue share in the
+   US.
+
+   Prediction - The #1 spot is well within our reach sooner than you may
+   think.
+
+   As we grow our installed base with roughly 1,000 new customers every
+   month, our conversations about the future of UCS have taken an
+   interesting turn. Until now in what I'll call the "UCS 1.0" phase,
+   Cisco focused on virtualization and private [66]cloud as the dominant
+   use cases that were top-of-mind for industry CIOs and we struck a
+   resonant chord based on our growth - just look at our numbers.
+
+   We were market makers with expanded-memory 2-socket Intel EX blades
+   (remember the B230's?), which were gobbled up like candy into
+   large-scale VDI deployments much to the surprise of the industry. We
+   also jump-started a very attractive RISC-to-x86 migration practice,
+   including Cisco IT's own production environment: a 40TB
+   mission-critical database that ran on HP Superdomes - a "circle of
+   life" moment for me since Superdome was my program from 1999-2003.
+
+   We'll continue leading in customer value for our original design
+   centers, but we are now focusing on market expansion with what we call
+   "UCS 2.0", expanding into data-intensive, mission critical, analytics
+   and service provider [67]cloud environments with an increased level of
+   R&D funding and strong corporate support from our top executives.
+
+   Prediction - You'll see us more focused on architectural solutions for
+   key industry vertical markets with tuned solution environments that
+   leverage Cisco's wide portfolio and that of our partners.
+
+   One such act of support is the [68]announcement today of our intent to
+   acquire WHIPTAIL, a leading solid-state systems company that boasts the
+   highest scalability in performance and capacity of any scale-out flash
+   vendor on the market today.  WHIPTAIL systems span from single-node
+   entry products to 30-node behemoths that drive almost 400TB's of flash,
+   40GB/sec of bandwidth and 4 million random R/W IOPS - for starters.
+
+   Prediction: Cisco will unseat Infiniband with low-latency Ethernet
+   fabrics. Check out our [69]USNIC technology for starters...
+
+   In our customer interactions it became very clear they view application
+   acceleration using persistent solid-state memory as a use case that
+   belongs in the server tier, not the storage tier.
+
+   In an application-centric world, we started thinking not about server
+   vs. storage infrastructure, but how applications viewed data - hot
+   "important right now" data, warm "may be of interest data" and cold
+   "let's keep it around for background mining or compliance" data.
+
+   We arrived at the conclusion that UCS needed to be best-in-class at
+   accelerating hot data layers. Hot data is closest to applications and
+   therefore has high affinity for the server tier.  Hence WHIPTAIL.
+
+   Assertion: Flash is a "boundary technology" that can be viewed as part
+   of the memory or storage hierarchy. With respect to storage it's faster
+   and more expensive per GB. With respect to DRAM memory it's slower but
+   cheaper per GB. It therefore allows cost/performance arbitrage for
+   applications by applying an accelerated persistent data model that can
+   save on DRAM and de-complicate underlying permanent backing stores.
+
+   WHIPTAIL is a great fit with the fabric computing UCS architecture and
+   also complementary to our C-Series rack mount servers and our
+   [70]SingleConnect capability in our UCS Manager that allows
+   mixed-density blade/rack deployments to be managed from a common pane
+   of glass.
+
+   Our intent is to fully integrate UCS computing and WHIPTAIL solid-state
+   technologies over a Nexus fabric to create scalable persistent memory
+   systems. That's our vision.
+
+   Why? Because customers will be able to do things they could not before.
+   Such as loading vast amounts of data in seconds and minutes, not hours
+   or days - or -- shrinking their performance footprint to a rack vs. 30
+   racks - or -- accelerating Hadoop on all solid-state infrastructure -
+   or -- extending in-memory analytics to a scale previously not thought
+   possible. That's why.
+
+   As converged infrastructure advances as an ensemble computing
+   architecture, boundary technologies like solid-state memory can be
+   viewed as part of the memory or the storage hierarchy. Cisco's point of
+   view is to make it part of the memory hierarchy in the compute tier.
+   That allows customers the best of both worlds - performance
+   acceleration for applications while retaining their investment in
+   permanent backing stores and simplifying their overall data center
+   total cost of ownership (TCO).
+
+   To close on a Darwinian note, if UCS existed in the Cretaceous Period
+   it would have been a Velociraptor  (meaning `swift seizer')- sleek,
+   fast and ferocious - eating everything in its path.  Velociraptors are
+   believed to have hunted in packs, which is great considering the strong
+   partner ecosystem that Cisco and UCS have built with industry leaders
+   like EMC, NetApp and VCE as shining examples. We are committed to
+   maintaining and expanding our hunting pack - more on that later!
+   if Cisco UCS existed in the Cretaceous Period it would have been a
+   Velociraptor
+
+   if Cisco UCS existed in the Cretaceous Period it would have been a
+   Velociraptor. Image credit: dark.pozadia.org
+
+   Tags: [71]acquisition, [72]Big Data, [73]Cisco, [74]Internet of
+   Everything, [75]Paul Perez, [76]UCS, [77]unified computing system,
+   [78]WHIPTAIL
+   [79]Leave a comment
+
+1 Comments.
+
+     September 11, 2013 at 7:28 am
+   [javascript]
+   Reputation
+
+   This meter represents your reputation at a 100% scale based on your
+   level of participation on the site.
+   [80]Find out more
+
+   Every self-respecting Velociraptor has a whiptail!
+
+   Vote    0 likes
+   [81]Reply
+
+Leave a Reply
+
+   [82]Click here to cancel reply.
+
+   We'd love to hear from you! To earn points and badges for participating
+   in the conversation, join [83]Cisco Social Rewards. Your comment(s)
+   will appear instantly on the live site. Spam, promotional and
+   derogatory comments will be removed.
+   Earn badges for your comments. Start today! Creating an account is fast
+   and easy.
+   [84]Learn More.
+
+   Already a rewards member? [85]Log In
+
+   ______________________ Name
+
+   ______________________ Mail (will not be published)
+
+   ______________________ Website (please include "http://")
+
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Submit Comment
+
+   [_]  Notify me of follow-up comments via email
+
+     * Subscribe Now ____________________ Submit
+       RSS Feed
+     *
+          + [86]LinkedIn
+          + [87]Google+
+          + [88]Pinterest
+          + [89]SlideShare
+          + [90]News@Cisco
+          + [91]Twitter
+          + [92]Facebook
+          + [93]YouTube
+          + [94]Flickr
+          + [95]More ->
+     * [96]Learn More
+       Already a rewards member? [97]Log In
+     * Blogs at a Glance
+          + [98]Most
+            Recent
+          + [99]Most
+            Commented
+          + [100]Popular
+       [101]How can the Internet of Everything Improve Our World?
+       [102]Mary Anne Petrillo | 04 Oct 2013
+       ([103]0 Comments)
+       [104]Tweet
+       [105]Sports & Entertainment, the Internet of Things, and the
+       Internet of Everything
+       [106]Chris White | 04 Oct 2013
+       ([107]0 Comments)
+       [108]Tweet
+       [109]Cisco Partners Recognized for Promoting Achievement in K-12
+       Education
+       [110]Alexis Raymond | 04 Oct 2013
+       ([111]0 Comments)
+       [112]Tweet
+       [113]Ender's Game - Coming to a Town Near You
+       [114]Adrian den Hartog | 04 Oct 2013
+       ([115]5 Comments)
+       [116]Tweet
+       [117]Behind the Scenes of Cisco Live Orlando
+       [118]Tamara Gardner | 04 Oct 2013
+       ([119]2 Comments)
+       [120]Tweet
+       [121]More Posts >
+       [122]How the World's Most Advanced Network Processor is Making the
+       Internet of Everything Possible
+       <[123]Nikhil Jayaram | 12 Sep 2013
+       ([124]26 Comments)
+       [125]Tweet
+       [126]Introducing Kvasir
+       <[127]Kurt Grutzmacher | 23 Sep 2013
+       ([128]16 Comments)
+       [129]Tweet
+       [130]Get Your Network Ready For iOS7
+       <[131]Jeevan Patil | 13 Sep 2013
+       ([132]11 Comments)
+       [133]Tweet
+       [134]#ExecInsights: Defend, Discover and Remediate with Security
+       Services
+       <[135]Chris Young | 10 Sep 2013
+       ([136]8 Comments)
+       [137]Tweet
+       [138]Tick Tock Goes the Server Clock
+       <[139]Todd Brannon | 10 Sep 2013
+       ([140]8 Comments)
+       [141]Tweet
+       [142]How the World's Most Advanced Network Processor is Making the
+       Internet of Everything Possible
+       [143]Nikhil Jayaram | 12 Sep 2013
+       ([144]26 Comments)
+       [145]Tweet
+       [146]Introducing Kvasir
+       [147]Kurt Grutzmacher | 23 Sep 2013
+       ([148]16 Comments)
+       [149]Tweet
+       [150]The Fifth Step to Enterprise Mobility: Defending Your Data
+       [151]Prashanth Shenoy | 11 Sep 2013
+       ([152]0 Comments)
+       [153]Tweet
+       [154]Cisco Announces Intent to Acquire WHIPTAIL
+       [155]Hilton Romanski | 10 Sep 2013
+       ([156]7 Comments)
+       [157]Tweet
+       [158]Get Your Network Ready For iOS7
+       [159]Jeevan Patil | 13 Sep 2013
+       ([160]11 Comments)
+       [161]Tweet
+     *
+
+       IFRAME:
+       [162]http://www.youtube.com/embed/wYTIwm63pSs?list=PLBC4D7F497D395F
+       36&hl=en_US
+
+     * [163]Ad Banner
+     * Archives [Select........]
+     *
+          + What We're Reading
+          + [164]Blade Watch
+          + [165]Byte and Switch
+          + [166]ComputerWorld
+          + [167]CSO
+          + [168]GigaOm
+          + [169]InfoWorld
+          + [170]Network World
+          + [171]TechRepublic
+          + [172]The Data Center Journal
+          + Technology
+          + [173]Borderless Networks
+          + [174]Collaboration
+          + [175]Data Center and Cloud
+          + [176]Mobility
+          + [177]Security
+          + [178]Small Business
+          + [179]SP360:Service Provider
+          + [180]Video
+          + Industries
+          + [181]Education
+          + [182]Financial Services
+          + [183]Government
+          + [184]Healthcare
+          + [185]Manufacturing
+          + [186]Retail
+          + Support
+          + [187]Cisco Support Community
+          + Partners
+          + [188]Channels
+          + [189]Cisco Developer Network
+          + More From Cisco
+          + [190]Architect & DE Discussions
+          + [191]Connected Life Exchange
+          + [192]Digital and Social
+          + [193]High Peformance Computing Networking
+          + [194]Inside Cisco IT
+          + [195]Open at Cisco
+          + [196]Perspectives
+          + [197]TechWiseTV
+          + Corporate/News
+          + [198]The Platform
+          + [199]Corporate Social Responsibility
+          + [200]High Tech Policy
+          + [201]Inclusion and Diversity
+          + [202]Internet of Everything
+          + Countries and Regions
+          + [203]Brazil
+          + [204]Canada
+               o [205]English
+               o [206]French
+          + [207]Emerging Countries
+          + [208]France
+               o [209]Réseaux
+               o [210]Data Center
+               o [211]Green IT
+               o [212]IPv6
+               o [213]Collaboration
+               o [214]Sécurité
+               o [215]Smart Cities
+          + [216]Germany
+          + [217]Italy
+          + [218]Japan
+          + [219]Korea
+          + [220]Latin America
+          + [221]Netherlands
+          + [222]Poland
+          + [223]Portugal
+          + [224]Russia
+          + [225]Spain
+       [226]Contacts | [227]Feedback | [228]Help | [229]Site Map |
+       [230]Terms & Conditions | [231]Privacy Statement | [232]Cookie
+       Policy | [233]Trademarks
+       Legal Disclaimer
+       Some of the individuals posting to this site, including the
+       moderators, work for Cisco Systems. Opinions expressed here and in
+       any corresponding comments are the personal opinions of the
+       original authors, not of Cisco. The content is provided for
+       informational purposes only and is not meant to be an endorsement
+       or representation by Cisco or any other party. This site is
+       available to the public. No information you consider confidential
+       should be posted to this site. By posting you agree to be solely
+       responsible for the content of all information you contribute, link
+       to, or otherwise upload to the Website and release Cisco from any
+       liability related to your use of the Website. You also grant to
+       Cisco a worldwide, perpetual, irrevocable, royalty-free and
+       fully-paid, transferable (including rights to sublicense) right to
+       exercise all copyright, publicity, and moral rights with respect to
+       any original content you provide. The comments are moderated.
+       Comments will appear as soon as they are approved by the moderator.
+       [234]Switch to our mobile site
+
+References
+
+   Visible links
+   1. http://blogs.cisco.com/feed/
+   2. http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/feed/
+   3. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/
+   4. http://blogs.cisco.com/datacenter/vdi-roundup-cisco-and-vmware-better-together/
+   5. http://blogs.cisco.com/
+   6. http://www.cisco.com/
+   7. https://twitter.com/share
+   8. http://blogs.cisco.com/borderless
+   9. http://blogs.cisco.com/collaboration
+  10. http://blogs.cisco.com/datacenter
+  11. http://blogs.cisco.com/wireless
+  12. http://blogs.cisco.com/security
+  13. http://blogs.cisco.com/smallbusiness
+  14. http://blogs.cisco.com/sp
+  15. http://blogs.cisco.com/video
+  16. http://blogs.cisco.com/education
+  17. http://blogs.cisco.com/financialservices
+  18. http://blogs.cisco.com/government
+  19. http://blogs.cisco.com/healthcare
+  20. http://blogs.cisco.com/manufacturing
+  21. http://blogs.cisco.com/retail
+  22. https://supportforums.cisco.com/blogs/
+  23. http://blogs.cisco.com/channels
+  24. http://developer.cisco.com/web/events-community/blogs
+  25. http://blogs.cisco.com/getyourbuildon
+  26. http://blogs.cisco.com/cle
+  27. http://blogs.cisco.com/socialmedia
+  28. http://blogs.cisco.com/performance
+  29. http://blogs.cisco.com/ciscoit
+  30. http://blogs.cisco.com/openatcisco
+  31. http://blogs.cisco.com/perspectives
+  32. http://blogs.cisco.com/cin
+  33. http://blogs.cisco.com/news
+  34. http://blogs.cisco.com/csr
+  35. http://blogs.cisco.com/gov
+  36. http://blogs.cisco.com/diversity
+  37. http://blogs.cisco.com/ioe
+  38. http://gblogs.cisco.com/br/
+  39. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/
+  40. http://canadablog.cisco.com/
+  41. http://ciscocanadafr.wordpress.com/
+  42. http://blogs.cisco.com/emerging
+  43. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/
+  44. http://gblogs.cisco.com/fr-reseaux/blog
+  45. http://gblogs.cisco.com/fr-datacenter/blog
+  46. http://gblogs.cisco.com/fr-greenit/blog
+  47. http://gblogs.cisco.com/fr-ipv6/blog
+  48. http://gblogs.cisco.com/fr-collaboration/blog
+  49. http://gblogs.cisco.com/fr-security/blog
+  50. http://gblogs.cisco.com/fr-smartcities/blog
+  51. http://gblogs.cisco.com/de
+  52. http://gblogs.cisco.com/it
+  53. http://gblogs.cisco.com/jp/
+  54. http://ciscokrblog.com/
+  55. http://cisco-latinoamerica.com/
+  56. http://gblogs.cisco.com/nl
+  57. http://gblogs.cisco.com/pl
+  58. http://gblogs.cisco.com/pt
+  59. http://gblogs.cisco.com/ru
+  60. http://gblogs.cisco.com/es
+  61. http://blogs.cisco.com/
+  62. http://blogs.cisco.com/category/datacenter/
+  63. http://blogs.cisco.com/author/paulperez/
+  64. http://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#comments
+  65. http://blogs.cisco.com/datacenter/natural-selection-on-full-display-in-the-server-world/#more-118145
+  66. http://www.cisco.com/web/solutions/trends/cloud/index.html?CAMPAIGN=cloud+story&COUNTRY_SITE=us&POSITION=social+media&REFERRING_SITE=cisco+blog&CREATIVE=cloud+keyword
+  67. http://www.cisco.com/web/solutions/trends/cloud/index.html?CAMPAIGN=cloud+story&COUNTRY_SITE=us&POSITION=social+media&REFERRING_SITE=cisco+blog&CREATIVE=cloud+keyword
+  68. http://newsroom.cisco.com/press-release-content?type=webcontent&articleId=1261248
+  69. http://insidehpc.com/2013/07/17/cisco-readies-ultra-low-latency-ethernet-usnic/
+  70. http://blogs.cisco.com/datacenter/introducing-cisco-singleconnect-technology/
+  71. http://blogs.cisco.com/tag/acquisition/
+  72. http://blogs.cisco.com/tag/big-data/
+  73. http://blogs.cisco.com/tag/cisco/
+  74. http://blogs.cisco.com/tag/internet-of-everything/
+  75. http://blogs.cisco.com/tag/paul-perez/
+  76. http://blogs.cisco.com/tag/ucs/
+  77. http://blogs.cisco.com/tag/unified-computing-system/
+  78. http://blogs.cisco.com/tag/whiptail/
+  79. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#respond
+  80. http://blogs.cisco.com/rewards-about
+  81. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/?replytocom=809930#respond
+  82. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#respond
+  83. http://blogs.cisco.com/rewards-about
+  84. http://blogs.cisco.com/rewards-about
+  85. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+  86. http://www.linkedin.com/company/cisco
+  87. https://plus.google.com/106092229730683979920
+  88. http://pinterest.com/ciscosystems/
+  89. http://www.slideshare.net/ciscosystems
+  90. http://newsroom.cisco.com/dlls/index.html
+  91. http://twitter.com/CiscoDC
+  92. http://www.facebook.com/ciscodc
+  93. http://youtubecisco.com/datacenter
+  94. http://www.flickr.com/photos/25679159@N03/
+  95. http://socialmedia.cisco.com/
+  96. http://blogs.cisco.com/rewards-about
+  97. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+  98. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#tab1
+  99. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#tab2
+ 100. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/#tab3
+ 101. http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/
+ 102. http://blogs.cisco.com/author/maryannepetrillo/
+ 103. http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/#comments
+ 104. https://twitter.com/share
+ 105. http://blogs.cisco.com/news/sportsandioe/
+ 106. http://blogs.cisco.com/author/chriswhite/
+ 107. http://blogs.cisco.com/news/sportsandioe/#comments
+ 108. https://twitter.com/share
+ 109. http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/
+ 110. http://blogs.cisco.com/author/alexisraymond/
+ 111. http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/#comments
+ 112. https://twitter.com/share
+ 113. http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/
+ 114. http://blogs.cisco.com/author/adriandenhartog/
+ 115. http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/#comments
+ 116. https://twitter.com/share
+ 117. http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/
+ 118. http://blogs.cisco.com/author/tamaragardner/
+ 119. http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/#comments
+ 120. https://twitter.com/share
+ 121. http://blogs.cisco.com/2013/page/2
+ 122. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/
+ 123. http://blogs.cisco.com/author/nikhiljayaram/
+ 124. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments
+ 125. https://twitter.com/share
+ 126. http://blogs.cisco.com/security/introducing-kvasir/
+ 127. http://blogs.cisco.com/author/kurtgrutzmacher/
+ 128. http://blogs.cisco.com/security/introducing-kvasir/#comments
+ 129. https://twitter.com/share
+ 130. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/
+ 131. http://blogs.cisco.com/author/jeevanpatil/
+ 132. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments
+ 133. https://twitter.com/share
+ 134. http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/
+ 135. http://newsroom.cisco.com/christopher-young?articleId=614047
+ 136. http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/#comments
+ 137. https://twitter.com/share
+ 138. http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/
+ 139. http://blogs.cisco.com/author/toddbrannon/
+ 140. http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/#comments
+ 141. https://twitter.com/share
+ 142. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/
+ 143. http://blogs.cisco.com/author/nikhiljayaram/
+ 144. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments
+ 145. https://twitter.com/share
+ 146. http://blogs.cisco.com/security/introducing-kvasir/
+ 147. http://blogs.cisco.com/author/kurtgrutzmacher/
+ 148. http://blogs.cisco.com/security/introducing-kvasir/#comments
+ 149. https://twitter.com/share
+ 150. http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/
+ 151. http://blogs.cisco.com/author/PrashanthShenoy/
+ 152. http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/#comments
+ 153. https://twitter.com/share
+ 154. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/
+ 155. http://blogs.cisco.com/author/hilton-romanski/
+ 156. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/#comments
+ 157. https://twitter.com/share
+ 158. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/
+ 159. http://blogs.cisco.com/author/jeevanpatil/
+ 160. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments
+ 161. https://twitter.com/share
+ 162. http://www.youtube.com/embed/wYTIwm63pSs?list=PLBC4D7F497D395F36&hl=en_US
+ 163. http://iotwf.com/sign-up.html
+ 164. http://www.bladewatch.com/
+ 165. http://www.networkcomputing.com/blogs.asp
+ 166. http://blogs.computerworld.com/servers
+ 167. http://blogs.csoonline.com/blog_categories/infrastructure/data_center
+ 168. http://gigaom.com/
+ 169. http://www.infoworld.com/?source=nav_BLOGS
+ 170. http://www.networkworld.com/blogs/
+ 171. http://blogs.techrepublic.com.com/
+ 172. http://datacenterjournal.com/index.php
+ 173. http://blogs.cisco.com/borderless
+ 174. http://blogs.cisco.com/collaboration
+ 175. http://blogs.cisco.com/datacenter
+ 176. http://blogs.cisco.com/wireless
+ 177. http://blogs.cisco.com/security
+ 178. http://blogs.cisco.com/smallbusiness
+ 179. http://blogs.cisco.com/sp
+ 180. http://blogs.cisco.com/video
+ 181. http://blogs.cisco.com/education
+ 182. http://blogs.cisco.com/financialservices
+ 183. http://blogs.cisco.com/government
+ 184. http://blogs.cisco.com/healthcare
+ 185. http://blogs.cisco.com/manufacturing
+ 186. http://blogs.cisco.com/retail
+ 187. https://supportforums.cisco.com/blogs/
+ 188. http://blogs.cisco.com/channels
+ 189. http://developer.cisco.com/web/events-community/blogs
+ 190. http://blogs.cisco.com/getyourbuildon
+ 191. http://blogs.cisco.com/cle
+ 192. http://blogs.cisco.com/socialmedia
+ 193. http://blogs.cisco.com/performance
+ 194. http://blogs.cisco.com/ciscoit
+ 195. http://blogs.cisco.com/openatcisco
+ 196. http://blogs.cisco.com/perspectives
+ 197. http://blogs.cisco.com/cin
+ 198. http://blogs.cisco.com/news
+ 199. http://blogs.cisco.com/csr
+ 200. http://blogs.cisco.com/gov
+ 201. http://blogs.cisco.com/diversity
+ 202. http://blogs.cisco.com/ioe
+ 203. http://gblogs.cisco.com/br/
+ 204. http://canadablog.cisco.com/
+ 205. http://canadablog.cisco.com/
+ 206. http://ciscocanadafr.wordpress.com/
+ 207. http://blogs.cisco.com/emerging
+ 208. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/
+ 209. http://gblogs.cisco.com/fr-reseaux/blog
+ 210. http://gblogs.cisco.com/fr-datacenter/blog
+ 211. http://gblogs.cisco.com/fr-greenit/blog
+ 212. http://gblogs.cisco.com/fr-ipv6/blog
+ 213. http://gblogs.cisco.com/fr-collaboration/blog
+ 214. http://gblogs.cisco.com/fr-security/blog
+ 215. http://gblogs.cisco.com/fr-smartcities/blog
+ 216. http://gblogs.cisco.com/de
+ 217. http://gblogs.cisco.com/it/
+ 218. http://gblogs.cisco.com/jp/
+ 219. http://ciscokrblog.com/
+ 220. http://cisco-latinoamerica.com/
+ 221. http://gblogs.cisco.com/nl
+ 222. http://gblogs.cisco.com/pl
+ 223. http://gblogs.cisco.com/pt
+ 224. http://gblogs.cisco.com/ru
+ 225. http://gblogs.cisco.com/es
+ 226. http://www.cisco.com/web/siteassets/contacts/index.html
+ 227. http://tools.cisco.com/cdc/feedbk/public/FeedbackAction.cdcfdb
+ 228. http://www.cisco.com/web/help/index.html
+ 229. http://www.cisco.com/web/siteassets/sitemap/index.html
+ 230. http://www.cisco.com/web/siteassets/legal/terms_condition.html
+ 231. http://www.cisco.com/web/siteassets/legal/privacy.html
+ 232. http://www.cisco.com/web/siteassets/legal/privacy.html#cookies
+ 233. http://www.cisco.com/web/siteassets/legal/trademark.html
+ 234. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/?wpmp_switcher=mobile
+
+   Hidden links:
+ 235. mailto:?subject=Cisco%20Blog%20E-Mail:Evolving%20Cisco%E2%80%99s%20Unified%20Computing%20System%20for%20Big%20Data%20and%20the%20Internet%20of%20Everything&body=I%20saw%20this%20post%20on%20Cisco%20Data%20Center%20and%20Cloud%20blog%20and%20thought%20you%20should%20read%20it.%0A%0AEvolving%20Cisco%E2%80%99s%20Unified%20Computing%20System%20for%20Big%20Data%20and%20the%20Internet%20of%20Everything%0A%0Ahttp://blogs.cisco.com/datacenter/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/%0A%0A****Disclaimer****%0A%0ACisco%20is%20not%20responsible%20for%20the%20content%20of%20this%20email,%20and%20its%20contents%20do%20not%20necessarily%20reflect%20Cisco%E2%80%99s%20views%20or%20opinions.%20Cisco%20has%20not%20verified%20the%20email%20address%20or%20name%20of%20the%20sender.
+ 236. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/
+ 237. http://blogs.cisco.com/rewards-profile/78076
+ 238. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+ 239. http://feeds.feedburner.com/CiscoBlogDataCenterNetworks
+ 240. http://blogs.cisco.com/news/evolving-ciscos-unified-computing-system-for-big-data-and-the-internet-of-everything/
+ 241. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php

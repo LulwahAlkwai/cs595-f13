@@ -1,0 +1,1924 @@
+   #[1]Stack Overflow [2]Feed for question 'How to pair socks from a pile
+   efficiently?'
+
+   [3]Stack Exchange
+   [4]sign up | [5]log in | [6]careers 2.0 |
+   ____________________________
+   [7]Stack Overflow
+     * [8]Questions
+     * [9]Tags
+     * [10]Tour
+     * [11]Users
+
+     * [12]Ask Question
+
+   [13]Tell me more ×
+   Stack Overflow is a question and answer site for professional and
+   enthusiast programmers. It's 100% free, no registration required.
+
+[14]How to pair socks from a pile efficiently?
+
+   up vote 1557 down vote [15]favorite
+   673
+
+   Yesterday I was pairing the socks from the clean laundry, and figured
+   out the way I was doing it is not very efficient. I was doing a naive
+   search -- picking one sock and "iterating" the pile in order to find
+   its pair. This requires iterating over n/2 * n/4 = n^2/8 socks on
+   average.
+
+   As a computer scientist I was thinking what I could do? Sorting
+   (according to size/color/...) of course came into mind to achieve an
+   O(NlogN) solution.
+
+   Hashing or other not-in-place solutions are not an option, because I am
+   not able to duplicate my socks (though it could be nice if I could).
+
+   So, the question is basically:
+
+   Given a pile of n pairs of socks, containing 2n elements (assume each
+   sock has exactly one matching pair), what is the best way to pair them
+   up efficiently with up to logarithmic extra space? (I believe I can
+   remember that amount of info if needed.)
+
+   I will appreciate an answer that addresses the following aspects:
+     * A general theoretical solution for a huge number of socks.
+     * The actual number of socks is not that large, I don't believe me
+       and my spouse have more than 30 pairs. (And it is fairly easy to
+       distinguish between my socks and hers, can this be utilized as
+       well?)
+     * Is it equivalent to the [16]element distinctness problem?
+
+   [17]algorithm [18]sorting [19]language-agnostic
+   [20]share|[21]improve this question
+   [22]edited Jan 20 at 17:43
+   [23]YAegDwight
+   8,07272639
+   asked Jan 19 at 15:34
+   [24]amit
+   57.6k94099
+   183
+   I use pigeon hole principle to pair exactly one from the laundry pile.
+   I have 3 different colors of socks (Red,Blue and Green) and 2 pairs of
+   each color. I pick up 4 number of socks each time and I always make up
+   a pair and get to work. - [25]Srinivas Jan 19 at 15:37
+   19
+   Yet another pigeon hole principle: if you take a subset of n/2 +1
+   socks, there must be at least one pair in this subset.
+   - [26]wildplasser Jan 19 at 15:57
+   4
+   remark that if you had an infinite number of different symmetric pairs
+   of socks (i.e. left=right), then, in fact, just picking out one of each
+   is not possible unless you accept the axiom of choice
+   ([27]en.wikipedia.org/wiki/Axiom_of_choice). What consequence does this
+   have on pairing? how is this relevant to computability?
+   [28]math.stackexchange.com/questions/269902/... - [29]thang Jan 20 at
+   4:52
+   22
+   Great question! You might be interested in my article on a related
+   problem, which is a discussion of the probability of pulling two
+   matched socks out of the pile:
+   [30]blogs.msdn.com/b/ericlippert/archive/2010/03/22/... - [31]Eric
+   Lippert Jan 20 at 19:08
+   24
+   Stopped reading at "assume each sock has exactly one matching [pair]".
+   Everyone knows this is an impossible assumption to make. - [32]Henrik
+   Erlandsson Apr 3 at 8:00
+   [33]show 13 more comments
+
+26 Answers
+
+   [34]active [35]oldest [36]votes
+   up vote 979 down vote accepted
+
+   Sorting solutions have been proposed but sorting is a little too much:
+   We don't need order, we just need equality groups.
+
+   So hashing would be enough (and faster).
+    1. For each color of socks, form a pile. Iterate over all socks in
+       your input basket and distribute them onto the color piles.
+    2. Iterate over each pile and distribute it by some other metric (e.g.
+       pattern) into a second set of piles
+    3. Recursively apply this scheme until you have distributed all socks
+       onto very small piles that you can visually process immediately
+
+   This kind of recursive hash partitioning is actually being done by
+   [37]SQL Server when it needs to hash join or hash aggregate over huge
+   data sets. It distributes its build input stream into many partitions
+   which are independent. This scheme scales to arbitrary amounts of data
+   and multiple CPUs linearly.
+
+   You don't need recursive partitioning if you can find a distribution
+   key (hash key) that provides enough buckets that each bucket is small
+   enough to be processed very quickly. Unfortunately, I don't think socks
+   have such a property.
+
+   If each sock had an integer called "PairID" one could easily distribute
+   them into 10 buckets according to PairID % 10 (the last digit).
+
+   The best real-world partitioning I can think of is creating a rectangle
+   of piles: one dimension is color, the other is pattern. Why a
+   rectangle? Because we need O(1) random-access to piles. (A 3D
+   [38]cuboid would also work, but that is not very practical.)
+     __________________________________________________________________
+
+   Update:
+
+   What about parallelism? Can multiple humans match the socks faster?
+    1. The simplest parallization strategy is to have multiple workers
+       take from the input basket and put the socks onto the piles. This
+       only scales up so much - imagine 100 people fighting over 10 piles.
+       The synchronization costs (manifesting themselves as
+       hand-collisions and human communication) destroy efficiency and
+       speed-up (see the [39]Universal Scalability Law!).
+    2. It scales nearly indefinitely if each worker has its own set of
+       piles. Workers can then take from the input basket big chunks of
+       socks (very little contention as they are doing it rarely) and they
+       do not need to sync when distributing the socks at all (because
+       they have thread-local piles). At the end all workers need to union
+       their pile-sets. I believe that can be done in O(log (worker count
+       * piles per worker)) if the workers form an aggregation tree.
+
+   What about the [40]element distinctness problem? As the article states,
+   the element distinctness problem can be solved in O(N). This is the
+   same for the socks problem (also O(N), if you need only one
+   distribution step (I proposed multiple steps only because humans are
+   bad at calculations - one step is enough if you distribute on
+   md5(color, length, pattern, ...), i.e. a perfect hash of all
+   attributes)).
+
+   Clearly, one cannot go faster than O(N) so we have reached the optimal
+   lower bound.
+
+   Although the outputs are not exactly the same (in one case, just a
+   boolean. In the other case, the pairs of socks), the asymptotic
+   complexities are the same.
+   [41]share|[42]improve this answer
+   [43]edited Jul 29 at 20:18
+   [44]Peter Mortensen
+   6,48274373
+   answered Jan 19 at 22:27
+   [45]usr
+   49k1055105
+   33
+   This is exactly what I do! I make piles dependent on the style of the
+   opening of the sock (I only have white), that gives me enough "buckets"
+   to quickly match each of those up. - [46]Scott Chamberlain Jan 20 at
+   0:00
+   14
+   (+1) So far, this is my favorite answer, because it actually deals with
+   the problem as a CS one, and in an elegant way. I liked the reduction
+   to a database system you made. I am still looking for someone to
+   connect it with the distinctness problem, because my gut tells me they
+   are equivalent. - [47]amit Jan 20 at 0:02
+   6
+   I've tried this with my socks (I've got easily 30+ pairs) and man it is
+   FAST. One problem I've found is when I can't have a good enough hash
+   algorithm (I've got lots of white socks without any pattern) so it
+   becomes hard. In that case, what would be the optimal way to do it?
+   - [48]NothingsImpossible Jan 20 at 14:14
+   15
+   @NothingsImpossible that's how hash collision attacks feel like for a
+   poor web-server! Are the white socks distinguishable by some attribute?
+   There must be something you can distribute them on. Otherwise, you
+   could just form pairs arbitrarily. - [49]usr Jan 20 at 14:22
+   18
+   This is a Radix Sort, which I agree is the right answer. @MarkPeters I
+   don't think you need a lookup table. A single linear pass over the
+   socks can convert the socks to number vectors, making the mapping of
+   "sock segment" to bucket trivial. The socks can be tied to the vectors
+   with string so that you don't need another linear pass at the end.
+   - [50]Pointy Jan 20 at 21:31
+   [51]show 17 more comments
+   up vote 263 down vote
+
+   As architecture of human brain is completely different than of modern
+   CPU this question makes no practical sense.
+
+   Humans can win over CPU algorithms using the fact that "finding a
+   matching pair" can be one operation for a set that isn't too big.
+
+   My algorithm:
+spread_all_socks_on_flat_surface();
+while (socks_left_on_a_surface()) {
+     // thanks to human visual SIMD, this is one, quick operation
+     pair = notice_any_matching_pair();
+     remove_socks_pair_from_surface(pair);
+}
+
+   At least this is what I am using in real life and I find it very
+   efficient. The downsize is it requires flat surface, but it's usually
+   abundant.
+   [52]share|[53]improve this answer
+   [54]edited Jan 20 at 19:11
+   [55]ThiefMastercD
+   114k19145240
+   answered Jan 20 at 11:21
+   [56]dpc.ucore.info
+   2,4961514
+   74
+   as the number of socks increases, human's SIMD become no better than a
+   CPU. - [57]Lie Ryan Jan 20 at 15:42
+   10
+   The best answer, IMO. While it's fun and clever (and appropriate for
+   SO) to reduce a day-to-day problem to a computer algorithm, it makes
+   much more sense to use the resolution power of man's eye/brain for a
+   set as small as ~60 socks. - [58]drug_user841417 Jan 20 at 18:27
+   76
+   I have only black socks and I can testify that this algorithm doesn't
+   work. At all. - [59]Christian Jan 21 at 14:14
+   9
+   @dpc.ucore.info No, because they have different woven cuff patterns,
+   cuff lengths, overall lengths and shades of black (my wife would
+   probably physically hurt me for that last one). - [60]Christian Jan 22
+   at 15:07
+   34
+   You had better hope you have an even number of socks, otherwise you are
+   going to be folding socks for a long time... - [61]Patrick James
+   McDougle Jan 23 at 15:14
+   [62]show 10 more comments
+   up vote 117 down vote
+
+   Case 1: All socks are identical (this is what I do in real life by the
+   way).
+
+   Pick any two of them to make a pair. Constant time.
+
+   Case 2: There are a constant number of combinations (ownership, color,
+   size, texture, etc.).
+
+   Use [63]radix sort. This is only linear time since comparison is not
+   required.
+
+   Case 3: The number of combinations is not known in advance (general
+   case).
+
+   We have to do comparison to check whether two socks come in pair. Pick
+   one of the O(n log n) comparison-based sorting algorithms.
+
+   However in real life when the number of socks is relatively small
+   (constant), these theoretically optimal algorithms wouldn't work well.
+   It might take even more time than sequential search, which
+   theoretically requires quadratic time.
+   [64]share|[65]improve this answer
+   [66]edited Jan 31 at 21:55
+   [67]Lokerim
+   15919
+   answered Jan 19 at 21:48
+   [68]Terry Li
+   3,62731856
+   30
+   I like Case 1. Simple, quick, solves the problem. - [69]Michael
+   Kjörling Jan 21 at 10:26
+   2
+   > It might take even more time than sequential search, which requires
+   quadratic time in theory. Yeah that is why I hate doing this, maybe I
+   should throw away all my socks and start with case 1. - [70]Nils Jan 21
+   at 12:19
+   14
+   the down side of having all identical socks is that they tend to age at
+   different rates. So you still end up trying to match them based on how
+   worn they are. (which is harder than simply matching by pattern)
+   - [71]SDC Jan 22 at 13:45
+   8
+   The problem with having 60 pairs of identical socks "because it makes
+   pairing easier" is that it gives people the impression you work with
+   computers. - [72]Steve Ives Apr 24 at 12:17
+   2
+   Case 1 is not constant time when there's an operation involved, such as
+   folding pairs together. In this case, it's linear time with the
+   smallest constant factor (the proof of which is left as an exercise for
+   the reader). One can't possibly take the same time folding one pair and
+   a bucket full of socks. However, it scales linearly. By Amdahl's law,
+   it has unlimited speedup, ignoring overhead. By Gustafson's law, you
+   can fold as many pairs as it takes to fold one pair given enough
+   workers (the amount of which is left as an exercise for the reader),
+   ignoring overhead. - [73]Paulo Madeira Sep 4 at 13:00
+   [74]show 5 more comments
+   up vote 56 down vote
+
+   Non-algorithmic answer, yet "efficient" when I do it:
+     * step 1) discard all your existing socks
+     * step 2) go to [75]Walmart and buy them by packets of 10 - n packet
+       of white and m packets of black. No need for other colors in
+       everyday's life.
+
+   Yet times to times, I have to do this again (lost socks, damaged socks,
+   etc.), and I hate to discard perfectly good socks too often (and I
+   wished they kept selling the same socks reference!), so I recently took
+   a different approach.
+
+   Algorithmic answer:
+
+   Consider than if you draw only one sock for the second stack of socks,
+   as you are doing, your odds of finding the matching sock in a naive
+   search is quite low.
+     * So pick up five of them at random, and memorize their shape or
+       their length.
+
+   Why five? Usually humans are good are remembering between five and
+   seven different elements in the working memory - a bit like the human
+   equivalent of a [76]RPN stack - five is a safe default.
+     * Pick up one from the stack of 2n-5.
+     * Now look for a match (visual pattern matching - humans are good at
+       that with a small stack) inside the five you drew, if you don't
+       find one, then add that to your five.
+     * Keep randomly picking socks from the stack and compare to your 5+1
+       socks for a match. As your stack grows, it will reduce your
+       performance but raise your odds. Much faster.
+
+   Feel free to write down the formula to calculate how many samples you
+   have to draw for a 50% odds of a match. IIRC it's an hypergeometric
+   law.
+
+   I do that every morning and rarely need more than three draws - but I
+   have n similar pairs (around 10, give or take the lost ones) of m
+   shaped white socks. Now you can estimate the size of my stack of stocks
+   :-)
+
+   BTW, I found that the sum of the transaction costs of sorting all the
+   socks every time I needed a pair were far less than doing it once and
+   binding the socks. A just-in-time works better because then you don't
+   have to bind the socks, and there's also a diminishing marginal return
+   (that is, you keep looking for that two or three socks that when
+   somewhere in the laundry and that you need to finish matching your
+   socks and you lose time on that).
+   [77]share|[78]improve this answer
+   [79]edited Jul 29 at 20:21
+   [80]Peter Mortensen
+   6,48274373
+   answered Jan 20 at 3:34
+   [81]guylhem
+   57722
+   7
+   Upvote for 'non-algorithmic' answer. This is exactly what I do and it
+   works wonderfully. The replacement issue is not a problem if you
+   'rotate' your sock stock by placing washed socks in back and pulling
+   from the front of the drawer in the morning. All socks wear evenly.
+   When I start noticing some wear on one, I put on the shopping list to
+   completely replace that entire class of socks. For the old socks, I
+   give the best 20% to Goodwill (tied in a grocery sac so they don't get
+   mixed back in) and pitch the rest. You're not wasting socks, at this
+   point, the 80% only have 6 months left anyway. - [82]FastAl Jan 22 at
+   16:51
+   BTW (1) Binding your socks results in the elastic one one being stored
+   stretched and the will fail much more quickly. Limiting the kinds of
+   unique socks you have makes binding unneded. (2) A disadvantage of
+   limiting unique socks is that for people with certain fashion concerns,
+   the method may be unsuitable. - [83]FastAl Jan 22 at 16:53
+   I came here specifically to post your "non-algorithmic" answer. As in
+   true computer science, most people never pay enough attention to the
+   data and its structure. - [84]bkconrad Sep 6 at 23:39
+   I use this algorithmic approach every morning and it works like a
+   charm! Additionally, I put worn out socks to a different pile to throw
+   away later (unfortunately they manage to get to the original pile again
+   before I find the time to trash it). - [85]Donatas Olsevicius Sep 11 at
+   13:35
+   up vote 50 down vote
+
+   What I do is that I pick up the first sock and put it down (say, on the
+   edge of the laundry bowl). Then I pick up another sock and check to see
+   if it's the same as the first sock. If it is, I remove them both. If
+   it's not, I put it down next to the first sock. Then I pick up the
+   third sock and compare that to the first two (if they're still there).
+   Etc.
+
+   [DEL: This approach can be fairly easily be implemented in an array,
+   assuming that "removing" socks is an option. :DEL] Actually, you don't
+   even need to "remove" socks. If you don't need sorting of the socks
+   (see below), then you can just move them around and end up with an
+   array that has all the socks arranged in pairs in the array.
+
+   Assuming that the only operation for socks is to compare for equality,
+   this algorithm is basically still an n^2 algorithm, though I don't know
+   about the average case (never learned to calculate that).
+
+   Sorting, of course improves efficiency, especially in real life where
+   you can easily "insert" a sock between two other socks. In computing
+   the same could be achieved by a tree, but that's extra space. And, of
+   course, we're back at NlogN (or a bit more, if there are several socks
+   that are the same by sorting criteria, but not from the same pair).
+
+   Other than that, I cannot think of anything, but this method does seem
+   to be pretty efficient in real life. :)
+   [86]share|[87]improve this answer
+   answered Jan 19 at 15:49
+   [88]Vilx-
+   33.4k22116246
+   5
+   This is also what I do, (note that if you simply leave spaces then
+   inserts are also O(1) ), but it scales poorly with theoretically large
+   numbers of socks. - [89]Mooing Duck Jan 19 at 17:40
+   10
+   scales poorly with theoretically large numbers of types of socks
+   - [90]Steven Lu Jan 20 at 5:14
+   @StevenLu - as I said - it's n*n or nLogn, depending on whether you
+   sort it or not. So it scales about as poorly as any sorting algorithm.
+   If you want faster, number them and use radix sort. - [91]Vilx- Jan 20
+   at 9:34
+   This is essentially storing found-but-not-matched socks in a hash-based
+   lookup. With an ideal hash it is O(n), but if you've enough socks
+   stored that the hash begins to degenerate, it becomes more complex
+   accordingly. - [92]Jon Hanna Jan 20 at 14:34
+   I cannot imagine sorting, which sock is "bigger" or "smaller" than
+   other? :D - [93]Paladin Jan 20 at 17:50
+   [94]show 7 more comments
+   up vote 24 down vote
+
+   The theoretical limit is O(n) because you need to touch each sock
+   (unless some are already paired somehow).
+
+   You can achieve O(n) with [95]radix sort. You just need to pick some
+   attributes for the buckets.
+    1. First you can choose (hers, mine) - split them into 2 piles,
+    2. then use colors (can have any order for the colors, e.g.
+       alphabetically by color name) - split them into piles by color
+       (remember to keep the initial order from step 1 for all socks in
+       the same pile),
+    3. then length of the sock,
+    4. then texture, ....
+
+   If you can pick a limited number of attributes, but enough attributes
+   that can uniquely identify each pair, you should be done in O(k * n),
+   which is O(n) if we can consider k is limited.
+   [96]share|[97]improve this answer
+   answered Jan 19 at 20:40
+   [98]andredor
+   34213
+   1
+   Socks often come in 4-packs and larger, since that is cheaper, but that
+   also makes them indistinguishable. To counter this, my wife sews a tiny
+   mark onto each new pair of socks I buy. The mark is of a different
+   color for each pair, or of a different shape, if she runs out of
+   colors. With this approach you don't even need a limited set of
+   attributes. Just sew a unique number on each pair. :) For extra points,
+   use binary. - [99]Vilx- Jan 19 at 21:45
+   13
+   @Vilx- WHY?!? Isn't the whole point that they be indistinguishable?
+   - [100]flup Jan 20 at 11:10
+   1
+   +1 for calling this radix sort! - [101]flup Jan 20 at 11:11
+   1
+   @flup - I think the whole point is to sell in larger bundles. :) As for
+   me, this helps to wear them down in pairs. Otherwise I can end up with
+   three very worn socks and one brand new one. Kinda silly. - [102]Vilx-
+   Jan 20 at 12:39
+   7
+   I disagree with the calculation of O(n). What is $k$? $k$ is the number
+   of attributes. I would argue $k$ is $O(log n)$ because it has to be
+   enough to uniquely identify each pair. If you have 2 pairs (black and
+   white), then color ($k=1, n=2$) is enough. If you have one pair of
+   black, short; one pair of black, long; one pair of white, short; and
+   one pair of white, long - then $k=2, n=4$. Then if we limit $k$, we at
+   the same time limit $n$. If we are going to limit $n$ then order
+   calculation does not make sense anymore. - [103]emory Jan 20 at 13:25
+   [104]show 7 more comments
+   up vote 18 down vote
+
+   This is asking the wrong question. Right question to ask is, why am I
+   spending time sorting socks? How much does it cost on yearly basis,
+   when you value your free time for X monetary units of your choice? And
+   more often than not, this is not just any free time, it's morning free
+   time, which you could be spending in bed, or sipping your coffee, or
+   leaving a bit early and not being caught in the traffic.
+
+   It's often good to take a step back, and think a way around the
+   problem.
+
+   And there is a way!
+
+   Find sock you like. Take all relevant features into account: color in
+   different lighting conditions, overall quality and durability, comfort
+   in different climatic conditions, odor absorption. Also important is,
+   they should not lose elasticity in storage, so natural fabrics are
+   good, and they should be available in plastic wrapping.
+
+   It's better if there's no difference between left and right foot socks,
+   but it's not critical. If socks are left-right symmetrical, finding a
+   pair is O(1) operation, and sorting the socks is approximate O(M)
+   operation, where M is amount of places in your house, which you have
+   littered with socks, ideally some small constant number.
+
+   If you chose a fancy pair with different left and right sock, doing a
+   full bucket sort to left and right foot buckets takes O(N+M), where N
+   is amount of socks and M is same as above. Somebody else can give the
+   formula for average iterations of finding first pair, but worst case
+   for finding a pair with blind search is N/2+1, which becomes
+   astronomically unlikely case for reasonable N. This can be sped up by
+   using advanced image recognition algorithms and heuristics, when
+   scanning the pile of unsorted socks with [105]Mk1 Eyeball.
+
+   So, algorithm for achieving O(1) sock pairing efficiency (assuming
+   symmetrical sock):
+    1. You need to estimate how many pairs of socks you will need for the
+       rest of your life, or perhaps until you retire and move to warmer
+       climes with no need to wear socks ever again. If you are young, you
+       could also estimate how long it takes before we'll all have
+       sock-sorting robots in our homes, and the whole problem becomes
+       irrelevant.
+    2. You need to find out how you can order your selected sock in bulk,
+       and how much it costs, and do they deliver.
+    3. Order the socks!
+    4. Get rid of your old socks.
+
+   Alternative step 3 would involve comparing costs of buying same amount
+   of perhaps cheaper socks a few pairs at a time over the years, and
+   adding the cost of sorting socks, but take my word for it: buying in
+   bulk is cheaper! Also, socks in storage increase in value at the rate
+   of sock price inflation, which is more than you would get on many
+   investments. Then again there is also storage cost, but socks really do
+   not take much space at the top shelf of a closet.
+
+   Problem solved. So, just get new socks, throw/donate your old ones
+   away, and live happily ever after knowing you are saving money and time
+   every day for the rest of your life.
+   [106]share|[107]improve this answer
+            [108]edited Feb 8 at 10:59
+   answered Feb 8 at 7:42
+   [109]hyde
+   8,568737
+   2
+   If I could upvote this twice, I would. - [110]Vicky Feb 8 at 10:19
+   A lifetime (assuming 75 years) supply of socks (assuming you exhaust 4
+   pairs/month, that makes 3600 pairs) would take up (assuming a new pair
+   of socks takes up 20 cubic inches) a total of 1 1/2 cubic yards. That
+   is an enormous amount of space. Assuming they deliver it to you in a
+   box that is roughly a cube, that crate will be about 3 feet 4 inches on
+   a side. - [111]AJMansfield Jul 11 at 20:42
+   @AJMansfield valid concern. However, I disagree with a few of your
+   numbers. I'd take a timespan of just 40 years (25...65) (time between
+   not living at parents/dorm/etc and retiring, see above). Also, I think
+   one pair takes more like 0,5x4x6 inches in original packaging. These
+   numbers bring your space estime down quite a bit! - [112]hyde Jul 14 at
+   6:40
+   up vote 15 down vote
+
+   As a practical solution:
+    1. Quickly make piles of easily distinguishable socks. (Say by color)
+    2. Quicksort every pile and use the length of the sock for comparison.
+       As a human you can make a fairly quick decision which sock to use
+       to partition that avoids worst case. (You can see multiple socks in
+       parallel, use that to your advantage!)
+    3. Stop sorting piles when they reached a threshold at which you are
+       comfortable to find spot pairs and unpairable socks instantly
+
+   If you have 1000 socks, with 8 colors and an average distribution, you
+   can make 4 piles of each 125 socks in c*n time. With a threshold of 5
+   socks you can sort every pile in 6 runs. (Counting 2 seconds to throw a
+   sock on the right pile it will take you little under 4 hours.)
+
+   If you have just 60 socks, 3 colors and 2 sort of socks (yours / your
+   wife's) you can sort every pile of 10 socks in 1 runs (Again threshold
+   = 5). (Counting 2 seconds it will take you 2 min).
+
+   The initial bucket sorting will speed up your process, because it
+   divides your n socks into k buckets in c*n time so than you will only
+   have to do c*n*log(k) work. (Not taking into account the threshold). So
+   all in all you do about n*c*(1 + log(k)) work, where c is the time to
+   throw a sock on a pile.
+
+   This approach will be favourable compared to any c*x*n + O(1) method
+   roughly as long as log(k) < x - 1.
+     __________________________________________________________________
+
+   In computer science this can be helpful: We have a collection of n
+   things, an order on them (length) and also an equivalence relation
+   (extra information, for example the color of socks). The equivalence
+   relation allows us to make a partition of the original collection, and
+   in every equivalence class our order is still maintained. The mapping
+   of a thing to it's equivalence class can be done in O(1), so only O(n)
+   is needed to assign each item to a class. Now we have used our extra
+   information and can proceed in any manner to sort every class. The
+   advantage is that the data sets are already significantly smaller.
+
+   The method can also be nested, if we have multiple equivalence
+   relations -> make colour piles, than within every pile partition on
+   texture, than sort on length. Any equivalence relation that creates a
+   partition with more than 2 elements that have about even size will
+   bring a speed improvement over sorting (provided we can directly assign
+   a sock to its pile), and the sorting can happen very quickly on smaller
+   data sets.
+   [113]share|[114]improve this answer
+           [115]edited Jan 20 at 19:56
+   answered Jan 20 at 15:18
+   [116]Samuel
+   2,32441736
+   2
+   Human optimisation: I'd argue that as a human, for step 2, you should
+   plonk the socks down in roughly ascending order, then repeat with finer
+   and finer granularity until sorted, a bit like shell sort. This would
+   be much faster for a human (visual estimation) than a comparison-swap
+   based approach. - [117]AndrewC Jan 21 at 1:16
+   up vote 9 down vote
+
+   Here's an Omega(n log n) lower bound in comparison based model. (The
+   only valid operation is comparing two socks.)
+
+   Suppose that you know that your 2n socks are arranged this way:
+
+   p[1] p[2] p[3] ... p[n] p[f(1)] p[f(2)] ... p[f(n)]
+
+   where f is an unknown permutation of the set {1,2,...,n}. Knowing this
+   cannot make the problem harder. There are n! possible outputs
+   (matchings between first and second half), which means you need log(n!)
+   = Omega(n log n) comparisons. This is obtainable by sorting.
+
+   Since you are interested in connections to element distinctness
+   problem: proving the Omega(n log n) bound for element distinctness is
+   harder, because the output is binary yes/no. Here, the output has to be
+   a matching and the number of possible outputs suffices to get a decent
+   bound. However, there's a variant connected to element distinctness.
+   Suppose you are given 2n socks and wonder if they can be uniquely
+   paired. You can get a reduction from ED by sending (a[1], a[2], ...,
+   a[n]) to (a[1], a[1], a[2], a[2], ..., a[n], a[n]). (Parenthetically,
+   the proof of hardness of ED is very interesting, [118]via topology.)
+
+   I think that there should be an Omega(n^2) bound for the original
+   problem if you allow equality tests only. My intuition is: Consider a
+   graph where you add an edge after a test, and argue that if the graph
+   is not dense the output is not uniquely determined.
+   [119]share|[120]improve this answer
+           [121]edited Jan 20 at 21:17
+   answered Jan 20 at 20:18
+   [122]sdcvvc
+   13k33263
+   @amit: I extended it slightly. You might get a better theory-oriented
+   answer by asking on [123]cs.stackexchange.com. - [124]sdcvvc Jan 20 at
+   21:11
+   up vote 8 down vote
+
+   Cost: Moving socks -> high, finding/search socks in line -> small
+
+   What we want to do is reduce the number of moves, and compensate with
+   the number of searches. Also, we can utilize the multithreded
+   environment of the Homo Sapiens to hold more things in the descision
+   cache.
+
+   X = Yours, Y = Your spouses
+
+   From pile A of all socks:
+
+   Pick two socks, place corresponding X sock in X line, and Y sock in Y
+   line at next available position.
+
+   Do until A is empty.
+
+   For each line X and Y
+    1. Pick the first sock in line, search along the line until it finds
+       the corresponding sock.
+    2. Put into the corresponding finished line of socks.
+    3. Optional While you are searching the line and and the current sock
+       you are looking at is identical to the previous, do step 2 for
+       these socks.
+
+   Optionally to step one, you pick up two sock from that line instead of
+   two, as the caching memory is large enough we can quickly identify if
+   either sock matches the current one on the line you are observing. If
+   you are fortunate enough to have three arms, you could possibly parse
+   three socks at the same time given that the memory of the subject is
+   large enough.
+
+   Do until both X and Y is empty.
+
+   Done
+
+   However, as this have simillar complexity as selection sort, the time
+   taken is far less due to the speeds of I/O(moving socks) and
+   search(searching the line for a sock).
+   [125]share|[126]improve this answer
+   answered Jan 19 at 22:19
+   [127]1-----1
+   57417
+   up vote 8 down vote
+
+   This question is actually deeply philosophical. At heart it's about
+   whether the power of people to solve problems (the "wetware" of our
+   brains) is equivalent to what can be accomplished by algorithms.
+
+   An obvious algorithm for sock sorting is:
+Let N be the set of socks that are still unpaired, initially empty
+for each sock s taken from the dryer
+  if s matches a sock t in N
+    remove t from N, bundle s and t together, and throw them in the basket
+  else
+    add s to N
+
+   Now the computer science in this problem is all about the steps
+    1. "if s pairs with a sock t in N". How quickly can we "remember" what
+       we've seen so far?
+    2. "remove t from N" and "add s to N". How expensive is keeping track
+       of what we've seen so far?
+
+   Human beings will use various strategies to effect these. [128]Human
+   memory is associative, something like a hash table where feature sets
+   of stored values are paired with the corresponding values themselves.
+   For example, the concept of "red car" maps to all the red cars a person
+   is capable of remembering. Someone with a perfect memory has a perfect
+   mapping. Most people are imperfect in this regard (and most others).
+   The associative map has a limited capacity. Mappings may bleep out of
+   existence under various circumstances (one beer too many), be recorded
+   in error ("I though her name was Betty, not Nettie"), or never be
+   overwritten even though we observe that the truth has changed ("dad's
+   car" evokes "orange Firebird" when we actually knew he'd traded that in
+   for the red Camaro).
+
+   In the case of socks, perfect recall means looking at a sock s always
+   produces the memory of its sibling t, including enough information
+   (where it is on the ironing board) to locate t in constant time. A
+   person with photographic memory accomplishes both 1 and 2 in constant
+   time without fail.
+
+   Someone with less than perfect memory might use a few commonsense
+   equivalence classes based on features within his capability to track:
+   size (papa, mama, baby), color (greenish, redish, etc.), pattern
+   (argyle, plain, etc.), style (footie, knee-high, etc.). So the ironing
+   board would be divided into sections for the categories. This usually
+   allows the category to be located in constant time by memory, but then
+   a linear search through the category "bucket" is needed.
+
+   Someone with no memory or imagination at all (sorry) will just keep the
+   socks in one pile and do a linear search of the whole pile.
+
+   A neat freak might use numeric labels for pairs as someone suggested.
+   This opens the door to a total ordering, which allows the human to use
+   exactly the same algorithms we might with a CPU: binary search, trees,
+   hashes, etc.
+
+   So the "best" algorithm depends on the qualities of the
+   wetware/hardware/software that is running it and our willingness to
+   "cheat" by imposing a total order on pairs. Certainly a "best"
+   meta-algorithm is to hire the worlds best sock-sorter: a person or
+   machine that can aquire and quickly store a huge set N of sock
+   attribute sets in a 1-1 associative memory with constant time lookup,
+   insert, and delete. Both people and machines like this can be procured.
+   If you have one, you can pair all the socks in O(N) time for N pairs,
+   which is optimal. The total order tags allow you to use standard
+   hashing to get the same result with either a human or hardware
+   computer.
+   [129]share|[130]improve this answer
+            [131]edited Apr 1 at 22:16
+   answered Jan 23 at 4:12
+   [132]Gene
+   11.5k930
+   3
+   "A consequence of the Church Turing Thesis, generally accepted as a
+   true description of our world, is that at heart there is no difference
+   between the way people solve problems and what can be accomplished by
+   algorithms. " -- This a complete and utter misunderstanding of the
+   Church Turing Thesis, which simply says that anything that can be
+   computed can be computed by a Turing Machine; it has nothing to do with
+   differences in ways or any other sort of difference (such as order of
+   complexity). - [133]Jim Balter Apr 1 at 19:10
+   @JimBalter Thanks. Edited. - [134]Gene Apr 1 at 22:17
+   Ok, that's better, although it's still quite wrong ... this question is
+   not about that. Whether or not the Church-Turing thesis is correct,
+   both humans and our computers can sort socks. (The reality is that,
+   humans, being highly finite entities, have far less computational power
+   than Turing Machines ... and the same is true of our computers, but the
+   limitations are different.) - [135]Jim Balter Apr 1 at 23:52
+   I disagree. Of course any of our current computers is essentially and
+   enormous DFA (modulo i/o differences) rather than a TM. Any analog
+   device, however, such as our bodies, is capable of emulating an
+   infinite tape. We don't yet have a useful characterization of the way
+   our minds compute. - [136]Gene Apr 2 at 1:10
+   No infinite tape for humans or other physical devices because nothing
+   in the human brain has infinite resolution, nor could it. It would also
+   help to learn some neuroscience. In any case, there was no deep
+   philosophical question here, regardless of your desire to inject one.
+   But believe what you will ... this isn't the place for this sort of
+   debate and I've had it too many times before. But I'm always amused by
+   people who can barely solve the simplest problems (that's all of us)
+   imagining that they are TM-equivalent. - [137]Jim Balter Apr 2 at 2:43
+   up vote 6 down vote
+
+   This is how I actually do it, for p pairs of socks (n = 2p individual
+   socks):
+     * Grab a sock at random from the pile.
+     * For the first sock, or if all previously-chosen socks have been
+       paired, simply place the sock into the first "slot" of an "array"
+       of unpaired socks in front of you.
+     * If you have one or more selected unpaired socks, check your current
+       sock against all the unpaired socks in the array.
+          + It is possible to separate socks into general classes or types
+            (white/black, ankle/crew, athletic/dress) when building your
+            array, and "drill-down" to only compare like-for-like.
+          + If you find an acceptable match, put both socks together and
+            remove them from the array.
+          + If you do not, put the current sock into the first open slot
+            in the array.
+     * Repeat with every sock.
+
+   The worst-case scenario of this scheme is that every pair of socks is
+   different enough that it must be matched exactly, and that the first
+   n/2 socks you pick are all different. This is your O(n^2) scenario, and
+   it's extremely unlikely. If the number of unique types of sock t is
+   less than the number of pairs p = n/2, and the socks in each type are
+   alike enough (usually in wear-related terms) that any sock of that type
+   can be paired with any other, then as I inferred above, the maximum
+   number of socks you will ever have to compare to is t, after which the
+   next one you pull will match one of the unpaired socks. This scenario
+   is much more likely in the average sock drawer than the worst-case, and
+   reduces the worst-case complexity to O(n*t) where usually t << n.
+   [138]share|[139]improve this answer
+            [140]edited Jan 22 at 2:35
+   answered Jan 21 at 23:12
+   [141]KeithS
+   32.1k23072
+   This is probably pretty close to my mental process. I have an added
+   layer of pre-sort optimization. My athletic socks get washed with the
+   whites and my dress socks get washed with colors. This means that as
+   long as I don't dump two loads of laundry together, my socks are
+   already grouped by type. The white load goes really fast (many
+   identical socks) but the dress socks take longer. Other key tip--make
+   more available memory for the sort (fold and remove all non-socks first
+   and THEN run the pairing algorithm) - [142]otto Jan 23 at 22:39
+   up vote 5 down vote
+List<Sock> UnSearchedSocks = getAllSocks();
+List<Sock> UnMatchedSocks = new list<Sock>();
+List<PairOfSocks> PairedSocks = new list<PairOfSocks>();
+
+foreach (Sock newSock in UnsearchedSocks)
+{
+  Sock MatchedSock = null;
+  foreach(Sock UnmatchedSock in UnmatchedSocks)
+  {
+    if (UnmatchedSock.isPairOf(newSock))
+    {
+      MatchedSock = UnmatchedSock;
+      break;
+    }
+  }
+  if (MatchedSock != null)
+  {
+    UnmatchedSocks.remove(MatchedSock);
+    PairedSocks.Add(new PairOfSocks(MatchedSock, NewSock));
+  }
+  else
+  {
+    UnmatchedSocks.Add(NewSock);
+  }
+}
+
+   [143]share|[144]improve this answer
+           [145]edited Mar 18 at 13:29
+   answered Jan 22 at 16:32
+   [146]Chad
+   1,047417
+   up vote 4 down vote
+
+   From your question it is clear you don't have much actual experience
+   with laundry :). You need an algorithm that works well with a small
+   number of non-pairable socks.
+
+   The answers till now don't make good use of our human pattern
+   recognition capabilities. The game of Set provides a clue of how to do
+   this well: put all socks in a two-dimensional space so you can both
+   recognize them well and easily reach them with your hands. This limits
+   you to an area of about 120 * 80 cm or so. From there select the pairs
+   you recognize and remove them. Put extra socks in the free space and
+   repeat. If you wash for people with easily recognizable socks (small
+   kids come to mind), you can do a radix sort by selecting those socks
+   first. This algorithm works well only when the number of single socks
+   is low
+   [147]share|[148]improve this answer
+   answered Jan 22 at 22:05
+   [149]Stephan Eggermont
+   10.4k11736
+   That is usually how I do it. Works much better than iterating through
+   all the remaining socks each time. - [150]yu_ominae Jan 22 at 23:46
+   Nice approach and I think it can be applied to some real CS problems as
+   well. Can you please add an example of such (a CS problem where we
+   could use a similar approach to solve problems)? Also, how does this
+   solution scales for millions of socks? - [151]amit Jan 23 at 12:08
+   I think this is basically th same as the other answer here,
+   [152]stackoverflow.com/a/14423956, from Jan 20. Both +1. Human vision
+   system is massively parallel. - [153]Will Ness Feb 7 at 16:44
+   up vote 4 down vote
+
+   In order to say how efficient it is to pair socks from a pile, we have
+   to define the machine first, because the pairing isn't done whether by
+   a turing nor by a random access machine, which are normally used as the
+   basis for an algorithmic analysis.
+
+The machine
+
+   The machine is an abstraction of a the real world element called human
+   being. It is able to read from the environment via a pair of eyes. And
+   our machine model is able to manipulate the environment by using 2
+   arms. Logical and arithmetic operations are calculated using our brain
+   (hopefully ;-)).
+
+   We also have to consider the intrinsic runtime of the atomic operations
+   that can be carried out with these instruments. Due to physical
+   constraints, operations which are carried out by an arm or eye have non
+   constant time complexity. This is because we can't move an endlessly
+   large pile of socks with an arm nor can an eye see the top sock on an
+   endlessly large pile of socks.
+
+   However mechanical physics give us some goodies as well. We are not
+   limited to move at most one sock with an arm. We can move a whole
+   couple of them at once.
+
+   So depending on the previous analysis following operations should be
+   used in descending order:
+     * logical and arithmetic operations
+     * environmental reads
+     * environmental modifications
+
+   We can also make use of the fact that people only have a very limited
+   amount of socks. So an environmental modification can involve all socks
+   in the pile.
+
+The algorithm
+
+   So here is my suggestion:
+    1. Spread all socks in the pile over the floor.
+    2. Find a pair by looking at the socks on the floor.
+    3. Repeat from 2 until no pair can be made.
+    4. Repeat from 1 until there are no socks on the floor.
+
+   Operation 4 is necessary, because when spreading socks over the floor
+   some socks may hide others. Here is the analysis of the algorithm:
+
+The analysis
+
+   The algorithm terminates with high probability. This is due to the fact
+   that one is unable to find pairs of socks in step number 2.
+
+   For the following runtime analysis of pairing n pairs of socks, we
+   suppose that at least half of the 2n socks aren't hidden after step 1.
+   So in the average case we can find n/2 pairs. This means that the loop
+   is step 4 is executed O(log n) times. Step 2 is executed O(n^2) times.
+   So we can conclude:
+     * The algorithm involves O(ln n + n) environmental modifications
+       (step 1 O(ln n) plus picking every pair of sock from the floor)
+     * The algorithm involves O(n^2) environmental reads from step 2
+     * The algorithm involves O(n^2) logical and arithmetic operations for
+       comparing a sock with another in step 2
+
+   So we have a total runtime complexity of O(r*n^2 + w*(ln n + n)) where
+   r and w are the factors for environmental read and environmental write
+   operations respectively for a reasonable amount of socks. The cost of
+   the logical and arithmetical operations are omitted, because we suppose
+   that it takes a constant amount of logical and arithmetical operations
+   to decide whether 2 socks belong to the same pair. This may not be
+   feasible in every scenario.
+   [154]share|[155]improve this answer
+   answered Jan 29 at 7:07
+   [156]SpaceTrucker
+   2,049320
+   1
+   this is the same as [157]stackoverflow.com/a/14423956 and
+   [158]stackoverflow.com/a/14468913 I think. - [159]Will Ness Feb 7 at
+   16:54
+   @WillNess Yep, with a bit more of explanation - [160]SpaceTrucker Feb 7
+   at 19:19
+   up vote 3 down vote
+
+   Whenever you pick up a sock, put it in one place. Then the next sock
+   you pick up, if it doesn't match the first sock, set it beside the
+   first one. If it does, there's a pair. This way it doesn't really
+   matter how many combinations there are, and there are only two
+   possibilities for each sock you pick up -- either it has a match that's
+   already in your array of socks, or it doesn't, which means you add it
+   to a place in the array.
+
+   This also means that you will almost certainly never have all your
+   socks in the array, because socks will get removed as they're matched.
+   [161]share|[162]improve this answer
+   answered Jan 19 at 22:25
+   [163]trpt4him
+   20618
+   This is what I do ... O(n) - [164]Pykler Jan 20 at 5:55
+   2
+   @Pykler - It's O(n) in the best case and O(n*n) in the worst case.
+   - [165]Vilx- Jan 20 at 12:41
+   2
+   Thats assuming that you cannot create a fully unique hash in your mind
+   of all the socks you already seen, which for me is a O(1) to match a
+   sock that I have seen and previously and placed in the waiting for
+   matching hash - [166]Pykler Jan 21 at 2:22
+   up vote 3 down vote
+
+   Consider a hash-table of size 'N'.
+
+   If we assume normal distribution, then the estimated number of
+   'insertions' to have atleast one sock mapped to one bucket is NlogN
+   (ie, all buckets are full)
+
+   I had derived this as a part of another puzzle,but I would be happy to
+   be proven wrong. [167]Here's my blog article on the same
+
+   Let 'N' correspond to an approximate upper-bound on the number of
+   number of unique colors/pattern of socks that you have.
+
+   Once you have a collision(a.k.a : a match) simply remove that pair of
+   socks. Repeat the same experiment with the next batch of NlogN socks.
+   The beauty of it is that you could be making NlogN parallel
+   comparisons(collision-resolution) because of the way the human mind
+   works. :-)
+   [168]share|[169]improve this answer
+   answered Jan 22 at 13:33
+   [170]Arvind
+   35617
+   up vote 3 down vote
+
+   Socks, whether real ones or some analogous data structure, would be
+   supplied in pairs.
+
+   The simplest answer is prior to allowing the pair to be separated, a
+   single data structure for the pair should have been initialized that
+   contained a pointer to the left and right sock, thus enabling socks to
+   be referred to directly or via their pair. A sock may also be extended
+   to contain a pointer to its partner.
+
+   This solves any computational pairing problem by removing it with a
+   layer of abstraction.
+
+   Applying the same idea to the practical problem of pairing socks, the
+   apparent answer is: don't allow your socks to ever be unpaired. Socks
+   are provided as a pair, put in the drawer as a pair (perhaps by balling
+   them together), worn as a pair. But the point where unpairing is
+   possible is in the washer, so all that's required is a physical
+   mechanism that allows the socks to stay together and be washed
+   efficiently.
+
+   There are two physical possibilities:
+
+   For a 'pair' object that keeps a pointer to each sock we could have a
+   cloth bag that we use to keep the socks together. This seems like
+   massive overhead.
+
+   But for each sock to keep a reference to the other, there is a neat
+   solution: a popper (or a 'snap button' if you're American), such as
+   these:
+
+   [171]http://www.aliexpress.com/compare/compare-invisible-snap-buttons.h
+   tml
+
+   Then all you do is snap your socks together right after you take them
+   off and put them in your washing basket, and again you've removed the
+   problem of needing to pair your socks with a physical abstraction of
+   the 'pair' concept.
+   [172]share|[173]improve this answer
+   answered Jan 23 at 1:25
+   [174]mozboz
+   489311
+   up vote 1 down vote
+
+   I came out with another solution which would not promise less
+   operations, neither less time consumption but should be tried to see if
+   it can be good enough heuristic to provide less time consumption in
+   huge series of sock pairing.
+
+   Preconditions: There is no guarantee that there are the same socks. If
+   they are of the same color it doesn't mean they have the same size or
+   pattern. Socks are randomly shuffled. There can be odd number of
+   socks(some are missing, we don't know how many). Prepare to remember a
+   variable "index" and set it to 0.
+
+   The result will have one or two piles: 1. "matched" and 2. "missing"
+
+   Heuristic:
+    1. Find most distinctive sock.
+    2. Find its match.
+    3. If there is no match put it on the "missing" pile.
+    4. Repeat from 1. until there are no more most distinctive socks.
+    5. If there are less then 6 socks, go to 11.
+    6. Pair blindly all socks to its neighbor (do not pack it)
+    7. Find all matched pairs, pack it and move packed pairs to "matched"
+       pile; If there were no new matches - increment "index" by 1
+    8. If "index" is greater then 2 ( this could be value dependent on
+       sock number because with greater number of socks there are less
+       chance to pair them blindly ) go to 11
+    9. Shuffle the rest
+   10. Go to 1
+   11. Forget "index"
+   12. Pick a sock
+   13. Find its pair
+   14. If there is no pair for the sock move it to the "missing" pile
+   15. If match found pair it, pack pair and move it to the "matched" pile
+   16. If there are still more then one socks go to 12
+   17. If there is just one left go to 14
+   18. Smile satisfied :)
+
+   Also, there could be added check for damaged socks also, as if the
+   removal of those. It could be inserted between 2 and 3, and between 13
+   and 14
+
+   I have never tried this and looking forward to hear about any
+   experiences or corrections.
+   [175]share|[176]improve this answer
+   [177]edited Jan 23 at 14:13
+   [178]BoltClockcD
+   191k38417668
+   answered Jan 23 at 12:24
+   [179]Sasa
+   22029
+   I just saw a bug. Between 4 and 5 there should be - If there are no
+   socks left go to last step. - [180]Sasa Jan 23 at 12:50
+   up vote 0 down vote
+
+   What about doing some preprocess?. I would stitch a mark or id number
+   in every sock in a way that every pair has the same mark/id number.
+   This process might be done every time you buy a new pair of socks and
+   if you ask your mom/grandma, maybe it wouldn't cost any effort. Then,
+   you could do radix sort to get O(n) total cost. Find a place for every
+   mark/id number and just pick all the socks one by one and put them into
+   the correct place.
+   [181]share|[182]improve this answer
+   answered Jan 24 at 19:53
+   [183]elvitucho
+   313
+   up vote 0 down vote
+
+   Real world approach:
+
+   As rapidly as possible, remove socks from the unsorted pile one at a
+   time and place in piles in front of you. The piles should be arranged
+   somewhat space-efficiently, with all socks pointing the same direction;
+   the number of piles is limited by the distance you can easily reach.
+   The selection of a pile on which to put a sock should be -- as rapidly
+   as possible -- putting a sock on a pile of apparently like socks; the
+   occasional type I (putting a sock on a pile it doesn't belong to) or
+   type II (putting a sock in its own pile when there's an existing pile
+   of like socks) error can be tolerated -- the most important
+   consideration is speed. Once all the sock are in piles, rapidly go
+   through the multi-sock piles creating pairs and removing them (these
+   are heading for the drawer). If there are non-matching socks in the
+   pile, re-pile them to their best (within the as-fast-as-possible
+   constraint) pile. When all the multi-sock piles have been processed,
+   match up remaining pairable socks that weren't paired due to type II
+   errors. Whoosh, you're done -- and I have a lot of socks and don't wash
+   them until a large fraction are dirty. Another practical note: I flip
+   the top of one of a pair of socks down over the other, taking advantage
+   of their elastic properties, so they stay together while being
+   transported to the drawer and while in the drawer.
+   [184]share|[185]improve this answer
+            [186]edited Apr 1 at 19:43
+   answered Apr 1 at 19:37
+   [187]Jim Balter
+   7,28011120
+   up vote 0 down vote
+
+   I have taken simple steps to reduce my effort into a process taking
+   O(1) time.
+
+   By reducing my inputs to one of two types of socks (white socks for
+   recreation, black socks for work), I only need to determine which of
+   two socks I have in hand. (Technically, since they are never washed
+   together, I have reduced the process to O(0) time)
+
+   Some upfront effort is required to find desirable socks, and to
+   purchase in sufficient quantity as to eliminate need for your existing
+   socks. As I'd done this before my need for black socks, my effort was
+   minimal, but mileage may vary.
+
+   Such an upfront effort has been seen many times in very popular and
+   effective code. Examples include #DEFINE'ing pi to several decimals
+   (other examples exist, but that's the one that comes to mind right
+   now).
+   [188]share|[189]improve this answer
+   answered Sep 7 at 16:06
+   [190]Scott Brickey
+   864
+   up vote 0 down vote
+
+   Create a hash table which will be used for unmatched socks, using the
+   pattern as the hash. Iterate over the socks one by one. If the sock has
+   a pattern match in the hash table, take the sock out of the table and
+   make a pair. If the sock does not have a match, put it into the table.
+   [191]share|[192]improve this answer
+   answered Sep 8 at 20:07
+   [193]viper110110
+   102
+   up vote 0 down vote
+
+   I tought about this very often during my PhD (in Computer Sciences). I
+   came up with multiple solutions, depending on the ability of
+   distinguishing socks and thus find correct pairs as fast as possible.
+
+   Suppose the cost of looking at socks and memorizing their distinctive
+   patterns is negligible (e). Then the best solution is simply to throw
+   all socks on a table. This involves those steps:
+    1. Throw all socks on a table (1) and create a hashmap {pattern:
+       position} (e)
+    2. While there are remaining socks (n/2):
+         1. Pick up one random sock (1)
+         2. Find position of corresponding sock (e)
+         3. Retrieve sock (1) and store pair
+
+   This is indeed the fastest possibility and is executed in n + 1 = O(n)
+   complexity. But it supposes that you perfectly remember all patterns...
+   In practice, this is not the case, and my personal experience is that
+   you sometimes don't find the matching pair at first attempt:
+    1. Throw all socks on a table (1)
+    2. While there are remaining socks (n/2):
+         1. Pick up one random sock (1)
+         2. while it is not paired (1/P):
+              1. Find sock with similar pattern
+              2. Take sock and compare both (1)
+              3. If ok, store pair
+
+   This now depends on our ability to find matching pairs. This is
+   particularly true if you have dark/grey pairs or white sport socks that
+   often have very similar patterns! Let's admit that you have a
+   probability of P of finding the corresponding sock. You'll need, on
+   average, 1/P tries before finding the corresponding sock to form a
+   pair. The overall complexity is 1 + (n/2) * (1 + 1/P) = O(n).
+
+   Both are linear in the number of socks, and are very similar solutions.
+   Let's slightly modify the problem and admit you have multiple pairs of
+   similar socks in the set, and that it is easy to store multiple pairs
+   of socks in one move (1+e). For K distinct patterns, you may implement:
+    1. For each sock (n):
+         1. Pick up one random sock (1)
+         2. Put it on its pattern's cluster
+    2. For each cluster (K):
+         1. Take cluster and store pairs of socks (1+e)
+
+   The overall complexity becomes n+K = O(n). Still linear, but choosing
+   correct algorithm may now greatly depend on the values of P and K! But
+   one may object again that you may have difficulties to find (or create)
+   cluster for each ssock.
+
+   Besides, you may also loose time by looking on websites what is the
+   best algorithm and proposing your own solution :)
+   [194]share|[195]improve this answer
+            [196]edited Sep 9 at 21:06
+   answered Sep 9 at 14:43
+   [197]eldams
+   112
+   up vote -2 down vote
+
+   I solve this problem by dumping all the socks into the sock drawer.
+   then, when I actually need to put on socks, I choose one of my liking
+   by glancing at the socks laying on top in the drawer, put it on, then
+   look for the other one with worst case n-1 tries, where n is the number
+   of all socks. Ok, admittedly, I do this every damn day... :(
+   [198]share|[199]improve this answer
+   answered Sep 7 at 19:24
+   [200]Rumpelstilz
+   3,224513
+   up vote -4 down vote
+
+   We can use hashing to our leverage if you can abstract a single pair of
+   socks as the key itself and its other pair as value.
+    1. Make two imaginary sections behind you on the floor, one for you
+       and another for your spouse.
+    2. Take one from the pile of socks.
+    3. Now place the socks on the floor, one by one, following the below
+       rule.
+          + Identify the socks as yours or hers and look at the relevant
+            section on floor.
+          + If you can spot the pair on the floor pick it up and knot them
+            up or clip them up or do whatever you would do after you find
+            a pair and place it in a basket (remove it from the floor).
+          + Place it in the relevant section.
+    4. Repeat 3 until all socks are over from the pile.
+     __________________________________________________________________
+
+   Explanation:
+
+   Hashing and Abstraction
+
+   Abstraction is a very powerful concept that has been used to improve
+   user experience (UX). Examples of abstraction in real life interactions
+   with computers includes:
+     * Folder icons used for navigation in a GUI (graphical user
+       interface) to access an address instead of typing the actual
+       address to navigate to a location.
+     * GUI sliders used to control various levels like volume, document
+       scroll position, etc..
+
+     Hashing or other not-in-place solutions are not an option, because I
+     am not able to duplicate my socks (though it could be nice if I
+     could).
+
+   I believe the asker was thinking of applying hashing such that the slot
+   to which either pair of sock goes should be known before placing them.
+
+   That's why I suggested abstracting a single sock that is placed on the
+   floor as the hashkey itself (hence there is no need to duplicate the
+   socks).
+
+   How to define our hashkey?
+
+   The below definition for our key would also work if there are more than
+   one pair of similar socks. That is, let's say there are two pairs of
+   black men socks PairA and PairB, and each socks are named PairA-L,
+   PairA-R, PairB-L, PairB-R. So PairA-L can be paired with PairB-R, but
+   PairA-L and PairB-L cannot be paired.
+
+   Let say any sock can be uniqly identified by,
+
+   Attribute[Gender] + Attribute[Colour] + Attribute[Material] +
+   Attribute[Type1] + Attribute[Type2] + Attribute[Left_or_Right]
+
+   This is our first hash function. Let's use a short notation for this
+   h1(G_C_M_T1_T2_LR). h1(x) is not our location key.
+
+   Another hash function eliminating the Left_or_Right attribute would be
+   h2(G_C_M_T1_T2). This second function h2(x) is our location key! (for
+   the space on the floor behind you).
+     * To locate the slot, use h2(G_C_M_T1_T2).
+     * Once the slot is located then use h1(x) to check their hashes. If
+       they don't match, you have a pair. Else throw the sock into same
+       slot.
+
+   NOTE: Since we remove a pair once we find one, it's safe to assume that
+   there would only be at a maximum one slot with a unique h2(x) or h1(x)
+   value.
+
+   In case we have each sock with exactly one matching pair then use h2(x)
+   for finding the location and if no pair, a check is required, since
+   it's safe to assume they are a pair.
+
+   Why is it important to lay the socks on the floor
+
+   Let's consider a scenario where the socks are stacked over one another
+   in a pile (worst case). This means we would have no other choice but to
+   do a linear search to find a pair.
+
+   Spreading them on the floor gives more visibility which improves the
+   chance of spotting the matching sock (matching a haskey). When a sock
+   was placed on the floor in step 3, our mind had subconciously
+   registered the location. - So in case this location is available in our
+   memory we can directly find the matching pair. - In case the location
+   is not remembered, don't worry, then we can always revert back to
+   linear search.
+
+   Why is it important to remove the pair from the floor?
+     * Short-term human memory works best when it has fewer items to
+       remember. Thus increasing the probability of us resorting to
+       hashing to spot the pair.
+     * It will also reduce the number of items to be searched through when
+       linear searching for pair is being used.
+
+   Analysis
+    1. Case 1: Worst case when Derpina cannot remember or spot the socks
+       on the floor directly using the hashing technique. Derp does a
+       linear search through the items on the floor. This is not worse
+       than the iterating throught the pile to find the pair.
+          + Upper bound for comparison: O(n^2).
+          + Lower bound for comparison: (n/2). (when every other sock
+            Derpina picks up is the pair of previous one).
+    2. Case 2: Derp remembers each the location of every sock that he
+       placed on the floor and each sock has exactly one pair.
+          + Upper bound for comparison: O(n/2).
+          + Lower bound for comparison: O(n/2).
+
+   I am talking about comparison operations, picking the socks from the
+   pile would necessarily be n number of operations. So a practical lower
+   bound would be n iterations with n/2 comparisions.
+
+   Speeding up things
+
+   To achieve a perfect score so Derp gets O(n/2) comparisons, I would
+   recommend Derpina to,
+     * spend more time with the socks to get familiarize with it. Yes,
+       that means spending more time with Derp's socks too.
+     * Playing memory games like spot the pairs in a grid can improve
+       short-term memory performance, which can be highly beneficial.
+
+   Is this equivalent to the element distinctness problem?
+
+   The method I suggested is one of the method used to solve element
+   distinctness problem where you place them in hash table and do the
+   comparison.
+
+   Given your special case where there exist only one exact pair, it has
+   become very much equivalent to the element distinct problem. Since we
+   can even sort the socks and check adjacent socks for pairs (another
+   solution for EDP).
+
+   However, if there is a possibility of more than one pair that can
+   exists for given sock then it deviates from EDP.
+   [201]share|[202]improve this answer
+   [203]edited Jul 29 at 20:14
+   [204]Peter Mortensen
+   6,48274373
+   answered Jan 21 at 14:47
+   [205]D34dman
+   71526
+   1
+   So, basically other then splitting the problem into 2 subproblems
+   (without resplitting it again later on) - it offers to "cache" as much
+   elements I can (the top of each "spot"), while piling it up, and repeat
+   while there are still elements. Can you provide complexity analysis for
+   it? My gut tells me it is going to be worse then O(n^2) at average case
+   (though I cannot prove it yet), and you cannot bound the number of
+   iterations you make. You are also going to need some randomization to
+   guarantee you take the elements at different order each time. Or am I
+   missing something here? - [206]amit Jan 21 at 15:07
+   worst case (assuming all pairs are men's and are different) would be
+   n^2 and on the extreme other side the number of linear searches you
+   would need would be n/2. I would improve my answer later today to
+   explain how the iterations would be performed on reducing sets.
+   - [207]D34dman Jan 22 at 14:42
+   @amit EDIT NOTE: originally i wanted to point out that hashing is
+   possible. But due to human mind behavior being sporadic hashing is not
+   totally reliable and thus a mixture of hashing and linear searching
+   have been suggested. I am in favor of linear searching as against any
+   other form of searching since it involves least stress on human mind.
+   Since hashing method might prove quite stressful linear searching would
+   be quite a relief. IMHO, Efficiency should be measured with respect to
+   time required to complete this operation rather than iterations
+   required. - [208]D34dman Jan 29 at 16:35
+
+protected by [209]amit Jan 20 at 17:54
+
+   This question is protected to prevent "thanks!", "me too!", or spam
+   answers by new users. To answer it, you must have earned at least 10
+   [210]reputation on this site.
+
+Not the answer you're looking for? Browse other questions tagged
+[211]algorithm [212]sorting [213]language-agnostic or [214]ask your own
+question.
+
+   tagged
+   [215]algorithm × 33342
+   [216]sorting × 16038
+   [217]language-agnostic × 6413
+
+   asked
+
+   8 months ago
+
+   viewed
+
+   172905 times
+
+   active
+
+   [218]25 days ago
+
+Linked
+
+   8
+   [219]Creating a seamless pattern with CSS on the web
+   -1
+   [220]What is an efficient way to match n items with corresponding n
+   items
+
+Related
+
+   10
+   [221]Stable, efficient sort?
+   120
+   [222]In-Place Radix Sort
+   2
+   [223]Re-sort orders to improve warehouse efficiency
+   6
+   [224]Efficient Out-Of-Core Sorting
+   1
+   [225]How to efficiently sort list of nodes with next and previous node
+   references?
+   6
+   [226]Known algorithm for efficiently distributing items and satisfying
+   minima?
+   3
+   [227]Given a sorted array with a few numbers in between reversed. How
+   to sort it?
+   4
+   [228]sorting algorithm to keep sort position numbers updated
+   410
+   [229]How to determine whether my calculation of pi is accurate?
+   6
+   [230]How to "sort" elements of 2 possible values in place in linear
+   time?
+   [231]question feed
+
+   [232]about [233]help [234]badges [235]blog [236]chat [237]data
+   [238]legal [239]privacy policy [240]jobs [241]advertising info mobile
+   [242]contact us [243]feedback
+   Technology Life / Arts Culture / Recreation Science Other
+    1. [244]Stack Overflow
+    2. [245]Server Fault
+    3. [246]Super User
+    4. [247]Web Applications
+    5. [248]Ask Ubuntu
+    6. [249]Webmasters
+    7. [250]Game Development
+    8. [251]TeX - LaTeX
+
+    1. [252]Programmers
+    2. [253]Unix & Linux
+    3. [254]Ask Different (Apple)
+    4. [255]WordPress Answers
+    5. [256]Geographic Information Systems
+    6. [257]Electrical Engineering
+    7. [258]Android Enthusiasts
+    8. [259]IT Security
+
+    1. [260]Database Administrators
+    2. [261]Drupal Answers
+    3. [262]SharePoint
+    4. [263]User Experience
+    5. [264]Mathematica
+    6. [265]more (13)
+
+    1. [266]Photography
+    2. [267]Science Fiction & Fantasy
+    3. [268]Seasoned Advice (cooking)
+    4. [269]Home Improvement
+    5. [270]more (13)
+
+    1. [271]English Language & Usage
+    2. [272]Skeptics
+    3. [273]Mi Yodeya (Judaism)
+    4. [274]Travel
+    5. [275]Christianity
+    6. [276]Arqade (gaming)
+    7. [277]Bicycles
+    8. [278]Role-playing Games
+    9. [279]more (21)
+
+    1. [280]Mathematics
+    2. [281]Cross Validated (stats)
+    3. [282]Theoretical Computer Science
+    4. [283]Physics
+    5. [284]MathOverflow
+    6. [285]more (7)
+
+    1. [286]Stack Apps
+    2. [287]Meta Stack Overflow
+    3. [288]Area 51
+    4. [289]Stack Overflow Careers
+
+   site design / logo © 2013 stack exchange inc; user contributions
+   licensed under [290]cc-wiki with [291]attribution required
+   rev 2013.10.3.1048
+
+   Stack Overflow works best with JavaScript enabled
+
+References
+
+   Visible links
+   1. http://stackoverflow.com/opensearch.xml
+   2. http://stackoverflow.com/feeds/question/14415881
+   3. http://stackexchange.com/
+   4. http://stackoverflow.com/users/login?returnurl=%2fquestions%2f14415881%2fhow-to-pair-socks-from-a-pile-efficiently%3frq%3d1
+   5. http://stackoverflow.com/users/login?returnurl=%2fquestions%2f14415881%2fhow-to-pair-socks-from-a-pile-efficiently%3frq%3d1
+   6. http://careers.stackoverflow.com/
+   7. http://stackoverflow.com/
+   8. http://stackoverflow.com/questions
+   9. http://stackoverflow.com/tags
+  10. http://stackoverflow.com/about
+  11. http://stackoverflow.com/users
+  12. http://stackoverflow.com/questions/ask
+  13. http://stackoverflow.com/about
+  14. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently
+  15. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+  16. http://en.wikipedia.org/wiki/Element_distinctness_problem
+  17. http://stackoverflow.com/questions/tagged/algorithm
+  18. http://stackoverflow.com/questions/tagged/sorting
+  19. http://stackoverflow.com/questions/tagged/language-agnostic
+  20. http://stackoverflow.com/q/14415881
+  21. http://stackoverflow.com/posts/14415881/edit
+  22. http://stackoverflow.com/posts/14415881/revisions
+  23. http://stackoverflow.com/users/58792/egdwight
+  24. http://stackoverflow.com/users/572670/amit
+  25. http://stackoverflow.com/users/189608/srinivas
+  26. http://stackoverflow.com/users/905902/wildplasser
+  27. http://en.wikipedia.org/wiki/Axiom_of_choice
+  28. http://math.stackexchange.com/questions/269902/what-is-the-relationship-between-zfc-and-turing-machine
+  29. http://stackoverflow.com/users/1779316/thang
+  30. http://blogs.msdn.com/b/ericlippert/archive/2010/03/22/socks-birthdays-and-hash-collisions.aspx
+  31. http://stackoverflow.com/users/88656/eric-lippert
+  32. http://stackoverflow.com/users/343825/henrik-erlandsson
+  33. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+  34. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?answertab=active#tab-top
+  35. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?answertab=oldest#tab-top
+  36. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?answertab=votes#tab-top
+  37. http://en.wikipedia.org/wiki/Microsoft_SQL_Server
+  38. http://en.wikipedia.org/wiki/Cuboid
+  39. http://www.perfdynamics.com/Manifesto/USLscalability.html
+  40. http://en.wikipedia.org/wiki/Element_distinctness_problem
+  41. http://stackoverflow.com/a/14419556
+  42. http://stackoverflow.com/posts/14419556/edit
+  43. http://stackoverflow.com/posts/14419556/revisions
+  44. http://stackoverflow.com/users/63550/peter-mortensen
+  45. http://stackoverflow.com/users/122718/usr
+  46. http://stackoverflow.com/users/80274/scott-chamberlain
+  47. http://stackoverflow.com/users/572670/amit
+  48. http://stackoverflow.com/users/1152602/nothingsimpossible
+  49. http://stackoverflow.com/users/122718/usr
+  50. http://stackoverflow.com/users/182668/pointy
+  51. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+  52. http://stackoverflow.com/a/14423956
+  53. http://stackoverflow.com/posts/14423956/edit
+  54. http://stackoverflow.com/posts/14423956/revisions
+  55. http://stackoverflow.com/users/298479/thiefmaster
+  56. http://stackoverflow.com/users/134409/dpc-ucore-info
+  57. http://stackoverflow.com/users/309412/lie-ryan
+  58. http://stackoverflow.com/users/841417/drug-user841417
+  59. http://stackoverflow.com/users/1050373/christian
+  60. http://stackoverflow.com/users/1050373/christian
+  61. http://stackoverflow.com/users/968201/patrick-james-mcdougle
+  62. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+  63. http://en.wikipedia.org/wiki/Radix_sort
+  64. http://stackoverflow.com/a/14419228
+  65. http://stackoverflow.com/posts/14419228/edit
+  66. http://stackoverflow.com/posts/14419228/revisions
+  67. http://stackoverflow.com/users/2005251/lokerim
+  68. http://stackoverflow.com/users/761330/terry-li
+  69. http://stackoverflow.com/users/486504/michael-kjorling
+  70. http://stackoverflow.com/users/44232/nils
+  71. http://stackoverflow.com/users/1069607/sdc
+  72. http://stackoverflow.com/users/1430420/steve-ives
+  73. http://stackoverflow.com/users/800524/paulo-madeira
+  74. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+  75. http://en.wikipedia.org/wiki/Walmart
+  76. http://en.wikipedia.org/wiki/Reverse_Polish_notation
+  77. http://stackoverflow.com/a/14421438
+  78. http://stackoverflow.com/posts/14421438/edit
+  79. http://stackoverflow.com/posts/14421438/revisions
+  80. http://stackoverflow.com/users/63550/peter-mortensen
+  81. http://stackoverflow.com/users/1133413/guylhem
+  82. http://stackoverflow.com/users/37769/fastal
+  83. http://stackoverflow.com/users/37769/fastal
+  84. http://stackoverflow.com/users/933963/bkconrad
+  85. http://stackoverflow.com/users/494616/donatas-olsevicius
+  86. http://stackoverflow.com/a/14416010
+  87. http://stackoverflow.com/posts/14416010/edit
+  88. http://stackoverflow.com/users/41360/vilx
+  89. http://stackoverflow.com/users/845092/mooing-duck
+  90. http://stackoverflow.com/users/340947/steven-lu
+  91. http://stackoverflow.com/users/41360/vilx
+  92. http://stackoverflow.com/users/400547/jon-hanna
+  93. http://stackoverflow.com/users/781743/paladin
+  94. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+  95. http://en.wikipedia.org/wiki/Radix_sort
+  96. http://stackoverflow.com/a/14418638
+  97. http://stackoverflow.com/posts/14418638/edit
+  98. http://stackoverflow.com/users/917299/andredor
+  99. http://stackoverflow.com/users/41360/vilx
+ 100. http://stackoverflow.com/users/1973271/flup
+ 101. http://stackoverflow.com/users/1973271/flup
+ 102. http://stackoverflow.com/users/41360/vilx
+ 103. http://stackoverflow.com/users/348975/emory
+ 104. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 105. http://www.urbandictionary.com/define.php?term=Mk1%20eyeball
+ 106. http://stackoverflow.com/a/14767865
+ 107. http://stackoverflow.com/posts/14767865/edit
+ 108. http://stackoverflow.com/posts/14767865/revisions
+ 109. http://stackoverflow.com/users/1717300/hyde
+ 110. http://stackoverflow.com/users/104863/vicky
+ 111. http://stackoverflow.com/users/1324631/ajmansfield
+ 112. http://stackoverflow.com/users/1717300/hyde
+ 113. http://stackoverflow.com/a/14425958
+ 114. http://stackoverflow.com/posts/14425958/edit
+ 115. http://stackoverflow.com/posts/14425958/revisions
+ 116. http://stackoverflow.com/users/253387/samuel
+ 117. http://stackoverflow.com/users/1598537/andrewc
+ 118. http://www.cs.dartmouth.edu/~ac/Teach/CS85-Spring08/lecnotes.pdf
+ 119. http://stackoverflow.com/a/14428831
+ 120. http://stackoverflow.com/posts/14428831/edit
+ 121. http://stackoverflow.com/posts/14428831/revisions
+ 122. http://stackoverflow.com/users/100020/sdcvvc
+ 123. http://cs.stackexchange.com/
+ 124. http://stackoverflow.com/users/100020/sdcvvc
+ 125. http://stackoverflow.com/a/14419477
+ 126. http://stackoverflow.com/posts/14419477/edit
+ 127. http://stackoverflow.com/users/1849694/1-1
+ 128. http://garfield.library.upenn.edu/classics1979/A1979HX09600001.pdf
+ 129. http://stackoverflow.com/a/14472341
+ 130. http://stackoverflow.com/posts/14472341/edit
+ 131. http://stackoverflow.com/posts/14472341/revisions
+ 132. http://stackoverflow.com/users/1161878/gene
+ 133. http://stackoverflow.com/users/544557/jim-balter
+ 134. http://stackoverflow.com/users/1161878/gene
+ 135. http://stackoverflow.com/users/544557/jim-balter
+ 136. http://stackoverflow.com/users/1161878/gene
+ 137. http://stackoverflow.com/users/544557/jim-balter
+ 138. http://stackoverflow.com/a/14448883
+ 139. http://stackoverflow.com/posts/14448883/edit
+ 140. http://stackoverflow.com/posts/14448883/revisions
+ 141. http://stackoverflow.com/users/436376/keiths
+ 142. http://stackoverflow.com/users/675727/otto
+ 143. http://stackoverflow.com/a/14463388
+ 144. http://stackoverflow.com/posts/14463388/edit
+ 145. http://stackoverflow.com/posts/14463388/revisions
+ 146. http://stackoverflow.com/users/715292/chad
+ 147. http://stackoverflow.com/a/14468913
+ 148. http://stackoverflow.com/posts/14468913/edit
+ 149. http://stackoverflow.com/users/35306/stephan-eggermont
+ 150. http://stackoverflow.com/users/643192/yu-ominae
+ 151. http://stackoverflow.com/users/572670/amit
+ 152. http://stackoverflow.com/a/14423956
+ 153. http://stackoverflow.com/users/849891/will-ness
+ 154. http://stackoverflow.com/a/14577444
+ 155. http://stackoverflow.com/posts/14577444/edit
+ 156. http://stackoverflow.com/users/1466267/spacetrucker
+ 157. http://stackoverflow.com/a/14423956
+ 158. http://stackoverflow.com/a/14468913
+ 159. http://stackoverflow.com/users/849891/will-ness
+ 160. http://stackoverflow.com/users/1466267/spacetrucker
+ 161. http://stackoverflow.com/a/14419537
+ 162. http://stackoverflow.com/posts/14419537/edit
+ 163. http://stackoverflow.com/users/877175/trpt4him
+ 164. http://stackoverflow.com/users/742390/pykler
+ 165. http://stackoverflow.com/users/41360/vilx
+ 166. http://stackoverflow.com/users/742390/pykler
+ 167. https://appolo85.wordpress.com/2012/07/25/some-fun-with-hash-table-performance-analysis/
+ 168. http://stackoverflow.com/a/14459798
+ 169. http://stackoverflow.com/posts/14459798/edit
+ 170. http://stackoverflow.com/users/291917/arvind
+ 171. http://www.aliexpress.com/compare/compare-invisible-snap-buttons.html
+ 172. http://stackoverflow.com/a/14471013
+ 173. http://stackoverflow.com/posts/14471013/edit
+ 174. http://stackoverflow.com/users/53691/mozboz
+ 175. http://stackoverflow.com/a/14479678
+ 176. http://stackoverflow.com/posts/14479678/edit
+ 177. http://stackoverflow.com/posts/14479678/revisions
+ 178. http://stackoverflow.com/users/106224/boltclock
+ 179. http://stackoverflow.com/users/897373/sasa
+ 180. http://stackoverflow.com/users/897373/sasa
+ 181. http://stackoverflow.com/a/14509579
+ 182. http://stackoverflow.com/posts/14509579/edit
+ 183. http://stackoverflow.com/users/1077434/elvitucho
+ 184. http://stackoverflow.com/a/15750463
+ 185. http://stackoverflow.com/posts/15750463/edit
+ 186. http://stackoverflow.com/posts/15750463/revisions
+ 187. http://stackoverflow.com/users/544557/jim-balter
+ 188. http://stackoverflow.com/a/18675241
+ 189. http://stackoverflow.com/posts/18675241/edit
+ 190. http://stackoverflow.com/users/961902/scott-brickey
+ 191. http://stackoverflow.com/a/18688141
+ 192. http://stackoverflow.com/posts/18688141/edit
+ 193. http://stackoverflow.com/users/2180043/viper110110
+ 194. http://stackoverflow.com/a/18700876
+ 195. http://stackoverflow.com/posts/18700876/edit
+ 196. http://stackoverflow.com/posts/18700876/revisions
+ 197. http://stackoverflow.com/users/2755856/eldams
+ 198. http://stackoverflow.com/a/18677019
+ 199. http://stackoverflow.com/posts/18677019/edit
+ 200. http://stackoverflow.com/users/1218598/rumpelstilz
+ 201. http://stackoverflow.com/a/14441092
+ 202. http://stackoverflow.com/posts/14441092/edit
+ 203. http://stackoverflow.com/posts/14441092/revisions
+ 204. http://stackoverflow.com/users/63550/peter-mortensen
+ 205. http://stackoverflow.com/users/1445354/d34dman
+ 206. http://stackoverflow.com/users/572670/amit
+ 207. http://stackoverflow.com/users/1445354/d34dman
+ 208. http://stackoverflow.com/users/1445354/d34dman
+ 209. http://stackoverflow.com/users/572670/amit
+ 210. http://stackoverflow.com/help/whats-reputation
+ 211. http://stackoverflow.com/questions/tagged/algorithm
+ 212. http://stackoverflow.com/questions/tagged/sorting
+ 213. http://stackoverflow.com/questions/tagged/language-agnostic
+ 214. http://stackoverflow.com/questions/ask
+ 215. http://stackoverflow.com/questions/tagged/algorithm
+ 216. http://stackoverflow.com/questions/tagged/sorting
+ 217. http://stackoverflow.com/questions/tagged/language-agnostic
+ 218. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?lastactivity
+ 219. http://stackoverflow.com/questions/14698972/creating-a-seamless-pattern-with-css-on-the-web
+ 220. http://stackoverflow.com/questions/19146026/what-is-an-efficient-way-to-match-n-items-with-corresponding-n-items
+ 221. http://stackoverflow.com/questions/113025/stable-efficient-sort
+ 222. http://stackoverflow.com/questions/463105/in-place-radix-sort
+ 223. http://stackoverflow.com/questions/869456/re-sort-orders-to-improve-warehouse-efficiency
+ 224. http://stackoverflow.com/questions/1645566/efficient-out-of-core-sorting
+ 225. http://stackoverflow.com/questions/6791425/how-to-efficiently-sort-list-of-nodes-with-next-and-previous-node-references
+ 226. http://stackoverflow.com/questions/7998938/known-algorithm-for-efficiently-distributing-items-and-satisfying-minima
+ 227. http://stackoverflow.com/questions/11724879/given-a-sorted-array-with-a-few-numbers-in-between-reversed-how-to-sort-it
+ 228. http://stackoverflow.com/questions/13874638/sorting-algorithm-to-keep-sort-position-numbers-updated
+ 229. http://stackoverflow.com/questions/14283270/how-to-determine-whether-my-calculation-of-pi-is-accurate
+ 230. http://stackoverflow.com/questions/18698800/how-to-sort-elements-of-2-possible-values-in-place-in-linear-time
+ 231. http://stackoverflow.com/feeds/question/14415881
+ 232. http://stackoverflow.com/about
+ 233. http://stackoverflow.com/help
+ 234. http://stackoverflow.com/help/badges
+ 235. http://blog.stackexchange.com/?blb=1
+ 236. http://chat.stackoverflow.com/
+ 237. http://data.stackexchange.com/
+ 238. http://stackexchange.com/legal
+ 239. http://stackexchange.com/legal/privacy-policy
+ 240. http://stackexchange.com/about/hiring
+ 241. http://engine.adzerk.net/r?e=eyJhdiI6NDE0LCJhdCI6MjAsImNtIjo5NTQsImNoIjoxMTc4LCJjciI6Mjc3NiwiZG0iOjQsImZjIjoyODYyLCJmbCI6Mjc1MSwibnciOjIyLCJydiI6MCwicHIiOjExNSwic3QiOjAsInVyIjoiaHR0cDovL3N0YWNrb3ZlcmZsb3cuY29tL2Fib3V0L2NvbnRhY3QiLCJyZSI6MX0&s=hRods5B22XvRBwWIwtIMekcyNF8
+ 242. http://stackoverflow.com/contact
+ 243. http://meta.stackoverflow.com/
+ 244. http://stackoverflow.com/
+ 245. http://serverfault.com/
+ 246. http://superuser.com/
+ 247. http://webapps.stackexchange.com/
+ 248. http://askubuntu.com/
+ 249. http://webmasters.stackexchange.com/
+ 250. http://gamedev.stackexchange.com/
+ 251. http://tex.stackexchange.com/
+ 252. http://programmers.stackexchange.com/
+ 253. http://unix.stackexchange.com/
+ 254. http://apple.stackexchange.com/
+ 255. http://wordpress.stackexchange.com/
+ 256. http://gis.stackexchange.com/
+ 257. http://electronics.stackexchange.com/
+ 258. http://android.stackexchange.com/
+ 259. http://security.stackexchange.com/
+ 260. http://dba.stackexchange.com/
+ 261. http://drupal.stackexchange.com/
+ 262. http://sharepoint.stackexchange.com/
+ 263. http://ux.stackexchange.com/
+ 264. http://mathematica.stackexchange.com/
+ 265. http://stackexchange.com/sites#technology
+ 266. http://photo.stackexchange.com/
+ 267. http://scifi.stackexchange.com/
+ 268. http://cooking.stackexchange.com/
+ 269. http://diy.stackexchange.com/
+ 270. http://stackexchange.com/sites#lifearts
+ 271. http://english.stackexchange.com/
+ 272. http://skeptics.stackexchange.com/
+ 273. http://judaism.stackexchange.com/
+ 274. http://travel.stackexchange.com/
+ 275. http://christianity.stackexchange.com/
+ 276. http://gaming.stackexchange.com/
+ 277. http://bicycles.stackexchange.com/
+ 278. http://rpg.stackexchange.com/
+ 279. http://stackexchange.com/sites#culturerecreation
+ 280. http://math.stackexchange.com/
+ 281. http://stats.stackexchange.com/
+ 282. http://cstheory.stackexchange.com/
+ 283. http://physics.stackexchange.com/
+ 284. http://mathoverflow.net/
+ 285. http://stackexchange.com/sites#science
+ 286. http://stackapps.com/
+ 287. http://meta.stackoverflow.com/
+ 288. http://area51.stackexchange.com/
+ 289. http://careers.stackoverflow.com/
+ 290. http://creativecommons.org/licenses/by-sa/3.0/
+ 291. http://blog.stackoverflow.com/2009/06/attribution-required/
+
+   Hidden links:
+ 292. http://stackoverflow.com/users/58792/egdwight
+ 293. http://stackoverflow.com/users/572670/amit
+ 294. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 295. http://stackoverflow.com/users/63550/peter-mortensen
+ 296. http://stackoverflow.com/users/122718/usr
+ 297. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 298. http://stackoverflow.com/users/298479/thiefmaster
+ 299. http://stackoverflow.com/users/134409/dpc-ucore-info
+ 300. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 301. http://stackoverflow.com/users/2005251/lokerim
+ 302. http://stackoverflow.com/users/761330/terry-li
+ 303. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 304. http://stackoverflow.com/users/63550/peter-mortensen
+ 305. http://stackoverflow.com/users/1133413/guylhem
+ 306. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 307. http://stackoverflow.com/users/41360/vilx
+ 308. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 309. http://stackoverflow.com/users/917299/andredor
+ 310. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 311. http://stackoverflow.com/users/1717300/hyde
+ 312. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 313. http://stackoverflow.com/users/253387/samuel
+ 314. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 315. http://stackoverflow.com/users/100020/sdcvvc
+ 316. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 317. http://stackoverflow.com/users/1849694/1-1
+ 318. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 319. http://stackoverflow.com/users/1161878/gene
+ 320. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 321. http://stackoverflow.com/users/436376/keiths
+ 322. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 323. http://stackoverflow.com/users/715292/chad
+ 324. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 325. http://stackoverflow.com/users/35306/stephan-eggermont
+ 326. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 327. http://stackoverflow.com/users/1466267/spacetrucker
+ 328. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 329. http://stackoverflow.com/users/877175/trpt4him
+ 330. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 331. http://stackoverflow.com/users/291917/arvind
+ 332. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 333. http://stackoverflow.com/users/53691/mozboz
+ 334. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 335. http://stackoverflow.com/users/106224/boltclock
+ 336. http://stackoverflow.com/users/897373/sasa
+ 337. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 338. http://stackoverflow.com/users/1077434/elvitucho
+ 339. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 340. http://stackoverflow.com/users/544557/jim-balter
+ 341. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 342. http://stackoverflow.com/users/961902/scott-brickey
+ 343. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 344. http://stackoverflow.com/users/2180043/viper110110
+ 345. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 346. http://stackoverflow.com/users/2755856/eldams
+ 347. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 348. http://stackoverflow.com/users/1218598/rumpelstilz
+ 349. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 350. http://stackoverflow.com/users/63550/peter-mortensen
+ 351. http://stackoverflow.com/users/1445354/d34dman
+ 352. http://stackoverflow.com/questions/14415881/how-to-pair-socks-from-a-pile-efficiently?rq=1
+ 353. http://stackoverflow.com/q/14698972
+ 354. http://stackoverflow.com/q/19146026
+ 355. http://stackoverflow.com/q/113025
+ 356. http://stackoverflow.com/q/463105
+ 357. http://stackoverflow.com/q/869456
+ 358. http://stackoverflow.com/q/1645566
+ 359. http://stackoverflow.com/q/6791425
+ 360. http://stackoverflow.com/q/7998938
+ 361. http://stackoverflow.com/q/11724879
+ 362. http://stackoverflow.com/q/13874638
+ 363. http://stackoverflow.com/q/14283270
+ 364. http://stackoverflow.com/q/18698800
+ 365. http://creativecommons.org/licenses/by-sa/3.0/

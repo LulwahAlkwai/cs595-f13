@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<!--[if IEMobile 7]><html class="iem7"  lang="en" dir="ltr"><![endif]-->
+<!--[if lte IE 6]><html class="lt-ie9 lt-ie8 lt-ie7"  lang="en" dir="ltr"><![endif]-->
+<!--[if (IE 7)&(!IEMobile)]><html class="lt-ie9 lt-ie8"  lang="en" dir="ltr"><![endif]-->
+<!--[if IE 8]><html class="lt-ie9"  lang="en" dir="ltr"><![endif]-->
+<!--[if (gte IE 9)|(gt IEMobile 7)]><!--><html  lang="en" dir="ltr"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#"><!--<![endif]-->
+
+<head profile="http://www.w3.org/1999/xhtml/vocab">
+  <meta charset="utf-8" />
+<script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<link rel="shortcut icon" href="http://simons.berkeley.edu/sites/all/themes/simons/favicon.ico" type="image/vnd.microsoft.icon" />
+<meta content="Symposium on Visions of the Theory of Computing" about="/workshops/visions2013" property="dc:title" />
+<link rel="canonical" href="/workshops/visions2013" />
+<meta name="Generator" content="Drupal 7 (http://drupal.org)" />
+<link rel="shortlink" href="/node/82" />
+  <title>Symposium on Visions of the Theory of Computing | Simons Institute for the Theory of Computing</title>
+
+      <meta name="MobileOptimized" content="width">
+    <meta name="HandheldFriendly" content="true">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="cleartype" content="on">
+
+  <link type="text/css" rel="stylesheet" href="http://simons.berkeley.edu/sites/default/files/css/css_791YXBaKKm1ORM_7huSKEsIV9tSWq6wmRkERhuXpN6w.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://simons.berkeley.edu/sites/default/files/css/css_-saPauye9jBlu61pICwQZLfJRTnMpVnPcecA2jMEsFc.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://simons.berkeley.edu/sites/default/files/css/css_zxbEHUjIddp-xsiw1oWY_rcfqKcA2voA1aXn6e0UtpA.css" media="all" />
+<link type="text/css" rel="stylesheet" href="http://simons.berkeley.edu/sites/default/files/css/css_EjNxPsXokDCDnoO4jG1mWpPuX-8QAJbI8xmzHceMFSc.css" media="all" />
+  <script src="http://simons.berkeley.edu/sites/default/files/js/js_xAPl0qIk9eowy_iS9tNkCWXLUVoat94SQT48UBCFkyQ.js"></script>
+<script src="http://simons.berkeley.edu/sites/default/files/js/js_gBoSdTsbO5TTeOmqEi5o8yZugwRoJUJi0t2MCEMdSqk.js"></script>
+<script src="http://simons.berkeley.edu/sites/default/files/js/js_PZ_caX9_9sMPtkLiVdPpqrR55Px7r2pvCuTkQAvpu2w.js"></script>
+<script>var _gaq = _gaq || [];_gaq.push(["_setAccount", "UA-42180505-1"]);_gaq.push(["_trackPageview"]);(function() {var ga = document.createElement("script");ga.type = "text/javascript";ga.async = true;ga.src = ("https:" == document.location.protocol ? "https://ssl" : "http://www") + ".google-analytics.com/ga.js";var s = document.getElementsByTagName("script")[0];s.parentNode.insertBefore(ga, s);})();</script>
+<script>jQuery(function(){
+jQuery('#superfish-1').supersubs({minWidth: 12, maxWidth: 27, extraWidth: 1}).superfish({
+delay: 600,
+animation: {opacity:'show'},
+speed: 'fast',
+autoArrows: true,
+dropShadows: true});
+});</script>
+<script src="http://simons.berkeley.edu/sites/default/files/js/js_uCbZV_KpGmP-R7X8J4WdL6RKNJES4_9zVSll87Q0_w4.js"></script>
+<script>jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"simons","theme_token":"ucBPsT2uSwYnoEVrK9o5jUaReGN39d0y6H7GqJvp31w","js":{"misc\/jquery.js":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/spamspan\/spamspan.js":1,"sites\/all\/libraries\/superfish\/jquery.hoverIntent.minified.js":1,"sites\/all\/libraries\/superfish\/jquery.bgiframe.min.js":1,"sites\/all\/libraries\/superfish\/superfish.js":1,"sites\/all\/libraries\/superfish\/supersubs.js":1,"sites\/all\/libraries\/superfish\/supposition.js":1,"sites\/all\/libraries\/superfish\/sftouchscreen.js":1,"sites\/all\/modules\/custom_search\/js\/custom_search.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"0":1,"1":1,"sites\/all\/themes\/simons\/js\/script.js":1},"css":{"modules\/system\/system.base.css":1,"modules\/system\/system.menus.css":1,"modules\/system\/system.messages.css":1,"modules\/system\/system.theme.css":1,"sites\/all\/modules\/_modified\/calendar\/css\/calendar_multiday.css":1,"sites\/all\/modules\/date\/date_api\/date.css":1,"sites\/all\/modules\/date\/date_repeat_field\/date_repeat_field.css":1,"modules\/field\/theme\/field.css":1,"modules\/node\/node.css":1,"modules\/search\/search.css":1,"modules\/user\/user.css":1,"sites\/all\/modules\/views\/css\/views.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/libraries\/superfish\/css\/superfish.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-vertical.css":1,"sites\/all\/libraries\/superfish\/css\/superfish-navbar.css":1,"sites\/all\/modules\/custom_search\/custom_search.css":1,"sites\/all\/themes\/simons\/system.menus.css":1,"sites\/all\/themes\/simons\/css\/normalize.css":1,"sites\/all\/themes\/simons\/css\/wireframes.css":1,"sites\/all\/themes\/simons\/css\/layout.css":1,"sites\/all\/themes\/simons\/css\/tabs.css":1,"sites\/all\/themes\/simons\/css\/pages.css":1,"sites\/all\/themes\/simons\/css\/navigation.css":1,"sites\/all\/themes\/simons\/css\/views-styles.css":1,"sites\/all\/themes\/simons\/css\/forms.css":1,"sites\/all\/themes\/simons\/css\/print.css":1}},"custom_search":{"form_target":"_self","solr":1},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"}});</script>
+      <!--[if lt IE 9]>
+    <script src="/sites/all/themes/zen/js/html5-respond.js"></script>
+    <![endif]-->
+  </head>
+<body class="html not-front not-logged-in one-sidebar sidebar-first page-node page-node- page-node-82 node-type-workshop section-workshops with-banner with-breadcrumbs without-program" >
+      <p id="skip-link">
+      <a href="#main" class="element-invisible element-focusable">Skip to content</a>
+    </p>
+      
+<div id="page">
+
+  <header id="header" class="clearfix" role="banner">
+          <a href="/" title="Home" rel="home" id="logo"><img src="http://simons.berkeley.edu/sites/all/themes/simons/logo.png" alt="Home" /></a>
+    
+          <hgroup id="name-and-slogan">
+                  <h1 id="site-name">
+            <a href="/" title="Home" rel="home"><span>Simons Institute for the Theory of Computing</span></a>
+          </h1>
+        
+              </hgroup><!-- /#name-and-slogan -->
+    
+      <div class="region region-header">
+    <div id="block-search-form" class="block block-search first odd" role="search">
+
+      
+  <form class="search-form" action="/workshops/visions2013" method="post" id="search-block-form" accept-charset="UTF-8"><div><div class="container-inline">
+      <h2 class="element-invisible">Search form</h2>
+    <div class="form-item form-type-textfield form-item-search-block-form">
+  <label class="element-invisible" for="edit-search-block-form--2">Search </label>
+ <input title="Enter the terms you wish to search for." class="custom-search-box form-text" placeholder="Search" type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" />
+</div>
+<div class="form-actions form-wrapper" id="edit-actions"><input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" /></div><input type="hidden" name="form_build_id" value="form-CyyhXZkKsYqCZU8WWmIumxM-5bAPML6CR6spHJbjtmc" />
+<input type="hidden" name="form_id" value="search_block_form" />
+</div>
+</div></form>
+</div><!-- /.block -->
+<div id="block-nodeblock-50" class="block block-nodeblock berkeley-block last even">
+
+      
+  <div id="node-50" class="node node-editblock view-mode-full clearfix" about="/blocks/uc-berkeley-logo" typeof="sioc:Item foaf:Document">
+
+        
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><a href="http://berkeley.edu"><img src="/sites/all/themes/simons/images/logo-berkeley.png" title="UC Berkeley" /></a></p></div></div></div>  </div>
+
+  
+  
+</div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+  </header>
+
+  <div id="main-wrapper">
+          <nav id="nav" role="navigation" class="clearfix">
+          <div class="region region-navigation">
+    <div id="block-superfish-1" class="block block-superfish nav-block first last odd">
+
+      
+  <ul id="superfish-1" class="sf-menu main-menu sf-horizontal sf-style-none"><li id="menu-218-1" class="first odd sf-depth-1 sf-no-children"><a href="/" class="sf-depth-1 ">Home</a></li><li id="menu-385-1" class="middle even sf-depth-1 menuparent"><a href="/about" class="sf-depth-1  menuparent">About</a><ul><li id="menu-405-1" class="first odd sf-depth-2 sf-no-children"><a href="/about" title="" class="sf-depth-2 ">Overview</a></li><li id="menu-391-1" class="middle even sf-depth-2 sf-no-children"><a href="/about/calvin-lab" class="sf-depth-2 ">Calvin Lab</a></li><li id="menu-392-1" class="last odd sf-depth-2 sf-no-children"><a href="/about/contact" class="sf-depth-2 ">Contact</a></li></ul></li><li id="menu-676-1" class="middle odd sf-depth-1 menuparent"><a href="/people" class="sf-depth-1  menuparent">People</a><ul><li id="menu-677-1" class="first odd sf-depth-2 sf-no-children"><a href="/people" title="" class="sf-depth-2 ">Overview</a></li><li id="menu-490-1" class="middle even sf-depth-2 sf-no-children"><a href="/people/leadership" class="sf-depth-2 ">Scientific Leadership</a></li><li id="menu-415-1" class="middle odd sf-depth-2 sf-no-children"><a href="/people/staff" title="" class="sf-depth-2 ">Staff</a></li><li id="menu-618-1" class="middle even sf-depth-2 sf-no-children"><a href="/people/visitors" title="" class="sf-depth-2 ">Current Long-Term Visitors</a></li><li id="menu-499-1" class="middle odd sf-depth-2 sf-no-children"><a href="/people/advisory" class="sf-depth-2 ">Scientific Advisory Board</a></li><li id="menu-548-1" class="middle even sf-depth-2 sf-no-children"><a href="/people/governance" title="" class="sf-depth-2 ">Governance Board</a></li><li id="menu-879-1" class="last odd sf-depth-2 sf-no-children"><a href="/people/affiliated-faculty" class="sf-depth-2 ">Affiliated Berkeley Faculty</a></li></ul></li><li id="menu-387-1" class="active-trail middle even sf-depth-1 menuparent"><a href="/programs" class="sf-depth-1  menuparent">Programs &amp; Activities</a><ul><li id="menu-495-1" class="first odd sf-depth-2 sf-no-children"><a href="/programs" title="" class="sf-depth-2 ">Overview</a></li><li id="menu-482-1" class="middle even sf-depth-2 sf-no-children"><a href="/programs/current" title="" class="sf-depth-2 ">Current &amp; Future Programs</a></li><li id="menu-483-1" class="middle odd sf-depth-2 sf-no-children"><a href="/programs/past" class="sf-depth-2 ">Past Programs</a></li><li id="menu-607-1" class="active-trail middle even sf-depth-2 sf-no-children"><a href="/workshops" title="" class="active sf-depth-2">Upcoming Workshops &amp; Symposia</a></li><li id="menu-678-1" class="middle odd sf-depth-2 sf-no-children"><a href="/workshops/past" title="" class="sf-depth-2 ">Past Workshops &amp; Symposia</a></li><li id="menu-594-1" class="middle even sf-depth-2 sf-no-children"><a href="/events" title="" class="sf-depth-2 ">Other Events</a></li><li id="menu-394-1" class="middle odd sf-depth-2 sf-no-children"><a href="/programs/participate" class="sf-depth-2 ">Participate</a></li><li id="menu-395-1" class="last even sf-depth-2 sf-no-children"><a href="/programs/outreach" class="sf-depth-2 ">Outreach</a></li></ul></li><li id="menu-388-1" class="middle odd sf-depth-1 menuparent"><a href="/visiting" class="sf-depth-1  menuparent">Visiting</a><ul><li id="menu-497-1" class="first odd sf-depth-2 sf-no-children"><a href="/visiting" title="" class="sf-depth-2 ">Overview</a></li><li id="menu-401-1" class="middle even sf-depth-2 sf-no-children"><a href="/visiting/directions" class="sf-depth-2 ">Directions</a></li><li id="menu-396-1" class="middle odd sf-depth-2 sf-no-children"><a href="/visiting/bay-area" class="sf-depth-2 ">Berkeley &amp; the Bay Area</a></li><li id="menu-397-1" class="middle even sf-depth-2 sf-no-children"><a href="/visiting/accommodations" class="sf-depth-2 ">Accommodation</a></li><li id="menu-398-1" class="middle odd sf-depth-2 sf-no-children"><a href="/visiting/visas" class="sf-depth-2 ">Visas</a></li><li id="menu-399-1" class="middle even sf-depth-2 sf-no-children"><a href="/visiting/families" class="sf-depth-2 ">Families</a></li><li id="menu-400-1" class="last odd sf-depth-2 sf-no-children"><a href="/visiting/bike-loans" title="Bike Loan Program" class="sf-depth-2 ">Bicycle Loans</a></li></ul></li><li id="menu-389-1" class="middle even sf-depth-1 menuparent"><a href="/support" class="sf-depth-1  menuparent">Support</a><ul><li id="menu-616-1" class="first odd sf-depth-2 sf-no-children"><a href="/support" title="" class="sf-depth-2 ">Overview</a></li><li id="menu-402-1" class="middle even sf-depth-2 sf-no-children"><a href="/support/simons-foundation" class="sf-depth-2 ">Simons Foundation</a></li><li id="menu-403-1" class="middle odd sf-depth-2 sf-no-children"><a href="/support/industry-sponsorship" class="sf-depth-2 ">Industry Sponsorship</a></li><li id="menu-404-1" class="last even sf-depth-2 sf-no-children"><a href="/support/donate" class="sf-depth-2 ">Donate</a></li></ul></li><li id="menu-637-1" class="middle odd sf-depth-1 menuparent"><a href="/news" title="" class="sf-depth-1  menuparent">News</a><ul><li id="menu-638-1" class="first odd sf-depth-2 sf-no-children"><a href="/news" title="" class="sf-depth-2 ">News Articles</a></li><li id="menu-473-1" class="middle even sf-depth-2 sf-no-children"><a href="/press" class="sf-depth-2 ">Press Releases</a></li><li id="menu-584-1" class="last odd sf-depth-2 sf-no-children"><a href="/newsletters" class="sf-depth-2 ">Newsletters</a></li></ul></li><li id="menu-675-1" class="last even sf-depth-1 sf-no-children"><a href="/calendar" title="" class="sf-depth-1 ">Calendar</a></li></ul>
+</div><!-- /.block -->
+  </div><!-- /.region -->
+      </nav>
+    
+    <div id="main" class="clearfix">
+
+      <nav class="breadcrumb" role="navigation"><h2 class="element-invisible">You are here</h2><ol><li> ‹  <a href="/">Home</a></li><li> ‹  <a href="/programs">Programs &amp; Activities</a></li><li> ‹  <a href="/workshops" title="" class="active">Upcoming Workshops &amp; Symposia</a></li></ol></nav>      <div id="content" class="column" role="main">
+        <a id="main-content"></a>
+                                                
+
+
+<article class="node-82 node node-workshop view-mode-full clearfix" about="/workshops/visions2013" typeof="sioc:Item foaf:Document">
+
+      <header>
+              <div class="program-info">
+          <span class="label"><div class="field field-name-field-workshop-type field-type-list-text field-label-hidden"><div class="field-items"><div class="field-item even">Symposia</div></div></div></span>
+          Spring 2013                  </div>
+        <div class="header-inner clearfix">
+          
+                      <h1 property="dc:title" datatype="" class="node-title">Symposium on Visions of the Theory of Computing</h1>
+              
+              <div class="field field-name-field-workshop-date field-type-datetime field-label-hidden"><div class="field-items"><div class="field-item even"><span class="date-display-start" property="dc:date" datatype="xsd:dateTime" content="2013-05-29T00:00:00-07:00">May 29</span><span class="date-display-separator"> &ndash; </span><span class="date-display-end" property="dc:date" datatype="xsd:dateTime" content="2013-05-31T00:00:00-07:00">May 31, 2013</span></div></div></div>                                </div><!--/.header-inner-->
+      
+      
+          </header>
+  
+  <div class="agenda-link"><a href="/workshops/schedule/82">View schedule & video &raquo;</a></div><div class="field field-name-field-organizers-ref field-type-entityreference field-label-above"><div class="field-label">Organizers:&nbsp;</div><div class="field-items"><div class="field-item even"><a href="/people/richard-karp" class="node node-67 entityreference">Richard Karp</a> (UC Berkeley), <a href="/people/christos-papadimitriou" class="node node-69 entityreference">Christos Papadimitriou</a> (UC Berkeley), <a href="/people/alistair-sinclair" class="node node-68 entityreference">Alistair Sinclair</a> (UC Berkeley)<span class="textformatter-fullstop">.</span></div></div></div><div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><h2>To view the link for a video or slides, click on the title of the talk in the <a href="/workshops/schedule/82">schedule</a>.</h2>
+<p><br /><span style="line-height: 1.57142857em;">This three-day symposium will bring together distinguished speakers and participants from the Bay Area and all over the world to celebrate both the excitement of fundamental research on the Theory of Computing, and the accomplishments and promise of computational research in effecting progress in other sciences — the two pillars of the Institute's research agenda.</span></p>
+<h2><span style="line-height: 1.57142857em;">Note</span></h2>
+<p>This symposium immediately precedes <a href="http://theory.stanford.edu/stoc2013/" target="_blank">STOC</a>, which runs June 1–4, 2013 in Palo Alto, California.</p>
+<div class="collapse-next">
+	<h2>Videos and Slides</h2>
+	<p>To view the link for a video or slides, click on the title of the talk below.</p>
+</div>
+<div class="collapse-next">
+	<h2>Travel Grants for Graduate Students</h2>
+	<p>A limited number of travel grants will be available for current graduate students. To apply, please send an email to <span class="spamspan"><span class="u">simonsevents</span> [at] <span class="d">berkeley [dot] edu</span><span class="h"> (subject: Symposium%20Travel) </span></span> with the subject line "Symposium Travel," your CV, and a short research statement (no more than one page). The deadline is <strong>Wednesday, April 24</strong>.</p>
+</div>
+<div class="collapse-next">
+	<h2>Travel Information</h2>
+	<p><a href="http://goo.gl/maps/kOGVr" target="_blank">Local map for the Symposium</a></p>
+	<p><iframe frameborder="0" height="350" marginheight="0" marginwidth="0" scrolling="no" src="https://maps.google.com/maps/ms?msa=0&amp;msid=206879083101742579005.0004d8eecf9398b74335c&amp;ie=UTF8&amp;t=m&amp;ll=37.870416,-122.262039&amp;spn=0.011857,0.018239&amp;z=15&amp;output=embed" width="425"></iframe></p>
+	<p><a href="https://maps.google.com/maps?saddr=Downtown+Berkeley+BART+Station,+Shattuck+Avenue,+Berkeley,+CA&amp;daddr=QB3-Berkeley,+174+Stanley+Hall,+Berkeley,+CA+94720&amp;hl=en&amp;ll=37.871838,-122.261996&amp;spn=0.01494,0.016372&amp;sll=37.871485,-122.261994&amp;sspn=0.01494,0.016372&amp;geocode=FQLaQQId0VW2-CG2vYyR5MF0rSmn-7zLnX6FgDG2vYyR5MF0rQ%3BFQfpQQIdLYW2-ClLSOKPJHyFgDHEzKJiKTlaNQ&amp;oq=Downto&amp;dirflg=w&amp;mra=ltm&amp;t=m&amp;z=16" target="_blank">Walking route to Berdahl Auditorium, Stanley Hall from Downtown Berkeley</a><br /><br />
+		The walk from the Hotel Shattuck Plaza in downtown Berkeley to the Symposium is a short (0.8 mi) and pleasant walk through campus. If you prefer to take the campus shuttle, the P Line stops in downtown Berkeley and at Stanley Hall. The cost is $1. Please visit: <a href="http://pt.berkeley.edu/around/transit/routes" target="_blank">pt.berkeley.edu/around/transit/routes</a> for a map and schedule.</p>
+	<p><a href="/visiting/directions">Directions to UC Berkeley</a></p>
+</div>
+<div class="collapse-next">
+	<h2>Parking</h2>
+	<p>At the Symposium: Campus parking is available at the Underhill Structure, located on Channing Way between College Ave and Bowditch St. For rates and hours, please visit: <a href="http://pt.berkeley.edu/park/visitor/campus" target="_blank">pt.berkeley.edu/park/visitor/campus</a>. <br />
+		Off-campus parking is available at the Telegraph/Channing Garage, located on Channing Way between Dana St and Telegraph Ave. For other off-campus parking options, please visit: <a href="http://pt.berkeley.edu/park/visitor/offcampus" target="_blank">pt.berkeley.edu/park/visitor/offcampus</a>.<br /><br />
+		Near the Hotel Shattuck Plaza: The closest parking is the Allston Way Parking Garage, located on Allston Way between Milvia Street and Shattuck Avenue.</p>
+</div>
+<div class="collapse-next">
+	<h2>Hotels</h2>
+	<p><span style="color: rgb(102, 102, 102); line-height: 1.57142857em;">Hotel </span>Shattuck<span style="color: rgb(102, 102, 102); line-height: 1.57142857em;"> Plaza</span><br /><span style="line-height: 1.57142857em;">2086 </span>Allston<span style="line-height: 1.57142857em;"> Way</span><br /><span style="line-height: 1.57142857em;">Berkeley, CA 94704</span><br /><span style="line-height: 1.57142857em;">+1.510.845.7300 or toll-free +1.866.466.9199</span><br /><a href="http://www.hotelshattuckplaza.com/" style="line-height: 1.57142857em;" target="_blank">hotelshattuckplaza.com</a></p>
+	<p><span style="line-height: 1.57142857em;">For reservations, call and mention that you are attending the Symposium on Visions of the Theory of Computing.</span><br /><strong><span style="line-height: 1.57142857em;">Promotion Code: </span></strong>1305SYMONV</p>
+	<p><strong><span style="line-height: 1.57142857em;">Make your reservation by phone as soon as possible to receive a special rate.</span></strong></p>
+	<p><span style="line-height: 1.57142857em;">Other nearby hotels include: </span><a href="http://hoteldurantberkeley.com/" style="line-height: 1.57142857em;" target="_blank">Hotel Durant</a><span style="line-height: 1.57142857em;">, </span><a href="http://http//bancrofthotel.com/" style="line-height: 1.57142857em;" target="_blank">Bancroft Hotel</a><span style="line-height: 1.57142857em;">, </span><a href="http://doubletree3.hilton.com/en/hotels/california/doubletree-by-hilton-hotel-berkeley-marina-JBKCADT/index.html" style="line-height: 1.57142857em;" target="_blank">DoubleTree Berkeley Marina</a><span style="line-height: 1.57142857em;">, </span><a href="http://www.berkeleyfacultyclub.com/" style="line-height: 1.57142857em;" target="_blank">The Faculty Club</a><span style="line-height: 1.57142857em;">, and </span><a href="http://claremontresort.com/" style="line-height: 1.57142857em;" target="_blank">Claremont Hotel and Spa</a><span style="line-height: 1.57142857em;">.</span></p>
+</div>
+<div class="collapse-next">
+	<h2>Questions</h2>
+	<p style="line-height: 22px;">Contact Caroline Allum at +1.510.664.9856 or <span class="spamspan"><span class="u">simonsevents</span> [at] <span class="d">berkeley [dot] edu</span><span class="h"> (subject: Symposium%20on%20Visions%20of%20the%20Theory%20of%20Computing) </span></span>.</p>
+</div>
+<p><span style="line-height: 1.57142857em;">Support is gratefully acknowledged from:</span></p>
+<p style="line-height: 22px;"><a href="http://www.cra.org/ccc/" target="_blank"><img alt="" src="/sites/default/files/uploads/ccc.png" style="height: 100px; width: 123px;" /></a></p>
+</div></div></div><div class="view view-seminars view-id-seminars view-display-id-entity_view_1 talks-inset-view view-dom-id-7270f724d8928474025c97ea5f2fb19c">
+        <h2 class="title">Talks</h2>
+    
+  
+      
+  
+      <div class="view-content">
+        <div class="views-row views-row-1 views-row-odd views-row-first">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-393">What Should a Computational Theory of Cortex Explain?</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/leslie-valiant">Leslie Valiant, Harvard University</a></span>  </div>  </div>
+  <div class="views-row views-row-2 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-394">Quantum Computing and the Entanglement Frontier</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/john-preskill">John Preskill, Caltech</a></span>  </div>  </div>
+  <div class="views-row views-row-3 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-396">Why Biology is Different</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/bernard-chazelle">Bernard Chazelle, Princeton University</a></span>  </div>  </div>
+  <div class="views-row views-row-4 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-400">Big Data and New Models Needed to Study DNA Variation in Evolution and Cancer</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/david-haussler">David Haussler, UC Santa Cruz</a></span>  </div>  </div>
+  <div class="views-row views-row-5 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-402">Perfection and Beyond</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/maria-chudnovsky">Maria Chudnovsky, Columbia University</a></span>  </div>  </div>
+  <div class="views-row views-row-6 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-404">Bursts, Cascades, and Hot Spots: Algorithmic Models of Social Phenomena</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/jon-kleinberg-0">Jon Kleinberg, Cornell University</a></span>  </div>  </div>
+  <div class="views-row views-row-7 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-407">The Cryptographic Lens: Visions of our Past and Future</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/shafi-goldwasser">Shafi Goldwasser, MIT</a></span>  </div>  </div>
+  <div class="views-row views-row-8 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-408">&quot;More is Different.&quot; Also in Computing?</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/marc-m%C3%A9zard">Marc Mézard, ENS Paris</a></span>  </div>  </div>
+  <div class="views-row views-row-9 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-410">Theory of Data Streams</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/muthu-muthukrishnan">S. Muthu Muthukrishnan, Rutgers University and Microsoft Research</a></span>  </div>  </div>
+  <div class="views-row views-row-10 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-412">Intelligence and Machines: Creating Intelligent Machines By Modeling the Brain</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/jeff-hawkins">Jeff Hawkins, Numenta</a></span>  </div>  </div>
+  <div class="views-row views-row-11 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-413">The Online Revolution: Learning Without Limits</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/daphne-koller">Daphne Koller, Stanford University</a></span>  </div>  </div>
+  <div class="views-row views-row-12 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-415">Programming Nanoscale Structure Using DNA-Based Information</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/ned-seeman">Ned Seeman, New York University</a></span>  </div>  </div>
+  <div class="views-row views-row-13 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-417">Consumer Behavior and Algorithm Design</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/prabhakar-raghavan">Prabhakar Raghavan, Google</a></span>  </div>  </div>
+  <div class="views-row views-row-14 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-418">Market Design and Computer-Assisted Markets: An Economist’s Perspective</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/alvin-roth">Alvin Roth, Stanford University</a></span>  </div>  </div>
+  <div class="views-row views-row-15 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-420">Evolution and Computation</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/christos-papadimitriou">Christos Papadimitriou, UC Berkeley</a></span>  </div>  </div>
+  <div class="views-row views-row-16 views-row-even">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-422">The Mathematics of Causal Inference, with Reflections on Machine Learning and the Logic of Science</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/judea-pearl">Judea Pearl, UCLA</a></span>  </div>  </div>
+  <div class="views-row views-row-17 views-row-odd">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-423">The Gospel According to TCS</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/avi-wigderson">Avi Wigderson, Institute for Advanced Study, Princeton</a></span>  </div>  </div>
+  <div class="views-row views-row-18 views-row-even views-row-last">
+      
+  <div class="views-field views-field-title">        <span class="field-content"><a href="/workshops/abstracts/82#talk-425">The Modern Astrophysics Stack: Automated Action and Insight</a></span>  </div>  
+  <div class="views-field views-field-field-speaker">    <span class="views-label views-label-field-speaker">Speaker: </span>    <span class="field-content"><a href="/people/joshua-bloom">Josh Bloom, UC Berkeley</a></span>  </div>  </div>
+    </div>
+  
+  
+  
+  
+  
+  
+</div> 
+  
+  
+</article><!-- /.node -->
+<!-- block__no_wrapper -->
+<!-- region__no_wrapper -->
+              </div><!-- /#content -->
+
+              <div id="sidebar">
+            <section class="region region-sidebar-first column sidebar">
+    <div id="block-menu-block-1" class="block block-menu-block subnav-block first last odd" role="navigation">
+
+      
+  <div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-2">
+  <ul class="menu"><li class="first leaf menu-mlid-495"><a href="/programs" title="">Overview</a></li>
+<li class="expanded menu-mlid-482"><a href="/programs/current" title="">Current &amp; Future Programs</a></li>
+<li class="expanded menu-mlid-483"><a href="/programs/past">Past Programs</a></li>
+<li class="expanded active-trail menu-mlid-607"><a href="/workshops" title="" class="active active-trail">Upcoming Workshops &amp; Symposia</a></li>
+<li class="leaf menu-mlid-678"><a href="/workshops/past" title="">Past Workshops &amp; Symposia</a></li>
+<li class="expanded menu-mlid-594"><a href="/events" title="">Other Events</a></li>
+<li class="leaf menu-mlid-394"><a href="/programs/participate">Participate</a></li>
+<li class="last leaf menu-mlid-395"><a href="/programs/outreach">Outreach</a></li>
+</ul></div>
+
+</div><!-- /.block -->
+  </section><!-- region__sidebar -->
+        </div>
+      
+    </div><!-- /#main -->
+
+          <div id="banner">
+          <div class="region region-banner">
+    <div id="block-nodeblock-85" class="block block-nodeblock banner-block first last odd">
+
+      
+  <div id="node-85" class="node node-editblock view-mode-full clearfix" about="/blocks/banner-programs-section" typeof="sioc:Item foaf:Document">
+
+        
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p><img alt="" src="/sites/default/files/uploads/banners/sim-banner-programs_1.jpg" style="width: 940px; height: 120px; " /></p>
+</div></div></div>  </div>
+
+  
+  
+</div>
+
+</div><!-- /.block -->
+  </div><!-- /.region -->
+      </div>
+    
+      <footer id="footer" class="region region-footer">
+    <div id="block-nodeblock-34" class="block block-nodeblock footer-block first last odd">
+
+      
+  <div id="node-34" class="node node-editblock view-mode-full clearfix" about="/blocks/footer" typeof="sioc:Item foaf:Document">
+
+        
+  
+  <div class="content">
+    <div class="field field-name-body field-type-text-with-summary field-label-hidden"><div class="field-items"><div class="field-item even" property="content:encoded"><p class="info-links"><a href="/privacy-policy">Privacy</a> <a href="/terms">Terms of Use</a> <a class="last" href="/about/contact">Contact</a></p>
+<p class="copyright">© 2013 Simons Institute for the Theory of Computing. All Rights Reserved. <a href="#page" id="top-link">^ top</a></p>
+</div></div></div>  </div>
+
+  
+  
+</div>
+
+</div><!-- /.block -->
+  </footer><!-- region__footer -->
+  </div>
+
+</div><!-- /#page -->
+
+  <script type="text/javascript">if(!NREUMQ.f){NREUMQ.f=function(){NREUMQ.push(["load",new Date().getTime()]);var e=document.createElement("script");e.type="text/javascript";e.src=(("http:"===document.location.protocol)?"http:":"https:")+"//"+"js-agent.newrelic.com/nr-100.js";document.body.appendChild(e);if(NREUMQ.a)NREUMQ.a();};NREUMQ.a=window.onload;window.onload=NREUMQ.f;};NREUMQ.push(["nrfj","beacon-2.newrelic.com","41afaaaf37","2278255","ZFBRNxNZXUpYBkENVl0acgAVUVxXFgtaAFxsRVIEBGdFUFwS",0,629,new Date().getTime(),"","","","",""]);</script>
+</body>
+</html>

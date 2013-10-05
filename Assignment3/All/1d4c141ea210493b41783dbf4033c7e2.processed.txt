@@ -1,0 +1,583 @@
+   #[1]publisher [2]Mashable
+
+                                    Mashable
+
+     *
+     * [3]Mashable Header_logo.v2
+     * [4]Sign in
+     * Like [5]Follow @mashable
+       [6]see more  >
+     * [7]Search
+       ____________________
+       Search
+     * [8]Social Media
+     * [9]Tech
+     * [10]Business
+     * [11]Entertainment
+     * [12]US & World
+     * [13]Lifestyle
+     * [14]Watercooler
+     * [15]Jobs
+     * [16]More
+          +
+               o Channels
+               o [17]Social Media
+               o [18]Tech
+               o [19]Business
+               o [20]Entertainment
+               o [21]US & World
+               o [22]Lifestyle
+               o [23]Watercooler
+               o [24]Jobs
+          +
+               o Company
+               o [25]About Us
+               o [26]Licensing & Reprints
+               o [27]Archive
+          +
+               o Contact
+               o [28]Contact Us
+               o [29]Submit News
+               o [30]Submit a Bug
+          +
+               o Advertise
+               o [31]Advertise
+          +
+               o Legal
+               o [32]Privacy Policy
+               o [33]Terms of Use
+          +
+               o Apps
+               o [34]iPhone App
+               o [35]iPad App
+               o [36]Android App
+          +
+               o Resources
+               o [37]Guidebooks
+               o [38]Subscriptions
+          +
+               o Sites
+               o [39]Jobs
+               o [40]Events
+               o [41]Social Good Summit
+               o [42]Media Summit
+
+US & World
+
+   Like [43]Follow
+
+Did the FBI Lean On Microsoft for Access to Its Encryption Software?
+
+   4.7k
+   Shares
+   [44]Share
+   [45]Tweet
+   [46]Share
+   What's This?
+   Fbi-microsoft-bitlocker-backdoor
+   [47]Lorenzo-headshot-sq
+   By Lorenzo Franceschi-Bicchierai2013-09-11 13:27:43 UTC
+
+   The [48]NSA is reportedly not the only government agency asking tech
+   companies for help in cracking technology to access user data. Sources
+   say the [49]FBI has a history of requesting digital backdoors, which
+   are generally understood as a hidden vulnerability in a program that
+   would, in theory, let the agency peek into suspects' computers and
+   communications.
+
+   In 2005, when [50]Microsoft was about to launch [51]BitLocker, its
+   Windows software to encrypt and lock hard drives, the company
+   approached the NSA, its British counterpart the [52]GCHQ and the FBI,
+   among other government and law-enforcement agencies. Microsoft's goal
+   was twofold: get feedback from the agencies, and sell BitLocker to
+   them.
+
+   See also: [53]Is It the Dawn of the Encryption App?
+
+   But the FBI, concerned about its ability to fight crime --
+   specifically, child pornography -- apparently repeatedly asked
+   Microsoft to put a backdoor in the software. A backdoor -- or trapdoor
+   -- is a secret vulnerability that can be exploited to break or
+   circumvent supposedly secure systems.
+
+   For its part, the FBI categorically denies asking for such access,
+   telling Mashable that the Bureau doesn't ask for backdoors, and that it
+   only serves companies lawful court orders when it needs to access
+   users' data. (And, legally, it would still need a warrant even if a
+   backdoor did exist.)
+
+   Peter Biddle, the head of the engineering team working on BitLocker at
+   the time, revealed to Mashable the exchanges he had with various
+   government agents.
+
+   "I was asked multiple times," Biddle told us, confirming that a
+   government agency had inquired about backdoors, though he couldn't
+   remember which one. "And at least once the question was more, 'If we
+   were to officially ask you, what would you say?'"
+
+   According to two former Microsoft engineers, FBI officials complained
+   that BitLocker would make their jobs harder. "It's going to be really
+   really hard for us to do our jobs if every single person could have
+   this technology. How do we break it?" an FBI agent reportedly said.
+
+   The story of how the FBI reportedly asked Microsoft to backdoor
+   BitLocker to avoid "going dark," the FBI's term for a potential
+   scenario when encryption makes it impossible to intercept criminals'
+   communications or break into a suspect's computer, provides a snapshot
+   into how U.S. government agencies may try to persuade tech companies to
+   weaken their security products, or even poke a hidden hole to make them
+   wiretap-friendly.
+
+   Last week, [54]The New York Times, [55]ProPublica, and [56]The Guardian
+   revealed that one of the ways the NSA circumvents Internet cryptography
+   is [57]to ask companies to put backdoors in their products.
+
+   The FBI is reportedly doing the same in the name of fighting crime, and
+   its persuasion techniques appear to be very similar.
+
+   According to reports, both the NSA and the FBI are subtle in their
+   requests, which are never formal, written requests, but are usually
+   uttered during casual conversations, almost jokingly.
+
+   Nico Sell, the founder of the privacy-enhancing app [58]Wickr, was
+   approached by an FBI agent after speaking at the security conference
+   RSA at the end of February, [59]as first reported by CNET. "So are you
+   gonna give us a backdoor?" the agent asked, according to Sell. She
+   declined, and after pressing the agent -- asking him to explain if he
+   had a written request and to reveal his boss -- the agent backed down.
+
+   Cryptography and security expert Bruce Schneier said he's heard of
+   these same types of tactics from others the government has approached
+   seeking technological backdoors.
+
+   "It's not an explicit ask, [...] it's an informal, oblique mention,
+   joking conversation, where you're felt out as to whether you're
+   amenable to it," Schneier told Mashable. "If you're amenable to it,
+   that conversation continues, if you're not, it's like it never
+   happened."
+
+   Schneier is working with The Guardian on new, undisclosed documents
+   provided by NSA leaker [60]Edward Snowden. And he is now [61]looking
+   for whistleblowers in the tech industry who are willing to share their
+   experience with government officials asking for backdoors.
+
+   Despite the requests being informal, Schneier and other surveillance
+   experts are concerned.
+
+   "A request is a request," and despite not being illegal, he said, "it's
+   coercive."
+
+   Peter Biddle Peter Biddle
+
+The FBI's Informal Request to Microsoft
+
+   In the case of Microsoft, according to the engineers, the requests came
+   in the course of multiple meetings with the FBI. These kinds of
+   meetings were standard at Microsoft, according to both Biddle and
+   another former Microsoft engineer who worked on the BitLocker team, who
+   wanted to remain anonymous due to the sensitivity of the matter.
+
+   "I had more meetings with more agencies that I can remember or count,"
+   said Biddle.
+
+   Biddle said these meetings were so frequent, and with so many different
+   agencies, he doesn't specifically remember if it was the FBI that asked
+   for a backdoor. But the anonymous Microsoft engineer we spoke with
+   confirmed that it was, in fact, the FBI.
+
+   During a meeting, an agent complained about BitLocker and expressed his
+   frustration.
+
+   "Fuck, you guys are giving us the shaft," the agent said, according to
+   Biddle and the Microsoft engineer, who were both present at the
+   meeting. (Though Biddle insisted he didn't remember which agency he
+   spoke with, he said he remembered this particular exchange.)
+
+   Biddle wasn't intimidated. "No, we're not giving you the shaft, we're
+   merely commoditizing the shaft," he responded.
+
+   Biddle, a believer in what he refers to as "neutral technology," never
+   agreed to put a backdoor in BitLocker. And other Microsoft engineers,
+   [62]when rumors spread that there was one, later denied that was ever a
+   possibility.
+
+   "The suggestion is that we are working with governments to create a
+   backdoor so that they can always access BitLocker-encrypted data,"
+   [63]wrote Niels Ferguson, Microsoft's cryptographer and principal
+   software development engineer. "Over my dead body."
+
+   For Biddle, this was proof of a fundamental paradox facing government
+   agencies and security software. How do you get secure software you can
+   rely on, while also retaining the ability to break into it if people
+   use it to commit or cover up their crimes?
+
+   "I realized that we were in this really interesting spot, sort of stuck
+   in the middle between wanting to do a much better job at protecting our
+   users' information, and at the same time realizing that this was
+   starting to make government employees unhappy," Biddle said.
+
+   Despite Microsoft's refusals to backdoor its product, the engineers
+   kept working with the FBI to teach them about BitLocker and how it was
+   possible to retrieve data in case an agent needed to get into an
+   encrypted hard drive.
+
+   At one point, the BitLocker team suggested the agency target the backup
+   keys that the software creates. In some instances, BitLocker prompts
+   users to print out a piece of paper with the key needed to unlock the
+   hard drive, to prevent loss of data if a user forgets his or her key.
+
+   "As soon as we said that, the mood in the room changed dramatically,"
+   said the anonymous Microsoft engineer. "They got really excited."
+
+   In that instance, law enforcement agents wouldn't need a backdoor after
+   all. As the engineer suggested, all they would need was a warrant to
+   access a suspect's documents and retrieve the document that would
+   unlock his or her hard drive.
+
+   Microsoft and Skype Microsoft CEO Steve Ballmer
+
+Microsoft's Tarnished Privacy Reputation
+
+   For Christopher Soghoian, a privacy and surveillance expert at the
+   American Civil Liberties Union, the fact that BitLocker had a backdoor
+   or not isn't even that relevant, since it's a feature that very few
+   Windows users employ or even have access to. It's not included in most
+   Windows versions, and it's not a default setting -- something that,
+   Soghoian said "is not an accident."
+
+   "The impact is minimal, because so few people use BitLocker, but it
+   does speak to a friendly relationship between the companies and the
+   government," he told Mashable.
+
+   This incident confirms something that Soghoian and other Microsoft
+   critics have pointed out repeatedly over the last few years.
+
+   "If you want to keep your data out of the U.S. government's hands,
+   Microsoft is not your friend," he said. "Microsoft is unwilling to
+   really make the government go dark. They are never really willing to
+   protect their customers from the government. They are willing to take
+   some steps but they don't want to go too far."
+
+   In fact, in the last few years, Microsoft's commitment to users'
+   privacy has been repeatedly put into question.
+
+   Microsoft [64]has been accused of changing Skype's infrastructure to
+   make it easier for governments to intercept and spy on users' calls and
+   chats.
+
+   Documents provided by Snowden to The Guardian suggest Microsoft [65]has
+   been very cooperative in making it easier to eavesdrop on its products,
+   including [66]Outlook, [67]Hotmail, and [68]Skype.
+
+   The company even [69]seemed to suggest that Skype calls are fair game
+   for the NSA, in a response to that report, despite the fact that,
+   historically, Skype insisted its calls were impossible to intercept.
+
+   Even a Microsoft former employee seems skeptical of the company's
+   policies regarding privacy. Caspar Bowden, the former chief privacy
+   advisor at Microsoft Europe, who recently denounced the NSA's PRISM
+   program, [70]describes himself on his Twitter account as "ex-Chief
+   Privacy Adviser MSFT (hey, I tried)."
+
+   A Microsoft spokesperson declined to comment for this story, simply
+   pointing us to a [71]June 16 blog post by Microsoft's General Counsel
+   Brad Smith.
+
+   The post, written in response to [72]the revelation of the NSA's top
+   secret surveillance program, codenamed [73]PRISM, denies that Microsoft
+   ever provides "any government with direct and unfettered access to our
+   customer's data. Microsoft only pulls and then provides the specific
+   data mandated by the relevant legal demand."
+
+   Smith's post doesn't address Microsoft's relationship with government
+   and law-enforcement agencies, and doesn't directly address the issue of
+   three letter agencies informally asking for backdoors. The company's
+   spokesperson also declined to elaborate on whether Microsoft seeks
+   feedback from the NSA or the FBI when launching products.
+
+   The anonymous Microsoft engineer, when talking about the company's
+   relationship with the NSA, said that "they are very, very helpful to
+   the Windows teams in terms of shoring up foolish little mistakes,"
+   adding that such consulting doesn't imply anything "weird" or illegal.
+
+   FBI
+
+The FBI's Fear of Going Dark
+
+   The BitLocker story may be studied in the context of what the FBI calls
+   the "[74]Going Dark" problem.
+
+   In the last few years, the Bureau has argued that improved encryption
+   technologies threaten its ability to snoop on a suspect's
+   communications.
+
+   It's with this potential threat in mind that the FBI [75]has been
+   pushing for an expansion of the Communications Assistance for Law
+   Enforcement Act ([76]CALEA), which compels telecommunication companies
+   -- but not Internet companies like [77]Google, [78]Facebook or
+   Microsoft -- to build wiretap-friendly communication systems.
+
+   The effort, referred to as CALEA II, seems to have stalled, but the
+   U.S. government's interest in defeating encryption with backdoors is
+   long-standing.
+
+   "The FBI has been wanting such access for just about as long as there
+   has been an Internet," said Scott Bradner, a web governance expert and
+   secretary of the Internet Society.
+
+   During the so-called "Crypto Wars" of the 1990s, the government
+   proposed the infamous [79]Clipper Chip, an NSA-made encryption device
+   that included a backdoor for the government. The attempt to make it
+   mandatory for telecommunications companies failed after public pressure
+   against it, and after Matt Blaze, a cryptography expert, discovered a
+   serious flaw in its design.
+
+   But the FBI didn't stop worrying about encryption -- it ramped up its
+   rhetoric.
+
+   "The widespread use of uncrackable encryption will devastate our
+   ability to fight crime and prevent terrorism," Louis Freeh, the FBI
+   director at the time, [80]told Congress in 1997.
+
+   In 2010, Valerie Caproni, at the time the FBI's general counsel,
+   [81]told The New York Times that the FBI needed more wiretapping powers
+   against encryption technologies.
+
+   "No one should be promising their customers that they will thumb their
+   nose at a U.S. court order," Caproni said. "They can promise strong
+   encryption. They just need to figure out how they can provide us plain
+   text."
+
+   Such a plan has always received strong criticism from cryptography and
+   security experts.
+
+   [82]Columbia University professor Steven Bellovin said that inserting
+   backdoors "[I]s a disaster waiting to happen. [...] If they start
+   building in all these backdoors, they will be exploited."
+
+   Bellovin's argument is simple: if the FBI, or the U.S. government,
+   obtains a backdoor into a certain technology, that backdoor can be
+   taken advantage of by hackers or cybercriminals as well.
+
+   Blaze [83]echoed this sentiment in a column he co-wrote with privacy
+   expert Susan Landau on Wired earlier this year.
+
+   "Mandatory wiretap backdoors in Internet services would invite at least
+   as much new crime as it could help solve," the two wrote.
+
+   For all the FBI's complaints about the hazards of going dark, the
+   numbers don't necessarily appear to back up such fears.
+
+   According to the U.S. courts' annual [84]wiretap report, encryption
+   prevented law enforcement agencies from obtaining communications four
+   of the 15 times they encountered it in 2012. These four included the
+   first time agencies had been thwarted by encryption since 2001, when
+   the courts started publishing the stats.
+
+   And even in cases involving full disk encryption -- and child
+   pornography -- [85]the FBI has been able at times to crack it.
+
+   "The idea that they're going dark is quite silly," said Dan Auerbach, a
+   technologist at the digital rights advocacy group [86]Electronic
+   Frontier Foundation.
+
+   Nevertheless, an FBI spokesperson denied that the Bureau ever asks for
+   backdoors, arguing that it's also important to define what a backdoor
+   is.
+
+   "We're not asking a company to give us unfettered access to a back
+   channel so that we can get the information ourselves," FBI spokesperson
+   Christopher Allen told Mashable. "To me that's what a backdoor
+   implies."
+
+   "We are only talking about lawful, court-ordered intercepts in on-going
+   investigations," he explained in a follow-up email. However, he also
+   added that: "The FBI might explain what obligations a company may have
+   to comply with a court order and what is required pursuant to each
+   order, but it is the responsibility of the company named in the court
+   order to develop the means to perform the lawful intercept."
+
+   Pressed for more comments on the specific cases illustrated in this
+   story, Allen simply replied: "The FBI does not ask for backdoors.
+   Period."
+
+   Images: Ben Horton/Getty Images for Microsoft; Flickr, [87]eschipul;
+   Justin Sullivan/Getty Images; Chip Somodevilla/Getty Images
+   Topics: [88]data encryption, [89]encryption, [90]FBI, [91]Microsoft,
+   [92]NSA, [93]privacy, [94]surveillance, [95]U.S., [96]US & World,
+   [97]World
+   [98]Load Comments
+   [99]Powered by Livefyre
+
+What's Hot
+
+More in US & World
+
+   [100]The New Stuff
+   [101]The Next Big Thing
+   [102]What's Hot
+
+The New Stuff
+
+The Next Big Thing
+
+What's Hot
+
+     * [103]About Us
+     * [104]Jobs
+     * [105]Advertise
+     * [106]Subscribe
+     * [107]Privacy
+     * [108]Terms
+
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+     *
+
+   [109]Mashable is the largest independent online news site dedicated to
+   covering digital culture, social media and technology. With more than
+   20 million unique monthly visitors, Mashable has one of the most
+   engaged online news communities. Founded in 2005, Mashable is
+   headquartered in New York City with an office in San Francisco.
+     * ©2005-2013 Mashable, Inc.
+     * Reproduction without explicit permission is prohibited. All Rights
+       Reserved.
+     * Designed in collaboration with [110]Code & Theory
+
+   [p?c1=2&amp;c2=8750086&amp;cv=2.0&amp;cj=1]
+
+References
+
+   Visible links
+   1. https://plus.google.com/113493854651753327245
+   2. http://feeds.mashable.com/Mashable
+   3. http://mashable.com/
+   4. http://mashable.com/login/
+   5. https://twitter.com/mashable
+   6. http://mashable.com/2011/11/18/follow-mashable/
+   7. http://mashable.com/search/
+   8. http://mashable.com/social-media/
+   9. http://mashable.com/tech/
+  10. http://mashable.com/business/
+  11. http://mashable.com/entertainment/
+  12. http://mashable.com/us-world/
+  13. http://mashable.com/lifestyle/
+  14. http://mashable.com/watercooler/
+  15. http://findjobs.mashable.com/
+  16. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+  17. http://mashable.com/social-media/
+  18. http://mashable.com/tech/
+  19. http://mashable.com/business/
+  20. http://mashable.com/entertainment/
+  21. http://mashable.com/us-world/
+  22. http://mashable.com/lifestyle/
+  23. http://mashable.com/watercooler/
+  24. http://findjobs.mashable.com/
+  25. http://mashable.com/about/
+  26. http://www.wrightsmedia.com/sites/mashable/
+  27. http://mashable.com/2012/
+  28. http://mashable.com/contact-us/
+  29. http://mashable.com/submit/
+  30. https://mashable.wufoo.com/forms/tesla-bug-tracker/
+  31. http://mashable.com/advertise/
+  32. http://mashable.com/privacy/
+  33. http://mashable.com/terms/
+  34. http://itunes.apple.com/us/app/mashable/id356202138?mt=8
+  35. http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8
+  36. http://mashable.com/2010/08/02/mashable-android-app/
+  37. http://mashable.com/guidebook/
+  38. http://mashable.com/2011/11/18/follow-mashable/
+  39. http://findjobs.mashable.com/
+  40. http://events.mashable.com/
+  41. http://mashable.com/sgs/
+  42. http://mashable.com/media-summit/
+  43. https://twitter.com/intent/follow?region=follow_link&screen_name=mashable&tw_p=followbutton&variant=2.0
+  44. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+  45. https://twitter.com/intent/tweet?original_referer=http://mashable.com/&source=tweetbutton&text=Did+the+FBI+Lean+On+Microsoft+for+Access+to+Its+Encryption+Software%3F&url=http%3A%2F%2Fmashable.com%2F2013%2F09%2F11%2Ffbi-microsoft-bitlocker-backdoor%2F&via=mashable
+  46. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+  47. http://mashable.com/people/lorenzo-franceschi-bicchierai/
+  48. http://mashable.com/category/nsa/
+  49. http://mashable.com/category/FBI
+  50. http://mashable.com/category/microsoft/
+  51. http://windows.microsoft.com/en-us/windows7/products/features/bitlocker
+  52. http://mashable.com/category/gchq/
+  53. http://mashable.com/2013/06/28/encryption-apps/
+  54. http://www.nytimes.com/2013/09/06/us/nsa-foils-much-internet-encryption.html?pagewanted=all
+  55. http://www.propublica.org/article/the-nsas-secret-campaign-to-crack-undermine-internet-encryption
+  56. http://www.theguardian.com/world/2013/sep/05/nsa-gchq-encryption-codes-security
+  57. http://mashable.com/2013/09/05/snowden-nsa-break-internet-encryption/
+  58. http://mashable.com/category/wickr/
+  59. http://news.cnet.com/8301-1009_3-57597093-83/surveillance-scandal-rips-through-hacker-community/
+  60. http://mashable.com/category/edward-snowden/
+  61. http://www.theguardian.com/commentisfree/2013/sep/05/government-betrayed-internet-nsa-spying
+  62. http://news.bbc.co.uk/2/hi/uk_news/politics/4713018.stm
+  63. http://blogs.msdn.com/b/si_team/archive/2006/03/02/542590.aspx
+  64. http://mashable.com/2013/01/25/skype-wiretrap-calls/
+  65. http://mashable.com/2013/07/11/miscrosoft-helped-nsa-spy-hotmail-skype-outlook/
+  66. http://mashable.com/category/outlook
+  67. http://mashable.com/category/hotmail/
+  68. http://mashable.com/category/skype/
+  69. http://mashable.com/2013/07/16/microsoft-hints-skype-can-be-intercepted-nsa/
+  70. https://twitter.com/CasparBowden
+  71. http://blogs.technet.com/b/microsoft_on_the_issues/archive/2013/07/16/responding-to-government-legal-demands-for-customer-data.aspx
+  72. http://mashable.com/2013/06/06/PRISM-tech-companies-data-mining/
+  73. http://mashable.com/category/prism/
+  74. http://www.fbi.gov/news/testimony/going-dark-lawful-electronic-surveillance-in-the-face-of-new-technologies
+  75. http://mashable.com/2013/03/27/internet-snooping-fbi/
+  76. http://en.wikipedia.org/wiki/Communications_Assistance_for_Law_Enforcement_Act#Further_reading
+  77. http://mashable.com/category/google/
+  78. http://mashable.com/category/facebook/
+  79. http://en.wikipedia.org/wiki/Clipper_chip
+  80. http://partners.nytimes.com/library/cyber/under/100197under-wayner.html
+  81. http://www.nytimes.com/2010/09/27/us/27wiretap.html?pagewanted=all
+  82. http://bits.blogs.nytimes.com/2007/07/10/engineers-as-counterspys-how-the-greek-cellphone-system-was-bugged/
+  83. http://www.wired.com/opinion/2013/01/wiretap-backdoors/
+  84. http://www.uscourts.gov/Statistics/WiretapReports/wiretap-report-2012.aspx#sa5
+  85. http://www.wired.com/threatlevel/2013/08/feds-crack-encrypted-drives/
+  86. http://mashable.com/category/EFF
+  87. http://www.flickr.com/photos/eschipul/
+  88. http://mashable.com/category/data-encryption/
+  89. http://mashable.com/category/encryption/
+  90. http://mashable.com/category/fbi/
+  91. http://mashable.com/category/microsoft/
+  92. http://mashable.com/category/nsa/
+  93. http://mashable.com/category/privacy/
+  94. http://mashable.com/category/surveillance/
+  95. http://mashable.com/category/us/
+  96. http://mashable.com/category/us-world/
+  97. http://mashable.com/category/world/
+  98. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+  99. http://livefyre.com/
+ 100. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 101. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 102. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 103. http://mashable.com/about/
+ 104. http://findjobs.mashable.com/
+ 105. http://mashable.com/advertise/
+ 106. http://mashable.com/2011/05/09/connect-with-mashable/
+ 107. http://mashable.com/privacy/
+ 108. http://mashable.com/terms/
+ 109. http://mashable.com/
+ 110. http://www.codeandtheory.com/
+
+   Hidden links:
+ 111. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 112. http://mashable.com/2011/11/18/follow-mashable/
+ 113. http://feeds.mashable.com/Mashable
+ 114. http://mashable.com/subscriptions
+ 115. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 116. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 117. http://mashable.com/2013/09/11/fbi-microsoft-bitlocker-backdoor/
+ 118. http://www.facebook.com/mashable/
+ 119. https://twitter.com/mashable
+ 120. https://plus.google.com/+Mashable
+ 121. http://feeds.mashable.com/Mashable
+ 122. http://pinterest.com/mashable/
+ 123. http://www.youtube.com/user/mashable
+ 124. http://www.stumbleupon.com/channel/Mashable
+ 125. http://www.linkedin.com/today/mashable.com

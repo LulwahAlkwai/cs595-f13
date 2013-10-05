@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>[1305.2103] Translating Relational Queries into Spreadsheets</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/arXiv.css" />
+<meta name="citation_title" content="Translating Relational Queries into Spreadsheets" />
+<meta name="citation_author" content="Sroka, Jacek" />
+<meta name="citation_author" content="Stencel, Krzysztof" />
+<meta name="citation_author" content="Tyszkiewicz, Jerzy" />
+<meta name="citation_date" content="2013/05/09" />
+<meta name="citation_online_date" content="2013/05/09" />
+<meta name="citation_pdf_url" content="http://arxiv.org/pdf/1305.2103" />
+<meta name="citation_arxiv_id" content="1305.2103" />
+
+</head>
+<body class="with-cu-identity">
+<div id="cu-identity">
+<div id="cu-logo">
+<a id="insignia-link" href="http://www.cornell.edu/"><img src="/icons/cu/cul_signature_unstyled.gif" alt="Cornell University" width="283" height="76" border="0" /></a>
+<div id="unit-signature-links">
+<a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a>
+<a id="unit-link" href="http://www.library.cornell.edu/">Library</a>
+</div>
+</div>
+<div id="support-ack">
+<a href="https://confluence.cornell.edu/x/9YhjCg">We gratefully acknowledge support from<br />the Simons Foundation<br /> and member institutions</a>
+</div>
+</div>
+<div id="header">
+<h1><a href="/">arXiv.org</a> &gt; <a href="/list/cs/recent">cs</a> &gt; arXiv:1305.2103</h1>
+<form id="search" method="post" action="/search">
+<div class="search-for">Search or Article-id</div>
+<div class="links">(<a href="/help">Help</a> | <a href="/find">Advanced search</a>)</div>
+<input type="text" name="query" size="24" maxlength="64" />
+&nbsp;
+<select name="searchtype">
+<option value="all" selected="selected">All papers</option>
+<option value="ti">Titles</option>
+<option value="au">Authors</option>
+<option value="abs">Abstracts</option>
+<option value="ft">Full text</option>
+<option value="help">Help pages</option>
+</select>
+<input type="submit" value="Go!" /><br />
+</form>
+</div>
+<div id="content">
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+    <rdf:Description
+        rdf:about="http://arxiv.org/abs/1305.2103"
+        dc:identifier="http://arxiv.org/abs/1305.2103"
+        dc:title="Translating Relational Queries into Spreadsheets"
+        trackback:ping="http://arxiv.org/trackback/1305.2103" />
+    </rdf:RDF>
+-->
+
+<div id="abs">
+<div class="extra-services">
+
+<div class="full-text">
+<span class="descriptor">Full-text links:</span>
+<h2>Download:</h2>
+<ul>
+<li><a href="/pdf/1305.2103v1" accesskey="f">PDF</a></li>
+<li><a href="/ps/1305.2103v1">PostScript</a></li>
+<li><a href="/format/1305.2103v1">Other formats</a></li>
+</ul>
+</div><!--end full-text-->
+
+<div class="browse">
+<h3>Current browse context:</h3>
+<div class="current">cs.DB</div>
+<div class="prevnext"><span class="arrow"><a href="http://arxiv.org/prevnext?site=arxiv.org&amp;id=1305.2103&amp;context=cs.DB&amp;function=prev" accesskey="p" title="previous in cs.DB (accesskey p)">&lt;&nbsp;prev</a></span>&nbsp;|&nbsp;<span class="arrow"><a href="http://arxiv.org/prevnext?site=arxiv.org&amp;id=1305.2103&amp;context=cs.DB&amp;function=next" accesskey="n" title="next in cs.DB (accesskey n)">next&nbsp;&gt;</a></span>
+<br /></div>
+<div class="list"><a href="/list/cs.DB/new">new</a>&nbsp;| <a href="/list/cs.DB/recent">recent</a>&nbsp;| <a href="/list/cs.DB/1305">1305</a></div><h3>Change to browse by:</h3><div class="switch">
+<a href="/abs/1305.2103?context=cs">cs</a>
+</div>
+
+</div>
+<div class="extra-ref-cite">
+<h3>References &amp; Citations</h3><ul><li><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1305.2103">NASA ADS</a></li>
+</ul>
+
+</div>
+<div class="dblp">
+<h3><a href="http://www.informatik.uni-trier.de/~ley/db/">DBLP</a> - CS Bibliography</h3><div class="list">
+<a href="http://www.informatik.uni-trier.de/~ley/db/journals/corr/corr1305.html#abs-1305-2103" title="listing on DBLP">listing</a> | <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1305-2103" title="DBLP bibtex record">bibtex</a>
+</div>
+<div class="list">
+<a href="http://dblp.uni-trier.de/search/author?author=Jacek%20Sroka" title="DBLP author search">Jacek Sroka</a><br />
+<a href="http://dblp.uni-trier.de/search/author?author=Krzysztof%20Stencel" title="DBLP author search">Krzysztof Stencel</a><br />
+<a href="http://dblp.uni-trier.de/search/author?author=Jerzy%20Tyszkiewicz" title="DBLP author search">Jerzy Tyszkiewicz</a><br />
+</div>
+
+</div>
+<div class="bookmarks">
+<div class="what-is-this">
+<h3>Bookmark</h3> (<a href="/help/social_bookmarking">what is this?</a>)
+</div>
+<a href="/ct?url=http%3A%2F%2Fwww.citeulike.org%2Fposturl%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26title%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets%26authors%3D&amp;v=3b1d0fc5" title="Bookmark on CiteULike"><img src="http://static.arxiv.org/icons/social/citeulike.png" alt="CiteULike logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fwww.bibsonomy.org%2FBibtexHandler%3FrequTask%3Dupload%26url%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26description%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&amp;v=84e0cf2f" title="Bookmark on BibSonomy"><img src="http://static.arxiv.org/icons/social/bibsonomy.png" alt="BibSonomy logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fwww.mendeley.com%2Fimport%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&amp;v=54e689cf" title="Bookmark on Mendeley"><img src="http://static.arxiv.org/icons/social/mendeley.png" alt="Mendeley logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Farxivpost%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&amp;v=6925907c" title="Bookmark on Facebook"><img src="http://static.arxiv.org/icons/social/facebook.png" alt="Facebook logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Flinkedin_post%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&amp;v=6be631fb" title="Bookmark on LinkedIn"><img src="http://static.arxiv.org/icons/social/linkedin.png" alt="LinkedIn logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fdel.icio.us%2Fpost%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26description%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&amp;v=c4851972" title="Bookmark on del.icio.us"><img src="http://static.arxiv.org/icons/social/delicious.png" alt="del.icio.us logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26title%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&amp;v=bf721fa1" title="Bookmark on Digg"><img src="http://static.arxiv.org/icons/social/digg.png" alt="Digg logo" /></a>
+<a href="/ct?url=http%3A%2F%2Freddit.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103%26title%3DTranslating%2520Relational%2520Queries%2520into%2520Spreadsheets&amp;v=66f82862" title="Bookmark on Reddit"><img src="http://static.arxiv.org/icons/social/reddit.png" alt="Reddit logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fsciencewise.info%2Fbookmarks%2Fadd%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.2103&amp;v=0f4d72e6" title="Bookmark on ScienceWISE"><img src="http://static.arxiv.org/icons/social/sciencewise.png" alt="ScienceWISE logo" /></a>
+
+</div>
+</div><!--end extra-services-->
+
+<div class="leftcolumn">
+<div class="subheader">
+<h1>Computer Science > Databases</h1>
+</div>
+<h1 class="title"><span class="descriptor">Title:</span>
+Translating Relational Queries into Spreadsheets</h1>
+<div class="authors"><span class="descriptor">Authors:</span>
+<a href="/find/cs/1/au:+Sroka_J/0/1/0/all/0/1">Jacek Sroka</a>, 
+<a href="/find/cs/1/au:+Stencel_K/0/1/0/all/0/1">Krzysztof Stencel</a>, 
+<a href="/find/cs/1/au:+Tyszkiewicz_J/0/1/0/all/0/1">Jerzy Tyszkiewicz</a></div>
+<div class="dateline">(Submitted on 9 May 2013)</div>
+<blockquote class="abstract">
+<span class="descriptor">Abstract:</span> Spreadsheets are among the most commonly used applications for data
+management and analysis. Perhaps they are even among the most widely used
+computer applications of all kinds. However, the spreadsheet paradigm of
+computation still lacks sufficient analysis.
+<br />In this article we demonstrate that a spreadsheet can play the role of a
+relational database engine, without any use of macros or built-in programming
+languages, merely by utilizing spreadsheet formulae. We achieve this by
+implementing all operators of relational algebra by means of spreadsheet
+functions. However, we realize also practical SQL parts that go beyond the
+algebra. They are: sorting, SQL:1999 transitive closures and genuine NULL
+values that exactly reflect the three-valued logic of SQL.
+<br />Spreadsheets serve as data storage and can execute relational queries.
+Therefore they can act as relational database management systems. Apart from
+the structural design of such a database engine we also describe our
+proof-of-concept implementation of a query compiler that accepts a user
+description of the desired query and translates it into an Excel workbook.
+Therefore, the users can define their queries using a high-level language and
+then get their execution plans in a plain vanilla spreadsheet. No sophisticated
+database system is needed.
+</blockquote>
+<!--CONTEXT-->
+<div class="metatable">
+<table summary="Additional metadata">
+<tr>
+<td class="tablecell label">Subjects:
+</td>
+<td class="tablecell subjects"><span class="primary-subject">Databases (cs.DB)</span></td>
+</tr>
+<tr>
+<td class="tablecell label">
+Cite&nbsp;as:
+</td>
+<td class="tablecell arxivid"><a href="/abs/1305.2103">arXiv:1305.2103</a> [cs.DB]</td>
+</tr>
+<tr>
+<td class="tablecell label">&nbsp;</td>
+<td class="tablecell arxividv">(or <span class="arxivid"><a href="/abs/1305.2103v1">arXiv:1305.2103v1</a> [cs.DB]</span> for this version)</td>
+</tr>
+</table>
+</div>
+<div class="submission-history">
+<h2>Submission history</h2>
+From: Jacek Sroka [<a href="http://arxiv.org/auth/show-email/f7301ea4/1305.2103">view email</a>]
+<br />
+<b>[v1]</b> Thu, 9 May 2013 14:30:12 GMT  (344kb)<br />
+</div>
+<div class="endorsers"><a href="http://arxiv.org/auth/show-endorsers/1305.2103">Which authors of this paper are endorsers?</a></div>
+</div><!--end leftcolumn-->
+</div><!--end abs-->
+</div>
+<div id="footer">
+<p>Link back to: <a href="http://arxiv.org/">arXiv</a>, <a href="/form">form interface</a>, <a href="/help/contact">contact</a>.</p>
+</div>
+</body>
+</html>

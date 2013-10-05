@@ -1,0 +1,219 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<title>Boxc Smart International Shipping</title>
+	<link href="http://boxc.com/site/css/style.css" rel="stylesheet" type="text/css" />
+	<link rel="stylesheet" href="http://boxc.com/site/css/form.css" type="text/css" media="screen" /> 
+	<script type="text/javascript" src="http://boxc.com/site/js/jquery.js"></script>
+    <script>
+		jQuery.noConflict();
+		jQuery(function() {
+		    jQuery(window).scroll(function() {
+		        if(jQuery(document).scrollTop() > 350){
+			        jQuery('#footer2').slideUp(650);
+		            
+			        }
+			    });
+			});
+		jQuery('#footer2').slideDown(500);
+	</script>
+
+	<!-- login css & js -->
+	<link rel="stylesheet" href="http://boxc.com/site/css/login_css/style.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="http://boxc.com/site/css/login_css/signup.css" type="text/css" media="screen" />
+	<link rel="stylesheet" href="http://boxc.com/site/css/login_css/fx.slide.css" type="text/css" media="screen" /> 
+	<script type="text/javascript" src="http://boxc.com/site/js/login_js/mootools-1.2.5-core-yc.js"></script> 
+	<script type="text/javascript" src="http://boxc.com/site/js/login_js/mootools-1.2-more.js"></script> 
+	<script type="text/javascript" src="http://boxc.com/site/js/login_js/fx.slide.js"></script>
+	<script type="text/javascript" src="http://boxc.com/site/js/login_js/field.validate.js"></script>	
+	<!-- login css and js -->
+
+</head>
+
+<body>
+
+    <div id="container">
+
+        <div class="clearfix"></div>
+
+<!-- / content -->
+        <div class="clearfix"></div>
+	</div><!-- / container -->
+
+<!-- main div start -->
+<div id="main">
+<!-- main div start -->
+        <!-- wrapper-header div start -->
+           <div id="wrapper-header">
+        <!-- wrapper-header div start -->
+     	
+                <!-- header start -->
+                <div id="header" class="strut">
+                   <div id="logo">
+                     <a href="http://boxc.com/site/"><img src="http://cdn.boxc.com/ext/site/logo.png" width="120px"/></a>
+                   </div>
+                   <div id="signin">
+                     <p>  <a id="toggleLogin" href="https://ship.boxc.com/account/login" ><img src="http://boxc.com/site/images/signin.png" border="0" /></a> 
+                     </p>
+                       
+                   </div>  
+                   <div style="clear:both"> 
+                   </div>
+                 </div>
+                <!-- end header -->       
+            
+        <!-- wrapper-header div end -->
+        </div>
+        <!-- wrapper-header div end -->
+        
+         <!-- wrapper-header2 div start -->
+           <div id="wrapper-header2">
+        <!-- wrapper-header2 div start -->
+                  <div id="header2" class="strut">
+                      <div id="head-text">
+                          Ship Faster & Cheaper <br />from China to USA
+                      </div>
+                      <div id="try_for_free">
+                       <a href="https://ship.boxc.com/account/register"><img id="btn_try_for_free" src="http://boxc.com/site/images/try_for_free.png" /></a>
+                       <p style="color:#ddeffb">SHIP A PACKAGE TO USA FOR FREE</p>
+                       <p style="color:#89c8f6"><small>FREE TRIAL UPTO 0.5KG</small></p>
+                       <p style="color:#ffffff; margin-top:20px; font-size: 28px">4000-88-2692</p>
+                      </div>
+                      <div style="clear:both">
+                      </div>
+                      <div id="glob_img">
+                      	                      		<img src="http://boxc.com/site/images/glob_final.png" />
+                      	                      </div>
+                 </div>
+         <!-- wrapper-header2 div end -->
+        </div>
+        <!-- wrapper-header2 div end -->
+        
+        
+		
+	<!-- wrapper-content div start -->
+	<div id="wrapper-content">
+		<!-- content div start -->
+		<div id="content">
+			<!-- main content -->
+			<div align="center">
+				
+				<style>
+					#msg_container * {font-family: Francois One; color: #aaa;}
+					#msg_container table { padding:20px 0; margin-left: auto; margin-right: auto; }
+					#msg_container h1 {line-height: 1em}
+					#msg_container p {font-size: 20px; font-weight: normal; line-height: 1.1em;}
+					#msg_container td {text-align:left; width: 250px; padding-left: 20px}
+
+				</style>
+				<div id="msg_container">
+					<table >
+						<tr>
+							<td>
+								<img src="http://boxc.com/site/images/boxc_msg1.png">
+							</td>
+							<td>
+								<h1>SHIP BETTER</h1>
+								<p>Customers see a US address for your business</p>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<h1>SHIP SMARTER</h1>
+								<p>Boxc badge on your website means more buying customers</p>
+							</td>
+							<td>
+								<img src="http://boxc.com/site/images/boxc_msg2.png">
+							</td>
+						</tr>
+					</table>
+				</div>
+				
+				
+			</div>
+			<!-- end main content -->
+		</div>
+		<!-- content div end -->
+	</div>
+	<!-- wrapper-content div end -->
+
+	<!-- wrapper-content2 div start -->
+	<div id="wrapper-content2">
+		<!-- content2 div start -->
+		<div id="content2">
+			<!-- slider -->
+			<div align="center">
+				<a href="http://boxc.com/site/index.php/howitworks"><img src="http://boxc.com/site/images/boxc_howto.jpg" /></a>
+			</div>
+			<!-- end slider --> 
+		</div>
+		<!-- content2 div end -->
+	</div>
+	<!-- wrapper-content2 div end -->
+
+
+	<!-- wrapper-footer div start -->
+	<div id="wrapper-footer">
+		<!-- footer div start -->
+		<div id="footer" class="strut">
+			<div id="footer-text">
+				1000% increase in sales for sellers with the help of  boxc logistics platform
+			</div>
+
+			<div id="f_graph">
+				<img src="http://boxc.com/site/images/footer-graph.png" />
+			</div>
+			
+			<div id="f_right">
+				<div id="quote_main" >
+					<p id="quote">" I cannot imagine my business  without Boxc.</p>
+					<p id="quote_by" >
+					-Julia Zhu <br />Bayson Global Trading
+					</p>
+				</div>
+	
+				<div id="f_photo" >
+					<img src="http://boxc.com/site/images/julia.png" />
+				</div> 
+	
+				<div style="clear:both"></div>
+			</div>
+
+			<div style="clear:both"></div>
+		</div>
+		<!-- footer div end -->
+	</div>
+	<!-- wrapper-footer div end -->
+        
+		      
+<!-- main div end -->
+</div>
+<!-- main div end -->
+<div>
+</div>
+
+<div class="new-footer">
+    <div class="links">
+        <ul class="link-a">
+            <li class="title">Company</li>
+            <li><a href="http://boxc.com/site/index.php/about">About us</a></li>
+            <li><a href="http://boxc.com/site/index.php/terms">Terms & Policies</a></li>
+        </ul>
+        <ul class="link-b">
+            <li class="title">Support</li>
+            <li><a href="http://boxc.com/site/index.php/howitworks">FAQs</a></li>
+        </ul>
+        <ul class="link-c">
+            <li class="title">Contact Us</li>
+            <li><a href="https://ship.boxc.com/site/contact"><img src="http://boxc.com/site/images/icon_phone.png" /></a> <a href="https://ship.boxc.com/site/contact"><img src="http://boxc.com/site/images/icon_email.png" /></a></li>
+        </ul>
+    </div>
+    <div class="line"></div>
+    <div class="copyright">&copy; 2010-2013 Boxc Logistics Inc.</div>
+</div>
+
+
+</body>
+</html>
+ 

@@ -1,0 +1,3153 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta http-equiv="X-UA-Compatible" content="IE=10; IE=9; IE=8" /><meta name="robots" content="index,follow" /><meta name="keywords" content="Windows 8, Editions, Upgrade, Windows 8.1 Pro Pack, Windows 7, Pricing, Windows 8.1, Windows Vista, Windows XP, Packaging, Windows Media Center, Windows 8.1 Pro" /><meta name="GENERATOR" content="7.x Production" /><link rel="pingback" href="http://blogs.windows.com/windows/b/bloggingwindows/pingback.aspx" />
+<link rel="alternate" type="application/rss+xml" title="Windows (RSS 2.0)" href="http://blogs.windows.com/windows/rss.aspx"  />
+<link rel="alternate" type="application/rss+xml" title="Blogging Windows (RSS 2.0)" href="http://blogs.windows.com/windows/b/bloggingwindows/rss.aspx"  />
+<link rel="alternate" type="application/atom+xml" title="Blogging Windows (Atom 1.0)" href="http://blogs.windows.com/windows/b/bloggingwindows/atom.aspx"  />
+<link rel="alternate" type="application/rss+xml" title="Blogging Windows - All Comments (RSS 2.0)" href="http://blogs.windows.com/windows/b/bloggingwindows/rsscomments.aspx"  />
+<link rel="alternate" type="application/rss+xml" title="Pricing and Packaging for Windows 8.1 - Comments for this post (RSS 2.0)" href="http://blogs.windows.com/windows/b/bloggingwindows/rsscomments.aspx?WeblogPostID=589057"  />
+
+            <link rel="stylesheet" href="/themes/generic/css/layout.css?LastChanged=634856417640000000" type="text/css" media="screen" />
+        <script type="text/javascript" src="/utility/jquery/jquery-1.7.2.min.js?LastChanged=634744956400000000"></script><script type="text/javascript" src="/utility/jquery/telligent.glow.min.js?LastChanged=634904989040000000"></script><script type="text/javascript" src="/utility/jquery/jquery.validate.min.js?LastChanged=634744981740000000"></script><script type="text/javascript">
+// <![CDATA[
+try { jQuery.extend(jQuery.validator.messages,{required:'This field is required.',remote:'Please fix this field.',date:'Please enter a valid date.',dateISO:'Please enter a valid date (ISO).',number:'Please enter a valid number.',digits:'Please enter only digits.',creditcard:'Please enter a valid credit card number.',equalTo:'Please enter the same value again.',accept:'Please enter a value with a valid extension.',maxlength:jQuery.validator.format('Please enter no more than {0} characters.'),minlength:jQuery.validator.format('Please enter at least {0} characters.'),rangelength:jQuery.validator.format('Please enter a value between {0} and {1} characters long.'),range:jQuery.validator.format('Please enter a value between {0} and {1}.'),max:jQuery.validator.format('Please enter a value less than or equal to {0}.'),min:jQuery.validator.format('Please enter a value greater than or equal to {0}.')}); } catch(e) { };
+// ]]>
+</script><script type="text/javascript" src="/utility/jquery/telligent.evolution.min.js?LastChanged=635025192900000000"></script><script type="text/javascript" src="/utility/images/glow/plupload.silverlight.js?LastChanged=634795299340000000"></script><script type="text/javascript">
+// <![CDATA[
+try { jQuery.telligent.evolution.site.configure({baseUrl:'\/',monthNames:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'],dayNames:['Sun','Mon','Tue','Wed','Thu','Fri','Sat'],authorizationCookieName:'AuthorizationCookie',defaultErrorMessage:'An error occurred.  Please try again or contact your administrator.',defaultMultiErrorMessagePrefix:'The following errors occurred:  ',silverlightFileUploadEnabled:true});
+jQuery.extend($.fn.evolutionUserFileTextBox.defaults,{removeText:'Remove',selectText:'Select\/Upload...',noFileText:'No File Selected'});
+jQuery.telligent.evolution.navigationConfirmation.configure({message:'==============================\r\nUnless you save before leaving this page, you will lose any changes you have made.\r\n=============================='});
+jQuery.telligent.evolution.validation.registerExtensions({passwordInvalidMessage:'Password contains invalid chars ...',passwordRegex:'^.*$',emailInvalidMessage:'Your email address is invalid.',emailRegex:'^\\w+([-+.]\\w+)*@\\w+([-.]\\w+)*\\.\\w+([-.]\\w+)*$',usernameInvalidMessage:'Your sign in name does not meet the requirements for this site.',usernameRegex:'^[a-zA-Z0-9_\\- @\\.]+$',emailsInvalidMessage:'One or more emails is invalid',urlInvalidMessage:'URL not in correct format',urlRegex:'^((http|https|mailto|mms):|\/|#|~\/)'});
+jQuery.extend(jQuery.fn.evolutionLike.defaults,{likeText:'Like',unlikeText:'Unlike',modalTitleText:'People who like this',modalShowMoreText:'Show More',whoLikesOtherText:'<a href=\"{user_profile_url}\" class=\"internal-link view-user-profile\">{user_display_name}<\/a> likes this',whoLikesOtherTwoText:'<a href=\"{user_profile_url}\" class=\"internal-link view-user-profile\">{user_display_name}<\/a> and <span class=\"who-likes\">1 other<\/span> like this',whoLikesOtherMultipleText:'<a href=\"{user_profile_url}\" class=\"internal-link view-user-profile\">{user_display_name}<\/a> and <span class=\"who-likes\">{count} others<\/span> like this',whoLikesAccessingText:'You like this',whoLikesAccessingTwoText:'You and <span class=\"who-likes\">1 other<\/span> like this',whoLikesAccessingMultipleText:'You and <span class=\"who-likes\">{count} others<\/span> like this'});
+jQuery.extend(jQuery.fn.evolutionInlineTagEditor.defaults,{editButtonText:'Edit tags',selectTagsText:'Select tags',saveTagsText:'Save',cancelText:'Cancel'});
+jQuery.extend(jQuery.fn.evolutionStarRating.defaults,{titles:['Terrible','Poor','Fair','Average','Good','Excellent'],ratingMessageFormat:'Average rating: {rating} out of {count} ratings.'});
+jQuery.extend(jQuery.fn.evolutionModerate.defaults,{moderateLinkText:'moderate',reportLinkText:'Flag as spam\/abuse',reportedLinkText:'Flagged as spam\/abuse',reportedNotificationMessageText:'{NAME}\'s post has been flagged. <strong>Thank you for your feedback.<\/strong>'});
+} catch(e) { };
+// ]]>
+</script><script type="text/javascript">
+(function($){
+$.telligent.evolution.ui.components['forumreplystory-parent']  = {
+	add: function(elm, options) {
+        var elm = $(elm), parent = null;
+		elm.bind('click', function(e){
+            e.preventDefault();
+			parent = parent || $('#' + elm.data('parent'));
+            if(parent.is(':visible')) {
+                parent.stop().slideUp(150);
+                elm.html('View original post');
+            } else {
+                parent.stop().slideDown(150);
+                elm.html('Hide original post');
+            }
+		});
+	}
+};
+}(jQuery));
+</script><script type="text/javascript">
+(function($){
+$.telligent.evolution.ui.components['wikipagestory-revisions']  = {
+	add: function(elm, options) {
+        var elm = $(elm), revisions;
+		elm.bind('click', function(e){
+			revisions = revisions || $('#' + elm.data('revisions'));
+            e.preventDefault();
+            if(revisions.is(':visible')) {
+                revisions.stop().slideUp(150);
+                elm.html('Show revision history');
+            } else {
+                revisions.stop().slideDown(150);
+                elm.html('Hide revision history');
+            }
+		});
+	}
+};
+}(jQuery));
+</script><script type="text/javascript">(function($){ $.telligent.evolution.media.defaults.endpoint = 'http://blogs.windows.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.FileViewerEndpoint%2C%20Telligent.Evolution.Api%2C%20Version%3D7.1.5.32650%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull'; }(jQuery));</script><script type="text/javascript">(function($){ $.telligent.evolution.preview.defaults.endpoint = 'http://blogs.windows.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.WebPreviewEndpoint%2C%20Telligent.Evolution.Api%2C%20Version%3D7.1.5.32650%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull'; }(jQuery));</script><script type="text/javascript">(function($){ $.telligent.evolution.language.defaults.dateEndpoint = 'http://blogs.windows.com/callback.ashx?__type=Telligent.Evolution.Api.Plugins.Endpoints.DateFormattingEndpoint%2C%20Telligent.Evolution.Api%2C%20Version%3D7.1.5.32650%2C%20Culture%3Dneutral%2C%20PublicKeyToken%3Dnull'; }(jQuery));</script>
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="shortcut icon" type="image/ico" href="http://blogs.windows.com/favicon.ico" />
+<meta name="msapplication-TileImage" content="http://blogs.windows.com/cfs-filesystemfile.ashx/__key/themefiles/s-e7927559fb9d4fdbb89610a6752621f9-files/blog_2D00_tile.png"/>
+
+        <link type="text/css" rel="stylesheet" href="http://blogs.windows.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000000a6121af-s-e7927559fb9d4fdbb89610a6752621f9-cssfiles-http-blogswindowscom-80/screen.css" media="screen,print" /><link type="text/css" rel="stylesheet" href="http://blogs.windows.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000000a6121af-s-e7927559fb9d4fdbb89610a6752621f9-cssfiles-http-blogswindowscom-80/WindowsTeamBlog.css" media="screen,print" /><link type="text/css" rel="stylesheet" href="http://blogs.windows.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000000a6121af-s-e7927559fb9d4fdbb89610a6752621f9-cssfiles-http-blogswindowscom-80/wtb_5F00_blogstyle.css" media="screen,print" /><!--[if lte IE 6]><link type="text/css" rel="stylesheet" href="http://blogs.windows.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000000a6121af-s-e7927559fb9d4fdbb89610a6752621f9-ie6cssfiles-http-blogswindowscom-80/ie6.css" media="screen,print" /><![endif]--><link type="text/css" rel="stylesheet" href="http://blogs.windows.com/cfs-filesystemfile.ashx/__key/themefiles/h-000000000a6121af-s-e7927559fb9d4fdbb89610a6752621f9-printcssfiles-http-blogswindowscom-80/print.css" media="print" />
+          <link type="text/css" rel="stylesheet" href="/themes/generic/css/dynamic-style.aspx?PreviewKey=0&amp;Theme=e7927559fb9d4fdbb89610a6752621f9" media="screen,print" />
+        
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+          <link type="text/css" rel="stylesheet" href="/themes/groups/generic/css/dynamic-style.aspx?GroupID=6&amp;PreviewKey=0&amp;Theme=e7927559fb9d4fdbb89610a6752621f9" media="screen,print" />
+        
+          <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+        
+          <link type="text/css" rel="stylesheet" href="/themes/blogs/generic/css/dynamic-style.aspx?AppType=Weblog&amp;WeblogID=5923&amp;PreviewKey=0&amp;Theme=e7927559fb9d4fdbb89610a6752621f9" media="screen,print" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<html xmlns:fb="http://ogp.me/ns/fb#">
+<meta name="google-site-verification" content="MR0-EG7HvEmmcBDvvgly01JZQPLchgjmhhW3v4b9K_A" />
+<meta property="fb:admins" content="791640713" />
+<meta property="og:title"/>
+<meta property="og:site_name"/>
+<meta name="msvalidate.01" content="47838FAB24B726A5BAE34ED7E2A59D97" />
+<link rel="alternate" type="application/rss+xml" title="The Windows Blog (RSS 2.0)" href="http://blogs.windows.com/b/MainFeed.aspx"  />
+<link href="http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/favicon_5F00_new.ico" rel="shortcut icon" />
+
+<meta name="application-name" content="The Windows Blog"/>          
+<meta name="msapplication-TileColor" content="#7700AC"/>
+<meta name="msapplication-square70x70logo" content="http://blogs.windows.com/cfs-file.ashx/__key/communityserver-components-sitefiles/tiles/live_2D00_tile_2D00_small.png"/>
+<meta name="msapplication-square150x150logo" content="http://blogs.windows.com/cfs-file.ashx/__key/communityserver-components-sitefiles/tiles/live_2D00_tile_2D00_medium.png"/>
+<meta name="msapplication-wide310x150logo" content="http://blogs.windows.com/cfs-file.ashx/__key/communityserver-components-sitefiles/tiles/live_2D00_tile_2D00_wide.png"/>
+<meta name="msapplication-square310x310logo" content="http://blogs.windows.com/cfs-file.ashx/__key/communityserver-components-sitefiles/tiles/live_2D00_tile_2D00_large.png"/>
+<meta name="msapplication-notification" content="frequency=30; polling-uri=http://notifications.buildmypinnedsite.com/?feed=http://blogs.windows.com/b/mainfeed.aspx&id=0; polling-uri2=http://notifications.buildmypinnedsite.com/?feed=http://blogs.windows.com/b/mainfeed.aspx&id=1; polling-uri3=http://notifications.buildmypinnedsite.com/?feed=http://blogs.windows.com/b/mainfeed.aspx&id=2; polling-uri4=http://notifications.buildmypinnedsite.com/?feed=http://blogs.windows.com/b/mainfeed.aspx&id=3; polling-uri5=http://notifications.buildmypinnedsite.com/?feed=http://blogs.windows.com/b/mainfeed.aspx&id=4; cycle=1"/>
+
+<meta name="msapplication-task" content="name=Subscribe to RSS;action-uri=http://blogs.windows.com/b/MainFeed.aspx;icon-uri=http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/rss.ico"/>
+<meta name="msapplication-task" content="name=Follow @windowsblog;action-uri=http://www.twitter.com/windowsblog;icon-uri=http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/twitter.ico"/>
+
+<script type='text/javascript'>
+
+function customJumplist() {
+window.external.msSiteModeCreateJumplist('Blogs');
+window.external.msSiteModeAddJumpListItem('Blog Directory', 'http://blogs.windows.com/b/','http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/bloglist.ico');
+window.external.msSiteModeAddJumpListItem('Windows for your Business Blog', 'http://blogs.windows.com/windows/b/business/', 'http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/windows.ico');
+window.external.msSiteModeAddJumpListItem('Windows Experience Blog', 'http://blogs.windows.com/windows/b/windowsexperience/', 'http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/windows.ico');
+window.external.msSiteModeAddJumpListItem('Windows Phone Blog', 'http://blogs.windows.com/windows_phone/b/windowsphone/', 'http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/winphone.ico');
+window.external.msSiteModeAddJumpListItem('Exploring IE', 'http://blogs.windows.com/ie/b/ie/', 'http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/ie2.ico');
+window.external.msSiteModeAddJumpListItem('Inside Windows Live', 'http://blogs.windows.com/windows_live/b/windowslive/', 'http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/windows.ico');
+window.external.msSiteModeAddJumpListItem('Blogging Windows', 'http://blogs.windows.com/windows/b/bloggingwindows/', 'http://blogs.windows.com/cfs-file.ashx/__key/CommunityServer-Components-SiteFiles/icons/windows.ico');
+window.external.msSiteModeShowJumplist(); 
+}
+
+try { 
+    if (window.external.msIsSiteMode()) { 
+       // YOUR CODE HERE
+      customJumplist();
+    } 
+    else {
+      // DO NOTHING
+    }
+} 
+catch (e) { 
+    // DO NOTHING
+}
+
+</script>
+
+<script type="text/javascript" src="badge.js?icon=http://js.live.net/static/img/SharingBadge22x22Orange.png&amp;meta=oexchange&amp;utm_source=WL&amp;utm_medium=Newsfeed&amp;utm_campaign=Sharing%20and%20social&amp;utm_content=Status"></script>
+
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.windows.com/windows/b/bloggingwindows/rsd.ashx" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" title="WLWManifest" href="http://blogs.windows.com/windows/b/bloggingwindows/wlwmanifest.ashx" />
+<title>
+	Pricing and Packaging for Windows 8.1
+</title></head>
+	<body spellcheck="true">
+		<form name="aspnetForm" method="post" action="/windows/b/bloggingwindows/archive/2013/09/17/pricing-and-packaging-for-windows-8-1.aspx" id="aspnetForm">
+<div>
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKLTM1MjQyMzYwMmRkyoa1rI/6O0TptNFmFSmBvwQgSFGQpX+YW0dfEsKeUao=" />
+</div>
+
+
+<script src="/WebResource.axd?d=-eq84QBkyg3dVlJHCePhPT7jmvHF-040CiIf8cGFPsYHJILifP0oMCasnaIZHDgcS8mCwV6IcxTbV1sE27qBzualhg6rOA4GAx3P1bTWnueLBS8I0D3XpCrWl95Zo1W9_6dfCxbRFwPh7FEQy66nqgtgeVJo86h_H2nvKQBe84MzNsHO_vczWZZI69AbyPpN4i4y6Dh7bbuF61pnu5da52_LjqCAs6-kSSGE6vzOMxc1&amp;t=635025757440000000" type="text/javascript"></script>
+<script src="/WebResource.axd?d=D76hQKsGYxE7yYnObCw7OBXrkAiezWdKSPy5bh_ukNjY7gZDg5QmlyWFMg8pxKgPMCvIrL1OE6_u4dZS_8oOs7plWKDwKgpngQnKfyw90MJ05B3uHKnjDhjFfYS3IBV1r0gTyaBTyFfZmD4scb6HytCc1K5GU1pi5i8YpUnHShvaN-UyiEwiQ49ZIrTn9n1-xL21JaJV-YNMolIcgyEjz5CBv4J_sBtHLPGcmgEEDwk1&amp;t=635025757760000000" type="text/javascript"></script>
+<script src="/WebResource.axd?d=gTamtZ6F0gRTBoflp70Yz8gnootPeFHzxFsJMDOiwnbC_YNJ1g9r_vHpdvcOyLJ78594l2Eg7eGxkU_axuNyWYNuzpJ9CxPVSAcnOneEiG98bvSwOh2mhMq2V1BP8bzmUBCqZsIlm4Ilnx5I1XY1IbJuDBqEiHGgtWcl5v3yJR81&amp;t=634904775000000000" type="text/javascript"></script>
+<script src="/WebResource.axd?d=9qSawzbj_uSMFeMbd0Q_ZC3t5yeBCI0K4C-Oak1-r92yrdd_zZGRvsSaxd4oxvHAqgGhhpOH4NCpejfAXL3kNtQxLO3nZBVaoJdA0RyKUgn8AJCVjsWDLESwvewyIkCC3vLpki6ofKl6kLBeazlo8zf0jjZsAMuRyLKFMiu66jC5zmGUJbnmxUElTXqLM1Kc0&amp;t=634904775000000000" type="text/javascript"></script>
+			
+                
+            
+            
+                <div class="header-fragments-header"></div>
+<div class="header-fragments" id="ctl00_header_ctl00_page"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content header-top-split-content-footer" id="ctl00_header_ctl00_layout">
+<div class="layout-region header empty" id="ctl00_header_ctl00_header">
+<div class="layout-region-inner header"></div>
+</div>
+<div class="layout-region right-sidebar" id="ctl00_header_ctl00_right-sidebar">
+<div class="layout-region-inner right-sidebar"><div class="content-fragment site-search no-wrapper" id="header-17">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div class="field-list-header"></div>
+<fieldset class="field-list">
+	<ul class="field-list">
+		<li class="field-item">
+			<label class="field-item-header query" for="header-17_query">Search</label>
+			<span class="field-item-input"><input type="text" id="header-17_query" length="15" maxlength="64" class="search empty" /></span>
+		</li>
+					<li class="field-item">
+				<span class="field-item-input">
+					<a class="internal-link search-options" id="header-17_options" title="Change Search Scope">&nbsp;</a>
+				</span>
+			</li>
+			</ul>
+</fieldset>
+<div class="field-list-footer"></div>
+
+	<div id="header-17_filter-options" style="display: none;">
+		<div class="field-list-header"></div>
+		<fieldset class="field-list">
+			<legend class="field-list-description">Search Options</legend>
+			<ul class="field-list">
+				<li class="field-item">
+					<label class="field-item-header" for="header-17_filter">Search Everything</label>
+					<span class="field-item-input"><input type="radio" value="" name="header-17_filter" id="header-17_filter" /></span>
+				</li>
+				<li class="field-item">
+					<label class="field-item-header" for="header-17_filter">Search Windows</label>
+					<span class="field-item-input"><input type="radio" value="6" name="header-17_filter" id="header-17_filter" /></span>
+				</li>
+			</ul>
+		</fieldset>
+		<div class="field-list-footer"></div>
+	</div>
+
+</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment site-user-navigation no-wrapper" id="header-18">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div class="navigation-list-header"></div>
+<ul class="navigation-list">
+																															<li class="navigation-item user-registration"><a href="/user/createuser.aspx?ReturnUrl=%2Fwindows%2Fb%2Fbloggingwindows%2Farchive%2F2013%2F09%2F17%2Fpricing-and-packaging-for-windows-8-1.aspx" class="internal-link user-registration"><span></span>Join</a></li>
+																													<li class="navigation-item login"><a href="/login.aspx?ReturnUrl=%2Fwindows%2Fb%2Fbloggingwindows%2Farchive%2F2013%2F09%2F17%2Fpricing-and-packaging-for-windows-8-1.aspx" class="internal-link login"><span></span>Sign in </a></li>
+																							</ul>
+<div class="navigation-list-footer"></div>
+
+
+			</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+</div>
+</div>
+<div class="layout-region content" id="ctl00_header_ctl00_content">
+<div class="layout-region-inner content"><div class="content-fragment html-content no-wrapper" id="header-19">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div class="user-defined-markup" style="">
+<div class="site-banner">
+<div class="site-logo"><a href="http://blogs.windows.com/"><img src="http://blogs.windows.com/cfs-file.ashx/__key/widgetcontainerfiles/e7927559fb9d4fdbb89610a6752621f9-0c647246673542f9875dc8b991fe739b-_2D00_1-header-header/1136188573_2D00_windows_5F00_header_5F00_logo.png" alt=" " style="border-width:0px;" /></a></div>
+</div>
+<div class="site-banner-footer"></div>
+</div>
+		</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment navigation-group no-wrapper" id="header-20">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div id="header-20_parentGroupListContainer" class="parent-container" style="width:100%;">
+	<div class="parent-sub-container">
+		<div class="navigation-list-header parent"></div>
+		<ul class="navigation-list parent">
+			<li class="navigation-item" style="display:none;"><a href="/">Home</a></li>
+										<li class="navigation-item entry" style="display:none;"><a href="/" class="internal-link view-group" id="Group_e2b79601-5e4c-48e2-8da6-2d2c4a827d5d"><span></span>Home</a></li>
+							<li class="navigation-item entry" style="display:none;"><a href="/b/" class="internal-link view-group" id="Group_7ebe1b7e-d294-48f6-b965-3a65e640e6d8"><span></span>Blogs</a></li>
+							<li class="navigation-item entry" style="display:none;"><a href="http://youtube.com/windows" class="internal-link view-group" id="Group_2522140d-7a05-44c7-8657-65da3091c58c"><span></span>Videos</a></li>
+							<li class="navigation-item entry" style="display:none;"><a href="http://Windows.com" class="internal-link view-group" id="Group_154c1c14-f464-4e35-be55-679f99034338"><span></span>Windows.com</a></li>
+							<li class="navigation-item entry" style="display:none;"><a href="http://www.microsoft.com/en-us/news/presskits/windows/default.aspx" class="internal-link view-group" id="Group_2cf38974-49c0-4ff5-943e-8ebd25903af7"><span></span>Newsroom</a></li>
+						<li class="navigation-item last" style="display:none;"><a class="internal-link view-more" href="#" id="Group_More">More ...</a></li>
+		</ul>
+		<div class="navigation-list-footer parent"></div>
+	</div>
+</div>
+
+			</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+</div>
+</div>
+<div class="layout-region footer empty" id="ctl00_header_ctl00_footer">
+<div class="layout-region-inner footer"></div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div></div><div class="header-fragments-footer"></div>
+            
+			
+    <div class="content-fragment-page post" id="ctl00_content_ctl00_page"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content header-top-content-left-sidebar-right" id="ctl00_content_ctl00_layout">
+<div class="layout-region header" id="ctl00_content_ctl00_header">
+<div class="layout-region-inner header"><div class="content-fragment blog-title full-border" id="fragment-4944">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+	
+	<h1 class="title">Pricing and Packaging for Windows 8.1</h1>
+</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment wtb-blog-banner no-wrapper" id="fragment-4945">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+      <div class="wtb-blog-banner-header"></div>
+                              <div class="blog-title"><a href="http://blogs.windows.com/windows/b/bloggingwindows/default.aspx">Blogging Windows</a></div>
+                          <div class="user-defined-markup" style="">
+      
+      </div>
+      </div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+</div>
+</div>
+<div class="layout-region right-sidebar" id="ctl00_content_ctl00_right-sidebar">
+<div class="layout-region-inner right-sidebar"><div class="content-fragment blog-links full-border with-header" id="fragment-4946">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-header"><div>
+Syndication
+			</div></div>
+<div class="content-fragment-content">
+
+
+<div class="navigation-list-header"></div>
+<ul class="navigation-list">
+															<li class="navigation-item"><a href="/windows/b/bloggingwindows/rss.aspx" class="internal-link rss"><span></span>RSS for posts</a></li>
+																													<li class="navigation-item"><a href="/windows/b/bloggingwindows/atom.aspx" class="internal-link rss"><span></span>Atom</a></li>
+															</ul>
+<div class="navigation-list-footer"></div>
+			</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment raw-html full-border with-header" id="fragment-4947">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-header"><div>Translate</div></div>
+<div class="content-fragment-content">
+<div class="user-defined-markup"><div class="small-font">
+<p>
+Select a language to translate this page!
+</p>
+<p><div id="MicrosoftTranslatorWidget" style="display:none;"></div>
+<select id="langlist" onchange="javascript:doChange()"><option class="notranslate">Select Language</option><option class="notranslate" value="org123">Original Language</option><option value="ar">Arabic</option><option value="bg">Bulgarian</option><option value="ca">Catalan</option><option value="zh-chs">Chinese Simplified</option><option value="zh-cht">Chinese Traditional</option><option value="cs">Czech</option><option value="da">Danish</option><option value="nl">Dutch</option><option value="et">Estonian</option><option value="fi">Finnish</option><option value="fr">French</option><option value="de">German</option><option value="el">Greek</option><option value="ht">Haitian Creole</option><option value="he">Hebrew</option><option value="hi">Hindi</option><option value="mww">Hmong Daw</option><option value="hu">Hungarian</option><option value="id">Indonesian</option><option value="it">Italian</option><option value="ja">Japanese</option><option value="ko">Korean</option><option value="lv">Latvian</option><option value="lt">Lithuanian</option><option value="no">Norwegian</option><option value="pl">Polish</option><option value="pt">Portuguese</option><option value="ro">Romanian</option><option value="ru">Russian</option><option value="sk">Slovak</option><option value="sl">Slovenian</option><option value="es">Spanish</option><option value="sv">Swedish</option><option value="th">Thai</option><option value="tr">Turkish</option><option value="uk">Ukrainian</option><option value="vi">Vietnamese</option></select></p>
+
+<span class="notranslate"></span>
+
+<p>
+<img src="https://translator.blob.core.windows.net/javascript/MSTIcon24.png"></img><a href="http://www.microsofttranslator.com/widget"> Powered by Microsoft® Translator</a>
+</p>
+</div>
+<script type="text/javascript" src="http://translator.blob.core.windows.net/javascript/lmtrans2.js"></script>
+</div></div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+</div>
+</div>
+<div class="layout-region content" id="ctl00_content_ctl00_content">
+<div class="layout-region-inner content"><div class="content-fragment WTB-blog-post-header no-wrapper" id="fragment-4948">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+
+<div class="blogpostheader-header"></div>
+<div class="blogpostheader">
+  <h3 class="post-name">Pricing and Packaging for Windows 8.1</h3>
+  <div class="wtb-post-body"> 
+    <div class="post-metadata">
+      <div class="post-date">Posted on: Sep 17, 2013</div>
+        <div class="username">
+          &nbsp;by&nbsp;
+                      <a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+            <span></span>Brandon LeBlanc
+            </a>
+                  </div>
+      <div class="post-commentshell">
+        <div class="post-comment-count"><a href="#comments" class="internal-link view-replies"><span></span>47</a></div>
+      </div>
+      <div class="post-rating-shell">
+        <div class="post-rating"><span class="ui-rate" data-contentid="d2d10a7a-3829-4127-a790-737673624066" data-contenttypeid="f7d226ab-d59f-475c-9d22-4a79e3f0ec07" data-readonly="true" data-initialvalue="0.86666666" data-initialcount="3" data-configuration="" ></span></div>
+      </div>
+      <div class="post-twitter-shell">
+        <!--tweet button-->
+        <div class="tweetcount"></div>
+      </div>
+      <div class="post-facebook-shell"></div>
+    </div>
+    <div class="post-attributes">
+      <div class="attribute-list-header"></div>
+      <ul class="attribute-list">
+        <li class="attribute-item post-reply-count">
+          <span class="attribute-name">Comments</span>
+          <span class="attribute-value"><a href="#comments" class="internal-link view-replies"><span></span>47</a></span>
+        </li>
+        <li class="attribute-item post-like-count">
+          <span class="attribute-name">Likes</span>
+          <span class="attribute-value"><span class="ui-like" data-contentid="d2d10a7a-3829-4127-a790-737673624066" data-contenttypeid="f7d226ab-d59f-475c-9d22-4a79e3f0ec07" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="{count}" data-configuration="Format=%7Bcount%7D" ></span></span>
+        </li>
+      </ul>
+      <div class="attribute-list-footer"></div>
+    </div> 
+  </div>        
+</div>
+<div class="blogpostheader-footer clear"></div></div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment raw-html no-wrapper" id="fragment-4949">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+<div class="user-defined-markup"><div class="post-social">
+      <div class="twitter">
+        <a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-via="windowsblog">Tweet</a>
+        <script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+      </div>
+    </div></div></div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment WTB-blog-content no-wrapper" id="fragment-4950">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div class="full-post-header clear"></div>
+<div class="full-post">
+  <div class="post-content user-defined-markup"><p>For consumers with Windows 8 devices today, Windows 8.1 will be a free update via an easy download from the Windows Store* <a href="/windows/b/bloggingwindows/archive/2013/08/14/mark-your-calendars-for-windows-8-1.aspx">starting on October 18th</a>**. Windows 8.1 will be a must-have update for those devices - bringing new features and improvements such as greater personalization, Bing Smart Search, and <a href="/windows/b/windowsexperience/archive/2013/08/15/everything-you-need-right-from-the-start.aspx">more than 20 new and improved Microsoft apps and services</a>. We are excited to be delivering such an important update to customers in just one month and nearly a year after launching Windows 8. However we also recognize there will be some folks who may want to upgrade devices running older versions of Windows to Windows 8.1. The information in this blog post is meant for those people.</p>
+<p>Consumers who are not using a Windows 8 device will be able to buy Windows 8.1, either as a download from Windows.com or at your local store as a retail packaged DVD product. While pricing varies by market, in the U.S., Windows 8.1 will be available for $119.99 ERP (U.S.) and Windows 8.1 Pro will be available for $199.99 ERP (U.S.). The pricing and editions for Windows 8.1 are similar to what we have today for Windows 8.</p>
+<p><a href="/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-59-23-metablogapi/Win8.1_5F00_Boxshot_5F00_LeftAngle_5F00_524993DF.png"><img width="186" height="240" title="Win8.1_Boxshot_LeftAngle" style="border: 0px currentcolor; display: inline; background-image: none;" alt="Win8.1_Boxshot_LeftAngle" src="/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-59-23-metablogapi/Win8.1_5F00_Boxshot_5F00_LeftAngle_5F00_thumb_5F00_02073C5F.png" border="0" /></a><a href="/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-59-23-metablogapi/Win8.1_5F00_Pro_5F00_Boxshot_5F00_LeftAngle_5F00_56567262.png"><img width="186" height="240" title="Win8.1_Pro_Boxshot_LeftAngle" style="border: 0px currentcolor; display: inline; background-image: none;" alt="Win8.1_Pro_Boxshot_LeftAngle" src="/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-59-23-metablogapi/Win8.1_5F00_Pro_5F00_Boxshot_5F00_LeftAngle_5F00_thumb_5F00_5173BEA6.png" border="0" /></a><a href="/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-59-23-metablogapi/Win8.1_5F00_ProPack_5F00_Boxshot_5F00_LeftAngle_5F00_735F212A.png"><img width="186" height="240" title="Win8.1_ProPack_Boxshot_LeftAngle" style="border: 0px currentcolor; display: inline; background-image: none;" alt="Win8.1_ProPack_Boxshot_LeftAngle" src="/cfs-file.ashx/__key/communityserver-blogs-components-weblogfiles/00-00-00-59-23-metablogapi/Win8.1_5F00_ProPack_5F00_Boxshot_5F00_LeftAngle_5F00_thumb_5F00_4E6160B1.png" border="0" /></a></p>
+<p>One shift to note in Windows 8.1 is that we will be offering &ldquo;full version software&rdquo; at retail and online for download that does not require a previous version of Windows in order to be installed. The copy of Windows 8 that is currently available for sale at retail and online is an &ldquo;upgrade version.&rdquo; This shift allows more flexibility for customers in specific technical scenarios and is in response to feedback we&rsquo;ve received. It will be easier for those consumers who want to build PCs from scratch, run Windows 8.1 in Virtual Machine (VM) environments, or run Windows 8.1 on a second hard drive partition.</p>
+<p>For non-Windows 8 devices, here is how upgrading to Windows 8.1 using the retail DVD and download software will work:</p>
+<ul>
+<li><b>Windows 7:</b> Consumers can upgrade a Windows 7 PC which will bring along all their files, but will require them to reinstall desktop apps including Microsoft Office.</li>
+<li><b>Windows XP &amp; Windows Vista:</b> Windows 8.1 is not designed for installation on devices running Windows XP or Windows Vista. Although not designed or recommended for devices running Windows XP or Windows Vista, consumers still wanting to upgrade from Windows XP or Windows Vista should buy the retail DVD instead of using the download and boot from the DVD to do a clean install of Windows 8.1. Note: files, settings and programs will not transfer &ndash; Consumers will need to back up their files and settings, perform clean installation, and then reinstall their files, settings and programs.</li>
+</ul>
+<p>If you buy a device later this year that comes with the Windows 8.1 edition, you will be able to purchase the Windows 8.1 Pro Pack for $99.99 ERP (U.S.), which unlocks all of the great features unique to Pro, as well as Windows Media Center. If you are on Windows 8.1 Pro, you can buy Windows Media Center for $9.99 (U.S.).</p>
+<p>If you are on the market for a new device today, I suggest taking advantage of our <a href="http://windows.microsoft.com/en-us/windows/pc-selector?skipintro=true&amp;ocid=GA8_O_WOL_Dis_DS_PCSel_Null">PC Selector</a>to find the right Windows 8 device that is perfect for you. And remember, you will be able to update your device to Windows 8.1 for free through the Windows Store.</p>
+<p><a href="/windows/b/bloggingwindows/archive/2013/05/30/continuing-the-windows-8-vision-with-windows-8-1.aspx">Windows 8.1 evolves Windows 8</a>, bringing the latest advancements in hardware, apps and services and the OS to enable a unique experience in everything you do.</p>
+<p>More to come on Windows 8.1 including new devices and retail offers as we near October 18th!</p>
+<p><i>* Internet access required; fees may apply.<br />** Starting at 12:00am on October 18th in New Zealand (that&rsquo;s 4:00am October 17th in Redmond).</i></p><div style="clear:both;"></div></div>
+    <div class="post-attachment-viewer">
+            </div>
+            <div class="post-tags">
+            <span class="tag-title">Tags: </span>
+                        <span class="ui-tag" data-contentid="d2d10a7a-3829-4127-a790-737673624066" data-contenttypeid="f7d226ab-d59f-475c-9d22-4a79e3f0ec07" data-urlformat="http://blogs.windows.com/windows/b/bloggingwindows/archive/tags/{tag}/default.aspx" data-readonly="true" data-tags="Windows 8,Editions,Upgrade,Windows 8.1 Pro Pack,Windows 7,Pricing,Windows 8.1,Windows Vista,Windows XP,Packaging,Windows Media Center,Windows 8.1 Pro" data-configuration="" ></span>
+        </div>
+    
+		
+    <div class="post-moderate">
+            </div>
+    <div class="clear"></div>
+</div>
+<div class="full-post-footer clear"></div></div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment wtb-comment-banner no-wrapper" id="fragment-4951">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+                        <div class="blog-banner" >
+        <div class="content-list-header"></div>
+	      <div class="content-list-name">
+       <a name="comments"></a> 47 Comments
+ 	      </div>
+      </div></div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment comment-message no-wrapper" id="fragment-4952">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+
+      
+      <link rel="stylesheet" type="text/css" href="/cfs-filesystemfile.ashx/__key/widgetfiles/ffbe26ae2ee5462db57bf0dd654f26c0-d/screen.css" />
+      <div class="comment-message-inner">
+                  You must be logged in to comment. <a href='/login.aspx?ReturnUrl=%2Fwindows%2Fb%2Fbloggingwindows%2Farchive%2F2013%2F09%2F17%2Fpricing-and-packaging-for-windows-8-1.aspx'> Sign in </a> or <a href='/user/createuser.aspx?ReturnUrl=%2Fwindows%2Fb%2Fbloggingwindows%2Farchive%2F2013%2F09%2F17%2Fpricing-and-packaging-for-windows-8-1.aspx'>Join Now  </a>        
+      </div></div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div id="fragment-4953"></div>
+<div class="content-fragment blog-feedback-list no-wrapper" id="fragment-4954">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+
+<div id="pi4954-paged-content">
+	<!--<div class="content-list-header"></div>
+	<div class="content-list-name">
+    47 Comments
+ 	</div>-->
+	<ul class="content-list">
+			<li class="content-item" data-commentid="92040">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/yuhong/default.aspx" class="internal-link view-user-profile">
+								<span></span>yuhong
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/yuhong/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="yuhong" />
+							</a>
+											</span>
+                                <span class="post-count"><b>5</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>So what about volume licensing? Is the policy still the same?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="9d84776c-7d80-4b53-b75d-8b8a02b4b4d0" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92041">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/yuhong/default.aspx" class="internal-link view-user-profile">yuhong</a> - see this blog post we also published today regarding Volume License customers: <a rel="nofollow" target="_new" href="http://blogs.windows.com/windows/b/business/archive/2013/09/17/windows-8-1-enterprise-rtm-now-available-to-volume-license-customers.aspx">blogs.windows.com/.../windows-8-1-enterprise-rtm-now-available-to-volume-license-customers.aspx</a></p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="f55dd069-9839-433b-bdef-114fa5703365" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92042">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/yuhong/default.aspx" class="internal-link view-user-profile">
+								<span></span>yuhong
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/yuhong/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="yuhong" />
+							</a>
+											</span>
+                                <span class="post-count"><b>5</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I am talking about the policy that only Windows desktop upgrades are sold via Volume Licensing.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="18bd7e96-6315-4a55-9307-5438cdf61f11" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92043">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/yuhong/default.aspx" class="internal-link view-user-profile">yuhong</a> - I&#39;m sorry, I&#39;m unsure what you mean by &quot;Windows desktop upgrades&quot;. As mentioned in the above blog post - retail product for Windows 8.1 are now &quot;full versions&quot; of the product unlike with Windows 8 where it was &quot;upgrade versions&quot;. But you can still use the Windows 8.1 retail product to upgrade a device. </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="6076f1bd-8c7f-4827-9e2a-5963bcc7d03e" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92044">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/yuhong/default.aspx" class="internal-link view-user-profile">
+								<span></span>yuhong
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/yuhong/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="yuhong" />
+							</a>
+											</span>
+                                <span class="post-count"><b>5</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I am talking about purchasing Windows 8.1 via *volume licensing*.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="0e24b429-e96d-4bb7-b300-769ada51c218" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92045">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/yuhong/default.aspx" class="internal-link view-user-profile">yuhong</a> - yes will be able to purchase Windows 8.1 through Volume Licensing and the blog post I provided a link to in a prior comment above discusses when you will be able to do that. </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="5b20322f-6a1b-4ecb-9b79-0e18752100b5" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92053">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/rangelo10_4000_live.com/default.aspx" class="internal-link view-user-profile">
+								<span></span>rangelo10@live.com
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/rangelo10_4000_live.com/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="rangelo10@live.com" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>If anyone from MSFT can respond to the questions below on Windows Media Center it would be really helpful. </p>
+<p>Is there any plans to update WMC since you are charging for it shouldn&#39;t the folks who paid for it be entitled to get some kind of upgrades? &nbsp;</p>
+<p>Is WMC end of life as a product? &nbsp;Brandon please help/answer as WMC is running entire home for Video music and pictures.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="5874e5bf-5734-46c5-9bff-2882f258db98" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92054">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Hi rangelo10, I don&#39;t have anything new to share about Windows Media Center today.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="77625079-dfa0-4e16-89d4-78d3f8e5510b" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92055">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/bogdaniosif/default.aspx" class="internal-link view-user-profile">
+								<span></span>bogdan
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/bogdaniosif/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="bogdan" />
+							</a>
+											</span>
+                                <span class="post-count"><b>1</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 17, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I can&#39;t find a single desirable feature in Win 8[.1]. It&#39;s your interest to push me towards your app store and I won&#39;t be paying you 200$ for that. My Win 7 is supported until 2020+. Later.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="f9826094-6560-4e8e-94c7-2463969177f8" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92058">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/DavidY65/default.aspx" class="internal-link view-user-profile">
+								<span></span>DavidY65
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/DavidY65/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="DavidY65" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Hi Brandon,</p>
+<p>With Windows 8, people can currently they can use the Upgrade Assistant to check out whether their PC is likely to run Windows 8.</p>
+<p>For folks who have Vista and XP, who are recommended to go out and buy a DVD, it would be really useful to know if there&#39;s a compatibility showstopper on the PC before they go out and buy a DVD. &nbsp;</p>
+<p>This would be especially useful as these are the computers whose hardware is likely to be older and more likely to have problems..</p>
+<p>Will there be a Windows 8.1 Upgrade Assistant for people to use before they buy?</p>
+<p>Also, is there anything more you can tell us on how the upgrade from 8.1 Preview to the real 8.1 will work?</p>
+<p>Thanks!</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="18b70d98-bcf2-471a-82cf-8ebb39625b4a" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92059">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/AlloAllo/default.aspx" class="internal-link view-user-profile">
+								<span></span>AlloAllo
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/AlloAllo/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="AlloAllo" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Can somebody from Microsoft explain how are people with local accounts supposed to get this update ? The 8.1 update is a system-wide OS update, not a modern app, so why isn&#39;t it available through Windows Update ?</p>
+<p>I hope you really understand that one of the reasons why many people dislike Windows 8 is the fact that the message it sends across by not being able to boot directly to the desktop is that you are more interested in shoving the store into people&#39;s faces no matter the device they are using, than any real concern for desktop users&#39; UI. </p>
+<p>You made partial amends to fix the situation with Windows 8.1 (insufficient in my opinion, as the taskbar disappears when you switch to the modern interface meaning there is still a divide and a very real lack of coherency and thus desktop multi tasking workflow is disrupted by having to shift back and forth and not being able to immediately switch between running applications or just visually check if they or any OS function (a file copy operation, for example) needs your attention) but seemingly found a new way to shove the store into people&#39;s faces by requiring them to create an on-line account in order to get into the store in order to get the Windows 8.1 update.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="377558ac-410b-4ed2-b687-afd015b238ac" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92061">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/DavidY65/default.aspx" class="internal-link view-user-profile">DavidY65</a> - Because Windows &nbsp;8.1 is not designed for installation on devices running Windows XP or Windows Vista, I do not believe a standalone &quot;upgrade assistant&quot; is being planned.</p>
+<p>When you move from the Windows 8.1 Preview to the final release of Windows 8.1 - you&#39;ll be able to keep your personal files, but you&#39;ll need to reinstall your apps.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="e4acdf6b-13b6-4bf2-b728-e95ec446e55d" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92063">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/MiyaRiver/default.aspx" class="internal-link view-user-profile">
+								<span></span>MiyaRiver
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/MiyaRiver/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="MiyaRiver" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Hi Brandon,</p>
+<p>Nice to hear about 8.1!</p>
+<p>I have two questions.</p>
+<p>What about DSP version, will it still exist?</p>
+<p>And, do you have the price now?</p>
+<p>Will there be a way to upgrade from 8 to 8.1, not using Windows Store?</p>
+<p>I mean I want to download and store the upgrade file like previous service pack,</p>
+<p>since I have much chance to re-install my windows.</p>
+<p>Thank you.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="a0a8d85f-3748-4b4d-ba5c-9eb994e3e8e0" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92064">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/av8rboi/default.aspx" class="internal-link view-user-profile">
+								<span></span>av8rboi
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/av8rboi/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="av8rboi" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Will customers running windows 8 be provided with windows 8.1 ISO? </p>
+<p>because, in case PC crashed we would have to install windows 8 first and then windows 8.1 via store. That would be time consuming as well as cumbersome. I hope there will be other options available and not just the update via windows store.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="7b3dd88e-cbaa-44b7-910e-9dcc97c37992" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92065">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/EdmasterOG/default.aspx" class="internal-link view-user-profile">
+								<span></span>EdmasterOG
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/EdmasterOG/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="EdmasterOG" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Help here!! I upgraded to windows 8 last year at launch for $40 (promo copy)</p>
+<p>Would i get windows 8.1 for free too?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="0a5c0a1b-5257-4aeb-ae03-fb2faedfec03" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92066">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/abm/default.aspx" class="internal-link view-user-profile">
+								<span></span>abm
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/abm/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-05-38-74/4TJAAMP03HLV.jpg_2D00_40x40.jpg" border="0" alt="abm" />
+							</a>
+											</span>
+                                <span class="post-count"><b>268</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">Brandon LeBlanc</a> </p>
+<p>Please ask SkyDrive team to add IE11 RTM to their safe list. Microsoft is getting bad press for this: &quot;SkyDrive Does Not Support IE11, Microsoft Says Firefox, Chrome Are Better Choices&quot; <a rel="nofollow" target="_new" href="http://news.softpedia.com/news/SkyDrive-Does-Not-Support-IE11-Microsoft-Says-Firefox-Chrome-Are-Better-Choices-383717.shtml">news.softpedia.com/.../SkyDrive-Does-Not-Support-IE11-Microsoft-Says-Firefox-Chrome-Are-Better-Choices-383717.shtml</a></p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="330c5ec9-0c72-43f3-b468-5382d3742305" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92068">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/akshit045/default.aspx" class="internal-link view-user-profile">
+								<span></span>akshit045
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/akshit045/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="akshit045" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I am Having Preview Of 8.1 in my laptop</p>
+<p>how to change it in Full version Of window 8.1 ,,</p>
+<p>please tell me,, how to download window 8.1</p>
+<p>As i am getting so much of Problem preview !</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="c39b366b-6540-4853-b2fe-0beda68f5345" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92069">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/spino/default.aspx" class="internal-link view-user-profile">
+								<span></span>spino
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/spino/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="spino" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Hi! Just a question... i&#39;m from italy.</p>
+<p>I own Windows 8 pro + Windows media center... when 8.1 will be on store, will i &#39;ll be upgraded on the same version? </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="142a771c-d5e8-42c3-ab6b-de57cdfeb52d" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92070">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/fara.ramin/default.aspx" class="internal-link view-user-profile">
+								<span></span>Ramin
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/fara.ramin/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-20-27-47/4TPY84ZI666H.jpg_2D00_40x40.jpg" border="0" alt="Ramin" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>what&#39;s Difference between version?</p>
+<p>in 8.1 store is lock for Iran?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="a19f7c56-a3e9-4b0b-94e4-dad361bbcf64" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92072">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/TechHog/default.aspx" class="internal-link view-user-profile">
+								<span></span>TechHog
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/TechHog/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="TechHog" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>What about student pricing? Do we get the full version now too?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="8e47ced8-f70f-43a4-9de9-68ca41a2411f" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92082">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/1234567890/default.aspx" class="internal-link view-user-profile">
+								<span></span>1234567890
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/1234567890/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="1234567890" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Will there be System Builder Licences?</p>
+<p>@ EdmasterOG Will be no Problem...</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="565c37c9-3e12-44d1-8b39-9a8a6a9ddd12" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92083">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/AlloAllo/default.aspx" class="internal-link view-user-profile">AlloAllo</a> - you can use your local account on Windows 8 to update to Windows 8.1 from the Windows Store. You do not need a connected Microsoft account. </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="d7222a42-0ed2-474d-9f2f-68fd482f6dc6" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92084">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 18, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/EdmasterOG/default.aspx" class="internal-link view-user-profile">EdmasterOG</a> - Yup!</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="8cd35dc3-9603-4521-9418-4596e1cf574f" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92089">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/MsInterpreted/default.aspx" class="internal-link view-user-profile">
+								<span></span>MsInterpreted
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/MsInterpreted/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="MsInterpreted" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 19, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>HI, I have been having many problems with my windows 8, where would I be able to update at please. On this site? Do I need to call in for a link? Thanks ~MsInterpreted</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="e5e0376e-2ff9-47d8-b57c-00e2a817b44c" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92102">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/vieya/default.aspx" class="internal-link view-user-profile">
+								<span></span>vieya
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/vieya/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="vieya" />
+							</a>
+											</span>
+                                <span class="post-count"><b>44</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 19, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I&#39;m hoping for more updates. This version does fix some issues but there seems to be a lot of issues still unfixed. </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="03235ad7-f293-4c72-821d-7e395a6f92a3" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92107">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/bacizone/default.aspx" class="internal-link view-user-profile">
+								<span></span>bacizone
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/bacizone/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="bacizone" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 19, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Will you repeat the the 40 USD promo price for a limited time? You should, becuase many people will find this upgrade price way too much... 40 USD may be fair for an OS upgrade.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="77fc5508-e9b1-4452-9bc6-552d6e098f72" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92108">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 19, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/MsInterpreted/default.aspx" class="internal-link view-user-profile">MsInterpreted</a> - I am sorry you are having issues with Windows 8. You should visit our Microsoft Community forums and post about your problems there as folks there can assist you in trying to solve your problems: <a rel="nofollow" target="_new" href="http://answers.microsoft.com">http://answers.microsoft.com</a>. For Windows 8.1, there will not be a specific link for you - you will get the update through the Windows Store on your device. </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="dd027183-aaf1-4fce-b8d1-158ad459064a" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item user-is-author" data-commentid="92109">
+			<div class="full-post-outer fiji-full-post-outer user-is-author"> <!-- check on this -->
+				<div class="full-post-header user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post user-is-author">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Brandon-LeBlanc/default.aspx" class="internal-link view-user-profile">
+								<span></span>Brandon LeBlanc
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Brandon-LeBlanc/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-01-66-82/4TGZA6JEDZS5.png_2D00_40x40.png" border="0" alt="Brandon LeBlanc" />
+							</a>
+											</span>
+                                <span class="post-count"><b>2310</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 19, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p><a href="/members/bacizone/default.aspx" class="internal-link view-user-profile">bacizone</a> - we are not announcing a new promotional price. Only the pricing as mentioned in the above blog post. Thank you for your comment!</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="82c95760-e3a4-469c-9383-255e0e1ce89c" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer user-is-author">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92112">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Jotinha/default.aspx" class="internal-link view-user-profile">
+								<span></span>Jotinha
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Jotinha/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="Jotinha" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 20, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I have a Windows 8 Pro licensing and the Windows 8.1 Pro Preview installed on my desktop. I will need download the new pack from Microsoft or itself will upgrade ?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="3543409c-1718-4473-800c-6d38485772f6" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92115">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/bacizone/default.aspx" class="internal-link view-user-profile">
+								<span></span>bacizone
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/bacizone/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="bacizone" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 20, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Well, then I&#39;ll stay with Win 7. Thanks.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="5de54ba0-a317-422b-aaf8-52c6a16a8e9a" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92117">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Cedric/default.aspx" class="internal-link view-user-profile">
+								<span></span>Cedric
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Cedric/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="Cedric" />
+							</a>
+											</span>
+                                <span class="post-count"><b>1</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 20, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Testing the RTM I hesitate between the congratulory mode and the shouting mode.</p>
+<p>+ There are many imrpovement. The music app, for example, is finally useable and frankly it is abolutely gorgeous.</p>
+<p>+ The possibility to have Modern apps on many screens is great</p>
+<p>- The start screen is a bing letdown and I hope that this is due to bugs that will be fixed before the launch. </p>
+<p>- In Windows 8 my right screen (the bigger one) is configured as the main screen - because many apps don&#39;t remember where they are used and always launch in main screen. So the first thing I did in the morning is show the start screen then use Windows+Page Down to move it to left screen. Then the start screen would be on the left screen all day, as wanted and the main screen used for main apps (e.g. Outlook 2013 &amp; co)</p>
+<p>- Now Windows + Page Up and Windows + Page Down do not work anymore</p>
+<p>- Now the start screen keep changing screen. I haven&#39;t found a way to keep it on the left monitor. I can&#39;t emphasize enough how this is unnerving and productivity-destroying.</p>
+<p>- Internet explorer. The odd treatment for Internet Explorer make me want to vomit. Apparently one is to either use the Modern one or the Desktop one but not both. I happen to like to work with both simultaneously and this is a scenario that Microsoft made astoundingly awkward in 8.1 whereas it worked really well in Windows 8.</p>
+<p>-&gt; If Modern IE is the default there is a tile for it on the start screen. It is then impossible to add a tile for the desktop IE on the start screen (it was possible on Windows 8)</p>
+<p>-&gt; It is impossible to search for iexplorer.exe. The search will give results on the web but won&#39;t give any result in C\Program Files (Windows 8 did find it). This is absolutely an astounding censorship.</p>
+<p>-&gt; Creating a desktop shortcut to iexplorer.exe then trying pin it on start screen won&#39;t work</p>
+<p>-&gt; Copying iexplore.exe &amp; giving another name won&#39;t work.</p>
+<p>In short why did Microsoft invest so much time and effort making life miserable for the users that like to work with both explorers?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="c8ded968-2eb4-4e1c-acbb-cab4978b94bc" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92120">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/sreesiv/default.aspx" class="internal-link view-user-profile">
+								<span></span>sreesiv
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/sreesiv/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="sreesiv" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 20, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Super news and I am Super excited !!! :-)</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="cef204d4-42b8-4f46-85ea-0e6d7c70b4c9" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92124">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/dickincider/default.aspx" class="internal-link view-user-profile">
+								<span></span>dickincider
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/dickincider/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="dickincider" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 20, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>thinking of getting 8.1 do yourself a favor and go back to 7 or go to apple. 8.1 is worse not better. downloaded 8.1 beta. mouse was always in the wrong spot to change any settings. and still no off button on start button. they made it worse not better. stay away from 8.1</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="f15ecc7c-41c9-415a-9910-17f6c0a4e4d6" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92132">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Tomtag/default.aspx" class="internal-link view-user-profile">
+								<span></span>Tomtag
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Tomtag/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-20-39-03/4TPZAP66CYK2.jpg_2D00_40x40.jpg" border="0" alt="Tomtag" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 21, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I hope that the Windows Store free upgrade will include an ISO file (or similar) and a CD-KEY of some sort in the event that in the future if my new Windows 8.1 system may crash it may need to be reinstalled from an install file or actual DVD and I&#39;m assuming it will probably need a CD-KEY or similar to do such a re-install. &nbsp;Does anyone yet know the answer to this critical question?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="026d2658-918c-414d-b3f0-22d95ba742af" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92137">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Tomtag/default.aspx" class="internal-link view-user-profile">
+								<span></span>Tomtag
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Tomtag/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-20-39-03/4TPZAP66CYK2.jpg_2D00_40x40.jpg" border="0" alt="Tomtag" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 21, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>AT the risk of overplaying my point, I hope that the Windows Store upgrade to 8.1 allows us to download the full file to keep for obvious archival needs before any installation can begin (as noted above) and that this upgrade (as opposed to the Windows Store preview upgrade) does not just automatically start the upgrading process on its own leaving us with no backup for future re-install capabilities and no re-install key! &nbsp;I think this is critically important!</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="3904f419-c690-4bdb-8b95-b33f739a12c3" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92138">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/MiyaRiver/default.aspx" class="internal-link view-user-profile">
+								<span></span>MiyaRiver
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/MiyaRiver/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="MiyaRiver" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 22, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Mr. Tomtag, sorry if I&#39;m misunderstanding &nbsp;your problem, but if you already have Win8, then you should have a CD-Key of your Win8. Since upgrading to Win8.1 from Win8 is free, there won&#39;t be a new Key required, I think. Of course, no any trouble around license. If you have lost your Key, well, that is the problem, not Win8.1.</p>
+<p>The one who&#39;s worrying about re-installing is not only you. I hope there will be some way to upgrade to Win8.1, skipping the time of downloading.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="cba38ac8-abc6-4371-9851-6f7efa288637" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92140">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/smcmaster/default.aspx" class="internal-link view-user-profile">
+								<span></span>smcmaster
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/smcmaster/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="smcmaster" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 22, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I am currently running 8.1 evaluation, which quite honestly I mistakenly thought was something like a service pack. It has given me problems but I have solved them. &nbsp;Now I read that I will lose 8.1 at some point and if I upgrade to 8.1 final I have to re install all my programs. &nbsp;Some cannot be installed more than once so I will have to buy them again including a very expensive HD video editing suite. &nbsp;Can this really be true? &nbsp;Can&#39;t I just install 8.1 over my evaluation?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="03af3633-eedf-4feb-8648-39788a8edd6c" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92148">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Gsculerlor/default.aspx" class="internal-link view-user-profile">
+								<span></span>Gsculerlor
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Gsculerlor/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="Gsculerlor" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 23, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Can Windows 8.1 Single Language Upgrade to Windows 8.1 Final ?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="e0d34977-2d14-4995-916c-9e7ebcd07d4e" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92157">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Tomtag/default.aspx" class="internal-link view-user-profile">
+								<span></span>Tomtag
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Tomtag/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars-00-00-20-39-03/4TPZAP66CYK2.jpg_2D00_40x40.jpg" border="0" alt="Tomtag" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 23, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Thanks Brandon. &nbsp;In response to your thoughtful response about the free upgrade of 8.1 from the Windows Store, I do have my CD-Key for Windows 8 so that&#39;s not a problem. &nbsp;What I am concerned about is that when the Windows Store made the 8.1 Preview available, it directly from the store installed the preview version without supplying a copy of the upgrade in a format that would allow for possible future re-installation. &nbsp;My computer crashed due to a virus a few weeks ago, and the only way I could restore it was to do a new install from my original Windows 8 DVD. &nbsp;So I am back to Windows 8 because the Windows store never supplied an ISO file or similar for later installation. &nbsp;That is what I am hoping they do with the new full retail version upgrade. &nbsp;That&#39;s my question!</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="972d19ab-b9c9-4220-b055-0dc60ba31905" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92199">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/zast/default.aspx" class="internal-link view-user-profile">
+								<span></span>zast
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/zast/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="zast" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 25, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>We &#39;ll keep all data and programs with the upgrade from 8 to Windows 8.1 &nbsp;? Thks</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="5f27fd2d-a531-4349-9e8e-bda5378d3f6f" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92211">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/dhairya/default.aspx" class="internal-link view-user-profile">
+								<span></span>dhairya
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/dhairya/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="dhairya" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 26, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Content Was awsome and so helpfull.... thanks alot</p>
+<p><a rel="nofollow" target="_new" href="http://www.bruwink.in">http://www.bruwink.in</a> </p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="40f18522-03ed-43d3-8352-f455fec47d21" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92240">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/ellaCS/default.aspx" class="internal-link view-user-profile">
+								<span></span>ellaCS
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/ellaCS/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="ellaCS" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 27, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>The actual version of Windows 8 is only an upgrade:</p>
+<p>* we have the possibility to create an iso file using the upgrade assistant</p>
+<p>* if we are trying to install it on a PC without an OS using this file at the end of the installation, when activating we are receiving the message that this PK is for an upgrade only</p>
+<p>* when the Windows 8.1 will be released, we will get this version for free as an upgrade</p>
+<p>* which will be than the installation process for the customers who already purchased Windows 8?</p>
+<p>* will the PK be used as a full version (Windows 8)?</p>
+<p>* will it be necessary to install the previous version (Windows 7, Vista or XP), after to upgrade to Windows 8 or 8 Pro and finally upgrade to Windows 8.1?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="dc4c7e66-c3c5-4806-bb22-9684d1f49f93" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92258">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Ibrahimkhan/default.aspx" class="internal-link view-user-profile">
+								<span></span>Ibrahimkhan
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Ibrahimkhan/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="Ibrahimkhan" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 29, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>This has always been an expectation from regular users of windows that microsoft should provide them some discount on an upgrade. <a rel="nofollow" target="_new" href="http://www.cmms.in">http://www.cmms.in</a>. and yeah without being certified partner.</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="2593006d-6cfe-4879-8a8a-cf0fef681910" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92264">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/lalitha/default.aspx" class="internal-link view-user-profile">
+								<span></span>lalitha
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/lalitha/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="lalitha" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 29, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>I am always confused about this volume licensing <a rel="nofollow" target="_new" href="http://www.androidgamespro.com/">www.androidgamespro.com</a></p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="f0f502c2-8f27-415d-a0cf-e21766dce965" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92266">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/anush123/default.aspx" class="internal-link view-user-profile">
+								<span></span>anush123
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/anush123/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="anush123" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 30, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Will we be able to upgrade for Windows Vista Ultimate SP2?</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="ba756cab-94da-4dfa-bc3f-c7575d4fe6a1" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92294">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/Sanjaykol/default.aspx" class="internal-link view-user-profile">
+								<span></span>Sanjaykol
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/Sanjaykol/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="Sanjaykol" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              September 30, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>What about DSP version, will still exist &amp; price ?</p>
+<p><a rel="nofollow" target="_new" href="http://howtotakescreenshot.org/">howtotakescreenshot.org</a></p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="46d096aa-b1f0-4c09-8836-72bb468414e9" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+			<li class="content-item" data-commentid="92391">
+			<div class="full-post-outer fiji-full-post-outer">
+				<div class="full-post-header">
+					<div class="r fiji-r"></div>
+				</div>
+				<div class="full-post">
+	    <div class="full-post-inner fiji-full-post-inner">
+			  <div class="comment-properties"> 
+          <span class="user-name">
+													<a href="/members/d3een_4000_msn.com/default.aspx" class="internal-link view-user-profile">
+								<span></span>روحي تحبك
+							</a>
+											</span>
+
+          <span class="avatar">
+													<a href="/members/d3een_4000_msn.com/default.aspx">
+								<img src="/cfs-filesystemfile.ashx/__key/communityserver-components-imagefileviewer/communityserver-components-avatars_2E00_/default.png_2D00_40x40.png" border="0" alt="روحي تحبك" />
+							</a>
+											</span>
+                                <span class="post-count"><b>0</b> Posts</span>
+        </div>
+        <div class="comment-text">
+          <div class="post-date">
+						<span class="value">
+              October 04, 2013
+            </span>
+					</div>
+          <div class="post-moderate">
+					  					</div>
+					<div class="post-content user-defined-markup">
+						<p>Upgrades Windows desktop only through volume licensing.</p>
+<p>Thank you</p>
+
+					</div>
+          
+          <div class="post-actions">
+							<div class="navigation-list-header"></div>
+							<ul class="navigation-list">
+								<li class="navigation-item post-like-count">
+																							          <span class="attribute-value"><span class="ui-like" data-contentid="4458e82f-bb3c-471e-adcd-b119043dbfc4" data-contenttypeid="9262536b-49a3-4494-802f-04dff10424ed" data-initialcount="0" data-initialstate="false" data-readonly="true" data-initialmessage="" data-format="&lt;span class=&quot;count&quot;>&lt;span class=&quot;like-indicator inline&quot;>&lt;/span>{count}&lt;/span>" data-configuration="Format=%3Cspan%20class%3D%22count%22%3E%3Cspan%20class%3D%22like-indicator%20inline%22%3E%3C%2Fspan%3E%7Bcount%7D%3C%2Fspan%3E" ></span></span>
+					        </li>
+							</ul>
+							<div class="navigation-list-footer"></div>
+						</div>
+					</div>      	
+  			</div>
+        </div>
+						<div class="full-post-footer">
+					<div class="r fiji-r"></div>
+				</div>
+					</div>
+		</li>
+	</ul>
+	<div class="content-list-footer"></div>
+
+
+<div class="pager ui-page" data-currentpage="0" data-pagesize="100" data-totalitems="47" data-pagekey="pi4954" data-pagedcontenturl="/utility/scripted-file.ashx?WeblogApp=bloggingwindows&amp;y=2013&amp;m=09&amp;d=17&amp;WeblogPostName=pricing-and-packaging-for-windows-8-1&amp;GroupKeys=windows%2f&amp;_cf=load.vm&amp;_fid=4954&amp;_ct=page&amp;_cp=post&amp;_ctt=a3b17ab0af5f11dda3501fcf55d89593&amp;_ctc=5923&amp;_ctn=e7927559fb9d4fdbb89610a6752621f9&amp;_cc=0&amp;AppType=Weblog" data-pagedcontentwrapperid="pi4954-paged-content" data-pagedcontentpagingevent="ui.page.pi4954.paging" data-pagedcontentpagedevent="ui.page.pi4954.paged" data-configuration="Target=comments&amp;BaseUrl=%2Fwindows%2Fb%2Fbloggingwindows%2Farchive%2F2013%2F09%2F17%2Fpricing-and-packaging-for-windows-8-1.aspx&amp;PagedContentFile=load.vm&amp;Transition=none" ></div>
+</div>
+
+
+</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div></div>
+
+            
+			    <div class="footer-fragments-header"></div>
+<div class="footer-fragments" id="ctl00_footer_ctl00_page"><div class="layout">
+<div class="layout-header"></div>
+<div class="layout-content content" id="ctl00_footer_ctl00_layout">
+<div class="layout-region content" id="ctl00_footer_ctl00_content">
+<div class="layout-region-inner content"><div class="content-fragment html-content no-wrapper" id="footer-21">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div class="user-defined-markup" style="">
+<div class="links-wrapper">
+<div class="col first">
+<h3>Other Microsoft Blogs</h3>
+<ul>
+<li><a href="http://blogs.technet.com/b/microsoft_blog/">Official Microsoft Blog</a></li>
+<li><a href="http://blogs.office.com/">Office Blogs</a></li>
+<li><a href="http://www.bing.com/community/">Bing Community</a></li>
+<li><a href="http://www.majornelson.com/">Xbox&#39;s Major Nelson</a></li>
+<li><a href="http://blogs.skype.com/">Skype Blogs</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>Get Windows</h3>
+<ul>
+<li><a href="http://windows.microsoft.com/en-US/windows/buy">Buy Windows 8</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows/compare">Compare Windows</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows/tablets-convertibles">Tablets and Convertibles</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows/laptops">Laptops</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows/desktops">Desktops and All-in-Ones</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>Helpful links</h3>
+<ul>
+<li><a href="http://windows.microsoft.com/en-US/windows/support">Windows support</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows-8/apps">New apps</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows/personalization-gallery">Themes &amp; wallpapers</a></li>
+<li><a href="http://windows.microsoft.com/en-US/internet-explorer/download-ie">Download Internet Explorer</a></li>
+<li><a href="http://windows.microsoft.com/en-US/windows/downloads">Free downloads</a></li>
+</ul>
+</div>
+<div class="col">
+<h3>For developers</h3>
+<ul>
+<li><a href="http://www.windowsstore.com">WindowsStore.com</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/windows/apps/">Windows Store apps</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/windows/desktop/">Desktop</a></li>
+<li><a href="http://msdn.microsoft.com/en-us/windows/hardware/">Hardware</a></li>
+<li><a href="http://dev.windowsphone.com/en-us">Windows Phone</a></li>
+</ul>
+</div>
+<div class="clear"></div>
+</div>
+</div>
+		</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+<div class="content-fragment html-content no-wrapper" id="footer-22">
+<div class="content-fragment-inner fiji-content-fragment-inner">
+	<div class="content-fragment-top fiji-content-fragment-top">
+	</div><div class="content-fragment-content">
+
+<div class="user-defined-markup" style="">
+<div class="base">
+<div class="hello">Hello from Seattle.</div>
+<div class="copyright"><a href="http://microsoft.com/"><img alt=" " src="http://blogs.windows.com/cfs-file.ashx/__key/widgetcontainerfiles/e7927559fb9d4fdbb89610a6752621f9-0c647246673542f9875dc8b991fe739b-_2D00_1-footer-footer/653960172_2D00_msftlogo_5F00_footer.png" /></a><br />&copy; 2013 Microsoft.</div>
+<ul class="links">
+<li><a href="http://go.microsoft.com/?linkid=2028351" target="_blank">Contact Us</a></li>
+<li><a href="http://www.microsoft.com/About/Legal/EN/US/Copyright/default.aspx" target="_blank">Terms of Use</a></li>
+<li><a href="http://www.microsoft.com/library/toolbar/3.0/trademarks/en-us.mspx" target="_blank">Trademarks</a></li>
+<li class="last"><a href="http://windowsteamblog.com/p/privacy.aspx">Privacy Statement</a></li>
+</ul>
+</div>
+</div>
+		</div>
+<div class="content-fragment-footer"></div>
+<div class="content-fragment-bottom fiji-content-fragment-bottom"></div></div></div>
+</div>
+</div>
+</div>
+<div class="layout-footer"></div>
+</div></div><div class="footer-fragments-footer"></div>
+            
+		
+	<script type="text/javascript" src="/cfs-filesystemfile.ashx/__key/widgetfiles/3af92e56f24148e0abb8d8b314389bfd-e7927559fb9d4fdbb89610a6752621f9/ui.js"></script>
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery.telligent.evolution.widgets.siteSearch.register({
+				searchUrl: '/utility/scripted-file.ashx?WeblogApp=bloggingwindows&y=2013&m=09&d=17&WeblogPostName=pricing-and-packaging-for-windows-8-1&GroupKeys=windows%2f&_cf=search.vm&_fid=17&_ct=header&_cp=&_ctt=a3b17ab0af5f11dda3501fcf55d89593&_ctc=5923&_ctn=e7927559fb9d4fdbb89610a6752621f9&_cc=0&AppType=Weblog',
+				searchResultsUrl: '/search/default.aspx?{0}&category=blog',
+				query: jQuery('#header-17_query'),
+				optionsLink: jQuery('#header-17_options'),
+				optionsContent: jQuery('#header-17_filter-options'),
+				filterName: 'header-17_filter',
+				loading: 'Searching...',
+				error: 'Search is currently unavailable.',
+				groupId: ''
+			});
+		});
+	</script>
+	<script type="text/javascript" src="/cfs-filesystemfile.ashx/__key/widgetfiles/8f6b41a33bb44c47b2edcaabd3cbe63c-d/ui.js"></script>
+	<script type="text/javascript">
+		jQuery(function(){
+			jQuery.telligent.evolution.widgets.navigationCustom.register({
+				parentList: jQuery('#header-20_parentGroupListContainer'),
+				childrenUrl: '/utility/scripted-file.ashx?WeblogApp=bloggingwindows&y=2013&m=09&d=17&WeblogPostName=pricing-and-packaging-for-windows-8-1&GroupKeys=windows%2f&_cf=get-children.vm&_fid=20&_ct=header&_cp=&_ctt=a3b17ab0af5f11dda3501fcf55d89593&_ctc=5923&_ctn=e7927559fb9d4fdbb89610a6752621f9&_cc=0&AppType=Weblog',
+				error: 'An error occurred while loading navigation information.'
+			});
+		});
+	</script>
+<script type="text/javascript">
+// <![CDATA[
+ctl00_header_ctl00 = new ContentFragmentContainerCustomCallback('ctl00_header_ctl00',new Function('mode','parameters','callback','errorCallback','context','ctl00_header_ctl00_ctl00._doCallback(mode+\':\'+parameters,callback,context,errorCallback);'));
+// ]]>
+</script>	<script type="text/javascript" src="/cfs-filesystemfile.ashx/__key/widgetfiles/0782ea3dec88461ea2c2c7fca58aeed2-e7927559fb9d4fdbb89610a6752621f9/ui.js"></script>
+	<script type="text/javascript">
+	//<![CDATA[
+	jQuery(document).ready(function()
+	{
+		jQuery.telligent.evolution.widgets.blogFeedbackList.register({
+			wrapper:jQuery('#pi4954-paged-content'),
+			baseUrl:'/windows/b/bloggingwindows/archive/2013/09/17/pricing-and-packaging-for-windows-8-1.aspx',
+			loadCommentsUrl:'/utility/scripted-file.ashx?WeblogApp=bloggingwindows&y=2013&m=09&d=17&WeblogPostName=pricing-and-packaging-for-windows-8-1&GroupKeys=windows%2f&_cf=load.vm&_fid=4954&_ct=page&_cp=post&_ctt=a3b17ab0af5f11dda3501fcf55d89593&_ctc=5923&_ctn=e7927559fb9d4fdbb89610a6752621f9&_cc=0&AppType=Weblog',
+			deleteVerificationText:'Are you sure you want to delete this comment?',
+			errorText:'There was an error saving your comment.',
+			loadingText:'Publishing',
+			blogId: 5923,
+			blogPostId: 589057,
+			pagedMessage: 'ui.page.pi4954.paged',
+			pageIndexQueryStringKey: 'pi4954'
+		});
+	});
+	//]]>
+	</script>
+<script type="text/javascript">
+// <![CDATA[
+ctl00_content_ctl00 = new ContentFragmentContainerCustomCallback('ctl00_content_ctl00',new Function('mode','parameters','callback','errorCallback','context','ctl00_content_ctl00_ctl00._doCallback(mode+\':\'+parameters,callback,context,errorCallback);'));
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+ctl00_footer_ctl00 = new ContentFragmentContainerCustomCallback('ctl00_footer_ctl00',new Function('mode','parameters','callback','errorCallback','context','ctl00_footer_ctl00_ctl00._doCallback(mode+\':\'+parameters,callback,context,errorCallback);'));
+// ]]>
+</script>
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+<rdf:Description
+rdf:about="http://blogs.windows.com/windows/b/bloggingwindows/archive/2013/09/17/pricing-and-packaging-for-windows-8-1.aspx"
+dc:identifier="http://blogs.windows.com/windows/b/bloggingwindows/archive/2013/09/17/pricing-and-packaging-for-windows-8-1.aspx"
+dc:title="Pricing and Packaging for Windows 8.1"
+trackback:ping="http://blogs.windows.com/windows/b/bloggingwindows/trackback.ashx?WeblogPostID=589057" />
+</rdf:RDF>
+-->
+<script type="text/javascript">
+// <![CDATA[
+window.ctl00_header_ctl00_ctl00 = new Telligent_CallbackManager('ctl00_header_ctl00_ctl00','ctl00$header$ctl00$ctl00','aspnetForm');
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+window.ctl00_content_ctl00_ctl00 = new Telligent_CallbackManager('ctl00_content_ctl00_ctl00','ctl00$content$ctl00$ctl00','aspnetForm');
+// ]]>
+</script><script type="text/javascript">
+// <![CDATA[
+window.ctl00_footer_ctl00_ctl00 = new Telligent_CallbackManager('ctl00_footer_ctl00_ctl00','ctl00$footer$ctl00$ctl00','aspnetForm');
+// ]]>
+</script><!-- START OF SmartSource Data Collector TAG -->
+<!-- Copyright (c) 1996-2009 WebTrends Inc.  All rights reserved. -->
+<!-- Version: 8.6.2 -->
+<!-- Tag Builder Version: 3.0  -->
+<!-- Created: 10/30/2009 6:01:32 AM -->
+<script type="text/javascript">
+    var gTrackEvents=1;
+    var gDomain="m.webtrends.com";
+    var gDcsId="dcs8my4y8000008mal3dy2d80_5y6k";
+</script>
+<script src="http://blogs.windows.com/cfs-file.ashx/__key/communityserver-components-sitefiles/webtrends.js" type="text/javascript"></script>
+<!-- ----------------------------------------------------------------------------------- -->
+<!-- Warning: The two script blocks below must remain inline. Moving them to an external -->
+<!-- JavaScript include file can cause serious problems with cross-domain tracking.      -->
+<!-- ----------------------------------------------------------------------------------- -->
+<script type="text/javascript">
+//<![CDATA[
+var _tag=new WebTrends();
+_tag.dcsGetId();
+//]]>>
+</script>
+<script type="text/javascript">
+//<![CDATA[
+// Add custom parameters here.
+//_tag.DCSext.param_name=param_value;
+_tag.dcsCollect();
+//]]>>
+</script>
+<noscript>
+<div><img alt="DCSIMG" id="DCSIMG" width="1" height="1" src="http://m.webtrends.com/dcs8my4y8000008mal3dy2d80_5y6k/njs.gif?dcsuri=/nojavascript&amp;WT.js=No&amp;WT.tv=8.6.2"/></div>
+</noscript>
+<!-- END OF SmartSource Data Collector TAG -->
+
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=170345050204";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script></form>
+	</body>
+</html>

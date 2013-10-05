@@ -1,0 +1,444 @@
+   #[1]publisher [2]O'Reilly Radar » Feed [3]O'Reilly Radar » Comments
+   Feed [4]O'Reilly Radar » If This/Then That (IFTTT) and the Belkin WeMo
+   Comments Feed [5]Four short links: 20 August 2013 [6]Four short links:
+   21 August 2013
+
+   [7]O'Reilly Radar
+
+   ____________________
+   SEARCH
+
+     * [8]Home
+     * [9]Shop
+     * [10]Radar: News & Commentary
+     * [11]Answers
+     * [12]Safari Books Online
+     * [13]Conferences
+     * [14]School of Technology
+     * [15]Community
+
+     * [16]Print
+     * [17]Listen Speech Icon
+     *
+
+If This/Then That (IFTTT) and the Belkin WeMo
+
+How I used an Internet service to automate home lighting without installing
+any software.
+
+   by [18]Matthew Gast | [19]@MatthewSGast | [20]Comment: 1 | August 20,
+   2013
+
+   Like most good technologists, I am lazy.  In practice, this sometimes
+   means that I will work quite hard with a computer to automate a task
+   that, for all intents and purposes, just isn't that hard.  In fits and
+   starts for the past 10 years, I have been automating my house in
+   various ways.  It makes my life easier when I am at home, though it
+   does mean that friends who watch my house when I'm gone need to be
+   briefed on how to use it.  If you are expecting to come into my house
+   and use light switches and the TV as you do every place else, well,
+   that's why you need a personalized orientation to the house.
+
+   In this post, I'll talk briefly about one of the most basic automation
+   tasks I've carried out, which is about how the lights in my house are
+   controlled.
+
+   The humble light switch was invented in the late 19th century, with the
+   "modern" toggle switch following in the early 20th century.  The toggle
+   switch has not changed in about 100 years because it does exactly what
+   is needed and is well understood.  The only disadvantage to the toggle
+   switch is that you have to touch it to operate it, and that means
+   getting off the couch.
+
+   My current home is an older home that was previously a storefront.  All
+   the plumbing is on one wall of the house, which I sometimes jokingly
+   call "the wall of modernity."  The telephone demarc is on the opposite
+   side, though I've made some significant modifications to the telephone
+   wiring from the days when I was using Asterisk more extensively.  As a
+   large open space, there is not much built-in lighting, so most of the
+   lights are freestanding floor lamps.
+
+   The initial "itch" that I was scratching with my first home automation
+   project was a consistent forgetfulness to turn off lights when I went
+   to bed -- I would settle into bed up in the loft and then realize that
+   I needed to get up and turn off a light.  At that point, remote
+   controlled lights seemed pretty darn attractive.
+
+   My first lighting automation was done with [21]Insteon, a superset of
+   the venerable 1970s-era [22]X10 protocol.  With Insteon controls, I
+   could use an RF remote and toggle lights on and off from a few
+   locations within the house.
+
+   With the hardware in place, I turned to finding software.  An RF remote
+   is a good start, but I wanted to eliminate even that.  What I found is
+   that the home automation community doesn't really have off-the-shelf
+   software that "just works" and lets you start doing things out of the
+   box.  I used [23]Mister House for a while, but at the time I was using
+   it, the Insteon support was pretty new.  I worked with a friend writing
+   some automation code -- well to be honest, being a tester for him, but
+   we were solving problems unique to our homes, not writing something
+   that was ultimately going to be the answer for our parents.
+
+   Earlier this year, I was introduced to [24]IFTTT, which stands for "If
+   This, Then That."  It is the closest thing I have seen to a generic
+   software stack that can readily be used for home automation purposes.
+   IFTTT can be used for much more than just home automation, but I'm
+   going to stick to that restricted use for the purpose of this post.
+
+   There is much to like about IFTTT, so I'll focus on just a few
+   attributes:
+     * Programming without knowing programming.  I've taken enough
+       computer science courses to know how to write a program, but I'm
+       not good enough to be a professional programmer.  IFTTT lets you
+       write rules -- essentially, programs that control objects in the
+       physical world -- without the high bar of learning specialized
+       syntax or all the system administration work that goes along with
+       running a program.
+     * Extending control beyond my home.  Traditional home automation has
+       been based on sensors inside the home.  In order to respond to
+       something, there needs to be a sensor to gather that data.  To turn
+       the lights on after dark, you need a sensor that tells your house
+       it's dark.  To do something when it's raining, you need a sensor
+       that gets wet, and so forth.  As you'll see, IFTTT lets you choose
+       a location and use information from Internet services to assemble
+       the context.
+     * One of the cleanest and easiest designs I've seen.  I know
+       everybody brags about design, but IFTTT is so simple that a
+       colleague of mine in sales uses IFTTT extensively.  (Insert your
+       own joke about the technical competence of sales representatives
+       here.)
+
+   To act in the physical realm of my house, though, IFTTT requires
+   devices that can take action.  The [25]Belkin WeMo is a family of
+   products, including a remote-controlled electrical outlet, light
+   switch, and motion sensor.  The WeMo uses Wi-Fi to connect to my home
+   network, so it can be controlled by any device on my network, or any
+   service on the Internet.
+
+   So, let's start out with a simple idea: I have a light, and I'd like to
+   turn the light on when it's dark.  In traditional home automation, I
+   can easily do that by picking a time to turn the light on and using the
+   same time every day.  If I pick a time that is appropriate for the
+   winter, though, the light will come on too early in June.  If I pick a
+   time that is right for June, I'll have to get up and turn the lights on
+   in December when it gets dark.  Or, using traditional home automation,
+   I could find a source of sunset times, pull them in manually, and hope
+   the data feed I'm using never changes.
+
+   That is, until IFTTT.  In this example, I'll show you how to set up a
+   WeMo to have a light that turns on at sunset.  IFTTT mini-programs are
+   called "Recipes" and consist of a trigger and an action.  Building a
+   recipe is a straightforward guided process that begins by picking the
+   trigger:
+
+   [26]IFTTT mini-programs IFTTT mini-programs
+
+   IFTTT's interaction with the world is organized into "channels," and
+   more channels are being added on a routine basis.  The first step in
+   creating a recipe is to choose the trigger:
+
+   [27]choose the trigger choose the trigger
+
+   Triggers are organized alphabetically.  I cut the screen shot off after
+   F because I wanted to get down to W for Weather and WeMo.  The first
+   time you select the weather channel, you'll be prompted to set a
+   location; I chose my home in San Francisco:
+
+   [28]set a location set a location
+
+   The weather channel has a number of components that you can choose to
+   use as a trigger.  Some are expected, such as the weather forecast.
+   However, the weather channel also allows you to take actions when
+   conditions change.  The weather data used by IFTTT is also rich enough
+   to have pollen count and UV index, which are not always readily
+   available from many forecasts.  For the purpose of our example, we'll
+   be using the "sunset" option, though it's easy to imagine creating
+   triggers to control lights when the sky becomes cloudy or turning on
+   air filtration when the pollen count rises:
+
+   [29]the sunset option the sunset option
+
+   Some triggers require additional configuration.  Sunset is
+   straightforward because it's known for the location that you chose:
+
+   [30]additional configuration additional configuration
+
+   Here at step three, the first part of the rule is done.  We have set up
+   a rule that will fire every day at sunset.  IFTTT helpfully fills in
+   the "this" part of our rule in a way that makes it obvious what we're
+   doing:
+
+   [31]first part of the rule is done first part of the rule is done
+
+   The second part of writing a rule is to lay out the action (the "that")
+   to take when the trigger fires.  Once again, we choose a channel to
+   take the action, choosing from the large number of channels that are
+   available:
+
+   [32]lay out the action lay out the action
+
+   We're trying to control lights plugged into a Belkin WeMo, so we'll
+   scroll down to "W" and pick the WeMo.  It has the actions that you
+   might expect from what is essentially a power switch: turn off the
+   outlet, turn on the outlet, blink the outlet, or toggle the outlet.  In
+   our case, we want to turn on the outlet to turn on the light:
+
+   [33]turn the outlet to turn the light on turn the outlet to turn the
+   light on
+
+   From the menu of options, choose "turn on."  IFTTT supports having
+   multiple WeMo switches, each of which can be named.  A drop-down allows
+   you to choose the switch being controlled by the rule so that many
+   different devices can be controlled.  For example, a coffeepot might be
+   turned on when an alarm goes off, different lights might be controlled
+   by different rules, and so forth:
+
+   [34]drop-down allows you to choose the switch being controlled
+   drop-down allows you to choose the switch being controlled
+
+   The last step in creating a rule is to finalize the action.  IFTTT
+   helpfully displays the rule in full in a nice simple form.  Is there
+   any doubt what the rule we've just created will do:
+
+   [35]finalize the action finalize the action
+
+   In my personal setup, I use a rule that turns off the light at 10 p.m.
+   as a reminder to go to bed.  There is not yet an easy way to say "turn
+   off the light two hours after it turned on" because IFTTT doesn't hold
+   much state (yet).
+
+   One aspect of IFTTT that I recently appreciated was how easy it is to
+   change the rule.  When going out of town, I decided to have the lights
+   on all night so that pet sitters wouldn't have to figure out all the
+   ways in which lights could be turned on.  I simply deactivated the
+   "turn off at 10 p.m." rule that was like this:
+
+   [36]deactivated the "turn off at 10 pm" rule deactivated the "turn off
+   at 10 pm" rule
+
+   I then replaced it with a rule that turned off the lights at sunrise.
+   (The lights in question are a low-power strand of LED lights.)
+
+   [37]replaced it with a rule that turned off the lights at sunrise
+   replaced it with a rule that turned off the lights at sunrise
+
+   Could I have accomplished the same tasks in other home automation
+   systems?  Absolutely, but it would have taken me much longer to get to
+   my end goal, and I would have had to do significantly more testing to
+   believe that my automation would behave as expected.  The combination
+   of IFTTT and the WeMo makes setup much easier and more accessible.
+   tags: [38]Belkin WeMo, [39]connected homes, [40]IFTTT, [41]Industrial
+   Internet, [42]Internet of Things
+     * Bp
+       I used this walkthrough to get my wife on board with IFTTT and
+       WeMo. Thanks
+
+CONTRIBUTORS
+
+     * [43]Tim O'Reilly
+       [44]Resharing Differences Between LinkedIn and Radar
+     * [45]Mike Loukides
+       [46]Genetically modified foods: asking the right questions
+     * [47]Jim Stogdill
+       [48]Where Innovation Lives
+     * [49]Nat Torkington
+       [50]Four short links: 4 October 2013
+     * [51]Jon Bruner
+       [52]Podcast: ratings, rankings, and the advantage of being born
+       lucky
+     * [53]Jenn Webb
+       [54]Progressive reduction, Bret Victor rants, and Elon Musk is Tony
+       Stark
+     * [55]Renee DiResta
+       [56]Big data and the "Big Lie": the challenges facing big brand
+       marketers
+
+   [57]See all contributors
+   [58]Tweets by @radar
+
+Most Recently Discussed
+
+Archives
+
+     * [Archives by Month...]
+     * [Archives by Topic...]
+       View
+     * [Archives by Author...........]
+       View
+
+   Sign up today to receive special discounts,
+   product alerts, and news from O'Reilly.
+   ____________ submit
+   [59]Privacy Policy > [60]View Sample Newsletter >
+     * [61]Twitter
+     * [62]YouTube
+     * [63]Slideshare
+     * [64]Facebook
+     * [65]Google+
+     * [66]RSS
+     * [67]View All RSS Feeds >
+
+   [68]O'Reilly
+
+   © 2013, O'Reilly Media, Inc.
+
+   (707) 827-7019(800) 889-8969
+
+   All trademarks and registered trademarks appearing on oreilly.com are
+   the property of their respective owners.
+
+About O'Reilly
+
+     * [69]About O'Reilly Radar
+     * [70]Academic Solutions
+     * [71]Jobs
+     * [72]Contacts
+     * [73]Corporate Information
+     * [74]Press Room
+     * [75]Privacy Policy
+     * [76]Terms of Service
+     * [77]Writing for O'Reilly
+
+Community
+
+     * [78]Authors
+     * [79]Community & Featured Users
+     * [80]Forums
+     * [81]Membership
+     * [82]Newsletters
+     * [83]O'Reilly Answers
+     * [84]RSS Feeds
+     * [85]O'Reilly Chimera (beta)
+
+Partner Sites
+
+     * [86]makezine.com
+     * [87]makerfaire.com
+     * [88]craftzine.com
+     * [89]igniteshow.com
+     * [90]PayPal Developer Zone
+     * [91]O'Reilly Insights on Forbes.com
+
+Shop O'Reilly
+
+     * [92]Customer Service
+     * [93]Contact Us
+     * [94]Shipping Information
+     * [95]Ordering & Payment
+     * [96]Affiliate Program
+     * [97]The O'Reilly Guarantee
+
+   [98]Powered by the Parse.ly Publisher Platform (P3).
+
+References
+
+   Visible links
+   1. https://plus.google.com/105451978536505503907
+   2. http://radar.oreilly.com/feed
+   3. http://radar.oreilly.com/comments/feed
+   4. http://radar.oreilly.com/2013/08/if-thisthen-that-ifttt-and-the-belkin-wemo.html/feed
+   5. http://radar.oreilly.com/2013/08/four-short-links-20-august-2013.html
+   6. http://radar.oreilly.com/2013/08/four-short-links-21-august-2013.html
+   7. http://radar.oreilly.com/
+   8. http://oreilly.com/
+   9. http://shop.oreilly.com/
+  10. http://radar.oreilly.com/
+  11. http://answers.oreilly.com/
+  12. http://my.safaribooksonline.com/?cid=orm-nav-global&portal=oreilly
+  13. http://conferences.oreillynet.com/
+  14. http://www.oreillyschool.com/
+  15. http://people.oreilly.com/index.php?app=members&section=view&module=list
+  16. http://radar.oreilly.com/2013/08/if-thisthen-that-ifttt-and-the-belkin-wemo.html
+  17. http://app.readspeaker.com/cgi-bin/rsent?customerid=14&lang=en_us&readid=body-content&url=http://radar.oreilly.com/2013/08/if-thisthen-that-ifttt-and-the-belkin-wemo.html
+  18. http://radar.oreilly.com/mgast
+  19. http://twitter.com/MatthewSGast
+  20. http://radar.oreilly.com/2013/08/if-thisthen-that-ifttt-and-the-belkin-wemo.html#comments
+  21. http://en.wikipedia.org/wiki/Insteon
+  22. http://en.wikipedia.org/wiki/X10_(industry_standard)
+  23. http://misterhouse.sourceforge.net/
+  24. https://ifttt.com/
+  25. http://www.belkin.com/us/wemo
+  26. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-1-copy.png
+  27. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-2-copy.png
+  28. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-3-copy.png
+  29. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-4-copy.png
+  30. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-5-copy.png
+  31. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-6-copy.png
+  32. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-7-copy.png
+  33. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-8-copy.png
+  34. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-9-copy.png
+  35. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-10-copy.png
+  36. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-11-copy.png
+  37. http://s.radar.oreilly.com/wp-files/2/2013/08/ifttt-12-copy.png
+  38. http://radar.oreilly.com/tag/belkin-wemo
+  39. http://radar.oreilly.com/tag/connected-homes
+  40. http://radar.oreilly.com/tag/ifttt
+  41. http://radar.oreilly.com/tag/industrial-internet
+  42. http://radar.oreilly.com/tag/internet-of-things
+  43. http://radar.oreilly.com/tim
+  44. http://radar.oreilly.com/2013/09/resharing-differences-between-linkedin-and-radar.html
+  45. http://radar.oreilly.com/mikel
+  46. http://radar.oreilly.com/2013/09/genetically-modified-foods-asking-the-right-questions.html
+  47. http://radar.oreilly.com/jims
+  48. http://radar.oreilly.com/2013/07/where-innovation-lives.html
+  49. http://radar.oreilly.com/nat
+  50. http://radar.oreilly.com/2013/10/four-short-links-4-october-2013.html
+  51. http://radar.oreilly.com/jbruner
+  52. http://radar.oreilly.com/2013/08/podcast-ratings-rankings-and-being-born-lucky.html
+  53. http://radar.oreilly.com/jennw
+  54. http://radar.oreilly.com/2013/09/progressive-reduction-bret-victor-elon-musk-rmit-ui-design.html
+  55. http://radar.oreilly.com/reneed
+  56. http://radar.oreilly.com/2013/09/big-data-and-the-big-lie-the-challenges-facing-big-brand-marketers.html
+  57. http://radar.oreilly.com/radar-contributors/
+  58. https://twitter.com/radar
+  59. http://oreilly.com/oreilly/privacy.html
+  60. http://oreilly.com/pdf/sample-newsletter.pdf
+  61. http://twitter.com/oreillymedia
+  62. http://youtube.com/oreillymedia
+  63. http://slideshare.net/oreillymedia
+  64. http://www.facebook.com/OReilly
+  65. https://plus.google.com/105451978536505503907
+  66. http://feeds.feedburner.com/oreilly/news
+  67. http://oreilly.com/feeds
+  68. http://oreilly.com/
+  69. http://radar.oreilly.com/about/
+  70. http://oreilly.com/academic/
+  71. http://oreilly.com/jobs/
+  72. http://oreilly.com/contact.html
+  73. http://oreilly.com/about/
+  74. http://press.oreilly.com/index.html
+  75. http://oreilly.com/oreilly/privacy.csp
+  76. http://oreilly.com/terms/
+  77. http://oreilly.com/oreilly/author/intro.csp
+  78. http://oreilly.com/authors/
+  79. http://oreilly.com/community/
+  80. http://forums.oreilly.com/
+  81. https://members.oreilly.com/
+  82. http://elists.oreilly.com/
+  83. http://answers.oreilly.com/
+  84. http://oreilly.com/feeds/
+  85. http://chimera.labs.oreilly.com/
+  86. http://makezine.com/
+  87. http://makerfaire.com/
+  88. http://craftzine.com/
+  89. http://igniteshow.com/
+  90. https://developer.paypal.com/
+  91. http://blogs.forbes.com/oreillymedia/
+  92. http://shop.oreilly.com/category/customer-service.do
+  93. http://shop.oreilly.com/category/customer-service.do
+  94. http://shop.oreilly.com/category/customer-service/shipping-information.do
+  95. http://shop.oreilly.com/category/customer-service/ordering-payment.do
+  96. http://oreilly.com/affiliates/
+  97. http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do
+  98. http://parsely.com/
+
+   Hidden links:
+  99. http://radar.oreilly.com/mgast
+ 100. http://radar.oreilly.com/tim
+ 101. http://radar.oreilly.com/mikel
+ 102. http://radar.oreilly.com/jims
+ 103. http://radar.oreilly.com/nat
+ 104. http://radar.oreilly.com/jbruner
+ 105. http://radar.oreilly.com/jennw
+ 106. http://radar.oreilly.com/reneed
+ 107. http://feeds.feedburner.com/oreilly/radar/atom

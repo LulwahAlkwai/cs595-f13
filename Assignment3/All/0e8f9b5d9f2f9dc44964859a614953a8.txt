@@ -1,0 +1,2934 @@
+<!DOCTYPE html>
+<html b:version='2' class='v2' dir='ltr' lang='en' xmlns='http://www.w3.org/1999/xhtml' xmlns:b='http://www.google.com/2005/gml/b' xmlns:data='http://www.google.com/2005/gml/data' xmlns:expr='http://www.google.com/2005/gml/expr'>
+<head>
+<title>
+Blogger Buzz: Bringing Google+ Comments to Blogger
+</title>
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/static/v1/widgets/2220499320-widget_css_2_bundle.css' />
+<link type='text/css' rel='stylesheet' href='//www.google.com/uds/css/gsearch.css' />
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/dyn-css/authorization.css?targetBlogID=2399953&amp;zx=4f52245e-e6c8-4835-94ac-0679da010263&quot;/&gt;
+' />
+<style id='page-skin-1' type='text/css'><!--
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body#layout {
+min-width: 800px;
+}
+#layout #blog-header {
+height:165px;
+}
+#layout #blog-header, #layout #maia-main {
+min-width: 780px;
+padding:0 10px;
+}
+#layout #maia-main:after, #layout #blog-header:after {
+clear:both;
+content:" ";
+display:block;
+height:0;
+visibility:hidden
+}
+#layout .maia-col-9 {
+width:440px;
+padding:0 10px;
+float:left;
+}
+#layout .maia-col-3 {
+width:300px;
+padding:0 10px;
+float:left;
+}
+#layout #Navbar1 {
+position:absolute;
+width:200px;
+top:0px;
+right:10px;
+}
+--></style>
+<!-- start all head -->
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,e="jstiming",g="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,d]};this[g]("start",null,a)}var a=new d;b.jstiming={Timer:d,load:a};if(b.performance&&b.performance.timing){var a=b.performance.timing,c=b[e].load,f=a.navigationStart,a=a.responseStart;0<f&&a>=f&&(c[g]("_wtsrt",void 0,f),c[g]("wtsrt_","_wtsrt",a),c[g]("tbsd_","wtsrt_"))}try{a=null,b.chrome&&b.chrome.csi&&(a=Math.floor(b.chrome.csi().pageT),c&&0<f&&(c[g]("_tbnd",void 0,b.chrome.csi().startE),
+c[g]("tbnd_","_tbnd",f))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<f&&(c[g]("_tbnd",void 0,b.external.startE),c[g]("tbnd_","_tbnd",f))),a&&(b[e].pt=a)}catch(l){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[e].load[g]("aft")};var h=!1;function k(){h||(h=!0,b[e].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",k,!1):b.attachEvent("onscroll",k);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://buzz.blogger.com/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Blogger Buzz - Atom" href="http://buzz.blogger.com/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Blogger Buzz - RSS" href="http://buzz.blogger.com/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Blogger Buzz - Atom" href="http://www.blogger.com/feeds/2399953/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Blogger Buzz - Atom" href="http://buzz.blogger.com/feeds/2786327610228173726/comments/default" />
+<!--[if IE]><script type="text/javascript" src="//www.blogger.com/static/v1/jsbin/4163410827-ieretrofit.js"></script>
+<![endif]-->
+<link rel="image_src" href="http://2.bp.blogspot.com/-6SRsjW1CZ7A/UW9NMwz2S6I/AAAAAAAAATo/E3R4OMZObL4/s72-c/Fountain-screenshot-EN.png" />
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<!-- end all head -->
+<base target='_self'/>
+<link href='//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en' rel='stylesheet'/>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js' type='text/javascript'></script>
+<script>
+      $(document).ready(function() {
+        $(".expander").click(function (event) {
+          event.preventDefault();
+          $(this).siblings().slideToggle(500);
+        });
+        $('#CustomSearch1').hover(function(){
+          $('td.gsc-input').animate({'left':'-230px', 'opacity':'1'}, 1500);
+          $('input.gsc-input').animate({'width':'101px'}, 1500);
+        });
+        $('input.gsc-input').keyup(function(e) {
+          if (e.keyCode == 13) {
+            $('td.gsc-input').css({ display: "none", opacity: "0"});
+            $('input.gsc-input').css({ width: "20px"});
+          }
+        });
+      });
+    </script>
+<style>
+      @import url(//www.google.com/css/maia.css);
+      @media screen, projection {
+      i {
+        font-weight: normal;
+        font-style: italic;
+      }
+      #Navbar1{
+        display:none;
+      }
+      #blog-header{
+        background: #f5f5f5;
+        background-image: -moz-linear-gradient(top, #fafafa, #f5f5f5);
+        background-image: -webkit-linear-gradient(top, #fafafa, #f5f5f5);
+        background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0, #fafafa), color-stop(1, #f5f5f5));
+        filter: "progid:DXImageTransform.Microsoft.gradient(startColorStr=#fafafa, EndColorStr=#f5f5f5)";
+        background-image: linear-gradient(top, #fafafa, #f5f5f5);
+        border-bottom: 1px solid #eee;
+        color: #444;
+        padding: 0px 15px 0px;
+        margin: 0 -15px;
+      }
+      #blog-header .product-logo {
+        position: absolute;
+        right: 0;
+        top: 0;
+      }
+      #blog-header .widget {
+        margin: 0;
+        padding: 0;
+      }
+      .section {
+        margin: 0;
+        padding: 0 20px;
+      }
+      #header, #header .header {
+        height: 150px;
+        position: relative;
+        overflow: hidden;
+      }
+      #header #logo {
+        background-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAKcAAAArCAYAAAAdZJhPAAAJxklEQVR42u2dCXBV1RnHXwjiAspSqq2tUrUz7aAdbQlLqmiARmeQzUGtOtU6dUYG2lpmOjgMtCKEgguFBJIQQlgDVUFCimWsrJGlxQAmkLALhC0BVMhCgQTh65/JmXL4z7nnnffyts5738xvGN75znfvI7937rnn3Bd8V0MW9nlBCn++Txb0lP8xXzFPMbfHNeaAAo3ZIL/79cwCeRozQW7K9eRoZCtmENO7NUlWykrJ7PZDXyLiK6Sw74tS2EsEOMk5J+JyimRdJaUGgn7bl4j4CVmYesAiZszIqQQd50tE/IQmpW3UjBU5l/gSET9hEdNZTsgYLjk1MUFmt2JfIuInSEq3URPYR82EnIkIQZilDMUlPSFnIloYJKN/MQvTRTZMFjm4VuTULpH6apGGGkB8uVfk8EaRzVkiCwfYxASe882EnAk5DVKymHNTRbYViDRdkIDjymWRymKRgj4Oo2bsyzlq9JiXQYnGI75EhD5ISrOYC/uJVH8uLY7aoyKLn4q4nJDn+yDNwkOgK2jvWO9NIBpDfIkIfZCMhhGzl8iJbRKyqDuBmv0c55shk3MkEEdOgyLwK9A6IWesyTlHY2uehDz2r3IZNaMhJ7MX3J+QM0qhJDSzIE2k8ZyEJd57PlblZKpAu4ScsSJngaJkooQtyhb7uaSHVc6R1H4DuBsMBZ8CIV5JyBmFUCKa2bNCrLHnIwg8SWT9X65n3cRmdnzQfKduilO7/Y+azLSwyMm5yWAN5S9KyBlbctpvhA6V8IK7edG9YpkY4/zZWJKT839N+WuClRNtncEIUAQqwAmwH2wAE8ADDuffCgwAc8B2cBQcBztV3fkedDZ88AaDeaBMq7MDLLPUucVwTqlgKtgCDoFjYBvIBY9Z3kuuVvc72ut9wRJVqwZUXC/nbKK6XDxjV5F/MYGUzvJe+8x/lMS0XdIjKucvKX+pq5yU9xpoAGJDydLOo0YXJYAEwQ+0OvcpeSQIOmh1OoLlDn1WgTsM76dWy0kHyWAWEOKkT4loenjDLueliyJrx4v87SmRxUNEFukMbubj10Uu1olnHFyH/s+JLBgkMq8/jZpRlTOP8v/oIiflvBOgAJ/xCHX17+ALytsHcsEMUAaEuKAknAM6qDq3gSOUtwvkgGxQCYQ4D0pBAbhJq1MBxMAVIIZz7WSRcySY6VFvq4+EJDnLJKJxeh9G3cciLSffGA0Hl7Tcr8C3/MlJ7U8DIYrBUNAdPA7eBRd4BKU6r1N7AWhFOW9TzouG9zWOcrJBktaeBLIo52lDnULKKVejX2vQCqSCDZQz2yLnbpK7FMwH80BG9OXk+HiMQcyQy1kBiolNhkvwl6C3yzonzQ95tPuzx3n1BOcp90GtfQuNiLcZarQBZ7S8zYaccq29QRuheZQ+p+Wto/Yf0XkeALca6txIo2sTuJPlJHaBh7hW7Mm5enz45HTnDBhLNxSucvY2XNqSLec2gfKna22ntdc/t9Qo0WUwtP/HQ17O+5eWV0dtU3iEtj17QLkvW+Q8pl2ZSE7c1JiJETkzIyYncxEsBvcEKOdYahvP/f2MSBUeP8hSS43VWt4lQ3uT1r7BUmeTPuektlK+SbLU+THlzrDI+RvqbpEzTyOW5JwWUjmXg5Eao8Fk8JHhMlsHugUg53vc5nB+9TT3aqVe3669fs7jcpwMTmp5Bw05e7X2s6CNw/Rgp0XwS6DYwj+BaLxvkbOTt5yQkIgROXnUjNgifGewkvJ3gyRHOfkHk+pwfoepT2f1+hgegUAS9R1NOW85TB3eNdQZzyO+1tYWSAso9pCz3scR+3KymJGTU1syqaM+PRzlLKG27g7nt5/6fFeTYh+1VYLp2gI4z986Guq3N3wAdoBMVeczajsEbtX6dwqTnLXByTkTnCizr3OuefPaumYhWMgMamaBYtEzIpXLA5NzmsbUsMrJfT7huZGjnMuoLd3hWCepz430LCpLKIzKuc9yjHvBVoc6G0EX6tuack6BDgHQNjg5ISGjdnfsclZ8SA8NOz5AnN1D5GK9TU7zqDk16nKOcJSTF9//4Oc4HfkHT+1JtE5ZpeSoARVgARjI658ec9NJWp3Dqk61qjMX9Peqo7ZdRXEZtPcFEMHJCcE8ObbVsruz3kNKEpPJ7yPyTaN4xifjSMzIy4n2m8DX1Geoo5wDeRvPz7FeovwiyyJ7LkgK8t8gR6uTGUT/93kpKbpy7ioWa6Bd1k4EGc2smXCN1QbWvy1yao9YY+mrBjHDLidfwvIp/zK43VHONuA0tffxONYtYA/lvqTXot2qlCDffzvaXrw/iBrPGJ5z7Rg9OTGnDHvwPDb7Ybqch0XObJCm8QR4FmTwDYhiSYDbl3y8OvACuEHLeQBsMuy6tLHcJW8BI8BQMETjcfBTVZ/CeEOz0VLnQb0O7XyVG3Z2Uj1yu4EMsCJ0cuZozHpUpLFBIhaVK5SY4ZEzSL4AtwcoZzLPWRXn1EhZbWhrBL0M574IiAWunwc6G+oUBVCnHmSDDlSjK69iKE4o4UvATtqRKg9eTkhoZXN2hEbNRpF5g0jMqMu5lMT0JydfsosD2C79heWRuQNAAmAfaE917gFVAdapMHxF5We0LGUkMnLm9hA5ViphjzUTScyQyjkc1DpwFKwDk8FPLPVGU78nLblDwAaPR8qOgCkeH4BkkAEaae57GlQpTmrtTIZW5x3QZKlzylJnrMcHbxQo194XcxwUgJ7U9wioVRwJXM5sIj9N5Pg2CU9cEfl0Gotp5q8kZ+wHL+z3An3Vn3f7yZ9Gz1aOsDyQ3AEMV9KJYptqm0l1hoG2lmWt35NwmzmPj61G034gDfQAofk9qiSimRkgp6fIv2eKNJ2XkMXXB0U+HOYoZgTljL7Id4BvNEFec+y3ku6m7yLRhjnWWa9PEXzRCoF4AZHfV7As1Pzd85rK5l+SUF/txpkqkWPbRco+ECn6rUhWdxIzIaeS4wkgGl0pxeXppK2GNdd7Hets1O/s/3/ktH8ZzU4m4Sxm3Mn5MEn1vEOfdLqsZ4F03khwqNOfHySJdTlZyBZL6S5mXMrZFjTQOulw0NGwk/UIyKFpQAPoAtqDC7Qq8IrhTv5m0Bvkk+C14M6Yk9MuY2TFZDnjRNDfAWGUeFW8vUoi99XqjPJT54xH+1mQ5otmKPEIkjFyUrKYzJI48JK/7lADxIELIB/cZajzKvgqgDp54HtUJhpypuwlsVooZUjFZN6IEy/5kjsATAJLwSpQAv4OFoE3wEDQ1qHOYPCWqrNa1SkGheBP4Elwsy9WAnfMz7VcyLBIydTIlMT/QxR3IVkpz2IE3R06KUMqZhP4h0xJ/A9u8Rb/BWpZ3j3V3T85AAAAAElFTkSuQmCC");
+        background-repeat: no-repeat;
+	width: 167px;
+	height: 43px;
+	margin-top: 42px;
+	margin-bottom: 18px;
+      }
+      #header .blurb {
+        font: 14px "Arial";
+	color: #666;
+      }
+      #header .logo a {
+        color: #63666A;
+      }
+      #header .logo span {
+        float: left;
+        height: 44px;
+      }
+      #blog-header span:after {
+        border: solid #E5E5E5;
+        border-width: 0 1px 0 0;
+        content: "";
+        float: right;
+        height: 44px;
+        margin: 0 12px 0 14px;
+      }
+      #sidebar-top {
+        border: 1px solid #ebebeb;
+      }
+      #sidebar-top .widget {
+        margin: 15px 0;
+      }
+      .widget ul {
+        line-height: 1.6;
+      }
+      .CustomSearch {
+        width: 180px;
+        height: 34px;
+        margin: 0 auto 9px;
+      }
+      .CustomSearch table.gsc-search-box tr {
+        background: none;
+      }
+      .CustomSearch table.gsc-search-box td.gsc-input {
+        border: none;
+        padding: 0;
+        margin: 0;
+      }
+      .CustomSearch table.gsc-search-box input.gsc-input {
+        border: 1px solid #E5E5E5 !important;
+        border-top-color: gainsboro !important;
+        color: #666 !important;
+        display: inline-block !important;
+        line-height: normal !important;
+        padding: 6px 12px !important;
+        width: 101px;
+      }
+      .CustomSearch input.gsc-search-button {
+        padding:3px 12px !important;
+        margin:0!important;		
+        background: url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAQtJREFUeNpi/P//PwMlgAmLWBQQrwDip0D8EIiXAnEgThNALkDC8//jBnPQ1IIxMicZpOrv378/du/e3R8UFBQSGRkZdvjw4alAsd9QQ0LwGbALpGLr1q3tQIdJATE7EHMAseyhQ4cmQQ1Yh8sAdqjtvz08PBTQvVlUVKQPNeA1ugEogcjIyPg/MDDwKboBvr6+MDE2fIF4AGTFnz9/EtHV/Pr1qxDqgi0EA/Hfv39fgFQCEPMDsSgQZwLFvj99+hQciOiWo0fLIjzR+B8auFL4DIC5BOTUj9BAA4V8FFQDskFg9YzEJmVgADP8R1IM5EsDuc9IMgDmCmRhJlIzDyPMJBifFrmRJAAQYABIl4BFtRdyJgAAAABJRU5ErkJggg==") center center no-repeat;
+        display: block;
+        line-height: 1.54;
+        text-indent: -9999px;
+        width: 25px!important;
+        border: none;
+      }
+      .CustomSearch td.gsc-search-button {
+        background-color:#5e94ff;
+        background-image:url("data:image/png;base64, iVBORw0KGgoAAAANSUhEUgAAAAEAAABkCAMAAABw8qpSAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAGZQTFRFcZ/7ZZTwWIbiXIrmW4nlXYvnYI7qY5HtYpDsaJbyb535V4XhVoTgb575WYjjbpz4XYzoX47pbJv3Z5bxZJLuYY/ra5n1apj0VoXhcJ76bZv3aZfzZJPva5r2WIfjZpXxWojkXo3pYWddNgAAAD1JREFUeNrMwYcBQwAAALDYs2iNFrX+f9IbEh5h9lJqLT42k69VoXcI/A0yuVHq7dJJRGKnxi5U+alvAQYATb8CMoTkHNsAAAAASUVORK5CYII=");
+        background-image:-moz-linear-gradient(top,rgba(226,226,226,.14),rgba(34,34,34,.14));
+        background-image:-webkit-linear-gradient(top,rgba(226,226,226,.14),rgba(34,34,34,.14));
+        background-image:linear-gradient(top,rgba(226,226,226,.14),rgba(34,34,34,.14));
+        background-position:left bottom;
+        background-repeat:repeat-x;
+        border:1px solid #5e94ff;
+        -moz-border-radius:2px;
+        -webkit-border-radius:2px;
+        border-radius:2px;
+        -moz-box-shadow:0 1px 1px rgba(0,0,0,.2);
+        -webkit-box-shadow:0 1px 1px rgba(0,0,0,.2);
+        box-shadow:0 1px 1px rgba(0,0,0,.2);
+        color:#fff;
+        display:inline-block;
+        font-family:"open sans",arial,sans-serif;
+        font-size:13px;
+        font-weight:600;
+        line-height:1.54;
+        padding: 0 10px;!important;
+        margin:0!important;
+        width:auto!important;
+        text-align:center;
+        text-shadow:0 -1px 0 rgba(0,0,0,.2);
+        -moz-transition:all .218s ease-in;
+        -webkit-transition:all .218s ease-in;
+        transition:all .218s ease-in;
+      }
+      /*main post*/
+      #maia-main {
+        margin-top:60px;
+      }
+      .post {
+        margin-bottom:30px;
+      }
+      #main .post .title {
+        margin:0 0 1.0em 0/*2.100em 0 .900em*/;
+      }
+      #main .post .title a {
+        color: #444;
+        font-weight: bold;
+        font-size:21px;
+      }
+      #main .post .title a:hover {
+        text-decoration:none;
+        color:#9d9d9d;
+      }
+      .message,  #main .post .post-header {
+        border-bottom: solid 1px #ebebeb;
+        border-top: solid 1px #ebebeb;	
+        height: 40px;
+        line-height: 40px;
+        margin: 10px 0;
+        padding: 0;
+      }
+      #main .post .post-header .caption, #main .post .post-header .labels-caption,  #main .post .post-footer .caption, #main .post .post-footer .labels-caption {
+        color: #444;
+        font-weight:bold;
+      }
+      #main .post .post-header .published{
+        font-size:11px;
+        font-weight:bold;
+      }
+      #main .post .post-header .publishdate{
+        font-weight:normal;
+        color:#656565;
+      }
+      #main .post .post-footer{
+        font-size:12px;
+      }
+      #main .post .post-header .published {
+        float: left;
+      }
+      #main .post .post-header .share {
+        float: right;
+        margin-top: 5px;
+      }
+      #main .post .post-header .share .fb-like {
+        display:inline;
+        position:relative;
+        top:-2px;
+      }
+      #main .post .post-content {
+        margin: 25px 0;
+        line-height:1.6;
+      }
+      #main .post .jump-link {
+        margin-bottom:10px;
+      }
+      .post-content img, .post-content iframe {
+        margin: 20px  0;
+        border: 1px solid #ddd;
+      }
+      #aside {
+        background:#f9f9f9;
+        border:1px solid #ebebeb;
+        border-width:1px 1px 0;
+      }
+      #aside .widget {
+        margin:0;
+      }
+      #aside .widget h2 {
+        margin:0;
+      }
+      #sidebar .widget h2 {
+        font-size: 1em;
+        font-weight: bold;
+        color: #444;
+      }
+      #sidebar .widget .BlogArchive {
+        padding-bottom: 8px;
+      }
+      #sidebar .widget {
+        border-bottom: 1px solid #EBEBEB;
+        box-shadow: 0px 1px 0 white;
+        margin-bottom: 0;
+        padding: 12px 0;
+        min-height: 20px;
+      }
+      #sidebar .widget:last-child {
+        border-bottom: none;
+        box-shadow: none;
+        margin-bottom: 0;
+      }
+      #sidebar ul {
+        margin: 0;
+        padding: 0;
+      }
+      #sidebar ul li {
+        list-style:none;
+        padding:0;
+      }
+      #sidebar ul li a, #sidebar .expander {
+        color: #0055cd!important;
+        font-weight: normal!important;
+        background-color: transparent;
+        background-repeat: no-repeat;
+        background-position: left center;
+        display: inline-block;
+        min-height: 20px;
+        line-height: 20px;
+        padding-left: 30px;
+        -moz-transition: all 0.25s ease-out;
+        -webkit-transition: all 0.25s ease-out;
+        transition: all 0.25s ease-out;
+      }
+      #sidebar ul li:hover a, #sidebar .expander:hover {
+        margin-left: 0;
+        text-decoration: underline;
+      }
+      .expander{
+        cursor:pointer;
+      }
+      #sidebar .rss a, #sidebar .subscription a {
+        font-size: 1em;
+      }
+      #sidebar .archive, #sidebar .labels, #sidebar .rss, #sidebar .subscription {
+        background-repeat: no-repeat;
+        background-position: 0px 0;
+      }
+      #sidebar .archive {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAYCAYAAADzoH0MAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAE1JREFUeNpiNDY23s9AAWBioBCwYBM8c+YMVsUmJibEGYBNMS5DaeMFfDYSZQA2v9I3FrB5AZeriI4FmnrBccCT8mhmGs1MwyAzAQQYAKEWG9zm9QFEAAAAAElFTkSuQmCC);
+        height: 24px;
+        line-height: 24px;
+        padding-left: 30px;
+      }
+      #sidebar .labels {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAARCAYAAAA7bUf6AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUxJREFUeNpiNDY23s9AAMycOfM7UF05kHkZmzwTMkdSUhKrIcXFxZy3bt3qBjIN8RrS09PDsHnzZjCNDr58+cKQlpbGDjSoHcg1w2oIyAUODg5gARCNzUVIBrUCuVYYhjx//pzhwIEDYAEQDeJjA1CDWIAGNQK59jBxRuSABbkAlwHIgIeHh2HWrFn/1NTU2oDcvSgBS4wBSC5iArqoCsj1YGIgEyAZVMoEchqlBjEB/cZAiUHg2AEGznpKDAImxOeM////B4VLKtBvEUCngZ1ILKivr3/u6+ubBzJAGZQ9gC5aQoqLgAY8BhkAZL4BuQQkxgXE34A4BuiiZEIuAhrwEGhAEZD5DpzYoIaA2UAM4kQADUrHZRDUgAIg8wO2XAwzbQXQa5OweQ1owB10AyA6gS7BgX1u3ry5397eHow3bdo0EyjGi00tQIABANPgyAH1q1eaAAAAAElFTkSuQmCC);
+        height: 20px;
+        line-height: 20px;
+        padding-left: 30px;
+      }
+      #sidebar .rss a {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAX5JREFUeNqsVDGSgkAQHL2rIiIikohIc/EBRkbwAIwuwgfwAXiAD9AHSI7kEkECRCb6AIyINDLx7K0aa6kT7uq0q7YYtnZ7umdnt7darXbr9Zpegeu61DNNc0dvwCcH4/GYJpMJnc9nOhwOVJbl/4hAAokMECZJQtvt9k+kH7qufyEYDAakqqqYxFdRFBqNRmTbNg2HQ0rTlK7XayvR0xqBdDqdkuM4dE/0ULhYLOh4PHYrknG5XGi/31MYhuL/nkwonM1mlGUZ1XXdrsiyLGEDhY7juJEZ1u5tIixDGdYhmYw+B7CAzPP5nDabjdgIAgCksMX1832/3drtdqPT6SQWapomiGEFNkDEdpDMMAzK81ys/7XYy+XyoQgq2WoURSIJ2iIIgp/WZCCTvFm2wgeAU31aI3Q2GhIDMeB53qPYPIcm5VrxXIOIOxsDMStjVawAc1VViRgN22lNBiuQN3GR+SY07hpOoStmFQAKXRRFY93bnpG+fONfedi+BRgAbkS8Fxp7QQIAAAAASUVORK5CYII=);
+      }
+      #sidebar .subscription a {
+        background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABEAAAALCAYAAACZIGYHAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAUBJREFUeNrMkSGLAlEUhb+ZB4JFi8mx2cz+ApvhRUGTcUCrNqNJDYIi+DO0GUwmQXDK2DSIoGgZcSaIjDrzwrK4ssvChj1w0733O+fdp+m6PozH4yQSCfb7Pa7r8pOi0SjJZBLP8zgej4gAIMvlMuPxmADIYrHger1+C6lUKmo+NJ/NZojb7SZDWiwWo1qtks1msW2bw+HwZdkwDHq9HvV6nel0SqvVYrvdIh6Ph3Qch+VyqRYLhQJSSjRNw7IsfN9XgGKxSLfbJZfL0e/3aTabrFYr7vc7IujLcOh8PqunrNdr0uk0pVKJVCpFJBJRgEajweVyod1uMxgM2O12BAGUgRbU8DV2JpOhVquRz+cRQii3+XxOp9NRN3jVR5LPOp1OjEYjlSL8hclkgmmabDabt4d+m+S30vkD/R/IU4ABAPTZgnZdmG/PAAAAAElFTkSuQmCC);
+      }
+      #sidebar-bottom {
+        background:#f6f6f6;
+        border-top:1px solid #ebebeb;
+      }
+      #sidebar-bottom .widget {
+        border-bottom: 1px solid #ebebeb;
+        padding: 15px 0;
+      }
+      .expand-content {
+        display: none;
+      }
+      .default-blog-footer ul {
+        padding: 0;
+      }
+      .default-blog-footer li {
+        list-style: none;
+      }
+      .blog-pager {
+        border-top : 1px #ebebeb solid;
+        padding-top: 10px;
+        margin-top: 15px;
+      }
+      .blog-pager-older-link, .home-link, .blog-pager-newer-link {
+        padding: 5px;
+      }
+      .followgooglewrapper {
+        text-align: center;
+        margin: 0 auto;
+        padding: 12px 0 0 0;
+      }
+      .youtubewrapper {
+        text-align: center;
+        margin: 0 auto;
+      }
+      }
+    </style>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body>
+<!-- Header -->
+<div id='blog-header'>
+<div class='maia-aux'>
+<div class='section' id='header'><div class='widget Header' id='Header1'>
+<div class='header'>
+<div id='logo'></div>
+<div class='blurb'>Blogger Buzz: The Official Buzz from Blogger at Google</div>
+</div>
+</div><div class='widget LinkList' id='LinkList1'>
+<h2>More Blogger Resources</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='https://plus.google.com/u/0/+Blogger/posts'>Google+ page</a></li>
+<li><a href='http://knownissues.blogspot.com/'>Known Issues blog</a></li>
+<li><a href='http://www.youtube.com/user/BloggerHelp'>Blogger Help Videos</a></li>
+<li><a href='http://www.google.com/support/forum/p/blogger/'>Help Forum</a></li>
+<li><a href='http://www.google.com/support/blogger/?hl=en'>Help Center</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=header' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget PageList' id='PageList1'>
+<h2>Pages</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://buzz.blogger.com/'>Home</a></li>
+<li><a href='http://buzz.blogger.com/p/about.html'>About</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=PageList&widgetId=PageList1&action=editWidget&sectionId=header' onclick='return _WidgetManager._PopupConfig(document.getElementById("PageList1"));' target='configPageList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget PlusOne' id='PlusOne1'>
+<div class='widget-content'>
+<g:plusone annotation='inline' href='http://buzz.blogger.com/' size='standard' source='blogger:blog:plusone' width='250'></g:plusone>
+<script type='text/javascript'>
+      window.___gcfg = {"lang": "en"};
+    </script>
+</div>
+</div><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+<a href="http://www.google.com/intl/en/privacy.html">Privacy Policy</a>. Powered by <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=header' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+<div class='widget FollowByEmail' id='FollowByEmail1'>
+<h2 class='title'>Follow by Email</h2>
+<div class='widget-content'>
+<div class='follow-by-email-inner'>
+<form action='http://feedburner.google.com/fb/a/mailverify' method='post' onsubmit='window.open("http://feedburner.google.com/fb/a/mailverify?uri=blogger/WZDh", "popupwindow", "scrollbars=yes,width=550,height=520"); return true' target='popupwindow'>
+<table width='100%'>
+<tr>
+<td>
+<input class='follow-by-email-address' name='email' placeholder='Email address...' type='text'/>
+</td>
+<td width='64px'>
+<input class='follow-by-email-submit' type='submit' value='Submit'/>
+</td>
+</tr>
+</table>
+<input name='uri' type='hidden' value='blogger/WZDh'/>
+<input name='loc' type='hidden' value='en_US'/>
+</form>
+</div>
+</div>
+<span class='item-control blog-admin'>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=FollowByEmail&widgetId=FollowByEmail1&action=editWidget&sectionId=header' onclick='return _WidgetManager._PopupConfig(document.getElementById("FollowByEmail1"));' target='configFollowByEmail1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</span>
+</div><div class='widget Translate' id='Translate1'>
+<h2 class='title'>Translate</h2>
+<div id='google_translate_element'></div>
+<script>
+    function googleTranslateElementInit() {
+      new google.translate.TranslateElement({
+        pageLanguage: 'en',
+        autoDisplay: 'true',
+        layout: google.translate.TranslateElement.InlineLayout.VERTICAL
+      }, 'google_translate_element');
+    }
+  </script>
+<script src='//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit'></script>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=Translate&widgetId=Translate1&action=editWidget&sectionId=header' onclick='return _WidgetManager._PopupConfig(document.getElementById("Translate1"));' target='configTranslate1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<!-- Header -->
+<!-- all content wrapper start -->
+<div id='maia-main'>
+<div class='maia-cols'>
+<div class='maia-col-9'>
+<!-- post section start -->
+<div class='section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='post' data-id='2786327610228173726' itemscope='' itemtype='http://schema.org/BlogPosting'>
+<meta content='http://2.bp.blogspot.com/-6SRsjW1CZ7A/UW9NMwz2S6I/AAAAAAAAATo/E3R4OMZObL4/s640/Fountain-screenshot-EN.png' itemprop='image_url'/>
+<h2 class='title' itemprop='name'>
+<a href='http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html' itemprop='url' title='Bringing Google+ Comments to Blogger'>
+Bringing Google+ Comments to Blogger
+</a></h2>
+<div class='post-header'>
+<div class='published'><span class='caption'>Posted:</span>
+<span class='publishdate' itemprop='datePublished'>April 18, 2013</span>
+</div>
+<div class='share'>
+<span class='gplus-wrapper'>
+<div class='g-plusone' data-href='http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html' data-size='medium'></div>
+</span>
+<a class='twitter-share-button' data-lang='en' data-url='http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html' href='https://twitter.com/share'>Tweet</a>
+<iframe allowTransparency='true' frameborder='0' scrolling='no' src='http://www.facebook.com/plugins/like.php?href=http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html&layout=button_count&show_faces=false&width=77&action=like&colorscheme=light&height=20' style='border:none; overflow:hidden; width:100px; height:20px;'></iframe>
+</div>
+</div>
+<div class='post-content' itemprop='description articleBody'>
+<div dir="ltr" style="text-align: left;" trbidi="on">
+<b id="docs-internal-guid-7e0c0d97-1a5b-8379-9a8a-dc7aa207075d" style="font-weight: normal; line-height: 1.15;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Cross-posted from the <a href="http://googleblog.blogspot.com/">Google Official blog</a></span></b><b id="docs-internal-guid-7e0c0d97-1a5b-8379-9a8a-dc7aa207075d" style="font-weight: normal;"></b><br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1a5b-8379-9a8a-dc7aa207075d" style="font-weight: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"><br /></span></b></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1a5b-8379-9a8a-dc7aa207075d" style="font-weight: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Posted by </span><a href="https://plus.google.com/+YonatanZunger/posts" style="text-decoration: none;"><span style="color: #1155cc; font-family: Arial; font-size: 15px; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">+Yonatan Zunger</span></a><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">, Principal Engineer</span></b><br />
+<br />
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"></b>
+
+<br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Reading and responding to comments can be one of the most rewarding aspects of blogging. Not only do they help you connect with your readers, they can also inspire later blog entries. The challenge, oftentimes, is following all the conversations around your content</span><span style="background-color: white; color: #444444; font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">&#8212;</span><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">on Google+, for instance, as well as on your website. So we're making things a lot simpler.</span></b><br />
+<b style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"><br /></span></b></div>
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span></b>
+
+<br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Starting today, you can bring Google+ Comments to your Blogger blog. Once you've enabled the feature through your Blogger Dashboard, you'll enjoy a number of important benefits:</span></b></div>
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;">
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span></b><br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">View your blog and Google+ comments, all in one place</span></b></div>
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;">
+</b>
+<br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Now when you're browsing your blog's comment threads, you'll see activity from direct visitors, and from people talking about your content on Google+. For example, if there's a public Google+ discussion about one of your blog entries, those comments and replies will also appear on your Blogger blog. This way you can engage with more of your readers, all in one place.</span></b></div>
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;">
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span></b><br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; font-weight: bold; vertical-align: baseline; white-space: pre-wrap;">Help readers comment and connect with their circles</span><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span></b></div>
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;">
+</b>
+<br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Your blog readers will now have the option to comment publicly, or privately to their circles on Google+. And when they're browsing blog comments, they can view all of them, just the top ones, or only those from the people in their circles.</span></b></div>
+<b id="docs-internal-guid-7e0c0d97-1b9c-540b-d584-4baa1397696e" style="font-weight: normal; line-height: normal;">
+<br /><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"></span><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">In all cases, you and your readers will only see the comments you have permission to see. Giving people these kinds of controls not only encourages more meaningful sharing</span><span style="background-color: white; color: #444444; font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">&#8212;</span><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">it can lead to more blog traffic.</span></b><br />
+<b style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"><br /></span></b></div>
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<div class="separator" style="clear: both; text-align: center;">
+<b id="docs-internal-guid-7e0c0d97-1a5b-8379-9a8a-dc7aa207075d" style="font-weight: normal;"><a href="http://2.bp.blogspot.com/-6SRsjW1CZ7A/UW9NMwz2S6I/AAAAAAAAATo/E3R4OMZObL4/s800/Fountain-screenshot-EN.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="640" src="http://2.bp.blogspot.com/-6SRsjW1CZ7A/UW9NMwz2S6I/AAAAAAAAATo/E3R4OMZObL4/s640/Fountain-screenshot-EN.png" width="560" /></a></b></div>
+<div dir="ltr" style="display: inline !important; line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<div dir="ltr" style="display: inline !important; line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<div dir="ltr" style="display: inline !important; line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<div dir="ltr" style="display: inline !important;">
+<div dir="ltr" style="display: inline !important; line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<div style="display: inline !important;">
+<div style="display: inline !important;">
+<div style="display: inline !important;">
+<b id="docs-internal-guid-7e0c0d97-1b9c-d031-c458-3d9915269412" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">To get started with Google+ Comments, just visit the Google+ tab of your Blogger Dashboard, and check &#8220;Use Google+ Comments.&#8221; (Older comments will continue to appear in the new widget.)</span></b><br />
+<b style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"><br /></span></b>
+<b id="docs-internal-guid-7e0c0d97-1d83-df62-1434-70cd2cabdf43" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">You can also visit any post on the Official Google Blog (like </span><a href="http://googleblog.blogspot.com/2013/04/google-fiberon-silicon-prairie-silicon.html" style="text-decoration: none;"><span style="color: #1155cc; font-family: Arial; font-size: 15px; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">this one</span></a><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">), or on Blogger Buzz (like </span><a href="http://buzz.blogger.com/2013/04/improvements-to-blogger-template-html.html" style="text-decoration: none;"><span style="color: #1155cc; font-family: Arial; font-size: 15px; text-decoration: underline; vertical-align: baseline; white-space: pre-wrap;">this one</span></a><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">), to see Google+ Comments in action.</span></b><br />
+<br />
+<b id="docs-internal-guid-7e0c0d97-1b9d-0850-f93c-d007a073021b" style="font-weight: normal; line-height: normal;"></b>
+
+<br />
+<div dir="ltr" style="line-height: 1.15; margin-bottom: 0pt; margin-top: 0pt;">
+<b id="docs-internal-guid-7e0c0d97-1b9d-0850-f93c-d007a073021b" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;">Happy commenting!</span></b></div>
+<div>
+<b id="docs-internal-guid-7e0c0d97-1b9d-0850-f93c-d007a073021b" style="font-weight: normal; line-height: normal;"><span style="font-family: Arial; font-size: 15px; vertical-align: baseline; white-space: pre-wrap;"><br /></span></b></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class='post-footer'>
+<div class='cmt_iframe_holder' data-href='http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html' data-viewtype='FILTERED_POSTMOD'></div>
+<span class='labels-caption'>Labels:</span>
+<span class='labels'>
+<a class='label' href='http://buzz.blogger.com/search/label/Blogger' rel='tag'>Blogger</a>,
+<a class='label' href='http://buzz.blogger.com/search/label/commenting' rel='tag'>commenting</a>,
+<a class='label' href='http://buzz.blogger.com/search/label/google%2B' rel='tag'>google+</a>
+</span>
+<span class='post-comment-link'>
+</span>
+</div>
+<script src='https://apis.google.com/js/plusone.js' type='text/javascript'></script>
+<div class='cmt_iframe_holder'></div>
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://buzz.blogger.com/2013/06/celebrating-10-years-of-shared-success.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>
+Newer Post
+</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://buzz.blogger.com/2013/04/improvements-to-blogger-template-html.html' id='Blog1_blog-pager-older-link' title='Older Post'>
+Older Post
+</a>
+</span>
+<a class='home-link' href='http://buzz.blogger.com/'>
+Home
+</a>
+</div>
+<div class='clear'></div>
+</div></div>
+</div>
+<!-- post section end -->
+<!-- Sidebar start-->
+<div class='maia-col-3'>
+<div class='section' id='sidebar-top'><div class='widget CustomSearch' id='CustomSearch1'>
+<div class='widget-content'>
+<div id='CustomSearch1_form'>
+<span class='cse-status'>Loading...</span>
+</div>
+</div>
+</div></div>
+<div id='aside'>
+<div class='section' id='sidebar'><div class='widget HTML' id='HTML5'>
+<div class='widget-content'>
+<div class="g-page" data-width="185" data-href="https://plus.google.com/110587955497525318489" data-rel="publisher"></div>
+
+<br />
+
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=HTML&widgetId=HTML5&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML5"));' target='configHTML5' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML4'>
+<div class='widget-content'>
+<ul>
+<li class='rss'>
+<h2><a href='http://buzz.blogger.com/atom.xml'>Feed</a></h2>
+</li>
+</ul>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target='configHTML4' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2 class='archive expander'>
+Archive
+</h2>
+<div class='widget-content expand-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2013-01-01T00:00:00-08:00&amp;updated-max=2014-01-01T00:00:00-08:00&amp;max-results=5'>
+2013
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2013_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2013_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2013_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2013_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+<ul class='posts'>
+<li><a href='http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html'>
+Bringing Google+ Comments to Blogger
+</a></li>
+<li><a href='http://buzz.blogger.com/2013/04/improvements-to-blogger-template-html.html'>
+Improvements to the Blogger template HTML editor
+</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2012-01-01T00:00:00-08:00&amp;updated-max=2013-01-01T00:00:00-08:00&amp;max-results=18'>
+2012
+</a>
+<span class='post-count' dir='ltr'>(
+			  18
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2012_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2011-01-01T00:00:00-08:00&amp;updated-max=2012-01-01T00:00:00-08:00&amp;max-results=47'>
+2011
+</a>
+<span class='post-count' dir='ltr'>(
+			  47
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  8
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2011_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2010-01-01T00:00:00-08:00&amp;updated-max=2011-01-01T00:00:00-08:00&amp;max-results=40'>
+2010
+</a>
+<span class='post-count' dir='ltr'>(
+			  40
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2010_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2009-01-01T00:00:00-08:00&amp;updated-max=2010-01-01T00:00:00-08:00&amp;max-results=42'>
+2009
+</a>
+<span class='post-count' dir='ltr'>(
+			  42
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  9
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  7
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2009_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2008-01-01T00:00:00-08:00&amp;updated-max=2009-01-01T00:00:00-08:00&amp;max-results=34'>
+2008
+</a>
+<span class='post-count' dir='ltr'>(
+			  34
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  7
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  4
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2008_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2007-01-01T00:00:00-08:00&amp;updated-max=2008-01-01T00:00:00-08:00&amp;max-results=47'>
+2007
+</a>
+<span class='post-count' dir='ltr'>(
+			  47
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  7
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  3
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  1
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2007_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  2
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2006-01-01T00:00:00-08:00&amp;updated-max=2007-01-01T00:00:00-08:00&amp;max-results=50'>
+2006
+</a>
+<span class='post-count' dir='ltr'>(
+			  91
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  7
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  6
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  9
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  7
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  5
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  8
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  7
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  12
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_02_01_archive.html'>
+February
+</a>
+<span class='post-count' dir='ltr'>(
+			  11
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2006_01_01_archive.html'>
+January
+</a>
+<span class='post-count' dir='ltr'>(
+			  8
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/search?updated-min=2005-01-01T00:00:00-08:00&amp;updated-max=2006-01-01T00:00:00-08:00&amp;max-results=50'>
+2005
+</a>
+<span class='post-count' dir='ltr'>(
+			  199
+			  )</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_12_01_archive.html'>
+December
+</a>
+<span class='post-count' dir='ltr'>(
+			  9
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_11_01_archive.html'>
+November
+</a>
+<span class='post-count' dir='ltr'>(
+			  11
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_10_01_archive.html'>
+October
+</a>
+<span class='post-count' dir='ltr'>(
+			  13
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_09_01_archive.html'>
+September
+</a>
+<span class='post-count' dir='ltr'>(
+			  29
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_08_01_archive.html'>
+August
+</a>
+<span class='post-count' dir='ltr'>(
+			  23
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_07_01_archive.html'>
+July
+</a>
+<span class='post-count' dir='ltr'>(
+			  13
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_06_01_archive.html'>
+June
+</a>
+<span class='post-count' dir='ltr'>(
+			  22
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_05_01_archive.html'>
+May
+</a>
+<span class='post-count' dir='ltr'>(
+			  25
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_04_01_archive.html'>
+April
+</a>
+<span class='post-count' dir='ltr'>(
+			  29
+			  )</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+			    &#9658;&#160; 
+</span>
+</a>
+<a class='post-count-link' href='http://buzz.blogger.com/2005_03_01_archive.html'>
+March
+</a>
+<span class='post-count' dir='ltr'>(
+			  25
+			  )</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget Label' id='Label1'>
+<h2 class='labels expander'>Labels</h2>
+<div class='widget-content list-label-widget-content expand-content'>
+<ul>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/%2B1'>+1</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/10th%20Birthday'>10th Birthday</a>
+<span dir='ltr'>(13)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/2010'>2010</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/accessibility'>accessibility</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/ads'>ads</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/adsense'>adsense</a>
+<span dir='ltr'>(7)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Amazon'>Amazon</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Android'>Android</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blog2Print'>Blog2Print</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger'>Blogger</a>
+<span dir='ltr'>(26)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger%20birthday'>Blogger birthday</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger%20Fiesta'>Blogger Fiesta</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger%20Meetup'>Blogger Meetup</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger%20Stats'>Blogger Stats</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger%20Template%20Designer'>Blogger Template Designer</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Blogger2Print'>Blogger2Print</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/blogspot'>blogspot</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/BlogThis'>BlogThis</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/blogworld'>blogworld</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Buzz'>Buzz</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/calendar'>calendar</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Chrome'>Chrome</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/code'>code</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/commenting'>commenting</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/community'>community</a>
+<span dir='ltr'>(8)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/conference'>conference</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/custom%20domain'>custom domain</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/developers'>developers</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/DMCA'>DMCA</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/draft'>draft</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/dynamic%20views'>dynamic views</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/events'>events</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/feedburner'>feedburner</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/feeds'>feeds</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/firefox'>firefox</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/follow%20by%20email'>follow by email</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/following'>following</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/foxytunes'>foxytunes</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/FTP'>FTP</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/gadgets'>gadgets</a>
+<span dir='ltr'>(10)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/GAN'>GAN</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Google%20Analytics'>Google Analytics</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Google%20Buzz'>Google Buzz</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Google%20Sites'>Google Sites</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/google%2B'>google+</a>
+<span dir='ltr'>(10)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/grandcentral'>grandcentral</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/help'>help</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/ios'>ios</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/jump'>jump</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/knol'>knol</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/lightbox'>lightbox</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/mobile'>mobile</a>
+<span dir='ltr'>(5)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/monetize'>monetize</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/music'>music</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/navbar'>navbar</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/New%20UI'>New UI</a>
+<span dir='ltr'>(4)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/next%20blog'>next blog</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/OneTrueFan'>OneTrueFan</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/openid'>openid</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/OpenSky'>OpenSky</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Page%20Creator'>Page Creator</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/pages'>pages</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/pixelodeon'>pixelodeon</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/polls'>polls</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/post%20summaries'>post summaries</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/read%20more'>read more</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/recommend'>recommend</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/SEO'>SEO</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Share'>Share</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/support'>support</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/SXSW'>SXSW</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/template%20designer'>template designer</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/twitter'>twitter</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/video'>video</a>
+<span dir='ltr'>(2)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/videoblogging'>videoblogging</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/Viglink'>Viglink</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/web%20fonts'>web fonts</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/webcall'>webcall</a>
+<span dir='ltr'>(1)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/youtube'>youtube</a>
+<span dir='ltr'>(3)</span>
+</li>
+<li>
+<a dir='ltr' href='http://buzz.blogger.com/search/label/zemanta'>zemanta</a>
+<span dir='ltr'>(1)</span>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("Label1"));' target='configLabel1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML3'>
+<div class='widget-content'>
+<ul>
+<li class='subscription'>
+<h2>
+<a href='http://feedburner.google.com/fb/a/mailverify?uri=blogger/WZDh'>
+			    Subscribe by email
+			  </a>
+</h2>
+</li>
+</ul>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<!-- Sidebar bottom -->
+<div class='section' id='sidebar-bottom'><div class='widget HTML' id='HTML1'>
+<div class='widget-content'>
+		    Give us feedback in our <a href='http://support.google.com/bin/static.py?hl=en&page=portal_groups.cs'>Product Forums</a>.
+		  </div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar-bottom' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML1"));' target='configHTML1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<!-- Sidebar end-->
+</div>
+</div>
+<!-- all content wrapper end -->
+<!-- Footer -->
+<div id='maia-signature'></div>
+<div class='maia-footer' id='maia-footer'>
+<div class='section' id='maia-footer-local'><div class='widget HTML' id='HTML2'>
+<div class='maia-aux'>
+<div class='widget-content'>
+<div class='maia-cols default-blog-footer'>
+<div class='maia-col-3'>
+<p>Company-wide</p>
+<ul>
+<li>
+<a href='//googlepublicpolicy.blogspot.com/' title='Public Policy'>Public Policy Blog</a>
+</li>
+<li>
+<a href='//googleresearch.blogspot.com/' title='Research'>Research Blog</a>
+</li>
+<li>
+<a href='//googleforstudents.blogspot.com/' title='Student'>Student Blog</a>
+</li>
+</ul>
+</div>
+<div class='maia-col-3'>
+<p>Products</p>
+<ul>
+<li>
+<a href='//officialandroid.blogspot.com/' title='Android'>Official Android Blog</a>
+</li>
+<li>
+<a href='//chrome.blogspot.com/' title='Chrome'>Chrome Blog</a>
+</li>
+<li>
+<a href='//google-latlong.blogspot.com/' title='Lat Long'>Lat Long Blog</a>
+</li>
+</ul>
+</div>
+<div class='maia-col-3'>
+<p>Developers</p>
+<ul>
+<li>
+<a href='//googleadsdeveloper.blogspot.com/' title='Ads Developer'>Ads Developer Blog</a>
+</li>
+<li>
+<a href='//android-developers.blogspot.com/' title='Android'>Android Developers Blog</a>
+</li>
+<li>
+<a href='//googledevelopers.blogspot.com/' title='Developers'>Developers Blog</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=2399953&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=maia-footer-local' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<div id='maia-footer-global'>
+<div class='maia-aux'>
+<ul>
+<li>
+<a href='//www.google.com/'>Google</a>
+</li>
+<li>
+<a href='//www.google.com/intl/en/policies/'>Privacy & Terms</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Footer -->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="//www.blogger.com/static/v1/widgets/2178715077-widgets.js"></script>
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '2399953';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d2399953','//buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html','2399953');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '2399953', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Blogger Buzz', 'pageType': 'item', 'url': 'http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html', 'canonicalUrl': 'http://buzz.blogger.com/2013/04/bringing-google-comments-to-blogger.html', 'canonicalHomepageUrl': 'http://buzz.blogger.com/', 'homepageUrl': 'http://buzz.blogger.com/', 'blogspotFaviconUrl': 'http://buzz.blogger.com/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': 'UA-20256690-1', 'searchLabel': '', 'searchQuery': '', 'pageName': 'Bringing Google+ Comments to Blogger', 'pageTitle': 'Blogger Buzz: Bringing Google+ Comments to Blogger', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Blogger Buzz - Atom\42 href\75\42http://buzz.blogger.com/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Blogger Buzz - RSS\42 href\75\42http://buzz.blogger.com/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Blogger Buzz - Atom\42 href\75\42http://www.blogger.com/feeds/2399953/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Blogger Buzz - Atom\42 href\75\42http://buzz.blogger.com/feeds/2786327610228173726/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'postImageThumbnailUrl': 'http://2.bp.blogspot.com/-6SRsjW1CZ7A/UW9NMwz2S6I/AAAAAAAAATo/E3R4OMZObL4/s72-c/Fountain-screenshot-EN.png', 'imageSrcTag': '\74link rel\75\42image_src\42 href\75\42http://2.bp.blogspot.com/-6SRsjW1CZ7A/UW9NMwz2S6I/AAAAAAAAATo/E3R4OMZObL4/s72-c/Fountain-screenshot-EN.png\42 /\76\n', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,e\75\42jstiming\42,g\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){c\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[c,d]};this[g](\42start\42,null,a)}var a\75new d;b.jstiming\75{Timer:d,load:a};if(b.performance\46\46b.performance.timing){var a\75b.performance.timing,c\75b[e].load,f\75a.navigationStart,a\75a.responseStart;0\74f\46\46a\76\75f\46\46(c[g](\42_wtsrt\42,void 0,f),c[g](\42wtsrt_\42,\42_wtsrt\42,a),c[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,b.chrome\46\46b.chrome.csi\46\46(a\75Math.floor(b.chrome.csi().pageT),c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.chrome.csi().startE),\nc[g](\42tbnd_\42,\42_tbnd\42,f))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.external.startE),c[g](\42tbnd_\42,\42_tbnd\42,f))),a\46\46(b[e].pt\75a)}catch(l){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[e].load[g](\42aft\42)};var h\75!1;function k(){h||(h\75!0,b[e].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,k,!1):b.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42//www.blogger.com/static/v1/jsbin/4163410827-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/15de8d1bfc9ff1d1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'testHtml5CssSrc': '//www.blogger.com/static/v1/widgets/721438413-css_bundle_html5.css', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML1', 'sidebar-bottom', null, document.getElementById('HTML1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_CustomSearchView', new _WidgetInfo('CustomSearch1', 'sidebar-top', null, document.getElementById('CustomSearch1'), {'title': 'Search This Blog', 'includeBlog': true, 'includePostLinks': true, 'includeWeb': false, 'linkLists': [{'id': 'LinkList1', 'title': 'More Blogger Resources'}], 'blogUrl': 'http://buzz.blogger.com/', 'loadingMsg': 'Loading...', 'thisBlogMsg': 'This Blog', 'linkedFromHereMsg': 'Linked From Here', 'theWebMsg': 'The Web', 'backgroundColor': '#fff', 'textColor': '#000', 'dateColor': '#6f6f6f', 'linkColor': '#00c', 'urlColor': '#00c', 'visitedLinkColor': '#00c', 'borderColor': '#6f6f6f', 'activeBorderColor': '#6f6f6f'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'maia-footer-local', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML5', 'sidebar', null, document.getElementById('HTML5'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LabelView', new _WidgetInfo('Label1', 'sidebar', null, document.getElementById('Label1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'header', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'header', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://buzz.blogger.com/', 'title': 'Home', 'isCurrentPage': false}, {'href': 'http://buzz.blogger.com/p/about.html', 'title': 'About', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PlusOneView', new _WidgetInfo('PlusOne1', 'header', null, document.getElementById('PlusOne1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'header', null, document.getElementById('Attribution1'), {'attribution': '\74a href\75\42http://www.google.com/intl/en/privacy.html\42\76Privacy Policy\74/a\76. Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_FollowByEmailView', new _WidgetInfo('FollowByEmail1', 'header', null, document.getElementById('FollowByEmail1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_TranslateView', new _WidgetInfo('Translate1', 'header', null, document.getElementById('Translate1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '2786327610228173726', 'legacyCommentModerationUrl': 'https://www.blogger.com/moderate-legacy-comment.g?blogID\0752399953', 'iframeCommentsId': 'gpluscomments', 'viewType': 'FILTERED_POSTMOD', 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/1766472746-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/4138445517-lightbox_bundle.css'}, 'displayModeFull'));
+</script>
+</body>
+</html>

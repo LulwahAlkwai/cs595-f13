@@ -1,0 +1,286 @@
+   #[1]Edit this page [2]Wikipedia (en) [3]copyright [4]Wikipedia Atom
+   feed
+
+     * [5]Home
+     * [6]Random
+     * [7]Nearby
+
+     * [8]Watchlist
+     * [9]Uploads
+     * [10]Settings
+     * [11]Log in
+
+     * [12]About Wikipedia
+     * [13]Disclaimers
+
+   ____________________ Go
+
+Dissipative system
+
+     *
+     *
+     * [14]Talk
+     *
+
+   This article includes a [15]list of references, related reading or
+   [16]external links, but its sources remain unclear because it lacks
+   [17]inline citations. Please [18]improve this article by introducing
+   more precise citations. (April 2009)
+
+   A dissipative system is a thermodynamically [19]open system which is
+   operating out of, and often far from, [20]thermodynamic equilibrium in
+   an environment with which it exchanges [21]energy and [22]matter.
+
+   A dissipative structure is a dissipative system that has a dynamical
+   régime that is in some sense in a reproducible steady state. This
+   reproducible steady state may be reached by natural evolution of the
+   system, by artifice, or by a combination of these two.
+
+Overview[23]Edit
+
+   A [24]dissipative structure is characterized by the spontaneous
+   appearance of symmetry breaking ([25]anisotropy) and the formation of
+   complex, sometimes [26]chaotic, structures where interacting particles
+   exhibit long range correlations. The term dissipative structure was
+   coined by Russian-Belgian physical chemist [27]Ilya Prigogine, who was
+   awarded the [28]Nobel Prize in Chemistry in 1977 for his pioneering
+   work on these structures. The dissipative structures considered by
+   Prigogine have dynamical régimes that can be regarded as
+   thermodynamically steady states, and sometimes at least can be
+   described by suitable [29]extremal principles in non-equilibrium
+   thermodynamics.
+
+   Examples in every day life include [30]convection, [31]cyclones,
+   [32]hurricanes and [33]living organisms. Less common examples include
+   [34]lasers, [35]Bénard cells, and the [36]Belousov-Zhabotinsky
+   reaction.^[[37]citation needed]
+
+   One way of mathematically modeling a dissipative system is given in the
+   article on [38]wandering sets: it involves the action of a [39]group on
+   a [40]measurable set.
+
+In control theory[41]Edit
+
+   In systems and [42]control theory, dissipative systems are dynamical
+   systems with a state x(t) , inputs u(t) and outputs y(t) , which
+   satisfy the so-called "dissipation inequality".
+
+   Given a function w on U \times Y , with finite integral of its modulus
+   for any input function u and initial state x(0) over any finite time t
+   , called the "supply rate", a system is said to be dissipative if there
+   exist a continuous nonnegative function V(x) , with x(0) = 0 , called
+   the storage function, such that for any input u and initial state x(0)
+   , the following inequality, known as dissipation inequality, always
+   holds:
+
+          V(x(t)) - V(x(0)) \le \int_{0}^{t} u(\tau) \cdot y(\tau) d \tau
+          ,
+
+   Dissipative systems with supply rate
+
+          Failed to parse (unknown error): w= u \cdot y
+
+   where \cdot denotes the scalar product,
+
+   Dissipative systems satisfy the inequality:
+
+          \frac{dV(x(t))}{dt} \le u(t) \cdot y(t)
+
+   The physical interpretation is that V(x) is the energy in the system,
+   whereas u \cdot y is the energy that is supplied to the system.
+
+   This notion has a strong connection with [43]Lyapunov stability, where
+   the storage functions may play, under certain conditions of
+   controllability and observability of the dynamical system, the role of
+   Lyapunov functions.
+
+   Roughly speaking, dissipativity theory is useful for the design of
+   feedback control laws for linear and nonlinear systems. Dissipative
+   systems theory has been discussed by V.M. Popov, J.C. Willems, D.J.
+   Hill and P. Moylan. In the case of linear invariant systems, this is
+   known as positive real transfer functions, and a fundamental tool is
+   the so-called [44]Kalman-Yakubovich-Popov lemma which relates the state
+   space and the frequency domain properties of positive real systems.
+   Dissipative systems are still an active field of research in systems
+   and control, due to their important applications.
+
+Quantum dissipative systems[45]Edit
+
+   Main article: [46]Quantum dissipation
+
+   As [47]quantum mechanics, and any classical [48]dynamical system,
+   relies heavily on [49]Hamiltonian mechanics for which [50]time is
+   reversible, these approximations are not intrinsically able to describe
+   dissipative systems. It has been proposed that in principle, one can
+   couple weakly the system - say, an oscillator - to a bath, i.e., an
+   assembly of many oscillators in thermal equilibrium with a broad band
+   spectrum, and trace (average) over the bath. This yields a [51]master
+   equation which is a special case of a more general setting called the
+   [52]Lindblad equation that is the quantum equivalent of the classical
+   [53]Liouville equation. The well known form of this equation and its
+   quantum counterpart takes time as a reversible variable over which to
+   integrate, but the very foundations of dissipative structures imposes
+   an [54]irreversible and constructive role for time.
+
+See also[55]Edit
+
+     * [56]Non-equilibrium thermodynamics
+     * [57]Extremal principles in non-equilibrium thermodynamics
+     * [58]Autowave
+     * [59]Self-organization
+     * [60]Autocatalytic reactions and order creation
+     * [61]Dynamical system
+     * [62]Autopoiesis
+     * [63]Relational order theories
+     * [64]Loschmidt's paradox
+     * [65]Holism
+
+References[66]Edit
+
+     * Weiss, U. (2012). Quantum Dissipative Systems (4th ed.). World
+       Scientific. [67]ISBN [68]978-981-4374-91-0.
+     * [69]Davies, Paul The Cosmic Blueprint^[[70]dead link] Simon &
+       Schuster, New York 1989 (abridged-- 1500 words) (abstract-- 170
+       words) -- self-organized structures.
+     * B. Brogliato, R. Lozano, B. Maschke, O. Egeland, Dissipative
+       Systems Analysis and Control. Theory and Applications. Springer
+       Verlag, London, 2nd Ed., 2007.
+     * J.C. Willems. Dissipative dynamical systems, part I: General
+       theory; part II: Linear systems with quadratic supply rates.
+       Archive for Rationale mechanics Analysis, vol.45, pp. 321-393,
+       1972.
+
+External links[71]Edit
+
+     * [72]The dissipative systems model The Australian National
+       University
+
+Read in another language
+
+   This page is available in 16 languages
+     * [73]B"lgarski
+     * [74]Català
+     * [75]Deutsch
+     * [76]Español
+     * [77]Français
+     * [78]Italiano
+     * [79]Lietuviu
+     * [80]Nederlands
+     * [81]¥¬
+     * [82]Norsk bokmål
+     * [83]Polski
+     * [84]Português
+     * [85]Russkij
+     * [86]Slovencina
+     * [87]Ukrayins'ka
+     * [88]­
+
+   [89]Last modified on 29 August 2013, at 07:35
+     * Wikipedia ®
+          + Mobile
+          + [90]Desktop
+     * Content is available under [91]CC BY-SA 3.0 unless otherwise noted.
+
+     * [92]Terms of Use
+     * [93]Privacy
+
+References
+
+   Visible links
+   1. http://en.m.wikipedia.org/w/index.php?title=Dissipative_system&action=edit
+   2. http://en.m.wikipedia.org/w/opensearch_desc.php
+   3. http://creativecommons.org/licenses/by-sa/3.0/
+   4. http://en.m.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom
+   5. http://en.m.wikipedia.org/wiki/Main_Page
+   6. http://en.m.wikipedia.org/wiki/Special:Random
+   7. http://en.m.wikipedia.org/wiki/Special:Nearby
+   8. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Special%3AWatchlist
+   9. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Special%3AUploads
+  10. http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&returnto=Dissipative+system
+  11. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Dissipative+system&returntoquery=welcome%3Dyes
+  12. http://en.m.wikipedia.org/wiki/Wikipedia:About
+  13. http://en.m.wikipedia.org/wiki/Wikipedia:General_disclaimer
+  14. http://en.m.wikipedia.org/wiki/Talk:Dissipative_system
+  15. http://en.m.wikipedia.org/wiki/Wikipedia:Citing_sources
+  16. http://en.m.wikipedia.org/wiki/Wikipedia:External_links
+  17. http://en.m.wikipedia.org/wiki/Wikipedia:Citing_sources#Inline_citations
+  18. http://en.m.wikipedia.org/wiki/Wikipedia:WikiProject_Fact_and_Reference_Check
+  19. http://en.m.wikipedia.org/wiki/Open_system_(systems_theory)
+  20. http://en.m.wikipedia.org/wiki/Thermodynamic_equilibrium
+  21. http://en.m.wikipedia.org/wiki/Energy
+  22. http://en.m.wikipedia.org/wiki/Matter
+  23. http://en.m.wikipedia.org/wiki/Dissipative_system#editor/1
+  24. http://en.m.wikipedia.org/wiki/Dissipation
+  25. http://en.m.wikipedia.org/wiki/Anisotropy
+  26. http://en.m.wikipedia.org/wiki/Chaos_theory
+  27. http://en.m.wikipedia.org/wiki/Ilya_Prigogine
+  28. http://en.m.wikipedia.org/wiki/Nobel_Prize_in_Chemistry
+  29. http://en.m.wikipedia.org/wiki/Extremal_principles_in_non-equilibrium_thermodynamics
+  30. http://en.m.wikipedia.org/wiki/Convection
+  31. http://en.m.wikipedia.org/wiki/Cyclone
+  32. http://en.m.wikipedia.org/wiki/Tropical_cyclone
+  33. http://en.m.wikipedia.org/wiki/Life
+  34. http://en.m.wikipedia.org/wiki/Laser
+  35. http://en.m.wikipedia.org/wiki/B%C3%A9nard_cells
+  36. http://en.m.wikipedia.org/wiki/Belousov%E2%80%93Zhabotinsky_reaction
+  37. http://en.m.wikipedia.org/wiki/Wikipedia:Citation_needed
+  38. http://en.m.wikipedia.org/wiki/Wandering_set
+  39. http://en.m.wikipedia.org/wiki/Group_(mathematics)
+  40. http://en.m.wikipedia.org/wiki/Measure_(mathematics)
+  41. http://en.m.wikipedia.org/wiki/Dissipative_system#editor/2
+  42. http://en.m.wikipedia.org/wiki/Control_theory
+  43. http://en.m.wikipedia.org/wiki/Lyapunov_stability
+  44. http://en.m.wikipedia.org/wiki/Kalman%E2%80%93Yakubovich%E2%80%93Popov_lemma
+  45. http://en.m.wikipedia.org/wiki/Dissipative_system#editor/3
+  46. http://en.m.wikipedia.org/wiki/Quantum_dissipation
+  47. http://en.m.wikipedia.org/wiki/Quantum_mechanics
+  48. http://en.m.wikipedia.org/wiki/Dynamical_system
+  49. http://en.m.wikipedia.org/wiki/Hamiltonian_mechanics
+  50. http://en.m.wikipedia.org/wiki/Time_reversibility
+  51. http://en.m.wikipedia.org/wiki/Master_equation
+  52. http://en.m.wikipedia.org/wiki/Lindblad_equation
+  53. http://en.m.wikipedia.org/wiki/Liouville%27s_theorem_(Hamiltonian)
+  54. http://en.m.wikipedia.org/wiki/H-theorem
+  55. http://en.m.wikipedia.org/wiki/Dissipative_system#editor/4
+  56. http://en.m.wikipedia.org/wiki/Non-equilibrium_thermodynamics
+  57. http://en.m.wikipedia.org/wiki/Extremal_principles_in_non-equilibrium_thermodynamics
+  58. http://en.m.wikipedia.org/wiki/Autowave
+  59. http://en.m.wikipedia.org/wiki/Self-organization
+  60. http://en.m.wikipedia.org/wiki/Autocatalytic_reactions_and_order_creation
+  61. http://en.m.wikipedia.org/wiki/Dynamical_system
+  62. http://en.m.wikipedia.org/wiki/Autopoiesis
+  63. http://en.m.wikipedia.org/wiki/Relational_order_theories
+  64. http://en.m.wikipedia.org/wiki/Loschmidt%27s_paradox
+  65. http://en.m.wikipedia.org/wiki/Holism
+  66. http://en.m.wikipedia.org/wiki/Dissipative_system#editor/5
+  67. http://en.m.wikipedia.org/wiki/International_Standard_Book_Number
+  68. http://en.m.wikipedia.org/wiki/Special:BookSources/978-981-4374-91-0
+  69. http://sciphilos.info/doc%20PAGES%20/docDaviesSelfOrgStru.html
+  70. http://en.m.wikipedia.org/wiki/Wikipedia:Link_rot
+  71. http://en.m.wikipedia.org/wiki/Dissipative_system#editor/6
+  72. http://epress.anu.edu.au/info_systems/mobile_devices/ch11s05.html
+  73. http://bg.m.wikipedia.org/wiki/%D0%94%D0%B8%D1%81%D0%B8%D0%BF%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0
+  74. http://ca.m.wikipedia.org/wiki/Estructura_dissipativa
+  75. http://de.m.wikipedia.org/wiki/Dissipative_Struktur
+  76. http://es.m.wikipedia.org/wiki/Estructura_disipativa
+  77. http://fr.m.wikipedia.org/wiki/Syst%C3%A8me_dissipatif
+  78. http://it.m.wikipedia.org/wiki/Struttura_dissipativa
+  79. http://lt.m.wikipedia.org/wiki/Disipatyvioji_sistema
+  80. http://nl.m.wikipedia.org/wiki/Dissipatief_systeem
+  81. http://ja.m.wikipedia.org/wiki/%E6%95%A3%E9%80%B8%E6%A7%8B%E9%80%A0
+  82. http://no.m.wikipedia.org/wiki/Dissipativt_system
+  83. http://pl.m.wikipedia.org/wiki/Struktury_dyssypatywne
+  84. http://pt.m.wikipedia.org/wiki/Sistema_dissipativo
+  85. http://ru.m.wikipedia.org/wiki/%D0%94%D0%B8%D1%81%D1%81%D0%B8%D0%BF%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0%D1%8F_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0
+  86. http://sk.m.wikipedia.org/wiki/Disipat%C3%ADvna_%C5%A1trukt%C3%BAra
+  87. http://uk.m.wikipedia.org/wiki/%D0%94%D0%B8%D1%81%D0%B8%D0%BF%D0%B0%D1%82%D0%B8%D0%B2%D0%BD%D0%B0_%D1%81%D0%B8%D1%81%D1%82%D0%B5%D0%BC%D0%B0
+  88. http://zh.m.wikipedia.org/wiki/%E8%80%97%E6%95%A3%E7%B3%BB%E7%B5%B1
+  89. http://en.m.wikipedia.org/w/index.php?title=Dissipative_system&action=history
+  90. http://en.wikipedia.org/w/index.php?title=Dissipative_system&mobileaction=toggle_view_desktop
+  91. http://creativecommons.org/licenses/by-sa/3.0/
+  92. http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile
+  93. http://wikimediafoundation.org/wiki/Privacy_policy
+
+   Hidden links:
+  94. http://en.m.wikipedia.org/wiki/Special:MobileMenu#mw-mf-page-left
+  95. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Dissipative+system

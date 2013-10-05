@@ -1,0 +1,187 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+<title>[1305.3218] Computing Cliques is Intractable</title>
+<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+<link rel="stylesheet" type="text/css" media="screen" href="/css/arXiv.css" />
+<meta name="citation_title" content="Computing Cliques is Intractable" />
+<meta name="citation_author" content="Fukuyama, Junichiro" />
+<meta name="citation_date" content="2013/05/14" />
+<meta name="citation_online_date" content="2013/05/14" />
+<meta name="citation_pdf_url" content="http://arxiv.org/pdf/1305.3218" />
+<meta name="citation_arxiv_id" content="1305.3218" />
+
+</head>
+<body class="with-cu-identity">
+<div id="cu-identity">
+<div id="cu-logo">
+<a id="insignia-link" href="http://www.cornell.edu/"><img src="/icons/cu/cul_signature_unstyled.gif" alt="Cornell University" width="283" height="76" border="0" /></a>
+<div id="unit-signature-links">
+<a id="cornell-link" href="http://www.cornell.edu/">Cornell University</a>
+<a id="unit-link" href="http://www.library.cornell.edu/">Library</a>
+</div>
+</div>
+<div id="support-ack">
+<a href="https://confluence.cornell.edu/x/9YhjCg">We gratefully acknowledge support from<br />the Simons Foundation<br /> and member institutions</a>
+</div>
+</div>
+<div id="header">
+<h1><a href="/">arXiv.org</a> &gt; <a href="/list/cs/recent">cs</a> &gt; arXiv:1305.3218</h1>
+<form id="search" method="post" action="/search">
+<div class="search-for">Search or Article-id</div>
+<div class="links">(<a href="/help">Help</a> | <a href="/find">Advanced search</a>)</div>
+<input type="text" name="query" size="24" maxlength="64" />
+&nbsp;
+<select name="searchtype">
+<option value="all" selected="selected">All papers</option>
+<option value="ti">Titles</option>
+<option value="au">Authors</option>
+<option value="abs">Abstracts</option>
+<option value="ft">Full text</option>
+<option value="help">Help pages</option>
+</select>
+<input type="submit" value="Go!" /><br />
+</form>
+</div>
+<div id="content">
+
+<!--
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:dc="http://purl.org/dc/elements/1.1/"
+         xmlns:trackback="http://madskills.com/public/xml/rss/module/trackback/">
+    <rdf:Description
+        rdf:about="http://arxiv.org/abs/1305.3218"
+        dc:identifier="http://arxiv.org/abs/1305.3218"
+        dc:title="Computing Cliques is Intractable"
+        trackback:ping="http://arxiv.org/trackback/1305.3218" />
+    </rdf:RDF>
+-->
+
+<div id="abs">
+<div class="extra-services">
+
+<div class="full-text">
+<span class="descriptor">Full-text links:</span>
+<h2>Download:</h2>
+<ul>
+<li><a href="/pdf/1305.3218v1" accesskey="f">PDF</a></li>
+<li><a href="/format/1305.3218v1">Other formats</a></li>
+</ul>
+</div><!--end full-text-->
+
+<div class="browse">
+<h3>Current browse context:</h3>
+<div class="current">cs.CC</div>
+<div class="prevnext"><span class="arrow"><a href="http://arxiv.org/prevnext?site=arxiv.org&amp;id=1305.3218&amp;context=cs.CC&amp;function=prev" accesskey="p" title="previous in cs.CC (accesskey p)">&lt;&nbsp;prev</a></span>&nbsp;|&nbsp;<span class="arrow"><a href="http://arxiv.org/prevnext?site=arxiv.org&amp;id=1305.3218&amp;context=cs.CC&amp;function=next" accesskey="n" title="next in cs.CC (accesskey n)">next&nbsp;&gt;</a></span>
+<br /></div>
+<div class="list"><a href="/list/cs.CC/new">new</a>&nbsp;| <a href="/list/cs.CC/recent">recent</a>&nbsp;| <a href="/list/cs.CC/1305">1305</a></div><h3>Change to browse by:</h3><div class="switch">
+<a href="/abs/1305.3218?context=cs">cs</a>
+</div>
+
+</div>
+<div class="extra-ref-cite">
+<h3>References &amp; Citations</h3><ul><li><a href="http://adsabs.harvard.edu/cgi-bin/bib_query?arXiv:1305.3218">NASA ADS</a></li>
+</ul>
+
+</div>
+<div class="dblp">
+<h3><a href="http://www.informatik.uni-trier.de/~ley/db/">DBLP</a> - CS Bibliography</h3><div class="list">
+<a href="http://www.informatik.uni-trier.de/~ley/db/journals/corr/corr1305.html#abs-1305-3218" title="listing on DBLP">listing</a> | <a href="http://dblp.uni-trier.de/rec/bibtex/journals/corr/abs-1305-3218" title="DBLP bibtex record">bibtex</a>
+</div>
+<div class="list">
+<a href="http://dblp.uni-trier.de/search/author?author=Junichiro%20Fukuyama" title="DBLP author search">Junichiro Fukuyama</a><br />
+</div>
+
+</div>
+<div class="bookmarks">
+<div class="what-is-this">
+<h3>Bookmark</h3> (<a href="/help/social_bookmarking">what is this?</a>)
+</div>
+<a href="/ct?url=http%3A%2F%2Fwww.citeulike.org%2Fposturl%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218%26title%3DComputing%2520Cliques%2520is%2520Intractable%26authors%3D&amp;v=e9abe46d" title="Bookmark on CiteULike"><img src="http://static.arxiv.org/icons/social/citeulike.png" alt="CiteULike logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fwww.bibsonomy.org%2FBibtexHandler%3FrequTask%3Dupload%26url%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218%26description%3DComputing%2520Cliques%2520is%2520Intractable&amp;v=c90a3ebe" title="Bookmark on BibSonomy"><img src="http://static.arxiv.org/icons/social/bibsonomy.png" alt="BibSonomy logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fwww.mendeley.com%2Fimport%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218&amp;v=02429a4e" title="Bookmark on Mendeley"><img src="http://static.arxiv.org/icons/social/mendeley.png" alt="Mendeley logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Farxivpost%2F%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218&amp;v=aebbd5ec" title="Bookmark on Facebook"><img src="http://static.arxiv.org/icons/social/facebook.png" alt="Facebook logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fexport.arxiv.org%2Ffb%2Flinkedin_post%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218&amp;v=bfc54a26" title="Bookmark on LinkedIn"><img src="http://static.arxiv.org/icons/social/linkedin.png" alt="LinkedIn logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fdel.icio.us%2Fpost%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218%26description%3DComputing%2520Cliques%2520is%2520Intractable&amp;v=44e4c6bc" title="Bookmark on del.icio.us"><img src="http://static.arxiv.org/icons/social/delicious.png" alt="del.icio.us logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fdigg.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218%26title%3DComputing%2520Cliques%2520is%2520Intractable&amp;v=b34246d4" title="Bookmark on Digg"><img src="http://static.arxiv.org/icons/social/digg.png" alt="Digg logo" /></a>
+<a href="/ct?url=http%3A%2F%2Freddit.com%2Fsubmit%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218%26title%3DComputing%2520Cliques%2520is%2520Intractable&amp;v=33c1cdbc" title="Bookmark on Reddit"><img src="http://static.arxiv.org/icons/social/reddit.png" alt="Reddit logo" /></a>
+<a href="/ct?url=http%3A%2F%2Fsciencewise.info%2Fbookmarks%2Fadd%3Furl%3Dhttp%3A%2F%2Farxiv.org%2Fabs%2F1305.3218&amp;v=8fef87aa" title="Bookmark on ScienceWISE"><img src="http://static.arxiv.org/icons/social/sciencewise.png" alt="ScienceWISE logo" /></a>
+
+</div>
+</div><!--end extra-services-->
+
+<div class="leftcolumn">
+<div class="subheader">
+<h1>Computer Science > Computational Complexity</h1>
+</div>
+<h1 class="title"><span class="descriptor">Title:</span>
+Computing Cliques is Intractable</h1>
+<div class="authors"><span class="descriptor">Authors:</span>
+<a href="/find/cs/1/au:+Fukuyama_J/0/1/0/all/0/1">Junichiro Fukuyama</a></div>
+<div class="dateline">(Submitted on 14 May 2013)</div>
+<blockquote class="abstract">
+<span class="descriptor">Abstract:</span> The class P is in fact a proper sub-class of NP. We explore topological
+properties of the Hamming space 2^[n] where [n]={1, 2,..., n}. With the
+developed theory, we show: (i) a theorem that is closely related to Erdos and
+Rado's sunflower lemma, and claims a stronger statement in most cases, (ii) a
+new approach to prove the exponential monotone circuit complexity of the clique
+problem, (iii) NC \ne NP through the impossibility of a Boolean circuit with
+poly-log depth to compute cliques, based on the construction of (ii), and (iv)
+P \ne NP through the exponential circuit complexity of the clique problem,
+based on the construction of (iii).
+<br />Item (i) leads to the existence of a sunflower with a small core in certain
+families of sets, which is not an obvious consequence of the sunflower lemma.
+In (iv), we show that any Boolean circuit computing the clique function
+CLIQUE_{n,k} (k=n^{1/4}) has a size exponential in n. Thus, we will separate
+P/poly from NP also.
+<br />Razborov and Rudich showed strong evidence that no natural proof can prove
+exponential circuit complexity of a Boolean function. We confirm that the
+proofs for (iii) and (iv) are not natural.
+</blockquote>
+<!--CONTEXT-->
+<div class="metatable">
+<table summary="Additional metadata">
+<tr>
+<td class="tablecell label">Comments:
+</td>
+<td class="tablecell comments">55 pages, 7 figures. Extra material is found at <a href="http://junfukuyama.wordpress.com/">this http URL</a></td>
+</tr>
+<tr>
+<td class="tablecell label">Subjects:
+</td>
+<td class="tablecell subjects"><span class="primary-subject">Computational Complexity (cs.CC)</span></td>
+</tr>
+<tr>
+<td class="tablecell label">
+<abbr title="Association of Computing Machinery Classification">ACM</abbr>&nbsp;classes:
+</td>
+<td class="tablecell acm-classes">F.1.3</td>
+</tr>
+<tr>
+<td class="tablecell label">
+Cite&nbsp;as:
+</td>
+<td class="tablecell arxivid"><a href="/abs/1305.3218">arXiv:1305.3218</a> [cs.CC]</td>
+</tr>
+<tr>
+<td class="tablecell label">&nbsp;</td>
+<td class="tablecell arxividv">(or <span class="arxivid"><a href="/abs/1305.3218v1">arXiv:1305.3218v1</a> [cs.CC]</span> for this version)</td>
+</tr>
+</table>
+</div>
+<div class="submission-history">
+<h2>Submission history</h2>
+From: Junichiro Fukuyama [<a href="http://arxiv.org/auth/show-email/01e1d91d/1305.3218">view email</a>]
+<br />
+<b>[v1]</b> Tue, 14 May 2013 17:40:10 GMT  (636kb,D)<br />
+</div>
+<div class="endorsers"><a href="http://arxiv.org/auth/show-endorsers/1305.3218">Which authors of this paper are endorsers?</a></div>
+</div><!--end leftcolumn-->
+</div><!--end abs-->
+</div>
+<div id="footer">
+<p>Link back to: <a href="http://arxiv.org/">arXiv</a>, <a href="/form">form interface</a>, <a href="/help/contact">contact</a>.</p>
+</div>
+</body>
+</html>

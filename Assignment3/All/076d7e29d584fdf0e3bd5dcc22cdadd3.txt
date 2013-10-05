@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<!--
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+     __  __           _           _     _
+~_,-|  \/  | __ _ ___| |__   __ _| |__ | | ___
+    | |\/| |/ _` / __| '_ \ / _` | '_ \| |/ _ \,-~_,- - - ,
+~_,-| |  | | (_| \__ \ | | | (_| | |_) | |  __/    |   /\_/\
+    |_|  |_|\__,_|___/_| |_|\__,_|_.__/|_|\___|  ~=|__( ^ .^)
+~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,""   ""
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+-->
+<html data-env='production' lang='en' xml:lang='en'>
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script>
+  window.__o = {"channel":"social-media","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":332.5,"h_buy":null,"h_pub_buy":null,"v_cur":1.1,"v_max":1.5,"v_cur_i":1,"v_max_i":1,"events":"event51,event61","top_channel":"social-media","content_source_type":"Internal","content_source_name":"Internal","author_name":"Sara Roncero-Menendez","age":"13","pub_day":19,"pub_month":9,"pub_year":2013,"pub_date":"09/19/2013","isPostView":true,"post_lead_type":"Default","topics":"APIs,Apps and Software,Dev & Design,features,instragram,Lists,Social Media,Tech,Uncategorized,Work &amp; Play","campaign":null,"display_mode":null};
+  window._gaq = window._gaq || [];
+  window._gaq.push(['_setAccount', 'UA-92124-1']);
+</script>
+<title>8 Ways to Use Instagram's API</title>
+<link href="http://rack.0.mshcdn.com/assets/app-562697e951f70576d09dce872b44a659.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://rack.2.mshcdn.com/assets/posts-7fa2cb2611e36863ddde36bdf858f644.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<link href="http://rack.3.mshcdn.com/assets/iehax-957092b11e263c6b850533d06d5aaa2c.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<meta content='no' name='apple-mobile-web-app-capable'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href='https://plus.google.com/113493854651753327245' rel='publisher'>
+<link href='http://feeds.mashable.com/Mashable' rel='alternate' title='Mashable' type='application/rss+xml'>
+<link href='http://rack.1.mshcdn.com/assets/favicon-007eef4a606e98f0934d0af984b76203.png' rel='icon' type='image/png'>
+<meta content='mid:12105681' name='linkedin:owner'>
+<meta content='122071082108' property='fb:app_id'>
+<meta content='18807449704' property='fb:page_id'>
+<meta content='nYmtX7H2sSCkK8gHpQGxr7Es2526DgUaqb6PGYSX' name='readability-verification'>
+<link href='http://rack.2.mshcdn.com/assets/mashable.touchicon-e352d67245bfc87a994db28c16cf732f.png' rel='apple-touch-icon-precomposed'>
+
+<link data-page-subject="true" href="http://mashable.com/2013/09/19/instagram-api-uses/" rel="canonical" /><link data-page-subject="true" href="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/91af5537/a61/instagram-api.jpg" rel="image_src" /><meta content="http://mashable.com/2013/09/19/instagram-api-uses/" data-page-subject="true" property="og:url" /><meta content="8 Ways to Use Instagram&#x27;s API" data-page-subject="true" property="og:title" /><meta content="article" data-page-subject="true" property="og:type" /><meta content="Mashable" data-page-subject="true" property="og:site_name" /><meta content="Some of the many interesting, innovative, and functional ways to use Instagram API." data-page-subject="true" property="og:description" /><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/91af5537/a61/instagram-api.jpg" data-page-subject="true" property="og:image" /><meta content="2013-09-19T09:00:37Z" data-page-subject="true" property="og:article:published_time" /><meta content="2013-09-19T13:05:31Z" data-page-subject="true" property="og:article:modified_time" /><meta content="https://www.facebook.com/mashable" data-page-subject="true" property="og:article:publisher" /><meta content="Some of the many interesting, innovative, and functional ways to use Instagram API." data-page-subject="true" name="description" /><meta content="api, lists, features, tech, uncategorized, instragram, social-media, apps-software, dev-design, work-play" data-page-subject="true" name="keywords" /><meta content="8 Ways to Use Instagram&#x27;s API" data-page-subject="true" name="twitter:title" /><meta content="Instagram has become one of the web&#x27;s most popular platforms for photo and video sharing. To help users integrate the social network even further into their daily lives, it has released a public appli..." data-page-subject="true" name="twitter:description" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/193bb2b2/a61/instagram-api.jpg" data-page-subject="true" name="twitter:image" /><meta content="@mashable" data-page-subject="true" name="twitter:site" /><meta content="http://mashable.com/2013/09/19/instagram-api-uses/" data-page-subject="true" name="twitter:url" /><meta content="@mashable" data-page-subject="true" name="twitter:creator" /><meta content="photo" data-page-subject="true" name="twitter:card" /><meta content="560" data-page-subject="true" name="twitter:image:width" /><meta content="750" data-page-subject="true" name="twitter:image:height" /><meta content="2013-09-19 09:00:37 UTC" data-page-subject="true" name="date" /><meta content="Sara Roncero-Menendez" data-page-subject="true" name="sailthru.author" /><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/0d3be490/a61/instagram-api.jpg" data-page-subject="true" name="sailthru.image.thumb" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/e735d0ea/a61/instagram-api.jpg" data-page-subject="true" name="sailthru.image.full" /><meta content="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/1090dc2b/a61/instagram-api.jpg" data-page-subject="true" name="sailthru.lead_image" /><meta content="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/40b376eb/a61/instagram-api.jpg" data-page-subject="true" name="sailthru.secondary_image" /><meta content="http://on.mash.to/16HbuME" data-page-subject="true" name="short_url" /><meta name=parsely-page content='{"title":"8 Ways to Use Instagram\u0027s API","link":"http://mashable.com/2013/09/19/instagram-api-uses/","image_url":"http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/91af5537/a61/instagram-api.jpg","type":"post","post_id":2177769,"pub_date":"2013-09-19T09:00:37Z","section":"social-media","author":"Sara Roncero-Menendez","tags":["Internal","Internal - Internal","Topics - APIs","Topics - Apps and Software","Topics - Dev & Design","Topics - features","Topics - instragram","Topics - Lists","Topics - Social Media","Topics - Tech","Topics - Uncategorized","Topics - Work &amp; Play"]}' data-page-subject=true >
+
+<script src="http://rack.0.mshcdn.com/assets/app-de1471df45426b6c97b9dee2965b5043.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script src="http://rack.2.mshcdn.com/assets/polyfill-6620db93ad92c8f787391361dfe3f23c.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class='body_posts body_show' data-gvcfv='true' data-gvmfv='true' data-jsid='posts/show' data-postid='2177769' data-sec0='socmed' data-sec1='apps|dev' data-sec2='posts' viewport='fixed'>
+<h1 class='semantic'>Mashable</h1>
+<header id='flyout-container'></header>
+<div id='peek'>
+<div id='sticky'>
+
+<header id='site-header'><div class='navbar'>
+<div class='navbar-inner'><ul class='main-menu nav inline'>
+<li class='menu'><a class='icon-reorder' href='#'></a></li>
+<li class='logo'><a class='brand' data-turbo-target='body-container' href='/'><span>Mashable</span><img alt="Header_logo.v2" src="http://rack.1.mshcdn.com/assets/header_logo.v2-30574d105ad07318345ec8f1a85a3efa.png" /></a></li>
+<li class='submenu collapsable pull-right' id='sign-in'><a href='/login/'><span>Sign in</span></a></li>
+<li class='follow submenu pull-right'><a class='follow-trigger' href='/2011/11/18/follow-mashable/'><span class='fb'></span>
+<span class='tw'></span>
+<span class='gp'></span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<div class='pull-right follow'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.1m'>Like</a>
+<a class='twitter-follow-button' data-dnt='true' data-show-count='true' data-show-screen-name='false' href='https://twitter.com/mashable'>
+Follow @mashable
+</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+<a alt='RSS Feed' class='rss' href='http://feeds.mashable.com/Mashable' title='RSS Feed'></a>
+<a alt='Email Subscriptions' class='email' href='/subscriptions' title='Email Subscriptions'></a>
+<div class='more'>
+<a href="/2011/11/18/follow-mashable/">see more&nbsp;&nbsp;&gt;</a></div>
+</div>
+</div>
+</div></li>
+<li class='nav-search submenu pull-right'><a class='search-trigger' href='/search/'>Search</a>
+<div class='dropdown-content'>
+<div class='page-container'>
+<div class='header-search-form'>
+<form accept-charset="UTF-8" action="/search/" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ie-search-wrapper'><input autocomplete="off" class="header-search" id="q" name="q" type="text" value="" /></div>
+<input class="btn btn-primary header-search-submit" name="commit" type="submit" value="Search" /></form><div class='header-search-results'></div>
+</div>
+</div>
+</div></li>
+<li class='collapsable channel submenu' data-tags='how-to,facebook,twitter,youtube,google-plus'><a href="/social-media/">Social Media</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='apps-software,dev-design,gadgets,mobile'><a href="/tech/">Tech</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='advertising,marketing,media,small-business,startups,jobs'><a href="/business/">Business</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='film,gaming,music,sports,television'><a href="/entertainment/">Entertainment</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='politics,social-good,us,world'><a href="/us-world/">US &amp; World</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='family-parenting,health-fitness,home,travel-and-leisure,work-and-play'><a href="/lifestyle/">Lifestyle</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='pics,memes,comics,conversations,videos-watercooler'><a href="/watercooler/">Watercooler</a><div class='submenu-content'></div></li>
+<li class='collapsable' data-tags=''><a href="http://findjobs.mashable.com">Jobs</a></li>
+<li class='submenu more'><a href='#'><!-- %span=t "header.nav.more" -->
+<span>More</span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<ul class='columns'><li><ul class='column-list'><li class='header'>Channels</li>
+<li><a href="/social-media/">Social Media</a></li>
+<li><a href="/tech/">Tech</a></li>
+<li><a href="/business/">Business</a></li>
+<li><a href="/entertainment/">Entertainment</a></li>
+<li><a href="/us-world/">US &amp; World</a></li>
+<li><a href="/lifestyle/">Lifestyle</a></li>
+<li><a href="/watercooler/">Watercooler</a></li>
+<li><a href="http://findjobs.mashable.com">Jobs</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Company</li><li><a href="/about/">About Us</a></li><li><a href="http://www.wrightsmedia.com/sites/mashable/">Licensing &amp; Reprints</a></li><li><a href="http://mashable.com/2012/">Archive</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Contact</li><li><a href="/contact-us/">Contact Us</a></li><li><a href="/submit/">Submit News</a></li><li><a href="https://mashable.wufoo.com/forms/tesla-bug-tracker/">Submit a Bug</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Advertise</li><li><a href="/advertise/">Advertise</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Legal</li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Apps</li><li><a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8">iPhone App</a></li><li><a href="http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8">iPad App</a></li><li><a href="/2010/08/02/mashable-android-app/">Android App</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Resources</li><li><a href="/guidebook/">Guidebooks</a></li><li><a href="/2011/11/18/follow-mashable/">Subscriptions</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Sites</li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="http://events.mashable.com/">Events</a></li><li><a href="http://mashable.com/sgs/">Social Good Summit</a></li><li><a href="http://mashable.com/media-summit/">Media Summit</a></li></ul></li></ul>
+</div>
+</div></li>
+</ul></div>
+</div></header>
+</div>
+<div id='scrollable'><div class='loader'></div>
+<div class="ad_container"><span class="ad" data-height="0" data-src="/tripleclick.html#type=survey&amp;adnum=3&amp;gvcfv=true&amp;gvmfv=true&amp;postid=2177769&amp;sec0=socmed&amp;sec1=apps%7Cdev&amp;sec2=posts&amp;tile=3" data-width="0"></span></div><header class='box970'>
+<div class='page-container'><center class='visible-desktop'><div class="ad_container"><span class="ad" data-height="50" data-src="/tripleclick.html#type=banner&amp;adnum=4&amp;gvcfv=true&amp;gvmfv=true&amp;postid=2177769&amp;sec0=socmed&amp;sec1=apps%7Cdev&amp;sec2=posts&amp;tile=4" data-width="300"></span></div></center></div>
+</header>
+<div class='posts show' id='body-container'><div id='main'>
+<div class='page-container'>
+
+<div id='body'><hgroup class='page-header channel' data-channel='social-media' data-section='sec0=socmed&amp;sec1=index&amp;sec2=' id='post-head'>
+<h2>Social Media</h2>
+<div class='follow-channel'>
+<div class='follow-buttons'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.1m'>Like</a>
+<a class='social-stub social-share twitter follow' data-shares='3.2m' href='https://twitter.com/intent/follow?region=follow_link&amp;screen_name=mashable&amp;tw_p=followbutton&amp;variant=2.0' target='_blank'>Follow</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+</div>
+</div>
+</hgroup>
+<div class='flex-box'>
+<div class='box-cell'>
+<div class='above_960 adsense outside_post'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_slot = "3991492827";
+</script>
+<script>
+  if(!hideAd) google_ad_width = 728;
+</script>
+<script>
+  if(!hideAd) google_ad_height = 15;
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+</div>
+
+<div id='post-content'>
+<div id='post-slider'><article class='full post' data-channel='socmed' data-id='523abd36b589e43b7d00504e' data-subchannels='apps-software|dev-design' data-topic='' data-velocity='754,753,753,752,752,751,750,750,749,749,748,748,747,747,746,746,745,745,744,744,743,743,742,742,741,741,740,740,739,738,738,737,737,736,736,736,735,735,734,734,733,733,732,732,731,731,730,730,729,729' data-wp-id='2177769' id='story'>
+<header class='article-header'>
+<h1 class='title' href='http://mashable.com/2013/09/19/instagram-api-uses/'>8 Ways to Use Instagram's API</h1>
+<aside class='shares social'>
+<div class='total-shares' data-index='0'>
+<em>2.8k</em>
+<div class='caption'>Shares</div>
+</div>
+<div class='share-buttons'>
+<div class='share-button-boxy'><a class="social-stub social-share facebook" data-layout="box_count" data-shares="530" data-uid="98xj" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share twitter" data-shares="1808" data-uid="98xj" href="https://twitter.com/intent/tweet?original_referer=http://mashable.com/&amp;source=tweetbutton&amp;text=8+Ways+to+Use+Instagram%27s+API&amp;url=http%3A%2F%2Fmashable.com%2F2013%2F09%2F19%2Finstagram-api-uses%2F&amp;via=mashable">Tweet</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share google_plus" data-shares="78" data-size="tall" data-uid="98xj" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share linked_in" data-shares="351" data-uid="98xj" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share stumble_upon" data-shares="35" data-uid="98xj" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share pinterest" data-shares="22" data-uid="98xj" href="#"></a></div>
+</div>
+<div class='velocity-graph tooltip-trigger' title='The Mashable Velocity graph shows how quickly people are sharing this article on the social Web.'>
+<canvas class='velocity'></canvas>
+<div class='caption'>What's This?</div>
+</div>
+</aside>
+
+<div class='above_960 adsense'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_channel = "9077376301";
+</script>
+<script>
+  if(!hideAd) google_ad_output = "js";
+</script>
+<script>
+  if(!hideAd) google_max_num_ads = "3";
+</script>
+<script>
+  if(!hideAd) google_ad_type = "text";
+</script>
+<script>
+  if(!hideAd) google_feedback = "on";
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+</div>
+
+<figure class='article-image'><img alt="Instagram-api" class="microcontent" data-fragment="lead-image" data-image="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/e735d0ea/a61/instagram-api.jpg" data-micro="1" data-url="null" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/e735d0ea/a61/instagram-api.jpg" /></figure>
+
+<div class="article-info"><a class="byline" href="/people/522e1814b589e4118c000490/"><img alt="Headshots-4" class="author_image" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzI1LzZjL0hlYWRTaG90czQuOTg0OTAuanBnCnAJdGh1bWIJOTB4OTAjCmUJanBn/9ac7416f/e8e/HeadShots-4.jpg" /><div class="author_and_date"><span class="author_name">By Sara Roncero-Menendez</span><time datetime="Thu, 19 Sep 2013 09:00:37 +0000">2013-09-19 09:00:37 UTC</time></div></a></div>
+
+</header>
+<section class='article-content'>
+
+<p><a href="http://mashable.com/category/instagram/">Instagram</a> has become one of the web's most popular platforms for photo and video sharing. To help users integrate the social network even further into their daily lives, it has released a public application programming interface (API). </p>
+<p>For those who have never heard the term before, an API is a seamless software-to-software interface, meaning there is no user involvement during the passing of information. For example, when you enter credit card information to make an online purchase, the website sends your credit card information through an API to another application, which confirms that the provided information is correct. </p>
+<div class="see-also"><p>See also: <a href="http://mashable.com/2012/07/16/photo-editing-apps/" data-crackerjax="#post-slider">7 Photo Editing Apps to Use With Instagram</a></p></div>
+<p>By using <a href="http://instagram.com/developer" target="_blank">Instagram's public API</a>, users — tech-savvy or otherwise — have a number of options on how to best implement the code. For some ideas on how to begin, here are eight basic ways to use the API for your own online presence.</p>
+<h2>1. Search Tags</h2>
+<p>The ability to search through and pull images from specific hashtags is one of the most basic functions of the Instagram API. Many <a href="http://mashable.com/category/apps/">apps</a> and services that use Instagram API, some of which will be discussed further down the list, rely heavily on this operation. </p>
+<p>Searching tags and having them update in real time on a website can be useful for many things, including marketing campaigns. Musician Moby <a href="http://destroyed.moby.com/" target="_blank">used the API</a> for a fan project about towns after dark, in which every picture with the tag #destroyed showed up on an interactive map.</p>
+<p>Here's a <a href="http://eduvoyage.com/instagram-search-app.html" target="_blank">quick tutorial</a> on how to pull tags from the API.</p>
+<h2>2. Incorporate Photos on Websites</h2>
+<p>The most obvious use of the API is to post Instagram photos or a photostream on a personal or business website. The photos can come from a specific Instagram account, or from tags created by other users. With this function, users can create a gallery of images or have the photostream automatically update as new pictures are added.</p>
+<p>There are many websites that pull users' photostreams so they can be viewed in their entireties online, such as <a href="http://followgram.me/" target="_blank">Followgram</a>. If you want to try programming it yourself, check out <a href="http://spyrestudios.com/connecting-with-api-data-from-instagr-am-using-php/" target="_blank">this tutorial</a>.</p>
+<h2>3. View Photos from Specific Locations in Real Time</h2>
+<p><img src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2U1L2luc3RhZ3JhbWdlLjFjNjMxLmpwZwpwCXRodW1iCTEyMDB4OTYwMD4/556a0b7d/d57/instagram-geo-tags.jpg" alt="A screenshot of someone livefeeding geotags from Tokyo, Japan" class="" data-width="1920" data-fragment="m!48fa" data-image="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE3L2U1L2luc3RhZ3JhbWdlLjFjNjMxLmpwZwpwCXRodW1iCTEyMDB4OTYwMD4/556a0b7d/d57/instagram-geo-tags.jpg" data-micro="1"><em><small>Image: Flickr, <a href="http://photoblog.seeminglee.com/" target="_blank">See-ming Lee</a></small></em></p>
+<p>Have you ever wondered what kinds of pictures Seattle residents are posting? Want to see what London-based users are uploading to Instagram? Curious to see photos and video from a Japanese summer festival?</p>
+<p>By using Instagram's API to search for geotags, users can see updates from around the world in real time. This function comes in handy when you want to see trends in different countries, watch big events happening across the globe or simply to admire the beauty of a different landscape.</p>
+<p>Here's a <a href="http://www.ibm.com/developerworks/xml/library/x-instagram1/index.html#retrievedetails" target="_blank">how-to guide</a> to get you started.</p>
+<h2>4. View Popular and Trending Photos</h2>
+<p>Another useful feature allows users to pull the most popular or trending photos from Instagram. This works well for companies that want to see if any products are particularly popular among Instagram users. It is also a valuable tool for data analysis, to see what types of photos do well or which users are especially popular. Of course, people can also use this feature to view the most popular posts of the day.</p>
+<p>If you want to showcase Instagram's most popular photos of the day on your site, <a href="http://www.ibm.com/developerworks/xml/library/x-instagram1/index.html#retrievedetails/" target="_blank">here's an easy method</a> you can use.</p>
+<h2>5. Print Photos from Events and Tags Instantly</h2>
+<p>If you have a fondness for old instant film cameras, Instagram's API can help. Through the API, it's possible to print any photo you upload to your feed instantly from your smartphone. All a user has to do is set the API to print pictures taken with a specific hashtag or from their feed. </p>
+<p>For example, if you want to make a printed collage of the beautiful sunrises you capture, you would set the API to search for the tag #beautifulsunrises in your own stream and then set it to print those images once you add them.</p>
+<p>If this sounds too intense programming-wise, you can use services such as <a href="http://www.instaprint.me/features/" target="_blank">Instaprint</a> .  </p>
+<h2>6. Make Custom Items</h2>
+<p><img src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE3LzdhL2luc3RhZ3JhbWNhLjVjNjVlLmpwZwpwCXRodW1iCTEyMDB4OTYwMD4/91f48e92/5c1/instagram-case.jpg" alt="A personalized Instagram photo feed iPhone 4 case" class="" data-width="1024" data-fragment="m!ff29" data-image="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE3LzdhL2luc3RhZ3JhbWNhLjVjNjVlLmpwZwpwCXRodW1iCTEyMDB4OTYwMD4/91f48e92/5c1/instagram-case.jpg" data-micro="1"><em><small>Image: Flickr, <a href="http://www.whatmattdoes.co.uk/" target="_blank">Matt Townsley</a></small></em></p>
+<p>Thanks to the API, it is now possible to put your favorite shots on phone cases, mugs, postcards and more. Since the API allows you to pull entire photo feeds, users can take the images to make any number of custom-decorated items in their own home, or order them from specialized companies.</p>
+<p>If you'd like to purchase an iPhone case like the one shown above, you can get one at <a href="http://www.casetagram.com/" target="_blank">Casetagram</a>. Other customizable items are available from <a href="http://mashable.com/2012/03/03/instagram-products-decor/" data-crackerjax="#post-slider">select services</a>.</p>
+<h2>7. Market Venues, Events and Businesses</h2>
+<p>Using the Instagram API to pull photos with hashtags and geotags has proven to be a lucrative tool for local businesses and venues. By pulling pictures from specific brand or tags, business owners can see how their products are being used and whether they're popular. Venue owners can also find photos that show customers enjoying events at their locales.</p>
+<p>Instagram's API has even been used as a <a href="http://mashable.com/2011/03/02/instagram-brands/" data-crackerjax="#post-slider">marketing tool</a> to sell products. Brisk, a beverage company, asked its customers to tag photos with #brisk and selected their favorites to put on limited edition cans. </p>
+<p>There are services which also pull photos for information on products and events. <em><a href="https://itunes.apple.com/us/app/now-whats-happening-in-world/id525956360?mt=8" target="_blank">Now</a></em> is an app that pulls information from Instagram photo as well as other sources to show upcoming events and hot-spots. <a href="http://venueseen.com/" target="_blank">Venueseen</a> works with brands and companies to help with their Instagram presence. </p>
+<h2>8. Create Event Live Feeds</h2>
+<p>Most social networks are conducive to live feeding an event — in fact, it's one of the major functions of <a href="http://mashable.com/category/twitter/">Twitter</a>. With the Instagram API, event organizers can pull photos with event-specific tags and display them onscreen in real time. The Black Eyed Peas <a href="http://blog.instagram.com/post/11064572241/innovative-uses-of-instagram" target="_blank">used it during a concert</a> in Manhattan's Central Park to showcase fan photos taken during the performance. </p>
+<p>If you are planning an event and want an Instagram live feed, but you want to avoid the hassle of coding, you can use <a href="http://eventstagr.am/" target="_blank">Eventstagram</a> or any number of other online services.</p>
+<p>Do you know of additional unique ways to implement Instagram's API? Know of any cool apps that use the API to do amazing things? Leave suggestions or recommendations in the comments below.</p>
+<p><em>Image: Flickr, <a href="http://www.lucasartoni.com/" target="_blank">Luca Sartoni</a></em></p>
+
+
+
+</section>
+<footer class='article-topics'>
+Topics:
+<a href="/category/apis/">APIs</a>, <a href="/category/apps-software/">Apps and Software</a>, <a href="/category/dev-design/">Dev & Design</a>, <a href="/category/instragram/">instragram</a>, <a href="/category/social-media/">Social Media</a>, <a href="/category/tech/">Tech</a>, <a href="/category/work-play/">Work &amp; Play</a>
+</footer>
+
+<div id='newsletter-signup'></div>
+
+<div id='taboola-bottom-article'></div>
+<script>
+  //Taboola ad placing code
+  window._taboola = window._taboola || [];
+  _taboola.push({mode:'autosized-2r-responsive',
+  container:'taboola-bottom-article', placement:'Bottom Article'});
+</script>
+<script>
+  //Taboola article pushing code
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+</script>
+<script src="http://cdn.taboolasyndication.com/libtrc/mashable/loader.js" type="text/javascript"></script>
+
+<script>
+  if(window.pageChanged)
+    window.omni({"channel":"social-media","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":332.5,"h_buy":null,"h_pub_buy":null,"v_cur":1.1,"v_max":1.5,"v_cur_i":1,"v_max_i":1,"events":"event51,event61","top_channel":"social-media","content_source_type":"Internal","content_source_name":"Internal","author_name":"Sara Roncero-Menendez","age":"13","pub_day":19,"pub_month":9,"pub_year":2013,"pub_date":"09/19/2013","isPostView":true,"post_lead_type":"Default","topics":"APIs,Apps and Software,Dev & Design,features,instragram,Lists,Social Media,Tech,Uncategorized,Work &amp; Play","campaign":null,"display_mode":null});
+    metaData = {"link":[["canonical","http://mashable.com/2013/09/19/instagram-api-uses/"],["image_src","http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/91af5537/a61/instagram-api.jpg"]],"meta_property":[["og:url","http://mashable.com/2013/09/19/instagram-api-uses/"],["og:title","8 Ways to Use Instagram's API"],["og:type","article"],["og:site_name","Mashable"],["og:description","Some of the many interesting, innovative, and functional ways to use Instagram API."],["og:image","http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/91af5537/a61/instagram-api.jpg"],["og:article:published_time","2013-09-19T09:00:37Z"],["og:article:modified_time","2013-09-19T13:05:31Z"],["og:article:publisher","https://www.facebook.com/mashable"]],"meta_name":[["description","Some of the many interesting, innovative, and functional ways to use Instagram API."],["keywords","api, lists, features, tech, uncategorized, instragram, social-media, apps-software, dev-design, work-play"],["twitter:title","8 Ways to Use Instagram's API"],["twitter:description","Instagram has become one of the web's most popular platforms for photo and video sharing. To help users integrate the social network even further into their daily lives, it has released a public appli..."],["twitter:image","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/193bb2b2/a61/instagram-api.jpg"],["twitter:site","@mashable"],["twitter:url","http://mashable.com/2013/09/19/instagram-api-uses/"],["twitter:creator","@mashable"],["twitter:card","photo"],["twitter:image:width","560"],["twitter:image:height","750"],["date","2013-09-19 09:00:37 UTC"],["sailthru.author","Sara Roncero-Menendez"],["sailthru.image.thumb","http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/0d3be490/a61/instagram-api.jpg"],["sailthru.image.full","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/e735d0ea/a61/instagram-api.jpg"],["sailthru.lead_image","http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/1090dc2b/a61/instagram-api.jpg"],["sailthru.secondary_image","http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzE5LzQyL2luc3RhZ3JhbWFwLjQwNjJhLmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/40b376eb/a61/instagram-api.jpg"]],"short_url":[["short_url","http://on.mash.to/16HbuME"]]};
+</script>
+<div class='right_rail_replace'>
+<div class="ad_container"><span class="ad" data-height="250" data-src="/tripleclick.html#type=no_right_rail&amp;adnum=1&amp;gvcfv=true&amp;gvmfv=true&amp;postid=2177769&amp;sec0=socmed&amp;sec1=apps%7Cdev&amp;sec2=posts&amp;tile=1" data-width="300"></span></div>
+
+</div>
+</article>
+</div>
+<div class='article-comments'>
+<div data-article-id="523abd36b589e43b7d00504e" data-checksum="99d0c80726639fcf3d41148b31d793e2" data-collection-meta="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6IjggV2F5cyB0byBVc2UgSW5zdGFncmFtJ3MgQVBJIiwidXJsIjoiaHR0cDovL21hc2hhYmxlLmNvbS8yMDEzLzA5LzE5L2luc3RhZ3JhbS1hcGktdXNlcy8iLCJ0YWdzIjoiYXBpLGxpc3RzLGZlYXR1cmVzLHRlY2gsdW5jYXRlZ29yaXplZCxpbnN0cmFncmFtLHNvY2lhbC1tZWRpYSxhcHBzLXNvZnR3YXJlLGRldi1kZXNpZ24sd29yay1wbGF5IiwiY2hlY2tzdW0iOiI5OWQwYzgwNzI2NjM5ZmNmM2Q0MTE0OGIzMWQ3OTNlMiIsImFydGljbGVJZCI6IjUyM2FiZDM2YjU4OWU0M2I3ZDAwNTA0ZSJ9.6dhzyKjEz2gMNeTjUzVK0cF1qy43t8EkU7ngondEocs" data-network="mashable.fyre.co" data-root="zor.livefyre.com" data-site-id="312274" id="livefyre_comments"></div>
+<a class='btn btn-light load-comments' href='#'>Load Comments</a>
+<div id='powered_by_livefyre_new'>
+<a href='http://livefyre.com' target='_blank'>Powered by Livefyre</a>
+</div>
+</div>
+</div>
+</div>
+<aside class='box-cell sidebar'>
+<div class='ad sidebar-inset sidebar-drop'>
+<div class="ad_container"><span class="ad" data-height="250" data-src="/tripleclick.html#type=right_rail&amp;adnum=2&amp;gvcfv=true&amp;gvmfv=true&amp;postid=2177769&amp;sec0=socmed&amp;sec1=apps%7Cdev&amp;sec2=posts&amp;tile=2" data-width="300"></span></div>
+
+</div>
+<h1 class='ribbon hot'>What's Hot</h1>
+<div class='sidebar-inset' id='big-stories'></div>
+</aside>
+</div>
+<div id='more-in-channel'>
+<div class='page-header channel' data-channel='social-media' data-section='sec0=socmed&amp;sec1=index&amp;sec2='>
+<h2>More in Social Media</h2>
+</div>
+<div class='fixable-wrapper' id='column-headers'>
+<div class='column-headers'>
+<div class='headers'>
+<div class='header column1 waypoint' data-fixselector='header.fixable'><a data-short='New' href='#'>
+<em>The New Stuff</em>
+</a></div>
+<div class='header column2 waypoint' data-fixselector='header.fixable'><a data-short='Rising' href='#'>
+<em>The Next Big Thing</em>
+</a></div>
+<div class='header column3 waypoint' data-fixselector='header.fixable'><a data-short='Hot' href='#'>
+<em>What's Hot</em>
+</a></div>
+</div>
+</div>
+</div>
+<div class='slide-window'>
+<div class='flex-box columns'><section class='column box-cell new-stories' id='column-new'><h1 class='semantic'>The New Stuff</h1>
+<div class='column-content'></div></section><section class='column box-cell hot-stories' id='column-rising'><h1 class='semantic'>The Next Big Thing</h1>
+<div class='column-content'></div></section><section class='column box-cell big-stories' id='column-hot'><h1 class='semantic'>What's Hot</h1>
+<div class='column-content'></div></section></div>
+</div>
+</div>
+
+<div id='parsely-root' style='display: none'>
+<span data-parsely-site='mashable.com' id='parsely-cfg'></span>
+</div>
+<script>
+  loadScriptAsync("//static.parsely.com/p.js", "parsely")
+</script>
+</div>
+</div>
+</div><div id='fb-root'></div><script>
+  if(window.initPage) { window.initPage() }
+  else { $(function() { window.initPage(); })}
+</script>
+</div><footer id='site-footer-wrapper'>
+<div class='page-container' id='site-footer'><ul class='nav'><li><a href="/about/">About Us</a></li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="/advertise/">Advertise</a></li><li><a href="/2011/05/09/connect-with-mashable/">Subscribe</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul><ul class='social'><li><a class='facebook' href='http://www.facebook.com/mashable/' target='_social'></a></li>
+<li><a class='twitter' href='https://twitter.com/mashable' target='_social'></a></li>
+<li><a class='gplus' href='https://plus.google.com/+Mashable' target='_social'></a></li>
+<li><a class='rss' href='http://feeds.mashable.com/Mashable' target='_social'></a></li>
+<li><a class='pinterest' href='http://pinterest.com/mashable/' target='_social'></a></li>
+<li><a class='youtube' href='http://www.youtube.com/user/mashable' target='_social'></a></li>
+<li><a class='stumbleupon' href='http://www.stumbleupon.com/channel/Mashable' target='_social'></a></li>
+<li><a class='linkedin' href='http://www.linkedin.com/today/mashable.com' target='_social'></a></li></ul>
+<div class='about'>
+<a class='brand' href='/'>
+Mashable
+</a>
+<span class='blurb'>is the largest independent online news site dedicated to covering digital culture, social media and technology. With more than 20 million unique monthly visitors, Mashable has one of the most engaged online news communities. Founded in 2005, Mashable is headquartered in New York City with an office in San Francisco.</span>
+</div>
+<ul class='copyright-and-legal'>
+<li>
+&copy;2005-2013
+Mashable, Inc.
+</li>
+<li>
+Reproduction without explicit permission is prohibited. All Rights Reserved.
+</li>
+<li>
+Designed in collaboration with <a rel="nofollow" href="http://www.codeandtheory.com">Code &amp; Theory</a>
+</li>
+</ul>
+</div>
+</footer>
+
+<noscript>
+<img src='http://b.scorecardresearch.com/p?c1=2&amp;c2=8750086&amp;cv=2.0&amp;cj=1'>
+</noscript></div>
+</div>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","faaaef6476","1135420","cAkNR0ENXQpXF0tJDUASEBxACl4R",0,84,new Date().getTime(),"","","","",""]);</script></body>
+</html>

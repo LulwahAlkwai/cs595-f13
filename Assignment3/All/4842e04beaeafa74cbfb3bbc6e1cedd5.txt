@@ -1,0 +1,262 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <script>var _sf_startpt=(new Date()).getTime()</script>
+  <title>Chrome&rsquo;s insane password security strategy</title>
+  <script src="//use.typekit.com/ili8iyi.js"></script>
+  <script>try{Typekit.load();}catch(e){}</script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="generator" content="Svbtle.com" />
+  <meta name="description" content="Chrome does something interesting when you first run it. The other day, I was using Chrome in development for an Ember.js app. I use Safari for day-to-day browsing, but it has a habit of aggressively caching files when I least expect it, so from... | Elliott Kember | Software Developer. Director at Riot. "/>
+  <link rel="canonical" href="http://blog.elliottkember.com/chromes-insane-password-security-strategy" />
+  <meta poperty="og:url" content="http://blog.elliottkember.com/chromes-insane-password-security-strategy" />
+  <meta property="twitter:card" content="summary" />
+  <meta property="twitter:site" content="@svbtle" />
+  <meta property="twitter:title" content="Chrome&rsquo;s insane password security strategy" />
+  <meta property="twitter:description" content="Chrome does something interesting when you first run it. The other day, I was using Chrome in development for an Ember.js app. I use Safari for day-to-day browsing, but it has a habit of aggressively caching files when I least expect it, so from... | Elliott Kember | Software Developer. Director at Riot. " />
+  <meta property="twitter:creator" content="@elliottkember" />
+  <meta property="twitter:image:src" content="https://d2l2xugcou6irs.cloudfront.net/svbtle_logo.png" />
+  <meta property="twitter:domain" content="http://blog.elliottkember.com" />
+  <link rel="prefetch" href="http://blog.elliottkember.com" />
+  <link rel="prerender" href="http://blog.elliottkember.com" />
+  <meta property="og:title" content="Chrome&#39;s insane password security strategy &bull; Elliott Kember" />
+  <meta property="og:type" content="article" />
+  <meta property="og:description" content="Chrome does something interesting when you first run it. The other day, I was using Chrome in development for an Ember.js app. I use Safari for day-to-day browsing, but it has a habit of aggressively caching files when I least expect it, so from... | Elliott Kember | Software Developer. Director at Riot. "/>
+  <meta property="og:image" content="https://d2l2xugcou6irs.cloudfront.net/svbtle_logo.png" />
+  <meta property="og:site_name" content="Elliott Kember on Svbtle" />
+  <meta property="fb:app_id" content="346346195413177" />
+  <link rel="alternate" type="application/rss+xml" href="http://blog.elliottkember.com/feed" />
+  <link data-turbolinks-track="true" href="https://dtu1xr3i3b2a1.cloudfront.net/cargo/build.blog-90c9e82a2e8865c3a24b35aeba3778db.css" media="all" rel="stylesheet" />
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script data-turbolinks-track="true" src="https://dtu1xr3i3b2a1.cloudfront.net/cargo/build.blog-d4ed663731d56d159b752c2e3e9d30cc.js"></script>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-41994323-1');
+  ga('send', 'pageview');
+  // Create a new tracker for the user on analytics.js and send the pageview
+  ga('create', 'UA-6594483-2', {'name': 'userTracker'});
+  ga('userTracker.send', 'pageview');
+  // Backwards compatibility--create an old ga.js for the user
+  var _gaq = _gaq || [];
+  _gaq.push( ['_setAccount', 'UA-41994323-1'],['_setDomainName', 'none'],['_setAllowLinker', true],['_trackPageview'],['b._setAccount', 'UA-6594483-2'],['b._setDomainName', 'blog.elliottkember.com'],['b._setAllowLinker', true],['b._trackPageview']);
+  (function() { var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);})();
+  </script>
+</head>
+<body class="blog">
+<div id="touch_menu">&nbsp;</div>
+<h1 id="mlogotype"><a href="https://svbtle.com">Svbtle</a></h1>
+<nav id="master" class="blog">
+	<h2 id="logotype"><a href="https://svbtle.com">Svbtle</a></h2>
+	<a id="master_indicator" href="#show-drop">&nbsp;</a>
+	<ul id="master_drop">
+		<li><h5><a href="https://svbtle.com">Elliott Kember<br/>is writing on the<br/><span>Svbtle</span> network.</a></h5></li>
+    <li class="link twitter "><a href="http://twitter.com/elliottkember" class="twitter_head">@elliottkember&nbsp;on&nbsp;twitter</a></li>
+    <li class="website"><a href="http://elliottkember.com">elliottkember.com</a></li>
+    <li class="link email"><a href="mailto:elliott.kember@gmail.com?subject=hi from svbtle">say&nbsp;hello</a></li>
+    <li class="link feed"><a href="/feed">rss</a></li>
+		<li><a href="https://svbtle.com" class="header_link">SVBTLE</a></li>
+		<li><a href="https://svbtle.com/magazine">magazine</a></li>
+		<li><a href="https://svbtle.com/about">about svbtle</a></li>
+		<li><a href="http://twitter.com/svbtle" target="_blank">@svbtle</a></li>
+		<li style="display: none;"><a href="https://svbtle.com/feed" target="_blank">rss feed</a></li>
+		<li><br/></li>
+		<li><a href="https://svbtle.com/login">log in</a></li>
+	</ul>
+</nav>
+<div id="touch_close">&nbsp;</div>
+
+<style scoped>
+blockquote,
+a blockquote,
+h2#page_title a:hover,
+div#readnext:hover span.flank_title,
+div#foot_more:hover a,
+div#foot_userbar a#bottom_tagline span:hover,
+article.linked h1.article_title a:hover,
+a.continue_button:hover,
+article p a:hover,
+ul#lightning_drop {
+  border-color: #ff00ff;
+}
+body,
+figure.kudo.complete div.filling,
+ul#lightning_drop li a:hover,
+section#sidebar,
+section#river.userhome p a.buttonize {
+  background-color:#ff00ff
+}
+figure.kudo.complete div.filling {
+  background-image:url(//d1jcp5e5r52ocf.cloudfront.net/svbtle.png);
+}
+div#readnext:hover span.flank_title,
+div#foot_more:hover span,
+div#foot_userbar a#bottom_tagline span:hover,
+article.linked h1.article_title:hover,
+h2#page_title a:hover,
+section#river.userhome header#page_header h2#page_title a,
+body section#river.userhome article h1.article_title:hover a,
+aside#read_this_first h6,
+aside#also_by_user h6,
+article.post.mini h1.article_title:hover a,
+a.continue_button:hover,
+a.continue_button,
+article p a:hover,
+ul#lightning_drop li.userinfo a.user_name,
+body ul#lightning_drop li.userinfo:hover a.user_name {
+  color: #ff00ff;
+}
+
+footer#masthead {
+  border-bottom: 24px solid #ff00ff;
+}
+figure.logo a {
+  background: #ff00ff url(//d1jcp5e5r52ocf.cloudfront.net/svbtle.png) center center no-repeat;
+  background-size: 100%;
+}
+</style>
+<h1 id="home_logotype"><a href="https://svbtle.com">Svbtle</a></h1>
+<section id="river">
+  <header id="page_header">
+    <figure class="logo main">
+      <a href="http://blog.elliottkember.com">Elliott Kember</a>
+    </figure>
+    <h2 id="page_title"><a href="http://blog.elliottkember.com">Elliott Kember</a></h2>
+    <h3 id="page_subtitle"><a href="http://blog.elliottkember.com">Software Developer.      Director at Riot. </a></h3>
+  </header>
+  <article id="wf12xiFxMLKamMnqKQJ4" class="post  ">
+  <h1 class="article_title">
+    <a href="http://blog.elliottkember.com/chromes-insane-password-security-strategy">Chrome&rsquo;s insane password security strategy</a>
+  </h1>
+  <time datetime="2013-08-06" class="article_time">Aug  6, 2013</time>
+  <section class="post_content">
+    <p>Chrome does something interesting when you first run it. </p>
+
+<p><img src="http://up.elliottkember.com/image/1j2M2F1j2616/Image%202013-07-31%20at%2012.28.00%20PM.png" alt="import"></p>
+
+<p>The other day, I was using Chrome in development for an Ember.js app. I use Safari for day-to-day browsing, but it has a habit of aggressively caching files  when I least expect it, so from time to time I switch to Chrome.</p>
+
+<p>I decided to hit Chrome&rsquo;s &ldquo;Import bookmarks now&rdquo; link and see whether I could import my bookmarklets from Safari, so things would be nice and consistent between the two browsers. I didn&rsquo;t expect this:</p>
+
+<p><img src="http://f.cl.ly/items/1D1P2Z2t423N1U1B0x1l/Image%202013-07-31%20at%2012.13.35%20PM.png" alt="Chrome asking me to import my content from Safari"></p>
+
+<p>This struck me as particularly odd. Why is &ldquo;Saved passwords&rdquo; greyed out, and mandatory? Why have a check-box? This is <em>the illusion of choice</em>. I think it&rsquo;s deeply misleading, and this is why:</p>
+
+<p>This is a page in Chrome&rsquo;s settings panel:</p>
+
+<p><img src="http://up.elliottkember.com/image/281t1J3n1I1g/content.png" alt="Passwords in Chrome"></p>
+
+<p>See that &ldquo;show&rdquo; button? It does what you think it does. </p>
+
+<p><img src="http://up.elliottkember.com/image/2A333B3g222f/content.png" alt="Passwords in Chrome, in plain-text"></p>
+
+<p><strong>There&rsquo;s no master password, no security, not even a prompt that &ldquo;these passwords are visible&rdquo;.</strong> Visit <a>chrome://settings/passwords</a> in Chrome if you don&rsquo;t believe me.</p>
+
+<p>There are two sides to this. The developer&rsquo;s side, and the user&rsquo;s side. Both roles have vastly different opinions as to how the computer works. Any time I try to draw attention to this, I get the usual responses from technical people:</p>
+
+<ul>
+<li><p>Just use 1Pass</p></li>
+<li><p>The computer is already insecure as soon as you have physical access</p></li>
+<li><p>That&rsquo;s just how password management works</p></li>
+</ul>
+
+<p>While all of these points are valid, this doesn&rsquo;t address the real problem: Google isn&rsquo;t clear about its password security. </p>
+
+<p>In a world where Google promotes its browser on YouTube, in cinema pre-rolls, and on billboards, the clear audience is not developers. It&rsquo;s the mass market - the users. The overwhelming majority. They don&rsquo;t know it works like this. They don&rsquo;t expect it to be this easy to see their passwords. Every day, millions of normal, every-day users are saving their passwords in Chrome. This is not okay.</p>
+
+<p><img src="http://up.elliottkember.com/image/0n3d3R1J392Z/content.png" alt="&quot;A Google Chrome prompt showing the words &#39;confidential information&#39;, and &#39;in your keychain&#39;"></p>
+
+<p>This dialog is even more misleading. By using words like &ldquo;confidential information&rdquo; and &ldquo;stored in your keychain&rdquo;, OSX describes the state of your saved password&rsquo;s current security. It&rsquo;s the very security Chrome is about to bypass, by displaying your passwords, in plain-text, outside your keychain, without requiring a password. When you visit a website, Chrome prompts for every password it can find for that domain.</p>
+
+<p>Today, go up to somebody non-technical. Ask to borrow their computer. Visit <a>chrome://settings/passwords</a> and click &ldquo;show&rdquo; on a few of the rows. See what they have to say.</p>
+
+<p>I bet you it won&rsquo;t be &ldquo;That&rsquo;s how password management works&rdquo;.</p>
+
+<p><strong>Updates</strong>: </p>
+
+<p><a href="https://twitter.com/justinschuh">Justin Schuh</a> who is head of Chrome security and called me &ldquo;a novice&rdquo;, says I&rsquo;m wrong, and that <a href="https://news.ycombinator.com/item?id=6166886">this is not going to change</a>.</p>
+
+<p><a href="https://twitter.com/timberners_lee/status/364839351651274752">Sir Tim Berners-Lee</a> is with me. Is there a higher authority?</p>
+
+<p><a href="https://support.google.com/chrome/answer/95606?hl=en-GB">This</a> is Google&rsquo;s page on &ldquo;saving passwords&rdquo;. Nothing about this feature. Why?</p>
+
+<p>Covered in the press by: </p>
+
+<ul>
+<li><p><a href="http://www.theguardian.com/technology/2013/aug/13/chrome-google?INTCMP=SRCH">The Guardian</a> &hellip; <a href="http://www.theguardian.com/technology/2013/aug/07/google-chrome-password-security-flaw?INTCMP=SRCH">twice</a>.</p></li>
+<li><p><a href="http://atp.fm/episodes/25-thrustmaster-joystick">The Independent</a></p></li>
+<li><p><a href="http://www.telegraph.co.uk/technology/internet-security/10228714/Google-Chrome-flaw-exposes-user-passwords.html">The Telegraph</a></p></li>
+<li><p>Reposted on <a href="http://mashable.com/2013/08/07/chrome-password-security/">Mashable</a> and <a href="http://gizmodo.com/google-chrome-s-insanely-open-password-security-strateg-1052344786#replies">Gizmodo</a></p></li>
+<li><p><a href="http://atp.fm/episodes/25-thrustmaster-joystick">Accidental Tech Podcast</a> nailed it</p></li>
+<li><p><a href="http://www.wired.com/threatlevel/2013/08/chrome-password-manager/">Wired</a> didn&rsquo;t read the article properly</p></li>
+<li><p>Thomas Fuchs drew an <a href="https://twitter.com/thomasfuchs/status/365293355430731776">excellent diagram</a></p></li>
+</ul>
+
+    <figure class="kudo able clearfix" id="kudo_wf12xiFxMLKamMnqKQJ4">
+      <a href="#kudo">
+        <div class="filling">&nbsp;</div>
+      </a>
+      <div class="num">11,553</div>
+      <div class="txt">Kudos</div>
+    </figure>
+    <figure class="side kudo able clearfix" id="kudo_side_wf12xiFxMLKamMnqKQJ4">
+      <a href="#kudo">
+        <div class="filling">&nbsp;</div>
+      </a>
+      <div class="num">11,553</div>
+      <div class="txt">Kudos</div>
+    </figure>
+  </section>
+</article>
+
+  <div>&nbsp;</div>
+</section>
+
+<footer id="masthead">
+  <div id="readnext">
+    <a href="http://blog.elliottkember.com/just">
+      <span class="flank_head">Read this next:</span><br/>
+      <span class="flank_title">&ldquo;Just&rdquo;</span>
+    </a>
+  </ul>
+  </div>
+  <div class="separator">
+  <div id="foot_logo">
+    <a href="https://svbtle.com"><span>Svbtle</span></a>
+  </div>
+  <div id="foot_userbar">
+    <a href="http://blog.elliottkember.com" id="bottom_tagline">
+      <span>Elliott Kember</span> Software Developer.      Director at Riot. 
+    </a>
+    <a href="https://twitter.com/elliottkember" class="linkout twitter">@elliottkember</a>
+    <a href="mailto:elliott.kember@gmail.com?subject=hi" class="linkout contact">say hello</a>
+  </div>
+  <div id="foot_more">
+    <a href="http://blog.elliottkember.com"><span>Full blog &raquo;</span></a>
+  </div>
+  </div>
+  <div id="copyright">
+    &copy; 2013
+  </div>
+</footer><script>
+  // CBEAT
+  var _sf_async_config = { uid: 1721, domain: 'svbtle.com'};
+  (function() {
+    function loadChartbeat() {
+      window._sf_endpt = (new Date()).getTime();
+      var e = document.createElement('script');
+      e.setAttribute('language', 'javascript');
+      e.setAttribute('type', 'text/javascript');
+      e.setAttribute('src','//static.chartbeat.com/js/chartbeat.js');
+      document.body.appendChild(e);
+    };
+    var oldonload = window.onload;
+    window.onload = (typeof window.onload != 'function') ?
+      loadChartbeat : function() { oldonload(); loadChartbeat(); };
+  })();
+</script>
+</body>
+</html>

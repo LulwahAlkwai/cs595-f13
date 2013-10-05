@@ -1,0 +1,509 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"  xmlns:og="http://opengraphprotocol.org/schema/" xmlns:fb="http://www.facebook.com/2008/fbml" xml:lang="en" lang="en-US">
+
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<title>Why a Pro Poker Player Bet on CUDA</title>
+
+<link rel="shortcut icon" href="http://blogs.nvidia.com/wp-content/themes/nvidia/images/favicon.ico" />
+<link rel="stylesheet" href="http://blogs.nvidia.com/wp-content/themes/nvidia/style.css?m=1377888957" type="text/css" media="screen" />
+
+<link rel="pingback" href="http://blogs.nvidia.com/xmlrpc.php" />
+<link charset="utf-8" type="text/css" href="http://www.nvidia.com/content/includes/css/redesign08/nvidia_styles_redesign08.css" rel="stylesheet" />
+<script type="text/javascript" src="http://www.nvidia.com/content/includes/js/swfobject.js"></script>
+
+<!--[if lte IE 8]><link rel="stylesheet" type="text/css" href="http://blogs.nvidia.com/wp-content/themes/nvidia/ie8.css?m=1370973476"/><![endif]-->
+<!--[if lte IE 7]>
+    <script type="text/javascript"> isIE6 = true;</script>
+	<link rel="stylesheet" type="text/css" href="http://blogs.nvidia.com/wp-content/themes/nvidia/ie7.css?m=1343328851"/>
+<![endif]-->
+<!--[if IE 6]>
+	<link rel="stylesheet" type="text/css" href="http://blogs.nvidia.com/wp-content/themes/nvidia/ie6.css?m=1343328851"/>
+<![endif]-->
+
+
+	<script type="text/javascript">var switchTo5x=true;</script>
+	<script type="text/javascript" src="http://w.sharethis.com/button/buttons.js"></script>
+	<script type="text/javascript">stLight.options({publisher:'998dc202-a267-4d8e-bce9-14debadb8d92', onhover: false});</script>
+
+
+<!-- Development by Crowd Favorite - http://crowdfavorite.com/ -->
+
+<div id="fb-root"></div><link rel="alternate" type="application/atom+xml" title="NVIDIA &raquo; Trump Card: Why a Pro Poker Player Bet on CUDA Comments Feed" href="http://blogs.nvidia.com/blog/2013/05/03/trump-card-why-a-pro-poker-player-bet-on-cuda/feed/" />
+<script type='text/javascript' src='http://blogs.nvidia.com/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://blogs.nvidia.com/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript' src='http://blogs.nvidia.com/wp-includes/js/comment-reply.min.js?ver=3.6.2-alpha'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blogs.nvidia.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blogs.nvidia.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Tegra Team Gears Up for Growth' href='http://blogs.nvidia.com/blog/2013/04/30/tegra-team-gears-up-for-growth/' />
+<link rel='next' title='How GPUs Are Taming Dragons on the Cheap for Indie Films' href='http://blogs.nvidia.com/blog/2013/05/06/how-gpus-are-taming-dragons-on-the-cheap-for-indie-films/' />
+<meta name="generator" content="WordPress 3.6.2-alpha" />
+<link rel='shortlink' href='http://blogs.nvidia.com/?p=22377' />
+	<meta property="og:title" content="Trump Card: Why a Pro Poker Player Bet on CUDA" />
+		<meta name="google-site-verification" content="fRN6Tokx0As6AGYPd4zjMBgITWR2dvXjN6Zb3gojo-Y" />
+		<script type="text/javascript">
+		var site_url = 'http://blogs.nvidia.com';
+	</script>
+	
+<!-- All in One SEO Pack 2.0.3.1 by Michael Torbert of Semper Fi Web Design[399,468] -->
+<link rel="author" href="crowdfavorite" />
+<meta name="description" content="Javier Torresola -- an MIT-trained engineer who quit his corporate job to become a pro poker player -- opted out of the traditional educational experience to learn how to exploit the computing power of GPUs with Udacity's free online classes." />
+
+<meta name="keywords" content="nvidia, gpu, gpgpu, cuda" />
+
+<link rel="canonical" href="http://blogs.nvidia.com/blog/2013/05/03/trump-card-why-a-pro-poker-player-bet-on-cuda/" />
+<!-- /all in one seo pack -->
+		<script type="text/javascript">
+			var fc_app_id = '159829367388982';
+		</script>
+		<script src="http://blogs.nvidia.com/wp-content/themes/nvidia/js/modernizr.custom.12924.js"></script>
+</head>
+<body class="single single-post postid-22377 single-format-standard">
+		<div id="page">
+
+
+<div class="header">
+
+	<script type="text/javascript" xmlns="http://www.w3.org/1999/xhtml">
+		 var isIE6 = false;
+		 var isIE7 = false;
+		 var isIE8 = false;
+	</script>
+	<link rel="stylesheet" type="text/css" href="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/global-nav.css" media="screen">
+	<link type="text/css" rel="stylesheet" href="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/masthead-oldtemplate.css" media="screen">
+	<!--[if IE 6]>
+		<link rel="stylesheet" type="text/css" href="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/global-nav-ie6.css" media="screen" /> 
+		<link rel="stylesheet" type="text/css" href="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/masthead-oldtemplate-ie6.css" media="screen" />
+		<script type="text/javascript">
+			var isIE6 = true;
+		</script>
+	<![endif]-->
+	<!--[if IE 7]>
+		<link rel="stylesheet" type="text/css" href="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/global-nav-ie7.css" media="screen" />
+		<link rel="stylesheet" type="text/css" href="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/masthead-oldtemplate-ie7.css" media="screen" />
+		<script type="text/javascript">
+			var isIE7 = true;
+		</script>
+	<![endif]-->
+		
+
+	<div class="yui3-cssreset"><div id="nvidiaHeader" class="mainBody"><div id="navLogo"><a href="http://www.nvidia.com/page/home.html" onclick="s_objectID=&quot;http://www.nvidia.com/page/home.html_1&quot;;return this.s_oc?this.s_oc(e):true"><img src="http://www.nvidia.com/content/includes/redesign2010/images/redesign10/nvidia_logo.gif" alt="NVIDIA - World Leader in Visual Computing Technologies" id="nvidiaLogo"></a></div><div id="search"><form action="http://www.nvidia.com/object/nv_search_us.html" id="Form1" xmlns=""><input type="hidden" name="cx" value="009029091075083507105:9leknaf7r_8"><input type="hidden" name="cof" value="FORID:11;NB:1"><input type="hidden" name="ie" value="UTF-8"><input type="hidden" name="hl" value="en"><input type="hidden" name="gl" value="us"><input type="text" name="q" size="25" maxlength="50" onclick="this.value='';" value="Search NVIDIA"></form><script src="http://www.google.com/coop/cse/brand?form=cse-search-box&amp;lang=en" type="text/javascript"></script></div><script src="http://www.nvidia.com/content/includes/redesign2010/js/global_menu.js" type="text/javascript"></script><div id="globalSelector"><div class="currentTitle">USA - United States <img onclick="javascript:openGlobalSelector();" alt="" src="http://www.nvidia.com/content/includes/masthead/expand_arrow.jpg" style="cursor:pointer;"></div><div id="globalSelectorOpen"><div class="currentTitle">USA - United States <img onclick="javascript:closeGlobalSelector();" alt="" src="http://www.nvidia.com/content/includes/masthead/close_cross.jpg" style="cursor:pointer;"></div><p><a href="http://arg.nvidia.com" onclick="s_objectID=&quot;http://arg.nvidia.com/_1&quot;;return this.s_oc?this.s_oc(e):true">ARG - Argentina</a></p><p><a href="http://br.nvidia.com" onclick="s_objectID=&quot;http://br.nvidia.com/_1&quot;;return this.s_oc?this.s_oc(e):true">BRA - Brasil</a></p><p><a href="http://chl.nvidia.com" onclick="s_objectID=&quot;http://chl.nvidia.com/_1&quot;;return this.s_oc?this.s_oc(e):true">CHL - Chile</a></p><p><a href="http://www.nvidia.cn" onclick="s_objectID=&quot;http://www.nvidia.cn/_1&quot;;return this.s_oc?this.s_oc(e):true">CHN - China</a></p><p><a href="http://clm.nvidia.com" onclick="s_objectID=&quot;http://clm.nvidia.com/_1&quot;;return this.s_oc?this.s_oc(e):true">CLM - Colombia</a></p><p><a href="http://www.nvidia.de" onclick="s_objectID=&quot;http://www.nvidia.de/_1&quot;;return this.s_oc?this.s_oc(e):true">DEU - Germany</a></p><p><a href="http://www.nvidia.es" onclick="s_objectID=&quot;http://www.nvidia.es/_1&quot;;return this.s_oc?this.s_oc(e):true">ESP - Spain</a></p><p><a href="http://www.nvidia.fr" onclick="s_objectID=&quot;http://www.nvidia.fr/_1&quot;;return this.s_oc?this.s_oc(e):true">FRA - France</a></p><p><a href="http://www.nvidia.co.uk" onclick="s_objectID=&quot;http://www.nvidia.co.uk/_1&quot;;return this.s_oc?this.s_oc(e):true">GBR - United Kingdom</a></p><p><a href="http://www.nvidia.co.in" onclick="s_objectID=&quot;http://www.nvidia.co.in/_1&quot;;return this.s_oc?this.s_oc(e):true">IND - India</a></p><p><a href="http://www.nvidia.it" onclick="s_objectID=&quot;http://www.nvidia.it/_1&quot;;return this.s_oc?this.s_oc(e):true">ITA - Italy</a></p><p><a href="http://www.nvidia.co.jp" onclick="s_objectID=&quot;http://www.nvidia.co.jp/_1&quot;;return this.s_oc?this.s_oc(e):true">JPN - Japan</a></p><p><a href="http://www.nvidia.co.kr" onclick="s_objectID=&quot;http://www.nvidia.co.kr/_1&quot;;return this.s_oc?this.s_oc(e):true">KOR - Korea</a></p><p><a href="http://www.nvidia.com.mx" onclick="s_objectID=&quot;http://www.nvidia.com.mx/_1&quot;;return this.s_oc?this.s_oc(e):true">MEX - Mexico</a></p><p><a href="http://www.nvidia.pl" onclick="s_objectID=&quot;http://www.nvidia.pl/_1&quot;;return this.s_oc?this.s_oc(e):true">POL - Poland</a></p><p><a href="http://www.nvidia.ru" onclick="s_objectID=&quot;http://www.nvidia.ru/_1&quot;;return this.s_oc?this.s_oc(e):true">RUS - Russia</a></p><p><a href="http://www.nvidia.com.tw" onclick="s_objectID=&quot;http://www.nvidia.com.tw/_1&quot;;return this.s_oc?this.s_oc(e):true">TWN - Taiwan</a></p><p><a href="http://www.nvidia.co.th" onclick="s_objectID=&quot;http://www.nvidia.co.th/_1&quot;;return this.s_oc?this.s_oc(e):true">THA - Thailand</a></p><p><a href="http://www.nvidia.com.tr" onclick="s_objectID=&quot;http://www.nvidia.com.tr/_1&quot;;return this.s_oc?this.s_oc(e):true">TUR - Turkey</a></p><p><a href="http://www.nvidia.com/content/global/no_bookmark.php?lang=tempUS" onclick="s_objectID=&quot;http://www.nvidia.com/content/global/no_bookmark.php?lang=tempUS_1&quot;;return this.s_oc?this.s_oc(e):true">USA - United States</a></p><p><a href="http://ven.nvidia.com" onclick="s_objectID=&quot;http://ven.nvidia.com/_1&quot;;return this.s_oc?this.s_oc(e):true">VEN - Venezuela</a></p><div class="changeDefault"><a href="http://www.nvidia.com/content/global/unset.php" onclick="s_objectID=&quot;http://www.nvidia.com/content/global/unset.php_1&quot;;return this.s_oc?this.s_oc(e):true">Change default</a></div></div></div> <noscript>&amp;amp;lt;div id="globalSelector"&amp;amp;gt;&amp;amp;lt;div class="currentTitle"&amp;amp;gt;&amp;amp;lt;a href="http://www.nvidia.com/content/global/unset.php"&amp;amp;gt;USA - United States&amp;amp;lt;/a&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;&amp;amp;lt;/div&amp;amp;gt;</noscript>
+	
+
+
+<div id="navbar-2012" xmlns="">
+	<ul id="nav">
+		<li class="top"><a href="http://www.nvidia.com/page/drivers.html">
+			<div class="title">Drivers</div><div class="arrow"></div></a>
+			<ul class="nav first">
+				<li><a href="http://www.nvidia.com/page/link_geforce_drivers.html">
+					<div class="title">GeForce Drivers</div></a></li><li><a href="http://www.nvidia.com/page/pg_20030521269172.html">
+					<div class="title">All NVIDIA Drivers</div></a></li>
+			</ul></li>
+		<li class="top"><a href="http://www.nvidia.com/page/products.html">
+			<div class="title">Products</div><div class="arrow"></div></a>
+			<ul class="nav first">
+				<li><div class="title">Processors</div><div class="arrow"></div>
+					<ul class="nav sub">
+						<li><a href="http://www.geforce.com/hardware">GeForce</a></li>
+						<li><a href="http://www.nvidia.com/object/quadro.html">Quadro</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_57469.html">Tegra</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_57468.html">Tesla</a></li>
+						<li><a href="http://www.nvidia.com/object/nvidia-grid.html">NVIDIA GRID</a></li>
+						<li><a href="http://www.nvidia.com/object/nvidia-nvs-portal.html">NVS</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_20070417896793.html">Legacy</a></li>
+					</ul>
+				</li>
+				<li><div class="title">Technologies</div><div class="arrow"></div>
+					<ul class="nav sub">
+						<li><a href="http://www.nvidia.com/page/sli.html">SLI</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_55418.html">PhysX</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_57837.html">Optimus</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_59089.html">Maximus</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_55167.html">CUDA</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_59094.html">Windows 8</a></li>
+						<li><a href="http://www.nvidia.com/page/technologies.html">All Technologies</a></li>
+					</ul>
+				</li>
+				<li><div class="title"><a href="http://www.nvidia.com/object/nvidia-grid.html">NVIDIA GRID</a></div><div class="arrow"></div>
+					<ul class="nav sub">
+						<li><a href="http://www.nvidia.com/object/enterprise-virtualization.html">Virtual Desktops and Apps</a></li>
+						<li><a href="http://www.nvidia.com/object/visual-computing-appliance.html">Visual Computing Appliance</a></li>
+						<li><a href="http://www.nvidia.com/object/cloud-gaming.html">Cloud Gaming</a></li>
+					</ul>
+				</li>
+
+				<li><a href="http://blogs.nvidia.com/category/3d-vision/"><div class="title">3D Vision</div></a></li>
+				
+				<li><div class="title">Platforms</div><div class="arrow"></div>
+					<ul class="nav sub"><li><a href="http://www.nvidia.com/page/desktop.html">Desktops</a></li>
+						<li><a href="http://www.nvidia.com/page/notebook.html">Notebooks</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_57701.html">Tablets</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_57702.html">Smartphones</a></li>
+						<li><a href="http://www.nvidia.com/object/workstation-solutions.html">Workstations</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_20051028206728.html">Servers</a></li>
+						<li><a href="http://www.nvidia.com/page/hpc.html">High Performance Computing</a></li>
+						<li><a href="http://www.nvidia.com/page/pg_57705.html">Automotive</a></li>
+					</ul>
+				<li><a href="http://shield.nvidia.com/"><div class="title">SHIELD</div></a></li>
+			</ul>
+		</li>
+		<li class="top"><a href="http://www.nvidia.com/page/powerof3d.html">
+			<div class="title">Communities</div><div class="arrow"></div></a>
+			<ul class="nav first">
+				<li><a href="http://www.nvidia.com/page/pg_55419.html"><div class="title">GeForce.com</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_58913.html"><div class="title">TegraZone.com</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_58664.html"><div class="title">3D Vision Live</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_58889.html"><div class="title">GPU Technology Conference</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_55421.html"><div class="title">CUDA Zone</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_55422.html"><div class="title">Developer Zone</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_58914.html"><div class="title">Forums</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_56001.html"><div class="title">GPU Venture Zone</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_55423.html"><div class="title">PartnerForce</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_58055.html"><div class="title">NVIDIA Research</div></a></li>
+			</ul>
+		</li>
+		<li class="top"><a href="http://www.nvidia.com/page/support.html">
+			<div class="title">Support</div></a>
+		</li>
+		<li class="top"><a href="http://www.nvidia.com/page/shop.html">
+			<div class="title">Shop</div></a>
+		</li>
+		<li class="top"><a href="http://www.nvidia.com/page/companyinfo.html">
+			<div class="title">About NVIDIA</div><div class="arrow"></div></a>
+			<ul class="nav first">
+				<li><a href="http://www.nvidia.com/page/companyinfo.html"><div class="title">Company Information</div></a></li>
+				<li><a href="http://www.nvidia.com/object/newsroom.html"><div class="title">Newsroom</div></a></li>
+				<li><a href="http://www.nvidia.com/page/pg_57594.html"><div class="title">NVIDIA Blog</div></a></li>
+				<li><a href="http://phx.corporate-ir.net/phoenix.zhtml?c=116466&amp;p=irol-IRHome"><div class="title">Investors</div></a></li>
+				<li><a href="http://www.nvidia.com/object/citizenship-report-home.html"><div class="title">Citizenship</div></a></li>
+			</ul>
+		</li>
+	</ul>
+<!--[if IE 7]><script type="text/javascript" src="http://www.nvidia.com/content/includes/redesign2010/masthead/2012/global-nav.js">/*ie7 navfix*/</script><![endif]--></div></div></div>
+</div>
+
+	<nav id="blog-nav" class="clearfix">
+		<a href="/" class="home-button">Blog Home</a>
+		<div class="menu-main-green-links-container"><ul id="menu-main-green-links" class="menu"><li id="menu-item-1289" class="nav-home menu-item menu-item-type-custom menu-item-object-custom menu-item-1289"><a href="/"><span>Home</span></a></li>
+<li id="menu-item-21990" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21990"><a href="http://blogs.nvidia.com/blog/category/auto/"><span>Auto</span></a></li>
+<li id="menu-item-4891" class="menu-item menu-item-type-taxonomy menu-item-object-category current-post-ancestor current-menu-parent current-post-parent menu-item-4891"><a href="http://blogs.nvidia.com/blog/category/corporate/"><span>Corporate</span></a></li>
+<li id="menu-item-4893" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4893"><a href="http://blogs.nvidia.com/blog/category/gaming/"><span>Gaming</span></a></li>
+<li id="menu-item-4896" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-4896"><a href="http://blogs.nvidia.com/blog/category/mobile/"><span>Mobile</span></a></li>
+<li id="menu-item-21992" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21992"><a href="http://blogs.nvidia.com/blog/category/enterprise/"><span>Enterprise</span></a></li>
+<li id="menu-item-21991" class="menu-item menu-item-type-taxonomy menu-item-object-category menu-item-21991"><a href="http://blogs.nvidia.com/blog/category/cloud-2/"><span>Cloud</span></a></li>
+</ul></div>	</nav>
+
+<div id="content" class="clearfix">
+
+	<div id="primary" role="main">
+
+	<div class="box-side">
+		<div class="featured">
+			<h6>Featured Post</h6>			<div class="featured-header clearfix">
+				<div class="featured-thumb">
+											<img width='280' height='181' src="http://blogs.nvidia.com/wp-content/uploads/2013/05/pokerpeek-280x179.jpg" class="attachment-thumb-280x179" alt="pokerpeek" />									</div>
+				<h1 class="entry-title featured-title"><a href="http://blogs.nvidia.com/blog/2013/05/03/trump-card-why-a-pro-poker-player-bet-on-cuda/">Trump Card: Why a Pro Poker Player Bet on CUDA</a></h1>
+				<div class="entry-meta">
+					By <a href="http://blogs.nvidia.com/blog/author/brian-caulfield/" title="Posts by Brian Caulfield" rel="author">Brian Caulfield</a> on May 3 2013<br/>
+					In <a href="http://blogs.nvidia.com/blog/category/corporate/" title="View all posts in Corporate" rel="category tag">Corporate</a><br/>
+					<a href="http://blogs.nvidia.com/blog/2013/05/03/trump-card-why-a-pro-poker-player-bet-on-cuda/#comments"><span class="dsq-postid" rel="22377 http://blogs.nvidia.com/?p=22377">3 Comments</span></a>
+					<a href="#disqus_thread" style="display: none;"><span class="dsq-postid" rel="22377 http://blogs.nvidia.com/?p=22377">3 Comments</span></a>
+				</div>
+				<div class="box-bottom"></div>
+			</div><!-- .featured-header -->
+
+			<div class="post-entry clearfix">
+					<div class="share-actions">
+		<div class='st_fblike_vcount'></div>
+		<div class='st_twitter_vcount' displayText='Tweet'></div>
+		<div class='st_linkedin_vcount' displayText='Tweet'></div>
+		<div class='st_plusone_vcount'></div>
+		<div class='st_reddit_vcount' displayTest='Upvote'></div>
+		<div class='st_email_vcount' displayText='Email'></div>
+	</div>
+	<p>You don&#8217;t quit your corporate job to become a full-time professional poker player just to get stuck in a classroom &#8212; with a massive student loan. That, as they say, would be a sucker bet.</p>
+<p>Instead, Javier Torresola studies software engineering on his iPad from his home in Vancouver. Javier, 38, left his job as a thermal engineer at Intel in 2005 &#8212; and he&#8217;s been the master of his own time ever since.</p>
+<p>Javier has just completed an online course through Udacity, ‘<a href="https://www.udacity.com/course/cs344">Introduction to Parallel Programming</a>,’ to broaden his programming skills.</p>
+<div id="attachment_22358" class="wp-caption alignleft" style="width: 160px"><a href="http://blogs.nvidia.com/2013/05/poker-player-bets-on-cuda/javier/" rel="attachment wp-att-22358"><img class=" wp-image-22358  " style="border: 2px solid black; margin: 2px;" alt="Javier Torresola left his corporate job to become a professional poker player. " src="http://blogs.nvidia.com/wp-content/uploads/2013/05/Javier-150x150.jpg" width="150" height="150" /></a><p class="wp-caption-text"><span style="size: 8px; color: #888888;">Javier Torresola left a corporate job to become a pro poker player.</span></p></div>
+<p>The course gives students a convenient way to learn about CUDA, the parallel programming model that harnesses GPUs to accelerate a broad range of scientific and commercial applications. &#8220;It&#8217;s really cool that I can learn parallel programming on my own time,&#8221; Javier says.</p>
+<p>Those skills might even help him become a better poker player.</p>
+<p><strong>A Maverick Approach to Learning</strong></p>
+<p>Udacity, launched in January 2012, was co-founded by Sebastian Thrun – a Google Fellow who helped start the search company’s Google X Lab &#8212; to upend traditional ideas of what it means to learn in a connected era.</p>
+<p>Udacity offers massive open online courses (MOOCs) &#8212; a term for courses that use the web to weave interactions between teachers, students and teaching assistants into self-paced classes that are free for anyone to take.</p>
+<p>Udacity now offers more than 20 online courses for students to take at their own pace. A select group of tech companies, such as NVIDIA, Google, and Autodesk are working with Udacity to develop some of Udacity’s courses, aligning the interests of students, who want skills employers value, and the employers seeking to hire skilled workers.</p>
+<p><strong>Know When To Hold &#8216;Em</strong></p>
+<p>The “Introduction to Parallel Programming” (CS344) course, launched in February 2013, is taught by NVIDIA&#8217;s David Luebke and UC Davis&#8217; John Owens. To make things interesting, NVIDIA sponsored a competition to rank how students performed on their homework assignments.</p>
+<p>Javier was among the <a href="http://blog.udacity.com/2013/04/intro-to-parallel-programming-promotion.html">top scorers</a>, getting a GeForce GTX 680 for his efforts.</p>
+<p>The MIT-trained mechanical engineer&#8217;s primary goal: to acquire the skills he needs to become a freelance software engineer. His stretch goal: become an accomplished enough software engineer to begin simulating poker games so he can find strategies for playing with a technique called &#8216;fictitious play.&#8217;</p>
+<p>&#8220;At the end you can get a full strategy for the game,&#8221; Javier says.</p>
+<p>The strategy is to &#8216;solve&#8217; a particular poker variation, having the computer play huge numbers of games against itself, adjusting its strategy each time. Sounds like a better plan than going back to school for another traditional degree.</p>
+<p><em>If you want to lose your money to Javier, and you live outside of the United States, you can find him playing limit hold &#8216;em on Pokerstars.com. Just track him down before he gets his poker simulation up and running.</em></p>
+				<p class="comment-links">
+					<a href="#comments"><span class="dsq-postid" rel="22377 http://blogs.nvidia.com/?p=22377">3 Comments</span></a>
+					<a href="#respond">Post a Comment</a>
+				</p>
+			</div><!-- .post-entry -->
+		</div><!-- .featured -->
+
+
+		<div class="related">
+			<h2 class="block-title">Similar Stories</h2>
+			<div class="related-box">			<div class="related-story clearfix">
+				<img width="45" height="45" src="http://blogs.nvidia.com/wp-content/uploads/2013/10/steamlogo-45x45.png" class="alignleft wp-post-image" alt="steamlogo" />				<h3><a href="http://blogs.nvidia.com/blog/2013/10/04/steam-machines/">A Variety of NVIDIA GPUs Power Valve’s First Prototype Steam Machines</a></h3>
+				<p>By <a href="http://blogs.nvidia.com/blog/author/brian-burke/" title="Posts by Brian Burke" rel="author">Brian Burke</a> on Oct 4 2013</p>
+			</div>
+						<div class="related-story clearfix">
+				<img width="45" height="45" src="http://blogs.nvidia.com/wp-content/uploads/2013/09/surgery-45x45.jpg" class="alignleft wp-post-image" alt="surgery" />				<h3><a href="http://blogs.nvidia.com/blog/2013/10/04/surgeon/">Inner Geek: Surgeon Still Playing Video Games After 25+ Years of Schooling</a></h3>
+				<p>By <a href="http://blogs.nvidia.com/blog/author/brian-caulfield/" title="Posts by Brian Caulfield" rel="author">Brian Caulfield</a> on Oct 4 2013</p>
+			</div>
+						<div class="related-story clearfix">
+				<img width="45" height="45" src="http://blogs.nvidia.com/wp-content/uploads/2013/09/Lomonosov-supercomputer-room-45x45.jpg" class="alignleft wp-post-image" alt="Lomonosov supercomputer room" />				<h3><a href="http://blogs.nvidia.com/blog/2013/10/02/russia-supercomputers/">GPUs Further Russia&#8217;s Supercomputing Efforts, Accelerate Its Fastest System</a></h3>
+				<p>By <a href="http://blogs.nvidia.com/blog/author/george-millington/" title="Posts by George Millington" rel="author">George Millington</a> on Oct 2 2013</p>
+			</div>
+			
+				<div class="box-bottom"></div>
+			</div>
+		</div>
+	</div><!-- .box-side -->
+
+		<div id="comments">
+			
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-11943">
+        <div id="dsq-comment-header-11943" class="dsq-comment-header">
+            <cite id="dsq-cite-11943">
+http://www.facebook.com/TheHeartOfAsiaa                <span id="dsq-author-user-11943">Pratik Rawankar</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11943" class="dsq-comment-body">
+            <div id="dsq-comment-message-11943" class="dsq-comment-message"><p>I respect his passion</p>
+<p>but he dont need GTX 680 for poker<br />
+Nvidia trolled here lolzzzzzzzzzz</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-11944">
+        <div id="dsq-comment-header-11944" class="dsq-comment-header">
+            <cite id="dsq-cite-11944">
+                <span id="dsq-author-user-11944">Brian_Caulfield</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-11944" class="dsq-comment-body">
+            <div id="dsq-comment-message-11944" class="dsq-comment-message"><p>He deserves a GTX 680 because he&#8217;s awesome, though. <img src='http://blogs.nvidia.com/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-12120">
+        <div id="dsq-comment-header-12120" class="dsq-comment-header">
+            <cite id="dsq-cite-12120">
+http://www.facebook.com/eric.zaba                <span id="dsq-author-user-12120">Eric Zaba</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-12120" class="dsq-comment-body">
+            <div id="dsq-comment-message-12120" class="dsq-comment-message"><p>it shows parrallel processing can solve all computeable problems</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://blogs.nvidia.com/blog/2013/05/03/trump-card-why-a-pro-poker-player-bet-on-cuda/';
+    var disqus_identifier = '22377 http://blogs.nvidia.com/?p=22377';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'nvidiablog';
+    var disqus_title = "Trump Card: Why a Pro Poker Player Bet on CUDA";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=22377';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/blogs.nvidia.com\/blog\/2013\/05\/03\/trump-card-why-a-pro-poker-player-bet-on-cuda\/trackback\/"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+		</div>
+
+
+	</div>
+
+		<div id="secondary" role="complementary">
+
+			<div class="widget-subscribe">
+				<div class="subscribe-via">
+					<p><span>Subscribe via:</span> <a href="http://blogs.nvidia.com/feed/rss2/" class="sub-rss">RSS</a> <a href="#" class="sub-email">Email</a></p>
+					<p class="subscribe-connect"><span>Follow Us:</span> <a href="http://www.facebook.com/NVIDIA" class="ir sub-facebook" target="_blank">Find us on Facebook</a> <a href="http://twitter.com/nvidia" class="ir sub-twitter" target="_blank">Follow us on Twitter</a> <a href="http://www.flickr.com/photos/nvidia" class="ir sub-flickr" target="_blank">Find us on Flickr</a> <a href="http://www.youtube.com/user/nvidia" class="ir sub-youtube" target="_blank">Watch us on YouTube</a><a href="http://www.linkedin.com/company/nvidia" class="ir sub-linkedin" target="_blank">Find us on LinkedIn</a></p>
+					<form action="http://blogs.nvidia.com" method="get">
+						<fieldset>
+							<input type="text" id="s" name="s" placeholder="Search the blog"/>
+							<input type="image" src="http://blogs.nvidia.com/wp-content/themes/nvidia/images/go-green.gif" alt="GO"/>
+						</fieldset>
+					</form>
+					<div class="email-box">
+						<a href="#" class="close">X</a>
+						<form onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=nvidiablog', 'popupwindow', 'scrollbars=no, width=550,height=520');return true" target="popupwindow" method="post" name="feedburneremail" action="http://feedburner.google.com/fb/a/mailverify">
+							<fieldset>
+								<p>Enter your email address:</p>
+								<p>
+									<input type="text" name="email"/>
+								</p>
+								<input type="hidden" name="uri" value="nvidiablog" />
+								<input type="hidden" name="loc" value="en_US" />
+								<p class="submit" onclick="document.getElementById('subscribesubmit').click();">
+									<button id="subscribesubmit_1" type="submit">Subscribe</button>
+								</p>
+								<div class="clr"></div>
+							</fieldset>
+						</form>
+					</div>
+				</div>
+			</div>
+
+			<div id="author_dropdown-3" class="widget widget_author_dropdown"><div class="block-top"></div><h3 class="widget-title">Posts by Author</h3><select onchange='if(this.options[this.selectedIndex].value){location.href=this.options[this.selectedIndex].value;}'><option value="">Select an author...</option><option value="http://blogs.nvidia.com/blog/author/adam-pintek/">Adam Pintek</option><option value="http://blogs.nvidia.com/blog/author/adamscraba/">Adam Scraba</option><option value="http://blogs.nvidia.com/blog/author/adelina-nohrnberg/">Adelina Nohrnberg</option><option value="http://blogs.nvidia.com/blog/author/alain-tiquet/">Alain Tiquet</option><option value="http://blogs.nvidia.com/blog/author/alessandra-mastrobuono-battisti/">Alessandra Mastrobuono Battisti</option><option value="http://blogs.nvidia.com/blog/author/alfred-chew/">Alfred Chew</option><option value="http://blogs.nvidia.com/blog/author/andrea-hutchison/">Andrea Hutchison</option><option value="http://blogs.nvidia.com/blog/author/andrew-cresci/">Andrew Cresci</option><option value="http://blogs.nvidia.com/blog/author/aedelsten/">Andrew Edelsten</option><option value="http://blogs.nvidia.com/blog/author/andrew-fear/">Andrew Fear</option><option value="http://blogs.nvidia.com/blog/author/andrew-humber/">Andrew Humber</option><option value="http://blogs.nvidia.com/blog/author/andrew-page/">Andrew Page</option><option value="http://blogs.nvidia.com/blog/author/andrew-sheppard/">Andrew Sheppard</option><option value="http://blogs.nvidia.com/blog/author/andy-keane/">Andy Keane</option><option value="http://blogs.nvidia.com/blog/author/andy-walsh/">Andy Walsh</option><option value="http://blogs.nvidia.com/blog/author/ankitpatel/">Ankit Patel</option><option value="http://blogs.nvidia.com/blog/author/anthony-noguera/">Anthony Noguera</option><option value="http://blogs.nvidia.com/blog/author/arnaldo-tavares/">Arnaldo Tavares</option><option value="http://blogs.nvidia.com/blog/author/ashley-mcbroom/">Ashley McBroom</option><option value="http://blogs.nvidia.com/blog/author/ashlie-feffer/">Ashlie Feffer</option><option value="http://blogs.nvidia.com/blog/author/ashu-rege/">Ashu Rege</option><option value="http://blogs.nvidia.com/blog/author/axel-koehler/">Axel Koehler</option><option value="http://blogs.nvidia.com/blog/author/bill-dally/">Bill Dally</option><option value="http://blogs.nvidia.com/blog/author/bill-henry/">Bill Henry</option><option value="http://blogs.nvidia.com/blog/author/bill-rehbock/">Bill Rehbock</option><option value="http://blogs.nvidia.com/blog/author/bob-sherbin/">Bob Sherbin</option><option value="http://blogs.nvidia.com/blog/author/brian-burke/">Brian Burke</option><option value="http://blogs.nvidia.com/blog/author/brian-caulfield/">Brian Caulfield</option><option value="http://blogs.nvidia.com/blog/author/brian-choi/">Brian Choi</option><option value="http://blogs.nvidia.com/blog/author/brian-harvey/">Brian Harvey</option><option value="http://blogs.nvidia.com/blog/author/brian-kelleher/">Brian Kelleher</option><option value="http://blogs.nvidia.com/blog/author/bruce-chan/">Bruce Chan</option><option value="http://blogs.nvidia.com/blog/author/bryan-del-rizzo/">Bryan Del Rizzo</option><option value="http://blogs.nvidia.com/blog/author/calisa-cole/">Calisa Cole</option><option value="http://blogs.nvidia.com/blog/author/can-ozdoruk/">Can Ozdoruk</option><option value="http://blogs.nvidia.com/blog/author/carlos-garcia-sierra/">Carlos Garcia-Sierra</option><option value="http://blogs.nvidia.com/blog/author/yue-cathy-chang/">Cathy Chang</option><option value="http://blogs.nvidia.com/blog/author/chandra-cheij/">Chandra Cheij</option><option value="http://blogs.nvidia.com/blog/author/chris-daniel/">Chris Daniel</option><option value="http://blogs.nvidia.com/blog/author/chris-gonzales/">Chris Gonzales</option><option value="http://blogs.nvidia.com/blog/author/chris-malachowsky/">Chris Malachowsky</option><option value="http://blogs.nvidia.com/blog/author/chris-pedersen/">Chris Pedersen</option><option value="http://blogs.nvidia.com/blog/author/curtis-beeson/">Curtis Beeson</option><option value="http://blogs.nvidia.com/blog/author/cyril-crassin/">Cyril Crassin</option><option value="http://blogs.nvidia.com/blog/author/dan-doherty/">Dan Doherty</option><option value="http://blogs.nvidia.com/blog/author/dan-vivoli/">Dan Vivoli</option><option value="http://blogs.nvidia.com/blog/author/daniel-simon/">Daniel Simon</option><option value="http://blogs.nvidia.com/blog/author/danny-shapiro/">Danny Shapiro</option><option value="http://blogs.nvidia.com/blog/author/gladstone/">Darren Gladstone</option><option value="http://blogs.nvidia.com/blog/author/david-helmly/">David Helmly</option><option value="http://blogs.nvidia.com/blog/author/david-lifka/">David Lifka</option><option value="http://blogs.nvidia.com/blog/author/david-marsiglia/">David Marsiglia</option><option value="http://blogs.nvidia.com/blog/author/davidmurphy/">David Murphy</option><option value="http://blogs.nvidia.com/blog/author/david-ragones/">David Ragones</option><option value="http://blogs.nvidia.com/blog/author/davidshannon/">David Shannon</option><option value="http://blogs.nvidia.com/blog/author/david-watters/">David Watters</option><option value="http://blogs.nvidia.com/blog/author/david-wright/">David Wright</option><option value="http://blogs.nvidia.com/blog/author/denisgerrer/">Denis Gerrer</option><option value="http://blogs.nvidia.com/blog/author/devang-sachdev/">Devang Sachdev</option><option value="http://blogs.nvidia.com/blog/author/dominick-spina/">Dominick Spina</option><option value="http://blogs.nvidia.com/blog/author/donal-murphy/">Donal Murphy</option><option value="http://blogs.nvidia.com/blog/author/drew-henry/">Drew Henry</option><option value="http://blogs.nvidia.com/blog/author/dwight-diercks/">Dwight Diercks</option><option value="http://blogs.nvidia.com/blog/author/ed-turkel/">Ed Turkel</option><option value="http://blogs.nvidia.com/blog/author/eswara-van-sharma/">Eswara Van Sharma</option><option value="http://blogs.nvidia.com/blog/author/etiennedegroot/">Etienne DeGroot</option><option value="http://blogs.nvidia.com/blog/author/fabrice-moizan/">Fabrice Moizan</option><option value="http://blogs.nvidia.com/blog/author/gallagher-pryor/">Gallagher Pryor</option><option value="http://blogs.nvidia.com/blog/author/gary-rainville/">Gary Rainville</option><option value="http://blogs.nvidia.com/blog/author/geoff-ballew/">Geoff Ballew</option><option value="http://blogs.nvidia.com/blog/author/george-millington/">George Millington</option><option value="http://blogs.nvidia.com/blog/author/gerald-luiz/">Gerald Luiz</option><option value="http://blogs.nvidia.com/blog/author/greg-estes/">Greg Estes</option><option value="http://blogs.nvidia.com/blog/author/harel-kopelman/">Harel Kopelman</option><option value="http://blogs.nvidia.com/blog/author/hassan-anjum/">Hassan Anjum</option><option value="http://blogs.nvidia.com/blog/author/heather-mackey/">Heather Mackey</option><option value="http://blogs.nvidia.com/blog/author/hector-marinez/">Hector Marinez</option><option value="http://blogs.nvidia.com/blog/author/helen-yu/">Helen Yu</option><option value="http://blogs.nvidia.com/blog/author/helena-farnham/">Helena Farnham</option><option value="http://blogs.nvidia.com/blog/author/henrymoreton/">Henry Moreton</option><option value="http://blogs.nvidia.com/blog/author/ian-buck/">Ian Buck</option><option value="http://blogs.nvidia.com/blog/author/igor-stanek/">Igor Stanek</option><option value="http://blogs.nvidia.com/blog/author/irina-shekhovtsova/">Irina Shekhovtsova</option><option value="http://blogs.nvidia.com/blog/author/james-grunke/">James Grunke</option><option value="http://blogs.nvidia.com/blog/author/james-scott/">James Scott</option><option value="http://blogs.nvidia.com/blog/author/james-wang/">James Wang</option><option value="http://blogs.nvidia.com/blog/author/jason-paul/">Jason Paul</option><option value="http://blogs.nvidia.com/blog/author/jason-sanders/">Jason Sanders</option><option value="http://blogs.nvidia.com/blog/author/jeff-collins/">Jeff Collins</option><option value="http://blogs.nvidia.com/blog/author/jeff-herbst/">Jeff Herbst</option><option value="http://blogs.nvidia.com/blog/author/jeff-saunders/">Jeff Saunders</option><option value="http://blogs.nvidia.com/blog/author/jenandersson/">Jen Andersson</option><option value="http://blogs.nvidia.com/blog/author/jen-hsun-huang/">Jen-Hsun Huang</option><option value="http://blogs.nvidia.com/blog/author/jennifer-deauville/">Jennifer Deauville</option><option value="http://blogs.nvidia.com/blog/author/jensneuschaefer/">Jens Neuschäfer</option><option value="http://blogs.nvidia.com/blog/author/jerry-chen/">Jerry Chen</option><option value="http://blogs.nvidia.com/blog/author/joachim-zell/">Joachim Zell</option><option value="http://blogs.nvidia.com/blog/author/joe-greco/">Joe Greco</option><option value="http://blogs.nvidia.com/blog/author/joe-mccloud/">Joe McCloud</option><option value="http://blogs.nvidia.com/blog/author/joe-stam/">Joe Stam</option><option value="http://blogs.nvidia.com/blog/author/joe-vo/">Joe Vo</option><option value="http://blogs.nvidia.com/blog/author/john-archdeacon/">John Archdeacon</option><option value="http://blogs.nvidia.com/blog/author/john-spitzer/">John Spitzer</option><option value="http://blogs.nvidia.com/blog/author/jstorms/">John Storms</option><option value="http://blogs.nvidia.com/blog/author/jon-barad/">Jon Barad</option><option value="http://blogs.nvidia.com/blog/author/alben/">Jonah Alben</option><option value="http://blogs.nvidia.com/blog/author/jordan-dodge/">Jordan Dodge</option><option value="http://blogs.nvidia.com/blog/author/joshua-wise/">Joshua Wise</option><option value="http://blogs.nvidia.com/blog/author/justin-boitano/">Justin Boitano</option><option value="http://blogs.nvidia.com/blog/author/justin-walker/">Justin Walker</option><option value="http://blogs.nvidia.com/blog/author/keith-wymbs/">Keith Wymbs</option><option value="http://blogs.nvidia.com/blog/author/ken-brown/">Ken Brown</option><option value="http://blogs.nvidia.com/blog/author/kenji-hall/">Kenji Hall</option><option value="http://blogs.nvidia.com/blog/author/kenneth-wong/">Kenneth Wong</option><option value="http://blogs.nvidia.com/blog/author/kevin-krewell/">Kevin Krewell</option><option value="http://blogs.nvidia.com/blog/author/kimberly-powell/">Kimberly Powell</option><option value="http://blogs.nvidia.com/blog/author/kingsley-nwaogu/">Kingsley Nwaogu</option><option value="http://blogs.nvidia.com/blog/author/kris-duggan/">Kris Duggan</option><option value="http://blogs.nvidia.com/blog/author/kris-rey/">Kris Rey</option><option value="http://blogs.nvidia.com/blog/author/laura-clemmensen/">Laura Clemmensen</option><option value="http://blogs.nvidia.com/blog/author/lee-hirsch/">Lee Hirsch</option><option value="http://blogs.nvidia.com/blog/author/leo-de-biase/">Leo De Biase</option><option value="http://blogs.nvidia.com/blog/author/leslie-pirritano/">Leslie Pirritano</option><option value="http://blogs.nvidia.com/blog/author/linda-barney/">Linda Barney</option><option value="http://blogs.nvidia.com/blog/author/liz-austin/">Liz Austin</option><option value="http://blogs.nvidia.com/blog/author/liza-gabrielson/">Liza Gabrielson</option><option value="http://blogs.nvidia.com/blog/author/lorena-barba/">Lorena Barba</option><option value="http://blogs.nvidia.com/blog/author/lutzeigenfeld/">Lutz Eigenfeld</option><option value="http://blogs.nvidia.com/blog/author/manju-hegde/">Manju Hegde</option><option value="http://blogs.nvidia.com/blog/author/marco-piattelli/">Marco Piattelli</option><option value="http://blogs.nvidia.com/blog/author/mark-aevermann/">Mark Aevermann</option><option value="http://blogs.nvidia.com/blog/author/mark-ebersole/">Mark Ebersole</option><option value="http://blogs.nvidia.com/blog/author/mark-garlanger/">Mark Garlanger</option><option value="http://blogs.nvidia.com/blog/author/mark-lange/">Mark Lange</option><option value="http://blogs.nvidia.com/blog/author/mark-priscaro/">Mark Priscaro</option><option value="http://blogs.nvidia.com/blog/author/marksmith/">Mark Smith</option><option value="http://blogs.nvidia.com/blog/author/mark-young/">Mark Young</option><option value="http://blogs.nvidia.com/blog/author/martin-hendess/">Martin Hendess</option><option value="http://blogs.nvidia.com/blog/author/martin-peniak/">Martin Peniak</option><option value="http://blogs.nvidia.com/blog/author/mathias-halliger/">Mathias Halliger</option><option value="http://blogs.nvidia.com/blog/author/matt-wuebbling/">Matt Wuebbling</option><option value="http://blogs.nvidia.com/blog/author/melody-tu/">Melody Tu</option><option value="http://blogs.nvidia.com/blog/author/michael-diamond/">Michael Diamond</option><option value="http://blogs.nvidia.com/blog/author/michael-mcsorley/">Michael McSorley</option><option value="http://blogs.nvidia.com/blog/author/michael-rayfield/">Michael Rayfield</option><option value="http://blogs.nvidia.com/blog/author/michael-steele/">Michael Steele</option><option value="http://blogs.nvidia.com/blog/author/mike-deneffe/">Mike DeNeffe</option><option value="http://blogs.nvidia.com/blog/author/mike-han/">Mike Han</option><option value="http://blogs.nvidia.com/blog/author/mike-herauf/">Mike Herauf</option><option value="http://blogs.nvidia.com/blog/author/mike-skolones/">Mike Skolones</option><option value="http://blogs.nvidia.com/blog/author/nadeem-mohammad/">Nadeem Mohammad</option><option value="http://blogs.nvidia.com/blog/author/ned-finkle/">Ned Finkle</option><option value="http://blogs.nvidia.com/blog/author/neil-trevett/">Neil Trevett</option><option value="http://blogs.nvidia.com/blog/author/nick-stam/">Nick Stam</option><option value="http://blogs.nvidia.com/blog/author/noah-kravitz/">Noah Kravitz</option><option value="http://blogs.nvidia.com/blog/author/nvidia/">NVIDIA</option><option value="http://blogs.nvidia.com/blog/author/oguzhan-oguz/">Oguzhan Oguz</option><option value="http://blogs.nvidia.com/blog/author/olivier-giroux/">Olivier Giroux</option><option value="http://blogs.nvidia.com/blog/author/patrick-beaulieu/">Patrick Beaulieu</option><option value="http://blogs.nvidia.com/blog/author/paul-jastrzebski/">Paul Jastrzebski</option><option value="http://blogs.nvidia.com/blog/author/petehughes/">Pete Hughes</option><option value="http://blogs.nvidia.com/blog/author/peter-messmer/">Peter Messmer</option><option value="http://blogs.nvidia.com/blog/author/peter-varhol/">Peter Varhol</option><option value="http://blogs.nvidia.com/blog/author/phil-atkin/">Phil Atkin</option><option value="http://blogs.nvidia.com/blog/author/phil-carmack/">Phil Carmack</option><option value="http://blogs.nvidia.com/blog/author/phil-eisler/">Phil Eisler</option><option value="http://blogs.nvidia.com/blog/author/phil-miller/">Phil Miller</option><option value="http://blogs.nvidia.com/blog/author/phil-scholz/">Phil Scholz</option><option value="http://blogs.nvidia.com/blog/author/pierrespatz/">Pierre Spatz</option><option value="http://blogs.nvidia.com/blog/author/randy-martin/">Randy Martin</option><option value="http://blogs.nvidia.com/blog/author/rene-haas/">Rene Haas</option><option value="http://blogs.nvidia.com/blog/author/rob-csongor/">Rob Csongor</option><option value="http://blogs.nvidia.com/blog/author/rodney-jones/">Rodney Jones</option><option value="http://blogs.nvidia.com/blog/author/ross-cunniff/">Ross Cunniff</option><option value="http://blogs.nvidia.com/blog/author/roy-kim/">Roy Kim</option><option value="http://blogs.nvidia.com/blog/author/sam-liccardo/">Sam Liccardo</option><option value="http://blogs.nvidia.com/blog/author/sanford-russell/">Sanford Russell</option><option value="http://blogs.nvidia.com/blog/author/sasha-ostojic/">Sasha Ostojic</option><option value="http://blogs.nvidia.com/blog/author/scott-blakeslee/">Scott Blakeslee</option><option value="http://blogs.nvidia.com/blog/author/scott-herkelman/">Scott Herkelman</option><option value="http://blogs.nvidia.com/blog/author/sean-cleveland/">Sean Cleveland</option><option value="http://blogs.nvidia.com/blog/author/sean-pelletier/">Sean Pelletier</option><option value="http://blogs.nvidia.com/blog/author/sean-varah/">Sean Varah</option><option value="http://blogs.nvidia.com/blog/author/shanee-ben-zur/">Shanee Ben-Zur</option><option value="http://blogs.nvidia.com/blog/author/shawnworsell/">Shawn Worsell</option><option value="http://blogs.nvidia.com/blog/author/sheryl-huynh/">Sheryl Huynh</option><option value="http://blogs.nvidia.com/blog/author/spode/">Spode</option><option value="http://blogs.nvidia.com/blog/author/stan-boland/">Stan Boland</option><option value="http://blogs.nvidia.com/blog/author/steffanee-taylor/">Steffanee Taylor</option><option value="http://blogs.nvidia.com/blog/author/stephen-jones/">Stephen Jones</option><option value="http://blogs.nvidia.com/blog/author/stephenjones/">Stephen Jones</option><option value="http://blogs.nvidia.com/blog/author/steve-furney-howe/">Steve Furney-Howe</option><option value="http://blogs.nvidia.com/blog/author/steve-klett/">Steve Klett</option><option value="http://blogs.nvidia.com/blog/author/steve-scott/">Steve Scott</option><option value="http://blogs.nvidia.com/blog/author/steve-wildstrom/">Steve Wildstrom</option><option value="http://blogs.nvidia.com/blog/author/sumit-gupta/">Sumit Gupta</option><option value="http://blogs.nvidia.com/blog/author/sunny-lee/">Sunny Lee</option><option value="http://blogs.nvidia.com/blog/author/susanna-tatar/">Susanna Tatár</option><option value="http://blogs.nvidia.com/blog/author/sylvia-ross/">Sylvia Ross</option><option value="http://blogs.nvidia.com/blog/author/timsweeney/">Tim Sweeney</option><option value="http://blogs.nvidia.com/blog/author/tom-petersen/">Tom Petersen</option><option value="http://blogs.nvidia.com/blog/author/tonie-hansen/">Tonie Hansen</option><option value="http://blogs.nvidia.com/blog/author/tony-kontzer/">Tony Kontzer</option><option value="http://blogs.nvidia.com/blog/author/tony-tamasi/">Tony Tamasi</option><option value="http://blogs.nvidia.com/blog/author/ujesh-desai/">Ujesh Desai</option><option value="http://blogs.nvidia.com/blog/author/victoria-crimmins/">Victoria Rege</option><option value="http://blogs.nvidia.com/blog/author/vishal-lulla/">Vishal Lulla</option><option value="http://blogs.nvidia.com/blog/author/warren-ponder/">Warren Ponder</option><option value="http://blogs.nvidia.com/blog/author/wayne-young/">Wayne Young</option><option value="http://blogs.nvidia.com/blog/author/wenmeihwu/">Wen-mei Hwu</option><option value="http://blogs.nvidia.com/blog/author/will-park/">Will Park</option><option value="http://blogs.nvidia.com/blog/author/will-ramey/">Will Ramey</option><option value="http://blogs.nvidia.com/blog/author/will-wade/">Will Wade</option><option value="http://blogs.nvidia.com/blog/author/wolfram-alderson/">Wolfram Alderson</option><option value="http://blogs.nvidia.com/blog/author/yanningli/">Yanning Li</option><option value="http://blogs.nvidia.com/blog/author/yuriko-nagano/">Yuriko Nagano</option></select><div class="block-bottom"></div></div>		<div id="recent-posts-2" class="widget widget_recent_entries"><div class="block-top"></div>		<h3 class="widget-title">Recent Posts</h3>		<ul>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/10/04/steam-machines/" title="A Variety of NVIDIA GPUs Power Valve’s First Prototype Steam Machines">A Variety of NVIDIA GPUs Power Valve’s First Prototype Steam Machines</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/10/04/surgeon/" title="Inner Geek: Surgeon Still Playing Video Games After 25+ Years of Schooling">Inner Geek: Surgeon Still Playing Video Games After 25+ Years of Schooling</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/10/02/russia-supercomputers/" title="GPUs Further Russia&#8217;s Supercomputing Efforts, Accelerate Its Fastest System">GPUs Further Russia&#8217;s Supercomputing Efforts, Accelerate Its Fastest System</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/10/01/grid-vgpu-within-easy-reach/" title="Unleashing Virtual Graphics: Citrix Tech Preview Puts GRID vGPU Within Easy Reach">Unleashing Virtual Graphics: Citrix Tech Preview Puts GRID vGPU Within Easy Reach</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/09/27/gpu-startup-story-softkinetic/" title="GPU Startup Story: How SoftKinetic Flips “Talk to the Hand” on Its Head">GPU Startup Story: How SoftKinetic Flips “Talk to the Hand” on Its Head</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/09/25/steam-rolling-into-your-living-room/" title="Steam Rolling Into Your Living Room">Steam Rolling Into Your Living Room</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/09/25/uk-cabinet-minister-cuts-ribbon-on-new-nvidia-bristol-office/" title="UK Cabinet Minister Cuts Ribbon on New NVIDIA Bristol Office">UK Cabinet Minister Cuts Ribbon on New NVIDIA Bristol Office</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/09/24/hp-nvidia-gpu-technical-centre-of-excellence/" title="HP, NVIDIA Open GPU Technical Center for European Market">HP, NVIDIA Open GPU Technical Center for European Market</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/09/23/microsoft-surface-2/" title="Tegra 4 Racks Up Another Win in Microsoft’s New, Improved Surface 2">Tegra 4 Racks Up Another Win in Microsoft’s New, Improved Surface 2</a>
+						</li>
+					<li>
+				<a href="http://blogs.nvidia.com/blog/2013/09/22/gpu-coming-to-java/" title="GPU Acceleration Coming to Java, Says IBM Exec">GPU Acceleration Coming to Java, Says IBM Exec</a>
+						</li>
+				</ul>
+		<div class="block-bottom"></div></div><div id="voce_text-14" class="widget voce_widget_text"><div class="block-top"></div><h3 class="widget-title"><a href='http://www.youtube.com/nvidia' title='View More'>NVIDIA on YouTube</a></h3>			<div class="textwidget"><object width="275" height="155"><param name="movie" value="http://www.youtube.com/v/gHHApNJS3LQ?version=3&amp;hl=en_US"></param><param name="allowFullScreen" value="true"></param><param name="allowscriptaccess" value="always"></param><embed src="http://www.youtube.com/v/gHHApNJS3LQ?version=3&amp;hl=en_US" type="application/x-shockwave-flash" width="275" height="155" allowscriptaccess="always" allowfullscreen="true"></embed></object></div>
+		<div class="block-bottom"></div></div><div id="voce_text-15" class="widget voce_widget_text"><div class="block-top"></div><h3 class="widget-title">Disclaimer</h3>			<div class="textwidget">All company and product names appearing in the NVIDIA Blog are trademarks and/or registered trademarks of NVIDIA Corporation or of their respective owners.</div>
+		<div class="block-bottom"></div></div><div id="text-14" class="widget widget_text"><div class="block-top"></div><h3 class="widget-title">NVIDIA Blog Comment Policy </h3>			<div class="textwidget"><p>While we encourage you to interact with us by leaving comments, we reserve the right, in our sole discretion, to remove comments or block readers if they violate any of the following conditions.<br />
+</br><br />
+To read the NVIDIA Blog commenting guidelines and privacy policy, click <a href="http://blogs.nvidia.com/privacy-commenting-policy/">here</a>. </p>
+</div>
+		<div class="block-bottom"></div></div><div id="popular-posts-3" class="widget widget_popular_posts"><div class="block-top"></div><h3 class="widget-title">Popular Posts</h3><table cellspacing="0"><tr class="alt"><td><a href="http://blogs.nvidia.com/blog/2013/09/18/tegra-note/#comments" class="comment-bar">109 Comments</a><a href="http://blogs.nvidia.com/blog/2013/09/18/tegra-note/" class="post-title">NVIDIA Reveals Tegra Note – Complete Tablet Platform, Powered by Tegra 4</a><span class="post-date">posted Sep 18 2013 at 06:00:14 AM</span></td></tr><tr ><td><a href="http://blogs.nvidia.com/blog/2013/09/25/steam-rolling-into-your-living-room/#comments" class="comment-bar">37 Comments</a><a href="http://blogs.nvidia.com/blog/2013/09/25/steam-rolling-into-your-living-room/" class="post-title">Steam Rolling Into Your Living Room</a><span class="post-date">posted Sep 25 2013 at 08:00:58 AM</span></td></tr><tr class="alt"><td><a href="http://blogs.nvidia.com/blog/2013/08/07/hack-your-shield/#comments" class="comment-bar">30 Comments</a><a href="http://blogs.nvidia.com/blog/2013/08/07/hack-your-shield/" class="post-title">Mod Your SHIELD: Why We’re Releasing Open Source Software for SHIELD</a><span class="post-date">posted Aug 7 2013 at 11:37:32 AM</span></td></tr><tr ><td><a href="http://blogs.nvidia.com/blog/2013/08/14/how-the-quadro-k6000-changes-the-face-and-pace-of-visual-workflows/#comments" class="comment-bar">12 Comments</a><a href="http://blogs.nvidia.com/blog/2013/08/14/how-the-quadro-k6000-changes-the-face-and-pace-of-visual-workflows/" class="post-title">How the Quadro K6000 Changes the Face and Pace of Visual Workflows</a><span class="post-date">posted Aug 14 2013 at 10:00:37 AM</span></td></tr><tr class="alt"><td><a href="http://blogs.nvidia.com/blog/2013/08/09/hairier-effects/#comments" class="comment-bar">11 Comments</a><a href="http://blogs.nvidia.com/blog/2013/08/09/hairier-effects/" class="post-title">How NVIDIA Delivered Hairier Effects for Your Favorite Games</a><span class="post-date">posted Aug 9 2013 at 14:04:16 PM</span></td></tr></table><div class="block-bottom"></div></div>		</div>
+
+</div><!-- #content -->
+
+	<div id="page-footer">
+		<p>Solutions: <a href="http://www.nvidia.com/object/3d-tv-play.html">3DTV Play</a> | <a href="http://www.nvidia.com/object/3d-vision-main.html">3D PCs</a> | <a href="http://www.nvidia.com/object/optimus_technology.html"> Optimus</a> | <a href="http://www.nvidia.com/object/geforce_family.html">Graphics Cards</a> | <a href="http://www.nvidia.com/object/tesla_computing_solutions.html">High Performance Computing</a> | <a href="http://www.nvidia.com/page/workstation.html">Visualization</a> | <a href="http://www.nvidia.com/cuda">CUDA</a> | <a href="http://www.tegrazone.com">Tegra Android App</a> | <a href="http://www.nvidia.com/object/cool_stuff.html">Cool Stuff</a><br />
+		Corporate: <a href="http://www.nvidia.com/page/events.html">Events</a> | <a href="http://www.nvidia.com/object/affiliate_program.html">Affiliate Program</a> | <a href="http://developer.nvidia.com/">Developers</a> | <a href="http://www.nvidia.com/page/channel.html">Channel Partners</a> | <a href="http://careers.nvidia.com/">Careers</a> | <a href="http://www.nvidia.com/object/rss_home.html">RSS Feeds</a> | <a href="http://www.nvidia.com/content/subscribe/nvidia/nvidia_newsletter.asp">Newsletter</a> | <a href="http://www.nvidia.com/page/contact_information.html">Contact Us</a> | <a href="http://www.nvidia.com/object/product-security.html">Security</a><br />
+		Copyright &copy; 2013 NVIDIA Corporation | <a href="http://www.nvidia.com/object/legal_info.html">Legal Info</a> | <a href="http://www.nvidia.com/object/privacy_policy.html">Privacy Policy</a></p>
+	</div>
+</div>
+<script type="text/javascript" src="http://use.typekit.com/tha8ocw.js"></script>
+<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+	<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	<script type='text/javascript' src='http://blogs.nvidia.com/wp-content/plugins/facepress/js/faceconnect.js?ver=3.6.2-alpha'></script>
+<script type='text/javascript' src='http://blogs.nvidia.com/wp-content/themes/nvidia/js/main.js?ver=3.6.2-alpha'></script>
+<!--[if IE 6]>
+	<script type="text/javascript" src="http://blogs.nvidia.com/wp-content/themes/nvidia/js/ie6.js"></script>
+<![endif]-->
+<!-- begin ga -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1273456-44']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- end ga -->
+
+
+<!-- SiteCatalyst code version: H.17.
+Copyright 1997-2008 Omniture, Inc. More info available at http://www.omniture.com --> <script language="JavaScript" type="text/javascript" src="http://www.nvidia.com/content/websidestory/omniture/production/s_code_us_dev_aut1.js"></script>
+<script language="JavaScript" type="text/javascript">
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/ var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+
+<script language="JavaScript" type="text/javascript"><!--
+if(navigator.appVersion.indexOf('MSIE')>=0)document.write(unescape('%3C')+'\!-'+'-')
+//--></script><noscript><a href="http://www.omniture.com" title="Web Analytics"><img src="http://omniture.nvidia.com/b/ss/nvidiausdev/1/H.17--NS/0"
+height="1" width="1" border="0" alt="" /></a></noscript><!--/DO NOT REMOVE/-->
+<!-- End SiteCatalyst code version: H.17. -->
+
+</body>
+</html>
+
+<!-- Performance optimized by W3 Total Cache. Learn more: http://www.w3-edge.com/wordpress-plugins/
+
+Page Caching using memcached
+Object Caching 2013/2042 objects using memcached
+
+ Served from: blogs.nvidia.com @ 2013-10-05 00:51:58 by W3 Total Cache -->

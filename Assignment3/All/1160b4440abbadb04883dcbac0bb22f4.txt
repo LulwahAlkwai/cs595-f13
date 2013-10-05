@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv='content-type' content='text/html; charset=utf-8' />
+    <title>Buttons -  macwright.org</title>
+    <meta name='author' content='Tom MacWright' />
+    <meta name='description' content='New things and writing about learning, technology, and art' />
+    <meta name="viewport" content="initial-scale=1.0 maximum-scale=1.0">
+    <meta property="og:site_name" content="macwright.org"/>
+    <meta property="og:email" content="tom@macwright.org"/>
+    <meta property="og:type" content="blog" />
+    <link rel='alternate' type='application/atom+xml' title='Tom MacWright' href='http://macwright.org/atom.xml' />
+    <link rel='stylesheet' href='/css/site.css' type='text/css' media='screen, projection' />
+    <!--[if lt IE 9]>
+    <script src="/js/html5shim.js"></script>
+    <![endif]-->
+    <link rel="icon" type="image/x-icon" href="/favicon.png" />
+</head>
+<body class='post'>
+  <header>
+    <ul class='navigation'>
+      <li><a href='/'>Tom MacWright</a></li>
+      <li><a href='/about/'>About</a></li>
+      <li><a href='/archive/'>Archive</a></li>
+      <li><a href='/presentations/'>Talks</a></li>
+      <li><a href='http://github.com/tmcw/'>Code</a></li>
+      <li><a href='http://twitter.com/tmcw/'>@tmcw</a></li>
+    </ul>
+  </header>
+  <div class='wrapper'>
+    <div class='content'>
+      <div class="post single">
+  <h1>Buttons</h1>
+  <div class='body'><p>For years, I saw the consumerization<sup><small><a href='#consumerization'>1</a></small></sup> of computers as a decision passed down from
+corporations.</p>
+
+<p><img src="http://farm4.staticflickr.com/3793/9533899268_4952094a37_h.jpg" alt="Computers in 1980s and 2010s" /></p>
+
+<p>And it made sense. The optimal user in the eyes of industry is a
+user of major social networks,
+a buyer of apps: a person for whom expectations of technology
+have drifted from power to simplicity.</p>
+
+<p>But the third or fourth time watching <a href="http://vimeo.com/71278954">The Future of Programming</a>,
+after <a href="http://vimeo.com/64895205">the</a> <a href="http://vimeo.com/66085662">preceding</a>
+<a href="http://vimeo.com/67076984">series</a> by <a href="http://worrydream.com/">Bret Victor</a>,
+I saw more.</p>
+
+<p>The task of changing the way people think about computing is in the hands
+of people like you and me &ndash; there&rsquo;s no establishment preventing progress besides
+the enforcement of norms by a community.</p>
+
+<p>We are in a stage of stunted development &ndash; using computers
+creatively is still unnecessarily hard, unjustly handicapping people
+with great ideas but neither time nor the &lsquo;<a href="http://worrydream.com/KillMath/">symbol manipulation</a>&rsquo; skills
+currently required to &lsquo;become programmers.&rsquo;</p>
+
+<h2>Creativity</h2>
+
+<p>Technology is naturally an instrument of efficiency:
+rarely is there more than a second between a person&rsquo;s request for some total,
+average, or search, and a computer&rsquo;s production of a result.</p>
+
+<p><img src="http://farm4.staticflickr.com/3799/9627306333_aa63b657c1_b.jpg" alt="" /></p>
+
+<p>In this way, efficiency is simple: one person defines one operation and
+refines it to perfection.</p>
+
+<p>Creativity requires something more. Not just polishing a single path,
+but determining the minimal universal set of building blocks.
+Building creative tools is deciding the dimension of a Lego.</p>
+
+<h2>Typing Everything</h2>
+
+<p>Like the <a href="https://en.wikipedia.org/wiki/AI_winter">AI winter</a>,
+the idea of computers being user-friendly in ways beyond being &lsquo;simple&rsquo; is a
+fascination that comes and goes and is currently gone.</p>
+
+<p>Right now I&rsquo;m trying this in <a href="http://www.vim.org/">vim</a>, a twenty-one year
+old text editor with notoriously difficult user-experience choices: to quit,
+a user must type <code>:wq</code>. To delete this paragraph, I type <code>&lt;escape&gt;vjjd</code>.
+It makes sense after a while, or so they say. When I&rsquo;m done, it&rsquo;s commited
+with <a href="http://git-scm.com/">git</a>, a CLI-centric tool for managing source code,
+and pushed to <a href="https://github.com/">GitHub</a>, where it&rsquo;s compiled with <a href="http://jekyllrb.com/">Jekyll</a>
+and the text-based <a href="http://daringfireball.net/projects/markdown/">Markdown</a> content
+is processed into HTML with templates.</p>
+
+<p><em>Five years ago, I would go to <a href="http://wordpress.org/">WordPress</a> and press &lsquo;Save&rsquo;.</em></p>
+
+<p>To generate a visualization, I usually break out <a href="http://d3js.org/">d3js</a>,
+a low-level Javascript library that expects at a minimum knowledge of
+<a href="http://macwright.org/2013/06/25/just-enough-svg.html">SVG</a>,
+<a href="http://macwright.org/presentations/dcjq/">data joining</a>, <a href="http://macwright.org/2013/07/07/d3-for-html.html">HTML</a>,
+and CSS. Either that, or I&rsquo;ll use <a href="https://github.com/learnboost/node-canvas">node-canvas</a>,
+which requires <a href="http://nodejs.org/">node.js</a> proficiency and a solid dose
+of trigonometry in order to do anything interesting.</p>
+
+<p><em>Ten years ago, I would open Excel, make a chart, and press &lsquo;Save&rsquo;.</em></p>
+
+<h2>Precision and Control</h2>
+
+<p><img src="http://farm4.staticflickr.com/3693/9531287575_60c98800ad_h.jpg" alt="Espresso Machine" /></p>
+
+<p>There&rsquo;s a beauty to removing abstraction, to low-maintenance
+<a href="https://en.wikipedia.org/wiki/Fixed-gear_bicycle">fixies</a>
+and the resurgence of the <a href="https://en.wikipedia.org/wiki/Straight_razor">straight razor</a>.</p>
+
+<p>But is it useful to remove abstraction when it exposes a much larger surface
+of unrelated complexity? If an artist has an idea of a beautiful visualization,
+should they spend a year learning JavaScript? And is that startup cost reasonable,
+like the time invested in learning the way paint mixes?</p>
+
+<iframe src="//player.vimeo.com/video/5047563?title=0&amp;byline=0&amp;portrait=0" width="640" height="352" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/5047563">ART &amp;&amp; CODE Symposium: Hackety Hack, why the lucky stiff</a> from <a href="http://vimeo.com/sfci">STUDIO for Creative Inquiry</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+<p><a href="http://vimeo.com/5047563">_why</a>, his presentation at art &amp;&amp; code, referred
+to the &lsquo;learn web programming&rsquo; argument as unreasonable &ndash; for people just
+starting to understand programming, why learn three inter-connected
+languages at once?</p>
+
+<p>Is it even reasonable or useful to recommend people learn a computer language to
+complete basic tasks like drawing a picture or running a calculation? While
+we have <a href="http://www.codecademy.com/">better resources than ever before</a> to learn programming,
+programming hasn&rsquo;t changed in years, and the basic assumption of those writing
+languages, libraries and more is that they <em>write tools for people who know programming already</em>.</p>
+
+<p>Only a few examples, like Mary Rose Cooke&rsquo;s <a href="https://github.com/maryrosecook/islaclj">Isla</a> and
+Alan Kay&rsquo;s <a href="http://www.squeak.org/">Squeak</a> languages are written for anyone
+other than an adult with lots of time on their hands.</p>
+
+<h2>The Unhappy Simplicity of Choices</h2>
+
+<p>And so the positive argument is to make things visible, to reconsider and eliminate
+historical complexity. In other words, to fight for simple and easy.</p>
+
+<p>There are different kinds of easy.</p>
+
+<p>There&rsquo;s the easy of choosing the right thing: this is the land of presets,
+of &lsquo;builders&rsquo; that are just glorified <a href="http://ui-patterns.com/patterns/Wizard">wizard patterns</a>,
+with the same baked in assumption: &lsquo;a single goal&rsquo;. This is what you can see in
+tools like <a href="http://www.highcharts.com/products/highcharts">Highcharts</a>,
+that attempt to build &lsquo;all possible variations&rsquo; and invite you to choose one.</p>
+
+<p>Anyone can guess the ending &ndash; opinionated software
+is only cool if you have cool opinions, and even then presets will never capture
+creativity.</p>
+
+<p><img src="http://farm4.staticflickr.com/3722/9533924560_f504e86159_h.jpg" alt="Charts" /></p>
+
+<p><a href="http://d3js.org/">d3</a> takes a different approach. It&rsquo;s a visualization library that grapples
+with the fact that <em>visualizations have very little in common with each other</em>:
+the &lsquo;atoms&rsquo; of d3, the lowest-level &lsquo;things&rsquo; you can do, are very low-level.
+At the most basic level, you&rsquo;re drawing lines, polygons, text, and primitives.
+Abstractions above these things, like axes and charts, can be broken down,
+decomposed as necessary.</p>
+
+<p>This makes d3 hard, and makes some things &lsquo;more complicated&rsquo; in comparison
+to libraries that correctly guess what you want and &lsquo;have it already&rsquo;. But
+instead of fighting assumptions and instead of hiding complexity in them,
+d3 successfully tackles nearly the entire &lsquo;visualization space&rsquo; and, after
+the initial brain-crunch, is actually simpler to understand deeply.</p>
+
+<h2>Interface Atoms</h2>
+
+<iframe src="//player.vimeo.com/video/66085662?title=0&amp;byline=0&amp;portrait=0" width="640" height="360" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+
+<p> <p><a href="http://vimeo.com/66085662">Drawing Dynamic Visualizations</a> from <a href="http://vimeo.com/worrydream">Bret Victor</a> on <a href="https://vimeo.com">Vimeo</a>.</p></p>
+
+<p>The demo in this video is interesting because it&rsquo;s so fundamental.</p>
+
+<p>A simpler, easier thing to implement would have a person dragging data onscreen,
+the software automatically chooses 20 chart types that seem right, and then
+present a limited set of options. Not only would this be much easier to do,
+but it would result in fewer clicks, a shorter learning curve, and an easier
+thing to sell.</p>
+
+<p>But that would be doing it wrong &ndash; that would result in the same contained,
+handicapped experimentation as we&rsquo;ve had in years of bad wizard user interfaces.
+Instead, the basic units of this demo are on the level of d3 &ndash; unopinioned
+visual elements that can be composed into a much larger and more diverse set of outcomes.</p>
+
+<h2>Next</h2>
+
+<p><img src="http://farm3.staticflickr.com/2831/9658055681_e692767b03_b.jpg" alt="" /></p>
+
+<p>I&rsquo;ve started on minor work that pushes in this direction &ndash; that tries to
+make &lsquo;user interface&rsquo; elements behave like code and to enable &lsquo;users&rsquo; to
+think more like coders, the way they already think when writing Excel macros
+or meal recipes.</p>
+
+<p>And it&rsquo;s hard. Libraries like <a href="http://jqueryui.com/">jQuery UI</a> have faded in importance and attention
+and in their place we have tools like <a href="http://getbootstrap.com/">Bootstrap</a>
+that embrace &lsquo;content as king&rsquo; and punt on user interaction beyond
+clicking buttons.</p>
+
+<p>This isn&rsquo;t an immediate need for me, nor is it a simple thing that can
+be packaged up into a trendy JavaScript library. In between thinking these
+thoughts and having something usable, it&rsquo;s a lot of building difficult
+things from scratch with little to show for it. And there are numerous distractions
+and skeletons of previous efforts along the path &ndash; after all, visual programming
+is a 1960s idea that hasn&rsquo;t stuck yet.</p>
+
+<p>But I can&rsquo;t picture anything more interesting to work on at this point. It has
+been stunning to see people exploit what little means of expression are exposed
+on the web, despite the efforts of industry and programmers to restrict us
+to 140 chars and <a href="https://twitter.com/glitchr_">sanitized</a> ASCII text.</p>
+
+<p>Or that it seems unimaginative to constrain creativity to inputs
+and outputs designed by others and assume that the true power of computers &ndash;
+programmability &ndash; is something to be exploited by the select few.</p>
+
+<ul>
+<li id='consumerization'>that is, the way that new computers emphasize consumption
+of premade content over the creation of new content, and present software as a
+completed thing with no way to poke around at the inside and understand how things
+work.</li>
+</ul>
+
+</div>
+  <div class='breaker'></div>
+  <div class='post-footer'>
+    <postamble datetime="2013-09-05">
+    Sep 05, 2013
+    </postamble>
+  </div>
+</div>
+
+    </div>
+    <footer>
+    <ul class='navigation'>
+      <li><a href='/'><span class='name'>Tom MacWright</a></li>
+      <li><a href='/'>Blog</a></li>
+      <li><a href='/projects/'>Projects</a></li>
+      <li><a href='/about/'>About</a></li>
+      <li><a href='/archive/'>Archive</a></li>
+      <li><a href='http://twitter.com/tmcw'>@tmcw</a></li>
+      <li><a href='/atom.xml'>RSS</a></li>
+    </ul>
+    </footer>
+  </div>
+  <script type="text/javascript">
+    var _gauges = _gauges || [];
+    (function() {
+      var t   = document.createElement('script');
+      t.type  = 'text/javascript';
+      t.async = true;
+      t.id    = 'gauges-tracker';
+      t.setAttribute('data-site-id', '4e36eb1ef5a1f53d6f000001');
+      t.src = '//secure.gaug.es/track.js';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(t, s);
+    })();
+  </script>
+</body>
+</html>

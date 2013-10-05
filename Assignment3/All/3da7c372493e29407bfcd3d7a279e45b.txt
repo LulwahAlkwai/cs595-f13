@@ -1,0 +1,872 @@
+	<!DOCTYPE html>
+
+
+<!--[if lt IE 7]><html xmlns:fb="http://www.facebook.com/2008/fbml" class="lt-ie9 lt-ie8 lt-ie7"><![endif]-->
+<!--[if IE 7]><html xmlns:fb="http://www.facebook.com/2008/fbml" class="lt-ie9 lt-ie8"><![endif]-->
+<!--[if IE 8]><html xmlns:fb="http://www.facebook.com/2008/fbml" class="lt-ie9"><![endif]-->
+<!--[if gt IE 8]><!--><html xmlns:fb="http://www.facebook.com/2008/fbml" class=""><!--<![endif]-->
+
+
+<head>
+        <meta charset="utf-8" />
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+
+    <script>
+        //<![CDATA[
+
+        var SiteSettings = {
+            awesmKey: "9d6400414144f9eecaed1850705f49642b831f5a14281d96d948c2fd6fb9f7db",
+            // DO NOT use the awesmTool from site.yaml, that one is only for orion.
+            //   we should rework how the awesm object in site.yaml is done.
+            awesmTool: "O3Incf",
+            isSocialEnabled: true,
+            articleListCount: 24,
+            isEditorial: 0
+        };
+
+        var _conf = { root: '/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/' };
+        var _sf_startpt = (new Date()).getTime();
+        var say = { options: { jquery: true } };
+
+        //]]>
+    </script>
+
+            <script>
+            //<![CDATA[
+
+                            SiteSettings.adsDesktopURL = "/_ajax/sidebar/hack";
+            
+            //]]>
+        </script>
+    
+    <meta http-equiv="cleartype" content="on" />
+
+    <title>Why Programming Is The Core Skill Of The 21st Century &ndash; ReadWrite</title>
+
+    <meta name="copyright" content="2013 SAY Media, Inc." />
+
+            <link rel="canonical" href="http://readwrite.com/2013/05/31/programming-core-skill-21st-century" />
+    
+            <meta name="description" content="It&#039;s never been easier, more accessible, or more essential to learn coding skills." />
+    
+
+        <link rel="dns-prefetch" href="//adserver.adtechus.com">
+    <link rel="dns-prefetch" href="//adcontent.saymedia.com">
+    <link rel="dns-prefetch" href="//beacon.saymedia.com">
+    <link rel="dns-prefetch" href="//b.scorecardresearch.com">
+    <link rel="dns-prefetch" href="//core.videoegg.com">
+    <link rel="dns-prefetch" href="//cricket.saymedia.com">
+    <link rel="dns-prefetch" href="//edge.quantserve.com">
+    <link rel="dns-prefetch" href="//pixel.quantserve.com">
+        <link rel="dns-prefetch" href="//beacon.stage.saymedia.com">
+    <link rel="dns-prefetch" href="//stage.ads.saymedia.com">
+
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="MobileOptimized" content="320" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+    <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" media="(device-height: 568px)" />
+
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="apple-mobile-web-app-title" content="ReadWrite" />
+
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="format-detection" content="address=no" />
+
+    
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:site" content="@rww" />
+    <meta name="twitter:url" content="http://readwrite.com/2013/05/31/programming-core-skill-21st-century" />
+    <meta name="twitter:title" content="Why Programming Is The Core Skill Of The 21st Century" />
+    <meta name="twitter:description" content="It&#039;s never been easier, more accessible, or more essential to learn coding skills." />
+    <meta name="twitter:image" content="http://readwrite.com/files/styles/150_150sc/public/fields/Kids_computers.jpg" />
+
+            <meta name="author" content='Lauren Orsini' />
+        <meta property="og:type" content="article" />
+        <meta name="twitter:creator" content="@laureninspace" />
+    
+        <meta name='parsely-page' content='{"title": "Why Programming Is The Core Skill Of The 21st Century",
+                "link": "http://readwrite.com/2013/05/31/programming-core-skill-21st-century",
+                "image_url": "http://readwrite.com/files/styles/150_150sc/public/fields/Kids_computers.jpg",
+                "type": "article",
+                "post_id": "81199",
+                "pub_date": "2013-05-31T04:04:00-07:00",
+                "section": "Hack",
+                "author": "Lauren Orsini",
+                "tags": ["programming","development","education","future of IT","Learn to code","jobs"]}'>
+
+    <meta property="og:url" content='http://readwrite.com/2013/05/31/programming-core-skill-21st-century' />
+    <meta property="og:title" content="Why Programming Is The Core Skill Of The 21st Century" />
+    <meta property="og:description" content="It&#039;s never been easier, more accessible, or more essential to learn coding skills." />
+    <meta property="og:image" content="http://readwrite.com/files/styles/150_150sc/public/fields/Kids_computers.jpg" />
+
+            <link href="https://plus.google.com/112111196451586545452" rel="publisher" />
+                <meta name="google-site-verification" content="7LvbUJd-MfWpOPcF8SjWjufNuXnBRkSoJTf3-WL5UZU" />
+    
+    <meta property="fb:page_id" content="65491870325" />
+    <meta property="fb:app_id" content="57345927025" />
+    <meta property="og:site_name" content="ReadWrite" />
+
+    
+    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-57-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-72-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-114-precomposed.png" />
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-144-precomposed.png" />
+
+    <meta name="msapplication-TileImage" content="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-114-precomposed.png">
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <link rel="shortcut icon" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-32.png" />
+    <link rel="icon" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/icons/icon-32.png" type="image/x-icon" />
+
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-ipad-landscape.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape)" />
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-ipad-landscape-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:landscape) and (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-ipad-portrait.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait)" />
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-ipad-portrait-retina.png" media="screen and (min-device-width: 481px) and (max-device-width: 1024px) and (orientation:portrait) and (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-iphone-retina.png" media="screen and (max-device-width: 320px) and (max-device-height: 1136px) and (-webkit-min-device-pixel-ratio: 2)" />
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-iphone-old.png" media="screen and (max-device-width: 320px) and (max-device-height: 460px)" />
+    <link rel="apple-touch-startup-image" href="http://readwrite.com/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/splashes/splash-iphone-old-retina.png" media="screen and (max-device-width: 320px) and (max-device-height: 460px) and (-webkit-min-device-pixel-ratio: 2)" />
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/core/js/bundles/min/header-bundle.min.js"></script>
+
+    <link rel="stylesheet" href="/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/css/main.css" />
+    <link rel="stylesheet" href="/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/css/print.css" media="print" />
+
+    <!--[if lt IE 9]>
+    <script src="/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/site/js/_libs/aight.min.js"></script>
+    <script src="/static/fc43c91c5d69ecbe103ebcef9fe968896ca81811/core/js/_libs/respond.min.js"></script>
+    <![endif]-->
+
+            <script>
+            //<![CDATA[
+
+                            SiteSettings.adsDesktopURL = "/_ajax/sidebar/hack";
+            
+            //]]>
+        </script>
+    
+	<script type="text/javascript"
+		id="admin-bootstrap"
+		data-sha="3c8772fff73a505be5a351748ce7f7fb7bec2dc6"
+				src="/_orion/static/3c8772fff73a505be5a351748ce7f7fb7bec2dc6/js/admin-bootstrap.js"
+		>
+	</script>
+	 
+	<script type="text/javascript">
+	say.onAdminReady = function()
+	{
+		say.setPage('article', window.location.toString());
+	};
+	</script>
+
+
+
+</head>
+
+
+    <body class="layout-detail article standard">
+
+
+<div id="lyra-wrapper" data-ad-manager="https://adserver.adtechus.com/?adrawdata/3.0/5108.1/2766669/0/0/ADTECH;loc=100;noperf=1;sub1=">
+        <nav id="navbar" class="trackable">
+        <div class="grid">
+            <ul class="menu">
+                <li class="home"><a href="/"></a></li>
+                <li class="logo"><a href="/"><!--<em>Enterprise</em>--></a></li>
+                <li class="sections"><a href="/toc"><em>Topics</em></a></li>
+                <li class="prev"><a href="#" class="prev-unread-link"></a></li>
+                <li class="next"><a href="#" class="next-unread-link"></a></li>
+            </ul>
+
+            <ul class="menu secondary">
+                <li class="follow-facebook"><a
+                    class="social-custom"
+                    data-href="https://www.facebook.com/ReadWrite"
+                    data-medium="facebook"
+                    data-social-action="follow"></a></li>
+                <li class="follow-twitter"><a
+                        class="social-custom"
+                        data-href="http://twitter.com/rww"
+                        data-medium="twitter"
+                        data-social-action="follow"></a></li>
+                <li class="follow-linkedin"><a
+                        class="social-custom"
+                        data-href="http://www.linkedin.com/company/readwrite"
+                        data-medium="linkedin"
+                        data-social-action="follow"></a></li>
+                <li class="info"><a href="/page/about/"></a></li>
+                <li class="search"><a href="/search"></a></li>
+            </ul>
+
+                    </div>
+    </nav>
+
+            <section class="page-header">
+    <div class="grid">
+<!--        <section class="section-title">
+                        <a href="/hack">hack&nbsp;</a>
+                    </section>
+
+        <section class="block next-article">
+            Next Article: <a href="#" class="next-unread-link"></a>
+        </section> -->
+
+        <!--  -->
+
+                <h1 class="instapaper_title" itemprop="headline">Why Programming Is The Core Skill Of The 21st Century</h1>
+
+        <div class="abstract" itemprop="description">
+            <p>It's never been easier, more accessible, or more essential to learn coding skills.</p>
+        </div>
+
+        <div class="meta">
+                        <span class="avatar"><img src="http://readwrite.com/files/fields/LaurenOrsini.jpg" alt="Lauren Orsini" itemprop="image" /></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="/author/lauren-orsini" rel="author">Lauren Orsini</a></span></span>
+            <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">May 31, 2013</span></span>
+            <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="/hack">Hack</a></span></span>
+            <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd" itemprop="interactionCount">10</span></span>
+        </div>
+        
+    </div>
+</section>
+
+
+<section class="page-body">
+    <div class="grid">
+        <aside class="before">
+            <section id="popular-feed" class="block feed trackable">
+                <h3>Read Next <span class="unread-count">?</span></h3>
+            </section>
+        </aside>
+
+        <article
+            class="story view-full standard"
+            id="article-content"
+            data-id="4ec966ea-d123-be04-7dad-1780e36f862d"
+            data-content-id="81199"
+            data-domain-id="me015f987bb43c860d"
+            data-title="Why Programming Is The Core Skill Of The 21st Century"
+            data-page-title="Why Programming Is The Core Skill Of The 21st Century &ndash; ReadWrite"
+            data-series=""
+            data-section="hack"
+            data-author="Lauren Orsini"
+            data-image="http://readwrite.com/files/styles/110_90sc/public/fields/Kids_computers.jpg"
+            data-dek="It&#039;s never been easier, more accessible, or more essential to learn coding skills."
+            data-published-date="May 31, 2013"
+            data-published-datestamp="1369998240"
+            data-promo-title="Why Programming Is The Core Skill Of The 21st Century"
+            data-tweet="Why Programming Is The Core Skill Of The 21st Century by @laureninspace"
+            data-href="http://readwrite.com/2013/05/31/programming-core-skill-21st-century"
+            data-link="http://readwrite.com/2013/05/31/programming-core-skill-21st-century"
+            data-interaction-count="10"
+            itemscope="itemscope"
+            itemtype="http://schema.org/Article"
+            >
+
+            <meta content="en" itemprop="inLanguage" />
+
+            <header>
+                
+
+                <section id="social-tools" class="block reflow social-tools trackable">
+                    <ul>
+                        <li class="interaction-count">0</li>                         <li class="facebook"><a href="#" class="facebook social-custom" target="_blank" data-medium="facebook_share" data-social-action="share"></a></li>
+                        <li class="twitter"><a href="#" class="twitter social-custom" target="_blank" data-medium="twitter" data-social-action="share"></a></li>
+                        <li class="gplus"><a href="#" class="gplus social-custom" target="_blank" data-medium="googleplus" data-social-action="share"></a></li>
+                        <li class="linkedin"><a href="#" class="linkedin social-custom" target="_blank" data-medium="linkedin" data-social-action="share"></a></li>
+                        <li class="reddit"><a href="#" class="reddit social-custom" target="_blank" data-medium="reddit" data-social-action="share"></a></li>
+                        <li class="comment"><a href="#disqus_anchor" class="comment"></a></li>
+                    </ul>
+                </section>
+
+            </header>
+
+            <section class="copy instapaper_body" itemprop="articleBody">
+                                <p>
+                <span class="embedded-Media-image layout-object img-caption-c">
+	
+			<img src="http://readwrite.com/files/styles/630_0su/public/fields/Kids_computers.jpg" style="" alt="Why Programming Is The Core Skill Of The 21st Century" width="" height="" />
+	
+	
+	</span>
+                </p>
+                                <p>In the 20th Century, meaningful education was all about learning your ABCs. Today, it's centered on Alphas, Betas and C++.</p>
+<p>Programming skills are becoming ever more important, quickly turning into <em style="line-height: 1.538em;">the</em> core competency for all kinds of 21st Century workers. That inescapable fact is leading individuals to seek out new ways of learning to code, startups and non-profits to find ways to help them and businesses to search for innovative approaches to finding the coders they so desperately need.</p>
+<p>When daily deal site&nbsp;<a style="line-height: 1.538em;" href="https://www.livingsocial.com/" target="_blank">Living Social </a>couldn't find the coding help it needed, for example, the company took matters into its own hands and successfully created its own qualified programmers.&nbsp;Through an experiment called <a style="line-height: 1.538em;" href="http://hungryacademy.com/">Hungry Academy</a>, &nbsp;Living Social <em style="line-height: 1.538em;">paid</em> 24 people to learn computer programming within five months. All two dozen passed the class and became full-time developers at Living Social following their graduation.&nbsp;</p>
+<p class="p3">“We believe that intelligence and passion are far harder to hire for and much more important than a specific technical skill,” Chad Fowler, LivingSocial’s senior vice president of technology, <a href="http://articles.washingtonpost.com/2012-07-29/business/35487169_1_graduates-talent-intensive-program">told the Washington Post</a> last year. “We have enough of the kind of DIY sort of mentality here and, maybe it’s a little bit of hubris, we can teach faster than the industry.”</p>
+<p>Likely due to Living Social’s <a href="http://www.wjla.com/articles/2013/05/livingsocial-brand-won-t-survive-past-2014-24-7-wall-st-says-89301.html" target="_blank">larger troubles</a>, the company won’t be repeating the experiment. However the concept it nurtured - teaching untechnical people technical skills -&nbsp;is gaining in popularity in a wide variety of ways.&nbsp;Learn-to-code programs bent on teaching anyone, even children, programming skills are on the upswing, at non-profits, at startups and at companies that need to hire programmers.</p>
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="http://readwrite.com/files/TeamRoundofAPPlause_PHOTO.jpg" style="" alt="" width="800" height="450" />
+	
+	
+	</span>
+</p>
+<p><strong>See also:</strong></p>
+<ul>
+<li><a style="line-height: 1.538em;" href="http://readwrite.com/2013/05/02/this-is-what-the-next-generation-of-programmers-looks-like" target="_blank"><strong>This Is What The Next Generation Of Programmers Looks Like</strong></a></li>
+<li><strong style="line-height: 1.538em;"><a style="line-height: 1.538em;" href="http://readwrite.com/2013/04/19/how-to-raise-the-next-zuck-6-coding-apps-for-kids">How To Raise The Next Zuckerberg: 6 Coding Apps For Kids</a></strong></li>
+</ul>
+<h2 class="p4">Plenty Of Ways To Learn Programming</h2>
+<p class="p3">Mark Lassoff, founder of <a href="http://learntoprogram.tv/">Learntoprogram.tv</a>, believes it’s not the place you learn to code that counts. It’s the portfolio you can show potential employers.</p>
+<p>“People think you have to go back to school to learn programming and other computer skills, but you don’t,” he said in a statement. “There’s also the myth that you have to be some kind of math or science genius to learn it. Not true. You just need to learn the process, and then practice it. You can build a portfolio by doing volunteer work for a church or charity.”</p>
+<p>Ordinarily, newly minted developers would be less desirable than experienced ones for employers. But the current developer drought means&nbsp;there are far more jobs that require programming skills than people who have those skills. &nbsp;So companies are more accepting of programming newbies.</p>
+<h2>Lots Of Coding Jobs Going Begging</h2>
+<p><strong>(See also&nbsp;<a href="http://readwrite.com/2013/05/22/dont-look-now-developer-drought">Don't Look Now, But We Might Be In A Developer Drought</a>.)</strong></p>
+<p>The number of coding jobs is only expected to increase over time. According to the U.S. Bureau of Labor Statistics, there were 913,000 computer programmer jobs in 2010. That number is expected to jump&nbsp;<a href="http://www.bls.gov/ooh/Computer-and-Information-Technology/Software-developers.htm">30%</a> from 2010 to 2020. Meanwhile, the average growth of all other U.S. jobs is predicted to be just&nbsp;<a href="http://www.bls.gov/ooh/Computer-and-Information-Technology/Software-developers.htm">14%</a>.&nbsp;</p>
+<p>“There aren’t enough people to fill these jobs because technology and the job market are moving much faster than education in high schools and colleges,” Lassoff said.&nbsp;</p>
+<p><span class="embedded-Media-image img-caption-c ">
+	
+			<img src="http://readwrite.com/files/girlswhocode.jpg" style="" alt="" width="800" height="450" />
+	
+	
+	</span>
+</p>
+<h2>How Coding Can Boost Everyone's Career</h2>
+<p>Developer and mentor <a href="http://www.linkedin.com/in/joeobjo">Joe O’Brien</a>&nbsp;believes that computer skills are essential even if you’ve already got a non-technical job.&nbsp;</p>
+<p>“We all interact with computers in such a way that they’re no longer this extra thing you do on the side,” O'Brien told ReadWrite. “Computing is a vital part of what everybody does nowadays.</p>
+<p>"Not that we want everyone to go out and create Web programs and write the next Twitter, but I think having a base understanding of what happens behind the curtain can be huge,” he added.</p>
+<p>O’Brien never graduated from college, but he did recently sell <a href="http://edgecase.com/" target="_blank">Edgecase</a>, the software development company he founded and operated himself. He thinks that his programming skills made him a better CEO than he would have been without them. Today, he mentors aspiring programmers in his hometown of Columbus, Ohio.&nbsp;</p>
+<p>“Even if a CEO never codes for her company, just understanding what is happening is going to be huge for her from a risk standpoint, from an understanding standpoint,” he said. “CEOs need to have a lot of knowledge of a lot of different things and programming is a large part of that.”</p>
+<h2>Teaching Programming Is Big Business</h2>
+<p>CEOs who think like O’Brien might be the reason that learn-to-code startups have been able to fundraise millions in venture capital. Investors seem to realize that companies like <a href="http://teamtreehouse.com/">Treehouse</a> and <a href="http://www.codecademy.com/#!/exercises/0">Codecademy</a> don’t just train the next generation of developers, but that the skill they teach are essential for managers, too.&nbsp;</p>
+<p><strong>(See also <a href="http://readwrite.com/2013/04/19/make-money-teaching-to-code">There's A Boom In Teaching People How To Code</a>.)</strong></p>
+<p>Whether to boost your career or just to keep pace with the rest of the world, learning to code has never been more important or more accessible. If you haven’t started yet, what’s stopping you?</p>
+<p><em>Second image courtesy of <a href="http://readwrite.com/2013/05/02/this-is-what-the-next-generation-of-programmers-looks-like">Team Round of APPlause</a>. Final image courtesy of&nbsp;<a href="http://www.girlswhocode.com/">Girls Who Code</a>.</em></p>
+            </section>
+
+            <footer>
+                <ul class="article-tags">
+                                        <li><a href="/tag/programming">programming</a></li>
+                                        <li><a href="/tag/development">development</a></li>
+                                        <li><a href="/tag/education">education</a></li>
+                                        <li><a href="/tag/future-of-it">future of IT</a></li>
+                                        <li><a href="/tag/learn-to-code">Learn to code</a></li>
+                                        <li><a href="/tag/jobs">jobs</a></li>
+                                    </ul>
+                <section class="social-tools" id="social-tools-2">
+                    <ul>
+                        <li class="interaction-count">0</li>                         <li class="facebook"><a href="#" class="facebook social-custom" target="_blank" data-medium="facebook_share" data-social-action="share"></a></li>
+                        <li class="twitter"><a href="#" class="twitter social-custom" target="_blank" data-medium="twitter" data-social-action="share"></a></li>
+                        <li class="gplus"><a href="#" class="gplus social-custom" target="_blank" data-medium="googleplus" data-social-action="share"></a></li>
+                        <li class="linkedin"><a href="#" class="linkedin social-custom" target="_blank" data-medium="linkedin" data-social-action="share"></a></li>
+                        <li class="reddit"><a href="#" class="reddit social-custom" target="_blank" data-medium="reddit" data-social-action="share"></a></li>
+                        <li class="comment"><a href="#disqus_anchor" class="comment"></a></li>
+                    </ul>
+                </section>
+            </footer>
+        </article>
+
+        <aside class="after">
+
+            
+            <div id="ad-tiles" class="block ad-tiles reflow"></div>
+        </aside>
+    </div>
+</section>
+
+
+
+    <script>
+        //<![CDATA[
+
+        // 
+        // readwritenext
+
+        var disqus_shortname = 'readwritenext';
+        var disqus_title = 'Why Programming Is The Core Skill Of The 21st Century - by Lauren Orsini';
+
+        // var disqus_developer = 1;
+
+                    var disqus_identifier = "4ec966ea-d123-be04-7dad-1780e36f862d";
+
+            // var disqus_url = 'http://readwrite.com/2013/05/31/programming-core-skill-21st-century';
+        
+        //]]>
+    </script>
+
+    <div id="article-fader"><div id="article-fader-spinner"></div></div>
+    <section class="page-footer">
+        <section id="hub-listing-detail-stream" class="trackable click feed view-tile">
+        <div class="grid">
+            <h2>Read Next</h2>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        
+
+
+
+                        
+                    
+            
+                        
+            
+            <article id="story-744b70d6-bfd2-a8a4-2d93-d59a5b2103b3" class="story view-summary feature" data-id="744b70d6-bfd2-a8a4-2d93-d59a5b2103b3" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage" />
+
+                <header>
+                                                                <div class="image thumb" itemprop="image">
+                            <a href="/2013/08/23/recruiters-jobs-matchmakers-developers"><img src="		http://readwrite.com/files/styles/300_190sc/public/fields/WantedAds_Shutterstock.jpg" alt="Rise Of The Anti-Recruiters" /></a>
+                        </div>
+                    
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="/2013/08/23/recruiters-jobs-matchmakers-developers">Rise Of The Anti-Recruiters</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>Enough with LinkedIn and email job spam. It's time for recruiters to turn into matchmakers for developers and employers.</p>
+                        </div>
+                    </div>
+
+                    <div class="meta">
+                        <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="/web">Web</a></span></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="/author/josh-fox">Josh Fox</a></span></span>
+                        <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">August 23, 2013</span></span>
+                        <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd" data-interaction-count="19" data-href="/2013/08/23/recruiters-jobs-matchmakers-developers">0</span></span>
+                    </div>
+                </header>
+            </article>
+
+                    
+            
+                        
+            
+            <article id="story-7a54e205-8607-8bc4-cdeb-e428772d5a0c" class="story view-summary standard" data-id="7a54e205-8607-8bc4-cdeb-e428772d5a0c" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage" />
+
+                <header>
+                                                                <div class="image thumb" itemprop="image">
+                            <a href="/2013/09/10/udacity-ignores-reality-founds-open-education-alliance"><img src="		http://readwrite.com/files/styles/300_190sc/public/fields/thrun.png" alt="Udacity Ignores Reality, Founds Open Education Alliance" /></a>
+                        </div>
+                    
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="/2013/09/10/udacity-ignores-reality-founds-open-education-alliance">Udacity Ignores Reality, Founds Open Education Alliance</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>Udacity isn't letting actual statistics get in the way of the rosy future it sees for online education.</p>
+                        </div>
+                    </div>
+
+                    <div class="meta">
+                        <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="/hack">Hack</a></span></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="/author/lauren-orsini">Lauren Orsini</a></span></span>
+                        <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">September 10, 2013</span></span>
+                        <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd" data-interaction-count="3" data-href="/2013/09/10/udacity-ignores-reality-founds-open-education-alliance">0</span></span>
+                    </div>
+                </header>
+            </article>
+
+                    
+            
+                        
+            
+            <article id="story-b3b74134-c182-da14-3d6d-a48f141f4006" class="story view-summary feature" data-id="b3b74134-c182-da14-3d6d-a48f141f4006" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage" />
+
+                <header>
+                                                                <div class="image thumb" itemprop="image">
+                            <a href="/2013/09/25/online-courses-education-harvard-peter-bol"><img src="		http://readwrite.com/files/styles/300_190sc/public/fields/harvard.jpg" alt="Just What Are Online Courses Good For? A Q&amp;amp;A With Harvard&amp;#039;s Peter Bol" /></a>
+                        </div>
+                    
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="/2013/09/25/online-courses-education-harvard-peter-bol">Just What Are Online Courses Good For? A Q&amp;A With Harvard&#039;s Peter Bol</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>Online education: The view from Harvard Yard.</p>
+                        </div>
+                    </div>
+
+                    <div class="meta">
+                        <span class="section"><span class="dt">Section:</span> <span class="dd" itemprop="articleSection"><a href="/web">Web</a></span></span>
+                        <span class="author"><span class="dt">Author:</span> <span class="dd" itemprop="author"><a href="/author/adriana-lee">Adriana Lee</a></span></span>
+                        <span class="publish-date"><span class="dt">Publish date:</span> <span class="dd" itemprop="datePublished">September 25, 2013</span></span>
+                        <span class="interaction-count"><span class="dt">Interaction count:</span> <span class="dd" data-interaction-count="1" data-href="/2013/09/25/online-courses-education-harvard-peter-bol">0</span></span>
+                    </div>
+                </header>
+            </article>
+
+        
+
+            <article class="section view-summary promo" itemscope="itemscope" itemtype="http://schema.org/Article">
+                <meta content="en" itemprop="inLanguage" />
+
+                <header>
+                    <div class="image thumb" itemprop="image">
+                        <a href="/hack"><img src="http://readwrite.com/files/styles/400_300sc/public/fields/Hack_grid.jpg" width="400" height="300" alt="Hack" /></a>
+                    </div>
+
+                    <div class="grid-item">
+                        <h1 itemprop="headline"><a href="/hack">hack</a></h1>
+
+                        <div class="abstract" itemprop="description">
+                            <p>ReadWriteHack is designed to help software, Web and mobile developers learn the key trends, tools, and best practices that shape their work and careers.</p>
+                        </div>
+
+                        <ul class="section-feed">
+                                                        <li><a href="/2013/10/04/google-glass-apps-mirror-api">Finally! Google Glass Will Get An App Store Soon</a></li>
+                                                        <li><a href="/2013/10/04/how-to-use-ifttt-if-this-then-that">Automate All The Things: How To Get Started With IFTTT</a></li>
+                                                        <li><a href="/2013/10/02/github-for-beginners-part-2">GitHub For Beginners: Commit, Push And Go</a></li>
+                                                        <li><a href="/2013/09/30/understanding-github-a-journey-for-beginners-part-1">GitHub For Beginners: Don&#039;t Get Scared, Get Started</a></li>
+                                                    </ul>
+                    </div>
+                </header>
+            </article>
+
+        </div>
+    </section>
+
+    <div class="grid">
+        <section id="comments">
+            <a name="disqus_anchor"></a>
+            <div id="disqus_thread"></div>
+        </section>
+    </div>
+
+    <section class="colophon">
+        <div class="grid">
+            <span class="copyright">&copy; 2013 Say Media Inc.</span>
+            <span class="links"><a href="/page/about">About</a> &middot; <a href="http://www.saymedia.com/company-and-campaign-information" target="_blank">Advertise</a> &middot; <a href="/page/privacy-policy">Privacy</a> &middot; <a href="/page/contact">Contact</a></span>
+        </div>
+    </section>
+</section>
+
+    </div>
+
+
+    <script>
+        //<![CDATA[
+
+        function loadCSS(url) {
+            var link = document.createElement("link");
+            link.type = "text/css";
+            link.rel = "stylesheet";
+            link.href = url;
+            document.getElementsByTagName("head")[0].appendChild(link);
+        }
+
+        function globalErrorHandler() {
+            loadCSS(_conf.root + "site/css/noscript.css");
+        }
+
+        window.addEventListener("error", globalErrorHandler);
+        document.addEventListener("error", globalErrorHandler);
+
+        var MINIMUM_ARTICLE_HEIGHT_MULTIPLIER = {
+            'desktop': {
+                'landscape': 2.5,
+                'portrait': 2.5
+            },
+            'phone': {
+                'landscape': 5,
+                'portrait': 5
+            },
+            'tablet': {
+                'landscape': 2.5,
+                'portrait': 2
+            }
+        };
+
+        var _categorizr = Categorizr.getInstance();
+
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var a = AdInstantiater.getInstance();
+            if (a.pageType == CoreData.PAGE_TYPE_HUB) {
+                if (_categorizr.isDesktop()) {
+                    a.insertHubAds(false);
+                }
+                else if (_categorizr.isPhone()) {
+                    a.insertHubAds(false, 3);
+                }
+                else if (_categorizr.isTablet()) {
+                    a.insertHubAds(false, 6);
+                }
+            }
+            else if (a.pageType == CoreData.PAGE_TYPE_ARTICLE) {
+                var orientation = $(window).height() > $(window).width() ? "portrait" : "landscape";
+                var platform = false;
+                if (_categorizr.isDesktop()) {
+                    platform = "desktop";
+                }
+                else if (_categorizr.isPhone()) {
+                    platform = "phone";
+                }
+                else if (_categorizr.isTablet()) {
+                    platform = "tablet";
+                }
+                a.insertArticleAds(MINIMUM_ARTICLE_HEIGHT_MULTIPLIER[platform][orientation], false);
+            }
+        });
+
+        if(SiteSettings.overrideUserAgent) _categorizr.getDeviceInfo(SiteSettings.overrideUserAgent);
+        if(SiteSettings.isCategorizrVerbose) alert("User agent: " + _categorizr.getUserAgent() + "\n\nSlug list: " + _categorizr.getSlugList());
+
+        try {
+            if(!_categorizr.isBrowserDesktopIE6() && !_categorizr.isBrowserDesktopIE7()) {
+                if(SiteSettings.overrideFlavor === "desktop" || (!SiteSettings.overrideFlavor && (_categorizr.isDesktop() || _categorizr.isError()))) {
+                    head.js(CoreSettings.isBundleMode ? _conf.root + "core/js/bundles/min/desktop-bundle.min.js" : _conf.root + "core/js/bundles/desktop-bundle.js");
+                }
+
+                if(SiteSettings.overrideFlavor === "phone" || (!SiteSettings.overrideFlavor && _categorizr.isPhone() && !_categorizr.isError())) {
+                    head.js(CoreSettings.isBundleMode ? _conf.root + "core/js/bundles/min/phone-bundle.min.js" : _conf.root + "core/js/bundles/phone-bundle.js");
+                }
+
+                if(SiteSettings.overrideFlavor === "tablet" || (!SiteSettings.overrideFlavor && _categorizr.isTablet() && !_categorizr.isError())) {
+                    head.js(CoreSettings.isBundleMode ? _conf.root + "core/js/bundles/min/tablet-bundle.min.js" : _conf.root + "core/js/bundles/tablet-bundle.js");
+                }
+            }
+        }
+        catch(err) {
+            loadCSS(_conf.root + "site/css/noscript.css");
+        }
+
+
+
+        // KISSMETRICS
+        // -----------
+
+        var _kmq = _kmq || [];
+        var _kmk = _kmk || '0b6c986b0802e7580ed5243be2f7cb9ca54c995a';
+
+
+        // GOOGLE ANALYTICS
+        // ----------------
+
+        var _gaq = _gaq || [];
+
+        _gaq.push(['_setAccount', 'UA-421291-1']);
+        _gaq.push(['_setAllowLinker', true]);
+        _gaq.push(['_setAllowHash', false]);
+        _gaq.push(['_setDomainName', 'none']);
+
+        _gaq.push(['_setCustomVar',
+            1, // Slot 1 definition
+            'Type', // Slot 1 label
+            'Article Page',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_setCustomVar',
+            2, // Slot 2 definition
+            'Section', // Slot 2 label
+            'Hack',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_setCustomVar',
+            3, // Slot 3 definition
+            'Author', // Slot 3 label
+            'Lauren Orsini',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_setCustomVar',
+            4, // Slot 4 definition
+            'Quarter', // Slot 4 label
+            '2013Q2',
+            3 // Sets the scope to page-level.
+        ]);
+
+        _gaq.push(['_trackPageview']);
+
+        (function() {
+            var ga = document.createElement('script');
+            ga.type = 'text/javascript';
+            ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(ga, s);
+        })();
+
+
+        // CHARTBEAT
+        // ---------
+
+        var _sf_async_config = {};
+
+        _sf_async_config.uid = 24210;
+        _sf_async_config.domain = 'readwrite.com';
+        _sf_async_config.sections = 'Hack';
+        _sf_async_config.authors = 'Lauren Orsini';
+        _sf_async_config.useCanonical = true;
+
+        (function() {
+            function loadChartbeat() {
+                window._sf_endpt = (new Date()).getTime();
+                var e = document.createElement('script');
+                e.setAttribute('language', 'javascript');
+                e.setAttribute('type', 'text/javascript');
+                e.setAttribute('src', (('https:' == document.location.protocol) ? 'https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/' : 'http://static.chartbeat.com/') + 'js/chartbeat.js');
+                document.body.appendChild(e);
+            }
+
+            var oldonload = window.onload;
+            window.onload = (typeof window.onload != 'function') ? loadChartbeat : function() {
+                oldonload();
+                loadChartbeat();
+            };
+        })();
+
+
+        // SAY - TETRAPAK
+        // --------------
+
+		var _tetra_config={};
+
+		_tetra_config._domain = "readwrite.com";
+		_tetra_config._startt = (new Date()).getTime();
+		_tetra_config.metadata = {
+			'mediapropertyid': 'me015f987bb43c860d',
+					 		'mediapropertycontentitemid':'81199',
+		        'pagetype' : 'ARTICLE',
+		    	'published': '1369998240',
+		    	'author'   : 'Lauren Orsini',
+		    	'authorid' : '1011',
+		    	'section'  : 'Hack',
+		    	'sectionid': '5262'
+		    		};
+
+		_tetra_config.pagemodel = {
+			'blockids':'navigation, header, alpha, beta, footer'
+		};
+
+	    (function() {
+	    	var tetra = document.createElement('script'); tetra.type = 'text/javascript'; tetra.async = true;
+	    	tetra.src = (document.location.protocol == "https:" ? "https://" : "http://") + "tetra.saymedia.com/latest/tetrapak.js";
+			tetra.id = 'orion-tetrapak';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(tetra, s);
+		})();
+
+
+        // COMSCORE
+        // -------
+
+        var _comscore = _comscore || [];
+        _comscore.push({c1: "2", c2: "6036036"});
+        (function() {
+            var s = document.createElement("script"), el = document.getElementsByTagName("script")[0];
+            s.async = true;
+            s.src = (document.location.protocol == "https:" ? "https://sb" : "http://b") + ".scorecardresearch.com/beacon.js";
+            el.parentNode.insertBefore(s, el);
+        })();
+
+        //]]>
+    </script>
+    <noscript><img src="http://b.scorecardresearch.com/p?c1=2&c2=6036036&cv=2.0&cj=1" /></noscript>
+
+
+    <div id="BF_WIDGET_1"></div>
+    <script>
+        //<![CDATA[
+
+        (function() {
+            BF_WIDGET_JS = document.createElement("script");
+            BF_WIDGET_JS.type = "text/javascript";
+            BF_WIDGET_SRC = "http://ct.buzzfeed.com/wd/UserWidget?u=readwrite.com&to=1&or=vb&wid=1&cb=" + (new Date()).getTime();
+            setTimeout(function() {
+                document.getElementById("BF_WIDGET_1").appendChild(BF_WIDGET_JS);
+                BF_WIDGET_JS.src = BF_WIDGET_SRC
+            }, 1);
+        })();
+
+        //]]>
+    </script>
+
+    <!-- Quantcast Tag -->
+    <script type="text/javascript">
+    var _qevents = _qevents || [];
+
+    (function() {
+        var elem = document.createElement('script');
+        elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";
+        elem.async = true;
+        elem.type = "text/javascript";
+        var scpt = document.getElementsByTagName('script')[0];
+        scpt.parentNode.insertBefore(elem, scpt);
+        })();
+
+        _qevents.push([{
+            qacct:"p-afR4Gk3hyFg-2"
+        },
+        {
+        qacct:"p-X8qQTxcj3K_W5" // ReadWrite
+    }]);
+    </script>
+
+    <noscript>
+        <div style="display:none;">
+            <img src="//pixel.quantserve.com/pixel/p-X8qQTxcj3K_W5.gif" border="0" height="1" width="1" alt="Quantcast"/>
+        </div>
+    </noscript>
+    <!-- End Quantcast tag -->
+
+    <!-- START Parse.ly Include: Standard -->
+    <div id="parsely-root" style="display: none">
+      <div id="parsely-cfg" data-parsely-site="readwrite.com"></div>
+    </div>
+    <script>
+    (function(s, p, d) {
+      var h=d.location.protocol, i=p+"-"+s,
+          e=d.getElementById(i), r=d.getElementById(p+"-root"),
+          u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+          :"static."+p+".com";
+      if (e) return;
+      e = d.createElement(s); e.id = i; e.async = true;
+      e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+    })("script", "parsely", document);
+    </script>
+    <!-- END Parse.ly Include -->
+
+<!--- start SITE-783 - page tracking --->
+    <script>
+        var saytracker = {};
+        saytracker.page_tracking = '';
+        saytracker.accessTracker = function () {
+
+            // cachebuster, if required
+            var _randomNum = (new Date()).getTime();
+            var _pt = '';
+
+                                        _pt = _pt;
+            
+            // here are three instances of cachebusters in the tracking tag examples
+	    	_pt = _pt.replace( '[CACHEBUSTER]', _randomNum ).replace( '%%SSRANDOM%%', _randomNum ).replace( '[timestamp]', _randomNum );
+
+            saytracker.page_tracking = _pt;
+            return saytracker.page_tracking;
+        }
+
+        function doTrackIt () {
+            var tracker = document.createElement('img');
+            // image props
+            tracker.setAttribute('id', 'AD_TRACKER-1');
+            tracker.setAttribute('width', '1px');
+            tracker.setAttribute('height', '1px');
+	        tracker.setAttribute('border', '0');
+            tracker.setAttribute('visibility', 'hidden');
+            tracker.setAttribute('type', 'image/gif');
+            var _pageTrack = saytracker.accessTracker();
+            tracker.src = _pageTrack;
+            // write tracking img to page
+            document.getElementById('BF_WIDGET_1').appendChild(tracker);
+        }
+
+        $(document).ready(function(){
+            doTrackIt();
+        });
+    </script>
+<!--- end SITE-783 - page tracking --->
+
+
+
+
+
+
+
+</body>
+
+
+</html>

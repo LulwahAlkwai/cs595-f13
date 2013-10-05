@@ -1,0 +1,4327 @@
+<!DOCTYPE html>
+<html class='v2' dir='ltr'>
+<head>
+<meta content='width=1100' name='viewport'/>
+<meta content='text/html; charset=UTF-8' http-equiv='Content-Type'/>
+<script type="text/javascript">(function() { var b=window,e="jstiming",g="tick";(function(){function d(a){this.t={};this.tick=function(a,d,c){c=void 0!=c?c:(new Date).getTime();this.t[a]=[c,d]};this[g]("start",null,a)}var a=new d;b.jstiming={Timer:d,load:a};if(b.performance&&b.performance.timing){var a=b.performance.timing,c=b[e].load,f=a.navigationStart,a=a.responseStart;0<f&&a>=f&&(c[g]("_wtsrt",void 0,f),c[g]("wtsrt_","_wtsrt",a),c[g]("tbsd_","wtsrt_"))}try{a=null,b.chrome&&b.chrome.csi&&(a=Math.floor(b.chrome.csi().pageT),c&&0<f&&(c[g]("_tbnd",void 0,b.chrome.csi().startE),
+c[g]("tbnd_","_tbnd",f))),null==a&&b.gtbExternal&&(a=b.gtbExternal.pageT()),null==a&&b.external&&(a=b.external.pageT,c&&0<f&&(c[g]("_tbnd",void 0,b.external.startE),c[g]("tbnd_","_tbnd",f))),a&&(b[e].pt=a)}catch(l){}})();b.tickAboveFold=function(d){var a=0;if(d.offsetParent){do a+=d.offsetTop;while(d=d.offsetParent)}d=a;750>=d&&b[e].load[g]("aft")};var h=!1;function k(){h||(h=!0,b[e].load[g]("firstScrollTime"))}b.addEventListener?b.addEventListener("scroll",k,!1):b.attachEvent("onscroll",k);
+ })();</script>
+<meta content='blogger' name='generator'/>
+<link href='http://blog.computationalcomplexity.org/favicon.ico' rel='icon' type='image/x-icon'/>
+<link href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html' rel='canonical'/>
+<link rel="alternate" type="application/atom+xml" title="Computational Complexity - Atom" href="http://blog.computationalcomplexity.org/feeds/posts/default" />
+<link rel="alternate" type="application/rss+xml" title="Computational Complexity - RSS" href="http://blog.computationalcomplexity.org/feeds/posts/default?alt=rss" />
+<link rel="service.post" type="application/atom+xml" title="Computational Complexity - Atom" href="http://www.blogger.com/feeds/3722233/posts/default" />
+
+<link rel="alternate" type="application/atom+xml" title="Computational Complexity - Atom" href="http://blog.computationalcomplexity.org/feeds/7096326964481296368/comments/default" />
+<!--[if IE]><script type="text/javascript" src="//www.blogger.com/static/v1/jsbin/4163410827-ieretrofit.js"></script>
+<![endif]-->
+<!--[if IE]> <script> (function() { var html5 = ("abbr,article,aside,audio,canvas,datalist,details," + "figure,footer,header,hgroup,mark,menu,meter,nav,output," + "progress,section,time,video").split(','); for (var i = 0; i < html5.length; i++) { document.createElement(html5[i]); } try { document.execCommand('BackgroundImageCache', false, true); } catch(e) {} })(); </script> <![endif]-->
+<title>Computational Complexity: When Lance was 10 years old..</title>
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/static/v1/widgets/2220499320-widget_css_2_bundle.css' />
+<link type='text/css' rel='stylesheet' href='//www.google.com/uds/css/gsearch.css' />
+<link type='text/css' rel='stylesheet' href='//www.blogger.com/dyn-css/authorization.css?targetBlogID=3722233&amp;zx=512c3518-9712-45c6-b2b1-8f4e8c08c4d0&quot;/&gt;
+' />
+<style id='page-skin-1' type='text/css'><!--
+/*
+-----------------------------------------------
+Blogger Template Style
+Name:     Awesome Inc.
+Designer: Tina Chen
+URL:      tinachen.org
+----------------------------------------------- */
+/* Variable definitions
+====================
+<Variable name="keycolor" description="Main Color" type="color" default="#ffffff"/>
+<Group description="Page" selector="body">
+<Variable name="body.font" description="Font" type="font"
+default="normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="body.background.color" description="Background Color" type="color" default="#000000"/>
+<Variable name="body.text.color" description="Text Color" type="color" default="#ffffff"/>
+</Group>
+<Group description="Links" selector=".main-inner">
+<Variable name="link.color" description="Link Color" type="color" default="#888888"/>
+<Variable name="link.visited.color" description="Visited Color" type="color" default="#444444"/>
+<Variable name="link.hover.color" description="Hover Color" type="color" default="#cccccc"/>
+</Group>
+<Group description="Blog Title" selector=".header h1">
+<Variable name="header.font" description="Title Font" type="font"
+default="normal bold 40px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="header.text.color" description="Title Color" type="color" default="#191919" />
+<Variable name="header.background.color" description="Header Background" type="color" default="transparent" />
+</Group>
+<Group description="Blog Description" selector=".header .description">
+<Variable name="description.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="description.text.color" description="Text Color" type="color"
+default="#191919" />
+</Group>
+<Group description="Tabs Text" selector=".tabs-inner .widget li a">
+<Variable name="tabs.font" description="Font" type="font"
+default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="tabs.text.color" description="Text Color" type="color" default="#191919"/>
+<Variable name="tabs.selected.text.color" description="Selected Color" type="color" default="#333333"/>
+</Group>
+<Group description="Tabs Background" selector=".tabs-outer .PageList">
+<Variable name="tabs.background.color" description="Background Color" type="color" default="#141414"/>
+<Variable name="tabs.selected.background.color" description="Selected Color" type="color" default="#444444"/>
+<Variable name="tabs.border.color" description="Border Color" type="color" default="#ff0000"/>
+</Group>
+<Group description="Date Header" selector=".main-inner .widget h2.date-header, .main-inner .widget h2.date-header span">
+<Variable name="date.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="date.text.color" description="Text Color" type="color" default="#666666"/>
+<Variable name="date.border.color" description="Border Color" type="color" default="#ff0000"/>
+</Group>
+<Group description="Post Title" selector="h3.post-title, h4, h3.post-title a">
+<Variable name="post.title.font" description="Font" type="font"
+default="normal bold 22px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="post.title.text.color" description="Text Color" type="color" default="#191919"/>
+</Group>
+<Group description="Post Background" selector=".post">
+<Variable name="post.background.color" description="Background Color" type="color" default="#ccff99" />
+<Variable name="post.border.color" description="Border Color" type="color" default="#ff0000" />
+<Variable name="post.border.bevel.color" description="Bevel Color" type="color" default="#ff0000"/>
+</Group>
+<Group description="Gadget Title" selector="h2">
+<Variable name="widget.title.font" description="Font" type="font"
+default="normal bold 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.title.text.color" description="Text Color" type="color" default="#191919"/>
+</Group>
+<Group description="Gadget Text" selector=".sidebar .widget">
+<Variable name="widget.font" description="Font" type="font"
+default="normal normal 14px Arial, Tahoma, Helvetica, FreeSans, sans-serif"/>
+<Variable name="widget.text.color" description="Text Color" type="color" default="#191919"/>
+<Variable name="widget.alternate.text.color" description="Alternate Color" type="color" default="#666666"/>
+</Group>
+<Group description="Gadget Links" selector=".sidebar .widget">
+<Variable name="widget.link.color" description="Link Color" type="color" default="#14196a"/>
+<Variable name="widget.link.visited.color" description="Visited Color" type="color" default="#1d259f"/>
+<Variable name="widget.link.hover.color" description="Hover Color" type="color" default="#9e88ca"/>
+</Group>
+<Group description="Gadget Background" selector=".sidebar .widget">
+<Variable name="widget.background.color" description="Background Color" type="color" default="#141414"/>
+<Variable name="widget.border.color" description="Border Color" type="color" default="#222222"/>
+<Variable name="widget.border.bevel.color" description="Bevel Color" type="color" default="#000000"/>
+</Group>
+<Group description="Sidebar Background" selector=".column-left-inner .column-right-inner">
+<Variable name="widget.outer.background.color" description="Background Color" type="color" default="transparent" />
+</Group>
+<Group description="Images" selector=".main-inner">
+<Variable name="image.background.color" description="Background Color" type="color" default="transparent"/>
+<Variable name="image.border.color" description="Border Color" type="color" default="transparent"/>
+</Group>
+<Group description="Feed" selector=".blog-feeds">
+<Variable name="feed.text.color" description="Text Color" type="color" default="#191919"/>
+</Group>
+<Group description="Feed Links" selector=".blog-feeds">
+<Variable name="feed.link.color" description="Link Color" type="color" default="#14196a"/>
+<Variable name="feed.link.visited.color" description="Visited Color" type="color" default="#1d259f"/>
+<Variable name="feed.link.hover.color" description="Hover Color" type="color" default="#9e88ca"/>
+</Group>
+<Group description="Pager" selector=".blog-pager">
+<Variable name="pager.background.color" description="Background Color" type="color" default="#ccff99" />
+</Group>
+<Group description="Footer" selector=".footer-outer">
+<Variable name="footer.background.color" description="Background Color" type="color" default="#ccff99" />
+<Variable name="footer.text.color" description="Text Color" type="color" default="#191919" />
+</Group>
+<Variable name="title.shadow.spread" description="Title Shadow" type="length" default="-1px"/>
+<Variable name="body.background" description="Body Background" type="background"
+color="#ccff99"
+default="$(color) none repeat scroll top left"/>
+<Variable name="body.background.gradient.cap" description="Body Gradient Cap" type="url"
+default="none"/>
+<Variable name="body.background.size" description="Body Background Size" type="string" default="auto"/>
+<Variable name="tabs.background.gradient" description="Tabs Background Gradient" type="url"
+default="none"/>
+<Variable name="header.background.gradient" description="Header Background Gradient" type="url" default="none" />
+<Variable name="header.padding.top" description="Header Top Padding" type="length" default="22px" />
+<Variable name="header.margin.top" description="Header Top Margin" type="length" default="0" />
+<Variable name="header.margin.bottom" description="Header Bottom Margin" type="length" default="0" />
+<Variable name="widget.padding.top" description="Widget Padding Top" type="length" default="8px" />
+<Variable name="widget.padding.side" description="Widget Padding Side" type="length" default="15px" />
+<Variable name="widget.outer.margin.top" description="Widget Top Margin" type="length" default="0" />
+<Variable name="widget.outer.background.gradient" description="Gradient" type="url" default="none" />
+<Variable name="widget.border.radius" description="Gadget Border Radius" type="length" default="0" />
+<Variable name="outer.shadow.spread" description="Outer Shadow Size" type="length" default="0" />
+<Variable name="date.header.border.radius.top" description="Date Header Border Radius Top" type="length" default="0" />
+<Variable name="date.header.position" description="Date Header Position" type="length" default="15px" />
+<Variable name="date.space" description="Date Space" type="length" default="30px" />
+<Variable name="date.position" description="Date Float" type="string" default="static" />
+<Variable name="date.padding.bottom" description="Date Padding Bottom" type="length" default="0" />
+<Variable name="date.border.size" description="Date Border Size" type="length" default="0" />
+<Variable name="date.background" description="Date Background" type="background" color="transparent"
+default="$(color) none no-repeat scroll top left" />
+<Variable name="date.first.border.radius.top" description="Date First top radius" type="length" default="5px" />
+<Variable name="date.last.space.bottom" description="Date Last Space Bottom" type="length"
+default="20px" />
+<Variable name="date.last.border.radius.bottom" description="Date Last bottom radius" type="length" default="5px" />
+<Variable name="post.first.padding.top" description="First Post Padding Top" type="length" default="0" />
+<Variable name="image.shadow.spread" description="Image Shadow Size" type="length" default="0"/>
+<Variable name="image.border.radius" description="Image Border Radius" type="length" default="0"/>
+<Variable name="separator.outdent" description="Separator Outdent" type="length" default="15px" />
+<Variable name="title.separator.border.size" description="Widget Title Border Size" type="length" default="1px" />
+<Variable name="list.separator.border.size" description="List Separator Border Size" type="length" default="1px" />
+<Variable name="shadow.spread" description="Shadow Size" type="length" default="0"/>
+<Variable name="startSide" description="Side where text starts in blog language" type="automatic" default="left"/>
+<Variable name="endSide" description="Side where text ends in blog language" type="automatic" default="right"/>
+<Variable name="date.side" description="Side where date header is placed" type="string" default="right"/>
+<Variable name="pager.border.radius.top" description="Pager Border Top Radius" type="length" default="5px" />
+<Variable name="pager.space.top" description="Pager Top Space" type="length" default="1em" />
+<Variable name="footer.background.gradient" description="Background Gradient" type="url" default="none" />
+<Variable name="mobile.background.size" description="Mobile Background Size" type="string"
+default="auto"/>
+<Variable name="mobile.background.overlay" description="Mobile Background Overlay" type="string"
+default="transparent none repeat scroll top left"/>
+<Variable name="mobile.button.color" description="Mobile Button Color" type="color" default="#ffffff" />
+*/
+/* Content
+----------------------------------------------- */
+body {
+font: normal normal 14px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #191919;
+background: #ccff99 none repeat scroll top left;
+}
+html body .content-outer {
+min-width: 0;
+max-width: 100%;
+width: 100%;
+}
+a:link {
+text-decoration: none;
+color: #14196a;
+}
+a:visited {
+text-decoration: none;
+color: #1d259f;
+}
+a:hover {
+text-decoration: underline;
+color: #9e88ca;
+}
+.body-fauxcolumn-outer .cap-top {
+position: absolute;
+z-index: 1;
+height: 276px;
+width: 100%;
+background: transparent none repeat-x scroll top left;
+_background-image: none;
+}
+/* Columns
+----------------------------------------------- */
+.content-inner {
+padding: 0;
+}
+.header-inner .section {
+margin: 0 16px;
+}
+.tabs-inner .section {
+margin: 0 16px;
+}
+.main-inner {
+padding-top: 30px;
+}
+.main-inner .column-center-inner,
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+padding: 0 5px;
+}
+*+html body .main-inner .column-center-inner {
+margin-top: -30px;
+}
+#layout .main-inner .column-center-inner {
+margin-top: 0;
+}
+/* Header
+----------------------------------------------- */
+.header-outer {
+margin: 0 0 0 0;
+background: transparent none repeat scroll 0 0;
+}
+.Header h1 {
+font: normal normal 48px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #0c0c0c;
+text-shadow: 0 0 -1px #000000;
+}
+.Header h1 a {
+color: #0c0c0c;
+}
+.Header .description {
+font: normal bold 20px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #908d6a;
+}
+.header-inner .Header .titlewrapper,
+.header-inner .Header .descriptionwrapper {
+padding-left: 0;
+padding-right: 0;
+margin-bottom: 0;
+}
+.header-inner .Header .titlewrapper {
+padding-top: 22px;
+}
+/* Tabs
+----------------------------------------------- */
+.tabs-outer {
+overflow: hidden;
+position: relative;
+background: #ccff99 url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat scroll 0 0;
+}
+#layout .tabs-outer {
+overflow: visible;
+}
+.tabs-cap-top, .tabs-cap-bottom {
+position: absolute;
+width: 100%;
+border-top: 1px solid #908d6a;
+}
+.tabs-cap-bottom {
+bottom: 0;
+}
+.tabs-inner .widget li a {
+display: inline-block;
+margin: 0;
+padding: .6em 1.5em;
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #333333;
+border-top: 1px solid #908d6a;
+border-bottom: 1px solid #908d6a;
+border-left: 1px solid #908d6a;
+height: 16px;
+line-height: 16px;
+}
+.tabs-inner .widget li:last-child a {
+border-right: 1px solid #908d6a;
+}
+.tabs-inner .widget li.selected a, .tabs-inner .widget li a:hover {
+background: #63704b url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat-x scroll 0 -100px;
+color: #ffffff;
+}
+/* Headings
+----------------------------------------------- */
+h2 {
+font: normal bold 14px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #191919;
+}
+/* Widgets
+----------------------------------------------- */
+.main-inner .section {
+margin: 0 27px;
+padding: 0;
+}
+.main-inner .column-left-outer,
+.main-inner .column-right-outer {
+margin-top: 0;
+}
+#layout .main-inner .column-left-outer,
+#layout .main-inner .column-right-outer {
+margin-top: 0;
+}
+.main-inner .column-left-inner,
+.main-inner .column-right-inner {
+background: transparent none repeat 0 0;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+box-shadow: 0 0 0 rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+#layout .main-inner .column-left-inner,
+#layout .main-inner .column-right-inner {
+margin-top: 0;
+}
+.sidebar .widget {
+font: normal normal 14px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #191919;
+}
+.sidebar .widget a:link {
+color: #14196a;
+}
+.sidebar .widget a:visited {
+color: #1d259f;
+}
+.sidebar .widget a:hover {
+color: #9e88ca;
+}
+.sidebar .widget h2 {
+text-shadow: 0 0 -1px #000000;
+}
+.main-inner .widget {
+background-color: #ccff99;
+border: 1px solid #ff0000;
+padding: 0 15px 15px;
+margin: 20px -16px;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+.main-inner .widget h2 {
+margin: 0 -0;
+padding: .6em 0 .5em;
+border-bottom: 1px solid transparent;
+}
+.footer-inner .widget h2 {
+padding: 0 0 .4em;
+border-bottom: 1px solid transparent;
+}
+.main-inner .widget h2 + div, .footer-inner .widget h2 + div {
+border-top: 1px solid #ff0000;
+padding-top: 8px;
+}
+.main-inner .widget .widget-content {
+margin: 0 -0;
+padding: 7px 0 0;
+}
+.main-inner .widget ul, .main-inner .widget #ArchiveList ul.flat {
+margin: -8px -15px 0;
+padding: 0;
+list-style: none;
+}
+.main-inner .widget #ArchiveList {
+margin: -8px 0 0;
+}
+.main-inner .widget ul li, .main-inner .widget #ArchiveList ul.flat li {
+padding: .5em 15px;
+text-indent: 0;
+color: #666666;
+border-top: 0 solid #ff0000;
+border-bottom: 1px solid transparent;
+}
+.main-inner .widget #ArchiveList ul li {
+padding-top: .25em;
+padding-bottom: .25em;
+}
+.main-inner .widget ul li:first-child, .main-inner .widget #ArchiveList ul.flat li:first-child {
+border-top: none;
+}
+.main-inner .widget ul li:last-child, .main-inner .widget #ArchiveList ul.flat li:last-child {
+border-bottom: none;
+}
+.post-body {
+position: relative;
+}
+.main-inner .widget .post-body ul {
+padding: 0 2.5em;
+margin: .5em 0;
+list-style: disc;
+}
+.main-inner .widget .post-body ul li {
+padding: 0.25em 0;
+margin-bottom: .25em;
+color: #191919;
+border: none;
+}
+.footer-inner .widget ul {
+padding: 0;
+list-style: none;
+}
+.widget .zippy {
+color: #666666;
+}
+/* Posts
+----------------------------------------------- */
+body .main-inner .Blog {
+padding: 0;
+margin-bottom: 1em;
+background-color: transparent;
+border: none;
+-moz-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+-webkit-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+-goog-ms-box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+}
+.main-inner .section:last-child .Blog:last-child {
+padding: 0;
+margin-bottom: 1em;
+}
+.main-inner .widget h2.date-header {
+margin: 0 -15px 1px;
+padding: 0 0 0 0;
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+color: #908d6a;
+background: transparent none no-repeat scroll top left;
+border-top: 0 solid #ff0000;
+border-bottom: 1px solid transparent;
+-moz-border-radius-topleft: 0;
+-moz-border-radius-topright: 0;
+-webkit-border-top-left-radius: 0;
+-webkit-border-top-right-radius: 0;
+border-top-left-radius: 0;
+border-top-right-radius: 0;
+position: static;
+bottom: 100%;
+right: 15px;
+text-shadow: 0 0 -1px #000000;
+}
+.main-inner .widget h2.date-header span {
+font: normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif;
+display: block;
+padding: .5em 15px;
+border-left: 0 solid #ff0000;
+border-right: 0 solid #ff0000;
+}
+.date-outer {
+position: relative;
+margin: 30px 0 20px;
+padding: 0 15px;
+background-color: #ccff99;
+border: 1px solid #cc0000;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+}
+.date-outer:first-child {
+margin-top: 0;
+}
+.date-outer:last-child {
+margin-bottom: 20px;
+-moz-border-radius-bottomleft: 5px;
+-moz-border-radius-bottomright: 5px;
+-webkit-border-bottom-left-radius: 5px;
+-webkit-border-bottom-right-radius: 5px;
+-goog-ms-border-bottom-left-radius: 5px;
+-goog-ms-border-bottom-right-radius: 5px;
+border-bottom-left-radius: 5px;
+border-bottom-right-radius: 5px;
+}
+.date-posts {
+margin: 0 -0;
+padding: 0 0;
+clear: both;
+}
+.post-outer, .inline-ad {
+border-top: 1px solid #ff0000;
+margin: 0 -0;
+padding: 15px 0;
+}
+.post-outer {
+padding-bottom: 10px;
+}
+.post-outer:first-child {
+padding-top: 0;
+border-top: none;
+}
+.post-outer:last-child, .inline-ad:last-child {
+border-bottom: none;
+}
+.post-body {
+position: relative;
+}
+.post-body img {
+padding: 8px;
+background: #ffffff;
+border: 1px solid #cccccc;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+border-radius: 5px;
+}
+h3.post-title, h4 {
+font: normal normal 22px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #14196a;
+}
+h3.post-title a {
+font: normal normal 22px Georgia, Utopia, 'Palatino Linotype', Palatino, serif;
+color: #14196a;
+}
+h3.post-title a:hover {
+color: #9e88ca;
+text-decoration: underline;
+}
+.post-header {
+margin: 0 0 1em;
+}
+.post-body {
+line-height: 1.4;
+}
+.post-outer h2 {
+color: #191919;
+}
+.post-footer {
+margin: 1.5em 0 0;
+}
+#blog-pager {
+padding: 15px;
+font-size: 120%;
+background-color: #ccff99;
+border: 1px solid #ff0000;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-moz-border-radius: 5px;
+-webkit-border-radius: 5px;
+-goog-ms-border-radius: 5px;
+border-radius: 5px;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius-topright: 5px;
+margin-top: 1em;
+}
+.blog-feeds, .post-feeds {
+margin: 1em 0;
+text-align: center;
+color: #191919;
+}
+.blog-feeds a, .post-feeds a {
+color: #14196a;
+}
+.blog-feeds a:visited, .post-feeds a:visited {
+color: #1d259f;
+}
+.blog-feeds a:hover, .post-feeds a:hover {
+color: #9e88ca;
+}
+.post-outer .comments {
+margin-top: 2em;
+}
+/* Comments
+----------------------------------------------- */
+.comments .comments-content .icon.blog-author {
+background-repeat: no-repeat;
+background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAASCAYAAABWzo5XAAAAAXNSR0IArs4c6QAAAAZiS0dEAP8A/wD/oL2nkwAAAAlwSFlzAAALEgAACxIB0t1+/AAAAAd0SU1FB9sLFwMeCjjhcOMAAAD+SURBVDjLtZSvTgNBEIe/WRRnm3U8RC1neQdsm1zSBIU9VVF1FkUguQQsD9ITmD7ECZIJSE4OZo9stoVjC/zc7ky+zH9hXwVwDpTAWWLrgS3QAe8AZgaAJI5zYAmc8r0G4AHYHQKVwII8PZrZFsBFkeRCABYiMh9BRUhnSkPTNCtVXYXURi1FpBDgArj8QU1eVXUzfnjv7yP7kwu1mYrkWlU33vs1QNu2qU8pwN0UpKoqokjWwCztrMuBhEhmh8bD5UDqur75asbcX0BGUB9/HAMB+r32hznJgXy2v0sGLBcyAJ1EK3LFcbo1s91JeLwAbwGYu7TP/3ZGfnXYPgAVNngtqatUNgAAAABJRU5ErkJggg==);
+}
+.comments .comments-content .loadmore a {
+border-top: 1px solid #908d6a;
+border-bottom: 1px solid #908d6a;
+}
+.comments .continue {
+border-top: 2px solid #908d6a;
+}
+/* Footer
+----------------------------------------------- */
+.footer-outer {
+margin: -20px 0 -1px;
+padding: 20px 0 0;
+color: #191919;
+overflow: hidden;
+}
+.footer-fauxborder-left {
+border-top: 1px solid #ff0000;
+background: #ccff99 none repeat scroll 0 0;
+-moz-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-webkit-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+-goog-ms-box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+box-shadow: 0 0 20px rgba(0, 0, 0, .2);
+margin: 0 -20px;
+}
+/* Mobile
+----------------------------------------------- */
+body.mobile {
+background-size: auto;
+}
+.mobile .body-fauxcolumn-outer {
+background: transparent none repeat scroll top left;
+}
+*+html body.mobile .main-inner .column-center-inner {
+margin-top: 0;
+}
+.mobile .main-inner .widget {
+padding: 0 0 15px;
+}
+.mobile .main-inner .widget h2 + div,
+.mobile .footer-inner .widget h2 + div {
+border-top: none;
+padding-top: 0;
+}
+.mobile .footer-inner .widget h2 {
+padding: 0.5em 0;
+border-bottom: none;
+}
+.mobile .main-inner .widget .widget-content {
+margin: 0;
+padding: 7px 0 0;
+}
+.mobile .main-inner .widget ul,
+.mobile .main-inner .widget #ArchiveList ul.flat {
+margin: 0 -15px 0;
+}
+.mobile .main-inner .widget h2.date-header {
+right: 0;
+}
+.mobile .date-header span {
+padding: 0.4em 0;
+}
+.mobile .date-outer:first-child {
+margin-bottom: 0;
+border: 1px solid #cc0000;
+-moz-border-radius-topleft: 5px;
+-moz-border-radius-topright: 5px;
+-webkit-border-top-left-radius: 5px;
+-webkit-border-top-right-radius: 5px;
+-goog-ms-border-top-left-radius: 5px;
+-goog-ms-border-top-right-radius: 5px;
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.mobile .date-outer {
+border-color: #cc0000;
+border-width: 0 1px 1px;
+}
+.mobile .date-outer:last-child {
+margin-bottom: 0;
+}
+.mobile .main-inner {
+padding: 0;
+}
+.mobile .header-inner .section {
+margin: 0;
+}
+.mobile .post-outer, .mobile .inline-ad {
+padding: 5px 0;
+}
+.mobile .tabs-inner .section {
+margin: 0 10px;
+}
+.mobile .main-inner .widget h2 {
+margin: 0;
+padding: 0;
+}
+.mobile .main-inner .widget h2.date-header span {
+padding: 0;
+}
+.mobile .main-inner .widget .widget-content {
+margin: 0;
+padding: 7px 0 0;
+}
+.mobile #blog-pager {
+border: 1px solid transparent;
+background: #ccff99 none repeat scroll 0 0;
+}
+.mobile .main-inner .column-left-inner,
+.mobile .main-inner .column-right-inner {
+background: transparent none repeat 0 0;
+-moz-box-shadow: none;
+-webkit-box-shadow: none;
+-goog-ms-box-shadow: none;
+box-shadow: none;
+}
+.mobile .date-posts {
+margin: 0;
+padding: 0;
+}
+.mobile .footer-fauxborder-left {
+margin: 0;
+border-top: inherit;
+}
+.mobile .main-inner .section:last-child .Blog:last-child {
+margin-bottom: 0;
+}
+.mobile-index-contents {
+color: #191919;
+}
+.mobile .mobile-link-button {
+background: #14196a url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png) repeat scroll 0 0;
+}
+.mobile-link-button a:link, .mobile-link-button a:visited {
+color: #ffffff;
+}
+.mobile .tabs-inner .PageList .widget-content {
+background: transparent;
+border-top: 1px solid;
+border-color: #908d6a;
+color: #333333;
+}
+.mobile .tabs-inner .PageList .widget-content .pagelist-arrow {
+border-left: 1px solid #908d6a;
+}
+
+--></style>
+<style id='template-skin-1' type='text/css'><!--
+body {
+min-width: 1000px;
+}
+.content-outer, .content-fauxcolumn-outer, .region-inner {
+min-width: 1000px;
+max-width: 1000px;
+_width: 1000px;
+}
+.main-inner .columns {
+padding-left: 360px;
+padding-right: 0px;
+}
+.main-inner .fauxcolumn-center-outer {
+left: 360px;
+right: 0px;
+/* IE6 does not respect left and right together */
+_width: expression(this.parentNode.offsetWidth -
+parseInt("360px") -
+parseInt("0px") + 'px');
+}
+.main-inner .fauxcolumn-left-outer {
+width: 360px;
+}
+.main-inner .fauxcolumn-right-outer {
+width: 0px;
+}
+.main-inner .column-left-outer {
+width: 360px;
+right: 100%;
+margin-left: -360px;
+}
+.main-inner .column-right-outer {
+width: 0px;
+margin-right: -0px;
+}
+#layout {
+min-width: 0;
+}
+#layout .content-outer {
+min-width: 0;
+width: 800px;
+}
+#layout .region-inner {
+min-width: 0;
+width: auto;
+}
+--></style>
+<script type="text/javascript">var a=navigator,b="userAgent",c="indexOf",f="&m=1",g="(^|&)m=",h="?",k="?m=1";function l(){var d=window.location.href,e=d.split(h);switch(e.length){case 1:return d+k;case 2:return 0<=e[1].search(g)?null:d+f;default:return null}}if(-1!=a[b][c]("Mobile")&&-1!=a[b][c]("WebKit")&&-1==a[b][c]("iPad")||-1!=a[b][c]("Opera Mini")||-1!=a[b][c]("IEMobile")){var m=l();m&&window.location.replace(m)};
+</script><script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('headEnd');
+</script></head>
+<body class='loading'>
+<div class='navbar section' id='navbar'><div class='widget Navbar' id='Navbar1'><script type="text/javascript">
+    function setAttributeOnload(object, attribute, val) {
+      if(window.addEventListener) {
+        window.addEventListener('load',
+          function(){ object[attribute] = val; }, false);
+      } else {
+        window.attachEvent('onload', function(){ object[attribute] = val; });
+      }
+    }
+  </script>
+<div id="navbar-iframe-container"></div>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type="text/javascript">
+        gapi.load("iframes-styles-bubble", function() {
+          if (window.iframes && iframes.open) {
+            iframes.open(
+                '//www.blogger.com/navbar.g?targetBlogID\0753722233\46blogName\75Computational+Complexity\46publishMode\75PUBLISH_MODE_HOSTED\46navbarType\75LIGHT\46layoutType\75LAYOUTS\46searchRoot\75http://blog.computationalcomplexity.org/search\46blogLocale\75en\46v\0752\46homepageUrl\75http://blog.computationalcomplexity.org/\46targetPostID\0757096326964481296368\46blogPostOrPageUrl\75http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html\46blogFollowUrl\75https://plus.google.com/101693130490639305932\46vt\0753161944145963470253',
+                {
+                  container: "navbar-iframe-container",
+                  id: "navbar-iframe"
+                },
+                {
+                });
+          }
+        });
+      </script><script type="text/javascript">
+(function() {
+var script = document.createElement('script');
+script.type = 'text/javascript';
+script.src = '//pagead2.googlesyndication.com/pagead/js/google_top_exp.js';
+var head = document.getElementsByTagName('head')[0];
+if (head) {
+head.appendChild(script);
+}})();
+</script>
+</div></div>
+<div class='body-fauxcolumns'>
+<div class='fauxcolumn-outer body-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content'>
+<div class='content-fauxcolumns'>
+<div class='fauxcolumn-outer content-fauxcolumn-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<div class='content-outer'>
+<div class='content-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left content-fauxborder-left'>
+<div class='fauxborder-right content-fauxborder-right'></div>
+<div class='content-inner'>
+<header>
+<div class='header-outer'>
+<div class='header-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left header-fauxborder-left'>
+<div class='fauxborder-right header-fauxborder-right'></div>
+<div class='region-inner header-inner'>
+<div class='header section' id='header'><div class='widget Header' id='Header1'>
+<div id='header-inner'>
+<div class='titlewrapper'>
+<h1 class='title'>
+<a href='http://blog.computationalcomplexity.org/'>Computational Complexity</a>
+</h1>
+</div>
+<div class='descriptionwrapper'>
+<p class='description'><span>Computational Complexity and other fun stuff in math and computer science from Lance Fortnow and Bill Gasarch</span></p>
+</div>
+</div>
+</div></div>
+</div>
+</div>
+<div class='header-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</header>
+<div class='tabs-outer'>
+<div class='tabs-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left tabs-fauxborder-left'>
+<div class='fauxborder-right tabs-fauxborder-right'></div>
+<div class='region-inner tabs-inner'>
+<div class='tabs section' id='crosscol'></div>
+<div class='tabs section' id='crosscol-overflow'></div>
+</div>
+</div>
+<div class='tabs-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='main-outer'>
+<div class='main-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left main-fauxborder-left'>
+<div class='fauxborder-right main-fauxborder-right'></div>
+<div class='region-inner main-inner'>
+<div class='columns fauxcolumns'>
+<div class='fauxcolumn-outer fauxcolumn-center-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-left-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<div class='fauxcolumn-outer fauxcolumn-right-outer'>
+<div class='cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left'>
+<div class='fauxborder-right'></div>
+<div class='fauxcolumn-inner'>
+</div>
+</div>
+<div class='cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<!-- corrects IE6 width calculation -->
+<div class='columns-inner'>
+<div class='column-center-outer'>
+<div class='column-center-inner'>
+<div class='main section' id='main'><div class='widget Blog' id='Blog1'>
+<div class='blog-posts hfeed'>
+<!-- google_ad_section_start(name=default) -->
+
+          <div class="date-outer">
+        
+<h2 class='date-header'><span>Monday, August 19, 2013</span></h2>
+
+          <div class="date-posts">
+        
+<div class='post-outer'>
+<div class='post hentry' itemprop='blogPost' itemscope='itemscope' itemtype='http://schema.org/BlogPosting'>
+<meta content='3722233' itemprop='blogId'/>
+<meta content='7096326964481296368' itemprop='postId'/>
+<a name='7096326964481296368'></a>
+<h3 class='post-title entry-title' itemprop='name'>
+When Lance was 10 years old..
+</h3>
+<div class='post-header'>
+<div class='post-header-line-1'></div>
+</div>
+<div class='post-body entry-content' id='post-body-7096326964481296368' itemprop='description articleBody'>
+In honor of Lance's 50th birthday I ask the following: When Lance was 10 years old which of the following were true?<br />
+(Disclosure- some of the below are from a birthday card.)<br />
+<br />
+<ol><li> A REMOTE meant a secluded spot off the beaten path.<br />
+<li> CABLE was something that supported a bridge.<br />
+<li> A VIDEO GAME was trying to make out what fuzzy images were on a snowy black and white 10 inch TV screen.<br />
+<li> A CELL PHONE was what you used to make one phone call from jail.<br />
+<li> A CALCULATOR was the accountant who did your parents taxes.<br />
+<li> AN AIRBAG was someone who talked too much.<br />
+<li> DIGITAL COMPUTING was counting on your fingers.<br />
+<li> HIGH SPEED ACCESS was an on-ramp to the freeway.<br />
+<li> SURFING was something done on a board in the ocean.<br />
+<li> A BIRTHDAY was something Lance looked forward to.<br />
+<li> A MOUSE was something you didn't want in your house.<br />
+<li> A SPAM ASSASSIN was someone who killed people by giving them poisoned spam.<br />
+<li> A WEB was what spiders wove.<br />
+<li> A BUG was what spiders ate.<br />
+<li> AMAZON meant where some big rain forest is (smaller now).<br />
+<li> GOOGLE was an obscure term used by some math folks for the number 10<sup>100</sup>.<br />
+<li> BING had no meaning.<br />
+<li> APPLE was either a fruit or the record company founded by the Beatles.  (There really WAS a legal name-issue when Apple-the-computer-company got into music see <a href="http://en.wikipedia.org/wiki/Apple_Corps_v_Apple_Computer">here</a> .)<br />
+<li> It was impossible to have 10,000 friends.<br />
+<li> There were only three Network channels and a few local ones.<br />
+<li> Music was on Vinyl records.<br />
+<li> You went to the bathroom during commercials.<br />
+<li> Johnny Carson joked that couples had sex during commercials on his show. (Ask your grandparents who Johnny Carson was, what commercials were, and what sex was.)<br />
+<li> People read books written on paper.<br />
+<li> Computer Science was not available as a major at most schools.<br />
+<li> When people said <i>you sound like a broken record</i> they actually knew what a broken record sounded like.<br />
+<li> People really would DIAL a phone number.<br />
+<li> People would have to actually stop at toll booths instead of using easy-pass.<br />
+<li> Long running TV shows would have one (or at most two) Christmas episodes since there were no arcs, hence an episode could be inserted into any season at any time. Contrast: M*A*S*H in its 11 seasons and 256 episodes had TWO Christmas episodes, where as 30 ROCK its 7 seasons and 131 episodes had FOUR Christmas episodes.  (This may be THE least important consequence of the new technology.)<br />
+<li> There were bar room fights over trivia since you couldn't just look it up on Google. The Guinness Book of World Records was supposed to cut down on bar fights, but it didn't quite work.<br />
+<li> People knew how to read maps and get a sense of where things were instead of relying on technology.  That's why today the number of hikers who get lost has skyrocketed.<br />
+<li> If MTV existed they would still be playing music videos.  The question <a href="http://gawker.com/5959730/mtv-exec-answers-age+old-question-why-doesnt-mtv-play-music-videos-anymore">Why doesn't MTV show Music Video's anymore</a> has been asked so often it is now Cliche. But the above video provides an answer.<br />
+<li> Lance did not recognize the importance of NP-completeness. Then again, neither had the math community, the non-theory computer science community, and Probably parts of the theory community.<br />
+<li> To find out what time it was you couldn't look at your cell phone, TV set, or Microwave. You had to go outside and look at your sundial.<br />
+<li> TV shows may have pilot episodes, or may not, but they didn't bother with explaining everything. Thought experiment: If Mr. Ed was on today<br />
+they would explain how he could talk (A government experiment gone wrong? gone right?) rather then the ONE line by Mr. Ed in the first episode: <i> Don't try (to understand why I can talk)--- its bigger than both of us.</i><br />
+<li> We all watched a TV show the same night. Contrast- last month I watched Firefly. <br />
+(If you are a fan of firely check  <a href="http://www.youtube.com/watch?v=EGwhlcwXxig">this</a> out.)<br />
+Bizarre result of this--- since people can't find people to talk about shows as much as the used do, there is now a show called TALKING BAD where people on the show TALK ABOUT Breaking Bad<br />
+<li> The final Jeapordy theme music didn't have lyrics. Now it does: <a href="http://www.youtube.com/watch?v=A7UgxCayfV0">here</a>.<br />
+<li> When you  heard a mnemoic device like <i>Kids Prefer Cheese Over Fried Green Spinach</i> it was hard to find out what it meant- now its easy (just use Google!)<br />
+</ol><i>True story: </i> On March 9, 1967 John Smith (not his real name) wanted to watch Star Trek (Episode: Devil in the Dark) but his parents wanted to take the family out for dinner.  So he pretended to be sick so he could watch it- because, as he puts it, <i>if I don't see it now I will NEVER GET TO SEE THE EPISODE, EVER!!!!!</i>. Imagine a world without DVR, DVD, TIVO, On-Demand, Hulu. He doesn't have to imagine it. Our younger readers do.  <br />
+<br />
+<br />
+I think SURFING, MOUSE, and SPAM really have changed primary meanings. FRIENDS may have also.<br />
+<div style='clear: both;'></div>
+</div>
+<div class='post-footer'>
+<div class='post-footer-line post-footer-line-1'><span class='post-author vcard'>
+Posted by
+<span class='fn' itemprop='author' itemscope='itemscope' itemtype='http://schema.org/Person'>
+<meta content='http://www.blogger.com/profile/06134382469361359081' itemprop='url'/>
+<a class='g-profile' href='http://www.blogger.com/profile/06134382469361359081' rel='author' title='author profile'>
+<span itemprop='name'>GASARCH</span>
+</a>
+</span>
+</span>
+<span class='post-timestamp'>
+at
+<meta content='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html' itemprop='url'/>
+<a class='timestamp-link' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html' rel='bookmark' title='permanent link'><abbr class='published' itemprop='datePublished' title='2013-08-19T12:29:00-05:00'>12:29 PM</abbr></a>
+</span>
+<span class='post-comment-link'>
+</span>
+<span class='post-icons'>
+<span class='item-action'>
+<a href='http://www.blogger.com/email-post.g?blogID=3722233&postID=7096326964481296368' title='Email Post'>
+<img alt='' class='icon-action' height='13' src='http://img1.blogblog.com/img/icon18_email.gif' width='18'/>
+</a>
+</span>
+<span class='item-control blog-admin pid-2092457563'>
+<a href='http://www.blogger.com/post-edit.g?blogID=3722233&postID=7096326964481296368&from=pencil' title='Edit Post'>
+<img alt='' class='icon-action' height='18' src='http://img2.blogblog.com/img/icon18_edit_allbkg.gif' width='18'/>
+</a>
+</span>
+</span>
+<div class='post-share-buttons goog-inline-block'>
+<a class='goog-inline-block share-button sb-email' href='http://www.blogger.com/share-post.g?blogID=3722233&postID=7096326964481296368&target=email' target='_blank' title='Email This'><span class='share-button-link-text'>Email This</span></a><a class='goog-inline-block share-button sb-blog' href='http://www.blogger.com/share-post.g?blogID=3722233&postID=7096326964481296368&target=blog' onclick='window.open(this.href, "_blank", "height=270,width=475"); return false;' target='_blank' title='BlogThis!'><span class='share-button-link-text'>BlogThis!</span></a><a class='goog-inline-block share-button sb-twitter' href='http://www.blogger.com/share-post.g?blogID=3722233&postID=7096326964481296368&target=twitter' target='_blank' title='Share to Twitter'><span class='share-button-link-text'>Share to Twitter</span></a><a class='goog-inline-block share-button sb-facebook' href='http://www.blogger.com/share-post.g?blogID=3722233&postID=7096326964481296368&target=facebook' onclick='window.open(this.href, "_blank", "height=430,width=640"); return false;' target='_blank' title='Share to Facebook'><span class='share-button-link-text'>Share to Facebook</span></a><div class='goog-inline-block dummy-container'><g:plusone source='blogger:blog:plusone' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html' size='medium' width='300' annotation='inline'/></div>
+</div>
+<span class='post-backlinks post-comment-link'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-2'><span class='post-labels'>
+</span>
+</div>
+<div class='post-footer-line post-footer-line-3'><span class='post-location'>
+</span>
+</div>
+</div>
+</div>
+<div class='comments' id='comments'>
+<a name='comments'></a>
+<h4>7 comments:</h4>
+<div class='comments-content'>
+<script async='async' src='//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js' type='text/javascript'></script>
+<script type='text/javascript'>
+    (function() {
+      var items = [{'id': '2302075990181831683', 'body': 'Thanks Bill. Reminds me of the time my daughter asked me if my brother and I fought over the TV remote when we were kids and I could honestly say we never did. ', 'timestamp': '1376939719177', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751376939719177#c2302075990181831683', 'author': {'name': 'Lance Fortnow', 'avatarUrl': '//lh3.googleusercontent.com/-w1_vhRIQoDo/AAAAAAAAAAI/AAAAAAAAAAA/VXE_qZ48lvQ/s512-c/photo.jpg', 'profileUrl': 'http://www.blogger.com/profile/06752030912874378610'}, 'displayTime': '2:15 PM, August 19, 2013', 'deleteclass': 'item-control blog-admin pid-689463259'}, {'id': '3488943387083997741', 'body': '1.Remote controls were invented in 1950, although they might call them \46quot;remote controllers\46quot; instead of remotes.\74br /\76\74br /\0762.Isn\46#39;t this still true today :P ? Common metaphorical usage was for reference to telephones (leftover from telegrams).\74br /\76\74br /\0763.Well, it can be \46quot;a video game\46quot;. But Computer Space, Pong and Odyssey were already out, so you could play on a \46quot;home console\46quot;.\74br /\76\74br /\0764.I\46#39;m gonna say no.\74br /\76\74br /\0765.Well, they had pocket calculators by then.\74br /\76\74br /\0766. Yes.\74br /\76\74br /\0767. No, if you knew what computing is, you probably knew about \46quot;digital computing\46quot;.\74br /\76\74br /\768. Yes.\74br /\76\74br /\769. Yes.\74br /\76\74br /\07610. Yes.\74br /\76\74br /\07611. Maybe if it was one on the TV cartoons?\74br /\76\74br /\07612. Haha, probably never happened.\74br /\76\74br /\07613. Yes (it still is).\74br /\76\74br /\07614. They already had actual computer bugs then, it\46#39;s where the name comes from. I suppose back then spiders ate bugs.\74br /\76\74br /\07615. Yes, also a member of a matriachal society.\74br /\76\74br /\07616. No, that\46#39;s a googol.\74br /\76\74br /\07617. Vocalization of hotel bell (or any small bell)?\74br /\76\74br /\07618. Yes.\74br /\76\74br /\07619. Yes.\74br /\76\74br /\07620. Yes.\74br /\76\74br /\07621. Yes\74br /\76\74br /\07622. I hope not only during commercials.\74br /\76\74br /\07623. No idea.\74br /\76\74br /\07624. Yes.\74br /\76\74br /\07625. Yes.\74br /\76\74br /\07626. Yes.\74br /\76\74br /\07627. Yes.\74br /\76\74br /\07628. Yes.\74br /\76\74br /\07629. Probably yes.\74br /\76\74br /\07630. Yes on the first part, no on the second.\74br /\76\74br /\07631.People don\46#39;t know how to read maps today? I think there are other reasons for the second one, if it\46#39;s true, probably more people hiking.\74br /\76\74br /\07632. No, they were no music videos to begin with.\74br /\76\74br /\07633. Yes.\74br /\76\74br /\07634. hahaha, no. You could get it on the telephone, wrist watch or wall clock.\74br /\76\74br /\07635. Yes.\74br /\76\74br /\07636. Yes and really???', 'timestamp': '1376965727316', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751376965727316#c3488943387083997741', 'author': {'name': 'Harry Zisopoulos', 'avatarUrl': '//lh4.googleusercontent.com/-wDlqLPASoQ8/AAAAAAAAAAI/AAAAAAAAAAA/DyEhl6qEzhg/s512-c/photo.jpg', 'profileUrl': 'http://www.blogger.com/profile/09364120444779754928'}, 'displayTime': '9:28 PM, August 19, 2013', 'deleteclass': 'item-control blog-admin pid-901292728'}, {'id': '8203599266789993215', 'body': 'Great list Bill. I realize, worrying, that when lance was 10, I was 17. Fortunately, Dr. Who was already on TV and you didn\46#39;t have to really break a record to make it broken.', 'timestamp': '1376979314180', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751376979314180#c8203599266789993215', 'author': {'name': 'Leen', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/10467530858979254031'}, 'displayTime': '1:15 AM, August 20, 2013', 'deleteclass': 'item-control blog-admin pid-1448545870'}, {'id': '2049747229229718897', 'body': 'Lance and Harry- When I saw Harry\46#39;s comment I thought\74br /\76`Yes, remote controls had been invented but they weren\46#39;t in\74br /\76wide use in 1973\46#39; so I tried to look that up. Could not find\74br /\76anything about when it was in wide use (not even on Wikipedia!).\74br /\76\74br /\76Lance didn\46#39;t have one, I didn\46#39;t have one, but thats just a sample\74br /\76size of 2.', 'timestamp': '1377007640836', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751377007640836#c2049747229229718897', 'author': {'name': 'GASARCH', 'avatarUrl': 'http://2.bp.blogspot.com/_Cb8uybPiTjo/TKIUEFvVaCI/AAAAAAAAAAk/BP9UZleH820/S45/funny_picture_of_me.jpg', 'profileUrl': 'http://www.blogger.com/profile/06134382469361359081'}, 'displayTime': '9:07 AM, August 20, 2013', 'deleteclass': 'item-control blog-admin pid-2092457563'}, {'id': '7401763774410720357', 'parentId': '2049747229229718897', 'body': 'The high-bandwidth light-emitting/light-detecting photodiodes that convey today\46#39;s remote-control signals were not cheaply mass-produced until the early 1970s.  \74br /\76\74br /\76An \74b\76\74a href\75\42http://inventors.about.com/od/rstartinventions/a/remote_control.htm\42 rel\75\42nofollow\42\76earlier generation of TV remote controls\74/a\76\74/b\76 used high-bandwidth \74i\76sound\74/i\76-emitting/\74i\76sound\74/i\76-detecting \74i\76piezoelectric\74/i\76 transducers.  These controllers worked adequately, but  they were too expensive/power-hungry/heavy/complex to come into widespread use.', 'timestamp': '1377014592168', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751377014592168#c7401763774410720357', 'author': {'name': 'John Sidles', 'avatarUrl': 'http://2.bp.blogspot.com/-tszUuKHI4_0/TjXpXNZ-azI/AAAAAAAAAPA/Clf7lRW1-Zc/s45/d2c1cab36cbd088d31e71762316997f6%253Fs%253D128%2526d%253Didenticon%2526r%253DPG', 'profileUrl': 'http://www.blogger.com/profile/16286860374431298556'}, 'displayTime': '11:03 AM, August 20, 2013', 'deleteclass': 'item-control blog-admin pid-2144274176'}, {'id': '85748728035228805', 'body': 'MTV still shows music videos.  They\46#39;re usually on from 4am-9am.', 'timestamp': '1377291220126', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751377291220126#c85748728035228805', 'author': {'name': 'shravas', 'avatarUrl': 'http://img2.blogblog.com/img/b16-rounded.gif', 'profileUrl': 'http://www.blogger.com/profile/05490952040271154382'}, 'displayTime': '3:53 PM, August 23, 2013', 'deleteclass': 'item-control blog-admin pid-1773540060'}, {'id': '1385385399687179218', 'body': 'Okay, somewhat related confession time:\74br /\76\74br /\76I once read something that mentioned that Claude Shannon married a computer. This gave me the impression that he was truly strange and odd. It was not until a few days later that a \46quot;computer\46quot;, at that time, was an occupation filled by humans and not by machines. Suffice it to say that I was quite embarrassed after I mentioned what I had learned to one of my theory professors.', 'timestamp': '1377710282903', 'permalink': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment\0751377710282903#c1385385399687179218', 'author': {'name': 'Anonymous', 'avatarUrl': 'http://img1.blogblog.com/img/blank.gif', 'profileUrl': ''}, 'displayTime': '12:18 PM, August 28, 2013', 'deleteclass': 'item-control blog-admin pid-169530379'}];
+      var msgs = {'loadMore': 'Load more...', 'loading': 'Loading...', 'loaded': 'No more!', 'addComment': 'Add comment', 'reply': 'Reply', 'delete': 'Delete'};
+      var config = {'blogId': '3722233', 'postId': '7096326964481296368', 'feed': 'http://blog.computationalcomplexity.org/feeds/7096326964481296368/comments/default', 'authorName': 'GASARCH', 'authorUrl': 'http://www.blogger.com/profile/06134382469361359081', 'baseUri': 'http://www.blogger.com', 'maxThreadDepth': 2};
+
+// <![CDATA[
+      var cursor = null;
+      if (items && items.length > 0) {
+        cursor = parseInt(items[items.length - 1].timestamp) + 1;
+      }
+
+      var bodyFromEntry = function(entry) {
+        if (entry.gd$extendedProperty) {
+          for (var k in entry.gd$extendedProperty) {
+            if (entry.gd$extendedProperty[k].name == 'blogger.contentRemoved') {
+              return '<span class="deleted-comment">' + entry.content.$t + '</span>';
+            }
+          }
+        }
+        return entry.content.$t;
+      }
+
+      var parse = function(data) {
+        cursor = null;
+        var comments = [];
+        if (data && data.feed && data.feed.entry) {
+          for (var i = 0, entry; entry = data.feed.entry[i]; i++) {
+            var comment = {};
+            // comment ID, parsed out of the original id format
+            var id = /blog-(\d+).post-(\d+)/.exec(entry.id.$t);
+            comment.id = id ? id[2] : null;
+            comment.body = bodyFromEntry(entry);
+            comment.timestamp = Date.parse(entry.published.$t) + '';
+            if (entry.author && entry.author.constructor === Array) {
+              var auth = entry.author[0];
+              if (auth) {
+                comment.author = {
+                  name: (auth.name ? auth.name.$t : undefined),
+                  profileUrl: (auth.uri ? auth.uri.$t : undefined),
+                  avatarUrl: (auth.gd$image ? auth.gd$image.src : undefined)
+                };
+              }
+            }
+            if (entry.link) {
+              if (entry.link[2]) {
+                comment.link = comment.permalink = entry.link[2].href;
+              }
+              if (entry.link[3]) {
+                var pid = /.*comments\/default\/(\d+)\?.*/.exec(entry.link[3].href);
+                if (pid && pid[1]) {
+                  comment.parentId = pid[1];
+                }
+              }
+            }
+            comment.deleteclass = 'item-control blog-admin';
+            if (entry.gd$extendedProperty) {
+              for (var k in entry.gd$extendedProperty) {
+                if (entry.gd$extendedProperty[k].name == 'blogger.itemClass') {
+                  comment.deleteclass += ' ' + entry.gd$extendedProperty[k].value;
+                } else if (entry.gd$extendedProperty[k].name == 'blogger.displayTime') {
+                  comment.displayTime = entry.gd$extendedProperty[k].value;
+                }
+              }
+            }
+            comments.push(comment);
+          }
+        }
+        return comments;
+      };
+
+      var paginator = function(callback) {
+        if (hasMore()) {
+          var url = config.feed + '?alt=json&v=2&orderby=published&reverse=false&max-results=50';
+          if (cursor) {
+            url += '&published-min=' + new Date(cursor).toISOString();
+          }
+          window.bloggercomments = function(data) {
+            var parsed = parse(data);
+            cursor = parsed.length < 50 ? null
+                : parseInt(parsed[parsed.length - 1].timestamp) + 1
+            callback(parsed);
+            window.bloggercomments = null;
+          }
+          url += '&callback=bloggercomments';
+          var script = document.createElement('script');
+          script.type = 'text/javascript';
+          script.src = url;
+          document.getElementsByTagName('head')[0].appendChild(script);
+        }
+      };
+      var hasMore = function() {
+        return !!cursor;
+      };
+      var getMeta = function(key, comment) {
+        if ('iswriter' == key) {
+          var matches = !!comment.author
+              && comment.author.name == config.authorName
+              && comment.author.profileUrl == config.authorUrl;
+          return matches ? 'true' : '';
+        } else if ('deletelink' == key) {
+          return config.baseUri + '/delete-comment.g?blogID='
+               + config.blogId + '&postID=' + comment.id;
+        } else if ('deleteclass' == key) {
+          return comment.deleteclass;
+        }
+        return '';
+      };
+
+      var replybox = null;
+      var replyUrlParts = null;
+      var replyParent = undefined;
+
+      var onReply = function(commentId, domId) {
+        if (replybox == null) {
+          // lazily cache replybox, and adjust to suit this style:
+          replybox = document.getElementById('comment-editor');
+          if (replybox != null) {
+            replybox.height = '250px';
+            replybox.style.display = 'block';
+            replyUrlParts = replybox.src.split('#');
+          }
+        }
+        if (replybox && (commentId !== replyParent)) {
+          document.getElementById(domId).insertBefore(replybox, null);
+          replybox.src = replyUrlParts[0]
+              + (commentId ? '&parentID=' + commentId : '')
+              + '#' + replyUrlParts[1];
+          replyParent = commentId;
+        }
+      };
+
+      var hash = (window.location.hash || '#').substring(1);
+      var startThread, targetComment;
+      if (/^comment-form_/.test(hash)) {
+        startThread = hash.substring('comment-form_'.length);
+      } else if (/^c[0-9]+$/.test(hash)) {
+        targetComment = hash.substring(1);
+      }
+
+      // Configure commenting API:
+      var configJso = {
+        'maxDepth': config.maxThreadDepth
+      };
+      var provider = {
+        'id': config.postId,
+        'data': items,
+        'loadNext': paginator,
+        'hasMore': hasMore,
+        'getMeta': getMeta,
+        'onReply': onReply,
+        'rendered': true,
+        'initComment': targetComment,
+        'initReplyThread': startThread,
+        'config': configJso,
+        'messages': msgs
+      };
+
+      var render = function() {
+        if (window.goog && window.goog.comments) {
+          var holder = document.getElementById('comment-holder');
+          window.goog.comments.render(holder, provider);
+        }
+      };
+
+      // render now, or queue to render when library loads:
+      if (window.goog && window.goog.comments) {
+        render();
+      } else {
+        window.goog = window.goog || {};
+        window.goog.comments = window.goog.comments || {};
+        window.goog.comments.loadQueue = window.goog.comments.loadQueue || [];
+        window.goog.comments.loadQueue.push(render);
+      }
+    })();
+// ]]>
+</script>
+<div id='comment-holder'>
+<div id='bc_0_8C' kind='c'><div id='bc_0_8CT'><div id='bc_0_7T' class='comment-thread' kind='r'  t='0' u='0'><ol id='bc_0_7TB'><li id='bc_0_0B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh3.googleusercontent.com/-w1_vhRIQoDo/AAAAAAAAAAI/AAAAAAAAAAA/VXE_qZ48lvQ/s512-c/photo.jpg'></img></div><div id='c2302075990181831683' class='comment-block'><div id='bc_0_0M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/06752030912874378610'>Lance Fortnow</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1376939719177#c2302075990181831683'>2:15 PM, August 19, 2013</a></span></div><p id='bc_0_0MC' class='comment-content'>Thanks Bill. Reminds me of the time my daughter asked me if my brother and I fought over the TV remote when we were kids and I could honestly say we never did. </p><span id='bc_0_0MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-689463259'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=2302075990181831683'>Delete</a></span></span></div><div id='bc_0_0BR' class='comment-replies'></div><div id='bc_0_0B_box' class='comment-replybox-single'></div></li><li id='bc_0_1B' class='comment' kind='b'><div class='avatar-image-container'><img src='//lh4.googleusercontent.com/-wDlqLPASoQ8/AAAAAAAAAAI/AAAAAAAAAAA/DyEhl6qEzhg/s512-c/photo.jpg'></img></div><div id='c3488943387083997741' class='comment-block'><div id='bc_0_1M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/09364120444779754928'>Harry Zisopoulos</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1376965727316#c3488943387083997741'>9:28 PM, August 19, 2013</a></span></div><p id='bc_0_1MC' class='comment-content'>1.Remote controls were invented in 1950, although they might call them &quot;remote controllers&quot; instead of remotes.<br /><br />2.Isn&#39;t this still true today :P ? Common metaphorical usage was for reference to telephones (leftover from telegrams).<br /><br />3.Well, it can be &quot;a video game&quot;. But Computer Space, Pong and Odyssey were already out, so you could play on a &quot;home console&quot;.<br /><br />4.I&#39;m gonna say no.<br /><br />5.Well, they had pocket calculators by then.<br /><br />6. Yes.<br /><br />7. No, if you knew what computing is, you probably knew about &quot;digital computing&quot;.<br /><br />8. Yes.<br /><br />9. Yes.<br /><br />10. Yes.<br /><br />11. Maybe if it was one on the TV cartoons?<br /><br />12. Haha, probably never happened.<br /><br />13. Yes (it still is).<br /><br />14. They already had actual computer bugs then, it&#39;s where the name comes from. I suppose back then spiders ate bugs.<br /><br />15. Yes, also a member of a matriachal society.<br /><br />16. No, that&#39;s a googol.<br /><br />17. Vocalization of hotel bell (or any small bell)?<br /><br />18. Yes.<br /><br />19. Yes.<br /><br />20. Yes.<br /><br />21. Yes<br /><br />22. I hope not only during commercials.<br /><br />23. No idea.<br /><br />24. Yes.<br /><br />25. Yes.<br /><br />26. Yes.<br /><br />27. Yes.<br /><br />28. Yes.<br /><br />29. Probably yes.<br /><br />30. Yes on the first part, no on the second.<br /><br />31.People don&#39;t know how to read maps today? I think there are other reasons for the second one, if it&#39;s true, probably more people hiking.<br /><br />32. No, they were no music videos to begin with.<br /><br />33. Yes.<br /><br />34. hahaha, no. You could get it on the telephone, wrist watch or wall clock.<br /><br />35. Yes.<br /><br />36. Yes and really???</p><span id='bc_0_1MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-901292728'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=3488943387083997741'>Delete</a></span></span></div><div id='bc_0_1BR' class='comment-replies'></div><div id='bc_0_1B_box' class='comment-replybox-single'></div></li><li id='bc_0_2B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b36-rounded.png'></img></div><div id='c8203599266789993215' class='comment-block'><div id='bc_0_2M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/10467530858979254031'>Leen</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1376979314180#c8203599266789993215'>1:15 AM, August 20, 2013</a></span></div><p id='bc_0_2MC' class='comment-content'>Great list Bill. I realize, worrying, that when lance was 10, I was 17. Fortunately, Dr. Who was already on TV and you didn&#39;t have to really break a record to make it broken.</p><span id='bc_0_2MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1448545870'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=8203599266789993215'>Delete</a></span></span></div><div id='bc_0_2BR' class='comment-replies'></div><div id='bc_0_2B_box' class='comment-replybox-single'></div></li><li id='bc_0_4B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://2.bp.blogspot.com/_Cb8uybPiTjo/TKIUEFvVaCI/AAAAAAAAAAk/BP9UZleH820/S45/funny_picture_of_me.jpg'></img></div><div id='c2049747229229718897' class='comment-block'><div id='bc_0_4M' class='comment-header' kind='m'><cite class='user blog-author'><a rel='nofollow' href='http://www.blogger.com/profile/06134382469361359081'>GASARCH</a></cite><span class='icon user blog-author'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1377007640836#c2049747229229718897'>9:07 AM, August 20, 2013</a></span></div><p id='bc_0_4MC' class='comment-content'>Lance and Harry- When I saw Harry&#39;s comment I thought<br />`Yes, remote controls had been invented but they weren&#39;t in<br />wide use in 1973&#39; so I tried to look that up. Could not find<br />anything about when it was in wide use (not even on Wikipedia!).<br /><br />Lance didn&#39;t have one, I didn&#39;t have one, but thats just a sample<br />size of 2.</p><span id='bc_0_4MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-2092457563'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=2049747229229718897'>Delete</a></span></span></div><div id='bc_0_4BR' class='comment-replies'><span id='bc_0_4b+seedI9RaD' kind='d'><div id='bc_0_3T' class='comment-thread inline-thread' kind='t'   t='0' u='0'><span id='bc_0_3TT' class='thread-toggle thread-expanded' kind='g'><span id='bc_0_3TA' class='thread-arrow'></span><span id='bc_0_3TN' class='thread-count'><span id='bc_0_3TNT' style='display: none;'></span><span id='bc_0_3TNU' style='display: none;'></span><a href='javascript:;' target='_self'>Replies</a><div id='bc_0_3TD' class='thread-dropContainer thread-expanded'><span class='thread-drop'></span></div></span></span><ol id='bc_0_3TC' class='thread-chrome thread-expanded'><div><li id='bc_0_3B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://2.bp.blogspot.com/-tszUuKHI4_0/TjXpXNZ-azI/AAAAAAAAAPA/Clf7lRW1-Zc/s45/d2c1cab36cbd088d31e71762316997f6%253Fs%253D128%2526d%253Didenticon%2526r%253DPG'></img></div><div id='c7401763774410720357' class='comment-block'><div id='bc_0_3M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/16286860374431298556'>John Sidles</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1377014592168#c7401763774410720357'>11:03 AM, August 20, 2013</a></span></div><p id='bc_0_3MC' class='comment-content'>The high-bandwidth light-emitting/light-detecting photodiodes that convey today&#39;s remote-control signals were not cheaply mass-produced until the early 1970s.  <br /><br />An <b><a href="http://inventors.about.com/od/rstartinventions/a/remote_control.htm" rel="nofollow">earlier generation of TV remote controls</a></b> used high-bandwidth <i>sound</i>-emitting/<i>sound</i>-detecting <i>piezoelectric</i> transducers.  These controllers worked adequately, but  they were too expensive/power-hungry/heavy/complex to come into widespread use.</p><span id='bc_0_3MN' class='comment-actions secondary-text' kind='m'><span class='item-control blog-admin pid-2144274176'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=7401763774410720357'>Delete</a></span></span></div><div id='bc_0_3BR' class='comment-replies'></div><div id='bc_0_3B_box' class='comment-replybox-single'></div></li></div><div id='bc_0_3I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Reply</a></div></ol><div id='bc_0_3T_box' class='comment-replybox-thread'></div></div></span></div><div id='bc_0_4B_box' class='comment-replybox-single'></div></li><li id='bc_0_5B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img2.blogblog.com/img/b36-rounded.png'></img></div><div id='c85748728035228805' class='comment-block'><div id='bc_0_5M' class='comment-header' kind='m'><cite class='user'><a rel='nofollow' href='http://www.blogger.com/profile/05490952040271154382'>shravas</a></cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1377291220126#c85748728035228805'>3:53 PM, August 23, 2013</a></span></div><p id='bc_0_5MC' class='comment-content'>MTV still shows music videos.  They&#39;re usually on from 4am-9am.</p><span id='bc_0_5MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-1773540060'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=85748728035228805'>Delete</a></span></span></div><div id='bc_0_5BR' class='comment-replies'></div><div id='bc_0_5B_box' class='comment-replybox-single'></div></li><li id='bc_0_6B' class='comment' kind='b'><div class='avatar-image-container'><img src='http://img1.blogblog.com/img/anon36.png'></img></div><div id='c1385385399687179218' class='comment-block'><div id='bc_0_6M' class='comment-header' kind='m'><cite class='user'>Anonymous</cite><span class='icon user'></span><span class='datetime secondary-text'><a rel='nofollow' href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html?showComment=1377710282903#c1385385399687179218'>12:18 PM, August 28, 2013</a></span></div><p id='bc_0_6MC' class='comment-content'>Okay, somewhat related confession time:<br /><br />I once read something that mentioned that Claude Shannon married a computer. This gave me the impression that he was truly strange and odd. It was not until a few days later that a &quot;computer&quot;, at that time, was an occupation filled by humans and not by machines. Suffice it to say that I was quite embarrassed after I mentioned what I had learned to one of my theory professors.</p><span id='bc_0_6MN' class='comment-actions secondary-text' kind='m'><a kind='i' href='javascript:;' target='_self' o='r'>Reply</a><span class='item-control blog-admin pid-169530379'><a o='d' target='_self' href='http://www.blogger.com/delete-comment.g?blogID=3722233&amp;postID=1385385399687179218'>Delete</a></span></span></div><div id='bc_0_6BR' class='comment-replies'></div><div id='bc_0_6B_box' class='comment-replybox-single'></div></li></ol><div id='bc_0_7I' class='continue' kind='ci'><a href='javascript:;' target='_self'>Add comment</a></div><div id='bc_0_7T_box' class='comment-replybox-thread'></div><div id='bc_0_7L' class='loadmore loaded' kind='rb'><a href='javascript:;' target='_self'>Load more...</a></div></div></div></div>
+</div>
+</div>
+<p class='comment-footer'>
+<div class='comment-form'>
+<a name='comment-form'></a>
+<p>
+</p>
+<a href='http://www.blogger.com/comment-iframe.g?blogID=3722233&postID=7096326964481296368' id='comment-editor-src'></a>
+<iframe allowtransparency='true' class='blogger-iframe-colorize blogger-comment-from-post' frameborder='0' height='410' id='comment-editor' name='comment-editor' src='' width='100%'></iframe>
+<script type="text/javascript" src="//www.blogger.com/static/v1/jsbin/2373033623-comment_from_post_iframe.js"></script>
+<script type='text/javascript'>
+      BLOG_CMT_createIframe('http://www.blogger.com/rpc_relay.html', '06714472388618476316');
+    </script>
+</div>
+</p>
+<div id='backlinks-container'>
+<div id='Blog1_backlinks-container'>
+<a name='links'></a><h4>
+</h4>
+<p class='comment-footer'>
+<a class='comment-link' href='' id='Blog1_backlinks-create-link' target='_blank'>
+</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+
+        </div></div>
+      
+<!-- google_ad_section_end -->
+</div>
+<div class='blog-pager' id='blog-pager'>
+<span id='blog-pager-newer-link'>
+<a class='blog-pager-newer-link' href='http://blog.computationalcomplexity.org/2013/08/p-np-and-weather.html' id='Blog1_blog-pager-newer-link' title='Newer Post'>Newer Post</a>
+</span>
+<span id='blog-pager-older-link'>
+<a class='blog-pager-older-link' href='http://blog.computationalcomplexity.org/2013/08/flash-gordon.html' id='Blog1_blog-pager-older-link' title='Older Post'>Older Post</a>
+</span>
+<a class='home-link' href='http://blog.computationalcomplexity.org/'>Home</a>
+</div>
+<div class='clear'></div>
+<div class='post-feeds'>
+<div class='feed-links'>
+Subscribe to:
+<a class='feed-link' href='http://blog.computationalcomplexity.org/feeds/7096326964481296368/comments/default' target='_blank' type='application/atom+xml'>Post Comments (Atom)</a>
+</div>
+</div>
+<script type="text/javascript">window.___gcfg = {'lang': 'en'};</script>
+</div></div>
+</div>
+</div>
+<div class='column-left-outer'>
+<div class='column-left-inner'>
+<aside>
+<div class='sidebar section' id='sidebar-left-1'><div class='widget Image' id='Image1'>
+<div class='widget-content'>
+<a href='http://goldenticket.fortnow.com/'>
+<img alt='' height='227' id='Image1_img' src='http://press.princeton.edu/images/k9937.gif' width='150'/>
+</a>
+<br/>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=Image&widgetId=Image1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("Image1"));' target='configImage1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget HTML' id='HTML4'>
+<div class='widget-content'>
+<a class="twitter-timeline" href="https://twitter.com/fortnow" data-widget-id="347086441962164225" data-chrome="nofooter transparent">Tweets by @fortnow</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML4"));' target='configHTML4' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget PopularPosts' id='PopularPosts1'>
+<h2>Popular Posts</h2>
+<div class='widget-content popular-posts'>
+<ul>
+<li>
+<a href='http://blog.computationalcomplexity.org/2011/11/annual-fall-jobs-post.html'>The Annual Fall Jobs Post</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2011/05/on-demand-publishing-guest-post.html'>On demand Publishing (guest post)</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/myhill-nerode-versus-pumping-lemma.html'>Myhill Nerode versus Pumping Lemma</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/did-you-think-nsa-could-factor-fast.html'>Did YOU think the NSA could factor  fast?</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/stoc-cfp-still-delayed-but-i-was-asked.html'>STOC CFP still delayed- but I was asked to pass this along</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/cryptography-and-nsa.html'>Cryptography and the NSA</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/complexity-and-focs.html'>Complexity and FOCS</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/tldr.html'>tl;dr</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/crystal-math-what-numb3rs-and-breaking.html'>Crystal Math- What NUMB3RS and BREAKING BAD both get wrong</a>
+</li>
+<li>
+<a href='http://blog.computationalcomplexity.org/2013/09/dealing-with-death.html'>Dealing with Death</a>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=PopularPosts&widgetId=PopularPosts1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("PopularPosts1"));' target='configPopularPosts1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' id='LinkList1'>
+<h2>Blog Links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.cs.umd.edu/~gasarch/'>Bill's Home Page</a></li>
+<li><a href='http://lance.fortnow.com/'>Lance's Home Page</a></li>
+<li><a href='http://www.youtube.com/user/fortnow'>Videos</a></li>
+<li><a href='http://blog.computationalcomplexity.org/podcast.xml'>Podcast</a></li>
+<li><a href='http://blog.computationalcomplexity.org/rss.xml'>Posts Feed</a></li>
+<li><a href='http://www.blogger.com/feeds/3722233/comments/default'>Comments Feed</a></li>
+<li><a href='http://groups.yahoo.com/group/complexityweblog'>Mailing List</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2009/07/time-for-computer-science-to-grow-up.html'>CACM Viewpoint</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2009/05/foundations-of-complexity.html'>Foundations of Complexity</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2007/02/graduate-student-guide.html'>Graduate Student Guide</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2006/12/favorite-theorems-second-decade-recap.html'>Favorite Theorems</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList1"));' target='configLinkList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget LinkList' id='LinkList2'>
+<h2>Links</h2>
+<div class='widget-content'>
+<ul>
+<li><a href='http://www.amazon.com/exec/obidos/redirect?tag=computation09-20&path=tg/listmania/list-browse/-/22R1UX0Y9YRT2/ref=cm_aya_lm_title.more'>Favorite Complexity Books</a></li>
+<li><a href='http://cstheory.stackexchange.com/'>TCS Q&A</a></li>
+<li><a href='http://arxiv.org/list/cs.CC/recent'>Complexity on ArXiv</a></li>
+<li><a href='http://www.eccc.uni-trier.de/eccc'>ECCC Paper Archive</a></li>
+<li><a href='http://www.computationalcomplexity.org/'>Complexity Conference</a></li>
+<li><a href='http://qwiki.stanford.edu/index.php/Complexity_Zoo'>Complexity Zoo</a></li>
+<li><a href='http://theorie.informatik.uni-ulm.de/Personen/toran/beatcs/'>BEATCS Complexity Column</a></li>
+<li><a href='http://sigact.acm.org/'>SIGACT</a></li>
+<li><a href='http://theorymatters.org/'>Theory Matters</a></li>
+<li><a href='http://www.aip.org/fyi/'>AIP FYI</a></li>
+<li><a href='http://www.eng.unt.edu/ian/pubs/speaker.pdf'>Parberry Speakers Guide</a></li>
+<li><a href='http://www.eng.unt.edu/ian/pubs/referee.pdf'>Parberry Referees Guide</a></li>
+<li><a href='http://dmatheorynet.blogspot.com/'>DMANET/TheoryNet Announcements</a></li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=LinkList&widgetId=LinkList2&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("LinkList2"));' target='configLinkList2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget BlogList' id='BlogList1'>
+<h2 class='title'>Blog List</h2>
+<div class='widget-content'>
+<div class='blog-list-container' id='BlogList1_container'>
+<ul id='BlogList1_blogs'>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://11011110.livejournal.com/' target='_blank'>
+0xDE</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://11011110.livejournal.com/276984.html' target='_blank'>
+WG 2013 CFP</a>
+</span>
+<div class='item-time'>
+4 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://teachingintrotocs.blogspot.com/' target='_blank'>
+A CS Professor's blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://teachingintrotocs.blogspot.com/2013/05/paques-ou-la-trinite.html' target='_blank'>
+"à Pâques ou à la Trinité"</a>
+</span>
+<div class='item-time'>
+4 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='https://agtb.wordpress.com' target='_blank'>
+Algorithmic Game-Theory/Economics</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='https://agtb.wordpress.com/2013/09/30/agt-lecture-videos-and-notes/' target='_blank'>
+AGT lecture videos and notes</a>
+</span>
+<div class='item-time'>
+4 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.contrib.andrew.cmu.edu/~ryanod' target='_blank'>
+Analysis of Boolean Functions</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.contrib.andrew.cmu.edu/~ryanod/?p=1501' target='_blank'>
+Chapter 9 exercises</a>
+</span>
+<div class='item-time'>
+1 week ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.arsmathematica.net' target='_blank'>
+Ars Mathematica</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.arsmathematica.net/?p=1686' target='_blank'>
+A Generalized Fermat Equation</a>
+</span>
+<div class='item-time'>
+4 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://harry-lewis.blogspot.com/' target='_blank'>
+Bits and Pieces</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://harry-lewis.blogspot.com/2013/09/the-end-of-summers.html' target='_blank'>
+The End of Summers</a>
+</span>
+<div class='item-time'>
+2 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://cra.org/govaffairs/blog' target='_blank'>
+COMPUTING RESEARCH POLICY BLOG</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://feedproxy.google.com/~r/cra/WxKq/~3/XmEQk3JMHMM/' target='_blank'>
+Golden Goose Award Video</a>
+</span>
+<div class='item-time'>
+2 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://3dpancakes.typepad.com/ernie/' target='_blank'>
+Ernie's 3D Pancakes</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://3dpancakes.typepad.com/ernie/2013/06/three-talks-at-socg.html' target='_blank'>
+Three talks at SOCG</a>
+</span>
+<div class='item-time'>
+3 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.wisdom.weizmann.ac.il/~oded/essays.html' target='_blank'>
+Essays and Opinions by Oded Goldreich</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+</span>
+<div class='item-time'>
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blogs.oregonstate.edu/glencora' target='_blank'>
+Glencora Borradaile</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://blogs.oregonstate.edu/glencora/2013/06/10/the-power-of-a-sysadmin/' target='_blank'>
+The power of a sysadmin</a>
+</span>
+<div class='item-time'>
+3 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://rjlipton.wordpress.com' target='_blank'>
+Gödel's Lost Letter and P=NP</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://rjlipton.wordpress.com/2013/10/02/stealing-strategies/' target='_blank'>
+Stealing Strategies</a>
+</span>
+<div class='item-time'>
+2 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://healthyalgorithms.com' target='_blank'>
+Healthy Algorithms</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://healthyalgorithms.com/2013/10/04/ihme-seminar-captricity/' target='_blank'>
+IHME Seminar: Captricity</a>
+</span>
+<div class='item-time'>
+23 hours ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://lucatrevisan.wordpress.com' target='_blank'>
+in   theory</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://lucatrevisan.wordpress.com/2013/10/01/so-you-are-going-to-focs-2/' target='_blank'>
+So you are going to FOCS</a>
+</span>
+<div class='item-time'>
+3 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://kdphd.blogspot.com/' target='_blank'>
+kd-PhD</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://kdphd.blogspot.com/2012/11/whats-matter-with-moocs.html' target='_blank'>
+What's the matter with MOOCs?</a>
+</span>
+<div class='item-time'>
+10 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://learninglover.com/blog' target='_blank'>
+LEARNINGlover.com</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://learninglover.com/blog/?p=656' target='_blank'>
+Polynomial Arithmetic</a>
+</span>
+<div class='item-time'>
+5 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://hunch.net' target='_blank'>
+Machine Learning (Theory)</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://hunch.net/?p=2674' target='_blank'>
+No NY ML Symposium in 2013, and some good news</a>
+</span>
+<div class='item-time'>
+2 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://michaelnielsen.org/blog' target='_blank'>
+Michael Nielsen</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://feedproxy.google.com/~r/michaelnielsen/wmna/~3/5CXu218UGDo/' target='_blank'>
+The artist and the machine</a>
+</span>
+<div class='item-time'>
+7 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://mybiasedcoin.blogspot.com/' target='_blank'>
+My Biased Coin</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://mybiasedcoin.blogspot.com/2013/10/some-advice-on-entrepreneurship-from-ah.html' target='_blank'>
+Some Advice on Entrepreneurship from the AH meeting</a>
+</span>
+<div class='item-time'>
+2 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://kintali.wordpress.com' target='_blank'>
+My Brain is Open</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://kintali.wordpress.com/2013/08/19/polytopix/' target='_blank'>
+PolyTopix</a>
+</span>
+<div class='item-time'>
+1 month ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://mysliceofpizza.blogspot.com/' target='_blank'>
+my slice of pizza</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://mysliceofpizza.blogspot.com/2013/10/federal-govt-shutdown-fallout-in-details.html' target='_blank'>
+Federal Govt Shutdown, Fallout in Details</a>
+</span>
+<div class='item-time'>
+2 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://blog.oddhead.com' target='_blank'>
+Oddhead Blog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://blog.oddhead.com/2013/01/11/last-call-postdoc-positions-at-microsoft-research-nyc/' target='_blank'>
+Last call: Postdoc positions at Microsoft Research NYC</a>
+</span>
+<div class='item-time'>
+8 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.math.rutgers.edu/~zeilberg/OPINIONS.html' target='_blank'>
+Opinions of Doron Zeilberger</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+</span>
+<div class='item-time'>
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://paulwgoldberg.blogspot.com/' target='_blank'>
+Paul Goldberg</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://paulwgoldberg.blogspot.com/2013/10/2-research-posts-in-algorithms-and.html' target='_blank'>
+2 research posts in Algorithms and Complexity, Oxford</a>
+</span>
+<div class='item-time'>
+3 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://processalgebra.blogspot.com/' target='_blank'>
+Process Algebra Diary</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://processalgebra.blogspot.com/2013/09/turing-machine-opera-by-helsinki-skaala.html' target='_blank'>
+Turing Machine Opera by Helsinki Skaala Opera</a>
+</span>
+<div class='item-time'>
+4 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://jonkatz.wordpress.com' target='_blank'>
+Random bits</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://jonkatz.wordpress.com/2013/02/01/undergraduate-research-opportunities-this-summer/' target='_blank'>
+Undergraduate Research Opportunities this Summer</a>
+</span>
+<div class='item-time'>
+8 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://www.scottaaronson.com/blog' target='_blank'>
+Shtetl-Optimized</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://www.scottaaronson.com/blog/?p=1552' target='_blank'>
+Five announcements</a>
+</span>
+<div class='item-time'>
+4 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://speedupblogger.wordpress.com' target='_blank'>
+Speedup in Computational Complexity</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://speedupblogger.wordpress.com/2013/03/22/levins-and-schnorrs-optimality-results/' target='_blank'>
+Levin&#8217;s and Schnorr&#8217;s optimality results</a>
+</span>
+<div class='item-time'>
+6 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://geomblog.blogspot.com/' target='_blank'>
+The Geomblog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://feedproxy.google.com/~r/TheGeomblog/~3/VJgRLi_IHhg/call-for-tutorials-at-siam-data-mining.html' target='_blank'>
+Call for tutorials at SIAM Data Mining</a>
+</span>
+<div class='item-time'>
+2 days ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://mpclounge.wordpress.com' target='_blank'>
+The MPC Lounge</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://mpclounge.wordpress.com/2013/07/29/workshop-on-applied-multi-party-computation-february-20-21-2014-msr-redmond/' target='_blank'>
+Workshop on Applied Multi-Party Computation (February 20-21, 2014, MSR 
+Redmond)</a>
+</span>
+<div class='item-time'>
+2 months ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://polylogblog.wordpress.com' target='_blank'>
+the polylogblog</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://polylogblog.wordpress.com/2013/09/15/is-it-a-blog-or-is-it-epsilon-far-from-being-a-blog/' target='_blank'>
+Is it a blog? Or is it epsilon-far from being a blog?</a>
+</span>
+<div class='item-time'>
+2 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://terrytao.wordpress.com' target='_blank'>
+What's new</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://terrytao.wordpress.com/2013/09/22/polymath8-writing-the-paper-iii/' target='_blank'>
+Polymath8: Writing the paper, III</a>
+</span>
+<div class='item-time'>
+1 week ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+<li style='display: block;'>
+<div class='blog-icon'>
+</div>
+<div class='blog-content'>
+<div class='blog-title'>
+<a href='http://windowsontheory.org' target='_blank'>
+Windows On Theory</a>
+</div>
+<div class='item-content'>
+<span class='item-title'>
+<a href='http://windowsontheory.org/2013/09/05/focs-2013-registration/' target='_blank'>
+FOCS 2013 Registration</a>
+</span>
+<div class='item-time'>
+4 weeks ago
+</div>
+</div>
+</div>
+<div style='clear: both;'></div>
+</li>
+</ul>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=BlogList&widgetId=BlogList1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogList1"));' target='configBlogList1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div>
+</div><div class='widget CustomSearch' id='CustomSearch1'>
+<h2 class='title'>Search This Blog</h2>
+<div class='widget-content'>
+<div id='CustomSearch1_form'>
+<span class='cse-status'>Loading...</span>
+</div>
+</div>
+<style type='text/css'>
+      #uds-searchControl .gs-result .gs-title,
+      #uds-searchControl .gs-result .gs-title *,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results,
+      #uds-searchControl .gsc-results .gsc-trailing-more-results * {
+        color:#14196a;
+      }
+
+      #uds-searchControl .gs-result .gs-title a:visited,
+      #uds-searchControl .gs-result .gs-title a:visited * {
+        color:#1d259f;
+      }
+
+      #uds-searchControl .gs-relativePublishedDate,
+      #uds-searchControl .gs-publishedDate {
+        color: #908d6a;
+      }
+
+      #uds-searchControl .gs-result a.gs-visibleUrl,
+      #uds-searchControl .gs-result .gs-visibleUrl {
+        color: #14196a;
+      }
+
+      #uds-searchControl .gsc-results {
+        border-color: #908d6a;
+        background-color: #ccff99;
+      }
+
+      #uds-searchControl .gsc-tabhActive {
+        border-color: #908d6a;
+        border-top-color: #908d6a;
+        background-color: #ccff99;
+        color: #191919;
+      }
+
+      #uds-searchControl .gsc-tabhInactive {
+        border-color: #908d6a;
+        background-color: transparent;
+        color: #14196a;
+      }
+
+      #uds-searchClearResults {
+        border-color: #908d6a;
+      }
+
+      #uds-searchClearResults:hover {
+        border-color: #908d6a;
+      }
+
+      #uds-searchControl .gsc-cursor-page {
+        color: #14196a;
+      }
+
+      #uds-searchControl .gsc-cursor-current-page {
+        color: #191919;
+      }
+    </style>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=CustomSearch&widgetId=CustomSearch1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("CustomSearch1"));' target='configCustomSearch1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div><div class='widget BlogArchive' id='BlogArchive1'>
+<h2>Blog Archive</h2>
+<div class='widget-content'>
+<div id='ArchiveList'>
+<div id='BlogArchive1_ArchiveList'>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2013-01-01T00:00:00-06:00&amp;updated-max=2014-01-01T00:00:00-06:00&amp;max-results=50'>2013</a>
+<span class='post-count' dir='ltr'>(84)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(1)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate expanded'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy toggle-open'>&#9660;&#160;</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(9)</span>
+<ul class='posts'>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/the-dream.html'>The Dream</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/what-are-galois-games.html'>What are Galois Games?</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/p-np-and-weather.html'>P = NP and the Weather</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html'>When Lance was 10 years old..</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/flash-gordon.html'>Flash Gordon</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/how-much-trig-does-your-governor-know.html'>How much Trig does your governor know?</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/dont-have-end-game.html'>Don&#39;t Have an End Game</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/longest-time-between-posing-math.html'>Longest time between posing a math problem and it ...</a></li>
+<li><a href='http://blog.computationalcomplexity.org/2013/08/why-is-multiplication-hard.html'>Why is Multiplication Hard?</a></li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2013_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2012-01-01T00:00:00-06:00&amp;updated-max=2013-01-01T00:00:00-06:00&amp;max-results=50'>2012</a>
+<span class='post-count' dir='ltr'>(132)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2012_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2011-01-01T00:00:00-06:00&amp;updated-max=2012-01-01T00:00:00-06:00&amp;max-results=50'>2011</a>
+<span class='post-count' dir='ltr'>(134)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2011_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(9)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2010-01-01T00:00:00-06:00&amp;updated-max=2011-01-01T00:00:00-06:00&amp;max-results=50'>2010</a>
+<span class='post-count' dir='ltr'>(193)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(14)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2010_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2009-01-01T00:00:00-06:00&amp;updated-max=2010-01-01T00:00:00-06:00&amp;max-results=50'>2009</a>
+<span class='post-count' dir='ltr'>(249)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2009_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2008-01-01T00:00:00-06:00&amp;updated-max=2009-01-01T00:00:00-06:00&amp;max-results=50'>2008</a>
+<span class='post-count' dir='ltr'>(253)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(27)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2008_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2007-01-01T00:00:00-06:00&amp;updated-max=2008-01-01T00:00:00-06:00&amp;max-results=50'>2007</a>
+<span class='post-count' dir='ltr'>(159)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(8)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2007_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(23)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2006-01-01T00:00:00-06:00&amp;updated-max=2007-01-01T00:00:00-06:00&amp;max-results=50'>2006</a>
+<span class='post-count' dir='ltr'>(238)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2006_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2005-01-01T00:00:00-06:00&amp;updated-max=2006-01-01T00:00:00-06:00&amp;max-results=50'>2005</a>
+<span class='post-count' dir='ltr'>(237)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(22)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(21)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2005_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2004-01-01T00:00:00-06:00&amp;updated-max=2005-01-01T00:00:00-06:00&amp;max-results=50'>2004</a>
+<span class='post-count' dir='ltr'>(200)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(19)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2004_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(24)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2003-01-01T00:00:00-06:00&amp;updated-max=2004-01-01T00:00:00-06:00&amp;max-results=50'>2003</a>
+<span class='post-count' dir='ltr'>(149)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(12)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(7)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_07_01_archive.html'>July</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_06_01_archive.html'>June</a>
+<span class='post-count' dir='ltr'>(13)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_05_01_archive.html'>May</a>
+<span class='post-count' dir='ltr'>(10)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_04_01_archive.html'>April</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_03_01_archive.html'>March</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_02_01_archive.html'>February</a>
+<span class='post-count' dir='ltr'>(11)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2003_01_01_archive.html'>January</a>
+<span class='post-count' dir='ltr'>(16)</span>
+</li>
+</ul>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/search?updated-min=2002-01-01T00:00:00-06:00&amp;updated-max=2003-01-01T00:00:00-06:00&amp;max-results=50'>2002</a>
+<span class='post-count' dir='ltr'>(76)</span>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2002_12_01_archive.html'>December</a>
+<span class='post-count' dir='ltr'>(20)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2002_11_01_archive.html'>November</a>
+<span class='post-count' dir='ltr'>(17)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2002_10_01_archive.html'>October</a>
+<span class='post-count' dir='ltr'>(15)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2002_09_01_archive.html'>September</a>
+<span class='post-count' dir='ltr'>(18)</span>
+</li>
+</ul>
+<ul class='hierarchy'>
+<li class='archivedate collapsed'>
+<a class='toggle' href='javascript:void(0)'>
+<span class='zippy'>
+
+          &#9658;&#160;
+        
+</span>
+</a>
+<a class='post-count-link' href='http://blog.computationalcomplexity.org/2002_08_01_archive.html'>August</a>
+<span class='post-count' dir='ltr'>(6)</span>
+</li>
+</ul>
+</li>
+</ul>
+</div>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("BlogArchive1"));' target='configBlogArchive1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML3'>
+<div class='widget-content'>
+<a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/"><img alt="Creative Commons License" style="border-width:0" src="http://i.creativecommons.org/l/by-nc/3.0/88x31.png" /></a><br /><span xmlns:dct="http://purl.org/dc/terms/" href="http://purl.org/dc/dcmitype/Text" property="dct:title" rel="dct:type">Computational Complexity Weblog</span> by <a xmlns:cc="http://creativecommons.org/ns#" href="http://blog.computationalcomplexity.org" property="cc:attributionName" rel="cc:attributionURL">Lance Fortnow and William Gasarch</a> is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc/3.0/">Creative Commons Attribution-NonCommercial 3.0 Unported License</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar-left-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML3"));' target='configHTML3' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</aside>
+</div>
+</div>
+<div class='column-right-outer'>
+<div class='column-right-inner'>
+<aside>
+</aside>
+</div>
+</div>
+</div>
+<div style='clear: both'></div>
+<!-- columns -->
+</div>
+<!-- main -->
+</div>
+</div>
+<div class='main-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+<footer>
+<div class='footer-outer'>
+<div class='footer-cap-top cap-top'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+<div class='fauxborder-left footer-fauxborder-left'>
+<div class='fauxborder-right footer-fauxborder-right'></div>
+<div class='region-inner footer-inner'>
+<div class='foot section' id='footer-1'><div class='widget AdSense' id='AdSense2'>
+<div class='widget-content'>
+<script type="text/javascript"><!--
+google_ad_client="pub-0514128024034901";
+google_ad_host="pub-1556223355139109";
+google_ad_width=728;
+google_ad_height=90;
+google_ad_format="728x90_as";
+google_ad_type="text_image";
+google_ad_host_channel="0001";
+google_color_border="CCFF99";
+google_color_bg="CCFF99";
+google_color_link="14196A";
+google_color_url="908D6A";
+google_color_text="191919";
+//--></script>
+<script type="text/javascript"
+  src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=AdSense&widgetId=AdSense2&action=editWidget&sectionId=footer-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("AdSense2"));' target='configAdSense2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div>
+</div><div class='widget HTML' id='HTML2'>
+<div class='widget-content'>
+<script type="text/javascript">
+var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+var pageTracker = _gat._getTracker("UA-315867-2");
+pageTracker._initData();
+pageTracker._trackPageview();
+</script><!-- Start Quantcast tag -->
+<script type="text/javascript">
+_qoptions={
+qacct:"p-830upLkRQ5IxI"
+};
+</script>
+<script type="text/javascript" src="http://edge.quantserve.com/quant.js"></script>
+<noscript>
+<img src="http://pixel.quantserve.com/pixel/p-830upLkRQ5IxI.gif" style="display: none;" border="0" height="1" width="1" alt="Quantcast"/>
+</noscript>
+<script language="JavaScript">
+function twitterCallback3(twitters) {
+var statusHTML = [];
+var j=0;
+  for (var i=0; j<5 && i<twitters.length; i++){
+    var username = twitters[i].user.screen_name;
+    if (twitters[i].text.charAt(0) != '@') {j++;
+      var status = twitters[i].text.replace(/((https?|s?ftp|ssh)\:\/\/[^"\s\<\>]*[^.,;'">\:\s\<\>\)\]\!])/g, function(url) {
+        return '<a href="'+url+'">'+url+'</a>';
+    }).replace(/\B@([_a-z0-9]+)/ig, function(reply) {
+      return  reply.charAt(0)+'<a href="http://twitter.com/'+reply.substring(1)+'">'+reply.substring(1)+'</a>';
+    });
+    statusHTML.push('<li><span>'+status+'</span> <a style="font-size:85%" href="http://twitter.com/'+username+'/statuses/'+twitters[i].id_str+'">'+relative_time(twitters[i].created_at)+'</a></li>');
+    }
+  }
+  document.getElementById('twitter_update_list').innerHTML = statusHTML.join('');
+}
+
+
+</script>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src=
+"https://api.twitter.com/1.1/statuses/user_timeline.json?callback=twittercallback3&amp;count=25&amp;include_rts=true&amp;screen_name=fortnow&amp;exclude_replies=true"></script>
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=footer-1' onclick='return _WidgetManager._PopupConfig(document.getElementById("HTML2"));' target='configHTML2' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+<table border='0' cellpadding='0' cellspacing='0' class='section-columns columns-2'>
+<tbody>
+<tr>
+<td class='first columns-cell'>
+<div class='foot section' id='footer-2-1'></div>
+</td>
+<td class='columns-cell'>
+<div class='foot section' id='footer-2-2'></div>
+</td>
+</tr>
+</tbody>
+</table>
+<!-- outside of the include in order to lock Attribution widget -->
+<div class='foot section' id='footer-3'><div class='widget Attribution' id='Attribution1'>
+<div class='widget-content' style='text-align: center;'>
+Awesome Inc. template. Powered by <a href='http://www.blogger.com' target='_blank'>Blogger</a>.
+</div>
+<div class='clear'></div>
+<span class='widget-item-control'>
+<span class='item-control blog-admin'>
+<a class='quickedit' href='//www.blogger.com/rearrange?blogID=3722233&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3' onclick='return _WidgetManager._PopupConfig(document.getElementById("Attribution1"));' target='configAttribution1' title='Edit'>
+<img alt='' height='18' src='http://img1.blogblog.com/img/icon18_wrench_allbkg.png' width='18'/>
+</a>
+</span>
+</span>
+<div class='clear'></div>
+</div></div>
+</div>
+</div>
+<div class='footer-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</footer>
+<!-- content -->
+</div>
+</div>
+<div class='content-cap-bottom cap-bottom'>
+<div class='cap-left'></div>
+<div class='cap-right'></div>
+</div>
+</div>
+</div>
+<script type='text/javascript'>
+    window.setTimeout(function() {
+        document.body.className = document.body.className.replace('loading', '');
+      }, 10);
+  </script>
+<script type="text/javascript">
+if (window.jstiming) window.jstiming.load.tick('widgetJsBefore');
+</script><script type="text/javascript" src="//www.blogger.com/static/v1/widgets/3545113424-widgets.js"></script>
+<script type="text/javascript" src="//www.google.com/jsapi"></script>
+<script type="text/javascript" src="https://apis.google.com/js/plusone.js"></script>
+<script type='text/javascript'>
+if (typeof(BLOG_attachCsiOnload) != 'undefined' && BLOG_attachCsiOnload != null) { window['blogger_templates_experiment_id'] = "templatesV2";window['blogger_blog_id'] = '3722233';BLOG_attachCsiOnload('item_'); }_WidgetManager._Init('//www.blogger.com/rearrange?blogID\x3d3722233','//blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html','3722233');
+_WidgetManager._SetDataContext([{'name': 'blog', 'data': {'blogId': '3722233', 'bloggerUrl': 'http://www.blogger.com', 'title': 'Computational Complexity', 'pageType': 'item', 'url': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html', 'canonicalUrl': 'http://blog.computationalcomplexity.org/2013/08/when-lance-was-10-years-old.html', 'canonicalHomepageUrl': 'http://blog.computationalcomplexity.org/', 'homepageUrl': 'http://blog.computationalcomplexity.org/', 'blogspotFaviconUrl': 'http://blog.computationalcomplexity.org/favicon.ico', 'enabledCommentProfileImages': true, 'adultContent': false, 'disableAdSenseWidget': false, 'analyticsAccountNumber': '', 'searchLabel': '', 'searchQuery': '', 'pageName': 'When Lance was 10 years old..', 'pageTitle': 'Computational Complexity: When Lance was 10 years old..', 'encoding': 'UTF-8', 'locale': 'en', 'localeUnderscoreDelimited': 'en', 'isPrivate': false, 'isMobile': false, 'isMobileRequest': false, 'mobileClass': '', 'isPrivateBlog': false, 'languageDirection': 'ltr', 'feedLinks': '\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Computational Complexity - Atom\42 href\75\42http://blog.computationalcomplexity.org/feeds/posts/default\42 /\76\n\74link rel\75\42alternate\42 type\75\42application/rss+xml\42 title\75\42Computational Complexity - RSS\42 href\75\42http://blog.computationalcomplexity.org/feeds/posts/default?alt\75rss\42 /\76\n\74link rel\75\42service.post\42 type\75\42application/atom+xml\42 title\75\42Computational Complexity - Atom\42 href\75\42http://www.blogger.com/feeds/3722233/posts/default\42 /\76\n\n\74link rel\75\42alternate\42 type\75\42application/atom+xml\42 title\75\42Computational Complexity - Atom\42 href\75\42http://blog.computationalcomplexity.org/feeds/7096326964481296368/comments/default\42 /\76\n', 'meTag': '', 'openIdOpTag': '', 'imageSrcTag': '', 'latencyHeadScript': '\74script type\75\42text/javascript\42\76(function() { var b\75window,e\75\42jstiming\42,g\75\42tick\42;(function(){function d(a){this.t\75{};this.tick\75function(a,d,c){c\75void 0!\75c?c:(new Date).getTime();this.t[a]\75[c,d]};this[g](\42start\42,null,a)}var a\75new d;b.jstiming\75{Timer:d,load:a};if(b.performance\46\46b.performance.timing){var a\75b.performance.timing,c\75b[e].load,f\75a.navigationStart,a\75a.responseStart;0\74f\46\46a\76\75f\46\46(c[g](\42_wtsrt\42,void 0,f),c[g](\42wtsrt_\42,\42_wtsrt\42,a),c[g](\42tbsd_\42,\42wtsrt_\42))}try{a\75null,b.chrome\46\46b.chrome.csi\46\46(a\75Math.floor(b.chrome.csi().pageT),c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.chrome.csi().startE),\nc[g](\42tbnd_\42,\42_tbnd\42,f))),null\75\75a\46\46b.gtbExternal\46\46(a\75b.gtbExternal.pageT()),null\75\75a\46\46b.external\46\46(a\75b.external.pageT,c\46\0460\74f\46\46(c[g](\42_tbnd\42,void 0,b.external.startE),c[g](\42tbnd_\42,\42_tbnd\42,f))),a\46\46(b[e].pt\75a)}catch(l){}})();b.tickAboveFold\75function(d){var a\0750;if(d.offsetParent){do a+\75d.offsetTop;while(d\75d.offsetParent)}d\75a;750\76\75d\46\46b[e].load[g](\42aft\42)};var h\75!1;function k(){h||(h\75!0,b[e].load[g](\42firstScrollTime\42))}b.addEventListener?b.addEventListener(\42scroll\42,k,!1):b.attachEvent(\42onscroll\42,k);\n })();\74/script\076', 'mobileHeadScript': '', 'adsenseClientId': 'pub-0514128024034901', 'ieCssRetrofitLinks': '\74!--[if IE]\76\74script type\75\42text/javascript\42 src\75\42//www.blogger.com/static/v1/jsbin/4163410827-ieretrofit.js\42\76\74/script\76\n\74![endif]--\076', 'view': '', 'dynamicViewsCommentsSrc': '//www.blogblog.com/dynamicviews/4224c15c4e7c9321/js/comments.js', 'dynamicViewsScriptSrc': '//www.blogblog.com/dynamicviews/15de8d1bfc9ff1d1', 'plusOneApiSrc': 'https://apis.google.com/js/plusone.js', 'testHtml5CssSrc': '//www.blogger.com/static/v1/widgets/721438413-css_bundle_html5.css', 'sf': 'n', 'tf': ''}}, {'name': 'skin', 'data': {'vars': {'date_border_size': '0', 'description_font': 'normal bold 20px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'body_background_gradient_cap': 'none', 'tabs_selected_background_color': '#63704b', 'footer_background_gradient': 'none', 'date_background': 'transparent none no-repeat scroll top left', 'widget_border_radius': '5px', 'post_title_text_color': '#14196a', 'widget_font': 'normal normal 14px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'widget_link_hover_color': '#9e88ca', 'link_visited_color': '#1d259f', 'mobile_background_size': 'auto', 'date_space': '30px', 'post_title_font': 'normal normal 22px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'tabs_text_color': '#333333', 'title_separator_border_size': '1px', 'header_background_gradient': 'none', 'widget_outer_background_gradient': 'none', 'widget_link_color': '#14196a', 'mobile_button_color': '#ffffff', 'widget_title_font': 'normal bold 14px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'widget_outer_background_color': 'transparent', 'date_last_border_radius_bottom': '5px', 'widget_outer_margin_top': '0', 'shadow_spread': '20px', 'title_shadow_spread': '-1px', 'outer_shadow_spread': '0', 'keycolor': '#b3ca88', 'image_shadow_spread': '20px', 'image_background_color': '#ffffff', 'header_font': 'normal normal 48px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'header_background_color': 'transparent', 'date_header_border_radius_top': '0', 'widget_border_bevel_color': 'transparent', 'tabs_border_color': '#908d6a', 'widget_background_color': '#ccff99', 'date_position': 'static', 'post_first_padding_top': '0', 'tabs_background_gradient': 'url(http://www.blogblog.com/1kt/awesomeinc/tabs_gradient_light.png)', 'mobile_background_overlay': 'transparent none repeat scroll top left', 'date_border_color': '#ff0000', 'tabs_background_color': '#ccff99', 'widget_link_visited_color': '#1d259f', 'feed_text_color': '#191919', 'header_margin_top': '0', 'link_hover_color': '#9e88ca', 'date_last_space_bottom': '20px', 'header_margin_bottom': '0', 'date_padding_bottom': '0', 'list_separator_border_size': '0', 'description_text_color': '#908d6a', 'body_text_color': '#191919', 'header_padding_top': '22px', 'post_border_color': '#cc0000', 'footer_text_color': '#191919', 'post_background_color': '#ccff99', 'pager_space_top': '1em', 'endSide': 'right', 'startSide': 'left', 'body_background_size': 'auto', 'tabs_font': 'normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'body_font': 'normal normal 14px Georgia, Utopia, \47Palatino Linotype\47, Palatino, serif', 'date_first_border_radius_top': '5px', 'date_header_position': '15px', 'date_text_color': '#908d6a', 'widget_title_text_color': '#191919', 'image_border_color': '#cccccc', 'separator_outdent': '0', 'widget_text_color': '#191919', 'link_color': '#14196a', 'widget_border_color': '#ff0000', 'pager_border_radius_top': '5px', 'feed_link_color': '#14196a', 'header_text_color': '#0c0c0c', 'footer_background_color': '#ccff99', 'widget_padding_top': '8px', 'feed_link_visited_color': '#1d259f', 'feed_link_hover_color': '#9e88ca', 'date_font': 'normal normal 13px Arial, Tahoma, Helvetica, FreeSans, sans-serif', 'tabs_selected_text_color': '#ffffff', 'date_side': 'right', 'post_border_bevel_color': '#ff0000', 'widget_padding_side': '15px', 'body_background_color': '#ccff99', 'image_border_radius': '5px', 'pager_background_color': '#ccff99', 'widget_alternate_text_color': '#666666'}, 'override': ''}}, {'name': 'view', 'data': {'classic': {'name': 'classic', 'url': '/?view\75classic'}, 'flipcard': {'name': 'flipcard', 'url': '/?view\75flipcard'}, 'magazine': {'name': 'magazine', 'url': '/?view\75magazine'}, 'mosaic': {'name': 'mosaic', 'url': '/?view\75mosaic'}, 'sidebar': {'name': 'sidebar', 'url': '/?view\75sidebar'}, 'snapshot': {'name': 'snapshot', 'url': '/?view\75snapshot'}, 'timeslide': {'name': 'timeslide', 'url': '/?view\75timeslide'}}}]);
+_WidgetManager._RegisterWidget('_ImageView', new _WidgetInfo('Image1', 'sidebar-left-1', null, document.getElementById('Image1'), {'resize': false}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML4', 'sidebar-left-1', null, document.getElementById('HTML4'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PopularPostsView', new _WidgetInfo('PopularPosts1', 'sidebar-left-1', null, document.getElementById('PopularPosts1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList1', 'sidebar-left-1', null, document.getElementById('LinkList1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_LinkListView', new _WidgetInfo('LinkList2', 'sidebar-left-1', null, document.getElementById('LinkList2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogListView', new _WidgetInfo('BlogList1', 'sidebar-left-1', null, document.getElementById('BlogList1'), {'numItemsToShow': 0, 'totalItems': 32}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_CustomSearchView', new _WidgetInfo('CustomSearch1', 'sidebar-left-1', null, document.getElementById('CustomSearch1'), {'title': 'Search This Blog', 'includeBlog': true, 'includePostLinks': false, 'includeWeb': false, 'linkLists': [], 'blogUrl': 'http://blog.computationalcomplexity.org/', 'loadingMsg': 'Loading...', 'thisBlogMsg': 'This Blog', 'linkedFromHereMsg': 'Linked From Here', 'theWebMsg': 'The Web', 'backgroundColor': '#ccff99', 'textColor': '#191919', 'dateColor': '#908d6a', 'linkColor': '#14196a', 'urlColor': '#14196a', 'visitedLinkColor': '#1d259f', 'borderColor': '#908d6a', 'activeBorderColor': '#908d6a'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogArchiveView', new _WidgetInfo('BlogArchive1', 'sidebar-left-1', null, document.getElementById('BlogArchive1'), {'languageDirection': 'ltr'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML3', 'sidebar-left-1', null, document.getElementById('HTML3'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AttributionView', new _WidgetInfo('Attribution1', 'footer-3', null, document.getElementById('Attribution1'), {'attribution': 'Awesome Inc. template. Powered by \74a href\75\47http://www.blogger.com\47 target\75\47_blank\47\76Blogger\74/a\76.'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_AdSenseView', new _WidgetInfo('AdSense2', 'footer-1', null, document.getElementById('AdSense2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HTMLView', new _WidgetInfo('HTML2', 'footer-1', null, document.getElementById('HTML2'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_HeaderView', new _WidgetInfo('Header1', 'header', null, document.getElementById('Header1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_NavbarView', new _WidgetInfo('Navbar1', 'navbar', null, document.getElementById('Navbar1'), {}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_BlogView', new _WidgetInfo('Blog1', 'main', null, document.getElementById('Blog1'), {'cmtInteractionsEnabled': false, 'showBacklinks': true, 'postId': '7096326964481296368', 'lightboxEnabled': true, 'lightboxModuleUrl': '//www.blogger.com/static/v1/jsbin/2456262163-lbx.js', 'lightboxCssUrl': '//www.blogger.com/static/v1/v-css/4138445517-lightbox_bundle.css'}, 'displayModeFull'));
+_WidgetManager._RegisterWidget('_PageListView', new _WidgetInfo('PageList1', 'null', null, document.getElementById('PageList1'), {'title': 'Pages', 'links': [{'href': 'http://blog.computationalcomplexity.org/', 'title': 'Home', 'isCurrentPage': false}], 'mobile': false}, 'displayModeFull'));
+</script>
+</body>
+</html>

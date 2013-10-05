@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<!--
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+     __  __           _           _     _
+~_,-|  \/  | __ _ ___| |__   __ _| |__ | | ___
+    | |\/| |/ _` / __| '_ \ / _` | '_ \| |/ _ \,-~_,- - - ,
+~_,-| |  | | (_| \__ \ | | | (_| | |_) | |  __/    |   /\_/\
+    |_|  |_|\__,_|___/_| |_|\__,_|_.__/|_|\___|  ~=|__( ^ .^)
+~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,-~_,""   ""
+o o     o     +              o
++   +     +             o     +       +
+            +
+o  +    +        o  +           +        +
+-->
+<html data-env='production' lang='en' xml:lang='en'>
+<head><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+<script>
+  window.__o = {"channel":"tech","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":321.5,"h_buy":null,"h_pub_buy":null,"v_cur":2.0,"v_max":3.9,"v_cur_i":1,"v_max_i":3,"events":"event51,event61,event62","top_channel":"tech","content_source_type":"Internal - Editorial Series","content_source_name":"edit-apple-iphone-event","author_name":"Lance Ulanoff","age":"13","pub_day":10,"pub_month":9,"pub_year":2013,"pub_date":"09/10/2013","isPostView":true,"post_lead_type":"Gallery","topics":"apple,Gadgets,iPhone,iPhone 5S,Mobile,Tech,Uncategorized","campaign":null,"display_mode":"gallery"};
+  window._gaq = window._gaq || [];
+  window._gaq.push(['_setAccount', 'UA-92124-1']);
+</script>
+<title>iPhone 5S Hands On: All Change Under the Hood</title>
+<link href="http://rack.0.mshcdn.com/assets/app-562697e951f70576d09dce872b44a659.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://rack.2.mshcdn.com/assets/posts-7fa2cb2611e36863ddde36bdf858f644.css" media="all" rel="stylesheet" type="text/css" />
+<!--[if lte IE 8]>
+<link href="http://rack.3.mshcdn.com/assets/iehax-957092b11e263c6b850533d06d5aaa2c.css" media="screen" rel="stylesheet" type="text/css" />
+<![endif]-->
+<meta content='no' name='apple-mobile-web-app-capable'>
+<meta content='width=device-width, initial-scale=1.0' name='viewport'>
+<link href='https://plus.google.com/113493854651753327245' rel='publisher'>
+<link href='http://feeds.mashable.com/Mashable' rel='alternate' title='Mashable' type='application/rss+xml'>
+<link href='http://rack.1.mshcdn.com/assets/favicon-007eef4a606e98f0934d0af984b76203.png' rel='icon' type='image/png'>
+<meta content='mid:12105681' name='linkedin:owner'>
+<meta content='122071082108' property='fb:app_id'>
+<meta content='18807449704' property='fb:page_id'>
+<meta content='nYmtX7H2sSCkK8gHpQGxr7Es2526DgUaqb6PGYSX' name='readability-verification'>
+<link href='http://rack.2.mshcdn.com/assets/mashable.touchicon-e352d67245bfc87a994db28c16cf732f.png' rel='apple-touch-icon-precomposed'>
+
+<link data-page-subject="true" href="http://mashable.com/2013/09/10/iphone-5s-hands-on/" rel="canonical" /><link data-page-subject="true" href="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e9824016/037/Apple-event-11-3.jpg" rel="image_src" /><meta content="http://mashable.com/2013/09/10/iphone-5s-hands-on/" data-page-subject="true" property="og:url" /><meta content="iPhone 5S Hands On: All Change Under the Hood" data-page-subject="true" property="og:title" /><meta content="article" data-page-subject="true" property="og:type" /><meta content="Mashable" data-page-subject="true" property="og:site_name" /><meta content="Apple’s new flagship phone, the &lt;a href=&quot;http://mashable.com/2013/09/10/apple-unveils-iphone-5s/&quot;&gt;iPhone 5S&lt;/a&gt;  offers subtle, almost imperceptible changes on the surface, and ..." data-page-subject="true" property="og:description" /><meta content="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e9824016/037/Apple-event-11-3.jpg" data-page-subject="true" property="og:image" /><meta content="2013-09-10T23:57:47Z" data-page-subject="true" property="og:article:published_time" /><meta content="2013-09-10T23:58:03Z" data-page-subject="true" property="og:article:modified_time" /><meta content="https://www.facebook.com/mashable" data-page-subject="true" property="og:article:publisher" /><meta content="Apple’s new flagship phone, the &lt;a href=&quot;http://mashable.com/2013/09/10/apple-unveils-iphone-5s/&quot;&gt;iPhone 5S&lt;/a&gt;  offers subtle, almost imperceptible changes on the surface, and ..." data-page-subject="true" name="description" /><meta content="iphone, apple, uncategorized, tech, gadgets, mobile, iphone-5s" data-page-subject="true" name="keywords" /><meta content="iPhone 5S Hands On: All Change Under the Hood" data-page-subject="true" name="twitter:title" /><meta content="Apple’s new flagship phone, the iPhone 5S, follows in the grand tradition of the iPhone 3GS and iPhone 4S. It offers subtle, almost imperceptible changes on the surface, and a complete brain transplan..." data-page-subject="true" name="twitter:description" /><meta content="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/683b50fe/037/Apple-event-11-3.jpg" data-page-subject="true" name="twitter:image" /><meta content="@mashable" data-page-subject="true" name="twitter:site" /><meta content="http://mashable.com/2013/09/10/iphone-5s-hands-on/" data-page-subject="true" name="twitter:url" /><meta content="@mashable" data-page-subject="true" name="twitter:creator" /><meta content="photo" data-page-subject="true" name="twitter:card" /><meta content="560" data-page-subject="true" name="twitter:image:width" /><meta content="750" data-page-subject="true" name="twitter:image:height" /><meta content="2013-09-10 23:57:47 UTC" data-page-subject="true" name="date" /><meta content="Lance Ulanoff" data-page-subject="true" name="sailthru.author" /><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/13a26b2b/037/Apple-event-11-3.jpg" data-page-subject="true" name="sailthru.image.thumb" /><meta content="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/c77ea8a2/037/Apple-event-11-3.jpg" data-page-subject="true" name="sailthru.image.full" /><meta content="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/304f70a5/037/Apple-event-11-3.jpg" data-page-subject="true" name="sailthru.lead_image" /><meta content="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/ffaa5994/037/Apple-event-11-3.jpg" data-page-subject="true" name="sailthru.secondary_image" /><meta content="http://on.mash.to/1eBrWS7" data-page-subject="true" name="short_url" /><meta name=parsely-page content='{"title":"iPhone 5S Hands On: All Change Under the Hood","link":"http://mashable.com/2013/09/10/iphone-5s-hands-on/","image_url":"http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e9824016/037/Apple-event-11-3.jpg","type":"post","post_id":2167843,"pub_date":"2013-09-10T23:57:47Z","section":"tech","author":"Lance Ulanoff","tags":["Internal - Editorial Series","Internal - Editorial Series - edit-apple-iphone-event","Topics - apple","Topics - Gadgets","Topics - iPhone","Topics - iPhone 5S","Topics - Mobile","Topics - Tech","Topics - Uncategorized"]}' data-page-subject=true >
+
+<script src="http://rack.1.mshcdn.com/assets/app-fdd0d25ca1a94276f42b35bbd1656869.js" type="text/javascript"></script>
+<!--[if lte IE 8]>
+<script src="http://rack.2.mshcdn.com/assets/polyfill-6620db93ad92c8f787391361dfe3f23c.js" type="text/javascript"></script>
+<![endif]-->
+</head>
+<body class='body_posts body_show' data-gvcfv='true' data-gvmfv='true' data-gvmv='true' data-jsid='posts/show' data-postid='2167843' data-sec0='tech' data-sec1='gadgets|mob' data-sec2='posts' data-topic='gadgets' viewport='fixed'>
+<h1 class='semantic'>Mashable</h1>
+<header id='flyout-container'></header>
+<div id='peek'>
+<div id='sticky'>
+
+<header id='site-header'><div class='navbar'>
+<div class='navbar-inner'><ul class='main-menu nav inline'>
+<li class='menu'><a class='icon-reorder' href='#'></a></li>
+<li class='logo'><a class='brand' data-turbo-target='body-container' href='/'><span>Mashable</span><img alt="Header_logo.v2" src="http://rack.1.mshcdn.com/assets/header_logo.v2-30574d105ad07318345ec8f1a85a3efa.png" /></a></li>
+<li class='submenu collapsable pull-right' id='sign-in'><a href='/login/'><span>Sign in</span></a></li>
+<li class='follow submenu pull-right'><a class='follow-trigger' href='/2011/11/18/follow-mashable/'><span class='fb'></span>
+<span class='tw'></span>
+<span class='gp'></span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<div class='pull-right follow'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.1m'>Like</a>
+<a class='twitter-follow-button' data-dnt='true' data-show-count='true' data-show-screen-name='false' href='https://twitter.com/mashable'>
+Follow @mashable
+</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+<a alt='RSS Feed' class='rss' href='http://feeds.mashable.com/Mashable' title='RSS Feed'></a>
+<a alt='Email Subscriptions' class='email' href='/subscriptions' title='Email Subscriptions'></a>
+<div class='more'>
+<a href="/2011/11/18/follow-mashable/">see more&nbsp;&nbsp;&gt;</a></div>
+</div>
+</div>
+</div></li>
+<li class='nav-search submenu pull-right'><a class='search-trigger' href='/search/'>Search</a>
+<div class='dropdown-content'>
+<div class='page-container'>
+<div class='header-search-form'>
+<form accept-charset="UTF-8" action="/search/" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
+<div class='ie-search-wrapper'><input autocomplete="off" class="header-search" id="q" name="q" type="text" value="" /></div>
+<input class="btn btn-primary header-search-submit" name="commit" type="submit" value="Search" /></form><div class='header-search-results'></div>
+</div>
+</div>
+</div></li>
+<li class='collapsable channel submenu' data-tags='how-to,facebook,twitter,youtube,google-plus'><a href="/social-media/">Social Media</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='apps-software,dev-design,gadgets,mobile'><a href="/tech/">Tech</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='advertising,marketing,media,small-business,startups,jobs'><a href="/business/">Business</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='film,gaming,music,sports,television'><a href="/entertainment/">Entertainment</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='politics,social-good,us,world'><a href="/us-world/">US &amp; World</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='family-parenting,health-fitness,home,travel-and-leisure,work-and-play'><a href="/lifestyle/">Lifestyle</a><div class='submenu-content'></div></li>
+<li class='collapsable channel submenu' data-tags='pics,memes,comics,conversations,videos-watercooler'><a href="/watercooler/">Watercooler</a><div class='submenu-content'></div></li>
+<li class='collapsable' data-tags=''><a href="http://findjobs.mashable.com">Jobs</a></li>
+<li class='submenu more'><a href='#'><!-- %span=t "header.nav.more" -->
+<span>More</span></a>
+<div class='submenu-content'>
+<div class='page-container'>
+<ul class='columns'><li><ul class='column-list'><li class='header'>Channels</li>
+<li><a href="/social-media/">Social Media</a></li>
+<li><a href="/tech/">Tech</a></li>
+<li><a href="/business/">Business</a></li>
+<li><a href="/entertainment/">Entertainment</a></li>
+<li><a href="/us-world/">US &amp; World</a></li>
+<li><a href="/lifestyle/">Lifestyle</a></li>
+<li><a href="/watercooler/">Watercooler</a></li>
+<li><a href="http://findjobs.mashable.com">Jobs</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Company</li><li><a href="/about/">About Us</a></li><li><a href="http://www.wrightsmedia.com/sites/mashable/">Licensing &amp; Reprints</a></li><li><a href="http://mashable.com/2012/">Archive</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Contact</li><li><a href="/contact-us/">Contact Us</a></li><li><a href="/submit/">Submit News</a></li><li><a href="https://mashable.wufoo.com/forms/tesla-bug-tracker/">Submit a Bug</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Advertise</li><li><a href="/advertise/">Advertise</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Legal</li><li><a href="/privacy/">Privacy Policy</a></li><li><a href="/terms/">Terms of Use</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Apps</li><li><a href="http://itunes.apple.com/us/app/mashable/id356202138?mt=8">iPhone App</a></li><li><a href="http://itunes.apple.com/us/app/mashable-for-ipad/id370097986?mt=8">iPad App</a></li><li><a href="/2010/08/02/mashable-android-app/">Android App</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Resources</li><li><a href="/guidebook/">Guidebooks</a></li><li><a href="/2011/11/18/follow-mashable/">Subscriptions</a></li></ul></li><li><ul class='column-list'>
+<li class='header'>Sites</li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="http://events.mashable.com/">Events</a></li><li><a href="http://mashable.com/sgs/">Social Good Summit</a></li><li><a href="http://mashable.com/media-summit/">Media Summit</a></li></ul></li></ul>
+</div>
+</div></li>
+</ul></div>
+</div></header>
+</div>
+<div id='scrollable'><div class='loader'></div>
+<div class="ad_container"><span class="ad" data-height="0" data-src="/tripleclick.html#type=survey&amp;adnum=3&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2167843&amp;posts=edit-apple-iphone-event&amp;sec0=tech&amp;sec1=gadgets%7Cmob&amp;sec2=posts&amp;tile=3&amp;topic=gadgets" data-width="0"></span></div><header class='box970'>
+<div class='page-container'><center class='visible-desktop'><div class="ad_container"><span class="ad" data-height="50" data-src="/tripleclick.html#type=banner&amp;adnum=4&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2167843&amp;posts=edit-apple-iphone-event&amp;sec0=tech&amp;sec1=gadgets%7Cmob&amp;sec2=posts&amp;tile=4&amp;topic=gadgets" data-width="300"></span></div></center></div>
+</header>
+<div class='posts show' id='body-container'><div id='main'>
+<div class='page-container'>
+
+<div id='body'><hgroup class='page-header channel' data-channel='tech' data-section='sec0=tech&amp;sec1=index&amp;sec2=' id='post-head'>
+<h2>Tech</h2>
+<div class='follow-channel'>
+<div class='follow-buttons'>
+<a class='social-stub social-share facebook like' data-default='1' data-href='http://facebook.com/mashable' data-shares='1.1m'>Like</a>
+<a class='social-stub social-share twitter follow' data-shares='3.2m' href='https://twitter.com/intent/follow?region=follow_link&amp;screen_name=mashable&amp;tw_p=followbutton&amp;variant=2.0' target='_blank'>Follow</a>
+<div class='g-follow' data-annotation='bubble' data-height='20' data-href='//plus.google.com/+Mashable' data-rel='author'></div>
+</div>
+</div>
+</hgroup>
+<div class='flex-box'>
+<div class='box-cell'>
+<div class='above_960 adsense outside_post'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_slot = "3991492827";
+</script>
+<script>
+  if(!hideAd) google_ad_width = 728;
+</script>
+<script>
+  if(!hideAd) google_ad_height = 15;
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+</div>
+
+<div id='post-content'>
+<div id='post-slider'><article class='full post' data-campaign='edit-apple-iphone-event' data-channel='tech' data-id='522fb20697b2f82708008971' data-series-id='522ddb70b589e42efa00520a' data-subchannels='gadgets|mobile' data-topic='gadgets' data-velocity='545,544,543,542,541,540,539,539,538,537,536,535,534,533,532,532,531,530,529,528,527,527,526,525,524,523,523,522,521,520,520,519,518,517,516,516,515,514,513,513,512,511,510,510,509,508,508,507,506,505' data-wp-id='2167843' id='story'>
+<header class='article-header'>
+<h1 class='title' href='http://mashable.com/2013/09/10/iphone-5s-hands-on/'>iPhone 5S Hands On: All Change Under the Hood</h1>
+<aside class='shares social'>
+<div class='total-shares' data-index='0'>
+<em>4.4k</em>
+<div class='caption'>Shares</div>
+</div>
+<div class='share-buttons'>
+<div class='share-button-boxy'><a class="social-stub social-share facebook" data-layout="box_count" data-shares="2153" data-uid="95Xd" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share twitter" data-shares="1428" data-uid="95Xd" href="https://twitter.com/intent/tweet?original_referer=http://mashable.com/&amp;source=tweetbutton&amp;text=iPhone+5S+Hands+On%3A+All+Change+Under+the+Hood&amp;url=http%3A%2F%2Fmashable.com%2F2013%2F09%2F10%2Fiphone-5s-hands-on%2F&amp;via=mashable">Tweet</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share google_plus" data-shares="716" data-size="tall" data-uid="95Xd" href="#">Share</a></div>
+<div class='share-button-boxy'><a class="social-stub social-share linked_in" data-shares="116" data-uid="95Xd" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share stumble_upon" data-shares="8" data-uid="95Xd" href="#"></a></div>
+<div class='share-button-boxy'><a class="social-stub social-share pinterest" data-shares="2" data-uid="95Xd" href="#"></a></div>
+</div>
+<div class='velocity-graph tooltip-trigger' title='The Mashable Velocity graph shows how quickly people are sharing this article on the social Web.'>
+<canvas class='velocity'></canvas>
+<div class='caption'>What's This?</div>
+</div>
+</aside>
+
+<div class='above_960 adsense'>
+<script>
+  if(typeof(google_num_ads) != "undefined") google_skip = google_num_ads;
+  google_ad_client = "pub-9942038924324175";
+  if($('.adsense').last().filter('.above_960').length > 0 && $(document).width() < 960){
+    var hideAd = true;
+  }else{
+    var hideAd = false;
+  }
+</script>
+<script>
+  if(!hideAd) google_ad_channel = "9077376301";
+</script>
+<script>
+  if(!hideAd) google_ad_output = "js";
+</script>
+<script>
+  if(!hideAd) google_max_num_ads = "3";
+</script>
+<script>
+  if(!hideAd) google_ad_type = "text";
+</script>
+<script>
+  if(!hideAd) google_feedback = "on";
+</script>
+<script src="http://pagead2.googlesyndication.com/pagead/show_ads.js" type="text/javascript"></script>
+</div>
+
+<figure class='article-image'><img alt="Apple-event-11-3" class="microcontent" data-fragment="lead-image" data-image="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/c77ea8a2/037/Apple-event-11-3.jpg" data-micro="1" data-url="null" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/c77ea8a2/037/Apple-event-11-3.jpg" /></figure>
+
+<div class="article-info"><a class="byline" href="/people/4d9a3eba51984063f4000039/"><img alt="Lance-ulanoff-headshot-sq" class="author_image" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA2LzI2L2E3L2xhbmNldWxhbm9mLjc1ZTkzLmpwZwpwCXRodW1iCTkweDkwIwplCWpwZw/89b59780/df2/lance-ulanoff-headshot-sq.jpg" /><div class="author_and_date"><span class="author_name">By Lance Ulanoff</span><time datetime="Tue, 10 Sep 2013 23:57:47 +0000">2013-09-10 23:57:47 UTC</time></div></a></div>
+
+</header>
+<section class='article-content'>
+
+<div class="shift-to-hero"><section class="gallery" data-display-mode="gallery" data-id="12487" data-slide-title-pos="" data-slug="apple-hands-on"><header><h1>Hands On With the iPhone 5S</h1>
+</header><ol class="slides">
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92c12d2cd5e250038b8" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjFmNzUwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/f33099fc/ced/Apple-event-26.jpg">
+<figure><img alt="Apple-event-26" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjFmNzUwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/b4521d0e/ced/Apple-event-26.jpg"></figure><div class="meta">
+<h2 class="title">Introducing the iPhone 5S</h2>
+<div class="caption"><p>Apple unveiled the iPhone 5S -- along with a lower cost iPhone 5C —  at its Cupertino, Calif. headquarters, marking the first time two iPhone devices launched on the same day. </p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038b9" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjE5YTExLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/240c6afa/3a2/Apple-event-24.jpg">
+<figure><img alt="Apple-event-24" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjE5YTExLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/fc1f3d69/3a2/Apple-event-24.jpg"></figure><div class="meta">
+<h2 class="title">iPhone 5S: Gold, Silver and Black</h2>
+<div class="caption"><p>The iPhone 5S -- which comes in gold, silver and black -- has the same overall physical design as the previous-generation iPhone 5, but it also has a number of upgrades.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038ba" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjFmODNlLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/346d159e/895/Apple-event-15.jpg">
+<figure><img alt="Apple-event-15" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjFmODNlLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/994a8ea3/895/Apple-event-15.jpg"></figure><div class="meta">
+<h2 class="title">Sleek and Light</h2>
+<div class="caption"><p>The iPhone 5S measures in at 4.87 inches high, 2.31 inches wide and 0.30 inches deep. It weighs less than 4 ounces -- 3.95 to be exact.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038bb" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjhkYTBhLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/9f3346d4/1ee/Apple-event-17.jpg">
+<figure><img alt="Apple-event-17" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjhkYTBhLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/63aaefc3/1ee/Apple-event-17.jpg"></figure><div class="meta">
+<h2 class="title">Touch ID</h2>
+<div class="caption"><p>The iPhone 5S will include a Touch ID fingerprint sensor, allowing users to unlock their device with the touch of a finger.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038bc" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjY4OTA1LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/b04bbf2e/938/Apple-event-18.jpg">
+<figure><img alt="Apple-event-18" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjY4OTA1LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/87744a5c/938/Apple-event-18.jpg"></figure><div class="meta">
+<h2 class="title">Fingerprint Sensor Technology</h2>
+<div class="caption"><p>Not only will this be a huge step forward in smartphone protection, it can also be used to make iTunes purchases. Instead of typing in a password every time you buy a song or app, pressing your fingerprint against the scanner will bypass that step.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038bd" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjI3YTA0LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/8befa564/3e7/Apple-event-29.jpg">
+<figure><img alt="Apple-event-29" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjI3YTA0LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/a6a11c2d/3e7/Apple-event-29.jpg"></figure><div class="meta">
+<h2 class="title">App Innovation</h2>
+<div class="caption"><p>Apple has re-engineered all the built-in apps — such as Mail, Calendar and iPod — for 64-bit architectures.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038be" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjc3NmIyLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/6d28e40a/0f6/Apple-event-14.jpg">
+<figure><img alt="Apple-event-14" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjc3NmIyLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/2a969f65/0f6/Apple-event-14.jpg"></figure><div class="meta">
+<h2 class="title">Faster Processor</h2>
+<div class="caption"><p>The iPhone 5S comes with a powerful new processor: the Apple A7. It packs more than 1 billion transistors into a 102mm chip. It can run 64-bit apps (all previous models ran at 32 bits).</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038bf" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjI5ZDg5LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/4ba8656d/2ce/Apple-event-13.jpg">
+<figure><img alt="Apple-event-13" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjI5ZDg5LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/90bc4aa9/2ce/Apple-event-13.jpg"></figure><div class="meta">
+<h2 class="title">Improved Camera</h2>
+<div class="caption"><p>The iPhone's camera comes with major improvements, thanks to new sensors that have 15% more area and an f/2.2 aperture. It also comes with a dual-LED flash and new software features, such as filters and a burst mode that snaps 10 still pictures in one second with automatic image stabilization. </p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038c0" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLmM0YjA0LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/276b6a7d/149/Apple-event-22.jpg">
+<figure><img alt="Apple-event-22" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLmM0YjA0LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/8ed62522/149/Apple-event-22.jpg"></figure><div class="meta">
+<h2 class="title">Photo Collections</h2>
+<div class="caption"><p>Apple is making it easier to group photos and videos based on time and place. It's displayed almost like a mosaic on screen. </p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038c1" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLmFmNGFkLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/6b6eef40/dea/Apple-event-21.jpg">
+<figure><img alt="Apple-event-21" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLmFmNGFkLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/4be9705d/dea/Apple-event-21.jpg"></figure><div class="meta">
+<h2 class="title">Photo Sorting</h2>
+<div class="caption"><p>Photos can also be sorted by year.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038c2" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjhlYmQwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/e5e3ad52/32d/Apple-event-20.jpg">
+<figure><img alt="Apple-event-20" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2Y4L0FwcGxlZXZlbnQyLjhlYmQwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/9f58a2e3/32d/Apple-event-20.jpg"></figure><div class="meta">
+<h2 class="title">Panoramics</h2>
+<div class="caption"><p>The panorama feature captures a scene at an impressive 30 frames for each second. This is 50% faster than the iPhone 5. </p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038c3" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmIwMzEzLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/f808601d/614/Apple-event-1.jpg">
+<figure><img alt="Apple-event-1" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmIwMzEzLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/59b97a90/614/Apple-event-1.jpg"></figure><div class="meta">
+<h2 class="title">HD Video Recording</h2>
+<div class="caption"><p>The iPhone 5S lets you film in 1080p HD and touts a slow-motion feature at 120 frames for each second in 720p. This means you can take footage in regular speed and slow it down, for example, during a dramatic moment. </p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038c4" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjdiNTBmLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/8ba8d01b/87e/Apple-event-16.jpg">
+<figure><img alt="Apple-event-16" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLjdiNTBmLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/afc7461a/87e/Apple-event-16.jpg"></figure><div class="meta">
+<h2 class="title">iPhone 5S Cases</h2>
+<div class="caption"><p>Apple also launched a new lineup of iPhone 5 cases in a variety of colors.</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523aa92d12d2cd5e250038c5" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmE2MGZmLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/a8783e42/703/Apple-event-19.jpg">
+<figure><img alt="Apple-event-19" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmE2MGZmLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/36263702/703/Apple-event-19.jpg"></figure><div class="meta">
+<h2 class="title">Availability</h2>
+<div class="caption"><p>The iPhone 5S will go on sale Sept. 20 in nine countries: the United States, Canada, China, France, Germany, Japan, Singapore and the UK. Like previous generations, it will come with 16, 32 or 64GB of storage for $199, $299 and $399, respectively — as long as you sign a two-year contract with AT&amp;T, Verizon or Sprint (T-Mobile's installment pricing is somewhat different).</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+</ol></section></div>
+<p>Apple’s new flagship phone, the <a href="http://mashable.com/2013/09/10/apple-unveils-iphone-5s/" data-crackerjax="#post-slider">iPhone 5S</a>, follows in the grand tradition of the iPhone 3GS and iPhone 4S. It offers subtle, almost imperceptible changes on the surface, and a complete brain transplant underneath. </p>
+<p>While I can’t pretend to truly know the iPhone 5S –- we had maybe 45 minutes with it, total –- I can tell you that the transplant appears successful. </p>
+<p>The <a href="http://mashable.com/category/apple/">Apple</a> iPhone 5S clearly has some real power (a new A7 chip) and startling innovation: a fingerprint ID and home button all in one. No doubt there will be many more secrets to reveal when we get a chance to properly review the new smartphone.</p>
+<h2>On the Surface</h2>
+<p><iframe class="vine-embed" src="https://vine.co/v/h1XM2a3rD70/embed/simple" width="600" height="600" frameborder="0"></iframe></p>
+<script async src="//platform.vine.co/static/scripts/embed.js" charset="utf-8"></script><p>At first glance, it’s quite easy to mistake the iPhone 5S for its predecessor. At the Apple launch event, I saw several instances where someone picked up another person's iPhone 5, thinking they were handling the new phone. The impression doesn’t last long. First of all, there’s the color. Apple's two new metallic finishes — "space gray" and gold — have an almost indescribable pop to them. </p>
+<p>There are two other external differences. One is pretty subtle and the other is, as I see it, a pretty big deal. The first is the LED flash, which is actually two flashes. Called True Tone Flash, these two LEDs are designed to ameliorate the effects of odd lighting (like fluorescents) on flesh and colors. In my limited time with the phone, it was hard to tell how effective this is.</p>
+<p>The second change is the iPhone 5S home button. It’s in the exact same spot as it was on the 5, but something is missing: the square. You know, the one with rounded corners that’s been on every iPhone since they were launched in 2007 (it’s also on iPads and iPods). That change is a signal of something new and momentous underneath the hood.</p>
+<h2>Touch ID</h2>
+<p><iframe class="vine-embed" src="https://vine.co/v/h1Xg9bJeWpg/embed/simple" width="600" height="600" frameborder="0"></iframe></p>
+<p>Apple’s introduction of a built-in fingerprint reader was a poorly-kept secret. Still, the execution is impressive. Touch ID uses a microns-thin sensor under the home button’s sapphire glass, just above the tactile sensor. First it remembers your fingerprint (thumb or finger), then reads it when you want to unlock the phone. I tried this out twice, and was impressed with how smoothly it went.</p>
+<p>Touch ID uses multiple passes to analyze your print. It advised me to repeatedly place my finger on the home button, and that I shift positions so it could get a complete read. You can watch it build the reading with each pass. With my thumb and index finger, the process was the same. Once it was done, I was able to store a name for my fingerprint. </p>
+<p>You can store multiple fingers. On one phone, both an Apple employee and I were able to log into the same phone using one of our two registered fingers.</p>
+<p>It takes 20 seconds or so necessary to register a finger. Logging in makes that time well worth the effort. You press the home button and hold it while it reads your finger. This happens in less than a second, so it feels like you’re simply pressing to unlock the phone.</p>
+<p>Apple is storing the encrypted ID information at a hardware level. That’s just how it should be done. Touch ID will be a significant selling point for the new phone.</p>
+<h2>Pictures</h2>
+<p>Another significant change is the new iSight Camera. Apple updated both the build of the camera and the brainpower behind it. The new A7 chip (which also stores that encrypted security data) gives the camera all sorts of tricks, many of which brought to mind an expensive DSLR. The camera now starts analyzing the scene almost as soon as you hit the camera icon. </p>
+<p>It can do an exposure grid, auto image stabilization and even adjust exposure in real-time on a panorama shot. What Apple did not do was engage in the megapixel race. While some smartphone manufacturers are touting 13 and even 41 MP cameras, Apple stayed at 8. Instead, the new image sensor is larger and actually accommodates larger pixels.</p>
+<p>In a panorama shot of the demo room, which happened to have a large bright window, the iPhone 5s was surprisingly adept at auto-managing the exposure as I shot. Instead of an over-bright window with shadowed figures in the foreground, I got all the room detail. In a standard still, this would not be impressive. But in a panorama, the exposure is constantly changing. The iPhone 5s figured it out.</p>
+<p>Burst mode worked as advertised. I shot 20 or more shots by simply holding down the shutter button. The iPhone 5S collected all my shots and automatically identified the best-exposed and (to an extent) best-composed shots. We also tried this with a photo of my face. To test the iPhone 5S's ability to find good facial expressions, we shot a burst mode of me looking serious, smiling and then sad. The phone highlighted the best — which were indeed the best — and then I had the option of selecting those for inclusion in my film roll.</p>
+<p>Slow motion is a powerful feature that also lived up to its billing. The feature is one of the camera options. You can shoot your whole video in slow-mo and then, with an on-screen slider, choose which portions run at normal speed and which show off the 120fps shooting skills of the iPhone 5S. We tried shots with me waving. Each time, it just worked. Slow motion looked great on the iPhone screen.</p>
+<h2>Scratching the Surface</h2>
+<p>There is quite a bit about the iPhone 5S I could not test. First of all, the phone is now a fully 64-bit device. This will give the phone more power — and as with 64-bit computers, it may also simply allow the device to run with fewer problems.</p>
+<p>When I spoke to Donald and Geremy Mustard of Chair Entertainment, the company that makes Infinity Blade and that demonstrated <a href="http://mashable.com/2013/09/10/infinity-blade-iii/" data-crackerjax="#post-slider">Infinity Blade III</a> on the iPhone 5s, they said the new phone’s 64 bitness gets the phone's other tasks (background, OS-level stuff) out of the way. They did note, however, that the iPhone 5S allowed them to flip on nearly all the visual special effects switches (reflections, fog and so on) in the Unreal engine, which drives the stunning imagery in Infinity Blade III.</p>
+<p>While I also couldn’t test the new M7 coprocessor, an A7 companion piece of silicon that will read all the input from the built in accelerometer, gyroscope and compass, this could be one of the most important pieces of stealth technology in the phone. Apple introduced a CoreMotion API, which partners like Nike can use to build more comprehensive health and fitness apps.</p>
+<p>Apple could use this chip to drive interaction with another device: the long-rumored iWatch. The only question is whether Apple will wait to gather more telemetry from the M7 before launching the iWatch this year, or hold off until 2014. In the meantime, there’s not much for typical consumers to see on the M7 front.</p>
+<h2>A Phone You Sort of Know</h2>
+<p>The iPhone 5S is very familiar. Its size and weight are exactly the same as the iPhone 5. It has the same retina screen. All the buttons (besides Home) look the same. The biggest difference for most users will be iOS 7. Its new look combined with this more powerful phone and some of the landmark features –- iSight camera, Touch ID –- should make the iPhone 5S feel less like an upgrade and more like a reboot.</p>
+<section class="gallery" data-display-mode="gallery" data-id="12465" data-slide-title-pos="" data-slug="apple-sept-10-iphone-event"><header><h1>Apple Sept. 10 iPhone Event</h1>
+</header><ol class="slides">
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600357b" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjc1MzI0LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/397db18f/9a1/apple-event-1-6.jpg">
+<figure><img alt="Apple-event-1-6" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjc1MzI0LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/7432366d/9a1/apple-event-1-6.jpg"></figure><div class="meta">
+<h2 class="title">Tim Cook Onstage</h2>
+<div class="caption"><p>Apple CEO Tim Cook opens the event.</p></div>
+<div class="credit">
+Image:  Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600357c" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjE3ZjYzLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/7a5d9c98/4bb/apple-event-1-28.jpg">
+<figure><img alt="Apple-event-1-28" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjE3ZjYzLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/690bda96/4bb/apple-event-1-28.jpg"></figure><div class="meta">
+<h2 class="title">iOS 7</h2>
+<div class="caption"><p>Craig Federighi, senior vice president of software engineering, demonstrates iOS 7, Apple's forthcoming mobile operating system. Federighi announced it will be available for free Sept. 18. </p></div>
+<div class="credit">
+Image:  Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600357d" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjkyYjc0LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/1b063fdb/a66/apple-event-1-71.jpg">
+<figure><img alt="Apple-event-1-71" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjkyYjc0LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/66519678/a66/apple-event-1-71.jpg"></figure><div class="meta">
+<h2 class="title">Apple Unveils the iPhone 5C</h2>
+<div class="caption"></div>
+<div class="credit">
+Image:  Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600357e" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmFmYmU5LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/82d2e99e/dda/apple-event-1-73.jpg">
+<figure><img alt="Apple-event-1-73" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmFmYmU5LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/4f17241c/dda/apple-event-1-73.jpg"></figure><div class="meta">
+<h2 class="title">Apple Unveils the iPhone 5c</h2>
+<div class="caption"><p>The new device comes in five colors. </p></div>
+<div class="credit">
+Image:  Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600357f" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjc4OGU2LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/f5d231aa/5ef/apple-event-1-77.jpg">
+<figure><img alt="Apple-event-1-77" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjc4OGU2LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/0c2b6460/5ef/apple-event-1-77.jpg"></figure><div class="meta">
+<h2 class="title">iPhone 5C Specs</h2>
+<div class="caption"></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003580" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmY1MmYwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/54d4b882/c0e/apple-event-1-84.jpg">
+<figure><img alt="Apple-event-1-84" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmY1MmYwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/fa09ea4b/c0e/apple-event-1-84.jpg"></figure><div class="meta">
+<h2 class="title">iPhone 5C Pricing</h2>
+<div class="caption"><p>Philip W. Schiller, senior vice president of worldwide marketing at Apple, reveals the pricing for the iPhone 5C. </p></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003581" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjg5NjdjLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/c3bbcbdf/d61/apple-event-1-101.jpg">
+<figure><img alt="Apple-event-1-101" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjg5NjdjLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/d368f671/d61/apple-event-1-101.jpg"></figure><div class="meta">
+<h2 class="title">Apple Unveils iPhone 5S</h2>
+<div class="caption"><p>The new device comes in three colors. </p></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003582" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmMzODQ1LmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/76fe926b/76f/apple-event-1-102.jpg">
+<figure><img alt="Apple-event-1-102" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmMzODQ1LmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/d5f40d78/76f/apple-event-1-102.jpg"></figure><div class="meta">
+<h2 class="title">Apple Unveils iPhone 5S</h2>
+<div class="caption"><p>Philip W. Schiller, senior vice president of worldwide marketing at Apple, reveals the iPhone 5S.</p></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image - Getty" data-id="523c631bb05f9d22a6003583" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2U4L2lwaG9uZTVzZ2V0LjU4MzQwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/481caf90/649/iphone-5s-getty-image.jpg">
+<figure><img alt="Iphone-5s-getty-image" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2U4L2lwaG9uZTVzZ2V0LjU4MzQwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/66dea173/649/iphone-5s-getty-image.jpg"></figure><div class="meta">
+<h2 class="title">iPhone 5S</h2>
+<div class="caption"><p>Schiller speaks about the iPhone 5S. </p></div>
+<div class="credit">
+Image: Justin Sullivan/Getty Images
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003584" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjVjMTEyLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/fa64e569/c8a/apple-event-1-161.jpg">
+<figure><img alt="Apple-event-1-161" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjVjMTEyLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/9573e5a2/c8a/apple-event-1-161.jpg"></figure><div class="meta">
+<h2 class="title">Touch ID </h2>
+<div class="caption"><p>The iPhone 5S can scan your fingerprint. </p></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003585" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmQxMWEzLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/3076c20b/7f4/apple-event-1-166.jpg">
+<figure><img alt="Apple-event-1-166" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmQxMWEzLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/d0ca8fd3/7f4/apple-event-1-166.jpg"></figure><div class="meta">
+<h2 class="title">New iPhone Pricing</h2>
+<div class="caption"></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Default" data-id="523c631bb05f9d22a6003586" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzk1L2FwcGxlZXZlbnQyLjE0MzkzLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/027e840f/87c/apple-event-2-14.jpg">
+<figure><img alt="Apple-event-2-14" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzk1L2FwcGxlZXZlbnQyLjE0MzkzLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/e2630489/87c/apple-event-2-14.jpg"></figure><div class="meta">
+<h2 class="title">Elvis Costello Performs</h2>
+<div class="caption"><p>The musician played his new song "Tripwire."</p></div>
+<div class="credit">
+
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003587" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjA5YzNjLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/c3480c00/76a/apple-event-1-195.jpg">
+<figure><img alt="Apple-event-1-195" src="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjA5YzNjLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/424ef87d/76a/apple-event-1-195.jpg"></figure><div class="meta">
+<h2 class="title">Elvis Costello Performs</h2>
+<div class="caption"></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003588" data-skip-rerender="false" data-thumb="http://rack.1.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjRjYjYwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/f962f59d/3e3/apple-event-1-2.jpg">
+<figure><img alt="Apple-event-1-2" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjRjYjYwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/12b7f0ba/3e3/apple-event-1-2.jpg"></figure><div class="meta">
+<h2 class="title">Hands-on With the Iphone 5S</h2>
+<div class="caption"></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a6003589" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2RmL2FwcGxlZXZlbnQ4LjJhYjRkLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/0e0ddcc1/6e6/apple-event-8.jpg">
+<figure><img alt="Apple-event-8" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2RmL2FwcGxlZXZlbnQ4LjJhYjRkLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/523b3c4b/6e6/apple-event-8.jpg"></figure><div class="meta">
+<h2 class="title">Hands-on With the Iphone 5S</h2>
+<div class="caption"></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600358a" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjljZWJhLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/45c99e10/068/apple-event-15.jpg">
+<figure><img alt="Apple-event-15" src="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjljZWJhLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/d53eea6c/068/apple-event-15.jpg"></figure><div class="meta">
+<h2 class="title">Hands-on With the Iphone 5S</h2>
+<div class="caption"></div>
+<div class="credit">
+Image: Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600358b" data-skip-rerender="false" data-thumb="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjI1MjIwLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/f4e8d028/0be/apple-event-1-3.jpg">
+<figure><img alt="Apple-event-1-3" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLjI1MjIwLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/c73f4507/0be/apple-event-1-3.jpg"></figure><div class="meta">
+<h2 class="title">Attendees Wait for the Event to Begin</h2>
+<div class="caption"></div>
+<div class="credit">
+Image:  Nina Frazier, Mashable
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image - Getty" data-id="523c631bb05f9d22a600358c" data-skip-rerender="false" data-thumb="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2IyL2FwcGxlaW5maW5pLjc4YjhiLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/af8f1a2e/8b1/apple-infinite-loop-getty-image.jpg">
+<figure><img alt="Apple-infinite-loop-getty-image" src="http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwL2IyL2FwcGxlaW5maW5pLjc4YjhiLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/8c4e4a03/8b1/apple-infinite-loop-getty-image.jpg"></figure><div class="meta">
+<h2 class="title">Apple Headquarters in Cupertino</h2>
+<div class="caption"><p>People arrive for the product announcement. </p></div>
+<div class="credit">
+Image: Justin Sullivan/Getty Images
+</div>
+</div>
+</li>
+<li class="slide" data-content-source="Gallery - Image" data-id="523c631bb05f9d22a600358d" data-skip-rerender="false" data-thumb="http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmRkNTFiLmpwZwpwCXRodW1iCTE4MHgxNDAjCmUJanBn/3da1eb8a/0f5/apple-event-12.jpg">
+<figure><img alt="Apple-event-12" src="http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzIyL2FwcGxlZXZlbnQxLmRkNTFiLmpwZwpwCXRodW1iCTg1MHg1OTA-CmUJanBn/5b67215d/0f5/apple-event-12.jpg"></figure><div class="meta">
+<h2 class="title">The Media Awaits</h2>
+<div class="caption"><p>Members of the press await Apple's product announcement outside the company's Cupertino, Calif., headquarters</p></div>
+<div class="credit">
+Image:  Nina Frazier, Mashable
+</div>
+</div>
+</li>
+</ol></section>
+<p><em>Images: Mashable, Nina Frazier</em></p>
+
+
+
+</section>
+<footer class='article-topics'>
+Topics:
+<a href="/category/apple/">apple</a>, <a href="/category/gadgets/">Gadgets</a>, <a href="/category/iphone/">iPhone</a>, <a href="/category/iphone-5s/">iPhone 5S</a>, <a href="/category/mobile/">Mobile</a>, <a href="/category/tech/">Tech</a>
+</footer>
+
+<div id='newsletter-signup'>
+<div id='newsletter-signup-wrapper'>
+<hgroup>
+<h1>Get our hottest stories delivered to your inbox.</h1>
+<h2>Sign up for our personalized daily newsletter</h2>
+</hgroup>
+<form accept-charset="UTF-8" action="http://link.mashable.com/s/Top+Stories" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" /></div>
+<input class="email" id="email" name="email" placeholder="email" required="required" type="email" />
+<input class="submit" name="commit" type="submit" value="Sign Up" />
+</form>
+
+</div>
+</div>
+
+<div id='taboola-bottom-article'></div>
+<script>
+  //Taboola ad placing code
+  window._taboola = window._taboola || [];
+  _taboola.push({mode:'autosized-2r-responsive',
+  container:'taboola-bottom-article', placement:'Bottom Article'});
+</script>
+<script>
+  //Taboola article pushing code
+    window._taboola = window._taboola || [];
+    _taboola.push({article:'auto'});
+</script>
+<script src="http://cdn.taboolasyndication.com/libtrc/mashable/loader.js" type="text/javascript"></script>
+
+<script>
+  if(window.pageChanged)
+    window.omni({"channel":"tech","content_type":"article","v_buy":null,"v_buy_i":null,"h_pub":321.5,"h_buy":null,"h_pub_buy":null,"v_cur":2.0,"v_max":3.9,"v_cur_i":1,"v_max_i":3,"events":"event51,event61,event62","top_channel":"tech","content_source_type":"Internal - Editorial Series","content_source_name":"edit-apple-iphone-event","author_name":"Lance Ulanoff","age":"13","pub_day":10,"pub_month":9,"pub_year":2013,"pub_date":"09/10/2013","isPostView":true,"post_lead_type":"Gallery","topics":"apple,Gadgets,iPhone,iPhone 5S,Mobile,Tech,Uncategorized","campaign":null,"display_mode":"gallery"});
+    metaData = {"link":[["canonical","http://mashable.com/2013/09/10/iphone-5s-hands-on/"],["image_src","http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e9824016/037/Apple-event-11-3.jpg"]],"meta_property":[["og:url","http://mashable.com/2013/09/10/iphone-5s-hands-on/"],["og:title","iPhone 5S Hands On: All Change Under the Hood"],["og:type","article"],["og:site_name","Mashable"],["og:description","Apple\u2019s new flagship phone, the <a href=\"http://mashable.com/2013/09/10/apple-unveils-iphone-5s/\">iPhone 5S<\/a>  offers subtle, almost imperceptible changes on the surface, and ..."],["og:image","http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTEyMDB4NjI3IwplCWpwZw/e9824016/037/Apple-event-11-3.jpg"],["og:article:published_time","2013-09-10T23:57:47Z"],["og:article:modified_time","2013-09-10T23:58:03Z"],["og:article:publisher","https://www.facebook.com/mashable"]],"meta_name":[["description","Apple\u2019s new flagship phone, the <a href=\"http://mashable.com/2013/09/10/apple-unveils-iphone-5s/\">iPhone 5S<\/a>  offers subtle, almost imperceptible changes on the surface, and ..."],["keywords","iphone, apple, uncategorized, tech, gadgets, mobile, iphone-5s"],["twitter:title","iPhone 5S Hands On: All Change Under the Hood"],["twitter:description","Apple\u2019s new flagship phone, the iPhone 5S, follows in the grand tradition of the iPhone 3GS and iPhone 4S. It offers subtle, almost imperceptible changes on the surface, and a complete brain transplan..."],["twitter:image","http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTU2MHg3NTAKZQlqcGc/683b50fe/037/Apple-event-11-3.jpg"],["twitter:site","@mashable"],["twitter:url","http://mashable.com/2013/09/10/iphone-5s-hands-on/"],["twitter:creator","@mashable"],["twitter:card","photo"],["twitter:image:width","560"],["twitter:image:height","750"],["date","2013-09-10 23:57:47 UTC"],["sailthru.author","Lance Ulanoff"],["sailthru.image.thumb","http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTExNXgxMTUjCmUJanBn/13a26b2b/037/Apple-event-11-3.jpg"],["sailthru.image.full","http://rack.0.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTk1MHg1MzQjCmUJanBn/c77ea8a2/037/Apple-event-11-3.jpg"],["sailthru.lead_image","http://rack.3.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTYwMHgzMzgjCmUJanBn/304f70a5/037/Apple-event-11-3.jpg"],["sailthru.secondary_image","http://rack.2.mshcdn.com/media/ZgkyMDEzLzA5LzEwLzYwL0FwcGxlZXZlbnQxLmFiMWY0LmpwZwpwCXRodW1iCTI4OHgxNjIjCmUJanBn/ffaa5994/037/Apple-event-11-3.jpg"]],"short_url":[["short_url","http://on.mash.to/1eBrWS7"]]};
+</script>
+<div class='right_rail_replace'>
+<div class="ad_container"><span class="ad" data-height="250" data-src="/tripleclick.html#type=no_right_rail&amp;adnum=1&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2167843&amp;posts=edit-apple-iphone-event&amp;sec0=tech&amp;sec1=gadgets%7Cmob&amp;sec2=posts&amp;tile=1&amp;topic=gadgets" data-width="300"></span></div>
+
+</div>
+</article>
+</div>
+<div class='article-comments'>
+<div data-article-id="522fb20697b2f82708008971" data-checksum="455b44ba15e8c82f9a37e9c8dbaa1647" data-collection-meta="eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJ0aXRsZSI6ImlQaG9uZSA1UyBIYW5kcyBPbjogQWxsIENoYW5nZSBVbmRlciB0aGUgSG9vZCIsInVybCI6Imh0dHA6Ly9tYXNoYWJsZS5jb20vMjAxMy8wOS8xMC9pcGhvbmUtNXMtaGFuZHMtb24vIiwidGFncyI6ImlwaG9uZSxhcHBsZSx1bmNhdGVnb3JpemVkLHRlY2gsZ2FkZ2V0cyxtb2JpbGUsaXBob25lLTVzIiwiY2hlY2tzdW0iOiI0NTViNDRiYTE1ZThjODJmOWEzN2U5YzhkYmFhMTY0NyIsImFydGljbGVJZCI6IjUyMmZiMjA2OTdiMmY4MjcwODAwODk3MSJ9.3m_cdw4ZPQt7R8uHExqc9iPvGkhCDgC8oBnsHE3HM1Q" data-network="mashable.fyre.co" data-root="zor.livefyre.com" data-site-id="312274" id="livefyre_comments"></div>
+<a class='btn btn-light load-comments' href='#'>Load Comments</a>
+<div id='powered_by_livefyre_new'>
+<a href='http://livefyre.com' target='_blank'>Powered by Livefyre</a>
+</div>
+</div>
+</div>
+</div>
+<aside class='box-cell sidebar'>
+<div class='ad sidebar-inset sidebar-drop'>
+<div class="ad_container"><span class="ad" data-height="250" data-src="/tripleclick.html#type=right_rail&amp;adnum=2&amp;gvcfv=true&amp;gvmfv=true&amp;gvmv=true&amp;postid=2167843&amp;posts=edit-apple-iphone-event&amp;sec0=tech&amp;sec1=gadgets%7Cmob&amp;sec2=posts&amp;tile=2&amp;topic=gadgets" data-width="300"></span></div>
+
+</div>
+<h1 class='ribbon hot'>What's Hot</h1>
+<div class='sidebar-inset' id='big-stories'></div>
+</aside>
+</div>
+<div id='more-in-channel'>
+<div class='page-header channel' data-channel='tech' data-section='sec0=tech&amp;sec1=index&amp;sec2='>
+<h2>More in Tech</h2>
+</div>
+<div class='fixable-wrapper' id='column-headers'>
+<div class='column-headers'>
+<div class='headers'>
+<div class='header column1 waypoint' data-fixselector='header.fixable'><a data-short='New' href='#'>
+<em>The New Stuff</em>
+</a></div>
+<div class='header column2 waypoint' data-fixselector='header.fixable'><a data-short='Rising' href='#'>
+<em>The Next Big Thing</em>
+</a></div>
+<div class='header column3 waypoint' data-fixselector='header.fixable'><a data-short='Hot' href='#'>
+<em>What's Hot</em>
+</a></div>
+</div>
+</div>
+</div>
+<div class='slide-window'>
+<div class='flex-box columns'><section class='column box-cell new-stories' id='column-new'><h1 class='semantic'>The New Stuff</h1>
+<div class='column-content'></div></section><section class='column box-cell hot-stories' id='column-rising'><h1 class='semantic'>The Next Big Thing</h1>
+<div class='column-content'></div></section><section class='column box-cell big-stories' id='column-hot'><h1 class='semantic'>What's Hot</h1>
+<div class='column-content'></div></section></div>
+</div>
+</div>
+
+<div id='parsely-root' style='display: none'>
+<span data-parsely-site='mashable.com' id='parsely-cfg'></span>
+</div>
+<script>
+  loadScriptAsync("//static.parsely.com/p.js", "parsely")
+</script>
+</div>
+</div>
+</div><div id='fb-root'></div><script>
+  if(window.initPage) { window.initPage() }
+  else { $(function() { window.initPage(); })}
+</script>
+</div><footer id='site-footer-wrapper'>
+<div class='page-container' id='site-footer'><ul class='nav'><li><a href="/about/">About Us</a></li><li><a href="http://findjobs.mashable.com">Jobs</a></li><li><a href="/advertise/">Advertise</a></li><li><a href="/2011/05/09/connect-with-mashable/">Subscribe</a></li><li><a href="/privacy/">Privacy</a></li><li><a href="/terms/">Terms</a></li></ul><ul class='social'><li><a class='facebook' href='http://www.facebook.com/mashable/' target='_social'></a></li>
+<li><a class='twitter' href='https://twitter.com/mashable' target='_social'></a></li>
+<li><a class='gplus' href='https://plus.google.com/+Mashable' target='_social'></a></li>
+<li><a class='rss' href='http://feeds.mashable.com/Mashable' target='_social'></a></li>
+<li><a class='pinterest' href='http://pinterest.com/mashable/' target='_social'></a></li>
+<li><a class='youtube' href='http://www.youtube.com/user/mashable' target='_social'></a></li>
+<li><a class='stumbleupon' href='http://www.stumbleupon.com/channel/Mashable' target='_social'></a></li>
+<li><a class='linkedin' href='http://www.linkedin.com/today/mashable.com' target='_social'></a></li></ul>
+<div class='about'>
+<a class='brand' href='/'>
+Mashable
+</a>
+<span class='blurb'>is the largest independent online news site dedicated to covering digital culture, social media and technology. With more than 20 million unique monthly visitors, Mashable has one of the most engaged online news communities. Founded in 2005, Mashable is headquartered in New York City with an office in San Francisco.</span>
+</div>
+<ul class='copyright-and-legal'>
+<li>
+&copy;2005-2013
+Mashable, Inc.
+</li>
+<li>
+Reproduction without explicit permission is prohibited. All Rights Reserved.
+</li>
+<li>
+Designed in collaboration with <a rel="nofollow" href="http://www.codeandtheory.com">Code &amp; Theory</a>
+</li>
+</ul>
+</div>
+</footer>
+
+<noscript>
+<img src='http://b.scorecardresearch.com/p?c1=2&amp;c2=8750086&amp;cv=2.0&amp;cj=1'>
+</noscript></div>
+</div>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","beacon-1.newrelic.com","faaaef6476","1135420","cAkNR0ENXQpXF0tJDUASEBxACl4R",0,240,new Date().getTime(),"","","","",""]);</script></body>
+</html>

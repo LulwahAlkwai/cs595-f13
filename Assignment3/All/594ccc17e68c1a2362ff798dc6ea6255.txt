@@ -1,0 +1,1819 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<script type="text/javascript">var _sf_startpt=(new Date()).getTime()</script>
+<meta charset="UTF-8" />
+<title>Google+ is the social backbone   - O&#039;Reilly Radar</title>
+
+<link rel="shortcut icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+<link  rel="icon" href="http://cdn.oreillystatic.com/radar/images/favicon.ico" />
+
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://radar.oreilly.com/wp-content/themes/radar/style.css" />
+<link rel="pingback" href="http://radar.oreilly.com/xmlrpc.php" />
+<link href="https://plus.google.com/105451978536505503907" rel="publisher" />
+
+
+
+
+
+	<meta name="description" content="Google+ is the rapidly growing seed of a web-wide social backbone, and the catalyst for the ultimate uniting of the social graph." />
+	<meta name="author" content="Edd Dumbill" />
+	<meta name="search_date" content="2011-07-19" />
+	<meta name="keywords" content="Facebook,Google,google plus,social data,Twitter" />
+	
+	<!-- Twitter meta -->
+	<meta name="twitter:card" content="summary"> 
+	<meta name="twitter:url" content="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html"> 
+	<meta name="twitter:title" content="Google+ is the social backbone"> 
+	<meta name="twitter:description" content="Google+ is the rapidly growing seed of a web-wide social backbone, and the catalyst for the ultimate uniting of the social graph."> 
+		
+	<meta name="twitter:image" content="http://s.radar.oreilly.com/2011/07/02/0711-googplus-slider.png"> 
+			<meta name="twitter:creator" content="edd"> 
+		<meta name="twitter:site" content="radar">
+		
+	<meta property="og:image" content="http://s.radar.oreilly.com/2011/07/02/0711-googplus-slider.png"> 
+			<meta property="og:image" content="http://cdn.oreillystatic.com/radar/images/people/photo_edd_m.jpg">
+		<meta property="og:image" content="http://cdn.oreillystatic.com/oreilly/images/radar-social-icon-200.png" />
+
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-22979035-1']);
+_gaq.push(['_setDomainName', 'oreilly.com']);
+_gaq.push(['_addIgnoredRef', 'oreilly.com']);
+_gaq.push(['_setSiteSpeedSampleRate', 50]);
+_gaq.push(['_trackPageview']);
+
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Feed" href="http://radar.oreilly.com/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Comments Feed" href="http://radar.oreilly.com/comments/feed" />
+<link rel="alternate" type="application/rss+xml" title="O&#039;Reilly Radar &raquo; Google+ is the social backbone Comments Feed" href="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html/feed" />
+<link rel='stylesheet' id='inline-tweet-sharer-style-css'  href='http://radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.css?ver=3.6.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/inline-tweet-sharer/inline-tweet-sharer.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/powerpress/player.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://www.instapaper.com/javascript/embed2.js?ver=1.2'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-includes/js/comment-reply.min.js?ver=3.6.1'></script>
+<script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://radar.oreilly.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://radar.oreilly.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Four short links: 19 July 2011' href='http://radar.oreilly.com/2011/07/four-short-links-19-july-2011.html' />
+<link rel='next' title='Ruby is for Java' href='http://radar.oreilly.com/2011/07/ruby-java-torquebox.html' />
+<link rel='canonical' href='http://radar.oreilly.com/2011/07/google-plus-social-backbone.html' />
+<link rel='shortlink' href='http://oreil.ly/18ci3sZ' />
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->		<style type="text/css">
+
+		.read_later {
+		float: right;
+margin: 0px 0px 10px 15px;		}
+
+		</style>
+		<script type="text/javascript"><!--
+function powerpress_pinw(pinw){window.open('http://radar.oreilly.com/?powerpress_pinw='+pinw, 'PowerPressPlayer','toolbar=0,status=0,resizable=1,width=460,height=320');	return false;}
+powerpress_url = 'http://radar.oreilly.com/wp-content/plugins/powerpress/';
+//-->
+</script>
+<script>
+	(function(d, s, id) {
+  		var js, fjs = d.getElementsByTagName(s)[0];
+  		if (d.getElementById(id)) return;
+  		js = d.createElement(s); js.id = id;
+  		js.src = '//connect.facebook.net/en_US/all.js#xfbml=1';
+  		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));
+</script>
+<!--
+	generated in 2.246 seconds
+	123034 bytes batcached for 300 seconds
+-->
+</head>
+
+<body class="single single-post postid-46845 single-format-standard">
+<div id="wrapper" class="hfeed ">
+	<div class="navheaderbg">
+		<div>
+			<div id="header">		
+				<div class="logo">
+					<a href="http://radar.oreilly.com/" title="O&#039;Reilly Radar" rel="home">O&#039;Reilly Radar</a>
+				</div>
+	
+				<div id="search-box">
+					 <script type="text/javascript"> 
+	function checkIfDefault(keyword) {
+		var defaultSearchTerm = "Search";
+		var defaultEmailTerm = "Enter Email";
+			if((keyword == defaultSearchTerm) || (keyword == defaultEmailTerm)) {
+				return '';
+			}
+			else {
+				return keyword;
+			}
+		}
+</script>
+<div id="search-box" class="yui-skin-sam">
+	<form name="searchform" method="get" id="search-form" action="http://search.oreilly.com/">
+		<div class="search">
+			<fieldset>
+				<span id="search-input">
+					<div class="searchInput">
+						<span id="search-field"><input type="text" value="Search" name="q" maxlength="64" id="q" onfocus="this.value=checkIfDefault(this.value);"></span>           
+					</div>
+					<span id="search-button">
+						<input type="image" value="SEARCH" src="http://cdn.oreillystatic.com/images/sitewide-headers/search_btn.gif" border="0" style="float:left" alt="Search" align="top">
+						<input type="hidden" name="tmpl" value="radar">                                                                    
+					</span>
+				</span>
+			</fieldset>
+		</div>
+	</form>
+</div>
+
+                  				</div>
+				<div class="clear"></div>
+			</div><!-- #header -->
+			<div id="access" role="navigation">			  
+				<div class="menu-header"><ul id="menu-main-nav" class="menu"><li id="menu-item-48418" class="first menu-item menu-item-type-custom menu-item-object-custom menu-item-48418"><a href="http://oreilly.com/">Home</a></li>
+<li id="menu-item-48419" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48419"><a href="http://shop.oreilly.com/">Shop</a></li>
+<li id="menu-item-48420" class="current_page_item menu-item menu-item-type-custom menu-item-object-custom menu-item-home menu-item-48420"><a href="http://radar.oreilly.com/">Radar: News &#038; Commentary</a></li>
+<li id="menu-item-48421" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48421"><a href="http://answers.oreilly.com/">Answers</a></li>
+<li id="menu-item-48422" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48422"><a href="http://my.safaribooksonline.com/?cid=orm-nav-global&#038;portal=oreilly">Safari Books Online</a></li>
+<li id="menu-item-48423" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48423"><a href="http://conferences.oreillynet.com/">Conferences</a></li>
+<li id="menu-item-48425" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48425"><a href="http://www.oreillyschool.com/">School of Technology</a></li>
+<li id="menu-item-48426" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48426"><a href="http://people.oreilly.com/index.php?app=members&#038;section=view&#038;module=list">Community</a></li>
+</ul></div>				<div class="clear"></div>
+			</div><!-- #access -->
+			<div class="clear"></div>
+		</div>
+		
+	</div>
+	<div id="sww-content">
+					<div class="textwidget"><!-- site-wide widget --></div>
+			
+		<div class="clear"></div>
+	</div>
+	<div id="main">				<div id="container">
+		<div id="content" class="post_block" role="main">
+						
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/rs_embhl_v2_en_us.js" type="text/javascript"></script>
+<script src="http://s.radar.oreilly.com/wp-content/themes/radar/js/jquery.cookie.js" type="text/javascript"></script>
+		<div id="post-46845" class="post-46845 post type-post status-publish format-standard hentry category-web2 tag-home tag-top tag-facebook tag-google tag-google-plus tag-social-data tag-twitter">					
+			 
+			<ul class="entry-tools">
+			<span class="tool-block">
+				<li class="button print">
+										<a target="_new" href="#" onclick="window.open('http://radar.oreilly.com/print/','print','width=800,height=600,menubar=no,status=no,location=yes,toolbar=yes,scrollbars=yes'); return false;" rel="nofollow">Print<img src="http://cdn.oreillystatic.com/news/images/printtag.jpg" width="16" height="16"  alt="" /></a>
+				</li>
+				<li class="button listen">
+					<div id="readspeaker_button1" class="rs_skip en_us"> <a accesskey="L" href="http://app.readspeaker.com/cgi-bin/rsent?customerid=14&amp;lang=en_us&amp;readid=body-content&amp;url=http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" target="_blank" onclick="readpage(this.href, 'content_start'); return false;">Listen<img src="http://cdn.oreillystatic.com/radar/images/icon_listen_small.gif" width="10" height="9" alt="Speech Icon"></a> </div>
+				</li>
+				
+				<li class="read-later-single">
+					<span class="read_later"><script type="text/javascript"><!--
+			instapaper_embed( "http://radar.oreilly.com/2011/07/google-plus-social-backbone.html", "Google+ is the social backbone", "" );
+		//--></script></span>				</li>
+				<div id="content_start" style="display: block; "></div>			
+			</span>
+			</ul>		
+		
+															<a href="http://radar.oreilly.com/edd">
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_edd_s.jpg" class="au-photo" alt="" title="Edd Dumbill" />
+					</a>
+									
+						<!-- RSPEAK_START -->
+			<div id="body-content">
+			<h1 class="entry-title">Google+ is the social backbone</h1>
+					
+				
+				<h2 class="subhead">There's a lot more to Google+ than a challenge to Facebook</h2>
+						
+			<div class="entry-meta">				
+									<span class="meta-sep">by</span> 	
+											<span class="author vcard"><a class="url fn n" rel="author" href="http://radar.oreilly.com/edd" title="View all posts by Edd Dumbill">
+						Edd Dumbill</a></span> |								
+									<!-- RSPEAK_STOP -->
+									<a href="http://twitter.com/edd"> @edd</a> |
+													<a href="https://plus.google.com/114723964985237592593/posts"> +Edd Dumbill</a> |
+													<span class="comments-link utility-items"><a href="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html#comments" title="Comment on Google+ is the social backbone"><span class="dsq-postid" rel="46845 http://blogs.oreilly.com/radar/2011/07/google-plus-social-backbone.html">Comments: 52</span></a></span>
+					<span class="meta-sep utility-items"> | </span>
+					
+				<span class="entry-date">July 19, 2011</span> 				
+			</div><!-- .entry-meta -->
+			
+			<!-- AddThis Button BEGIN -->					
+			<div class="utility-items addthis_toolbox addthis_default_style home " addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone">					
+				<a class="addthis_button_tweet"  addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone"></a>						
+				<a class="addthis_button_google_plusone" g:plusone:size="medium" addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone"></a>	
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone"></a>
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				<script type="IN/Share" data-url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" data-counter="right"></script>					
+				<div class="clear"></div>
+			</div>		
+
+				<script type="text/javascript">
+				   var addthis_config = {
+				      data_ga_property: 'UA-22979035-1',
+				      data_ga_social: true
+				   };
+				</script>			
+		
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+			<!-- AddThis Button END -->			
+
+			<div class="entry-content">
+							
+								
+				<!-- RSPEAK_START --><p><a href="https://plus.google.com/"><img src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/2011/06/30/0611-googplus.png" border="0" alt="Google Plus" style="float: right;margin: 3px 0 10px 10px" width="141" /><noscript><img src="http://s.radar.oreilly.com/2011/06/30/0611-googplus.png" border="0" alt="Google Plus" style="float: right;margin: 3px 0 10px 10px" width="141" /></noscript></a>The launch of <a href="http://plus.google.com">Google+</a> is the beginning of a fundamental change on the web. A change that will tear down silos, empower users and create opportunities to take software and collaboration to new levels.</p>
+<p>Social features will become pervasive, and fundamental to our interaction with networked services. Collaboration from within applications will be as natural to us as searching for answers on the web is today.</p>
+<h2 id="goog-facebook">It&#8217;s not just about Google vs Facebook</h2>
+<p>Much attention has focused on Google+ as a <a href="http://www.facebook.com">Facebook</a> competitor, but to view the system solely within that context is short-sighted. The consequences of the launch of Google+ are wider-reaching, more exciting and undoubtedly more controversial.</p>
+<p>Google+ is the rapidly growing seed of a web-wide social backbone, and the catalyst for the ultimate uniting of the social graph. All it will take on Google&#8217;s part is a step of openness to bring about such a commoditization of the social layer. This would not only be egalitarian, but would also be the most effective competitive measure against Facebook.</p>
+<p>As web search connects people to documents across the web, the social backbone connects people to each other directly, across the full span of web-wide activity. (For the avoidance of doubt, I take &#8220;web&#8221; to include networked phone and tablet applications, even if the web use is invisible to the user.)</p>
+<p>Search removed the need to remember domain names and URLs. It&#8217;s a superior way to locate content. The social backbone will relieve our need to manage email addresses and save us laborious &#8220;friending&#8221; and permission-granting activity &mdash; in addition to providing other common services such as notification and sharing.</p>
+<p>Though Google+ is the work of one company, there are good reasons to herald it as the start of a commodity social layer for the Internet. Google decided to make Google+ be part of the web and not a walled garden. There is good reason to think that represents an inclination to openness and interoperation, as I explain below.</p>
+<div style="float: left;border-top: thin gray solid;border-bottom: thin gray solid;padding: 20px;margin: 20px 2px"><a href="https://en.oreilly.com/stratany2011/public/regwith/stn11rad?cmp=il-radar-st11-google-plus-social-backbone"><img style="float: left;border: none;padding-right: 10px" src="http://s.radar.oreilly.com/wp-content/plugins/lazy-load/images/1x1.trans.gif" data-lazy-src="http://s.radar.oreilly.com/strata-ny-stn11rad.png" /><noscript><img style="float: left;border: none;padding-right: 10px" src="http://s.radar.oreilly.com/strata-ny-stn11rad.png" /></noscript></a><a href="https://en.oreilly.com/stratany2011/public/regwith/stn11rad?cmp=il-radar-st11-google-plus-social-backbone"><strong>Strata Conference New York 2011</strong></a>, being held Sept. 22-23, covers the latest and best tools and technologies for data science &#8212; from gathering, cleaning, analyzing, and storing data to communicating data intelligence effectively.</p>
+<p>  <a href="https://en.oreilly.com/stratany2011/public/regwith/stn11rad?cmp=il-radar-st11-google-plus-social-backbone"><strong>Save 30% on registration with the code STN11RAD</strong></a></div>
+<h2 id="commodity">It&#8217;s time for the social layer to become a commodity</h2>
+<p>We&#8217;re now several years into the era of social networks. Companies have come and gone, trying to capture the social graph and exploit it. Well intentioned but doomed grass-roots initiatives have waxed and waned. Facebook has won the platform game, being the dominant owner of our social attention, albeit mostly limited to non-workplace application.</p>
+<p>What does this activity in social software mean? Clearly, social features are important to us as users of computers. We like to identify our friends, share with them, and meet with them. And it&#8217;s not just friends. We want to identify co-workers, family, sales prospects, interesting celebrities.</p>
+<p>Currently, we have all these groups siloed. Because we have many different contexts and levels of intimacy with people in these groups, we&#8217;re inclined to use different systems to interact with them. Facebook for gaming, friends and family. <a href="http://www.linkedin.com">LinkedIn</a> for customers, recruiters, sales prospects. <a href="http://twitter.com">Twitter</a> for friends and celebrities. And so on into specialist communities: <a href="http://instagr.am/">Instagram</a> and <a href="http://www.flickr.com/">Flickr</a>, <a href="https://www.yammer.com/">Yammer</a> or <a href="https://www.chatter.com/">Salesforce Chatter</a> for co-workers.</p>
+<p>The situation is reminiscent of electronic mail before it became standardized. Differing semi-interoperable systems, many as walled gardens. Business plans predicated on somehow &#8220;owning&#8221; the social graph. The social software scene is filled with systems that assume a closed world, making them more easily managed as businesses, but ultimately providing for an uncomfortable interface with the reality of user need.</p>
+<p>An interoperable email system created widespread benefit, and permitted many ecosystems to emerge on top of it, both formal and ad-hoc. Email reduced distance and time between people, enabling rapid iteration of ideas, collaboration and community formation. For example, it&#8217;s hard to imagine the open source revolution without email.</p>
+<p>When the social layer becomes a standard facility, available to any application, we&#8217;ll release ourselves into a world of enhanced diversity, productivity and creative opportunity. Though we don&#8217;t labor as much under the constraints of distance or time as we did before email, we are confined by boundaries of data silos. Our information is owned by others, we cannot readily share what is ours, and collaboration is still mostly boxed by the confines of an application&#8217;s ability.</p>
+<p>A social backbone would also be a boost for diversity. Communities of interest would be enabled by the ready availability of social networking, without having the heavy lifting in creating the community, or run the risk of disapproval or censorship from a controlling enterprise.</p>
+<p>The effect of email interoperability didn&#8217;t just stop at enabling communication: it was a catalyst for standards in document formats and richer collaboration. The social backbone won&#8217;t just make it easier to handle permissions, identity and sharing, but will naturally exert pressure for further interoperation between applications. Once their identity is united across applications, users will expect their data to travel as well.</p>
+<p>We see already a leaning toward this interoperability: the use of Twitter, Facebook and Google as sign-on mechanisms across websites and games, attempts to federate and intermingle social software, cloud-based identity and wallet services.</p>
+<h2 id="social-backbone">What a social backbone would do</h2>
+<p>As users, what can we expect a social backbone to do for us? The point is to help computers serve us better. We naturally work in contexts that involve not only documents and information, but groups of people. When working with others, the faster and higher bandwidth the communication, the better.</p>
+<p>To give some examples, consider workplace collaboration. Today&#8217;s groupware solutions are closed worlds. It&#8217;s impractical for them to encompass either a particularly flexible social model, or a rich enough variety of applications and content, so they support a restricted set of processes. A social backbone could make groupware out of every application. For the future Photoshop, iMovie and Excel, it adds the equivalent power of calling someone over and saying &#8220;Hey, what about this?&#8221;</p>
+<p>Or think about people you interact with. When you&#8217;re with someone, everything you&#8217;re currently doing with them is important.  Let&#8217;s say you&#8217;re working with your friend Jane on the school&#8217;s PTA fundraiser, and her and your kids play together. Drag Jane into your PTA and Playdates circles. Drop a letter to parents into the PTA circle, and your calendar&#8217;s free/busy info into Playdates.</p>
+<p>Now you&#8217;re sharing information both of you need. Next Thursday you see Jane at school. While you&#8217;re chatting, naturally the topic of playdates and the PTA come up. You bring up Jane on your phone, and there are links right there to the letter you&#8217;re writing, and some suggested dates for mutually free time.</p>
+<p>Teaching computer systems about who we know lets them make better guesses as to what we need to know, and when. My examples are merely simple increases in convenience. The history of computing frequently shows that once a platform is opened up, the creative achievements of others far exceed those dreamed of by the platform&#8217;s progenitors.</p>
+<p>The social backbone democratizes social software: developers are freed from the limitations of walled gardens, and the power to control what you do with your friends and colleagues is returned to you, the user.</p>
+<h2 id="backbone-services">Social backbone services</h2>
+<p>Which services will the social backbone provide? We can extract these from those provided by today&#8217;s web and social software applications:</p>
+<ul>
+<li> Identity &mdash; authenticating you as a user, and storing information about you</li>
+<li> Sharing &mdash; access rights over content</li>
+<li> Notification &mdash; informing users of changes to content or contacts&#8217; content</li>
+<li> Annotation &mdash; commenting on content</li>
+<li> Communication &mdash; direct interaction among members of the system</li>
+</ul>
+<p>These facilities are not new requirements. Each of them have been met in differing ways by existing services. Google and <a href="http://www.amazon.com">Amazon</a> serve as identity brokers with a reasonable degree of assurance, as do Twitter and Facebook, albeit with a lesser degree of trust.</p>
+<p>A host of web services address sharing of content, though mostly focused on sharing the read permission, rather than the edit permission. Notification originated with email, graduated through RSS, and is now a major part of Twitter&#8217;s significance, as well as a fundamental feature of Facebook. Annotation is as old as the web, embodied by the hyperlink, but has been most usefully realized through blogging, <a href="http://www.disqus.com">Disqus</a>, Twitter and Facebook commenting. Communication between users has been around as long as multi-user operating systems, but is most usefully implemented today in Facebook chat and instant messaging, where ad-hoc groups can easily be formed.</p>
+<h2 id="why-not-facebook">Why not Facebook?</h2>
+<p>Unfortunately, each of today&#8217;s answers to providing these social facilities are limited by their implementation. Facebook provides the most rounded complement of social features, so it&#8217;s a reasonable question to ask why Facebook itself can&#8217;t provide the social backbone for the Internet.</p>
+<p>Facebook&#8217;s chief flaw is that is a closed platform. Facebook does not want to be the web. It would like to draw web citizens into itself, so it plays on the web, but in terms that leave no room for doubt where the power lies. Content items in Facebook do not have a URI, so by definition can never be part of the broader web. If you want to use Facebook&#8217;s social layer, you must be part of and subject to the Facebook platform.</p>
+<p>Additionally, there are issues with the symmetry of Facebook&#8217;s friending model: it just doesn&#8217;t model real life situations. Even the term &#8220;friend&#8221; doesn&#8217;t allow for the nuance that a capable web-wide social backbone needs.</p>
+<p>This is not to set up a Facebook vs Google+ discussion, but to highlight that Facebook doesn&#8217;t meet the needs of a global social backbone.</p>
+<h2 id="why-google+">Why Google+?</h2>
+<p>Why is Google+ is the genesis of a social backbone? The simple answer is that it&#8217;s the first system to combine a flexible enough social model with a widespread user base, and a company for whom exclusive ownership of the social graph isn&#8217;t essential to their business.</p>
+<p>Google also has the power to bootstrap Google+ as a social backbone: the integration of Google+ into Google&#8217;s own web applications would be a powerful proving ground and advertisement for the concept.</p>
+<p>Yet one company alone should not have the power to manage identity for everyone. A workable and safe social backbone must support competition and choice, while still retaining the benefits of the network. Email interoperability was created not by the domination of one system, but by standards for communication.</p>
+<p>To achieve a web-wide effect, Google+ needs more openness and interoperability, which it does not yet have. The features offered by the upcoming <a href="http://news.cnet.com/8301-19882_3-20075974-250/developer-api-for-google-its-coming/">Google+ API</a> will give us a strong indication of Google&#8217;s attitude towards control and interoperability.</p>
+<p>There is some substantial evidence that Google would support an open and interoperable social backbone:</p>
+<ul>
+<li> Google&#8217;s prominence as a supporter of the open web, which is crucial to its business.</li>
+<li> The early inclination to interoperation of Google+: public content items have a URI, fallback to email is supported for contacts who are not Google+ members.</li>
+<li> Google is loudly trumpeting their <a href="http://www.dataliberation.org/">Data Liberation Front</a>, committed to giving users full access to their own data.</li>
+<li> Google has been involved in the creation of, or has supported, early stage technologies that address portions of the social backbone, including OAuth, OpenID, OpenSocial, PubSubHubbub.</li>
+<li> Google displays an openness to federation with interoperating systems, <a href="http://anyasq.com/79-im-a-technical-lead-on-the-google+-team">evinced most keenly by Joseph Smarr</a>, the engineer behind the Google+ Circles model. The ill-fated Google Wave incorporated federation.</li>
+<li> The most open system possible would best benefit Google&#8217;s mission in organizing the world&#8217;s information, and their business in targeting relevant advertising.</li>
+</ul>
+<h2 id="toward">Toward the social backbone</h2>
+<p>Computers ought to serve us and provide us with means of expression.</p>
+<p>A common, expressive and interoperable social backbone will help users and software developers alike. Liberated from information silos and repeat labor of curating friends and acquaintances, we will be free to collaborate more freely. Applications will be better able to serve us as individuals, not as an abstract class of &#8220;users&#8221;.</p>
+<p>The road to the social backbone must be carefully trodden, with privacy a major issue. There is a tough trade-off between providing usable systems and those with enough nuance to sufficiently meet our models of collaboration and sharing.</p>
+<p>Obstacles notwithstanding, Google+ represents the promise of a next generation of social software. Incorporating learnings from previous failures, a smattering of innovation, and a close attention to user need, it is already a success.</p>
+<p>It requires only one further step of openness to take the Google+ product into the beginnings of a social backbone. By taking that step, Google will contribute as much to humanity as it has with search.</p>
+<p><em>Edd Dumbill is the chair of O&#8217;Reilly&#8217;s Strata and OSCON conferences. <a href="https://plus.google.com/114723964985237592593">Find him here on Google+</a>.</em></p>
+<hr />
+<p>(<em>Google&#8217;s Joseph Smarr, a <a href="https://plus.google.com/113364856660738963998/posts/QFFyerw9ezP">member of the Google+ team</a>, will discuss the <a href="http://www.oscon.com/oscon2011/public/schedule/speaker/942?cmp=il-radar-os11-google-plus-social-backbone">future of the social web at OSCON</a>. Save 20% on registration with the code <a href="https://en.oreilly.com/oscon2011/public/regwith/os11rad?cmp=il-radar-os11-google-plus-social-backbone">OS11RAD</a>.</em>)</p>
+<p></p>
+<h2>Related:</h2>
+<ul>
+<li> <a href="http://radar.oreilly.com/2011/07/the-good-the-bad-and-the-ugly.html">The good, the bad, and the ugly of Google Plus</a></li>
+<li> <a href="http://radar.oreilly.com/2011/07/google-plus-facebook-skype-networks-wave.html">Brief thoughts on Google Plus</a></li>
+<li> <a href="http://radar.oreilly.com/2011/06/strataweek-google-plus-hadoop-yahoo-iphone.html#google-plus">Your data and Google Plus</a></li>
+</ul>
+<!-- RSPEAK_STOP -->
+							</div><!-- .entry-content -->
+			</div>
+			<div class="entry-utility">				
+				tags: <a href='http://radar.oreilly.com/tag/facebook' title='Facebook Tag' rel='tag'>Facebook</a>, <a href='http://radar.oreilly.com/tag/google' title='Google Tag' rel='tag'>Google</a>, <a href='http://radar.oreilly.com/tag/google-plus' title='google plus Tag' rel='tag'>google plus</a>, <a href='http://radar.oreilly.com/tag/social-data' title='social data Tag' rel='tag'>social data</a>, <a href='http://radar.oreilly.com/tag/twitter' title='Twitter Tag' rel='tag'>Twitter</a>							</div><!-- .entry-utility -->
+			
+			<!-- AddThis Button BEGIN -->					
+			<div class="utility-items addthis_toolbox addthis_default_style home " addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone">					
+				<a class="addthis_button_tweet"  addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone"></a>						
+				<a class="addthis_button_google_plusone" g:plusone:size="medium" addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone"></a>	
+				<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" addthis:title="Google+ is the social backbone"></a>	
+				<script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+				<script type="IN/Share" data-url="http://radar.oreilly.com/2011/07/google-plus-social-backbone.html" data-counter="right"></script>
+				<div id="repost-icon">
+									</div>
+				<div class="clear"></div>
+			</div>					
+			
+			<script type="text/javascript" src="http://s7.addthis.com/js/250/addthis_widget.js#pubid=xa-4f6110d016518605"></script>
+			<!-- AddThis Button END -->			
+				
+				<script type="text/javascript"> 
+					$(".button.print a").click(function () { 					  
+					  jQuery.cookie('thePostID', "46845" , {expires: 1, path: '/' }); 					 
+					});  					
+				</script>	
+			 
+		</div><!-- #post-## -->		
+<a name="comments"></a>
+<a name="respond"></a>
+		
+<div id="disqus_thread">
+                    <div id="dsq-content">
+
+
+            <ul id="dsq-comments">
+                    <li class="comment even thread-even depth-1" id="dsq-comment-38994">
+        <div id="dsq-comment-header-38994" class="dsq-comment-header">
+            <cite id="dsq-cite-38994">
+                <span id="dsq-author-user-38994">maxnicks</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38994" class="dsq-comment-body">
+            <div id="dsq-comment-message-38994" class="dsq-comment-message"><p>If it&#8217;s so great and such a game changer, why don&#8217;t you have a +1 button on your site?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38995">
+        <div id="dsq-comment-header-38995" class="dsq-comment-header">
+            <cite id="dsq-cite-38995">
+                <span id="dsq-author-user-38995">Ricardo Proença</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38995" class="dsq-comment-body">
+            <div id="dsq-comment-message-38995" class="dsq-comment-message"><p>This is the first article that I’ve read that really understands what is Google+ aiming for.</p>
+<p>Facebook has a design flaw – in it you can’t have a middle ground (persons are your friends or aren’t your friends) so people are afraid of a privacy debacle and don’t reproduce in it your real life social network. Because of this constraint Facebook is used this way:<br />
+a) People only add (or tend to had) their closest friends;<br />
+b) People only share a really small subset of things.</p>
+<p>These things tend to reinforce each other to diminish the value of Facebook’s social graph – Facebook only knows a specific set of your social graph and a specific set of your interactions. You can say that Facebook now has groups and lists but they aren’t a core part of the Facebook experience hence it isn’t a natural way to use Facebook.</p>
+<p>Google+ is built to manage and to allow every (or almost every) type of social interaction that you have.<br />
+That’s why the circles feature is so important – because it allows you to structure your social graph as you structure your real life social network. And core to the Google+ and the circles feature is the notion of privacy.<br />
+Check Google+ Help and you can see that the word “privacy” or “who can see your post, photo, etc” is pervasive in every feature of the service.<br />
+Google understands that only by going this route it can beat Facebook in the social network space – by mimicking your real life social network.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38996">
+        <div id="dsq-comment-header-38996" class="dsq-comment-header">
+            <cite id="dsq-cite-38996">
+                <span id="dsq-author-user-38996">JPolk</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38996" class="dsq-comment-body">
+            <div id="dsq-comment-message-38996" class="dsq-comment-message"><p>I&#8217;ll admit, I didn&#8217;t read this entire article. But from I see it&#8217;s largely conjecture.</p>
+<p>People have to use it first and the vast majority of people won&#8217;t for some time. If Google+ is to be the &#8220;backbone&#8221; of a social infrastructure then it has a long way to go. Right now what we have is a stem cell and pontificating as to what it&#8217;s going to turn into. There&#8217;s a lot of possibilities. It could be a huge success or a big failure. My issue is that Google, save for the search engine and perhaps GMail, doesn&#8217;t exactly have a track record of creating things people flock to.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38997">
+        <div id="dsq-comment-header-38997" class="dsq-comment-header">
+            <cite id="dsq-cite-38997">
+                <span id="dsq-author-user-38997">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38997" class="dsq-comment-body">
+            <div id="dsq-comment-message-38997" class="dsq-comment-message"><p>How is this different from Microsoft&#8217;s SharePoint, which already has all of the sharing and grouping features you desribe above?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-38998">
+        <div id="dsq-comment-header-38998" class="dsq-comment-header">
+            <cite id="dsq-cite-38998">
+http://Http://phill.co                <span id="dsq-author-user-38998">Phill ohren</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38998" class="dsq-comment-body">
+            <div id="dsq-comment-message-38998" class="dsq-comment-message"><p>I&#8217;m still taking this in &#8211; this is huge! While I really like the idea of a social backbone, i&#8217;m still not fully convinced it&#8217;s Googles primary objective at this stage. Organising the Social Graph is going to take decades &#8211; if they are doing as you predict i&#8217;d like to think we are on the cusp of true Social indexing.</p>
+<p>Great pos Edd, I really enjoyed it.</p>
+<p><a href="http://gplus.to/phill" rel="nofollow">http://gplus.to/phill</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-38999">
+        <div id="dsq-comment-header-38999" class="dsq-comment-header">
+            <cite id="dsq-cite-38999">
+                <span id="dsq-author-user-38999">Mac Slocum</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-38999" class="dsq-comment-body">
+            <div id="dsq-comment-message-38999" class="dsq-comment-message"><p>@maxnicks: +1 buttons were implemented across O&#8217;Reilly properties a few weeks back. For example, you&#8217;ll find them at the top and bottom of this post.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39000">
+        <div id="dsq-comment-header-39000" class="dsq-comment-header">
+            <cite id="dsq-cite-39000">
+                <span id="dsq-author-user-39000">Mister Relative</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39000" class="dsq-comment-body">
+            <div id="dsq-comment-message-39000" class="dsq-comment-message"><p>It&#8217;s going to become so &#8220;open&#8221; it will be impossible to have any privacy, but then that sort of thinking (non-separation) is in line with Agenda 21.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39001">
+        <div id="dsq-comment-header-39001" class="dsq-comment-header">
+            <cite id="dsq-cite-39001">
+http://gplus.to/GerhardSchulz                <span id="dsq-author-user-39001">Gary</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39001" class="dsq-comment-body">
+            <div id="dsq-comment-message-39001" class="dsq-comment-message"><p>As someone already said here&#8230;this is the first article about what G+ really is about&#8230;.THANKS</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39002">
+        <div id="dsq-comment-header-39002" class="dsq-comment-header">
+            <cite id="dsq-cite-39002">
+http://www.danablankenhorn.com                <span id="dsq-author-user-39002">Dana Blankenhorn</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39002" class="dsq-comment-body">
+            <div id="dsq-comment-message-39002" class="dsq-comment-message"><p>One of the best, most cogent explanations of Google+ potential I&#8217;ve read. Filled with great nuggets like &#8220;the start of a commodity social layer for the Internet&#8221; and &#8220;The situation is reminiscent of electronic mail before it became standardized.&#8221;</p>
+<p>I hope more people read this, because the whole piece is important. Bravo!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39003">
+        <div id="dsq-comment-header-39003" class="dsq-comment-header">
+            <cite id="dsq-cite-39003">
+                <span id="dsq-author-user-39003">steve</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39003" class="dsq-comment-body">
+            <div id="dsq-comment-message-39003" class="dsq-comment-message"><p>look above your comment&#8230;.there is a +1 button.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39004">
+        <div id="dsq-comment-header-39004" class="dsq-comment-header">
+            <cite id="dsq-cite-39004">
+                <span id="dsq-author-user-39004">Woody</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39004" class="dsq-comment-body">
+            <div id="dsq-comment-message-39004" class="dsq-comment-message"><p>This is probably one of the best examples of pseudo science, armchair psychic, tech &#8220;journalism&#8221; drivel I&#8217;ve run across. Sister Lola called and she wants her crystal ball back.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39005">
+        <div id="dsq-comment-header-39005" class="dsq-comment-header">
+            <cite id="dsq-cite-39005">
+                <span id="dsq-author-user-39005">Alex Tolley</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39005" class="dsq-comment-body">
+            <div id="dsq-comment-message-39005" class="dsq-comment-message"><p>I&#8217;d like to see more concrete examples of what the social backbone will offer users, rather than the sort of vague ideas expressed here.  I accept that perhaps this is unknowable until people use it and develop it.</p>
+<p>I&#8217;d certainly like to see more utility in the social web than just more chatter (noise), with better ways to condense the chatter and extract useful information about things I want to know about or do.  If the Google+ API facilitates this, then I would be very interested in Google+ as more than a Facebook competitor, which is really where it stands today, despite teh hints of the future presented by this post.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39006">
+        <div id="dsq-comment-header-39006" class="dsq-comment-header">
+            <cite id="dsq-cite-39006">
+http://radar.oreilly.com/edd                <span id="dsq-author-user-39006">Edd Dumbill</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39006" class="dsq-comment-body">
+            <div id="dsq-comment-message-39006" class="dsq-comment-message"><p>@Alex Tolley, agree with the need for more examples. I want to develop the idea further and examine the consequences of extending an interoperable social layer into the web.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39007">
+        <div id="dsq-comment-header-39007" class="dsq-comment-header">
+            <cite id="dsq-cite-39007">
+http://www.wohl.com                <span id="dsq-author-user-39007">Amy Wohl</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39007" class="dsq-comment-body">
+            <div id="dsq-comment-message-39007" class="dsq-comment-message"><p>This is a great article with very interesting implications.  I think of Facebook as something I go to in response to someone asking me to do something.  I don&#8217;t trust it very much &#8212; for instance, I won&#8217;t use any application that requires me to &#8220;share&#8221; my friends list because most of my list is business associates.</p>
+<p>On the other hand, I post to my groups on Linked-In all the time, but it&#8217;s another walled garden.</p>
+<p>If google+ lets me have my privacy and the privacy of my friends, I think it will be an incredible success.  It doesn&#8217;t have to do everything all at once &#8212; evolution is better since it gives the google designers time to see how their users react to new features and refine or, if necessary discard.</p>
+<p>I can&#8217;t wait to see my social lists migrate to google+.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39008">
+        <div id="dsq-comment-header-39008" class="dsq-comment-header">
+            <cite id="dsq-cite-39008">
+                <span id="dsq-author-user-39008">joe</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39008" class="dsq-comment-body">
+            <div id="dsq-comment-message-39008" class="dsq-comment-message"><p>I hate facebook and I hate google+. I do not want to be connected. I do not want corporations harvesting all my contacts and profiling me. I would like to use the web without sacrificing my privacy. Please stop encouraging these things.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39009">
+        <div id="dsq-comment-header-39009" class="dsq-comment-header">
+            <cite id="dsq-cite-39009">
+                <span id="dsq-author-user-39009">David Sims</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39009" class="dsq-comment-body">
+            <div id="dsq-comment-message-39009" class="dsq-comment-message"><p>I fear I&#8217;m holding onto an attitude that is quickly becoming unfashionable: I rather like my silos. At worst, this could be seen as my being comfortable with duplicity: do I pretend to be one person at work and another in the neighborhood? But at its best, it&#8217;s merely tailoring the content to the audience: I don&#8217;t pretend to believe that my wine and music friends care about the same issues that my techie friends do &#8212; and neither care much about my history geekiness. It&#8217;s my experience that the broader my audience, the less personal my posts. So far, I find that while Google+ and Facebook both offer ways to segment posts to specific audiences, neither does a very good job of making that clear visually in a way that reassures you&#8217;re speaking only to whom you think you are. I&#8217;d like to see either service improve that aspect. Save the silos. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39010">
+        <div id="dsq-comment-header-39010" class="dsq-comment-header">
+            <cite id="dsq-cite-39010">
+                <span id="dsq-author-user-39010">tcope</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39010" class="dsq-comment-body">
+            <div id="dsq-comment-message-39010" class="dsq-comment-message"><p>I think the article it to vauge. It does not say much. Google will use GP to target ads, as their search engine does, but using more personal info. This is what Google gets out of it. FB is 100% and not a social network. Its the opposite. It uses &#8220;friends&#8221; to spam other &#8220;friends&#8221;. Drop the business&#8217;s creating pages and FB fails. GP allows people to comminicate. They dont need to spam as Google makes money from targeting ads to your account info. Google can piggy back services.. FB cannot. FB will fail starting 6 months and be gone in 12.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39011">
+        <div id="dsq-comment-header-39011" class="dsq-comment-header">
+            <cite id="dsq-cite-39011">
+                <span id="dsq-author-user-39011">Bruce</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39011" class="dsq-comment-body">
+            <div id="dsq-comment-message-39011" class="dsq-comment-message"><p>@Anonymous &#8211; Sharepoint is a completely closed stack; the opposite of what I take Edd to be promoting here.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39012">
+        <div id="dsq-comment-header-39012" class="dsq-comment-header">
+            <cite id="dsq-cite-39012">
+http://www.ryancdavidson.com                <span id="dsq-author-user-39012">Discorax</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39012" class="dsq-comment-body">
+            <div id="dsq-comment-message-39012" class="dsq-comment-message"><p>ok, so this is what Google+ is really about. Has anyone stopped to ask what this will mean to identity, privacy, and social roles in the future?</p>
+<p>There is already a backlash against Facebook for oversharing/invasion of content. What will happen when a single &#8220;social backbone&#8221; integrates cumbersome privacy and sharing controls with social search result data.</p>
+<p>I&#8217;ve said this before, and I&#8217;ll say it again. Until Google answers the question of how to get Grandma/Grandpa in line to sign up, they&#8217;ll have missed the mark. Google+ is still exclusive because of how it uses technology, and it&#8217;ll be at least a generation before that changes. Until then, Google+ is just another social network I don&#8217;t have time to monitor.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39013">
+        <div id="dsq-comment-header-39013" class="dsq-comment-header">
+            <cite id="dsq-cite-39013">
+http://maffulli.net                <span id="dsq-author-user-39013">Stefano Maffulli</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39013" class="dsq-comment-body">
+            <div id="dsq-comment-message-39013" class="dsq-comment-message"><p>The most important sentence of the articles IMHO is </p>
+<p><b>(Google is) a company for whom exclusive ownership of the social graph isn&#8217;t essential to their business</b></p>
+<p>Crucial point and that&#8217;s why I think Google should soon enable Google+ to work in a federated way, much like Wave, as <a href="http://maffulli.net/2011/07/17/how-google-can-win-the-social-network-war/" rel="nofollow">I wrote</a>. </p>
+<p>Imagine having the possibility to run your own Plus-like service and still be able to comment on your brother&#8217;s pictures on his own server. Google is the only company that can do this and still profit from it.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39014">
+        <div id="dsq-comment-header-39014" class="dsq-comment-header">
+            <cite id="dsq-cite-39014">
+http://www.thenetworkgarden.com                <span id="dsq-author-user-39014">Mark Sigal</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39014" class="dsq-comment-body">
+            <div id="dsq-comment-message-39014" class="dsq-comment-message"><p>Really nice narrative style. Enjoyable read. My only nit is that there is a tendency to: </p>
+<p>A) default into the meme that &#8220;open will prevail&#8221; when the data doesn&#8217;t support that fact and; B) give google credit for being preternaturally open, when they are really open-ish, which is to say that they are open on what they want to commoditize but relatively closed where they want to monetize.</p>
+<p>That said, count me in. I want a social backbone to promulgate. :-)</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39015">
+        <div id="dsq-comment-header-39015" class="dsq-comment-header">
+            <cite id="dsq-cite-39015">
+http://pearlofcivilization.net                <span id="dsq-author-user-39015">Sarah</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39015" class="dsq-comment-body">
+            <div id="dsq-comment-message-39015" class="dsq-comment-message"><p>&#8220;I&#8217;m hopeful that Google+ can help us move the social web towards a more distributed, federated world where different users can use many/different tools and they still all stay richly connected.&#8221;</p>
+<p>&#8211; Joseph Smarr, a Google+ technical lead</p>
+<p><a href="http://anyasq.com/79-im-a-technical-lead-on-the-google+-team" rel="nofollow">http://anyasq.com/79-im-a-technical-lead-on-the-google+-team</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39016">
+        <div id="dsq-comment-header-39016" class="dsq-comment-header">
+            <cite id="dsq-cite-39016">
+http://www.alchemyofchange.net/                <span id="dsq-author-user-39016">Gideon Rosenblatt</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39016" class="dsq-comment-body">
+            <div id="dsq-comment-message-39016" class="dsq-comment-message"><p>Whether Google will help us fulfill the potential of an open social graph is still an open question. What is not, is the revolutionary impact that a truly open, programmable social graph would have. </p>
+<p>When applications can assume access to an open social graph, it will change what is and is not possible. I&#8217;ve taken a crack at what it might look like to deeply integrate CRM databases with our social graphs &#8211; a deeper kind of &#8220;social CRM&#8221; :</p>
+<p><a href="http://www.alchemyofchange.net/friend-discovery/" rel="nofollow">http://www.alchemyofchange.net/friend-discovery/</a></p>
+<p>This thought exercise reinforced for me just how important an open social graph truly is. The question I&#8217;m left with is &#8211; if not Google, then who?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39017">
+        <div id="dsq-comment-header-39017" class="dsq-comment-header">
+            <cite id="dsq-cite-39017">
+                <span id="dsq-author-user-39017">Steve Barnes</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39017" class="dsq-comment-body">
+            <div id="dsq-comment-message-39017" class="dsq-comment-message"><p>Single sign-on, LDAP, Open-ID. ALl good, but just identity stuff. Any app you want to build onto these needs so much more work. Bring it on!<br />
+     * Sharing — access rights over content<br />
+    * Notification — informing users of changes to content or contacts&#8217; content<br />
+    * Annotation — commenting on content<br />
+    * Communication — direct interaction among members of the system</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39018">
+        <div id="dsq-comment-header-39018" class="dsq-comment-header">
+            <cite id="dsq-cite-39018">
+                <span id="dsq-author-user-39018">Zen Cushion</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39018" class="dsq-comment-body">
+            <div id="dsq-comment-message-39018" class="dsq-comment-message"><p>I agree with the overall take on the fundamental potential of Google Plus as a more flexible framework than Facebook expressed in this article.</p>
+<p>As I am interested in the platform realizing its full potential, I will offer up two improvements which I think Google Plus really needs, and which would greatly help it achieve that potential.</p>
+<p>1. Fix the &#8216;no-reply&#8217; nature of notification emails !  For such a flexible and versatile networking &#8216;backbone&#8217;, the kind of &#8216;cold water&#8217; in the face that occurs when one, instinctively, replies to a notification email sent by someone using Google plus, only to discover, after receiving a MAILER-DAEMON error message, that the attempt to respond to a communication was stuffed into the garbage bin.  </p>
+<p>Ostensibly, G+ would like to get people using email to use G+ directly. However, that goes against the grain of the potential for G+ as an open medium for integrating interpersonal exchange with open access to the information resource of the Web.</p>
+<p>I think there is a reasonably good protocol for dealing with email replies to notifications which are message posts (as opposed to G+ administrative messages along the lines of &#8216;someone has added you&#8217;).</p>
+<p>To wit: instead of &#8216;no-reply&#8217;, a reply by someone receiving a post via email could <br />
+1) simply be routed to the sender&#8217;s email account;<br />
+2) show up in the incoming stream of the sender<br />
+3) if the incoming stream is not private, but visible/public, then, so as not to expose someone responding via email who has not yet agreed to have their comments posted to a wider audience other than the intended reply to the poster, another stream  category could be created (&#8216;aux in&#8217;) designed to receive messages sent to the G+ account from outside G+<br />
+4) if a G+ user *prefers* to interact asynchronously with G+ via email as opposed to &#8216;interactively&#8217; with the G+ online dialog, then the reply could conceivably be posted as a reply to the senders G+ stream to which the sender originally invoked, as a comment to that post</p>
+<p>I seriously think that having &#8216;no-reply&#8217; messages delivered to email-only recipients will cause a significant loss in G+ adoption.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39019">
+        <div id="dsq-comment-header-39019" class="dsq-comment-header">
+            <cite id="dsq-cite-39019">
+                <span id="dsq-author-user-39019">Hephaestus</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39019" class="dsq-comment-body">
+            <div id="dsq-comment-message-39019" class="dsq-comment-message"><p>&#8220;A social backbone could make groupware out of every application. For the future Photoshop, iMovie and Excel, it adds the equivalent power of calling someone over and saying &#8220;Hey, what about this?&#8221;"</p>
+<p>What about the children? What about the poor starving artists? what about the content industries that so studiously support these starving artists? What about all the people at the TV studios, Movie studios and Record labels, whose lives, and livelihoods, are dependant on people not collaborating and sharing? </p>
+<p>Other than the children, I say screw them all, and good riddance. </p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39020">
+        <div id="dsq-comment-header-39020" class="dsq-comment-header">
+            <cite id="dsq-cite-39020">
+http://www.youtube.com/watch?v=f9MtttXI2q8                <span id="dsq-author-user-39020">Marshall</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39020" class="dsq-comment-body">
+            <div id="dsq-comment-message-39020" class="dsq-comment-message"><p>Tom from MySpace just tweeted this video about Mark Zuckerberg&#8217;s reaction to Google+</p>
+<p><a href="http://www.youtube.com/watch?v=f9MtttXI2q8" rel="nofollow">http://www.youtube.com/watch?v=f9MtttXI2q8</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39021">
+        <div id="dsq-comment-header-39021" class="dsq-comment-header">
+            <cite id="dsq-cite-39021">
+http://tola.me.uk                <span id="dsq-author-user-39021">Ben Francis</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39021" class="dsq-comment-body">
+            <div id="dsq-comment-message-39021" class="dsq-comment-message"><p>Powerful article, but perhaps a little premature.</p>
+<p>For a &#8220;social backbone&#8221; to exist it would have to be based on a distributed social network from multiple providers using open standards for federation (similar to how email works).</p>
+<p>So far there&#8217;s no way to federate the social graph in Google+ in a standard way and more than you can with Facebook, Twitter, LinkedIn etc. &#8211; it&#8217;s just another silo with a UI that has a bit of an edge, for now.</p>
+<p>It is true that out of all of those companies Google has the least to lose and the most to gain by opening up and commoditising the social web, and it would be consistent with their mission and precedents set in other areas. But they&#8217;re not there yet.</p>
+<p>Google+ needs to support open standards like OStatus or its successor in order for this to become a reality.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39022">
+        <div id="dsq-comment-header-39022" class="dsq-comment-header">
+            <cite id="dsq-cite-39022">
+http://cloud-krbabu.blogspot.com                <span id="dsq-author-user-39022">K Ramesh Babu</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39022" class="dsq-comment-body">
+            <div id="dsq-comment-message-39022" class="dsq-comment-message"><p>In the vision of a silo-free social layer presented here, I see the opportunity for the computing network to promote universal brotherhood, somewhat akin to the way it is presented in Vedanta circles (sic). वसुदैव कुटुम्बकम. Rough literal translation: There is only one family, and that consists of all beings on earth.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39023">
+        <div id="dsq-comment-header-39023" class="dsq-comment-header">
+            <cite id="dsq-cite-39023">
+http://7slocal.com                <span id="dsq-author-user-39023">lance bliss</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39023" class="dsq-comment-body">
+            <div id="dsq-comment-message-39023" class="dsq-comment-message"><p>Google +. I can tell you are a big fan of them by your article. G+ will probably do really well.</p>
+<p>I sent Google Ventures, and Google Exec&#8217;s my bus. proposal over 2+ years ago. Google seems to have read my proposal and has &#8220;borrowed&#8221; some of the things I put in my proposal. Give me 1 million dollars and I will show you a &#8220;social backbone&#8221;.</p>
+<p>&#8220;Do no evil&#8221; Google is all about the money and does not care about you the user. </p>
+<p>For once I would like to see a big company help people and show that they are not all about the money. </p>
+<p>Lance Damon Bliss<br />
+7slocal.com</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39024">
+        <div id="dsq-comment-header-39024" class="dsq-comment-header">
+            <cite id="dsq-cite-39024">
+http://legalinformatics.wordpress.com/                <span id="dsq-author-user-39024">Robert Richards</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39024" class="dsq-comment-body">
+            <div id="dsq-comment-message-39024" class="dsq-comment-message"><p>This is a terrific post, but I don&#8217;t understand the statement about a lack of URIs on Facebook. What is this, if not a Facebook URI? <a href="http://www.facebook.com/justia/posts/242902062396137I" rel="nofollow">http://www.facebook.com/justia/posts/242902062396137I</a> use such Facebook identifiers to link to Facebook content several times each week.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39025">
+        <div id="dsq-comment-header-39025" class="dsq-comment-header">
+            <cite id="dsq-cite-39025">
+http://www.stonesoupway.com                <span id="dsq-author-user-39025">Bill Liao</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39025" class="dsq-comment-body">
+            <div id="dsq-comment-message-39025" class="dsq-comment-message"><p>Email never cared about context.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39026">
+        <div id="dsq-comment-header-39026" class="dsq-comment-header">
+            <cite id="dsq-cite-39026">
+http://radar.oreilly.com/edd                <span id="dsq-author-user-39026">Edd Dumbill</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39026" class="dsq-comment-body">
+            <div id="dsq-comment-message-39026" class="dsq-comment-message"><p>@Robert Richards, you are right about Facebook posts, they have a URI, I stand corrected. Other items that feed through FB don&#8217;t have URIs though, that go under the &#8220;activity feed&#8221;. The argument from URI was unnecessary: an argument from Facebook&#8217;s Terms  &amp; Conditions would be more illustrative!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39027">
+        <div id="dsq-comment-header-39027" class="dsq-comment-header">
+            <cite id="dsq-cite-39027">
+                <span id="dsq-author-user-39027">Sam</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39027" class="dsq-comment-body">
+            <div id="dsq-comment-message-39027" class="dsq-comment-message"><p>Does Google paid Oreilly to write this post?</p>
+<p>It should be titled SPONSORED POST!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39028">
+        <div id="dsq-comment-header-39028" class="dsq-comment-header">
+            <cite id="dsq-cite-39028">
+                <span id="dsq-author-user-39028">Bhuwan Ghimire</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39028" class="dsq-comment-body">
+            <div id="dsq-comment-message-39028" class="dsq-comment-message"><p>Maxnicks, you were saying?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39029">
+        <div id="dsq-comment-header-39029" class="dsq-comment-header">
+            <cite id="dsq-cite-39029">
+                <span id="dsq-author-user-39029">Pipe Dream</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39029" class="dsq-comment-body">
+            <div id="dsq-comment-message-39029" class="dsq-comment-message"><p>This is a pipe dream. Do you really think Google+ is an &#8220;open&#8221; platform? They are gonna make all their code base and social graph public? Google is no different than FB. Both are corporations run by boards that want to make money. Neither are &#8220;open.&#8221; Google is no less evil than FB. It&#8217;s just a slightly different approach to the same problem; more or less a copy of FB with some improvements. And FB will copy G+ in turn.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39030">
+        <div id="dsq-comment-header-39030" class="dsq-comment-header">
+            <cite id="dsq-cite-39030">
+                <span id="dsq-author-user-39030">D.Bellini</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39030" class="dsq-comment-body">
+            <div id="dsq-comment-message-39030" class="dsq-comment-message"><p>It may be too soon to tell. If Google is NOT an open platform, it will fail, or at best, compete, with Facebook. I&#8217;ve generally stayed away from Goggle offerings (apart from search) because of privacy concerns. This is not to say that Facebook is not concerning, but it seemed all the hype years back was a bit exaggerated&#8211;even though it was necessary to provide disclosure and expose Facebook&#8217;s utter disregard for the privacy of its users. Yet, the Google giant was basically ignored. Google is so integrated and Buzz caused a lot of problems with privacy with the &#8216;automatic&#8217; sharing of one&#8217;s social graph. </p>
+<p>I also would like an answer to the question above, thus far ignored&#8211;Is this a sponsored post?</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39031">
+        <div id="dsq-comment-header-39031" class="dsq-comment-header">
+            <cite id="dsq-cite-39031">
+http://radar.oreilly.com/edd                <span id="dsq-author-user-39031">Edd Dumbill</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39031" class="dsq-comment-body">
+            <div id="dsq-comment-message-39031" class="dsq-comment-message"><p>@D.Bellini, no, Radar does not carry sponsored posts and I have no affiliation with Google.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39032">
+        <div id="dsq-comment-header-39032" class="dsq-comment-header">
+            <cite id="dsq-cite-39032">
+                <span id="dsq-author-user-39032">Todd Andelin</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39032" class="dsq-comment-body">
+            <div id="dsq-comment-message-39032" class="dsq-comment-message"><p>I have been using G+ for a week or so, and I find it to be extremely engaging.</p>
+<p>The only reason I am commenting here is to say that I am going over to Google+ right now to find Edd Dumbill and to read the comments because there it will be easier to engage and follower fellow readers.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39033">
+        <div id="dsq-comment-header-39033" class="dsq-comment-header">
+            <cite id="dsq-cite-39033">
+http://www.tsert.com                <span id="dsq-author-user-39033">Pierre Innocent</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39033" class="dsq-comment-body">
+            <div id="dsq-comment-message-39033" class="dsq-comment-message"><p>See <a href="http://thinktank.tsert.com/patent-clubs.html" rel="nofollow">http://thinktank.tsert.com/patent-clubs.html</a></p>
+<p>Google+ Circles is theft !!!</p>
+<p>Pierre Innocent<br />
+<a href="http://www.tsert.com" rel="nofollow">http://www.tsert.com</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39034">
+        <div id="dsq-comment-header-39034" class="dsq-comment-header">
+            <cite id="dsq-cite-39034">
+                <span id="dsq-author-user-39034">archie</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39034" class="dsq-comment-body">
+            <div id="dsq-comment-message-39034" class="dsq-comment-message"><p>I use google+ daily now because I&#8217;ve been able to convince people to use it. @Zen Cushion I see your point, my cousin got that error&#8230; </p>
+<p>&#8220;* Sharing — access rights over content [Check]<br />
+* Notification — informing users of changes to content or contacts&#8217; content [Check]<br />
+* Annotation — commenting on content [Check]<br />
+* Communication — direct interaction among members of the system [Check]&#8220;</p>
+<p>It&#8217;s all been done already</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39035">
+        <div id="dsq-comment-header-39035" class="dsq-comment-header">
+            <cite id="dsq-cite-39035">
+                <span id="dsq-author-user-39035">William Johnson</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39035" class="dsq-comment-body">
+            <div id="dsq-comment-message-39035" class="dsq-comment-message"><p>Even if Google&#8217;s intentions are what you believe&#8230; which is still an open question&#8230; it&#8217;s hard to see how the inter-application collaboration you describe can succeed, as long as people continue to use the wide range of proprietary applications (from many different vendors) that they&#8217;re used to. Those programs simply don&#8217;t share the same code architecture, and you can&#8217;t just stick on APIs so they can interoperate with each other across Google+.</p>
+<p>Or do you think that everyone is going to abandon all their applications (desktop and Web) for Google Apps? Not any time soon&#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39036">
+        <div id="dsq-comment-header-39036" class="dsq-comment-header">
+            <cite id="dsq-cite-39036">
+                <span id="dsq-author-user-39036">IA</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39036" class="dsq-comment-body">
+            <div id="dsq-comment-message-39036" class="dsq-comment-message"><p>only thing missing is a bbc functionality. I won&#8217;t use g+ until then.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39037">
+        <div id="dsq-comment-header-39037" class="dsq-comment-header">
+            <cite id="dsq-cite-39037">
+http://www.webfrootz.com                <span id="dsq-author-user-39037">Camilla Devreut</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39037" class="dsq-comment-body">
+            <div id="dsq-comment-message-39037" class="dsq-comment-message"><p>There is reason why closed platform are successful. They have their merits and G+ ascent will not mean the end of them. But I agree that we do need an open platform in the mix.</p>
+<p>Camilla Devreut<br />
+Marketing Manager<br />
+<a href="http://www.webfrootz.com/" rel="nofollow">WebFrootz Web Agency</a></p>
+<p></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39038">
+        <div id="dsq-comment-header-39038" class="dsq-comment-header">
+            <cite id="dsq-cite-39038">
+http://www.angerer.com                <span id="dsq-author-user-39038">Bernard Angerer</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39038" class="dsq-comment-body">
+            <div id="dsq-comment-message-39038" class="dsq-comment-message"><p>Edd,</p>
+<p>great article&#8230; however one thing is missing from the semantic community point of view: &#8220;Linked-Data&#8221; / RDF&#8230;</p>
+<p>best regards<br />
+bernard</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39039">
+        <div id="dsq-comment-header-39039" class="dsq-comment-header">
+            <cite id="dsq-cite-39039">
+http://www.rsurbano.com.br                <span id="dsq-author-user-39039">Fabiano Silva</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39039" class="dsq-comment-body">
+            <div id="dsq-comment-message-39039" class="dsq-comment-message"><p>Danger Facebook&#8230;</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39040">
+        <div id="dsq-comment-header-39040" class="dsq-comment-header">
+            <cite id="dsq-cite-39040">
+http://www.zylun.com/                <span id="dsq-author-user-39040">Z</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39040" class="dsq-comment-body">
+            <div id="dsq-comment-message-39040" class="dsq-comment-message"><p>The collaborative aspects of G+ seem similar to what Google tried to do with Wave, which has not come into wide use, and the social interactions seem similar to Buzz, which also did not spread prolifically. I will be interested to see how people receive Google+ and to see if the masses will look at it as a &#8220;social backbone&#8221; or simply as a Facebook alternative. Interesting post!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39041">
+        <div id="dsq-comment-header-39041" class="dsq-comment-header">
+            <cite id="dsq-cite-39041">
+                <span id="dsq-author-user-39041">Andrew</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39041" class="dsq-comment-body">
+            <div id="dsq-comment-message-39041" class="dsq-comment-message"><p>This article is brilliant.</p>
+<p>However, do you know from Google whether this is their intent?</p>
+<p>Or is their intent merely to replace Facebook with something better?</p>
+<p>Would be nice to hear direct from the Googlers&#8217; mouths.</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39042">
+        <div id="dsq-comment-header-39042" class="dsq-comment-header">
+            <cite id="dsq-cite-39042">
+                <span id="dsq-author-user-39042">Anonymous</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39042" class="dsq-comment-body">
+            <div id="dsq-comment-message-39042" class="dsq-comment-message"><p>I hope Google+ is one step on the way to the Freedom Box.</p>
+<p><a href="http://freedomboxfoundation.org/" rel="nofollow">http://freedomboxfoundation.org/</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39043">
+        <div id="dsq-comment-header-39043" class="dsq-comment-header">
+            <cite id="dsq-cite-39043">
+http://www.google.com/profiles/OneFineArt                <span id="dsq-author-user-39043">William MATAR</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39043" class="dsq-comment-body">
+            <div id="dsq-comment-message-39043" class="dsq-comment-message"><p>I am using from Lebanon.. I love a lot Google Plus.. very utile</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment even thread-even depth-1" id="dsq-comment-39044">
+        <div id="dsq-comment-header-39044" class="dsq-comment-header">
+            <cite id="dsq-cite-39044">
+http://www.radarwarnsysteme.de                <span id="dsq-author-user-39044">Radarwarner</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39044" class="dsq-comment-body">
+            <div id="dsq-comment-message-39044" class="dsq-comment-message"><p>Great Article&#8230;this is one of the first Blogs about what Googles G+ is really about&#8230;.THANK You!</p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+    <li class="comment odd alt thread-odd thread-alt depth-1" id="dsq-comment-39045">
+        <div id="dsq-comment-header-39045" class="dsq-comment-header">
+            <cite id="dsq-cite-39045">
+http://inceptdesign.com                <span id="dsq-author-user-39045">Alex Adekola</span>
+            </cite>
+        </div>
+        <div id="dsq-comment-body-39045" class="dsq-comment-body">
+            <div id="dsq-comment-message-39045" class="dsq-comment-message"><p>Google definitely needs social in order to stay relevant in the SERPS and reduce spam.</p>
+<p>Alex Adekola<br />
+Marketing Manager<br />
+<a href="www.strongcollegestudents.com" rel="nofollow">
+<p>Incept Design</p>
+<p>
+</a></p>
+</div>
+        </div>
+
+    </li><!-- #comment-## -->
+            </ul>
+
+
+        </div>
+
+    </div>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var disqus_url = 'http://radar.oreilly.com/2011/07/google-plus-social-backbone.html';
+    var disqus_identifier = '46845 http://blogs.oreilly.com/radar/2011/07/google-plus-social-backbone.html';
+    var disqus_container_id = 'disqus_thread';
+    var disqus_domain = 'disqus.com';
+    var disqus_shortname = 'oreillyradar';
+    var disqus_title = "Google+ is the social backbone";
+        var disqus_config = function () {
+        var config = this; // Access to the config object
+        config.language = '';
+
+        /*
+           All currently supported events:
+            * preData — fires just before we request for initial data
+            * preInit - fires after we get initial data but before we load any dependencies
+            * onInit  - fires when all dependencies are resolved but before dtpl template is rendered
+            * afterRender - fires when template is rendered but before we show it
+            * onReady - everything is done
+         */
+
+        config.callbacks.preData.push(function() {
+            // clear out the container (its filled for SEO/legacy purposes)
+            document.getElementById(disqus_container_id).innerHTML = '';
+        });
+                config.callbacks.onReady.push(function() {
+            // sync comments in the background so we don't block the page
+            var script = document.createElement('script');
+            script.async = true;
+            script.src = '?cf_action=sync_comments&post_id=46845';
+
+            var firstScript = document.getElementsByTagName( "script" )[0];
+            firstScript.parentNode.insertBefore(script, firstScript);
+        });
+                    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+    var DsqLocal = {
+        'trackbacks': [
+        ],
+        'trackback_url': "http:\/\/radar.oreilly.com\/2011\/07\/google-plus-social-backbone.html\/trackback"    };
+/* ]]> */
+</script>
+
+<script type="text/javascript">
+/* <![CDATA[ */
+(function() {
+    var dsq = document.createElement('script'); dsq.type = 'text/javascript';
+    dsq.async = true;
+    dsq.src = '//' + disqus_shortname + '.' + 'disqus.com' + '/embed.js?pname=wordpress&pver=2.74';
+    (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+})();
+/* ]]> */
+</script>
+
+		</div><!-- #content -->
+		<div id="sidebar" class="widget-area">
+				<div id="contributorswidget" class="widget-container widget_text">	
+				<h3 class="widget-title">CONTRIBUTORS</h3>			
+				<div class="text-widget">
+					<ul>
+				
+					<li>
+						<a href="http://radar.oreilly.com/tim">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_tim_s.jpg" class="au-photo" alt="" title="Tim O'Reilly" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/tim">Tim O'Reilly</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/resharing-differences-between-linkedin-and-radar.html">Resharing Differences Between LinkedIn and Radar</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/mikel">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_mikel_s.jpg" class="au-photo" alt="" title="Mike Loukides" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/mikel">Mike Loukides</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/genetically-modified-foods-asking-the-right-questions.html">Genetically modified foods: asking the right questions</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/jims">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_jims_s.jpg" class="au-photo" alt="" title="Jim Stogdill" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/jims">Jim Stogdill</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/07/where-innovation-lives.html">Where Innovation Lives</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/nat">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_nat_s.jpg" class="au-photo" alt="" title="Nat Torkington" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/nat">Nat Torkington</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/10/four-short-links-4-october-2013.html">Four short links: 4 October 2013</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/jbruner">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_jbruner_s.jpg" class="au-photo" alt="" title="Jon Bruner" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/jbruner">Jon Bruner</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/08/podcast-ratings-rankings-and-being-born-lucky.html">Podcast: ratings, rankings, and the advantage of being born lucky</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/jennw">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_jennw_s.jpg" class="au-photo" alt="" title="Jenn Webb" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/jennw">Jenn Webb</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/progressive-reduction-bret-victor-elon-musk-rmit-ui-design.html">Progressive reduction, Bret Victor rants, and Elon Musk is Tony Stark</a>
+						</p>
+					</li>
+				
+					<li>
+						<a href="http://radar.oreilly.com/reneed">	
+						<img src="http://cdn.oreillystatic.com/radar/images/people/photo_reneed_s.jpg" class="au-photo" alt="" title="Renee DiResta" width="40" height="56"/></a>	
+						<p class="contr-name">
+							<a href="http://radar.oreilly.com/reneed">Renee DiResta</a>					
+						</p>
+						<p class="contr-post">
+							<a href="http://radar.oreilly.com/2013/09/big-data-and-the-big-lie-the-challenges-facing-big-brand-marketers.html">Big data and the “Big Lie”: the challenges facing big brand marketers</a>
+						</p>
+					</li>
+							</ul>
+					
+					<p style="float:right; margin-bottom: 0;"><a href="/radar-contributors/">See all contributors</a></p>
+				</div>
+				<div class="clear"></div>
+			</div>
+							
+	
+		
+		<div class="widget-container related-topics">
+			<h3 class="widget-title">Related Topics</h3>
+			<ul>
+						
+							<li><a href="http://radar.oreilly.com/web2/">Web 2.0</a></li>
+							</ul>
+			<div class="clear"></div>
+		</div>
+		
+	
+			<div  class="widget-container related-events">	
+		<h3 class="widget-title">Related EVENTS</h3>
+		<ul>						
+				
+				<li>
+<a href="http://strataconf.com/stratany2012/?_discount=RADAR20&intcmp=il-strata-stny12-radar-banner"><img src="http://cdn.oreilly.com/radar/images/events/tiles/2012-stratany-111x82.gif" alt="Strata Conference + Hadoop World" title="Strata Conference + Hadoop World" width="111"></a><h3><a href="http://strataconf.com/stratany2012/?_discount=RADAR20&intcmp=il-strata-stny12-radar-banner">Strata Conference + Hadoop World</a></h3><p>Strata Conference, October 23-26 in New York City. Use code RADAR20 to save 20% on registration.</p>
+<span class="clear"></span>
+</li>				<div class="clear"></div>			
+						
+		<ul>
+		<div class="clear"></div>
+</div>
+
+
+
+<div id="execphp-4" class="widget-container widget_execphp">			
+			<div class="execphpwidget"></div>
+		<div class="clear"></div></div><div id="execphp-5" class="widget-container widget_execphp">			
+			<div class="execphpwidget"><a class="twitter-timeline" width="318" data-dnt=true href="https://twitter.com/radar" data-widget-id="251056135732338688">Tweets by @radar</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+</div>
+		<div class="clear"></div></div><div id="text-5" class="widget-container widget_text"><h3 class="widget-title">Most Recently Discussed</h3>			<div class="textwidget"><div id="recentcomments" class="dsq-widget"><script type="text/javascript" src="http://oreillyradar.disqus.com/recent_comments_widget.js?num_items=5&hide_avatars=1&avatar_size=32&excerpt_length=100"></script></div></div>
+		<div class="clear"></div></div><div  class="widget-container radar-archives">	
+	<h3 class="widget-title">Archives</h3>	
+		
+	<ul>
+		<li>
+			<select id="archive_id" name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+			  <option value="">Archives by Month...</option> 
+			  	<option value='http://radar.oreilly.com/2013/10'> October 2013 </option>
+	<option value='http://radar.oreilly.com/2013/09'> September 2013 </option>
+	<option value='http://radar.oreilly.com/2013/08'> August 2013 </option>
+	<option value='http://radar.oreilly.com/2013/07'> July 2013 </option>
+	<option value='http://radar.oreilly.com/2013/06'> June 2013 </option>
+	<option value='http://radar.oreilly.com/2013/05'> May 2013 </option>
+	<option value='http://radar.oreilly.com/2013/04'> April 2013 </option>
+	<option value='http://radar.oreilly.com/2013/03'> March 2013 </option>
+	<option value='http://radar.oreilly.com/2013/02'> February 2013 </option>
+	<option value='http://radar.oreilly.com/2013/01'> January 2013 </option>
+	<option value='http://radar.oreilly.com/2012/12'> December 2012 </option>
+	<option value='http://radar.oreilly.com/2012/11'> November 2012 </option>
+	<option value='http://radar.oreilly.com/2012/10'> October 2012 </option>
+	<option value='http://radar.oreilly.com/2012/09'> September 2012 </option>
+	<option value='http://radar.oreilly.com/2012/08'> August 2012 </option>
+	<option value='http://radar.oreilly.com/2012/07'> July 2012 </option>
+	<option value='http://radar.oreilly.com/2012/06'> June 2012 </option>
+	<option value='http://radar.oreilly.com/2012/05'> May 2012 </option>
+	<option value='http://radar.oreilly.com/2012/04'> April 2012 </option>
+	<option value='http://radar.oreilly.com/2012/03'> March 2012 </option>
+	<option value='http://radar.oreilly.com/2012/02'> February 2012 </option>
+	<option value='http://radar.oreilly.com/2012/01'> January 2012 </option>
+	<option value='http://radar.oreilly.com/2011/12'> December 2011 </option>
+	<option value='http://radar.oreilly.com/2011/11'> November 2011 </option>
+	<option value='http://radar.oreilly.com/2011/10'> October 2011 </option>
+	<option value='http://radar.oreilly.com/2011/09'> September 2011 </option>
+	<option value='http://radar.oreilly.com/2011/08'> August 2011 </option>
+	<option value='http://radar.oreilly.com/2011/07'> July 2011 </option>
+	<option value='http://radar.oreilly.com/2011/06'> June 2011 </option>
+	<option value='http://radar.oreilly.com/2011/05'> May 2011 </option>
+	<option value='http://radar.oreilly.com/2011/04'> April 2011 </option>
+	<option value='http://radar.oreilly.com/2011/03'> March 2011 </option>
+	<option value='http://radar.oreilly.com/2011/02'> February 2011 </option>
+	<option value='http://radar.oreilly.com/2011/01'> January 2011 </option>
+	<option value='http://radar.oreilly.com/2010/12'> December 2010 </option>
+	<option value='http://radar.oreilly.com/2010/11'> November 2010 </option>
+	<option value='http://radar.oreilly.com/2010/10'> October 2010 </option>
+	<option value='http://radar.oreilly.com/2010/09'> September 2010 </option>
+	<option value='http://radar.oreilly.com/2010/08'> August 2010 </option>
+	<option value='http://radar.oreilly.com/2010/07'> July 2010 </option>
+	<option value='http://radar.oreilly.com/2010/06'> June 2010 </option>
+	<option value='http://radar.oreilly.com/2010/05'> May 2010 </option>
+	<option value='http://radar.oreilly.com/2010/04'> April 2010 </option>
+	<option value='http://radar.oreilly.com/2010/03'> March 2010 </option>
+	<option value='http://radar.oreilly.com/2010/02'> February 2010 </option>
+	<option value='http://radar.oreilly.com/2010/01'> January 2010 </option>
+	<option value='http://radar.oreilly.com/2009/12'> December 2009 </option>
+	<option value='http://radar.oreilly.com/2009/11'> November 2009 </option>
+	<option value='http://radar.oreilly.com/2009/10'> October 2009 </option>
+	<option value='http://radar.oreilly.com/2009/09'> September 2009 </option>
+	<option value='http://radar.oreilly.com/2009/08'> August 2009 </option>
+	<option value='http://radar.oreilly.com/2009/07'> July 2009 </option>
+	<option value='http://radar.oreilly.com/2009/06'> June 2009 </option>
+	<option value='http://radar.oreilly.com/2009/05'> May 2009 </option>
+	<option value='http://radar.oreilly.com/2009/04'> April 2009 </option>
+	<option value='http://radar.oreilly.com/2009/03'> March 2009 </option>
+	<option value='http://radar.oreilly.com/2009/02'> February 2009 </option>
+	<option value='http://radar.oreilly.com/2009/01'> January 2009 </option>
+	<option value='http://radar.oreilly.com/2008/12'> December 2008 </option>
+	<option value='http://radar.oreilly.com/2008/11'> November 2008 </option>
+	<option value='http://radar.oreilly.com/2008/10'> October 2008 </option>
+	<option value='http://radar.oreilly.com/2008/09'> September 2008 </option>
+	<option value='http://radar.oreilly.com/2008/08'> August 2008 </option>
+	<option value='http://radar.oreilly.com/2008/07'> July 2008 </option>
+	<option value='http://radar.oreilly.com/2008/06'> June 2008 </option>
+	<option value='http://radar.oreilly.com/2008/05'> May 2008 </option>
+	<option value='http://radar.oreilly.com/2008/04'> April 2008 </option>
+	<option value='http://radar.oreilly.com/2008/03'> March 2008 </option>
+	<option value='http://radar.oreilly.com/2008/02'> February 2008 </option>
+	<option value='http://radar.oreilly.com/2008/01'> January 2008 </option>
+	<option value='http://radar.oreilly.com/2007/12'> December 2007 </option>
+	<option value='http://radar.oreilly.com/2007/11'> November 2007 </option>
+	<option value='http://radar.oreilly.com/2007/10'> October 2007 </option>
+	<option value='http://radar.oreilly.com/2007/09'> September 2007 </option>
+	<option value='http://radar.oreilly.com/2007/08'> August 2007 </option>
+	<option value='http://radar.oreilly.com/2007/07'> July 2007 </option>
+	<option value='http://radar.oreilly.com/2007/06'> June 2007 </option>
+	<option value='http://radar.oreilly.com/2007/05'> May 2007 </option>
+	<option value='http://radar.oreilly.com/2007/04'> April 2007 </option>
+	<option value='http://radar.oreilly.com/2007/03'> March 2007 </option>
+	<option value='http://radar.oreilly.com/2007/02'> February 2007 </option>
+	<option value='http://radar.oreilly.com/2007/01'> January 2007 </option>
+	<option value='http://radar.oreilly.com/2006/12'> December 2006 </option>
+	<option value='http://radar.oreilly.com/2006/11'> November 2006 </option>
+	<option value='http://radar.oreilly.com/2006/10'> October 2006 </option>
+	<option value='http://radar.oreilly.com/2006/09'> September 2006 </option>
+	<option value='http://radar.oreilly.com/2006/08'> August 2006 </option>
+	<option value='http://radar.oreilly.com/2006/07'> July 2006 </option>
+	<option value='http://radar.oreilly.com/2006/06'> June 2006 </option>
+	<option value='http://radar.oreilly.com/2006/05'> May 2006 </option>
+	<option value='http://radar.oreilly.com/2006/04'> April 2006 </option>
+	<option value='http://radar.oreilly.com/2006/03'> March 2006 </option>
+	<option value='http://radar.oreilly.com/2006/02'> February 2006 </option>
+	<option value='http://radar.oreilly.com/2006/01'> January 2006 </option>
+	<option value='http://radar.oreilly.com/2005/12'> December 2005 </option>
+	<option value='http://radar.oreilly.com/2005/11'> November 2005 </option>
+	<option value='http://radar.oreilly.com/2005/10'> October 2005 </option>
+	<option value='http://radar.oreilly.com/2005/09'> September 2005 </option>
+	<option value='http://radar.oreilly.com/2005/08'> August 2005 </option>
+	<option value='http://radar.oreilly.com/2005/07'> July 2005 </option>
+	<option value='http://radar.oreilly.com/2005/06'> June 2005 </option>
+	<option value='http://radar.oreilly.com/2005/05'> May 2005 </option>
+	<option value='http://radar.oreilly.com/2005/04'> April 2005 </option>
+	<option value='http://radar.oreilly.com/2005/03'> March 2005 </option>
+			</select>
+		</li>
+
+		<li>	
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='page_id' id='page_id' onchange='return this.form.submit()'>
+	<option value="">Archives by Topic...</option>
+	<option class="level-0" value="48427">Data</option>
+	<option class="level-0" value="48429">Gov 2.0</option>
+	<option class="level-0" value="48431">Mobile</option>
+	<option class="level-0" value="48433">Programming</option>
+	<option class="level-0" value="48435">Publishing</option>
+	<option class="level-0" value="48437">Web 2.0</option>
+</select>
+					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+
+		<li id="users">
+			<form action="http://radar.oreilly.com/" method="get">
+				<div>
+					<select name='author' id='author' class='' onchange='return this.form.submit()'>
+	<option value='-1'>Archives by Author...</option>
+	<option value='4'>Adam DuVander</option>
+	<option value='3'>Adam Messinger</option>
+	<option value='5'>Adam Witwer</option>
+	<option value='2'>Alasdair Allan</option>
+	<option value='7'>Alex Bowyer</option>
+	<option value='9'>Alex Iskold</option>
+	<option value='6'>Alexander Macgillivray</option>
+	<option value='10'>Alistair Croll</option>
+	<option value='11'>Allen Noren</option>
+	<option value='12'>Allison Randal</option>
+	<option value='13'>Anant Jhingran</option>
+	<option value='414'>Andreas Antonopoulos</option>
+	<option value='15'>Andrew Odewahn</option>
+	<option value='14'>Andrew Savikas</option>
+	<option value='16'>Andrew Shafer</option>
+	<option value='18'>Andy Kirk</option>
+	<option value='19'>Andy Oram</option>
+	<option value='262'>Ann Waldo</option>
+	<option value='21'>Ari Gesher</option>
+	<option value='20'>Aria Haghighi</option>
+	<option value='22'>Artur Bergman</option>
+	<option value='23'>Audrey Watters</option>
+	<option value='26'>Barry Devlin</option>
+	<option value='390'>Beau Cronin</option>
+	<option value='27'>Ben Lorica</option>
+	<option value='28'>Bill McCoy</option>
+	<option value='30'>Bradley Voytek</option>
+	<option value='31'>Brady Forrest</option>
+	<option value='32'>Brett McLaughlin</option>
+	<option value='33'>Brett Sandusky</option>
+	<option value='34'>Brett Sheppard</option>
+	<option value='25'>Brian Ahier</option>
+	<option value='35'>Brian Boyer</option>
+	<option value='244'>Brian Jepson</option>
+	<option value='36'>Brian O&#039;Leary</option>
+	<option value='38'>Brian Sawyer</option>
+	<option value='37'>Bruce Stewart</option>
+	<option value='39'>Carl Hewitt</option>
+	<option value='40'>Carl Malamud</option>
+	<option value='41'>Chris Meade</option>
+	<option value='284'>Chris Vander Mey</option>
+	<option value='44'>Christine Perey</option>
+	<option value='42'>Ciara Byrne</option>
+	<option value='43'>Cliff Miller</option>
+	<option value='306'>Courtney Nash</option>
+	<option value='45'>Dale Dougherty</option>
+	<option value='46'>Darren Barefoot</option>
+	<option value='47'>Dave McClure</option>
+	<option value='49'>David Leinweber</option>
+	<option value='50'>David Recordon</option>
+	<option value='48'>David Sims</option>
+	<option value='51'>DC Denison</option>
+	<option value='242'>Deni Auclair</option>
+	<option value='313'>Derek Jacoby</option>
+	<option value='53'>DJ Patil</option>
+	<option value='52'>Doug Hill</option>
+	<option value='54'>Dylan Field</option>
+	<option value='55'>E.A. Vander Veer</option>
+	<option value='56'>Edd Dumbill</option>
+	<option value='236'>Edie Freedman</option>
+	<option value='58'>Elizabeth Corcoran</option>
+	<option value='59'>Eoin Purcell</option>
+	<option value='60'>Eric Ries</option>
+	<option value='61'>Francis Pedraza</option>
+	<option value='62'>Fred Trotter</option>
+	<option value='68'>Gabe Zichermann</option>
+	<option value='63'>Gavin Starks</option>
+	<option value='67'>Greg Whisenant</option>
+	<option value='69'>Heather McCormack</option>
+	<option value='70'>Howard Wen</option>
+	<option value='71'>Hugh McGuire</option>
+	<option value='72'>Imran Ali</option>
+	<option value='73'>James Bridle</option>
+	<option value='74'>James Turner</option>
+	<option value='75'>Jason Grigsby</option>
+	<option value='77'>Jeevan Padiyar</option>
+	<option value='78'>Jeffrey Carr</option>
+	<option value='80'>Jenn Webb</option>
+	<option value='81'>Jennifer Pahlka</option>
+	<option value='82'>Jeremy Howard</option>
+	<option value='83'>Jesper Andersen</option>
+	<option value='84'>Jesse Robbins</option>
+	<option value='88'>Jim Stogdill</option>
+	<option value='87'>Jimmy Guterman</option>
+	<option value='89'>Jodee Rich</option>
+	<option value='92'>John Allspaw</option>
+	<option value='93'>John Battelle</option>
+	<option value='86'>John Geraci</option>
+	<option value='85'>John Graham-Cumming</option>
+	<option value='94'>John Labovitz</option>
+	<option value='95'>John Warren</option>
+	<option value='255'>Jon Bruner</option>
+	<option value='101'>Jon Spinney</option>
+	<option value='98'>Jon Udell</option>
+	<option value='96'>Jonathan Alexander</option>
+	<option value='177'>Jonathan Reichental, Ph.D.</option>
+	<option value='97'>Jono Bacon</option>
+	<option value='90'>Joseph Hellerstein</option>
+	<option value='99'>Joseph J. Esposito</option>
+	<option value='100'>Joshua-Michéle Ross</option>
+	<option value='103'>Jud Valeski</option>
+	<option value='104'>Julie Steele</option>
+	<option value='106'>Justin Hall</option>
+	<option value='107'>Justo Hidalgo</option>
+	<option value='117'>Karl Fogel</option>
+	<option value='108'>Kassia Krozser</option>
+	<option value='112'>Kat Meyer</option>
+	<option value='109'>Kate Eltham</option>
+	<option value='110'>Kate Pullinger</option>
+	<option value='111'>Kathy Walrath</option>
+	<option value='113'>Keith Fahlgren</option>
+	<option value='114'>Ken Yarmosh</option>
+	<option value='115'>Kevin Shockey</option>
+	<option value='116'>Kevin Smokler</option>
+	<option value='118'>Kurt Cagle</option>
+	<option value='121'>Laura Dawson</option>
+	<option value='339'>Laurel Ruma</option>
+	<option value='122'>Laurie Petrycki</option>
+	<option value='123'>Leigh Dodds</option>
+	<option value='125'>Liliana Bounegru</option>
+	<option value='126'>Linda Stone</option>
+	<option value='127'>Liza Daly</option>
+	<option value='128'>Lucy Gray</option>
+	<option value='129'>Lukas Biewald</option>
+	<option value='151'>Mac Slocum</option>
+	<option value='130'>Madhusudhan Konda</option>
+	<option value='132'>Marc Goodman</option>
+	<option value='131'>Marc Hedlund</option>
+	<option value='133'>Marie Bjerede</option>
+	<option value='134'>Mark Drapeau</option>
+	<option value='135'>Mark Nelson</option>
+	<option value='150'>Mark Sigal</option>
+	<option value='136'>Marko Gargenta</option>
+	<option value='291'>Mary Treseler</option>
+	<option value='142'>Matt Garrish</option>
+	<option value='140'>Matt Wood</option>
+	<option value='137'>Matthew Burton</option>
+	<option value='460'>Matthew Gast</option>
+	<option value='138'>Matthew Russell</option>
+	<option value='141'>Melissa Morgan</option>
+	<option value='144'>Michael Driscoll</option>
+	<option value='145'>Michael Ferrari</option>
+	<option value='146'>Michael Jon Jensen</option>
+	<option value='418'>Mike Barlow</option>
+	<option value='147'>Mike Hendrickson</option>
+	<option value='143'>Mike Honda</option>
+	<option value='148'>Mike Loukides</option>
+	<option value='149'>Mike Shatzkin</option>
+	<option value='152'>Nat Torkington</option>
+	<option value='214'>Nate Osit</option>
+	<option value='308'>Nathan Jepson</option>
+	<option value='155'>Nick Bilton</option>
+	<option value='156'>Nick Farina</option>
+	<option value='157'>Nick Ruffilo</option>
+	<option value='158'>Nikolaj Nyholm</option>
+	<option value='159'>O&#039;Reilly Radar</option>
+	<option value='160'>Osman Rashid</option>
+	<option value='161'>Pablo Francisco Arrieta Gomez</option>
+	<option value='162'>Pamela Samuelson</option>
+	<option value='163'>Paul Spinrad</option>
+	<option value='167'>Pete Warden</option>
+	<option value='166'>Peter Bennett</option>
+	<option value='164'>Peter Meyers</option>
+	<option value='404'>Q Ethan McCallum</option>
+	<option value='169'>Quinn Norton</option>
+	<option value='172'>Rachel Roumeliotis</option>
+	<option value='173'>Rael Dornfest</option>
+	<option value='174'>Ramez Naam</option>
+	<option value='175'>Randy Bias</option>
+	<option value='176'>Raven Zachary</option>
+	<option value='263'>Renee DiResta</option>
+	<option value='183'>Rob Tucker</option>
+	<option value='179'>Robbie Allen</option>
+	<option value='182'>Robert Kaye</option>
+	<option value='181'>Robert Passarella</option>
+	<option value='180'>Roberta Cairney</option>
+	<option value='184'>Roger Magoulas</option>
+	<option value='287'>Ron Miller</option>
+	<option value='185'>Ryan Stewart</option>
+	<option value='186'>Sanders Kleinfeld</option>
+	<option value='191'>Sara Peyton</option>
+	<option value='187'>Sara Winge</option>
+	<option value='189'>Sarah Milstein</option>
+	<option value='190'>Sarah Novotny</option>
+	<option value='192'>Scott Ruthfield</option>
+	<option value='194'>Sébastien Pierre</option>
+	<option value='195'>Shahid Shah</option>
+	<option value='196'>Silona Bonewald</option>
+	<option value='215'>Simon Phipps</option>
+	<option value='198'>Simon St. Laurent</option>
+	<option value='197'>Simon Wardley</option>
+	<option value='199'>Steve Souders</option>
+	<option value='200'>Suzanne Axtell</option>
+	<option value='202'>Tara Hunt</option>
+	<option value='203'>Terry Jones</option>
+	<option value='201'>Tim Anderson</option>
+	<option value='204'>Tim O&#039;Reilly</option>
+	<option value='205'>Timothy M. O&#039;Brien</option>
+	<option value='206'>Tish Shute</option>
+	<option value='207'>Todd Sattersten</option>
+	<option value='208'>Tom Steinberg</option>
+	<option value='209'>Tony Quartarolo</option>
+	<option value='210'>Troy Topnik</option>
+	<option value='211'>Tyler Bell</option>
+	<option value='212'>Vanessa Fox</option>
+</select>					<noscript><div><input type="submit" value="View" /></div></noscript>
+				</div>
+			</form>
+		</li>
+	</ul>
+	<div class="clear"></div>
+</div>
+<div id="text-3" class="widget-container widget_text">			<div class="textwidget"><p>
+<a href="http://feeds.feedburner.com/oreilly/radar/atom">
+<img src="http://feeds.feedburner.com/~fc/oreilly/radar/atom?bg=ff6633&amp;fg=444444&amp;anim=0" height="26" width="88" style="border:0" alt=""></a>
+</p></div>
+		<div class="clear"></div></div>	<div class="clear"></div>
+</div>	</div><!-- #container -->
+	</div><!-- #main -->
+
+	<div id="footer" role="contentinfo">
+		<div id="colophon">
+			<div id="footer-top">			
+							
+			<div class="execphpwidget"><div class="label">
+Sign up today to receive special discounts,<br> product alerts, and news from O'Reilly.</div>
+<div class="form">
+	<form method="POST" id="emailSignUp" action="http://post.oreilly.com/client/o/oreilly/forms/quicksignup.cgi"> 
+		<input type="hidden" name="client_token" value="oreilly" />
+		<input type="hidden" name="subscribe" value="optin" />
+                 <input type="hidden" name="success_url" value="http://oreilly.com/store/newsletter-thankyou.html" /> 
+                  <input type="hidden" name="error_url" value="http://oreilly.com/store/newsletter-signup-error.html" /> 
+                  <input type="hidden" name="news_oreilly" value="1" />
+		  <input type="text" name="email_addr" value="Enter Email" onblur="if (this.value == '')  {this.value = 'Enter Email';}" onfocus="if (this.value == 'Enter Email') {this.value = '';}" widdit="off" autocomplete="off" maxlength="100" size="12" class="email-box" />
+		 <input border="0" type="image" alt="Submit" src="http://cdn.oreillystatic.com/images/sitewide-headers/emailsignup_btn.gif" name="submit" value="submit">
+		<div class="clear"></div>
+	</form>
+</div>
+<div class="privacy">					
+	<a href="http://oreilly.com/oreilly/privacy.html">Privacy Policy &gt;</a>					
+	<a href="http://oreilly.com/pdf/sample-newsletter.pdf">View Sample Newsletter &gt;</a>		
+</div>
+</div>
+			
+				
+				<div class="menu-social-btm"><ul id="menu-social-btn-bottom" class="menu"><li id="menu-item-48494" class="social twitter menu-item menu-item-type-custom menu-item-object-custom menu-item-48494"><a href="http://twitter.com/oreillymedia">Twitter</a></li>
+<li id="menu-item-48491" class="social youtube menu-item menu-item-type-custom menu-item-object-custom menu-item-48491"><a href="http://youtube.com/oreillymedia">YouTube</a></li>
+<li id="menu-item-48492" class="social slideshare menu-item menu-item-type-custom menu-item-object-custom menu-item-48492"><a href="http://slideshare.net/oreillymedia">Slideshare</a></li>
+<li id="menu-item-48493" class="social facebook menu-item menu-item-type-custom menu-item-object-custom menu-item-48493"><a href="http://www.facebook.com/OReilly">Facebook</a></li>
+<li id="menu-item-48495" class="social googleplus menu-item menu-item-type-custom menu-item-object-custom menu-item-48495"><a href="https://plus.google.com/105451978536505503907">Google+</a></li>
+<li id="menu-item-48496" class="social rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48496"><a href="http://feeds.feedburner.com/oreilly/news">RSS</a></li>
+<li id="menu-item-48497" class="all-rss menu-item menu-item-type-custom menu-item-object-custom menu-item-48497"><a href="http://oreilly.com/feeds">View All RSS Feeds ></a></li>
+</ul></div>				<div class="clear"></div>
+			</div>
+			
+			
+							
+			<div class="execphpwidget"><div id="multiColumnFooter">	
+<div id="footer-branding">
+		<a href="http://oreilly.com/" target="_blank"><img src="http://cdn.oreillystatic.com/images/sitewide-headers/logo02.gif" alt="O'Reilly" border="0"></a>
+		<p class="copyright">&copy; 2013, O'Reilly Media, Inc.</p>
+		<p><span class="phone-number">(707) 827-7019</span><span class="phone-number">(800) 889-8969</span></p>
+		<p class="trademarks">All trademarks and registered trademarks appearing on oreilly.com are the property of their respective owners.</p>
+	</div>
+	
+	<div class="contentSectionBlock">
+		<!-- style="width:25%;" -->
+		<div class="contentSectionContainer">			
+				<h3>About O'Reilly</h3>
+				<div class="menu-about-oreilly-container"><ul id="menu-about-oreilly" class="menu"><li id="menu-item-50110" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-50110"><a href="http://radar.oreilly.com/about/">About O&#8217;Reilly Radar</a></li>
+<li id="menu-item-48510" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48510"><a href="http://oreilly.com/academic/">Academic Solutions</a></li>
+<li id="menu-item-48511" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48511"><a href="http://oreilly.com/jobs/">Jobs</a></li>
+<li id="menu-item-48512" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48512"><a href="http://oreilly.com/contact.html">Contacts</a></li>
+<li id="menu-item-48513" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48513"><a href="http://oreilly.com/about/">Corporate Information</a></li>
+<li id="menu-item-48514" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48514"><a href="http://press.oreilly.com/index.html">Press Room</a></li>
+<li id="menu-item-48515" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48515"><a href="http://oreilly.com/oreilly/privacy.csp">Privacy Policy</a></li>
+<li id="menu-item-48516" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48516"><a href="http://oreilly.com/terms/">Terms of Service</a></li>
+<li id="menu-item-48517" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48517"><a href="http://oreilly.com/oreilly/author/intro.csp">Writing for O&#8217;Reilly</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Community</h3>
+				<div class="menu-community-2-container"><ul id="menu-community-2" class="menu"><li id="menu-item-48518" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48518"><a href="http://oreilly.com/authors/">Authors</a></li>
+<li id="menu-item-48519" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48519"><a href="http://oreilly.com/community/">Community &#038; Featured Users</a></li>
+<li id="menu-item-48520" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48520"><a href="http://forums.oreilly.com/">Forums</a></li>
+<li id="menu-item-48521" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48521"><a href="https://members.oreilly.com/">Membership</a></li>
+<li id="menu-item-48522" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48522"><a href="http://elists.oreilly.com/">Newsletters</a></li>
+<li id="menu-item-48523" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48523"><a href="http://answers.oreilly.com/">O&#8217;Reilly Answers</a></li>
+<li id="menu-item-48524" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48524"><a href="http://oreilly.com/feeds/">RSS Feeds</a></li>
+<li id="menu-item-56120" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56120"><a href="http://chimera.labs.oreilly.com/">O&#8217;Reilly Chimera (beta)</a></li>
+</ul></div>		
+		</div>
+			
+
+		<!-- style="width:25%;" -->
+
+		<div class="contentSectionContainer">	
+                                <h3>Partner Sites</h3>
+				  <div class="menu-partner-sites-container"><ul id="menu-partner-sites" class="menu"><li id="menu-item-48503" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48503"><a target="_blank" href="http://makezine.com/">makezine.com</a></li>
+<li id="menu-item-48504" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48504"><a target="_blank" href="http://makerfaire.com/">makerfaire.com</a></li>
+<li id="menu-item-55273" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55273"><a target="_blank" href="http://craftzine.com/">craftzine.com</a></li>
+<li id="menu-item-55274" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55274"><a target="_blank" href="http://igniteshow.com/">igniteshow.com</a></li>
+<li id="menu-item-55275" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55275"><a target="_blank" href="https://developer.paypal.com/">PayPal Developer Zone</a></li>
+<li id="menu-item-55276" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-55276"><a target="_blank" href="http://blogs.forbes.com/oreillymedia/">O&#8217;Reilly Insights on Forbes.com</a></li>
+</ul></div>			
+		</div>
+			
+
+		<!-- style="width:24%;" -->
+
+		<div class="contentSectionContainer">			
+				<h3>Shop O'Reilly</h3>
+			<div class="menu-shop-oreilly-container"><ul id="menu-shop-oreilly" class="menu"><li id="menu-item-48505" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48505"><a href="http://shop.oreilly.com/category/customer-service.do">Customer Service</a></li>
+<li id="menu-item-48506" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48506"><a href="http://shop.oreilly.com/category/customer-service.do">Contact Us</a></li>
+<li id="menu-item-48507" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48507"><a href="http://shop.oreilly.com/category/customer-service/shipping-information.do">Shipping Information</a></li>
+<li id="menu-item-48508" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48508"><a href="http://shop.oreilly.com/category/customer-service/ordering-payment.do">Ordering &#038; Payment</a></li>
+<li id="menu-item-56665" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-56665"><a href="http://oreilly.com/affiliates/">Affiliate Program</a></li>
+<li id="menu-item-48509" class="menu-item menu-item-type-custom menu-item-object-custom menu-item-48509"><a href="http://shop.oreilly.com/category/customer-service/oreilly-guarantee.do">The O&#8217;Reilly Guarantee</a></li>
+</ul></div>		
+		</div>
+		
+		<div class="clear"></div>
+	</div>
+<div class="clear"></div>
+</div></div>
+			
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #wrapper -->
+<script type="text/javascript">
+    $(window).load(function() {	
+			var str = $(".nav-next").text();
+			if (str == '') {				
+				$(".nav-previous .meta-sep").css('display','none');  	
+			}
+		});   
+</script>
+
+<!--Plugin WP Missed Schedule 2011.0920.2011 Active-->    <script type="text/javascript">
+    // <![CDATA[
+        var disqus_shortname = 'oreillyradar';
+        (function () {
+            var nodes = document.getElementsByTagName('span');
+            for (var i = 0, url; i < nodes.length; i++) {
+                if (nodes[i].className.indexOf('dsq-postid') != -1) {
+                    nodes[i].parentNode.setAttribute('data-disqus-identifier', nodes[i].getAttribute('rel'));
+                    url = nodes[i].parentNode.href.split('#', 1);
+                    if (url.length == 1) url = url[0];
+                    else url = url[1]
+                    nodes[i].parentNode.href = url + '#disqus_thread';
+                }
+            }
+            var s = document.createElement('script'); s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + 'disqus.com/forums/' + disqus_shortname + '/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    //]]>
+    </script>
+<!-- MathJax Latex Plugin installed: Disabled as no shortcodes on this page --><script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/lazy-load/js/jquery.sonar.min.js?ver=0.5'></script>
+<script type='text/javascript' src='http://s.radar.oreilly.com/wp-content/plugins/lazy-load/js/lazy-load.js?ver=0.5'></script>
+<script language="JavaScript" type="text/javascript">
+var s_account="orradar,orglobal" // change report suite ID accordingly
+</script>
+<!-- SiteCatalyst code version: H.20.3. Copyright 1997-2009 Omniture, Inc. More info available at http://www.omniture.com -->
+<script language="JavaScript" type="text/javascript" src="http://cdn.oreillystatic.com/assets/js/s_code.js"></script>
+<script language="JavaScript" type="text/javascript">
+
+s.pageName="radar:google is the social backbone"
+s.channel= "radar"
+s.prop1="radar:web2"
+s.prop2="radar:web2:web2"
+s.prop3="radar:web2:web2:web2"
+s.prop4="article"
+s.hier1="radar,web2,web2,web2"
+s.prop5="google is the social backbone"
+s.prop6="RD46845"
+s.prop7="07/19/2011" // publish date
+//s.prop15=""
+//These props should be set when a blog/article is read, post or reply made.
+s.prop21="edd dumbill" // author name
+s.prop22="radar" // blog name
+s.prop23="google is the social backbone" // entry title
+s.prop24="07/19/2011" // post date
+//s.prop25="" // days since last post
+s.prop26="tuesday" // day of week
+/* Conversion Variables */
+s.campaign=""
+s.events=""
+
+/************* DO NOT ALTER ANYTHING BELOW THIS LINE ! **************/
+var s_code=s.t();if(s_code)document.write(s_code)//--></script>
+<!-- End SiteCatalyst code version: H.20.2. -->
+
+<!-- START Parse.ly Include: Standard -->
+<div id="parsely-root" style="display: none"><a id="parsely-cfg" data-parsely-site="radar.oreilly.com" href="http://parsely.com">Powered by the Parse.ly Publisher Platform (P3).</a></div>
+<script>
+(function(s, p, d) {
+  var h=d.location.protocol, i=p+"-"+s,
+      e=d.getElementById(i), r=d.getElementById(p+"-root"),
+      u=h==="https:"?"d1z2jf7jlzjs58.cloudfront.net"
+      :"static."+p+".com";
+  if (e) return;
+  e = d.createElement(s); e.id = i; e.async = true;
+  e.src = h+"//"+u+"/p.js"; r.appendChild(e);
+})("script", "parsely", document);
+</script>
+<!-- END Parse.ly Include -->
+
+<script type="text/javascript">
+var _sf_async_config={uid:1632,domain:"radar.oreilly.com"};
+(function(){
+  function loadChartbeat() {
+    window._sf_endpt=(new Date()).getTime();
+    var e = document.createElement('script');
+    e.setAttribute('language', 'javascript');
+    e.setAttribute('type', 'text/javascript');
+    e.setAttribute('src',
+       (("https:" == document.location.protocol) ? "https://a248.e.akamai.net/chartbeat.download.akamai.com/102508/" : "http://static.chartbeat.com/") +
+       "js/chartbeat.js");
+    document.body.appendChild(e);
+  }
+  var oldonload = window.onload;
+  window.onload = (typeof window.onload != 'function') ?
+     loadChartbeat : function() { oldonload(); loadChartbeat(); };
+})();
+
+</script>
+
+<script type="text/javascript">
+setTimeout(function(){var a=document.createElement("script");
+var b=document.getElementsByTagName("script")[0];
+a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0011/6381.js?"+Math.floor(new Date().getTime()/3600000);
+a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+</script>
+
+</body>
+</html>

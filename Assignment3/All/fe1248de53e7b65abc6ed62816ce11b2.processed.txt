@@ -1,0 +1,303 @@
+    #[1]alternate
+
+[2]ArsTechnica
+
+     * [3]Forums
+     * [4]Log In
+
+[5]Infinite Loop / The Apple Ecosystem
+
+New lease on life or death sentence? iOS 7 on the iPhone 4
+
+Apple's single-core A4 is really beginning to show its age.
+
+   by [6]Andrew Cunningham - Sep 18, 2013 5:37 pm UTC
+     * [7]iOS & iDevices
+     * [8]Smartphones
+
+   [9]171
+   [IMG_7243-640x418.jpg]
+   Is installing iOS 7 something you'll want to do to your iPhone 4?
+   Andrew Cunningham
+
+   When a new iOS version is released, the spotlight always shines the
+   brightest on the shiny, brand-new hardware that ships with it. That's
+   to be expected--people who are getting ready to drop hundreds of
+   dollars on a phone are hungry to know how the software pairs with the
+   best that Apple currently has to offer. That said, one of the benefits
+   of sticking with Apple's ecosystem is that your old phone will run the
+   latest software for a few years after you buy it. Often you can grab
+   that new software just as soon (or even sooner!) than the people who
+   will be getting it on a new device.
+
+   Last year, we took a look at how the [10]iPhone 3GS ran iOS 6, since
+   2009's flagship iPhone was the oldest, slowest hardware that supported
+   the new update. We were pleasantly surprised--the 3GS ran most of iOS
+   6's biggest features, and it usually ran them just as quickly as it ran
+   iOS 5. This year, we're continuing that tradition by taking a good long
+   look at iOS 7 on the iPhone 4. Can new software make a phone from 2010
+   feel like a phone from 2013, or is it time to trade your iPhone 4 in
+   for a shiny new iPhone 5C or 5S?
+
+What don't you get?
+
+   The slowest devices in Apple's lineup tend not to get every single
+   feature that the newer ones get. Generally, this is either because the
+   old hardware is incapable of supporting it or because the device's
+   aging system-on-a-chip (SoC) isn't fast enough to provide a good
+   experience. The iPhone 4 gets most of the features we highlighted in
+   our massive [11]iOS 7 review, but there's a long list of fine print
+   attached. Let's run through not just the list of iOS 7 features it
+   misses out on, but also the features from previous iOS versions that it
+   isn't privy to. If the feature is on this list, it's missing from the
+   iPhone 4.
+     * 3D Flyover or turn-by-turn navigation in Maps.
+     * Panorama mode or Filters in the Camera app (filters can still be
+       applied after-the-fact in the Photos app).
+     * AirPlay Mirroring.
+     * Siri.
+     * AirDrop.
+     * A number of the new graphical effects present on all other iOS 7
+       devices. These include translucency effects throughout the OS, live
+       wallpapers, and the parallax effect used on the Home screen.
+
+   One thing to note about iOS 7 on the iPhone 4 is that it looks slightly
+   different than it does on most other supported devices. The iPhone 4 is
+   the last device standing that uses Apple's A4 SoC (the original iPad
+   was dropped in iOS 6, and iOS 7 drops the fourth-generation iPod
+   touch), and as such it's working with a slower CPU and GPU than the A5,
+   A6, and A7-equipped phones and tablets that make up the rest of Apple's
+   lineup. To take some of the load off of its weaker hardware, Apple has
+   turned off translucency and other graphical effects throughout the OS
+   in favor of simpler and less taxing transparency. It's worth noting
+   that you can also disable these visual effects on newer iPhones and
+   iPads in the accessibility settings by enabling "Increase Contrast."
+   [12][Photo-Sep-18-2-24-59-AM-300x450.png]
+   [13]Enlarge / On the iPhone 5S, the background of the Notification
+   Center is translucent and blurred.
+   Andrew Cunningham
+   [14][Photo-Sep-18-2-25-06-AM-300x450.png]
+   [15]Enlarge / Out of necessity, the weaker GPU in the iPhone 4 uses a
+   simple transparent effect instead.
+   Andrew Cunningham
+   [16][Photo-Sep-18-2-19-08-AM-300x450.png]
+   [17]Enlarge / Translucent Control Center on the iPhone 4S.
+   Andrew Cunningham
+   [18][Photo-Sep-18-2-19-06-AM-300x450.png]
+   [19]Enlarge / Transparent Control Center from the iPhone 4.
+   Andrew Cunningham
+
+   Otherwise, all the good stuff about iOS 7 is here: the updated apps,
+   the useful Control Center feature, and all the underlying security
+   updates, technologies, and APIs that made it into iOS 7 are available.
+   That's not half bad, given that Android-based contemporaries like
+   Samsung's original Galaxy S or the Nexus One have to rely on the hacker
+   community for any kind of software support at this point (and even
+   then, it can be spotty). That's the good news.
+
+How fast is it?
+
+   iOS 6 and iOS 7 running on the iPhone 4.
+
+   The bad news is that the A4 struggles to render iOS 7's sweeping new
+   animations consistently. I'll repeat what I said in the iOS 7 review:
+   iOS devices (especially the oldest ones) have always been capable of
+   occasional stuttering, but iOS 7 magnifies these issues by using more
+   animations and by making those animations more sweeping and longer in
+   duration. More animations means more opportunities for stutter, and
+   longer animations means that this stuttering is much more noticeable
+   when it happens.
+
+   As we did last year, we also launched a number of the built-in apps in
+   both iOS 6 and iOS 7 and timed them to see whether there were any
+   regressions. The numbers below measure the time between when the app
+   icon is tapped and when the app becomes ready for user input, and each
+   app's launch time was measured three times and averaged. The apps were
+   force-quit using the iOS multitasking interface between runs. We also
+   measured the time it took for the phone to cold boot to the lock
+   screen.
+          Application         iOS 6.1.3    iOS 7.0 GM
+   Safari                   1.13 seconds  2.05 seconds
+   Camera                   1.9 seconds   2.63 seconds
+   Settings                 1.31 seconds  1.88 seconds
+   Mail                     1.0 seconds   1.50 seconds
+   Messages                 1.57 seconds  2.80 seconds
+   Calendar                 1.23 seconds  1.78 seconds
+   Phone                    0.67 seconds  2.37 seconds
+   Cold boot to lock screen 31.14 seconds 45.13 seconds
+
+   Everything is slower in iOS 7, usually by one to one-half second or so
+   but sometimes by more. These tiny delays can add up--if you unlock your
+   phone, check your mail or messages quickly, and then put your phone
+   away in the course of 10 or 15 seconds, that lag can become a
+   significant percentage of the time you spend. Unfortunately at this
+   point, it's impossible to separate the app launches from the animation
+   durations. It's possible that a future update will reduce the length of
+   the animations, speeding everything up again by a bit. Until (or
+   unless) that happens, navigating around iOS 7 on the iPhone 4 is just
+   going to feel slower than iOS 6 did. Cold boot time has also increased
+   significantly, though I'll admit that I usually only cold boot a
+   smartphone if I need to install an update or measure the amount of time
+   a phone takes to cold boot.
+
+   Once you've actually opened your app, things don't feel too much worse
+   than they did in iOS 6. Scrolling occasionally stutters, but most of
+   the delays come up when doing (relatively) 3D-intensive things like
+   swooping around the home screen and switching and launching
+   applications.
+
+   When it comes to browser benchmarks, the news gets a little better.
+   Apple continues to make improvements to Mobile Safari's Javascript
+   rendering, and the iPhone 4 benefits from those optimizations just as
+   much as the iPhone 5 does. It's not enough to make it feel like an
+   iPhone 4S or iPhone 5, but it is an improvement.
+   [iOS-7-review-iPhone-4.004.png] [iOS-7-review-iPhone-4.005.png]
+   [iOS-7-review-iPhone-4.006.png]
+
+Battery life: down a little, not a lot
+
+   As we discussed in our main iOS 7 review, battery life in iOS 7 is down
+   a little from where it was in iOS 6.1.3, but the iPhone 4 gets off
+   relatively easy compared to the bigger decreases we saw in the iPhone
+   5. Our Wi-Fi browsing test loops a set of pages in Safari continuously
+   until the battery dies, loading a new page every 15 seconds with the
+   screen set to 50 percent brightness. Under iOS 6.1.3, the iPhone 4
+   lasted for eight hours and 28 minutes. Under iOS 7, it lasted for a
+   slightly shorter eight hours and seven minutes. Your battery life will
+   obviously differ from ours based on the shape that your battery is in,
+   but as in all other supported devices, iOS 7 reduces battery life
+   slightly compared to iOS 6 on the same hardware.
+
+Proceed with caution
+
+   [20][IMG_7240-640x423.jpg]
+   [21]Enlarge / iOS 7 runs on the iPhone 4, but there are definite
+   compromises.
+   Andrew Cunningham
+
+   When asked whether you should install iOS 6 on an iPhone 3GS, we can
+   say "yes" without hesitation or condition. When it comes to the iPhone
+   4 and iOS 7, our response is a more measured "do it if you like the new
+   features, but have you considered a newer phone?"
+
+   iOS 7 on Apple's oldest-supported hardware is hardly a disaster, but
+   it's apparent that the only reason Apple issued this update was because
+   they were selling the iPhone 4 free with contract up until September
+   10. It has been their value option for a year, and in the Apple
+   ecosystem, even people who bought a new iPhone 4 on September 9 will
+   get at least a year's worth of updates. The A4 simply isn't up to the
+   task of rendering iOS 7 as Apple intended, and the upgrade in general
+   performance and apparent smoothness between even the iPhone 4 and
+   year-newer 4S is significant (to say nothing of the iPhone 5, 5C, and
+   5S).
+
+   When it comes to launching apps, the iPhone 4's general slowness is
+   only exacerbated by the too-long animation durations in iOS 7. This is
+   also a problem on the faster phones and tablets, but at least there
+   you've got faster underlying hardware to keep everything moving at a
+   steady clip.
+
+   It's great that Apple isn't abandoning older iPhone owners really.
+   People buying an iPhone 4 free with contract were still getting a phone
+   that felt reasonably fast with iOS 6, and they weren't necessarily
+   aware that they were getting an older single-core SoC with an older,
+   slower GPU that would be ill-suited for Apple's new direction. At least
+   they have the option to upgrade. That said, the iPhone 4 and iOS 7 just
+   can't quite provide an experience that's up to Apple's usual standard.
+   Apply the update if there's an iOS 7 feature (or an iOS 7-only app)
+   that you need in your life, but our recommendation now would either be
+   to wait for potential performance boosts in a future iOS 7 update or to
+   start looking into a new iPhone 5C or 5S.
+
+   [22]Expand full story
+   [23]Reader comments 171
+
+   You must [24]login or create an account to comment.
+   [25][ars_profile_thumb.jpg]
+
+   [26]Andrew Cunningham / Andrew has a B.A. in Classics from Kenyon
+   College and has over five years of experience in IT. His work has
+   appeared on Charge Shot!!! and AnandTech.
+   [27]@AndrewWrites
+   [28]<- Older Story
+   [29]Newer Story ->
+
+Site Theme
+
+     * [30]Light on Dark
+     * [31]Dark on Light
+
+[32]View Full Site
+
+   © 2013 Condé Nast. All rights reserved
+   Use of this Site constitutes acceptance of our [33]User Agreement
+   (effective 3/21/12) and [34]Privacy Policy (effective 3/21/12), and
+   [35]Ars Technica Addendum (effective 5/17/2012)
+   [36]Your California Privacy Rights
+   The material on this site may not be reproduced, distributed,
+   transmitted, cached or otherwise used, except with the prior written
+   permission of Condé Nast.
+   [37]Ad Choices [ad_choices_arrow.png]
+
+Log In
+
+   Username or Email: ____________________ Password: ____________________
+   [_] Keep me logged in Login
+   [38]Forgot your password? | [39]Resend activation e-mail
+
+Register an Account
+
+   Don't have an Ars account? It's fast and easy to register for one.
+   [BUTTON Input] (not implemented)_______
+
+Need to register for a new account?
+
+   If you don't have an account yet it's free and easy.
+   [40]Register
+
+References
+
+   Visible links
+   1. http://feeds.arstechnica.com/arstechnica/index/
+   2. http://arstechnica.com/
+   3. http://arstechnica.com/civis/
+   4. http://arstechnica.com/civis/ucp.php?mode=login&return_to=http%3A%2F%2Farstechnica.com%2Fapple%2F2013%2F09%2Fnew-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4%2F
+   5. http://arstechnica.com/apple/
+   6. http://arstechnica.com/author/andrew_cunningham/
+   7. http://arstechnica.com/discipline/ios-idevices
+   8. http://arstechnica.com/discipline/smartphones-gadgets-3
+   9. http://arstechnica.com/apple/2013/09/new-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4/?comments=1
+  10. http://arstechnica.com/apple/2012/09/tempting-fate-installing-ios-6-on-the-iphone-3gs/
+  11. http://arstechnica.com/apple/2013/09/ios-7-thoroughly-reviewed/
+  12. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-24-59-AM.png
+  13. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-24-59-AM.png
+  14. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-25-06-AM.png
+  15. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-25-06-AM.png
+  16. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-19-08-AM.png
+  17. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-19-08-AM.png
+  18. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-19-06-AM.png
+  19. http://cdn.arstechnica.net/wp-content/uploads/2013/09/Photo-Sep-18-2-19-06-AM.png
+  20. http://cdn.arstechnica.net/wp-content/uploads/2013/09/IMG_7240.jpg
+  21. http://cdn.arstechnica.net/wp-content/uploads/2013/09/IMG_7240.jpg
+  22. http://arstechnica.com/apple/2013/09/new-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4/
+  23. http://arstechnica.com/apple/2013/09/new-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4/?comments=1
+  24. http://arstechnica.com/civis/ucp.php?mode=login
+  25. http://arstechnica.com/author/andrew_cunningham
+  26. http://arstechnica.com/author/andrew_cunningham
+  27. https://twitter.com/AndrewWrites
+  28. http://arstechnica.com/security/2013/09/nsa-aims-to-plug-holes-that-sprang-snowden-leaks/
+  29. http://arstechnica.com/science/2013/09/canada-australia-struggling-with-science-policy-issues-too/
+  30. http://arstechnica.com/apple/2013/09/new-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4/?mobile_theme=dark
+  31. http://arstechnica.com/apple/2013/09/new-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4/?mobile_theme=light
+  32. http://arstechnica.com/apple/2013/09/new-lease-on-life-or-death-sentence-ios-7-on-the-iphone-4/?view=grid
+  33. http://www.condenast.com/privacy-policy
+  34. http://www.condenast.com/privacy-policy#privacypolicy
+  35. http://arstechnica.com/amendment-to-conde-nast-user-agreement-privacy-policy/
+  36. http://www.condenast.com/privacy-policy#privacypolicy-california
+  37. http://www.condenast.com/privacy-policy#privacypolicy-optout
+  38. https://arstechnica.com/civis/ucp.php?mode=sendpassword
+  39. https://arstechnica.com/civis/ucp.php?mode=resend_act
+  40. https://arstechnica.com/civis/ucp.php?mode=register
+
+   Hidden links:
+  41. http://www.omniture.com/

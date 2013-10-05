@@ -1,0 +1,386 @@
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta name="description" content="Tools to help avoid misconduct and background materials about research and publication ethics.">
+<meta http-equiv="content-type' content='text/html;charset=UTF-8">
+<title>Ethics in Research and publication: Ethics Toolkit</title>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:fb="http://ogp.me/ns/fb#">
+
+<script src="http://code.jquery.com/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script type="text/javascript" src="js/superfish.js"></script>
+<script type="text/javascript">
+
+		// initialise plugins
+		jQuery(function(){
+			jQuery('ul.sf-menu').superfish();
+		});
+
+</script>
+<script src="js/scrollToTop.js" type="text/javascript"></script>
+<script src="js/leanModal.min.js" type="text/javascript"></script>
+<script src="js/shorten.js" type="text/javascript"></script>
+
+<script type="text/javascript" src="js/hoverIntent.js"></script>
+
+
+<script type="text/javascript">
+	// JavaScript Document
+	$(document).ready(function() {
+			$("#toolkit").addClass("current-menu-item");
+			$("#mainContainer").addClass("subPage");
+			$("#subContainer").addClass("subPage");
+			$("#topLine").addClass("subPage");
+			$("#navigation").addClass("subPage");
+			
+			$('a[rel*=leanModal]').leanModal({ top : 50, closeButton: ".modal_close" });		
+			
+			$('a.toggle').toggle(function() {
+				$('.extend').slideDown();
+				$(this).html('Collapse');
+					}, function () {
+				$('.extend').slideUp();
+				$(this).html('Show more');
+        	});
+			
+			$('a.toggle2').toggle(function() {
+				$('.extend2').slideDown();
+				$(this).html('Collapse');
+					}, function () {
+				$('.extend2').slideUp();
+				$(this).html('Show more');
+        	});
+			
+			$('a.toggle3').toggle(function() {
+				$('.extend3').slideDown();
+				$(this).html('Collapse');
+					}, function () {
+				$('.extend3').slideUp();
+				$(this).html('Show more');
+        	});
+			
+			$('a.toggle4').toggle(function() {
+				$('.extend4').slideDown();
+				$(this).html('Collapse');
+					}, function () {
+				$('.extend4').slideUp();
+				$(this).html('Show more');
+        	});
+			
+			$('a#videotoggle').toggle(function() {
+				$('.extend').slideDown();
+				$(this).html('Toolkit Videos <span class="Museo-300 small">[Hide All]</span>');
+					}, function () {
+				$('.extend').slideUp();
+				$(this).html('Toolkit Videos <span class="Museo-300 small">[Show All]</span>');
+        	});
+		}); 
+</script>
+
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+<link href="css/layout.css" rel="stylesheet" type="text/css" media="screen" />
+<!--[if gte IE 9]>
+	<link href="css/style_ie9.css" rel="stylesheet" type="text/css" media="screen" />
+<![endif]-->
+
+
+<!--[if lte IE 7]>
+	<style>
+    	.da-arrows span.da-arrows-prev {
+        	background: transparent url(../images/arrows.gif) no-repeat top left;
+       	}
+        
+        .da-arrows span.da-arrows-next {
+        	background: transparent url(../images/arrows.gif) no-repeat top right;
+       	}
+        
+        .da-dots span {
+			border:1px solid #999;
+        }
+        
+        .da-dots span.da-dots-current{ 
+                    background: #fff;
+
+        }
+    </style>
+<![endif]-->
+<link rel="stylesheet" type="text/css" href="css/superfish.css" media="screen">
+
+
+</head>
+
+<body>
+<div id="mainContainer">
+	    <div id="header" class="fullWidth nonsolus">
+        <div class="container">
+        	<div id="logo">
+                <img src="images/blank.png" />
+            </div>
+            <div class="socialLinks topSection">
+               <ul>
+               <li><fb:like href="http://ethics.elsevier.com/" send="false" layout="button_count" show_faces="false" font="lucida grande"></fb:like>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a></li>
+                </ul>
+                <div class="clear"></div>   
+                <h3 class="tagline Museo-500 right">Be smart. <span>Be ethical.</span> Get ahead.</h3>
+            </div>
+            <br class="clear"></div>
+        </div>
+    </div>
+</div>
+<div id="topLine">
+    	<div id="navigation" class="fullWidth">
+        <ul id="navUI" class="sf-menu Museo-500">
+            <li id="home"><a href="index.asp">Home</a></li>
+            <li id="toolkit"><a href="ethicsToolkit.asp">Ethics Toolkit</a></li>
+            <li id="ethicsQuiz"><a href="quiz.asp">Quiz</a></li>
+            <li id="experts"><a href="expertsCorner.asp">Experts' Corner</a></li>
+            <li id="community"><a href="#">Community</a>
+                <ul>
+                	<li><span><a href="community.asp">Testimonials</a></span></li>
+                    <li><span><a href="interviews.asp">Interviews</a></span></li>
+                </ul>   
+            </li>
+            <li id="tools"><a href="toolsOfTheTrade.asp">Tools of the Trade</a></li>
+            <li id="resources"><a href="resources.asp">Resources</a></li>
+        </ul>
+        <div class="clear"></div> 
+    </div>
+</div>
+<div id="subContainer">
+    <div class="fullWidthInner" id="toolkitHeader">
+    	
+      <div class="container" style="width:350px; float:right">
+      	<div class="mainToolkit top">
+        	<div class="mainToolkitInner">
+        	<h2 class="Museo-700 white large darkShadow">Ethics Toolkit</h2>
+            <p class="Museo-500 white">The following materials include tools to help avoid misconduct and background materials about research and publication ethics. If in doubt, nothing can replace a candid conversation with your advisor, or someone in a position of authority who can guide you to the right course of action.</p>
+        	            <div class="mainToolkitContainer"><span class="pdf block Museo-700 medium">Duplicate Submission Fact Sheet</span>
+                        <a href="pdf/ETHICS_SSUB01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">English</a> | <a href="pdf/ETHICS_ES_SSUB01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Spanish</a> | <a href="pdf/ETHICS_CH_SSUB01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Chinese</a>
+                        </div>
+                        <div class="mainToolkitContainer"><span class="pdf block Museo-700 medium">Research Fraud Fact Sheet</span>
+                        <a href="pdf/ETHICS_RF01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">English</a> | <a href="pdf/ETHICS_ES_RF01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Spanish</a> | <a href="pdf/ETHICS_CH_RF01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Chinese</a>
+                        </div>
+                        <div class="mainToolkitContainer"><span class="pdf block Museo-700 medium">Plagiarism Fact Sheet</span>
+                        <a href="pdf/ETHICS_PLA01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">English</a> | <a href="pdf/ETHICS_ES_PLA01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Spanish</a> | <a href="pdf/ETHICS_CH_PLA01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Chinese</a>
+                        </div>
+                        <div class="mainToolkitContainer"><span class="pdf block Museo-700 medium">Authorship Fact Sheet</span>
+                        <a href="pdf/ETHICS_AUTH01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">English</a> | <a href="pdf/ETHICS_ES_AUTH01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Spanish</a> | <a href="pdf/ETHICS_CH_AUTH01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Chinese</a>
+                        </div>
+                        <div class="mainToolkitContainer"><span class="pdf block Museo-700 medium">Conflict of Interest Fact Sheet</span>
+                        <a href="pdf/ETHICS_COI01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">English</a> | <a href="pdf/ETHICS_ES_COI01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Spanish</a> | <a href="pdf/ETHICS_CH_COI01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Chinese</a>
+                        </div>
+                        <div class="mainToolkitContainer"><span class="pdf block Museo-700 medium">Salami Slicing Fact Sheet</span>
+                        <a href="pdf/ETHICS_SS01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">English</a> | <a href="pdf/ETHICS_ES_SS01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Spanish</a> | <a href="pdf/ETHICS_CH_SS01a.pdf" target="_blank" class="mainToolkitLink Museo-300 small">Chinese</a>
+                        </div>                        
+                        <div class="mainToolkitContainer no-border-bottom"><a href="pdf/ETHICS_TOP501a.pdf" target="_blank" class="mainToolkitLink pdf block Museo-700 medium">Top 5 Reasons to Publish  Ethically Poster</a>
+                        </div>
+           
+            </div>
+        	</div>
+            
+            
+            <div class="mainToolkit">
+        	<div class="videoToolkitInner">
+        	<h2 class="Museo-700 white large darkShadow">Toolkit Videos</h2>
+            <p class="Museo-500 white">Dr. Jaap van Harten, Executive Publisher, Elsevier, shares insights about research and publishing ethics, data manipulation, plagiarism, publication duplication, and the consequences of scientific misconduct.<sup class="white">3</sup></p>
+        	            
+            <a class="mainToolkitLink video block Museo-700 medium" id="videotoggle">Toolkit Videos <span class="Museo-300 small">[Show All]</span></a>
+            <div class="extend reveal">
+                <a id="go" rel="leanModal" name="test" href="#video1" class="mainToolkitsubLink Museo-300 small">- What are the major types of scientific misconduct?</a>
+                <a id="go" rel="leanModal" name="test" href="#video2" class="mainToolkitsubLink Museo-300 small">- What are the types of data manipulation?</a>
+                <a id="go" rel="leanModal" name="test" href="#video3" class="mainToolkitsubLink Museo-300 small">- What is figure falsification in the publishing process?</a>
+                <a id="go" rel="leanModal" name="test" href="#video4" class="mainToolkitsubLink Museo-300 small">- Is figure manipulation completely unacceptable?</a>
+                <a id="go" rel="leanModal" name="test" href="#video5" class="mainToolkitsubLink Museo-300 small">- What is the common scenario in publishing misconduct?</a>
+                <a id="go" rel="leanModal" name="test" href="#video6" class="mainToolkitsubLink Museo-300 small">- Are there forms of publication misconduct besides plagiarism?</a>
+                <a id="go" rel="leanModal" name="test" href="#video7" class="mainToolkitsubLink Museo-300 small">- How often does plagiarism occur?</a>
+                <a id="go" rel="leanModal" name="test" href="#video8" class="mainToolkitsubLink Museo-300 small">- How do publishers detect publication misconduct?</a>
+                <a id="go" rel="leanModal" name="test" href="#video9" class="mainToolkitsubLink Museo-300 small">- Is it difficult to identify research misconduct?</a>
+                <a id="go" rel="leanModal" name="test" href="#video10" class="mainToolkitsubLink Museo-300 small">- What are the consequences of scientific misconduct to you (the author), your institution and the research community?</a>
+                <a id="go" rel="leanModal" name="test" href="#video11" class="mainToolkitsubLink Museo-300 small">- What are the consequences of scientific misconduct to you personally?</a>
+                <a id="go" rel="leanModal" name="test" href="#video12" class="mainToolkitsubLink Museo-300 small">- What would be a typical case of plagiarism?</a>
+                <a id="go" rel="leanModal" name="test" href="#video13" class="mainToolkitsubLink Museo-300 small">- What should you do if you suspect ethical misconduct?</a>
+            </div>
+            </div>
+        	</div>
+      </div>      
+            
+        
+        
+        <h1 class="Museo-500"><span class="orange">Ethics Tools</span><br />
+        <span>What constitutes scientific</span><br />
+<span>misconduct and breach of</span><br /><span>publishing ethics?</span></h1>
+        <h2 class="Museo-700">Scientific misconduct and breach of publishing<br />ethics can take different shapes and forms, and<br />can be committed knowingly or unknowingly. </h2>
+        
+      <div class="ethicsToolkit first">
+        <h2 class="Museo-300 orange">Webcast about ethics in research and publication</h2>
+        <p class="Museo-300 medium noMargin">Our experts David Rew, Margaret Rees, and Sandy Florence have presented a webcast to help early career researchers understand the ethical boundaries in scientific research and publishing. The webcast can be freely watched on demand, after registration.</p>
+        <a href="http://mediazone.brighttalk.com/event/ReedElsevier/0ef41260a5-6663-intro" target="_blank"><img src="images/webcastLink.png" alt="Ethics Webcasr: Click here to view the webcast" width="573" height="169" usemap="#Map" class="webcastButton" border="0" />
+        <map name="Map" id="Map">
+          <area shape="rect" coords="1,73,280,130" href="pdf/PC_Ethicswebinar_310113.pdf" target="_blank" alt="Webcast slides" />
+        </map>
+        </a>
+          
+        </div>
+      
+      <div class="ethicsToolkit first">
+        <h2 class="Museo-300 orange">Examples of scientific misconduct</h2>
+            <ul class="bullet Museo-300 medium">
+                <li><span><a href="pdf/ETHICS_RF01a.pdf" target="_blank" class="pdf">Research fraud</a> - which includes fabrication (making up research data); and falsification (manipulation of existing research data, tables, or images)</span><sup>1</sup></li>
+                <li><span>Improper use of humans or animals in research - which includes absent  or inadequate informed consent of human subjects, or maltreatment of laboratory animals</span><sup>2</sup></li>
+            </ul>
+        </div>
+        
+<div class="ethicsToolkit first">
+          <h2 class="Museo-300 orange">Examples of breach of publications ethics</h2>
+            <ul class="bullet Museo-300 medium">
+                <li><span><a href="pdf/ETHICS_PLA01a.pdf" target="_blank" class="pdf">Plagiarism</a> - passing off another's work or idea as your own</span></li>
+                <li><span><a href="pdf/ETHICS_SSUB01a.pdf" target="_blank" class="pdf">Duplicate submission</a> - submitting a paper simultaneously to more than one publication at a time</span></li>
+                <li><span><a href="pdf/ETHICS_COI01a.pdf" target="_blank" class="pdf">Conflict of interest</a> - nondisclosure to the publication that you have a direct or indirect conflict that prevents you from being unbiased in your paper</span><sup>2</sup></li>
+                <li><span><a href="pdf/ETHICS_AUTH01a.pdf" target="_blank" class="pdf">Authorship disputes</a> - deliberately misrepresenting a scientist's relationship to their work on a published paper</span></li>
+                <li><span><a href="pdf/ETHICS_SS01a.pdf" target="_blank" class="pdf">Salami slicing</a> - the "slicing" of research that would form one meaningful paper into several different papers</span></li>
+            </ul>    
+    	</div>
+        <br class="clear" />
+                <h3 class="Museo-700 grey">References</h3>
+        <p class="footnote Museo-300 small">1. Office of Research Integrity U.S. Department of Health and Human Services. Definition of Research Misconduct. Available at: <a href="http://ori.hhs.gov/definition-misconduct" target="_blank" class="external orange">http://ori.hhs.gov/definition-misconduct</a>. Accessed: June 12, 2012.<br />
+        2. Scott-Lichter D and the Editorial Policy Committee, Council of Science Editors. CSE's White Paper on Promoting Integrity in Scientific Journal Publications, 2012 Update. 3rd Revised Edition. Wheat Ridge, CO: 2012. Available at: <a href="http://www.councilscienceeditors.org/files/public/entire_whitepaper.pdf" target="_blank" class="external orange">http://www.councilscienceeditors.org/files/public/entire_whitepaper.pdf</a> Accessed: June 12, 2012.<br />
+        3. These video's first appeared on <a href="http://www.biggerbrains.com" target="_blank" class="external">www.biggerbrains.com</a></p>
+        <div class="clear"></div>
+
+       <div id="video1" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43975761" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video2" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43975762" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video3" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43975763" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video4" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43975764" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video5" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43975769" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video6" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43985216" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video7" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43985385" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       
+       <div id="video8" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43985386" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video9" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43985388" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video10" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43985389" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video11" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/43985390" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video12" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/44025371" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+       <div id="video13" class="modalBox">
+	<a class="modal_close" href="#"></a>
+       	<iframe src="http://player.vimeo.com/video/44025372" width="600" height="400" frameborder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>
+       </div>
+
+
+        
+
+
+        <div class="clear"></div>
+    </div>
+</div>
+<form id="newsletterForm" action="#" method="post">
+
+<div id="footer">
+  <div class="fullWidth">
+      <div id="emailSubscribe">
+	      <h3 class="Museo-700 grey shadow block">Copyright &copy; 2012 Elsevier Ltd. All rights reserved.</h3>
+        <a href="http://www.elsevier.com" class="link" target="_blank">Elsevier.com</a> <a href="http://www.elsevier.com/wps/find/intro.cws_home/ataglance" class="link" target="_blank">About Elsevier</a> <a href="http://www.elsevier.com/wps/find/termsconditions.cws_home/termsconditions" class="link" target="_blank">Terms &amp; Conditions</a> <a href="http://www.elsevier.com/wps/find/privacypolicy.cws_home/privacypolicy" class="link  last" target="_blank">Privacy Policy</a>
+      </div>
+
+    <div id="footerInfo">
+      <div id="esLogo" class="left"> <a href="http://www.elsevier.com" target="_blank"><img src="images/elsevierLogo.png" alt="Elsevier" width="86" height="94" border="0" /></a> </div>
+      <div class="socialLinks left">
+        <h3 class="Museo-700 grey shadow block">Ethics in research &amp; publication</h3>
+        <h4 class="tagline Museo-500 medium">Make your research count, <span>publish ethically</span></h4>
+        <ul class="footerLinks">
+          
+        <fb:like href="http://ethics.elsevier.com/" send="false" layout="button_count" show_faces="true" font="lucida grande"></fb:like>
+                <a href="https://twitter.com/share" class="twitter-share-button" data-via="twitterapi" data-lang="en">Tweet</a>
+                
+                
+        
+
+      </div>
+    </div>
+    <div class="clear"></div>
+	</div>    
+</div>
+
+</form>
+
+
+<!-- FACEBOOK 'LIKE' FUNCTION --->
+<div id="fb-root"></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&appId=220160251412105";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<!-- TWITTER FUNCTION --->
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33076640-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
+
+
+

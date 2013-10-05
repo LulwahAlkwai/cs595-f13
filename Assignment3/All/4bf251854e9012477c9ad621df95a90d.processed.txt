@@ -1,0 +1,261 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Peer review without journals or conferences
+
+   Almost all scientists ask their peers to review their work outside of
+   the formal process offered by journals and conferences. Young
+   scientists are routinely told to take their manuscripts to a senior
+   scientist and ask for a review.
+
+   With some success, I have even used my blog as a peer review device:
+   e.g., we received many comments on our manuscript on [5]fast integer
+   decoding through a blog post I wrote. If you read some of my recent
+   research articles, you will find that I acknowledge people who
+   commented on this blog. (I have even ended up writing papers with some
+   of them, but that is a different story.) In effect, my blog has helped
+   me get extra reviews for some of my work! I couldn't be more grateful!
+
+   I am not really interested in making journals and conferences go away,
+   but I am interested in going beyond them. I fear that they are often
+   limiting us:
+     * In fields such as computer science, limiting the review to journals
+       and conferences effectively cuts most non-academics out. They are
+       also limiting the review to a narrow band of experts. If you are
+       trying to solve problems that matter, this might be entirely wrong.
+     * Traditional peer review is anonymous. In principle, this makes it
+       fair and transparent. In practice, it can be needlessly alienating.
+       For example, I would much rather have an open exchange with some
+       authors that I criticize rather than just send an anonymous note.
+       We might both benefit from the exchange. One pattern I have noticed
+       is that some of my (well meaning) comments get ignored. Even when
+       they require little work and can only benefit the authors. We have
+       put walls in the peer review process, and there are good reasons
+       for these walls, but we could do without them if we reinvented the
+       process.
+
+   Hence, I have launched an open invitation to the world: send me your
+   drafts, and if I find them interesting, I will review them and then
+   tell the world about them (through social networks) if you revise them
+   to my satisfaction.
+
+   My goal is not to replace journals and conferences all by myself, but I
+   do see a growing trend whereas people point to papers that have not yet
+   been peer reviewed and say: I read this, it looks good to me! I'd like
+   more people to participate in this new emerging model.
+
+   Anyhow, so far, only one courageous fellow agreed with my terms:
+   Nathanaël Schaeffer sent me his paper [6]Efficient Spherical Harmonic
+   Transforms aimed at pseudo-spectral numerical simulations. I wrote a
+   review, the same way I would for a journal, and I sent it to him. He
+   produced a revised version that took into account my criticism. I am
+   now telling you that if you care for spherical harmonic transforms,
+   [7]you should definitively check out his paper.
+
+   So where does that leave us?
+     * If you are a researcher, and you would be willing to review
+       manuscripts openly the way I did, please let the world know!
+     * If you think your work could interest me and you want to try a
+       different type of peer review, please send me your paper!
+     * If one of [8]my papers interests you and you want to write a review
+       and share it with me, please do! I also have [9]software that needs
+       reviewing.
+
+   I stress that you do not need to be affiliated with a college or have
+   researcher as your title for this model to work. Anyone can write or
+   review a research paper. (Admittedly, few people can write good papers
+   or produce deep reviews but that is another story.)
+
+   I am not sure exactly how far we can go with such open peer review
+   processes. But I think we can improve the current system significantly.
+   To make my point stronger, I plan to write a blog post describing how I
+   benefited from reviews and criticisms I have received through my blog
+   and social networks. For now, please believe me: I received insights
+   that I would never had received through the traditional peer review
+   process.
+   [10]Tweet
+   [11]Comments (6)
+
+   Related posts (automatically generated):
+     * [12]How well does peer review work?
+     * [13]The case against double-blind peer review
+
+6 Comments
+
+    1. I completely agree with your idea of engaging reviewers in a
+       dialog. There's a lot of mis-understandings that happen with blind
+       reviews and I would often have preferred transparency both as a
+       submitter and as a reviewer.
+       But I'm a little worried by your proposal - if it takes off.
+       Suppose everyone did this, including Peter Norvig. Now, say I have
+       this cool idea for fast integer decoding - who am I going to send
+       it first: Norvig or Lemire? A simple game theoretical analysis says
+       Norvig, even though Lemire is clearly the better choice. Why?
+       Because Norvig might get me a high-paying job with a cool company
+       and has thousands more Twitter followers than Lemire.
+       I think that keeping the function that journal editors play as
+       "switchboards" for peer-matchups might still be better than "send
+       me your draft, and I'll advertise your paper if you revise it to my
+       satisfaction." We just need to change how journals work.
+       Comment by [14]Andre Vellino -- 22/2/2013 @ [15]9:03
+    2. @Andre
+       In the future I imagine, you'd seek a reviewer for your latest
+       manuscript, maybe using some kind of computer-assisted process.
+       You'd obviously want your reviewers to be as well known and as
+       influential as possible. But this is actually a good thing!
+       I don't imagine this would replace journals. It is more about going
+       beyond journals.
+       That's like saying "YouTube won't replace TV channels". No, it
+       won't.
+       Comment by [16]Daniel Lemire -- 22/2/2013 @ [17]9:32
+    3. @Andre
+       By the way, though I can only guess, I suspect that Norvig might be
+       open to something like I describe. Google has not focused its
+       research on journals and conferences.
+       Comment by [18]Daniel Lemire -- 22/2/2013 @ [19]9:55
+    4. I see a business opportunity: an "E-harmony" for matching authors
+       and reviewers. A technology development opportunity for a better
+       kind of recommender too - reviewers could be "rated" and
+       recommended across different dimensions (subject matter knowledge /
+       detail of reviews / helpfulness). Authors could be rated according
+       to how finished their submissions are (I hate it when I get a
+       poorly written submission with mistakes everywhere in order to get
+       free proof-reading)....
+       Comment by [20]Andre Vellino -- 22/2/2013 @ [21]10:12
+    5. Could it be built upon [22]http://arxaliv.org/ ?
+       It's already there and it's open source.
+       In my opinion we would (at the very least) need to (1)
+       differentiate (i.e. givign different weigths) between pseudonym and
+       "real name" users and (2) differentiate between pure up/downvote
+       and actual reviews/comments.
+       Comment by [23]Gianluca Della Vedova -- 23/2/2013 @ [24]3:10
+    6. Yes I am very much interested in this.
+       Open reviews. Reviews of reviewers. Some closed reviews if really
+       needed. Repositories/versioning for papers.
+       At the end only citations really count. Reviewers can help a paper
+       get better IF there is no competition. Ideally... but we all know
+       this is not true.
+       So better leave it to the judgement of the masses. Crowdsource
+       reviews and comments.
+       At the end only the number of citations and impact of the paper
+       really count.
+       I wrote about this also here:
+       [25]https://engineering.purdue.edu/elab/blog/publications/publishin
+       g-model/
+       You might also be interested in:
+       [26]http://openreview.net/
+       Some of this is coming!!!
+       Comment by [27]Eugenio Culurciello -- 25/2/2013 @ [28]15:56
+
+   Sorry, the comment form is closed at this time.
+   « « [29]Previous: What kind of researcher are you?
+   [30]Next: Does academic research cause economic growth? » »
+
+   [31]« Blog's main page
+   Daniel Lemire's picture
+     * [32]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [33]Follow on Google Plus
+       22,500 followers
+     * twitter logo [34]Follow @lemire
+       4,000 followers
+     * Facebook logo [35]Follow on Facebook
+     * Google Scholar logo [36]Follow on Google Scholar
+     * Subscribe to this blog
+       - [37]in a reader,
+       - [38]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [39]About me
+          + [40]Book recommendations
+          + [41]My readers
+          + [42]Terms of use
+          + [43]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [44]The written word took over the world
+          + Thierry Lhôte on [45]The written word took over the world
+          + Ben on [46]The written word took over the world
+          + Anonymous on [47]The written word took over the world
+          + kilian on [48]The written word took over the world
+     * Some popular posts
+          + [49]Why I still program
+          + [50]Emotions killing your intellectual productivity
+          + [51]Turn your weaknesses into strengths
+          + [52]It is not where you work, but who you work with
+     * [53]Home page
+       [54]Google Scholar profile
+       [55]arXiv
+       [56]DBLP
+
+   Powered by [57]WordPress
+
+   © 2004-2013, [58]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [59]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/atom
+   4. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/
+   5. http://arxiv.org/abs/1209.2137
+   6. http://arxiv.org/abs/1202.6522
+   7. http://arxiv.org/abs/1202.6522
+   8. http://arxiv.org/a/lemire_d_1
+   9. https://github.com/lemire
+  10. https://twitter.com/share
+  11. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/#comments
+  12. http://lemire.me/blog/archives/2012/09/19/how-well-does-peer-review-work/
+  13. http://lemire.me/blog/archives/2011/04/28/the-case-against-double-blind-peer-review/
+  14. http://synthese.wordpress.com/
+  15. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/?utm_source=feedburner#comment-72966
+  16. http://lemire.me/en/
+  17. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/?utm_source=feedburner#comment-72969
+  18. http://lemire.me/en/
+  19. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/?utm_source=feedburner#comment-72973
+  20. http://synthese.wordpress.com/
+  21. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/?utm_source=feedburner#comment-72975
+  22. http://arxaliv.org/
+  23. http://gianluca.dellavedova.org/
+  24. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/?utm_source=feedburner#comment-73051
+  25. https://engineering.purdue.edu/elab/blog/publications/publishing-model/
+  26. http://openreview.net/
+  27. https://engineering.purdue.edu/elab/
+  28. http://lemire.me/blog/archives/2013/02/21/peer-review-without-journals-or-conferences/?utm_source=feedburner#comment-73298
+  29. http://lemire.me/blog/archives/2013/02/20/what-kind-of-researcher-are-you/
+  30. http://lemire.me/blog/archives/2013/02/26/does-academic-research-cause-economic-growth/
+  31. http://lemire.me/blog/
+  32. http://lemire.me/
+  33. https://plus.google.com/105888615414982242080/about
+  34. http://www.twitter.com/lemire/
+  35. http://www.facebook.com/daniel.lemire
+  36. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  37. http://lemire.me/blog/feed/
+  38. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  39. http://lemire.me/blog/about-me/
+  40. http://lemire.me/blog/book-recommendations/
+  41. http://lemire.me/blog/my-readers/
+  42. http://lemire.me/blog/terms-of-use/
+  43. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  44. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  45. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  46. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  47. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  48. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  49. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  50. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  51. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  52. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  53. http://lemire.me/en/
+  54. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  55. http://arxiv.org/a/lemire_d_1
+  56. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  57. http://wordpress.org/
+  58. http://lemire.me/en/
+  59. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  60. http://lemire.me/blog/feed/

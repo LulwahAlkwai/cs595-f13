@@ -1,0 +1,949 @@
+   #[1]The Geomblog - Atom [2]The Geomblog - RSS [3]The Geomblog - Atom
+   [4]publisher
+
+[5]The Geomblog
+
+   Ruminations on computational geometry, algorithms, theoretical computer
+   science and life
+
+Pages
+
+     * [6]The Job Search: A series of posts
+     * [7]A conceptual view of clustering
+
+Friday, September 06, 2013
+
+More camping with high dimensional boots...
+
+   I discovered today that you don't have to wait for talk videos to be
+   posted on the Simons website. All videos are live streamed via ustream,
+   and [8]they have their own channel for the boot camp talks, where you
+   can watch the videos immediately after they're streamed.
+   Martin Wainwright gave a 3 hour presentation on high dimensional
+   statistics. Michael Jordan's talk earlier was good preparation for
+   this, just to get familiar with basic concepts like the risk of an
+   estimator and minimax theory.
+   Wainwright's talks were much denser, and it would be hard do an
+   intelligent summary of the entire presentation. The central theme of
+   his talk was this:
+   In classical statistics, we can evaluate the quality of an estimator as
+   $n \rightarrow \infty$ using standard asymptotic methods, and for the
+   most part they are well understood (convergence, rates of convergence,
+   sampling distributions, and so on). But in all these results, it's
+   assumed that the data dimensionality stays fixed. Suppose it doesn't
+   though ?
+   In particular, suppose you have a situation where $d/n \rightarrow
+   \alpha > 0$ (this notion was first introduced by Kolmogorov). For
+   example, suppose $\alpha = 0.5$. What happens to the behavior of your
+   estimation methods ?  He worked out a few simple examples with
+   experiments to show that in such cases, classical asymptotic bounds
+   fail to capture what's really going on. For example, suppose you wanted
+   to estimate the mean of a distribution and you used the sample mean,
+   relying on the central limit theorem. Then it turns out that in the
+   $d/n \rightarrow \alpha$ regime, the convergence is slowed down by the
+   parameter $\alpha$.
+   Another example of this problem is estimating the covariance of a
+   matrix. Assume you have a sample of iid Gaussian random variables drawn
+   from $N(0, I_{d \times d})$, and you want to use the sample covariance
+   to estimate the population covariance (in this case, the identity
+   matrix). You can look at the distribution of eigenvalues of the
+   resulting matrix (which you expect to be sharply concentrated around 1)
+   and in fact you get a much more spread out distribution (this is known
+   as the [9]Marcenko-Pastur distribution). You can show that that the
+   maximum singular value of the matrix is no bigger than $1 + \sqrt{d/n}$
+   with high probability. But this error term $\sqrt{d/n}$ does not go
+   away.
+   If the data is indeed high dimensional, is there low-dimensional/sparse
+   structure one can exploit to do inference more efficiently ? This gets
+   us into the realm of sparse approximations and compressed sensing, and
+   he spends some time explaining why sparse recovery via the LASSO is
+   actually possible, and describes a condition called the "restricted
+   null space property" that characterizes when exact recovery can be done
+   (this property is implied by the RIP, but is strictly weaker).
+   In the second part of the talk he talked more generally about so-called
+   regularized M-estimators, and how one might prove minimax bounds for
+   parameter estimation. Again, while the specifics are quite technical,
+   he brought up one point in passing that I think is worth highlighting.
+   When doing parameter estimation, the "curvature" of the space plays an
+   important role, and has done so since the Cramer-Rao bound, the idea of
+   Fisher information and Efron's differential-geometric perspective. The
+   idea is that if the optimal parameter lies in a highly curved region of
+   loss-parameter space, then estimation is easy, because any deviation
+   from the true parameter incurs a huge loss. Conversely, a region of
+   space where the loss function doesn't change a lot is difficult for
+   parameter estimation, because the parameter can change significantly.
+   Once again, this is in sharp contrast to how we view the landscape of
+   approximations for a hard problem. If we have a cost function that
+   varies gently over the space, then this actually makes approximating
+   the function a little easier. But a cost function that has sharp spikes
+   is a little trickier to approximate, because a small movement away from
+   the optimal solution changes the cost dramatically.
+   There are some problems with this intuition. After all, a sharp
+   potential well is good for gradient descent methods. But the difference
+   here is that in estimation, you only care about the loss function as a
+   tool to get at the true goal: the desired parameter. However, in much
+   of algorithm design, the loss function IS the thing you're optimizing,
+   and you don't necessarily care about the object that achieves that
+   optimal loss. This goes back to my earlier point about the data versus
+   the problem. If optimizing the loss is the end goal, then a certain set
+   of tools come into play. But if the goal is to find the "true" answer,
+   and the loss function is merely a means to this end, then our focus on
+   problem definition isn't necessarily helpful.
+   Posted by Suresh Venkatasubramanian at [10]9/06/2013 12:31:00 AM
+   [11]Email This[12]BlogThis![13]Share to Twitter[14]Share to Facebook
+   Labels: [15]big-data, [16]sabbatical, [17]simons foundation
+   Reactions:
+
+   IFRAME: [18]reactions
+
+   [19]Post a Comment
+   [20]Newer Post [21]Older Post [22]Home
+   Subscribe to: [23]Post Comments (Atom)
+
+Disqus for The Geomblog
+
+Amazon Contextual Product Ads
+
+   IFRAME: [24]sidebar-gadget1
+
+Tweeterific
+
+My Tweets
+
+   [25]follow me on Twitter
+
+Followers
+
+FeedBurner FeedCount
+
+Recent Comments
+
+Blog Archive
+
+     * [26]v  [27]2013 (31)
+          + [28]|>  [29]October (1)
+          + [30]v  [31]September (4)
+               o [32]SIGACT CG Column: Moving heaven and earth
+               o [33]Life at Simons
+               o [34]More camping with high dimensional boots...
+               o [35]Statistics, geometry and computer science.
+          + [36]|>  [37]August (5)
+          + [38]|>  [39]July (1)
+          + [40]|>  [41]June (2)
+          + [42]|>  [43]May (5)
+          + [44]|>  [45]March (2)
+          + [46]|>  [47]February (2)
+          + [48]|>  [49]January (9)
+
+     * [50]|>  [51]2012 (42)
+          + [52]|>  [53]December (2)
+          + [54]|>  [55]November (2)
+          + [56]|>  [57]October (3)
+          + [58]|>  [59]September (2)
+          + [60]|>  [61]August (1)
+          + [62]|>  [63]July (5)
+          + [64]|>  [65]June (8)
+          + [66]|>  [67]May (4)
+          + [68]|>  [69]April (3)
+          + [70]|>  [71]March (3)
+          + [72]|>  [73]February (1)
+          + [74]|>  [75]January (8)
+
+     * [76]|>  [77]2011 (74)
+          + [78]|>  [79]December (10)
+          + [80]|>  [81]November (7)
+          + [82]|>  [83]October (3)
+          + [84]|>  [85]September (5)
+          + [86]|>  [87]August (1)
+          + [88]|>  [89]July (2)
+          + [90]|>  [91]June (10)
+          + [92]|>  [93]May (3)
+          + [94]|>  [95]April (5)
+          + [96]|>  [97]March (4)
+          + [98]|>  [99]February (14)
+          + [100]|>  [101]January (10)
+
+     * [102]|>  [103]2010 (77)
+          + [104]|>  [105]December (1)
+          + [106]|>  [107]November (5)
+          + [108]|>  [109]October (10)
+          + [110]|>  [111]September (2)
+          + [112]|>  [113]August (7)
+          + [114]|>  [115]July (2)
+          + [116]|>  [117]June (17)
+          + [118]|>  [119]May (12)
+          + [120]|>  [121]April (1)
+          + [122]|>  [123]March (4)
+          + [124]|>  [125]February (11)
+          + [126]|>  [127]January (5)
+
+     * [128]|>  [129]2009 (92)
+          + [130]|>  [131]December (1)
+          + [132]|>  [133]November (5)
+          + [134]|>  [135]October (3)
+          + [136]|>  [137]September (7)
+          + [138]|>  [139]August (3)
+          + [140]|>  [141]July (8)
+          + [142]|>  [143]June (13)
+          + [144]|>  [145]May (5)
+          + [146]|>  [147]April (11)
+          + [148]|>  [149]March (18)
+          + [150]|>  [151]February (9)
+          + [152]|>  [153]January (9)
+
+     * [154]|>  [155]2008 (86)
+          + [156]|>  [157]December (8)
+          + [158]|>  [159]November (4)
+          + [160]|>  [161]October (1)
+          + [162]|>  [163]September (5)
+          + [164]|>  [165]August (3)
+          + [166]|>  [167]July (5)
+          + [168]|>  [169]June (19)
+          + [170]|>  [171]May (9)
+          + [172]|>  [173]April (8)
+          + [174]|>  [175]March (4)
+          + [176]|>  [177]February (6)
+          + [178]|>  [179]January (14)
+
+     * [180]|>  [181]2007 (136)
+          + [182]|>  [183]December (10)
+          + [184]|>  [185]November (9)
+          + [186]|>  [187]October (6)
+          + [188]|>  [189]September (15)
+          + [190]|>  [191]August (7)
+          + [192]|>  [193]July (11)
+          + [194]|>  [195]June (6)
+          + [196]|>  [197]May (13)
+          + [198]|>  [199]April (13)
+          + [200]|>  [201]March (15)
+          + [202]|>  [203]February (15)
+          + [204]|>  [205]January (16)
+
+     * [206]|>  [207]2006 (131)
+          + [208]|>  [209]December (3)
+          + [210]|>  [211]November (11)
+          + [212]|>  [213]October (8)
+          + [214]|>  [215]September (14)
+          + [216]|>  [217]August (14)
+          + [218]|>  [219]July (7)
+          + [220]|>  [221]June (14)
+          + [222]|>  [223]May (12)
+          + [224]|>  [225]April (13)
+          + [226]|>  [227]March (8)
+          + [228]|>  [229]February (12)
+          + [230]|>  [231]January (15)
+
+     * [232]|>  [233]2005 (255)
+          + [234]|>  [235]December (10)
+          + [236]|>  [237]November (8)
+          + [238]|>  [239]October (21)
+          + [240]|>  [241]September (16)
+          + [242]|>  [243]August (14)
+          + [244]|>  [245]July (14)
+          + [246]|>  [247]June (29)
+          + [248]|>  [249]May (34)
+          + [250]|>  [251]April (25)
+          + [252]|>  [253]March (19)
+          + [254]|>  [255]February (34)
+          + [256]|>  [257]January (31)
+
+     * [258]|>  [259]2004 (287)
+          + [260]|>  [261]December (34)
+          + [262]|>  [263]November (24)
+          + [264]|>  [265]October (32)
+          + [266]|>  [267]September (29)
+          + [268]|>  [269]August (24)
+          + [270]|>  [271]July (26)
+          + [272]|>  [273]June (50)
+          + [274]|>  [275]May (17)
+          + [276]|>  [277]April (28)
+          + [278]|>  [279]March (23)
+
+Labels
+
+     * [280]research (118)
+     * [281]community (82)
+     * [282]miscellaneous (55)
+     * [283]soda (35)
+     * [284]conferences (32)
+     * [285]socg (28)
+     * [286]blogosphere (26)
+     * [287]data-mining (25)
+     * [288]publishing (24)
+     * [289]clustering (23)
+     * [290]jobs (20)
+     * [291]teaching (19)
+     * [292]awards (17)
+     * [293]humor (17)
+     * [294]funding (16)
+     * [295]outreach (15)
+     * [296]cs.CG (13)
+     * [297]nsf (13)
+     * [298]focs (12)
+     * [299]socg-2010 (12)
+     * [300]academy (10)
+     * [301]stoc (10)
+     * [302]workshops (9)
+     * [303]geometry (8)
+     * [304]latex (8)
+     * [305]p-vs-nc (8)
+     * [306]reviewing (8)
+     * [307]sabbatical (7)
+     * [308]acm (6)
+     * [309]advising (6)
+     * [310]conf-blogs (6)
+     * [311]cs.LG (6)
+     * [312]deadline (6)
+     * [313]jeff phillips (6)
+     * [314]simons foundation (6)
+     * [315]writing (6)
+     * [316]announcement (5)
+     * [317]big-data (5)
+     * [318]large-data (5)
+     * [319]p-vs-np (5)
+     * [320]books (4)
+     * [321]focs2010 (4)
+     * [322]icdm (4)
+     * [323]math.PR (4)
+     * [324]memorial (4)
+     * [325]personal (4)
+     * [326]posters (4)
+     * [327]potd (4)
+     * [328]rajeev motwani (4)
+     * [329]shonan (4)
+     * [330]socg2012 (4)
+     * [331]software (4)
+     * [332]stoc2012 (4)
+     * [333]streaming (4)
+     * [334]GIA (3)
+     * [335]alenex2011 (3)
+     * [336]arxiv (3)
+     * [337]career (3)
+     * [338]complexity (3)
+     * [339]cs.CC (3)
+     * [340]cstheory (3)
+     * [341]deolalikar (3)
+     * [342]distributions (3)
+     * [343]sdm2011 (3)
+     * [344]shape (3)
+     * [345]theory.SE (3)
+     * [346]video (3)
+     * [347]8f-cg (2)
+     * [348]DBR (2)
+     * [349]ICS (2)
+     * [350]acceptances (2)
+     * [351]alenex (2)
+     * [352]bibtex (2)
+     * [353]column (2)
+     * [354]combinatorial geometry (2)
+     * [355]cra (2)
+     * [356]cs.DS (2)
+     * [357]current-distance (2)
+     * [358]ecml-pkdd (2)
+     * [359]empirical (2)
+     * [360]esa (2)
+     * [361]focs2012 (2)
+     * [362]game theory (2)
+     * [363]godel (2)
+     * [364]implementation (2)
+     * [365]kernels (2)
+     * [366]madalgo (2)
+     * [367]nips (2)
+     * [368]obituary (2)
+     * [369]productivity (2)
+     * [370]programming (2)
+     * [371]soda2011 (2)
+     * [372]topology (2)
+     * [373]turing (2)
+     * [374]women-in-theory (2)
+     * [375].02 (1)
+     * [376]IMA (1)
+     * [377]MOOC (1)
+     * [378]PPAD (1)
+     * [379]SDM (1)
+     * [380]accountability (1)
+     * [381]active-learning (1)
+     * [382]ams (1)
+     * [383]analco (1)
+     * [384]barriers (1)
+     * [385]beamer (1)
+     * [386]blogging (1)
+     * [387]bregman (1)
+     * [388]candes (1)
+     * [389]cfp (1)
+     * [390]classification (1)
+     * [391]coding-theory (1)
+     * [392]coffee (1)
+     * [393]conjecture (1)
+     * [394]cricket (1)
+     * [395]cs.DC (1)
+     * [396]dimacs (1)
+     * [397]dimensionality-reduction (1)
+     * [398]distributed-learning (1)
+     * [399]duality (1)
+     * [400]eda (1)
+     * [401]embarrassing (1)
+     * [402]expanders (1)
+     * [403]fellowships (1)
+     * [404]fonts (1)
+     * [405]fwcg (1)
+     * [406]gct (1)
+     * [407]gpu (1)
+     * [408]graph minors (1)
+     * [409]graphs (1)
+     * [410]hangouts (1)
+     * [411]hirsch (1)
+     * [412]history (1)
+     * [413]ipe (1)
+     * [414]jmm (1)
+     * [415]journals (1)
+     * [416]k-12 (1)
+     * [417]knuth (1)
+     * [418]massive (1)
+     * [419]media (1)
+     * [420]memes (1)
+     * [421]metrics (1)
+     * [422]misc (1)
+     * [423]models (1)
+     * [424]morris (1)
+     * [425]multicore (1)
+     * [426]nih (1)
+     * [427]parallelism (1)
+     * [428]partha niyogi (1)
+     * [429]polymath (1)
+     * [430]polymath research (1)
+     * [431]polytopes (1)
+     * [432]postdocs (1)
+     * [433]quant-ph (1)
+     * [434]quantum (1)
+     * [435]randomness (1)
+     * [436]sampling (1)
+     * [437]seminars (1)
+     * [438]social-networking (1)
+     * [439]society (1)
+     * [440]submissions (1)
+     * [441]surveys (1)
+     * [442]svn (1)
+     * [443]talks (1)
+     * [444]technology (1)
+     * [445]traffic (1)
+     * [446]travel (1)
+     * [447]twitter (1)
+     * [448]utah (1)
+     * [449]wads (1)
+     * [450]xkcd (1)
+
+Things I'm reading
+
+   [451]My Ground State
+   [452]LiveJournal Feed
+   [453]Get Firefox!
+   [454]Math Formula? [455]Site Meter
+   [456]Creative Commons License
+     __________________________________________________________________
+
+   [457]my del.icio.us
+
+Theory Links
+
+     * [458]Theory Matters
+     * [459]Geometry Pages
+     * [460]The Complexity Zoo
+     * [461]NP Optimization Problems
+     * [462]Accepted papers at theory conferences
+     * [463]The P vs NP page
+     * [464]Tim Gowers Expository Articles
+
+Blogs I read
+
+   Picture Window template. Powered by [465]Blogger.
+
+References
+
+   Visible links
+   1. http://geomblog.blogspot.com/feeds/posts/default
+   2. http://geomblog.blogspot.com/feeds/posts/default?alt=rss
+   3. http://geomblog.blogspot.com/feeds/588716530254355768/comments/default
+   4. https://plus.google.com/112165457714968997350
+   5. http://geomblog.blogspot.com/
+   6. http://geomblog.blogspot.com/p/job-search-series-of-posts.html
+   7. http://geomblog.blogspot.com/p/conceptual-view-of-clustering.html
+   8. http://www.ustream.tv/channel/big-data-boot-camp
+   9. http://en.wikipedia.org/wiki/Marchenko%E2%80%93Pastur_distribution
+  10. http://geomblog.blogspot.com/2013/09/more-camping-with-high-dimensional-boots.html
+  11. http://www.blogger.com/share-post.g?blogID=6555947&postID=588716530254355768&target=email
+  12. http://www.blogger.com/share-post.g?blogID=6555947&postID=588716530254355768&target=blog
+  13. http://www.blogger.com/share-post.g?blogID=6555947&postID=588716530254355768&target=twitter
+  14. http://www.blogger.com/share-post.g?blogID=6555947&postID=588716530254355768&target=facebook
+  15. http://geomblog.blogspot.com/search/label/big-data
+  16. http://geomblog.blogspot.com/search/label/sabbatical
+  17. http://geomblog.blogspot.com/search/label/simons%20foundation
+  18. http://www.blogger.com/blog-post-reactions.g?options=%5Bfunny,+interesting,+cool%5D&textColor=%23999999#http://geomblog.blogspot.com/2013/09/more-camping-with-high-dimensional-boots.html
+  19. http://www.blogger.com/comment.g?blogID=6555947&postID=588716530254355768
+  20. http://geomblog.blogspot.com/2013/09/life-at-simons.html
+  21. http://geomblog.blogspot.com/2013/09/statistics-geometry-and-computer-science.html
+  22. http://geomblog.blogspot.com/
+  23. http://geomblog.blogspot.com/feeds/588716530254355768/comments/default
+  24. http://9dl7h78ivl8smpn7vl3d9mo2g1ajbhaj-a-blogger-opensocial.googleusercontent.com/gadgets/ifr?url=http://wms.assoc-amazon.com/GoogleGadgets/amzn_omakase.xml&container=blogger&view=default&lang=en&country=ALL&sanitize=0&v=27691394ce78f2c2&libs=core:dynamic-height:google.blog:locked-domain:rpc:setprefs:skins:views&parent=http://geomblog.blogspot.com/&up_size=3&up_color_theme=0&mid=1#up_color_theme=0&up_size=3&st=e%3DAFlCd0XVCmNVFD1GAk2yxJaIUTSdx0bIqMesHFvedQdY5T1YUVCvWVuSbwK5RKsPIbSq%252FNZstzBgLOtye258hG1V%252FwsdvA0Mf60fNQ2R6hDYQP9U%252BQEcd6YWXYjKkqdM3uqXADltDBzx%26c%3Dblogger&rpctoken=-7112806547581460204
+  25. http://twitter.com/geomblog
+  26. javascript:void(0)
+  27. http://geomblog.blogspot.com/search?updated-min=2013-01-01T00:00:00-07:00&updated-max=2014-01-01T00:00:00-07:00&max-results=31
+  28. javascript:void(0)
+  29. http://geomblog.blogspot.com/2013_10_01_archive.html
+  30. javascript:void(0)
+  31. http://geomblog.blogspot.com/2013_09_01_archive.html
+  32. http://geomblog.blogspot.com/2013/09/sigact-cg-column-moving-heaven-and-earth.html
+  33. http://geomblog.blogspot.com/2013/09/life-at-simons.html
+  34. http://geomblog.blogspot.com/2013/09/more-camping-with-high-dimensional-boots.html
+  35. http://geomblog.blogspot.com/2013/09/statistics-geometry-and-computer-science.html
+  36. javascript:void(0)
+  37. http://geomblog.blogspot.com/2013_08_01_archive.html
+  38. javascript:void(0)
+  39. http://geomblog.blogspot.com/2013_07_01_archive.html
+  40. javascript:void(0)
+  41. http://geomblog.blogspot.com/2013_06_01_archive.html
+  42. javascript:void(0)
+  43. http://geomblog.blogspot.com/2013_05_01_archive.html
+  44. javascript:void(0)
+  45. http://geomblog.blogspot.com/2013_03_01_archive.html
+  46. javascript:void(0)
+  47. http://geomblog.blogspot.com/2013_02_01_archive.html
+  48. javascript:void(0)
+  49. http://geomblog.blogspot.com/2013_01_01_archive.html
+  50. javascript:void(0)
+  51. http://geomblog.blogspot.com/search?updated-min=2012-01-01T00:00:00-07:00&updated-max=2013-01-01T00:00:00-07:00&max-results=42
+  52. javascript:void(0)
+  53. http://geomblog.blogspot.com/2012_12_01_archive.html
+  54. javascript:void(0)
+  55. http://geomblog.blogspot.com/2012_11_01_archive.html
+  56. javascript:void(0)
+  57. http://geomblog.blogspot.com/2012_10_01_archive.html
+  58. javascript:void(0)
+  59. http://geomblog.blogspot.com/2012_09_01_archive.html
+  60. javascript:void(0)
+  61. http://geomblog.blogspot.com/2012_08_01_archive.html
+  62. javascript:void(0)
+  63. http://geomblog.blogspot.com/2012_07_01_archive.html
+  64. javascript:void(0)
+  65. http://geomblog.blogspot.com/2012_06_01_archive.html
+  66. javascript:void(0)
+  67. http://geomblog.blogspot.com/2012_05_01_archive.html
+  68. javascript:void(0)
+  69. http://geomblog.blogspot.com/2012_04_01_archive.html
+  70. javascript:void(0)
+  71. http://geomblog.blogspot.com/2012_03_01_archive.html
+  72. javascript:void(0)
+  73. http://geomblog.blogspot.com/2012_02_01_archive.html
+  74. javascript:void(0)
+  75. http://geomblog.blogspot.com/2012_01_01_archive.html
+  76. javascript:void(0)
+  77. http://geomblog.blogspot.com/search?updated-min=2011-01-01T00:00:00-07:00&updated-max=2012-01-01T00:00:00-07:00&max-results=50
+  78. javascript:void(0)
+  79. http://geomblog.blogspot.com/2011_12_01_archive.html
+  80. javascript:void(0)
+  81. http://geomblog.blogspot.com/2011_11_01_archive.html
+  82. javascript:void(0)
+  83. http://geomblog.blogspot.com/2011_10_01_archive.html
+  84. javascript:void(0)
+  85. http://geomblog.blogspot.com/2011_09_01_archive.html
+  86. javascript:void(0)
+  87. http://geomblog.blogspot.com/2011_08_01_archive.html
+  88. javascript:void(0)
+  89. http://geomblog.blogspot.com/2011_07_01_archive.html
+  90. javascript:void(0)
+  91. http://geomblog.blogspot.com/2011_06_01_archive.html
+  92. javascript:void(0)
+  93. http://geomblog.blogspot.com/2011_05_01_archive.html
+  94. javascript:void(0)
+  95. http://geomblog.blogspot.com/2011_04_01_archive.html
+  96. javascript:void(0)
+  97. http://geomblog.blogspot.com/2011_03_01_archive.html
+  98. javascript:void(0)
+  99. http://geomblog.blogspot.com/2011_02_01_archive.html
+ 100. javascript:void(0)
+ 101. http://geomblog.blogspot.com/2011_01_01_archive.html
+ 102. javascript:void(0)
+ 103. http://geomblog.blogspot.com/search?updated-min=2010-01-01T00:00:00-07:00&updated-max=2011-01-01T00:00:00-07:00&max-results=50
+ 104. javascript:void(0)
+ 105. http://geomblog.blogspot.com/2010_12_01_archive.html
+ 106. javascript:void(0)
+ 107. http://geomblog.blogspot.com/2010_11_01_archive.html
+ 108. javascript:void(0)
+ 109. http://geomblog.blogspot.com/2010_10_01_archive.html
+ 110. javascript:void(0)
+ 111. http://geomblog.blogspot.com/2010_09_01_archive.html
+ 112. javascript:void(0)
+ 113. http://geomblog.blogspot.com/2010_08_01_archive.html
+ 114. javascript:void(0)
+ 115. http://geomblog.blogspot.com/2010_07_01_archive.html
+ 116. javascript:void(0)
+ 117. http://geomblog.blogspot.com/2010_06_01_archive.html
+ 118. javascript:void(0)
+ 119. http://geomblog.blogspot.com/2010_05_01_archive.html
+ 120. javascript:void(0)
+ 121. http://geomblog.blogspot.com/2010_04_01_archive.html
+ 122. javascript:void(0)
+ 123. http://geomblog.blogspot.com/2010_03_01_archive.html
+ 124. javascript:void(0)
+ 125. http://geomblog.blogspot.com/2010_02_01_archive.html
+ 126. javascript:void(0)
+ 127. http://geomblog.blogspot.com/2010_01_01_archive.html
+ 128. javascript:void(0)
+ 129. http://geomblog.blogspot.com/search?updated-min=2009-01-01T00:00:00-07:00&updated-max=2010-01-01T00:00:00-07:00&max-results=50
+ 130. javascript:void(0)
+ 131. http://geomblog.blogspot.com/2009_12_01_archive.html
+ 132. javascript:void(0)
+ 133. http://geomblog.blogspot.com/2009_11_01_archive.html
+ 134. javascript:void(0)
+ 135. http://geomblog.blogspot.com/2009_10_01_archive.html
+ 136. javascript:void(0)
+ 137. http://geomblog.blogspot.com/2009_09_01_archive.html
+ 138. javascript:void(0)
+ 139. http://geomblog.blogspot.com/2009_08_01_archive.html
+ 140. javascript:void(0)
+ 141. http://geomblog.blogspot.com/2009_07_01_archive.html
+ 142. javascript:void(0)
+ 143. http://geomblog.blogspot.com/2009_06_01_archive.html
+ 144. javascript:void(0)
+ 145. http://geomblog.blogspot.com/2009_05_01_archive.html
+ 146. javascript:void(0)
+ 147. http://geomblog.blogspot.com/2009_04_01_archive.html
+ 148. javascript:void(0)
+ 149. http://geomblog.blogspot.com/2009_03_01_archive.html
+ 150. javascript:void(0)
+ 151. http://geomblog.blogspot.com/2009_02_01_archive.html
+ 152. javascript:void(0)
+ 153. http://geomblog.blogspot.com/2009_01_01_archive.html
+ 154. javascript:void(0)
+ 155. http://geomblog.blogspot.com/search?updated-min=2008-01-01T00:00:00-07:00&updated-max=2009-01-01T00:00:00-07:00&max-results=50
+ 156. javascript:void(0)
+ 157. http://geomblog.blogspot.com/2008_12_01_archive.html
+ 158. javascript:void(0)
+ 159. http://geomblog.blogspot.com/2008_11_01_archive.html
+ 160. javascript:void(0)
+ 161. http://geomblog.blogspot.com/2008_10_01_archive.html
+ 162. javascript:void(0)
+ 163. http://geomblog.blogspot.com/2008_09_01_archive.html
+ 164. javascript:void(0)
+ 165. http://geomblog.blogspot.com/2008_08_01_archive.html
+ 166. javascript:void(0)
+ 167. http://geomblog.blogspot.com/2008_07_01_archive.html
+ 168. javascript:void(0)
+ 169. http://geomblog.blogspot.com/2008_06_01_archive.html
+ 170. javascript:void(0)
+ 171. http://geomblog.blogspot.com/2008_05_01_archive.html
+ 172. javascript:void(0)
+ 173. http://geomblog.blogspot.com/2008_04_01_archive.html
+ 174. javascript:void(0)
+ 175. http://geomblog.blogspot.com/2008_03_01_archive.html
+ 176. javascript:void(0)
+ 177. http://geomblog.blogspot.com/2008_02_01_archive.html
+ 178. javascript:void(0)
+ 179. http://geomblog.blogspot.com/2008_01_01_archive.html
+ 180. javascript:void(0)
+ 181. http://geomblog.blogspot.com/search?updated-min=2007-01-01T00:00:00-07:00&updated-max=2008-01-01T00:00:00-07:00&max-results=50
+ 182. javascript:void(0)
+ 183. http://geomblog.blogspot.com/2007_12_01_archive.html
+ 184. javascript:void(0)
+ 185. http://geomblog.blogspot.com/2007_11_01_archive.html
+ 186. javascript:void(0)
+ 187. http://geomblog.blogspot.com/2007_10_01_archive.html
+ 188. javascript:void(0)
+ 189. http://geomblog.blogspot.com/2007_09_01_archive.html
+ 190. javascript:void(0)
+ 191. http://geomblog.blogspot.com/2007_08_01_archive.html
+ 192. javascript:void(0)
+ 193. http://geomblog.blogspot.com/2007_07_01_archive.html
+ 194. javascript:void(0)
+ 195. http://geomblog.blogspot.com/2007_06_01_archive.html
+ 196. javascript:void(0)
+ 197. http://geomblog.blogspot.com/2007_05_01_archive.html
+ 198. javascript:void(0)
+ 199. http://geomblog.blogspot.com/2007_04_01_archive.html
+ 200. javascript:void(0)
+ 201. http://geomblog.blogspot.com/2007_03_01_archive.html
+ 202. javascript:void(0)
+ 203. http://geomblog.blogspot.com/2007_02_01_archive.html
+ 204. javascript:void(0)
+ 205. http://geomblog.blogspot.com/2007_01_01_archive.html
+ 206. javascript:void(0)
+ 207. http://geomblog.blogspot.com/search?updated-min=2006-01-01T00:00:00-07:00&updated-max=2007-01-01T00:00:00-07:00&max-results=50
+ 208. javascript:void(0)
+ 209. http://geomblog.blogspot.com/2006_12_01_archive.html
+ 210. javascript:void(0)
+ 211. http://geomblog.blogspot.com/2006_11_01_archive.html
+ 212. javascript:void(0)
+ 213. http://geomblog.blogspot.com/2006_10_01_archive.html
+ 214. javascript:void(0)
+ 215. http://geomblog.blogspot.com/2006_09_01_archive.html
+ 216. javascript:void(0)
+ 217. http://geomblog.blogspot.com/2006_08_01_archive.html
+ 218. javascript:void(0)
+ 219. http://geomblog.blogspot.com/2006_07_01_archive.html
+ 220. javascript:void(0)
+ 221. http://geomblog.blogspot.com/2006_06_01_archive.html
+ 222. javascript:void(0)
+ 223. http://geomblog.blogspot.com/2006_05_01_archive.html
+ 224. javascript:void(0)
+ 225. http://geomblog.blogspot.com/2006_04_01_archive.html
+ 226. javascript:void(0)
+ 227. http://geomblog.blogspot.com/2006_03_01_archive.html
+ 228. javascript:void(0)
+ 229. http://geomblog.blogspot.com/2006_02_01_archive.html
+ 230. javascript:void(0)
+ 231. http://geomblog.blogspot.com/2006_01_01_archive.html
+ 232. javascript:void(0)
+ 233. http://geomblog.blogspot.com/search?updated-min=2005-01-01T00:00:00-07:00&updated-max=2006-01-01T00:00:00-07:00&max-results=50
+ 234. javascript:void(0)
+ 235. http://geomblog.blogspot.com/2005_12_01_archive.html
+ 236. javascript:void(0)
+ 237. http://geomblog.blogspot.com/2005_11_01_archive.html
+ 238. javascript:void(0)
+ 239. http://geomblog.blogspot.com/2005_10_01_archive.html
+ 240. javascript:void(0)
+ 241. http://geomblog.blogspot.com/2005_09_01_archive.html
+ 242. javascript:void(0)
+ 243. http://geomblog.blogspot.com/2005_08_01_archive.html
+ 244. javascript:void(0)
+ 245. http://geomblog.blogspot.com/2005_07_01_archive.html
+ 246. javascript:void(0)
+ 247. http://geomblog.blogspot.com/2005_06_01_archive.html
+ 248. javascript:void(0)
+ 249. http://geomblog.blogspot.com/2005_05_01_archive.html
+ 250. javascript:void(0)
+ 251. http://geomblog.blogspot.com/2005_04_01_archive.html
+ 252. javascript:void(0)
+ 253. http://geomblog.blogspot.com/2005_03_01_archive.html
+ 254. javascript:void(0)
+ 255. http://geomblog.blogspot.com/2005_02_01_archive.html
+ 256. javascript:void(0)
+ 257. http://geomblog.blogspot.com/2005_01_01_archive.html
+ 258. javascript:void(0)
+ 259. http://geomblog.blogspot.com/search?updated-min=2004-01-01T00:00:00-07:00&updated-max=2005-01-01T00:00:00-07:00&max-results=50
+ 260. javascript:void(0)
+ 261. http://geomblog.blogspot.com/2004_12_01_archive.html
+ 262. javascript:void(0)
+ 263. http://geomblog.blogspot.com/2004_11_01_archive.html
+ 264. javascript:void(0)
+ 265. http://geomblog.blogspot.com/2004_10_01_archive.html
+ 266. javascript:void(0)
+ 267. http://geomblog.blogspot.com/2004_09_01_archive.html
+ 268. javascript:void(0)
+ 269. http://geomblog.blogspot.com/2004_08_01_archive.html
+ 270. javascript:void(0)
+ 271. http://geomblog.blogspot.com/2004_07_01_archive.html
+ 272. javascript:void(0)
+ 273. http://geomblog.blogspot.com/2004_06_01_archive.html
+ 274. javascript:void(0)
+ 275. http://geomblog.blogspot.com/2004_05_01_archive.html
+ 276. javascript:void(0)
+ 277. http://geomblog.blogspot.com/2004_04_01_archive.html
+ 278. javascript:void(0)
+ 279. http://geomblog.blogspot.com/2004_03_01_archive.html
+ 280. http://geomblog.blogspot.com/search/label/research
+ 281. http://geomblog.blogspot.com/search/label/community
+ 282. http://geomblog.blogspot.com/search/label/miscellaneous
+ 283. http://geomblog.blogspot.com/search/label/soda
+ 284. http://geomblog.blogspot.com/search/label/conferences
+ 285. http://geomblog.blogspot.com/search/label/socg
+ 286. http://geomblog.blogspot.com/search/label/blogosphere
+ 287. http://geomblog.blogspot.com/search/label/data-mining
+ 288. http://geomblog.blogspot.com/search/label/publishing
+ 289. http://geomblog.blogspot.com/search/label/clustering
+ 290. http://geomblog.blogspot.com/search/label/jobs
+ 291. http://geomblog.blogspot.com/search/label/teaching
+ 292. http://geomblog.blogspot.com/search/label/awards
+ 293. http://geomblog.blogspot.com/search/label/humor
+ 294. http://geomblog.blogspot.com/search/label/funding
+ 295. http://geomblog.blogspot.com/search/label/outreach
+ 296. http://geomblog.blogspot.com/search/label/cs.CG
+ 297. http://geomblog.blogspot.com/search/label/nsf
+ 298. http://geomblog.blogspot.com/search/label/focs
+ 299. http://geomblog.blogspot.com/search/label/socg-2010
+ 300. http://geomblog.blogspot.com/search/label/academy
+ 301. http://geomblog.blogspot.com/search/label/stoc
+ 302. http://geomblog.blogspot.com/search/label/workshops
+ 303. http://geomblog.blogspot.com/search/label/geometry
+ 304. http://geomblog.blogspot.com/search/label/latex
+ 305. http://geomblog.blogspot.com/search/label/p-vs-nc
+ 306. http://geomblog.blogspot.com/search/label/reviewing
+ 307. http://geomblog.blogspot.com/search/label/sabbatical
+ 308. http://geomblog.blogspot.com/search/label/acm
+ 309. http://geomblog.blogspot.com/search/label/advising
+ 310. http://geomblog.blogspot.com/search/label/conf-blogs
+ 311. http://geomblog.blogspot.com/search/label/cs.LG
+ 312. http://geomblog.blogspot.com/search/label/deadline
+ 313. http://geomblog.blogspot.com/search/label/jeff%20phillips
+ 314. http://geomblog.blogspot.com/search/label/simons%20foundation
+ 315. http://geomblog.blogspot.com/search/label/writing
+ 316. http://geomblog.blogspot.com/search/label/announcement
+ 317. http://geomblog.blogspot.com/search/label/big-data
+ 318. http://geomblog.blogspot.com/search/label/large-data
+ 319. http://geomblog.blogspot.com/search/label/p-vs-np
+ 320. http://geomblog.blogspot.com/search/label/books
+ 321. http://geomblog.blogspot.com/search/label/focs2010
+ 322. http://geomblog.blogspot.com/search/label/icdm
+ 323. http://geomblog.blogspot.com/search/label/math.PR
+ 324. http://geomblog.blogspot.com/search/label/memorial
+ 325. http://geomblog.blogspot.com/search/label/personal
+ 326. http://geomblog.blogspot.com/search/label/posters
+ 327. http://geomblog.blogspot.com/search/label/potd
+ 328. http://geomblog.blogspot.com/search/label/rajeev%20motwani
+ 329. http://geomblog.blogspot.com/search/label/shonan
+ 330. http://geomblog.blogspot.com/search/label/socg2012
+ 331. http://geomblog.blogspot.com/search/label/software
+ 332. http://geomblog.blogspot.com/search/label/stoc2012
+ 333. http://geomblog.blogspot.com/search/label/streaming
+ 334. http://geomblog.blogspot.com/search/label/GIA
+ 335. http://geomblog.blogspot.com/search/label/alenex2011
+ 336. http://geomblog.blogspot.com/search/label/arxiv
+ 337. http://geomblog.blogspot.com/search/label/career
+ 338. http://geomblog.blogspot.com/search/label/complexity
+ 339. http://geomblog.blogspot.com/search/label/cs.CC
+ 340. http://geomblog.blogspot.com/search/label/cstheory
+ 341. http://geomblog.blogspot.com/search/label/deolalikar
+ 342. http://geomblog.blogspot.com/search/label/distributions
+ 343. http://geomblog.blogspot.com/search/label/sdm2011
+ 344. http://geomblog.blogspot.com/search/label/shape
+ 345. http://geomblog.blogspot.com/search/label/theory.SE
+ 346. http://geomblog.blogspot.com/search/label/video
+ 347. http://geomblog.blogspot.com/search/label/8f-cg
+ 348. http://geomblog.blogspot.com/search/label/DBR
+ 349. http://geomblog.blogspot.com/search/label/ICS
+ 350. http://geomblog.blogspot.com/search/label/acceptances
+ 351. http://geomblog.blogspot.com/search/label/alenex
+ 352. http://geomblog.blogspot.com/search/label/bibtex
+ 353. http://geomblog.blogspot.com/search/label/column
+ 354. http://geomblog.blogspot.com/search/label/combinatorial%20geometry
+ 355. http://geomblog.blogspot.com/search/label/cra
+ 356. http://geomblog.blogspot.com/search/label/cs.DS
+ 357. http://geomblog.blogspot.com/search/label/current-distance
+ 358. http://geomblog.blogspot.com/search/label/ecml-pkdd
+ 359. http://geomblog.blogspot.com/search/label/empirical
+ 360. http://geomblog.blogspot.com/search/label/esa
+ 361. http://geomblog.blogspot.com/search/label/focs2012
+ 362. http://geomblog.blogspot.com/search/label/game%20theory
+ 363. http://geomblog.blogspot.com/search/label/godel
+ 364. http://geomblog.blogspot.com/search/label/implementation
+ 365. http://geomblog.blogspot.com/search/label/kernels
+ 366. http://geomblog.blogspot.com/search/label/madalgo
+ 367. http://geomblog.blogspot.com/search/label/nips
+ 368. http://geomblog.blogspot.com/search/label/obituary
+ 369. http://geomblog.blogspot.com/search/label/productivity
+ 370. http://geomblog.blogspot.com/search/label/programming
+ 371. http://geomblog.blogspot.com/search/label/soda2011
+ 372. http://geomblog.blogspot.com/search/label/topology
+ 373. http://geomblog.blogspot.com/search/label/turing
+ 374. http://geomblog.blogspot.com/search/label/women-in-theory
+ 375. http://geomblog.blogspot.com/search/label/.02
+ 376. http://geomblog.blogspot.com/search/label/IMA
+ 377. http://geomblog.blogspot.com/search/label/MOOC
+ 378. http://geomblog.blogspot.com/search/label/PPAD
+ 379. http://geomblog.blogspot.com/search/label/SDM
+ 380. http://geomblog.blogspot.com/search/label/accountability
+ 381. http://geomblog.blogspot.com/search/label/active-learning
+ 382. http://geomblog.blogspot.com/search/label/ams
+ 383. http://geomblog.blogspot.com/search/label/analco
+ 384. http://geomblog.blogspot.com/search/label/barriers
+ 385. http://geomblog.blogspot.com/search/label/beamer
+ 386. http://geomblog.blogspot.com/search/label/blogging
+ 387. http://geomblog.blogspot.com/search/label/bregman
+ 388. http://geomblog.blogspot.com/search/label/candes
+ 389. http://geomblog.blogspot.com/search/label/cfp
+ 390. http://geomblog.blogspot.com/search/label/classification
+ 391. http://geomblog.blogspot.com/search/label/coding-theory
+ 392. http://geomblog.blogspot.com/search/label/coffee
+ 393. http://geomblog.blogspot.com/search/label/conjecture
+ 394. http://geomblog.blogspot.com/search/label/cricket
+ 395. http://geomblog.blogspot.com/search/label/cs.DC
+ 396. http://geomblog.blogspot.com/search/label/dimacs
+ 397. http://geomblog.blogspot.com/search/label/dimensionality-reduction
+ 398. http://geomblog.blogspot.com/search/label/distributed-learning
+ 399. http://geomblog.blogspot.com/search/label/duality
+ 400. http://geomblog.blogspot.com/search/label/eda
+ 401. http://geomblog.blogspot.com/search/label/embarrassing
+ 402. http://geomblog.blogspot.com/search/label/expanders
+ 403. http://geomblog.blogspot.com/search/label/fellowships
+ 404. http://geomblog.blogspot.com/search/label/fonts
+ 405. http://geomblog.blogspot.com/search/label/fwcg
+ 406. http://geomblog.blogspot.com/search/label/gct
+ 407. http://geomblog.blogspot.com/search/label/gpu
+ 408. http://geomblog.blogspot.com/search/label/graph%20minors
+ 409. http://geomblog.blogspot.com/search/label/graphs
+ 410. http://geomblog.blogspot.com/search/label/hangouts
+ 411. http://geomblog.blogspot.com/search/label/hirsch
+ 412. http://geomblog.blogspot.com/search/label/history
+ 413. http://geomblog.blogspot.com/search/label/ipe
+ 414. http://geomblog.blogspot.com/search/label/jmm
+ 415. http://geomblog.blogspot.com/search/label/journals
+ 416. http://geomblog.blogspot.com/search/label/k-12
+ 417. http://geomblog.blogspot.com/search/label/knuth
+ 418. http://geomblog.blogspot.com/search/label/massive
+ 419. http://geomblog.blogspot.com/search/label/media
+ 420. http://geomblog.blogspot.com/search/label/memes
+ 421. http://geomblog.blogspot.com/search/label/metrics
+ 422. http://geomblog.blogspot.com/search/label/misc
+ 423. http://geomblog.blogspot.com/search/label/models
+ 424. http://geomblog.blogspot.com/search/label/morris
+ 425. http://geomblog.blogspot.com/search/label/multicore
+ 426. http://geomblog.blogspot.com/search/label/nih
+ 427. http://geomblog.blogspot.com/search/label/parallelism
+ 428. http://geomblog.blogspot.com/search/label/partha%20niyogi
+ 429. http://geomblog.blogspot.com/search/label/polymath
+ 430. http://geomblog.blogspot.com/search/label/polymath%20research
+ 431. http://geomblog.blogspot.com/search/label/polytopes
+ 432. http://geomblog.blogspot.com/search/label/postdocs
+ 433. http://geomblog.blogspot.com/search/label/quant-ph
+ 434. http://geomblog.blogspot.com/search/label/quantum
+ 435. http://geomblog.blogspot.com/search/label/randomness
+ 436. http://geomblog.blogspot.com/search/label/sampling
+ 437. http://geomblog.blogspot.com/search/label/seminars
+ 438. http://geomblog.blogspot.com/search/label/social-networking
+ 439. http://geomblog.blogspot.com/search/label/society
+ 440. http://geomblog.blogspot.com/search/label/submissions
+ 441. http://geomblog.blogspot.com/search/label/surveys
+ 442. http://geomblog.blogspot.com/search/label/svn
+ 443. http://geomblog.blogspot.com/search/label/talks
+ 444. http://geomblog.blogspot.com/search/label/technology
+ 445. http://geomblog.blogspot.com/search/label/traffic
+ 446. http://geomblog.blogspot.com/search/label/travel
+ 447. http://geomblog.blogspot.com/search/label/twitter
+ 448. http://geomblog.blogspot.com/search/label/utah
+ 449. http://geomblog.blogspot.com/search/label/wads
+ 450. http://geomblog.blogspot.com/search/label/xkcd
+ 451. http://www.cs.utah.edu/~suresh
+ 452. http://www.livejournal.com/users/geomblog_feed/
+ 453. http://spreadfirefox.com/community/?q=affiliates&id=0&t=83
+ 454. http://watchmath.com/vlog/?p=438
+ 455. http://s17.sitemeter.com/stats.asp?site=s17geomblog
+ 456. http://creativecommons.org/licenses/by-nc-sa/2.0/
+ 457. http://del.icio.us/geomblog
+ 458. http://theorymatters.org/
+ 459. http://compgeom.cs.uiuc.edu/~jeffe/compgeom/index.html
+ 460. http://www.complexityzoo.com/
+ 461. http://www.nada.kth.se/~viggo/problemlist/compendium.html
+ 462. http://www-2.cs.cmu.edu/~anupamg/lists.html
+ 463. http://www.win.tue.nl/~gwoegi/P-versus-NP.htm
+ 464. http://www.dpmms.cam.ac.uk/~wtg10/mathsindex.html
+ 465. http://www.blogger.com/
+
+   Hidden links:
+ 466. http://www.blogger.com/rearrange?blogID=6555947&widgetType=PageList&widgetId=PageList1&action=editWidget&sectionId=crosscol
+ 467. http://www.blogger.com/email-post.g?blogID=6555947&postID=588716530254355768
+ 468. http://www.blogger.com/post-edit.g?blogID=6555947&postID=588716530254355768&from=pencil
+ 469. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML2&action=editWidget&sectionId=main
+ 470. http://www.blogger.com/rearrange?blogID=6555947&widgetType=AdSense&widgetId=AdSense1&action=editWidget&sectionId=sidebar-left-1
+ 471. http://www.blogger.com/rearrange?blogID=6555947&widgetType=Gadget&widgetId=Gadget1&action=editWidget&sectionId=sidebar-left-1
+ 472. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML7&action=editWidget&sectionId=sidebar-left-1
+ 473. http://www.blogger.com/rearrange?blogID=6555947&widgetType=Followers&widgetId=Followers1&action=editWidget&sectionId=sidebar-left-1
+ 474. http://feeds.feedburner.com/TheGeomblog
+ 475. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML4&action=editWidget&sectionId=sidebar-left-1
+ 476. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML3&action=editWidget&sectionId=sidebar-left-1
+ 477. http://www.blogger.com/rearrange?blogID=6555947&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-left-1
+ 478. http://www.blogger.com/rearrange?blogID=6555947&widgetType=Label&widgetId=Label1&action=editWidget&sectionId=sidebar-left-1
+ 479. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML5&action=editWidget&sectionId=sidebar-left-1
+ 480. http://feeds.feedburner.com/TheGeomblog
+ 481. http://www.watchmath.com/
+ 482. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML1&action=editWidget&sectionId=sidebar-left-1
+ 483. http://www.blogger.com/rearrange?blogID=6555947&widgetType=HTML&widgetId=HTML6&action=editWidget&sectionId=sidebar-left-1
+ 484. http://www.blogger.com/rearrange?blogID=6555947&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3

@@ -1,0 +1,1324 @@
+<!DOCTYPE html>
+<!--[if IE 6 ]>
+<html id="ie6" lang="en">
+<![endif]-->
+<!--[if IE 7 ]>
+<html id="ie7" lang="en">
+<![endif]-->
+<!--[if !IE]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+	<meta charset="UTF-8" />
+
+	<title>I hate the Pumping Lemma | Bosker Blog</title>
+
+	<link rel="pingback" href="http://bosker.wordpress.com/xmlrpc.php" />
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="alternate" type="application/rss+xml" title="Bosker Blog &raquo; Feed" href="http://bosker.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bosker Blog &raquo; Comments Feed" href="http://bosker.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Bosker Blog &raquo; I hate the Pumping&nbsp;Lemma Comments Feed" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s0.wp.com/_static/??-eJx9jdEKgzAMRX9oXdgqG3sY+5aqsUZjU2yK+Pe6wZgg7ikEzjkXpmgqCYpBYcgmcvYUEjD1mKBDja7qzec7VymdYIOXLP4niPdYS1bTCLNMMFHtUXfSZoNCQ4F0Bm1xWNdiLkEyU5R/VpS0brCjEZLOjDt2VzvgDpqtGyn47z2qtwV4ltLxG3gNz4u9P2xxvVnbLR5ZflY=' type='text/css' media='all' />
+<link rel='stylesheet' id='print-css-0' href='http://s0.wp.com/wp-content/mu-plugins/global-print/global-print.css?m=1335386953g' type='text/css' media='print' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??-eJyFkN0KwjAMRl/IrviDxQvxWbYuK6ltU5vWMZ/eDiYoDnaVkBxy+CLHKDSFDCFLy9JThw5EYUitqTOBYaDG8k5WDoN2pQeeQfsokKalbALCo0lthsZj+MBf1kicPTBX5cr2V4XhiTBuYhZybPVdJGB8/V3tHBkRXTEYWNbeQE8li4Gco1GO2BvIa6E0eT9/JUF00xLm5q/7o1KHs7qok30DqLN9jA=='></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://bosker.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://bosker.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='The algebra of Unix command&nbsp;substitution' href='http://bosker.wordpress.com/2013/08/16/using-group-theory-to-understand-unix-command-substitution/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/' />
+<link rel='shortlink' href='http://wp.me/pZjY-iA' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fbosker.wordpress.com%2F2013%2F08%2F18%2Fi-hate-the-pumping-lemma%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fbosker.wordpress.com%2F2013%2F08%2F18%2Fi-hate-the-pumping-lemma%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="I hate the Pumping Lemma" />
+<meta property="og:url" content="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/" />
+<meta property="og:description" content="I hate the Pumping Lemma for regular languages. It’s a complicated way to express an idea that is fundamentally very simple, and it isn’t even a very good way to prove that a language is not regula..." />
+<meta property="og:site_name" content="Bosker Blog" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@robinhouston" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="http://s0.wp.com/i/webclip.png?m=1355642671g" />
+<link rel='openid.server' href='http://bosker.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://bosker.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://bosker.wordpress.com/osd.xml" title="Bosker Blog" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none !important;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<style type="text/css">
+.widget_twitter li {
+	word-wrap: break-word;
+}
+</style>
+<meta name="application-name" content="Bosker Blog" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Miscellaneous maundering" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://bosker.wordpress.com/feed/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="I hate the Pumping&nbsp;Lemma | Bosker Blog on WordPress.com" />
+<meta name="description" content="I hate the Pumping Lemma for regular languages. It’s a complicated way to express an idea that is fundamentally very simple, and it isn’t even a very good way to prove that a language is not regular. Here it is, in all its awful majesty: for every regular language L, there exists a positive whole&hellip;" />
+<style id="syntaxhighlighteranchor"></style>
+		<link rel="stylesheet" id="custom-css-css" type="text/css" href="http://s1.wp.com/?custom-css=1&#038;csblog=ZjY&#038;cscache=6&#038;csrev=5" />
+		</head>
+
+<body class="single single-post postid-1152 single-format-standard typekit-enabled color-light mp6 highlander-enabled highlander-light">
+<div id="wrapper">
+
+		<div id="header">
+		<img src="http://bosker.files.wordpress.com/2011/04/header.jpg" width="712" height="80" alt="" />
+	</div>
+	
+	<div id="search">
+		<form method="get" id="searchform" action="http://bosker.wordpress.com/">
+	<div>
+		<span class="search">Search:</span><input type="text" value="" size="15" name="s" id="s" />
+		<input type="submit" id="searchsubmit" value="Go" />
+	</div>
+</form>	</div>
+
+	<div id="main-nav">
+		<h1 class="masthead"><a href="http://bosker.wordpress.com">Bosker Blog</a></h1>
+		<p class="description">Miscellaneous maundering</p>
+
+		<div class="menu-wrap"><ul class="menu"><li class="page_item page-item-7"><a href="http://bosker.wordpress.com/about/">About</a></li></ul></div>
+	</div>
+<div id="content">
+
+	<div id="entry-content">
+
+	
+					<div id="post-1152" class="post-1152 post type-post status-publish format-standard hentry category-chatter">
+				<h2 class="entry-title">I hate the Pumping&nbsp;Lemma</h2>
+				<p class="date">2013-08-18 <a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comments" title="Comment on I hate the Pumping&nbsp;Lemma">&sect; <span class="commentcount">27 Comments</span></a></p>
+
+				<div class="entry">
+					<p>I hate the Pumping Lemma for regular languages. It’s a complicated way to express an idea that is fundamentally very simple, and it isn’t even a very good way to prove that a language is not regular.</p>
+<p>Here it is, in all its awful majesty: for every regular language L, there exists a positive whole number <i>p</i> such that every string <i>w</i>∈L that has <i>p</i> characters or more can be broken down into three substrings <i>xyz</i>, where <i>y</i> is not the empty string and the total length of <i>xy</i> is at most <i>p</i>, and for every natural number <i>i</i> the string <i>xy<sup>i</sup>z</i> is also in L.<br />
+<span id="more-1152"></span><br />
+Did you understand that statement? I’d be willing to bet you didn’t, if you haven’t seen it before. It has a ferociously intimidating logical structure, with no fewer than <b>five</b> alternating quantifiers: “for every L … there exists <i>p</i> … such that for every <i>w</i> … there exist <i>x</i>, <i>y</i> and <i>z</i> … such that for every <i>i</i> …”. Beginning students of analysis are apt to struggle with the definition of continuity, because it takes a while to get used to having two nested quantifiers: for every epsilon &gt; 0 there exists a delta &gt; 0, etc. If two are a struggle, five is cruelty.</p>
+<p>The real insult is that the actual underlying idea, and the proof, is shockingly simple. It is essentially the pigeonhole principle: the principle that if you put more than <i>n</i> pigeons into <i>n</i> holes then there must be a hole with more than one pigeon in. Take the regular language L, and express it as a deterministic finite automaton with <i>p</i> states. Any string in L determines a path through the automaton; so any string with <i>p</i> or more characters must visit the same state twice, forming a loop. This looped part can be repeated any arbitrary number of times to produce other strings in L.</p>
+<p>If you understand the idea, it is easy to write down the incomprehensible formal statement of it. If you do not, the formal statement is not likely to lead you to enlightenment.</p>
+<p>But the world is full of ways to express simple ideas in complicated ways. Why is this particular one foisted upon Computer Science students? Because it is used to show that some languages are not regular, which is important both in theory <a href="http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454">and in practice</a>.</p>
+<p>This leads to the second reason for my distaste for the Accursed Lemma: there are better ways to prove non-regularity, which are more powerful and give more insight into the nature of regularity, and which are more straightforward to state: they are omitted from the typical undergraduate curriculum, presumably because by the time the poor students have understood the hideous Pumping Lemma, there is no time left.</p>
+<p>Here is my favourite: one might call it the Myhill-Nerode Theorem à la Brzozowski. Brzozowski invented the marvellous idea of <i>differentiating</i> formal languages. Let L be a language: not necessarily a regular language, just any set of strings; let <i>w</i> be a string, not necessarily in L. Then the derivative d/dw (L) is the language { v | wv ∈ L }.</p>
+<p>For example, if L is the set of English words then d/d‘w’ (L) is the words that start with ‘w’, with the ‘w’ removed. So it contains such strings as “ord” and “hy” and “ibble”, and even “anker”.</p>
+<p>It’s easy enough to see that any derivative of a regular language is again regular: taking a derivative just corresponds to changing the start state in a deterministic automaton. By the same argument, any regular language has only a finite number of different derivatives.</p>
+<p>The really good thing is that it works the other way round as well: if a language has only a finite number of different derivatives, then it is regular; if it has infinitely many, it is not. Again the proof is easy: given a language L with a finite number of different derivatives, form a deterministic automaton with a state for each derivative. Put an edge labelled ‘x’ from A to B just when d/d‘x’ (A) = B. The start state is L itself, and any derivative that contains the empty string is marked as an accepting state.</p>
+<p>So this condition completely characterises the regular languages, unlike the Pumping Lemma. There are <a href="http://en.wikipedia.org/wiki/Pumping_lemma_for_regular_languages#Converse_of_lemma_not_true">non-regular languages that are nevertheless pumpable</a>, but they will still have infinitely many different derivatives.</p>
+<p>In practice it is usually easy to use, as well. Take the classic example of L = { a<sup>i</sup>b<sup>i</sup> | i ∈ <img src='http://s0.wp.com/latex.php?latex=%5Cmathbb%7BN%7D&amp;bg=ffffff&amp;fg=222222&amp;s=0' alt='&#92;mathbb{N}' title='&#92;mathbb{N}' class='latex' /> }. Clearly d/d(a<sup>n</sup>)(L) = { a<sup>i</sup>b<sup>n+i</sup> | i ∈ <img src='http://s0.wp.com/latex.php?latex=%5Cmathbb%7BN%7D&amp;bg=ffffff&amp;fg=222222&amp;s=0' alt='&#92;mathbb{N}' title='&#92;mathbb{N}' class='latex' /> } for all n, and these are all different, so there are infinitely many derivatives and L cannot be regular.</p>
+<p>Just to rub in how this is better than the Pumping Lemma, let’s look at the example from Wikipedia of a language where the Pumping Lemma fails. It is L = A∪B∪C, over the alphabet {0,1,2,3}, where A is the strings that contain a doubled digit (00, 11, 22, 33), B is the strings that somewhere in them have the same digit twice with another digit in between (010, 020, 030, 101, 121, etc.); and C is the strings precisely 1/7 of whose digits are 3s.</p>
+<p>We can express C as { w∈{0,1,2,3}<sup>*</sup> | n<sub>{0,1,2}</sub>(w) = 6 n<sub>{3}</sub>(w) }. Here I am writing n<sub>S</sub>(w) to mean the number of characters of w that belong to S, where S is a subset of the alphabet.</p>
+<p>Now for every natural number i, let’s compute d/d((0123)<sup>i</sup>)(C): it is</p>
+<p>{ w∈{0,1,2,3}<sup>*</sup> | n<sub>{0,1,2}</sub>((0123)<sup>i</sup>w) = 6 n<sub>{3}</sub>((0123)<sup>i</sup>w) }<br />
+= { w∈{0,1,2,3}<sup>*</sup> | 3i + n<sub>{0,1,2}</sub>(w) = 6i + 6 n<sub>{3}</sub>(w) }<br />
+= { w∈{0,1,2,3}<sup>*</sup> | n<sub>{0,1,2}</sub>(w) = 3i + 6 n<sub>{3}</sub>(w) }</p>
+<p>These languages are all different, because for example for each i you can see that d/d((0123)<sup>i</sup>)(C) contains the string (012)<sup>i</sup>, but none of the others do. What is more, none of the strings (012)<sup>i</sup> are in any d/d((0123)<sup>k</sup>)(A∪B), therefore d/d((0123)<sup>i</sup>)(L) contains (012)<sup>j</sup> just when i=j, hence L has infinitely many derivatives and is not regular.</p>
+<hr />
+<small>PS. I don’t have anything against the pumping lemma for context-free languages.</p>
+<p>PPS. This is not a complaint about my own education. I was taught finite automata by an enlightened lecturer who explained the simple idea behind the Pumping Lemma clearly and briefly, and had the good taste not to state it formally. It is driven rather by compassion for those less fortunate.</small></p>
+<hr />
+<b>Update</b>: For a dissenting view, see <a href="http://blog.computationalcomplexity.org/2013/09/myhill-nerode-versus-pumping-lemma.html">this post by Lance Fortnow</a>.</p>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-email"><a rel="nofollow" class="share-email sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=email" title="Click to email this to a friend"><span>Email</span></a></li><li class="share-print"><a rel="nofollow" class="share-print sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#print" title="Click to print"><span>Print</span></a></li><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-1152"><span>Twitter</span></a></li><li class="share-google-plus-1"><a rel="nofollow" class="share-google-plus-1 sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=google-plus-1" title="Click to share on Google+" id="sharing-google-1152"><span>Google</span></a></li><li><a href="#" class="sharing-anchor sd-button share-more"><span>More</span></a></li><li class="share-end"></li></ul><div class="sharing-hidden"><div class="inner" style="display: none;"><ul><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=facebook" title="Share on Facebook" id="sharing-facebook-1152"><span>Facebook</span></a></li><li class="share-reddit"><a rel="nofollow" class="share-reddit sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=reddit" title="Click to share on Reddit"><span>Reddit</span></a></li><li class="share-end"></li><li class="share-stumbleupon"><a rel="nofollow" class="share-stumbleupon sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=stumbleupon" title="Click to share on StumbleUpon"><span>StumbleUpon</span></a></li><li class="share-linkedin"><a rel="nofollow" class="share-linkedin sd-button share-icon" href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=linkedin" title="Click to share on LinkedIn" id="sharing-linkedin-1152"><span>LinkedIn</span></a></li><li class="share-end"></li><li class="share-end"></li></ul></div></div></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-235722-1152-524fc546ce340' data-src='//widgets.wp.com/likes/#blog_id=235722&amp;post_id=1152&amp;origin=bosker.wordpress.com&amp;obj_id=235722-1152-524fc546ce340' data-name='like-post-frame-235722-1152-524fc546ce340'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>					
+					<p class="tags"></p>
+					
+
+<!-- You can start editing here. -->
+
+
+	<h3 id="comments"><span class="sep">&sect;</span> 27 Responses to <em>I hate the Pumping&nbsp;Lemma</em></h3>
+
+	<ul class="commentlist">
+			<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-3074">
+				<div id="div-comment-3074" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/3a9847a69faff621162e534f491ef1da?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://gravatar.com/ceyhuncanu' rel='external nofollow' class='url'>ceyhuncanu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3074">
+			2013-08-18 at 2225</a>		</div>
+
+		<p>&#8220;It is essentially the pigeonhole principle: the principle that if you put more than n pigeons into n holes then there must be a hole with more than one pigeon in.&#8221;</p>
+<p>I guess there is a typo here. Number of pigeons should be more than number of holes to express the idea of <a href="http://en.wikipedia.org/wiki/Pigeonhole_principle" rel="nofollow">http://en.wikipedia.org/wiki/Pigeonhole_principle</a> .</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3074#respond' onclick='return addComment.moveForm("div-comment-3074", "3074", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-bosker bypostauthor odd alt depth-2 parent highlander-comment" id="comment-3075">
+				<div id="div-comment-3075" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b7d4b678a3b4ff1b80f5c6e70d87d04e?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://bosker.wordpress.com/' rel='external nofollow' class='url'>Robin Houston</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3075">
+			2013-08-18 at 2227</a>		</div>
+
+		<p>No, no typo. You might like to reread the sentence you quoted. :-)</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3075#respond' onclick='return addComment.moveForm("div-comment-3075", "3075", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3 highlander-comment" id="comment-3076">
+				<div id="div-comment-3076" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/3a9847a69faff621162e534f491ef1da?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://gravatar.com/ceyhuncanu' rel='external nofollow' class='url'>ceyhuncanu</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3076">
+			2013-08-18 at 2237</a>		</div>
+
+		<p>Yup, sorry. It seems I missed &#8220;_more than_&#8221; part. :-) I am having hard time understanding what I read these days.</p>
+<p>By the way, forgot to mention this is a real nice article, explaining such a hard-to-digest topic.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 parent highlander-comment" id="comment-3078">
+				<div id="div-comment-3078" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/9697c4e6aa33ffcd4a119989a833b5ec?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">bobt</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3078">
+			2013-08-19 at 0224</a>		</div>
+
+		<p>Can you please rewrite this article with a clear point? It’s a complicated article to express an idea that is fundamentally unknown to readers.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3078#respond' onclick='return addComment.moveForm("div-comment-3078", "3078", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-2 highlander-comment" id="comment-3079">
+				<div id="div-comment-3079" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/d4de87d026a838dcac425928466d24fa?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Atash</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3079">
+			2013-08-19 at 0309</a>		</div>
+
+		<p>The first sentence of the article seemed pretty clear to me&#8230;</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3079#respond' onclick='return addComment.moveForm("div-comment-3079", "3079", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt depth-2 highlander-comment" id="comment-3080">
+				<div id="div-comment-3080" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/d2e1f44aaeb9cc9e6a003eeb5d8384df?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Brando Miranda</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3080">
+			2013-08-19 at 0350</a>		</div>
+
+		<p>I hate the Pumping Lemma for regular languages. It’s a complicated way to express an idea that is fundamentally very simple, and it isn’t even a very good way to prove that a language is not regular.</p>
+<p>Thats what its about. Are you familiar with this topic?</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3080#respond' onclick='return addComment.moveForm("div-comment-3080", "3080", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-3081">
+				<div id="div-comment-3081" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/dc5b53a987e119021dd2fc3d4f8db46b?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Greg</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3081">
+			2013-08-19 at 0415</a>		</div>
+
+		<p>&#8220;Clearly d/d(an)(L) = { aibn+i | i ∈ \mathbb{N} } for all n, and these are all different&#8221;</p>
+<p>Do you mean that there are an infinite number of derivatives because you can take d/d(a^1)(L), d/d(a^2)(L), &#8230; , d/d(a^n)(L), and for each n, the resulting derivative language is unique with respect to all other n?</p>
+<p>Whereas if L is regular, then all derivative functions will map to a finite set of languages?</p>
+<p>Just trying to make sure I understand correctly. Thank you for the interesting post.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3081#respond' onclick='return addComment.moveForm("div-comment-3081", "3081", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-bosker bypostauthor odd alt depth-2 highlander-comment" id="comment-3082">
+				<div id="div-comment-3082" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b7d4b678a3b4ff1b80f5c6e70d87d04e?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://bosker.wordpress.com/' rel='external nofollow' class='url'>Robin Houston</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3082">
+			2013-08-19 at 0709</a>		</div>
+
+		<p>Yes, you understand perfectly. Thanks.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3082#respond' onclick='return addComment.moveForm("div-comment-3082", "3082", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-odd thread-alt depth-1 parent highlander-comment" id="comment-3083">
+				<div id="div-comment-3083" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://i2.wp.com/a0.twimg.com/profile_images/2941577272/b78fc3b6771737399ec35ce3924a3a47_normal.png?resize=32%2C32' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://twitter.com/stephanwehner' rel='external nofollow' class='url'>Stephan Wehner (@stephanwehner)</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3083">
+			2013-08-19 at 0751</a>		</div>
+
+		<p>Are you saying that any language that can be shown to be non-regular using the Pumping Lemma can be shown to be non-regular without using the Pumping Lemma? There&#8217;s a &#8220;plugin replacement&#8221; in each such proof?</p>
+<p>Of all the things one may not like one would think a mathematical fact would be the easiest to avoid.</p>
+<p>Cheers,</p>
+<p>Stephan</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3083#respond' onclick='return addComment.moveForm("div-comment-3083", "3083", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-bosker bypostauthor odd alt depth-2 parent highlander-comment" id="comment-3084">
+				<div id="div-comment-3084" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b7d4b678a3b4ff1b80f5c6e70d87d04e?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://bosker.wordpress.com/' rel='external nofollow' class='url'>Robin Houston</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3084">
+			2013-08-19 at 0801</a>		</div>
+
+		<p>Yes. Every non-regular language has infinitely many derivatives. You never actually need to use the Pumping Lemma to show non-regularity.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3084#respond' onclick='return addComment.moveForm("div-comment-3084", "3084", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3 highlander-comment" id="comment-3086">
+				<div id="div-comment-3086" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/69b08dc9a36ac7631243969b19c9ea5f?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">John Hughes</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3086">
+			2013-08-19 at 1353</a>		</div>
+
+		<p>I&#8217;m not certain that this answers the question Stephan asked. Let me try to explain my doubts:</p>
+<p> Here are two properties of positive integers: (a) positive integers have unique factorizations. (b) For any positive integer n, the result of applying the predecessor function sufficiently often will be 0. </p>
+<p>The first of these can be used to prove various things about integers, as many elementary number theory texts demonstrate to excess. The second can be used to prove other things. You might ask &#8220;is everything provable using the first also provable using the second?&#8221; At some very basic level, the answer must be &#8220;yes&#8221;, because when we say &#8220;Using the second,&#8221; we really mean &#8220;Using the second and all the axioms for the integers,&#8221; and using &#8220;all the axioms for the integers&#8221; we can prove the first, hence can prove anything derived from it. </p>
+<p>But that doesn&#8217;t really capture the sense of the question. One way to think of proofs is via graph theory. At each moment in a proof, you&#8217;re in some state of knowledge (call that a node), and there are tons of things you could say next. (call each of these an edge). If you pick the right sequence of edges, you reach a final node in which the knowledge you&#8217;ve established contains the conclusion of the theorem.  So things proved by using unique factorization constitute certain paths in this large graph. The question is then something like &#8220;are there shorter paths to all (or most of) these things from the state in which you get to assume finite-predecessor-calls, with the paths not passing through the nodes that contain the knowledge of unique factorization?&#8221; </p>
+<p>To bring this back to languages, the fact that every non-regular language has some property (finitely many derivatives) and has some other property (&#8220;pumpingness&#8221;) doesn&#8217;t necessarily mean that there&#8217;s a mechanism for replacing proofs involving the latter with &#8220;simpler&#8221; proofs involving the former, where by &#8220;simpler&#8221; I mean &#8220;not involving a hidden proof of the pumping lemma.&#8221; </p>
+<p>I suspect that the answer to Stephan&#8217;s question might well be &#8220;Yes,&#8221; but I know little enough about the pumping lemma and its uses to have no confidence in my answer.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt depth-2 parent highlander-comment" id="comment-3092">
+				<div id="div-comment-3092" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/42be3f892081fe6f5d06b0df50065528?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Mark Mercer</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3092">
+			2013-08-20 at 0346</a>		</div>
+
+		<p>I think that the language {x: |x| is prime} should be easier to prove nonregular using the pumping lemma &#8211; Choose the long word to be a prime-length word and pump it up to a nonprime-length word. Generally if you have a language where membership only depends on the length of the input, you can skip the case analysis that normally comes with an application of the pumping lemma.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3092#respond' onclick='return addComment.moveForm("div-comment-3092", "3092", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-eppstein even depth-3 highlander-comment" id="comment-3093">
+				<div id="div-comment-3093" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1dc1fdd9d8acd4c9118bd0fc85c1c208?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">eppstein</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3093">
+			2013-08-20 at 0734</a>		</div>
+
+		<p>The pumping lemma proof is pretty easy, but here&#8217;s another easy proof using derivatives. For any integer x, let p(x) be the distance from x to the next prime number. Then, if p(x) ≠ p(y), then d/d(0^x) L ≠ d/d(0^y) L where L = {x : |x| is prime}. But p(x) can be arbitrarily large; for instance, p(n!+1) ≥ n. Therefore, L has infinitely many derivatives.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt depth-3 highlander-comment" id="comment-3096">
+				<div id="div-comment-3096" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/42be3f892081fe6f5d06b0df50065528?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Mark</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3096">
+			2013-08-20 at 1358</a>		</div>
+
+		<p>eppstein: the claim &#8216;if p(x) ≠ p(y), then d/d(0^x) L ≠ d/d(0^y) L where L = {x : |x| is prime}. &#8216; is almost certainly true, but it&#8217;s not obvious from the definition of primality. This has to be true for arbitrary prime x, y if you want to conclude immediately that you have infinitely many distinct derivatives.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even depth-3 highlander-comment" id="comment-3098">
+				<div id="div-comment-3098" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1dc1fdd9d8acd4c9118bd0fc85c1c208?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://11011110.livejournal.com/' rel='external nofollow' class='url'>D. Eppstein</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3098">
+			2013-08-20 at 2025</a>		</div>
+
+		<p>You think it&#8217;s not obvious? I disagree. If p(x) ≠ p(y),  we can assume without loss of generality that p(x) &lt; p(y). Then x+p(x) is prime (the first prime after x), by definition of p, while y+p(x) is not prime (there is no prime until y+p(y), a larger number).  Therefore the two languages d/d(0^x) L and d/d(0^y) L will differ on the input 0^{min(p(x),p(y)}.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt depth-3 highlander-comment" id="comment-3100">
+				<div id="div-comment-3100" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/42be3f892081fe6f5d06b0df50065528?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Mark</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3100">
+			2013-08-21 at 0022</a>		</div>
+
+		<p>Ahh, I misunderstood what you were trying to do. So now you are finding an infinite set of pairs (x,y) that generate distinct derivatives, ok. But then how do you conclude that there are infinitely many derivatives? Consider the integral function f(x) = (-1)^x. There are infinitely many (x,y) pairs such that f(x) != f(y), but still the range of f is a constant 2.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment byuser comment-author-eppstein even depth-3 highlander-comment" id="comment-3101">
+				<div id="div-comment-3101" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/1dc1fdd9d8acd4c9118bd0fc85c1c208?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">eppstein</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3101">
+			2013-08-21 at 0126</a>		</div>
+
+		<p>Perhaps, in your zeal to find this argument non-obvious, you missed the sentence &#8220;But p(x) can be arbitrarily large.&#8221; Therefore there are infinitely many distinct values of p and infinitely many distinct derivatives.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt depth-3 highlander-comment" id="comment-3102">
+				<div id="div-comment-3102" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/42be3f892081fe6f5d06b0df50065528?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Mark</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3102">
+			2013-08-21 at 0309</a>		</div>
+
+		<p>Yes, you are right. Sorry. Quite dense of me not to see that.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 highlander-comment" id="comment-3085">
+				<div id="div-comment-3085" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/7d3cf77698dbeb77db8072adc2cd149c?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://gravatar.com/maxbucknell' rel='external nofollow' class='url'>Max Bucknell</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3085">
+			2013-08-19 at 1305</a>		</div>
+
+		<p>I understood the lemma, but not your explanation. But, I suppose I am an edge case, being a mathematics student who only dabbles in programming.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3085#respond' onclick='return addComment.moveForm("div-comment-3085", "3085", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-3087">
+				<div id="div-comment-3087" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/7a20097de286fccc680f2fb8a436fd03?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://gravatar.com/mac01021' rel='external nofollow' class='url'>mac01021mac</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3087">
+			2013-08-19 at 1531</a>		</div>
+
+		<p>I&#8217;m not prepared to say I necessarily think your hatred is 100% misguided, but there are some point worth considering:</p>
+<p>1&gt; Maybe there is some value in giving the students some practice thinking about logical propositions that are (structurally) nontrivial.  With enough such practice, it might become second nature, in which case the students will have enhanced their abilities to reason.</p>
+<p>2&gt; It might serve as an OK warm-up for the similar lemma about Context Free Languages.</p>
+<p>I expect that, if I were exposing the material to students, I would most likely begin from the informal appeal to the pigeonhole principle and the DFA with p states.  But, once I was satisfied that everyone understood, I would still want to show how to express the theorem with rigor and formality and nested quantifiers, with all of which I would want the students to develop a great degree of comfort.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3087#respond' onclick='return addComment.moveForm("div-comment-3087", "3087", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-3088">
+				<div id="div-comment-3088" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/669447704cd6a6e1685dbc425512bc1c?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">ulularem</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3088">
+			2013-08-19 at 1621</a>		</div>
+
+		<p>&#8220;By the same argument, any regular language has only a finite number of different derivatives.&#8221;</p>
+<p>From my naive reading, A* is a regular language with an infinite number of different derivatives (namely each A^n, for natural numbers n). For the obvious (canonical?) automaton of this language, taking these derivatives doesn&#8217;t change the start state. Does that mean something is only a derivative if it changes the start state and removes a prefix from words in the language?</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3088#respond' onclick='return addComment.moveForm("div-comment-3088", "3088", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-bosker bypostauthor odd alt depth-2 parent highlander-comment" id="comment-3089">
+				<div id="div-comment-3089" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b7d4b678a3b4ff1b80f5c6e70d87d04e?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://bosker.wordpress.com/' rel='external nofollow' class='url'>Robin Houston</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3089">
+			2013-08-19 at 1939</a>		</div>
+
+		<p>Hi. It sounds as though you understand what’s going on, but that you’ve got back-to-front what I meant by “different derivatives”. If w∈A* then d/dw(A*) = A*, so there is only one derivative, namely A*.</p>
+<p>Or maybe you intended that A be a strict subset of the ambient alphabet, in which case there are two different derivatives, because d/dv(A*) = ∅ if v∉A*.</p>
+<p>In either case there are a finite number. As you say, this is the same as the number of states in the obvious automaton for the language.</p>
+<p>If you can say which part confused you, I’ll try to make it clearer.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3089#respond' onclick='return addComment.moveForm("div-comment-3089", "3089", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment even depth-3 highlander-comment" id="comment-3090">
+				<div id="div-comment-3090" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/669447704cd6a6e1685dbc425512bc1c?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">ulularem</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3090">
+			2013-08-19 at 2050</a>		</div>
+
+		<p>I&#8217;m not sure what would make it more clear: on re-reading, I see exactly what you&#8217;re pointing out. Somehow I was counting derivatives as &#8220;distinct&#8221; if the strings used to generate them were distinct (and produced a non-empty language), but all your text points out that a derivative is a language, and hence A* = d/dv(A*), for all v.</p>
+<p>Thanks for the clarification.</p>
+
+		<div class="reply">
+					</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="comment-3091">
+				<div id="div-comment-3091" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/530deca15f97d5a6ec1ff880a3c34554?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Barney</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3091">
+			2013-08-19 at 2307</a>		</div>
+
+		<p>&#8220;If two are a struggle, five is cruelty.&#8221;</p>
+<p>Ha!  That is why I switched from mathematics to computer science.  In mathematics, you have to work through proofs that require many pages or even chapters to write.  In computer science, if it takes more than half a page, you write a program to solve it for you, because that&#8217;s usually simpler.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3091#respond' onclick='return addComment.moveForm("div-comment-3091", "3091", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+		<li class="comment even thread-even depth-1 parent highlander-comment" id="comment-3094">
+				<div id="div-comment-3094" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/03a0d48ec6f4b4f91fdf6292fd0904e0?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn">Dave</cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3094">
+			2013-08-20 at 1248</a>		</div>
+
+		<p>Your last example looks to have some errors in it.</p>
+<p>First, in your formula for d/d((0123)i)(C), I think you but the &#8220;+ 3i&#8221; on the wrong side of the equality. Shouldn&#8217;t it be:</p>
+<p>    { w∈{0,1,2,3}* | len(w∩{0,1,2}*) + 3i = 6 len(w∩{3}*)}</p>
+<p>Second, I don&#8217;t think it can be the case &#8220;that d/d((0123)^i)(C) contains the string (012)^i0123&#8243;. The number of 3&#8242;s must be proportial to i (in fact, it must be 3*i), it cannot be constant. I think if you were to change this to &#8220;for each i, d/d((0123)^i)(C) contains the string (0123)^i or something similar, the rest of the argument goes through.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3094#respond' onclick='return addComment.moveForm("div-comment-3094", "3094", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		<ul class="children">
+		<li class="comment byuser comment-author-bosker bypostauthor odd alt depth-2 highlander-comment" id="comment-3099">
+				<div id="div-comment-3099" class="comment-body">
+				<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/b7d4b678a3b4ff1b80f5c6e70d87d04e?s=32&amp;d=identicon&amp;r=G' class='avatar avatar-32' height='32' width='32' />			<cite class="fn"><a href='http://bosker.wordpress.com/' rel='external nofollow' class='url'>Robin Houston</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3099">
+			2013-08-20 at 2103</a>		</div>
+
+		<p>Thank you, Dave. There were indeed some errors, though I don’t think I quite agree about what they were.</p>
+<p>I was writing e.g. len(w∩{3}*) to mean the number of 3s in w, which doesn’t really make sense. I’ve changed that notation to something ad hoc. (Is there a standard notation for this? Anyone?)</p>
+<p>The notational issue aside, I think the expression for d/d((0123)<sup>i</sup>)(C) was correct. I have added a derivation, which I hope makes it clearer.</p>
+<p>Yes, the “d/d((0123)<sup>i</sup>)(C) contains the string (012)<sup>i</sup>0123” part was wrong. It should have been (012)<sup>i</sup> without the extra 0123.</p>
+<p>Thanks for prompting me to check this more carefully.</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3099#respond' onclick='return addComment.moveForm("div-comment-3099", "3099", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		<li class="pingback even thread-odd thread-alt depth-1 highlander-comment" id="comment-3104">
+				<div id="div-comment-3104" class="comment-body">
+				<div class="comment-author vcard">
+						<cite class="fn"><a href='http://mjtsai.com/blog/2013/08/21/i-hate-the-pumping-lemma/' rel='external nofollow' class='url'>Michael Tsai - Blog - The Pumping Lemma, The Pigeonhole Principle, and Differentiating Languages</a></cite> <span class="says">says:</span>		</div>
+		
+		<div class="comment-meta commentmetadata"><a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3104">
+			2013-08-21 at 2155</a>		</div>
+
+		<p>[&#8230;] Robin Houston (via @CompSciFact): [&#8230;]</p>
+
+		<div class="reply">
+			<a class='comment-reply-link' href='/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3104#respond' onclick='return addComment.moveForm("div-comment-3104", "3104", "respond", "1152")'>Reply</a>		</div>
+				</div>
+		</li><!-- #comment-## -->
+	</ul>
+
+	<div class="navigation">
+		<div class="alignleft"></div>
+		<div class="alignright"></div>
+	</div>
+
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/08/18/i-hate-the-pumping-lemma/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://bosker.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="f0c9b3a8cd" /><input type="hidden" name="_wp_http_referer" value="/2013/08/18/i-hate-the-pumping-lemma/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=1" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1289230950g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='1152' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1380959558" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="2873b61c94" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="153"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>			
+				</div>
+			</div>
+
+		
+		<div class="navigation">
+			<p class="alignleft"></p>
+			<p class="alignright"><a href="http://bosker.wordpress.com/2013/08/16/using-group-theory-to-understand-unix-command-substitution/" rel="prev">The algebra of Unix command&nbsp;substitution</a> &raquo;</p>
+		</div>
+
+	
+</div> <!-- close entry-content -->
+
+	<div id="supplementary">
+		<div class="meta">
+
+					<div class="post-nav">
+				<h3>What&rsquo;s this?</h3>
+				<p>You are currently reading <strong>I hate the Pumping&nbsp;Lemma</strong> at <a href="http://bosker.wordpress.com">Bosker Blog</a>.</p>
+
+				<h3>meta</h3>
+				<ul class="single-post-meta">
+					<li><strong>Author:</strong> Robin Houston</li>
+					<li><strong>Comments:</strong> <a href="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comments" title="Comment on I hate the Pumping&nbsp;Lemma">27 Comments</a></li>
+					<li><strong>Categories:</strong> <a href="http://bosker.wordpress.com/category/chatter/" title="View all posts in chatter" rel="category tag">chatter</a></li>
+				</ul>
+				<p class="edit"></p>
+			</div>
+
+		
+	</div> <!-- close meta -->
+	</div> <!-- close supplementary -->
+
+</div> <!-- close content -->
+<div id="footer">
+
+	<div id="footer-contact">
+		<p><a href="http://wordpress.com/?ref=footer" rel="generator">Blog at WordPress.com</a>.</p>
+		<p><a href="http://theme.wordpress.com/credits/bosker.wordpress.com/" title="Learn about customizing this theme with the Custom Design upgrade">Customized Oulipo Theme</a>. </p>
+	</div>
+
+</div>
+
+</div> <!-- close wrapper -->
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom" height="1" width="1" alt="" /></div></noscript>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-3a9847a69faff621162e534f491ef1da">
+	</div>
+	<div class="grofile-hash-map-b7d4b678a3b4ff1b80f5c6e70d87d04e">
+	</div>
+	<div class="grofile-hash-map-9697c4e6aa33ffcd4a119989a833b5ec">
+	</div>
+	<div class="grofile-hash-map-d4de87d026a838dcac425928466d24fa">
+	</div>
+	<div class="grofile-hash-map-d2e1f44aaeb9cc9e6a003eeb5d8384df">
+	</div>
+	<div class="grofile-hash-map-dc5b53a987e119021dd2fc3d4f8db46b">
+	</div>
+	<div class="grofile-hash-map-41753eabdbf70c784ebcada6a981d63c">
+	</div>
+	<div class="grofile-hash-map-69b08dc9a36ac7631243969b19c9ea5f">
+	</div>
+	<div class="grofile-hash-map-42be3f892081fe6f5d06b0df50065528">
+	</div>
+	<div class="grofile-hash-map-1dc1fdd9d8acd4c9118bd0fc85c1c208">
+	</div>
+	<div class="grofile-hash-map-1dc1fdd9d8acd4c9118bd0fc85c1c208">
+	</div>
+	<div class="grofile-hash-map-7d3cf77698dbeb77db8072adc2cd149c">
+	</div>
+	<div class="grofile-hash-map-7a20097de286fccc680f2fb8a436fd03">
+	</div>
+	<div class="grofile-hash-map-669447704cd6a6e1685dbc425512bc1c">
+	</div>
+	<div class="grofile-hash-map-530deca15f97d5a6ec1ff880a3c34554">
+	</div>
+	<div class="grofile-hash-map-03a0d48ec6f4b4f91fdf6292fd0904e0">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/bosker.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/bosker.wordpress.com\/wp-login.php?action=logout&_wpnonce=36ee73df56","homeURL":"http:\/\/bosker.wordpress.com\/","postID":"1152","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1379020420j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Bosker Blog&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 599 other followers</p>
+			<p><input type="email" name="email" style="width: 95%; padding: 1px 2px" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="235722"/>
+			<input type="hidden" name="source" value="http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="30836421d9" /><input type="hidden" name="_wp_http_referer" value="/2013/08/18/i-hate-the-pumping-lemma/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/bosker.wordpress.com\/2013\/08\/18\/i-hate-the-pumping-lemma\/":1152}	</script>
+	<div id="sharing_email" style="display: none;">
+		<form action="/2013/08/18/i-hate-the-pumping-lemma/" method="post">
+			<label for="target_email">Send to Email Address</label>
+			<input type="text" name="target_email" id="target_email" value="" />
+
+			
+				<label for="source_name">Your Name</label>
+				<input type="text" name="source_name" id="source_name" value="" />
+
+				<label for="source_email">Your Email Address</label>
+				<input type="text" name="source_email" id="source_email" value="" />
+
+			
+			<div class="recaptcha" id="sharing_recaptcha"></div><input type="hidden" name="recaptcha_public_key" id="recaptcha_public_key" value="6LcYW8MSAAAAADBAuEH9yaPcF7lWh11Iq62ZKtoo" />
+			<img style="float: right; display: none" class="loading" src="http://s2.wp.com/wp-content/mu-plugins/post-flair/sharing/images/loading.gif?m=1315610318g" alt="loading" width="16" height="16" />
+			<input type="submit" value="Send Email" class="sharing_send" />
+			<a href="#cancel" class="sharing_cancel">Cancel</a>
+
+			<div class="errors errors-1" style="display: none;">
+				Post was not sent - check your email addresses!			</div>
+
+			<div class="errors errors-2" style="display: none;">
+				Email check failed, please try again			</div>
+
+			<div class="errors errors-3" style="display: none;">
+				Sorry, your blog cannot share posts by email.			</div>
+		</form>
+	</div>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-google-plus-1' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomgoogle-plus-1', 'menubar=1,resizable=1,width=480,height=550' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-linkedin' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomlinkedin', 'menubar=1,resizable=1,width=580,height=450' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						var requests = [];
+						jQuery( '.jetpack-likes-widget-wrapper' ).each( function( i ) {
+							var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+							var match = regex.exec( this.id );
+							if ( ! match || match.length != 5 )
+								return;
+
+							var info = {
+								blog_id: match[2],
+								width:   this.width
+							};
+
+							if ( 'post' == match[1] ) {
+								info.post_id = match[3];
+							} else if ( 'comment' == match[1] ) {
+								info.comment_id = match[3];
+							}
+
+							info.obj_id = match[4];
+
+							requests.push( info );
+						});
+
+						JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 10 );
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??/wp-content/js/devicepx.js,/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1373391538j'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'235722','v':'wpcom','tz':'1','user_id':'0','post':'1152','subd':'bosker'});
+ex_go({'crypt':'UE40eW5QN0p8M2Y/RE1TaVhzUzFMbjdWNHpwZGhTayxPSUFCMGNrd29+Smw0TDhnZmRTK0hlRi9QSGh6bi9GXVhBJWIlZlR5U1JMLU8/MkNtblkvY1dkV3l3JVQmZk4rWkoyTSVbZ01YcjBwT2hiX2wzfGxOPyx0UnZbRU1CQ1lmM0pQdVJiWTVsVVF+V0ktLTBVY0lsV2puMHRvTCZfL0c0R1E4Z0d5WG9tREF3a2dBLTJKQmhHfEs2fCUvb112ZTZGcHw2S0FYLWljXURFcXxoTUhBRFQ3M2M4elpmd1dJLElDMkYlMkdzLEQuTmt8fEtyQUduMDklR35vd3hzUEZ1OEhrUVhUXzZrTDBvbllHbUlyTUxqXVhqY1dBZTJTfEQlUyxuSi10JS96bzI='});
+addLoadEvent(function(){linktracker_init('235722',1152);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>

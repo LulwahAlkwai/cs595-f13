@@ -1,0 +1,314 @@
+   #[1]Edit this page [2]Wikipedia (en) [3]copyright [4]Wikipedia Atom
+   feed
+
+     * [5]Home
+     * [6]Random
+     * [7]Nearby
+
+     * [8]Watchlist
+     * [9]Uploads
+     * [10]Settings
+     * [11]Log in
+
+     * [12]About Wikipedia
+     * [13]Disclaimers
+
+   ____________________ Go
+
+Event chain methodology
+
+     *
+     *
+     * [14]Talk
+     *
+
+   Event chain diagram
+
+   Event chain methodology is an uncertainty modeling and schedule
+   [15]network analysis technique that is focused on identifying and
+   managing events and event chains that affect [16]project schedules.
+   Event chain methodology is the next advance beyond [17]critical path
+   method and [18]critical chain project management.^[19][1]
+
+   Event chain methodology helps to mitigate the effect of
+   [20]motivational and [21]cognitive biases in [22]estimating and
+   [23]scheduling.^[24][2]^[25][3]
+
+Event Chain Methodology Principles[26]Edit
+
+Moment of risk and state of activity[27]Edit
+
+   Moment of risk and state of activity
+
+   An activity (task) in most real life processes is not a continuous
+   uniform procedure. Tasks are affected by external events, which
+   transform an activity from one state to another.
+
+   One of the important properties of an event is the moment when an event
+   occurs during the course of an activity. This moment, when an event
+   occurs, in most cases is probabilistic and can be defined using
+   [28]statistical distribution.
+
+Event Chains[29]Edit
+
+   Events can cause other events, which will create event chains. These
+   event chains can significantly affect the course of the project. For
+   example, requirement changes can cause an activity to be delayed. To
+   accelerate the activity, the project manager allocates a resource from
+   another activity, which then leads to a missed deadline. Eventually,
+   this can lead to the failure of the project.
+
+Monte Carlo Simulations[30]Edit
+
+   Once events and event chains are defined, quantitative analysis using
+   [31]Monte Carlo simulation can be performed to quantify the cumulative
+   effect of the events. Probabilities and effects of risks are used as
+   input data for Monte Carlo simulation of the project schedule.^[32][4]
+   In most real life projects, it is necessary to supplement the
+   information regarding the uncertainties expressed as an event, with
+   distributions related to duration, start time, cost, and other
+   parameters.
+
+Critical Event Chains[33]Edit
+
+   The single events or the event chains that have the most potential to
+   affect the projects are the "critical events" or "critical chains of
+   events." By identifying critical events or critical chains of events,
+   we can mitigate their negative effects. These critical chains of events
+   can be identified by analyzing the correlations between the main
+   project parameters, such as project duration or cost, and the event
+   chains.
+
+Performance Tracking with Event Chains[34]Edit
+
+   Monitoring the activity's progress ensures that updated information is
+   used to perform the analysis. During the course of the project, the
+   probability and time of the events can be recalculated based on actual
+   data. The main issue with performance tracking is forecasting an
+   activity's duration and cost if an activity is partially completed and
+   certain events are assigned to the activity. The simple heuristic
+   approach to this problem is to analyze the moment of risk, which is
+   defined as one of the event parameters. Advanced analysis can be
+   performed using a Bayesian approach.
+
+Event Chain Diagrams[35]Edit
+
+   Event Chain Diagrams are visualizations that show the relationships
+   between events and tasks and how the events affect each other. The
+   simplest way to represent these chains is to depict them as arrows
+   associated with certain tasks or time intervals on the Gantt chart.
+   Different events and event chains can be displayed using different
+   colors. Events can be global (for all tasks in the project) and local
+   (for a particular task). By using Event Chain Diagrams to visualize
+   events and event chains, the modeling and analysis of risks and
+   uncertainties can be significantly simplified.
+
+Event Chain Methodology Phenomena[36]Edit
+
+Repeated Activities[37]Edit
+
+   Repeated Acitivity
+
+   Sometimes events can cause the start of an activity that has already
+   been completed. This is a very common scenario for real life projects;
+   sometimes a previous activity must be repeated based on the results of
+   a succeeding activity. Modeling of these scenarios using event chain
+   methodology is simple. The original project schedule does not need to
+   be updated, as all that is required is to define the event and assign
+   it to an activity that points to the previous activity. In addition, a
+   limit to the number of times an activity can be repeated needs to be
+   defined.
+
+Event Chains and Risk Mitigation[38]Edit
+
+   Mitigation plan
+
+   If event or event chain occurs during the course of a project, it may
+   require some mitigation effort. In some cases, mitigation plans can be
+   generated. Mitigation plans are an activity or group of activities
+   (small schedule) that augment the project schedule if a certain event
+   occurs. The solution is to assign the mitigation plan to an event or
+   event chain. These small schedules will be triggered when an event
+   chain occurs. The same mitigation plan can be used for different
+   events.
+
+Resource Allocation Based on Events[39]Edit
+
+   One potential event is the reassignment of a resource from one activity
+   to another, which can occur under certain conditions. For example, if
+   an activity requires more resources to complete it within a fixed
+   period, this will trigger an event to reallocate the resource from
+   another activity. Reallocation of resources can also occur when
+   activity duration reaches a certain deadline or the cost exceeds a
+   certain value. Events can be used to model different situations with
+   resources, e.g. temporary leave, illness, vacations, etc.
+
+See also[40]Edit
+
+     * [41]Monte Carlo simulation
+     * [42]List of project management topics
+     * [43]Program Evaluation and Review Technique
+     * [44]Project
+     * [45]Project management
+     * [46]Project planning
+     * [47]Work breakdown structure
+     * [48]List of project management software
+
+References[49]Edit
+
+    1. [50]^ Virine, L. and Trumper M., Project Decisions: The Art and
+       Science (2007). Management Concepts. Vienna, VA, [51]ISBN
+       978-1-56726-217-9
+    2. [52]^ Robyn M. Dawes and Bernard Corrigan, ``Linear Models in
+       Decision Making'' Psychological Bulletin 81, no. 2 (1974): 93-106.
+    3. [53]^ Tversky, A., and D. Kahneman, ``Judgment under uncertainty:
+       heuristics and biases'' Science 185 (1972): 1125-1130.
+    4. [54]^ Williams, T. ``Why Monte Carlo simulations of project
+       networks can mislead''. Project Management Journal, Vol 23. No 3,
+       (2006): 53-61
+
+Further reading[55]Edit
+
+     * Arnaud Doucet, Nando de Freitas and Neil Gordon, Sequential Monte
+       Carlo methods in practice, 2001, [56]ISBN 0-387-95146-6.
+     * Hammond, J.S. and Keeney, R.L. and Raiffa, H., Smart Choices: A
+       Practical Guide to Making Better Decisions (1999). Harvard Business
+       School Press
+     * D. Kahneman and A. Tversky (ed.) (1982). Judgement under
+       Uncertainty: Heuristics and Biases. Cambridge University Press.
+       [57]ISBN 0-521-28414-7
+     * Keeney, R.L.,Value-focused thinking -- A Path to Creative
+       Decisionmaking (1992). Harvard University Press. [58]ISBN
+       0-674-93197-1
+     * Matheson, David, and Matheson, Jim, The Smart Organization:
+       Creating Value through Strategic R&D (1998). Harvard Business
+       School Press. [59]ISBN 0-87584-765-X
+     * Raiffa, Howard, Decision Analysis: Introductory Readings on Choices
+       Under Uncertainty (1997). McGraw Hill. [60]ISBN 0-07-052579-X
+     * Robert C.P. and G. Casella. "Monte Carlo Statistical Methods"
+       (second edition). New York: Springer-Verlag, 2004, [61]ISBN
+       0-387-21239-6
+     * Skinner, David, Introduction to Decision Analysis, 2nd Edition
+       (1999). Probabilistic. [62]ISBN 0-9647938-3-0
+     * Smith, J.Q., Decision Analysis: A Bayesian Approach (1988), Chapman
+       and Hall. [63]ISBN 0-412-27520-1
+
+External links[64]Edit
+
+   Wikimedia Commons has media related to: [65]Event chain methodology
+     * [66]Event Chain Methodology in Details
+     * [67]U.S. EPA's General Risk Management Program Guidance (April
+       2004)
+     * [68]NIST Special Publication 800-30 Risk Management Guide for
+       Information Technology Systems (July 2002)
+     * [69]Project Management Using Event Chain Methodology
+     * [70]Project Planning Using Event Chain Methodology
+     * [71]Project Management for Construction, by Chris Hendrickson
+     * [72]Resource-Constrained Project Scheduling: Past Work and New
+       Directions
+     * [73]Petri Nets for Project Management and Resource Levelling
+
+Read in another language
+
+   This page is available in 1 language
+     * [74]Euskara
+
+   [75]Last modified on 16 September 2013, at 14:43
+     * Wikipedia ®
+          + Mobile
+          + [76]Desktop
+     * Content is available under [77]CC BY-SA 3.0 unless otherwise noted.
+
+     * [78]Terms of Use
+     * [79]Privacy
+
+References
+
+   Visible links
+   1. http://en.m.wikipedia.org/w/index.php?title=Event_chain_methodology&action=edit
+   2. http://en.m.wikipedia.org/w/opensearch_desc.php
+   3. http://creativecommons.org/licenses/by-sa/3.0/
+   4. http://en.m.wikipedia.org/w/index.php?title=Special:RecentChanges&feed=atom
+   5. http://en.m.wikipedia.org/wiki/Main_Page
+   6. http://en.m.wikipedia.org/wiki/Special:Random
+   7. http://en.m.wikipedia.org/wiki/Special:Nearby
+   8. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Special%3AWatchlist
+   9. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Special%3AUploads
+  10. http://en.m.wikipedia.org/w/index.php?title=Special:MobileOptions&returnto=Event+chain+methodology
+  11. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Event+chain+methodology&returntoquery=welcome%3Dyes
+  12. http://en.m.wikipedia.org/wiki/Wikipedia:About
+  13. http://en.m.wikipedia.org/wiki/Wikipedia:General_disclaimer
+  14. http://en.m.wikipedia.org/wiki/Talk:Event_chain_methodology
+  15. http://en.m.wikipedia.org/wiki/Network_theory
+  16. http://en.m.wikipedia.org/wiki/Project
+  17. http://en.m.wikipedia.org/wiki/Critical_path_method
+  18. http://en.m.wikipedia.org/wiki/Critical_chain
+  19. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_note-1
+  20. http://en.m.wikipedia.org/wiki/Motivation
+  21. http://en.m.wikipedia.org/wiki/Cognitive_biases
+  22. http://en.m.wikipedia.org/wiki/Estimation
+  23. http://en.m.wikipedia.org/wiki/Scheduling_(production_processes)
+  24. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_note-2
+  25. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_note-3
+  26. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/1
+  27. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/2
+  28. http://en.m.wikipedia.org/wiki/Statistical_distribution
+  29. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/3
+  30. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/4
+  31. http://en.m.wikipedia.org/wiki/Monte_Carlo_simulation
+  32. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_note-4
+  33. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/5
+  34. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/6
+  35. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/7
+  36. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/8
+  37. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/9
+  38. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/10
+  39. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/11
+  40. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/12
+  41. http://en.m.wikipedia.org/wiki/Monte_Carlo_simulation
+  42. http://en.m.wikipedia.org/wiki/List_of_project_management_topics
+  43. http://en.m.wikipedia.org/wiki/Program_Evaluation_and_Review_Technique
+  44. http://en.m.wikipedia.org/wiki/Project
+  45. http://en.m.wikipedia.org/wiki/Project_management
+  46. http://en.m.wikipedia.org/wiki/Project_planning
+  47. http://en.m.wikipedia.org/wiki/Work_breakdown_structure
+  48. http://en.m.wikipedia.org/wiki/List_of_project_management_software
+  49. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/13
+  50. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_ref-1
+  51. http://en.m.wikipedia.org/wiki/Special:BookSources/9781567262179
+  52. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_ref-2
+  53. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_ref-3
+  54. http://en.m.wikipedia.org/wiki/Event_chain_methodology#cite_ref-4
+  55. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/14
+  56. http://en.m.wikipedia.org/wiki/Special:BookSources/0387951466
+  57. http://en.m.wikipedia.org/wiki/Special:BookSources/0521284147
+  58. http://en.m.wikipedia.org/wiki/Special:BookSources/0674931971
+  59. http://en.m.wikipedia.org/wiki/Special:BookSources/087584765X
+  60. http://en.m.wikipedia.org/wiki/Special:BookSources/007052579X
+  61. http://en.m.wikipedia.org/wiki/Special:BookSources/0387212396
+  62. http://en.m.wikipedia.org/wiki/Special:BookSources/0964793830
+  63. http://en.m.wikipedia.org/wiki/Special:BookSources/0412275201
+  64. http://en.m.wikipedia.org/wiki/Event_chain_methodology#editor/15
+  65. http://commons.wikimedia.org/wiki/Category:Event_chain_methodology
+  66. http://www.projectdecisions.org/paper/Paper_EventChainMeethodology.pdf
+  67. http://yosemite.epa.gov/oswer/ceppoweb.nsf/content/EPAguidance.htm#General
+  68. http://csrc.nist.gov/publications/nistpubs/800-30/sp800-30.pdf
+  69. http://www.intaver.com/Articles/RP_Art_EventChainMethodology.html
+  70. http://www.planningengineers.org/publications/papers_download.aspx?id=20
+  71. http://www.ce.cmu.edu/pmbook/10_Fundamental_Scheduling_Procedures.html
+  72. http://www.dbcenter.cise.ufl.edu/seek/Publications/RCPSP_YGO.pdf
+  73. http://www.springerlink.com/index/CAGPW559AX96QR0R.pdf
+  74. http://eu.m.wikipedia.org/wiki/Gertakizunen_Katearen_Metodologia
+  75. http://en.m.wikipedia.org/w/index.php?title=Event_chain_methodology&action=history
+  76. http://en.wikipedia.org/w/index.php?title=Event_chain_methodology&mobileaction=toggle_view_desktop
+  77. http://creativecommons.org/licenses/by-sa/3.0/
+  78. http://wikimediafoundation.org/wiki/Terms_of_use?useformat=mobile
+  79. http://wikimediafoundation.org/wiki/Privacy_policy
+
+   Hidden links:
+  80. http://en.m.wikipedia.org/wiki/Special:MobileMenu#mw-mf-page-left
+  81. https://en.m.wikipedia.org/w/index.php?title=Special:UserLogin&returnto=Event+chain+methodology
+  82. http://en.m.wikipedia.org/wiki/File:EventChain.jpg
+  83. http://en.m.wikipedia.org/wiki/File:EventChainMethodology.jpg
+  84. http://en.m.wikipedia.org/wiki/File:RepeatedActivity.jpg
+  85. http://en.m.wikipedia.org/wiki/File:MitigationPlan.jpg

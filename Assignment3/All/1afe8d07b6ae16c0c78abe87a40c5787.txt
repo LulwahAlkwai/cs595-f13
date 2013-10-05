@@ -1,0 +1,610 @@
+<html>
+  <!--
+Sinclair Scientific calculator simulator
+Ken Shirriff, http://righto.com/sinclair
+Based on patent US3934233 and visual 6502 reverse engineering
+-->
+  <head>
+  <title>Reversing Sinclair's amazing 1974 calculator hack - half the ROM of the HP-35</title>
+  <meta name="description" content="Register-level simulator of the Sinclair Scientific calculator">
+  <meta name="keywords" content="calculator,simulator,0805, Sinclair Scientific, TI,Texas Instruments, reverse engineering">
+  <meta name="author" content="Ken Shirriff">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.3.2/jquery.min.js"></script>
+<link href='http://fonts.googleapis.com/css?family=Chivo:400' rel='stylesheet' type='text/css'/>
+
+<script src="calcImage.js"></script>
+<script src="controller.js"></script>
+<script src="cpu.js"></script>
+<script src="display.js"></script>
+<script src="instruction.js"></script>
+<script src="keygrid.js"></script>
+<script src="masks_sinclair.js"></script>
+<script src="model.js"></script>
+<script src="registers.js"></script>
+<script src="sourceCode_sinclair.js"></script>
+<script src="sourceWindow.js"></script>
+<!-- header styles -->
+<style type="text/css">
+  body {
+    font-family: arial;
+    margin: 0;
+  }
+
+  #header {
+    padding: 0;
+    margin: 0;
+    border-top: dotted 1px #444444;
+    border-bottom: dotted 1px #444444;
+    background: #f6fbf7;
+  }
+
+  h1 {
+    margin: 8px 0 0 0;
+    padding-top:20px;
+    padding-right:0px;
+    padding-bottom:2px;
+    padding-left:5%;
+    color:#444444;
+    background:#f6fbf7;
+    font:normal 300% Chivo,Verdana,Sans-Serif;
+    letter-spacing:-2px;
+  }
+
+  .description {
+    padding:0px;
+    margin-top:7px;
+    margin-right:12%;
+    margin-bottom:7px;
+    margin-left:5%;
+    color:#444444;
+    background:transparent;
+    font:bold 100% Verdana,Sans-Serif;
+  }
+
+  code { font-size: 1.5em; }
+
+  div.cite {font-size: .8em;.; font-style: italic; color: #888; margin-bottom: 9px;}
+
+  .cite a {color: #888 !important;}
+
+  a.ref { color: gray;vertical-align: super; text-decoration: none; font-size:60%;margin-left: 2px;}
+
+  a img.hilite {
+    border: 1px solid;
+    color: #888;
+  }
+  a:link img.hilite, a:visited img.hilite {
+    color: #888;
+  }
+  a:hover img.hilite {
+    color: #f66;
+  }
+  a:active img.hilite {
+    color: #33c;
+  }
+</style>
+  
+<!-- content styles -->
+<style type="text/css">
+  .content {
+    margin: 20px;
+  }
+
+  h3 {
+    color: #444444;
+    font: normal 160% Verdana,Sans-Serif;
+    letter-spacing: -1px;
+  }
+
+  #calcImageDiv {
+    float: left;
+    height:400px;
+    position: relative;
+  }
+
+  #calcImage {
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+
+  button {
+    border: 1px solid #ccc;
+    width: 33px;
+    height: 33px;
+    cursor: pointer;
+  }
+
+  .cond, .cond th, .cond tr, .cond td {
+    border: none !important;
+    text-align: left !important;
+  }
+
+  td {
+    font-family: courier, fixed;
+  }
+
+  #registers {
+    border-collapse: collapse;
+    border-left: 1px solid #ddd;
+  }
+
+  #registers th {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 10px;
+    border-left: 1px solid #ddd;
+  }
+
+  #registers td {
+    text-align: center;
+    min-width: 43px;
+    width: 43px;
+    border-top: 1px solid #ddd;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .mask {
+    background-color: #addff2;
+  }
+
+  #sourceWindow {
+    font-size: 14px;
+    line-height: 1em;
+    width: 540px;
+    height: 450px;
+    border: 1px solid #ddd;
+    font-family: courier, fixed;
+    font-size: 12px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+  }
+
+  div#instruction {
+    display: inline-block;
+    margin-left: 19px;
+  }
+    
+  div#sourceWindow div {
+    font-family: courier, fixed;
+    white-space: pre;
+    color: #ccc;
+  }
+
+  .addr {
+    color: #844;
+  }
+
+  .instr {
+    color: #000;
+  }
+  
+  .comment {
+    color: #090;
+  }
+
+  .highlight {
+    background-color: #addff2;
+  }
+
+  #speed {
+    font-size: 14px;
+    height: 33px;
+    vertical-align: top;
+  }    
+</style>
+
+<script>
+
+$(document).ready(function() {
+  var model = new Model(objectCode, 1 /* sinclair */);
+  var keys = [
+    ['1', '2', '3', '4', '5', '6', '7', '8', '9', ''],
+    ['C', '\u25bc' /* down */, '+', '-', '\u00f7' /* div */, '\u00d7' /* mult */, '\u25b2' /* up */, 'E', '0', ''],
+    ['', '', '', '', '', '', '', '', '', '']];
+  // Initialize the positions of the keys in the image
+  var xvals = [[30, 88], [112, 166], [192, 246], [270, 326]];
+  var yvals = [[400, 438], [478, 516], [556, 594], [636, 674], [712, 750]];
+  var keypos = {
+    '\u25b2' /* up */: [xvals[0], yvals[0]],
+    'C': [xvals[1], yvals[0]],
+    '7': [xvals[0], yvals[1]],
+    '8': [xvals[1], yvals[1]],
+    '9': [xvals[2], yvals[1]],
+    '\u00d7' /* mult */: [xvals[3], yvals[1]],
+    '4': [xvals[0], yvals[2]],
+    '5': [xvals[1], yvals[2]],
+    '6': [xvals[2], yvals[2]],
+    '\u00f7' /* div */: [xvals[3], yvals[2]],
+    '1': [xvals[0], yvals[3]],
+    '2': [xvals[1], yvals[3]],
+    '3': [xvals[2], yvals[3]],
+    '+': [xvals[3], yvals[3]],
+    '\u25bc' /* down */: [xvals[0], yvals[4]],
+    '0': [xvals[1], yvals[4]],
+    'E': [xvals[2], yvals[4]],
+    '-': [xvals[3], yvals[4]],
+    'POWER': [[236, 284], [384, 430]]};
+  var keygrid = new Keygrid($("#keygrid")[0], model, keys);
+  var calcImage = new CalcImage($("#calcImage"), model, keypos, 360, 800,
+      "https://lh3.googleusercontent.com/-RbaE5TQMJog/Uh7FxyJR8II/AAAAAAAAVLQ/WiRqlQQhMWM/s800/virtual_sinclair_scientific_off.png");
+  var registers = new Registers($("#registers")[0], model);
+  var display = new Display($("#calcDisplay"), model, 1 /* sinclair */);
+  var sourceWindow = new SourceWindow($("#sourceWindow"), model, sourceCode);
+  var cpu = new Cpu(model, masks, 1 /* sinclair */);
+  var instruction = new Instruction($("#instruction"), model);
+  var controller = new Controller(calcImage, model, keygrid, display, null /* display2 */, sourceWindow, cpu,
+    registers, instruction, $("#playButton"), $("#stopButton"), $("#stepButton"));
+
+  $("#speed").change(function(e) { model.speed = this.options[this.selectedIndex].id;});
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-3782444-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+</body>
+<div id="header-wrapper" style="font-size:small">
+<div class="header section" id="header"><div class="widget Header" id="Header1">
+<div id="header-inner" style="background-image: url(https://lh5.googleusercontent.com/-OyFd36t2Doo/T7nMSchO46I/AAAAAAAAKjM/ynuhCCEf_bs/s800/background.jpg); background-position: right ; min-height: 105px; height: 105px; background-repeat: no-repeat; ">
+<div class="titlewrapper" style="background: transparent" onclick="window.location='http://righto.com'">
+<h1 class="title" style="background: transparent; border-width: 0px">
+Ken Shirriff's blog
+</h1>
+</div>
+<div class="descriptionwrapper">
+	<!--
+<p class="description"><span>Chargers, microprocessors, Arduino, and whatever</span></p>
+</div>
+-->
+</div>
+</div></div>
+</div>
+
+<div class="content">
+	<h3>Reversing Sinclair's amazing 1974 calculator hack - half the ROM of the HP-35</h3>
+  In a hotel room in Texas, Clive Sinclair had a big problem. He wanted to sell a cheap scientific calculator that would grab the market from expensive calculators such as the popular HP-35. Hewlett-Packard had taken two years, 20 engineers, and a million dollars to <a href="http://www.hpmuseum.org/hp35.htm">design the HP-35</a>, which used
+  <a href="http://www.jacques-laporte.org/HP%2035%20Saga.htm">5 complex chips</a>
+  and sold for $395. Sinclair's partnership with calculator manufacturer Bowmar had gone nowhere. Now Texas Instruments offered him an inexpensive <a href="http://righto.com/ti">calculator chip</a> that could barely do four-function math. Could he use this chip to build a $100 scientific calculator?
+<p>
+Texas Instruments' engineers said this was impossible - their chip only had 3 storage registers, no subroutine calls, and no storage for constants such as &pi;. The ROM storage in the calculator held only 320 instructions, just enough for basic arithmetic. How could they possibly squeeze any scientific functions into this chip?
+  <p>
+Fortunately Clive Sinclair, head of Sinclair Radionics, had a secret weapon - programming whiz and math PhD Nigel Searle. In a few days in Texas, they came up with new algorithms and wrote the code for the world's first single-chip scientific calculator, somehow programming sine, cosine, tangent, arcsine, arccos, arctan, log, and exponentiation into the chip. The engineers at Texas Instruments were amazed.
+  <p>
+How did they do it? Up until now it's been a mystery. But through reverse engineering, I've determined the exact algorithms and implemented a simulator that runs the calculator's actual code. The reverse-engineered code along with my detailed comments is in the window below.
+  <p>
+<div id="calcImageDiv">
+  <img id="calcImage" src="https://lh6.googleusercontent.com/-lSP3ZaJc5PI/Uh7FxWSS90I/AAAAAAAAVLE/qNQnxRIziSE/s800/virtual_sinclair_scientific.png" width=225 height=500></img>
+  <canvas id="calcDisplay" width="187" height="38" style="position: absolute; top: 33px; left: 20px;"></canvas>
+</div>
+<div style="margin-left: 250px; ">
+  <div id="sourceWindow"></div>
+  <br/>
+  <button id="playButton" title="run" style="background:url(http://files.righto.com/calculator/play.png) no-repeat 2px 2px;"></button>
+  <button id="stopButton" title="stop" style="background:url(http://files.righto.com/calculator/stop.png) no-repeat 2px 2px;"></button>
+  <button id="stepButton" title="step" style="background:url(http://files.righto.com/calculator/step.png) no-repeat 2px 2px;"></button>
+  <select id="speed"><option id="slow">Slow</option>
+  <option id="auto" selected=1>Autospeed</option>
+  <option id="fast">Fast</option>
+  </select>
+  <div id="instruction"></div>
+</div>
+<div style="clear: both;"></div>
+<p>
+<p>
+<canvas id="keygrid" width="405" height="95" style="margin-left: 0"></canvas>
+<table id="registers">
+  <tr>
+    <td id="registers-a10"></td>
+    <td id="registers-a9"></td>
+    <td id="registers-a8"></td>
+    <td id="registers-a7"></td>
+    <td id="registers-a6"></td>
+    <td id="registers-a5"></td>
+    <td id="registers-a4"></td>
+    <td id="registers-a3"></td>
+    <td id="registers-a2"></td>
+    <td id="registers-a1"></td>
+    <td id="registers-a0"></td>
+    <th>A register</th>
+  </tr>
+  <tr>
+    <td id="registers-b10"></td>
+    <td id="registers-b9"></td>
+    <td id="registers-b8"></td>
+    <td id="registers-b7"></td>
+    <td id="registers-b6"></td>
+    <td id="registers-b5"></td>
+    <td id="registers-b4"></td>
+    <td id="registers-b3"></td>
+    <td id="registers-b2"></td>
+    <td id="registers-b1"></td>
+    <td id="registers-b0"></td>
+    <th>B register</th>
+  </tr>
+  <tr>
+    <td id="registers-c10"></td>
+    <td id="registers-c9"></td>
+    <td id="registers-c8"></td>
+    <td id="registers-c7"></td>
+    <td id="registers-c6"></td>
+    <td id="registers-c5"></td>
+    <td id="registers-c4"></td>
+    <td id="registers-c3"></td>
+    <td id="registers-c2"></td>
+    <td id="registers-c1"></td>
+    <td id="registers-c0"></td>
+    <th>C register</th>
+  </tr>
+  <tr>
+    <td id="registers-af10" title="RET1FLAG"></td>
+    <td id="registers-af9" title="TAN"></td>
+    <td id="registers-af8"></td>
+    <td id="registers-af7"></td>
+    <td id="registers-af6" title="UP_LOW"></td>
+    <td id="registers-af5" title="COS_TAN"></td>
+    <td id="registers-af4"></td>
+    <td id="registers-af3"></td>
+    <td id="registers-af2" title="TAN"></td>
+    <td id="registers-af1" title="RET1FLAG"></td>
+    <td id="registers-af0" title="LOW"></td>
+    <th>A flags</th>
+  </tr>
+  <tr>
+  <td id="registers-bf10" title="EMODE"></td>
+    <td id="registers-bf9" title="NEWEXP"></td>
+    <td id="registers-bf8"></td>
+    <td id="registers-bf7" title="OPDONE"></td>
+    <td id="registers-bf6"></td>
+    <td id="registers-bf5"></td>
+    <td id="registers-bf4"></td>
+    <td id="registers-bf3"></td>
+    <td id="registers-bf2"></td>
+    <td id="registers-bf1"></td>
+    <td id="registers-bf0"></td>
+    <th>B flags</th>
+  </tr>
+  <tr>
+    <td id="registers-m10"></td>
+    <td id="registers-m9"></td>
+    <td id="registers-m8"></td>
+    <td id="registers-m7"></td>
+    <td id="registers-m6"></td>
+    <td id="registers-m5"></td>
+    <td id="registers-m4"></td>
+    <td id="registers-m3"></td>
+    <td id="registers-m2"></td>
+    <td id="registers-m1"></td>
+    <td id="registers-m0"></td>
+    <th>Mask / constant</th>
+  </tr>
+  </table>
+  <table>
+  <tr class="cond">
+    <th colspan=4>Instr</th>
+    <td colspan=4 id="registers-i" style="font-family: courier, fixed"></td>
+  </tr>
+  <tr class="cond">
+    <th colspan=4>Cond</th>
+    <td colspan=4 id="registers-cc"></td>
+  </tr>
+</table>
+<div style="background:#ddd; border: 2px solid gray;max-width:780px; padding: 0 10px;">
+  <h2>How to use this unusual calculator</h2>
+  The Sinclair Scientific calculator uses <a href="http://en.wikipedia.org/wiki/Reverse_Polish_notation">reverse Polish notation</a> (RPN) and scientific notation, so the key sequences are totally different from regular calculators. Numbers automatically have a decimal point inserted; use <code>E</code> to set the exponent. Operations are entered after the number and there is no equals key. Use the up and down arrows to select scientific functions. A display such as <code class="ex">1.2300 01</code> indicates 1.23*10^1, i.e. 12.3. A few examples:
+  <p>
+  To divide 17 by 3, enter
+  <code class="ex">1 7 E 1 + 3 &divide;</code>
+  <p>
+  To take the sin of 0.01 radians, enter
+  <code class="ex">0 0 1 &#x25b2; +</code>
+  <p>
+  To take antilog of .5 (to compute 10^.5), enter
+  <code class="ex">5 E - 1 &#x25bc; &times;</code>
+  <p>
+  Detailed examples are available <a href="http://phils.bitboxes.co.uk/scan_and_ocr/manuals/sinclair_scientific/examples.html">here</a> and the original manual is <a href="http://phils.bitboxes.co.uk/scan_and_ocr/manuals/sinclair_scientific/">here</a>.
+</div>
+<h2>Representing numbers</h2>
+Numbers are represented as a 6-digit mantissa and a two-digit exponent. For example, 1234.5 has a mantissa of 1.2345 and an exponent of 3, so it is displayed as <code>1.2345 03</code>. Interestingly, only 5 digits are displayed, although 6 digits are stored internally.
+<p>
+The mantissa and exponent each have a sign; positive is represented internally by the digit 0 and negative by the digit 5. This may seem random, but it actually makes sign arithmetic easy. For instance, when multiplying numbers the signs are added: positive times positive has 0+0=0 which indicates positive. Negative times negative has 5+5=0 indicating positive (the carry is dropped). Negative times positive has 5+0=5 indicating negative. This is one of the tricks that helps the Sinclair code fit into the small ROM.
+<p>
+It's slightly confusing that numbers are stored internally different from how they are displayed. 
+The first digit in the A register is the mantissa sign, followed by the exponent sign. (The signs have to be stored in these locations since the hardware provides special display decoding for these digits which is how a <code>5</code> is displayed as a <code>-</code>.) The next two digits of the A register are the exponent, which is followed by the mantissa. This order is opposite from the display but makes some calculations simpler.
+<h2>Limited performance and accuracy</h2>
+The conceptual leap that made the Sinclair Scientific possible was realizing that many people didn't need the accuracy and performance of HP and TI calculators. (This can be considered an application of the <a href="http://www.jwz.org/doc/worse-is-better.html">Worse is Better</a> design principle.)
+HP put a lot of work into the
+<a href="http://www8.hp.com/us/en/pdf/023hpjournal03_tcm_245_935056.pdf">accuracy of the HP-35 calculator</a>, using advanced transcendental pseudo-multiplication and pseudo-division algorithms (basically decimal <a href="http://en.wikipedia.org/wiki/CORDIC">CORDIC</a>). The HP-35's scientific operations have from 7 to 11 digits of accuracy. In comparison, scientific operations on the Sinclair Scientific only have three decimal places of accuracy at best.
+<p>
+Due to the simple loop-based algorithms, the speed of the Sinclair Scientific calculator varies from good to horribly slow depending on the values.
+For instance, sin .1 takes under a second, but sin 1 takes about 7.5 seconds. Arccos .2 takes about 15 seconds. Log and antilog have the overhead of recomputing the constant 229.15, and take about 1 to 2 seconds.
+In comparison, the HP-35 was designed with a one second deadline for computations. 
+<p>
+Using such slow, inaccurate algorithms would be unthinkable for HP or TI, but in the Sinclair Scientific they got the job done at a good price.
+<h2>How the code fits into 320 words</h2>
+The following chart shows how many instructions were used for different operations. Blue is the 4-function code that Texas Instruments originally wrote for the chip, and red is the Sinclair Scientific calculator code.
+<p>
+The category <i>Function</i> is code to read the keyboard input and keep track of what function is being performed. RPN greatly simplifies this, since functions are performed immediately. With algebraic notation, the calculator must store the function when it is entered, and then perform it later.
+<p>
+Using scientific notation shrunk the Sinclair Scientific's code in the next two categories: <i>Digit</i> is code to handle entering digits into a number and <i>Display</i> is code to format a number for display.
+As can be seen from the <a href="http://righto.com/ti">Texas Instrument code</a>, a calculator with regular floating point numbers needs a lot of code to shift numbers back and forth and adjust the decimal point. In fact, since the Texas Instruments code ends up keeping an exponent internally, the floating point display is strictly overhead. Moving the minus sign to the correct display position is also overhead that the Sinclair Scientific avoids.
+<p>
+<i>Normalize</i> is the code to normalize the result of an operation and is fairly close on both calculators. The add/subtract/multiply/divide code is also similar length on both calculators. The scientific functions in the Sinclair Scientific fit into the remaining space. Trig functions were implemented in about 40 instructions. Arc-trig operations are almost 30 more instructions. Logarithms are about 40 instructions, with anti-log about 20 on top of that.
+<p>
+<a href="https://picasaweb.google.com/lh/photo/b-bp82pnCuSna1LUtfqoQQj0RFV-rpgKGQkOJvHZ0i8?feat=directlink">
+<img class="hilite" src="https://lh3.googleusercontent.com/-GqhqBsjrw1s/Uh7FvE5sj6I/AAAAAAAAVKY/HzGmcp3Y0Vo/s500/sinclair-code-categorization.png" width="500"
+alt="How much code is used for each function in the TI calculator vs the Sinclair Scientific."
+title="How much code is used for each function in the TI calculator vs the Sinclair Scientific.">
+</a>
+<p>
+<div class="cite">
+How much code is used for each function in the TI calculator vs the Sinclair Scientific.
+</div>
+<h2>How addition and subtraction work</h2>
+Addition and subtraction in the Sinclair Scientific are not too complicated. Since the two values may have different exponents, one of the values is shifted until the values line up. Then the mantissas are added or subtracted as appropriate. The code has some special cases to handle the different combinations of signs in the arguments.
+<p>
+After the operation (as with all operations) the result is normalized. That is, a result such as 0.0023 is shifted to 2.3000 and the exponent is correspondingly decreased by 3. Finally, registers are cleaned up and the result is displayed.
+<h2>How multiplication works</h2>
+You might be surprised to learn that the calculator chip cannot perform multiplication natively. There's no floating point unit to multiply two numbers. Instead, multiplication is performed through repeated addition, digit by digit. That is, the multiplicand is added the number of times in the low order digit of the multiplier. Then the multiplicand is multiplied by 10 and the multiplier is divided by 10 and the process repeats. The key trick is that multiplying and dividing by 10 are easy for the chip to do; the chip simply shifts the digits left or right.
+<p>
+For example, 23 * 34 is computed as 34 + 34 + 34 + 340 + 340 (i.e. 3 * 34 + 2 * 340).
+<p>
+Before multiplying the mantissas, the exponents are simply added. At the end, the result is normalized.
+<h2>How division works</h2>
+Division is done by repeated subtraction, somewhat like grade-school long division. First the divisor is normalized, since dividing by 0.0001 would be a lot of subtractions. Next, the exponents are subtracted. Finally, the divisor is subtracted as many times as possible, counting the number of subtractions into the result. The remainder is shifted and the process repeats through all the digits. For example, 7 &divide; 3 is computed as 7 - 3 - 3 counts 2 subtractions with remainder of 1, Shift the remainder to 10 and compute 10 - 3 - 3 - 3 counts 3 subtractions with a remainder of 1. This repeats a few more digits to generate the result 2.3333.
+<h2>
+How trig operations work
+</h2>
+How can sine and cosine be computed efficiently in a calculator that has a hard time even doing multiplication? The trick is to do repeated rotations by 0.001 radians until the desired angle is reached.
+If you have the cosine (C) and sine (S) for a particular angle, to rotate by .001 radians simply do:
+<pre>
+C = C - S / 1000
+S = S + C / 1000
+</pre>
+These operations are quick and are done without division: <code>S / 1000</code> is simply S shifted right three digits. (If you've studied graphics, this is basically a rotation matrix. This algorithm was discovered by Marvin Minsky and published in <a href="http://home.pipeline.com/~hbaker1/hakmem/hacks.html#item149">HAKMEM</a> in 1972. I wonder if Sinclair read HAKMEM or rediscovered the algorithm.)
+<p>
+The calculator multiplies the input argument by 1000 (i.e. shifts it left three digits) and performs the rotation that many times; <code>TRIGLOOP</code> is the code that does this.
+At the end of the rotations, the sine and cosine are available. To compute the tangent, the sine and cosine are simply divided.
+<p>
+The following diagram illustrates. The starting unit vector (1, 0) is rotated in steps of .001 radian until angle &theta; is reached. At that point, the coordinates give cos &theta; and sin &theta;. (To be precise, the starting vector is (1, 0.0005) to provide rounding.)
+<p>
+<a href="https://picasaweb.google.com/lh/photo/XAu-ALYioMqr0zHb4wKwzgj0RFV-rpgKGQkOJvHZ0i8">
+<img class="hilite" src="https://lh3.googleusercontent.com/-YLT8MSnckIs/Uh7FwSXniWI/AAAAAAAAVKs/p-7Hm-E1ZzE/s250/sinclair-sincos.png" width="250"
+alt="Vector rotation is used to compute sine and cosine in the Sinclair Scientific calculator."
+title="Vector rotation is used to compute sine and cosine in the Sinclair Scientific calculator.">
+</a>
+<p>
+<div class="cite">
+Vector rotation is used to compute sine and cosine in the Sinclair Scientific calculator.
+</div>
+While this algorithm requres very little code, it has the drawback of being very slow for large angles. Other calculators use algorithms such as decimal CORDIC that are much faster and more accurate, taking time proportional to the number of digits. But those algorithms are more complex and requires multiple constants during the computation.
+<p>
+Arcsine and arccosine use the same loop, but instead of iterating a fixed number of times, the rotation is performed until the sine or cosine of the vector matches the desired value, and the loop counter gives (after dividing by 1000) the angle &theta;, which is the desired arcsine or arccosine.
+<p>
+Arctan uses a slight modification. To compute <code>arctan(z)</code>, the starting vector is (z, 1). The vector is rotated until vertical (the first coordinate is 0). The angle of rotation gives the arctan.
+The following diagram shows how this works for <code>arctan(.7)</code>. Rotating the red vector by &theta; will make the x coordinate 0. <code>tan(&theta;)</code> is .7 (opposite &divide; adjacent in the red triangle). Thus, rotating the vector until it is vertical and counting to measure &theta; will generate the arctan.
+<p>
+<a href="https://picasaweb.google.com/lh/photo/mnKRAPHHg9MRnLvvemvwDwj0RFV-rpgKGQkOJvHZ0i8">
+<img class="hilite" src="https://lh6.googleusercontent.com/-UXVW6OC0PHc/Uh7Fw3o0P0I/AAAAAAAAVK0/E0Z33gbehYc/s250/sinclair-tan.png" width="250"
+alt="Arctan in the Sinclair Scientific works by measuring the rotation angle required to make the vector vertical."
+title="Arctan in the Sinclair Scientific works by measuring the rotation angle required to make the vector vertical.">
+</a>
+<p>
+<div class="cite">
+Arctan in the Sinclair Scientific works by measuring the rotation angle required to make the vector vertical.
+</div>
+<h2>How log works</h2>
+Log and antilog are a bit more complicated than trig operations. The core of the calculation is computing powers of .99. This can be done efficiently in a loop, since X*.99 is X - X / 100, which is computed by just shifting the digits and subtracting.
+<p>
+The main log loop takes an input X and iterates through X*.99^N until the result is less than 1. The resulting loop counter N is approximately -log(X)/log(.99). By adding the remainder, a couple additional digits of accuracy are obtained - see the code comments for details.
+<p>
+One complication of using .99 as the base is the calculations require the constant 229.15 (which approximates -1/log(.99)) in several places. Unfortunately, the calculator can't store multi-digit constants. The solution is the calculator actually recomputes this constant every time it performs a log or antilog.
+<p>
+Putting this all together, the log is computed by using the loop to compute -log(10)/log(.99), which is the magic constant 229.15. The same loop is used on the mantissa of the input to compute -log(input)/log(.99). Dividing the two values yields the log of the input.  Finally, the exponent of the input is simply added to the result, since log(10^N) is just N.
+<p>
+Thus, log is computed with a single slow division along with quick shifts, adds, and subtracts.
+<h2>How antilog works</h2>
+Antilog (i.e. 10^x) reuses much of the same code as log. The key observation for antilog is that 10^x = 10*.99^(229.15*(1-x)). To compute the antilog, first the magic constant 229.15 is computed as before. Next 1-x is multiplied by the constant. Then the powers of .99 loop is done that many times. Since the loop can only be done an integer number of times, a remainder is left over. To get more accuracy, a division is performed using the remainder - see the code for details.
+<p>
+Thus, antilog is computed with one multiplication, one division, and a lot of quick shifts, adds, and subtracts.
+<p>
+You might wonder how this algorithm can fit into three registers since there's the constant 229.15, the loop counter, the power of .99, and the power divided by 100, all in use at the same time. The trick is the registers are split in two. The chip's instructions support masks, so part of the register can be a counter and part can hold a computation value, for instance.
+<h2>Sharing code and control flow</h2>
+The diagram below shows the high-level control flow for the different operations the calculator performs. Note that multiple operations reuse the same code blocks. This is one way the code is squeezed into 320 words. Since the chip doesn't support subroutine calls, it's not as simple as just calling a multiply subroutine. Instead, the flag register is used to keep track of what's going on. For instance, at the end of multiplication, the control flow branches either to normalize or antilog based on one of the flags. Thus, flags and gotos are used as a replacement for subroutine calls.
+<p>
+<a href="https://picasaweb.google.com/lh/photo/rBUmfm59zghAHHJh38sXiAj0RFV-rpgKGQkOJvHZ0i8">
+<img class="hilite" src="https://lh3.googleusercontent.com/-EC7rrfqxzmE/Uh7FxYh_JII/AAAAAAAAVLU/M9Yj-d02o4s/s700/sinclair-flowchart.png" height="700"
+alt="A high-level flowchart of the code in the Sinclair Scientific calculator."
+title="A high-level flowchart of the code in the Sinclair Scientific calculator.">
+</a>
+<p>
+<div class="cite">
+A high-level flowchart of the code in the Sinclair Scientific calculator.
+</div>
+<h2>Reverse engineering</h2>
+The <a href="http://visual6502.org">Visual 6502</a> group enjoys dissolving old chips in acid, photographing the die, and reverse-engineering them. I used their photo of the Sinclair Scientific chip to find out how the calculator works. It helped that I knew a lot about the
+Texas Instruments <a href="http://datamath.org/Chips/TMS0803.htm">080x</a> chip architecture in advance since I'd written a <a href="http://righto.com/ti">TI calculator simulator</a>.
+The image below shows a highly magnified image of the calculator chip with the main sections labeled. (The original image is <a href="http://siliconpr0n.org/archive/doku.php?id=mcmaster:ti:tmc0805nc">here</a>.)
+The chip is customizable, not just the instruction ROM, but also the operation masks, single-digit constants, display decoding, and even the instruction set! This allows the same basic chip to be easily modified for use in different calculators.
+For details on the operation of the chip, see my <a href="http://righto.com/ti">TI calculator simulator page</a> with schematics and detailed explanation.
+<p>
+<a href="http://siliconpr0n.org/archive/doku.php?id=mcmaster:ti:tmc0805nc">
+<img class="hilite" src="https://lh4.googleusercontent.com/-IkOn8fNGisE/Uh7Fv_cCZaI/AAAAAAAAVKk/A5R9tKFwzPw/s500/sinclair-chip-labeled.png" width="500"
+alt="The TMS0805 chip that powers the Sinclair Scientific calculator."
+title="The TMS0805 chip that powers the Sinclair Scientific calculator.">
+</a>
+<p>
+<div class="cite">
+The TMS0805 chip that powers the Sinclair Scientific calculator.
+</div>
+The image below zooms in on part of the ROM, showing individual transistors.
+The chip uses simple metal-gate <a href="http://en.wikipedia.org/wiki/PMOS_logic">PMOS</a> technology. The vertical metal wires are clearly visible in the image. Underneath the metal is the silicon. Regions of the silicon have been modified to become conductive. In the ROM, these regions form horizontal conductors; the borders of the conductors are visible below. Finally, the rectangles in the image are the metal gates of transistors between two of the silicon lines. The larger rectangles are multiple transistors.
+<p>
+<a href="https://picasaweb.google.com/lh/photo/VUaloiOvru-19QNQs37EPgj0RFV-rpgKGQkOJvHZ0i8">
+<img class="hilite" src="https://lh5.googleusercontent.com/-LkfvwYHt49U/Uh7FunyU9sI/AAAAAAAAVKM/s0CAkgebFDE/s400/sinclair-chip-zoom.png" width="400"
+alt="A small portion of the ROM in the Sinclair Scientific processor, showing how transistors are arranged to store bits."
+title="A small portion of the ROM in the Sinclair Scientific processor, showing how transistors are arranged to store bits.">
+</a>
+<p>
+<div class="cite">
+A small portion of the ROM in the Sinclair Scientific processor, showing how transistors are arranged to store bits.
+</div>
+<p>
+This chip uses simpler technology than chips such as the 6502. In particular, it doesn't have a layer of polysilicon interconnects like the <a href="http://www.righto.com/2013/01/a-small-part-of-6502-chip-explained.html">6502 processor</a>.
+<p>
+The ROM is programmed by putting a transistor for a zero bit and omitting a transistor for a one bit. Once the layout of the ROM is known, reading the ROM is a simple matter of looking for transistors in the image. Likewise, the operation masks and single-digit constants can be figured out from the photograph. I converted the ROM contents into source code and wrote extensive comments explaining how the code works; the commented source code is displayed in the simulator window.
+<p>
+The Sinclair Scientific chip adds a couple instructions to the instruction set that weren't in the original chip. By looking at the instruction decoding circuit, it wasn't too hard to figure them out. The instructions were nothing special (for example, add A to B and store the result in C), but they probably made the code a few critical instructions shorter.
+<p>
+The image below shows the ALU instruction decode ROM. Each opcode from 31 to 0 has an input line on the top and is connected via transistors (the squares) to control lines that exit on the left. The ALU takes two arguments and by default performs addition. For instance opcode 0 is connected to "Arg1 is A", "Arg2 is B", and "Destination is A". Thus it adds A and B, putting the result in A. Opcode 13 selects C as argument 1, constant as argument 2, performs a subtract, and has no destination. Thus, it compares register C to a constant. Likewise, the other opcodes can easily be figured out from the image.
+<p>
+<a href="https://picasaweb.google.com/lh/photo/w52GQHWgId1zKOv_jj47fwj0RFV-rpgKGQkOJvHZ0i8">
+<img class="hilite" src="https://lh6.googleusercontent.com/-kk1bZ0CP4UM/Uh7FxHkXYmI/AAAAAAAAVLM/Tyaqlyxuozs/s700/sinclair-instruction-decode.png" width="700"
+alt="The instruction decode ROM in the TMS0805 processor that powers the Sinclair Scientific calculator."
+title="The instruction decode ROM in the TMS0805 processor that powers the Sinclair Scientific calculator.">
+</a>
+<p>
+<div class="cite">
+The instruction decode ROM in the TMS0805 processor that powers the Sinclair Scientific calculator.
+</div>
+<h2>Bugs and limitations</h2>
+The Sinclair Scientific cut a lot of corners to fit into 320 words of ROM, so it's not surprising there are problems. By looking at the code, we can see exactly what goes wrong.
+<p>
+The <a href="http://phils.bitboxes.co.uk/scan_and_ocr/manuals/sinclair_scientific/">calculator manual</a> specifies fairly restrictive limits on the allowable values for scientific operations, but the calculator doesn't enforce these limits. If you're outside the limits, there's no telling what the calculator might do. For instance, logarithm is only supported for arguments &ge; 1.  The calculator almost works for arguments such as 5E-3, except it adds the exponent 3 instead of subtracting it, so the result is totally wrong. If they had room for just a few more instructions they could have made this work.
+<p>
+EdS found that </code>1.99996 antilog</code> yields the wildly wrong answer of 0, even though it is in the supported antilog range. The problem is in the computation of 229.15*(1-.99996), the second factor is so small the multiplication yields 0 causing antilog to bail out.
+<p>
+The antilog code assumes that if the exponent is greater than 0, it is 1. 
+Thus antilog of 0.01E2 yields 1.2589 instead of 10. Calling <code>NORMALIZE</code> would have fixed this, but there wasn't space for the call.
+<p>
+Arccos of a very small value (e.g. 0.0005) goes into an almost-infinite loop and takes 1 minute, 48 seconds to complete (as measured on a real calculator), before returning the wrong value 0. The root cause is since the angle is increased in steps of .001, it never exactly reaches the desired cosine value.  When the rotation vector crosses vertical, the angle goes from 1.570 radians to 1.571 radians. cos 1.570 is bigger than .0005 so the loop doesn't exit. But at 1.571, everything falls apart: the loop uses unsigned arithmetic, so the sine value wraps to 999.99955 and the sine and cos become meaningless. The only reason the loop ever terminates is the loop counter eventually overflows after 9999 iterations, which inadvertently causes the code to fall into the arctan path and exit with 0.
+<p>
+Scientific calculators usually provide constants such as e and &pi; but there was no space in the ROM for these constants. The Sinclair Scientific used the brilliant solution of printing the constants on the calculator's case - the user could enter the constant manually if needed.
+<h2>Conclusions</h2>
+The Sinclair Scientific came out in 1974 and was the first single-chip scientific calculator (if you ignore the display driver chips). It was stylishly compact, just 3/4 inch thick.
+It originally sold for the price of $119.95 or &pound;49.95 and by the end of the year was available as a kit for the amazingly low price of <a href="http://www.fdjyakov.narod.ru/ZX/a9.gif">&pound;9.95</a>.
+<p>
+Unfortunately, as calculator prices collapsed, so did Sinclair Radionics' profits, and the company was broken up in 1979 after heavy losses. Clive Sinclair's new company Sinclair Research went on to sell the highly-popular ZX 80 and ZX Spectrum home computers. Clive Sinclair was knighted for his accomplishments in 1983, becoming Sir Clive Sinclair.
+<h2>Credits</h2>
+This work was done in cooperation with the <a href="http://visual6502.org">Visual 6502</a> team. Special thanks to John McMaster for chip processing and photography; Ed Spittles for timings and experiments on a real calculator, detailed feedback, and HAKMEM info; Phil Mainwaring for documentation, feedback and analysis; and James Abbatiello for code improvements.
+The Sinclair history is based on multiple sources including
+<a href="http://www.electronicsweekly.com/mannerisms/yarns/worlds-first-single-chip-scien-2007-07/">Electronics Weekly</a>,
+<a href="http://www.vintagecalculators.com/html/sinclair___the_pocket_calculat.html">Vintage Calculators</a>, 
+<a href="http://wos.meulie.net/pub/spectrum/books/SinclairStoryThe.pdf"><i>The Sinclair Story</i></a>, and <i>Programming the "Scientific"</i> by Nigel Searle in Wireless World June 1974</a>.
+The simulator is available on GitHub as <a href="https://github.com/shirriff/TICalculatorJSSimulator">TICalculatorJSSimulator</a>.
+<p>
+If you want a short link to this page, use <a href="http://righto.com/sinclair">http://righto.com/sinclair</a>.
+<p>
+<span style="border: 1px solid #ccc; background-color: #e6df97; padding: 8px;">
+	This article has a bunch of interesting comments at <a href="http://hackaday.com/2013/08/30/ken-shirriff-completely-reverse-engineers-the-1974-sinclair-scientific-calculator/">Hackaday</a> and <a href="https://news.ycombinator.com/item?id=6302364">Hacker News</a> so take a look. Thanks for visiting!
+</div>

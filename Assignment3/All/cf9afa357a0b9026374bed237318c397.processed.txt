@@ -1,0 +1,146 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Are 8-bit or 16-bit counters faster than 32-bit counters?
+
+   Programmers often want to count things. They typically use 32-bit
+   counters (e.g., the int type in Java).
+
+   But what if you are counting small numbers? Maybe a 16-bit counter
+   could be enough (e.g., the short type in Java). Obviously, using fewer
+   bits saves memory. Saving memory often makes programs run faster.
+
+   However, something evil could also happen. Maybe compilers or CPUs are
+   optimized for 32-bit arithmetic?
+
+   I designed a small experiment. I build an array of counters. I
+   repeatedly increment some of the counters. I then run through the array
+   seeking counter values that exceed some threshold. [5]My code is freely
+   available.
+
+   One parameter is the size of the array. I expect that for tiny numbers
+   of counters, the number of bits will be irrelevant: all of the counters
+   can fit in CPU cache.
+
+   Another parameter is the language. Does Java behave differently from
+   C++? You would hope not, but C++ compilers can pull tricks that Java
+   can't, and vice versa.
+
+   I ran my tests on a recent Intel Core i7 processor. I was surprised to
+   find that the Java and C++ speeds were almost the same:
+    Number of counters   8 bits   16 bits   32 bits   64 bits
+   2^16                 94       94        94        94
+   2^23                 44       28        22        22
+
+   As expected, when there are few counters, it does not matter how many
+   bits you use. However, when the number of counters becomes large, using
+   8-bit counters instead of 32-bit counters can double the speed.
+
+   Conclusion: When you have many, it could be worth your time to
+   benchmark an alternative using 8-bit or 16-bit counters.
+   [6]Tweet
+   [7]Comments (1)
+
+   Related posts (automatically generated):
+     * [8]Two 32-bit hash functions from a 64-bit hash function?
+
+1 Comment
+
+    1. I'd revise the conclusion a bit: Keep your working set inside the
+       caches. This has nothing to do with counting, for performance
+       purposes you're just touching RAM.
+       Comment by John Regehr -- 13/9/2013 @ [9]19:18
+
+   Sorry, the comment form is closed at this time.
+   « « [10]Previous: To succeed, adopt the post-industrial view
+   [11]Next: To solve hard problems, you need to use bricolage » »
+
+   [12]« Blog's main page
+   Daniel Lemire's picture
+     * [13]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [14]Follow on Google Plus
+       22,500 followers
+     * twitter logo [15]Follow @lemire
+       4,000 followers
+     * Facebook logo [16]Follow on Facebook
+     * Google Scholar logo [17]Follow on Google Scholar
+     * Subscribe to this blog
+       - [18]in a reader,
+       - [19]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [20]About me
+          + [21]Book recommendations
+          + [22]My readers
+          + [23]Terms of use
+          + [24]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [25]The written word took over the world
+          + Thierry Lhôte on [26]The written word took over the world
+          + Ben on [27]The written word took over the world
+          + Anonymous on [28]The written word took over the world
+          + kilian on [29]The written word took over the world
+     * Some popular posts
+          + [30]Why I still program
+          + [31]Emotions killing your intellectual productivity
+          + [32]Turn your weaknesses into strengths
+          + [33]It is not where you work, but who you work with
+     * [34]Home page
+       [35]Google Scholar profile
+       [36]arXiv
+       [37]DBLP
+
+   Powered by [38]WordPress
+
+   © 2004-2013, [39]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [40]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/atom
+   4. http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/
+   5. https://github.com/lemire/Code-used-on-Daniel-Lemire-s-blog/tree/master/2013/09/13/bytecounting
+   6. https://twitter.com/share
+   7. http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/#comments
+   8. http://lemire.me/blog/archives/2011/09/26/two-32-bit-hash-functions-from-a-64-bit-hash-function/
+   9. http://lemire.me/blog/archives/2013/09/13/are-8-bit-or-16-bit-counters-faster-than-32-bit-counters/?utm_source=feedburner#comment-93205
+  10. http://lemire.me/blog/archives/2013/09/12/post-industrial-view/
+  11. http://lemire.me/blog/archives/2013/09/16/bricolage/
+  12. http://lemire.me/blog/
+  13. http://lemire.me/
+  14. https://plus.google.com/105888615414982242080/about
+  15. http://www.twitter.com/lemire/
+  16. http://www.facebook.com/daniel.lemire
+  17. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  18. http://lemire.me/blog/feed/
+  19. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  20. http://lemire.me/blog/about-me/
+  21. http://lemire.me/blog/book-recommendations/
+  22. http://lemire.me/blog/my-readers/
+  23. http://lemire.me/blog/terms-of-use/
+  24. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  25. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  26. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  27. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  28. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  29. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  30. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  31. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  32. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  33. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  34. http://lemire.me/en/
+  35. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  36. http://arxiv.org/a/lemire_d_1
+  37. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  38. http://wordpress.org/
+  39. http://lemire.me/en/
+  40. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  41. http://lemire.me/blog/feed/

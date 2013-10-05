@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Picking N distinct numbers at random: how to do it fast? </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5482" itemprop="name"><a href="http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/" rel="bookmark" itemprop="url"  title="Posted on August 16th, 2013">Picking N distinct numbers at random: how to do it fast?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>To test my algorithms, I like to generate synthetic data. To do so, I often need to generate  distinct randomly chosen numbers from a range of values. For example, maybe I want to pick 2 distinct integers in the interval [0,10]. For my purposes, I need these numbers to appear in order, but we can just generate them in any order and sort them later.</p>
+<p>Picking the first number at random is easy: most programming languages come with fast pseudo-random number generators. However, when you try to pick the second number, there is a small probability that you pick the first one again. If this happens, you need to start again. To check quickly whether a number has already been picked, we might use a hash table. This suggests the first algorithm one might try:</p>
+<p><!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin: 0; line-height: 125%">HashSet<span style="color: #333333">&lt;</span>Integer<span style="color: #333333">&gt;</span> s <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> HashSet<span style="color: #333333">&lt;</span>Integer<span style="color: #333333">&gt;();</span>
+<span style="color: #008800; font-weight: bold">while</span> <span style="color: #333333">(</span>s<span style="color: #333333">.</span><span style="color: #0000CC">size</span><span style="color: #333333">()</span> <span style="color: #333333">&lt;</span> N<span style="color: #333333">)</span>
+  s<span style="color: #333333">.</span><span style="color: #0000CC">add</span><span style="color: #333333">(</span>rand<span style="color: #333333">.</span><span style="color: #0000CC">nextInt</span><span style="color: #333333">(</span>Max<span style="color: #333333">));</span>
+</pre>
+</div>
+<p>(This code generates N distinct integers in the interval [0,Max).)</p>
+<p>Intuitively, this algorithm is hard to beat when you need to pick few integers from a large range. In this case, the probability that you will pick an already picked number is small. But, in fact, even if you need to pick one out of every two values from a range (say pick 10 integers in the interval [0, 20)), this algorithm is still reasonably efficient. Indeed, the probability that a given number is already picked is no larger than 50%. How many times (on average) do you need to generate a new random numbers if you have a 50% probability of rejecting them? You can check that the answer  2. This means that as long as you don't need to pick more than half the values (N is no more than Max/2), you can expect to need to generate no more than Max random numbers.</p>
+<p>What if you need to pick more than Max/2 integers in [0,Max)? This can become a problem if you are not careful. Thankfully, there is a nice fix: picking N integers in [0,Max) for N large to Max is equivalent to picking Max-N integers in [0,Max) and then selecting the numbers you did not pick. Computing this complement can be done efficiently if you first sort the numbers you picked. This means that you can always assume that N is no larger than Max/2. </p>
+<p>Still, it is reasonable to think that the performance of the hash-based algorithm  degrade as N becomes closer to Max/2. </p>
+<p>One possibly better alternative in this case... one that  your typical Computer Science professor might propose... is <a href="http://en.wikipedia.org/wiki/Reservoir_sampling">Reservoir Sampling</a>. Though it sounds fancy, Reservoir Sampling is actually easily implemented:</p>
+<p><!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin: 0; line-height: 125%">        <span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[]</span> ans <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> <span style="color: #333399; font-weight: bold">int</span><span style="color: #333333">[</span>N<span style="color: #333333">];</span>
+        <span style="color: #008800; font-weight: bold">for</span> <span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span> k <span style="color: #333333">&lt;</span> N<span style="color: #333333">;</span> <span style="color: #333333">++</span>k<span style="color: #333333">)</span>
+                ans<span style="color: #333333">[</span>k<span style="color: #333333">]=</span>k<span style="color: #333333">;</span>
+        <span style="color: #008800; font-weight: bold">for</span><span style="color: #333333">(</span><span style="color: #333399; font-weight: bold">int</span> k <span style="color: #333333">=</span> N <span style="color: #333333">;</span> k <span style="color: #333333">&lt;</span> Max<span style="color: #333333">;</span> <span style="color: #333333">++</span>k<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        	<span style="color: #333399; font-weight: bold">int</span> v <span style="color: #333333">=</span> rand<span style="color: #333333">.</span><span style="color: #0000CC">nextInt</span><span style="color: #333333">(</span>k<span style="color: #333333">+</span><span style="color: #0000DD; font-weight: bold">1</span><span style="color: #333333">);</span>
+        	<span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(</span>v <span style="color: #333333">&lt;</span> N<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        		ans<span style="color: #333333">[</span>v<span style="color: #333333">]</span> <span style="color: #333333">=</span> k<span style="color: #333333">;</span>
+        	<span style="color: #333333">}</span>
+        <span style="color: #333333">}</span>
+</pre>
+</div>
+<p>It is not immediately obviously why this algorithm would work. However, it is correct. The nice thing about Reservoir Sampling is that we know exactly how many random numbers we need to generate: we need Max of them, no matter what. This means that Reservoir Sampling has a running time that depends on Max, but not a lot of N. </p>
+<p>However, it turns out that an even better alternative might be to replace the hash table by a bitmap. A bitmap is just an array of bits. We need Max bits. If the value has already been picked, we set the bit to 1, otherwise the bit is set to 0. The algorithm is otherwise identical to the first hash-based algorithm:</p>
+<p><!-- HTML generated using hilite.me -->
+<div style="background: #ffffff; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+<pre style="margin: 0; line-height: 125%">        BitSet bs <span style="color: #333333">=</span> <span style="color: #008800; font-weight: bold">new</span> BitSet<span style="color: #333333">(</span>Max<span style="color: #333333">);</span>
+        <span style="color: #333399; font-weight: bold">int</span> cardinality <span style="color: #333333">=</span> <span style="color: #0000DD; font-weight: bold">0</span><span style="color: #333333">;</span>
+        <span style="color: #008800; font-weight: bold">while</span><span style="color: #333333">(</span>cardinality <span style="color: #333333">&lt;</span> N<span style="color: #333333">)</span> <span style="color: #333333">{</span>
+        	<span style="color: #333399; font-weight: bold">int</span> v <span style="color: #333333">=</span> rand<span style="color: #333333">.</span><span style="color: #0000CC">nextInt</span><span style="color: #333333">(</span>Max<span style="color: #333333">);</span>
+        	<span style="color: #008800; font-weight: bold">if</span><span style="color: #333333">(!</span>bs<span style="color: #333333">.</span><span style="color: #0000CC">get</span><span style="color: #333333">(</span>v<span style="color: #333333">))</span> <span style="color: #333333">{</span>
+        		bs<span style="color: #333333">.</span><span style="color: #0000CC">set</span><span style="color: #333333">(</span>v<span style="color: #333333">);</span>
+        		cardinality<span style="color: #333333">++;</span>
+        	<span style="color: #333333">}</span>
+        <span style="color: #333333">}</span>
+</pre>
+</div>
+<p>It turns out that a good heuristic is to use the bitmap algorithm when N is smaller than  Max / 1024. Otherwise the hash-based algorithm appears better. Reservoir Sampling is not a good choice for this problem.</p>
+<p>The following table shows the speed (in millions of integers picked per second) of the various techniques on a recent i7 processor using C++. Note how much faster the bitmap approach is.</p>
+<table style="border-collapse:collapse;text-align:center;margin-left:auto;margin-right:auto">
+<tr style="border-top:3px solid #ccc;border-bottom:2px solid #ccc;">
+<th>&nbsp;Max/N&nbsp;</th>
+<th>&nbsp;Hash&nbsp;</th>
+<th>&nbsp;Bitmap&nbsp;</th>
+<th>&nbsp;Reservoir Sampling&nbsp;</th>
+</tr>
+<tr>
+<td>16384</td>
+<td>2.0</td>
+<td>1.0</td>
+<td>0.0</td>
+</tr>
+<tr>
+<td>1024</td>
+<td>7.5</td>
+<td>28</td>
+<td>0.1</td>
+</tr>
+<tr>
+<td>2</td>
+<td>1.3</td>
+<td>64</td>
+<td>14</td>
+</tr>
+</table>
+<p>For good measure, I coded up these algorithms in both Java and C++. The results are consistent. My code is <a href="https://github.com/lemire/Code-used-on-Daniel-Lemire-s-blog/tree/master/2013/08/14">available for review</a>.</p>
+<p><strong>Credit</strong>: I  thank to Nathan Kurz for challenging me on this problem.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/" data-text="Picking N distinct numbers at random: how to do it fast?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/08/16/picking-n-distinct-numbers-at-random-how-to-do-it-fast/#comments" title="Comment on Picking N distinct numbers at random: how to do it fast?">Comments (11)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2012/05/21/fast-bitmap-decoding/" rel="bookmark">Fast bitmap decoding</a><!-- (11.8)--></li>
+	</ul>
+</div>
+
+</div>
+
+
+
+<h2 id="comments">11 Comments 
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-91758">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I wonder how this compares?</p>
+<p>(1) fill an array with 0 to Max random floating point numbers</p>
+<p>(2) apply an index sort to the array (sort the array and return an index of elements in ascending order)</p>
+<p>(3) output the first N values in the index</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 24/8/2013 @ <a href="#comment-91758">13:53</a></cite> </p>
+	</li>
+
+	<li id="comment-91761">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>In Perl Data Language, this algorithm takes two lines:</p>
+<p>$result = qsorti(random($max));<br />
+p $result(0:($n-1));</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 24/8/2013 @ <a href="#comment-91761">17:52</a></cite> </p>
+	</li>
+
+	<li id="comment-91799">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Peter Turney</p>
+<p>I don&#8217;t think your numbers are going to be distinct. In theory, it is possible that your approach would pick just one distinct value (repeated many times).</p>
+<p>Update: I misread Peter&#8217;s description.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 26/8/2013 @ <a href="#comment-91799">6:32</a></cite> </p>
+	</li>
+
+	<li id="comment-91800">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>You&#8217;re wrong. I&#8217;ve been using exactly this code for years.</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 26/8/2013 @ <a href="#comment-91800">6:37</a></cite> </p>
+	</li>
+
+	<li id="comment-91801">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Peter Turney</p>
+<p>I misread your algorithm. Sorry.</p>
+<p>Still, there is a probability (very small indeed) that all your floating point numbers are going to identical. In this sense, your algorithm is probabilistic&#8230; with good probability, it will solve the problem.</p>
+<p>I&#8217;ll add it to my benchmark later. Thanks.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 26/8/2013 @ <a href="#comment-91801">6:49</a></cite> </p>
+	</li>
+
+	<li id="comment-91802">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>An example might help:</p>
+<p>pdl&gt; $ran=random(4)</p>
+<p>pdl&gt; p $ran</p>
+<p>[0.9474 0.8675 0.7389 0.4402]</p>
+<p>pdl&gt; $sort=qsorti($ran)</p>
+<p>pdl&gt; p $sort</p>
+<p>[3 2 1 0]</p>
+<p>(p = print; floats are truncated for display purposes; sort from smallest to largest; qsorti = quick sort and return index)</p>
+<p>When you&#8217;re using a high-level language (Perl Data Language, Matlab, etc.), you learn to avoid explicit loops by calling built-in functions that implicitly loop over vectors and matrices. In a high-level language, an algorithm without explicit loops is almost always much faster than an algorithm with explicit loops.</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 26/8/2013 @ <a href="#comment-91802">6:50</a></cite> </p>
+	</li>
+
+	<li id="comment-91804">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>&#8220;Still, there is a probability (very small indeed) that all your floating point numbers are going to identical. In this sense, your algorithm is probabilistic… with good probability, it will solve the problem.&#8221;</p>
+<p>If all the floating point numbers are identical and the sort preserves the original order when there is a tie, then the output will be [0 1 2 3 ...]. It is not a problem if this output happens from time to time. It is a valid output, as long as it doesn&#8217;t happen too often.</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 26/8/2013 @ <a href="#comment-91804">6:53</a></cite> </p>
+	</li>
+
+	<li id="comment-91805">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Peter Turney</p>
+<p>That&#8217;s right, but even a tie between two floating point numbers, if ties are always resolved in the same deterministic manner, will introduce a bias.</p>
+<p>I assume that Perl will use 64-bit floating point numbers&#8230; in such a case, your algorithm to generate distinct 32-bit integers has a negligible bias. </p>
+<p>(I should note that even my algorithms have biases in practice. They are only free of biases if I assume that I have a perfect random number generators.)</p>
+<p>Of course, the interesting question is speed. The way you describe your algorithm, it runs in time O(Max), so that we might expect that when N is much smaller than Max, then your algorithm is slow compared to the hash set approach. My instinct is that even when N is  close to Max, your algorithm is slower than the bitmap approach. Of course, I&#8217;ll need to verify this more seriously.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 26/8/2013 @ <a href="#comment-91805">7:15</a></cite> </p>
+	</li>
+
+	<li id="comment-91806">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>&#8220;The way you describe your algorithm, it runs in time O(Max)&#8221;</p>
+<p>Actually O(Max log(Max)) due to sorting. But if you implement all the algorithms in a high-level language, I&#8217;m guessing mine will run the fastest, due to the lack of explicit loops. For me, the time and effort I save by writing programs in a high-level language is more important than the speed I can get from the computer by working in a lower-level language (in most cases, with some rare exceptions).</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 26/8/2013 @ <a href="#comment-91806">7:37</a></cite> </p>
+	</li>
+
+	<li id="comment-91807">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Also, what if you don&#8217;t want the final list in sorted order? What if the task is to shuffle the numbers in the list [0,Max]? (This is a typical task for my work.) Then your N/2 select/drop inversion trick is not applicable.</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 26/8/2013 @ <a href="#comment-91807">7:48</a></cite> </p>
+	</li>
+
+	<li id="comment-91812">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Peter Turney</p>
+<p>As for focusing on the performance one gets using Perl&#8230; see my post &#8220;The language interpreters are the new machines&#8221;: <a href="http://lemire.me/blog/archives/2011/06/14/the-language-interpreters-are-the-new-machines/" rel="nofollow">http://lemire.me/blog/archives/2011/06/14/the-language-interpreters-are-the-new-machines/</a></p>
+<p>Much of the traditional computer science is focused on designing algorithms from basic operations (and this is what I do here with C++ and Java), but this is increasingly less relevant.</p>
+<p>But not everything is black and white. For some problems, it is definitively worth it to get a 10x speed-up. Google&#8217;s backend could not be written in pure Perl. <img src='http://lemire.me/blog/wp-includes/images/smilies/icon_wink.gif' alt=';-)' class='wp-smiley' /> </p>
+<p>Back to the problem at hand&#8230;</p>
+<p>If you want to shuffle a list, then a Fisher–Yates shuffle is probably best.  Such shuffling is part of Java, C++(STL) and Python. I don&#8217;t know about Perl but I have read online that you can find a shuffle function in List::Util.  So I would argue that in many instances, you shouldn&#8217;t code a list shuffling algorithm by hand.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 26/8/2013 @ <a href="#comment-91812">10:25</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<p>Sorry, the comment form is closed at this time.</p>
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/08/09/is-facebook-evil/">Previous: Privacy and the Internet: Is Facebook evil?</a></div>
+<div  style="text-align:right">
+<a href="http://lemire.me/blog/archives/2013/08/28/funding-science-when-bureaucrats-get-out-of-control/">Next: Funding science: When bureaucrats get out of control</a> &raquo; &raquo; </div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,500</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>4,400</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1419&nbsp;posts and 5829&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Itman on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94663" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Leonid Boytsov on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94652" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Vivek Haldar on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94604" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Leonid Boytsov on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94591" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Leonid Boytsov on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94535" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.137 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-09-24 22:14:47 -->

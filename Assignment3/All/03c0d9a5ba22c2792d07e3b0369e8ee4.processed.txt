@@ -1,0 +1,457 @@
+   #[1]Data Transparency Coalition - Atom [2]Data Transparency Coalition -
+   RSS [3]Data Transparency Coalition - Atom
+
+   [4]Data Transparency Coalition
+     * [5]Home
+
+Tuesday, September 17, 2013
+
+At Data Transparency 2013, Issa Confronts SEC's Stalled Progess on Open Data
+
+   Last Tuesday at [6]Data Transparency 2013, Rep. Darrell Issa (R-CA),
+   chairman of the House Committee on Oversight and Government Reform,
+   announced a new investigation aimed at persuading the U.S. Securities
+   and Exchange Commission to restart the [7]stalled transformation of its
+   corporate disclosure filings from documents into open data.
+   [8][issa.png]
+   Rep. Issa at Data Transparency 2013.
+   Issa's criticisms are an opportunity for the SEC to clarify its
+   commitment to the principles of President Obama's [9]Open [10]D[11]ata
+   Policy. It's also a lesson in the challenges of converting any complex
+   area of government reporting from static PDFs with page breaks into
+   open data--standardized, structured, and accessible to all.
+   In 2009 the SEC began phasing in a [12]requirement for public companies
+   to submit their financial statements (and related footnotes) in the
+   [13]eXtensible Business Reporting Language (XBRL) structured data
+   format, alongside the old-fashioned plain-text document versions of
+   those financial statements. The SEC publishes the XBRL files on its
+   [14]EDGAR website. The SEC's attempts at standardization and
+   publication--the two fundamental steps of open data --should, by now,
+   have brought benefits to the agency, investors, and public company
+   filers.
+     * Since structured data--with each element electronically
+       identified--can be analyzed automatically, the XBRL requirement
+       should allow the SEC to review corporate financial statements
+       faster and use Big Data analytics to find errors and fraud.
+     * Since structured data can be downloaded readily into databases and
+       spreadsheets, the XBRL requirement should allow investors to make
+       faster, better decisions.
+     * Since structured data, as long as each element has an agreed
+       definition, can be produced automatically by software, the XBRL
+       requirement should allow filers' internal accounting software to
+       create their financial statements automatically and submit them
+       more easily.
+
+   These three benefits exemplify the three promises of open data in
+   government: better management, better public transparency, and
+   automated compliance. Other federal agencies choosing to standardize
+   and publish their reports--notably the [15]Recovery Accountability and
+   Transparency Board in 2009 and the [16]FDIC in 2006--have achieved all
+   three.
+   But so far the SEC has missed all three opportunities, to the detriment
+   of its own mission, investors' interests, and the compliance burden of
+   the companies it regulates. On Tuesday Rep. Issa announced he had sent
+   a [17]letter to SEC chairman Mary Jo White requesting answers and
+   documents in each of these three areas. Here's Issa's letter:
+   [18]Issa to White re SEC open data
+
+   IFRAME:
+   [19]//www.scribd.com/embeds/168830597/content?start_page=1&view_mode=sc
+   roll&show_recommendations=true
+
+
+   Rep. Issa is not alone in his criticisms. [20]Congressional
+   appropriators, the SEC's own [21]Investor Advisory Committee, the
+   [22]American Institute of CPAs, [23]Columbia Business School, and our
+   [24]coalition of tech companies have all made the same points. But his
+   letter provides the most detailed explanation to date of exactly why
+   the SEC's attempt at open data has so far missed the benefits that the
+   Recovery Board, the FDIC, and others have realized.
+   [25][100534641-president-obama.jpg]
+   Disagree with Issa? Ask the President.
+   Moreover, on open data, the Republican Chairman of the House Oversight
+   Committee is aligned with the Democratic President of the United
+   States. On May 9, President Obama released his [26]Open Data Policy,
+   which requires agencies to open all data they collect and generate. The
+   SEC's corporate disclosure regime, taken as a whole, flunks all seven
+   parts of President Obama's seven-part definition ([27]page 5) of open
+   data.
+   1. The SEC Spent $11 Million Double-Checking Financial Statements with
+   Calculators.
+   First, the SEC has missed its opportunity to use structured data to
+   find and correct errors (primarily the responsibility of its Division
+   of Corporation Finance, or "CorpFin") and accounting fraud (primary the
+   Division of Enforcement's job) in the financial statements. Why?
+   Because the agency has not tried to incorporate the electronic
+   structure of XBRL into CorpFin's reviews of corporate disclosures. Nor
+   has it (yet) deployed Big Data analytics to help Enforcement sift
+   through financial statements for fraud.
+   I'm accustomed to writing our Coalition's blog in the third person, but
+   I must shift to the first person to explain a relevant backstory. In
+   2009 I was an attorney in the SEC's [28]office of interactive
+   disclosure. I interviewed lawyers and accountants working for CorpFin
+   to learn how they review incoming corporate disclosures, particularly
+   the financial statements, to find errors and confirm that accounting
+   rules and the SEC's regulations are followed.
+   As might be expected, CorpFin's reviewers need to verify that all the
+   required items are present in the financial statements that the SEC
+   receives. They must check the math of financial statements to see if
+   any calculations are wrong. They also apply accounting rules. For
+   instance, under U.S. Generally Accepted Accounting Principles (U.S.
+   GAAP), no "miscellaneous" line item should be greater than ten percent
+   of the larger category it's in. If, say, "Miscellaneous Revenue" is
+   more than ten percent of "Total Revenue," CorpFin contacts the company
+   to request that it revise the financial statement and further break
+   down "Miscellaneous Revenue."
+   I was shocked to find that CorpFin's attorneys and accountants do all
+   of this work manually.
+   In CorpFin, the attorneys and accountants print each financial
+   statement as a document, pile the paper documents on their desks, fill
+   them with underlines, and tap away on plastic Texas Instruments
+   calculators. They eyeball whether or not each required disclosure item
+   is present, make a handwritten note, and then turn to their desktop
+   computer and check a box (or leave it unchecked) in a Microsoft Word
+   document. They use a calculator to add up the line items in balance
+   sheets and income statements. They check mechanical GAAP principles,
+   like that ten-percent rule, the same way--with a calculator. As they
+   confirm that the math is correct and accounting rules are followed,
+   they note each confirmation by hand and in the Word document. The Word
+   document later becomes a review memo that goes to supervisors, who
+   summarize all the review memos for their higher-ups.
+   [29][calculator1.jpg]
+   Our most sophisticated Enron detection device.
+   It's easy to understand why this practice is wasteful. With financial
+   statements now available as data, not documents, software could
+   highlight missing disclosure items, the math mistakes, or any disregard
+   of accounting rules automatically--in real time, as the financial
+   statements are received by the SEC and CorpFin. The agency could even
+   adjust its submission system to automatically reject financial
+   statements with such shortcomings.
+   Of course, not everything that CorpFin's reviewers do could be
+   automated. They also carefully read each submission as a whole, and
+   their experience helps them notice when some aspect doesn't match its
+   context. They compare narrative portions of each disclosure form, like
+   the Management Discussion and Analysis, with numeric portions, like the
+   financial statements. Humans, for now, are better than computers at
+   figuring out whether descriptive text and numeric facts are consistent
+   with one another.
+   But, five years ago, I estimated that about half of the reviewers' time
+   was spent verifying and checking aspects of the filings that structured
+   data could, and should, automate.
+   CorpFin reports 448 full-time equivalents (FTE) in fiscal year 2012 and
+   471 in 2013 (page 80 of SEC [30]fiscal 2014 budget justification).
+   Judging from the division's total salary and benefit costs ([31]page
+   [32]78) of nearly $91 million in 2012 and just over $103 million in
+   2013, compensating these staffers cost CorpFin about $205,000 each in
+   2012 and $219,000 each in 2013. Let's assume, very conservatively, that
+   about one-quarter of CorpFin staffers' time is spent reviewing existing
+   companies' disclosures, and three-quarters is spent handling new IPOs,
+   confidential treatment requests, and rulemaking. (Anecdotally, the real
+   proportion of CorpFin time spent on existing company reviews is much
+   higher, especially as new IPOs have cratered since the 1990s.) Half of
+   that review time, or one-eighth CorpFin's total FTE--56 FTE in 2012 and
+   58.9 FTE in 2013--could be automated using structured data.
+   The bottom line? The SEC spent $11.5 million last year and $12.9
+   million this year on manual pencil-and-calculator labor that could, and
+   should, be instant and automatic.
+   Chairman Issa has asked Chairman White to explain why, "[r]ather than
+   using the wealth of structured financial data it is already collecting
+   to automate any level of review, the SEC continues to ask Congress for
+   more money to pay for increased staff" ([33]p[34]age 3, emphasis
+   added). Backed by the House Oversight Committee's power to request
+   documents and information from federal agencies, Issa asks the SEC to
+   brief his staff on how--and whether--the agency intends to "incorporate
+   XBRL-formatted financial disclosures into its review process"
+   ([35]page[36] 4, question 4).
+   (The picture at the Division of Enforcement is not as bleak as at
+   CorpFin. This year the SEC [37]announced that it will use structured
+   data to spot anomalies in financial statements that might indicate
+   fraud. But that project is in its early stages. No Enrons have yet been
+   found. And it will not have an impact on the day-to-day reviews of
+   corporate disclosures.)
+   2. The SEC Has Never Tried to Enforce the Quality of Financial
+   Statement Data, so Investors Don't Use it.
+   Second, structured data hasn't made life any easier for investors. Last
+   year, Columbia Business School [38]asked inve[39]stors whether they
+   were using the XBRL versions of corporate financial statements. Fewer
+   than ten percent were ([40]page[41] 61). The overwhelming reason? Data
+   quality ([42]p[43]age 28). Investors are not certain that the data in
+   the XBRL files matches the numbers they see in the old-fashioned
+   documents that are submitted at the same time.
+   (Remember, the SEC has not completely adopted structured data.
+   Companies must file the old-fashioned form as a PDF or HTML document,
+   and submit an XBRL file alongside it. The XBRL file contains a
+   structured-data version of the financial statements and notes, but not
+   the rest of what's in the old-fashioned form.)
+   Investors' concerns are understandable. XBRL US has tracked over
+   [44]1.4 million error[45]s in the structured data filings since the
+   XBRL reporting requirement began.
+   It's not surprising that a new reporting requirement--particularly in
+   an unfamiliar format like XBRL--might have been hard, at first, for
+   companies to figure out. What's surprising is that the SEC has never
+   asked for a single correction, not even for errors that would have
+   earned an instant reproof if they appeared in the old-fashioned
+   document version. For instance, companies have flipped positive and
+   negative signs on accounting line items--a very simple error, easily
+   spotted and easily corrected--over 400,000 times ([46]t[47]able) since
+   XBRL filing began in 2009. The SEC, in all its correspondence with the
+   companies about other aspects of their filings, never asked for any
+   corrections. Small wonder that investors distrust the data.
+   Investors are calling on the SEC to finally start enforcing the quality
+   of the structured financial data it has been receiving for four years.
+   In July, the agency's official Investor Advisory Committee
+   [48]recommended "active monitoring" of structured data ([49]page 3).
+   The agency hasn't yet responded to the recommendations, though it is
+   [50]required by the Dodd-[51]Frank [52]Act to do so.
+   Chairman Issa asked Chairman White to explain why the SEC "has not
+   issued even one comment letter [from the Division of Corporation
+   Finance] on any of the more than 1.4 million errors identified"
+   ([53]page 3). A bit of enforcement, even as a symbolic signal, would
+   give investors more confidence that the SEC is serious about the
+   quality of structured data submitted to it and encourage them to start
+   using the data to make better, faster investment decisions.
+   3. Unless the SEC Clarifies its Plans for Open Data, Investors and
+   Companies Can't Plan for the Future.
+
+   Issa's third criticism is perhaps the most important. The SEC has
+   stopped moving toward open data in corporate disclosures. It has
+   adopted the XBRL format for financial statements and notes, but it
+   still requires the old-fashioned document version to be submitted too.
+   Of all the securities regulators around the world adopting XBRL
+   (a [54]partial list includes the UK, the European Union, China, India,
+   Japan, South Africa, Singapore, and the United Arab Emirates), not one
+   has adopted the SEC's half measure. When a jurisdiction chooses to open
+   up its corporate securities disclosures by applying the XBRL format, it
+   switches all the way from documents to data. The only jurisdiction,
+   anywhere, that requires filers to submit two versions of the same
+   information is the SEC.
+   Moreover, the SEC has given no indication whether it intends to
+   transform other aspects of corporate disclosure--executive
+   compensation, proxy statements, prospectuses, corporate structure,
+   stock ownership--from documents into open data. That means companies
+   don't know how their reporting requirements will change in the future.
+   They don't know whether to invest in software that could automate their
+   SEC reporting, because they don't know whether those reports will be
+   structured data or still be documents and paper.
+   Investors are demanding open data. The Investor Advisory Committee,
+   when it asked the SEC to fully enforce the quality of existing XBRL
+   filings, also called on the agency to "integrate data tagging into all
+   future rulemaking and rule revision efforts that involve the collection
+   of data by the SEC" ([55]page 3, emphasis added) and to prioritize
+   certain forms for the transformation, including portions of the proxy
+   statement, mutual fund voting disclosures, and corporate current
+   reports on Form 8-K ([56]page 5). The SEC has yet to respond.
+   Chairman Issa has asked the agency to produce "all documents relating
+   to current use and planned future use" of structured data formats like
+   XBRL ([57]page 5, emphasis added). But he probably would be happy with
+   just one document: the SEC's plan for the future transformation from
+   documents into open data--if such a plan exists exists.
+   Issa's conclusion ([58]page 4) is worth repeating. It applies not only
+   to the SEC but to all attempts to adopt open data in regulatory
+   reporting:
+
+     Structured data in financial regulatory reporting has the potential
+     to create profound, positive changes: better enforcement through
+     analytics, more efficient and more accurate reviews, improved market
+     efficiency, cheaper capital costs, and the open data investors are
+     demanding. These revolutionary improvements will only occur as the
+     SEC integrates structured data into its existing review processes,
+     enforces the quality of data submitted under the Interactive Data
+     Rule, and articulates a vision for the transformation of its whole
+     disclosure system from inaccessible documents into structured data.
+
+   &#65279;&#65279;
+   Posted by [59]hudson.hollister@gmail.com at [60]7:09 AM
+   [61]Email This[62]BlogThis![63]Share to Twitter[64]Share to Facebook
+   Labels: [65]Financial Regulation, [66]XBRL
+
+1 comment:
+
+    1. [b36-rounded.png]
+       [67]Srihari Yamanoor[68]September 23, 2013 at 12:33 AM
+       Darrell Issa, to put it kindly, is a hack. Having him on the side
+       of any argument is defeatist, to say the least.
+       [69]Reply[70]Delete
+
+   [71]Add comment
+   [72]Load more...
+
+   [73]Newer Post [74]Older Post [75]Home
+   Subscribe to: [76]Post Comments (Atom)
+   Welcome to the official mouthpiece of the [77]Data Transparency
+   Coalition.
+
+Blog Archive
+
+     * [78]v  [79]2013 (27)
+          + [80]v  [81]September (9)
+               o [82]Opening the Doors to our Open Data Agenda
+               o [83]At Data Transparency 2013, Issa Confronts SEC's St...
+               o [84]Data Transparency 2013 Exhibitor Spotlight: Invok...
+               o [85]Data Transparency 2013 Exhibitor Spotlight: Captr...
+               o [86]Data Transparency 2013 Exhibitor Spotlight: Strea...
+               o [87]Forging an Open Data Agenda at Data Transparency 2...
+               o [88]Data Transparency 2013 Exhibitor Spotlight: RR Do...
+               o [89]Data Transparency 2013 Exhibitor Spotlight: IPHIX
+               o [90]Data Transparency 2013 Exhibitor Spotlight: Way Be...
+          + [91]|>  [92]August (4)
+          + [93]|>  [94]July (6)
+          + [95]|>  [96]June (1)
+          + [97]|>  [98]April (4)
+          + [99]|>  [100]January (3)
+
+     * [101]|>  [102]2012 (15)
+          + [103]|>  [104]October (2)
+          + [105]|>  [106]September (2)
+          + [107]|>  [108]August (1)
+          + [109]|>  [110]July (1)
+          + [111]|>  [112]June (1)
+          + [113]|>  [114]May (2)
+          + [115]|>  [116]April (3)
+          + [117]|>  [118]March (2)
+          + [119]|>  [120]February (1)
+
+Contributors
+
+     * [121]hudson.hollister@gmail.com
+     * [122]Hudson Hollister
+     * [123]Zack Pesavento
+
+   Simple template. Powered by [124]Blogger.
+
+References
+
+   Visible links
+   1. http://datacoalition.blogspot.com/feeds/posts/default
+   2. http://datacoalition.blogspot.com/feeds/posts/default?alt=rss
+   3. http://datacoalition.blogspot.com/feeds/692887020318086688/comments/default
+   4. http://datacoalition.blogspot.com/
+   5. http://datacoalition.org/
+   6. http://datatransparency2013.com/
+   7. http://www.complianceweek.com/sec-called-to-explain-use-of-interactive-data/article/311885/
+   8. http://datacoalition.com/content/files/issa.png
+   9. http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf
+  10. http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf
+  11. http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf
+  12. http://xbrl.sec.gov/
+  13. http://xbrl.us/
+  14. http://www.sec.gov/edgar.shtml
+  15. http://thehill.com/blogs/congress-blog/technology/228873-halfway-home-to-reform-time-for-senate-to-move-on-data-act
+  16. http://www.xbrl.org/us/us/FFIEC%20White%20Paper%2002Feb2006.pdf
+  17. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  18. http://www.scribd.com/doc/168830597/Issa-to-White-re-SEC-open-data
+  19. http://www.scribd.com/embeds/168830597/content?start_page=1&view_mode=scroll&show_recommendations=true
+  20. http://datacoalition.blogspot.com/2013/07/house-appropriations-committee-to-sec.html
+  21. http://datacoalition.blogspot.com/2013/07/investors-ask-sec-to-commit-to-smart.html
+  22. http://www.aicpa.org/Advocacy/Issues/Pages/XBRL.aspx
+  23. http://datacoalition.blogspot.com/2013/01/connecting-big-business-regulation-to.html
+  24. http://datacoalition.com/issues/financial-industry-transparency-act.html
+  25. http://img3.allvoices.com/thumbs/image/609/480/100534641-president-obama.jpg
+  26. http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf
+  27. http://www.whitehouse.gov/sites/default/files/omb/memoranda/2013/m-13-13.pdf
+  28. http://www.sec.gov/spotlight/xbrl.shtml
+  29. http://monumentmasonry.com/calculator/wp-content/uploads/2010/03/calculator1.jpg
+  30. http://www.sec.gov/about/reports/secfy14congbudgjust.pdf
+  31. http://www.sec.gov/about/reports/secfy14congbudgjust.pdf
+  32. http://www.sec.gov/about/reports/secfy14congbudgjust.pdf
+  33. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  34. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  35. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  36. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  37. http://www.forbes.com/sites/janetnovack/2013/08/09/how-secs-new-robocop-profiles-companies-for-accounting-fraud/
+  38. http://datacoalition.blogspot.com/2013/01/connecting-big-business-regulation-to.html
+  39. http://datacoalition.blogspot.com/2013/01/connecting-big-business-regulation-to.html
+  40. http://www8.gsb.columbia.edu/ceasa/newsn/2252
+  41. http://www8.gsb.columbia.edu/ceasa/newsn/2252
+  42. http://www8.gsb.columbia.edu/ceasa/newsn/2252
+  43. http://www8.gsb.columbia.edu/ceasa/newsn/2252
+  44. http://xbrl.us/research/pages/Csuite.aspx
+  45. http://xbrl.us/research/pages/Csuite.aspx
+  46. http://xbrl.us/research/pages/Csuite.aspx
+  47. http://xbrl.us/research/pages/Csuite.aspx
+  48. http://datacoalition.blogspot.com/2013/07/investors-ask-sec-to-commit-to-smart.html
+  49. http://www.sec.gov/spotlight/investor-advisory-committee-2012/iac-recommendation-data-tagging.pdf
+  50. http://datacoalition.blogspot.com/2013/07/investors-ask-sec-to-commit-to-smart.html
+  51. http://datacoalition.blogspot.com/2013/07/investors-ask-sec-to-commit-to-smart.html
+  52. http://datacoalition.blogspot.com/2013/07/investors-ask-sec-to-commit-to-smart.html
+  53. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  54. http://www.xbrl.org/knowledge_centre/projects/map
+  55. http://www.sec.gov/spotlight/investor-advisory-committee-2012/iac-recommendation-data-tagging.pdf
+  56. http://www.sec.gov/spotlight/investor-advisory-committee-2012/iac-recommendation-data-tagging.pdf
+  57. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  58. http://www.mondovisione.com/_assets/files/2013-09-10-DEI-to-White-re-Interactive-Data-Rule.pdf
+  59. http://www.blogger.com/profile/13248649040478197901
+  60. http://datacoalition.blogspot.com/2013/09/at-data-transparency-2013-issa.html
+  61. http://www.blogger.com/share-post.g?blogID=8666402397964752797&postID=692887020318086688&target=email
+  62. http://www.blogger.com/share-post.g?blogID=8666402397964752797&postID=692887020318086688&target=blog
+  63. http://www.blogger.com/share-post.g?blogID=8666402397964752797&postID=692887020318086688&target=twitter
+  64. http://www.blogger.com/share-post.g?blogID=8666402397964752797&postID=692887020318086688&target=facebook
+  65. http://datacoalition.blogspot.com/search/label/Financial%20Regulation
+  66. http://datacoalition.blogspot.com/search/label/XBRL
+  67. http://www.blogger.com/profile/10595695527479644201
+  68. http://datacoalition.blogspot.com/2013/09/at-data-transparency-2013-issa.html?showComment=1379921605414#c665500774020418058
+  69. javascript:;
+  70. http://www.blogger.com/delete-comment.g?blogID=8666402397964752797&postID=665500774020418058
+  71. javascript:;
+  72. javascript:;
+  73. http://datacoalition.blogspot.com/2013/09/opening-doors-to-our-open-data-agenda.html
+  74. http://datacoalition.blogspot.com/2013/09/spotlight-invoke.html
+  75. http://datacoalition.blogspot.com/
+  76. http://datacoalition.blogspot.com/feeds/692887020318086688/comments/default
+  77. http://datacoalition.org/
+  78. javascript:void(0)
+  79. http://datacoalition.blogspot.com/search?updated-min=2013-01-01T00:00:00-08:00&updated-max=2014-01-01T00:00:00-08:00&max-results=27
+  80. javascript:void(0)
+  81. http://datacoalition.blogspot.com/2013_09_01_archive.html
+  82. http://datacoalition.blogspot.com/2013/09/opening-doors-to-our-open-data-agenda.html
+  83. http://datacoalition.blogspot.com/2013/09/at-data-transparency-2013-issa.html
+  84. http://datacoalition.blogspot.com/2013/09/spotlight-invoke.html
+  85. http://datacoalition.blogspot.com/2013/09/captricity-data-transparency-2013.html
+  86. http://datacoalition.blogspot.com/2013/09/spotlight-streamlink-software-grip.html
+  87. http://datacoalition.blogspot.com/2013/09/forging-open-data-agenda.html
+  88. http://datacoalition.blogspot.com/2013/09/rr-donnelley-achieving-data-transparency-xbrl.html
+  89. http://datacoalition.blogspot.com/2013/09/IPHIX-data-transparency-2013.html
+  90. http://datacoalition.blogspot.com/2013/09/exhibitor-spotlight-way-better-patents.html
+  91. javascript:void(0)
+  92. http://datacoalition.blogspot.com/2013_08_01_archive.html
+  93. javascript:void(0)
+  94. http://datacoalition.blogspot.com/2013_07_01_archive.html
+  95. javascript:void(0)
+  96. http://datacoalition.blogspot.com/2013_06_01_archive.html
+  97. javascript:void(0)
+  98. http://datacoalition.blogspot.com/2013_04_01_archive.html
+  99. javascript:void(0)
+ 100. http://datacoalition.blogspot.com/2013_01_01_archive.html
+ 101. javascript:void(0)
+ 102. http://datacoalition.blogspot.com/search?updated-min=2012-01-01T00:00:00-08:00&updated-max=2013-01-01T00:00:00-08:00&max-results=15
+ 103. javascript:void(0)
+ 104. http://datacoalition.blogspot.com/2012_10_01_archive.html
+ 105. javascript:void(0)
+ 106. http://datacoalition.blogspot.com/2012_09_01_archive.html
+ 107. javascript:void(0)
+ 108. http://datacoalition.blogspot.com/2012_08_01_archive.html
+ 109. javascript:void(0)
+ 110. http://datacoalition.blogspot.com/2012_07_01_archive.html
+ 111. javascript:void(0)
+ 112. http://datacoalition.blogspot.com/2012_06_01_archive.html
+ 113. javascript:void(0)
+ 114. http://datacoalition.blogspot.com/2012_05_01_archive.html
+ 115. javascript:void(0)
+ 116. http://datacoalition.blogspot.com/2012_04_01_archive.html
+ 117. javascript:void(0)
+ 118. http://datacoalition.blogspot.com/2012_03_01_archive.html
+ 119. javascript:void(0)
+ 120. http://datacoalition.blogspot.com/2012_02_01_archive.html
+ 121. http://www.blogger.com/profile/13248649040478197901
+ 122. http://www.blogger.com/profile/08598680746373548286
+ 123. http://www.blogger.com/profile/15509440299519543845
+ 124. http://www.blogger.com/
+
+   Hidden links:
+ 125. http://www.blogger.com/rearrange?blogID=8666402397964752797&widgetType=LinkList&widgetId=LinkList1&action=editWidget&sectionId=crosscol
+ 126. http://www.blogger.com/post-edit.g?blogID=8666402397964752797&postID=692887020318086688&from=pencil
+ 127. http://www.blogger.com/comment-iframe.g?blogID=8666402397964752797&postID=692887020318086688
+ 128. http://www.blogger.com/rearrange?blogID=8666402397964752797&widgetType=Text&widgetId=Text1&action=editWidget&sectionId=main
+ 129. http://www.blogger.com/rearrange?blogID=8666402397964752797&widgetType=BlogArchive&widgetId=BlogArchive1&action=editWidget&sectionId=sidebar-right-1
+ 130. http://www.blogger.com/rearrange?blogID=8666402397964752797&widgetType=Profile&widgetId=Profile1&action=editWidget&sectionId=sidebar-right-2-1
+ 131. http://www.blogger.com/rearrange?blogID=8666402397964752797&widgetType=Attribution&widgetId=Attribution1&action=editWidget&sectionId=footer-3

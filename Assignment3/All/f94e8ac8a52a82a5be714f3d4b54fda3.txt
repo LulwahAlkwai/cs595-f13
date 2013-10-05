@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="title" content="Gathr - Your film. Your friends. Your theater." />
+<meta name="description" content="Gathr is TOD - Theatrical On Demand" />
+<meta name="keywords" content="gathr, tod, theatrical, demand, movies, cinema" />
+<meta name="language" content="en" />
+<title>Gathr - Your film. Your friends. Your theater.</title>
+    <title>Gathr - Your film. Your friends. Your theater.</title>
+    
+    <script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/jquery-1.6.2.min.js"></script>
+    <script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/jquery.tools.min.js"></script>
+	<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/jquery-ui.min.js"></script>
+    
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?libraries=places&sensor=true&language=en"></script>
+
+    <script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/gathr.event-tracking.js"></script>
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/gathr.event-tracking.config.js"></script>
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/gathr.widgets.js"></script>
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/froogaloop.min.js"></script>
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/gathr.screenings.js"></script>
+
+    		    
+	<meta property="og:url" content="http://gathr.us/screening/2802" />
+	    
+		<meta property="og:title" content="Gathr - Your film. Your friends. Your theater." />
+			
+	<meta property="og:description" content="See Girl Rising in Gloucester, MA!" />
+
+	<meta property="og:image" content="http://cdn.gathr.us/uploads/assets/thumbs/339c45221d0f6b220726e91303578be657ef21b2_642x900.jpg" />
+	<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/jquery.tinyscrollbar.min.js"></script>
+
+	<link rel="icon" type="image/x-icon" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/favicon.ico">
+
+	<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/fonts.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/screen.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/screen-new.css" type="text/css" media="screen, projection" />
+	<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/print.css" type="text/css" media="print" />
+	<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/jquery.gritter.css" type="text/css"  />
+	
+	<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/jquery.gritter.min.js"></script>
+	
+<!--[if lt IE 9]><script src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/html5.js"></script><![endif]-->
+<!--[if IE]>
+	<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/ie.css" type="text/css" media="screen, projection" />
+    <script type="text/javascript">
+    
+    $(document).ready( function(){
+    	placeholder();
+    });
+    
+    function placeholderOnFocus(input){
+
+		if(input.hasClass('placeholder-generated')){
+			var oldElement = $('#' + input.attr('rel'));
+			oldElement.val('');
+			oldElement.removeClass('placeholder');
+			oldElement.show();
+			oldElement.focus();
+			input.remove();
+		} else {
+			if (input.val() == input.attr('placeholder')) {
+				input.val('');
+				input.removeClass('placeholder');
+			} 
+		}
+    }
+    
+    function placeholderOnBlur(input){    
+		if (input.val() == '' || input.val() == input.attr('placeholder')) {
+			input.addClass('placeholder');
+			input.val(input.attr('placeholder'));
+
+			if(input.attr('type') == 'password' && input.css('display') != 'none'){
+				var newInput = $('<input type="text" rel="' + input.attr('id') + '" class="text placeholder placeholder-generated" id="'  + input.attr('id') + '_place_generated' + '" placeholder="' + input.val() + '" />');
+				input.parent().prepend(newInput);
+				
+				newInput.focus(function() {
+					placeholderOnFocus($(this));
+		        }).blur(function() {
+					placeholderOnBlur($(this));
+				}).blur();
+				
+				newInput.val(input.attr('placeholder'));
+				
+				input.hide();
+			}
+		} 
+    }
+
+	function placeholder() {
+		
+		$('[placeholder]').focus(function() {
+			placeholderOnFocus($(this));
+        }).blur(function() {
+			placeholderOnBlur($(this));
+		}).blur();
+        
+		$('[placeholder]').parents('form').submit(function() {
+			$(this).find('[placeholder]').each(function() {
+				var input = $(this);
+				
+				if(input.hasClass('placeholder-generated')){
+					var oldElement = $('#' + input.attr('rel'));
+					oldElement.val('');
+					oldElement.show();
+					input.remove();
+				} else {
+					if (input.val() == input.attr('placeholder')) {
+						input.val('');
+					}
+				}
+				
+			});
+		});
+	}
+    </script>
+    <![endif]-->
+
+<script type='text/javascript'>
+	function autoHeight() {
+		var detailHeight = $(document).height();
+  		if ($('.detail').length) { 
+			$('.detail').height(detailHeight - 5); 
+		}
+	}
+
+	$(window).resize(function() {
+		autoHeight();
+	});
+	$(window).load(function() {
+		autoHeight();
+	});
+	$(document).ready( function(){
+			autoHeight();
+
+			$.gathr.widgets.setOverlay();
+
+			// Show message to screen
+			
+		detectNonLoggedLocation();
+		
+			
+	});
+
+	function detectNonLoggedLocation(){
+
+			}
+	
+  </script>
+  
+<div id="fb-root"></div>  
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-28485420-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+	var addthis_config = {
+		data_track_addressbar :false, 
+		ui_use_addressbook: true
+	};
+	window.fbAsyncInit = function () {
+		FB.init({
+			appId: '238282156260406',
+			cookie: true,
+			status: false,
+			xfbml: false
+		});
+	};
+
+	(function(d, debug) {
+		var js, id = 'facebook-jssdk', ref =d.getElementsByTagName('script')[0];
+		if (d.getElementById(id)) { return; }
+		js = d.createElement('script'); js.id = id; js.async = true;
+		js.src = "//connect.facebook.net/en_US/all" + (debug ? "/debug" : "") + ".js";
+		ref.parentNode.insertBefore(js, ref);
+	})(document, false);
+
+</script>
+
+<script type="text/javascript" src="https://s7.addthis.com/js/250/addthis_widget.js#pubid=ra-4fce903771c3416f"></script>
+
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/mdetect.js"></script>
+
+</head>
+<body>
+	<div class="wrap">
+		<div class="container clearfix">
+			<div id="sidebar">
+				<h1>
+	<a href="/">Gathr films</a>
+</h1>
+
+<div id="login">
+		<a href="#" rev="/login/login" class="login" rel="#overlay">sign in</a> /
+	<a href="/register" class="login">register</a>
+	</div>
+
+<div class="city">
+		<p>Current location:</p>
+	<h4>Norfolk, VA</h4>
+		
+	<a href="#" rev="/profile/changeLocation" rel="#overlay">Change</a>
+</div> 
+
+<h1>GATHR</h1>
+<h2>THEATRICAL<br />ON DEMAND&reg</h2>
+<h3>YOUR FILM.<br />YOUR FRIENDS.<br />
+AT A THEATER<br />NEAR YOU.<br />
+<a href="#" rel="#overlayRequest" rev="/home/howItWorks">How Does<br />this Work?</a></h3>
+
+<a href="/films?view=thumbnail" class="films">Films</a>
+			</div>
+			<!--/#sidebar-->
+			<div class="content">
+      
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/jquery.expander.js"></script>
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/countdown/jquery.countdown.min.js"></script>
+<script type="text/javascript">
+// Google +1 callback must be defined in global space
+
+function trackScreeningPlusOne(plusone) {
+	if (plusone.state === 'on') $.gathr.eventTracking.trackSingleEvent('screening-details', 'click', '+1 on Google Plus');
+}
+
+</script>
+<div class="new-screening clearfix">
+	<div class="new-screening-content">
+		<div class="sidebar-sreening">
+		
+		<img src="http://cdn.gathr.us/uploads/assets/thumbs/339c45221d0f6b220726e91303578be657ef21b2_358x535.jpg" alt="Girl Rising" class="capture" >
+
+	  				<h4 class="watch"><a id="video_modal_open" href="#vimeo_modal" rel="#vimeo_modal">Watch Trailer</a></h4>
+			<div class="trailer-thumb">
+				<a href="#vimeo_modal" rel="#vimeo_modal" class="play">
+					<img src="http://cdn.gathr.us/uploads/assets/thumbs/bc85e12faea8b7e155b4bd3364ddc916255d4048_229x128.jpg" alt="Girl Rising" >
+				</a>
+			</div>
+			<h2>Girl Rising</h2>
+				<p class="resolution">
+		<span class="ico-hd"></span>
+				</p>
+					<p><strong>Runtime:</strong> 2m26s</p>
+							<a href="#vimeo_modal" rel="#vimeo_modal" class="play trailer-watch"></a>
+				
+		<div class="more-trailer">
+						<p><strong>Rating:</strong> PG-13</p>
+					
+						<p><strong>Genre:</strong>
+																Documentary 			</p>			
+						
+						<p><strong>Directors:</strong>
+																Richard Robbins 			</p>
+					
+			
+						<p><strong>Release:</strong>
+			2013			</p>
+						
+						<p><strong>Duration:</strong>
+			101			</p>
+						
+						<p><strong>Starring: </strong>
+																																																													Meryl Streep, Liam Neeson, Anne Hathaway, Selena Gomez, Kerry Washington, Cate Blanchette			</p>
+						
+						<p class="sinopsis">From Academy Award-nominated director Richard E. Robbins and the award-winning producers of The Documentary Group and Vulcan Productions, strategic partner, Intel Corporation, and distribution partners CNN Films and Gathr, comes Girl Rising - an innovative new feature film about the power of education to change a girl – and the world. Meryl Streep, Anne Hathaway, Liam Neeson, Cate Blanchett, Selena Gomez and other A-list actresses contribute voice performances to the film, which features original music from Academy Award winner Rachel Portman, in collaboration with Lorne Balfe.<br />
+ <br />
+The film spotlights unforgettable girls like Sokha, an orphan who rises from the dumps of Cambodia to become a star student and an accomplished dancer; Suma, who composes music to help her endure forced servitude in Nepal and today crusades to free others; and Ruksana, an Indian “pavement-dweller” whose father sacrifices his own basic needs for his daughter’s dreams. Each girl is paired with a renowned writer from her native country. Edwidge Danticat, Sooni Taraporevala, Aminatta Forna, and others tell the girls’ stories, each with its own style, and all with profound resonance.<br />
+ <br />
+These girls are each unique, but the obstacles they faced are ubiquitous. Like the 66 million girls around the world who dream of going to school, what Sokha, Suma, Ruksana and the rest want most is to be students: to learn. And now, by sharing their personal journeys, they have become teachers. Watch Girl Rising, and you will see: One girl with courage is a revolution.</p>
+					</div>
+
+
+		</div><!--/sidebar-->
+
+
+	  <div class="new-screening-content-top">
+      <h2><a href="/films/Girl-Rising" >Girl Rising</a></h2>
+           	 <h3>10x10</h3>
+      
+      <h5>
+              	  In Gloucester</br>
+                          at the Cape Ann Community Cinema              </h5>
+		</div>
+    <div class="new-screening-content-action">
+      <h4>Ticketing</h4>
+
+      <div class="buy-content" >
+    	  
+					    <a class="how-it-works-screening-details" rel="#overlayRequest" rev="/home/howItWorks" href="#">HOW DOES THIS WORK?</a>
+      </div>
+
+
+      <p class="start-date">
+		    Wed, May 29, 2013 <br />AT 07:30 pm       </p>
+
+      <div class="isindate">
+						  <p><strong>This screening has already happened!</strong></p>
+						</div>
+
+            
+      <div class="box-reservetion">
+	      	 			  <p>TICKETS: <strong>104</strong></p>
+	 			  					  <p class="reservation-ticket-not-available">&nbsp;</p>	
+				  	      	    </div>    
+
+      <div class="tipping">
+  	    		  </div>
+
+    </div>
+
+		<div class="panels" id="accordion">
+			<h2 class="current" id="panel-about-tit">About this screening</h2>
+      <div class="panel panel-about" style="display:block">
+      <h4 class="movie-captain">
+      	<strong>MOVIE CAPTAIN:</strong> 
+        
+			 
+			<img src="http://cdn.gathr.us/uploads/assets/thumbs/defaultAvatarUserImage_50x50.png">
+        	<span>rnewton</span>
+        	        	<em>Since  03/27/2013</em>
+        	        </h4>
+        
+        <p class="when">
+      	  <strong>Where:</strong>
+      	        	    Cape Ann Community Cinema (Screen TBD)<br />
+      	         	  21 Main St<br />       	  Gloucester, MA<br />                      <a href="#" class="map" rev="/venues/detail/map/true/id_venue/4725" rel="#overlay">Map it</a>
+                  </p>
+        
+					</div>
+    <!-- BEGIN SHARE -->
+    <h2 id="panel-promote-tit">Promote this screening</h2>
+    <div class="panel panel-promote" style="display:block;">
+    
+   	<p class="description">Use these tools to promote the screening.</p>
+   	<div class="description-capture">
+
+   		<a href="/screenings/downloadCompleteFlyer/id_screening/2802/description/" >
+			<img src="http://cdn.gathr.us/uploads/assets/thumbs/339c45221d0f6b220726e91303578be657ef21b2_116x151.jpg" alt="Girl Rising" >
+   		</a>
+
+   		<span id="download-flyer-title"><a href="/screenings/downloadCompleteFlyer/id_screening/2802/description/" >Click here to download
+   		<br />
+   		a flyer for this screening.</a></span>
+   		
+   		<p id="download-flyer-description">Pin it up in a local coffeehouse, dorm common
+   		area, the bodega or the breakroom at your 9 to 5.</p>
+   	</div>
+   	
+   	<p class="share-tit">
+   		SHARE THE SCREENING WITH YOUR FRIENDS AND FOLLOWERS.
+   	</p>
+
+<script type="text/javascript" src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/zeroclipboard/ZeroClipboard.js"></script>
+
+<style type="text/css">		
+	.my_clip_button { text-decoration: underline; color: #fff; width:120px; cursor:pointer;  }
+</style>
+
+	<div class="addthis_toolbox addthis_default_style addthis_32x32_style" id="share-item-2802">
+		    
+	        
+	<!-- AddThis Button BEGIN -->
+	<a class="addthis_button_twitter" addthis:description="See Girl Rising with me in Cape Ann Community Cinema (Screen TBD) 21 Main St Gloucester, MA on Wed, May 29, 2013! @GathrFilms" addthis:title="GATHR - See Girl Rising with me in Cape Ann Community Cinema (Screen TBD) 21 Main St Gloucester, MA on Wed, May 29, 2013! @GathrFilms" addthis:url="http://bit.ly/10tnjAK"></a>
+	<a class="addthis_button_facebook" addthis:description="GATHR - See Girl Rising in your City!" addthis:title="GATHR - See Girl Rising in your City!" addthis:url="http://bit.ly/10tnjAK"></a>
+	<a class="addthis_button_email" addthis:description="GATHR - See Girl Rising in your City!" addthis:title="GATHR - See Girl Rising in your City!" addthis:url="http://bit.ly/10tnjAK"></a>
+	<!--<a class="addthis_button_google_plusone" g:plusone:callback="trackScreeningPlusOne" addthis:description="GATHR - See Girl Rising in your City!" addthis:title="GATHR - See Girl Rising in your City!" addthis:url="http://bit.ly/10tnjAK"></a-->
+
+	<script type="text/javascript">
+		addthis.toolbox('#share-item-2802', addthis_config, {
+			email_template: "Screening",
+			email_vars: { 	FilmPoster: '<img id="screening-poster" style="float: left; margin-right: 15px;" src="http://cdn.gathr.us/uploads/assets/thumbs/339c45221d0f6b220726e91303578be657ef21b2_99x138.jpg" alt="Girl Rising" />',
+							ScreeningDescription: 'See Girl Rising in Gloucester, MA!'
+						}			
+   		});
+   		
+		var addthis_share =  { 
+		    templates: {
+		                   gmail: 'See Girl Rising in Gloucester, MA!. Follow this url: http://bit.ly/10tnjAK',
+		                   yahoomail: 'See Girl Rising in Gloucester, MA!. Follow this url: http://bit.ly/10tnjAK',
+		                   hotmail: 'See Girl Rising in Gloucester, MA!. Follow this url: http://bit.ly/10tnjAK',
+		                   live: 'See Girl Rising in Gloucester, MA!. Follow this url: http://bit.ly/10tnjAK',
+		               }
+		}
+   		
+	</script>
+	<!-- AddThis Button END -->		<big id="screening-url-share_id" class="screening-url-share">http://bit.ly/10tnjAK</big> 
+		
+			<div class="container_copy_promo" id="container_copy_promo_url" style="position:relative">
+				<div id="copy_promo_url" class="my_clip_button">COPY</div>
+			</div>
+		
+	</div>
+	
+		
+    </div>
+    
+
+
+<script type="text/javascript">
+
+	initZeroClipboard('screening-url-share_id','copy_promo_url','container_copy_promo_url');
+
+	
+	function initZeroClipboard(idTest, clipButton, clipContainer) {
+			var clip = null;
+			ZeroClipboard.setMoviePath('http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/js/zeroclipboard/ZeroClipboard.swf');
+			clip = new ZeroClipboard.Client();
+			clip.setHandCursor( true );
+			clip.setText( $('#' + idTest).text() );
+			// clip.addEventListener('mouseOver', function (client) {
+			//	clip.setText( $('#' + idTest).text() );
+			// });
+			clip.glue( clipButton, clipContainer );
+			$(".panel-promote").css("display","none");
+	}
+
+	if(DetectIphone() || DetectIpad()){
+		$('.container_copy_promo').hide();
+	}
+
+
+</script>
+    
+    
+    <!-- BEGIN COMMENTS -->
+    <h2 id="panel-commentary-tit">Commentary</h2>
+    <div class="panel panel-commentary">
+    
+<form id="sendCommentForm" name="sendCommentForm" action="/screenings/createComment/id_screening/2802" method="post" >
+
+	<fieldset>
+		<label>Post a comment about this screening!</label>
+		<textarea rows="4" cols="30" name="screening_comment[comment]" id="screening_comment_comment"></textarea>        		<input type="hidden" name="screening_comment[id_screening_comment]" id="screening_comment_id_screening_comment" />	      
+		<div class="button"><span><input type="submit" class="submit" value="Submit" /></span></div>
+	</fieldset>
+</form>	
+
+<script type="text/javascript">
+		$('#sendCommentForm').submit(function(){
+			$('#sendCommentForm div.button input').addClass('loading').attr('disabled', 'disabled');
+			
+			var formName = 'screening_comment';
+			var dataString = $(this).serialize();
+			var postUrl = $(this).attr('action');
+			
+			$('.modal-error-message').remove();
+			$('.modal-error-field').removeClass('modal-error-field');
+			
+    		$.ajax({  
+        		  type: "POST",  
+        		  url: postUrl,  
+        		  data: dataString,  
+        		  success: function(data) {
+
+                    	if(data.hasErrors){
+	  						$.each(data.errors, function (i, item) {
+								$('#' + formName + '_' + item.field).addClass('modal-error-field');
+								$('#' + formName + '_' + item.field).parent().append('<span style="z-index: 9999" class="modal-error-message">' + item.error + '</span>');
+	  						});
+	  						
+                    	} else {
+                        	// enconde HTML for the comment
+							var comment = $('<div/>').text($('#' + formName + '_comment').val()).html(); 
+                    		
+							$('#screening_comments').prepend('<li><div class="author"><img src=""><h6><em>Since 12/31/1969</em></h6></div><p><strong>1 second ago</strong>' + comment + '</p></li>');
+							if ($('#no-comments-text').length > 0){
+								$('#no-comments-text').hide();
+							}
+							$('#' + formName + '_comment').val('');
+                    	}
+        		  },
+        		  complete: function(data) {
+        			  $('#sendCommentForm div.button input').removeClass('loading').removeAttr('disabled');
+				  }
+			});  
+			
+			return false;
+		});
+</script>	
+	<div class="comments">
+					<p class="no_comments" id="no-comments-text">No comments yet</p>
+			<ul id="screening_comments">
+	
+			</ul>	
+			</div> 
+    </div>
+</div>
+<img src="http://ad.retargeter.com/seg?add=600517&t=2" width="1" height="1" />
+</div>
+
+
+
+<script type="text/javascript">
+	$("#accordion h2").click(function(){
+		$(this).toggleClass('current');
+		$(this).next().slideToggle();
+	});
+	$(function () {
+		$('div.exerpt').expander({
+			slicePoint: 250,
+			expandText: 'More',
+			userCollapseText: 'Hide Text',
+			afterExpand: window.autoHeight
+		});
+
+		$.gathr.widgets.vimeoPlayerSetup({
+			vimeoId: '57960534',
+			trackEvents: true
+		});
+
+		// Clockdown
+		
+				
+	});
+
+</script>
+		
+    	</div>
+			<!--/.content-->
+		</div>
+		
+	<footer>
+		<h2>THEATRICAL ON DEMAND&reg</h2>
+		
+		<div class="featured">
+			<h5>Featured in</h5>
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo7.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo8.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo1.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo2.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo3.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo4.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo5.png" alt="" />
+			<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/logo6.png" alt="" />
+		</div>
+		<div class="footer-nav">
+			<p>
+				<a href="/">home</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				<a href="/films?view=thumbnail">films</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				<a id="how-it-works" href="/how-it-works" rel="#overlayRequest" rev="/home/howItWorks">how does this work?</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				<a id="faqLink" href="/faq-external" rev="/faqs" rel="#overlayRequest">f.a.q.</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				<a id="about-us" href="/about" rev="/home/about" rel="#overlay">about us</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+				<a id="contact-us" href="/contact-us" rev="/contactus" rel="#overlay">contact us</a>
+			</p>
+			<p class="copy">
+			<a href="/"><strong>gathr.us</strong></a> &copy; 2012 GATHR Films - All rights reserved. |
+			<a id="terms-of-service" href="/terms-of-use" rev="/home/terms" rel="#overlay" class="privacy">Terms of Use</a>,
+			<a id="privacy-policy" href="/privacy-policy" rev="/home/privacy" rel="#overlay" class="privacy">Privacy Policy</a> &
+			<a id="purchase-policy" href="/refund-and-cancellation-policy" rev="/home/refundcancellation" rel="#overlay"  class="privacy">purchase policy</a> |
+            <a href="http://www.gathr.com" target="_blank">Looking for Gathr.com?</a>
+            </p>
+		</div>
+	</footer>		
+		
+		
+		
+		<!--/.container-->
+	</div>
+	<!--/.wrap-->
+	<div class="apple_overlay" id="overlay">
+		<div class="contentWrap"></div>
+	</div>
+	<div id="overlayRequest" class="hide">
+		<div class="contentWrap"></div>
+	</div>
+	<div id="requestform" class="hide">
+		<div class="contentWrap"></div>
+	</div>
+	<div id="vimeo_modal" class="hide">
+    <div id="video_modal_container"></div>
+  </div>
+	<div id="overlayGenres"> </div>
+	
+	<div id="set_location_overlay" class="hide">
+		<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/ui-lightness/jquery-ui-1.8.16.custom.css" type="text/css" media="screen" />
+<link rel="stylesheet" href="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/css/new/datepicker.css" type="text/css" media="screen" />
+
+<div class="set-location-content">
+	<h3>Confirm your location<br />(city, state or zip code):</h3>
+	<span id='errorSpan'></span>
+		
+		
+	<form id="setLocation" name="setLocation" action="/profile/changeLocationRequest" method="post" >
+		<fieldset>
+			<input type="text" name="change_location[zip_code]" id="change_location_zip_code" />						
+							  
+			    
+			<input type="submit" class="submit" value="OK" />
+		</fieldset>
+	</form>	
+
+	<p class="hide" id="set-location-errors"></p>
+	
+	<p>	
+		<small>
+			<a href="#" rev="/login/login" rel="#overlay">Sign In</a> / 
+			<a href="#" rev="/home/privacy" rel="#overlay">Privacy Statement</a>
+		</small>
+	</p>
+</div>
+<div class="set-location-logos">
+	<h4>Featured in</h4>
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-nytimes.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-wired.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-fast.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-variety.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-filmmaker.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-deadline.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-huffington.png" alt="" >
+	<img src="http://cdn.gathr.us/8f267774-a45f-4d08-b6f3-07ccb1a80495/images/set-location-indie-wire.png" alt="" >
+</div>
+<script>
+	$(function() {
+		$.fn.extend({
+			propAttr: $.fn.prop || $.fn.attr
+		});
+		$( "#change_location_zip_code").autocomplete({
+			source: "/profile/locationSearch",
+			minLength: 3,
+			select: function( event, ui ) {
+
+			}
+		});
+		$( "#change_location_zip_code").autocomplete("widget").css('z-index', 10000);
+	});
+</script>
+
+<script type="text/javascript">
+
+	(function ($, $g) {
+		$(document).ready(function () {
+			$g.eventTracking.setup('confirm-location', $g.eventTracking.pages.confirmLocation);
+		})
+	})(jQuery, jQuery.gathr);
+
+	var firstTime = true;
+	
+	$(document).ready( function(){
+	
+		$( "#change_location_zip_code").focus(function(){
+			if (firstTime) {
+				firstTime = false;
+				$( "#change_location_zip_code").val('');
+			}
+		});
+		
+		$('#setLocation').submit(function(){
+			$( "#change_location_zip_code").autocomplete("close");
+			$('#changeLocation div.button input').addClass('loading').attr('disabled', 'disabled');
+			var formName = 'change_location';
+			var dataString = $(this).serialize();
+			var postUrl = $(this).attr('action');
+			$('.modal-error-message').remove();
+			$('.modal-error-field').removeClass('modal-error-field');
+			$('#set-location-errors').hide();
+			
+    		$.ajax({  
+        		  type: "POST",  
+        		  url: postUrl,  
+        		  data: dataString,  
+        		  success: function(data) {
+
+                    	if(data.hasErrors){
+	  						$.each(data.errors, function (i, item) {
+								$('#set-location-errors').append('<span class="modal-error-message">' + item.error + '</span>');
+								$('#set-location-errors').show();
+		  					});
+
+	  						if (data.hitCount > 0) {
+	  							$("#change_location_zip_code").autocomplete("search");
+	  						}
+	  						
+	  						$('#setLocation div.button input').removeClass('loading').removeAttr('disabled');
+	  									
+                    	} else {
+                        	                        	$(location).attr('href','/screening/2802');
+                        	                    	}
+        		  },
+        		  complete: function(data) {
+						
+				  }
+			});  
+			
+			return false;
+		});
+	});
+
+</script>
+	</div>
+	
+	
+</body>
+</html>

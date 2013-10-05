@@ -1,0 +1,532 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:og="http://ogp.me/ns#" xmlns:fb="http://www.facebook.com/2008/fbml" dir="ltr" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+	<title>Celebrating Statisticians: John W. Tukey</title>
+
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+	<meta property="og:title" content="Celebrating Statisticians: John W. Tukey"/>
+	<meta property="og:type" content="article"/>
+	<meta property="og:url" content="http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/"/>
+	<meta property="og:site_name" content="JMP Blog"/>
+	<meta property="og:description" content="“Statistics is a science in my opinion, and it is no more a branch of mathematics than are physics, chemistry and economics; for if its methods fail the test of experience – not the test of logic – they are discarded."/>
+	<meta property="fb:app_id" content="129959910415506"/>
+	<meta property="og:image" content="http://blogs.sas.com/content/jmp/wp-content/blogs.dir/3/files/userphoto/280.jpg"/>
+
+	<link rel="stylesheet" type="text/css" href="http://blogs.sas.com/content/jmp/wp-content/themes/sastheme/style.css" />
+
+	<link rel="alternate" type="application/rss+xml" href="http://feeds.feedburner.com/JmpBlog" title="JMP Blog RSS feed" />
+
+	<link rel="pingback" href="http://blogs.sas.com/content/jmp/xmlrpc.php" />
+
+                        <style type="text/css" media="screen" >
+                                .socialwrap li.icon_text a img, .socialwrap li.iconOnly a img, .followwrap li.icon_text a img, .followwrap li.iconOnly a img{border-width:0 !important;background-color:none;}#follow.right {width:32px;position:fixed; right:0; top:100px;background-color:#878787;padding:10px 0;font-family:impact,charcoal,arial, helvetica,sans-serif;-moz-border-radius-topleft: 5px;-webkit-border-top-left-radius:5px;-moz-border-radius-bottomleft:5px;-webkit-border-bottom-left-radius:5px;border:2px solid #fff;border-right-width:0}#follow.right ul {padding:0; margin:0; list-style-type:none !important;font-size:24px;color:black;}
+#follow.right ul li {padding-bottom:10px;list-style-type:none !important;padding-left:4px;padding-right:4px}
+#follow img{border:none;}#follow.right ul li.follow {margin:0 4px;}
+#follow.right ul li.follow img {border-width:0;display:block;overflow:hidden; background:transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/impact/follow-right.png) no-repeat -0px 0px;height:79px;width:20px;}
+#follow.right ul li a {display:block;}
+#follow.right ul li.follow span, #follow ul li a span {display:none}.share {margin:0 10px 10px 0;}
+.phat span {display:inline;}
+ul.row li {float:left;list-style-type:none;}
+li.iconOnly a span.head {display:none}
+#follow.left ul.size16 li.follow{margin:0px auto !important}
+li.icon_text a {padding-left:0;margin-right:10px}
+li.text_only a {background-image:none !important;padding-left:0;}
+li.text_only a img {display:none;}
+li.icon_text a span{background-image:none !important;padding-left:0 !important; }
+li.iconOnly a span.head {display:none}
+ul.socialwrap li {margin:0 10px 10px 0 !important;}
+ul.socialwrap li a {text-decoration:none;}ul.row li {float:left;line-height:auto !important;}
+ul.row li a img {padding:0}.size16 li a,.size24 li a,.size32 li a, .size48 li a, .size60 li a {display:block}ul.socialwrap {list-style-type:none !important;margin:0; padding:0;text-indent:0 !important;}
+ul.socialwrap li {list-style-type:none !important;background-image:none;padding:0;list-style-image:none !important;}
+ul.followwrap {list-style-type:none !important;margin:0; padding:0}
+ul.followwrap li {margin-right:10px;margin-bottom:10px;list-style-type:none !important;}
+#follow.right ul.followwrap li, #follow.left ul.followwrap li {margin-right:0px;margin-bottom:0px;}
+.shareinpost {clear:both;padding-top:0px}.shareinpost ul.socialwrap {list-style-type:none !important;margin:0 !important; padding:0 !important}
+.shareinpost ul.socialwrap li {padding-left:0 !important;background-image:none !important;margin-left:0 !important;list-style-type:none !important;text-indent:0 !important}
+.socialwrap li.icon_text a img, .socialwrap li.iconOnly a img{border-width:0}ul.followrap li {list-style-type:none;list-style-image:none !important;}
+div.clean {clear:left;}
+div.display_none {display:none;}
+ul.socialwrap li {display:inline;float:none;}                        </style>
+                        
+<!-- This site is optimized with the Yoast WordPress SEO plugin v1.1.4 - http://yoast.com/wordpress/seo/ -->
+<meta name="description" content="“Box plot,” “Stem and leaf plot,” ANOVA” and even “bit,” “software” and “vacuum cleaner” were coined by statistician John Wilder Tukey."/>
+<link rel="canonical" href="http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/" />
+<!-- / Yoast WordPress SEO plugin. -->
+
+<style type="text/css">body.jmp #branding { background-image: url("http://blogs.sas.com/content/jmp/files/2012/11/header-jmp-ak.jpg");}</style>
+
+<link rel='stylesheet' id='ms_global_search_css_style-css'  href='http://blogs.sas.com/content/jmp/wp-content/plugins/multisite-global-search/style.css?ver=3.3.1' type='text/css' media='all' />
+<script type='text/javascript' src='http://blogs.sas.com/content/jmp/wp-includes/js/jquery/jquery.js?ver=1.7.1'></script>
+<script type='text/javascript' src='http://blogs.sas.com/content/jmp/wp-includes/js/comment-reply.js?ver=20090102'></script>
+
+<link rel="stylesheet" href="http://blogs.sas.com/content/jmp/wp-content/plugins/wp-syntax/wp-syntax.css" type="text/css" media="screen" />
+<script type="text/javascript" src="http://blogs.sas.com/content/wp-content/themes/sastheme/library/scripts/sastheme.js"></script>
+<script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<script type="text/javascript">   (function() {      var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;      po.src = 'https://apis.google.com/js/plusone.js';      var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);   })();</script>
+
+<!-- Asynchronous Google Analytics: -->
+<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1022528-1']);
+_gaq.push(['_setDomainName', 'sas.com']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+
+</head>
+
+<body class="slug-celebrating-statisticians-john-w-tukey single postid-10291 s-y2013 s-m09 s-d02 s-h06 s-category-uncategorized s-tag-academic s-tag-celebrating-statisticians s-tag-exploratory-data-analysis s-tag-fast-fourier-transform s-tag-jmp-general s-tag-statistics s-tag-year-of-statistics s-author-cuhinr s-comments-open s-pings-open jmp">
+
+<div id="wrapper" class="hfeed"><div id="preheader"><ul id="navrow"><li class="navitem" id="n1"><a class="navlink" href="javascript:void(0)">Blog Directory</a><div id="blogmenuwrapper"><div id="blogmenu">
+<h2><a href="http://blogs.sas.com/content">blogs.sas.com</a> <a href="http://feeds.feedburner.com/SasBlogs" class="rss">RSS</a></h2><ul class="directory">
+    <li><h3>BUSINESS LEADERSHIP</h3><ul><li><h4><a href="http://blogs.sas.com/content/sascom">SAS Voices</a> <a class="rss" href="http://feeds.feedburner.com/TheSascomMagazineBlog">RSS</a></h4>News and views from the people who make SAS a great place to work</li><li><h4><a href="http://blogs.sas.com/content/customeranalytics">Customer Analytics</a> <a class="rss" href="http://feeds.feedburner.com/GetGrowKeep">RSS</a></h4>Evolving relationships for business growth</li><li><h4><a href="http://blogs.sas.com/content/anz">Left of the Date Line</a> <a class="rss" href="http://feeds.feedburner.com/LeftOfTheDateLine">RSS</a></h4>Business analytics from the Asia Pacific region</li><li><h4><a href="http://blogs.sas.com/content/corneroffice">The Corner Office</a> <a class="rss" href="http://feeds.feedburner.com/SasCornerOffice">RSS</a></h4>SAS executives on the larger issues that affect a global business</li><li><h4><a href="http://blogs.sas.com/content/betterdecisions">The Principled Achiever</a> <a class="rss" href="http://feeds.feedburner.com/TheNewLendingSystem">RSS</a></h4>Winning business, earning trust</li><li><h4><a href="http://blogs.sas.com/content/valuealley">Value Alley</a> <a class="rss" href="http://feeds.feedburner.com/ValueAlley">RSS</a></h4>Your pathway from strategy to process to repeatable value creation</li></ul></li><li><h3>GETTING TECHNICAL</h3><ul><li><h4><a href="http://blogs.sas.com/content/sasdummy">The SAS Dummy</a> <a class="rss" href="http://feeds.feedburner.com/ASasBlogForTheRestOfUs">RSS</a></h4>A SAS® blog for the rest of us</li><li><h4><a href="http://blogs.sas.com/content/iml">The DO Loop</a> <a class="rss" href="http://feeds.feedburner.com/TheDoLoop">RSS</a></h4>Statistical programming in SAS with an emphasis on SAS/IML programs</li><li><h4><a href="http://blogs.sas.com/content/jmp">JMP Blog</a> <a class="rss" href="http://feeds.feedburner.com/JmpBlog">RSS</a></h4>Data visualization, statistical discovery, design of experiments, predictive modeling and more</li><li><h4><a href="http://blogs.sas.com/content/supportnews">Key Happenings at support.sas</a> <a class="rss" href="http://feeds.feedburner.com/UpdatesInSasOnlineSupport">RSS</a></h4>Updates and advances in SAS online support</li><li><h4><a href="http://blogs.sas.com/content/sastraining">The SAS Training Post</a> <a class="rss" href="http://feeds.feedburner.com/TheSasTrainingPost">RSS</a></h4>SAS programming tips &amp; tricks, certification advice, and classroom reports from SAS trainers</li><li><h4><a href="http://blogs.sas.com/content/bi">Real BI for Real Users</a> <a class="rss" href="http://feeds.feedburner.com/RealBusinessIntelligenceForRealUsers">RSS</a></h4>SAS BI tips, lessons learned, problems and successes</li><li><h4><a href="http://blogs.sas.com/content/publishing">The SAS Bookshelf</a> <a class="rss" href="http://feeds.feedburner.com/SasPublishing">RSS</a></h4>The latest in SAS books, documentation, tips, and publishing trends</li><li><h4><a href="http://blogs.sas.com/content/graphicallyspeaking">Graphically Speaking</a> <a class="rss" href="http://feeds.feedburner.com/tzio">RSS</a></h4>Data Visualization with a focus on SAS ODS Graphics</li><li><h4><a href="http://blogs.sas.com/content/sgf">SAS Users Groups</a> <a class="rss" href="http://feeds.feedburner.com/SasGlobalForumBlog">RSS</a></h4>A snapshot of global users events, including best papers, presentations and innovative uses of SAS.</li></ul></li><li><h3>ANALYTICS IN ACTION</h3><ul><li><h4><a href="http://blogs.sas.com/content/subconsciousmusings">Subconscious Musings</a> <a class="rss" href="http://feeds.feedburner.com/advanalytics">RSS</a></h4>Advanced analytics - from Research Drive to the world</li><li><h4><a href="http://blogs.sas.com/content/text-mining">The Text Frontier</a> <a class="rss" href="http://feeds.feedburner.com/TheTextFrontier">RSS</a></h4>Text mining, voice mining and unstructured data analysis</li><li><h4><a href="http://blogs.sas.com/content/forecasting">The Business Forecasting Deal</a> <a class="rss" href="http://feeds.feedburner.com/TheBusinessForecastingDeal">RSS</a></h4>Exposing bad practices and offering practical solutions in business forecasting</li><li><h4><a href="http://blogs.sas.com/content/datamanagement">The Data Roundtable</a> <a class="rss" href="http://feeds.feedburner.com/informationarchitect">RSS</a></h4>A community of data management experts</li></ul><hr style='clear:both;border:0;height:1px;background:#999;margin:10px 0 10px 0;'/><h3>COUNTRIES AND REGIONS</h3><ul><li><h4><a href="http://blogs.sas.com/content/analitika">Analitika anyanyelven</a> <a class="rss" href="http://feeds.feedburner.com/19320">RSS</a></h4>SAS üzleti analitikával foglalkozó szakemberek és érdeklődő felhasználók közösségi fóruma.</li><li><h4><a href="http://blogs.sas.com/content/analysera">Analysera mera</a> <a class="rss" href="http://feeds.feedburner.com/AnalyseraMera">RSS</a></h4>Insikter och nyheter om avancerad affärsanalys</li><li><h4><a href="http://blogs.sas.com/content/hiddeninsights">Hidden Insights</a> <a class="rss" href="http://feeds.feedburner.com/HiddenInsights">RSS</a></h4>Find skjulte sammenhænge i data og træf bedre beslutninger</li><li><h4><a href="http://blogs.sas.com/content/innsikt">Innsikt og Refleksjon</a> <a class="rss" href="http://feeds.feedburner.com/InnsiktOgRefleksjon">RSS</a></h4>Nyheter og meninger om Business Analytics</li><li><h4><a href="http://blogs.sas.com/content/klog">Klog på SAS</a> <a class="rss" href="http://feeds.feedburner.com/KlogPSas">RSS</a></h4>Tips og tricks til effektiv SAS-programmering</li><li><h4><a href="http://blogs.sas.com/content/sasdach">Mehr Wissen</a> <a class="rss" href="http://feeds.feedburner.com/sas/byto">RSS</a></h4>Informationen und Meinungen zu High Performance Analytics in Deutschland, Österreich und der Schweiz</li></ul></li><li class='last'><h3>INDUSTRY INSIGHTS</h3><ul><li><h4><a href="http://blogs.sas.com/content/insurance">The Analytic Insurer</a> <a class="rss" href="http://feeds.feedburner.com/analyticinsurer">RSS</a></h4>Solving your customer, risk, fraud and operational challenges in insurance</li><li><h4><a href="http://blogs.sas.com/content/hls">A Shot in the Arm</a> <a class="rss" href="http://feeds.feedburner.com/SasHLS">RSS</a></h4>Transforming quality, cost, and outcomes in the healthcare ecosystem</li><li><h4><a href="http://blogs.sas.com/content/academic">Generation SAS</a> <a class="rss" href="http://feeds.feedburner.com/GenerationSas">RSS</a></h4>Resources and tips for students and educators</li><li><h4><a href="http://blogs.sas.com/content/statelocalgov">State and Local Connection</a> <a class="rss" href="http://feeds.feedburner.com/StateAndLocalConnection">RSS</a></h4>State and local governments using data to serve citizens and save money</li><li><h4><a href="http://blogs.sas.com/content/hospitality">The Analytic Hospitality Executive</a> <a class="rss" href="http://feeds.feedburner.com/hbsas">RSS</a></h4>Finding analytic solutions to your forecasting, pricing and operational challenges.</li><li><h4><a href="http://blogs.sas.com/content/sascp">Pathfinders</a> <a class="rss" href="http://feeds.feedburner.com/sas/qRWr">RSS</a></h4>Exploring SAS Curriculum Pathways &amp; Instructional Technology</li></ul></li></ul>
+<br clear="all" /></div></div></li><li class="navitem" id="n2"><a class="navlink" href="javascript:void(0)">SAS Software</a><div id="sasmenuwrapper"><ul class="followmenu sasmenu"><li><a href="http://www.sas.com">SAS Home</a></li><li><a href="http://www.sas.com/software/">Products & Solutions</a></li><li><a href="http://www.sas.com/news/">SAS News</a></li><li><a href="http://support.sas.com/">Support & Training</a></li></ul></div></li><li id="n3" class="navitem"><a class="navlink" href="javascript:void(0)">Follow Us</a><div id="followmenuwrapper"><ul class="followmenu"><li id="twitr"><a href="http://twitter.com/#!/SASsoftware">SAS Software on Twitter</a></li><li id="fb"><a href="http://www.facebook.com/SASsoftware">SAS Software on Facebook</a></li><li id="utube"><a href="http://www.youtube.com/user/SASsoftware">SAS Software on YouTube</a></li><li id="supfor"><a href="http://communities.sas.com">Communities on SAS</a></li><li id="rssopt"><a href="http://www.sas.com/rss">SAS RSS options</a></li></ul></div></li></ul></div>   
+
+    <div id="header">
+    
+        <div id="branding">
+<div id="logo"><img src="http://blogs.sas.com/content/wp-content/themes/sastheme/library/images/saslogo.png" /></div>	    		
+	    		<div id="blog-title"><span><a href="http://blogs.sas.com/content/jmp/" title="JMP Blog" rel="home">JMP Blog</a></span></div>
+	    		
+	    		<div id="blog-description">Data visualization, statistical discovery, design of experiments, predictive modeling and more</div>
+
+		</div><!--  #branding -->
+	    
+	    <div id="access">
+	    		
+	    	<div class="skip-link"><a href="#content" title="Skip navigation to the content">Skip to content</a></div><!-- .skip-link -->
+	    		
+	    	<div class="menu"><ul class="sf-menu"><li class="page_item page-item-1237"><a href="http://blogs.sas.com/content/jmp/html-feed/">HTML Feed</a></li><li class="page_item page-item-2894"><a href="http://blogs.sas.com/content/jmp/redirect/">Some of our blog content has moved</a></li></ul></div>
+	        
+		</div><!-- #access -->
+		
+		
+	</div><!-- #header-->
+       
+    <div id="main">
+    <div id="crumbs"><a href="http://blogs.sas.com/content">SAS Blogs Home</a> <span class="crumbsep">&#62;</span> <a href="http://blogs.sas.com/content/jmp">JMP Blog</a> <span class="crumbsep">&#62;</span> <a href="http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/">Celebrating Statisticians: John W. Tukey</a></div>
+		<div id="container">
+			
+						
+			<div id="content">
+		
+    	        
+				<div id="nav-above" class="navigation">
+					<div class="nav-previous"><a href="http://blogs.sas.com/content/jmp/2013/08/30/the-jmp-life-sciences-help-system-new-content-and-features/" rel="prev"><span class="meta-nav">&laquo;</span> Updates to JMP Life Sciences Help system</a></div>
+					<div class="nav-next"><a href="http://blogs.sas.com/content/jmp/2013/09/03/local-data-filter-comes-to-graph-builder-for-ipad/" rel="next">Local data filter comes to Graph Builder for iPad <span class="meta-nav">&raquo;</span></a></div>
+				</div>
+
+			
+				<div id="post-10291" class="post-10291 post type-post status-publish format-standard hentry category-uncategorized tag-academic tag-celebrating-statisticians tag-exploratory-data-analysis tag-fast-fourier-transform tag-jmp-general tag-statistics tag-year-of-statistics"><h1 class="entry-title">Celebrating Statisticians: John W. Tukey</h1>
+<div class="post-info"><div class="author-thumb"><img src="http://blogs.sas.com/content/jmp/wp-content/blogs.dir/3/files/userphoto/280.thumbnail.jpg" alt="Curt Hinrichs" width="60" height="60" class="photo" /></div><div class="meta-wrapper"><div class="entry-meta"><span class="author-main"><a href="http://blogs.sas.com/content/jmp/author/cuhinr">Curt Hinrichs</a></span><span class="meta-sep meta-sep-entry-date">|</span><span class="date"><abbr class="published" title="2013-09-02T10:32:52+0000">September 2, 2013</abbr></span></div><!-- .entry-meta -->
+<ul class="social-meta"><li><span class="postviews">4003</span></li><li><a class="commentslink" href="http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/#comments"><span class="postcomments">7</span></a></li><li class="tw"><a href="http://twitter.com/share" class="twitter-share-button" data-count="horizontal" data-text="Celebrating Statisticians: John W. Tukey" data-url="http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/">Tweet</a></li><li class="gp"><g:plusone size="medium" href="http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/" annotation="bubble"></g:plusone></li><li><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;layout=button_count&amp;show_faces=false&amp;width=90&amp;action=like&amp;font=arial&amp;colorscheme=light&amp;height=25" scrolling="no" frameborder="0" style="border:none; width:90px; overflow:hidden; height:25px;" allowTransparency="true"></iframe></li></ul></div><div style="clear:both"></div></div>					<div class="entry-content">
+<p><a href="http://blogs.sas.com/content/jmp/files/2013/08/John_Tukey.jpg"><img class="alignright  wp-image-10345" src="http://blogs.sas.com/content/jmp/files/2013/08/John_Tukey-246x300.jpg" alt="" width="169" height="207" /></a><em>“Statistics is a science in my opinion, and it is no more a branch of mathematics than are physics, chemistry and economics;  for if its methods fail the test of experience – not the test of logic </em><em>–</em> they are discarded.”<em>  - John Wilder Tukey</em></p>
+<p>“Box plot,” “stem and leaf plot,” ANOVA” and, yes, even “bit,” “software” and “vacuum cleaner” are terms coined by this month’s <a href="http://blogs.sas.com/content/jmp/tag/celebrating-statisticians/">featured statistician</a> – <strong>John Wilder Tukey</strong> – whom we are honoring as part of celebrating the <a href="http://www.jmp.com/year-of-statistics/">International Year of Statistics</a>. Tukey’s impact on science and society is so wide and significant that I will only highlight a few areas here. As a side note, Tukey’s influence on <a href="http://jmp.com/software">JMP</a> is also significant, and I’ll save an interesting connection for the end of this blog post.</p>
+<p>Many recognize Tukey as the father of exploratory data analysis, in part for creating many effective visual techniques such as the box plot and stem and leaf plot, which are standards in introductory statistics courses today. He made many enduring contributions in time series, multiple comparisons, ANOVA, robust statistics, and interactive and multivariate graphics, too. Tukey considered himself a “scientific generalist” and influenced many other scientific fields, including computer science, mathematics, engineering and economics. He even served as an adviser on environmental, defense and education policy to the highest levels of US government. He collaborated with scientists such as Von Neumann, Feynman, Cooley and Morganstern, and served as doctoral adviser to many great statisticians.</p>
+<p>Tukey was born on June 16, 1915, in New Bedford, Massachusetts, and was mostly home-schooled as a child. At the age of 18, he entered Brown University and earned his BS and MS in chemistry, thereafter pursuing a PhD at Princeton. Soon after arriving at Princeton, his graduate studies evolved toward mathematics. Tukey’s studies focused mostly on pure mathematics, and his thesis, “On Denumerability in Topology,” was published as a book in 1940; mathematician Paul Halmos includes that book among the influential books of the period 1888-1988. After earning his PhD, Tukey became Math Instructor at Princeton and two years later Assistant Professor of Mathematics. By then, the US was engaged in World War II, and like many other leading academic institutions at that time, Princeton was involved in research to support the war effort.</p>
+<p>The Fire Control Research Office under the direction of Merrill Flood was located in Princeton, and Tukey joined the office as Consultant in 1941. The office worked on practical problems of warfare, and these led to the use of statistics and association with statisticians such as Charlie Winsor, whom Tukey credits with converting his interests toward statistics.</p>
+<blockquote><p><em>“He (Charlie Winsor) was data-oriented. I well remember walking up past by old Fine hall </em><em>and hearing Charlie say, ‘Well, Sam Wilks trains good mathematical statisticians, and it’s surprising how soon they become good statisticians.’ But, associating with Charlie and living in the data-rich environment where what we were doing was trying to make sense out of data left me with an ultimate data-orientation.” - Tukey</em></p></blockquote>
+<p>Tukey returned to teaching after the war, and began a transition to statistics research and service in the years immediately following. Within the math department, Tukey joined the Section of Mathematical Statistics, which was headed by mathematical statistician Samuel Wilks. The Applied Statistics seminar began in 1946, introducing many state-of-the-art concepts to the graduate community at Princeton. He became Professor of Mathematics in 1950, Chair of the newly formed Statistics Department in 1966 and was Professor of Statistics and Donner Chair of Science until his retirement from Princeton in 1985.</p>
+<blockquote><p><em>“..the first time I was in a Statistics course, I was there to teach it.”</em><em>  - Tukey</em></p></blockquote>
+<p>In 1945, Tukey also began his 40-year association with Bell Laboratories. The parent company’s focus and expertise in communications and technology provided valuable research, in part, to support of national security interests. Beginning in 1960, Tukey served as a member of the President’s Science Advisory Committee and over the course of his career advised five US presidents. This work involved advising on environmental and education policy, and in the early 1960s, policy on nuclear weapons testing. It was in this capacity that one of his most important discoveries was made.</p>
+<p>While serving on President Kennedy’s Science Advisory committee with the physicist Richard Garwin, the problem of off-shore monitoring and verification of a possible nuclear test ban treaty with Russia was discussed. Garwin and Tukey devised a potential solution that involved a method of monitoring seismic activity with remote sensors and analyzing their signals to distinguish an earthquake from a nuclear test. From this discussion and further work by James Cooley of IBM, the Cooley -Tukey Fast Fourier Transform (FFT) algorithm was developed. The Cooley-Tukey algorithm was a substantial simplification and vast improvement on calculations of Fourier series and integrals.</p>
+<blockquote><p><em>“If you speed up any nontrivial algorithm by a factor of a million or so the world will beat a path towards finding useful applications for it.” - from Numerical Recipes</em></p></blockquote>
+<p><strong>A Few Important Contributions</strong></p>
+<ul>
+<li><strong><a href="http://blogs.sas.com/content/jmp/files/2013/08/EDA-book2.png"><img class="alignright  wp-image-10351" src="http://blogs.sas.com/content/jmp/files/2013/08/EDA-book2.png" alt="" width="130" height="164" /></a>Exploratory Data Analysis</strong>: Tukey developed useful techniques for visualizing and summarizing data, the 5-number summary, box plots, and stem and leaf diagram. His book <em>Exploratory Data A</em><em>n</em><em>al</em><em>ysis</em> published in 1977 introduced many of these techniques at a time when elementary statistical education was mainly focused on Inference and hypothesis testing. “Since the aim of exploratory data analysis is to learn what seems to be, it should be no surprise that pictures play a vital role in doing it well. There is nothing better for making you think of questions you had forgotten to ask (even mentally),” Tukey said.</li>
+</ul>
+<ul>
+<li><strong>Interactive Multivariate Graphics</strong>: In 1972, Tukey spent four months at Stanford’s Linear Accelerator Center. He worked with Jerome Freidman on the development of PRIM-9, which was the first computer program that offered interactive and dynamic multivariate graphics. Features such as rotation and masking (brushing) were developed, along with the concept of Projection Pursuit in this work.</li>
+</ul>
+<ul>
+<li><strong>Multiple Comparisons:</strong> Some of Tukey’s earliest work in statistics focused on Multiple Comparisons. The Tukey-Kramer test or Tukey HSD (Honestly Significant Difference) test is a standard used in ANOVA for pairwise comparisons more than 60 years after it was introduced.</li>
+</ul>
+<ul>
+<li><strong>Robust statistics: </strong>According to Peter J. Huber, Tukey was “the first to recognize the extreme sensitivity of some conventional statistical procedures to seemingly minor deviations from the assumptions…. In Tukey’s view, robustness is an attribute of the statistical procedure, typically to be achieved by weighting or trimming the observations. This ought to be contrasted to say, George Box’s view, who thought the data should not be tampered with and that the model itself should be robust.”</li>
+</ul>
+<blockquote><p><em>“Once upon a time statisticians only explored, then they learned to confirm exactly – to confirm a few things exactly, each under very specific circumstances. As they emphasized exact confirmation, their techniques inevitably became less flexible. The connection of the most used techniques with past insights was weakened.  Anything to which a confirmatory procedure was not explicitly attached was decried as 'mere descriptive statistics' no matter how much we had learned from it.”  - Tukey</em></p></blockquote>
+<p>Tukey earned many awards, including the National Medal of Science, the Samuel S. Wilks award, the Shewhart Medal, the IEEE Medal of Honor and the Deming Medal. He died on July 26, 2000, in New Brunswick, New Jersey. He made many other contributions that are covered in greater detail elsewhere, and I reference a few sources below. In particular, David Brillinger’s piece provides many firsthand insights into the life and work of Tukey.  <em></em></p>
+<p><strong>The Anscombe Connection</strong></p>
+<p><a href="http://blogs.sas.com/content/jmp/files/2013/08/Anscombe-quartet1.jpg"><img class="alignright size-medium wp-image-10350" src="http://blogs.sas.com/content/jmp/files/2013/08/Anscombe-quartet1-260x300.jpg" alt="" width="260" height="300" /></a>John Tukey’s brother-in-law was Francis J. Anscombe – their wives were sisters. Anscombe was a British statistician who joined Tukey at Princeton for a while and shared many similar views when it came to data analysis and the use of graphics. Anscombe left Princeton for Yale and was a pioneer in the emerging field of statistical computing. In 1973, the <em>American Statistician</em> published his article, "Graphics in Statistical Analysis." The “quartet” was introduced in this paper to motivate the concept that statistical graphics often reveal understanding that is not apparent from statistics alone and should accompany the analysis of data. The “quartet” (at right) clearly illustrates four very different graphs of data. But if you only looked at the statistical results that are identical, you would conclude that each bivariate analysis were the same.</p>
+<p>As Anscombe said, “A computer should make both calculations and graphs. Both sorts of output should be studied; each will contribute to understanding.”</p>
+<p>These recommendations influenced a young developer and motivated the development of a new and innovative data analysis software that was launched in the late 1980s. The software was <a href="http://jmp.com/software">JMP</a>, and the developer <a href="http://www.sas.com/company/about/bios/jsall.html">John Sall</a>.</p>
+<p>You can access the data table and script for Anscombe’s quartet in JMP’s sample data directory (<strong>Help &gt; Sample Data &gt; See an Alphabetical List of all Sample Data Tables &gt; Anscombe</strong>).</p>
+<p>&nbsp;</p>
+<p><strong>Recommended Reading</strong></p>
+<p>Anscombe, F.J., (1973) "Graphs in Statistical Analysis," <em>American Statistician</em> 27, 17-21.</p>
+<p>Brillinger, D. R., (2002) "John W. Tukey: His Life and Professional Contributions," <em>Annals of Statistics</em>, 30, 1535-1575.</p>
+<p>Cleveland, W.S., (1984 – 1994) <em>The Collected Works of John W. Tukey, Volumes I-VIII</em>, Wadsworth &amp; Brooks-Cole.</p>
+<p>Cooley, J. W, (1992) "How the FFT Gained Acceptance," <em>IEEE SP</em> magazine, January, 1992, 10-13.</p>
+<p>Friedman, J.H. and Stuetzle, W. (2002) "John W. Tukey’s Work on Interactive Graphs," <em>Annals of Statistics</em> 30 1629-1639.</p>
+<p>Press, W.H., Teukolsky, S.A., Vetterling, W.T., Flannery, B.P., (1986) <em>Numerical Recipes: The Art of Scientific Computing</em>, Cambridge University Press.</p>
+<p>Salmon, J. and Valente, D. (2013) "JMP® Extensibility Synergy with MATLAB: Case Studies Using the JMP® Interface to MATLAB," SAS Institute White Paper (in press).</p>
+<p>Tukey, J.W., (1977) <em>Exploratory Data Analysis</em>, Addison-Wesley, Boston.</p>
+<p>Wikipedia, John Tukey,  http://en.wikipedia.org/wiki/John_Tukey (accessed July 28, 2013).</p>
+<div>
+<hr align="left" size="1" width="33%" />
+</div>
+<div class="entry-utility"><span class="tag-links">tags: <a href="http://blogs.sas.com/content/jmp/tag/academic/">Academic</a>, <a href="http://blogs.sas.com/content/jmp/tag/celebrating-statisticians/">Celebrating Statisticians</a>, <a href="http://blogs.sas.com/content/jmp/tag/exploratory-data-analysis/">Exploratory Data Analysis</a>, <a href="http://blogs.sas.com/content/jmp/tag/fast-fourier-transform/">Fast Fourier Transform</a>, <a href="http://blogs.sas.com/content/jmp/tag/jmp-general/">JMP - General</a>, <a href="http://blogs.sas.com/content/jmp/tag/statistics/">Statistics</a>, <a href="http://blogs.sas.com/content/jmp/tag/year-of-statistics/">Year of Statistics</a></span></div><div class='shareinpost'><ul class="socialwrap row"><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://delicious.com/post?url=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;title=Celebrating+Statisticians%3A+John+W.+Tukey" title="Bookmark this post : Celebrating Statisticians: John W. Tukey on Delicious" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-102px 0px" class="image-16" width="16" alt="delicious"/> <span class="head">Bookmark on Delicious</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://digg.com/submit?url=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;title=Celebrating+Statisticians%3A+John+W.+Tukey&amp;bodytext=%E2%80%9CStatistics+is+a+science+in+my+opinion%2C+and+it+is+no+more+a+branch+of+mathematics+than+are+physics%2C+chemistry+and+economics%3B%C2%A0+for+if+its+methods+fail+the+test+of+experience+%E2%80%93+not+the+test+of+logic+%E2%80%93%C2%A0they+are+discarded.%E2%80%9D%C2%A0+-+John+Wilder+Tukey%0D%0A%0D%0A%E2%80%9CBox+plot%2C%E2%80%9D+%E2%80%9Cstem+and+leaf+plot%2C%E2%80%9D+ANOVA%E2%80%9D+and%2C+yes%2C+even" title="Digg this post : Celebrating Statisticians: John W. Tukey" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-136px 0px" class="image-16" width="16" alt="digg"/> <span class="head">Digg this post</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.facebook.com/sharer.php?u=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;t=Celebrating+Statisticians%3A+John+W.+Tukey" title="Recommend this post : Celebrating Statisticians: John W. Tukey on Facebook" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-187px 0px" class="image-16" width="16" alt="facebook"/> <span class="head">Recommend on Facebook</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.friendfeed.com/share?title=Celebrating+Statisticians%3A+John+W.+Tukey&amp;link=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F" title="Share this post : Celebrating Statisticians: John W. Tukey on FriendFeed" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-1071px 0px" class="image-16" width="16" alt="friendfeed"/> <span class="head">Share on FriendFeed</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.linkedin.com/shareArticle?mini=true&amp;url=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;title=Celebrating+Statisticians%3A+John+W.+Tukey&amp;&amp;summary=%E2%80%9CStatistics+is+a+science+in+my+opinion%2C+and+it+is+no+more+a+branch+of+mathematics+than+are+physics%2C+chemistry+and+economics%3B%C2%A0+for+if+its+methods+fail+the+test+of+experience+%E2%80%93+not+the+test+of+logic+%E2%80%93%C2%A0they+are+discarded.%E2%80%9D%C2%A0+-+John+Wilder+Tukey%0D%0A%0D%0A%E2%80%9CBox+plot%2C%E2%80%9D+%E2%80%9Cstem+and+leaf+plot%2C%E2%80%9D+ANOVA%E2%80%9D+and%2C+yes%2C+even" title="Share this post : Celebrating Statisticians: John W. Tukey on Linkedin" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-459px 0px" class="image-16" width="16" alt="linkedin"/> <span class="head">Share on Linkedin</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.reddit.com/submit?url=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;title=Celebrating+Statisticians%3A+John+W.+Tukey" title="Share this post : Celebrating Statisticians: John W. Tukey on Reddit" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-731px 0px" class="image-16" width="16" alt="reddit"/> <span class="head">share via Reddit</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.stumbleupon.com/submit?url=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F&amp;title=Celebrating+Statisticians%3A+John+W.+Tukey" title="Share this post : Celebrating Statisticians: John W. Tukey with Stumblers" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-833px 0px" class="image-16" width="16" alt="stumble"/> <span class="head">Share with Stumblers</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://twitter.com/home/?status=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F" title="Tweet this post : Celebrating Statisticians: John W. Tukey on Twitter" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-901px 0px" class="image-16"  width="16"  alt="twitter"/> <span class="head">Tweet about it</span></a></li><li class="iconOnly"><a rel="nofollow" target="_blank" href="http://www.xing.com/app/user?op=share;url=http%3A%2F%2Fblogs.sas.com%2Fcontent%2Fjmp%2F2013%2F09%2F02%2Fcelebrating-statisticians-john-w-tukey%2F" title="Share this post : Celebrating Statisticians: John W. Tukey on xing" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-986px 0px" class="image-16" width="16" alt="xing"/> <span class="head">Share on xing</span></a></li><li class="iconOnly"><a rel="nofollow" target="_self" href="javascript:window.print();" title="Print this post : Celebrating Statisticians: John W. Tukey for reading later" ><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-714px 0px" class="image-16" width="16" alt="print"/> <span class="head">Print for later</span></a></li><li class="iconOnly"><a rel="_self" href="mailto:?subject=JMP%20Blog%20:%20Celebrating%20Statisticians:%20John%20W.%20Tukey&amp;body=here%20is%20a%20link%20to%20a%20site%20I%20really%20like.%20%20%20http://blogs.sas.com/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/" title="Tell a friend about this post : Celebrating Statisticians: John W. Tukey "><img src="http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/images/blank.gif" height="16"  width="16" style="background: transparent url(http://blogs.sas.com/content/jmp/wp-content/plugins/share-and-follow/default/16/sprite-16.png) no-repeat;padding:0;margin:0;height:16px;width:16px;background-position:-170px 0px" class="image-16"  alt="email" /> <span class="head">Tell a friend</span></a></li></ul><div class="clean"></div> </div>
+											</div><!-- .entry-content -->
+									</div><!-- #post -->
+		
+			<div id="nav-below" class="navigation">
+				<div class="nav-previous"><a href="http://blogs.sas.com/content/jmp/2013/08/30/the-jmp-life-sciences-help-system-new-content-and-features/" rel="prev"><span class="meta-nav">&laquo;</span> Updates to JMP Life Sciences Help system</a></div>
+				<div class="nav-next"><a href="http://blogs.sas.com/content/jmp/2013/09/03/local-data-filter-comes-to-graph-builder-for-ipad/" rel="next">Local data filter comes to Graph Builder for iPad <span class="meta-nav">&raquo;</span></a></div>
+			</div>
+
+
+			<div id="comments">
+
+
+
+
+
+				<div id="comments-list" class="comments">
+					<h3><span>5</span> Comments</h3>
+				
+					<ol>
+    	<li id="comment-5459" class="comment c c-y2013 c-m09 c-d02 c-h12 alt depth-1">
+    		    		<div class="comment-author vcard"><img src="http://blogs.sas.com/content/jmp/wp-content/themes/sastheme/library/images/sas_avatar60x60.jpg" alt="" class="photo"/> <span class="fn n">Mike Clayton</span></div>
+    		<div class="comment-meta">Posted September 2, 2013 at 4:26 pm <span class="meta-sep">|</span> <a href="#comment-5459" title="Permalink to this comment">Permalink</a></div>
+                <div class="comment-content">
+        		<p>When I asked one of my stat mentor's WHY Tukey used the magic 1.5 multiplier in his box and whisker plot to denote expected range of raw data relative to the IQR (box) and thus highlight outliers, he said that he once asked Tukey that same question, and the answer was "it seems to work."  </p>
+<p>If anyone has also heard that story, or has different viewpoint, please comment.<br />
+We engineers were often given stories like that by stat gurus to help us remember concepts.</p>
+    		</div>
+			<div class="comment-reply-link"><a class='comment-reply-link' href='/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/?replytocom=5459#respond' onclick='return addComment.moveForm("comment-5459", "5459", "respond", "10291")'>Reply</a></div>			<ul class='children'>
+    	<li id="comment-5486" class="comment c1 c-y2013 c-m09 c-d03 c-h12 depth-2">
+    		    		<div class="comment-author vcard"><img src="http://blogs.sas.com/content/jmp/wp-content/blogs.dir/3/files/userphoto/203.thumbnail.jpg" alt="Bradley Jones" width="60" height="60" class="photo" /> <span class="fn n">Bradley Jones</span></div>
+    		<div class="comment-meta">Posted September 3, 2013 at 4:19 pm <span class="meta-sep">|</span> <a href="#comment-5486" title="Permalink to this comment">Permalink</a></div>
+                <div class="comment-content">
+        		<p>If the data were normally distributed with a mean of zero and a standard deviation of one, then the IQR would be about 1.35. The top of the wisker would be at 0.67+1.5*1.35 = 2,695. The probability of being between -2.695 and +2.695 is a little larger than 99%. So, for normal data the range box plus the whiskers should contain roughly 99% of the observations. </p>
+<p>Of course, Tukey did not want to make any distributional assumption. For different distributions the exact percentage of observations you would expect to fall inside the whiskers would vary a bit. That did not worry Tukey. The "magic" 1.5 is a convenient rule of thumb that does, in fact, seem to work. Sometimes loose language is useful allowing one to avoid unimportant detail.</p>
+    		</div>
+			<div class="comment-reply-link"><a class='comment-reply-link' href='/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/?replytocom=5486#respond' onclick='return addComment.moveForm("comment-5486", "5486", "respond", "10291")'>Reply</a></div>			</li>
+</ul>
+</li>
+    	<li id="comment-5508" class="comment c2 c-y2013 c-m09 c-d04 c-h04 alt depth-1">
+    		    		<div class="comment-author vcard"><img src="http://blogs.sas.com/content/jmp/wp-content/themes/sastheme/library/images/sas_avatar60x60.jpg" alt="" class="photo"/> <span class="fn n"><a href='http://telliamedrevisited.wordpress.com' rel='external nofollow' class='url url'>Richard Lenski</a></span></div>
+    		<div class="comment-meta">Posted September 4, 2013 at 8:22 am <span class="meta-sep">|</span> <a href="#comment-5508" title="Permalink to this comment">Permalink</a></div>
+                <div class="comment-content">
+        		<p>And let's not forget the jackknife procedure!</p>
+    		</div>
+			<div class="comment-reply-link"><a class='comment-reply-link' href='/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/?replytocom=5508#respond' onclick='return addComment.moveForm("comment-5508", "5508", "respond", "10291")'>Reply</a></div>			</li>
+    	<li id="comment-5553" class="comment c3 c-y2013 c-m09 c-d05 c-h12 depth-1">
+    		    		<div class="comment-author vcard"><img src="http://blogs.sas.com/content/jmp/wp-content/themes/sastheme/library/images/sas_avatar60x60.jpg" alt="" class="photo"/> <span class="fn n">Pascal R.</span></div>
+    		<div class="comment-meta">Posted September 5, 2013 at 4:16 pm <span class="meta-sep">|</span> <a href="#comment-5553" title="Permalink to this comment">Permalink</a></div>
+                <div class="comment-content">
+        		<p>Very interesting. Thanks for sharing.</p>
+    		</div>
+			<div class="comment-reply-link"><a class='comment-reply-link' href='/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/?replytocom=5553#respond' onclick='return addComment.moveForm("comment-5553", "5553", "respond", "10291")'>Reply</a></div>			</li>
+    	<li id="comment-5571" class="comment c4 c-y2013 c-m09 c-d06 c-h05 alt depth-1">
+    		    		<div class="comment-author vcard"><img src="http://blogs.sas.com/content/iml/wp-content/blogs.dir/22/files/userphoto/136.thumbnail.jpg" alt="Rick Wicklin" width="60" height="60" class="photo" /> <span class="fn n"><a href='http://blogs.sas.com/content/iml' rel='external nofollow' class='url url'>Rick Wicklin</a></span></div>
+    		<div class="comment-meta">Posted September 6, 2013 at 9:28 am <span class="meta-sep">|</span> <a href="#comment-5571" title="Permalink to this comment">Permalink</a></div>
+                <div class="comment-content">
+        		<p>I'd like to emphasize Tukey's contributions through his students. He produced 55 PhDs, including his EDA desciples Hartigan, Hoaglin, and Mosteller. In all, he has almost 1,200 "descendants," who were influenced by his views on how to analyze data. For a complete list, see <a href="http://genealogy.math.ndsu.nodak.edu/id.php?id=15860" rel="nofollow">http://genealogy.math.ndsu.nodak.edu/id.php?id=15860</a></p>
+    		</div>
+			<div class="comment-reply-link"><a class='comment-reply-link' href='/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/?replytocom=5571#respond' onclick='return addComment.moveForm("comment-5571", "5571", "respond", "10291")'>Reply</a></div>			</li>
+					</ol>
+
+        			<div id="comments-nav-below" class="comment-navigation">
+        			     <div class="paginated-comments-links"></div>
+                    </div>
+					
+				</div><!-- #comments-list .comments -->
+
+
+			
+
+
+
+
+				<div id="trackbacks-list" class="comments">
+					<h3><span>2</span> Trackbacks</h3>
+					
+					<ol>
+    		<li id="comment-5591" class="pingback t5 c-y2013 c-m09 c-d07 c-h08 depth-1">
+    			<div class="comment-author">By <a href='http://visualoop.com/12310/data-viz-news-23' rel='external nofollow' class='url'>Data Viz News [23] | Visual Loop</a> on September 7, 2013 at 12:43 pm</div>
+                <div class="comment-content">
+    			<p>[...] Celebrating Statisticians: John W. Tukey | JMP [...]</p>
+			</div>
+</li>
+    		<li id="comment-5593" class="pingback t6 c-y2013 c-m09 c-d07 c-h11 alt depth-1">
+    			<div class="comment-author">By <a href='http://www.soci-all.nl/data-viz-news-23/' rel='external nofollow' class='url'>Data Viz News [23] › Soci-all</a> on September 7, 2013 at 3:37 pm</div>
+                <div class="comment-content">
+    			<p>[...] Celebrating Statisticians: John W. Tukey | JMP [...]</p>
+			</div>
+</li>
+					</ol>				
+					
+				</div><!-- #trackbacks-list .comments -->			
+
+				
+
+
+				<div id="respond">
+    				<h3>Post a Comment</h3>
+    				
+    				<div id="cancel-comment-reply"><a rel="nofollow" id="cancel-comment-reply-link" href="/content/jmp/2013/09/02/celebrating-statisticians-john-w-tukey/#respond" style="display:none;">Click here to cancel reply.</a></div>
+
+					<div class="formcontainer">	
+					
+					
+						<form id="commentform" action="http://blogs.sas.com/content/jmp/wp-comments-post.php" method="post">
+
+
+							<p id="comment-notes">Your email is <em>never</em> published nor shared. Required fields are marked <span class="required">*</span></p>
+
+                            <div id="form-section-author" class="form-section">
+    							<div class="form-label"><label for="author">Name</label> <span class="required">*</span></div>
+    							<div class="form-input"><input id="author" name="author" type="text" value="" size="30" maxlength="20" tabindex="3" /></div>
+                            </div><!-- #form-section-author .form-section -->
+
+                            <div id="form-section-email" class="form-section">
+    							<div class="form-label"><label for="email">Email</label> <span class="required">*</span></div>
+    							<div class="form-input"><input id="email" name="email" type="text" value="" size="30" maxlength="50" tabindex="4" /></div>
+                            </div><!-- #form-section-email .form-section -->
+
+                            <div id="form-section-url" class="form-section">
+    							<div class="form-label"><label for="url">Website</label></div>
+    							<div class="form-input"><input id="url" name="url" type="text" value="" size="30" maxlength="50" tabindex="5" /></div>
+                            </div><!-- #form-section-url .form-section -->
+
+                            
+                                                        <p id="gasp_p" style="clear:both;"></p><script type="text/javascript">
+            //v1.01
+            var gasp_p = document.getElementById("gasp_p");
+            var gasp_cb = document.createElement("input");
+            var gasp_text = document.createTextNode(" Check to confirm you want your comment to appear publicly on this blog");
+            gasp_cb.type = "checkbox";
+            gasp_cb.id = "gasp_checkbox";
+            gasp_cb.name = "gasp_checkbox";
+            gasp_cb.style.width = "25px";
+            gasp_p.appendChild(gasp_cb);
+            gasp_p.appendChild(gasp_text);
+            var frm = gasp_cb.form;
+            frm.onsubmit = gasp_it;
+            function gasp_it(){
+            if(gasp_cb.checked != true){
+            alert("Please check the box to confirm you want your comment to appear publicly on this blog");
+            return false;
+            }
+            return true;
+            }
+            </script>
+            <input type="hidden" id="gasp_email" name="gasp_email" value="" /><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="fde374d1f2" /></p>                            
+                            <div id="form-section-comment" class="form-section">
+    							<div class="form-label"><label for="comment">Comment <span class="required" style="font-size:1.2em">*</span></label></div>
+    							<div class="form-textarea"><textarea id="comment" name="comment" cols="45" rows="8" tabindex="6"></textarea></div>
+                            </div><!-- #form-section-comment .form-section -->
+                            
+                            <div id="form-allowed-tags" class="form-section">
+                                <p><span>You may use these <abbr title="HyperText Markup Language">HTML</abbr> tags and attributes:</span> <code>&lt;a href=&quot;&quot; title=&quot;&quot;&gt; &lt;abbr title=&quot;&quot;&gt; &lt;acronym title=&quot;&quot;&gt; &lt;b&gt; &lt;blockquote cite=&quot;&quot;&gt; &lt;cite&gt; &lt;code&gt; &lt;del datetime=&quot;&quot;&gt; &lt;em&gt; &lt;i&gt; &lt;p&gt; &lt;pre lang=&quot;&quot; line=&quot;&quot; escaped=&quot;&quot;&gt; &lt;q cite=&quot;&quot;&gt; &lt;strike&gt; &lt;strong&gt; </code></p>
+                            </div>
+							
+                  
+                  
+							<div class="form-submit"><input id="submit" name="submit" type="submit" value="Post Comment" tabindex="7" /><input type="hidden" name="comment_post_ID" value="10291" /></div>
+
+                            <input type='hidden' name='comment_post_ID' value='10291' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+    
+
+						</form><!-- #commentform -->
+						
+						
+					</div><!-- .formcontainer -->
+
+				</div><!-- #respond -->
+
+			</div><!-- #comments -->
+		
+			</div><!-- #content -->
+			
+			 
+			
+		</div><!-- #container -->
+		
+
+<div id="primary" class="aside main-aside">
+	<ul class="xoxo">
+<li id="search-3" class="widgetcontainer widget_search">
+	<form id="searchform" method="get" action="http://blogs.sas.com/content/jmp/">
+		<div>
+			<input id="s" name="s" type="text" value="search this blog" onfocus="if (this.value == 'search this blog') {this.value = '';}" onblur="if (this.value == '') {this.value = 'search this blog';}" size="32" tabindex="1" />
+			<input id="searchsubmit" name="searchsubmit" type="submit" value="Search" tabindex="2" />
+		</div>
+	</form></li><li id="text-4" class="widgetcontainer widget_text"><h3 class="widgettitle">About this blog</h3>
+			<div class="textwidget">The JMP Blog is the official blog about <a href="http://jmp.com">JMP software from SAS</a>, which links robust statistics with graphics, in memory and on the desktop. Contributors to the blog are members of the JMP family: from R&amp;D, marketing, training, technical support and sales.
+<br /><br />
+
+<strong>Connect with JMP:</strong>
+<a href="http://twitter.com/JMP_software"><img class="size-full wp-image-5031" style="margin: 0 5px" src="http://blogs.sas.com/content/sascom/files/2009/02/Twitter16x16.png" alt="" width="16" height="16" /></a>  <a href="https://www.facebook.com/JMPsoftware"><img class="size-full wp-image-5032" style="margin: 0 5px" src="http://blogs.sas.com/content/sascom/files/2012/03/Facebook16x16.png"></a> <a href="http://www.linkedin.com/company/jmp"><img class="size-full wp-image-5032" style="margin: 0 5px" src="http://blogs.sas.com/content/sascom/files/2012/03/LinkedIn16x16.png"></a>
+<a href="https://plus.google.com/b/111587196583947234893/"><img src="http://blogs.sas.com/content/sascom/files/2012/03/googleplus-16x16.png" class="size-full wp-image-5032" style="margin: 0 5px"></a> <a href="http://www.youtube.com/JMPSoftwareFromSAS"><img class="size-full wp-image-5032" style="margin: 0 5px" src="http://blogs.sas.com/content/sascom/files/2009/02/YouTube16x16.png" alt="" width="16" height="16" /></a></div>
+		</li><li id="tag_cloud-2" class="widgetcontainer widget_tag_cloud"><h3 class="widgettitle">Tags</h3>
+<div class="tagcloud"><a href='http://blogs.sas.com/content/jmp/tag/academic/' class='tag-link-16' title='63 topics' style='font-size: 16.3815789474pt;'>Academic</a>
+<a href='http://blogs.sas.com/content/jmp/tag/add-ins/' class='tag-link-38' title='44 topics' style='font-size: 14.9078947368pt;'>Add-Ins</a>
+<a href='http://blogs.sas.com/content/jmp/tag/analytical-application-development/' class='tag-link-27' title='14 topics' style='font-size: 10.5789473684pt;'>Analytical Application Development</a>
+<a href='http://blogs.sas.com/content/jmp/tag/analytics/' class='tag-link-75' title='34 topics' style='font-size: 13.8947368421pt;'>Analytics</a>
+<a href='http://blogs.sas.com/content/jmp/tag/background-maps/' class='tag-link-36' title='20 topics' style='font-size: 11.8684210526pt;'>Background Maps</a>
+<a href='http://blogs.sas.com/content/jmp/tag/celebrating-statisticians/' class='tag-link-134' title='12 topics' style='font-size: 9.93421052632pt;'>Celebrating Statisticians</a>
+<a href='http://blogs.sas.com/content/jmp/tag/clinical/' class='tag-link-45' title='25 topics' style='font-size: 12.6973684211pt;'>Clinical</a>
+<a href='http://blogs.sas.com/content/jmp/tag/clinical-trials/' class='tag-link-31' title='33 topics' style='font-size: 13.8026315789pt;'>Clinical Trials</a>
+<a href='http://blogs.sas.com/content/jmp/tag/control-charts/' class='tag-link-80' title='12 topics' style='font-size: 9.93421052632pt;'>Control Charts</a>
+<a href='http://blogs.sas.com/content/jmp/tag/customer-stories/' class='tag-link-19' title='17 topics' style='font-size: 11.3157894737pt;'>Customer Stories</a>
+<a href='http://blogs.sas.com/content/jmp/tag/data-visualization/' class='tag-link-6' title='186 topics' style='font-size: 20.6184210526pt;'>Data Visualization</a>
+<a href='http://blogs.sas.com/content/jmp/tag/design-of-experiments-doe/' class='tag-link-15' title='66 topics' style='font-size: 16.5657894737pt;'>Design of Experiments (DOE)</a>
+<a href='http://blogs.sas.com/content/jmp/tag/discovery/' class='tag-link-21' title='31 topics' style='font-size: 13.6184210526pt;'>Discovery</a>
+<a href='http://blogs.sas.com/content/jmp/tag/discovery-summit/' class='tag-link-33' title='57 topics' style='font-size: 15.9210526316pt;'>Discovery Summit</a>
+<a href='http://blogs.sas.com/content/jmp/tag/discovery-summit-keynote/' class='tag-link-41' title='14 topics' style='font-size: 10.5789473684pt;'>Discovery Summit Keynote</a>
+<a href='http://blogs.sas.com/content/jmp/tag/exploratory-data-analysis/' class='tag-link-34' title='28 topics' style='font-size: 13.1578947368pt;'>Exploratory Data Analysis</a>
+<a href='http://blogs.sas.com/content/jmp/tag/genomics/' class='tag-link-11' title='60 topics' style='font-size: 16.1973684211pt;'>Genomics</a>
+<a href='http://blogs.sas.com/content/jmp/tag/innovators-summit/' class='tag-link-18' title='35 topics' style='font-size: 14.0789473684pt;'>Innovators' Summit</a>
+<a href='http://blogs.sas.com/content/jmp/tag/interactive-data-mining/' class='tag-link-30' title='28 topics' style='font-size: 13.1578947368pt;'>Interactive Data Mining</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-customer-stories/' class='tag-link-14' title='8 topics' style='font-size: 8.46052631579pt;'>JMP - Customer Stories</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-general/' class='tag-link-9' title='262 topics' style='font-size: 22pt;'>JMP - General</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-7/' class='tag-link-4' title='29 topics' style='font-size: 13.3421052632pt;'>JMP 7</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-8/' class='tag-link-24' title='76 topics' style='font-size: 17.1184210526pt;'>JMP 8</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-9/' class='tag-link-28' title='101 topics' style='font-size: 18.2236842105pt;'>JMP 9</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-10/' class='tag-link-57' title='92 topics' style='font-size: 17.8552631579pt;'>JMP 10</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-11/' class='tag-link-133' title='17 topics' style='font-size: 11.3157894737pt;'>JMP 11</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-11-preview/' class='tag-link-158' title='9 topics' style='font-size: 8.92105263158pt;'>JMP 11 Preview</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-clinical/' class='tag-link-46' title='29 topics' style='font-size: 13.3421052632pt;'>JMP Clinical</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-genomics/' class='tag-link-37' title='25 topics' style='font-size: 12.6973684211pt;'>JMP Genomics</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-pro/' class='tag-link-40' title='24 topics' style='font-size: 12.6052631579pt;'>JMP Pro</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-scripting-language/' class='tag-link-8' title='45 topics' style='font-size: 15pt;'>JMP Scripting Language</a>
+<a href='http://blogs.sas.com/content/jmp/tag/jmp-user-conference/' class='tag-link-12' title='31 topics' style='font-size: 13.6184210526pt;'>JMP User Conference</a>
+<a href='http://blogs.sas.com/content/jmp/tag/life-sciences/' class='tag-link-32' title='57 topics' style='font-size: 15.9210526316pt;'>Life Sciences</a>
+<a href='http://blogs.sas.com/content/jmp/tag/modeling/' class='tag-link-29' title='46 topics' style='font-size: 15.0921052632pt;'>Modeling</a>
+<a href='http://blogs.sas.com/content/jmp/tag/people-behind-jmp/' class='tag-link-35' title='15 topics' style='font-size: 10.7631578947pt;'>People Behind JMP</a>
+<a href='http://blogs.sas.com/content/jmp/tag/quality-improvement/' class='tag-link-42' title='18 topics' style='font-size: 11.5pt;'>Quality Improvement</a>
+<a href='http://blogs.sas.com/content/jmp/tag/reliability/' class='tag-link-39' title='7 topics' style='font-size: 8pt;'>Reliability</a>
+<a href='http://blogs.sas.com/content/jmp/tag/sas-global-forum/' class='tag-link-7' title='19 topics' style='font-size: 11.6842105263pt;'>SAS Global Forum</a>
+<a href='http://blogs.sas.com/content/jmp/tag/sas-integration/' class='tag-link-20' title='18 topics' style='font-size: 11.5pt;'>SAS Integration</a>
+<a href='http://blogs.sas.com/content/jmp/tag/statistics/' class='tag-link-10' title='196 topics' style='font-size: 20.8026315789pt;'>Statistics</a>
+<a href='http://blogs.sas.com/content/jmp/tag/tips-and-tricks/' class='tag-link-26' title='89 topics' style='font-size: 17.6710526316pt;'>Tips and Tricks</a>
+<a href='http://blogs.sas.com/content/jmp/tag/training/' class='tag-link-13' title='43 topics' style='font-size: 14.8157894737pt;'>Training</a>
+<a href='http://blogs.sas.com/content/jmp/tag/users-groups/' class='tag-link-25' title='20 topics' style='font-size: 11.8684210526pt;'>Users Groups</a>
+<a href='http://blogs.sas.com/content/jmp/tag/visual-six-sigma/' class='tag-link-17' title='14 topics' style='font-size: 10.5789473684pt;'>Visual Six Sigma</a>
+<a href='http://blogs.sas.com/content/jmp/tag/year-of-statistics/' class='tag-link-118' title='25 topics' style='font-size: 12.6973684211pt;'>Year of Statistics</a></div>
+</li><li id="text-3" class="widgetcontainer widget_text"><h3 class="widgettitle">Subscribe to this blog</h3>
+			<div class="textwidget"><form style="border:1px solid #ccc;padding:3px;text-align:center;" action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=JmpBlog', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><p>Enter your email address:</p><p><input type="text" style="width:140px" name="email"/></p><input type="hidden" value="JmpBlog" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" value="Subscribe" /><p><a href="http://feeds.feedburner.com/JmpBlog" rel="alternate" type="application/rss+xml">Other subscription options</a></p></form></div>
+		</li><li id="archives-2" class="widgetcontainer widget_archive"><h3 class="widgettitle">Archives</h3>
+		<select name="archive-dropdown" onchange='document.location.href=this.options[this.selectedIndex].value;'> <option value="">Select Month</option> 	<option value='http://blogs.sas.com/content/jmp/2013/10/'> October 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/09/'> September 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/08/'> August 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/07/'> July 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/06/'> June 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/05/'> May 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/04/'> April 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/03/'> March 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/02/'> February 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2013/01/'> January 2013 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/12/'> December 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/11/'> November 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/10/'> October 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/09/'> September 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/08/'> August 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/07/'> July 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/06/'> June 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/05/'> May 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/04/'> April 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/03/'> March 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/02/'> February 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2012/01/'> January 2012 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/12/'> December 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/11/'> November 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/10/'> October 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/09/'> September 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/08/'> August 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/07/'> July 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/06/'> June 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/05/'> May 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/04/'> April 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/03/'> March 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/02/'> February 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2011/01/'> January 2011 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/12/'> December 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/11/'> November 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/10/'> October 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/09/'> September 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/08/'> August 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/07/'> July 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/06/'> June 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/05/'> May 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/04/'> April 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/03/'> March 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/02/'> February 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2010/01/'> January 2010 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/12/'> December 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/11/'> November 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/10/'> October 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/09/'> September 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/08/'> August 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/07/'> July 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/06/'> June 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/05/'> May 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/04/'> April 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/03/'> March 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/02/'> February 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2009/01/'> January 2009 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/12/'> December 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/11/'> November 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/10/'> October 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/09/'> September 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/08/'> August 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/07/'> July 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/06/'> June 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/05/'> May 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/04/'> April 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/03/'> March 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/02/'> February 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2008/01/'> January 2008 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/12/'> December 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/11/'> November 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/10/'> October 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/09/'> September 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/08/'> August 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/07/'> July 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/06/'> June 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/05/'> May 2007 </option>
+	<option value='http://blogs.sas.com/content/jmp/2007/04/'> April 2007 </option>
+ </select>
+</li>
+	</ul>
+</div><!-- #primary .aside -->
+
+<div id="secondary" class="aside main-aside">
+	<ul class="xoxo">
+
+	</ul>
+</div><!-- #secondary .aside -->
+
+    </div><!-- #main -->
+    <div id="push">&nbsp;</div>
+    
+
+
+    </div><!-- #wrapper .hfeed --><div id="footer">
+<div id="footer-contents">
+
+        
+<h2><a href="http://blogs.sas.com/content">blogs.sas.com</a> <a href="http://feeds.feedburner.com/SasBlogs" class="rss">RSS</a></h2><ul class="directory">
+    <li><h3>BUSINESS LEADERSHIP</h3><ul><li><h4><a href="http://blogs.sas.com/content/sascom">SAS Voices</a> <a class="rss" href="http://feeds.feedburner.com/TheSascomMagazineBlog">RSS</a></h4>News and views from the people who make SAS a great place to work</li><li><h4><a href="http://blogs.sas.com/content/customeranalytics">Customer Analytics</a> <a class="rss" href="http://feeds.feedburner.com/GetGrowKeep">RSS</a></h4>Evolving relationships for business growth</li><li><h4><a href="http://blogs.sas.com/content/anz">Left of the Date Line</a> <a class="rss" href="http://feeds.feedburner.com/LeftOfTheDateLine">RSS</a></h4>Business analytics from the Asia Pacific region</li><li><h4><a href="http://blogs.sas.com/content/corneroffice">The Corner Office</a> <a class="rss" href="http://feeds.feedburner.com/SasCornerOffice">RSS</a></h4>SAS executives on the larger issues that affect a global business</li><li><h4><a href="http://blogs.sas.com/content/betterdecisions">The Principled Achiever</a> <a class="rss" href="http://feeds.feedburner.com/TheNewLendingSystem">RSS</a></h4>Winning business, earning trust</li><li><h4><a href="http://blogs.sas.com/content/valuealley">Value Alley</a> <a class="rss" href="http://feeds.feedburner.com/ValueAlley">RSS</a></h4>Your pathway from strategy to process to repeatable value creation</li></ul></li><li><h3>GETTING TECHNICAL</h3><ul><li><h4><a href="http://blogs.sas.com/content/sasdummy">The SAS Dummy</a> <a class="rss" href="http://feeds.feedburner.com/ASasBlogForTheRestOfUs">RSS</a></h4>A SAS® blog for the rest of us</li><li><h4><a href="http://blogs.sas.com/content/iml">The DO Loop</a> <a class="rss" href="http://feeds.feedburner.com/TheDoLoop">RSS</a></h4>Statistical programming in SAS with an emphasis on SAS/IML programs</li><li><h4><a href="http://blogs.sas.com/content/jmp">JMP Blog</a> <a class="rss" href="http://feeds.feedburner.com/JmpBlog">RSS</a></h4>Data visualization, statistical discovery, design of experiments, predictive modeling and more</li><li><h4><a href="http://blogs.sas.com/content/supportnews">Key Happenings at support.sas</a> <a class="rss" href="http://feeds.feedburner.com/UpdatesInSasOnlineSupport">RSS</a></h4>Updates and advances in SAS online support</li><li><h4><a href="http://blogs.sas.com/content/sastraining">The SAS Training Post</a> <a class="rss" href="http://feeds.feedburner.com/TheSasTrainingPost">RSS</a></h4>SAS programming tips &amp; tricks, certification advice, and classroom reports from SAS trainers</li><li><h4><a href="http://blogs.sas.com/content/bi">Real BI for Real Users</a> <a class="rss" href="http://feeds.feedburner.com/RealBusinessIntelligenceForRealUsers">RSS</a></h4>SAS BI tips, lessons learned, problems and successes</li><li><h4><a href="http://blogs.sas.com/content/publishing">The SAS Bookshelf</a> <a class="rss" href="http://feeds.feedburner.com/SasPublishing">RSS</a></h4>The latest in SAS books, documentation, tips, and publishing trends</li><li><h4><a href="http://blogs.sas.com/content/graphicallyspeaking">Graphically Speaking</a> <a class="rss" href="http://feeds.feedburner.com/tzio">RSS</a></h4>Data Visualization with a focus on SAS ODS Graphics</li><li><h4><a href="http://blogs.sas.com/content/sgf">SAS Users Groups</a> <a class="rss" href="http://feeds.feedburner.com/SasGlobalForumBlog">RSS</a></h4>A snapshot of global users events, including best papers, presentations and innovative uses of SAS.</li></ul></li><li><h3>ANALYTICS IN ACTION</h3><ul><li><h4><a href="http://blogs.sas.com/content/subconsciousmusings">Subconscious Musings</a> <a class="rss" href="http://feeds.feedburner.com/advanalytics">RSS</a></h4>Advanced analytics - from Research Drive to the world</li><li><h4><a href="http://blogs.sas.com/content/text-mining">The Text Frontier</a> <a class="rss" href="http://feeds.feedburner.com/TheTextFrontier">RSS</a></h4>Text mining, voice mining and unstructured data analysis</li><li><h4><a href="http://blogs.sas.com/content/forecasting">The Business Forecasting Deal</a> <a class="rss" href="http://feeds.feedburner.com/TheBusinessForecastingDeal">RSS</a></h4>Exposing bad practices and offering practical solutions in business forecasting</li><li><h4><a href="http://blogs.sas.com/content/datamanagement">The Data Roundtable</a> <a class="rss" href="http://feeds.feedburner.com/informationarchitect">RSS</a></h4>A community of data management experts</li></ul><hr style='clear:both;border:0;height:1px;background:#999;margin:10px 0 10px 0;'/><h3>COUNTRIES AND REGIONS</h3><ul><li><h4><a href="http://blogs.sas.com/content/analitika">Analitika anyanyelven</a> <a class="rss" href="http://feeds.feedburner.com/19320">RSS</a></h4>SAS üzleti analitikával foglalkozó szakemberek és érdeklődő felhasználók közösségi fóruma.</li><li><h4><a href="http://blogs.sas.com/content/analysera">Analysera mera</a> <a class="rss" href="http://feeds.feedburner.com/AnalyseraMera">RSS</a></h4>Insikter och nyheter om avancerad affärsanalys</li><li><h4><a href="http://blogs.sas.com/content/hiddeninsights">Hidden Insights</a> <a class="rss" href="http://feeds.feedburner.com/HiddenInsights">RSS</a></h4>Find skjulte sammenhænge i data og træf bedre beslutninger</li><li><h4><a href="http://blogs.sas.com/content/innsikt">Innsikt og Refleksjon</a> <a class="rss" href="http://feeds.feedburner.com/InnsiktOgRefleksjon">RSS</a></h4>Nyheter og meninger om Business Analytics</li><li><h4><a href="http://blogs.sas.com/content/klog">Klog på SAS</a> <a class="rss" href="http://feeds.feedburner.com/KlogPSas">RSS</a></h4>Tips og tricks til effektiv SAS-programmering</li><li><h4><a href="http://blogs.sas.com/content/sasdach">Mehr Wissen</a> <a class="rss" href="http://feeds.feedburner.com/sas/byto">RSS</a></h4>Informationen und Meinungen zu High Performance Analytics in Deutschland, Österreich und der Schweiz</li></ul></li><li class='last'><h3>INDUSTRY INSIGHTS</h3><ul><li><h4><a href="http://blogs.sas.com/content/insurance">The Analytic Insurer</a> <a class="rss" href="http://feeds.feedburner.com/analyticinsurer">RSS</a></h4>Solving your customer, risk, fraud and operational challenges in insurance</li><li><h4><a href="http://blogs.sas.com/content/hls">A Shot in the Arm</a> <a class="rss" href="http://feeds.feedburner.com/SasHLS">RSS</a></h4>Transforming quality, cost, and outcomes in the healthcare ecosystem</li><li><h4><a href="http://blogs.sas.com/content/academic">Generation SAS</a> <a class="rss" href="http://feeds.feedburner.com/GenerationSas">RSS</a></h4>Resources and tips for students and educators</li><li><h4><a href="http://blogs.sas.com/content/statelocalgov">State and Local Connection</a> <a class="rss" href="http://feeds.feedburner.com/StateAndLocalConnection">RSS</a></h4>State and local governments using data to serve citizens and save money</li><li><h4><a href="http://blogs.sas.com/content/hospitality">The Analytic Hospitality Executive</a> <a class="rss" href="http://feeds.feedburner.com/hbsas">RSS</a></h4>Finding analytic solutions to your forecasting, pricing and operational challenges.</li><li><h4><a href="http://blogs.sas.com/content/sascp">Pathfinders</a> <a class="rss" href="http://feeds.feedburner.com/sas/qRWr">RSS</a></h4>Exploring SAS Curriculum Pathways &amp; Instructional Technology</li></ul></li></ul>
+<br clear="all" /> 
+<div id="legal">
+<p>The blog content appearing on this site does not necessarily represent the opinions of SAS. 
+Your use of this blog is governed by the <a href="http://www.sas.com/Copyright.html">Terms of Use</a> 
+and the <a href="http://www.sas.com/Privacy.html">SAS Privacy Statement</a>.</p></div>
+<p id="copyright"><a href='http://www.sas.com/Copyright.html'>Copyright &copy; SAS Institute Inc. All Rights Reserved</a></p>
+
+    </div></div><!-- #footer -->
+<!-- Begin Onespot script -->
+<script type="text/javascript" src="http://px.onespot.com/px/t/os-99-0.js"></script>
+<!-- End Onespot script -->
+<script src="http://www.sas.com/lib/SASCXA.js" type="text/javascript"></script>
+</body>
+</html>

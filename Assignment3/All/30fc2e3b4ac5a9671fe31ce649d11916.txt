@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US">
+<head profile="http://gmpg.org/xfn/11">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>HTC Android Custom ROMs</title>
+<meta name="description" content="Custom firmware/ROMs for Android Phones, Root, Apps" /><meta name="keywords" content="Android, ICS, JB, IceCreamSandwich, JellyBean, Sense, Firmware, Custom, ROOT" /><link rel="canonical" href="http://insertcoin-roms.org" />
+<link rel="stylesheet" href="http://insertcoin-roms.org/wp-content/themes/Quadro/style.css" type="text/css" media="screen" />
+<!--[if IE 7]>	
+		<link rel="stylesheet" type="text/css" media="all" href="http://insertcoin-roms.org/wp-content/themes/Quadro/iestyle.css" />
+	<![endif]-->
+    <!--[if IE 8]>	
+		<link rel="stylesheet" type="text/css" media="all" href="http://insertcoin-roms.org/wp-content/themes/Quadro/ie8style.css" />
+	<![endif]-->
+<!--[if lt IE 7]>
+	<link rel="stylesheet" type="text/css" media="all" href="http://insertcoin-roms.org/wp-content/themes/Quadro/ie6style.css" />
+	<![endif]-->
+<link rel="alternate" type="application/rss+xml" title="InsertCoin &#8211; Android Custom Roms RSS Feed" href="http://insertcoin-roms.org/feed/" />
+<link rel="alternate" type="application/atom+xml" title="InsertCoin &#8211; Android Custom Roms Atom Feed" href="http://insertcoin-roms.org/feed/atom/" />
+<link rel="pingback" href="http://insertcoin-roms.org/xmlrpc.php" />
+
+<link rel="alternate" type="application/rss+xml" title="InsertCoin - Android Custom Roms &raquo; Feed" href="http://insertcoin-roms.org/feed/" />
+<link rel="alternate" type="application/rss+xml" title="InsertCoin - Android Custom Roms &raquo; Comments Feed" href="http://insertcoin-roms.org/comments/feed/" />
+		<link rel="stylesheet" href="http://insertcoin-roms.org/wp-content/themes/Quadro/style-Red.css" type="text/css" media="screen" />
+	<meta content="Quadro v.4.2" name="generator"/><link rel='stylesheet' id='farbtastic-css'  href='http://insertcoin-roms.org/wp-admin/css/farbtastic.css?ver=1.3u1' type='text/css' media='all' />
+<link rel='stylesheet' id='et-shortcodes-css-css'  href='http://insertcoin-roms.org/wp-content/themes/Quadro/epanel/shortcodes/css/shortcodes.css?ver=3.0' type='text/css' media='all' />
+<link rel='stylesheet' id='fancybox-css'  href='http://insertcoin-roms.org/wp-content/themes/Quadro/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.css?ver=1.3.4' type='text/css' media='screen' />
+<link rel='stylesheet' id='et_page_templates-css'  href='http://insertcoin-roms.org/wp-content/themes/Quadro/epanel/page_templates/page_templates.css?ver=1.8' type='text/css' media='screen' />
+<script type='text/javascript' src='http://insertcoin-roms.org/wp-includes/js/jquery/jquery.js?ver=1.10.2'></script>
+<script type='text/javascript' src='http://insertcoin-roms.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://insertcoin-roms.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://insertcoin-roms.org/wp-includes/wlwmanifest.xml" /> 
+<meta name="generator" content="WordPress 3.6.1" />
+<link rel='stylesheet' id='wsl_css-css'  href='http://insertcoin-roms.org/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=3.6.1' type='text/css' media='all' />
+<link rel="shortcut icon" href="http://insertcoin-roms.org/wp-content/uploads/2012/09/icon.png" />	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<style type="text/css">
+		#et_pt_portfolio_gallery { margin-left: -15px; }
+		.et_pt_portfolio_item { margin-left: 21px; }
+		.et_portfolio_small { margin-left: -40px !important; }
+		.et_portfolio_small .et_pt_portfolio_item { margin-left: 32px !important; }
+		.et_portfolio_large { margin-left: -8px !important; }
+		.et_portfolio_large .et_pt_portfolio_item { margin-left: 2px !important; }
+	</style>
+</head>
+<body class="home blog unknown et_includes_sidebar">
+<div id="bg">
+	<div id="pages">
+            <div class="search_bg">
+			<div id="search">
+				<form method="get" action="http://insertcoin-roms.org" style="padding:0px 0px 0px 0px; margin:0px 0px 0px 0px">
+					<input type="text"  name="s" value=""/>
+					<input type="image" class="input" src="http://insertcoin-roms.org/wp-content/themes/Quadro/images/search-Red.gif" value="submit"/>
+				</form>
+			</div> <!-- end #search -->
+		</div> <!-- end #search-bg -->
+					<ul class="nav superfish">
+															<li class="page_item"><a href="http://insertcoin-roms.org">Home</a></li>
+										
+					<li class="page_item page-item-1109"><a href="http://insertcoin-roms.org/team/">Team</a></li>
+<li class="page_item page-item-2788"><a href="https://code.google.com/p/insertcoin-m7-nightly/" target="_blank">InsertCoin SVN (HTC ONE &#8211; m7)</a></li>
+<li class="page_item page-item-625"><a href="http://insertcoin-roms.org/donors/">Donors</a></li>
+<li class="page_item page-item-3372"><a href="http://insertcoin-roms.org/contributors-for-second-chance/">Contributors for second ONE</a></li>
+							</ul> <!-- end ul#nav -->
+			</div> <!-- end #pages -->
+
+	<div style="clear: both;"></div>
+	
+	<div id="header">
+<!-- Banner sus 728 x 90 -->	
+<span style="float:right; border: 0px solid #9C3000; width: 728px; height:90px;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-8880816888135124";
+/* baadnewz_large */
+google_ad_slot = "9230839616";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+<class="noad"><i><u><strong>Hello visitor:</strong></u></i><br> If you are seeing this text means you have <strong>AdBlock Plus</strong> or some other adblocking software. Please <strong>disable</strong> it because this website only runs un-harmful, non-invasive Google Ads. Money from online advertisement are needed for operating this website. Thank you!
+</span>
+
+<script type="text/javascript">
+function _enabled() {
+    show_element('noad');
+}
+function _disabled() {
+    show_element('yesad');
+}
+var _abdDetectedFnc = '_enabled';
+var _abdNotDetectedFnc = '_disabled';
+</script>
+ 
+<script type="text/javascript" src="http://adblockdetector.com/script.php"></script>
+
+				
+
+		<a href="http://insertcoin-roms.org">			<img src="http://insertcoin-roms.org/wp-content/uploads/2012/09/logoh1.png" alt="InsertCoin - Android Custom Roms" class="logo"/></a>
+		
+	</div> <!-- end #header -->
+	<div style="clear: both;"></div>
+	
+	<div id="wrapper2">
+		<div id="categories">
+							<ul id="nav2" class="nav superfish">
+												<li class="cat-item cat-item-3"><a href="http://insertcoin-roms.org/category/articles/" title="Parent category for Articles">Articles</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://insertcoin-roms.org/category/devices/" title="Parent cat for devices">Custom ROMs</a>
+<ul class='children'>
+	<li class="cat-item cat-item-5"><a href="http://insertcoin-roms.org/category/devices/desire/" title="View all posts filed under Desire">Desire</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://insertcoin-roms.org/category/devices/galaxy-s3/" title="View all posts filed under Galaxy S3">Galaxy S3</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://insertcoin-roms.org/category/devices/ge/" title="Custom Rom based on Google Stock Android">HTC ONE &#8211; GPE</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://insertcoin-roms.org/category/devices/one/" title="HTC ONE Custom Rom">HTC ONE &#8211; Sense ROM</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://insertcoin-roms.org/category/devices/one-x/" title="View all posts filed under One X">One X</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://insertcoin-roms.org/category/devices/one-x-plus/" title="Custom Roms for HTC ONE X+">One X Plus</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://insertcoin-roms.org/category/devices/one-x-plus-att/" title="View all posts filed under One X Plus AT&amp;T">One X Plus AT&amp;T</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://insertcoin-roms.org/category/devices/sensation/" title="View all posts filed under Sensation">Sensation</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://insertcoin-roms.org/category/tools/" title="Tools for your custom rom">Custom Tools</a>
+<ul class='children'>
+	<li class="cat-item cat-item-25"><a href="http://insertcoin-roms.org/category/tools/one-tools/" title="View all posts filed under HTC ONE">HTC ONE</a>
+</li>
+</ul>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://insertcoin-roms.org/category/piggy-bank/" title="View all posts filed under Piggy Bank">Piggy Bank</a>
+</li>
+									</ul> <!-- end ul#nav -->
+						<div style="clear: both;"></div>
+		</div> <!-- end #categories -->
+		<div style="clear: both;"></div>
+<div id="container">
+	<div id="container2">
+		<div id="left-div">
+			
+			<ul class="idTabs">
+			</ul>
+
+
+
+			
+			<div style="clear: both;"></div>
+
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/" rel="bookmark" title="Permanent Link to My HTC One story (broke and denied warranty) UPDATED">
+				My HTC One story (broke and denied warranty) UPDATED			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Oct 3, 2013 in <a href="http://insertcoin-roms.org/category/articles/" title="View all posts in Articles" rel="category tag">Articles</a> | <a href="http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comments" title="Comment on My HTC One story (broke and denied warranty) UPDATED">4 comments</a></div>
+				
+		<div class="single-entry">
+			
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:10px 0 10px 0;text-align:center;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3113797527117263";
+/* insertcoin header-top */
+google_ad_slot = "1214697455";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<p>I&#8217;ll try to be as short as I can and not bore everyone to death with my sob story.</p>
+<p>Last week, Wednesday (25th September) my HTC One died, I took it out of my pocket and it was off, I tried powering it on &#8211; nothing, kept the vol-down + power button pressed for more than 1 minute, nothing, no blinking soft keys lights, dead, kept it charging for 1 hour, no charging on led,again nothing. Ultimately I took it to Regenersis Romania to be fixed under warranty.</p>
+<p>Along the way Regenersis Romania, did NOT give any information besides the &#8220;under repair&#8221; status. I had to call HTC Romania to find out that actually Regenersis Romania does NOT fix the HTC ONE phones here, but instead they ship them to Poland and fix them there. Today I called again Regenersis to find out whats happening with my phone( 8 days have passed since I claimed the warranty), again I got the status &#8220;under repair&#8221;. So I called HTC Romania since they were always very nice and helpful maybe the can give one more time more information and once again they did. They told me that Regenersis Poland denied warranty with the code S 400 (which basically means custom software). Now I&#8217;m asking the HTC representative, how the hell did they saw it was unlocked since the phone clearly didn&#8217;t powered on, either they had to replace the battery or the board. if it was the battery I would be happy, ok new battery and although the &#8220;custom software&#8221; would break the battery only in 0.1 % of the cases lets say i&#8217;m that 0.1%, I would gladly pay for the new battery and their trouble (although again normally I shouldn&#8217;t but wth, I want my phone back) and get back in business. If they had to replace the board, oh well new board means new everything so no way they see it was unlocked, or least probable the phone suddenly started to work again andi  couldn&#8217;t care less about everything else(well not quite I&#8217;ll write below why not) But it seems again I was wrong. They only checked the database and saw that I unlocked my phone via htcdev (or at least this what my logic dictates if you take in consideration what I wrote above). And continuing my logic, from that moment they didn&#8217;t even looked at the phone or the defects I reported, unlocked bootloader = no warranty, doesn&#8217;t matter what&#8217;s wrong with your phone we don&#8217;t even look.</p>
+<p>I read on forums (xda and others) &#8211; again read on forums, take it with a grain of salt &#8211; that this is somewhat common practice for the services to make an extra quick buck but what is funny they didn&#8217;t even mentioned whats broke and how much would cost me to fix it &#8211; maybe they&#8217;ll share more information once I&#8217;ll pick up my phone.</p>
+<p>Now I was saying above that I&#8217;ll explain why even if the phone would suddenly start working I wouldn&#8217;t be pleased about them denying my warranty. I wouldn&#8217;t be pleased because apart the fact that the phone wasn&#8217;t powering on, I reported 2 other defects to be fixed, defects that are under no way related to &#8220;custom software&#8221;, 1st one was the pink tint of camera under very low light condition, common problem with HTC ONE, problem that from what i hear HTC&#8217;s directive is to replace the phone, no question asked, and 2nd one would be gaps, again nothing to do with software. Regenersis decided to ignore everything and denied my warranty based on the htc unlock database (see my logic above why I argue that they did this based only on IMEI).</p>
+<p>Right now my only possible way to attack this decision is to call Customer Protection and let them take it from there. But given how things work in Romania, by the time there would be an definitive decision for my reclamation, HTC ONE would be as old as HTC Sensation is these days.</p>
+<p>While i&#8217;m pretty upset about the whole situation, I really want to thank HTC Romania for all the information they gave me along they way when Regenersis should have given them in the first place</p>
+<h3><strong>UPDATE</strong></h3>
+<p>So due to numerous replies regarding this subject I feel there is need to explain a bit more.</p>
+<p>Since I live in Romania, the producer and the post sale service must obey European Legislation. European Legislation says that in order to void your warranty the producer or the service must prove that the issue was generated by the customer. While yes HTC says warranty MIGHT be void using unlock there is a &#8220;might&#8221; there and they have to prove that me unlocking my phone is the reason the phone malfunctioned, which they didn&#8217;t, they saw i generated a code for an imei, i could have kept that code on a txt on my desktop and never used it. And even if they can prove I&#8217;ve used it, they still have to prove that a custom software did the damage. sure one can argue, yes flashing roms broke your phones &#8211; again they have to prove it. in the end flashing a rom is writing 3 partitions on phone /system /data and boot nothing so critical that can make your phone power off for good and forever. Let&#8217;s say the software is bad and rendered the phone unusable, you either get stuck at splash screen, or a bootloop, or phone reboots itself without any reason, data connection is not stable gps doesn&#8217;t work etc, even a brick &#8211; things that can be generated by a software error. but from this to the phone not powering on at all is a big difference. is highly unlikely a software could to this to a phone, and even if it did they have to prove it 1st before voiding my warranty. As i said even a bricked device is visible to a PC when connected and can be fixed</p>
+<p>I know some will argue, that with unlock you can flash a custom kernel and overclock the hell out of the cpu and gpu and this might end its life, but before it kills it, there will be some signs like overheating, instability reboots etc, and it will be signs of overheating on the board itself, which is not the case.<br />
+So as I argued before a bad software at most can cause instability, or the phone not to boot, but at least you have bootloader or something. even if you brick it as the lingo goes, the phone will still be visible to the PC as QHSUSB_DLOAD in device manager and can be fixed. but from this to not powering on at all is difference.</p>
+<p>I really hope I can solve this without paying money for repair, because unless they can prove it is my fault for this defect. will be like feeding the beast, confirming them that this kind of practice is OK.</p>
+<p>This is it, thanks for reading, I know i said i&#8217;d be short but I got carried away. I hope this article will help me get the phone repaired without additional charge, and help others who run into these kind of issues.</p>
+<h3><strong>Update 04 October 2013</h3>
+<p></strong></p>
+<p>HTC Romania escalated this problem to their superiors and waiting for reply<br />
+HTC international asked for my ticket no. and said they will look into it. hope is up again.</p>
+<p>For now I can only blame Regenersis for their <a href="http://forum.xda-developers.com/showpost.php?p=46161853&amp;postcount=7291">shady practices</a>. This link only confirms my logic. Sure one can blame HTC for their poor choice of outsourcing companies, but at least here in Romania, Regenersis is the go-to service for all major producers and carriers( Regenersis services Samsung, BB, Apple, Vodafone etc.) . And at least until now HTC escalated the situation in an effort to solve my problem. Remains to be seen if they can come through.</p>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/" rel="bookmark" title="Permanent Link to InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3">
+				InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 30, 2013 in <a href="http://insertcoin-roms.org/category/devices/" title="View all posts in Custom ROMs" rel="category tag">Custom ROMs</a>, <a href="http://insertcoin-roms.org/category/devices/one/" title="View all posts in HTC ONE - Sense ROM" rel="category tag">HTC ONE - Sense ROM</a> | <a href="http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/#comments" title="Comment on InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3">5 comments</a></div>
+				
+		<div class="single-entry">
+			
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:10px 0 10px 0;text-align:center;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3113797527117263";
+/* insertcoin header-top */
+google_ad_slot = "1214697455";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<h3>4.0-3 (same as r101 SVN) &#8211; SHOULD work without full wipe coming from 3.2-x/3.3-x/3.4-x/4.0-x</h3>
+<p>- implemented hamdir&#8217;s GPU fix: more info <a href="http://forum.xda-developers.com/showpost.php?p=46031842&amp;postcount=5623">here </a><br />
+- fixed HTC Messages Contact Picture bug (it was a HTC base bug not made by me) &#8211; has been hard to fix it since I still don&#8217;t have my ONE, but I managed in the end<br />
+If you only want the Messages Fix and you don&#8217;t want to download the whole ROM head over <a href="http://forum.xda-developers.com/showpost.php?p=46042037&amp;postcount=6993">here</a><br />
+- moved Blinkfeed share button to 3-dot menu (@grgsiocl)<br />
+It seems i forgot to include this after all. Here is a <a href="http://forum.xda-developers.com/showpost.php?p=46051155&#038;postcount=7059">flashable zip</a> to correct this issue<br />
+- updated Google Hangouts</p>
+<h3>InsertCoin Nightly Project</h3>
+<p>(useful for those who always want the latest and greatest. and dont always want to download 900 zips)<br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com">Project Home</a></strong><br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com/svn/trunk/"> Repository </a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/source/list">Commits Log</a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild">Wiki: How to set up SVN and build rom</a></strong></p>
+<h3>Custom Full ROM</h3>
+<p><strong><a href="http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin">Download from xdafileserver </a></strong><br />
+<strong><a href="http://www.androidfilehost.com/?fid=23159073880932863">Download from androidfilehost</a></strong><br />
+<strong>MD5:</strong> 18aff338351572d6a71bdaeb91377ca9</p>
+<h3>Firmware</h3>
+<p><strong><a href="http://forum.xda-developers.com/showthread.php?t=2459147">3.22.1540.1 Custom Firmware</a> (optional, rom works with older radios / hboots / firmware). </strong></p>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/28/insertcoin-htc-one-v4-0-2-sense-5-android-4-3/" rel="bookmark" title="Permanent Link to InsertCoin HTC ONE v4.0-2  Sense 5 Android 4.3">
+				InsertCoin HTC ONE v4.0-2  Sense 5 Android 4.3			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 28, 2013 in <a href="http://insertcoin-roms.org/category/devices/" title="View all posts in Custom ROMs" rel="category tag">Custom ROMs</a>, <a href="http://insertcoin-roms.org/category/devices/one/" title="View all posts in HTC ONE - Sense ROM" rel="category tag">HTC ONE - Sense ROM</a> | <a href="http://insertcoin-roms.org/2013/09/28/insertcoin-htc-one-v4-0-2-sense-5-android-4-3/#respond" title="Comment on InsertCoin HTC ONE v4.0-2  Sense 5 Android 4.3">0 comments</a></div>
+				
+		<div class="single-entry">
+			
+<!-- Quick Adsense WordPress Plugin: http://quicksense.net/ -->
+<div style="float:none;margin:10px 0 10px 0;text-align:center;">
+<script type="text/javascript"><!--
+google_ad_client = "ca-pub-3113797527117263";
+/* insertcoin header-top */
+google_ad_slot = "1214697455";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script>
+</div>
+<h3>4.0-2 (same as r97 SVN) &#8211; SHOULD work without full wipe coming from 3.2-x/3.3-x/3.4-x/4.0-x</h3>
+<p>- fixed /system partition not being writable for S-ON users (thanks flar2 for guidance)<br />
+Now Xposed Framework and Viper4Android will work just as before without complicated tutorials <img src='http://insertcoin-roms.org/wp-includes/images/smilies/icon_wink.gif' alt=';)' class='wp-smiley' /> </p>
+<h3>InsertCoin Nightly Project</h3>
+<p>(useful for those who always want the latest and greatest. and dont always want to download 900 zips)<br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com">Project Home</a></strong><br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com/svn/trunk/"> Repository </a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/source/list">Commits Log</a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild">Wiki: How to set up SVN and build rom</a></strong></p>
+<h3>Incremental Update &#8211; To be flashed only on InsertCoin 4.0-1</h3>
+<p><strong><a href="http://www.androidfilehost.com/?fid=23134718111256351">insertcoin-m7-4.0-1_to_4.0-2-incremental.zip</a></strong><br />
+<strong>MD5:</strong> 5f5108799a892823c8b7db3973573381</p>
+<h3>Custom Full ROM</h3>
+<p><strong><a href="http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin">Download from xdafileserver </a></strong><br />
+<strong><a href="http://www.androidfilehost.com/?fid=23134718111256359">Download from androidfilehost</a></strong><br />
+<strong>MD5:</strong> 4860c85ba6e9f0aa1720fea6be589d0e</p>
+<h3>Firmware</h3>
+<p><strong><a href="http://forum.xda-developers.com/showthread.php?t=2459147">3.22.1540.1 Custom Firmware</a> (optional, rom works with older radios / hboots / firmware). </p>
+
+<div style="font-size:0px;height:0px;line-height:0px;margin:0;padding:0;clear:both"></div>			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/27/insertcoin-htc-one-v4-0-1-sense-5-android-4-3/" rel="bookmark" title="Permanent Link to InsertCoin HTC ONE v4.0-1  Sense 5 Android 4.3">
+				InsertCoin HTC ONE v4.0-1  Sense 5 Android 4.3			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 27, 2013 in <a href="http://insertcoin-roms.org/category/devices/" title="View all posts in Custom ROMs" rel="category tag">Custom ROMs</a>, <a href="http://insertcoin-roms.org/category/devices/one/" title="View all posts in HTC ONE - Sense ROM" rel="category tag">HTC ONE - Sense ROM</a> | <a href="http://insertcoin-roms.org/2013/09/27/insertcoin-htc-one-v4-0-1-sense-5-android-4-3/#comments" title="Comment on InsertCoin HTC ONE v4.0-1  Sense 5 Android 4.3">4 comments</a></div>
+				
+		<div class="single-entry">
+			<h3>4.0-1 (same as r91 SVN) &#8211; SHOULD work without full wipe coming from 3.2-x/3.3-x/3.4-x</h3>
+<p>- rebased to 3.22.1540.1 (HTC ONE DEV EDITION BASE) &#8211; mad props @CoryTallman for his effort to offer system dump<br />
+- modified base to make it WWE! so in fact is 3.22.401.2<br />
+- works with kustomizer 1.1.0<br />
+- all mods ported! no old files used. And this without an actual phone to test on (my phone is broken)<br />
+- rom is tested by InsertCoin most addicted users before release!</p>
+<h3>InsertCoin Nightly Project</h3>
+<p>(useful for those who always want the latest and greatest. and dont always want to download 900 zips)<br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com">Project Home</a></strong><br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com/svn/trunk/"> Repository </a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/source/list">Commits Log</a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild">Wiki: How to set up SVN and build rom</a></strong></p>
+<h3>Custom Full ROM</h3>
+<p><strong><a href="http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin">Download from xdafileserver </a></strong><br />
+<strong><a href="http://www.androidfilehost.com/?fid=23134718111256049">Download from androidfilehost</a></strong><br />
+<strong>MD5:</strong> f45ffa3aabf954464fb8cd39d646d505</p>
+<h3>Firmware</h3>
+<p><strong><a href="http://forum.xda-developers.com/showthread.php?t=2459147">3.22.1540.1 Custom Firmware</a> (optional, rom works with older radios / hboots / firmware). </p>
+			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/25/insertcoin-htc-one-v3-5-1-repack-sense-5-android-4-3/" rel="bookmark" title="Permanent Link to InsertCoin HTC ONE v3.5-1-RePack  Sense 5 Android 4.3">
+				InsertCoin HTC ONE v3.5-1-RePack  Sense 5 Android 4.3			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 25, 2013 in <a href="http://insertcoin-roms.org/category/devices/" title="View all posts in Custom ROMs" rel="category tag">Custom ROMs</a>, <a href="http://insertcoin-roms.org/category/devices/one/" title="View all posts in HTC ONE - Sense ROM" rel="category tag">HTC ONE - Sense ROM</a> | <a href="http://insertcoin-roms.org/2013/09/25/insertcoin-htc-one-v3-5-1-repack-sense-5-android-4-3/#comments" title="Comment on InsertCoin HTC ONE v3.5-1-RePack  Sense 5 Android 4.3">5 comments</a></div>
+				
+		<div class="single-entry">
+			<h3>3.5-1 &#8211; repack(same as r63 SVN) &#8211; works without full wipe coming from 3.2-x/3.3-x/3.4-x</h3>
+<p>- rebased to 3.18.709.2 &#8211; final base!<br />
+- modified base to make it WWE! so in fact is 3.18.401.2<br />
+- works with kustomizer 1.1.0<br />
+- fixed sim contacts error<br />
+- fixed bluetooth issue with car audio systems<br />
+- fixed torch in HEQS<br />
+- fixed FC when quick settings was selected in home screen menu<br />
+- updated Twitter and Facebook<br />
+- system partition fully writable for S-ON users &#8211; props flar2 for wp-mod.<br />
+- improved updater-script</p>
+<h3>InsertCoin Nightly Project</h3>
+<p>(useful for those who always want the latest and greatest. and dont always want to download 900 zips)<br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com">Project Home</a></strong><br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com/svn/trunk/"> Repository </a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/source/list">Commits Log</a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild">Wiki: How to set up SVN and build rom</a></strong></p>
+<h3>Custom Full ROM</h3>
+<p><strong><a href="http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin">Download from xdafileserver </a></strong><br />
+<strong><a href="http://www.androidfilehost.com/?fid=23134718111255461">Download from androidfilehost</a></strong><br />
+<strong>MD5:</strong> 9c74a8fa4f38af3bbe7497364df83c6c</p>
+<h3>Firmware</h3>
+<p><strong><a href="http://www.androidfilehost.com/?fid=23134718111255450">3.18 Firmware</a> (optional, rom works ok with 2.24 / GPE firmware).<br />
+<strong>md5sum: e0db6248017daca039d7c9ea8325d479</strong></p>
+			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/24/insertcoin-htc-one-v3-4-3-sense-5-android-4-3/" rel="bookmark" title="Permanent Link to InsertCoin HTC ONE v3.4-3-RePack  Sense 5 Android 4.3">
+				InsertCoin HTC ONE v3.4-3-RePack  Sense 5 Android 4.3			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 24, 2013 in <a href="http://insertcoin-roms.org/category/devices/" title="View all posts in Custom ROMs" rel="category tag">Custom ROMs</a>, <a href="http://insertcoin-roms.org/category/devices/one/" title="View all posts in HTC ONE - Sense ROM" rel="category tag">HTC ONE - Sense ROM</a> | <a href="http://insertcoin-roms.org/2013/09/24/insertcoin-htc-one-v3-4-3-sense-5-android-4-3/#comments" title="Comment on InsertCoin HTC ONE v3.4-3-RePack  Sense 5 Android 4.3">1 comment</a></div>
+				
+		<div class="single-entry">
+			<h3>3.4-3 &#8211; repack(same as r46 SVN) &#8211; works without full wipe coming from 3.2-x/3.3-x</h3>
+<p>- added horizontal extended settings mod (v6-manianc, lyapota, w00dstock). press status bar date for hqeqs edit<br />
+- added editable quick settings (v6-manianc, lyapota, w00dstock). press and hold the tiles in quick settings<br />
+- added 5&#215;6 grid option (v6-maniac) (is selectable directly in grid sizes)<br />
+- added AROMA optional for dim status bar effect (v6-maniac)</p>
+<h3>InsertCoin Nightly Project</h3>
+<p>(useful for those who always want the latest and greatest. and dont always want to download 900 zips)<br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com">Project Home</a></strong><br />
+<strong><a href="https://insertcoin-m7-nightly.googlecode.com/svn/trunk/"> Repository </a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/source/list">Commits Log</a></strong><br />
+<strong><a href="https://code.google.com/p/insertcoin-m7-nightly/wiki/HowToBuild">Wiki: How to set up SVN and build rom</a></strong></p>
+<h3>Custom Full ROM</h3>
+<p><strong><a href="http://xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin">Download from xdafileserver </a></strong><br />
+<strong><a href="http://www.androidfilehost.com/?fid=23134718111255091">Download from androidfilehost</a></strong><br />
+<strong>MD5:</strong> e22fffc7bf8b37c6ec8d6c00e74ec1fe</p>
+<h3>Firmware</h3>
+<p><strong><a href="http://forum.xda-developers.com/showthread.php?t=2419536">3.17.401.2 Firmware</a> (optional, rom works ok with 2.24 / GPE firmware). I Recommend using 3.06.1700.1 GPE Radio</strong></p>
+			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/24/insertcoin-kustomizer-v1-1-0/" rel="bookmark" title="Permanent Link to InsertCoin Kustomizer v1.1.0">
+				InsertCoin Kustomizer v1.1.0			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 24, 2013 in <a href="http://insertcoin-roms.org/category/tools/" title="View all posts in Custom Tools" rel="category tag">Custom Tools</a>, <a href="http://insertcoin-roms.org/category/tools/one-tools/" title="View all posts in HTC ONE" rel="category tag">HTC ONE</a> | <a href="http://insertcoin-roms.org/2013/09/24/insertcoin-kustomizer-v1-1-0/#respond" title="Comment on InsertCoin Kustomizer v1.1.0">0 comments</a></div>
+				
+		<div class="single-entry">
+			<h3><strong>InsertCoin Kustomizer is a flashable zip that allows you to change different ROM themes, options and mods without you having to download / reflash the whole ROM:</strong></h3>
+<ul>
+<li><strong><span style="font-size: 13px;">weather icons mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">notification icons mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">window transition animations mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">fonts</span></strong></li>
+<li><strong><span style="font-size: 13px;">battery icons mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">clock types mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">transparency mods</span></strong></li>
+</ul>
+<h3><span style="color: #ff0000;">After flashing InsertCoin ROM perform a complete first boot, then reboot to recovery and flash kustomizer</span></h3>
+<h3><strong>Changelog:</strong></h3>
+<p>1.1.0<br />
+- update to be compatible with InsertCoin 3.4-3 and higher<br />
+1.0.9<br />
+- fixed for good status bar no clock option (V6-Maniac)<br />
+1.0.8<br />
+- fixed noclock option<br />
+1.0.7<br />
+- updated to work with 3.09.401 base<br />
+- removed Launcher (Sense) mods, will remake those once there is a final base<br />
+1.0.6<br />
+- added AOSP / HTC Recenet Apps Style option<br />
+1.0.5- repack<br />
+- fixed Systemui Crashes if full wipe was selected.<br />
+Only to be used with 3.0-11-REPACK/r104 or higher.<br />
+1.0.5<br />
+- fixed battery mods (for good this time)<br />
+- some script fixes and improvements<br />
+- removed dark signal mod caused issues, cleaned script.<br />
+- fixed if battery mods were used it would overwrite ATT signal mod from ROM.<br />
+- added option in transparency menu to remove all transparency mods (it wont remove transparent blinkfeed / appdrawer. To remove that you need to select stock prism (or whatever grid size you want).<br />
+1.0.4<br />
+- fixed not flashing 4&#215;5/5&#215;6 Transparent Prism<br />
+- fix for battery missing<br />
+- cache wiping is mandatory now to avoid bootloops<br />
+- cosmetics to weather menu<br />
+1.0.3<br />
+- added lockscreen lock / unlock sounds optional<br />
+- added blinkfeed and appdrawer transparency optional<br />
+- fixed green battery mod not flashing<br />
+1.0.2<br />
+- fixed stock weather mod.<br />
+- fixed dalvik-cache wiping and made it optional<br />
+v1.0.1<br />
+- added Sense Mods.<br />
+v1.0.0<br />
+- initial release</p>
+<h3><strong>Download: <a href="http://www.xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin%2FKustomizer">from xdafileserver </a></strong></h3>
+<h3><strong>Download: <a href="http://www.androidfilehost.com/?fid=23134718111255032">from androidfilehost </a></strong></h3>
+<p>md5sum: 6d0dd3ac3990e7fc0315fe4fd2a5425b</p>
+<h3><strong>SVN: <a href="https://code.google.com/p/insertcoin-m7-kustomizer/">Project Home</a></strong></h3>
+			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+				
+					<div class="post-wrapper" style="margin-bottom: 20px;">
+		<h2 class="titles">
+			<a href="http://insertcoin-roms.org/2013/09/18/insertcoin-kustomizer-v1-0-9/" rel="bookmark" title="Permanent Link to InsertCoin Kustomizer v1.0.9">
+				InsertCoin Kustomizer v1.0.9			</a>
+		</h2>
+
+					<div class="articleinfo">Posted  by <a href="http://insertcoin-roms.org/author/baadnewz/" title="Posts by baadnewz" rel="author">baadnewz</a> on Sep 18, 2013 in <a href="http://insertcoin-roms.org/category/tools/" title="View all posts in Custom Tools" rel="category tag">Custom Tools</a>, <a href="http://insertcoin-roms.org/category/tools/one-tools/" title="View all posts in HTC ONE" rel="category tag">HTC ONE</a> | <a href="http://insertcoin-roms.org/2013/09/18/insertcoin-kustomizer-v1-0-9/#respond" title="Comment on InsertCoin Kustomizer v1.0.9">0 comments</a></div>
+				
+		<div class="single-entry">
+			<h3><strong>InsertCoin Kustomizer is a flashable zip that allows you to change different ROM themes, options and mods without you having to download / reflash the whole ROM:</strong></h3>
+<ul>
+<li><strong><span style="font-size: 13px;">weather icons mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">notification icons mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">window transition animations mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">fonts</span></strong></li>
+<li><strong><span style="font-size: 13px;">battery icons mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">clock types mods</span></strong></li>
+<li><strong><span style="font-size: 13px;">transparency mods</span></strong></li>
+</ul>
+<h3><span style="color: #ff0000;">After flashing InsertCoin ROM perform a complete first boot, then reboot to recovery and flash kustomizer</span></h3>
+<h3><strong>Changelog:</strong></h3>
+<p>1.0.9<br />
+- fixed for good status bar no clock option (V6-Maniac)<br />
+1.0.8<br />
+- fixed noclock option<br />
+1.0.7<br />
+- updated to work with 3.09.401 base<br />
+- removed Launcher (Sense) mods, will remake those once there is a final base<br />
+1.0.6<br />
+- added AOSP / HTC Recenet Apps Style option<br />
+1.0.5- repack<br />
+- fixed Systemui Crashes if full wipe was selected.<br />
+Only to be used with 3.0-11-REPACK/r104 or higher.<br />
+1.0.5<br />
+- fixed battery mods (for good this time)<br />
+- some script fixes and improvements<br />
+- removed dark signal mod caused issues, cleaned script.<br />
+- fixed if battery mods were used it would overwrite ATT signal mod from ROM.<br />
+- added option in transparency menu to remove all transparency mods (it wont remove transparent blinkfeed / appdrawer. To remove that you need to select stock prism (or whatever grid size you want).<br />
+1.0.4<br />
+- fixed not flashing 4&#215;5/5&#215;6 Transparent Prism<br />
+- fix for battery missing<br />
+- cache wiping is mandatory now to avoid bootloops<br />
+- cosmetics to weather menu<br />
+1.0.3<br />
+- added lockscreen lock / unlock sounds optional<br />
+- added blinkfeed and appdrawer transparency optional<br />
+- fixed green battery mod not flashing<br />
+1.0.2<br />
+- fixed stock weather mod.<br />
+- fixed dalvik-cache wiping and made it optional<br />
+v1.0.1<br />
+- added Sense Mods.<br />
+v1.0.0<br />
+- initial release</p>
+<h3><strong>Download: <a href="http://www.xdafileserver.nl/index.php?dir=HTC%2FOne%2FInsertcoin%2FKustomizer">from xdafileserver </a></strong></h3>
+<h3><strong>Download: <a href="http://www.androidfilehost.com/?fid=23134718111253619">from androidfilehost </a></strong></h3>
+<p>md5sum: efe31349ae2430061e2b51d797385e70</p>
+<h3><strong>SVN: <a href="https://code.google.com/p/insertcoin-m7-kustomizer/">Project Home</a></strong></h3>
+			<div style="clear: both;"></div>
+		</div>
+	</div> <!-- end .post-wrapper -->
+							<div style="clear: both;"></div>
+								     <div class="pagination">
+	<div class="alignleft"><a href="http://insertcoin-roms.org/page/2/" >&laquo; Older Entries</a></div>
+	<div class="alignright"></div>
+</div>
+									</div> <!-- end #left-div -->
+	</div> <!-- end #container2 -->
+
+	<div id="sidebar-wrapper">
+    <div id="sidebar">
+        <div id="text-2" class="sidebar-box widget_text"><h2>Donations</h2>			<div class="textwidget"><center>
+<h3>You enjoy my work? Throw me a banana</h3>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+</center</div>
+		</div> <!-- end .sidebar-box --><div id="text-3" class="sidebar-box widget_text"><h2>Online presence</h2>			<div class="textwidget"><center>
+<a href="http://forum.xda-developers.com/search.php?searchid=82096516" title="InsertCoin XDA"><img src="http://insertcoin-roms.org/logo/xda.png" alt="" /></a> <a href="https://www.facebook.com/InsertCoinRoms" title="InsertCoin Facebook"><img src="http://insertcoin-roms.org/logo/fb.png" alt="" /></a> <a href="https://twitter.com/baadnwz" title="Twitter baadnewz"><img src="http://insertcoin-roms.org/logo/twit.png" alt="" /></a><br> <a href="http://webchat.freenode.net/?channels=baadnwz-roms&uio=d4"><img src="http://insertcoin-roms.org/logo/irc.png" alt="" /></a> <a href="https://plus.google.com/118062549810600157384" title="InsertCoin G+"><img src="http://insertcoin-roms.org/logo/plus.png" alt="" /></a>
+<center></div>
+		</div> <!-- end .sidebar-box -->		<div id="recent-posts-2" class="sidebar-box widget_recent_entries">		<h2>Recent Posts</h2>		<ul>
+					<li>
+				<a href="http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/" title="My HTC One story (broke and denied warranty) UPDATED">My HTC One story (broke and denied warranty) UPDATED</a>
+						</li>
+					<li>
+				<a href="http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/" title="InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3">InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3</a>
+						</li>
+					<li>
+				<a href="http://insertcoin-roms.org/2013/09/28/insertcoin-htc-one-v4-0-2-sense-5-android-4-3/" title="InsertCoin HTC ONE v4.0-2  Sense 5 Android 4.3">InsertCoin HTC ONE v4.0-2  Sense 5 Android 4.3</a>
+						</li>
+					<li>
+				<a href="http://insertcoin-roms.org/2013/09/27/insertcoin-htc-one-v4-0-1-sense-5-android-4-3/" title="InsertCoin HTC ONE v4.0-1  Sense 5 Android 4.3">InsertCoin HTC ONE v4.0-1  Sense 5 Android 4.3</a>
+						</li>
+					<li>
+				<a href="http://insertcoin-roms.org/2013/09/25/insertcoin-htc-one-v3-5-1-repack-sense-5-android-4-3/" title="InsertCoin HTC ONE v3.5-1-RePack  Sense 5 Android 4.3">InsertCoin HTC ONE v3.5-1-RePack  Sense 5 Android 4.3</a>
+						</li>
+				</ul>
+		</div> <!-- end .sidebar-box --><div id="recent-comments-2" class="sidebar-box widget_recent_comments"><h2>Recent Comments</h2><ul id="recentcomments"><li class="recentcomments">elvis de kooning on <a href="http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/#comment-9921">InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3</a></li><li class="recentcomments">baadnewz on <a href="http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comment-9916">My HTC One story (broke and denied warranty) UPDATED</a></li><li class="recentcomments">ArtyMarty on <a href="http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comment-9915">My HTC One story (broke and denied warranty) UPDATED</a></li><li class="recentcomments">IvanP on <a href="http://insertcoin-roms.org/2013/10/03/my-htc-one-story-broke-and-denied-warranty/#comment-9910">My HTC One story (broke and denied warranty) UPDATED</a></li><li class="recentcomments">Volker on <a href="http://insertcoin-roms.org/2013/09/30/insertcoin-htc-one-v4-0-3-sense-5-android-4-3/#comment-9909">InsertCoin HTC ONE v4.0-3  Sense 5 Android 4.3</a></li></ul></div> <!-- end .sidebar-box --><div id="archives-2" class="sidebar-box widget_archive"><h2>Archives</h2>		<ul>
+			<li><a href='http://insertcoin-roms.org/2013/10/' title='October 2013'>October 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/09/' title='September 2013'>September 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/08/' title='August 2013'>August 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/07/' title='July 2013'>July 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/06/' title='June 2013'>June 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/05/' title='May 2013'>May 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/04/' title='April 2013'>April 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/03/' title='March 2013'>March 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/02/' title='February 2013'>February 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2013/01/' title='January 2013'>January 2013</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/12/' title='December 2012'>December 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/11/' title='November 2012'>November 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/10/' title='October 2012'>October 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/09/' title='September 2012'>September 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/08/' title='August 2012'>August 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/07/' title='July 2012'>July 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/06/' title='June 2012'>June 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/05/' title='May 2012'>May 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/04/' title='April 2012'>April 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/03/' title='March 2012'>March 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/02/' title='February 2012'>February 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2012/01/' title='January 2012'>January 2012</a></li>
+	<li><a href='http://insertcoin-roms.org/2011/12/' title='December 2011'>December 2011</a></li>
+	<li><a href='http://insertcoin-roms.org/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='http://insertcoin-roms.org/2011/10/' title='October 2011'>October 2011</a></li>
+	<li><a href='http://insertcoin-roms.org/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='http://insertcoin-roms.org/2011/08/' title='August 2011'>August 2011</a></li>
+		</ul>
+</div> <!-- end .sidebar-box --><div id="categories-2" class="sidebar-box widget_categories"><h2>Categories</h2>		<ul>
+	<li class="cat-item cat-item-3"><a href="http://insertcoin-roms.org/category/articles/" title="Parent category for Articles">Articles</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://insertcoin-roms.org/category/devices/" title="Parent cat for devices">Custom ROMs</a>
+</li>
+	<li class="cat-item cat-item-24"><a href="http://insertcoin-roms.org/category/tools/" title="Tools for your custom rom">Custom Tools</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://insertcoin-roms.org/category/devices/desire/" title="View all posts filed under Desire">Desire</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://insertcoin-roms.org/category/devices/galaxy-s3/" title="View all posts filed under Galaxy S3">Galaxy S3</a>
+</li>
+	<li class="cat-item cat-item-25"><a href="http://insertcoin-roms.org/category/tools/one-tools/" title="View all posts filed under HTC ONE">HTC ONE</a>
+</li>
+	<li class="cat-item cat-item-26"><a href="http://insertcoin-roms.org/category/devices/ge/" title="Custom Rom based on Google Stock Android">HTC ONE &#8211; GPE</a>
+</li>
+	<li class="cat-item cat-item-23"><a href="http://insertcoin-roms.org/category/devices/one/" title="HTC ONE Custom Rom">HTC ONE &#8211; Sense ROM</a>
+</li>
+	<li class="cat-item cat-item-8"><a href="http://insertcoin-roms.org/category/devices/one-x/" title="View all posts filed under One X">One X</a>
+</li>
+	<li class="cat-item cat-item-9"><a href="http://insertcoin-roms.org/category/devices/one-x-plus/" title="Custom Roms for HTC ONE X+">One X Plus</a>
+</li>
+	<li class="cat-item cat-item-10"><a href="http://insertcoin-roms.org/category/devices/one-x-plus-att/" title="View all posts filed under One X Plus AT&amp;T">One X Plus AT&amp;T</a>
+</li>
+	<li class="cat-item cat-item-11"><a href="http://insertcoin-roms.org/category/piggy-bank/" title="View all posts filed under Piggy Bank">Piggy Bank</a>
+</li>
+	<li class="cat-item cat-item-13"><a href="http://insertcoin-roms.org/category/devices/sensation/" title="View all posts filed under Sensation">Sensation</a>
+</li>
+		</ul>
+</div> <!-- end .sidebar-box -->    </div> <!-- end #sidebar -->
+</div> <!-- end #sidebar-wrapper -->	
+</div> <!-- end #container -->
+		<div id="footer">
+			Designed by  <a href="http://www.elegantthemes.com" title="Elegant Themes">Elegant Themes</a> | Powered by  <a href="http://www.wordpress.org">Wordpress</a>
+		</div> <!-- end #footer -->
+	</div> <!-- end #wrapper2 -->
+</div> <!-- end #bg -->
+
+
+<script type="text/javascript" src="http://insertcoin-roms.org/wp-content/themes/Quadro/js/idtabs.js"></script>
+<script type="text/javascript" src="http://insertcoin-roms.org/wp-content/themes/Quadro/js/superfish.js"></script>
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('ul.superfish').superfish();
+		jQuery("ul.nav > li > ul").prev("a").attr("href","#");	});
+</script><script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-39805183-1', 'insertcoin-roms.org');
+  ga('send', 'pageview');
+
+</script><script type='text/javascript' src='http://insertcoin-roms.org/wp-content/themes/Quadro/epanel/page_templates/js/fancybox/jquery.easing-1.3.pack.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://insertcoin-roms.org/wp-content/themes/Quadro/epanel/page_templates/js/fancybox/jquery.fancybox-1.3.4.pack.js?ver=1.3.4'></script>
+<script type='text/javascript' src='http://insertcoin-roms.org/wp-content/themes/Quadro/epanel/page_templates/js/et-ptemplates-frontend.js?ver=1.1'></script>
+</body>
+</html>

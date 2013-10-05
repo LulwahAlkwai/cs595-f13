@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Scripting News: Fargo gets Find</title>
+		<meta charset='utf-8'> 
+		<link rel="alternate" type="application/rss+xml" title="RSS" href="http://scripting.com/rss.xml" /><link rel="alternate" type="application/rss+xml" title="RSS/link-blog" href="http://links.scripting.com/rss.xml" /><link rel="alternate" type="application/opml+xml" title="Outline" href="https://dl.dropbox.com/s/v8e5gighrh8prpc/myPublicProfile.opml" />
+		<script>var _gaq = _gaq || []; _gaq.push(['_setAccount', 'UA-39531990-1']); _gaq.push(['_setDomainName', 'dave.smallpict.com']); _gaq.push(['_trackPageview']); (function() {var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true; ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js'; var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s); })();</script>
+		<link href="http://static.smallpicture.com/bootswatch/readable/bootstrap.min.css" rel="stylesheet" />
+<script src="http://static.smallpicture.com/bootstrap/js/jquery-1.9.1.min.js"></script>
+<script src="http://static.smallpicture.com/bootstrap/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="http://static.smallpicture.com/concord-assets/fontawesome/3.2.1/css/font-awesome.min.css">
+
+		<link href="http://outliner.smallpicture.com/rules.css" rel="stylesheet" />
+<script src="http://outliner.smallpicture.com/rules.js"></script>
+
+		<style>
+	.divDisqusComments {
+		margin-top: 50px;
+		background-color: white;
+		padding: 15px;
+		border:1px solid #ddd;
+		}
+	.divTrexEmbeddedOutlineContainer {
+		margin-bottom: 20px;
+		}
+	.divTrexEmbeddedOutlineContainer .divTrexEmbeddedOutliner {
+		min-height: 10em;
+		max-height: 30em;
+		border:1px solid gainsboro;
+		border-top-width: 0;
+		border-bottom-width: 0;
+		overflow-y: auto;
+		background-color: white;
+		padding: 6px;
+		}
+	.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo {
+		min-height: 1.5em;
+		border:1px solid gainsboro;
+		background-color: whitesmoke;
+		padding: 4px;
+		font-family: "Arial";
+		font-size: .9em;
+		}
+	.divTrexEmbeddedOutlineContainer .divInfoRight {
+		float: right;
+		}
+	.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo {
+		min-height: 1.5em;
+		border:1px solid gainsboro;
+		background-color: whitesmoke;
+		padding: 4px;
+		font-family: "Arial";
+		font-size: .9em;
+		}
+	.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a {
+		font-family: "Arial";
+		font-size: .9em;
+		color: #0088cc;
+		}
+	.divTrexEmbeddedOutlineContainer .divAboveOutlineInfo a:visited {
+		font-family: "Arial";
+		font-size: .9em;
+		color: #0088cc;
+		}
+	.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a {
+		font-family: "Arial";
+		font-size: .9em;
+		color: #0088cc;
+		}
+	.divTrexEmbeddedOutlineContainer .divBelowOutlineInfo a:visited {
+		font-family: "Arial";
+		font-size: .9em;
+		color: #0088cc;
+		}
+	.divTrexEmbeddedOutlineContainer .divOutlineTitle {
+		font-weight: bold;
+		}
+	</style>
+
+		<style>
+			.container {
+				margin-top: 50px;
+				margin-bottom: 300px;
+				width: 60%;
+				margin-left: auto;
+				margin-right: auto;
+				}
+			.divHeadlineUnit {
+				margin-bottom: 35px;
+				}
+			h2 {
+				font-size: 36px;
+				margin-bottom: 0 !important;
+				}
+			hr {
+				border-top: 1px solid silver;
+				margin: 0 0 5px 0;
+				}
+			.divFooterText {
+				margin-top: 60px;
+				}
+			.divBreadcrumbs {
+				visibility: hidden;
+				height: 0;
+				}
+			.divBreadcrumbs .breadcrumb {
+				padding: 0;
+				}
+			.divByline {
+				visibility: hidden;
+				height: 0;
+				color: gray;
+				margin-left: 2px;
+				}
+			</style>
+		<script>
+			function viewCommentsLink () {
+				var t = document.getElementById  ("idShowHideComments");
+				var c = document.getElementById ("idDisqusComments");
+				t.innerHTML = (c.style.visibility == "hidden") ? "<i class=\"icon-caret-right\"></i> Show comments" : "<i class=\"icon-caret-down\"></i> Hide comments"; 
+				}
+			function showHideComments () {
+				var c = document.getElementById ("idDisqusComments");
+				c.style.visibility =  (c.style.visibility == "hidden") ? "visible" : "hidden";
+				viewCommentsLink ();
+				}
+			function startup () {
+				viewCommentsLink ();
+				}
+			</script>
+		<script src="http://outliner.smallpicture.com/strings.js"></script>
+<script src="http://outliner.smallpicture.com/utils.js"></script>
+<script src="http://outliner.smallpicture.com/concord.js"></script>
+<script src="http://outliner.smallpicture.com/fargoInPageOutliner.js"></script>
+<style>
+	.divInPageOutlinerContainer {
+		width: 60%;
+		margin-top: 25px;
+		margin-left: auto;
+		margin-right: auto;
+		}
+	.divInPageOutliner {
+		width: 95%;
+		min-height: 10em;
+		max-height: 20em;
+		border:1px solid gainsboro;
+		background-color: white;
+		padding: 6px;
+		overflow-y: scroll;
+		float: right;
+		}
+	.divInPageIcons {
+		padding: 3px;
+		margin-right: 5px;
+		}
+	.divInPageIcons i {
+		font-size: 20px;
+		color: gray;
+		padding-bottom: 20px;
+		cursor: pointer;
+		}
+	.divOutlineItem a,  a:visited {
+		color: #0088cc;
+		}
+	.aBloghomeTitle {
+		color: black !important;
+		font-size: 1.5em;
+		}
+	.divTitleDescription {
+		display: none;
+		}
+	.aWhenCreated {
+		color: black;
+		font-size: .8em;
+		}
+	.divOutlineBody {
+		margin-top: 25px;
+		}
+	.divTrexOutlineBody {
+		margin-bottom: 800px;
+		}
+	.brand {
+		font-weight: bold !important;
+		font-size: 1.3em !important;
+		}
+	.aOutlineDocLink {
+		color: #0088cc;
+		}
+	a:link, a:visited {
+		color: #0088cc;
+		}
+	.divBreadcrumbs {
+		padding-bottom: 0;
+		}
+	h2 {
+		margin-bottom: 30px;
+		}
+	</style>
+<script>
+	function sayTrexVersion () {
+		alertDialog ("Trex version is 1.09.")
+		}
+	function helloWalter () {
+		var img = '<img src="http://static.scripting.com/larryKing/images/2013/08/09/ww.jpg">';
+		var s = "<div id='idWalter' style='display: none; margin-top: 30px; margin-bottom: 2px;'><center>" + img + "</center></div>"
+		$("#idOutlineContainer").before (s); 
+		$("#idWalter").slideDown ();
+		}
+	function goodbyeWalter () {
+		$("#idWalter").slideUp ();
+		}
+	function helloWorld () {
+		alertDialog ("hello world!");
+		}
+	$(document).ready (function () {
+		if (window.location.pathname == "/") {
+			document.title = 'Scripting News';
+			}
+		
+		var breadcrumbs = document.getElementById ("idBreadcrumbs"); 
+		breadcrumbs.style.visibility = "visible";
+		breadcrumbs.style.height = "25px";
+		
+		var byline = document.getElementById ("idByline"); 
+		byline.style.visibility = "visible";
+		byline.style.height = "18px";
+		byline.style.marginTop = "3px";
+		});
+	</script>
+
+		</head>
+	<body>
+		<div class="navbar navbar-static-top"><div class="navbar-inner"><div class="navbar-container" style="width: 940px; margin: 0 auto;"><a class="brand" href="/">Scripting News</a><ul class="nav"><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Links&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="http://links.scripting.com/">Linkblog</a></li><li class="divider"></li><li><a href="http://scripting.com/2013/08/25/howCommentsWorkOnScriptingNews">Comments</a></li><li><a href="http://scripting.com/2013/08/04/aboutScriptingNews">About this site</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Fargo&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="http://docs.fargo.io/whatIsFargo">What is Fargo?</a></li><li class="divider"></li><li><a href="http://docs.fargo.io/outlinerHowto">What is an outliner?</a></li><li><a href="http://docs.fargo.io/blogging/firstPost">Blogging with Fargo</a></li><li class="divider"></li><li><a href="http://fargo.io/">Use Fargo now</a></li><li class="divider"></li><li><a href="http://docs.smallpict.com/">Development blog</a></li><li><a href="http://smallpicture.com/">Small Picture, Inc.</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Testing&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="javascript: helloWalter ();">Hello Walter!</a></li><li><a href="javascript: goodbyeWalter ();">Goodbye Walter</a></li><li class="divider"></li><li><a href="javascript: inPageShowEditor (); ">Show Editor Lab</a></li><li><a href="javascript: sayTrexVersion (); ">Hide Editor Lab</a></li><li class="divider"></li><li><a href="javascript: sayTrexVersion (); ">Trex version</a></li></ul></li><li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Rivers&nbsp;<b class="caret"></b></a><ul class="dropdown-menu"><li><a href="http://tabs.mediahackers.org/?panel=dave">Personal</a></li><li class="divider"></li><li><a href="http://tabs.mediahackers.org/?panel=movies">Movies</a></li><li><a href="http://tabs.mediahackers.org/?panel=podcasts">Podcasts</a></li><li><a href="http://tabs.mediahackers.org/?panel=tech">Tech</a></li><li><a href="http://tabs.mediahackers.org/?panel=nyt">NYT</a></li><li><a href="http://tabs.mediahackers.org/?panel=frontier">Frontier</a></li><li><a href="http://tabs.mediahackers.org/?panel=world">World</a></li><li class="divider"></li><li><a href="http://fargo.io/river.html">Fargo</a></li></ul></li><li><a href="http://dave.smallpict.com/archive">Archive</a></li><li><a href="http://davewiner.com/">Dave</a></li><li><a href="http://twitter.com/davewiner/"><i class="icon-twitter" style="color: #4099FF; font-weight: bold;"></i></a></li><li><a href="http://dave.smallpict.com/rss.xml"><i class="icon-rss" style="color: orange; font-weight: bold;"></i></a></li></ul></div></div></div>
+		<div id="idOutlineContainer" class="container">
+			<div class="divHeadlineUnit">
+				<div class="divBreadcrumbs" id="idBreadcrumbs">
+					<ul class="breadcrumb"><li><a href="/">Home</a><span class="divider">/</span></li><li><a href="/2013">2013</a><span class="divider">/</span></li><li><a href="/2013/09">September 2013</a><span class="divider">/</span></li><li><a href="/2013/09/04">September 4</a></li></ul>
+					</div>
+				<h2>Fargo gets Find</h2>
+				<div class="divByline" id="idByline">By <a href="http://davewiner.com/" target="_blank">Dave Winer</a>.</div>
+				</div>
+				<div class="divOutlineBody">
+		<div class="divOutlineList">
+			<p class="divOutlineItem" style="padding-bottom: 10px;"><span class="spanOutlineText" style="font-size: 1.1em; line-height: 150%;">Today <a href="http://fargo.io/">Fargo</a> got its <a href="http://docs.fargo.io/worknotes/2013/09/04/fargo117Find">Find command</a>, finally. </span></p>
+			<p class="divOutlineItem" style="padding-bottom: 10px;"><span class="spanOutlineText" style="font-size: 1.1em; line-height: 150%;">The hard part of doing Find in a browser-based app is figuring out how to reliably get the keystrokes for <i>Find</i> and <i>Find again,</i> Cmd-F and G respectively.</span></p>
+			<p class="divOutlineItem" style="padding-bottom: 10px;"><img style="float: right; margin-left: 25px; margin-top: 15px; margin-right: 15px; margin-bottom: 15px;" src="http://static.scripting.com/larryKing/images/2013/09/04/pope.gif" border="0"><span class="spanOutlineText" style="font-size: 1.1em; line-height: 150%;">The browser has its own Find, but an outliner like Fargo really needs to do it for itself. The browser doesn't know about text that's tucked away under collapsed headlines, for example. And it shouldn't be searching the menus and the text in the right margin. </span></p>
+			<p class="divOutlineItem" style="padding-bottom: 10px;"><span class="spanOutlineText" style="font-size: 1.1em; line-height: 150%;">So I did a <a href="https://www.google.com/search?q=javascript+catching+command+keystrokes">search</a>, read a couple of Stack Overflow threads, and decided to give <a href="http://dmauro.github.io/Keypress/">keypress.js</a> a try. It seems to work, nicely done! <i class="icon-smile"></i> </span></p>
+			<p class="divOutlineItem" style="padding-bottom: 10px;"><span class="spanOutlineText" style="font-size: 1.1em; line-height: 150%;">It works well in Chrome and Safari, problems in Firefox. </span></p>
+			<p class="divOutlineItem" style="padding-bottom: 10px;"><span class="spanOutlineText" style="font-size: 1.1em; line-height: 150%;">This is something the browser guys should get together on, imho, if there's going to be a browser-based apps ecosystem. </span></p>
+			</div>
+		</div>
+
+			<div class="divFooterText">
+				<hr>
+				<p style="float: right;">Posted: Wednesday, September 4, 2013 at  5:51 PM</p>
+				<script>var disqus_identifier = 'https://dl.dropbox.com/s/v8e5gighrh8prpc/myPublicProfile.opmlWed, 04 Sep 2013 21:51:24 GMT';</script><a onclick="showHideComments ()"><span id="idShowHideComments" style="cursor: pointer;"></span></a><div class="divDisqusComments" id="idDisqusComments" style="visibility: visible;" ><div id="disqus_thread"></div></div><script type="text/javascript" src="http://disqus.com/forums/smallpict/embed.js"></script></div>
+				</div>
+			</div>
+		<script>
+			startup ();
+			</script>
+		</body>
+	</html>

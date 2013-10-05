@@ -1,0 +1,701 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]> <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]> <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=1024">
+	<title>The Man Who Invented Modern Probability - Issue 4: The Unlikely - Nautilus</title>
+	<meta name="description" content="If two statisticians were to lose each other in an infinite forest, the first thing they would do is get drunk. That way, they would&amp;#8230;">
+
+	<meta property='og:site_name' content='Nautilus'/>
+	<meta property='og:type' content='website'/>
+	<meta property='og:url' content='http://nautil.us/issue/4/the-unlikely/the-man-who-invented-modern-probability'/>
+	<meta property='og:title' content='The Man Who Invented Modern Probability - Issue 4: The Unlikely - Nautilus'/>
+	<meta property='og:description' content='If two statisticians were to lose each other in an infinite forest, the first thing they would do is get drunk. That way, they would&amp;#8230;'/>
+	<meta property='og:image' content='http://static.nautil.us/928_d045c59a90d7587d8d671b5f5aec4e7c.png'/>
+		<meta property="fb:admins" content="520129772" />
+
+	<!-- Favicon -->
+	<link rel="shortcut icon" href="/favicon.ico" />
+		
+	<!-- Stylesheets -->
+	<link href="/min/b=assets/site/css&f=style.css" type="text/css" rel="stylesheet" />
+	<!-- Header scripts -->
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+	<script>window.jQuery || document.write('<script src="/assets/site/js/lib/jquery-1.9.1.min.js"><\/script>')</script>
+
+			<script type="text/javascript" src="//use.typekit.net/nos6dfk.js"></script>		
+		
+	<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+
+	<script src="/assets/site/js/lib/modernizr.custom-2.6.2.min.js"></script>
+	<!--[if lt IE 9]>
+	<script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<script>window.html5 || document.write('<script src="/assets/site/js/lib/html5shiv.js"><\/script>')</script>
+	<script src="/assets/site/js/lib/selectivizr.min.1.0.2.js"></script>
+	<![endif]-->
+		
+	<script type="text/javascript">
+		document.domain = "nautil.us";
+	</script>
+
+	<link rel="alternate" type="application/atom+xml" title="Nautilus RSS" href="/rss/all" />
+
+		<!-- Key Page View pixel -->
+	<script type="text/javascript">
+	var fb_param = {};
+	fb_param.pixel_id = '6010074328884';
+	fb_param.value = '0.00';
+	fb_param.currency = 'USD';
+	(function(){
+	  var fpw = document.createElement('script');
+	  fpw.async = true;
+	  fpw.src = '//connect.facebook.net/en_US/fp.js';
+	  var ref = document.getElementsByTagName('script')[0];
+	  ref.parentNode.insertBefore(fpw, ref);
+	})();
+	</script>
+	<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/offsite_event.php?id=6010074328884&amp;value=0&amp;currency=USD" /></noscript>
+	
+</head>
+
+<body  class="page-normal-article page-article">
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-37494472-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script type='text/javascript'>
+	var googletag = googletag || {};
+	googletag.cmd = googletag.cmd || [];
+	(function() {
+	var gads = document.createElement('script');
+	gads.async = true;
+	gads.type = 'text/javascript';
+	var useSSL = 'https:' == document.location.protocol;
+	gads.src = (useSSL ? 'https:' : 'http:') + 
+	'//www.googletagservices.com/tag/js/gpt.js';
+	var node = document.getElementsByTagName('script')[0];
+	node.parentNode.insertBefore(gads, node);
+	})();
+</script>
+<div class="main-wrap">
+	<header id="main-header" class="main-header">
+		
+		<div class="main-nav">
+
+	<h2 class="site-logo"><a href="/" title="Nautilus">Nautilus</a></h2>
+
+	<nav class="primary-nav" role="navigation">
+		<ul>
+			<li class="issue-browser-trigger"><a href="/issues">Issues</a></li>
+			<li><a href="/blog">Blog</a></li>
+			<li class="search-bar-trigger"><a href="#"><i class="icon-search"></i></a></li>
+		</ul>
+	</nav>
+
+	<ul class="social-nav">
+		<li class="newsletter-signup">
+			<div class="newsletter-signup-trigger"><span class="newsletter-thanks">Thanks for Joining the </span>Newsletter</div>
+			<form class="signup-form" novalidate>
+				<div class="input-wrapper">
+					<input type="email" name="newsletter-signup" placeholder="Subscribe To Newsletter" />
+					<input type="submit" value="Sign Up" />
+				</div>
+				<div class="error-message">
+					The email entered is invalid. Please check and try again.
+				</div>
+			</form>
+		</li>
+		<li><a href="http://store.nautil.us/" target="_blank">Shop</a></li>
+		<li><a href="http://www.facebook.com/NautilusMag" title="Facebook" target="_blank"><i class="icon-facebook"></i></a></li>
+		<li><a href="http://twitter.com/NautilusMag" title="Twitter" target="_blank"><i class="icon-twitter"></i></a></li>
+	</ul>
+
+</div>
+
+<div class="issue-browser">
+	<div class="issue-browser-inner">
+		<ul class="issue-browser-nav">
+					<li class="issue-browser-prev"><i class="icon-left" title="Previous"></i></li>
+			<li class="issue-browser-next"><i class="icon-right" title="Next"></i></li>
+				</ul>
+		<div class="wrap">
+			<ul class="issue-browser-carousel">
+							<li>
+					<a href="/issue/6/secret-codes">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/1342_5e1b18c4c6a6d31695acbae3fd70ecc6.png" alt="Issue6_THUMB" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															Issue 006													</span>
+						<h2 class="issue-title">Secret Codes</h2>
+					</a>
+				</li>
+							<li>
+					<a href="/issue/5/fame">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/1040_537d9b6c927223c796cac288cced29df.png" alt="Fame_THUMB" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															Issue 005													</span>
+						<h2 class="issue-title">Fame</h2>
+					</a>
+				</li>
+							<li>
+					<a href="/issue/4/the-unlikely">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/796_35cf8659cfcb13224cbd47863a34fc58.png" alt="004_THUMB" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															Issue 004													</span>
+						<h2 class="issue-title">The Unlikely</h2>
+					</a>
+				</li>
+							<li>
+					<a href="/issue/3/in-transit">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/586_605ff764c617d3cd28dbbdd72be8f9a2.png" alt="003_thumb" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															Issue 003													</span>
+						<h2 class="issue-title">In Transit</h2>
+					</a>
+				</li>
+							<li>
+					<a href="/issue/2/uncertainty">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/288_48aedb8880cab8c45637abc7493ecddd.png" alt="Uncertainty_THUMB" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															Issue 002													</span>
+						<h2 class="issue-title">Uncertainty</h2>
+					</a>
+				</li>
+							<li>
+					<a href="/issue/1/what-makes-you-so-special">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/87_c7e1249ffc03eb9ded908c236bd1996d.jpg" alt="" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															Issue 001													</span>
+						<h2 class="issue-title">What Makes You So Special</h2>
+					</a>
+				</li>
+							<li>
+					<a href="/issue/0/the-story-of-nautilus">
+
+											
+						<div class="article-thumb">
+							<img src="http://static.nautil.us/51_2838023a778dfaecdc212708f721b788.jpg" alt="" width="230" height="130" />
+						</div>
+						<span class="article-tag">
+															PREVIEW ISSUE
+													</span>
+						<h2 class="issue-title">The Story of Nautilus</h2>
+					</a>
+				</li>
+						</ul>
+		</div>
+
+		
+		<div class="issue-browser-footer">
+			<a href="/issues" class="button">See Issue Library</a>
+		</div>
+	</div>
+</div>
+<form class="search-bar" action="/search" method="get">
+	<div class="search-bar-inner">
+		<div class="wrap">
+			<p class="search-bar-help">Enter Search Below&hellip;</p>
+						<input id='search_term' type="text" maxlength="255" name="search_term" class="search-field" value="" autocomplete="off" />
+			<button type="submit" class="search-submit">Search</button>
+		</div>
+	</div>
+</form>
+		
+	</header>
+
+
+	<div class="main-content">
+		<article id="main-article-193" class="main-article">
+	<div class="article-resume">
+		<div class="wrap">
+			<p class="article-resume-trigger">Resume Reading — <span class="article-title">The Man Who Invented Modern Probability</span></p>
+			<div class="close-article-resume">Close</div>
+		</div>
+	</div>
+	<header class="article-header">
+
+				
+		<div class="banner" style="background-image: url(http://static.nautil.us/926_cbb6a3b884f4f88b3a8e3d44c636cbd8.png);">
+								</div>
+
+						
+
+
+		<span class="article-tag">Numbers<span class="article-tag-pipe">&nbsp;|&nbsp;</span><span class="article-tag-focus">Mathematics</span></span>
+				<hgroup>
+			<h1 class="article-title">The Man Who Invented Modern Probability</h1>
+			<h2 class="article-subtitle">Chance encounters in the life of Andrei Kolmogorov.</h2>		</hgroup>
+
+		
+		<i class="icon-diamond"></i>
+
+				<div class="byline">
+			<span>By Slava Gerovitch</span>
+						<span> Illustration by Lincoln Agnew</span>
+					</div>
+		
+		<section class="social-tools">
+	<ul>
+		<li><a href="#" class="jump-to-comments"><i class="icon-comments active"></i> 19 Comments </a></li>
+
+		<li><a href="https://www.facebook.com/sharer/sharer.php?s=100&p%5Bsite_name%5D=Nautilus&p%5Btype%5D=website&p%5Burl%5D=http%3A%2F%2Fnautil.us%2Fissue%2F4%2Fthe-unlikely%2Fthe-man-who-invented-modern-probability&p%5Btitle%5D=The+Man+Who+Invented+Modern+Probability+-+Issue+4%3A+The+Unlikely+-+Nautilus&p%5Bsummary%5D=If+two+statisticians+were+to+lose+each+other+in+an+infinite+forest%2C+the+first+thing+they+would+do+is+get+drunk.+That+way%2C+they+would%26%238230%3B&p%5Bimages%5D%5B0%5D=http%3A%2F%2Fstatic.nautil.us%2F928_d045c59a90d7587d8d671b5f5aec4e7c.png" class="fb-share"><i class="icon-facebook"></i> Facebook</a></li>
+		<li><a href="https://twitter.com/share?url=http%3A%2F%2Fnautil.us%2Fissue%2F4%2Fthe-unlikely%2Fthe-man-who-invented-modern-probability&text=The+Man+Who+Invented+Modern+Probability+-+Issue+4%3A+The+Unlikely+-+Nautilus&via=NautilusMag" class="tw-share"><i class="icon-twitter"></i> Twitter</a></li>
+		<!--<li><a href="#"><i class="icon-issue"></i> Order This Issue</a></li>-->	</ul>
+</section>
+	</header>
+
+
+
+
+
+	
+
+
+
+
+
+	<div class="wrap">
+
+		<div class="page-content">
+			<p><span style="line-height: 1.45em;"><span class="dropcap">I</span>f two statisticians were to lose each other in an infinite forest, the first thing they would do is get drunk. That way, they would walk more or less randomly, which would give them the best chance of finding each other. However, the statisticians should stay sober if they want to pick mushrooms. Stumbling around drunk and without purpose would reduce the area of exploration, and make it more likely that the seekers would return to the same spot, where the mushrooms are already gone.</span></p> <p><span style="line-height: 1.45em;">Such considerations belong to the statistical theory of “random walk” or “drunkard’s walk,” in which the future depends only on the present and not the past. Today, random walk is used to model share prices, molecular diffusion, neural activity, and population dynamics, among other processes. It is also thought to describe how “genetic drift” can result in a particular gene—say, for blue eye color—becoming prevalent in a population. Ironically, this theory, which ignores the past, has a rather rich history of its own. It is one of the many intellectual innovations dreamed up by Andrei Kolmogorov, a mathematician of startling breadth and ability who revolutionized the role of the unlikely in mathematics, while carefully negotiating the shifting probabilities of political and academic life in Soviet Russia.</span></p>    <p><span style="line-height: 1.45em;">As a young man, Kolmogorov was nourished by the intellectual ferment of post-revolutionary Moscow, where literary experimentation, the artistic avant-garde, and radical new scientific ideas were in the air. In the early 1920s, as a 17-year-old history student, he presented a paper to a group of his peers at Moscow University, offering an unconventional statistical analysis of the lives of medieval Russians. It found, for example, that the tax levied on villages was usually a whole number, while taxes on individual households were often expressed as fractions. The paper concluded, controversially for the time, that taxes were imposed on whole villages and then split among the households, rather than imposed on households and accumulated by village. “You have found only one proof,” was his professor’s acid observation. “That is not enough for a historian. You need at least five proofs.” At that moment, Kolmogorov decided to change his concentration to mathematics, where one proof would suffice.</span></p><p><span style="line-height: 1.45em;">It is oddly appropriate that a chance event drove Kolmogorov into the arms of probability theory, which at the time was a maligned sub-discipline of mathematics. Pre-modern societies often viewed chance as an expression of the gods’ will; in ancient Egypt and classical Greece, throwing dice was seen as a reliable method of divination and fortune telling. By the early 19th century, European mathematicians had developed techniques for calculating odds, and distilled probability to the ratio of the number of favorable cases to the number of all equally probable cases. But this approach suffered from circularity—probability was defined in terms of equally probable cases—and only worked for systems with a finite number of possible outcomes. It could not handle countable infinity (such as a game of dice with infinitely many faces) or a continuum (such as a game with a spherical die, where each point on the sphere represents a possible outcome). Attempts to grapple with such situations produced contradictory results, and earned probability a bad reputation.</span></p><blockquote class="pull-quote"><p>Pre-modern societies often viewed chance as an expression of the gods’ will; in ancient Egypt and classical Greece, throwing dice was seen as a reliable method of divination and fortune telling.</p> </blockquote><p><span style="line-height: 1.45em;">Reputation and renown were qualities that Kolmogorov prized. After switching his major, Kolmogorov was initially drawn into the devoted mathematical circle surrounding Nikolai Luzin, a charismatic teacher at Moscow University. Luzin’s disciples nicknamed the group “Luzitania,” a pun on their professor’s name and the famous British ship that had sunk in the First World War. They were united by a “joint beating of hearts,” as Kolmogorov described it, gathering after class to exalt or eviscerate new mathematical innovations. They mocked partial differential equations as “partial irreverential equations” and finite differences as “fine night differences.” The theory of probability, lacking solid theoretical foundations and burdened with paradoxes, was jokingly called the “theory of misfortune.”</span></p><figure class="breaker-image" data-alt="Gerovitch_BREAKER" data-title="" data-capper="" data-credits=""><img src="http://static.nautil.us/929_0d0871f0806eae32d30983b62252da50.png" alt="" width="733"></figure><p><span style="line-height: 1.45em;">It was through Luzitania that Kolmogorov’s evaluation of probability took on a more personal turn. By the 1930s, the onset of Stalinist terror meant anyone could expect a nighttime knock on the door by the secret police, and blind chance seemed to rule people’s lives. Paralyzed by fear, many Russians felt compelled to participate in denunciations, hoping to increase their chance of survival. Bolshevik activists among the mathematicians, including Luzin’s former students, accused Luzin of political disloyalty and castigated him for publishing in foreign countries. Kolmogorov, having published abroad himself, may have realized his own vulnerability. He had already displayed an apparent readiness to make political compromises for the sake of his career, accepting a position as a research institute director when his predecessor was imprisoned by the Bolshevik regime for supporting religious freedom. Now Kolmogorov joined the critics and turned against Luzin. Luzin was subject to a show trial by the Academy of Sciences and lost all official positions, but surprisingly escaped being arrested and shot by the Russian authorities. Luzitania was gone, sunk by its own crew.</span></p><p><span style="line-height: 1.45em;">The moral dimension of Kolmogorov’s decision aside, he had played the odds successfully and gained the freedom to continue his work. In the face of his own political conformity, Kolmogorov presented a radical and, ultimately, foundational revision of probability theory. He relied on measure theory, a fashionable import to Russia from France. Measure theory represented a generalization of the ideas of “length,” “area,” or “volume,” allowing the measure of various weird mathematical objects to be taken when conventional means did not suffice. For example, it could help calculate the area of a square, with an infinite number of holes in it, cut it into an infinite number of pieces, and scattered over an infinite plane. In measure theory, it is still possible to speak of the “area” (measure) of this scattered object.</span></p><blockquote class="pull-quote"><p>The theory of probability, lacking solid theoretical foundations and burdened with paradoxes, was jokingly called the “theory of misfortune.”</p> </blockquote><p><span style="line-height: 1.45em;">Kolmogorov drew analogies between probability and measure, resulting in five axioms, now usually formulated in six statements, that made probability a respectable part of mathematical analysis. The most basic notion of Kolmogorov’s theory was the “elementary event,” the outcome of a single experiment, like tossing a coin. All elementary events formed a “sample space,” the set of all possible outcomes. For lightning strikes in Massachusetts, for example, the sample space would consist of all the points in the state where lightning could hit. A random event was defined as a “measurable set” in a sample space, and the probability of a random event as the “measure” of this set. For example, the probability that lightning would hit Boston would depend only on the area (“measure”) of this city. Two events occurring simultaneously could be represented by the intersection of their measures; conditional probabilities by dividing measures; and the probability that one of two incompatible events would occur by adding measures (that is, the probability that either Boston or Cambridge would be hit by lightning equals the sum of their areas).</span></p><p><span style="line-height: 1.45em;">The Paradox of the Great Circle was a major mathematical conundrum that Kolmogorov’s conception of probability finally put to rest. Assume aliens landed randomly on a perfectly spherical Earth and the probability of their landing was equally distributed. Does this mean that they would be equally likely to land anywhere along any circle that divides the sphere into two equal hemispheres, known as a “great circle?” It turns out that the landing probability is equally distributed along the equator, but is unevenly distributed along the meridians, with the probability increasing toward the equator and decreasing at the poles. In other words, the aliens would tend to land in hotter climates. This strange finding might be explained by the circles of latitude getting bigger as they get closer to the equator—yet this result seems absurd, since we can rotate the sphere and turn its equator into a meridian. Kolmogorov showed that the great circle has a measure zero, since it is a line segment and its area is zero. This explains the apparent contradiction in conditional landing probabilities by showing that these probabilities could not be rigorously calculated.</span></p><p><span style="line-height: 1.45em;">Having crossed from the very real world of Stalinist purges into the ephemeral zone of zero-measure conditional probabilities, Kolmogorov was soon plunged back into reality. During the Second World War, the Russian government asked Kolmogorov to develop methods for increasing the effectiveness of artillery fire. He showed that, instead of trying to maximize the probability of each shot hitting its target, in certain cases it would be better to fire a fusillade with small deviations from perfect aim, a tactic known as “artificial dispersion.” The Moscow University Department of Probability Theory, of which he had become the head, also calculated ballistic tables for low-altitude, low-speed bombing. In 1944 and 1945, the government awarded Kolmogorov two Orders of Lenin for his wartime contributions, and after the war, he served as a mathematics consultant for the thermonuclear weapons program.</span></p><p><span style="line-height: 1.45em;">But Kolmogorov’s interests inclined him in more philosophical directions, too. Mathematics had led him to believe that the world was both driven by chance and fundamentally ordered according to the laws of probability. He often reflected on the role of the unlikely in human affairs. Kolmogorov’s chance meeting with fellow mathematician Pavel Alexandrov on a canoeing trip in 1929 began an intimate, lifelong friendship. In one of the long, frank letters they exchanged, Alexandrov chastised Kolmogorov for the latter’s interest in talking to strangers on the train, implying that such encounters were too superficial to offer insight into a person’s real character. Kolmogorov objected, taking a radical probabilistic view of social interactions in which people acted as statistical samples of larger groups. “An individual tends to absorb the surrounding spirit and to radiate the acquired lifestyle and worldview to anyone around, not just to a select friend,” he wrote back to Alexandrov.</span></p><blockquote class="pull-quote"><p>Mathematics had led him to believe that the world was both driven by chance and fundamentally ordered according to the laws of probability.</p> </blockquote><p><span style="line-height: 1.45em;">Music and literature were deeply important to Kolmogorov, who believed he could analyze them probabilistically to gain insight into the inner workings of the human mind. He was a cultural elitist who believed in a hierarchy of artistic values. At the pinnacle were the writings of Goethe, Pushkin, and Thomas Mann, alongside the compositions of Bach, Vivaldi, Mozart, and Beethoven—works whose enduring value resembled eternal mathematical truths. Kolmogorov stressed that every true work of art was a unique creation, something unlikely by definition, something outside the realm of simple statistical regularity. “Is it possible to include [Tolstoy’s </span><i style="line-height: 1.45em;">War and Peace</i><span style="line-height: 1.45em;">] in a reasonable way into the set of ‘all possible novels’ and further to postulate the existence of a certain probability distribution in this set?” he asked, sarcastically, in a 1965 article.</span></p><p><span style="line-height: 1.45em;">Yet he longed to find the key to understanding the nature of artistic creativity. In 1960 Kolmogorov armed a group of researchers with electromechanical calculators and charged them with the task of calculating the rhythmical structures of Russian poetry. Kolmogorov was particularly interested in the deviation of actual rhythms from classical meters. In traditional poetics, the iambic meter is a rhythm consisting of an unstressed syllable followed by a stressed syllable. But in practice, this rule is rarely obeyed. In Pushkin’s </span><i style="line-height: 1.45em;">Eugene Onegin</i><span style="line-height: 1.45em;">, the most famous classical iambic poem in the Russian language, almost three-fourths of its 5,300 lines violate the definition of the iambic meter, and more than a fifth of all even syllables are unstressed. Kolmogorov believed that the frequency of stress deviation from the classical meters offered an objective “statistical portrait” of a poet. An unlikely pattern of stresses, he thought, indicated artistic inventiveness and expression. Studying Pushkin, Pasternak, and other Russian poets, Kolmogorov argued that they had manipulated meters to give “general coloration” to their poems or passages.</span></p><blockquote class="pull-quote"><p>Music and literature were deeply important to Kolmogorov, who believed he could analyze them probabilistically to gain insight into the inner workings of the human mind.</p> </blockquote><p><span style="line-height: 1.45em;">To measure the artistic merit of texts, Kolmogorov also employed a letter-guessing method to evaluate the entropy of natural language. In information theory, entropy is a measure of uncertainty or unpredictability, corresponding to the information content of a message: the more unpredictable the message, the more information it carries. Kolmogorov turned entropy into a measure of artistic originality. His group conducted a series of experiments, showing volunteers a fragment of Russian prose or poetry and asking them to guess the next letter, then the next, and so on. Kolmogorov privately remarked that, from the viewpoint of information theory, Soviet newspapers were less informative than poetry, since political discourse employed a large number of stock phrases and was highly predictable in its content. The verses of great poets, on the other hand, were much more difficult to predict, despite the strict limitations imposed on them by the poetic form. According to Kolmogorov, this was a mark of their originality. True art was unlikely, a quality probability theory could help to measure.</span></p><p><span style="line-height: 1.45em;">Kolmogorov scorned the idea of placing </span><i style="line-height: 1.45em;">War and Peace</i><span style="line-height: 1.45em;"> in a probabilistic sample space of all novels—but he could express its unpredictability by calculating its complexity. Kolmogorov conceived complexity as the length of the shortest description of an object, or the length of an algorithm that produces an object. Deterministic objects are simple, in the sense that they can by produced by a short algorithm: say, a periodic sequence of zeroes and ones. Truly random, unpredictable objects are complex: any algorithm reproducing them would have to be as long as the objects themselves. For example, irrational numbers—those that cannot be written as fractions— almost surely have no pattern in the numbers that appear after the decimal point. Therefore, most irrational numbers are complex objects, because they can be reproduced only by writing out the actual sequence. This understanding of complexity fits with the intuitive notion that there is no method or algorithm that could predict random objects. It is now crucial as a measure of the computational resources necessary to specify an object, and finds multiple applications in modern-day network routing, sorting algorithms, and data compression.</span></p><p><span style="line-height: 1.45em;">By Kolmogorov’s own measure, his life was a complex one.  By the time he died, in 1987 at the age of 84, he had not only weathered a revolution, two World Wars, and the Cold War, but his innovations left few mathematical fields untouched, and extended well beyond the confines of academe. Whether his random walk through life was of the inebriated or mushroom-picking variety, its twists and turns were neither particularly predictable nor easily described. His success at capturing and applying the unlikely had rehabilitated probability theory, and had created a terra firma for countless scientific and engineering projects. But his theory also amplified the tension between human intuition about unpredictability and the apparent power of the mathematical apparatus to describe it. </span></p><p><span style="line-height: 1.45em;">For Kolmogorov, his ideas neither eliminated chance, nor affirmed a fundamental uncertainty about our world; they simply provided a rigorous language to talk about what cannot be known for certain. The notion of “absolute randomness” made no more sense than “absolute determinism,” he once remarked, concluding, “We can’t have positive knowledge of the existence of the unknowable.” Thanks to Kolmogorov, though, we can explain when and why we don’t.</span></p><p><span style="line-height: 1.45em;"><br></span></p><p><span style="font-style: italic; line-height: 1.45em;"><a href="http://web.mit.edu/slava/homepage/" target="_blank">Dr. Slava Gerovitch</a> is a lecturer on the history of mathematics at MIT, and an expert on space history and Russian science and technology. The author of </span><span style="line-height: 1.45em;">From Newspeak to Cyberspeak: A History of Soviet Cybernetics</span><span style="font-style: italic; line-height: 1.45em;">, Gerovitch is also the director of the Program for Research in Mathematics, Engineering and Science for High School Students (PRIMES). </span></p><a name="comment"></a>		
+<section class="leaderboard-ad-belt">
+	<div class="leaderboard-ad-belt-inner adarticle">
+		<script type='text/javascript'>
+	googletag.cmd.push(function() {
+		googletag.defineSlot('/187856151/article_page', [728, 90], 'div-gpt-ad-1380044019755-0').addService(googletag.pubads());
+		googletag.enableServices();
+	});
+</script>
+
+<div id='div-gpt-ad-1380044019755-0' class="leaderboard-ad">
+	<!--[if lte IE 9]>
+	<script type='text/javascript'>
+	$(window).load(function(){
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380044019755-0'); });
+	});
+	</script>
+	<![endif]-->
+
+	<!--[if !IE | gt IE 9]>-->
+	<script type='text/javascript'>
+		googletag.cmd.push(function() { googletag.display('div-gpt-ad-1380044019755-0'); });
+	</script>
+	<!--<![endif]-->
+</div>
+
+
+
+
+	</div>
+</section>
+
+		</div><!-- /.page-content -->
+		<div class="rail">
+
+			<section id="issue-map" class="issue-map rail-module">
+
+   <hgroup class="module-header">
+	  <h2 class="issue-number">
+		 			Issue 004		 	  </h2>
+	  <h3 class="issue-title">The Unlikely</h3>
+	  <h4 class="module-action"><a href="/issue/4/the-unlikely">Explore This Issue</a></h4>
+   </hgroup>
+
+   <div id="collapse-wrapper" class="collapse-wrapper">
+	  <div id="scroll-wrapper" class="scroll-wrapper">
+		 <ul class="issue-map-chapters">
+		 			<li class="issue-map-chapter">
+			   <i class="icon-down"></i>
+			   <div class="chapter-number">Introduction</div>
+			   <div class="issue-map-articles">
+				  <ul>
+					 <li  >
+						<a href="/issue/4/the-unlikely/the-unlikely">
+						   						   <span class="article-title">The Unlikely </span>
+						</a>
+					 </li>
+				  </ul>
+			   </div>
+			</li>
+		 			<li class="issue-map-chapter">
+			   <i class="icon-down"></i>
+			   <div class="chapter-number">Chapter one</div>
+			   <div class="issue-map-articles">
+				  <div class="chapter-title">Miracles</div>
+				  <ul>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/monsters-marvels-and-the-birth-of-science">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">Monsters, Marvels, and the Birth of Science</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/a-treatise-on-miracles-by-historys-most-famous-atheist">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">A Treatise on Miracles by History’s Most Famous Atheist</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/a-cabinet-of-curiosities">
+						   <span class="article-tag">Ideas</span>
+						   <span class="article-title">A Cabinet of Curiosities</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/mind_control-helicopters-and-the-healing-power-of-poop">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">Mind-Control Helicopters and the Healing Power of Poop</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/why-we-keep-playing-the-lottery">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">Why We Keep Playing the Lottery</span>
+						</a>
+											 </li>
+				  				  </ul>
+			   </div>
+			</li>
+		 			<li class="issue-map-chapter">
+			   <i class="icon-down"></i>
+			   <div class="chapter-number">Chapter two</div>
+			   <div class="issue-map-articles">
+				  <div class="chapter-title">Disasters</div>
+				  <ul>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/when-past-disasters-are-prologue">
+						   <span class="article-tag">Numbers</span>
+						   <span class="article-title">When Past Disasters Are Prologue</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/outsmarting-the-cernageddon">
+						   <span class="article-tag">Matter</span>
+						   <span class="article-title">Outsmarting the CERNageddon</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/hardly-never-in-vegas">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">Hardly Never in Vegas</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/their-giant-steps-to-a-cure">
+						   <span class="article-tag">Biology</span>
+						   <span class="article-title">Their Giant Steps to a Cure</span>
+						</a>
+											 </li>
+				  				  </ul>
+			   </div>
+			</li>
+		 			<li class="issue-map-chapter">
+			   <i class="icon-down"></i>
+			   <div class="chapter-number">Chapter three</div>
+			   <div class="issue-map-articles">
+				  <div class="chapter-title">Discovery</div>
+				  <ul>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/discovering-the-expected">
+						   <span class="article-tag">Matter</span>
+						   <span class="article-title">Discovering the Expected</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/chasing-coincidences">
+						   <span class="article-tag">Numbers</span>
+						   <span class="article-title">Chasing Coincidences</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/the-decisive-moment">
+						   <span class="article-tag">Biology</span>
+						   <span class="article-title">The Decisive Moment</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/an-unlikely-cure-signals-new-hope-for-cancer">
+						   <span class="article-tag">Biology</span>
+						   <span class="article-title">An Unlikely Cure Signals New Hope for Cancer</span>
+						</a>
+											 </li>
+				  				  </ul>
+			   </div>
+			</li>
+		 			<li class="issue-map-chapter">
+			   <i class="icon-down"></i>
+			   <div class="chapter-number">Chapter four</div>
+			   <div class="issue-map-articles">
+				  <div class="chapter-title">Interpretation</div>
+				  <ul>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/explaining-the-unexplainable">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">Explaining the Unexplainable</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/revisiting-moneyball-with-paul-depodesta">
+						   <span class="article-tag">Numbers</span>
+						   <span class="article-title">Revisiting “Moneyball” with Paul DePodesta</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/sciences-significant-stats-problem">
+						   <span class="article-tag">Numbers</span>
+						   <span class="article-title">Science’s Significant Stats Problem</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/ingenious-jim-davies">
+						   <span class="article-tag">Culture</span>
+						   <span class="article-title">Ingenious: Jim Davies</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/the-odds-of-innocence">
+						   <span class="article-tag">Numbers</span>
+						   <span class="article-title">The Odds of Innocence</span>
+						</a>
+											 </li>
+				  					 <li class='active'>
+						<a href="/issue/4/the-unlikely/the-man-who-invented-modern-probability">
+						   <span class="article-tag">Numbers</span>
+						   <span class="article-title">The Man Who Invented Modern Probability</span>
+						</a>
+												<div class="article-progress-wrapper"><div class="article-progress"></div></div>
+											 </li>
+				  				  </ul>
+			   </div>
+			</li>
+		 			<li class="issue-map-chapter">
+			   <i class="icon-down"></i>
+			   <div class="chapter-number">Chapter five</div>
+			   <div class="issue-map-articles">
+				  <div class="chapter-title">The Nautilus Quarterly </div>
+				  <ul>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/curl-up-with-nautilus">
+						   <span class="article-tag">Ideas</span>
+						   <span class="article-title">Curl Up With Nautilus</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/songbirds-in-the-suburbs">
+						   <span class="article-tag">Ideas</span>
+						   <span class="article-title">Songbirds in the Suburbs</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/the-death-and-life-of-the-frontier">
+						   <span class="article-tag">Biology</span>
+						   <span class="article-title">The Death and Life of the Frontier</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/what-ive-learned-about-the-past-13000-years">
+						   <span class="article-tag">Ideas</span>
+						   <span class="article-title">What I’ve Learned About the Past 13,000 Years</span>
+						</a>
+											 </li>
+				  					 <li class=''>
+						<a href="/issue/4/the-unlikely/paper-versus-pixel">
+						   <span class="article-tag">Ideas</span>
+						   <span class="article-title">Paper Versus Pixel</span>
+						</a>
+											 </li>
+				  				  </ul>
+			   </div>
+			</li>
+		 		 </ul><!-- /.issue-map-chapters -->
+	  </div><!-- /#scroll-wrapper -->
+   </div><!-- /#collapse-wrapper -->
+
+</section>
+
+			
+			
+			
+		</div><!-- /.rail -->
+
+	</div><!-- /.wrap -->
+
+	<footer class="article-footer">
+
+		<div id="comments-container" class="comments-container">
+			<div class="button button_active">19 Comments — Join the Discussion</div>
+			<div id="disqus-wrapper">
+				<div id="disqus_thread" class="disqus-thread"></div>
+				<script type="text/javascript">
+			        var disqus_shortname = 'nautilusmag'; 
+			        /* * * DON'T EDIT BELOW THIS LINE * * */
+			        (function() {
+			            var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+			            dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+			            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+			        })();
+			    </script>
+			</div>
+		</div>
+
+	</footer>
+
+	<section class="module-more-articles  has-next">
+	<div class="wrap">
+
+	<div class="next-article">
+
+	<h2>Next Article:</h2>
+
+	<article>
+		<a href="/issue/4/the-unlikely/curl-up-with-nautilus" class="article-thumb">
+						<img src="http://static.nautil.us/1019_03e0704b5690a2dee1861dc3ad3316c9.png" width="231" height="141" alt="quarterly_THUMB" />
+		</a>
+		<span class="article-tag">Ideas</span>
+		<h3 class="article-title"><a href="/issue/4/the-unlikely/curl-up-with-nautilus">Curl Up With Nautilus</a></h3>
+		<span class="article-author">By Nautilus Editors</span>
+	</article>
+
+</div>		<div class="related-articles">
+			<h2>Related Articles:</h2>
+			<ul>
+							<li>
+					<article>
+						<a href="/issue/5/fame/the-twin-prime-hero" class="article-thumb">
+														<img src="http://static.nautil.us/1281_d94e18a8adb4cc0f623f7a83b1ac75b4.png" width="231" height="141" alt="Segal_THUMB" />
+						</a>
+						<span class="article-tag">Numbers</span>
+						<h3 class="article-title"><a href="/issue/5/fame/the-twin-prime-hero">The Twin Prime Hero</a></h3>
+						<span class="article-author">By Michael Segal</span>
+					</article>
+				</li>
+							<li>
+					<article>
+						<a href="/issue/5/fame/the-nobel-exchange" class="article-thumb">
+														<img src="http://static.nautil.us/1156_e22312179bf43e61576081a2f250f845.png" width="231" height="141" alt="Exchange_THUMB" />
+						</a>
+						<span class="article-tag">Numbers</span>
+						<h3 class="article-title"><a href="/issue/5/fame/the-nobel-exchange">The Nobel Exchange</a></h3>
+						<span class="article-author">By Peter DuCharme</span>
+					</article>
+				</li>
+							<li>
+					<article>
+						<a href="/issue/5/fame/homo-narrativus-and-the-trouble-with-fame" class="article-thumb">
+														<img src="http://static.nautil.us/1086_d91d1b4d82419de8a614abce9cc0e6d4.png" width="231" height="141" alt="Dodds_THUMB2" />
+						</a>
+						<span class="article-tag">Numbers</span>
+						<h3 class="article-title"><a href="/issue/5/fame/homo-narrativus-and-the-trouble-with-fame">Homo Narrativus and the Trouble with Fame</a></h3>
+						<span class="article-author">By Peter Sheridan Dodds</span>
+					</article>
+				</li>
+									</ul>
+		</div>
+	</div>
+</section>
+</article>	</div><!-- /.main-content -->
+</div>
+
+<footer class="main-footer">
+	<div class="main-footer-top">
+		<div class="wrap">
+			<div class="col1">
+
+				<nav class="footer-links">
+					<ul>
+						<li><a href="/about">About Nautilus</a></li>
+						<li><a href="/privacy-policy">Privacy Policy</a></li>
+						<li><a href="/sponsorship">Sponsorship</a></li>
+						<li><a href="http://store.nautil.us" target="_blank">Subscribe</a></li>
+						<li><a href="/terms-of-service">Terms of Service</a></li>
+						<li><a href="/contact">Contact Nautilus</a></li>
+						<li><a target="_blank" href="/rss/all">RSS</a></li>
+					</ul>
+				</nav>
+			</div>
+			<div class="col2">
+				<section class="footer-about-us">
+					<h3 class="cat-title">NAUTILUS: SCIENCE CONNECTED</h3>
+					<p>Nautilus is a different kind of science magazine. We deliver big-picture science by reporting on a single monthly topic from multiple perspectives. Read a new chapter in the story every Thursday.</p>
+				</section>
+			</div>
+		</div>
+	</div>
+
+	<div class="main-footer-bottom">
+		<div class="wrap">
+			<p class="copyright">&copy; 2013 Nautilus, All rights reserved. <span class="tagline">Matter, Biology, Numbers, Ideas, Culture, <em>Connected</em></span></p>
+			<a href="http://www.codeandtheory.com/" class="candt" target="_blank">Site by Code and Theory</a>
+		</div>
+	</div>
+</footer>
+	
+<!-- Footer scripts -->
+
+<script type="text/javascript" src="/min/b=assets/site/js&f=lib/jquery.easing-1.3.js,lib/jquery.touchSwipe-1.6.2.min.js,lib/jquery.nicescroll-3.1.9.min.js,script.js,search.js,article.js"></script>
+	<!-- CrazyEgg Tracking -->
+	<script type="text/javascript">
+		setTimeout(function(){var a=document.createElement("script");
+		var b=document.getElementsByTagName("script")[0];
+		a.src=document.location.protocol+"//dnn506yrbagrg.cloudfront.net/pages/scripts/0017/3278.js?"+Math.floor(new Date().getTime()/3600000);
+		a.async=true;a.type="text/javascript";b.parentNode.insertBefore(a,b)}, 1);
+	</script>
+	
+	<!-- Google Code for Remarketing Tag -->
+	<script type="text/javascript">
+		/* <![CDATA[ */
+		var google_conversion_id = 983400696;
+		var google_custom_params = window.google_tag_params;
+		var google_remarketing_only = true;
+		/* ]]> */
+	</script>
+	<script type="text/javascript" src="//www.googleadservices.com/pagead/conversion.js">
+	</script>
+	<noscript>
+		<div style="display:inline;">
+		<img height="1" width="1" style="border-style:none;" alt="" src="//googleads.g.doubleclick.net/pagead/viewthroughconversion/983400696/?value=0&amp;guid=ON&amp;script=0"/>
+		</div>
+	</noscript>
+	
+
+<script type="text/javascript" src="/assets/common/js/content.js" ></script></body>
+</html>
+

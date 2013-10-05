@@ -1,0 +1,138 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Welcome to CarlZimmer.com</title>
+<link href="zimmer.css" rel="stylesheet" type="text/css" />
+<link href="styles.css" rel="stylesheet" type="text/css" />
+<style type="text/css">
+#mc_embed_signup {
+	background:#fff;
+	clear:left;
+}
+	/* Add your own MailChimp form style overrides in your site stylesheet or in this style block.
+	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
+</style>
+
+<!--[if IE 5]>
+<style type="text/css"> 
+/* place css box model fixes for IE 5* in this conditional comment */
+.twoColFixRtHdr #sidebar1 { width: 220px; }
+</style>
+<![endif]-->
+<!--[if IE]>
+<style type="text/css"> 
+/* place css fixes for all versions of IE in this conditional comment */
+.twoColFixRtHdr #sidebar1 { padding-top: 30px; }
+.twoColFixRtHdr #mainContent { zoom: 1; }
+/* the above proprietary zoom property gives IE the hasLayout it needs to avoid several bugs */
+</style>
+<![endif]-->
+<title>Welcome to CarlZimmer.com</title>
+<link href="imgs/favicon.jpg" type="image/jpg" rel="icon" />
+<!--<link href="styles.css" rel="stylesheet" type="text/css" media="all" />
+-->
+<csscriptdict>
+  <script type="text/javascript"><!--
+
+function newImage(arg) {
+	if (document.images) {
+		rslt = new Image();
+		rslt.src = arg;
+		return rslt;
+	}
+}
+function changeImagesArray(array) {
+	if (preloadFlag == true) {
+		var d = document; var img;
+		for (var i=0; i<array.length; i+=2) {
+			img = null; var n = array[i];
+			if (d.images) {img = d.images[n];}
+			if (!img && d.getElementById) {img = d.getElementById(n);}
+			if (img) {img.src = array[i+1];}
+		}
+	}
+}
+function changeImages() {
+	changeImagesArray(changeImages.arguments);
+}
+
+// --></script>
+</csscriptdict>
+<csactiondict>
+  <script type="text/javascript"><!--
+var preloadFlag = false;
+function preloadImages() {
+	if (document.images) {
+		pre_nav_over_07 = newImage('imgs/images/nav-over_07.gif');
+		pre_nav_over_08 = newImage('imgs/images/nav-over_08.gif');
+		pre_nav_over_11 = newImage('imgs/images/nav-over_11.gif');
+		pre_nav_over_10 = newImage('imgs/images/nav-over_10.gif');
+		pre_nav_over_09 = newImage('imgs/images/nav-over_09.gif');
+		pre_nav_over_12 = newImage('imgs/images/nav-over_12.gif');
+		pre_nav_over_13 = newImage('imgs/images/nav-over_13.gif');
+		preloadFlag = true;
+	}
+}
+
+// --></script>
+</csactiondict>
+</head>
+<body class="twoColFixRtHdr" onload="preloadImages();">
+<div id="container">
+  <div id="inner">
+    <div id="header">
+      <table width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+          <td><img src="imgs/images/nav-off_01.gif" alt="" width="800" height="31" border="0" /><br />
+            <img src="imgs/images/nav-off_02.gif" alt="" width="20" height="27" border="0" /><a title="Home" href="http://carlzimmer.com/"><img id="nav_off_03" src="imgs/images/nav-off_03.gif" alt="bio" name="nav_off_03" width="242" height="27" border="0" /></a><img id="nav_off_04" src="imgs/images/nav-off_04.gif" alt="books" name="nav_off_04" width="538" height="27" border="0" /></td>
+        </tr>
+        <tr>
+          <td><img id="nav_off_05" src="imgs/images/nav-off_05.gif" alt="articles" name="nav_off_05" width="20" height="27" border="0" /><a title="Home" href="http://carlzimmer.com/"><img id="nav_off_06" src="imgs/images/nav-off_06.gif" alt="talks" name="nav_off_06" width="242" height="27" border="0" /></a><a title="Bio" rel="author" onmouseover="changeImages('nav_off_07','imgs/images/nav-over_07.gif');return true" onmouseout="changeImages('nav_off_07','imgs/images/nav-off_07.gif');return true" href="bio.html"><img id="nav_off_07" src="imgs/images/nav-off_07.gif" alt="bio" name="nav_off_07" width="65" height="27" border="0" /></a><a title="Books" onmouseover="changeImages('nav_off_08','imgs/images/nav-over_08.gif');return true" onmouseout="changeImages('nav_off_08','imgs/images/nav-off_08.gif');return true" href="books/books.html"><img id="nav_off_08" src="imgs/images/nav-off_08.gif" alt="books" name="nav_off_08" width="79" height="27" border="0" /></a><a title="Articles" onmouseover="changeImages('nav_off_09','imgs/images/nav-over_09.gif');return true" onmouseout="changeImages('nav_off_09','imgs/images/nav-off_09.gif');return true" href="articles/index.php"><img id="nav_off_09" src="imgs/images/nav-off_09.gif" alt="articles" name="nav_off_09" width="82" height="27" border="0" /></a><a title="Talks" onmouseover="changeImages('nav_off_10','imgs/images/nav-over_10.gif');return true" onmouseout="changeImages('nav_off_10','imgs/images/nav-off_10.gif');return true" href="talks.html"><img id="nav_off_10" src="imgs/images/nav-off_10.gif" alt="talks" name="nav_off_10" width="69" height="27" border="0" /></a><a title="Blog" onmouseover="changeImages('nav_off_11','imgs/images/nav-over_11.gif');return true" onmouseout="changeImages('nav_off_11','imgs/images/nav-off_11.gif');return true" href="http://phenomena.nationalgeographic.com/blog/the-loom/" target="_blank"><img id="nav_off_11" src="imgs/images/nav-off_11.gif" alt="blog" name="nav_off_11" width="63" height="27" border="0" /></a><a onmouseover="changeImages('nav_off_12','imgs/images/nav-over_12.gif');return true" onmouseout="changeImages('nav_off_12','imgs/images/nav-off_12.gif');return true" href="mailto:carl@carlzimmer.com"><img id="nav_off_12" src="imgs/images/nav-off_12.gif" alt="contact" name="nav_off_12" width="82" height="27" border="0" /></a><a onmouseover="changeImages('nav_off_13','imgs/images/nav-over_13.gif');return true" onmouseout="changeImages('nav_off_13','imgs/images/nav-off_13.gif');return true" href="search.html"><img id="nav_off_13" src="imgs/images/nav-off_13.gif" alt="search" name="nav_off_13" width="72" height="27" border="0" /></a><img src="imgs/images/nav-off_14.gif" alt="" width="26" height="27" border="0" /></td>
+        </tr>
+      </table>
+      <!-- end #header --> 
+    </div>
+    <div id="sidebar1">
+      <div id="twitter_div">
+        <p class="twitterHeader">Twitter</p>
+        <!--        <ul id="twitter_update_list">
+        </ul>
+--><a class="twitter-timeline" href="https://twitter.com/carlzimmer" data-widget-id="354635068523831296" data-chrome="nofooter noheader" height="300" data-link-color="#666600">Tweets by @carlzimmer</a> 
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        <p style="float:right; margin-top:10px; padding-right:4px;"><a href="http://twitter.com/carlzimmer" target="_blank"><img src="imgs/twittericon.png" alt="Twitter" width="25" height="25" border="0" /></a> <a href="http://www.facebook.com/pages/Carl-Zimmer/17300420037" target="_blank"><img src="imgs/fbicon.png" alt="Facebook" width="25" height="25" border="0" /></a> <a href="https://plus.google.com/111770459801993602257/about" target="_blank"><img src="imgs/gplus.png" alt="Google+" width="25" height="25" border="0" /></a></p>
+      </div>
+      <div id="mc_embed_signup">
+        <form action="http://carlzimmer.us7.list-manage.com/subscribe/post?u=fb513fcff818d52e095ad1d19&amp;id=7b5f4806b3" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+          <label for="mce-EMAIL" style="font-style:italic;">Sign up for a weekly newsletter for updates on books, articles, and talks</label>
+          <input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required />
+          <div class="clear">
+            <input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button" />
+          </div>
+        </form>
+      </div>
+      <p style="clear:both;" class="greenroman"><a href="writers.html" >A note to beginning science writers.</a></p>
+      <p class="greenroman"><a href="note.html" >A note to students and teachers.</a></p>
+    </div>
+    <div id="mainContent">
+      <p style="margin-bottom:0;"><img src="imgs/welcome.png" alt="Welcome to CarlZimmer.com" width="368" height="26" border="0" /> </p>
+      <h2 style="margin-top:2px; padding-left:5px; letter-spacing:.1em; font-size:1.4em;">Carl Zimmer writes books and articles about science.<br />
+        Here you can find excerpts and reviews of his books,<br />
+        an archive of his articles, and information about his<br />
+        upcoming talks and his <a href="http://www.aaas.org/news/releases/2004/1118sja.shtml" target="_blank">award-winning</a> blog, <a href="http://phenomena.nationalgeographic.com/blog/the-loom/" target="_blank"><u>The Loom</u></a>.</h2>
+      <p style="padding-bottom:0;"><img src="imgs/moose.jpg" alt="Moose" width="360" height="340" border="0" style="padding:100px 0 0 80px;" /></p>
+    </div>
+    <!-- end #mainContent --> 
+  </div>
+  <!-- This clearing element should immediately follow the #mainContent div in order to force the #container div to contain all child floats
+  --> 
+</div>
+<!-- end #container -->
+<div id="footer" >
+  <p style="clear:both; font-size:.9em;"><span style="float:right;">Site design by <a href="mailto:mlee@project238.com">Michelle W. Nix</a>. Built and maintained by <a href="http://twinfountain.com/" target="_blank">Thomas V. Fondano</a>.</span>Copyright © 2011 Carl Zimmer. All Rights Reserved.</p>
+  <!-- end #footer --> 
+</div>
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script> 
+<script type="text/javascript" src="http://api.twitter.com/1/statuses/user_timeline/carlzimmer.json?callback=twitterCallback2&amp;count=3"></script>
+</body>
+</html>

@@ -1,0 +1,357 @@
+   #[1]Posts on 'Revolutions' (Atom) [2]Posts on 'Revolutions' (RSS 1.0)
+   [3]Posts on 'Revolutions' (RSS 2.0) [4]Comments on 'An animated peek
+   into the workings of Bayesian Statistics' (Atom) [5]Comments on 'An
+   animated peek into the workings of Bayesian Statistics' (RSS 2.0)
+   [6]Home [7]Bacause it's Friday: Terrible data visualizations
+   [8]Coursera's free R courses are running again soon
+
+[9]Revolutions
+
+Learn more about using open source R for big data analysis, predictive
+modeling, data science and more from the staff of Revolution Analytics.
+
+   [10]« Bacause it's Friday: Terrible data visualizations | [11]Main |
+   [12]Coursera's free R courses are running again soon »
+
+September 09, 2013
+
+An animated peek into the workings of Bayesian Statistics
+
+   One of the practical challenges of Bayesian statistics is being able to
+   deal with all of the complex probability distributions involved. You
+   begin with the likelihood function of interest, but once you combine it
+   with the prior distributions of all the parameters, you end up with a
+   complex posterior distribution that you need to characterize. Since you
+   usually can't calculate that distribution analytically, the best you
+   can do is to simulate from that distribution (generally, using
+   Markov-Chain Monte-Carlo techniques). [13]Packages like RStan handle
+   the simulation for you, but it's fairly easy to use the
+   [14]Metropolis-Hastings algorithm to code it yourself, at least for
+   simple problems.
+
+   [15]PhD student Maxwell Joseph did just that, using the [16]R language.
+   Beginning with a data set of 50 points, he set out to estimate the
+   joint posterior distribution of the mean and variance, given simple
+   priors (Normal for the mean; Uniform for the variance). He ran three
+   chains of the M-H algorithm simultanously, and created the animation
+   below. You can see each of the chains (purple, red and blue) as they
+   progress through the joint distribution of the mean (horizontal axis)
+   and variance (vertical axis), and see how the posterior distribution
+   evolves over time in the 3-D image to the right.
+
+   [17]Metropolis-hastings
+   I love the amoeba-like effect as the posterior converges to something
+   close to a 2-D Gaussian distribution, and as you'd expect the mode of
+   that posterior gives excellent estimates for the true mean and
+   variance.
+
+   Maxwell shares all of the R code for setting up the likelihood and
+   priors, running the Metropolis-Hastings chains, and animating the
+   results at his blog, [18]Ecology in silico. Note the use of R's
+   [19]system command to call ImageMagick convert to stitch individual PNG
+   frames into the animated GIF you see above. (Another alternative is to
+   use Yihui Xie's [20]animations package, but the direct method works
+   just as well.)
+
+   Ecology in silico: [21]Animating the Metropolis Algorithm ([22]via
+   Allison Barner)
+
+   Posted by [23]David Smith at 16:47 in [24]graphics, [25]R,
+   [26]statistics | [27]Permalink
+
+TrackBack
+
+   TrackBack URL for this entry:
+   http://www.typepad.com/services/trackback/6a010534b1db25970b019aff4a080
+   6970b
+
+   Listed below are links to weblogs that reference [28]An animated peek
+   into the workings of Bayesian Statistics:
+
+Comments
+
+   [29]Feed You can follow this conversation by subscribing to the
+   [30]comment feed for this post.
+
+Verify your Comment
+
+Previewing your Comment
+
+   Posted by:  |
+
+   This is only a preview. Your comment has not yet been posted.
+   Post Edit Working...
+   Your comment could not be posted. Error type:
+   Your comment has been saved. Comments are moderated and will not appear
+   until approved by the author. [31]Post another comment
+
+   The letters and numbers you entered did not match the image. Please try
+   again.
+
+   As a final step before posting your comment, enter the letters and
+   numbers you see in the image below. This prevents automated programs
+   from posting comments.
+
+   Having trouble reading this image? [32]View an alternate.
+
+   IFRAME: [33]6Ldg1s4SAAAAAEvvZX2ILFkWp7KB-jjdL4v0JV2e
+
+
+   ________________________________________
+   ________________________________________
+   ________________________________________
+
+   Continue Working...
+
+Post a comment
+
+   Comments are moderated, and will not appear until the author has
+   approved them.
+
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+   ______________________________
+
+   (You can use HTML tags like <b> <i> and <ul> to style your text.)
+
+   Your Information
+
+   (Name and email address are required. Email address will not be
+   displayed with the comment.)
+
+   ______________________________ Name is required to post a comment
+
+   ______________________________ Please enter a valid email address
+
+   ______________________________ Invalid URL
+   Post Preview Working...
+   Name:
+   ______________________________
+   Email address:
+   ______________________________
+   URL:
+   ______________________________
+   Comment:
+
+   ________________________________________
+   ________________________________________
+   ________________________________________
+   ________________________________________
+   Submit
+
+Information
+
+     * [34]About this blog
+     * [35]Comments Policy
+     * [36]About Categories
+     * [37]About the Authors
+     * [38]R Community Calendar
+     * [39]Local R User Group Directory
+
+   [40][RA_logo_trans1.75in.png]
+   R for the Enterprise
+   Got comments or suggestions for the blog editor?
+   Email [41]David Smith.
+   [42]Follow revodavid on Twitter Follow David on Twitter: [43]@revodavid
+   [gprofile_button-16.png] [44]+David Smith
+   [45][download-r-badge-125-blue.png]
+   [46]Subscribe to this blog's feed
+
+[47]Categories
+
+     * [48]academia
+     * [49]advanced tips
+     * [50]announcements
+     * [51]applications
+     * [52]beginner tips
+     * [53]big data
+     * [54]courses
+     * [55]current events
+     * [56]data science
+     * [57]developer tips
+     * [58]events
+     * [59]finance
+     * [60]government
+     * [61]graphics
+     * [62]high-performance computing
+     * [63]life sciences
+     * [64]open source
+     * [65]other industry
+     * [66]packages
+     * [67]predictive analytics
+     * [68]profiles
+     * [69]R
+     * [70]R is Hot
+     * [71]random
+     * [72]Revolution
+     * [73]Rmedia
+     * [74]roundups
+     * [75]sports
+     * [76]statistics
+     * [77]thisweek
+     * [78]user groups
+
+R links
+
+     * [79]CRAN
+       Packages for R
+     * [80]inside-R.org, the R Community Site
+       Sponsored by Revolution Analytics
+     * [81]Revolution Analytics
+       Information about Revolution R
+     * [82]Download Revolution R
+       Free, high-performance distribution of R
+     * [83]Revolution R forum
+       Questions and discussions about Revolution R
+     * [84]R Project site
+       Information about the R project
+
+Recommended Sites
+
+     * [85]FlowingData
+       Modern data visualization
+     * [86]One R Tip A Day
+       Code examples for graphics and analysis
+     * [87]Probability and statistics blog
+       Monte Carlo simulations in R
+     * [88]R Bloggers
+       Daily news and tutorials about R, contributed by R bloggers
+       worldwide.
+     * [89]R Project group on analyticbridge.com
+       Community and discussion forum
+     * [90]Statistical Modeling, Causal Inference, and Social Science
+       Andrew Gelman's statistics blog
+     * [91]The Dataists
+       Innovative and practical data analysis methodology.
+
+[92]Archives
+
+     * [93]October 2013
+     * [94]September 2013
+     * [95]August 2013
+     * [96]July 2013
+     * [97]June 2013
+     * [98]May 2013
+     * [99]April 2013
+     * [100]March 2013
+     * [101]February 2013
+     * [102]January 2013
+
+Search Revolutions Blog
+
+     * __________________ Search Blog
+
+   [103]Quantcast
+
+References
+
+   1. http://blog.revolutionanalytics.com/atom.xml
+   2. http://blog.revolutionanalytics.com/index.rdf
+   3. http://blog.revolutionanalytics.com/rss.xml
+   4. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics/comments/atom.xml
+   5. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics/comments/rss.xml
+   6. http://blog.revolutionanalytics.com/
+   7. http://blog.revolutionanalytics.com/2013/09/terrible-data-visualizations.html?no_prefetch=1
+   8. http://blog.revolutionanalytics.com/2013/09/courseras-free-r-courses-are-running-again-soon.html?no_prefetch=1
+   9. http://blog.revolutionanalytics.com/
+  10. http://blog.revolutionanalytics.com/2013/09/terrible-data-visualizations.html
+  11. http://blog.revolutionanalytics.com/
+  12. http://blog.revolutionanalytics.com/2013/09/courseras-free-r-courses-are-running-again-soon.html
+  13. http://blog.revolutionanalytics.com/2012/08/rstan-fast-multilevel-bayesian-modeling-in-r.html
+  14. http://en.wikipedia.org/wiki/Metropolis%E2%80%93Hastings_algorithm
+  15. http://mbjoseph.github.io/blog/2013/09/08/metropolis/
+  16. http://www.revolutionanalytics.com/what-is-open-source-r/
+  17. http://revolution-computing.typepad.com/.a/6a010534b1db25970b019aff4a7bbc970d-pi
+  18. http://mbjoseph.github.io/blog/2013/09/08/metropolis/
+  19. http://www.inside-r.org/r-doc/base/system
+  20. http://blog.revolutionanalytics.com/2009/04/create-animated-graphics-with-r.html
+  21. http://mbjoseph.github.io/blog/2013/09/08/metropolis/
+  22. https://twitter.com/algaebarnacle/status/377104970404741120
+  23. http://profile.typepad.com/revolutiondavid
+  24. http://blog.revolutionanalytics.com/graphics/
+  25. http://blog.revolutionanalytics.com/r/
+  26. http://blog.revolutionanalytics.com/statistics/
+  27. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics.html
+  28. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics.html
+  29. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics/comments/atom.xml
+  30. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics/comments/atom.xml
+  31. javascript:void 0;
+  32. http://blog.revolutionanalytics.com/2013/09/an-animated-peek-into-the-workings-of-bayesian-statistics.html#comment-captcha
+  33. http://blog.revolutionanalytics.com/2013/09/6Ldg1s4SAAAAAEvvZX2ILFkWp7KB-jjdL4v0JV2e
+  34. http://blog.revolutionanalytics.com/about.html
+  35. http://blog.revolutionanalytics.com/comments-policy.html
+  36. http://blog.revolutionanalytics.com/categories.html
+  37. http://blog.revolutionanalytics.com/authors.html
+  38. http://blog.revolutionanalytics.com/calendar.html
+  39. http://blog.revolutionanalytics.com/local-r-groups.html
+  40. http://www.revolutionanalytics.com/
+  41. mailto:david@revolution-computing.com
+  42. http://www.twitter.com/revodavid
+  43. http://twitter.com/revodavid
+  44. https://plus.google.com/113975782306391318324/about?rel=author
+  45. http://inside-r.org/download
+  46. http://blog.revolutionanalytics.com/atom.xml
+  47. http://blog.revolutionanalytics.com/archives.html
+  48. http://blog.revolutionanalytics.com/academia/
+  49. http://blog.revolutionanalytics.com/advanced-tips/
+  50. http://blog.revolutionanalytics.com/announcements/
+  51. http://blog.revolutionanalytics.com/applications/
+  52. http://blog.revolutionanalytics.com/beginner-tips/
+  53. http://blog.revolutionanalytics.com/big-data/
+  54. http://blog.revolutionanalytics.com/courses/
+  55. http://blog.revolutionanalytics.com/current-events/
+  56. http://blog.revolutionanalytics.com/data-science/
+  57. http://blog.revolutionanalytics.com/developers/
+  58. http://blog.revolutionanalytics.com/events/
+  59. http://blog.revolutionanalytics.com/finance/
+  60. http://blog.revolutionanalytics.com/government/
+  61. http://blog.revolutionanalytics.com/graphics/
+  62. http://blog.revolutionanalytics.com/high-performance-computing/
+  63. http://blog.revolutionanalytics.com/life-sciences/
+  64. http://blog.revolutionanalytics.com/open-source/
+  65. http://blog.revolutionanalytics.com/other-industry/
+  66. http://blog.revolutionanalytics.com/packages/
+  67. http://blog.revolutionanalytics.com/predictive-analytics/
+  68. http://blog.revolutionanalytics.com/profiles/
+  69. http://blog.revolutionanalytics.com/r/
+  70. http://blog.revolutionanalytics.com/r-is-hot/
+  71. http://blog.revolutionanalytics.com/random/
+  72. http://blog.revolutionanalytics.com/revolution/
+  73. http://blog.revolutionanalytics.com/rmedia/
+  74. http://blog.revolutionanalytics.com/roundups/
+  75. http://blog.revolutionanalytics.com/sports-1/
+  76. http://blog.revolutionanalytics.com/statistics/
+  77. http://blog.revolutionanalytics.com/thisweek/
+  78. http://blog.revolutionanalytics.com/user-groups/
+  79. http://cran.revolutionanalytics.com/
+  80. http://inside-R.org/
+  81. http://www.revolutionanalytics.com/
+  82. http://www.revolutionanalytics.com/downloads/
+  83. http://forums.revolutionanalytics.com/
+  84. http://www.r-project.org/
+  85. http://flowingdata.com/
+  86. http://onertipaday.blogspot.com/
+  87. http://www.statisticsblog.com/
+  88. http://www.r-bloggers.com/
+  89. http://www.analyticbridge.com/group/rprojectandotherfreesoftwaretools
+  90. http://www.stat.columbia.edu/~cook/movabletype/mlm/
+  91. http://www.dataists.com/
+  92. http://blog.revolutionanalytics.com/archives.html
+  93. http://blog.revolutionanalytics.com/2013/10/index.html
+  94. http://blog.revolutionanalytics.com/2013/09/index.html
+  95. http://blog.revolutionanalytics.com/2013/08/index.html
+  96. http://blog.revolutionanalytics.com/2013/07/index.html
+  97. http://blog.revolutionanalytics.com/2013/06/index.html
+  98. http://blog.revolutionanalytics.com/2013/05/index.html
+  99. http://blog.revolutionanalytics.com/2013/04/index.html
+ 100. http://blog.revolutionanalytics.com/2013/03/index.html
+ 101. http://blog.revolutionanalytics.com/2013/02/index.html
+ 102. http://blog.revolutionanalytics.com/2013/01/index.html
+ 103. http://www.quantcast.com/p-fcYWUmj5YbYKM

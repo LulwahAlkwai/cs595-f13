@@ -1,0 +1,631 @@
+   #[1]Bosker Blog » Feed [2]Bosker Blog » Comments Feed [3]Bosker Blog »
+   I hate the Pumping Lemma Comments Feed [4]The algebra of Unix command
+   substitution [5]alternate [6]alternate [7]Bosker Blog [8]WordPress.com
+
+   Search: _______________ Go
+
+[9]Bosker Blog
+
+   Miscellaneous maundering
+     * [10]About
+
+I hate the Pumping Lemma
+
+   2013-08-18 [11]§ 27 Comments
+
+   I hate the Pumping Lemma for regular languages. It's a complicated way
+   to express an idea that is fundamentally very simple, and it isn't even
+   a very good way to prove that a language is not regular.
+
+   Here it is, in all its awful majesty: for every regular language L,
+   there exists a positive whole number p such that every string w(-L that
+   has p characters or more can be broken down into three substrings xyz,
+   where y is not the empty string and the total length of xy is at most
+   p, and for every natural number i the string xy^iz is also in L.
+   Did you understand that statement? I'd be willing to bet you didn't, if
+   you haven't seen it before. It has a ferociously intimidating logical
+   structure, with no fewer than five alternating quantifiers: "for every
+   L ... there exists p ... such that for every w ... there exist x, y and
+   z ... such that for every i ...". Beginning students of analysis are
+   apt to struggle with the definition of continuity, because it takes a
+   while to get used to having two nested quantifiers: for every epsilon >
+   0 there exists a delta > 0, etc. If two are a struggle, five is
+   cruelty.
+
+   The real insult is that the actual underlying idea, and the proof, is
+   shockingly simple. It is essentially the pigeonhole principle: the
+   principle that if you put more than n pigeons into n holes then there
+   must be a hole with more than one pigeon in. Take the regular language
+   L, and express it as a deterministic finite automaton with p states.
+   Any string in L determines a path through the automaton; so any string
+   with p or more characters must visit the same state twice, forming a
+   loop. This looped part can be repeated any arbitrary number of times to
+   produce other strings in L.
+
+   If you understand the idea, it is easy to write down the
+   incomprehensible formal statement of it. If you do not, the formal
+   statement is not likely to lead you to enlightenment.
+
+   But the world is full of ways to express simple ideas in complicated
+   ways. Why is this particular one foisted upon Computer Science
+   students? Because it is used to show that some languages are not
+   regular, which is important both in theory [12]and in practice.
+
+   This leads to the second reason for my distaste for the Accursed Lemma:
+   there are better ways to prove non-regularity, which are more powerful
+   and give more insight into the nature of regularity, and which are more
+   straightforward to state: they are omitted from the typical
+   undergraduate curriculum, presumably because by the time the poor
+   students have understood the hideous Pumping Lemma, there is no time
+   left.
+
+   Here is my favourite: one might call it the Myhill-Nerode Theorem à la
+   Brzozowski. Brzozowski invented the marvellous idea of differentiating
+   formal languages. Let L be a language: not necessarily a regular
+   language, just any set of strings; let w be a string, not necessarily
+   in L. Then the derivative d/dw (L) is the language { v | wv (- L }.
+
+   For example, if L is the set of English words then d/d`w' (L) is the
+   words that start with `w', with the `w' removed. So it contains such
+   strings as "ord" and "hy" and "ibble", and even "anker".
+
+   It's easy enough to see that any derivative of a regular language is
+   again regular: taking a derivative just corresponds to changing the
+   start state in a deterministic automaton. By the same argument, any
+   regular language has only a finite number of different derivatives.
+
+   The really good thing is that it works the other way round as well: if
+   a language has only a finite number of different derivatives, then it
+   is regular; if it has infinitely many, it is not. Again the proof is
+   easy: given a language L with a finite number of different derivatives,
+   form a deterministic automaton with a state for each derivative. Put an
+   edge labelled `x' from A to B just when d/d`x' (A) = B. The start state
+   is L itself, and any derivative that contains the empty string is
+   marked as an accepting state.
+
+   So this condition completely characterises the regular languages,
+   unlike the Pumping Lemma. There are [13]non-regular languages that are
+   nevertheless pumpable, but they will still have infinitely many
+   different derivatives.
+
+   In practice it is usually easy to use, as well. Take the classic
+   example of L = { a^ib^i | i (-  \mathbb{N}  }. Clearly d/d(a^n)(L) = {
+   a^ib^n+i | i (-  \mathbb{N}  } for all n, and these are all different,
+   so there are infinitely many derivatives and L cannot be regular.
+
+   Just to rub in how this is better than the Pumping Lemma, let's look at
+   the example from Wikipedia of a language where the Pumping Lemma fails.
+   It is L = A)UB)UC, over the alphabet {0,1,2,3}, where A is the strings
+   that contain a doubled digit (00, 11, 22, 33), B is the strings that
+   somewhere in them have the same digit twice with another digit in
+   between (010, 020, 030, 101, 121, etc.); and C is the strings precisely
+   1/7 of whose digits are 3s.
+
+   We can express C as { w(-{0,1,2,3}^* | n[{0,1,2}](w) = 6 n[{3}](w) }.
+   Here I am writing n[S](w) to mean the number of characters of w that
+   belong to S, where S is a subset of the alphabet.
+
+   Now for every natural number i, let's compute d/d((0123)^i)(C): it is
+
+   { w(-{0,1,2,3}^* | n[{0,1,2}]((0123)^iw) = 6 n[{3}]((0123)^iw) }
+   = { w(-{0,1,2,3}^* | 3i + n[{0,1,2}](w) = 6i + 6 n[{3}](w) }
+   = { w(-{0,1,2,3}^* | n[{0,1,2}](w) = 3i + 6 n[{3}](w) }
+
+   These languages are all different, because for example for each i you
+   can see that d/d((0123)^i)(C) contains the string (012)^i, but none of
+   the others do. What is more, none of the strings (012)^i are in any
+   d/d((0123)^k)(A)UB), therefore d/d((0123)^i)(L) contains (012)^j just
+   when i=j, hence L has infinitely many derivatives and is not regular.
+     __________________________________________________________________
+
+   PS. I don't have anything against the pumping lemma for context-free
+   languages.
+
+   PPS. This is not a complaint about my own education. I was taught
+   finite automata by an enlightened lecturer who explained the simple
+   idea behind the Pumping Lemma clearly and briefly, and had the good
+   taste not to state it formally. It is driven rather by compassion for
+   those less fortunate.
+     __________________________________________________________________
+
+   Update: For a dissenting view, see [14]this post by Lance Fortnow.
+
+Share this:
+
+     * [15]Email
+     * [16]Print
+     * [17]Twitter
+     * [18]Google
+     * [19]More
+     *
+
+     * [20]Facebook
+     * [21]Reddit
+     *
+     * [22]StumbleUpon
+     * [23]LinkedIn
+     *
+     *
+
+Like this:
+
+   Like Loading...
+
+§ 27 Responses to I hate the Pumping Lemma
+
+     * [24]ceyhuncanu says:
+       [25]2013-08-18 at 2225
+       "It is essentially the pigeonhole principle: the principle that if
+       you put more than n pigeons into n holes then there must be a hole
+       with more than one pigeon in."
+       I guess there is a typo here. Number of pigeons should be more than
+       number of holes to express the idea of
+       [26]http://en.wikipedia.org/wiki/Pigeonhole_principle .
+       [27]Reply
+          + [28]Robin Houston says:
+            [29]2013-08-18 at 2227
+            No, no typo. You might like to reread the sentence you quoted.
+            :-)
+            [30]Reply
+               o [31]ceyhuncanu says:
+                 [32]2013-08-18 at 2237
+                 Yup, sorry. It seems I missed "_more than_" part. :-) I
+                 am having hard time understanding what I read these days.
+                 By the way, forgot to mention this is a real nice
+                 article, explaining such a hard-to-digest topic.
+     * bobt says:
+       [33]2013-08-19 at 0224
+       Can you please rewrite this article with a clear point? It's a
+       complicated article to express an idea that is fundamentally
+       unknown to readers.
+       [34]Reply
+          + Atash says:
+            [35]2013-08-19 at 0309
+            The first sentence of the article seemed pretty clear to me...
+            [36]Reply
+          + Brando Miranda says:
+            [37]2013-08-19 at 0350
+            I hate the Pumping Lemma for regular languages. It's a
+            complicated way to express an idea that is fundamentally very
+            simple, and it isn't even a very good way to prove that a
+            language is not regular.
+            Thats what its about. Are you familiar with this topic?
+            [38]Reply
+     * Greg says:
+       [39]2013-08-19 at 0415
+       "Clearly d/d(an)(L) = { aibn+i | i (- \mathbb{N} } for all n, and
+       these are all different"
+       Do you mean that there are an infinite number of derivatives
+       because you can take d/d(a^1)(L), d/d(a^2)(L), ... , d/d(a^n)(L),
+       and for each n, the resulting derivative language is unique with
+       respect to all other n?
+       Whereas if L is regular, then all derivative functions will map to
+       a finite set of languages?
+       Just trying to make sure I understand correctly. Thank you for the
+       interesting post.
+       [40]Reply
+          + [41]Robin Houston says:
+            [42]2013-08-19 at 0709
+            Yes, you understand perfectly. Thanks.
+            [43]Reply
+     * [44]Stephan Wehner (@stephanwehner) says:
+       [45]2013-08-19 at 0751
+       Are you saying that any language that can be shown to be
+       non-regular using the Pumping Lemma can be shown to be non-regular
+       without using the Pumping Lemma? There's a "plugin replacement" in
+       each such proof?
+       Of all the things one may not like one would think a mathematical
+       fact would be the easiest to avoid.
+       Cheers,
+       Stephan
+       [46]Reply
+          + [47]Robin Houston says:
+            [48]2013-08-19 at 0801
+            Yes. Every non-regular language has infinitely many
+            derivatives. You never actually need to use the Pumping Lemma
+            to show non-regularity.
+            [49]Reply
+               o John Hughes says:
+                 [50]2013-08-19 at 1353
+                 I'm not certain that this answers the question Stephan
+                 asked. Let me try to explain my doubts:
+                 Here are two properties of positive integers: (a)
+                 positive integers have unique factorizations. (b) For any
+                 positive integer n, the result of applying the
+                 predecessor function sufficiently often will be 0.
+                 The first of these can be used to prove various things
+                 about integers, as many elementary number theory texts
+                 demonstrate to excess. The second can be used to prove
+                 other things. You might ask "is everything provable using
+                 the first also provable using the second?" At some very
+                 basic level, the answer must be "yes", because when we
+                 say "Using the second," we really mean "Using the second
+                 and all the axioms for the integers," and using "all the
+                 axioms for the integers" we can prove the first, hence
+                 can prove anything derived from it.
+                 But that doesn't really capture the sense of the
+                 question. One way to think of proofs is via graph theory.
+                 At each moment in a proof, you're in some state of
+                 knowledge (call that a node), and there are tons of
+                 things you could say next. (call each of these an edge).
+                 If you pick the right sequence of edges, you reach a
+                 final node in which the knowledge you've established
+                 contains the conclusion of the theorem. So things proved
+                 by using unique factorization constitute certain paths in
+                 this large graph. The question is then something like
+                 "are there shorter paths to all (or most of) these things
+                 from the state in which you get to assume
+                 finite-predecessor-calls, with the paths not passing
+                 through the nodes that contain the knowledge of unique
+                 factorization?"
+                 To bring this back to languages, the fact that every
+                 non-regular language has some property (finitely many
+                 derivatives) and has some other property ("pumpingness")
+                 doesn't necessarily mean that there's a mechanism for
+                 replacing proofs involving the latter with "simpler"
+                 proofs involving the former, where by "simpler" I mean
+                 "not involving a hidden proof of the pumping lemma."
+                 I suspect that the answer to Stephan's question might
+                 well be "Yes," but I know little enough about the pumping
+                 lemma and its uses to have no confidence in my answer.
+          + Mark Mercer says:
+            [51]2013-08-20 at 0346
+            I think that the language {x: |x| is prime} should be easier
+            to prove nonregular using the pumping lemma - Choose the long
+            word to be a prime-length word and pump it up to a
+            nonprime-length word. Generally if you have a language where
+            membership only depends on the length of the input, you can
+            skip the case analysis that normally comes with an application
+            of the pumping lemma.
+            [52]Reply
+               o eppstein says:
+                 [53]2013-08-20 at 0734
+                 The pumping lemma proof is pretty easy, but here's
+                 another easy proof using derivatives. For any integer x,
+                 let p(x) be the distance from x to the next prime number.
+                 Then, if p(x) != p(y), then d/d(0^x) L != d/d(0^y) L
+                 where L = {x : |x| is prime}. But p(x) can be arbitrarily
+                 large; for instance, p(n!+1) >= n. Therefore, L has
+                 infinitely many derivatives.
+               o Mark says:
+                 [54]2013-08-20 at 1358
+                 eppstein: the claim `if p(x) != p(y), then d/d(0^x) L !=
+                 d/d(0^y) L where L = {x : |x| is prime}. ` is almost
+                 certainly true, but it's not obvious from the definition
+                 of primality. This has to be true for arbitrary prime x,
+                 y if you want to conclude immediately that you have
+                 infinitely many distinct derivatives.
+               o [55]D. Eppstein says:
+                 [56]2013-08-20 at 2025
+                 You think it's not obvious? I disagree. If p(x) != p(y),
+                 we can assume without loss of generality that p(x) <
+                 p(y). Then x+p(x) is prime (the first prime after x), by
+                 definition of p, while y+p(x) is not prime (there is no
+                 prime until y+p(y), a larger number). Therefore the two
+                 languages d/d(0^x) L and d/d(0^y) L will differ on the
+                 input 0^{min(p(x),p(y)}.
+               o Mark says:
+                 [57]2013-08-21 at 0022
+                 Ahh, I misunderstood what you were trying to do. So now
+                 you are finding an infinite set of pairs (x,y) that
+                 generate distinct derivatives, ok. But then how do you
+                 conclude that there are infinitely many derivatives?
+                 Consider the integral function f(x) = (-1)^x. There are
+                 infinitely many (x,y) pairs such that f(x) != f(y), but
+                 still the range of f is a constant 2.
+               o eppstein says:
+                 [58]2013-08-21 at 0126
+                 Perhaps, in your zeal to find this argument non-obvious,
+                 you missed the sentence "But p(x) can be arbitrarily
+                 large." Therefore there are infinitely many distinct
+                 values of p and infinitely many distinct derivatives.
+               o Mark says:
+                 [59]2013-08-21 at 0309
+                 Yes, you are right. Sorry. Quite dense of me not to see
+                 that.
+     * [60]Max Bucknell says:
+       [61]2013-08-19 at 1305
+       I understood the lemma, but not your explanation. But, I suppose I
+       am an edge case, being a mathematics student who only dabbles in
+       programming.
+       [62]Reply
+     * [63]mac01021mac says:
+       [64]2013-08-19 at 1531
+       I'm not prepared to say I necessarily think your hatred is 100%
+       misguided, but there are some point worth considering:
+       1> Maybe there is some value in giving the students some practice
+       thinking about logical propositions that are (structurally)
+       nontrivial. With enough such practice, it might become second
+       nature, in which case the students will have enhanced their
+       abilities to reason.
+       2> It might serve as an OK warm-up for the similar lemma about
+       Context Free Languages.
+       I expect that, if I were exposing the material to students, I would
+       most likely begin from the informal appeal to the pigeonhole
+       principle and the DFA with p states. But, once I was satisfied that
+       everyone understood, I would still want to show how to express the
+       theorem with rigor and formality and nested quantifiers, with all
+       of which I would want the students to develop a great degree of
+       comfort.
+       [65]Reply
+     * ulularem says:
+       [66]2013-08-19 at 1621
+       "By the same argument, any regular language has only a finite
+       number of different derivatives."
+       From my naive reading, A* is a regular language with an infinite
+       number of different derivatives (namely each A^n, for natural
+       numbers n). For the obvious (canonical?) automaton of this
+       language, taking these derivatives doesn't change the start state.
+       Does that mean something is only a derivative if it changes the
+       start state and removes a prefix from words in the language?
+       [67]Reply
+          + [68]Robin Houston says:
+            [69]2013-08-19 at 1939
+            Hi. It sounds as though you understand what's going on, but
+            that you've got back-to-front what I meant by "different
+            derivatives". If w(-A* then d/dw(A*) = A*, so there is only
+            one derivative, namely A*.
+            Or maybe you intended that A be a strict subset of the ambient
+            alphabet, in which case there are two different derivatives,
+            because d/dv(A*) = {} if v!(-A*.
+            In either case there are a finite number. As you say, this is
+            the same as the number of states in the obvious automaton for
+            the language.
+            If you can say which part confused you, I'll try to make it
+            clearer.
+            [70]Reply
+               o ulularem says:
+                 [71]2013-08-19 at 2050
+                 I'm not sure what would make it more clear: on
+                 re-reading, I see exactly what you're pointing out.
+                 Somehow I was counting derivatives as "distinct" if the
+                 strings used to generate them were distinct (and produced
+                 a non-empty language), but all your text points out that
+                 a derivative is a language, and hence A* = d/dv(A*), for
+                 all v.
+                 Thanks for the clarification.
+     * Barney says:
+       [72]2013-08-19 at 2307
+       "If two are a struggle, five is cruelty."
+       Ha! That is why I switched from mathematics to computer science. In
+       mathematics, you have to work through proofs that require many
+       pages or even chapters to write. In computer science, if it takes
+       more than half a page, you write a program to solve it for you,
+       because that's usually simpler.
+       [73]Reply
+     * Dave says:
+       [74]2013-08-20 at 1248
+       Your last example looks to have some errors in it.
+       First, in your formula for d/d((0123)i)(C), I think you but the "+
+       3i" on the wrong side of the equality. Shouldn't it be:
+       { w(-{0,1,2,3}* | len(w(U{0,1,2}*) + 3i = 6 len(w(U{3}*)}
+       Second, I don't think it can be the case "that d/d((0123)^i)(C)
+       contains the string (012)^i0123''. The number of 3's must be
+       proportial to i (in fact, it must be 3*i), it cannot be constant. I
+       think if you were to change this to "for each i, d/d((0123)^i)(C)
+       contains the string (0123)^i or something similar, the rest of the
+       argument goes through.
+       [75]Reply
+          + [76]Robin Houston says:
+            [77]2013-08-20 at 2103
+            Thank you, Dave. There were indeed some errors, though I don't
+            think I quite agree about what they were.
+            I was writing e.g. len(w(U{3}*) to mean the number of 3s in w,
+            which doesn't really make sense. I've changed that notation to
+            something ad hoc. (Is there a standard notation for this?
+            Anyone?)
+            The notational issue aside, I think the expression for
+            d/d((0123)^i)(C) was correct. I have added a derivation, which
+            I hope makes it clearer.
+            Yes, the "d/d((0123)^i)(C) contains the string (012)^i0123"
+            part was wrong. It should have been (012)^i without the extra
+            0123.
+            Thanks for prompting me to check this more carefully.
+            [78]Reply
+     * [79]Michael Tsai - Blog - The Pumping Lemma, The Pigeonhole
+       Principle, and Differentiating Languages says:
+       [80]2013-08-21 at 2155
+       [...] Robin Houston (via @CompSciFact): [...]
+       [81]Reply
+
+Leave a Reply [82]Cancel reply
+
+   Enter your comment here...
+
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+   ____________________________________________________________
+
+   Fill in your details below or click an icon to log in:
+     *
+     *
+     *
+     *
+     *
+
+       IFRAME: [83]googleplus-sign-in
+
+   [84]Gravatar
+   Email (required) (Address never made public)
+   ____________________
+   Name (required)
+   ____________________
+   Website
+   ____________________
+   WordPress.com Logo
+
+   You are commenting using your WordPress.com account.
+   ( [85]Log Out / [86]Change )
+   Twitter picture
+
+   You are commenting using your Twitter account.
+   ( [87]Log Out / [88]Change )
+   Facebook photo
+
+   You are commenting using your Facebook account.
+   ( [89]Log Out / [90]Change )
+   Google+ photo
+
+   You are commenting using your Google+ account.
+   ( [91]Log Out / [92]Change )
+   [93]Cancel
+
+   Connecting to %s
+
+   [_] Notify me of follow-up comments via email.
+
+   Post Comment
+
+   [94]The algebra of Unix command substitution »
+
+What's this?
+
+   You are currently reading I hate the Pumping Lemma at [95]Bosker Blog.
+
+meta
+
+     * Author: Robin Houston
+     * Comments: [96]27 Comments
+     * Categories: [97]chatter
+
+   [98]Blog at WordPress.com.
+
+   [99]Customized Oulipo Theme.
+
+   [100]Follow
+
+Follow "Bosker Blog"
+
+   Get every new post delivered to your Inbox.
+
+   Join 599 other followers
+
+   ____________________
+
+   Sign me up
+   [101]Powered by WordPress.com
+
+   Send to Email Address ____________________ Your Name
+   ____________________ Your Email Address ____________________
+   loading Send Email [102]Cancel
+   Post was not sent - check your email addresses!
+   Email check failed, please try again
+   Sorry, your blog cannot share posts by email.
+
+   IFRAME: [103]likes-master
+
+   %d bloggers like this:
+
+References
+
+   Visible links
+   1. http://bosker.wordpress.com/feed/
+   2. http://bosker.wordpress.com/comments/feed/
+   3. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/feed/
+   4. http://bosker.wordpress.com/2013/08/16/using-group-theory-to-understand-unix-command-substitution/
+   5. http://public-api.wordpress.com/oembed/1.0/?format=json&url=http%3A%2F%2Fbosker.wordpress.com%2F2013%2F08%2F18%2Fi-hate-the-pumping-lemma%2F&for=wpcom-auto-discovery
+   6. http://public-api.wordpress.com/oembed/1.0/?format=xml&url=http%3A%2F%2Fbosker.wordpress.com%2F2013%2F08%2F18%2Fi-hate-the-pumping-lemma%2F&for=wpcom-auto-discovery
+   7. http://bosker.wordpress.com/osd.xml
+   8. http://wordpress.com/opensearch.xml
+   9. http://bosker.wordpress.com/
+  10. http://bosker.wordpress.com/about/
+  11. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comments
+  12. http://stackoverflow.com/questions/1732348/regex-match-open-tags-except-xhtml-self-contained-tags/1732454#1732454
+  13. http://en.wikipedia.org/wiki/Pumping_lemma_for_regular_languages#Converse_of_lemma_not_true
+  14. http://blog.computationalcomplexity.org/2013/09/myhill-nerode-versus-pumping-lemma.html
+  15. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=email
+  16. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#print
+  17. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=twitter
+  18. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=google-plus-1
+  19. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/
+  20. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=facebook
+  21. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=reddit
+  22. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=stumbleupon
+  23. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?share=linkedin
+  24. http://gravatar.com/ceyhuncanu
+  25. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3074
+  26. http://en.wikipedia.org/wiki/Pigeonhole_principle
+  27. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3074#respond
+  28. http://bosker.wordpress.com/
+  29. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3075
+  30. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3075#respond
+  31. http://gravatar.com/ceyhuncanu
+  32. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3076
+  33. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3078
+  34. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3078#respond
+  35. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3079
+  36. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3079#respond
+  37. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3080
+  38. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3080#respond
+  39. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3081
+  40. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3081#respond
+  41. http://bosker.wordpress.com/
+  42. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3082
+  43. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3082#respond
+  44. http://twitter.com/stephanwehner
+  45. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3083
+  46. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3083#respond
+  47. http://bosker.wordpress.com/
+  48. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3084
+  49. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3084#respond
+  50. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3086
+  51. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3092
+  52. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3092#respond
+  53. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3093
+  54. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3096
+  55. http://11011110.livejournal.com/
+  56. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3098
+  57. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3100
+  58. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3101
+  59. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3102
+  60. http://gravatar.com/maxbucknell
+  61. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3085
+  62. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3085#respond
+  63. http://gravatar.com/mac01021
+  64. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3087
+  65. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3087#respond
+  66. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3088
+  67. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3088#respond
+  68. http://bosker.wordpress.com/
+  69. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3089
+  70. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3089#respond
+  71. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3090
+  72. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3091
+  73. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3091#respond
+  74. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3094
+  75. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3094#respond
+  76. http://bosker.wordpress.com/
+  77. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3099
+  78. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3099#respond
+  79. http://mjtsai.com/blog/2013/08/21/i-hate-the-pumping-lemma/
+  80. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-3104
+  81. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/?replytocom=3104#respond
+  82. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#respond
+  83. https://public-api.wordpress.com/connect/?googleplus-sign-in=1
+  84. https://gravatar.com/site/signup/
+  85. javascript:HighlanderComments.doExternalLogout( 'wordpress' );
+  86. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/
+  87. javascript:HighlanderComments.doExternalLogout( 'twitter' );
+  88. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/
+  89. javascript:HighlanderComments.doExternalLogout( 'facebook' );
+  90. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/
+  91. javascript:HighlanderComments.doExternalLogout( 'googleplus' );
+  92. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/
+  93. javascript:HighlanderComments.cancelExternalWindow();
+  94. http://bosker.wordpress.com/2013/08/16/using-group-theory-to-understand-unix-command-substitution/
+  95. http://bosker.wordpress.com/
+  96. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comments
+  97. http://bosker.wordpress.com/category/chatter/
+  98. http://wordpress.com/?ref=footer
+  99. http://theme.wordpress.com/credits/bosker.wordpress.com/
+ 100. javascript:void(0)
+ 101. http://wordpress.com/signup/?ref=lof
+ 102. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#cancel
+ 103. http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&mp6=1
+
+   Hidden links:
+ 104. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-form-guest
+ 105. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-form-load-service:WordPress.com
+ 106. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-form-load-service:Twitter
+ 107. http://bosker.wordpress.com/2013/08/18/i-hate-the-pumping-lemma/#comment-form-load-service:Facebook

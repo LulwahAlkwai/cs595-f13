@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html
+	dir      = "ltr"
+	lang     = "en"
+	xml:lang = "en"
+	xmlns    = "http://www.w3.org/1999/xhtml"
+>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width" />
+	<title>AutoComplex &#171;</title>
+	<link rel="profile" href="http://gmpg.org/xfn/11" />
+	<link rel="pingback" href="http://math.hawaii.edu/wordpress/computability-theory/xmlrpc.php" />
+	<link rel="alternate" type="application/rss+xml" title="Computability theory &raquo; Feed" href="http://math.hawaii.edu/wordpress/computability-theory/feed/" />
+	<link rel="alternate" type="application/rss+xml" title="Computability theory &raquo; Comments Feed" href="http://math.hawaii.edu/wordpress/computability-theory/comments/feed/" />
+	<link rel='stylesheet' id='twentytwelve-fonts-css'  href='http://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,400,700&#038;subset=latin,latin-ext' type='text/css' media='all' />
+	<link rel='stylesheet' id='twentytwelve-style-css'  href='http://math.hawaii.edu/wordpress/computability-theory/wp-content/themes/twentytwelve/style.css?ver=3.5' type='text/css' media='all' />
+
+<!--	<script type='text/javascript' src='http://math.hawaii.edu/wordpress/computability-theory/wp-includes/js/jquery/jquery.js?ver=1.8.3'></script> -->
+	<script type='text/javascript' src='http://math.hawaii.edu/home/scripts/jquery-1.7.1.min.js'></script>
+
+
+	<script type='text/javascript' src='http://math.hawaii.edu/wordpress/computability-theory/wp-content/plugins/dropdown-menu-widget/scripts/include.js?ver=3.5'></script>
+	<script type='text/javascript' src='http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML&#038;ver=3.5'></script>
+	<script src="http://math.hawaii.edu/home/scripts/theMenu.js"></script>
+	<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://math.hawaii.edu/wordpress/computability-theory/xmlrpc.php?rsd" />
+	<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://math.hawaii.edu/wordpress/computability-theory/wp-includes/wlwmanifest.xml" /> 
+	<meta name="generator" content="WordPress 3.5" />
+	<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+	<style type="text/css" id="custom-background-css">
+		body.custom-background {
+			background-image: url('http://math.hawaii.edu/wordpress/computability-theory/files/2013/09/twitter-background.jpg');
+			background-repeat: repeat;
+			background-position: top left;
+			background-attachment: fixed;
+		}
+	</style>
+	<style type="text/css">
+		/* From Cerulean Elegance */
+		/* Messages */
+		.error, .notice, .success {
+			border: 1px solid #DDD;
+			margin-bottom: 1em;
+			padding: 0.6em 0.8em;
+			border-radius: 15px; /* CSS3 only */
+			text-align: center; /* added by bjoern */
+		}
+
+		.error {
+			background: #FBE3E4; 
+			color: #8A1F11; 
+			border-color: #FBC2C4;
+		}
+		.error a {
+			color: #8A1F11;
+		}
+
+		.notice {
+			background: #FFF6BF; 
+			color: #514721; 
+			border-color: #FFD324;
+		}
+		.notice a {
+			color: #514721;
+		}
+
+		.success {
+			background: #E6EFC2; 
+			color: #264409; 
+			border-color: #C6D880;
+		}
+
+		.success a {
+			color: #264409;
+		}
+		/* 
+		 Floats
+		------------------------------------------------------------------- */
+
+		.left,.alignleft {float: left;}
+		.right,.alignright {float: right;}
+		.center,.aligncenter {margin: 0 auto;}
+
+		.clear,.clearer {clear: both;}
+		.clearer {
+			display: block;
+			font-size: 0;
+			line-height: 0;
+			height: 0;
+		}
+		/* 
+		 Thumbnails
+		------------------------------------------------------------------- */
+
+		.thumbnails {
+			margin: 0 -0 2em -8px;
+		}
+
+		.thumbnails a.thumb {	
+			background: #D5D5D5;
+			display: block;
+			float: left;
+			margin: 0 0 8px 8px;
+			padding: 3px;
+			border-radius: 5px;
+		}
+		.thumbnails a.thumb:hover {background: #C0C0C0;}
+		.thumbnails .thumb img {
+			display: block;
+			border-radius: 5px;
+
+
+			/* To create grayscale images */
+		    filter: url('http://math.hawaii.edu/home/style/filters.svg#grayscale'); /* Firefox 3.5+ */
+		    filter: gray; /* IE6-9 */
+		    -webkit-filter: grayscale(1); /* Google Chrome & Safari 6+ */
+
+		}
+
+		.thumbnails .thumb img:hover {
+		    filter: none;
+		    -webkit-filter: grayscale(0);
+		}
+
+
+
+
+
+		/* Courses */
+		.thumbnails a.taught, .taught {
+			background: #FBE3E4; /* pink */
+		}
+
+		.thumbnails a.nottaught, .nottaught {
+			background: #D5D5D5; /* gray */
+		}
+
+		.thumbnails a.topics, .topics {
+			background: #E6EFC2; /* green */
+		}
+
+		.thumbnails a.private, .private {
+			background: #ADD8E6; /* blue */
+		}
+		/* Tables -------------------------from Loren Swendsen-------------*/
+		.table-01 { width:100%; margin:0 0 22px 0; text-align: left;}
+		.table-01 th { background-color:#FFFFFF; font-weight:bold; padding:6px 2px 2px 2px; border-bottom:3px solid #BBBAA5; }
+		.table-01 td { padding:6px 2px; }
+		.table-01 td.last { border-bottom:1px solid #BBBAA5; }
+		.table-01 td a:link, .table-01 td a:visited { font-weight:normal; color:#333333; }
+		.table-01 td a:hover, .table-01 td a:active, .table-01 td a:focus { text-decoration:underline; }
+		.table-01 tr:nth-of-type(odd) { background-color:#E2E2C7; }
+		.table-01 tr:nth-of-type(even) { background-color:#FFFFFF; }
+		
+		/* 
+		 Tables
+		------------------------------------------------------------------- */
+
+		table.data_table {
+			border: 1px solid #CCB;
+			margin-bottom: 2em;
+			width: 100%;
+		}
+		table.data_table th {
+			background: #E5E5E5;
+			border: 1px solid #D5D5D5;
+			color: #555;
+			text-align: left;
+		}
+		table.data_table tr {border-bottom: 1px solid #DDD;}
+		table.data_table td, table th {padding: 10px;}
+		table.data_table td {
+			background: #F5F5F5;
+			border: 1px solid #E0E0E0;
+			vertical-align: middle; /* added */
+		}
+		.site-header h1,
+		.site-header h2 {
+			font-family: Optima, Verdana, Arial, Helvetica, sans-serif; 
+			font-variant: small-caps;
+		}
+		
+		
+	</style>
+	<base href="http://math.hawaii.edu/home/" />
+		<script src="http://gviz.oodavid.com/gviz.js"></script>
+		<script src="scripts/shCore.js"></script>
+		<script src="scripts/shBrushBash.js"></script>
+		<script src="scripts/shBrushPhp.js"></script>
+		<link type="text/css" rel="stylesheet" href="styles/shCoreDefault.css"/>
+		<script>SyntaxHighlighter.all();</script></head>
+<body class="home blog custom-font-enabled single-author custom-background">
+	<div id="page" class="hfeed site">
+		<header id="masthead" class="site-header" role="banner">
+			<hgroup>
+				<h1 class="site-title">
+					<a
+						href  = "http://math.hawaii.edu/~bjoern/"
+						title = "UH Manoa Department of Mathematics"
+					>
+						AutoComplex 
+					</a>					
+				</h1>
+				<h2 class="site-description">University of Hawaii at Manoa</h2>
+			</hgroup>
+			<nav id="site-navigation" class="main-navigation" role="navigation">
+				<h3 class="menu-toggle">Menu</h3>
+				<a class="assistive-text" href="#content" title="Skip to content">Skip to content</a>
+				<div class="nav-menu">
+					<ul>
+																					<li class="page-item">
+																<a href="http://math.hawaii.edu/~bjoern/complexities/">
+																	Complexities 
+																</a>
+															</li>
+																					<li class="page-item">
+																<a href="http://math.hawaii.edu/~bjoern/witnesses/">
+																	Witnesses 
+																</a>
+															</li>
+																					<li class="page-item">
+																<a href="http://math.hawaii.edu/~bjoern/game/">
+																	Complexity game 
+																</a>
+															</li>
+																					<li class="page-item">
+																<a href="http://math.hawaii.edu/~bjoern/option/">
+																	Option game 
+																</a>
+															</li>
+											</ul>
+				</div>
+			</nav><!-- #site-navigation -->
+		</header><!-- #masthead -->
+
+		<div id="main" class="wrapper">
+			<div id="primary" class="site-content">
+				<div id="content" role="main">
+					<article id="post-17" class="post-17 post type-post status-publish format-standard hentry category-uncategorized">
+						<header class="entry-header">
+							<h1 class="entry-title">
+								<a
+									href  = "http://math.hawaii.edu/lookup/"
+									title = "Permalink to this page or its parent"
+									rel   = "bookmark"
+								></a>
+							</h1>
+						</header><!-- .entry-header -->
+						<div class="entry-content">
+															<div class="peoplewide">
+									<h3>
+										What is the complexity of the length 4 string
+									</h3>
+									<h1>"0101"?</h1>
+									<form
+										action = "http://math.hawaii.edu/~bjoern/game/"
+										method = "post"
+									>
+										Your answer:<br />
+										<input
+											type  = "hidden"
+											name  = "string"
+											value = "0101"
+										/>
+	
+										<input
+											type  = "radio"
+											name  = "guess"
+											value = "1"
+																					/>
+										1										<br /> 										
+	
+										<input
+											type  = "radio"
+											name  = "guess"
+											value = "2"
+																					/>
+										2										<br /> 										
+	
+										<input
+											type  = "radio"
+											name  = "guess"
+											value = "3"
+											checked = "checked"										/>
+										3										<br /> 										
+										Your name:
+										<input
+											type  = "text"
+											name  = "name"
+											value = ""
+										/>
+										<br />
+										<input
+											type  = "submit"
+										/>
+									</form>
+		
+									<div class="post_meta">
+										The complexity of a string <i>x</i> of length <i>n</i> in this game is
+										the minimum number of states of a nondeterministic finite state automaton, accepting <i>x</i>,
+										that accepts along only one path of length <i>n</i>. It was studied in
+										<a href="http://math.hawaii.edu/graduate-alumni/kkhyde/">Kayleigh Hyde's MA thesis</a>.
+									</div>
+								<h4>
+									<a href="http://math.hawaii.edu/~bjoern/game/high-scores/">High Score Table</a>
+								</h4>
+								</div>
+						</div><!-- .entry-content -->
+
+				<!--		<footer class="entry-meta">
+							This entry was posted in
+							<a
+								href="http://math.hawaii.edu/wordpress/category/people/"
+								title="View all posts in People"
+								rel="category tag">People</a>
+							on
+							<a
+								href="http://math.hawaii.edu/wordpress/2013/04/01/about/"
+								title="1:30 am"
+								rel="bookmark"><time class="entry-date" datetime="2013-04-01T01:30:57+00:00">September 22, 2013</time></a>
+							<span class="by-author"> by
+								<span class="author vcard">
+									<a
+										class="url fn n"
+										href="http://math.hawaii.edu/wordpress/author/admin/"
+										title="View all posts by admin"
+										rel="author">admin</a>
+								</span>
+							</span>.
+						</footer> --><!-- .entry-meta -->
+					</article><!-- #post -->
+				</div><!-- #content -->
+			</div><!-- #primary -->
+
+
+			<div id="secondary" class="widget-area" role="complementary">
+								<aside id="search-2" class="widget widget_search">
+					<form role="search" method="get" id="searchform" action="http://math.hawaii.edu/wordpress/" >
+						<div>
+							<label class="screen-reader-text" for="s">Search for:</label>
+							<input type="text" value="" name="s" id="s" />
+							<input type="submit" id="searchsubmit" value="Search" />
+						</div>
+					</form>
+				</aside>
+				<aside id="meta-2" class="widget widget_meta">
+					<h3 class="widget-title">Resources</h3>
+					<ul>
+						<li>
+							<a href="https://math.hawaii.edu/wordpress/department/">
+								Department only
+							</a>
+						</li>
+						<li>
+							<a href="https://math.hawaii.edu/wordpress/faculty/">
+								Faculty only
+							</a>
+						</li>
+						<li>
+							<a href="http://math.hawaii.edu/login/">
+								Log in with UH Web Login Service
+							</a>
+						</li>
+						<li>
+							<a href="http://math.hawaii.edu/calendar/">
+								Events
+							</a>
+						</li>
+						<li>
+							<a href="http://math.hawaii.edu/wordpress/computer-lab/">Lab</a>
+						</li>
+					</ul>
+				</aside>
+				<aside id="meta-2" class="widget widget_meta">
+					<h3 class="widget-title">Useful Links</h3>
+					<ul>
+						<li><a href="https://webmail.math.hawaii.edu/">WebMail</a></li>
+						<li><a href="http://math.hawaii.edu/wordpress/resources/">MyUH etc.</a></li>
+						<li><a href="http://math.hawaii.edu/wordpress/research-links/">Library etc.</a></li>
+					</ul>
+				</aside>
+				<aside id="meta-2" class="widget widget_meta">
+					<h3 class="widget-title">Contact Us</h3>
+					<address>
+						Department of Mathematics<br /> 
+						University of Hawaii at Manoa<br /> 
+						2565 McCarthy Mall (<a href="http://libweb.hawaii.edu/names/keller.html">Keller Hall</a> 401A)<br /> 
+						Honolulu, Hawaii 96822<br />
+						(808) 956-4679, fax 956-9139
+					</address>
+				</aside>
+				<aside id="meta-2" class="widget widget_meta">
+					<h3 class="widget-title">Miscellaneous</h3>
+					<ul>
+						<li>
+							<a href="http://validator.w3.org/check?uri=referer">
+									Check HTML5
+							</a>
+						</li>
+						<li>
+							<a 
+								href    = "http://math.hawaii.edu/" 
+								onclick = "
+									window.open(
+										'print_version.html',
+										'',
+										'width=800,menubar=yes,toolbar=yes,scrollbars=yes'
+									);
+									return false;
+								"
+							>
+								Printable version
+							</a>
+						</li>
+						<li>
+							<a href="http://math.hawaii.edu/wordpress/social-media/">
+								Social media
+							</a>
+						</li>
+					</ul>
+					<a href="https://twitter.com/UHManoaMath">
+						<img
+							alt   = "Twitter"
+							class = "alignright"
+							src   = "http://math.hawaii.edu/home/images/twitter.png"
+							title = "Follow us on Twitter"
+							width = "16"
+						/>
+					</a>
+					<a href="https://plus.google.com/103202231169763692999?rel=publisher">
+						<img 
+							alt    = "Google+"
+							class  = "alignright"
+							height = "16"
+							src    = "https://ssl.gstatic.com/images/icons/gplus-16.png"
+							title  = "Google+"
+							width  = "16"
+						/>
+					</a>
+					<a href="http://www.linkedin.com/e/al2dm3-gprl4xo1-3c/vgh/3989544/">
+						<img
+							alt   = "LinkedIn"
+							class = "alignright"
+							src   = "http://math.hawaii.edu/home/images/linkedinLogoSmall.png"
+							title = "Join us on LinkedIn"
+							width = "16"
+						/>
+					</a>
+					<a href="http://www.facebook.com/pages/UH-Manoa-Math/177174989010512">
+						<img
+							alt   = "Facebook"
+							class = "alignright"
+							src   = "http://math.hawaii.edu/home/images/logo_facebook_small.gif"
+							title = "Follow us on Facebook"
+							width = "16"
+						/>
+					</a>
+				</aside>
+			</div><!-- #secondary -->
+		</div><!-- #main .wrapper -->
+		<footer id="colophon" role="contentinfo">
+			<div class="site-info">
+				<a href="http://wordpress.org/" title="Semantic Personal Publishing Platform">Proudly powered by WordPress</a>
+			</div><!-- .site-info -->
+		</footer><!-- #colophon -->
+	</div><!-- #page -->
+	<script type='text/javascript' src='http://math.hawaii.edu/wordpress/computability-theory/wp-includes/js/hoverIntent.min.js?ver=r6'></script>
+	<script type='text/javascript' src='http://math.hawaii.edu/wordpress/computability-theory/wp-content/themes/twentytwelve/js/navigation.js?ver=1.0'></script>
+</body>
+</html>
+

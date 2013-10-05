@@ -1,0 +1,646 @@
+   #[1]Cisco Blog RSS Feed [2]Cisco Blog » Cisco ONE Enterprise Networks
+   Architecture: Programmability for WAN Networks Comments Feed [3]The
+   CIO's Dynamic Role [4]Empowering Cisco and Microsoft Partners in the
+   Data Center
+
+     *
+          + [5]Blogs Home
+          + [6]All of Cisco
+
+   Cisco Blogs
+
+     * [7]Tweet
+     *
+     *
+     *
+     *
+     * [white-15.png] Kindle
+     *
+
+   ____________________ Submit
+     * Technology
+     * [8]Borderless Networks
+     * [9]Collaboration
+     * [10]Data Center and Cloud
+     * [11]Mobility
+     * [12]Security
+     * [13]Small Business
+     * [14]SP360:Service Provider
+     * [15]Video
+
+     * Industries
+     * [16]Education
+     * [17]Financial Services
+     * [18]Government
+     * [19]Healthcare
+     * [20]Manufacturing
+     * [21]Retail
+
+     * Support
+     * [22]Cisco Support Community
+
+     * Partners
+     * [23]Channels
+     * [24]Cisco Developer Network
+
+     * More From Cisco
+     * [25]Architect & DE Discussions
+     * [26]Connected Life Exchange
+     * [27]Digital and Social
+     * [28]High Peformance Computing Networking
+     * [29]Inside Cisco IT
+     * [30]Open at Cisco
+     * [31]Perspectives
+     * [32]TechWiseTV
+
+     * Corporate/News
+     * [33]The Platform
+     * [34]Corporate Social Responsibility
+     * [35]High Tech Policy
+     * [36]Inclusion and Diversity
+     * [37]Internet of Everything
+
+     * Countries and Regions
+     * [38]Brazil
+     * [39]Canada
+          + [40]English
+          + [41]French
+     * [42]Emerging Countries
+     * [43]France
+          + [44]Réseaux
+          + [45]Data Center
+          + [46]Green IT
+          + [47]IPv6
+          + [48]Collaboration
+          + [49]Sécurité
+          + [50]Smart Cities
+     * [51]Germany
+     * [52]Italy
+     * [53]Japan
+     * [54]Korea
+     * [55]Latin America
+     * [56]Netherlands
+     * [57]Poland
+     * [58]Portugal
+     * [59]Russia
+     * [60]Spain
+
+   [61]Cisco Blog > [62]Borderless Networks
+
+Cisco ONE Enterprise Networks Architecture: Programmability for WAN Networks
+
+   Satish Katpally
+   [63]Satish Katpally | July 8, 2013 at 11:10 am PST
+   ([64]2 Comments)
+
+   In my last two blogs I discussed the challenges Enterprises are facing
+   for their WAN, the differences between Enterprise needs in their LAN
+   and WAN, and how the traditional ONF model for SDN isn't practical for
+   the Enterprise WAN.  Let's now look at how the new Cisco ONE Enterprise
+   Architecture can address this.
+
+   Cisco ONE Enterprise Network Architecture
+
+   The new Cisco ONE Enterprise Networks Architecture based on [65]Cisco
+   Open Network Environment (ONE) was introduced at InterOp Las Vegas
+   during [66]Rob Soderbery's keynote, with a deeper dive in a blog by
+   [67]Inbar Lasser-Raab  (shown in Figure 2). Briefly, the 3 layers are
+   similar to SDN Architecture but are also vastly different in the
+   following ways:
+
+   ONE Enterprise Networks Architecture GameChanger
+     * Network Element Layer:  The Cisco ONE Enterprise Networks
+       Architecture is built upon a foundation of distributed intelligent
+       and programmable network devices. As explained above, the case for
+       an intelligent network device is strong for WAN and ONE Enterprise
+       Networks Architecture comprises of intelligent network devices at
+       the device layer.
+
+     * Control Layer: This is not a centralized controller function as
+       defined by SDN. This is more of a control layer that offers the
+       following:
+          + Automated Provisioning: With automated configuration of
+            network devices, the Cisco ONE Enterprise Networks
+            Architecture delivers speed and ease of provisioning across
+            the entire Enterprise network. This eliminates the per-device
+            provisioning and vastly improves the speed and accuracy of
+            adding new services consistently across the network.
+          + Analytics: The Control Layer also offers advanced analytics
+            across the entire Enterprise network, LANs and WAN. The
+            real-time analytics data is available for any applications to
+            use as well as for IT to monitor and diagnose any network
+            issues.
+     * Network-Aware Application Layer: Cisco ONE Enterprise Networks
+       Architecture enables applications and services to be network-aware
+       by abstracting away the network in the Control Layer and making
+       advanced network analytics available to the applications.
+       Applications and services can now be smart about the network
+       conditions and deliver an optimal user experience, securely, while
+       simplifying IT operations.
+
+   How Cisco ONE Enterprise Networks Architecture enhances Enterprise WAN
+   programmability?
+     * ONE Enterprise Networks Architecture is a 2-way street
+          + Applications and networks are mutually aware in Cisco ONE
+            Architecture which creates a robust ecosystem for resiliency,
+            whereas SDN is a one-way street, with the SDN Controller
+            centrally managing network devices, which does not scale to
+            WAN networks for reasons explained above.
+     * ONE Enterprise Networks Architecture scales to WAN networks:
+          + SDN Controller architecture is limited in scope to L2 networks
+            in a single data-center whereas the Cisco ONE Enterprise
+            Networks Architecture brings programmability to LAN and WAN
+            networks alike.
+          + Programmability in WAN networks requires intelligent network
+            devices that have programmatic access but are free to run
+            distributed protocols that make the network much more
+            resilient than with centralized control.
+     * ONE Enterprise Networks Architecture Control Layer is simpler and
+       agile:
+          + The Control Layer does not have to reinvent complex topology
+            control mechanisms and can easily query and maintain network
+            wide analytics. These analytics are useful to the
+            network-aware application layers.
+          + With an SDN Controller over WAN networks, again, one reinvents
+            the broken wheel of centralized end-to-end provisioning
+            similar to legacy ATM circuit-switched networks. The SDN
+            Controller complexity would be hard to manage and deploy.
+     * Coordination Costs
+          + The suggested ONF SDN architecture implies best of breed
+            solutions for each layer. This can increase coordination costs
+            for enterprises as they have to integrate different vendors'
+            solutions into a complex WAN network topology and manage
+            network throughput requirements across all the layers.
+            Coordinating the development and rollout of a new application
+            between all 3 layers over the WAN can be very expensive.
+          + Cisco ONE Enterprise Networks Architecture on the other hand
+            builds upon a foundation of intelligent Cisco network devices
+            with proven data-planes that implement complex distributed
+            protocols. Further, a simpler control layer that allows the
+            ease and speed of provisioning new applications and services
+            that can be provided by 3^rd party application developers.
+            This increased business agility and enables enterprises to
+            respond rapidly to new business opportunities.
+
+   Cisco ONE Enterprise Networks Architecture brings the networks and
+   applications closer together across the entire Enterprise network. It
+   is all about creating a feedback loop between the applications and the
+   network and allowing the applications to control the network at many
+   levels. Cisco ONE Enterprise Networks Architecture provides the tools
+   to make the Enterprise network programmable both in data-centers (LANs)
+   and at distributed sites (WANs). This is true and effective openness of
+   enterprise wide networks that increases the speed of the deployments of
+   new services and applications. Through open APIs at each layer and deep
+   access to network resources through programmability, Cisco ONE
+   Enterprise Networks Architecture creates the mutual awareness of
+   networks and applications. This mutual awareness helps enterprises
+   overcome the WAN challenges.
+
+   What's next:
+
+   In the next few blogs I'll cover additional aspects of SDN and Cisco
+   ONE Architecture.
+     * Cisco ONE Architecture and ONE Enterprise Networks Architecture
+     * Details around the control layer for ONE Enterprise Networks
+     * Elaborate on Use-Cases in Branch and Campus networks
+
+   Thanks for reading and please comment on any and all aspects. I look
+   forward to your comments. Stay tuned for the next blog post.
+
+
+   Tags: [68]Cisco ONE, [69]Cisco ONE Architecture, [70]Cisco ONE
+   Enterprise Networks Architecture, [71]enterprise networks,
+   [72]programmability, [73]SDN, [74]WAN Programmability
+
+   In an effort to keep conversations fresh, Cisco Blogs closes comments
+   after 60 days. Please visit the [75]Cisco Blogs hub page for the latest
+   content.
+
+2 Comments.
+
+    1. Kevin [76]July 8, 2013 at 2:50 pm
+       Your current "controlled availability" wall, with all the real info
+       sealed off, is not helping.
+       Vote    0 likes
+    2. July 9, 2013 at 10:18 am
+       [javascript]
+       Reputation
+       This meter represents your reputation at a 100% scale based on your
+       level of participation on the site.
+       [77]Find out more
+       Hi Kevin,
+       THanks for reading and for your comment!
+       Please see :
+       [78]http://www.cisco.com/web/solutions/trends/open_network_environm
+       ent/enterprise.html
+       for more details on the Enterprise products and programmability. I
+       am happy to share any further details that are of interest to you.
+       Satish
+       Vote    0 likes
+
+     * Subscribe Now ____________________ Submit
+       RSS Feed
+     *
+          + [79]LinkedIn
+          + [80]Google+
+          + [81]Pinterest
+          + [82]SlideShare
+          + [83]News@Cisco
+          + [84]Twitter
+          + [85]Facebook
+          + [86]YouTube
+          + [87]Flickr
+          + [88]More ->
+     * [89]Learn More
+       Already a rewards member? [90]Log In
+     * Blogs at a Glance
+          + [91]Most
+            Recent
+          + [92]Most
+            Commented
+          + [93]Popular
+       [94]How can the Internet of Everything Improve Our World?
+       [95]Mary Anne Petrillo | 04 Oct 2013
+       ([96]0 Comments)
+       [97]Tweet
+       [98]Sports & Entertainment, the Internet of Things, and the
+       Internet of Everything
+       [99]Chris White | 04 Oct 2013
+       ([100]0 Comments)
+       [101]Tweet
+       [102]Cisco Partners Recognized for Promoting Achievement in K-12
+       Education
+       [103]Alexis Raymond | 04 Oct 2013
+       ([104]0 Comments)
+       [105]Tweet
+       [106]Ender's Game - Coming to a Town Near You
+       [107]Adrian den Hartog | 04 Oct 2013
+       ([108]5 Comments)
+       [109]Tweet
+       [110]Behind the Scenes of Cisco Live Orlando
+       [111]Tamara Gardner | 04 Oct 2013
+       ([112]2 Comments)
+       [113]Tweet
+       [114]More Posts >
+       [115]How the World's Most Advanced Network Processor is Making the
+       Internet of Everything Possible
+       <[116]Nikhil Jayaram | 12 Sep 2013
+       ([117]26 Comments)
+       [118]Tweet
+       [119]Introducing Kvasir
+       <[120]Kurt Grutzmacher | 23 Sep 2013
+       ([121]16 Comments)
+       [122]Tweet
+       [123]Get Your Network Ready For iOS7
+       <[124]Jeevan Patil | 13 Sep 2013
+       ([125]11 Comments)
+       [126]Tweet
+       [127]#ExecInsights: Defend, Discover and Remediate with Security
+       Services
+       <[128]Chris Young | 10 Sep 2013
+       ([129]8 Comments)
+       [130]Tweet
+       [131]Tick Tock Goes the Server Clock
+       <[132]Todd Brannon | 10 Sep 2013
+       ([133]8 Comments)
+       [134]Tweet
+       [135]How the World's Most Advanced Network Processor is Making the
+       Internet of Everything Possible
+       [136]Nikhil Jayaram | 12 Sep 2013
+       ([137]26 Comments)
+       [138]Tweet
+       [139]Introducing Kvasir
+       [140]Kurt Grutzmacher | 23 Sep 2013
+       ([141]16 Comments)
+       [142]Tweet
+       [143]The Fifth Step to Enterprise Mobility: Defending Your Data
+       [144]Prashanth Shenoy | 11 Sep 2013
+       ([145]0 Comments)
+       [146]Tweet
+       [147]Cisco Announces Intent to Acquire WHIPTAIL
+       [148]Hilton Romanski | 10 Sep 2013
+       ([149]7 Comments)
+       [150]Tweet
+       [151]Get Your Network Ready For iOS7
+       [152]Jeevan Patil | 13 Sep 2013
+       ([153]11 Comments)
+       [154]Tweet
+     *
+
+       IFRAME:
+       [155]http://www.youtube.com/embed/rkVmpKUAMjA?list=PLB54CED506CFECD
+       C3&hl=en_US
+
+     * [156]Ad Banner
+     * Archives [Select........]
+          + Technology
+          + [157]Borderless Networks
+          + [158]Collaboration
+          + [159]Data Center and Cloud
+          + [160]Mobility
+          + [161]Security
+          + [162]Small Business
+          + [163]SP360:Service Provider
+          + [164]Video
+          + Industries
+          + [165]Education
+          + [166]Financial Services
+          + [167]Government
+          + [168]Healthcare
+          + [169]Manufacturing
+          + [170]Retail
+          + Support
+          + [171]Cisco Support Community
+          + Partners
+          + [172]Channels
+          + [173]Cisco Developer Network
+          + More From Cisco
+          + [174]Architect & DE Discussions
+          + [175]Connected Life Exchange
+          + [176]Digital and Social
+          + [177]High Peformance Computing Networking
+          + [178]Inside Cisco IT
+          + [179]Open at Cisco
+          + [180]Perspectives
+          + [181]TechWiseTV
+          + Corporate/News
+          + [182]The Platform
+          + [183]Corporate Social Responsibility
+          + [184]High Tech Policy
+          + [185]Inclusion and Diversity
+          + [186]Internet of Everything
+          + Countries and Regions
+          + [187]Brazil
+          + [188]Canada
+               o [189]English
+               o [190]French
+          + [191]Emerging Countries
+          + [192]France
+               o [193]Réseaux
+               o [194]Data Center
+               o [195]Green IT
+               o [196]IPv6
+               o [197]Collaboration
+               o [198]Sécurité
+               o [199]Smart Cities
+          + [200]Germany
+          + [201]Italy
+          + [202]Japan
+          + [203]Korea
+          + [204]Latin America
+          + [205]Netherlands
+          + [206]Poland
+          + [207]Portugal
+          + [208]Russia
+          + [209]Spain
+       [210]Contacts | [211]Feedback | [212]Help | [213]Site Map |
+       [214]Terms & Conditions | [215]Privacy Statement | [216]Cookie
+       Policy | [217]Trademarks
+       Legal Disclaimer
+       Some of the individuals posting to this site, including the
+       moderators, work for Cisco Systems. Opinions expressed here and in
+       any corresponding comments are the personal opinions of the
+       original authors, not of Cisco. The content is provided for
+       informational purposes only and is not meant to be an endorsement
+       or representation by Cisco or any other party. This site is
+       available to the public. No information you consider confidential
+       should be posted to this site. By posting you agree to be solely
+       responsible for the content of all information you contribute, link
+       to, or otherwise upload to the Website and release Cisco from any
+       liability related to your use of the Website. You also grant to
+       Cisco a worldwide, perpetual, irrevocable, royalty-free and
+       fully-paid, transferable (including rights to sublicense) right to
+       exercise all copyright, publicity, and moral rights with respect to
+       any original content you provide. The comments are moderated.
+       Comments will appear as soon as they are approved by the moderator.
+       [218]Switch to our mobile site
+
+References
+
+   Visible links
+   1. http://blogs.cisco.com/feed/
+   2. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/feed/
+   3. http://blogs.cisco.com/news/the-cios-dynamic-role/
+   4. http://blogs.cisco.com/channels/empowering-cisco-and-microsoft-partners-in-the-data-center/
+   5. http://blogs.cisco.com/
+   6. http://www.cisco.com/
+   7. https://twitter.com/share
+   8. http://blogs.cisco.com/borderless
+   9. http://blogs.cisco.com/collaboration
+  10. http://blogs.cisco.com/datacenter
+  11. http://blogs.cisco.com/wireless
+  12. http://blogs.cisco.com/security
+  13. http://blogs.cisco.com/smallbusiness
+  14. http://blogs.cisco.com/sp
+  15. http://blogs.cisco.com/video
+  16. http://blogs.cisco.com/education
+  17. http://blogs.cisco.com/financialservices
+  18. http://blogs.cisco.com/government
+  19. http://blogs.cisco.com/healthcare
+  20. http://blogs.cisco.com/manufacturing
+  21. http://blogs.cisco.com/retail
+  22. https://supportforums.cisco.com/blogs/
+  23. http://blogs.cisco.com/channels
+  24. http://developer.cisco.com/web/events-community/blogs
+  25. http://blogs.cisco.com/getyourbuildon
+  26. http://blogs.cisco.com/cle
+  27. http://blogs.cisco.com/socialmedia
+  28. http://blogs.cisco.com/performance
+  29. http://blogs.cisco.com/ciscoit
+  30. http://blogs.cisco.com/openatcisco
+  31. http://blogs.cisco.com/perspectives
+  32. http://blogs.cisco.com/cin
+  33. http://blogs.cisco.com/news
+  34. http://blogs.cisco.com/csr
+  35. http://blogs.cisco.com/gov
+  36. http://blogs.cisco.com/diversity
+  37. http://blogs.cisco.com/ioe
+  38. http://gblogs.cisco.com/br/
+  39. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/
+  40. http://canadablog.cisco.com/
+  41. http://ciscocanadafr.wordpress.com/
+  42. http://blogs.cisco.com/emerging
+  43. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/
+  44. http://gblogs.cisco.com/fr-reseaux/blog
+  45. http://gblogs.cisco.com/fr-datacenter/blog
+  46. http://gblogs.cisco.com/fr-greenit/blog
+  47. http://gblogs.cisco.com/fr-ipv6/blog
+  48. http://gblogs.cisco.com/fr-collaboration/blog
+  49. http://gblogs.cisco.com/fr-security/blog
+  50. http://gblogs.cisco.com/fr-smartcities/blog
+  51. http://gblogs.cisco.com/de
+  52. http://gblogs.cisco.com/it
+  53. http://gblogs.cisco.com/jp/
+  54. http://ciscokrblog.com/
+  55. http://cisco-latinoamerica.com/
+  56. http://gblogs.cisco.com/nl
+  57. http://gblogs.cisco.com/pl
+  58. http://gblogs.cisco.com/pt
+  59. http://gblogs.cisco.com/ru
+  60. http://gblogs.cisco.com/es
+  61. http://blogs.cisco.com/
+  62. http://blogs.cisco.com/category/borderless/
+  63. http://blogs.cisco.com/author/satishkatpally/
+  64. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/#comments
+  65. http://www.cisco.com/go/one
+  66. http://video.cisco.com/video/Events/Executive-Demos/Interop-2013-Cisco-Keynote-Demo/Events/ExecutiveDemos/2416067818001/
+  67. http://blogs.cisco.com/borderless/introducing-cisco-one-enterprise-networks-architecture-supporting-the-internet-of-everything/
+  68. http://blogs.cisco.com/tag/cisco-one/
+  69. http://blogs.cisco.com/tag/cisco-one-architecture/
+  70. http://blogs.cisco.com/tag/cisco-one-enterprise-networks-architecture/
+  71. http://blogs.cisco.com/tag/enterprise-networks/
+  72. http://blogs.cisco.com/tag/programmability/
+  73. http://blogs.cisco.com/tag/sdn/
+  74. http://blogs.cisco.com/tag/wan-programmability/
+  75. http://blogs.cisco.com/
+  76. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/#comment-758988
+  77. http://blogs.cisco.com/rewards-about
+  78. http://www.cisco.com/web/solutions/trends/open_network_environment/enterprise.html
+  79. http://www.linkedin.com/company/cisco
+  80. https://plus.google.com/106092229730683979920
+  81. http://pinterest.com/ciscosystems/
+  82. http://www.slideshare.net/ciscosystems
+  83. http://newsroom.cisco.com/dlls/index.html
+  84. http://twitter.com/CiscoEnterprise
+  85. http://www.facebook.com/CiscoBorderlessNetworks
+  86. http://youtubecisco.com/borderlessnetworks
+  87. http://www.flickr.com/photos/25679159@N03/
+  88. http://socialmedia.cisco.com/
+  89. http://blogs.cisco.com/rewards-about
+  90. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php
+  91. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/#tab1
+  92. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/#tab2
+  93. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/#tab3
+  94. http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/
+  95. http://blogs.cisco.com/author/maryannepetrillo/
+  96. http://blogs.cisco.com/csr/how-can-the-internet-of-everything-improve-our-world/#comments
+  97. https://twitter.com/share
+  98. http://blogs.cisco.com/news/sportsandioe/
+  99. http://blogs.cisco.com/author/chriswhite/
+ 100. http://blogs.cisco.com/news/sportsandioe/#comments
+ 101. https://twitter.com/share
+ 102. http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/
+ 103. http://blogs.cisco.com/author/alexisraymond/
+ 104. http://blogs.cisco.com/csr/cisco-partners-recognized-for-promoting-achievement-in-k-12-education/#comments
+ 105. https://twitter.com/share
+ 106. http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/
+ 107. http://blogs.cisco.com/author/adriandenhartog/
+ 108. http://blogs.cisco.com/datacenter/enders-game-coming-to-a-town-near-you/#comments
+ 109. https://twitter.com/share
+ 110. http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/
+ 111. http://blogs.cisco.com/author/tamaragardner/
+ 112. http://blogs.cisco.com/ciscoit/behind-the-scenes-of-cisco-live-orlando/#comments
+ 113. https://twitter.com/share
+ 114. http://blogs.cisco.com/2013/page/2
+ 115. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/
+ 116. http://blogs.cisco.com/author/nikhiljayaram/
+ 117. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments
+ 118. https://twitter.com/share
+ 119. http://blogs.cisco.com/security/introducing-kvasir/
+ 120. http://blogs.cisco.com/author/kurtgrutzmacher/
+ 121. http://blogs.cisco.com/security/introducing-kvasir/#comments
+ 122. https://twitter.com/share
+ 123. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/
+ 124. http://blogs.cisco.com/author/jeevanpatil/
+ 125. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments
+ 126. https://twitter.com/share
+ 127. http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/
+ 128. http://newsroom.cisco.com/christopher-young?articleId=614047
+ 129. http://blogs.cisco.com/news/execinsights-defend-discover-and-remediate-with-security-services/#comments
+ 130. https://twitter.com/share
+ 131. http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/
+ 132. http://blogs.cisco.com/author/toddbrannon/
+ 133. http://blogs.cisco.com/datacenter/tick-tock-goes-the-server-clock/#comments
+ 134. https://twitter.com/share
+ 135. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/
+ 136. http://blogs.cisco.com/author/nikhiljayaram/
+ 137. http://blogs.cisco.com/news/how-the-worlds-most-advanced-network-processor-is-making-the-internet-of-everything-possible/#comments
+ 138. https://twitter.com/share
+ 139. http://blogs.cisco.com/security/introducing-kvasir/
+ 140. http://blogs.cisco.com/author/kurtgrutzmacher/
+ 141. http://blogs.cisco.com/security/introducing-kvasir/#comments
+ 142. https://twitter.com/share
+ 143. http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/
+ 144. http://blogs.cisco.com/author/PrashanthShenoy/
+ 145. http://blogs.cisco.com/wireless/the-fifth-step-to-enterprise-mobility-defending-your-data/#comments
+ 146. https://twitter.com/share
+ 147. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/
+ 148. http://blogs.cisco.com/author/hilton-romanski/
+ 149. http://blogs.cisco.com/news/cisco-announces-intent-to-acquire-whiptail/#comments
+ 150. https://twitter.com/share
+ 151. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/
+ 152. http://blogs.cisco.com/author/jeevanpatil/
+ 153. http://blogs.cisco.com/wireless/get-your-network-ready-for-ios7/#comments
+ 154. https://twitter.com/share
+ 155. http://www.youtube.com/embed/rkVmpKUAMjA?list=PLB54CED506CFECDC3&hl=en_US
+ 156. http://iotwf.com/sign-up.html
+ 157. http://blogs.cisco.com/borderless
+ 158. http://blogs.cisco.com/collaboration
+ 159. http://blogs.cisco.com/datacenter
+ 160. http://blogs.cisco.com/wireless
+ 161. http://blogs.cisco.com/security
+ 162. http://blogs.cisco.com/smallbusiness
+ 163. http://blogs.cisco.com/sp
+ 164. http://blogs.cisco.com/video
+ 165. http://blogs.cisco.com/education
+ 166. http://blogs.cisco.com/financialservices
+ 167. http://blogs.cisco.com/government
+ 168. http://blogs.cisco.com/healthcare
+ 169. http://blogs.cisco.com/manufacturing
+ 170. http://blogs.cisco.com/retail
+ 171. https://supportforums.cisco.com/blogs/
+ 172. http://blogs.cisco.com/channels
+ 173. http://developer.cisco.com/web/events-community/blogs
+ 174. http://blogs.cisco.com/getyourbuildon
+ 175. http://blogs.cisco.com/cle
+ 176. http://blogs.cisco.com/socialmedia
+ 177. http://blogs.cisco.com/performance
+ 178. http://blogs.cisco.com/ciscoit
+ 179. http://blogs.cisco.com/openatcisco
+ 180. http://blogs.cisco.com/perspectives
+ 181. http://blogs.cisco.com/cin
+ 182. http://blogs.cisco.com/news
+ 183. http://blogs.cisco.com/csr
+ 184. http://blogs.cisco.com/gov
+ 185. http://blogs.cisco.com/diversity
+ 186. http://blogs.cisco.com/ioe
+ 187. http://gblogs.cisco.com/br/
+ 188. http://canadablog.cisco.com/
+ 189. http://canadablog.cisco.com/
+ 190. http://ciscocanadafr.wordpress.com/
+ 191. http://blogs.cisco.com/emerging
+ 192. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/
+ 193. http://gblogs.cisco.com/fr-reseaux/blog
+ 194. http://gblogs.cisco.com/fr-datacenter/blog
+ 195. http://gblogs.cisco.com/fr-greenit/blog
+ 196. http://gblogs.cisco.com/fr-ipv6/blog
+ 197. http://gblogs.cisco.com/fr-collaboration/blog
+ 198. http://gblogs.cisco.com/fr-security/blog
+ 199. http://gblogs.cisco.com/fr-smartcities/blog
+ 200. http://gblogs.cisco.com/de
+ 201. http://gblogs.cisco.com/it/
+ 202. http://gblogs.cisco.com/jp/
+ 203. http://ciscokrblog.com/
+ 204. http://cisco-latinoamerica.com/
+ 205. http://gblogs.cisco.com/nl
+ 206. http://gblogs.cisco.com/pl
+ 207. http://gblogs.cisco.com/pt
+ 208. http://gblogs.cisco.com/ru
+ 209. http://gblogs.cisco.com/es
+ 210. http://www.cisco.com/web/siteassets/contacts/index.html
+ 211. http://tools.cisco.com/cdc/feedbk/public/FeedbackAction.cdcfdb
+ 212. http://www.cisco.com/web/help/index.html
+ 213. http://www.cisco.com/web/siteassets/sitemap/index.html
+ 214. http://www.cisco.com/web/siteassets/legal/terms_condition.html
+ 215. http://www.cisco.com/web/siteassets/legal/privacy.html
+ 216. http://www.cisco.com/web/siteassets/legal/privacy.html#cookies
+ 217. http://www.cisco.com/web/siteassets/legal/trademark.html
+ 218. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/?wpmp_switcher=mobile
+
+   Hidden links:
+ 219. mailto:?subject=Cisco%20Blog%20E-Mail:Cisco%20ONE%20Enterprise%20Networks%20Architecture:%20Programmability%20for%20WAN%20Networks&body=I%20saw%20this%20post%20on%20Cisco%20Borderless%20Networks%20blog%20and%20thought%20you%20should%20read%20it.%0A%0ACisco%20ONE%20Enterprise%20Networks%20Architecture:%20Programmability%20for%20WAN%20Networks%0A%0Ahttp://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/%0A%0A****Disclaimer****%0A%0ACisco%20is%20not%20responsible%20for%20the%20content%20of%20this%20email,%20and%20its%20contents%20do%20not%20necessarily%20reflect%20Cisco%E2%80%99s%20views%20or%20opinions.%20Cisco%20has%20not%20verified%20the%20email%20address%20or%20name%20of%20the%20sender.
+ 220. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/
+ 221. http://blogs.cisco.com/rewards-profile/76190
+ 222. http://feeds.feedburner.com/CiscoBlogBorderlessNetworks
+ 223. http://blogs.cisco.com/borderless/cisco-one-enterprise-networks-architecture-programmability-for-wan-networks/
+ 224. http://blogs.cisco.com/wp-content/plugins/social-rewards/init.php

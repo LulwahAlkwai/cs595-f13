@@ -1,0 +1,392 @@
+   #[1]Analysis Intelligence RSS Feed [2]Analysis Intelligence » Pattern
+   of Life and Temporal Signatures of Hacker Organizations Comments Feed
+   [3]On the Ball: Recorded Future Calling Out Violent Demonstrations in
+   Dhaka - Before They Happened [4]How Inspire Magazine Uniquely Motivates
+   Acts of Terrorism
+
+[5]Intelligence Analysis
+
+Smart open source intelligence analysis and government analytics
+
+   [6][logo-250x46.png]
+
+     * [7]Home
+     * [8]About
+     * [9]Geopolitical Monitoring
+     * [10]Cyber Threat Monitoring
+     * [11]World Leader Tracking
+          + [12]Travel Tracker
+          + [13]Quotation Tracker
+          + [14]Meetings Tracker
+
+   9
+   May/13
+
+[15]Pattern of Life and Temporal Signatures of Hacker Organizations
+
+   by [16]holden under [17]Cyber Security
+
+   Observing an organization or person by their [18]activities using web
+   intelligence can provide interesting clues about who and where they
+   actually are. These clues can include targets, methods, tools,
+   language, etc. This is true in both the physical and cyber world.
+
+   In this post we'll look at the temporal signature of activities by
+   hacker groups and use those to discern their pattern of life -
+   basically their work week - for matching with national work
+   weeks/schedules.
+
+   Top level conclusion?
+
+   Different groups have different temporal signatures that could
+   potentially be used to differentiate between those on very regular
+   schedules - i.e. working a desk job (nation state?) - and those on
+   nights/weekend schedules - independent hackers? - as well as to
+   establish their geographic location.
+
+   Temporal analysis has long played a part in cyber defense. For example,
+   [19]Bob Gourley, who was the Director of Intelligence for a new (at the
+   time) military unit responsible for defending all DoD networks,
+   indicated in a conversation with me the [20]initial Moonlight Maze
+   intrusion set matched up very well with working hours in Moscow.
+
+   This was just one of many other factors that pointed to Russian
+   involvement, but it helped orient analysts.
+
+   Another example is how [21]Mandiant used observations of hacker team
+   activity as one signal of indicating a group being Chinese (or in other
+   other countries in same time zone):
+
+     "Hacker teams [22]regularly began work, for the most part, at 8 a.m.
+     Beijing time. Usually they continued for a standard work day, but
+     sometimes the hacking persisted until midnight."
+
+   KPMG calls out in their [23]Cyber threat intelligence and the lessons
+   from law enforcement report:
+
+     "Time: Are there any temporal patterns regarding cyber attacks and,
+     similarly, are your information assets more vulnerable at certain
+     times?"
+
+Sample world wide work week patterns
+
+   A quick [24]summary of work week data from Wikipedia yields us the
+   following on work week from around the world:
+   [25]Global Weekend Calendar
+
+   Work Week Calendar
+
+Analyzing hacker groups given work week as baseline
+
+   Now given the above temporal signatures - can we say anything about
+   various hacker groups? We'll find out using the Recorded Future data
+   set, and in particular 250,000 cyber threat events involving various
+   groups and individuals and times of attacks all collected from open web
+   sources ranging from Twitter and other social media to government sites
+   to hacker forums to regular news in seven different languages.
+
+   We've taken all the time points of the events and transformed them to
+   day of week so that we can determine what days various groups activate
+   and other patterns.
+
+   Below we look at a series of hacker groups - Syrian Electronic Army,
+   Anonymous, Al Qassam Cyber Fighters, Lulzsec, Zcompany, and TeaMp0ison
+   - versus a large group of other cyber events that either fall with
+   other groups (Nation states, individuals, and other groups) as well as
+   non-attributed attacks. Our data collection harvests open source data,
+   so obviously, there is potential for skewing towards more media
+   oriented groups (e.g. Anonymous, and yes, we have more data on them),
+   but given that we're looking at the pattern, not the volume, this
+   should be less of an issue.
+   [26]Temporal Patterns of Cyber Attacks
+
+   Temporal Patterns of Cyber Attacks
+
+   The graph above visualizes weekday distribution for each group. A
+   statistical test for non-random distribution is at the very bottom of
+   the post.
+
+Group-by-group observations
+
+     * Syrian Electronic Army
+          + Activates right after Syrian weekend. Between actual name and
+            pattern of life/temporal signature this certainly indicates a
+            group located in Syria that takes time off during the weekend,
+            i.e. potentially a state sponsored group on a paid schedule.
+     * Anonymous
+          + Anonymous interestingly peaks in activity during the weekend,
+            which indicates that they are mostly students or western
+            people with "normal jobs" that use weekends for hacking. Good
+            example would be how [27]Reuters recently fired an alleged
+            Anonymous member, who probably had a busy regular workweek. We
+            will be back to take apart the temporal signature by various
+            Anonymous groups around the world.
+     * Al Qassam Cyber Fighters
+          + Al Qassam Cyber Fighters activates on Mondays and Wednesdays.
+            Given their focus on hitting US and European banks this could
+            make a lot of sense: hit them Monday morning when online
+            banking activity peaks up. But you could also argue that the
+            pattern indicates activating after Saturday, i.e. a regular
+            state-employed hacker week in the middle East.
+     * Lulzsec
+          + Lulzsec (the breakout group from Anonymous) is interestingly
+            enough completely inverted in its temporal signature from
+            Anonymous. It peaks on Wednesday (and this is across many
+            observations.) This might just be the peak of internet
+            traffic...
+     * ZCompany
+          + Fits the "modern Islamic country" calendar perfectly: key
+            activity is Monday-Thursday with little activity
+            Friday-Sunday. The organized work schedule may indicate a
+            state actor/paid schedule. It could also point to Pakistan,
+            which aligns with ZCompany's [28]targeting of India.
+     * TeaMp0ison
+          + This rival group to Lulzsec activates Tuesday-Wednesday. It's
+            targeting is inconsistent but includes anti-Islamic targets.
+
+Cross correlation analysis
+
+   There is great potential for cross correlation analysis here:
+     * Compare activity with temporal signatures other than the work week
+       such as Thanksgiving, Christmas break, Spring break, Ramadan, etc.
+     * Compare group activity to their Twitter patterns through the use
+       of [29]http://sleepingtime.org/. Potentially a very insightful
+       cross-correlation to be had with this data, for example, TeaMp0ison
+       - [30]http://sleepingtime.org/teamp0ison.
+     * Correlate with other pattern of life variables: targeting, human
+       language used, people association, etc.
+     * Correlate/normalize vs. general internet activity per country
+       potentially with [31]Internet Census data. Likewise, the data from
+       [32]HoneyNet would be powerful to mash up and investigate.
+     * If you had access to proprietary IP level data of attacks by these
+       groups you could obviously cross-correlate those activities in a
+       very powerful way. Unfortunately, such data is less readily
+       available to the public.
+
+Conclusion
+
+   Temporal signatures can be helpful in developing pattern of life
+   analysis on groups in cyberspace. Obviously it's only one signal, but
+   potentially a quite interesting one.
+
+   Appendix - comments on data and analysis
+     * Data is from Recorded Future collection activities, explore
+       interactively at [33]www.recordedfuture.com
+     * Time stamp is event time, which should be time of event. However,
+       given the nature of cyber attacks it could very well be time of
+       discovery/publication.
+     * There are multiple normalizations that could be done to this data -
+       both within the domain of cyber events as well normalization vs. a
+       total event metric - and we will be back with that.
+     * As a statistical test we did a chi squared test on likelihood that
+       day of week is unrelated a cyber attack. Results below - day of
+       week is significant for all groups except for ZCompany.
+
+Statistical Significance
+
+   Anonymous.p.value               0.000000e+00
+
+   Lulzsec.p.value                1.859388e-155
+
+   Qassam Cyber Fighters.p.value   1.012541e-09
+
+   Syrian Electronic Army.p.value  1.349523e-17
+
+   TeaMp0ison.p.value              8.786394e-07
+
+   ZCompany.p.value                7.409912e-02
+
+   Untagged.p.value                0.000000e+00
+
+Events by Group per Day
+
+                                        Su      Mo      Tu      We      Th
+        Fr      Sa
+
+    Anonymous              5199  3631  3394  4079  5890  4321  6587
+
+    Lulzsec                        456   488   628   924   257   389   208
+
+    Qassam Cyber Fighters     59    91    51    75    37    43    28
+
+    Syrian Electronic Army    75    82    51    46    39    22     8
+
+    TeaMp0ison               1     6    13    17    26     6     8
+
+    ZCompany                   1     4     8     6     6     1     2
+
+    Untagged                     31629 50451 51697 53206 53699 46981 37949
+
+   [34]cyber defense, [35]hacker organizations, [36]temporal analysis,
+   [37]temporal patterns of hackers, [38]time signatures
+
+Leave a Reply
+
+   [39]Click here to cancel reply.
+
+   ______________________ Name (required)
+
+   ______________________ Mail (will not be published) (required)
+
+   ______________________ Website
+
+
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+   ________________________________________________________
+
+   Leave comment
+
+   [40]RSS feed for this post (comments) · [41]TrackBack URI
+   ____________________ Search
+   [42][rss.png]
+
+
+
+   Better Understand Trends in Big Data
+   [43]Free White Paper
+
+
+
+Recent Posts
+
+     * [44]Head of Iran's Cyber Warfare Program Latest Victim in Series of
+       Assassinations
+     * [45]Recorded Future Transforms for Maltego
+     * [46]Update on Syrian Rebel Media Coordinators
+     * [47]Diplomatic Meetings as Targets for Syrian Cyber Attacks
+     * [48]Syrian Electronic Army inspired by previous Anonymous hack of
+       Melbourne IT?
+
+
+
+Join Recorded Future
+
+   Recorded Future software helps businesses anticipate risks and
+   capitalize on opportunities. Every day.
+   FREE SIGN UP
+
+Recent Posts
+
+     * [49]Head of Iran's Cyber Warfare Program Latest Victim in Series of
+       Assassinations
+     * [50]Recorded Future Transforms for Maltego
+     * [51]Update on Syrian Rebel Media Coordinators
+     * [52]Diplomatic Meetings as Targets for Syrian Cyber Attacks
+     * [53]Syrian Electronic Army inspired by previous Anonymous hack of
+       Melbourne IT?
+
+Archives
+
+     * [54]October 2013
+     * [55]September 2013
+     * [56]August 2013
+     * [57]July 2013
+     * [58]June 2013
+
+Tags
+
+   [59]africa [60]al Qaeda [61]Anonymous [62]benghazi [63]china
+       [64]conflict [65]cyber attacks [66]cyber security [67]egypt
+       [68]elections [69]hezbollah [70]iran [71]Israel [72]libya
+       [73]middle east [74]muslim brotherhood [75]open source intelligence
+       [76]osint [77]pakistan [78]protests [79]syria [80]Terrorism
+       [81]timeline [82]unrest
+
+   Copyright © 1996-2010 Analysis Intelligence. All rights reserved.
+
+        iDream theme by [83]Templates Next | Powered by [84]WordPress
+
+References
+
+   1. http://analysisintelligence.com/feed/
+   2. http://analysisintelligence.com/cyber-defense/temporal-signatures-of-hacker-organizations/feed/
+   3. http://analysisintelligence.com/intelligence-analysis/on-the-ball-recorded-future-calling-out-violent-demonstrations-in-dhaka-before-they-happened/
+   4. http://analysisintelligence.com/terrorism/inspire-magazine-targets/
+   5. http://analysisintelligence.com/
+   6. https://www.recordedfuture.com/
+   7. http://analysisintelligence.com/
+   8. http://analysisintelligence.com/about/
+   9. http://analysisintelligence.com/geopolitical-future-monitoring-by-continent/
+  10. http://analysisintelligence.com/cyber-threat-monitoring/
+  11. http://analysisintelligence.com/world-leader-monitoring/
+  12. http://analysisintelligence.com/world-leader-monitoring/world-leader-travel-plans/
+  13. http://analysisintelligence.com/world-leader-monitoring/world-leader-quotations/
+  14. http://analysisintelligence.com/world-leader-monitoring/diplomatic-meeting-monitor/
+  15. http://analysisintelligence.com/cyber-defense/temporal-signatures-of-hacker-organizations/
+  16. http://analysisintelligence.com/author/holden/
+  17. http://analysisintelligence.com/category/cyber-defense/
+  18. https://www.recordedfuture.com/2013/oren-falkowitz-web-intelligence/
+  19. http://ctovision.com/author/bobgourley/
+  20. http://en.wikipedia.org/wiki/Moonlight_Maze
+  21. https://www.mandiant.com/
+  22. http://www.cnbc.com/id/100421708
+  23. http://www.kpmg.com/Global/en/IssuesAndInsights/ArticlesPublications/Documents/cyber-threat-intelligence-final3.pdf
+  24. http://en.wikipedia.org/wiki/Workweek_and_weekend
+  25. http://analysisintelligence.com/wp-content/uploads/2013/05/Screen-Shot-2013-05-08-at-4.28.35-PM.png
+  26. http://analysisintelligence.com/wp-content/uploads/2013/05/Screen-Shot-2013-05-08-at-4.46.07-PM.png
+  27. http://www.npr.org/blogs/thetwo-way/2013/04/22/178497871/reuters-fires-editor-charged-in-anonymous-hacking
+  28. http://thehackernews.com/2011/06/774-websites-hacked-by-zcompany-hacking.html
+  29. http://sleepingtime.org/
+  30. http://sleepingtime.org/teamp0ison
+  31. http://internetcensus2012.bitbucket.org/paper.html
+  32. http://map.honeynet.org/
+  33. http://www.recordedfuture.com/
+  34. http://analysisintelligence.com/tag/cyber-defense-2/
+  35. http://analysisintelligence.com/tag/hacker-organizations/
+  36. http://analysisintelligence.com/tag/temporal-analysis/
+  37. http://analysisintelligence.com/tag/temporal-patterns-of-hackers/
+  38. http://analysisintelligence.com/tag/time-signatures/
+  39. http://analysisintelligence.com/cyber-defense/temporal-signatures-of-hacker-organizations/#respond
+  40. http://analysisintelligence.com/cyber-defense/temporal-signatures-of-hacker-organizations/feed/
+  41. http://analysisintelligence.com/cyber-defense/temporal-signatures-of-hacker-organizations/trackback/
+  42. http://feeds.feedburner.com/AnalysisIntelligence
+  43. http://bit.ly/16PIUeq
+  44. http://analysisintelligence.com/geopolitics/iranian-scientist-assassinations/
+  45. http://analysisintelligence.com/intelligence-analysis/recorded-future-transforms-for-maltego/
+  46. http://analysisintelligence.com/intelligence-analysis/syrian-rebel-media-coordinators-update/
+  47. http://analysisintelligence.com/cyber-defense/political-travel-spear-phishing/
+  48. http://analysisintelligence.com/cyber-defense/syrian-electronic-army-melbourne-it/
+  49. http://analysisintelligence.com/geopolitics/iranian-scientist-assassinations/
+  50. http://analysisintelligence.com/intelligence-analysis/recorded-future-transforms-for-maltego/
+  51. http://analysisintelligence.com/intelligence-analysis/syrian-rebel-media-coordinators-update/
+  52. http://analysisintelligence.com/cyber-defense/political-travel-spear-phishing/
+  53. http://analysisintelligence.com/cyber-defense/syrian-electronic-army-melbourne-it/
+  54. http://analysisintelligence.com/2013/10/
+  55. http://analysisintelligence.com/2013/09/
+  56. http://analysisintelligence.com/2013/08/
+  57. http://analysisintelligence.com/2013/07/
+  58. http://analysisintelligence.com/2013/06/
+  59. http://analysisintelligence.com/tag/africa/
+  60. http://analysisintelligence.com/tag/al-qaeda/
+  61. http://analysisintelligence.com/tag/anonymous/
+  62. http://analysisintelligence.com/tag/benghazi/
+  63. http://analysisintelligence.com/tag/china/
+  64. http://analysisintelligence.com/tag/conflict/
+  65. http://analysisintelligence.com/tag/cyber-attacks/
+  66. http://analysisintelligence.com/tag/cyber-security/
+  67. http://analysisintelligence.com/tag/egypt/
+  68. http://analysisintelligence.com/tag/elections/
+  69. http://analysisintelligence.com/tag/hezbollah/
+  70. http://analysisintelligence.com/tag/iran/
+  71. http://analysisintelligence.com/tag/israel/
+  72. http://analysisintelligence.com/tag/libya/
+  73. http://analysisintelligence.com/tag/middle-east/
+  74. http://analysisintelligence.com/tag/muslim-brotherhood/
+  75. http://analysisintelligence.com/tag/open-source-intelligence/
+  76. http://analysisintelligence.com/tag/osint-2/
+  77. http://analysisintelligence.com/tag/pakistan/
+  78. http://analysisintelligence.com/tag/protests/
+  79. http://analysisintelligence.com/tag/syria/
+  80. http://analysisintelligence.com/tag/terrorism/
+  81. http://analysisintelligence.com/tag/timeline/
+  82. http://analysisintelligence.com/tag/unrest/
+  83. http://www.templatesnext.org/
+  84. http://wordpress.org/

@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta charset="UTF-8" />
+<title>[UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ! | Evernote Tech Blog</title>
+<link href="http://gmpg.org/xfn/11" rel="profile" />
+<link href="http://www.evernote.com/about/media/css/reset.css" rel="stylesheet" type="text/css" media="all" />
+<link href="http://www.evernote.com/about/media/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="http://blog.evernote.com/tech/wp-content/themes/evernote-techblog/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="http://blog.evernote.com/tech/xmlrpc.php" rel="pingback" />
+<!--[if IE 6]>
+	<link href="http://evernote.com/about/media/css/ie6.css" rel="stylesheet" type="text/css" />
+	<script src="http://evernote.com/about/media/js/belated_png-0.0.8a.min.js" type="text/javascript"></script>
+<![endif]-->
+<!--[if IE 7]>
+	<link href="http://evernote.com/about/media/css/ie7.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<!--[if IE]>
+	<link href="http://evernote.com/about/media/css/ie.css" rel="stylesheet" type="text/css" />
+<![endif]-->
+<link href="http://www.evernote.com/about/media/img/favicon.ico" rel="Shortcut Icon" type="image/x-icon" />
+<script type="text/javascript" src="http://static.evernote.com/noteit.min.js"></script>
+<script type="text/javascript" src="http://blog.evernote.com/tech/wp-content/themes/evernote-techblog/js/functions.js"></script>
+<link rel="alternate" type="application/rss+xml" title="Evernote Tech Blog &raquo; Feed" href="http://blog.evernote.com/tech/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Evernote Tech Blog &raquo; Comments Feed" href="http://blog.evernote.com/tech/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Evernote Tech Blog &raquo; [UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ! Comments Feed" href="http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/feed/" />
+<script type='text/javascript' src='http://blog.evernote.com/tech/wp-includes/js/comment-reply.min.js?ver=3.5.2'></script>
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://blog.evernote.com/tech/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://blog.evernote.com/tech/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='New version of Debian is released' href='http://blog.evernote.com/tech/2013/05/07/hello-wheezy-squeeze-is-now-oldstable/' />
+<link rel='next' title='An Inside Look at Type Ahead Search in Evernote' href='http://blog.evernote.com/tech/2013/05/21/an-inside-look-at-type-ahead-search-in-evernote/' />
+<meta name="generator" content="WordPress 3.5.2" />
+<link rel='canonical' href='http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/' />
+<link rel='shortlink' href='http://blog.evernote.com/tech/?p=1097' />
+
+	<meta property="og:title" content="[UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ!"/>
+	<meta property="og:site_name" content="Evernote Tech Blog"/>
+	<meta property="og:image" content="http://blog.evernote.com/tech/files/2013/05/intel_design-150x150.png"/>
+
+	<script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-285778-10']);
+_gaq.push(['_trackPageview']);
+(function() {
+var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+})();
+</script>
+<meta id="syntaxhighlighteranchor" name="syntaxhighlighter-version" content="3.1.5" />
+</head>
+
+
+<body class="single single-post postid-1097 single-format-standard">
+
+
+	<div id="container">
+		<div id="top"><div id="skip"><a href="#content" title="skip navigation" accesskey="2">Skip to main content</a></div></div>
+		<div id="container2">
+
+		<div id="header"><div class="row">
+
+						<a href="http://www.evernote.com/about/home.php"><img src="http://www.evernote.com/about/media/img/logo.png" alt="Evernote logo" id="sitelogo" /></a>
+			<div id="center_links">
+				<span class="products">
+					<a href="#" id="silo_products">Products</a>
+					<div id="mega_drop">
+						<div class="accent"></div>
+						<ul>
+							<li class="evernote"><a href="http://www.evernote.com/evernote/" ><span class="evn_prod">Evernote</span> Remember everything</a></li>
+							<li class="skitch"><a href="http://www.evernote.com/skitch/"><span class="evn_prod">Skitch</span> Draw attention</a></li>	
+							<li class="hello"><a href="http://www.evernote.com/hello/"><span class="evn_prod">Evernote Hello</span> Remember people</a></li>
+							<li class="food"><a href="http://www.evernote.com/food/"><span class="evn_prod">Evernote Food</span> Preserve your food memories</a></li>
+							<li class="clearly"><a href="http://www.evernote.com/clearly/"><span class="evn_prod">Evernote Clearly</span>  Distraction-free reading</a></li>
+							<li class="peek"><a href="http://www.evernote.com/peek/"><span class="evn_prod">Evernote Peek</span> Study smarter</a></li>
+						</ul>
+					</div><!-- /mega_drop -->
+				</span>| <a href="http://blog.evernote.com/" id="silo_noteworthy">Noteworthy Blog</a> | <a href="http://www.evernote.com/about/trunk/" id="silo_integration">The Trunk</a>
+			</div>
+			<div id="utility_links">
+				<p class="right">
+					<a href="https://www.evernote.com/Home.action" id="silo_sign_in">Web Sign In</a><br />
+					<a href="https://www.evernote.com/Registration.action" id="silo_get_started">Create account</a><br />
+					<a href="http://www.evernote.com/about/premium/" id="silo_premium">Go Premium</a></p>
+			</div>
+		</div><!--/row--></div><!-- /header -->
+
+
+		<div id="colwrap">
+
+
+<div id="content" role="main">
+
+	<div id="techblog_banner">
+	<h1><a href="/tech/">Evernote Tech Blog</a></h1>
+	<p>The Care and Feeding of Elephants</p>
+</div>
+	
+
+	<div id="post-1097" class="post-1097 post type-post status-publish format-standard hentry category-api tag-api-2 tag-event tag-evernote tag-hackathon tag-honda tag-leap-motion tag-node">
+	
+		<div id="post-1097-title" class="entry-title">
+			<h2>[UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ!</h2>
+		</div><!-- .entry-title -->
+	
+	
+		<div class="entry-meta">
+			<span class="entry-date">May 13, 2013</span> | Posted by <span class="author vcard"><a class="url fn n" href="http://blog.evernote.com/tech/author/ctraganos/" title="View all posts by Chris Traganos">Chris Traganos</a></span> in <a href="http://blog.evernote.com/tech/category/api/" title="View all posts in API" rel="category tag">API</a>			<div class="postmeta">
+	
+	<div class="shareitems">
+		<div class="facebook_like_button" style=""><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fblog.evernote.com%2Ftech%2F2013%2F05%2F13%2Fevernotehonda-design-build-weekend%2F&amp;layout=button_count&amp;show_faces=false&amp;action=like&amp;colorscheme=light&amp;width=100" scrolling="no" frameborder="0" allowTransparency="true" style="border:none; overflow:hidden; width:100px; height:20px"></iframe></div>		&nbsp;
+		<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/" data-text="[UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ!" data-count="horizontal" data-via="evernote">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		&nbsp;
+		<a href="#" onclick="Evernote.doClip({
+				title: '[UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ!', 
+				url: 'http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/', 
+				code: 'en-TechBlog', 
+				header: document.getElementById('post-1097-title'), 
+				content: document.getElementById('post-1097-content')
+			});return false;">
+			<img style="padding-bottom:2px" src="http://static.evernote.com/article-clipper.png" />
+		</a>
+	</div>
+
+				<div class="comments"><a href="http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/#comments" title="Comment on [UPDATE] The Evernote/Honda Hackathon: Our first Design &amp; Build Weekend at Evernote HQ!">1 comment</a></div>
+		
+</div><!-- /postmeta -->		</div><!-- .entry-meta -->
+	
+	
+		<div id="post-1097-content" class="entry-content">
+			<p><a href="http://blog.evernote.com/tech/files/2013/05/design_and_build_weekend.jpg"><img class="alignnone size-full wp-image-1098" alt="Design and Build Weekend" src="http://blog.evernote.com/tech/files/2013/05/design_and_build_weekend.jpg" width="620" height="175" /></a></p>
+<p><strong>Update:</strong> We are excited to add <a href="http://getpebble.com/">Pebble smart watches</a> to our hackathon! Read below for details.</p>
+<p>Join us in 3 weeks in Silicon Valley for our first ever Design &amp; Build Weekend at Evernote HQ! After hosting many designer/developer events and workshops around the world, we are thrilled to finally bring the hackathon to our home turf and challenge app creators to build projects that sync with the Evernote API.</p>
+<p><a href="http://evernote-hq-hackathon.eventbrite.com/#">To attend our Design &amp; Build Weekend, please RSVP for the event here »</a></p>
+<h2>All-New Integrations</h2>
+<p>We have some fantastic partners for the hackathon and our ongoing <a title="Evernote Devcup" href="http://devcup.evernote.com/">Evernote Devcup </a>challenge. Our co-host for the design &amp; build weekend is <a href="http://hondasvl.com/">Honda Silicon Valley Lab (HSVL)</a>, Honda&#8217;s open innovation lab in Silicon Valley. HSVL will be launching a brand new API platform for developers at the event. In addition, we are introducing a new Hardware Hack section for the event, with special guests Leap Motion and NODE sensor!</p>
+<h3>Honda Silicon Valley Lab (HSVL) API</h3>
+<p><a href="http://hondasvl.com/"><img class="alignnone size-full wp-image-1102" alt="Honda Silicon Valley Labs" src="http://blog.evernote.com/tech/files/2013/05/hsvl.jpg" width="620" height="138" /></a><br />
+Honda Silicon Valley Lab is introducing the HSVL API platform for connecting into smart cars and providing developers with active data. For developers interested in the quantified self, the internet of everything, and life logging &#8211; this will be a brand new set of data for your applications. In addition, this hackathon will connect HSVL with developers in the community working on compelling and interesting use cases for the future of mobility.</p>
+<h2>Intelligent Design &amp; Hardware Hacks</h2>
+<p><a href="http://evernote-hq-hackathon.eventbrite.com/#"><img class="alignnone size-full wp-image-1152" alt="intel_design" src="http://blog.evernote.com/tech/files/2013/05/intel_design.png" width="620" height="174" /></a></p>
+<h3>Leap Motion</h3>
+<p>Evernote users have stored billions of notes in their accounts for the last 6+ years. The API team at Evernote loves to feature developers who build new ways for exploring notes and helping our 50+ million users get more out of Evernote.</p>
+<p>When it comes to the future of the user interface, we are thrilled to include <a href="https://www.leapmotion.com/">Leap Motion</a> for the Design &amp; Build Weekend! We will be challenging design and dev teams to envision hand and gesture control of notes. This could include recipe book flipping, fast sorting, notebook stack visualization, and more.</p>
+<p>The best app that uses Leap Motion and Evernote will receive Leap Motion devices and the possibility of being featured in their new app store, <a href="https://www.leapmotion.com/apps">Air Space</a>. <a href="http://discussion.evernote.com/topic/37955-leap-motion-evernote-devcup-apps/">Explore the Devcup forum for Leap Motion app ideas »</a></p>
+<h3>Pebble</h3>
+<p><a href="http://getpebble.com/">Pebble</a>, one of the early trailblazers in the era of wearable technology, is the first smartwatch built for the 21st Century. Connecting wirelessly to Android and iOS smartphones via Bluetooth, the Pebble Smartwatch brings an high resolution e-paper display to your wrist, displaying notifications and information directly from a mobile device.</p>
+<p>But the true power of Pebble will come from apps. Track your speed, distance, and pace data with a cycling or running app that delivers information to the watchface, or pause and skip tracks on your phone’s music app with the touch of a button. The Pebble SDK is versatile and ready for developers to build with it.</p>
+<p>At the Hackathon, Pebble will provide support for all the teams working with their SDK, and the top three teams will win a device to continue their development. Winning teams will be automatically entered into Devcup and will win watches for the entire team as well as a chance to win Devcup Gold.</p>
+<h3>NODE</h3>
+<p><a href="https://app.yesware.com/tl/6ebdb9e71b8482f010d173481ad5c9fe2a11b201/75b7dc17ef9501244be98964b9676f52/29b8cb1be9df0b042322ca2d105fc9a8?ytl=http%3A%2F%2Fwww.nodesensors.com">NODE</a> is a wireless sensor platform that can measure anything from movement and color to gasses, depending on the interchangeable sensors.<br />
+Node began on Kickstarter in 2012 and has since added many new sensors including the CHROMA that allows for accurate color scanning, previously only available with expensive spectrometers. The CHROMA brings color matching for paints or fabrics to your smart device and is a must have for contractors, artists and interior architects. Check out <a href="https://app.yesware.com/tl/6ebdb9e71b8482f010d173481ad5c9fe2a11b201/75b7dc17ef9501244be98964b9676f52/dc49fc02b6e2796f5a07bbdaf9897083?ytl=http%3A%2F%2Fnodesensors.com">nodesensors.com</a> to learn more about the NODE platform. There are countless ways users can create a collection of data in Evernote with Node to help them understand more about the world around them. Can you bring the power of mobile sensors to Evernote?</p>
+<p>Every team that develops a working NODE app can keep their NODE, will be featured on the NODE website and will get a free ticket to the upcoming NODEVCON.</p>
+<h2>Weekend Workshops</h2>
+<p><a href="http://blog.evernote.com/tech/files/2013/05/evernote_workshops.png"><img class="alignnone size-full wp-image-1101" alt="Workshops" src="http://blog.evernote.com/tech/files/2013/05/evernote_workshops.png" width="614" height="124" /></a></p>
+<p>Collaboration and learning come together at our hackathons, and the main tool we support this ecosystem of innovation is through weekend workshops. Attendees of the Design &amp; Build Weekend are invited to all our open workshops to learn more about the specific technologies involved and jumpstart their projects.</p>
+<p><em>Some highlights for the weekend workshops:</em></p>
+<ul>
+<li>Evernote API overview (basic &amp; advanced)</li>
+<li>HSVL API overview</li>
+<li>Leap Motion SDK overview</li>
+<li>Node SDK overview</li>
+<li>Amazon Web Services getting started</li>
+<li>Startup pitch training workshop</li>
+</ul>
+<h2>Design &amp; Build Weekend Hackathon and the Evernote Devcup</h2>
+<p><a href="http://devcup.evernote.com/"><img class="alignnone size-full wp-image-1099" alt="Evernote Devcup" src="http://blog.evernote.com/tech/files/2013/05/devcup_614_banner1.png" width="614" height="218" /></a></p>
+<p>All applications built over the weekend are eligible for entry in the Evernote Devcup, our annual developer competition. To learn more about the global competition for apps that integrate with the Evernote API, <a href="http://devcup.evernote.com/">click here »</a></p>
+<h2>RSVP and Join us at Evernote HQ!</h2>
+<p><a href="http://evernote-hq-hackathon.eventbrite.com/#">To attend our Design &amp; Build Weekend, please RSVP for the event here »</a></p>
+<p><a href="http://evernote-hq-hackathon.eventbrite.com/#"><img class="alignnone size-full wp-image-1100" alt="Hackathon" src="http://blog.evernote.com/tech/files/2013/05/evernote_developers_hacking.jpg" width="614" height="135" /></a></p>
+					</div><!-- .entry-content -->
+	
+	
+		<div class="entry-utility">
+					</div><!-- .entry-utility -->
+
+	</div><!-- #post-## -->
+
+	
+
+
+
+
+
+
+
+
+<div id="comments_wrap"><div id="comments">
+
+		<div id="comments-intro">
+			<h2 id="comments-title">One Comment</h2>
+			<div class="comments-rss">
+				<a href='http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/feed/'>Subscribe to comments</a>			</div>
+		</div>
+
+		
+		<ol class="commentlist">
+				
+	<li class="comment even thread-even depth-1" id="li-comment-4111">
+		<div id="comment-4111">
+		<div class="comment-data"><div class="comment-data2">
+
+			<div class="avatarnreply">
+			 	<img alt='' src='http://1.gravatar.com/avatar/9e47cd7f104784897736ca2c42498196?s=78&amp;d=http%3A%2F%2Fblog.evernote.com%2Ftech%2Fwp-content%2Fthemes%2Fevernote-techblog%2Fimages%2Fcomment-avatar.png%3Fs%3D78&amp;r=G' class='avatar avatar-78 photo' height='78' width='78' />				<div class="reply">
+					<a class='comment-reply-link' href='/tech/2013/05/13/evernotehonda-design-build-weekend/?utm_source=buffer&#038;utm_medium=twitter&#038;utm_campaign=Buffer&#038;utm_content=buffer00f02&#038;replytocom=4111#respond' onclick='return addComment.moveForm("comment-4111", "4111", "respond", "1097")'>Reply</a>				</div><!-- .reply -->
+			</div><!-- .avatarnreply -->
+				
+			<div class="comment-body">
+
+				<div class="comment-meta commentmetadata">
+					<cite class="fn"><a href='http://peepinworld.com' rel='external nofollow' class='url'>Shubham Somani</a></cite>					<p>
+						May 18, 2013 at 10:37 am					 	&nbsp;|&nbsp;<a href="http://blog.evernote.com/tech/2013/05/13/evernotehonda-design-build-weekend/#comment-4111">link</a>
+					 </p>
+				</div><!-- /comment-meta /commentmetadata -->
+
+				<p>That&#8217;s good&#8230;.it&#8217;s like all information is in-compassed in this post&#8230;that&#8217;s awesome. The design, architecture, weekend workshop are really required for any student and thanks to inform about Honda&#8230;.i like your post.</p>
+											</div><!-- /comment-body -->
+	
+			<div class="clear"></div> 
+		</div><!--/comment-data2 --></div><!--/comment-data -->
+	</div><!--/comment_ID -->
+
+	<!-- Note the lack of a trailing </li>. WP will add it itself once it's done listing any children, etc. -->
+
+
+	</li>
+		</ol>
+
+		
+		
+
+
+
+
+	<br class="clear" />
+
+</div><!-- /comments --></div><!-- /comments_wrap -->
+
+
+
+
+
+<div id="respond_wrap">
+
+	<div id="respond">
+	
+		<h3>Leave a Comment</h3>
+	
+		<div class="cancel-comment-reply">
+			<p><a rel="nofollow" id="cancel-comment-reply-link" href="/tech/2013/05/13/evernotehonda-design-build-weekend/?utm_source=buffer&amp;utm_medium=twitter&amp;utm_campaign=Buffer&amp;utm_content=buffer00f02#respond" style="display:none;">Click here to cancel reply.</a></p>
+		</div><!-- /cancel-comment-reply -->
+	
+			
+		<form action="http://blog.evernote.com/tech/wp-comments-post.php" method="post" id="commentform">
+		
+						
+				<div class="required_fields">* Required fields</div>
+			
+				<label for="author">Name*</label>
+				<p><input type="text" name="author" id="author" value="" size="22" tabindex="1" aria-required='true' /></p>
+				
+				<label for="email">Email*&nbsp;<span>(will not be published)</span></label>
+				<p><input type="text" name="email" id="email" value="" size="22" tabindex="2" aria-required='true' /></p>
+				
+				<label for="url">Website</label>
+				<p><input type="text" name="url" id="url" value="" size="22" tabindex="3" /></p>
+			
+				<label for="comment">Comment*</label>
+	
+					
+			<p><textarea name="comment" id="comment" cols="80" rows="10" tabindex="4"></textarea></p>
+		
+			<p><input name="submit" type="image" src="http://blog.evernote.com/tech/wp-content/themes/evernote-techblog/images/btn-submit_comment.gif" id="submit" tabindex="5" value="Submit Comment" alt="Submit Comment" />
+				<input type='hidden' name='comment_post_ID' value='1097' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+			</p>
+		
+			<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="e63f4fc9a0" /></p>		
+		</form>
+	
+	</div><!-- /respond -->
+
+</div><!-- /respond_wrap -->
+	
+
+
+
+
+
+
+
+
+
+</div><!-- /content -->
+
+
+
+<div id="sidebar" class="widget-area" role="complementary">
+
+	<div class="pullquote">
+		<h3 id="pull_techblog_kb_promo">Have questions? We have answers. Check out our Knowledge Base</h3>
+		<a href="https://support.evernote.com/ics/support/KBSplash.asp">Explore the KB</a>
+	</div>
+
+
+	<div id="categories-2" class="widget-container widget_categories"><h3 class="widget-title">Categories</h3>		<ul>
+	<li class="cat-item cat-item-2"><a href="http://blog.evernote.com/tech/category/analytics/" title="View all posts filed under Analytics">Analytics</a>
+</li>
+	<li class="cat-item cat-item-3"><a href="http://blog.evernote.com/tech/category/api/" title="View all posts filed under API">API</a>
+</li>
+	<li class="cat-item cat-item-4"><a href="http://blog.evernote.com/tech/category/applications/" title="View all posts filed under Applications">Applications</a>
+</li>
+	<li class="cat-item cat-item-5"><a href="http://blog.evernote.com/tech/category/java/" title="View all posts filed under Java">Java</a>
+</li>
+	<li class="cat-item cat-item-6"><a href="http://blog.evernote.com/tech/category/operations/" title="View all posts filed under Operations">Operations</a>
+</li>
+	<li class="cat-item cat-item-7"><a href="http://blog.evernote.com/tech/category/overview/" title="View all posts filed under Overview">Overview</a>
+</li>
+	<li class="cat-item cat-item-1"><a href="http://blog.evernote.com/tech/category/uncategorized/" title="View all posts filed under Uncategorized">Uncategorized</a>
+</li>
+		</ul>
+</div><div id="archives-2" class="widget-container widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://blog.evernote.com/tech/2013/08/' title='August 2013'>August 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/07/' title='July 2013'>July 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/06/' title='June 2013'>June 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/05/' title='May 2013'>May 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/04/' title='April 2013'>April 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/03/' title='March 2013'>March 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/02/' title='February 2013'>February 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2013/01/' title='January 2013'>January 2013</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/12/' title='December 2012'>December 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/11/' title='November 2012'>November 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/10/' title='October 2012'>October 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/09/' title='September 2012'>September 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/07/' title='July 2012'>July 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/05/' title='May 2012'>May 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/04/' title='April 2012'>April 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2012/02/' title='February 2012'>February 2012</a></li>
+	<li><a href='http://blog.evernote.com/tech/2011/11/' title='November 2011'>November 2011</a></li>
+	<li><a href='http://blog.evernote.com/tech/2011/09/' title='September 2011'>September 2011</a></li>
+	<li><a href='http://blog.evernote.com/tech/2011/08/' title='August 2011'>August 2011</a></li>
+	<li><a href='http://blog.evernote.com/tech/2011/07/' title='July 2011'>July 2011</a></li>
+	<li><a href='http://blog.evernote.com/tech/2011/06/' title='June 2011'>June 2011</a></li>
+	<li><a href='http://blog.evernote.com/tech/2011/05/' title='May 2011'>May 2011</a></li>
+		</ul>
+</div>
+		<div id="sb_connect" class="box">
+			<h3>Connect</h3>
+			<ul>
+				<li class="rss"><a href="http://blog.evernote.com/tech/feed/">RSS feed</a></li>
+				<li class="tv"><a href="http://www.evernote.com/about/video">Evernote videos</a></li>
+				<li class="twitter"><a href="http://twitter.com/evernote/">Follow us on Twitter</a></li>
+				<li class="facebook"><a href="http://facebook.com/evernote/">Like us on Facebook</a></li>
+				<li class="meetup"><a href="http://http://meetup.com/evernote">Join a Meetup</a></li>
+			</ul>
+		</div>
+
+</div><!-- #sidebar .widget-area -->
+
+
+
+
+
+	
+
+	</div><!--/colwrap-->
+
+		<div id="footer"><div class="row">
+			<div id="tray">
+				<div class="aspect">
+					<h3>Products</h3>
+					<ul id="products">
+						<li class="evernote"><a href="http://www.evernote.com/evernote/">Evernote</a></li>
+						<li class="skitch"><a href="http://www.evernote.com/skitch/">Skitch</a></li>	
+						<li class="hello"><a href="http://www.evernote.com/hello/">Evernote Hello</a></li>
+						<li class="food"><a href="http://www.evernote.com/food/">Evernote Food</a></li>
+						<li class="clearly"><a href="http://www.evernote.com/clearly/">Evernote Clearly</a></li>
+						<li class="peek"><a href="http://www.evernote.com/peek/">Evernote Peek </a></li>
+						<li class="trunk"><a href="http://www.evernote.com/about/trunk/">Trunk</a></li>
+					</ul>
+				</div>
+				<div class="aspect">
+					<h3>About</h3>
+					<ul id="about">
+						<li class="company"><a href="http://www.evernote.com/about/corp/" class="alpha">Company Info</a></li>
+						<li class="careers"><a href="http://www.evernote.com/about/careers/">Careers</a></li>
+						<li class="contact"><a href="http://www.evernote.com/about/contact/">Contact</a></li>
+						<li class="support"><a href="https://www.evernote.com/about/contact/support/">Support</a></li>
+						<li class="store"><a href="http://shop.evernote.com">Store</a></li>
+						<li class="trademark"><a href="http://www.evernote.com/about/trademark/">Trademark</a></li>
+						<li class="tos"><a href="http://www.evernote.com/about/tos">Terms of Service</a></li>
+						<li class="privacy"><a href="http://www.evernote.com/about/privacy/">Privacy Policy</a> </li>
+					</ul>
+				</div>
+				<div class="aspect">
+					<h3>Community</h3>
+					<ul id="community">
+						<li class="blog"><a href="http://blog.evernote.com">Blog</a></li>
+						<li class="twitter"><a href="http://twitter.com/evernote/">Twitter</a></li>
+						<li class="facebook"><a href="http://facebook.com/evernote/">Facebook</a></li>
+						<li class="video"><a href="http://www.evernote.com/about/video/">Video</a></li>
+						<li class="ambassadors"><a href="http://www.evernote.com/about/community/">Ambassadors</a></li>
+						<li class="developers"><a href="http://www.evernote.com/about/developer/">Developers</a></li>
+						<li class="forum"><a href="http://discussion.evernote.com">Forum</a></li>
+					</ul>
+				</div>
+				<div class="aspect">
+					<h3>Premium</h3>
+					<ul id="markets">	
+						<li class="individuals"><a href="http://www.evernote.com/about/premium/">For Individuals</a></li>
+						<li class="groups"><a href="http://www.evernote.com/about/sponsor/">Group Discounts</a></li>
+					</ul>
+				</div>
+			</div><!-- /tray -->
+			<div class="footer_right">
+				<div id="social_icons">
+					<a href="http://twitter.com/evernote/"><img src="http://evernote.com/about/media/img/twitter-32x32.png" /></a><a href="http://facebook.com/evernote/"><img src="http://evernote.com/about/media/img/facebook-32x32.png" /></a>
+				</div>
+				<div id="copyright">Copyright &copy; 2011 Evernote Corp.<span> All rights reserved.</span></div>
+			</div><!-- /.footer_right -->	
+
+		</div><!--/row--></div><!--/footer-->
+
+	</div><!-- /container2 -->
+</div><!-- /container -->
+
+
+
+</body>
+</html>
+
+
+<!-- Dynamic page generated in 0.231 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-08-22 15:13:23 -->

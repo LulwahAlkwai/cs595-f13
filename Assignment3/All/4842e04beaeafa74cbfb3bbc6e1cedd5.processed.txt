@@ -1,0 +1,193 @@
+   #[1]alternate
+
+
+
+                                   [2]Svbtle
+
+[3]Svbtle
+
+
+     * [4]Elliott Kember
+       is writing on the
+       Svbtle network.
+     * [5]@elliottkember on twitter
+     * [6]elliottkember.com
+     * [7]say hello
+     * [8]rss
+     * [9]SVBTLE
+     * [10]magazine
+     * [11]about svbtle
+     * [12]@svbtle
+     * [13]rss feed
+     *
+     * [14]log in
+
+
+
+                                   [15]Svbtle
+
+   [16]Elliott Kember
+
+[17]Elliott Kember
+
+  [18]Software Developer. Director at Riot.
+
+                 [19]Chrome's insane password security strategy
+
+   Aug 6, 2013
+
+   Chrome does something interesting when you first run it.
+
+   import
+
+   The other day, I was using Chrome in development for an Ember.js app. I
+   use Safari for day-to-day browsing, but it has a habit of aggressively
+   caching files when I least expect it, so from time to time I switch to
+   Chrome.
+
+   I decided to hit Chrome's "Import bookmarks now" link and see whether I
+   could import my bookmarklets from Safari, so things would be nice and
+   consistent between the two browsers. I didn't expect this:
+
+   Chrome asking me to import my content from Safari
+
+   This struck me as particularly odd. Why is "Saved passwords" greyed
+   out, and mandatory? Why have a check-box? This is the illusion of
+   choice. I think it's deeply misleading, and this is why:
+
+   This is a page in Chrome's settings panel:
+
+   Passwords in Chrome
+
+   See that "show" button? It does what you think it does.
+
+   Passwords in Chrome, in plain-text
+
+   There's no master password, no security, not even a prompt that "these
+   passwords are visible". Visit chrome://settings/passwords in Chrome if
+   you don't believe me.
+
+   There are two sides to this. The developer's side, and the user's side.
+   Both roles have vastly different opinions as to how the computer works.
+   Any time I try to draw attention to this, I get the usual responses
+   from technical people:
+     * Just use 1Pass
+     * The computer is already insecure as soon as you have physical
+       access
+     * That's just how password management works
+
+   While all of these points are valid, this doesn't address the real
+   problem: Google isn't clear about its password security.
+
+   In a world where Google promotes its browser on YouTube, in cinema
+   pre-rolls, and on billboards, the clear audience is not developers.
+   It's the mass market - the users. The overwhelming majority. They don't
+   know it works like this. They don't expect it to be this easy to see
+   their passwords. Every day, millions of normal, every-day users are
+   saving their passwords in Chrome. This is not okay.
+
+   "A Google Chrome prompt showing the words 'confidential information',
+   and 'in your keychain'
+
+   This dialog is even more misleading. By using words like "confidential
+   information" and "stored in your keychain", OSX describes the state of
+   your saved password's current security. It's the very security Chrome
+   is about to bypass, by displaying your passwords, in plain-text,
+   outside your keychain, without requiring a password. When you visit a
+   website, Chrome prompts for every password it can find for that domain.
+
+   Today, go up to somebody non-technical. Ask to borrow their computer.
+   Visit chrome://settings/passwords and click "show" on a few of the
+   rows. See what they have to say.
+
+   I bet you it won't be "That's how password management works".
+
+   Updates:
+
+   [20]Justin Schuh who is head of Chrome security and called me "a
+   novice", says I'm wrong, and that [21]this is not going to change.
+
+   [22]Sir Tim Berners-Lee is with me. Is there a higher authority?
+
+   [23]This is Google's page on "saving passwords". Nothing about this
+   feature. Why?
+
+   Covered in the press by:
+     * [24]The Guardian ... [25]twice.
+     * [26]The Independent
+     * [27]The Telegraph
+     * Reposted on [28]Mashable and [29]Gizmodo
+     * [30]Accidental Tech Podcast nailed it
+     * [31]Wired didn't read the article properly
+     * Thomas Fuchs drew an [32]excellent diagram
+
+
+
+   11,553
+
+   Kudos
+
+
+
+   11,553
+
+   Kudos
+
+
+
+   [33]Read this next:
+   "Just"
+
+   [34]Svbtle
+   [35]Elliott Kember Software Developer. Director at Riot.
+   [36]@elliottkember [37]say hello
+   [38]Full blog »
+
+   © 2013
+
+References
+
+   Visible links
+   1. http://blog.elliottkember.com/feed
+   2. https://svbtle.com/
+   3. https://svbtle.com/
+   4. https://svbtle.com/
+   5. http://twitter.com/elliottkember
+   6. http://elliottkember.com/
+   7. mailto:elliott.kember@gmail.com?subject=hi%20from%20svbtle
+   8. http://blog.elliottkember.com/feed
+   9. https://svbtle.com/
+  10. https://svbtle.com/magazine
+  11. https://svbtle.com/about
+  12. http://twitter.com/svbtle
+  13. https://svbtle.com/feed
+  14. https://svbtle.com/login
+  15. https://svbtle.com/
+  16. http://blog.elliottkember.com/
+  17. http://blog.elliottkember.com/
+  18. http://blog.elliottkember.com/
+  19. http://blog.elliottkember.com/chromes-insane-password-security-strategy
+  20. https://twitter.com/justinschuh
+  21. https://news.ycombinator.com/item?id=6166886
+  22. https://twitter.com/timberners_lee/status/364839351651274752
+  23. https://support.google.com/chrome/answer/95606?hl=en-GB
+  24. http://www.theguardian.com/technology/2013/aug/13/chrome-google?INTCMP=SRCH
+  25. http://www.theguardian.com/technology/2013/aug/07/google-chrome-password-security-flaw?INTCMP=SRCH
+  26. http://atp.fm/episodes/25-thrustmaster-joystick
+  27. http://www.telegraph.co.uk/technology/internet-security/10228714/Google-Chrome-flaw-exposes-user-passwords.html
+  28. http://mashable.com/2013/08/07/chrome-password-security/
+  29. http://gizmodo.com/google-chrome-s-insanely-open-password-security-strateg-1052344786#replies
+  30. http://atp.fm/episodes/25-thrustmaster-joystick
+  31. http://www.wired.com/threatlevel/2013/08/chrome-password-manager/
+  32. https://twitter.com/thomasfuchs/status/365293355430731776
+  33. http://blog.elliottkember.com/just
+  34. https://svbtle.com/
+  35. http://blog.elliottkember.com/
+  36. https://twitter.com/elliottkember
+  37. mailto:elliott.kember@gmail.com?subject=hi
+  38. http://blog.elliottkember.com/
+
+   Hidden links:
+  39. http://blog.elliottkember.com/chromes-insane-password-security-strategy#show-drop
+  40. http://blog.elliottkember.com/chromes-insane-password-security-strategy#kudo
+  41. http://blog.elliottkember.com/chromes-insane-password-security-strategy#kudo

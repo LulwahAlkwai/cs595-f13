@@ -1,0 +1,433 @@
+   #[1]RSS 2.0 [2]RSS .92 [3]Atom 1.0
+
+[4]Do NULL markers in SQL cause any harm?
+
+   The relational model, and by extension, the language SQL supports the
+   notion of NULL marker. It is commonly used to indicate that some
+   attribute is unknown or non applicable. NULL markers are a bit strange
+   because they are not values per se. Hence, the predicate 1 = NULL is
+   neither true nor false. Indeed, the inventor of the relational model,
+   [5]E. F. Codd, proposed a 3-value logic model: predicates are true,
+   false or unknown. This lives on even today. Our entire civilization
+   runs on database systems using an unintuitive 3-value logic. Isn't that
+   something!
+
+   Unfortunately, in real life, predicates either evaluate to true, or
+   they don't. [6]C. J. Date [7]showed that NULL markers end up giving you
+   inconsistent semantics. So our civilization runs on database systems
+   that can be inconsistent!
+
+   Yet the NULL markers were introduced for a reason: some things do
+   remain unknown or are non applicable. We can handle these issues with
+   more complicated schemas, but it is not practical. So database
+   designers do allow NULL markers.
+
+   How did Codd react when it was pointed out to him that NULL markers
+   make his model inconsistent? He essentially told us that NULL markers
+   are in limbo:
+
+     (...) the normalization concepts do NOT apply, and should NOT be
+     applied, globally to those combinations of attributes and tuples
+     containing marks. (...) The proper time for the system to make this
+     determination is when an attempt is made to replace the pertinent
+     mark by an actual db-value.
+
+   So the mathematical rigor does not apply to NULL markers. Period.
+
+   This sounds pretty bad. I am rather amazed that Codd could get away
+   with this.
+
+   But how bad is it in real life?
+
+   Let us consider WordPress, the blog engine I am using. As part of the
+   core database schema, only the tables wp_postmeta, wp_usermeta and
+   wp_commentmeta allow NULL markers. These tables are exclusively used to
+   store metadata describing blog posts, users and comments. If this
+   metadata is somehow inconsistent, the blog engine will not fall apart.
+   It may hurt secondary features, such as advanced navigation, but the
+   core data (posts, users and comments) will remain unaffected.
+
+   Date was repeatedly asked to prove that NULL markers were indeed a
+   problem. I do not think that he ever conclusively showed that they were
+   a real problem. Anyhow, our civilization has not collapsed yet.
+
+   Does anyone has any evidence that NULL markers are a bona fide problem
+   in practice? Oh! Sure! Incompetent people will always find a way to
+   create problems. So let us assume we are dealing with reasonably smart
+   people doing reasonable work.
+
+   Credit: This post is motivated by an exchange with A. Badia from
+   Louisville University.
+
+   Example of SQL's inconsistency:
+
+     We are given two tables: Suppliers (sno,city) and Parts(pno,city).
+     The tables have both a single row; (S1,'London') and (P1,null)
+     respectively. That is, we have one supplier in London as well as one
+     part for which the location is left unspecified (hence the null
+     marker).
+
+     We have the following query:
+
+     Select sno, pno
+     From Suppliers, Parts
+     Where Parts.city <> Suppliers.city
+     Or Parts.city <> `Paris';
+
+     In SQL, this query would return nothing due to Codd's 3-value logic
+     because the where clause only selects row when the predicate is
+     true.
+
+     Yet we know that if a physical part is actually located somewhere,
+     it is either not in London or not in Paris. So the answer is wrong.
+
+     Let us consider another interpretation: maybe the part P1 is
+     fictitious. It is not physically available anywhere. In such a case,
+     the SQL query still fails to return the correct answer as the part
+     P1 is not in London.
+
+     Maybe we could assume instead that the part P1 is available
+     everywhere: this later interpretation is also incorrect
+     because the query
+
+     Select * from Parts where Parts.city = `Paris'
+
+     will return nothing.
+
+   [8]Tweet
+   [9]Comments (20)
+
+20 Comments
+
+    1. Tony Hoare called null references his billion dollar mistake
+       ([10]http://www.infoq.com/presentations/Null-References-The-Billion
+       -Dollar-Mistake-Tony-Hoare), similar reasoning applies to 3-valued
+       logic. It's very easy to get bugs in queries when you forget to
+       handle nulls and such bugs usually aren't noticed until very late
+       in the development cycle. It also leads to things like
+       automatically conversion of values to NULL and vice-versa (e.g.
+       empty varchars are NULL in Oracle).
+       Comment by [11]Daniel Yokomizo -- 5/3/2013 @ [12]12:20
+    2. Many-valued logic is not inherently inconsistent (see
+       [13]http://plato.stanford.edu/entries/logic-manyvalued/). Why not
+       allow three values but use a consistent logic?
+       Comment by [14]Peter Turney -- 5/3/2013 @ [15]12:34
+    3. I think people unfairly treat clustering of their bugs around
+       features as indications that those features are a huge problem.
+       NULL is a classic case of this.
+       Yes NULL is error prone. Yes NULL is inconsistent. Yes a lot of
+       errors occur because of NULL.
+       That's because NULL is a necessary tool to address error prone,
+       inconsistent aspects of reality. We need it.
+       Comment by Christopher Smith -- 5/3/2013 @ [16]12:39
+    4. @Peter Turney
+       Assuming that you do want 3-value logic, there is a computational
+       cost to pay if you want consistency. Yet efficiency is very
+       important for a database system, maybe more so than theoretical
+       rigor.
+       Let me quote John Grant from "Null Values in SQL":
+
+     Using Kleene's 3-valued logic I showed that a truth-functional (i.e.
+     the connectives are defined by truth-tables) 3-valued logic, where
+     the third truth value stands for "unknown", will not give some
+     formulas the correct truth value, and proposed a
+     non-truth-functional 3-valued logic that gives all formulas correct
+     truth values. In the case of null values for a relational database
+     this means that the 3-valued logic truth tables used by Codd (the
+     same as in Kleene's 3-valued logic) do not always give correct
+     answers to queries. First I wrote to Dr. Codd explaining the problem
+     and after his reply I wrote a short article pointing out the
+     problem. (...) for the correct evaluation of a query in the presence
+     of a null value, all different cases must be considered.
+       What is amazing to me is that Codd got away with an inconsistent
+       3-value system and not only that, but this became the de facto
+       standard for database systems.
+       Comment by [17]Daniel Lemire -- 5/3/2013 @ [18]12:44
+    5. 3-valued logic is "flattened" in SQL: In SELECT sentences, if the
+       whole WHERE expression is "unknown" then it is assumed to be
+       "false". In constrat, in CHECK constraints, if the expression is
+       evaluated to "unknown" (e.g. CHECK X>0) then it is assumed to be
+       "true".
+       Some aggegate operators behave in a contra-intuitive way in
+       presence of NULL marks.
+       However, there is, in my opinion, a situation where NULLs make
+       sense: when representing a N:0..1 relationship between two tables
+       and you don't want to have an extra table to represent such a
+       relationship.
+       Comment by [19]Carles Farré -- 5/3/2013 @ [20]13:14
+    6. I should clarify my previous post: obviously there are ways to get
+       the job done without NULL. However, we need to model and address
+       the bits of reality that give rise to NULL, and while their are
+       approaches that avoid the Date's theoretical problem with NULL, I
+       don't think there is an approach which avoids all the bugs that so
+       often occur and are attributed to NULL. Unlike say, C's buffer
+       overflows or NULL terminated strings, the bugs are caused by the
+       nature of the problem, not the nature of the solution.
+       I'd even argue NULL handles those problems better than most other
+       solutions I've seen, but perhaps someone has a better alternative.
+       Comment by Christopher Smith -- 5/3/2013 @ [21]15:30
+    7. An interesting side note - in ieee floating point representation,
+       there is "NaN" (not a number). If I have
+       double a = numberic_limits::quietNaN();
+       bool e = (a == a);
+       will evaluate to false.
+       Comment by [22]Dominic Amann -- 6/3/2013 @ [23]9:10
+    8. @Dominic Amann
+       NaN is supposed to be non-reflexive under IEEE 734. C++ supports
+       IEEE 734.
+       PostgreSQL and Oracle do claim to support IEEE 734 but I think that
+       their NaN is reflexive (thus violating the standard).
+       IEEE 734 is logically consistent, and relies on simple 2-value
+       logic (false or true). Elements in IEEE 734 do not form equivalence
+       classes, however, but that is not required for logical consistency.
+       Comment by [24]Daniel Lemire -- 6/3/2013 @ [25]9:23
+    9. @Daniel I agree it follows the standard. I was cnotrasting its
+       behaviour to sql's null.
+       Comment by [26]Dominic Amann -- 6/3/2013 @ [27]9:38
+   10. @Dominic Amann
+       Well, the designers of IEEE 734 did not see a need to use 3-value
+       logic. I think they were right. I think Codd was wrong.
+       Comment by [28]Daniel Lemire -- 6/3/2013 @ [29]9:49
+   11. @Danieal - you may be right - I wasn't commenting on the rightness
+       of the approach, just the different choice. Sorry I wasn't clear.
+       To look at Codd's approach - I think there are two problems here:
+       one is "this answer is not defined for the arguments given", and
+       the other is "this data item has not been assigned a value".
+       Comment by [30]Dominic Amann -- 6/3/2013 @ [31]12:43
+   12. @Dominic Amann
+       Yes. Codd did, in fact, propose to handle different markers to
+       represent just the kind of distinctions you are making, but it was
+       never picked up.
+       Comment by [32]Daniel Lemire -- 6/3/2013 @ [33]13:45
+   13. Actually "1 = NULL" might not be false, but it is falsy. That is,
+       SELECT * FROM table WHERE field = null; will simply select nothing,
+       because the predicate is always falsy, even if field itself
+       contains null for a record.
+       The trouble is when you expect negation of falsy. The negation of
+       something undefined is still undefined. Hence "not null" is still
+       null in sql. And "1 null" is still falsy. (But funny enough, "1
+       (null OR false)" is true because "null OR false" is false and not
+       null but "null AND true" is null.)
+       The conclusion is, read the SQL null as "undefined" or "don't
+       know", where the c/c++/java null is more like zero. Too bad
+       javascript has undefined, but "undefined == undefined" is true. So
+       undefined in javascript is just a marker and not a true undefined
+       value, like null is in sql. But then javascript has NaN and "NaN ==
+       NaN" is false. So NaN behaves like a real undefined value.
+       If anything, sql could benefit from a value that represents
+       undefined and a value that represents nothing. But maybe todays
+       situation is better, otherwise nobody would understand which value
+       to use in what situation. And now everybody gets burned by sql null
+       at least once and then learns :)
+       Comment by [34]Onne -- 6/3/2013 @ [35]15:39
+   14. @Onne
+       The trouble is when you expect negation of falsy
+       I think that the trouble is deeper than that. You do end up with
+       inconsistent results. Period. It is not just that NULL is difficult
+       to understand, it is mathematically improper. Please see the
+       detailed explanation Grant gave:
+       [36]http://www09.sigmod.org/sigmod/record/issues/0809/p23.grant.pdf
+       Even Codd admitted as much: to him, the NULL markers were outside
+       of the relational model and not subject to normalization. He knew
+       of the problems, because they were reported to him, but he viewed
+       them as irrelevant.
+       In some sense, history proved him right. Or did it?
+       Comment by [37]Daniel Lemire -- 6/3/2013 @ [38]15:57
+   15. @Daniel
+       In the example of the paper, P1 has NULL for a city, and the author
+       poses that whatever you fill in for NULL, it must result in the
+       predicate to become true. However, maybe the parts supplier P1 is
+       omnipresent, it is in every city all at once. In that case the
+       predicate should stay false on two accounts: P1 is the same city as
+       S1 and P1 is in Paris.
+       NULL is not a value, it is outside the domain of the values that
+       could have been in its place.
+       Is that mathematically improper? I am not convinced; it is
+       practical, however. So yes, I think Codd was proven right.
+       Comment by [39]Onne -- 7/3/2013 @ [40]2:03
+   16. @Onne
+       Yes, it is mathematically inconsistent. There is no way around it.
+       I'll update my blog post right away with a more elaborate
+       discussion. Your interpretation falls apart too as you'll see.
+       Comment by [41]Daniel Lemire -- 7/3/2013 @ [42]9:23
+   17. @Daniel
+       I see what you mean, but your reasoning is incorrect, see NULL
+       might mean is nowhere, or everywhere, or only paris or only london.
+       Or it might even be a quantum value that is london if you compare
+       it to paris, and paris when you compare it to london. (This is
+       easier to see if you stop using singular values and use sets of
+       cities instead, now what does the NULL set mean, or a set
+       containing Paris and NULL mean?)
+       The only sensible answer to a comparison with null is to return
+       null again. The inconsistency is the pragmatic choice to let null
+       be a falsy value when it comes to actually doing work (selecting
+       records).
+       The sound thing to do in sql is not to return a list of some
+       records when encountering null, instead to collapse the whole
+       result into null itself. As in, I don't know the answer to your
+       question. But that is not very pragmatic ...
+       Comment by Anonymous -- 7/3/2013 @ [43]11:45
+   18. @Anonymous
+       The sound thing to do in sql is not to return a list of some
+       records when encountering null, instead to collapse the whole
+       result into null itself. As in, I don't know the answer to your
+       question.
+       But that is not what SQL does. It does return an answer even when
+       nulls are involved. SQL itself does not offer any consistent view.
+       Of course, the programmer can check (painfully) to see if any nulls
+       are involved. Or he can forbid nulls. Or he can use other, more
+       complicated schemas, or special values... Anyhow, the burden is on
+       the programmer to do the right thing with nulls... SQL will not
+       help you. Arguably, it makes it hard for you to do the right thing.
+       Comment by [44]Daniel Lemire -- 7/3/2013 @ [45]12:43
+   19. @Daniel
+       Going back to my first statement. Notice how there are no
+       inconsistencies if you don't use negations (not or unequal). If
+       need be use "select inverse".
+       So how do you deal with this as a programmer? Just don't use
+       negations unless you think about how you want to deal with null.
+       Basically you need to deal with the fact that the sql engine does
+       not know that the domain of cities is finite and void of quantum
+       values.
+       And surely not having null is much more of a burden... it is like
+       saying because division by zero is such a problem that we don't
+       want zero in math.
+       Comment by [46]Onne -- 7/3/2013 @ [47]13:32
+   20. @Onne
+       Just so we are clear: I am not arguing against NULLs.
+       Comment by [48]Daniel Lemire -- 7/3/2013 @ [49]13:50
+
+   Sorry, the comment form is closed at this time.
+   « « [50]Previous: Where are the "big problem" jobs?
+   [51]Next: Current Daylight saving time policies are insane » »
+
+   [52]« Blog's main page
+   Daniel Lemire's picture
+     * [53]Daniel Lemire's blog
+       Canadian flag Montreal, Canada
+     * Google Plus logo [54]Follow on Google Plus
+       22,500 followers
+     * twitter logo [55]Follow @lemire
+       4,000 followers
+     * Facebook logo [56]Follow on Facebook
+     * Google Scholar logo [57]Follow on Google Scholar
+     * Subscribe to this blog
+       - [58]in a reader,
+       - [59]on your kindle,
+       - or ____________________ Subscribe by email
+     * Search through 1420 posts and 5847 comments:
+       ____________________
+       Search
+     *
+          + [60]About me
+          + [61]Book recommendations
+          + [62]My readers
+          + [63]Terms of use
+          + [64]Write good papers
+     * Recent Comments:
+          + Thierry Lhôte on [65]The written word took over the world
+          + Thierry Lhôte on [66]The written word took over the world
+          + Ben on [67]The written word took over the world
+          + Anonymous on [68]The written word took over the world
+          + kilian on [69]The written word took over the world
+     * Some popular posts
+          + [70]Why I still program
+          + [71]Emotions killing your intellectual productivity
+          + [72]Turn your weaknesses into strengths
+          + [73]It is not where you work, but who you work with
+     * [74]Home page
+       [75]Google Scholar profile
+       [76]arXiv
+       [77]DBLP
+
+   Powered by [78]WordPress
+
+   © 2004-2013, [79]Daniel Lemire (lemire at gmail dot com). This work is
+   licensed under a [80]Creative Commons License.
+
+References
+
+   Visible links
+   1. http://lemire.me/blog/feed/
+   2. http://lemire.me/blog/feed/rss/
+   3. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/atom
+   4. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/
+   5. http://en.wikipedia.org/wiki/Edgar_F._Codd
+   6. http://en.wikipedia.org/wiki/C._J._Date
+   7. http://www09.sigmod.org/sigmod/record/issues/0809/p23.grant.pdf
+   8. https://twitter.com/share
+   9. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/#comments
+  10. http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare
+  11. http://daniel.yokomizo.org/
+  12. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74342
+  13. http://plato.stanford.edu/entries/logic-manyvalued/
+  14. http://www.apperceptual.com/
+  15. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74343
+  16. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74344
+  17. http://lemire.me/en/
+  18. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74346
+  19. http://www.essi.upc.edu/~farre/
+  20. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74347
+  21. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74359
+  22. http://blog.lbs.ca/technology
+  23. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74464
+  24. http://lemire.me/en/
+  25. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74467
+  26. http://blog.lbs.ca/technology
+  27. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74468
+  28. http://lemire.me/en/
+  29. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74469
+  30. http://blog.lbs.ca/technology
+  31. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74497
+  32. http://lemire.me/en/
+  33. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74500
+  34. http://onnlucky.com/
+  35. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74510
+  36. http://www09.sigmod.org/sigmod/record/issues/0809/p23.grant.pdf
+  37. http://lemire.me/en/
+  38. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74513
+  39. http://onnlucky.com/
+  40. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74553
+  41. http://lemire.me/en/
+  42. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74615
+  43. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74631
+  44. http://lemire.me/en/
+  45. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74642
+  46. http://onnlucky.com/
+  47. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74650
+  48. http://lemire.me/en/
+  49. http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/?utm_source=feedburner#comment-74651
+  50. http://lemire.me/blog/archives/2013/03/04/where-are-the-big-problem-jobs/
+  51. http://lemire.me/blog/archives/2013/03/11/current-daylight-saving-time-policies-are-insane/
+  52. http://lemire.me/blog/
+  53. http://lemire.me/
+  54. https://plus.google.com/105888615414982242080/about
+  55. http://www.twitter.com/lemire/
+  56. http://www.facebook.com/daniel.lemire
+  57. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  58. http://lemire.me/blog/feed/
+  59. http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q
+  60. http://lemire.me/blog/about-me/
+  61. http://lemire.me/blog/book-recommendations/
+  62. http://lemire.me/blog/my-readers/
+  63. http://lemire.me/blog/terms-of-use/
+  64. http://lemire.me/blog/rules-to-write-a-good-research-paper/
+  65. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95660
+  66. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95652
+  67. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95627
+  68. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95596
+  69. http://lemire.me/blog/archives/2013/10/01/the-written-word/#comment-95584
+  70. http://lemire.me/blog/archives/2011/06/06/why-i-still-program/
+  71. http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/
+  72. http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/
+  73. http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/
+  74. http://lemire.me/en/
+  75. http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works
+  76. http://arxiv.org/a/lemire_d_1
+  77. http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html
+  78. http://wordpress.org/
+  79. http://lemire.me/en/
+  80. http://creativecommons.org/licenses/by-sa/2.0/
+
+   Hidden links:
+  81. http://lemire.me/blog/feed/

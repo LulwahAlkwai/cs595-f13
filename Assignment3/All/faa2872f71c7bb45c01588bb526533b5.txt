@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Share your software early: the Reinhart-Rogoff case </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5264" itemprop="name"><a href="http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/" rel="bookmark" itemprop="url"  title="Posted on April 23rd, 2013">Share your software early: the Reinhart-Rogoff case</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>I like stories where prestigious professors screw up spectacularly. It reminds us that everybody gets it wrong some of the time. The Reinhart-Rogoff story is one such case.</p>
+<p>Two very reputed professors at Harvard University,  Carmen Reinhart and Kenneth Rogoff, published online a working paper in 2010 called <a href="http://www.nber.org/papers/w15639">Growth in a time of debt</a>. The paper has since been cited in the scientific literature about 500 times, or about once every two days. They later wrote a <a href="http://www.amazon.com/This-Time-Different-Centuries-Financial/dp/0691152640/?tag=daniellemires-20" rel="nofollow">best-seller book on the same topic</a>. They built a web site to promote their ideas where <a href="http://www.reinhartandrogoff.com/data/browse-by-topic/topics/9/">they shared some of their data</a>.</p>
+<p>Their research paper is remarkably easy to understand: countries with large debt tend to have lesser economic growth. This claim is entirely credible. On the one hand, countries with poor economies may tend to grow large debts because they have weak revenues. On the other hand, large debts may lead to tight fiscal policies (e.g., high taxes) or lax monetary policies (e.g., printing money) that may reduce economic growth.</p>
+<p>The part that is less credible is that Reinhart and Rogoff were able to find a magical threshold (debt-to-GDP ratio of 0.9) that triggered low growth. In effect, they implicitly claimed that any debt-to-GDP ratio in excess of 0.9 would reduce your economic growth. This gave politicians a scientific justification for austerity measures (e.g., raising taxes and cutting back on government services).</p>
+<p>The story then becomes interesting. Thomas Herndon, a graduate student, grabbed data from the Reinhart-Rogoff web site and tried to reproduce their results. He couldn&#8217;t. He then asked the authors for help. Reinhart and Rogoff shared the <a href="http://www.peri.umass.edu/fileadmin/pdf/working_papers/working_papers_301-350/HAP-RR-GITD-code.zip">Excel spreadsheet they used</a> with Herndon. He then promptly found basic flaws in their data processing. For example, the two professors ran sums over the wrong cells. It seems that they made several odd choices when processing the data. His paper is <a href="http://www.peri.umass.edu/236/hash/31e2ff374b6377b2ddec04deaa6388b1/publication/566/">freely available online</a>.</p>
+<p>Things took a turn for the worse when, faced with this opposition, <a href="http://krugman.blogs.nytimes.com/2013/04/16/reinhart-rogoff-continued/">Reinhart-Rogoff balked and asserted that these errors did not impact their work</a>. Thankfully, they did not deny their mistakes.</p>
+<p>This whole incident shows the importance of sharing data and software. Reinhart and Rogoff were almost exemplary regarding data in this case: they widely shared their data. Their mistake was in not widely distributing their software (in the form a spreadsheet) earlier. Had the spreadsheet been available from the start, they would  be in a much better position. </p>
+<p>Of course, another version of the story could be that, had Reinhart and Rogoff not shared their data and software, they would have plausible deniability and their work could still be credible. But this only means that you, as a reader, should put more trust in work where the data and software are available. </p>
+<p>In any case, by keeping the software private, the best that Reinhart and Rogoff  could have hoped for was to delay the inevitable: once your work is the basis for public policy, it is bound to come under intense scrutiny and significant mistakes will be discovered. By sharing your software, you establish your good faith.</p>
+<p>There are other minor points that I find interesting in this story:</p>
+<ul>
+<li>All this work is posted online. To my knowledge, no journal has been directly involved.</li>
+<li>Usually, negative results are unpublishable: journals are not interested. It is unclear that the paper by Herndon et al. can be published in a conventional journal even though it is obviously important work.   </li>
+<li>It seems that Reinhart and Rogoff are credited for much of the suffering due to the austerity measures in Europe. This seems entirely ridiculous to me. I think that Reinhart and Rogoff acted in good faith.
+</li>
+</ul>
+<p><strong>Further reading</strong>: <a href="https://retractionwatch.wordpress.com/2013/04/18/influential-reinhart-rogoff-economics-paper-suffers-database-error/">Influential Reinhart-Rogoff economics paper suffers spreadsheet error</a> (via Scott Guthery) and <a href="http://econlog.econlib.org/archives/2013/05/my_take_on_rein.html">My take on Reinhart and Rogoff</a> by David Henderson.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/" data-text="Share your software early: the Reinhart-Rogoff case" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/04/23/share-your-software-early-the-reinhart-rogoff-case/#comments" title="Comment on Share your software early: the Reinhart-Rogoff case">Comments (5)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/" rel="bookmark">You probably shouldn&#8217;t use a spreadsheet for important work</a><!-- (15.5)--></li>
+	</ul>
+</div>
+
+</div>
+
+
+
+<h2 id="comments">5 Comments 
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-83077">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/1fedcc39c67a15cad6b81b99c088203a?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>&#8220;I think that Reinhart and Rogoff acted in good faith&#8221; is an interesting statement, and quite possibly true.</p>
+<p>But how did the (certainly correct) analysis that &#8220;large debts may lead to tight fiscal policies that may reduce economic growth&#8221; lead to the (I think clearly absurd) conclusion that artificially pushing the number below the magic threshold (by enacting exactly those harmful policies) would solve the problem?</p>
+	<p><cite>Comment by Jens &#8212; 24/4/2013 @ <a href="#comment-83077">8:02</a></cite> </p>
+	</li>
+
+	<li id="comment-83078">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Jens</p>
+<p>There is nothing in their paper to support the thesis that austerity will boost a floundering economy. </p>
+<p>This is maybe what Reinhart and Rogoff  believe and advocate but, as far as I can tell, this is not what they wrote in their research.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 24/4/2013 @ <a href="#comment-83078">8:30</a></cite> </p>
+	</li>
+
+	<li id="comment-83100">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/1b5f40ec7c1e07935001188ea498d188?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>This is a classic case of confirmation bias. The start from a position that they want to prove, and find the data accomodating.</p>
+<p>You even demonstrate the bias in your description of the work, with statements like &#8220;entirely credible&#8221;. How do we know? Now that the specific methodology has been proven flawed, do we really know that larger debt equals poorer growth? Is there any statistical correlation at all? Is there a correlation between limits? Perhaps debt to GDP is a factor, but it could be dwarfed by other more significant factors or local norms.</p>
+<p>In Canada&#8217;s case (for example), we could carry a high debt ratio but do well if commodity (oil, iron, aluminium, potash, wheat, lumber) prices are high. Whereas we could have poor growth if we have no debt but commodity prices are very low.</p>
+<p>The bottom line here is that while I agree in a general way that servicing debt has a cost, each circumstance has to be weighed in its context. In some cases debt may be important &#8211; even crippling. In others &#8211; it may be a useful tool to attain other factors which will create positive growth &#8211; which may in turn wipe out debt. This is something the Clinton administration was ceanly aware of. Look at economic performance and debt ratios in those terms. Clinton used growth to slay debt, not the other way round.</p>
+	<p><cite>Comment by <a href='http://blog.lbs.ca/technology' rel='external nofollow' class='url'>Dominic Amann</a> &#8212; 24/4/2013 @ <a href="#comment-83100">10:15</a></cite> </p>
+	</li>
+
+	<li id="comment-83118">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/c47d7a71160b9ec79d34316139ff3cdb?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>It&#8217;s a great case study in scientific journalism. From what I&#8217;ve read, it doesn&#8217;t sound like the excel error significantly changes the results. What does make a large difference is R&amp;R&#8217;s decision to exclude data for some countries in the years following WWII, and an unusual weighting scheme that doesn&#8217;t take time spent in a debt category into account (so 19 years of high UK debt and moderate growth count the same as the 1 year New Zealand experienced high debt and low growth).</p>
+<p>So the issues that really skewed the results are questions of data appropriateness/cherry picking, and how to account for serial correlations between years. If the formula had been correct, the actual issues with the data would have been the same, but the public would never have cared. This would have been debated in esoteric journals. Instead, because an unrelated but relatable and unambiguous error was also there, the narrative is that the paper is fundamentally incorrect.</p>
+<p>I guess the lesson is, if you&#8217;re going to screw up, screw up in a boring academic manner =)</p>
+	<p><cite>Comment by Paul &#8212; 24/4/2013 @ <a href="#comment-83118">12:51</a></cite> </p>
+	</li>
+
+	<li id="comment-83141">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/3aefd8879773a7d1afabfd02d2a47b1d?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I&#8217;m really wondering why everyone is so upset against the original authors:  so they did a mistake, their reasoning was flawed by all those errors in their spreadsheet, ok. It remains that the ones to blame are those who used those results as a basis for their policy  and claimed their decisions were sound because some scientists said so.<br />
+It&#8217;s called Argument from authority and it&#8217;s the first trick taught in Rhetoric 101. Or whatever it was called by the ancient greeks.</p>
+<p>Djamé</p>
+	<p><cite>Comment by Djamé &#8212; 24/4/2013 @ <a href="#comment-83141">19:16</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<p>Sorry, the comment form is closed at this time.</p>
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/04/17/the-irony-of-we-are-the-99-percent/">Previous: The irony of &#8220;we are the 99 percent&#8221;</a></div>
+<div  style="text-align:right">
+<a href="http://lemire.me/blog/archives/2013/04/24/you-probably-shouldnt-use-a-spreadsheet-for-important-work/">Next: You probably shouldn&#8217;t use a spreadsheet for important work</a> &raquo; &raquo; </div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>3,800</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1410&nbsp;posts and 5739&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90075" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90047" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90043" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Itman on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90040" title="11/7/2013">Big-O notation and real-world performance</a></li>
+	<li>Jouni on <a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/#comment-90038" title="11/7/2013">Big-O notation and real-world performance</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.447 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-07-17 19:08:54 -->

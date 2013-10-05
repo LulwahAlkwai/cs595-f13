@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>  Do NULL markers in SQL cause any harm? </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5095" itemprop="name"><a href="http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/" rel="bookmark" itemprop="url"  title="Posted on March 5th, 2013">Do NULL markers in SQL cause any harm?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>The relational model, and by extension, the language SQL supports the notion of NULL marker. It is commonly used to indicate that some attribute is unknown or non applicable. NULL markers are a bit strange because they are not values per se. Hence, the predicate 1 = NULL is neither true nor false. Indeed, the inventor of the relational model, <a href="http://en.wikipedia.org/wiki/Edgar_F._Codd">E. F. Codd</a>, proposed a 3-value logic model: predicates are true, false or unknown. This lives on even today. Our entire civilization runs on database systems using an unintuitive 3-value logic. Isn&#8217;t that something!</p>
+<p>Unfortunately, in real life, predicates either evaluate to true, or they don&#8217;t. <a href="http://en.wikipedia.org/wiki/C._J._Date">C. J. Date</a> <a href="http://www09.sigmod.org/sigmod/record/issues/0809/p23.grant.pdf">showed that NULL markers end up giving you inconsistent semantics</a>. So our civilization runs on database systems that can be inconsistent! </p>
+<p>Yet the NULL markers were introduced for a reason:  some things do remain unknown or are non applicable. We can handle these issues with more complicated schemas, but it is not practical. So database designers do allow NULL markers.</p>
+<p>How did Codd react when it was pointed out to him that NULL markers make his model inconsistent? He essentially told us that NULL markers are in limbo:</p>
+<blockquote><p>(&#8230;) the normalization concepts do NOT apply, and should NOT be applied, globally to those combinations of attributes and tuples containing marks. (&#8230;) The proper time for the system to make this determination is when an attempt is made to replace the pertinent mark by an actual db-value.
+</p></blockquote>
+<p>So the mathematical rigor does not apply to NULL markers. Period.</p>
+<p>This sounds pretty bad. I am rather amazed that Codd could get away with this.</p>
+<p>But how bad is it in real life? </p>
+<p>Let us consider WordPress, the blog engine I am using. As part of the core database schema, only the tables wp_postmeta, wp_usermeta and wp_commentmeta allow NULL markers. These tables are exclusively used to store metadata describing blog posts, users and comments. If this metadata is somehow inconsistent, the blog engine will not fall apart. It may hurt secondary features, such as advanced navigation, but the core data (posts, users and comments) will remain unaffected.</p>
+<p>Date was repeatedly asked to prove that NULL markers were indeed a problem. I do not think that he ever conclusively showed that they were a real problem. Anyhow, our civilization has not collapsed yet.</p>
+<p>Does anyone has any evidence that NULL markers are a bona fide problem in practice? Oh! Sure! Incompetent people will always find a way to create problems. So let us assume we are dealing with reasonably smart people doing reasonable work.</p>
+<p><strong>Credit</strong>: This post is motivated by an exchange with A. Badia from Louisville University.</p>
+<p><strong>Example of SQL&#8217;s inconsistency:</strong></p>
+<blockquote><p>
+We are given two tables: Suppliers (sno,city) and Parts(pno,city). The tables have both  a single row; (S1,&#8217;London&#8217;) and (P1,null) respectively.  That is, we have one supplier in London as well as one part for which the location is left unspecified (hence the null marker).</p>
+<p>We have the following query:</p>
+<p>Select sno, pno<br />
+From Suppliers, Parts<br />
+Where Parts.city &lt;> Suppliers.city<br />
+Or Parts.city &lt;> &#8216;Paris&#8217;;</p>
+<p>In SQL,  this query would return nothing due to Codd&#8217;s 3-value logic because the where clause only selects row when the predicate is true.  </p>
+<p>Yet we know that if a physical part is actually located somewhere, it is either not in London or not in Paris.  So the answer is wrong.</p>
+<p>Let us consider another interpretation: maybe the part P1  is fictitious. It is not physically available anywhere. In such a case, the SQL query still fails to return the correct answer as the part P1 is not in London. </p>
+<p>Maybe we could assume instead that the part P1 is available everywhere: this later interpretation is also incorrect<br />
+because the query </p>
+<p>Select * from Parts where Parts.city = &#8216;Paris&#8217;</p>
+<p>will return nothing.
+</p></blockquote>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/" data-text="Do NULL markers in SQL cause any harm?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/03/05/do-null-markers-in-sql-cause-harm/#comments" title="Comment on Do NULL markers in SQL cause any harm?">Comments (20)</a>	</div>
+	
+
+</div>
+
+
+
+<h2 id="comments">20 Comments 
+</h2>
+
+<ol id="commentlist">
+
+	<li id="comment-74342">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/ca33cf3a10766186f28474e097ad0890?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Tony Hoare called null references his billion dollar mistake (<a href="http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare" rel="nofollow">http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare</a>), similar reasoning applies to 3-valued logic. It&#8217;s very easy to get bugs in queries when you forget to handle nulls and such bugs usually aren&#8217;t noticed until very late in the development cycle. It also leads to things like automatically conversion of values to NULL and vice-versa (e.g. empty varchars are NULL in Oracle).</p>
+	<p><cite>Comment by <a href='http://daniel.yokomizo.org' rel='external nofollow' class='url'>Daniel Yokomizo</a> &#8212; 5/3/2013 @ <a href="#comment-74342">12:20</a></cite> </p>
+	</li>
+
+	<li id="comment-74343">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/eb2d858a6ccea692bf677ad2c66623ad?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Many-valued logic is not inherently inconsistent (see <a href="http://plato.stanford.edu/entries/logic-manyvalued/" rel="nofollow">http://plato.stanford.edu/entries/logic-manyvalued/</a>). Why not allow three values but use a consistent logic?</p>
+	<p><cite>Comment by <a href='http://www.apperceptual.com/' rel='external nofollow' class='url'>Peter Turney</a> &#8212; 5/3/2013 @ <a href="#comment-74343">12:34</a></cite> </p>
+	</li>
+
+	<li id="comment-74344">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/7efeeb0d9fe2a53e84d0d77e2ab7e44e?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I think people unfairly treat clustering of their bugs around features as indications that those features are a huge problem. NULL is a classic case of this.</p>
+<p>Yes NULL is error prone. Yes NULL is inconsistent. Yes a lot of errors occur because of NULL.</p>
+<p>That&#8217;s because NULL is a necessary tool to address error prone, inconsistent aspects of reality. We need it.</p>
+	<p><cite>Comment by Christopher Smith &#8212; 5/3/2013 @ <a href="#comment-74344">12:39</a></cite> </p>
+	</li>
+
+	<li id="comment-74346">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Peter Turney</p>
+<p>Assuming that you do want 3-value logic, there is a  computational cost to pay if you want consistency. Yet efficiency is very important for a database system, maybe more so than theoretical rigor.</p>
+<p>Let me quote John Grant from &#8220;Null Values in SQL&#8221;:</p>
+<blockquote><p>
+Using Kleene’s 3-valued logic I showed that a truth-functional (i.e. the connectives are defined by truth-tables) 3-valued logic, where the third truth value stands for ”unknown”, will not give some formulas the correct truth value, and proposed a non-truth-functional 3-valued logic that gives all formulas correct truth values. In the case of null values for a relational database this means that the 3-valued logic truth tables used by Codd (the same as in Kleene’s 3-valued logic) do not always give correct answers to queries. First I wrote to Dr. Codd explaining the problem and after his reply I wrote a short article pointing out the problem. (&#8230;) for the correct evaluation of a query in the presence of a null value, all different cases must be considered.
+</p></blockquote>
+<p>What is amazing to me is that Codd got away with an inconsistent 3-value system and not only that, but this became the de facto standard for database systems.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 5/3/2013 @ <a href="#comment-74346">12:44</a></cite> </p>
+	</li>
+
+	<li id="comment-74347">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/a91e245ecf7e7d842c5ac290608d0946?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>3-valued logic is &#8220;flattened&#8221; in SQL: In SELECT sentences, if the whole WHERE expression is &#8220;unknown&#8221; then it is assumed to be &#8220;false&#8221;. In constrat, in CHECK constraints, if the expression is evaluated to &#8220;unknown&#8221; (e.g. CHECK X&gt;0) then it is assumed to be &#8220;true&#8221;.<br />
+Some aggegate operators behave in a contra-intuitive way in presence of NULL marks.<br />
+However, there is, in my opinion, a situation where NULLs make sense: when representing a N:0..1 relationship between two tables and you don&#8217;t want to have an extra table to represent such a relationship.</p>
+	<p><cite>Comment by <a href='http://www.essi.upc.edu/~farre/' rel='external nofollow' class='url'>Carles Farré</a> &#8212; 5/3/2013 @ <a href="#comment-74347">13:14</a></cite> </p>
+	</li>
+
+	<li id="comment-74359">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/7efeeb0d9fe2a53e84d0d77e2ab7e44e?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>I should clarify my previous post: obviously there are ways to get the job done without NULL. However, we need to model and address the bits of reality that give rise to NULL, and while their are approaches that avoid the Date&#8217;s theoretical problem with NULL, I don&#8217;t think there is an approach which avoids all the bugs that so often occur and are attributed to NULL. Unlike say, C&#8217;s buffer overflows or NULL terminated strings, the bugs are caused by the nature of the problem, not the nature of the solution.</p>
+<p>I&#8217;d even argue NULL handles those problems better than most other solutions I&#8217;ve seen, but perhaps someone has a better alternative.</p>
+	<p><cite>Comment by Christopher Smith &#8212; 5/3/2013 @ <a href="#comment-74359">15:30</a></cite> </p>
+	</li>
+
+	<li id="comment-74464">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/1b5f40ec7c1e07935001188ea498d188?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>An interesting side note &#8211; in ieee floating point representation, there is &#8220;NaN&#8221; (not a number). If I have</p>
+<p>double a = numberic_limits::quietNaN();</p>
+<p>bool e = (a == a);</p>
+<p>will evaluate to false.</p>
+	<p><cite>Comment by <a href='http://blog.lbs.ca/technology' rel='external nofollow' class='url'>Dominic Amann</a> &#8212; 6/3/2013 @ <a href="#comment-74464">9:10</a></cite> </p>
+	</li>
+
+	<li id="comment-74467">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Dominic Amann</p>
+<p>NaN is supposed to be non-reflexive under IEEE 734. C++ supports IEEE 734.</p>
+<p>PostgreSQL and Oracle do claim to support IEEE 734 but I think that their NaN is reflexive (thus violating the standard).</p>
+<p>IEEE 734 is logically consistent, and relies on simple 2-value logic (false or true). Elements in IEEE 734 do not form  equivalence classes, however, but that is not required for logical consistency.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 6/3/2013 @ <a href="#comment-74467">9:23</a></cite> </p>
+	</li>
+
+	<li id="comment-74468">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/1b5f40ec7c1e07935001188ea498d188?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Daniel I agree it follows the standard. I was cnotrasting its behaviour to sql&#8217;s null.</p>
+	<p><cite>Comment by <a href='http://blog.lbs.ca/technology' rel='external nofollow' class='url'>Dominic Amann</a> &#8212; 6/3/2013 @ <a href="#comment-74468">9:38</a></cite> </p>
+	</li>
+
+	<li id="comment-74469">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Dominic Amann</p>
+<p>Well, the designers of IEEE 734 did not see a need to use 3-value logic. I think they were right. I think Codd was wrong.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 6/3/2013 @ <a href="#comment-74469">9:49</a></cite> </p>
+	</li>
+
+	<li id="comment-74497">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/1b5f40ec7c1e07935001188ea498d188?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Danieal &#8211; you may be right &#8211; I wasn&#8217;t commenting on the rightness of the approach, just the different choice. Sorry I wasn&#8217;t clear.</p>
+<p>To look at Codd&#8217;s approach &#8211; I think there are two problems here:</p>
+<p>one is &#8220;this answer is not defined for the arguments given&#8221;, and the other is &#8220;this data item has not been assigned a value&#8221;.</p>
+	<p><cite>Comment by <a href='http://blog.lbs.ca/technology' rel='external nofollow' class='url'>Dominic Amann</a> &#8212; 6/3/2013 @ <a href="#comment-74497">12:43</a></cite> </p>
+	</li>
+
+	<li id="comment-74500">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Dominic Amann</p>
+<p>Yes. Codd did, in fact, propose to handle different markers to represent just the kind of distinctions you are making,  but it was never picked up.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 6/3/2013 @ <a href="#comment-74500">13:45</a></cite> </p>
+	</li>
+
+	<li id="comment-74510">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b396ad0823bf6f19707a27012b865a81?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>Actually &#8220;1 = NULL&#8221; might not be false, but it is falsy. That is, SELECT * FROM table WHERE field = null; will simply select nothing, because the predicate is always falsy, even if field itself contains null for a record.</p>
+<p>The trouble is when you expect negation of falsy. The negation of something undefined is still undefined. Hence &#8220;not null&#8221; is still null in sql. And &#8220;1  null&#8221; is still falsy. (But funny enough, &#8220;1  (null OR false)&#8221; is true because &#8220;null OR false&#8221; is false and not null but &#8220;null AND true&#8221; is null.)</p>
+<p>The conclusion is, read the SQL null as &#8220;undefined&#8221; or &#8220;don&#8217;t know&#8221;, where the c/c++/java null is more like zero. Too bad javascript has undefined, but &#8220;undefined == undefined&#8221; is true. So undefined in javascript is just a marker and not a true undefined value, like null is in sql. But then javascript has NaN and &#8220;NaN == NaN&#8221; is false. So NaN behaves like a real undefined value.</p>
+<p>If anything, sql could benefit from a value that represents undefined and a value that represents nothing. But maybe todays situation is better, otherwise nobody would understand which value to use in what situation. And now everybody gets burned by sql null at least once and then learns <img src='http://lemire.me/blog/wp-includes/images/smilies/icon_smile.gif' alt=':)' class='wp-smiley' /> </p>
+	<p><cite>Comment by <a href='http://onnlucky.com' rel='external nofollow' class='url'>Onne</a> &#8212; 6/3/2013 @ <a href="#comment-74510">15:39</a></cite> </p>
+	</li>
+
+	<li id="comment-74513">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Onne</p>
+<p><em>The trouble is when you expect negation of falsy</em></p>
+<p>I think that the trouble is deeper than that.  You do end up with inconsistent results. Period. It is not just that NULL is difficult to understand, it is mathematically improper. Please see the detailed explanation Grant gave: <a href="http://www09.sigmod.org/sigmod/record/issues/0809/p23.grant.pdf" rel="nofollow">http://www09.sigmod.org/sigmod/record/issues/0809/p23.grant.pdf</a></p>
+<p>Even Codd admitted as much: to him, the NULL markers were outside of the relational model and not subject to normalization. He knew of the problems, because they were reported to him, but he viewed them as irrelevant.</p>
+<p>In some sense, history proved him right. Or did it?</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 6/3/2013 @ <a href="#comment-74513">15:57</a></cite> </p>
+	</li>
+
+	<li id="comment-74553">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b396ad0823bf6f19707a27012b865a81?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Daniel</p>
+<p>In the example of the paper, P1 has NULL for a city, and the author poses that whatever you fill in for NULL, it must result in the predicate to become true. However, maybe the parts supplier P1 is omnipresent, it is in every city all at once. In that case the predicate should stay false on two accounts: P1 is the same city as S1 and P1 is in Paris.</p>
+<p>NULL is not a value, it is outside the domain of the values that could have been in its place.</p>
+<p>Is that mathematically improper? I am not convinced; it is practical, however. So yes, I think Codd was proven right.</p>
+	<p><cite>Comment by <a href='http://onnlucky.com' rel='external nofollow' class='url'>Onne</a> &#8212; 7/3/2013 @ <a href="#comment-74553">2:03</a></cite> </p>
+	</li>
+
+	<li id="comment-74615">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Onne</p>
+<p>Yes, it is mathematically inconsistent. There is no way around it. I&#8217;ll update my blog post right away with a more elaborate discussion. Your interpretation falls apart too as you&#8217;ll see.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 7/3/2013 @ <a href="#comment-74615">9:23</a></cite> </p>
+	</li>
+
+	<li id="comment-74631">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/?d=wavatar&amp;s=32' class='avatar avatar-32 photo avatar-default' height='32' width='32' /></div>
+	<p>@Daniel</p>
+<p>I see what you mean, but your reasoning is incorrect, see NULL might mean is nowhere, or everywhere, or only paris or only london. Or it might even be a quantum value that is london if you compare it to paris, and paris when you compare it to london. (This is easier to see if you stop using singular values and use sets of cities instead, now what does the NULL set mean, or a set containing Paris and NULL mean?)</p>
+<p>The only sensible answer to a comparison with null is to return null again. The inconsistency is the pragmatic choice to let null be a falsy value when it comes to actually doing work (selecting records).</p>
+<p>The sound thing to do in sql is not to return a list of some records when encountering null, instead to collapse the whole result into null itself. As in, I don&#8217;t know the answer to your question. But that is not very pragmatic &#8230;</p>
+	<p><cite>Comment by Anonymous &#8212; 7/3/2013 @ <a href="#comment-74631">11:45</a></cite> </p>
+	</li>
+
+	<li id="comment-74642">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Anonymous</p>
+<p><em>The sound thing to do in sql is not to return a list of some records when encountering null, instead to collapse the whole result into null itself. As in, I don’t know the answer to your question.</em></p>
+<p>But that is not what SQL does. It does return an answer even when nulls are involved. SQL itself does not offer any consistent view.</p>
+<p>Of course, the programmer can check (painfully) to see if any nulls are involved. Or he can forbid nulls. Or he can use other, more complicated schemas, or special values&#8230; Anyhow, the burden is on the programmer to do the right thing with nulls&#8230; SQL will not help you. Arguably, it makes it hard for you to do the right thing.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 7/3/2013 @ <a href="#comment-74642">12:43</a></cite> </p>
+	</li>
+
+	<li id="comment-74650">
+<div style="float:right;margin:2px"><img alt='' src='http://1.gravatar.com/avatar/b396ad0823bf6f19707a27012b865a81?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Daniel</p>
+<p>Going back to my first statement. Notice how there are no inconsistencies if you don&#8217;t use negations (not or unequal). If need be use &#8220;select inverse&#8221;.</p>
+<p>So how do you deal with this as a programmer? Just don&#8217;t use negations unless you think about how you want to deal with null. Basically you need to deal with the fact that the sql engine does not know that the domain of cities is finite and void of quantum values.</p>
+<p>And surely not having null is much more of a burden&#8230; it is like saying because division by zero is such a problem that we don&#8217;t want zero in math.</p>
+	<p><cite>Comment by <a href='http://onnlucky.com' rel='external nofollow' class='url'>Onne</a> &#8212; 7/3/2013 @ <a href="#comment-74650">13:32</a></cite> </p>
+	</li>
+
+	<li id="comment-74651">
+<div style="float:right;margin:2px"><img alt='' src='http://0.gravatar.com/avatar/4b736113aa1557b9a110b5123d81d5f6?s=32&amp;d=wavatar&amp;r=G' class='avatar avatar-32 photo' height='32' width='32' /></div>
+	<p>@Onne</p>
+<p>Just so we are clear: I am not arguing against NULLs.</p>
+	<p><cite>Comment by <a href='http://lemire.me/en/' rel='external nofollow' class='url'>Daniel Lemire</a> &#8212; 7/3/2013 @ <a href="#comment-74651">13:50</a></cite> </p>
+	</li>
+
+
+</ol>
+
+
+<p>Sorry, the comment form is closed at this time.</p>
+
+
+<div class="navigation" style="text-align:right;font-size:0.9em;margin-top:5em;">
+<div  style="text-align:left;">
+&laquo; &laquo; <a href="http://lemire.me/blog/archives/2013/03/04/where-are-the-big-problem-jobs/">Previous: Where are the &#8220;big problem&#8221; jobs?</a></div>
+<div  style="text-align:right">
+<a href="http://lemire.me/blog/archives/2013/03/11/current-daylight-saving-time-policies-are-insane/">Next: Current Daylight saving time policies are insane</a> &raquo; &raquo; </div>
+</div> <!-- end navigation -->
+ 
+
+<p style="text-align:right;font-size:0.9em;margin-top:3em;"><a href="http://lemire.me/blog/">« Blog's main page</a></p> 
+
+
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,500</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>4,400</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1419&nbsp;posts and 5829&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Itman on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94663" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Leonid Boytsov on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94652" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Vivek Haldar on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94604" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Leonid Boytsov on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94591" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+	<li>Leonid Boytsov on <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comment-94535" title="23/9/2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.143 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-09-25 14:01:37 -->

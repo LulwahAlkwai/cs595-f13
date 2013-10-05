@@ -1,0 +1,284 @@
+    #[1]Arduino Blog RSS Feed [2]Arduino Blog » The Power of Temboo:
+   connect the Yún to 100+ APIs Comments Feed
+
+   [3]Arduino
+   ____________________ search
+     *
+
+     * [4]userpicture
+     * [5]Home
+     * [6]Buy
+          + [7]Store
+          + [8]Distributors
+     * [9]Download
+     * [10]Products
+     * [11]Learning
+          + [12]Getting started
+          + [13]Examples
+          + [14]Playground
+     * [15]Reference
+     * [16]Support
+          + [17]FAQ
+          + [18]Forum
+     * [19]Blog
+
+     * [20]LOG IN
+     * [21]SIGN UP
+
+   [22]It's time to enjoy the Arduino Yún: now available for purchase!
+   [23]The interactive veil expressing emotions with Lilypad
+
+The Power of Temboo: connect the Yún to 100+ APIs
+
+   Zoe Romano -- September 11th, 2013
+
+   [24]1 - Arduino Temboo schema
+
+   (Guest post by Temboo Team)
+
+   Ever wish your Arduino could respond to the weather on the other side
+   of the world? Or send you an email to let you know what it's up to?
+   Upload stuff to your Dropbox account? Or detect if you're at risk of
+   exposure to toxic chemicals?
+
+   Now it can. The [25]Arduino Yún can easily grab all sorts of data and
+   interact with tons of web-based services like Fitbit, Facebook, and
+   Google because every Yún comes loaded with the power of [26]Temboo.
+   Using the Yún's built in wi-fI capabilities, Temboo makes it easy for
+   the Yún to connect to over 100 Application Programming Interfaces
+   (APIs).
+
+   Don't know what an [27]API is or how to use one? Don't worry. You don't
+   need to. With Temboo you can start using APIs with your Yún in minutes.
+   We've standardized how to program with them and made sure they play
+   nice with Arduino.
+
+   So how do you get your Yún to Temboo?
+
+   That's easy too. When you're setting up your Arduino account, you can
+   quickly register for a free Temboo account right from your Arduino
+   profile page. All you need to do for that is pick a Temboo username,
+   and we'll automatically email you your Temboo account details along
+   with some ideas on where to begin. You should definitely check out the
+   dedicated [28]Arduino section of our website. We've created several
+   how-to examples to get you Tweeting, texting, and more from your Yún in
+   minutes. We've even put some examples right into the Arduino IDE
+   (File->Examples>Bridge->Temboo).
+
+   [29]Temboo's special page for the Arduino Yún.
+
+
+   Click on the image below to see one of the Temboo examples on Arduino
+   IDE
+
+
+   [30]One of the Temboo examples in the Arduino IDE.
+
+   What's under the hood?
+
+   Temboo has written a special Python program on the Linino processor
+   that interacts with the Temboo platform, sending and receiving data. A
+   C++ library we created for the Arduino processor allows makers to
+   communicate with the Linino-side Temboo program in a powerful yet
+   user-friendly way. Sketch code for interacting with any Temboo process
+   is generated live on our site for copying into the Arduino IDE. We've
+   even developed a unique way for users to select the particular data
+   they need from APIs and web-based resources, filtering out extraneous
+   information and reducing the load on the board. For all the power that
+   Temboo provides, our technology leaves a remarkably light footprint.
+
+   [31]The Temboo website generates sketch code for the Arduino Yún.
+   Above: Create an event on a Google Calendar.
+
+   We can't even begin to imagine all the cool stuff that makers will do
+   with the Yún. We'll be adding more Arduino examples to our site as we
+   continue to brainstorm, but we'd love to feature your ideas and
+   projects as well. Shoot us an email at hey [at] temboo.com or tweet at
+   us at @Temboo to tell us about what you're working on or to ask any
+   questions.
+
+
+
+   [32]Share|
+
+   This entry was posted by Zoe Romano on Wednesday, September 11th, 2013
+   and is filed under [33]arduino, [34]Social Media, [35]Yún. You can
+   follow any responses to this entry through the [36]RSS 2.0 feed. You
+   can [37]leave a response, or [38]trackback from your own site.
+
+One Response to "The Power of Temboo: connect the Yún to 100+ APIs"
+
+    1. jonsmirl Says:
+       [39]September 11th, 2013 at 15:41:17
+       Where is the Linino source? Are you going to submit it back into
+       the OpenWRT? OpenWRT is preparing to do a major release in the next
+       month or so.
+
+Leave a Reply
+
+   You must be [40]logged in with your Arduino account to post a comment.
+     * [41]Submit Your Project
+     * [42]Maker Faire
+     *
+
+@arduino on twitter
+          + Arduino Robot is at [43]#makerfairerome - discover first Video
+            Tutorial featuring [44]@dcuartielles
+            [45]http://t.co/FKWKTtGP8p [46]@rselectronics [47]about 5
+            minutes ago from [48]Buffer [49]Reply[50]Retweet[51]Favorite
+          + RT [52]@RSElectronics: Did you know [53]#ArduinoRobot can play
+            8-bit music? Here's what you need to know ->
+            [54]http://t.co/pvUABD2MFJ [55]about 12 minutes ago from
+            [56]Twitter for Android [57]Reply[58]Retweet[59]Favorite
+          + The [60]#makerfairerome weekend is starting! Ready to explore
+            more than 200 makers from all over europe?
+            [61]http://t.co/Q1JNdG7xhK [62]about 34 minutes ago from
+            [63]Buffer [64]Reply[65]Retweet[66]Favorite
+          + RT [67]@briantun: [68]@Arduino [69]#Yun based security system
+            [70]http://t.co/vzLi1pnqzB [71]about 12 hours ago from
+            [72]Twitter for Android [73]Reply[74]Retweet[75]Favorite
+          + RT [76]@TXInstruments: Are you at [77]@MakerFaireRome? Don't
+            miss our own [78]@jadon & [79]@gcoley1 speaking with
+            [80]@Arduino's [81]@mbanzi about the TRE at 3:30 ... [82]about
+            13 hours ago from [83]Twitter for Android
+            [84]Reply[85]Retweet[86]Favorite
+       [87]@arduino
+     * Popular Posts
+          + [88]Welcome Arduino Yún - the first member of a series of wifi
+            products combining Arduino with Linux
+          + [89]How to control Arduino board using an Android phone
+          + [90]Arduino IR Remote Control
+          + [91]Send in the clones
+          + [92]My open-source, do-it-yourself cellphone (built with
+            Arduino).
+          + [93]Let your Arduino talk with your Android
+          + [94]Talking about hacking secondary school education in Spain
+            at Coderdojo conference
+          + [95]Introducing the Arduino TFT LCD screen
+          + [96]A painting machine sensing your touch
+          + [97]A DIY magnetic levitation vehicle to inspire future
+            engineers
+     * Archives [Select Month..]
+     * Categories[Select Category.......]
+     * Blogroll
+          + [98]David Cuartielles (Spanish)
+          + [99]MAKE: Blog's Arduino archive
+          + [100]Tom Igoe's PComp Site
+     * Meta
+          + [101]Log in
+          + [102]Entries RSS
+          + [103]Comments RSS
+          + [104]WordPress.org
+
+     * ©Arduino
+     * [105]Copyright Notice
+     * [106]Contact us
+
+References
+
+   1. http://blog.arduino.cc/feed/
+   2. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/feed/
+   3. http://arduino.cc/
+   4. http://arduino.cc/
+   5. http://arduino.cc/
+   6. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/
+   7. http://store.arduino.cc/ww/index.php
+   8. http://arduino.cc/en/Main/Buy
+   9. http://arduino.cc/en/Main/Software
+  10. http://arduino.cc/en/Main/Products
+  11. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/
+  12. http://arduino.cc/en/Guide/HomePage
+  13. http://arduino.cc/en/Tutorial/HomePage
+  14. http://playground.arduino.cc/
+  15. http://arduino.cc/en/Reference/HomePage
+  16. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/
+  17. http://arduino.cc/en/Main/FAQ
+  18. http://forum.arduino.cc/
+  19. http://blog.arduino.cc/
+  20. https://id.arduino.cc/auth/login/?returnurl=http%3A%2F%2Fblog.arduino.cc%2F2013%2F09%2F11%2Fthe-power-of-temboo-connect-the-yun-to-100-apis%2F
+  21. https://id.arduino.cc/auth/register
+  22. http://blog.arduino.cc/2013/09/10/its-time-to-enjoy-the-arduino-yun-now-available-for-purchase/
+  23. http://blog.arduino.cc/2013/09/12/the-interactive-veil-expressing-emotions-with-lilypad/
+  24. http://blog.arduino.cc/wp-content/uploads/2013/09/1-Arduino-Temboo-schema.png
+  25. http://arduino.cc/en/Main/ArduinoYUN
+  26. http://www.temboo.com/
+  27. http://en.wikipedia.org/wiki/Application_programming_interface
+  28. https://www.temboo.com/arduino
+  29. http://blog.arduino.cc/wp-content/uploads/2013/09/2-Temboos-Arduino-page.png
+  30. http://blog.arduino.cc/wp-content/uploads/2013/09/3-Arduino-IDE-example.png
+  31. http://blog.arduino.cc/wp-content/uploads/2013/09/4-Arduino-sketch-code.png
+  32. http://addthis.com/bookmark.php?v=300&username=xa-4d2b47597ad291fb
+  33. http://blog.arduino.cc/category/arduino/
+  34. http://blog.arduino.cc/category/social-media/
+  35. http://blog.arduino.cc/category/arduino/yun/
+  36. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/feed/
+  37. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/#respond
+  38. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/trackback/
+  39. http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/#comment-234464
+  40. https://id.arduino.cc/auth/login/?returnurl=http://blog.arduino.cc/2013/09/11/the-power-of-temboo-connect-the-yun-to-100-apis/
+  41. http://blog.arduino.cc/submit-your-project/
+  42. http://www.makerfairerome.eu/
+  43. http://twitter.com/search?q=%23makerfairerome
+  44. http://twitter.com/dcuartielles
+  45. http://t.co/FKWKTtGP8p
+  46. http://twitter.com/rselectronics
+  47. http://twitter.com/arduino/statuses/386395349881221120
+  48. http://bufferapp.com/
+  49. http://twitter.com/intent/tweet?in_reply_to=386395349881221120
+  50. http://twitter.com/intent/retweet?tweet_id=386395349881221120
+  51. http://twitter.com/intent/favorite?tweet_id=386395349881221120
+  52. http://twitter.com/RSElectronics
+  53. http://twitter.com/search?q=%23ArduinoRobot
+  54. http://t.co/pvUABD2MFJ
+  55. http://twitter.com/arduino/statuses/386393499056488448
+  56. http://twitter.com/download/android
+  57. http://twitter.com/intent/tweet?in_reply_to=386393499056488448
+  58. http://twitter.com/intent/retweet?tweet_id=386393499056488448
+  59. http://twitter.com/intent/favorite?tweet_id=386393499056488448
+  60. http://twitter.com/search?q=%23makerfairerome
+  61. http://t.co/Q1JNdG7xhK
+  62. http://twitter.com/arduino/statuses/386388100383248384
+  63. http://bufferapp.com/
+  64. http://twitter.com/intent/tweet?in_reply_to=386388100383248384
+  65. http://twitter.com/intent/retweet?tweet_id=386388100383248384
+  66. http://twitter.com/intent/favorite?tweet_id=386388100383248384
+  67. http://twitter.com/briantun
+  68. http://twitter.com/Arduino
+  69. http://twitter.com/search?q=%23Yun
+  70. http://t.co/vzLi1pnqzB
+  71. http://twitter.com/arduino/statuses/386206296439267329
+  72. http://twitter.com/download/android
+  73. http://twitter.com/intent/tweet?in_reply_to=386206296439267329
+  74. http://twitter.com/intent/retweet?tweet_id=386206296439267329
+  75. http://twitter.com/intent/favorite?tweet_id=386206296439267329
+  76. http://twitter.com/TXInstruments
+  77. http://twitter.com/MakerFaireRome
+  78. http://twitter.com/jadon
+  79. http://twitter.com/gcoley1
+  80. http://twitter.com/Arduino
+  81. http://twitter.com/mbanzi
+  82. http://twitter.com/arduino/statuses/386191293950734336
+  83. http://twitter.com/download/android
+  84. http://twitter.com/intent/tweet?in_reply_to=386191293950734336
+  85. http://twitter.com/intent/retweet?tweet_id=386191293950734336
+  86. http://twitter.com/intent/favorite?tweet_id=386191293950734336
+  87. http://twitter.com/arduino
+  88. http://blog.arduino.cc/2013/05/18/welcome-arduino-yun-the-first-member-of-a-series-of-wifi-products-combining-arduino-with-linux/
+  89. http://blog.arduino.cc/2013/07/18/how-to-control-arduino-board-using-an-android-phone/
+  90. http://blog.arduino.cc/2012/12/19/arduino-ir-remote-control/
+  91. http://blog.arduino.cc/2013/07/10/send-in-the-clones/
+  92. http://blog.arduino.cc/2013/08/12/diy-cellphone/
+  93. http://blog.arduino.cc/2013/07/09/let-your-arduino-talk-to-your-android-phone-without-any-android-programming/
+  94. http://blog.arduino.cc/2013/04/15/talking-about-hacking-secondary-school-education-in-spain-at-coderdojo-conference/
+  95. http://blog.arduino.cc/2013/05/22/introducing-the-arduino-tft-lcd-screen/
+  96. http://blog.arduino.cc/2013/06/11/a-painting-machine-sensing-your-touch/
+  97. http://blog.arduino.cc/2013/06/08/a-diy-magnetic-levitation-vehicle-to-inspire-future-engineers/
+  98. http://david.cuartielles.com/
+  99. http://www.makezine.com/blog/archive/arduino/
+ 100. http://www.tigoe.net/pcomp/
+ 101. http://blog.arduino.cc/wp-login.php
+ 102. http://blog.arduino.cc/feed/
+ 103. http://blog.arduino.cc/comments/feed/
+ 104. http://wordpress.org/
+ 105. http://arduino.cc/en/Main/CopyrightNotice
+ 106. http://arduino.cc/en/Main/ContactUs

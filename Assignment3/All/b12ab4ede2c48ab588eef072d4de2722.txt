@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+	<title>Daniel Lemire&#039;s blog </title>
+	
+
+	<style type="text/css" media="screen">
+		@import url( http://lemire.me/blog/wp-content/themes/lemiretheme/style.css );
+	</style>
+
+	<link rel="alternate" type="application/rss+xml" title="RSS 2.0" href="http://lemire.me/blog/feed/" />
+	<link rel="alternate" type="text/xml" title="RSS .92" href="http://lemire.me/blog/feed/rss/" />
+	<link rel="alternate" type="application/atom+xml" title="Atom 1.0" href="atom" />
+	
+	<link rel="pingback" href="http://lemire.me/blog/xmlrpc.php" />
+	<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-25286235-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+</head>
+
+<body>
+
+
+
+<div id="textbody">
+<div id="content" itemscope itemtype="http://schema.org/Blog">
+<!-- end header -->
+
+
+
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5600" itemprop="name"><a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/" rel="bookmark" itemprop="url"  title="Posted on October 4th, 2013">What are the genuinely useful ideas in programming?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>The software industry is probably the most dynamic and innovation of all industries. However, many people also try to convince us to adapt new ideas despite their dubious practical value.</p>
+<p>So what are the ideas that stick&#8230; ideas that are genuinely good and important?</p>
+<p>Here is my current list:</p>
+<ul>
+<li>Structured programming;</li>
+<li>Unix and its corresponding philosophy;</li>
+<li>Database transactions;</li>
+<li>The &#8220;relational database&#8221;;</li>
+<li>The <del>graphical</del> user interface ;</li>
+<li>Software testing;</li>
+<li>The most basic data structures (the heap, the hash table, and trees) and a handful of basic algorithms such as Quicksort;</li>
+<li>Public-key encryption and cryptographic hashing;</li>
+<li>(new:) High-level programming and typing;</li>
+<li>(new:) Version control.</li>
+</ul>
+<p>Naturally, you can argue that I am missing many important things. Maybe you feel that functional and object-oriented programming are essential. Maybe you think that I should include complexity analysis, JavaScript, XML or garbage collection. One can have endless debates&#8230; but I am trying to narrow it down to an uncontroversial list. That is, I want key ideas that are universally recognized as useful. </p>
+<p>Let me put it this way: if you were to meet a master of software programming, what are you absolutely sure he will recommend to a kid who wants to become a programmer?</p>
+<p>Am I missing anything important?</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/" data-text="What are the genuinely useful ideas in programming?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/10/04/genuinely-useful/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comments" title="Comment on What are the genuinely useful ideas in programming?">Comments (18)</a>	</div>
+	
+
+</div>
+
+ 
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5589" itemprop="name"><a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/" rel="bookmark" itemprop="url"  title="Posted on October 1st, 2013">The written word took over the world</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>Whereas most human beings learn to speak in the first two years of their life, written languages are more of an acquired ability. We learn to speak before we learn to write. It is not uncommon for adults to be illiterate, even in rich countries. In this sense, the written language is a high-level ability. </p>
+<p>For centuries, only a small elite knew how to write and read. I suspect that it was widespread at first among wealthy merchants. </p>
+<p>Learning how to read and write a natural language was probably like learning to program software today. Few could do it well. If you were part of the literate elite, you could expect good jobs.</p>
+<p>The written language was a powerful technology when it first arose, akin to the computer today. Instead of having to painful remember who bought what and when, you could write it down. You could hand out receipt. You could create money in the form of IOUs. In time, people could use the written language to tell stories, to seduce remote princesses&#8230; The possibilities were endless.</p>
+<p>What is amazing, to me, is the rise of written language as an essential medium via platforms like Facebook or email. To our ancestors, this would be unbelievable. How can all these people be expected to communicate effectively through writing?</p>
+<p>Today, we say that  software is eating the world: most jobs and industries are becoming software-related. But it is maybe useful to view this as the continuation of a trend that started when the written word is took over the world.</p>
+<p>As software eats up our world, people urge us to prepare. Our kids need to learn how to program. But as someone who officially receives over 100 emails a day&#8230; let me add that your kids should first learn to write well.</p>
+<p>The written language remains an acquired ability, and  mastering it is a matter of constant effort. But, most importantly, it requires a different work ethic.</p>
+<p>When I help my sons to study, I expect them to always write down the answer. It is not uncommon for one of my sons to pass a test if I ask him to speak it out, but to fail it when I ask him to write it down. Part of the reason is that, as the person asking the question, you provide many more clues when you speak and listen to someone. &#8220;Does it end up a &#8216;t&#8217;? I can&#8217;t remember, but dad seems to be waiting for more&#8230;&#8221; It is simply harder to write down the answer.</p>
+<p>We should not underestimate this challenge. Let me contrast these two actions:</p>
+<ul>
+<li> If I come to meet you in person to communicate a message (or if I call you), I do not have to spend much effort preparing. I can figure out what I need to say as you are waiting. Moreover, I can rely on the recipient to give various non-verbal clues to guide me through the process. And even if I ended up failing to communicate any meaningful information, we can still smile. </li>
+<li>If I send you an email, I may have to put my emotions aside and think through my problem. What do I really want to say? What is my context? When I write, I have to make an effort to anticipate the reactions of the recipient without any guinea pig. I also can&#8217;t corner him or her: I must get to the point without undue delay. And if my email ends up being gibberish, I probably won&#8217;t get a smile back. </li>
+</ul>
+<p>Of course, this analysis extends to meetings. People who love meetings are often the very same people who have trouble writing. In a meeting, you can talk for 15 minutes without any message&#8230; you can fill the time with empty posturing. In written form, you&#8217;d be ridiculed&#8230; but, after a long diatribe that nobody could quite follow, you are unlikely to hear anyone point out how empty your words were. Once more: the bar is set higher when you use the written language.</p>
+<p>I should stress that effective written communication is not necessarily limited by your mastery of the grammar or your spelling abilities. The main issue is effort. Writing well takes time. It is a habit. </p>
+<p>When you write&#8230; &#8220;I can&#8217;t explain myself by email, let me call you&#8221;&#8230; you may be letting us know more  about your work ethic than you think&#8230;  There are good reasons to call people up. For example, if you are the CEO, and you want to stress the importance of a project, you better call up the project manager. It is hard to convey emotions reliably by email.  However, if you are the CEO and can&#8217;t explain your decisions or state your questions by email, then maybe you are all fluff. Both Bill Gates and Steve Jobs are famous for some of their emails. Both of them write well and are to the point. Steve Jobs often wrote back to lay users. His emails  were often communication masterpieces. Clear, concise, and powerful. Other powerful writers include Linus Torvalds, Tim Berners-Lee, Tim Bray&#8230; </p>
+<p>Not all our leaders can write well. But if the most powerful CEO of his era would take the time to explain himself by email, what does it mean for the rest of us?</p>
+<p>Before email, it was enough to be able to read most things, and to write semi-competently when you had to. Today, you shouldn&#8217;t hire an engineer unless if he can explain a difficult technical issue in ten lines or less.</p>
+<p>A friend of mine once asked whether we could offer a college course on &#8220;efficient use of email&#8221;. I have no doubt that this would be ridiculed&#8230; but it could be the most useful course many students ever take.</p>
+<p>I wrote that the written word requires a different work ethic. You can&#8217;t figure out what you want to write as you go. We should realize that software programming takes this up to another level. Once you code your ideas in software, you have to know <strong>exactly</strong> what they are, down the smallest detail. The future belongs to people who can be precise, concise and accurate. It will become harder and harder to get by with fuzzy messages.</p>
+<p><strong>Update</strong>: Some have raised the counterpoint that video lectures and great talks can be precise, concise and accurate. For example, Steve Jobs produced great presentations that no only presented the facts, but also shared his enthusiasm. However, such presentations are akin to the written word: the author has had to prepare extensively and he must be mindful of the time the recipient is willing to spend. At any time, you can tune out a presentation or just leave. It is also not a natural form of &#8220;talk&#8221;: giving good presentations is an acquired skill that relies on rigor and hard work. Others have argued that the written word could be just as sloppy at the spoken word, e.g., as in so-called &#8220;texting&#8221;. This is true, of course&#8230; you can use the written word as merely a transcription of your immediate thoughts. Whether it is effective, e.g., in a business context, is another issue.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/10/01/the-written-word/" data-text="The written word took over the world" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/10/01/the-written-word/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/10/01/the-written-word/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/10/01/the-written-word/#comments" title="Comment on The written word took over the world">Comments (14)</a>	</div>
+	
+
+</div>
+
+ 
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5580" itemprop="name"><a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/" rel="bookmark" itemprop="url"  title="Posted on September 23rd, 2013">Why can&#8217;t you find a job with a Stanford computer science PhD?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>To many of my older colleagues, the idea that you possibly couldn&#8217;t find a job with a good degree, let alone a PhD, is unthinkable. And what about a promising young graduate in Computer Science from Stanford University? What if he has a PhD? He may not be able to secure an academic job, but industry recruiters will be all over him (or her). Surely!</p>
+<p>The truth is maybe harsher.</p>
+<p><a href="https://chronicle.com/blogs/phd/2013/09/19/the-ph-d-industry-gap/">Chand John</a> wrote a touching article recounting his personal experience. No doubt, he expected to easily land a good industry job. At least, that is what his professors expected. Yet it took him a year to get a job. He was dismissed by most employers:</p>
+<blockquote><p>Despite having programmed computers since age 8, I was rejected from about 20 programming jobs. (&#8230;) my experience writing code at a university, even on a product with 47,000 unique downloads, didn’t count as coding “experience”.
+</p></blockquote>
+<p>There is a hidden assumption on campus that academic jobs are hard to get, but industry jobs are easy. Many computer science professors assume that they and their students could easily land a job at Google or any other tech company nearby. Along with this belief goes the fact that whatever happens on campus is years ahead, and much more sophisticated, than what industry does. The  story goes like this: government funds professors who have the ideas, they get their students to develop these ideas&#8230; and eventually these ideas end up getting picked up by industry when students get industry jobs. The story goes back to <a href="http://en.wikipedia.org/wiki/Vannevar_Bush">Vannevar Bush</a>.</p>
+<p>There is a problem however: this story does not match the facts. Employers do not recruit graduate students to get access to the work they did on campus. When a graduate student is recruited, he will be very lucky if his new employer has more than a passing interest in what he did on campus. It is not just employer reluctance: very few students could take what they learned as a graduate student and launch a business or a consulting venture. </p>
+<p>The truth is that if you are fresh out of school, you will be the one doing most of the learning in industry. Even someone with a PhD can expect to be an apprentice for many years.</p>
+<p>Also, let us be honest: the software produced on campus is rarely good. It is often made of untested, undocumented, and barely functioning prototypes. I have no doubt that Chand John wrote beautiful and maintainable software while at the university. However, I understand the skepticism of employers who hear &#8220;I wrote code as a student&#8221;. It is simply not a great reference. They hear &#8220;I wrote software for fun&#8221;.</p>
+<p>So, people like Chand John end up with prize-winning research that is of little interest to anyone in industry. They wrote code on campus, but employers think &#8220;Oh! God! They will have to unlearn everything and start from scratch&#8221;. Is it any surprise that they are not offered the top programming jobs?</p>
+<p>Of course, it is not entirely fair to say that Chand John couldn&#8217;t easily get an industry job. He does not tell us how selective he was. I am asked routinely by people from industry about clever graduate students.  Presumably, what he couldn&#8217;t get easily is an interesting job. A job that would allow him to pay his student debts and offer him with a intellectual challenge. </p>
+<p>These jobs are scarce, both in industry and in academia.</p>
+<p><strong>Update</strong>: It looks like Chand now works for Honda Research in what must be a desirable position.</p>
+<p><strong>Source</strong>: The idea for this post came to me from a G+ post by Suresh Venkatasubramanian.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/" data-text="Why can&#8217;t you find a job with a Stanford computer science PhD?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/09/23/why-cant-yo-find-a-job-with-a-stanford-computer-science-ph-d/#comments" title="Comment on Why can&#8217;t you find a job with a Stanford computer science PhD?">Comments (19)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2012/10/08/will-i-get-a-job-with-this-degree/" rel="bookmark">Will I get a job with this degree?</a><!-- (10.8)--></li>
+	</ul>
+</div>
+
+</div>
+
+ 
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5568" itemprop="name"><a href="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/" rel="bookmark" itemprop="url"  title="Posted on September 17th, 2013">What do computer scientists know about performance?</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>Scientists make predictions and are judged on these predictions. If you study global warming, then your job is to predict the climate for the next few decades. But what do computer scientists predict with respect to performance?</p>
+<p>A lot of classical computer science is focused on performance. That is, it provides us with a repertoire of data structures and algorithms. You can solve 99.9% of all practical software problems using textbook data structures and algorithms. From time to time, you may need to invent something new&#8230; but there is very little you cannot do efficiently with heaps, hash tables, trees, graphs, sorting algorithms&#8230;</p>
+<p>This leaves us with the impression that computer science tells us a lot about efficiency. And, for an untrained programmer, using the tools of computer science, that is, using the right standard data structures and the right standard algorithms, goes a long way toward improving efficiency for large problems.</p>
+<p>That&#8217;s because computer science is just great at predicting the asymptotical performance of algorithms. I cannot stress this last point enough, so let me tell you about my own story.</p>
+<p>Like many people of my generation, I started programming when I was around 12 on a <a href="http://en.wikipedia.org/wiki/TRS-80_Color_Computer">TRS-80</a> my parent bought me. They had no idea what they had unleashed. My TRS-80 came with a beautiful manual from which I taught myself programming (in basic, unfortunately). </p>
+<p>When I finished high school, I thought I was a pretty neat programmer. I could basically program anything. Or so I thought.</p>
+<p>In my first Physics college class, the professor noticed that I was bored to death so he took upon himself to challenge me. He gave me access to an Apple II and asked me to &#8220;simulate a galaxy&#8221; by modelling gravitational forces. </p>
+<p>I could model one, two or three stars well enough using a naive numerical method. However, as I added stars, my model got slower. Much slower. It did not help when I switched to a more advanced computer. Though I had had no exposure to computational complexity, I recognized that something was up. And this is one of the great lessons that computer science teaches us: think about how the speed of your programs scale. Had I taken a good computer science class, I wouldn&#8217;t have been caught in a dead-end&#8230;</p>
+<p>Let us fast-forward a couple of decades&#8230; Today I would never try to simulate a galaxy by considering the effect of each star of all other stars. I would recognize this as a dead-end right away, without thinking.</p>
+<p>However, computational complexity accounts for less than 1% of the work I do when I program for efficiency. In practice, chasing efficiency (for me) is all about reducing the  factors. The goal is hardly never to replace an <em>O</em>(<em>N</em><sup>2</sup>) algorithm by an <em>O</em>(<em>N</em>) algorithm. The goal is to reduce the running time of a program by 50%. </p>
+<p>Why can&#8217;t computer science help us with constant factors? It can but computer scientists spend little time on the the key factors impacting efficiency: pipeline width, number of units, throughput and latency of the various instructions, memory latency and bandwidth, CPU caching strategies, CPU branching predictions, instruction reordering, superscalar execution, compiler heuristics and vectorization&#8230; and so on.</p>
+<p>Sometimes, computer scientists will be even dismissive of such constant factors. For example, they may object that as computers get faster anyhow, investing in making your code run twice as fast is wasted effort. Thankfully, not all computer scientists have this attitude. Knuth famously wrote:</p>
+<blockquote><p>In established engineering disciplines a 12% improvement, easily obtained, is never considered marginal and I believe the same viewpoint should prevail in software engineering.</p></blockquote>
+<p>Knuth is correct by the way: if you get hired by Google and manage to improve the performance of a key system by 12%, you are probably in a good position to ask for a huge raise. The difference between running 100 servers and 112 servers can mean a lot of money. Shaving off 12% to the latency can be worth millions of dollars. You are much less likely to be able to replace a key <em>O</em>(<em>N</em><sup>2</sup>) algorithm by an equivalent <em>O</em>(<em>N</em>) algorithm. Google engineers are probably good enough that opportunities to reduce the complexity are rare.</p>
+<p>How do we proceed to target these 12% gains? There are some guiding principles: keep memory access local, avoid difficult-to-predict branches&#8230; But even though computer science can help model either of these (e.g., use a complexity measures based on branching, or use a memory model with caching), I don&#8217;t know of any practical framework to really take them into account in a useful way. </p>
+<p>Ultimately, it is all about being able to predict. Given two algorithms, if you want to predict which one will fare better by a constant factor&#8230; then computer science often leaves you dry. Your options are to ask a more experience programmer, or maybe to implement both to try and see.</p>
+<p>This is often an expensive and crude process. When I review papers, I am often stuck in how to assess the efficiency of their implementation. It all comes down to trusting the authors. Very few papers are able to conclude something like this: &#8220;in the worst case, our implementation is within 10% of optimality&#8221; or &#8220;no software could be twice as fast as ours in solving this problem&#8221;.</p>
+<p>I think that computer science needs to try harder.</p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/" data-text="What do computer scientists know about performance?" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/09/17/computer-scientists-and-performance/#comments" title="Comment on What do computer scientists know about performance?">Comments (11)</a>	</div>
+	
+<div class="related">
+<p>Related posts (automatically generated):</p>
+<ul>
+		<li><a href="http://lemire.me/blog/archives/2013/07/11/big-o-notation-and-real-world-performance/" rel="bookmark">Big-O notation and real-world performance</a><!-- (15.2)--></li>
+		<li><a href="http://lemire.me/blog/archives/2013/07/10/should-computer-scientists-run-experiments/" rel="bookmark">Should computer scientists run experiments?</a><!-- (13.2)--></li>
+		<li><a href="http://lemire.me/blog/archives/2013/05/17/a-criticism-of-computer-science-models-or-modeles/" rel="bookmark">A criticism of computer science: models or modèles?</a><!-- (11.3)--></li>
+		<li><a href="http://lemire.me/blog/archives/2012/04/20/computer-scientists-need-to-learn-about-significant-digits/" rel="bookmark">Computer scientists need to learn about significant digits</a><!-- (10.7)--></li>
+	</ul>
+</div>
+
+</div>
+
+ 
+
+
+
+<div class="post" itemscope itemtype="http://schema.org/BlogPosting">
+	 <h1 class="storytitle" id="post-5560" itemprop="name"><a href="http://lemire.me/blog/archives/2013/09/16/bricolage/" rel="bookmark" itemprop="url"  title="Posted on September 16th, 2013">To solve hard problems, you need to use bricolage</a></h1>
+	<div class="storycontent"   itemprop="articleBody">
+		<p>People who think that they can design efficient solutions in the abstract, effectively believe in Oracles. That is, they somehow believe that from their desk, and using only their mind, they can anticipate all the implementation issues that will come up after hours of programming. They somehow believe that before they even start building the software, they can know everything there is to know about a practical problem.</p>
+<p>In a <a href="http://www.boulderstartups.org/ai1ec_event/cu-cs-colloquium-is-it-computer-science-software-engineering-or-hacking/?instance_id=">talk</a> about a neat software component he designed, Bruce Haddon observed that <em>there is no way that the final structure and algorithmic behavior of this component could have been predicted, designed, or otherwise anticipated</em>. </p>
+<p>Haddon observed that computer science serves as a source of core ideas: it provides the data structures and algorithms that are the building blocks. Meanwhile, he views software engineering as a useful set of methods to help design reliable software without losing your mind. Yet he points out that neither captures the whole experience.</p>
+<p>That&#8217;s because much of the work is what Haddon calls hacking, but what others would call bricolage. Simply put, there is much trial and error: we put ideas to together and see where it goes.</p>
+<p>It is common to be dismissive of bricolage (or hacking). However, I think it is a grave mistake to discourage it.</p>
+<p>It is common that my students will ask me &#8220;how do I do X?&#8221; and my answer is &#8220;try something, anything.&#8221; Though I don&#8217;t put it in words, I am encouraging them to use bricolage. I may need to urge them 2 or 3 times before they try it. And you know what happens? Often the student actually solves the problem!</p>
+<p>I believe that a common process is as follows:</p>
+<ul>
+<li>You are given a problem. You lack the necessary information to solve it. For example, maybe you are in Europe and you want to go to India but you have no map. </li>
+<li>You could try to build a simplified model of the problem and solve that. For example, you might decide that the world is round and that you simply have to sail West. There is no harm done unless hubris takes over and you conclude hastily that the problem is effectively solved. Something you did not know that you did not know might get in the way (e.g., there is an extra continent called America in your way). </li>
+<li>You could try something, anything. Chances are that it will fail. If it does, chances are that you will learn something. Something that might not have been obvious. For example, you may decide to go South along the coast of Africa. In the process, you may discover cities ripe for plunder. </li>
+</ul>
+<p>Most problems become reasonably easy once you have all the relevant information. The really difficult problems are such that you lack critical information. And, hence, almost all hard problems require bricolage. </p>
+
+	</div>
+
+<div class="shareicons" >
+<a href="https://twitter.com/share" class="twitter-share-button" data-url="http://lemire.me/blog/archives/2013/09/16/bricolage/" data-text="To solve hard problems, you need to use bricolage" data-count="horizontal" data-via="lemire">Tweet</a>
+<g:plusone size="medium" href="http://lemire.me/blog/archives/2013/09/16/bricolage/"></g:plusone>
+
+
+
+</div>
+	<div class="meta">
+
+<script src="http://feeds.feedburner.com/~s/daniel-lemire/atom?i=http://lemire.me/blog/archives/2013/09/16/bricolage/" type="text/javascript" charset="utf-8"></script>
+ 
+</div>
+	
+	<div class="feedback">
+                        <a href="http://lemire.me/blog/archives/2013/09/16/bricolage/#comments" title="Comment on To solve hard problems, you need to use bricolage">Comments (1)</a>	</div>
+	
+
+</div>
+
+ 
+
+<a href="http://lemire.me/blog/page/2/" >Next Page &raquo;</a>
+<!-- begin footer -->
+</div>
+
+
+<!-- begin sidebar -->
+
+
+
+<div id="menu">
+
+
+<img src="http://lemire.me/fr/images/JPG/profile2011_152.jpg" alt="Daniel Lemire's picture" style="width:150px; padding:1px; border:1px solid #021a40 " />
+
+
+
+<ul id="custommenu">
+
+<li><a href="http://lemire.me/">Daniel Lemire's blog</a><br />
+<img src="http://lemire.me/blog/wp-content/themes/lemiretheme/canadian_flag.png" alt="Canadian flag" style="float:right; width:30px" />
+Montreal, Canada </li>
+<li><img src="http://lemire.me/fr/social/plus.png" alt="Google Plus logo" /> <a  href="https://plus.google.com/105888615414982242080/about" rel="me">Follow on Google Plus</a>
+<br />
+<strong>22,500</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/twitter.png" alt="twitter logo" /> <a href="http://www.twitter.com/lemire/">Follow @lemire</a>
+<br />
+<strong>4,000</strong> followers
+</li>
+
+<li><img src="http://lemire.me/fr/social/facebook.png" alt="Facebook logo" /> <a  href="http://www.facebook.com/daniel.lemire" rel="me">Follow on Facebook</a>
+</li>
+<li><img src="http://scholar.google.com/favicon-png.ico" alt="Google Scholar logo" width="16" /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works">Follow on Google Scholar</a></li>
+
+
+<li>
+Subscribe to this blog <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml"><img src="http://lemire.me/blog/wp-content/themes/lemiretheme/feed-icon16x16.png" alt="" style="border:0"/></a><br />
+- <a href="http://lemire.me/blog/feed/" title="Subscribe to my feed" rel="alternate" type="application/rss+xml">in a reader</a>,<br />
+- <a href="http://www.amazon.com/Daniel-Lemires-blog/dp/B002DPV7QQ?SubscriptionId=AKIAILSHYYTFIVPWUY6Q">on your kindle</a>,<br />
+- or  <form
+ action="http://feedburner.google.com/fb/a/mailverify" method="post" target="popupwindow" onsubmit="window.open('http://feedburner.google.com/fb/a/mailverify?uri=daniel-lemire/atom', 'popupwindow', 'scrollbars=yes,width=550,height=520');return true"><input type="text" style="width:140px" name="email" value=" your email address" onFocus="if(this.value=='your email address'){this.value='';}" onBlur="if(this.value==''){this.value='your email address';}" /><input type="hidden" value="daniel-lemire/atom" name="uri"/><input type="hidden" name="loc" value="en_US"/><input type="submit" style="width:140px" value="Subscribe by email" /></form>
+</li>
+
+
+ <li id="search">
+
+
+
+
+   <label for="s">Search through 1421&nbsp;posts and 5865&nbsp;comments: </label>	
+   <form id="searchform" method="get" action="/blog/index.php">
+	<div>
+		<input type="text" name="s" id="s" /><br />
+		<input type="submit" value="Search" />
+	</div>
+	</form>
+ </li>
+<li>
+<ul id="pagesnavcloud">
+<li> <a
+class="tagcloudelement" title="14" href="http://lemire.me/blog/about-me/"> About me</a></li>
+<li> <a class="tagcloudelement" title="14" href="http://lemire.me/blog/book-recommendations/"> Book recommendations</a></li>
+<li> <a
+class="tagcloudelement" title="9" href="http://lemire.me/blog/my-readers/"> My readers</a></li><li> <a
+class="tagcloudelement" title="20" href="http://lemire.me/blog/terms-of-use/"> Terms of use</a></li><li> <a
+class="tagcloudelement" title="18" href="http://lemire.me/blog/rules-to-write-a-good-research-paper/"> Write  good papers</a></li>
+</ul>
+</li>
+
+
+
+
+   <li><h2>Recent Comments:</h2>
+   <ul class="recentcomments">	<li>Preston L. Bannister on <a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95857" title="4/10/2013">What are the genuinely useful ideas in programming?</a></li>
+	<li>Mark Bernstein on <a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95844" title="4/10/2013">What are the genuinely useful ideas in programming?</a></li>
+	<li>Preston L. Bannister on <a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95832" title="4/10/2013">What are the genuinely useful ideas in programming?</a></li>
+	<li>Keith Trnka on <a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95829" title="4/10/2013">What are the genuinely useful ideas in programming?</a></li>
+	<li>Greg Linden on <a href="http://lemire.me/blog/archives/2013/10/04/genuinely-useful/#comment-95824" title="4/10/2013">What are the genuinely useful ideas in programming?</a></li>
+</ul>
+   </li>
+   
+
+<li><h2>Some popular posts</h2>
+<ul class="recentcomments">
+<li><a href="http://lemire.me/blog/archives/2011/06/06/why-i-still-program/">Why I still program</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/20/emotions-killing-your-intellectual-productivity/">Emotions killing your intellectual productivity</a></li>
+<li><a href="http://lemire.me/blog/archives/2009/01/19/turn-your-weaknesses-into-strengths/">Turn your weaknesses into strengths</a></li>
+<li><a href="http://lemire.me/blog/archives/2011/10/25/it-is-not-where-you-work-but-who-you-work-with/">It is not where you work, but who you work with</a></li>
+</ul>
+</li>
+
+<li  class="discrete">
+<a href="http://lemire.me/en/" >Home page</a>
+<br /> <a href="http://scholar.google.com/citations?sortby=pubdate&hl=en&user=q1ja-G8AAAAJ&view_op=list_works" rel="me">Google Scholar profile</a> 
+<br /> <a href="http://arxiv.org/a/lemire_d_1" rel="me">arXiv</a>
+<br />  <a href="http://www.informatik.uni-trier.de/~ley/db/indices/n-tree/l/Lemire:Daniel.html" rel="me">DBLP</a>
+</li>
+
+
+</ul>
+</div>
+<!-- end sidebar -->
+
+</div>
+<div id="theend">
+<p class="credit"><cite>Powered by <a href='http://wordpress.org' title='Powered by WordPress, state-of-the-art semantic personal publishing platform'><strong>WordPress</strong></a></cite></p>
+
+
+
+<p class="copyright">© 2004-2013, <a href="http://lemire.me/en/" rel="author">Daniel Lemire</a> (lemire at gmail dot com). This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/2.0/">Creative Commons License</a>.
+
+
+<!--
+
+<rdf:RDF xmlns="http://web.resource.org/cc/"
+    xmlns:dc="http://purl.org/dc/elements/1.1/"
+    xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+<Work rdf:about="">
+   <dc:type rdf:resource="http://purl.org/dc/dcmitype/Text" />
+   <license rdf:resource="http://creativecommons.org/licenses/by-sa/2.0/" />
+</Work>
+
+<License rdf:about="http://creativecommons.org/licenses/by-sa/2.0/">
+   <permits rdf:resource="http://web.resource.org/cc/Reproduction" />
+   <permits rdf:resource="http://web.resource.org/cc/Distribution" />
+   <requires rdf:resource="http://web.resource.org/cc/Notice" />
+   <requires rdf:resource="http://web.resource.org/cc/Attribution" />
+   <permits rdf:resource="http://web.resource.org/cc/DerivativeWorks" />
+   <requires rdf:resource="http://web.resource.org/cc/ShareAlike" />
+</License>
+
+</rdf:RDF>
+
+-->
+</p>
+
+
+
+
+<!-- ukey="06DC3EEF" -->
+</div>
+
+<script type="text/javascript" src="//platform.twitter.com/widgets.js"></script>
+<!-- Place this render call where appropriate -->
+<script type="text/javascript">
+  (function() {
+    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+    po.src = 'https://apis.google.com/js/plusone.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+  })();
+</script>
+
+ </body>
+</html>
+
+<!-- Dynamic page generated in 0.147 seconds. -->
+<!-- Cached page generated by WP-Super-Cache on 2013-10-04 16:14:11 -->
+
+<!-- Compression = gzip -->
+<!-- super cache -->

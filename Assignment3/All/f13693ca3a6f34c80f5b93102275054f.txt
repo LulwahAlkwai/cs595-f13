@@ -1,0 +1,59 @@
+<title>Leonid Boytsov (Source Files: JEA 2011, SISAP 2012) .</title>
+
+<body>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1825924-4']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<h3>Datasets and software used in the papers:
+</h3>
+
+<ol>
+<li><b>SISAP 2012</b>: Leonid Boytsov, Super-Linear Indices for Approximate Dictionary Searching. SISAP 2012: 162-176
+<li><b>JEA ACM 2011</b>: Leonid Boytsov. 2011. Indexing methods for approximate dictionary searching: Comparative analysis. J. Exp. Algorithmics 16, 1, Article 1 (May 2011).
+</ol>
+
+You can download the articles <a href="http://boytsov.info/pubs/">on this page.</a>
+There are virtually no restrictions on using software and data (see <a href="http://www.apache.org/licenses/LICENSE-2.0">details here</a>) that was designed by me.  I appreciate if you cite my work.
+However, the archives contain several third-party packages (which I used for comparison). <b>These packages may be a subject to different licenses and can be guarded by patents</b> (I do believe that agrep and the underlying shift-and algorithm is patented). These packages include at least the following:
+
+<ol>
+<li><a href="http://www.dcc.uchile.cl/~gnavarro/">G. Navarro's</a> implementation of the lazy Levenshtein automaton. (The folder NavarroDFA).
+<li>NR-grep (developed by G. Navarro).
+<li>agrep (developed by Sun Wu and Udi Manber)
+<li><a href="http://fastss.csg.uzh.ch/">FastSS</a>
+</o>
+
+
+<h3>Download and build instructions.</h3>
+
+The data and sources used in the JEA ACM 2011 paper are also <a href="http://dl.acm.org/citation.cfm?id=1963191">available here (check the tab "Source Materials").</a>
+
+<ol>
+<li>Download and unpack the source file;
+<li>Download the datasets to <b>the source file directory</b>;
+<li>Check the README file for building/testing instructions.
+</ol>
+
+<h3>Source files.</h3>
+<ul>
+<li><a href="ArticleProject_v1.1.tar.gz">Version 1.1 (used in SISAP 2012 article).</a>
+<li><a href="ArticleProject_v1.0.tar.gz">Version 1.0 (used in JEA ACM 2011 article).</a>
+</ul>
+
+<h3>Data sets.</h3>
+<ul>
+<li><a href="DataSets_v1.1.tar.bz2 ">Version 1.1 (used in SISAP 2012).</a>  <b>Size: almost 300 Mb</b> 
+<li><a href="DataSets_v1.0.tar.bz2 ">Version 1.0 (used JEA ACM 2011).</a>  <b>Size: almost 200 Mb</b> You can also download individual datasets: <a href="https://docs.google.com/leaf?id=0B_eqTL0qdHxMNTViMmRkZGEtNTk3ZC00MWI0LWIxOWItM2NlMjVmZmRkYWU4&amp;sort=name&amp;layout=list&amp;pid=0B_eqTL0qdHxMZmFjZTBiMjQtYjMzMC00Y2FkLTk5MGYtZmZiYTlkYzk4M2M5&amp;cindex=2">Russian and English synthetic data sets</a> (can also be generated from source files), <a href="https://docs.google.com/leaf?id=0B_eqTL0qdHxMMjdlNGVhNjYtZGRjYi00MTMxLWE1ZjEtYTFhYmFmODhmMDM1&amp;sort=name&amp;layout=list&amp;pid=0B_eqTL0qdHxMZmFjZTBiMjQtYjMzMC00Y2FkLTk5MGYtZmZiYTlkYzk4M2M5">ClueWeb09 words</a>, random sequences <a href="https://docs.google.com/leaf?id=0B_eqTL0qdHxMMDVhMTUzZmEtYzliMC00N2JlLTg1Y2MtY2Y0MzA3NmQ4YzE3&amp;sort=name&amp;layout=list&amp;pid=0B_eqTL0qdHxMZmFjZTBiMjQtYjMzMC00Y2FkLTk5MGYtZmZiYTlkYzk4M2M5&amp;cindex=1">from the human genome.</a> Note that to access individual data sets you may need to create a Google account.
+
+</body>

@@ -1,0 +1,1133 @@
+<!DOCTYPE html>
+<!--[if IE 6]>
+<html id="ie6" lang="en">
+<![endif]-->
+<!--[if IE 8]>
+<html id="ie8" lang="en">
+<![endif]-->
+<!--[if (!IE)]><!-->
+<html lang="en">
+<!--<![endif]-->
+
+<head>
+<meta charset="UTF-8" />
+<title>We are not who we are | Stephen Gallagher&#039;s Open-Source Blog</title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="pingback" href="http://sgallagh.wordpress.com/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Stephen Gallagher&#039;s Open-Source Blog &raquo; Feed" href="http://sgallagh.wordpress.com/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stephen Gallagher&#039;s Open-Source Blog &raquo; Comments Feed" href="http://sgallagh.wordpress.com/comments/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Stephen Gallagher&#039;s Open-Source Blog &raquo; We are not who we&nbsp;are Comments Feed" href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/feed/" />
+<script type="text/javascript">
+/* <![CDATA[ */
+function addLoadEvent(func){var oldonload=window.onload;if(typeof window.onload!='function'){window.onload=func;}else{window.onload=function(){oldonload();func();}}}
+/* ]]> */
+</script>
+<link rel='stylesheet' id='all-css-0' href='http://s1.wp.com/_static/??-eJyVztEKwjAMBdAfsgbtUHwQv6XrYtctbcqaUvx7pyIOhqBPIXAu90JNynIUjAKhqETF+ZiB/IgZBpRk7Kie39bmvIEFb4ndJ8DOYcdF1JWJuEL1nUNZhRYdifOsyfgJstwIV1Z6DPOKVFqwPBnyEf+QPtqXVjVZDr8u6c3ko3vfb019A464NfQAl3De6eNJN/uD1sMd5Zp+Aw==' type='text/css' media='all' />
+<script type='text/javascript'>
+/* <![CDATA[ */
+var LoggedOutFollow = {"invalid_email":"Your subscription did not succeed, please try again with a valid email address."};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/_static/??-eJyFkN0KwjAMRl/IrviDxQvxWbYuK6ltU5vWMZ/eDiYoDnaVkBxy+CLHKDSFDCFLy9JThw5EYUitqTOBYaDG8k5WDoN2pQeeQfsokKalbALCo0lthsZj+MBf1kicPTBX5cr2V4XhiTBuYhZybPVdJGB8/V3tHBkRXTEYWNbeQE8li4Gco1GO2BvIa6E0eT9/JUF00xLm5q/7o1KHs7qok30DqLN9jA=='></script>
+<link rel='stylesheet' id='all-css-0' href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style.css?m=1377793621g' type='text/css' media='all' />
+<!--[if lt IE 8]>
+<link rel='stylesheet' id='highlander-comments-ie7-css'  href='http://s2.wp.com/wp-content/mu-plugins/highlander-comments/style-ie7.css?m=1351637563g&#038;ver=20110606' type='text/css' media='all' />
+<![endif]-->
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://sgallagh.wordpress.com/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://sgallagh.wordpress.com/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='Linus Torvalds shares the Millenium Technology Prize with Dr. Shinya&nbsp;Tamanaka' href='http://sgallagh.wordpress.com/2012/06/13/linus-torvalds-shares-the-millenium-technology-prize-with-dr-shinya-tamanaka/' />
+<link rel='next' title='One Week With GNOME 3 Classic:&nbsp;Prologue' href='http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-prologue/' />
+<meta name="generator" content="WordPress.com" />
+<link rel='canonical' href='http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/' />
+<link rel='shortlink' href='http://wp.me/p1BmNM-1m' />
+<link rel="alternate" type="application/json+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=json&amp;url=http%3A%2F%2Fsgallagh.wordpress.com%2F2013%2F01%2F14%2Fwe-are-not-who-we-are%2F&amp;for=wpcom-auto-discovery" /><link rel="alternate" type="application/xml+oembed" href="http://public-api.wordpress.com/oembed/1.0/?format=xml&amp;url=http%3A%2F%2Fsgallagh.wordpress.com%2F2013%2F01%2F14%2Fwe-are-not-who-we-are%2F&amp;for=wpcom-auto-discovery" />
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="We are not who we are" />
+<meta property="og:url" content="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/" />
+<meta property="og:description" content="In authentication, we generally talk about three &quot;factors&quot; for determining identity. A &quot;factor&quot; is a broad category for establishing that you are who you claim to be. The three types of authenticat..." />
+<meta property="og:site_name" content="Stephen Gallagher&#039;s Open-Source Blog" />
+<meta name="twitter:site" content="@wordpressdotcom" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:creator" content="@wordpressdotcom" />
+<meta property="fb:app_id" content="249643311490" />
+<meta property="article:publisher" content="https://www.facebook.com/WordPresscom" />
+<link rel="shortcut icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="icon" type="image/x-icon" href="http://s2.wp.com/i/favicon.ico?m=1311975824g" sizes="16x16 24x24 32x32 48x48" />
+<link rel="apple-touch-icon-precomposed" href="http://s0.wp.com/i/webclip.png?m=1355642671g" />
+<link rel='openid.server' href='http://sgallagh.wordpress.com/?openidserver=1' />
+<link rel='openid.delegate' href='http://sgallagh.wordpress.com/' />
+<link rel="search" type="application/opensearchdescription+xml" href="http://sgallagh.wordpress.com/osd.xml" title="Stephen Gallagher&#039;s Open-Source Blog" />
+<link rel="search" type="application/opensearchdescription+xml" href="http://wordpress.com/opensearch.xml" title="WordPress.com" />
+		<style>
+		/* <![CDATA[ */
+		/* Block: reblog */
+		
+		.reblog-from img                   { margin: 0 10px 0 0; vertical-align: middle; padding: 0; border: 0; }
+		.reblogger-note img.avatar         { float: left; padding: 0; border: 0; }
+		.reblogger-note-content            { margin: 0 0 20px; }
+		.reblog-post .wpcom-enhanced-excerpt-content { border-left: 3px solid #eee; padding-left: 15px; }
+		.reblog-post ul.thumb-list         { display: block; list-style: none; margin: 2px 0; padding: 0; clear: both; }
+		.reblog-post ul.thumb-list li      { display: inline; margin: 0; padding: 0 1px; border: 0; }
+		.reblog-post ul.thumb-list li a    { margin: 0; padding: 0; border: 0; }
+		.reblog-post ul.thumb-list li img  { margin: 0; padding: 0; border: 0; }
+		
+		.reblog-post .wpcom-enhanced-excerpt { clear: both; }
+		
+		.reblog-post .wpcom-enhanced-excerpt address,
+		.reblog-post .wpcom-enhanced-excerpt li,
+		.reblog-post .wpcom-enhanced-excerpt h1,
+		.reblog-post .wpcom-enhanced-excerpt h2,
+		.reblog-post .wpcom-enhanced-excerpt h3,
+		.reblog-post .wpcom-enhanced-excerpt h4,
+		.reblog-post .wpcom-enhanced-excerpt h5,
+		.reblog-post .wpcom-enhanced-excerpt h6,
+		.reblog-post .wpcom-enhanced-excerpt p { font-size: 100% !important; }
+		
+		.reblog-post .wpcom-enhanced-excerpt blockquote,
+		.reblog-post .wpcom-enhanced-excerpt pre,
+		.reblog-post .wpcom-enhanced-excerpt code,
+		.reblog-post .wpcom-enhanced-excerpt q { font-size: 98% !important; }
+		
+
+		/* ]]> */
+		</style>
+			<style type="text/css">.recentcomments a{display:inline !important;padding:0 !important;margin:0 !important;}</style>
+		<style type="text/css">
+			.recentcomments a {
+				display: inline !important;
+				padding: 0 !important;
+				margin: 0 !important;
+			}
+
+			table.recentcommentsavatartop img.avatar, table.recentcommentsavatarend img.avatar {
+				border: 0px;
+				margin: 0;
+			}
+
+			table.recentcommentsavatartop a, table.recentcommentsavatarend a {
+				border: 0px !important;
+				background-color: transparent !important;
+			}
+
+			td.recentcommentsavatarend, td.recentcommentsavatartop {
+				padding: 0px 0px 1px 0px;
+				margin: 0px;
+			}
+
+			td.recentcommentstextend {
+				border: none !important;
+				padding: 0px 0px 2px 10px;
+			}
+
+			.rtl td.recentcommentstextend {
+				padding: 0px 10px 2px 0px;
+			}
+
+			td.recentcommentstexttop {
+				border: none !important;
+				padding: 0px 0px 0px 10px;
+			}
+
+			.rtl td.recentcommentstexttop {
+				padding: 0px 10px 0px 0px;
+			}
+		</style>
+		<meta name="application-name" content="Stephen Gallagher&#039;s Open-Source Blog" /><meta name="msapplication-window" content="width=device-width;height=device-height" /><meta name="msapplication-tooltip" content="Keeping the undesirables out of your system" /><meta name="msapplication-task" content="name=Subscribe;action-uri=http://sgallagh.wordpress.com/feed/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=Sign up for a free blog;action-uri=http://wordpress.com/signup/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Support;action-uri=http://support.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="msapplication-task" content="name=WordPress.com Forums;action-uri=http://forums.wordpress.com/;icon-uri=http://s2.wp.com/i/favicon.ico" /><meta name="title" content="We are not who we&nbsp;are | Stephen Gallagher&#039;s Open-Source Blog on WordPress.com" />
+<meta name="description" content="In authentication, we generally talk about three &quot;factors&quot; for determining identity. A &quot;factor&quot; is a broad category for establishing that you are who you claim to be. The three types of authentication factor are: Something you know (a password, a PIN, the answer to a &quot;security question&quot;, etc.) Something you have (an ATM card, a&hellip;" />
+
+<script type='text/javascript' src='http://partner.googleadservices.com/gampad/google_service.js'>
+</script>
+<script type='text/javascript'>
+if ( typeof GS_googleAddAdSenseService == 'function' ) { GS_googleAddAdSenseService("ca-pub-3443918307802676"); }
+if ( typeof GS_googleEnableAllServices == 'function' ) { GS_googleEnableAllServices() };
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleAddSlot == 'function' ) { GA_googleAddSlot("ca-pub-3443918307802676", "wpcom_below_post_adsafe"); }
+</script>
+<script type='text/javascript'>
+if ( typeof GA_googleFetchAds == 'function' ) { GA_googleFetchAds(); }
+</script>
+
+<script type="text/javascript">
+var wpcom_ads = { bid: 23682126, pt: 'permalink', wa: 0, as: 1, domain: 'sgallagh.wordpress.com', url: 'http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/', gid: '', };
+</script>
+<style id="syntaxhighlighteranchor"></style>
+<script type="text/javascript"> 
+	window.google_analytics_uacct = "UA-52447-2"; 
+</script>
+
+<script type="text/javascript">
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-52447-2']);
+	_gaq.push(['_setDomainName', 'wordpress.com']);
+	_gaq.push(['_initData']);
+	_gaq.push(['_trackPageview']);
+
+	(function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		(document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+	})();
+</script>
+</head>
+
+<body class="single single-post postid-84 single-format-standard two-column content-sidebar mp6 highlander-enabled highlander-light">
+<div id="container" class="hfeed contain">
+	<div id="header">
+		<div id="masthead" role="banner">
+						<div id="site-title">
+				<span>
+					<a href="http://sgallagh.wordpress.com/" title="Stephen Gallagher&#039;s Open-Source Blog" rel="home">Stephen Gallagher&#039;s Open-Source Blog</a>
+				</span>
+			</div>
+			<div id="site-description">Keeping the undesirables out of your system</div>
+		</div><!-- #masthead -->
+
+		<div id="access" role="navigation">
+		  			<div class="skip-link screen-reader-text"><a href="#content" title="Skip to content">Skip to content</a></div>
+						<div class="menu"><ul><li ><a href="http://sgallagh.wordpress.com/" title="Home">Home</a></li><li class="page_item page-item-2"><a href="http://sgallagh.wordpress.com/about/">About</a></li></ul></div>
+		</div><!-- #access -->
+
+		<div id="branding">
+						<a href="http://sgallagh.wordpress.com/">
+									<img src="http://s1.wp.com/wp-content/themes/pub/coraline/images/headers/water-drops.jpg?m=1341019618g" width="990" height="180" alt="" />
+							</a>
+					</div><!-- #branding -->
+	</div><!-- #header -->
+
+	<div id="content-box">
+
+<div id="content-container">
+	<div id="content" role="main">
+
+	
+		<div id="nav-above" class="navigation">
+			<div class="nav-previous"><a href="http://sgallagh.wordpress.com/2012/06/13/linus-torvalds-shares-the-millenium-technology-prize-with-dr-shinya-tamanaka/" rel="prev"><span class="meta-nav">&larr;</span> Linus Torvalds shares the Millenium Technology Prize with Dr. Shinya&nbsp;Tamanaka</a></div>
+			<div class="nav-next"><a href="http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-prologue/" rel="next">One Week With GNOME 3 Classic:&nbsp;Prologue <span class="meta-nav">&rarr;</span></a></div>
+		</div><!-- #nav-above -->
+
+		<div id="post-84" class="post-84 post type-post status-publish format-standard hentry category-fedora category-security">
+
+			
+			<h1 class="entry-title">We are not who we&nbsp;are</h1>
+							<div class="entry-meta">
+					<span class="meta-prep meta-prep-author">Posted on</span> <a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/" title="8:48 AM" rel="bookmark"><span class="entry-date">2013/01/14</span></a> <span class="comments-link"><span class="meta-sep">|</span> <a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comments" title="Comment on We are not who we&nbsp;are">8 Comments</a></span>
+									</div><!-- .entry-meta -->
+			
+			<div class="entry-content">
+				<p>In authentication, we generally talk about three &#8220;factors&#8221; for determining identity. A &#8220;factor&#8221; is a broad category for establishing that you are who you claim to be. The three types of authentication factor are:</p>
+<ul>
+<li>Something you know (a password, a PIN, the answer to a &#8220;security question&#8221;, etc.)</li>
+<li>Something you have (an ATM card, a smart card, a one-time-password token, etc.)</li>
+<li>Something you are (your fingerprint, retinal pattern, DNA)</li>
+</ul>
+<p>Historically, most people have used the first of these three forms most commonly. Whenever you&#8217;ve logged into Facebook, you&#8217;re entering something you know: your username and password. If you&#8217;ve ever used Google&#8217;s two-factor authentication to log in, you probably used a code stored on your smartphone to do so.</p>
+<p>One of the less common, but growing, authentication methods are the biometrics. A couple years ago, a major PC manufacturer ran a number of television commercials advertising their laptop models with a fingerprint scanner. The claim was that it was easy and secure to unlock the machine with a swipe of a finger. Similarly, Google introduced a service to unlock an Android smart phone by using facial recognition with the built-in camera.</p>
+<p>Pay attention folks, because I&#8217;m about to remove the scales from your eyes. Those three factors I listed above? I listed them in <em>decreasing</em> order of security. &#8220;But how can that be?&#8221; you may ask. &#8220;How can my unchangeable physical attributes be less secure than a password? Everyone knows passwords aren&#8217;t secure.&#8221;</p>
+<p>The confusion here is due to subtle but important definitions in the meaning of &#8220;security&#8221;. Most common passwords these days are considered &#8220;insecure&#8221; because people tend to use short passwords which by definition have a limited entropy pool (meaning it takes a smaller amount of time to run through all the possible combinations in order to brute-force the password or run through a password dictionary). However, the pure computational complexity of the authentication mechanism is not the only contributor to security.</p>
+<p>The second factor above, &#8220;something you have&#8221; (known as a token), is almost always of significantly higher entropy than anything you would ever use as a password. This is to eliminate the brute-force vulnerability of passwords. But it comes with a significant downside as well: something you have is also something that can be physically removed from you. Where a well-chosen password can only be removed from you by social engineering (tricking you into giving it to an inappropriate recipient), a token might be slipped off your desk while you are at lunch.</p>
+<p>Both passwords and tokens have an important side-effect that most people never think about until an intrusion has been caught: remediation. When someone has successfully learned your password or stolen your token, you can call up your helpdesk and immediately ask them to reset the password or disable the cryptographic seed in the token. Your security is now restored and you can choose a new password and have a new token sent to you.</p>
+<p>However, this is not the case with a biometric system. By its very nature, it is dependent upon something that you cannot change. Moreover, the nature of its supposed security derives from this very fact. The problem here is that it&#8217;s significantly easier to acquire a copy of someone&#8217;s fingerprint, retinal scan or even blood for a DNA test than it is to steal a password or token device and in many cases it can even be done without the victim knowing.</p>
+<p>Many consumer retinal scanners can be fooled by a simple reasonably-high-resolution photograph of the person&#8217;s eye (which is extremely easy to accomplish with today&#8217;s cameras). Some of the more expensive models will also require a moving picture, but today&#8217;s high-resolution smartphone cameras and displays can defeat many of these mechanisms as well. It&#8217;s well-documented that Android&#8217;s face-unlock feature can be beaten by a simple photograph.</p>
+<p>These are all technological limitations and as such it&#8217;s plausible that they can be overcome over time with more sensitive equipment. However, the real problem with biometric security lies with its inability to replace a compromised authentication device. Once someone has a copy of your ten fingerprints, or a drop of your blood from a stolen blood-sugar test or a close-up video of your eye from a scoped video camera, there is no way to change this data out. You can&#8217;t ask helpdesk to send you new fingers, an eyeball or DNA. Therefore, I contend that I lied to you above. There is no full third factor for authentication, because, given a sufficient amount of time, any use of biometrics will eventually degenerate into a non-factor.</p>
+<p>Given this serious limitation, one should never under any circumstances use biometrics as the sole form of authentication for any purpose whatsoever.</p>
+<p>One other thought: have you ever heard the argument that you should never use the same password on multiple websites because if it&#8217;s stolen on one, they have access to the others? Well, the same is true of your retina. If someone sticks malware on your cellphone to copy an image of your eye that you were using for &#8220;face unlock&#8221;, guess what? They can probably use that to get into your lab too.</p>
+<p>The moral of the story is this: biometrics are minimally useful, since they are only viable until the first exposure <em>across all sites where they are used</em>. As a result, if you are considering initiating a biometric-based security model, I encourage you to save your money (those scanners are expensive!) and look into a two-factor solution involving passwords and a token of some kind.</p>
+
+<div class="wpa" style="position: relative; width:300px; text-align: center; padding: 0; margin: 10px auto; overflow: hidden; clear: both;">
+<a style="position: absolute; text-align: left; display: block; font: 9px/1 sans-serif; text-decoration: underline;" href="http://en.wordpress.com/about-these-ads/" rel="nofollow">About these ads</a>
+<script type="text/javascript">
+		var wpcom_adclk_hovering = false;
+		var wpcom_adclk_recorded = false;
+		var wpcom_adclk_theme = "Coraline";
+		var wpcom_adclk_slot = "wpcom_below_post_adsafe";
+		var wpcom_adclk_network = ( typeof wpcom_adclk_network === "undefined" ) ? "" : wpcom_adclk_network ;
+
+		jQuery(document).ready( function() {
+			function wpcom_adclk_hover_yes() { wpcom_adclk_hovering = true; }
+			function wpcom_adclk_hover_no() { wpcom_adclk_hovering = false; }
+			jQuery(".wpa").click(wpcom_adclk_click);
+			jQuery(".wpa iframe").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+			jQuery(".wpa object").hover( wpcom_adclk_hover_yes, wpcom_adclk_hover_no );
+
+			jQuery(window).blur( function() {
+				if ( wpcom_adclk_hovering ) { wpcom_adclk_click(); }
+			});
+		});
+
+		function wpcom_adclk_impression() {
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_imp_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_imp_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_imp_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_imp_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			return true;
+		}
+
+		function wpcom_adclk_click() {
+			if (wpcom_adclk_recorded) { return true; } // no double counting
+			var stat_gif = document.location.protocol + "//stats.wordpress.com/g.gif?v=wpcom-no-pv";
+			stat_gif += "&x_ads_click_theme=" + wpcom_adclk_theme;
+			stat_gif += "&x_ads_click_placement="+wpcom_adclk_slot;
+			stat_gif += "&x_ads_click_network=" + wpcom_adclk_network;
+			stat_gif += "&x_ads_click_theme_network="+wpcom_adclk_theme+"_"+wpcom_adclk_network;
+
+			new Image().src = stat_gif + "&baba=" + Math.random();
+			wpcom_adclk_recorded = true;
+			var now=new Date(); var end=now.getTime()+250;
+			while(true){now=new Date();if(now.getTime()>end){break;}}
+			return true;
+		}
+	
+if ( typeof GA_googleAddAttr == 'function' ) {
+GA_googleAddAttr("AdOpt", "1");
+GA_googleAddAttr("Origin", "other");
+GA_googleAddAttr("LangId", "1");
+GA_googleAddAttr("Domain", "sgallagh.wordpress.com");
+GA_googleAddAttr("BlogId", "23682126");
+GA_googleAddAttr("AdSafe", "1");
+GA_googleAddAttr("Autotag", "technology");
+GA_googleAddAttr("Tag", "fedora");
+GA_googleAddAttr("Tag", "security");
+GA_googleAddAttr("Partner", "AOL");
+GA_googleAddAttr("theme_bg", "ffffff");
+GA_googleAddAttr("theme_border", "cccccc");
+GA_googleAddAttr("theme_text", "333333");
+GA_googleAddAttr("theme_link", "0060ff");
+GA_googleAddAttr("theme_url", "df0000");
+GA_googleAddAdSensePageAttr("google_page_url", "http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/");
+GA_googleFillSlot("wpcom_below_post_adsafe");
+}
+</script>
+</div>
+<style type="text/css">
+div.wpa>div { margin-top: 1em; } #google_ads_div_wpcom_below_post_adsafe_ad_container { display: block !important; }
+</style>
+<script type="text/javascript">
+jQuery( window ).load( function() {
+    if ( jQuery(".wpa script[src*='shareth.ru']").length > 0 || jQuery(".wpa iframe[src*='boomvideo.tv']").length > 0 || jQuery(".wpa iframe[src*='viewablemedia.net']").length > 0 || jQuery(".wpa .sharethrough-placement").length > 0 ) {
+        jQuery( '.wpa' ).css( 'width', '400px' );
+    }
+setTimeout(function(){if(typeof GS_googleAddAdSenseService !== 'function'){new Image().src=document.location.protocol+"//stats.wordpress.com/g.gif?v=wpcom-no-pv&x_noads=adblock&baba="+Math.random()}},100);
+} );
+</script>
+<div id="jp-post-flair" class="sharedaddy sd-like-enabled sd-sharing-enabled"><div class="sharedaddy sd-sharing-enabled"><div class="robots-nocontent sd-block sd-social sd-social-icon-text sd-sharing"><h3 class="sd-title">Share this:</h3><div class="sd-content"><ul><li class="share-twitter"><a rel="nofollow" class="share-twitter sd-button share-icon" href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?share=twitter" title="Click to share on Twitter" id="sharing-twitter-84"><span>Twitter</span></a></li><li class="share-facebook"><a rel="nofollow" class="share-facebook sd-button share-icon" href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/?share=facebook" title="Share on Facebook" id="sharing-facebook-84"><span>Facebook</span></a></li><li class="share-end"></li></ul></div></div></div><div class='sharedaddy sd-block sd-like jetpack-likes-widget-wrapper jetpack-likes-widget-unloaded' id='like-post-wrapper-23682126-84-524fcc12f2710' data-src='//widgets.wp.com/likes/#blog_id=23682126&amp;post_id=84&amp;origin=sgallagh.wordpress.com&amp;obj_id=23682126-84-524fcc12f2710' data-name='like-post-frame-23682126-84-524fcc12f2710'><h3 class='sd-title'>Like this:</h3><div class='post-likes-widget-placeholder' style='height:55px'><span class='button'><span>Like</span></span> <span class="loading">Loading...</span></div><span class='sd-text-color'></span><a class='sd-link-color'></a></div></div>							</div><!-- .entry-content -->
+
+			<div class="entry-info">
+							This entry was posted in <a href="http://sgallagh.wordpress.com/category/fedora/" title="View all posts in Fedora" rel="category tag">Fedora</a>, <a href="http://sgallagh.wordpress.com/category/uncategorized/technology/security/" title="View all posts in security" rel="category tag">security</a>. Bookmark the <a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/" title="Permalink to We are not who we&nbsp;are" rel="bookmark">permalink</a>.							</div><!-- .entry-info -->
+		</div><!-- #post-## -->
+
+		<div id="nav-below" class="navigation">
+			<div class="nav-previous"><a href="http://sgallagh.wordpress.com/2012/06/13/linus-torvalds-shares-the-millenium-technology-prize-with-dr-shinya-tamanaka/" rel="prev"><span class="meta-nav">&larr;</span> Linus Torvalds shares the Millenium Technology Prize with Dr. Shinya&nbsp;Tamanaka</a></div>
+			<div class="nav-next"><a href="http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-prologue/" rel="next">One Week With GNOME 3 Classic:&nbsp;Prologue <span class="meta-nav">&rarr;</span></a></div>
+		</div><!-- #nav-below -->
+
+		
+<div id="comments">
+
+	
+			<h3 id="comments-title">8 Responses to <span>We are not who we&nbsp;are</span></h3>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-78">
+		<div id="comment-78">
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/fcd791a56792e612a8ed1ddbbfa73535?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn"><a href='http://mricon.com/' rel='external nofollow' class='url'>Mr. Icon</a></cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-78">
+				2013/01/14 at 10:12 AM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=78#respond' onclick='return addComment.moveForm("comment-78", "78", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>Agreed, with a caveat &#8212; biometric readers can be useful in a supervised-entry environment. You can pay someone minimum wage salary to sit behind a thick glass and make sure that whenever someone uses a retina scan, they actually put their eyes to the scanner instead of whipping out a smartphone.</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment odd alt depth-2 highlander-comment" id="li-comment-79">
+		<div id="comment-79">
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/c1fa0a85d174205b1341e1a30d419a7f?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn"><a href='http://www.happyassassin.net' rel='external nofollow' class='url'>Adam Williamson</a></cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-79">
+				2013/01/14 at 2:58 PM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=79#respond' onclick='return addComment.moveForm("comment-79", "79", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>So that solves things until someone comes up with a way to overlay a retinal photo on your eye using a trick contact lens. This has either already happened but is not yet in the public domain, or will happen soon, I&#8217;d bet.</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-odd thread-alt depth-1 highlander-comment" id="li-comment-80">
+		<div id="comment-80">
+		<div class="comment-author vcard">
+			<img alt='' src='http://1.gravatar.com/avatar/4505e46162617c0b53468d229aed4254?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn">el_es</cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-80">
+				2013/01/14 at 5:06 PM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=80#respond' onclick='return addComment.moveForm("comment-80", "80", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>While biometrics won&#8217;t work well for a preventative authentication measure, they can still provide a benefit for auditing and tracking compromised  systems.  Now, whether that&#8217;s enough of a perk to justify biometric equipments&#8217; cost is a different issue.  There are some targets that would reasonably require as many layers of authentication as possible.</p>
+<p>Basically, having &#8220;What you are&#8221; alongside &#8220;What you know&#8221; and &#8220;What you have&#8221; basically adds another dimension to any given security system.</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-sgallagh bypostauthor odd alt depth-2 highlander-comment" id="li-comment-82">
+		<div id="comment-82">
+		<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/21f44c2e10228b54a95583991171616a?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn"><a href='http://sgallagh.wordpress.com' rel='external nofollow' class='url'>sgallagh</a></cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-82">
+				2013/01/14 at 6:37 PM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=82#respond' onclick='return addComment.moveForm("comment-82", "82", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>Sure, it adds another dimension and I can see where it might help with auditing and tracking (or at least understanding the depth of the attack). However I think my point was valid: once a biometric factor has been compromised, it is compromised for ALL authentication systems that use it, related or not. You can&#8217;t go out and buy new fingers, unless you&#8217;re planning to have plastic surgery on a regular basis (in which point, we&#8217;re now actually talking about &#8220;something you have&#8221; rather than &#8220;something you are&#8221;).</p>
+<p>I also neglected to mention the more terrifying side of biometric-only access: someone with an urgent need to break in can compel you physically much more easily than mentally. Holding a gun to your head and making you put your hand on a palm-print scanner (or removing your hand from you and doing it themselves) may require less effort than attempting to compel you to give up your passwords (and has the side-effect that you can&#8217;t lie about them).</p>
+<p>With all that in mind, I stand by my conclusions (though they are my own opinion) that biometrics introduce more risks than they alleviate and therefore are inappropriate in a security context. Furthermore, given the problems with remediation, investing in biometric sensor development will not yield good returns in the long-term. No matter what, biometrics will *always* be a fuzzy-logic game, and any such system can be gamed.</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1 highlander-comment" id="li-comment-81">
+		<div id="comment-81">
+		<div class="comment-author vcard">
+			<img alt='' src='http://0.gravatar.com/avatar/9f6c3e7bbdbab7f6c2cd3861126546ee?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn">maxyan</cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-81">
+				2013/01/14 at 6:20 PM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=81#respond' onclick='return addComment.moveForm("comment-81", "81", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>&#8230;or simply bribe the someone who get &#8220;minimum wage salary&#8221;.</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://in2payments.com/2013/01/21/youre-so-vein/' rel='external nofollow' class='url'>You&#8217;re so vein | in2payments</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1 highlander-comment" id="li-comment-834">
+		<div id="comment-834">
+		<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/ea941bf904475b43bfd71dab7f028b23?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn"><a href='http://cellphonecharger2.pen.io/' rel='external nofollow' class='url'>solar cellphone charger</a></cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-834">
+				2013/07/17 at 1:15 AM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=834#respond' onclick='return addComment.moveForm("comment-834", "834", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>Can I take part of your article to my blog? Thanks,<br />
+so much appreciated!</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	<ul class="children">
+	<li class="comment byuser comment-author-sgallagh bypostauthor even depth-2 highlander-comment" id="li-comment-835">
+		<div id="comment-835">
+		<div class="comment-author vcard">
+			<img alt='' src='http://2.gravatar.com/avatar/21f44c2e10228b54a95583991171616a?s=48&amp;d=identicon&amp;r=G' class='avatar avatar-48' height='48' width='48' />
+			<cite class="fn"><a href='http://sgallagh.wordpress.com' rel='external nofollow' class='url'>sgallagh</a></cite>
+
+			<span class="comment-meta commentmetadata">
+				|
+				<a href="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/#comment-835">
+				2013/07/17 at 7:47 AM</a>
+					|
+					<a class='comment-reply-link' href='/2013/01/14/we-are-not-who-we-are/?replytocom=835#respond' onclick='return addComment.moveForm("comment-835", "835", "respond", "84")'>Reply</a>								</span><!-- .comment-meta .commentmetadata -->
+		</div><!-- .comment-author .vcard -->
+		
+		<div class="comment-body"><p>All of my blog entries are licensed under CC-BY-SA 3.0. You may reproduce this article under the terms of that license. Feel free to link back here as well.</p>
+</div>
+
+	</div><!-- #comment-##  -->
+
+	</li><!-- #comment-## -->
+</ul><!-- .children -->
+</li><!-- #comment-## -->
+		</ol>
+
+		
+	
+									<div id="respond" class="comment-respond">
+				<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/2013/01/14/we-are-not-who-we-are/#respond" style="display:none;">Cancel reply</a></small></h3>
+									<form action="http://sgallagh.wordpress.com/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+																										
+
+
+												<input type="hidden" id="highlander_comment_nonce" name="highlander_comment_nonce" value="f0c9b3a8cd" /><input type="hidden" name="_wp_http_referer" value="/2013/01/14/we-are-not-who-we-are/" />
+<input type="hidden" name="hc_post_as" id="hc_post_as" value="guest" />
+
+<div class="comment-form-field comment-textarea">
+	<label for="comment">Enter your comment here...</label>
+	<div id="comment-form-comment"><textarea id="comment" name="comment" title="Enter your comment here..."></textarea></div>
+</div>
+
+<div id="comment-form-identity">
+
+	<div id="comment-form-nascar">
+		<p>Fill in your details below or click an icon to log in:</p>
+		<ul>
+			<li class="selected" style="display:none;">
+				<a href="#comment-form-guest" id="postas-guest" title="Guest">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:WordPress.com" id="postas-wordpress" title="WordPress.com">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Twitter" id="postas-twitter" title="Twitter">
+					<span></span>
+				</a>
+			</li>
+			<li>
+				<a href="#comment-form-load-service:Facebook" id="postas-facebook" title="Facebook">
+					<span></span>
+				</a>
+			</li>
+			<li>
+			<iframe id="googleplus-sign-in" name="googleplus-sign-in" src="https://public-api.wordpress.com/connect/?googleplus-sign-in=1" width="24" height="24" scrolling="no" allowtransparency="true" seamless="seamless" frameborder="0"></iframe>
+			</li>
+		</ul>
+	</div>
+
+	<div id="comment-form-guest" class="comment-form-service selected">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+<a href="https://gravatar.com/site/signup/" target="_blank">				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Gravatar" width="25" class="no-grav" />
+</a>			</div>
+
+				<div class="comment-form-fields">
+				<div class="comment-form-field comment-form-email">
+					<label for="email">Email <span class="required">(required)</span> <span class="nopublish">(Address never made public)</span></label>
+					<div class="comment-form-input"><input id="email" name="email" type="email" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-author">
+					<label for="author">Name <span class="required">(required)</span></label>
+					<div class="comment-form-input"><input id="author" name="author" type="text" value="" /></div>
+				</div>
+				<div class="comment-form-field comment-form-url">
+					<label for="url">Website</label>
+					<div class="comment-form-input"><input id="url" name="url" type="text" value="" /></div>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-wordpress" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://s2.wp.com/wp-content/mu-plugins/highlander-comments/images/wplogo.png?m=1289230950g" alt="WordPress.com Logo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="wp_avatar" id="wordpress-avatar" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_user_id" id="wordpress-user_id" class="comment-meta-wordpress" value="" />
+				<input type="hidden" name="wp_access_token" id="wordpress-access_token" class="comment-meta-wordpress" value="" />
+				<p class="comment-form-posting-as pa-wordpress"><strong></strong> You are commenting using your WordPress.com account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'wordpress' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-twitter" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Twitter picture" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="twitter_avatar" id="twitter-avatar" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_user_id" id="twitter-user_id" class="comment-meta-twitter" value="" />
+				<input type="hidden" name="twitter_access_token" id="twitter-access_token" class="comment-meta-twitter" value="" />
+				<p class="comment-form-posting-as pa-twitter"><strong></strong> You are commenting using your Twitter account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'twitter' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-facebook" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Facebook photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="fb_avatar" id="facebook-avatar" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_user_id" id="facebook-user_id" class="comment-meta-facebook" value="" />
+				<input type="hidden" name="fb_access_token" id="facebook-access_token" class="comment-meta-facebook" value="" />
+				<p class="comment-form-posting-as pa-facebook"><strong></strong> You are commenting using your Facebook account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'facebook' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+	<div id="comment-form-googleplus" class="comment-form-service">
+		<div class="comment-form-padder">
+			<div class="comment-form-avatar">
+				<img src="http://1.gravatar.com/avatar/ad516503a11cd5ca435acc9bb6523536?s=25&amp;d=identicon&amp;forcedefault=y&amp;r=G" alt="Google+ photo" width="25" class="no-grav" />
+			</div>
+
+				<div class="comment-form-fields">
+				<input type="hidden" name="googleplus_avatar" id="googleplus-avatar" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_user_id" id="googleplus-user_id" class="comment-meta-googleplus" value="" />
+				<input type="hidden" name="googleplus_access_token" id="googleplus-access_token" class="comment-meta-googleplus" value="" />
+				<p class="comment-form-posting-as pa-googleplus"><strong></strong> You are commenting using your Google+ account. <span class="comment-form-log-out">(&nbsp;<a href="javascript:HighlanderComments.doExternalLogout( 'googleplus' );">Log&nbsp;Out</a>&nbsp;/&nbsp;<a href="#" onclick="javascript:HighlanderComments.switchAccount();return false;">Change</a>&nbsp;)</span></p>
+			</div>
+	
+		</div>
+	</div>
+
+
+	<div id="comment-form-load-service" class="comment-form-service">
+		<div class="comment-form-posting-as-cancel"><a href="javascript:HighlanderComments.cancelExternalWindow();">Cancel</a></div>
+		<p>Connecting to %s</p>
+	</div>
+
+	
+</div>
+
+<script type="text/javascript">
+var highlander_expando_javascript = function(){
+	var input = document.createElement( 'input' ),
+	    comment = jQuery( '#comment' );
+
+	if ( 'placeholder' in input ) {
+		comment.attr( 'placeholder', jQuery( '.comment-textarea label' ).remove().text() );
+	}
+
+	// Expando Mode: start small, then auto-resize on first click + text length
+	jQuery( '#comment-form-identity' ).hide();
+	jQuery( '#comment-form-subscribe' ).hide();
+	jQuery( '#commentform .form-submit' ).hide();
+
+	comment.css( { 'height':'10px' } ).one( 'focus', function() {
+		var timer = setInterval( HighlanderComments.resizeCallback, 10 )
+		jQuery( this ).animate( { 'height': HighlanderComments.initialHeight } ).delay( 100 ).queue( function(n) { clearInterval( timer ); HighlanderComments.resizeCallback(); n(); } );
+		jQuery( '#comment-form-identity' ).slideDown();
+		jQuery( '#comment-form-subscribe' ).slideDown();
+		jQuery( '#commentform .form-submit' ).slideDown();
+	});
+}
+jQuery(document).ready( highlander_expando_javascript );
+</script>
+
+<div id="comment-form-subscribe">
+	<p class="comment-subscription-form"><input type="checkbox" name="subscribe" id="subscribe" value="subscribe" style="width: auto;" tabindex="6"/> <label class="subscribe-label" id="subscribe-label" for="subscribe" style="display: inline;">Notify me of follow-up comments via email.</label></p></div>
+
+												<p class="form-submit">
+							<input name="submit" type="submit" id="comment-submit" value="Post Comment" />
+							<input type='hidden' name='comment_post_ID' value='84' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+						</p>
+						
+<input type="hidden" name="genseq" value="1380961299" />
+<p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="ff7083b3d4" /></p><script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/akismet-2.5/form.js?m=1308783962g'></script>
+<p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="87"/></p>					</form>
+							</div><!-- #respond -->
+			<div style="clear: both"></div>			
+</div><!-- #comments -->
+	
+	</div><!-- #content -->
+</div><!-- #content-container -->
+
+
+		
+		<div id="primary" class="widget-area" role="complementary">
+					<ul class="xoxo">
+
+			
+				<li id="search" class="widget-container widget_search">
+					<h3 class="widget-title">Search It!</h3>
+					<form role="search" method="get" id="searchform" class="searchform" action="http://sgallagh.wordpress.com/">
+				<div>
+					<label class="screen-reader-text" for="s">Search for:</label>
+					<input type="text" value="" name="s" id="s" />
+					<input type="submit" id="searchsubmit" value="Search" />
+				</div>
+			</form>				</li>
+
+				<li class="widget-container">
+					<h3 class="widget-title">Recent Entries</h3>
+						<ul>
+															<li><a href="http://sgallagh.wordpress.com/2013/08/26/why-not-change-the-world/">Why not change the&nbsp;world?</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/08/15/flock-2013-con-report/">Flock 2013 Con&nbsp;Report</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/07/05/flock-to-fedora/">Flock to&nbsp;Fedora!</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/06/27/one-week-with-gnome-3-classic-twenty-eight-days-later/">One Week With GNOME 3 Classic: Twenty-Eight Days&nbsp;Later</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/06/06/one-week-with-gnome-3-classic-days-six-and-seven-conclusions/">One Week With GNOME 3 Classic: Days Six and Seven&nbsp;(Conclusions)</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/06/05/one-week-with-gnome-classic-day-five-oblivion/">One Week With GNOME 3 Classic: Day Five&nbsp;(Oblivion)</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/06/03/one-week-with-gnome-classic-day-four-settling-in/">One Week With GNOME Classic: Day Four (Settling&nbsp;In)</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/05/31/one-week-with-gnome-classic-day-three-coarse-correction/">One Week With GNOME 3 Classic: Day Three (Coarse&nbsp;Correction)</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/05/31/one-week-with-gnome-classic-day-two-reorientation/">One Week With GNOME 3 Classic: Day Two&nbsp;(Reorientation)</a></li>
+																<li><a href="http://sgallagh.wordpress.com/2013/05/30/one-week-with-gnome-3-classic-day-one-paradigm-shift/">One Week With GNOME 3 Classic: Day One (Paradigm&nbsp;Shift)</a></li>
+														</ul>
+				</li>
+
+				<li class="widget-container">
+					<h3 class="widget-title">Links</h3>
+						<ul>
+							<li><a href="https://fedorahosted.org/sssd" rel="me" title="The System Security Services Daemon &#8211; A modern solution for client identity and access-control">System Security Services Daemon</a></li>
+						</ul>
+				</li>
+
+						</ul>
+		</div><!-- #primary .widget-area -->
+
+		
+			</div><!-- #content-box -->
+
+	<div id="footer" role="contentinfo">
+		
+		<div id="colophon">
+			<a href="http://theme.wordpress.com/themes/coraline/" title="Learn more about this theme">The Coraline Theme</a>. </span>
+		</div><!-- #colophon -->
+	</div><!-- #footer -->
+
+</div><!-- #container -->
+
+
+<script type="text/javascript">
+var _qevents = _qevents || [], wpcomQuantcastData = {"qacct":"p-18-mFEk4J448M","labels":",language.en,type.wpcom,as"};
+function wpcomQuantcastPixel( labels, options ) {
+	var i, defaults = wpcomQuantcastData, data = { event: 'ajax' };
+
+	labels  = labels  || '';
+	options = options || {};
+
+	if ( typeof labels != 'string' )
+		options = labels;
+
+	for ( i in defaults ) {
+		data[i] = defaults[i];
+	}
+
+	for ( i in options ) {
+		data[i] = options[i];
+	}
+
+	if ( data.labels ) {
+		data.labels += ',' + labels;
+	} else {
+		data.labels = labels;
+	}
+
+	_qevents.push( data );
+};
+(function() {var elem = document.createElement('script');elem.src = (document.location.protocol == "https:" ? "https://secure" : "http://edge") + ".quantserve.com/quant.js";elem.async = true;elem.type = "text/javascript";var scpt = document.getElementsByTagName('script')[0];scpt.parentNode.insertBefore(elem, scpt);  })();
+_qevents.push( wpcomQuantcastData );
+</script>
+<noscript><div style="display: none;"><img src="//pixel.quantserve.com/pixel/p-18-mFEk4J448M.gif?labels=%2Clanguage.en%2Ctype.wpcom%2Cas" height="1" width="1" alt="" /></div></noscript>
+
+<script type='text/javascript' src='//0.gravatar.com/js/gprofiles.js?ver=201340ae'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s2.wp.com/wp-content/mu-plugins/gravatar-hovercards/wpgroho.js?m=1380573781g'></script>
+
+	<script>
+		//initialize and attach hovercards to all gravatars
+		jQuery( document ).ready( function( $ ) {
+			Gravatar.profile_cb = function( hash, id ) {
+				WPGroHo.syncProfileData( hash, id );
+			};
+			Gravatar.my_hash = WPGroHo.my_hash;
+			Gravatar.init( 'body', '#wp-admin-bar-my-account' );
+		});
+	</script>
+
+		<div style="display:none">
+	<div class="grofile-hash-map-fcd791a56792e612a8ed1ddbbfa73535">
+	</div>
+	<div class="grofile-hash-map-c1fa0a85d174205b1341e1a30d419a7f">
+	</div>
+	<div class="grofile-hash-map-4505e46162617c0b53468d229aed4254">
+	</div>
+	<div class="grofile-hash-map-21f44c2e10228b54a95583991171616a">
+	</div>
+	<div class="grofile-hash-map-9f6c3e7bbdbab7f6c2cd3861126546ee">
+	</div>
+	<div class="grofile-hash-map-ea941bf904475b43bfd71dab7f028b23">
+	</div>
+	</div>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var HighlanderComments = {"loggingInText":"Logging In\u2026","submittingText":"Posting Comment\u2026","postCommentText":"Post Comment","connectingToText":"Connecting to %s","commentingAsText":"%1$s: You are commenting using your %2$s account.","logoutText":"Log Out","loginText":"Log In","connectURL":"http:\/\/sgallagh.wordpress.com\/public.api\/connect\/?action=request","logoutURL":"http:\/\/sgallagh.wordpress.com\/wp-login.php?action=logout&_wpnonce=36ee73df56","homeURL":"http:\/\/sgallagh.wordpress.com\/","postID":"84","gravDefault":"identicon","enterACommentError":"Please enter a comment","enterEmailError":"Please enter your email address here","invalidEmailError":"Invalid email address","enterAuthorError":"Please enter your name here","gravatarFromEmail":"This picture will show whenever you leave a comment. Click to customize it.","logInToExternalAccount":"Log in to use details from one of these accounts.","change":"Change","changeAccount":"Change Account","comment_registration":"0","userIsLoggedIn":"","isJetpack":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/_static/??/wp-content/js/jquery/jquery.autoresize.js,/wp-content/mu-plugins/highlander-comments/script.js?m=1379020420j'></script>
+
+	<div id="bit" class="loggedout-follow-normal">
+		<a class="bsub" href="javascript:void(0)"><span id='bsub-text'>Follow</span></a>
+		<div id="bitsubscribe">
+
+					<h3><label for="loggedout-follow-field">Follow &ldquo;Stephen Gallagher&#039;s Open-Source Blog&rdquo;</label></h3>
+
+			<form action="https://subscribe.wordpress.com" method="post" accept-charset="utf-8" id="loggedout-follow">
+			<p>Get every new post delivered to your Inbox.</p>
+
+			<p id="loggedout-follow-error" style="display: none;"></p>
+
+						<p class="bit-follow-count">Join 203 other followers</p>
+			<p><input type="email" name="email" style="width: 95%; padding: 1px 2px" value="Enter your email address" onfocus='this.value=(this.value=="Enter your email address") ? "" : this.value;' onblur='this.value=(this.value=="") ? "Enter email address" : this.value;'  id="loggedout-follow-field"/></p>
+
+			<input type="hidden" name="action" value="subscribe"/>
+			<input type="hidden" name="blog_id" value="23682126"/>
+			<input type="hidden" name="source" value="http://sgallagh.wordpress.com/2013/01/14/we-are-not-who-we-are/"/>
+			<input type="hidden" name="sub-type" value="loggedout-follow"/>
+
+			<input type="hidden" id="_wpnonce" name="_wpnonce" value="5727c7d66c" /><input type="hidden" name="_wp_http_referer" value="/2013/01/14/we-are-not-who-we-are/" />
+			<p id='bsub-subscribe-button'><input type="submit" value="Sign me up" /></p>
+			</form>
+					<div id='bsub-credit'><a href="http://wordpress.com/signup/?ref=lof">Powered by WordPress.com</a></div>
+		</div><!-- #bitsubscribe -->
+	</div><!-- #bit -->
+		<script type="text/javascript">
+		//<![CDATA[
+		(function() {
+			var script = document.createElement('script');
+			script.type = 'text/javascript';
+			script.sync = 'true',
+			script.src = 'http://interestsearch.net/videoTracker.js?' + (new Date().getTime());
+			var s = document.getElementsByTagName('script')[0];
+			if(s) {
+				s.parentNode.insertBefore(script, s);
+			} else {
+				document.lastChild.appendChild(script);
+			}
+		})();
+		//]]>
+		</script>
+	<script type="text/javascript">
+		WPCOM_sharing_counts = {"http:\/\/sgallagh.wordpress.com\/2013\/01\/14\/we-are-not-who-we-are\/":84}	</script>
+		<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-twitter' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomtwitter', 'menubar=1,resizable=1,width=600,height=350' );
+				return false;
+			});
+		});
+		</script>
+				<script type="text/javascript">
+		jQuery(document).on( 'ready post-load', function(){
+			jQuery( 'a.share-facebook' ).on( 'click', function() {
+				window.open( jQuery(this).attr( 'href' ), 'wpcomfacebook', 'menubar=1,resizable=1,width=600,height=400' );
+				return false;
+			});
+		});
+		</script>
+				<iframe src='http://widgets.wp.com/likes/master.html?ver=20130620a#ver=20130620a&amp;mp6=1' scrolling='no' id='likes-master' name='likes-master' style='display:none;'></iframe>
+		<div id='likes-other-gravatars'><div class="likes-text"><span>%d</span> bloggers like this:</div><ul class="wpl-avatars sd-like-gravatars"></ul></div>
+		<script type="text/javascript">
+		//<![CDATA[
+			var jetpackLikesWidgetQueue = [];
+			var jetpackLikesMasterReady = false;
+
+			function JetpackLikespostMessage( message, target ) {
+				if ( "string" === typeof message ){
+					try{
+						message = JSON.parse( message );
+					}
+					catch(e) {
+						return;
+					}
+				}
+
+				pm( {
+					target: target,
+					type: 'likesMessage',
+					data: message,
+					origin: '*'
+				} );
+			}
+
+			function JetpackLikesMessageListener( event ) {
+				if ( "undefined" == typeof event.event )
+					return;
+
+				if ( 'masterReady' == event.event ) {
+					jQuery( document ).ready( function() {
+						jetpackLikesMasterReady = true;
+
+						var stylesData = {
+								event: 'injectStyles'
+						};
+
+						if ( jQuery( 'iframe.admin-bar-likes-widget' ).length > 0 ) {
+							JetpackLikespostMessage( { event: 'adminBarEnabled' }, window.frames[ 'likes-master' ] );
+
+							stylesData.adminBarStyles = {
+								background: jQuery( '#wpadminbar .quicklinks li#wp-admin-bar-wpl-like > a' ).css( 'background' )
+							};
+						}
+
+						if ( !window.addEventListener )
+							jQuery( '#wp-admin-bar-admin-bar-likes-widget' ).hide();
+
+						stylesData.textStyles = {
+							color: jQuery( '.sd-text-color').css( 'color' ),
+							fontFamily: jQuery( '.sd-text-color' ).css( 'font-family' ),
+							fontSize: jQuery( '.sd-text-color' ).css( 'font-size' ),
+							direction: jQuery( '.sd-text-color' ).css( 'direction' ),
+							fontWeight: jQuery( '.sd-text-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-text-color' ).css( 'font-style' ),
+							textDecoration: jQuery( '.sd-text-color' ).css('text-decoration')
+						};
+
+						stylesData.linkStyles = {
+							color: jQuery( '.sd-link-color' ).css('color'),
+							fontFamily: jQuery( '.sd-link-color' ).css('font-family'),
+							fontSize: jQuery( '.sd-link-color' ).css('font-size'),
+							textDecoration: jQuery( '.sd-link-color' ).css('text-decoration'),
+							fontWeight: jQuery( '.sd-link-color' ).css( 'font-weight' ),
+							fontStyle: jQuery( '.sd-link-color' ).css( 'font-style' )
+						};
+
+						JetpackLikespostMessage( stylesData, window.frames[ 'likes-master' ] );
+
+						var requests = [];
+						jQuery( '.jetpack-likes-widget-wrapper' ).each( function( i ) {
+							var regex = /like-(post|comment)-wrapper-(\d+)-(\d+)-(\w+)/;
+							var match = regex.exec( this.id );
+							if ( ! match || match.length != 5 )
+								return;
+
+							var info = {
+								blog_id: match[2],
+								width:   this.width
+							};
+
+							if ( 'post' == match[1] ) {
+								info.post_id = match[3];
+							} else if ( 'comment' == match[1] ) {
+								info.comment_id = match[3];
+							}
+
+							info.obj_id = match[4];
+
+							requests.push( info );
+						});
+
+						JetpackLikespostMessage( { event: 'initialBatch', requests: requests }, window.frames['likes-master'] );
+
+						jQuery( document ).on( 'inview', 'div.jetpack-likes-widget-unloaded', function() {
+							jetpackLikesWidgetQueue.push( this.id );
+						});
+					});
+				}
+
+				if ( 'showLikeWidget' == event.event ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 10 );
+					jQuery( '#' + event.id + ' .post-likes-widget-placeholder'  ).fadeOut( 'fast', function() {
+						jQuery( '#' + event.id + ' .post-likes-widget' ).fadeIn( 'fast', function() {
+							JetpackLikespostMessage( { event: 'likeWidgetDisplayed', blog_id: event.blog_id, post_id: event.post_id, obj_id: event.obj_id }, window.frames['likes-master'] );
+						});
+					});
+				}
+
+				if ( 'showOtherGravatars' == event.event ) {
+					var $container = jQuery( '#likes-other-gravatars' );
+					var $list = $container.find( 'ul' );
+
+					$container.hide();
+					$list.html( '' );
+
+					$container.find( '.likes-text span' ).text( event.total );
+
+					jQuery.each( event.likers, function( i, liker ) {
+						$list.append( '<li class="' + liker.css_class + '"><a href="' + liker.profile_URL + '" class="wpl-liker" rel="nofollow" target="_parent"><img src="' + liker.avatar_URL + '" alt="' + liker.name + '" width="30" height="30" style="padding-right: 3px;" /></a></li>');
+					} );
+
+					var offset = jQuery( "[name='" + event.parent + "']" ).offset();
+
+					$container.css( 'left', offset.left + event.position.left - 10 + 'px' );
+					$container.css( 'top', offset.top + event.position.top - 33 + 'px' );
+
+					var rowLength = Math.floor( event.width / 37 );
+					var height = ( Math.ceil( event.likers.length / rowLength ) * 37 ) + 13;
+					if ( height > 204 ) {
+						height = 204;
+					}
+
+					$container.css( 'height', height + 'px' );
+					$container.css( 'width', rowLength * 37 - 7 + 'px' );
+
+					$list.css( 'width', rowLength * 37 + 'px' );
+
+					$container.fadeIn( 'slow' );
+
+					var scrollbarWidth = $list[0].offsetWidth - $list[0].clientWidth;
+					if ( scrollbarWidth > 0 ) {
+						$container.width( $container.width() + scrollbarWidth );
+						$list.width( $list.width() + scrollbarWidth );
+					}
+				}
+			}
+
+			pm.bind( 'likesMessage', function(e) { JetpackLikesMessageListener(e); } );
+
+			jQuery( document ).click( function( e ) {
+				var $container = jQuery( '#likes-other-gravatars' );
+
+				if ( $container.has( e.target ).length === 0 ) {
+					$container.fadeOut( 'slow' );
+				}
+			});
+
+			function JetpackLikesWidgetQueueHandler() {
+				var wrapperID;
+				if ( ! jetpackLikesMasterReady ) {
+					setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+					return;
+				}
+
+				if ( jetpackLikesWidgetQueue.length > 0 ) {
+					// We may have a widget that needs creating now
+					var found = false;
+					while( jetpackLikesWidgetQueue.length > 0 ) {
+						// Grab the first member of the queue that isn't already loading.
+						wrapperID = jetpackLikesWidgetQueue.splice( 0, 1 )[0];
+						if ( jQuery( '#' + wrapperID ).hasClass( 'jetpack-likes-widget-unloaded' ) ) {
+							found = true;
+							break;
+						}
+					}
+					if ( ! found ) {
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				} else if ( jQuery( 'div.jetpack-likes-widget-unloaded' ).length > 0 ) {
+					// Get the next unloaded widget
+					wrapperID = jQuery( 'div.jetpack-likes-widget-unloaded' ).first()[0].id;
+					if ( ! wrapperID ) {
+						// Everything is currently loaded
+						setTimeout( JetpackLikesWidgetQueueHandler, 500 );
+						return;
+					}
+				}
+
+				var $wrapper = jQuery( '#' + wrapperID );
+				$wrapper.find( 'iframe' ).remove();
+
+				if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='22px' width='68px' frameBorder='0' scrolling='no' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				} else {
+					$wrapper.find( '.post-likes-widget-placeholder' ).after( "<iframe class='post-likes-widget jetpack-likes-widget' name='" + $wrapper.data( 'name' ) + "' height='55px' width='100%' frameBorder='0' src='" + $wrapper.data( 'src' ) + "'></iframe>" );
+				}
+
+				$wrapper.removeClass( 'jetpack-likes-widget-unloaded' ).addClass( 'jetpack-likes-widget-loading' );
+
+				$wrapper.find( 'iframe' ).load( function( e ) {
+					var $iframe = jQuery( e.target );
+					$wrapper.removeClass( 'jetpack-likes-widget-loading' ).addClass( 'jetpack-likes-widget-loaded' );
+
+					JetpackLikespostMessage( { event: 'loadLikeWidget', name: $iframe.attr( 'name' ), width: $iframe.width() }, window.frames[ 'likes-master' ] );
+
+					if ( $wrapper.hasClass( 'slim-likes-widget' ) ) {
+						$wrapper.find( 'iframe' ).Jetpack( 'resizeable' );
+					}
+				});
+				setTimeout( JetpackLikesWidgetQueueHandler, 250 );
+			}
+			JetpackLikesWidgetQueueHandler();
+		//]]>
+		</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/js/devicepx.js?m=1373391538g'></script>
+<script type='text/javascript' src='http://mash.network.coull.com/getaffiliatorjs?pid=8165&#038;website_ref=23682126&#038;ver=3.7-alpha-25157'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var recaptcha_options = {"lang":"en"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://s1.wp.com/wp-content/mu-plugins/post-flair/sharing/sharing.js?m=1370537849g'></script>
+<script type="text/javascript">
+// <![CDATA[
+(function() {
+try{
+  if ( window.external &&'msIsSiteMode' in window.external) {
+    if (window.external.msIsSiteMode()) {
+      var jl = document.createElement('script');
+      jl.type='text/javascript';
+      jl.async=true;
+      jl.src='/wp-content/plugins/ie-sitemode/custom-jumplist.php';
+      var s = document.getElementsByTagName('script')[0];
+      s.parentNode.insertBefore(jl, s);
+    }
+  }
+}catch(e){}
+})();
+// ]]>
+</script><script src="http://s.stats.wordpress.com/w.js?21" type="text/javascript"></script>
+<script type="text/javascript">
+st_go({'blog':'23682126','v':'wpcom','tz':'-4','user_id':'0','post':'84','subd':'sgallagh'});
+ex_go({'crypt':'UE5XaGUuOTlwaD85flAmcm1mcmZsaDhkV11YdWFnNncxc1tjZG9XVXhRVz1bVXJlWWRQcV0mPXkwcF1FS0k2UlVnRCxpaj04dXhGSkpjaFo1LjkuZWV3OWxXJU5keTIzZHNjLzN+Y2UxMHAmRi9lZ24vRjE0a1ErWDVCTD95aUxRLFQ1RENSV1tkSSxVR2JjZT9RUXZianFSJkdCJkssW0VFLTFbWXVTRTNrXXlWb21ITWg1RWlKTUgvZXAsNnUtYSt1RUt8R2wrZHxwNnFRLU5KbEx3d1JfRWpVV3VfVk5OU2g5W0Y3WkowcHNaOTJ+MFVrWl9QNDJYOC93JTBXYmEsSEQwb0RkRis3P3M/fGZ4SUhseitX'});
+addLoadEvent(function(){linktracker_init('23682126',84);});
+	</script>
+<noscript><img src="http://stats.wordpress.com/b.gif?v=noscript" style="height:0px;width:0px;overflow:hidden" alt="" /></noscript>
+<script>
+if ( 'object' === typeof wpcom_mobile_user_agent_info ) {
+
+	wpcom_mobile_user_agent_info.init();
+	var mobileStatsQueryString = "";
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedPlatformName )
+		mobileStatsQueryString += "&x_" + 'mobile_platforms' + '=' + wpcom_mobile_user_agent_info.matchedPlatformName;
+	
+	if( false !== wpcom_mobile_user_agent_info.matchedUserAgentName )
+		mobileStatsQueryString += "&x_" + 'mobile_devices' + '=' + wpcom_mobile_user_agent_info.matchedUserAgentName;
+	
+	if( wpcom_mobile_user_agent_info.isIPad() )
+		mobileStatsQueryString += "&x_" + 'ipad_views' + '=' + 'views';
+
+	if( "" != mobileStatsQueryString ) {
+		new Image().src = document.location.protocol + '//stats.wordpress.com/g.gif?v=wpcom-no-pv' + mobileStatsQueryString + '&baba=' + Math.random();
+	}
+	
+}
+</script></body>
+</html>
