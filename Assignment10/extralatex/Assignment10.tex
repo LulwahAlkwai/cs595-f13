@@ -1,0 +1,188 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{graphicx}
+\usepackage{listings}
+
+\usepackage[hyphens]{url}
+\usepackage{hyperref}
+
+\setlength{\parindent}{0em}
+\setlength{\parskip}{1em} 
+
+\def\UrlBreaks{\do\/\do-}
+\usepackage[normalem]{ulem}
+\newcommand{\tab}[1]{\hspace{.2\textwidth}\rlap{#1}}
+\usepackage{xcolor}
+\usepackage{sectsty}
+\sectionfont{\color{blue}}
+\usepackage{titlesec}
+\usepackage{fancyvrb}
+\usepackage{listings}
+\usepackage{caption}
+\usepackage[vertfit]{breakurl}
+\usepackage{fancyvrb}
+\renewcommand*{\UrlBreaks}{\do\!\do\"\do\#\do\$\do\%\do\&\do\'\do\(\do\)\do\*\do\+\do\,\do\-\do\.\do\/\do\0\do\1\do\2\do\3\do\4\do\5\do\6\do\7\do\8\do\9\do\:\do\;\do\<\do\=\do\>\do\?\do\@\do\A\do\B\do\C\do\D\do\E\do\F\do\G\do\H\do\I\do\J\do\K\do\L\do\M\do\N\do\O\do\P\do\Q\do\R\do\S\do\T\do\U\do\V\do\W\do\X\do\Y\do\Z\do\[\do\\\do\]\do\^\do\_\do\`\do\a\do\b\do\c\do\d\do\e\do\f\do\g\do\h\do\i\do\j\do\k\do\l\do\m\do\n\do\o\do\p\do\q\do\r\do\s\do\t\do\u\do\v\do\w\do\x\do\y\do\z\do\{\do\|\do\}\do\~}
+\sloppy
+\usepackage{tabularx}
+
+\titleformat{\section}
+{\color{blue}\normalfont\Large\bfseries}
+{\color{blue}\thesection}{1em}{}
+
+\lstset{
+        basicstyle=\footnotesize,
+        breaklines=true,
+}
+
+\begin{document}
+\begin{titlepage}
+\begin{center}
+\Huge{Assignment 10}
+\\
+\Large{CS595}
+\\
+\Large{Introduction to Web Science}
+\\
+\Large{Old Dominion University}
+\\
+\Large{Computer Science}
+\\
+\Large{Due: 11:59 pm Dec 12}
+\\
+\Large{Lulwah Alkwai}
+\\
+\end{center}
+\end{titlepage}
+\newpage
+
+\section*{}
+
+Support your answer:include all relevant discussion, assumptions, examples, etc.
+
+\section*{Question 1}
+
+Choose a blog or a newsfeed (or something similar with an Atom or RSS feed).  It should be on a topic or topics of which you are  qualified to provide classification training data.  Find something with at least 100 entries.  
+
+Create between four and eight different categories for the entries in the feed:
+
+examples: 
+
+work, class, family, news, deals
+
+liberal, conservative, moderate, libertarian
+
+sports, local, financial, national, international, entertainment
+
+metal, electronic, ambient, folk, hip-hop, pop
+
+Download and process the pages of the feed as per the week 12 class slides.
+\newpage
+\subsection*{Answer One-}
+The blog I choose for this assignment is ``Rebecca Woolf'' blog called ``Girl's Gone Child!'', she started to blog since 2005 and have almost 1910 blog posts. A link to the blog is:
+\url{http://www.girlsgonechild.net}
+
+The categories I choose for the feeds entries are:
+Family, style, music, food
+
+From the page source I found the xml link of the page; which is:
+
+\url{http://www.girlsgonechild.net/feeds/posts/default?alt=rss}
+
+To get the xml of 100 blog entries I used curl to the following url:\url{http://www.blogger.com/feeds/18751784/posts/default?max-results=100}
+
+And I saved the content of the href link in a file called girlsgonechild.xml.
+
+To view all the blogs titles I created a python code called c.py which reads the curl result and lists all titles. 
+
+\newpage
+\section*{Question 2}
+Manually classify the first 50 entries, and then classify (using the fisher classifier) the remaining 50 entries. Report the cprob() values for the 50 titles as well. From the title or entry itself, specify the 1-, 2-, or 3-gram that you used for the string to classify. Do not repeat strings; you will have 50 unique strings. For example, in these titles the string used is marked with *s: \\
+
+*Rachel Goswell* - ``Waves are Universal'' (LP Review)\\
+The *Naked and Famous* - ``Passive Me, Aggressive You'' (LP Review)\\
+*Negativland* - ``Live at Lewis's, Norfolk VA, November 21, 1992'' (concert)\\
+Negativland - ``*U2*'' (LP Review)\\
+
+
+Note how         ``Negativland'' is not repeated as a classification string. \\
+
+Create a table with the title, the string used for classification, cprob(), predicted category, and actual category.
+
+
+\newpage
+\subsection*{Answer Two-}
+To solve this question and make my life easier I only 
+manually classify the first 10 entries and user fisher classifier the remaining 10 entries.\\ The same steps is preformed if I was to work on  any other number of data.\\
+Note: The strategy to solve this question was based on Correns thoughts, so thank you Corren :)
+
+I got the following counts for the different categories I have:
+
+Family=2\\
+Style=4\\
+Music=2\\
+Food=2\\
+
+The feature, category count database file is called fc in the girls.db.
+
+I used the existing codes feedfilter.py and docclass.py and only minor changes are made. And the database I created was girls.db.
+
+The following table is the result of the fisher classifier.
+
+\begin{table}[htbp]
+        \centering
+\begin{tabular}{|p{8cm}|l|l|l|l|}
+\hline
+Title & Feature & Predicted & Actual & CP\\ \hline
+    \hline
+red, green, blue and white & red  & music & family & 0.0\\ \hline
+Thank you + Much love & thank & music & family & 0.0 \\ \hline
+Last Minute Thanksgiving Foodstuffs & thanksgiving & food & food & 0.0 \\ \hline
+12 Days of Giving: Starlight and Santa Clara Valley Medical Center & giving & family & family & 0.0 \\ \hline
+"...the most revolutionary thing a father can do is take care of his children." & revolutionary & family & family & 0,0 \\ \hline
+"Its, I suppose... more adventurous." &adventurous&style&family &0.0 \\ \hline
+"Be your own best friend" & friend & music & family & 0.0 \\ \hline
+the gift that keeps on sprouting & gift & food & food & 0.0\\ \hline
+187/100 & 187/100 & food & music & 0.0\\ \hline 
+talking to strangers & strangers & family & family & 1.0\\ \hline
+
+\end{tabular}
+\label{tab:results}
+\end{table}
+
+
+
+\newpage
+\section*{Question 3}
+Assess the performance of your classifier in each of your categories by computing precision and recall.  Note that the definitions are slightly different in the context of classification;
+see:
+
+\url{http://en.wikipedia.org/wiki/Precision_and_recall#Definition_.28classification_context.29}
+
+\newpage
+\subsection*{Answer Three-}
+Based on the result data the following is the precision and recall:
+
+
+\begin{table}[htbp]
+        \centering
+\begin{tabular}{|p{8cm}|l|l|l|l|}
+\hline
+Result & Family & Style & Music & food \\ \hline
+precision & 3/3 & 0/1 & 0/3 & 2/3\\ \hline
+Recall & 3/7 & 0/0 & 0/1 & 2/2\\ \hline
+
+\end{tabular}
+\label{tab:results}
+\end{table}
+
+\newpage
+\section*{Question 4}
+==========================================
+The questions below is for 5 points extra credit
+==========================================
+
+Redo the questions above, but with the extensions on slide 26
+and pp. 136--138.
+\newpage
+\subsection*{Answer Four-}
+\newpage
+\end{document}

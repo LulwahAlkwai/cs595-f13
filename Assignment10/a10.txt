@@ -1,0 +1,63 @@
+CS 495/595 Introduction to Web Science
+Fall 2013
+http://www.cs.odu.edu/~mln/teaching/cs595-f13/
+
+Assignment #10
+Due: 11:59pm Dec 12 2013
+
+Support your answer: include all relevant discussion, assumptions,
+examples, etc.
+
+1.  Choose a blog or a newsfeed (or something similar with an Atom
+or RSS feed).  It should be on a topic or topics of which you are 
+qualified to provide classification training data.  Find something
+with at least 100 entries.  
+
+Create between four and eight different categories for the entries
+in the feed:
+
+examples: 
+
+work, class, family, news, deals
+
+liberal, conservative, moderate, libertarian
+
+sports, local, financial, national, international, entertainment
+
+metal, electronic, ambient, folk, hip-hop, pop
+
+Download and process the pages of the feed as per the week 12 
+class slides.
+
+2.  Manually classify the first 50 entries, and then classify (using
+the fisher classifier) the remaining 50 entries. Report the cprob()
+values for the 50 titles as well.  From the title or entry itself,
+specify the 1-, 2-, or 3-gram that you used for the string to
+classify.  Do not repeat strings; you will have 50 unique strings.
+For example, in these titles the string used is marked with *s:
+
+*Rachel Goswell* - "Waves Are Universal" (LP Review) 
+The *Naked and Famous* - "Passive Me, Aggressive You" (LP Review)
+*Negativland* - "Live at Lewis's, Norfolk VA, November 21, 1992" (concert)
+Negativland - "*U2*" (LP Review)
+
+Note how "Negativland" is not repeated as a classification string.
+
+Create a table with the title, the string used for classification,
+cprob(), predicted category, and actual category.
+
+3.  Assess the performance of your classifier in each of your
+categories by computing precision and recall.  Note that the
+definitions are slightly different in the context of classification;
+see:
+
+http://en.wikipedia.org/wiki/Precision_and_recall#Definition_.28classification_context.29
+
+
+
+===================================================================
+========The questions below is for 5 points extra credit===========
+===================================================================
+
+4.  Redo the questions above, but with the extensions on slide 26
+and pp. 136--138.
